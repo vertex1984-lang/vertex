@@ -517,45 +517,51 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0BXCKKNN8"
   },
   {
-    "id": "makimoo-B0BY8LY757",
-    "asin": "B0BY8LY757",
-    "title": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
-    "handle": "hanging-pagan-cauldron-oil-burner-black-wax-warmer-aroma-dif-b0by8ly757",
-    "description": "【Practical and Efficient Design】: The Halloween Cauldron Oil Diffuser is ideal for burning fragrance oil and aroma wax tarts, ensuring longer burn times and enhancing the ambience of your room.. 【High-quality Materials】: The Cauldron Wax Melt Burner, crafted from top-notch ceramic materials with a sleek matte finish, boasts a unique cauldron pot design and is straightforward to use.. 【Stylish Room Decor】: The Hanging Cauldron Wax Burner, with its ample capacity and well-designed opening, adds an elegant and appealing touch, perfect for enhancing your living space.. 【Excellent Gift Choice】: The Witch Cauldron Wax Warmer is a superb gift option for occasions like weddings, housewarmings, birthdays, Mother's Day, Halloween, and more.. 【Versatile Use】: The Witch Cauldron Oil Burner is designed to diffuse a refreshing aroma throughout your space. It's perfect for storing essential oils and can be heated using a standard tea light.",
-    "descriptionHtml": "<p>【Practical and Efficient Design】: The Halloween Cauldron Oil Diffuser is ideal for burning fragrance oil and aroma wax tarts, ensuring longer burn times and enhancing the ambience of your room.</p><p>【High-quality Materials】: The Cauldron Wax Melt Burner, crafted from top-notch ceramic materials with a sleek matte finish, boasts a unique cauldron pot design and is straightforward to use.</p><p>【Stylish Room Decor】: The Hanging Cauldron Wax Burner, with its ample capacity and well-designed opening, adds an elegant and appealing touch, perfect for enhancing your living space.</p><p>【Excellent Gift Choice】: The Witch Cauldron Wax Warmer is a superb gift option for occasions like weddings, housewarmings, birthdays, Mother's Day, Halloween, and more.</p><p>【Versatile Use】: The Witch Cauldron Oil Burner is designed to diffuse a refreshing aroma throughout your space. It's perfect for storing essential oils and can be heated using a standard tea light.</p>",
-    "productType": "Home Fragrance",
+    "id": "makimoo-B0CQC6H9MZ",
+    "asin": "B0CQC6H9MZ",
+    "title": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+    "handle": "throw-pillow-inserts-45cm-x-45cm-18-x-18-cushion-inserts-hol-b0cqc6h9mz",
+    "description": "PACKAGE CONTENTS: You will recPIeive a package containing two 18x18 Inch Throw Pillow inserts .. GREAT QUALITY: Our Throw Pillow inserts are made of soft and comfortable fabric with hollowfibre filling.. VERSATILE USAGE：Our Throw Pillow inserts are suitable for a variety of settings, including sofas, beds, couches, cars, chairs, and bay windows.. EASY WASHING: Hand wash the cover or using a gentle cycle for machine washing, followed by low tumble dry. Please avoid ironing the cover.. CARE INSTRUCTIONS: Take out the Throw Pillow inserts gently from the package, do not pull forcefully. Pad the inserts repeatly until they bounce back to original form before use.",
+    "descriptionHtml": "<p>PACKAGE CONTENTS: You will recPIeive a package containing two 18x18 Inch Throw Pillow inserts .</p><p>GREAT QUALITY: Our Throw Pillow inserts are made of soft and comfortable fabric with hollowfibre filling.</p><p>VERSATILE USAGE：Our Throw Pillow inserts are suitable for a variety of settings, including sofas, beds, couches, cars, chairs, and bay windows.</p><p>EASY WASHING: Hand wash the cover or using a gentle cycle for machine washing, followed by low tumble dry. Please avoid ironing the cover.</p><p>CARE INSTRUCTIONS: Take out the Throw Pillow inserts gently from the package, do not pull forcefully. Pad the inserts repeatly until they bounce back to original form before use.</p>",
+    "productType": "Pillows",
     "tags": [
-      "Home Fragrance"
+      "Pillows"
     ],
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BY8LY757/1.webp",
-        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+        "url": "/images/products/B0CQC6H9MZ/1.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/2.webp",
-        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+        "url": "/images/products/B0CQC6H9MZ/2.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/3.webp",
-        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+        "url": "/images/products/B0CQC6H9MZ/3.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/4.webp",
-        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+        "url": "/images/products/B0CQC6H9MZ/4.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/5.webp",
-        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+        "url": "/images/products/B0CQC6H9MZ/5.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/B0CQC6H9MZ/6.webp",
+        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       }
@@ -568,7 +574,7 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     },
     "variants": [
       {
-        "id": "variant-B0BY8LY757",
+        "id": "variant-B0CQC6H9MZ",
         "title": "Default Title",
         "price": {
           "amount": "49.99",
@@ -578,7 +584,7 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
         "selectedOptions": []
       }
     ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BY8LY757"
+    "amazonUrl": "https://www.amazon.com/dp/B0CQC6H9MZ"
   },
   {
     "id": "makimoo-B0BZCLN57S",
@@ -4199,51 +4205,45 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0CQC5QJFJ"
   },
   {
-    "id": "makimoo-B0CQC6H9MZ",
-    "asin": "B0CQC6H9MZ",
-    "title": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-    "handle": "throw-pillow-inserts-45cm-x-45cm-18-x-18-cushion-inserts-hol-b0cqc6h9mz",
-    "description": "PACKAGE CONTENTS: You will recPIeive a package containing two 18x18 Inch Throw Pillow inserts .. GREAT QUALITY: Our Throw Pillow inserts are made of soft and comfortable fabric with hollowfibre filling.. VERSATILE USAGE：Our Throw Pillow inserts are suitable for a variety of settings, including sofas, beds, couches, cars, chairs, and bay windows.. EASY WASHING: Hand wash the cover or using a gentle cycle for machine washing, followed by low tumble dry. Please avoid ironing the cover.. CARE INSTRUCTIONS: Take out the Throw Pillow inserts gently from the package, do not pull forcefully. Pad the inserts repeatly until they bounce back to original form before use.",
-    "descriptionHtml": "<p>PACKAGE CONTENTS: You will recPIeive a package containing two 18x18 Inch Throw Pillow inserts .</p><p>GREAT QUALITY: Our Throw Pillow inserts are made of soft and comfortable fabric with hollowfibre filling.</p><p>VERSATILE USAGE：Our Throw Pillow inserts are suitable for a variety of settings, including sofas, beds, couches, cars, chairs, and bay windows.</p><p>EASY WASHING: Hand wash the cover or using a gentle cycle for machine washing, followed by low tumble dry. Please avoid ironing the cover.</p><p>CARE INSTRUCTIONS: Take out the Throw Pillow inserts gently from the package, do not pull forcefully. Pad the inserts repeatly until they bounce back to original form before use.</p>",
-    "productType": "Pillows",
+    "id": "makimoo-B0BY8LY757",
+    "asin": "B0BY8LY757",
+    "title": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
+    "handle": "hanging-pagan-cauldron-oil-burner-black-wax-warmer-aroma-dif-b0by8ly757",
+    "description": "【Practical and Efficient Design】: The Halloween Cauldron Oil Diffuser is ideal for burning fragrance oil and aroma wax tarts, ensuring longer burn times and enhancing the ambience of your room.. 【High-quality Materials】: The Cauldron Wax Melt Burner, crafted from top-notch ceramic materials with a sleek matte finish, boasts a unique cauldron pot design and is straightforward to use.. 【Stylish Room Decor】: The Hanging Cauldron Wax Burner, with its ample capacity and well-designed opening, adds an elegant and appealing touch, perfect for enhancing your living space.. 【Excellent Gift Choice】: The Witch Cauldron Wax Warmer is a superb gift option for occasions like weddings, housewarmings, birthdays, Mother's Day, Halloween, and more.. 【Versatile Use】: The Witch Cauldron Oil Burner is designed to diffuse a refreshing aroma throughout your space. It's perfect for storing essential oils and can be heated using a standard tea light.",
+    "descriptionHtml": "<p>【Practical and Efficient Design】: The Halloween Cauldron Oil Diffuser is ideal for burning fragrance oil and aroma wax tarts, ensuring longer burn times and enhancing the ambience of your room.</p><p>【High-quality Materials】: The Cauldron Wax Melt Burner, crafted from top-notch ceramic materials with a sleek matte finish, boasts a unique cauldron pot design and is straightforward to use.</p><p>【Stylish Room Decor】: The Hanging Cauldron Wax Burner, with its ample capacity and well-designed opening, adds an elegant and appealing touch, perfect for enhancing your living space.</p><p>【Excellent Gift Choice】: The Witch Cauldron Wax Warmer is a superb gift option for occasions like weddings, housewarmings, birthdays, Mother's Day, Halloween, and more.</p><p>【Versatile Use】: The Witch Cauldron Oil Burner is designed to diffuse a refreshing aroma throughout your space. It's perfect for storing essential oils and can be heated using a standard tea light.</p>",
+    "productType": "Home Fragrance",
     "tags": [
-      "Pillows"
+      "Home Fragrance"
     ],
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQC6H9MZ/1.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "url": "/images/products/B0BY8LY757/1.webp",
+        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/2.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "url": "/images/products/B0BY8LY757/2.webp",
+        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/3.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "url": "/images/products/B0BY8LY757/3.webp",
+        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/4.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "url": "/images/products/B0BY8LY757/4.webp",
+        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/5.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQC6H9MZ/6.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
+        "url": "/images/products/B0BY8LY757/5.webp",
+        "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       }
@@ -4256,7 +4256,7 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     },
     "variants": [
       {
-        "id": "variant-B0CQC6H9MZ",
+        "id": "variant-B0BY8LY757",
         "title": "Default Title",
         "price": {
           "amount": "49.99",
@@ -4266,7 +4266,7 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
         "selectedOptions": []
       }
     ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CQC6H9MZ"
+    "amazonUrl": "https://www.amazon.com/dp/B0BY8LY757"
   },
   {
     "id": "makimoo-B0CW182MCY",
