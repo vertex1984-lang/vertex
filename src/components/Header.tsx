@@ -43,7 +43,7 @@ export default function Header() {
       >
         <a href={resolveUrl('/')} className="flex items-center gap-2">
           <img
-            src={resolveUrl('/images/brand/makimoo-logo.png')}
+            src={resolveUrl('/images/brand/makimoo-logo.webp')}
             alt="Makimoo"
             className="h-16 lg:h-20 w-auto object-contain"
           />

@@ -7,13 +7,13 @@ const collections = [
   {
     title: 'The Cushions\nCollection:',
     description: 'Weather-resistant cushions for your patio & garden.',
-    image: '/images/brand/outdoor-collection.png',
+    image: '/images/brand/outdoor-collection.webp',
     href: '/products?cat=cushions',
   },
   {
     title: 'The Pillows\nCollection:',
     description: 'Premium Fabrics & 3D Polyster Filling Ensures Comfortness.',
-    image: '/images/brand/indoor-collection.png',
+    image: '/images/brand/indoor-collection.webp',
     href: '/products?cat=pillows',
   },
   {
@@ -25,25 +25,25 @@ const collections = [
   {
     title: 'The Dinings\nCollection:',
     description: 'Elegant dining essentials for your home.',
-    image: '/images/brand/indoor-collection-2.png',
+    image: '/images/brand/indoor-collection-2.webp',
     href: '/products?cat=dining',
   },
   {
     title: 'Holiday\nCollection:',
     description: 'Make every holiday moment truly unforgettable.',
-    image: '/images/brand/holiday-collection.png',
+    image: '/images/brand/holiday-collection.webp',
     href: '/products?cat=holiday',
   },
   {
     title: 'Home Fragrance\nCollection:',
     description: 'Elevate your everyday mood with fragrance.',
-    image: '/images/brand/home-fragrance-collection.png',
+    image: '/images/brand/home-fragrance-collection.webp',
     href: '/products?cat=home-fragrance',
   },
   {
     title: 'The Dining\nCollection:',
     description: 'Elegant dining essentials for your home.',
-    image: '/images/brand/indoor-collection.png',
+    image: '/images/brand/indoor-collection.webp',
     href: '/products?cat=dining',
   },
 ];
@@ -55,7 +55,7 @@ export default function HomePage() {
       <section
         className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 sm:pt-24 lg:pt-28 pb-12 sm:pb-48 lg:pb-52"
         style={{
-          backgroundImage: `url(${resolveUrl('/images/brand/hero-bg.png')})`,
+          backgroundImage: `url(${resolveUrl('/images/brand/hero-bg.webp')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           paddingTop: '104px',
@@ -141,7 +141,7 @@ export default function HomePage() {
       {/* Collection Banner - Desktop */}
       <section className="w-full hidden sm:block">
         <img
-          src={resolveUrl('/images/brand/collection-banner.png')}
+          src={resolveUrl('/images/brand/collection-banner.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block"
         />
@@ -149,7 +149,7 @@ export default function HomePage() {
       {/* Collection Banner - Mobile */}
       <section className="w-full sm:hidden">
         <img
-          src={resolveUrl('/images/brand/collection-banner-mobile.png')}
+          src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block object-contain"
           style={{ maxHeight: 'none' }}
@@ -186,7 +186,7 @@ export default function HomePage() {
       {/* About Banner */}
       <section className="relative w-full">
         <img
-          src={resolveUrl('/images/brand/about-banner.png')}
+          src={resolveUrl('/images/brand/about-banner.webp')}
           alt="Makimoo Brand Story"
           className="w-full h-auto block"
         />

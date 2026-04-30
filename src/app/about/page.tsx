@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
           <div>
             <img
-              src={resolveUrl('/images/about/about-story.jpg')}
+              src={resolveUrl('/images/about/about-story.webp')}
               alt="Makimoo Story"
               className="w-full rounded-2xl shadow-lg"
             />

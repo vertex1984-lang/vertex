@@ -36,31 +36,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B098F1BKJQ/1.jpg",
+        "url": "/images/products/B098F1BKJQ/1.webp",
         "altText": "Bike Basket for Women's Beach Cruiser or Scooter The Original Wicker Bicycle Baskets with Built in Cup Holder for Front Handlebar-Classic Vintage Style Handmade Natural Rattan Wicker",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B098F1BKJQ/2.jpg",
+        "url": "/images/products/B098F1BKJQ/2.webp",
         "altText": "Bike Basket for Women's Beach Cruiser or Scooter The Original Wicker Bicycle Baskets with Built in Cup Holder for Front Handlebar-Classic Vintage Style Handmade Natural Rattan Wicker",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B098F1BKJQ/3.jpg",
+        "url": "/images/products/B098F1BKJQ/3.webp",
         "altText": "Bike Basket for Women's Beach Cruiser or Scooter The Original Wicker Bicycle Baskets with Built in Cup Holder for Front Handlebar-Classic Vintage Style Handmade Natural Rattan Wicker",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B098F1BKJQ/4.jpg",
+        "url": "/images/products/B098F1BKJQ/4.webp",
         "altText": "Bike Basket for Women's Beach Cruiser or Scooter The Original Wicker Bicycle Baskets with Built in Cup Holder for Front Handlebar-Classic Vintage Style Handmade Natural Rattan Wicker",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B098F1BKJQ/5.jpg",
+        "url": "/images/products/B098F1BKJQ/5.webp",
         "altText": "Bike Basket for Women's Beach Cruiser or Scooter The Original Wicker Bicycle Baskets with Built in Cup Holder for Front Handlebar-Classic Vintage Style Handmade Natural Rattan Wicker",
         "width": 800,
         "height": 800
@@ -100,97 +100,97 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BBZSGDBQ/1.jpg",
+        "url": "/images/products/B0BBZSGDBQ/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/2.jpg",
+        "url": "/images/products/B0BBZSGDBQ/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/3.jpg",
+        "url": "/images/products/B0BBZSGDBQ/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/4.jpg",
+        "url": "/images/products/B0BBZSGDBQ/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/5.jpg",
+        "url": "/images/products/B0BBZSGDBQ/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/6.jpg",
+        "url": "/images/products/B0BBZSGDBQ/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/7.jpg",
+        "url": "/images/products/B0BBZSGDBQ/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_h0y52fh0y52fh0y5.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_h0y52fh0y52fh0y5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.png",
+        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776244917658.jpg",
+        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776244917658.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776265366343.jpg",
+        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776265366343.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
         "width": 800,
         "height": 800
@@ -230,79 +230,79 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BBZW4LZR/1.jpg",
+        "url": "/images/products/B0BBZW4LZR/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/2.jpg",
+        "url": "/images/products/B0BBZW4LZR/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/3.jpg",
+        "url": "/images/products/B0BBZW4LZR/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/4.jpg",
+        "url": "/images/products/B0BBZW4LZR/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_n8ubjfn8ubjfn8ub_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_n8ubjfn8ubjfn8ub_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.png",
+        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776244917658.jpg",
+        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776244917658.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776246681536.jpg",
+        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776246681536.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
         "width": 800,
         "height": 800
@@ -342,85 +342,85 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BCJQYYL1/1.jpg",
+        "url": "/images/products/B0BCJQYYL1/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/2.jpg",
+        "url": "/images/products/B0BCJQYYL1/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/3.jpg",
+        "url": "/images/products/B0BCJQYYL1/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/4.jpg",
+        "url": "/images/products/B0BCJQYYL1/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/5.jpg",
+        "url": "/images/products/B0BCJQYYL1/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/6.jpg",
+        "url": "/images/products/B0BCJQYYL1/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/7.jpg",
+        "url": "/images/products/B0BCJQYYL1/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/Gemini_Generated_Image_33x07833x07833x0.png",
+        "url": "/images/products/B0BCJQYYL1/Gemini_Generated_Image_33x07833x07833x0.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/Gemini_Generated_Image_9fu9q69fu9q69fu9.png",
+        "url": "/images/products/B0BCJQYYL1/Gemini_Generated_Image_9fu9q69fu9q69fu9.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776261559346.jpg",
+        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776261559346.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776261903394.jpg",
+        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776261903394.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776262660713.jpg",
+        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776262660713.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776263205260.jpg",
+        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776263205260.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776263350652.jpg",
+        "url": "/images/products/B0BCJQYYL1/nano-banana-pro-1776263350652.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
         "width": 800,
         "height": 800
@@ -460,37 +460,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BXCKKNN8/1.jpg",
+        "url": "/images/products/B0BXCKKNN8/1.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BXCKKNN8/2.jpg",
+        "url": "/images/products/B0BXCKKNN8/2.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BXCKKNN8/3.jpg",
+        "url": "/images/products/B0BXCKKNN8/3.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BXCKKNN8/4.jpg",
+        "url": "/images/products/B0BXCKKNN8/4.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BXCKKNN8/5.jpg",
+        "url": "/images/products/B0BXCKKNN8/5.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BXCKKNN8/6.jpg",
+        "url": "/images/products/B0BXCKKNN8/6.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
         "width": 800,
         "height": 800
@@ -530,31 +530,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BY8LY757/1.jpg",
+        "url": "/images/products/B0BY8LY757/1.webp",
         "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/2.jpg",
+        "url": "/images/products/B0BY8LY757/2.webp",
         "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/3.jpg",
+        "url": "/images/products/B0BY8LY757/3.webp",
         "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/4.jpg",
+        "url": "/images/products/B0BY8LY757/4.webp",
         "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BY8LY757/5.jpg",
+        "url": "/images/products/B0BY8LY757/5.webp",
         "altText": "Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
         "width": 800,
         "height": 800
@@ -594,43 +594,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BZCLN57S/1.jpg",
+        "url": "/images/products/B0BZCLN57S/1.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/2.jpg",
+        "url": "/images/products/B0BZCLN57S/2.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/3.jpg",
+        "url": "/images/products/B0BZCLN57S/3.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/4.jpg",
+        "url": "/images/products/B0BZCLN57S/4.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/5.jpg",
+        "url": "/images/products/B0BZCLN57S/5.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/6.jpg",
+        "url": "/images/products/B0BZCLN57S/6.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCLN57S/7.jpg",
+        "url": "/images/products/B0BZCLN57S/7.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
         "width": 800,
         "height": 800
@@ -670,37 +670,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0BZCMDZNS/1.jpg",
+        "url": "/images/products/B0BZCMDZNS/1.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCMDZNS/2.jpg",
+        "url": "/images/products/B0BZCMDZNS/2.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCMDZNS/3.jpg",
+        "url": "/images/products/B0BZCMDZNS/3.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCMDZNS/4.jpg",
+        "url": "/images/products/B0BZCMDZNS/4.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCMDZNS/5.jpg",
+        "url": "/images/products/B0BZCMDZNS/5.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0BZCMDZNS/6.jpg",
+        "url": "/images/products/B0BZCMDZNS/6.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
         "width": 800,
         "height": 800
@@ -740,43 +740,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C2Z9JRDM/1.jpg",
+        "url": "/images/products/B0C2Z9JRDM/1.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/2.jpg",
+        "url": "/images/products/B0C2Z9JRDM/2.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/3.jpg",
+        "url": "/images/products/B0C2Z9JRDM/3.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/4.jpg",
+        "url": "/images/products/B0C2Z9JRDM/4.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/5.jpg",
+        "url": "/images/products/B0C2Z9JRDM/5.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/6.jpg",
+        "url": "/images/products/B0C2Z9JRDM/6.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9JRDM/7.jpg",
+        "url": "/images/products/B0C2Z9JRDM/7.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
         "width": 800,
         "height": 800
@@ -816,31 +816,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C2Z9PFFK/1.jpg",
+        "url": "/images/products/B0C2Z9PFFK/1.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9PFFK/2.jpg",
+        "url": "/images/products/B0C2Z9PFFK/2.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9PFFK/3.jpg",
+        "url": "/images/products/B0C2Z9PFFK/3.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9PFFK/4.jpg",
+        "url": "/images/products/B0C2Z9PFFK/4.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2Z9PFFK/5.jpg",
+        "url": "/images/products/B0C2Z9PFFK/5.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
         "width": 800,
         "height": 800
@@ -880,37 +880,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C2ZCXVX7/1.jpg",
+        "url": "/images/products/B0C2ZCXVX7/1.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2ZCXVX7/2.jpg",
+        "url": "/images/products/B0C2ZCXVX7/2.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2ZCXVX7/3.jpg",
+        "url": "/images/products/B0C2ZCXVX7/3.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2ZCXVX7/4.jpg",
+        "url": "/images/products/B0C2ZCXVX7/4.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2ZCXVX7/5.jpg",
+        "url": "/images/products/B0C2ZCXVX7/5.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C2ZCXVX7/6.jpg",
+        "url": "/images/products/B0C2ZCXVX7/6.webp",
         "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
         "width": 800,
         "height": 800
@@ -950,43 +950,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C33LFHN1/1.jpg",
+        "url": "/images/products/B0C33LFHN1/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/2.jpg",
+        "url": "/images/products/B0C33LFHN1/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/3.jpg",
+        "url": "/images/products/B0C33LFHN1/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/4.jpg",
+        "url": "/images/products/B0C33LFHN1/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/5.jpg",
+        "url": "/images/products/B0C33LFHN1/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/6.jpg",
+        "url": "/images/products/B0C33LFHN1/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LFHN1/7.jpg",
+        "url": "/images/products/B0C33LFHN1/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
@@ -1026,49 +1026,49 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C33LPY5G/1.jpg",
+        "url": "/images/products/B0C33LPY5G/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/2.jpg",
+        "url": "/images/products/B0C33LPY5G/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/3.jpg",
+        "url": "/images/products/B0C33LPY5G/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/4.jpg",
+        "url": "/images/products/B0C33LPY5G/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/5.jpg",
+        "url": "/images/products/B0C33LPY5G/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/6.jpg",
+        "url": "/images/products/B0C33LPY5G/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/7.jpg",
+        "url": "/images/products/B0C33LPY5G/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LPY5G/Seeany.com_万能改图_520044.png",
+        "url": "/images/products/B0C33LPY5G/Seeany.com_万能改图_520044.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
         "height": 800
@@ -1108,43 +1108,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C33LXRVK/1.jpg",
+        "url": "/images/products/B0C33LXRVK/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/2.jpg",
+        "url": "/images/products/B0C33LXRVK/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/3.jpg",
+        "url": "/images/products/B0C33LXRVK/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/4.jpg",
+        "url": "/images/products/B0C33LXRVK/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/5.jpg",
+        "url": "/images/products/B0C33LXRVK/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/6.jpg",
+        "url": "/images/products/B0C33LXRVK/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LXRVK/7.jpg",
+        "url": "/images/products/B0C33LXRVK/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
@@ -1184,43 +1184,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C33LZ5PW/1.jpg",
+        "url": "/images/products/B0C33LZ5PW/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/2.jpg",
+        "url": "/images/products/B0C33LZ5PW/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/3.jpg",
+        "url": "/images/products/B0C33LZ5PW/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/4.jpg",
+        "url": "/images/products/B0C33LZ5PW/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/5.jpg",
+        "url": "/images/products/B0C33LZ5PW/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/6.jpg",
+        "url": "/images/products/B0C33LZ5PW/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33LZ5PW/7.jpg",
+        "url": "/images/products/B0C33LZ5PW/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
         "width": 800,
         "height": 800
@@ -1260,85 +1260,85 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C33M24L3/1.jpg",
+        "url": "/images/products/B0C33M24L3/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/2.jpg",
+        "url": "/images/products/B0C33M24L3/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/3.jpg",
+        "url": "/images/products/B0C33M24L3/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/4.jpg",
+        "url": "/images/products/B0C33M24L3/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/5.jpg",
+        "url": "/images/products/B0C33M24L3/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/6.jpg",
+        "url": "/images/products/B0C33M24L3/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/7.jpg",
+        "url": "/images/products/B0C33M24L3/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-2666-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-2666-Photorealistic commercial product photog....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-4992-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-4992-Photorealistic commercial product photog....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-8138-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-8138-Photorealistic commercial product photog....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-8366-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-02-8366-Photorealistic commercial product photog....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-1414-Hyper-realistic commercial lifestyle pho....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-1414-Hyper-realistic commercial lifestyle pho....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-7544-Warm lifestyle commercial photography, b....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-7544-Warm lifestyle commercial photography, b....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-8131-Hyper-realistic commercial lifestyle pho....png",
+        "url": "/images/products/B0C33M24L3/jimeng-2026-04-04-8131-Hyper-realistic commercial lifestyle pho....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
@@ -1378,43 +1378,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C39ZMK7H/1.jpg",
+        "url": "/images/products/B0C39ZMK7H/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/2.jpg",
+        "url": "/images/products/B0C39ZMK7H/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/3.jpg",
+        "url": "/images/products/B0C39ZMK7H/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/4.jpg",
+        "url": "/images/products/B0C39ZMK7H/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/5.jpg",
+        "url": "/images/products/B0C39ZMK7H/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/6.jpg",
+        "url": "/images/products/B0C39ZMK7H/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZMK7H/7.jpg",
+        "url": "/images/products/B0C39ZMK7H/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
@@ -1454,43 +1454,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C39ZSD3Q/1.jpg",
+        "url": "/images/products/B0C39ZSD3Q/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/2.jpg",
+        "url": "/images/products/B0C39ZSD3Q/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/3.jpg",
+        "url": "/images/products/B0C39ZSD3Q/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/4.jpg",
+        "url": "/images/products/B0C39ZSD3Q/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/5.jpg",
+        "url": "/images/products/B0C39ZSD3Q/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/6.jpg",
+        "url": "/images/products/B0C39ZSD3Q/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C39ZSD3Q/7.jpg",
+        "url": "/images/products/B0C39ZSD3Q/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
         "width": 800,
         "height": 800
@@ -1530,91 +1530,91 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C3B12DL7/1.jpg",
+        "url": "/images/products/B0C3B12DL7/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/2.jpg",
+        "url": "/images/products/B0C3B12DL7/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/3.jpg",
+        "url": "/images/products/B0C3B12DL7/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/4.jpg",
+        "url": "/images/products/B0C3B12DL7/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/5.jpg",
+        "url": "/images/products/B0C3B12DL7/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/6.jpg",
+        "url": "/images/products/B0C3B12DL7/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/7.jpg",
+        "url": "/images/products/B0C3B12DL7/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514628.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514628.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514643.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514643.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514667.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514667.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514779.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514779.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514797.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514797.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514802.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514802.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514853.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514853.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514864.png",
+        "url": "/images/products/B0C3B12DL7/Seeany.com_万能改图_514864.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
         "width": 800,
         "height": 800
@@ -1654,91 +1654,91 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C3B13N8Z/1.jpg",
+        "url": "/images/products/B0C3B13N8Z/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/2.jpg",
+        "url": "/images/products/B0C3B13N8Z/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/3.jpg",
+        "url": "/images/products/B0C3B13N8Z/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/4.jpg",
+        "url": "/images/products/B0C3B13N8Z/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/5.jpg",
+        "url": "/images/products/B0C3B13N8Z/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/6.jpg",
+        "url": "/images/products/B0C3B13N8Z/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/7.jpg",
+        "url": "/images/products/B0C3B13N8Z/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514887.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514887.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514899.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514899.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514911.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514911.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514923.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514923.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514928.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514928.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514942.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514942.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514957.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_514957.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_515008.png",
+        "url": "/images/products/B0C3B13N8Z/Seeany.com_万能改图_515008.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
         "width": 800,
         "height": 800
@@ -1778,79 +1778,79 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C3B16L6R/1.jpg",
+        "url": "/images/products/B0C3B16L6R/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/2.jpg",
+        "url": "/images/products/B0C3B16L6R/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/3.jpg",
+        "url": "/images/products/B0C3B16L6R/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/4.jpg",
+        "url": "/images/products/B0C3B16L6R/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/5.jpg",
+        "url": "/images/products/B0C3B16L6R/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/6.jpg",
+        "url": "/images/products/B0C3B16L6R/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/7.jpg",
+        "url": "/images/products/B0C3B16L6R/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515950.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515950.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515959.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515959.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515962.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515962.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515976.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515976.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515993.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_515993.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_519872.png",
+        "url": "/images/products/B0C3B16L6R/Seeany.com_万能改图_519872.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
         "width": 800,
         "height": 800
@@ -1890,85 +1890,85 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C3B265XJ/1.jpg",
+        "url": "/images/products/B0C3B265XJ/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/2.jpg",
+        "url": "/images/products/B0C3B265XJ/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/3.jpg",
+        "url": "/images/products/B0C3B265XJ/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/4.jpg",
+        "url": "/images/products/B0C3B265XJ/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/5.jpg",
+        "url": "/images/products/B0C3B265XJ/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/6.jpg",
+        "url": "/images/products/B0C3B265XJ/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/7.jpg",
+        "url": "/images/products/B0C3B265XJ/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519876.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519876.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519882.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519882.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519883.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519883.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519885.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519885.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519901.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519901.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519986.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_519986.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_520027.png",
+        "url": "/images/products/B0C3B265XJ/Seeany.com_万能改图_520027.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
@@ -2008,91 +2008,91 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4B9T6JV/1.jpg",
+        "url": "/images/products/B0C4B9T6JV/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/2.jpg",
+        "url": "/images/products/B0C4B9T6JV/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/3.jpg",
+        "url": "/images/products/B0C4B9T6JV/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/4.jpg",
+        "url": "/images/products/B0C4B9T6JV/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/5.jpg",
+        "url": "/images/products/B0C4B9T6JV/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/6.jpg",
+        "url": "/images/products/B0C4B9T6JV/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/7.jpg",
+        "url": "/images/products/B0C4B9T6JV/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_AI图片编辑器_529817.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_AI图片编辑器_529817.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529860.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529860.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529863.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529863.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529872.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529872.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529880.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529880.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529884.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529884.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529930.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529930.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529935.png",
+        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529935.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
         "width": 800,
         "height": 800
@@ -2132,43 +2132,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4BBVS53/1.jpg",
+        "url": "/images/products/B0C4BBVS53/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/2.jpg",
+        "url": "/images/products/B0C4BBVS53/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/3.jpg",
+        "url": "/images/products/B0C4BBVS53/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/4.jpg",
+        "url": "/images/products/B0C4BBVS53/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/5.jpg",
+        "url": "/images/products/B0C4BBVS53/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/6.jpg",
+        "url": "/images/products/B0C4BBVS53/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BBVS53/7.jpg",
+        "url": "/images/products/B0C4BBVS53/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
         "width": 800,
         "height": 800
@@ -2208,25 +2208,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4BC7Q4S/1.jpg",
+        "url": "/images/products/B0C4BC7Q4S/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/2.jpg",
+        "url": "/images/products/B0C4BC7Q4S/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/3.jpg",
+        "url": "/images/products/B0C4BC7Q4S/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/4.jpg",
+        "url": "/images/products/B0C4BC7Q4S/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
@@ -2238,37 +2238,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_g03oq9g03oq9g03o (1).png",
+        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_g03oq9g03oq9g03o (1).webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_k2s1iok2s1iok2s1.png",
+        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_k2s1iok2s1iok2s1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_wjvhhiwjvhhiwjvh (1).png",
+        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_wjvhhiwjvhhiwjvh (1).webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775544337846.png",
+        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775544337846.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775545639578.png",
+        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775545639578.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775546296442.png",
+        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775546296442.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
         "width": 800,
         "height": 800
@@ -2308,85 +2308,85 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4BCD4DY/1.jpg",
+        "url": "/images/products/B0C4BCD4DY/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/2.jpg",
+        "url": "/images/products/B0C4BCD4DY/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/3.jpg",
+        "url": "/images/products/B0C4BCD4DY/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/4.jpg",
+        "url": "/images/products/B0C4BCD4DY/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/5.jpg",
+        "url": "/images/products/B0C4BCD4DY/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/6.jpg",
+        "url": "/images/products/B0C4BCD4DY/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/7.jpg",
+        "url": "/images/products/B0C4BCD4DY/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_AI图片编辑器_529422.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_AI图片编辑器_529422.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529469.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529469.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529473.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529473.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529517.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529517.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529572.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529572.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529618.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529618.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529632.png",
+        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529632.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
         "width": 800,
         "height": 800
@@ -2426,97 +2426,97 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4BD7Q5X/1.jpg",
+        "url": "/images/products/B0C4BD7Q5X/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/2.jpg",
+        "url": "/images/products/B0C4BD7Q5X/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/3.jpg",
+        "url": "/images/products/B0C4BD7Q5X/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/4.jpg",
+        "url": "/images/products/B0C4BD7Q5X/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/5.jpg",
+        "url": "/images/products/B0C4BD7Q5X/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/6.jpg",
+        "url": "/images/products/B0C4BD7Q5X/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/7.jpg",
+        "url": "/images/products/B0C4BD7Q5X/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529103.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529103.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529161.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529161.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529334.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529334.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529342.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529342.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_万能改图_529499.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_万能改图_529499.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520063.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520063.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520066.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520066.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520067.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520067.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_电商套图_529253.png",
+        "url": "/images/products/B0C4BD7Q5X/Seeany.com_电商套图_529253.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
         "width": 800,
         "height": 800
@@ -2556,43 +2556,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C4BDLLFK/1.jpg",
+        "url": "/images/products/B0C4BDLLFK/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/2.jpg",
+        "url": "/images/products/B0C4BDLLFK/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/3.jpg",
+        "url": "/images/products/B0C4BDLLFK/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/4.jpg",
+        "url": "/images/products/B0C4BDLLFK/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/5.jpg",
+        "url": "/images/products/B0C4BDLLFK/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/6.jpg",
+        "url": "/images/products/B0C4BDLLFK/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C4BDLLFK/7.jpg",
+        "url": "/images/products/B0C4BDLLFK/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
         "width": 800,
         "height": 800
@@ -2632,43 +2632,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C69QNSB3/1.jpg",
+        "url": "/images/products/B0C69QNSB3/1.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/2.jpg",
+        "url": "/images/products/B0C69QNSB3/2.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/3.jpg",
+        "url": "/images/products/B0C69QNSB3/3.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/4.jpg",
+        "url": "/images/products/B0C69QNSB3/4.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/5.jpg",
+        "url": "/images/products/B0C69QNSB3/5.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/6.jpg",
+        "url": "/images/products/B0C69QNSB3/6.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69QNSB3/7.jpg",
+        "url": "/images/products/B0C69QNSB3/7.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
         "width": 800,
         "height": 800
@@ -2708,43 +2708,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C69RJVVT/1.jpg",
+        "url": "/images/products/B0C69RJVVT/1.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/2.jpg",
+        "url": "/images/products/B0C69RJVVT/2.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/3.jpg",
+        "url": "/images/products/B0C69RJVVT/3.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/4.jpg",
+        "url": "/images/products/B0C69RJVVT/4.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/5.jpg",
+        "url": "/images/products/B0C69RJVVT/5.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/6.jpg",
+        "url": "/images/products/B0C69RJVVT/6.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RJVVT/7.jpg",
+        "url": "/images/products/B0C69RJVVT/7.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
         "width": 800,
         "height": 800
@@ -2784,43 +2784,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C69RR6GF/1.jpg",
+        "url": "/images/products/B0C69RR6GF/1.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/2.jpg",
+        "url": "/images/products/B0C69RR6GF/2.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/3.jpg",
+        "url": "/images/products/B0C69RR6GF/3.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/4.jpg",
+        "url": "/images/products/B0C69RR6GF/4.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/5.jpg",
+        "url": "/images/products/B0C69RR6GF/5.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/6.jpg",
+        "url": "/images/products/B0C69RR6GF/6.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RR6GF/7.jpg",
+        "url": "/images/products/B0C69RR6GF/7.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
         "width": 800,
         "height": 800
@@ -2860,43 +2860,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C69RRYXM/1.jpg",
+        "url": "/images/products/B0C69RRYXM/1.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/2.jpg",
+        "url": "/images/products/B0C69RRYXM/2.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/3.jpg",
+        "url": "/images/products/B0C69RRYXM/3.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/4.jpg",
+        "url": "/images/products/B0C69RRYXM/4.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/5.jpg",
+        "url": "/images/products/B0C69RRYXM/5.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/6.jpg",
+        "url": "/images/products/B0C69RRYXM/6.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C69RRYXM/7.jpg",
+        "url": "/images/products/B0C69RRYXM/7.webp",
         "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
         "width": 800,
         "height": 800
@@ -2936,43 +2936,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C6H5XZMZ/1.jpg",
+        "url": "/images/products/B0C6H5XZMZ/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/2.jpg",
+        "url": "/images/products/B0C6H5XZMZ/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/3.jpg",
+        "url": "/images/products/B0C6H5XZMZ/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/4.jpg",
+        "url": "/images/products/B0C6H5XZMZ/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/5.jpg",
+        "url": "/images/products/B0C6H5XZMZ/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/6.jpg",
+        "url": "/images/products/B0C6H5XZMZ/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C6H5XZMZ/7.jpg",
+        "url": "/images/products/B0C6H5XZMZ/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
@@ -3012,37 +3012,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C8J237V3/1.jpg",
+        "url": "/images/products/B0C8J237V3/1.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J237V3/2.jpg",
+        "url": "/images/products/B0C8J237V3/2.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J237V3/3.jpg",
+        "url": "/images/products/B0C8J237V3/3.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J237V3/4.jpg",
+        "url": "/images/products/B0C8J237V3/4.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J237V3/5.jpg",
+        "url": "/images/products/B0C8J237V3/5.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J237V3/6.jpg",
+        "url": "/images/products/B0C8J237V3/6.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
         "width": 800,
         "height": 800
@@ -3082,37 +3082,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0C8J292WF/1.jpg",
+        "url": "/images/products/B0C8J292WF/1.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J292WF/2.jpg",
+        "url": "/images/products/B0C8J292WF/2.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J292WF/3.jpg",
+        "url": "/images/products/B0C8J292WF/3.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J292WF/4.jpg",
+        "url": "/images/products/B0C8J292WF/4.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J292WF/5.jpg",
+        "url": "/images/products/B0C8J292WF/5.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0C8J292WF/6.jpg",
+        "url": "/images/products/B0C8J292WF/6.webp",
         "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
         "width": 800,
         "height": 800
@@ -3152,31 +3152,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CBT7B1TY/1.jpg",
+        "url": "/images/products/B0CBT7B1TY/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7B1TY/3.jpg",
+        "url": "/images/products/B0CBT7B1TY/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7B1TY/4.jpg",
+        "url": "/images/products/B0CBT7B1TY/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7B1TY/5.jpg",
+        "url": "/images/products/B0CBT7B1TY/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7B1TY/6.jpg",
+        "url": "/images/products/B0CBT7B1TY/6.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
         "width": 800,
         "height": 800
@@ -3216,37 +3216,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CBT7R7NN/1.jpg",
+        "url": "/images/products/B0CBT7R7NN/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7R7NN/3.jpg",
+        "url": "/images/products/B0CBT7R7NN/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7R7NN/4.jpg",
+        "url": "/images/products/B0CBT7R7NN/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7R7NN/5.jpg",
+        "url": "/images/products/B0CBT7R7NN/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7R7NN/6.jpg",
+        "url": "/images/products/B0CBT7R7NN/6.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7R7NN/nano-banana-pro-1776232286608.jpg",
+        "url": "/images/products/B0CBT7R7NN/nano-banana-pro-1776232286608.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
         "width": 800,
         "height": 800
@@ -3286,31 +3286,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CBT7RFK2/1.jpg",
+        "url": "/images/products/B0CBT7RFK2/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7RFK2/3.jpg",
+        "url": "/images/products/B0CBT7RFK2/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7RFK2/4.jpg",
+        "url": "/images/products/B0CBT7RFK2/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7RFK2/5.jpg",
+        "url": "/images/products/B0CBT7RFK2/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CBT7RFK2/6.jpg",
+        "url": "/images/products/B0CBT7RFK2/6.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
         "width": 800,
         "height": 800
@@ -3350,37 +3350,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CC5RGRPS/1.jpg",
+        "url": "/images/products/B0CC5RGRPS/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5RGRPS/2.jpg",
+        "url": "/images/products/B0CC5RGRPS/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5RGRPS/3.jpg",
+        "url": "/images/products/B0CC5RGRPS/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5RGRPS/4.jpg",
+        "url": "/images/products/B0CC5RGRPS/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5RGRPS/5.jpg",
+        "url": "/images/products/B0CC5RGRPS/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5RGRPS/6.jpg",
+        "url": "/images/products/B0CC5RGRPS/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
         "width": 800,
         "height": 800
@@ -3420,31 +3420,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CC5TLWFS/1.jpg",
+        "url": "/images/products/B0CC5TLWFS/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5TLWFS/2.jpg",
+        "url": "/images/products/B0CC5TLWFS/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5TLWFS/3.jpg",
+        "url": "/images/products/B0CC5TLWFS/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5TLWFS/4.jpg",
+        "url": "/images/products/B0CC5TLWFS/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5TLWFS/5.jpg",
+        "url": "/images/products/B0CC5TLWFS/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
         "width": 800,
         "height": 800
@@ -3484,31 +3484,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CC5VNQY3/1.jpg",
+        "url": "/images/products/B0CC5VNQY3/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5VNQY3/2.jpg",
+        "url": "/images/products/B0CC5VNQY3/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5VNQY3/3.jpg",
+        "url": "/images/products/B0CC5VNQY3/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5VNQY3/4.jpg",
+        "url": "/images/products/B0CC5VNQY3/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5VNQY3/5.jpg",
+        "url": "/images/products/B0CC5VNQY3/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
         "width": 800,
         "height": 800
@@ -3548,175 +3548,175 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CC5WN6JJ/1.jpg",
+        "url": "/images/products/B0CC5WN6JJ/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/2.jpg",
+        "url": "/images/products/B0CC5WN6JJ/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/3.jpg",
+        "url": "/images/products/B0CC5WN6JJ/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/4.jpg",
+        "url": "/images/products/B0CC5WN6JJ/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/5.jpg",
+        "url": "/images/products/B0CC5WN6JJ/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-1885-Warm cozy indoor-outdoor lifestyle shot,....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-1885-Warm cozy indoor-outdoor lifestyle shot,....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-2189-Photorealistic lifestyle product shot, 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-2189-Photorealistic lifestyle product shot, 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-2441-Commercial product photography, set of 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-2441-Commercial product photography, set of 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-3493-Commercial product photography, set of 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-3493-Commercial product photography, set of 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-3503-Lifestyle product photography, set of 2 ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-3503-Lifestyle product photography, set of 2 ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4145-Photorealistic lifestyle product shot, 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4145-Photorealistic lifestyle product shot, 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4164-High-end cinematic product photography, ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4164-High-end cinematic product photography, ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4400-Warm cozy indoor-outdoor lifestyle shot,....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4400-Warm cozy indoor-outdoor lifestyle shot,....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4890-Warm cozy indoor-outdoor lifestyle shot,....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4890-Warm cozy indoor-outdoor lifestyle shot,....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4937-Elegant French country garden lifestyle ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-4937-Elegant French country garden lifestyle ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6232-Lifestyle product photography, set of 2 ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6232-Lifestyle product photography, set of 2 ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6375-Elegant French country garden lifestyle ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6375-Elegant French country garden lifestyle ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6523-Photorealistic lifestyle product shot, 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6523-Photorealistic lifestyle product shot, 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6656-High-end cinematic product photography, ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-6656-High-end cinematic product photography, ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7306-Commercial product photography, set of 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7306-Commercial product photography, set of 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7338-Elegant French country garden lifestyle ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7338-Elegant French country garden lifestyle ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7479-Warm cozy indoor-outdoor lifestyle shot,....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7479-Warm cozy indoor-outdoor lifestyle shot,....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7751-Lifestyle product photography, set of 2 ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-7751-Lifestyle product photography, set of 2 ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8666-Elegant French country garden lifestyle ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8666-Elegant French country garden lifestyle ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8747-High-end cinematic product photography, ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8747-High-end cinematic product photography, ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8817-High-end cinematic product photography, ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-8817-High-end cinematic product photography, ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9053-Lifestyle product photography, set of 2 ....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9053-Lifestyle product photography, set of 2 ....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9485-Commercial product photography, set of 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9485-Commercial product photography, set of 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9713-Photorealistic lifestyle product shot, 2....png",
+        "url": "/images/products/B0CC5WN6JJ/jimeng-2026-04-04-9713-Photorealistic lifestyle product shot, 2....webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
         "width": 800,
         "height": 800
@@ -3756,25 +3756,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CC5Y77DC/1.jpg",
+        "url": "/images/products/B0CC5Y77DC/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Butterfly)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5Y77DC/2.jpg",
+        "url": "/images/products/B0CC5Y77DC/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Butterfly)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5Y77DC/3.jpg",
+        "url": "/images/products/B0CC5Y77DC/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Butterfly)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CC5Y77DC/5.jpg",
+        "url": "/images/products/B0CC5Y77DC/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Butterfly)",
         "width": 800,
         "height": 800
@@ -3814,25 +3814,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CJ8TJL56/1.jpg",
+        "url": "/images/products/B0CJ8TJL56/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJ8TJL56/2.jpg",
+        "url": "/images/products/B0CJ8TJL56/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJ8TJL56/3.jpg",
+        "url": "/images/products/B0CJ8TJL56/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJ8TJL56/4.jpg",
+        "url": "/images/products/B0CJ8TJL56/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
@@ -3872,19 +3872,19 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CJHSLCZ5/1.jpg",
+        "url": "/images/products/B0CJHSLCZ5/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJHSLCZ5/2.jpg",
+        "url": "/images/products/B0CJHSLCZ5/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJHSLCZ5/3.jpg",
+        "url": "/images/products/B0CJHSLCZ5/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
@@ -3924,25 +3924,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CJHX7XKL/1.jpg",
+        "url": "/images/products/B0CJHX7XKL/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJHX7XKL/2.jpg",
+        "url": "/images/products/B0CJHX7XKL/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJHX7XKL/3.jpg",
+        "url": "/images/products/B0CJHX7XKL/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CJHX7XKL/4.jpg",
+        "url": "/images/products/B0CJHX7XKL/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
@@ -3982,127 +3982,127 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQBZM49V/1.jpg",
+        "url": "/images/products/B0CQBZM49V/1.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/2.jpg",
+        "url": "/images/products/B0CQBZM49V/2.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/3.jpg",
+        "url": "/images/products/B0CQBZM49V/3.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/4.jpg",
+        "url": "/images/products/B0CQBZM49V/4.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/5.jpg",
+        "url": "/images/products/B0CQBZM49V/5.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/6.jpg",
+        "url": "/images/products/B0CQBZM49V/6.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_g03oq9g03oq9g03o (1).png",
+        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_g03oq9g03oq9g03o (1).webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_s8z5dts8z5dts8z5 (1).png",
+        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_s8z5dts8z5dts8z5 (1).webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_w6eqdiw6eqdiw6eq.png",
+        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_w6eqdiw6eqdiw6eq.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-1780-Hyperrealistic warm minimalist product p....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-1780-Hyperrealistic warm minimalist product p....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-2079-Hyperrealistic warm minimalist product p....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-2079-Hyperrealistic warm minimalist product p....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-3805-Photorealistic 8K lifestyle product shot....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-3805-Photorealistic 8K lifestyle product shot....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-4110-Hyperrealistic warm minimalist product p....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-4110-Hyperrealistic warm minimalist product p....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-5430-Photorealistic warm minimalist living ro....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-5430-Photorealistic warm minimalist living ro....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7313-Photorealistic 8K lifestyle product shot....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7313-Photorealistic 8K lifestyle product shot....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7573-Hyperrealistic warm minimalist product p....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7573-Hyperrealistic warm minimalist product p....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-8337-Photorealistic 8K lifestyle product shot....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-8337-Photorealistic 8K lifestyle product shot....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-9243-Photorealistic 8K lifestyle product shot....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-9243-Photorealistic 8K lifestyle product shot....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-09-7321-Hyper-realistic commercial lifestyle pho....png",
+        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-09-7321-Hyper-realistic commercial lifestyle pho....webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775546845583.jpg",
+        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775546845583.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775558573205.jpg",
+        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775558573205.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
@@ -4142,37 +4142,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQC5QJFJ/1.jpg",
+        "url": "/images/products/B0CQC5QJFJ/1.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC5QJFJ/2.jpg",
+        "url": "/images/products/B0CQC5QJFJ/2.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC5QJFJ/3.jpg",
+        "url": "/images/products/B0CQC5QJFJ/3.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC5QJFJ/4.jpg",
+        "url": "/images/products/B0CQC5QJFJ/4.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC5QJFJ/5.jpg",
+        "url": "/images/products/B0CQC5QJFJ/5.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC5QJFJ/6.jpg",
+        "url": "/images/products/B0CQC5QJFJ/6.webp",
         "altText": "Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
@@ -4212,37 +4212,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQC6H9MZ/1.jpg",
+        "url": "/images/products/B0CQC6H9MZ/1.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/2.jpg",
+        "url": "/images/products/B0CQC6H9MZ/2.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/3.jpg",
+        "url": "/images/products/B0CQC6H9MZ/3.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/4.jpg",
+        "url": "/images/products/B0CQC6H9MZ/4.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/5.jpg",
+        "url": "/images/products/B0CQC6H9MZ/5.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/6.jpg",
+        "url": "/images/products/B0CQC6H9MZ/6.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
@@ -4282,31 +4282,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CW182MCY/1.jpg",
+        "url": "/images/products/B0CW182MCY/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW182MCY/2.jpg",
+        "url": "/images/products/B0CW182MCY/2.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW182MCY/3.jpg",
+        "url": "/images/products/B0CW182MCY/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW182MCY/4.jpg",
+        "url": "/images/products/B0CW182MCY/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW182MCY/5.jpg",
+        "url": "/images/products/B0CW182MCY/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
         "width": 800,
         "height": 800
@@ -4346,25 +4346,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CW193N7M/1.jpg",
+        "url": "/images/products/B0CW193N7M/1.webp",
         "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW193N7M/2.jpg",
+        "url": "/images/products/B0CW193N7M/2.webp",
         "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW193N7M/6.jpg",
+        "url": "/images/products/B0CW193N7M/6.webp",
         "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW193N7M/7.jpg",
+        "url": "/images/products/B0CW193N7M/7.webp",
         "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
         "width": 800,
         "height": 800
@@ -4404,31 +4404,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CW19GMPQ/1.jpg",
+        "url": "/images/products/B0CW19GMPQ/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW19GMPQ/2.jpg",
+        "url": "/images/products/B0CW19GMPQ/2.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW19GMPQ/3.jpg",
+        "url": "/images/products/B0CW19GMPQ/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW19GMPQ/4.jpg",
+        "url": "/images/products/B0CW19GMPQ/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW19GMPQ/5.jpg",
+        "url": "/images/products/B0CW19GMPQ/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
         "width": 800,
         "height": 800
@@ -4468,37 +4468,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CW1H96Y5/1.jpg",
+        "url": "/images/products/B0CW1H96Y5/1.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW1H96Y5/2.jpg",
+        "url": "/images/products/B0CW1H96Y5/2.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW1H96Y5/3.jpg",
+        "url": "/images/products/B0CW1H96Y5/3.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW1H96Y5/4.jpg",
+        "url": "/images/products/B0CW1H96Y5/4.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW1H96Y5/5.jpg",
+        "url": "/images/products/B0CW1H96Y5/5.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CW1H96Y5/6.jpg",
+        "url": "/images/products/B0CW1H96Y5/6.webp",
         "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
         "width": 800,
         "height": 800
@@ -4538,175 +4538,175 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CXDZF2WQ/1.jpg",
+        "url": "/images/products/B0CXDZF2WQ/1.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/2.jpg",
+        "url": "/images/products/B0CXDZF2WQ/2.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/3.jpg",
+        "url": "/images/products/B0CXDZF2WQ/3.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/4.jpg",
+        "url": "/images/products/B0CXDZF2WQ/4.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/5.jpg",
+        "url": "/images/products/B0CXDZF2WQ/5.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/6.jpg",
+        "url": "/images/products/B0CXDZF2WQ/6.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/7.jpg",
+        "url": "/images/products/B0CXDZF2WQ/7.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-1464-Commercial lifestyle product photography....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-1464-Commercial lifestyle product photography....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3315-Editorial lifestyle product image, set o....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3315-Editorial lifestyle product image, set o....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3427-Warm homely lifestyle photograph, 2 oran....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3427-Warm homely lifestyle photograph, 2 oran....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3473-Editorial lifestyle product image, set o....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3473-Editorial lifestyle product image, set o....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3850-Commercial lifestyle product photography....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-3850-Commercial lifestyle product photography....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-4818-Editorial lifestyle product image, set o....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-4818-Editorial lifestyle product image, set o....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-5057-Warm homely lifestyle photograph, 2 oran....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-5057-Warm homely lifestyle photograph, 2 oran....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-5645-Editorial lifestyle product image, set o....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-5645-Editorial lifestyle product image, set o....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-7671-Commercial lifestyle product photography....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-7671-Commercial lifestyle product photography....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-8340-Warm homely lifestyle photograph, 2 oran....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-8340-Warm homely lifestyle photograph, 2 oran....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-8424-Warm homely lifestyle photograph, 2 oran....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-8424-Warm homely lifestyle photograph, 2 oran....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-9090-Commercial lifestyle product photography....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-04-9090-Commercial lifestyle product photography....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-1025-Aesthetic lifestyle commercial photograp....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-1025-Aesthetic lifestyle commercial photograp....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-4529-Lifestyle product photography, set of 4 ....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-4529-Lifestyle product photography, set of 4 ....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5075-Commercial product photography, set of 4....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5075-Commercial product photography, set of 4....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5319-Commercial product photography, set of 4....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5319-Commercial product photography, set of 4....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5926-Aesthetic lifestyle commercial photograp....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-5926-Aesthetic lifestyle commercial photograp....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-6913-Lifestyle product photography, set of 4 ....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-6913-Lifestyle product photography, set of 4 ....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-6914-Commercial product photography, set of 4....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-6914-Commercial product photography, set of 4....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-7817-Lifestyle product photography, set of 4 ....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-7817-Lifestyle product photography, set of 4 ....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-8460-Commercial product photography, set of 4....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-8460-Commercial product photography, set of 4....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-8564-Lifestyle product photography, set of 4 ....png",
+        "url": "/images/products/B0CXDZF2WQ/jimeng-2026-04-06-8564-Lifestyle product photography, set of 4 ....webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
         "width": 800,
         "height": 800
@@ -4746,43 +4746,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0D5DNWX8J/1.jpg",
+        "url": "/images/products/B0D5DNWX8J/1.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/2.jpg",
+        "url": "/images/products/B0D5DNWX8J/2.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/3.jpg",
+        "url": "/images/products/B0D5DNWX8J/3.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/4.jpg",
+        "url": "/images/products/B0D5DNWX8J/4.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/5.jpg",
+        "url": "/images/products/B0D5DNWX8J/5.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/6.jpg",
+        "url": "/images/products/B0D5DNWX8J/6.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D5DNWX8J/7.jpg",
+        "url": "/images/products/B0D5DNWX8J/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
@@ -4822,43 +4822,43 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0D9LH1Y55/1.jpg",
+        "url": "/images/products/B0D9LH1Y55/1.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/2.jpg",
+        "url": "/images/products/B0D9LH1Y55/2.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/3.jpg",
+        "url": "/images/products/B0D9LH1Y55/3.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/4.jpg",
+        "url": "/images/products/B0D9LH1Y55/4.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/5.jpg",
+        "url": "/images/products/B0D9LH1Y55/5.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/6.jpg",
+        "url": "/images/products/B0D9LH1Y55/6.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0D9LH1Y55/7.jpg",
+        "url": "/images/products/B0D9LH1Y55/7.webp",
         "altText": "Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
         "width": 800,
         "height": 800
@@ -4898,67 +4898,67 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1XFWZVY/1.jpg",
+        "url": "/images/products/B0F1XFWZVY/1.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/2.jpg",
+        "url": "/images/products/B0F1XFWZVY/2.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/3.jpg",
+        "url": "/images/products/B0F1XFWZVY/3.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/4.jpg",
+        "url": "/images/products/B0F1XFWZVY/4.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/5.jpg",
+        "url": "/images/products/B0F1XFWZVY/5.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/6.jpg",
+        "url": "/images/products/B0F1XFWZVY/6.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-1642-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-1642-Photorealistic commercial product photog....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-2138-Photorealistic lifestyle commercial phot....png",
+        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-2138-Photorealistic lifestyle commercial phot....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-6642-Photorealistic lifestyle product photogr....png",
+        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-6642-Photorealistic lifestyle product photogr....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-6913-Photorealistic lifestyle commercial phot....png",
+        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-6913-Photorealistic lifestyle commercial phot....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-9328-Photorealistic lifestyle commercial phot....png",
+        "url": "/images/products/B0F1XFWZVY/jimeng-2026-04-02-9328-Photorealistic lifestyle commercial phot....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
         "width": 800,
         "height": 800
@@ -4998,97 +4998,97 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1XMTYNC/1.jpg",
+        "url": "/images/products/B0F1XMTYNC/1.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/2.jpg",
+        "url": "/images/products/B0F1XMTYNC/2.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/3.jpg",
+        "url": "/images/products/B0F1XMTYNC/3.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/4.jpg",
+        "url": "/images/products/B0F1XMTYNC/4.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/5.jpg",
+        "url": "/images/products/B0F1XMTYNC/5.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/6.jpg",
+        "url": "/images/products/B0F1XMTYNC/6.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-1883-Warm lifestyle commercial product shot, ....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-1883-Warm lifestyle commercial product shot, ....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-2400-Cinematic commercial product photography....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-2400-Cinematic commercial product photography....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-2946-Cinematic commercial product photography....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-2946-Cinematic commercial product photography....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-5495-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-5495-Photorealistic commercial product photog....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-5684-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-5684-Photorealistic commercial product photog....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-6399-Cinematic commercial product photography....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-6399-Cinematic commercial product photography....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-7442-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-7442-Photorealistic commercial product photog....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-7612-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-7612-Photorealistic commercial product photog....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-8196-Cinematic commercial product photography....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-8196-Cinematic commercial product photography....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-8227-Warm lifestyle commercial product shot, ....png",
+        "url": "/images/products/B0F1XMTYNC/jimeng-2026-04-02-8227-Warm lifestyle commercial product shot, ....webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
         "width": 800,
         "height": 800
@@ -5128,55 +5128,55 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1XS27XS/1.jpg",
+        "url": "/images/products/B0F1XS27XS/1.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/2.jpg",
+        "url": "/images/products/B0F1XS27XS/2.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/3.jpg",
+        "url": "/images/products/B0F1XS27XS/3.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/4.jpg",
+        "url": "/images/products/B0F1XS27XS/4.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/5.png",
+        "url": "/images/products/B0F1XS27XS/5.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/6.png",
+        "url": "/images/products/B0F1XS27XS/6.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/7.png",
+        "url": "/images/products/B0F1XS27XS/7.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/8.png",
+        "url": "/images/products/B0F1XS27XS/8.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS27XS/9.png",
+        "url": "/images/products/B0F1XS27XS/9.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
         "width": 800,
         "height": 800
@@ -5216,31 +5216,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1XS7VKY/1.jpg",
+        "url": "/images/products/B0F1XS7VKY/1.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS7VKY/2.jpg",
+        "url": "/images/products/B0F1XS7VKY/2.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS7VKY/3.jpg",
+        "url": "/images/products/B0F1XS7VKY/3.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS7VKY/5.jpg",
+        "url": "/images/products/B0F1XS7VKY/5.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1XS7VKY/6.jpg",
+        "url": "/images/products/B0F1XS7VKY/6.webp",
         "altText": "Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
         "width": 800,
         "height": 800
@@ -5280,25 +5280,25 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1Y4J48T/1.jpg",
+        "url": "/images/products/B0F1Y4J48T/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Green & Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y4J48T/2.jpg",
+        "url": "/images/products/B0F1Y4J48T/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Green & Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y4J48T/3.jpg",
+        "url": "/images/products/B0F1Y4J48T/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Green & Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y4J48T/4.jpg",
+        "url": "/images/products/B0F1Y4J48T/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Green & Brown)",
         "width": 800,
         "height": 800
@@ -5338,37 +5338,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1Y91HPR/1.jpg",
+        "url": "/images/products/B0F1Y91HPR/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y91HPR/2.jpg",
+        "url": "/images/products/B0F1Y91HPR/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y91HPR/3.jpg",
+        "url": "/images/products/B0F1Y91HPR/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y91HPR/4.jpg",
+        "url": "/images/products/B0F1Y91HPR/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y91HPR/jimeng-2026-04-02-1125-Warm photorealistic lifestyle product ph....png",
+        "url": "/images/products/B0F1Y91HPR/jimeng-2026-04-02-1125-Warm photorealistic lifestyle product ph....webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1Y91HPR/jimeng-2026-04-02-5812-Photorealistic commercial lifestyle prod....png",
+        "url": "/images/products/B0F1Y91HPR/jimeng-2026-04-02-5812-Photorealistic commercial lifestyle prod....webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
         "width": 800,
         "height": 800
@@ -5408,37 +5408,37 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F1YCXTRX/1.jpg",
+        "url": "/images/products/B0F1YCXTRX/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1YCXTRX/2.jpg",
+        "url": "/images/products/B0F1YCXTRX/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1YCXTRX/3.jpg",
+        "url": "/images/products/B0F1YCXTRX/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1YCXTRX/4.jpg",
+        "url": "/images/products/B0F1YCXTRX/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-3037-Photorealistic commercial lifestyle phot....png",
+        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-3037-Photorealistic commercial lifestyle phot....webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-5250-Photorealistic commercial lifestyle phot....png",
+        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-5250-Photorealistic commercial lifestyle phot....webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
         "width": 800,
         "height": 800
@@ -5478,31 +5478,31 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F62XRB55/1.jpg",
+        "url": "/images/products/B0F62XRB55/1.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F62XRB55/2.jpg",
+        "url": "/images/products/B0F62XRB55/2.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F62XRB55/4.jpg",
+        "url": "/images/products/B0F62XRB55/4.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F62XRB55/5.jpg",
+        "url": "/images/products/B0F62XRB55/5.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0F62XRB55/6.jpg",
+        "url": "/images/products/B0F62XRB55/6.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
         "width": 800,
         "height": 800
@@ -5542,49 +5542,49 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0FNQRRV78/1.jpg",
+        "url": "/images/products/B0FNQRRV78/1.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/2.jpg",
+        "url": "/images/products/B0FNQRRV78/2.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/3.jpg",
+        "url": "/images/products/B0FNQRRV78/3.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/4.jpg",
+        "url": "/images/products/B0FNQRRV78/4.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/5.png",
+        "url": "/images/products/B0FNQRRV78/5.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/6.png",
+        "url": "/images/products/B0FNQRRV78/6.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/7.png",
+        "url": "/images/products/B0FNQRRV78/7.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0FNQRRV78/8.png",
+        "url": "/images/products/B0FNQRRV78/8.webp",
         "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
         "width": 800,
         "height": 800
@@ -5624,13 +5624,13 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0G6M3F7CY/jimeng-2026-03-18-9847-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....png",
+        "url": "/images/products/B0G6M3F7CY/jimeng-2026-03-18-9847-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (12x20 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6M3F7CY/jimeng-2026-03-18-9988-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....png",
+        "url": "/images/products/B0G6M3F7CY/jimeng-2026-03-18-9988-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (12x20 Inch)",
         "width": 800,
         "height": 800
@@ -5670,289 +5670,289 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0G6MPTVFD/1.jpg",
+        "url": "/images/products/B0G6MPTVFD/1.webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/2.jpg",
+        "url": "/images/products/B0G6MPTVFD/2.webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/4.jpg",
+        "url": "/images/products/B0G6MPTVFD/4.webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-2037-Warm home aesthetic photography, main su....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-2037-Warm home aesthetic photography, main su....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-3365-Warm home aesthetic photography, main su....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-3365-Warm home aesthetic photography, main su....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-3997-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-3997-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-4435-Warm home aesthetic photography, main su....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-4435-Warm home aesthetic photography, main su....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-4528-Warm home aesthetic photography, main su....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-4528-Warm home aesthetic photography, main su....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-5831-Commercial e-commerce product photograph....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-5831-Commercial e-commerce product photograph....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-7104-Warm home aesthetic photography, main su....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-7104-Warm home aesthetic photography, main su....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-7939-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-7939-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-8695-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-17-8695-提示词 3：【高级感种草・侘寂风书房场景 _ 极简高级英文描述】 Premium....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-3610-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-3610-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-5290-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-5290-【跨境爆款首选·热带风户外庭院场景】 Commercial e-commerce....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-7632-【氛围感种草·度假风卧室床头场景】 Premium warm lifestyle....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-18-7632-【氛围感种草·度假风卧室床头场景】 Premium warm lifestyle....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-1297-Commercial lifestyle photography, photor....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-1297-Commercial lifestyle photography, photor....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2290-Commercial lifestyle photography, photor....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2290-Commercial lifestyle photography, photor....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2352-Lifestyle product photography, ultra-rea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2352-Lifestyle product photography, ultra-rea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2671-Commercial product photography, photorea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-2671-Commercial product photography, photorea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4302-Commercial product photography, photorea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4302-Commercial product photography, photorea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4416-Lifestyle product photography, ultra-rea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4416-Lifestyle product photography, ultra-rea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4726-Commercial product photography, photorea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-4726-Commercial product photography, photorea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5158-Commercial product photography, photorea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5158-Commercial product photography, photorea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5278-Commercial lifestyle photography, photor....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5278-Commercial lifestyle photography, photor....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5503-2 pieces of plump white rectangular diam....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-5503-2 pieces of plump white rectangular diam....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-6098-Lifestyle product photography, ultra-rea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-6098-Lifestyle product photography, ultra-rea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-8741-Lifestyle product photography, ultra-rea....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-21-8741-Lifestyle product photography, ultra-rea....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-1726-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-1726-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-2240-Ultra-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-2240-Ultra-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-2489-Ultra-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-2489-Ultra-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-3081-Warm photorealistic lifestyle shot, 2 wh....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-3081-Warm photorealistic lifestyle shot, 2 wh....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4001-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4001-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4075-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4075-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4079-Warm photorealistic lifestyle shot, 2 wh....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-4079-Warm photorealistic lifestyle shot, 2 wh....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-5714-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-5714-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7029-Ultra-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7029-Ultra-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7148-Ultra-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7148-Ultra-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7785-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-7785-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9232-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9232-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9330-Photorealistic commercial product photog....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9330-Photorealistic commercial product photog....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9924-Warm photorealistic lifestyle shot, 2 wh....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-22-9924-Warm photorealistic lifestyle shot, 2 wh....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-1276-Hyper-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-1276-Hyper-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-4564-Photorealistic professional commercial p....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-4564-Photorealistic professional commercial p....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-5427-Hyper-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-5427-Hyper-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-6175-Photorealistic professional commercial p....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-6175-Photorealistic professional commercial p....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-6849-Hyper-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-6849-Hyper-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-9076-Photorealistic professional commercial p....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-9076-Photorealistic professional commercial p....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800
       },
       {
-        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-9965-Hyper-realistic commercial product photo....png",
+        "url": "/images/products/B0G6MPTVFD/jimeng-2026-03-26-9965-Hyper-realistic commercial product photo....webp",
         "altText": "Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
         "width": 800,
         "height": 800

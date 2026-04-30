@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 mb-10">
           <div>
             <img
-              src={resolveUrl('/images/brand/makimoo-logo.png')}
+              src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
               className="h-16 w-auto object-contain"
               style={{ filter: 'brightness(0) invert(1)' }}
