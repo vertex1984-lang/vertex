@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DIST_DIR = path.join(__dirname, '../dist');
+const DIST_DIR = path.join(__dirname, '../out');
 
 /**
  * 计算从 HTML 文件到 dist 根目录的相对路径前缀
