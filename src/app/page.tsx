@@ -53,7 +53,7 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section
-        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 sm:pt-24 lg:pt-28 pb-12 sm:pb-48 lg:pb-52"
+        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 sm:pt-24 lg:pt-28 pb-[78px] sm:pb-48 lg:pb-52"
         style={{
           backgroundImage: `url(${resolveUrl('/images/brand/hero-bg.webp')})`,
           backgroundSize: 'cover',
@@ -139,22 +139,22 @@ export default function HomePage() {
       </section>
 
       {/* Collection Banner - Desktop */}
-      <section className="w-full hidden sm:block">
+      <a href={resolveUrl('/products')} className="w-full hidden sm:block">
         <img
           src={resolveUrl('/images/brand/collection-banner.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block"
         />
-      </section>
+      </a>
       {/* Collection Banner - Mobile */}
-      <section className="w-full sm:hidden">
+      <a href={resolveUrl('/products')} className="w-full sm:hidden">
         <img
           src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block object-contain"
           style={{ maxHeight: 'none' }}
         />
-      </section>
+      </a>
 
       {/* Featured Products Section */}
       <section className="py-20 px-6 lg:px-10">
