@@ -184,7 +184,7 @@ export default function HomePage() {
       </section>
 
       {/* About Banner */}
-      <section className="relative w-full -mt-[15px] -mb-[15px]">
+      <a href={resolveUrl('/products')} className="block relative w-full -mt-[15px] -mb-[15px]">
         {/* Desktop: img tag */}
         <img
           src={resolveUrl('/images/brand/about-banner.webp')}
@@ -206,29 +206,19 @@ export default function HomePage() {
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(248, 245, 240, 0.55)' }}
           />
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center pt-[30px] lg:items-start lg:justify-center lg:text-left lg:pl-[100px]">
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-[#8B5A2B] uppercase tracking-wide mb-8">
-            Simple Life,<br />Better Comfort
-          </h2>
-          <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4">
-            <a
-              href={resolveUrl('/products')}
-              className="px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <h2 className="text-3xl font-extrabold text-[#8B5A2B] uppercase tracking-wide mb-6">
+              Simple Life,<br />Better Comfort
+            </h2>
+            <span
+              className="inline-block px-7 py-3 rounded-full text-sm font-semibold text-white"
               style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
             >
               Shop the Collection
-            </a>
-            <a
-              href={resolveUrl('/about')}
-              className="px-7 py-3 rounded-full text-sm font-semibold bg-white text-[#333] transition hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ border: '2px solid #333' }}
-            >
-              Learn Our Story
-            </a>
+            </span>
           </div>
         </div>
-      </section>
+      </a>
 
       {/* Newsletter */}
       <section className="py-20 px-6 lg:px-10">
