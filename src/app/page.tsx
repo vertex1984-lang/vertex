@@ -65,7 +65,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{ backgroundColor: 'rgba(248, 245, 240, 0.7)' }}
         />
-        <div className="relative z-10 max-w-2xl mx-auto">
+        <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]">
           <h4 className="text-sm font-semibold tracking-widest uppercase text-[#333] mb-3">
             Makimoo Brand Guidelines in Action
           </h4>
