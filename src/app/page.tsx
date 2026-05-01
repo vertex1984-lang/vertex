@@ -72,8 +72,9 @@ export default function HomePage() {
           <h1 className="text-4xl lg:text-6xl font-extrabold text-[#8B5A2B] mb-6 leading-tight">
             SIMPLE LIFE,<br />BETTER COMFORT.
           </h1>
-          <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto">
-            Experience premium, overstuffed comfort for indoor and outdoor living, crafted with materials you&apos;ll love.
+          <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto text-center">
+            Experience comfort for indoor and outdoor living,<br />
+            crafted with materials you&apos;ll love.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -184,12 +185,29 @@ export default function HomePage() {
       </section>
 
       {/* About Banner */}
-      <section className="relative w-full">
+      <section className="relative w-full -mt-[15px] -mb-[15px]">
+        {/* Desktop: img tag */}
         <img
           src={resolveUrl('/images/brand/about-banner.webp')}
           alt="Makimoo Brand Story"
-          className="w-full h-auto block"
+          className="w-full h-auto block hidden sm:block"
         />
+        {/* Mobile: background image with fade */}
+        <div
+          className="w-full sm:hidden"
+          style={{
+            backgroundImage: `url(${resolveUrl('/images/brand/about-banner-mobile.png')})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '400px',
+            position: 'relative',
+          }}
+        >
+          <div
+            className="absolute inset-0"
+            style={{ backgroundColor: 'rgba(248, 245, 240, 0.55)' }}
+          />
+        </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center pt-[30px] lg:items-start lg:justify-center lg:text-left lg:pl-[100px]">
           <h2 className="text-3xl lg:text-5xl font-extrabold text-[#8B5A2B] uppercase tracking-wide mb-8">
             Simple Life,<br />Better Comfort

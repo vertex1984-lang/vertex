@@ -25,11 +25,11 @@ export default function CollectionCard({ title, description, image, href }: Coll
           className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-105"
         />
       </div>
-      <div className="text-center">
+      <div className="flex flex-col items-center flex-1 text-center">
         <h3 className="text-sm font-bold uppercase tracking-wide mb-1">{title}</h3>
-        <p className="text-xs text-[#333] mb-3 leading-relaxed">{description}</p>
+        <p className="text-xs text-[#333] mb-3 leading-relaxed flex-1">{description}</p>
         <span
-          className="inline-block px-5 py-2 text-xs font-semibold text-white rounded-full transition hover:-translate-y-0.5"
+          className="inline-block px-5 py-2 text-xs font-semibold text-white rounded-full transition hover:-translate-y-0.5 mt-auto"
           style={{ backgroundColor: '#8B5A2B' }}
         >
           Explore
