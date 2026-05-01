@@ -73,8 +73,7 @@ export default function HomePage() {
             SIMPLE LIFE,<br />BETTER COMFORT.
           </h1>
           <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto text-center">
-            Experience comfort for indoor and outdoor living,<br />
-            crafted with materials you&apos;ll love.
+            Experience comfort for living, crafted with materials you&apos;ll love.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
