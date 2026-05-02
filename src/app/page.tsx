@@ -191,33 +191,12 @@ export default function HomePage() {
           alt="Makimoo Brand Story"
           className="w-full h-auto block hidden sm:block"
         />
-        {/* Mobile: background image with fade */}
-        <div
-          className="w-full sm:hidden"
-          style={{
-            backgroundImage: `url(${resolveUrl('/images/brand/about-banner-mobile.png')})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: '400px',
-            position: 'relative',
-          }}
-        >
-          <div
-            className="absolute inset-0"
-            style={{ backgroundColor: 'rgba(248, 245, 240, 0.55)' }}
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <h2 className="text-3xl font-extrabold text-[#8B5A2B] uppercase tracking-wide mb-6">
-              Simple Life,<br />Better Comfort
-            </h2>
-            <span
-              className="inline-block px-7 py-3 rounded-full text-sm font-semibold text-white"
-              style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
-            >
-              Shop the Collection
-            </span>
-          </div>
-        </div>
+        {/* Mobile: img tag (no fade, no text) */}
+        <img
+          src={resolveUrl('/images/brand/about-banner-mobile.webp')}
+          alt="Makimoo Brand Story"
+          className="w-full h-auto block sm:hidden"
+        />
       </a>
 
       {/* Newsletter */}
