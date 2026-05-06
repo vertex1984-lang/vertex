@@ -28,10 +28,11 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
     );
   }
 
-  // Use Shopify price if available, otherwise local price
+  // Use Shopify price if available; no Shopify data = not in stock, no price
+  const hasShopifyData = product.hasShopifyData;
+  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-  const isInStock = product.hasShopifyData ? (product.shopifyAvailable ?? true) : product.availableForSale;
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
@@ -125,11 +126,17 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
             </div>
 
             {/* Price */}
-            <div className="flex items-center gap-3 mb-8">
-              <span className="text-3xl font-bold text-[#8B5A2B]">${displayPrice}</span>
-              <span className="text-lg text-[#999] line-through">${(parseFloat(displayPrice) * 1.3).toFixed(2)}</span>
-              <span className="px-2 py-1 rounded text-xs font-semibold text-white bg-red-500">Save 24%</span>
-            </div>
+            {isInStock ? (
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-3xl font-bold text-[#8B5A2B]">${displayPrice}</span>
+                <span className="text-lg text-[#999] line-through">${(parseFloat(displayPrice) * 1.3).toFixed(2)}</span>
+                <span className="px-2 py-1 rounded text-xs font-semibold text-white bg-red-500">Save 24%</span>
+              </div>
+            ) : (
+              <div className="mb-8">
+                <span className="text-xl font-semibold text-[#999]">Out of Stock</span>
+              </div>
+            )}
 
             {/* Features */}
             <div className="space-y-4 mb-8">
@@ -291,7 +298,9 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                     </tr>
                     <tr className="border-b border-[#E8E2DA]">
                       <td className="py-3 text-sm text-[#555]">Price</td>
-                      <td className="py-3 text-sm text-[#333] font-medium">${displayPrice} {displayCurrency}</td>
+                      <td className={`py-3 text-sm font-medium ${isInStock ? 'text-[#333]' : 'text-[#999]'}`}>
+                        {isInStock ? `$${displayPrice} ${displayCurrency}` : 'Out of Stock'}
+                      </td>
                     </tr>
                     <tr className="border-b border-[#E8E2DA]">
                       <td className="py-3 text-sm text-[#555]">Availability</td>
