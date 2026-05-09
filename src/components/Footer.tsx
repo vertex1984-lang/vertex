@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Support</h4>
             <div className="flex flex-col gap-1">
-              <span className="text-sm opacity-60 py-1 cursor-default">Contact Us</span>
+              <a href={resolveUrl('/contact')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Contact Us</a>
               <span className="text-sm opacity-60 py-1 cursor-default">FAQ</span>
               <span className="text-sm opacity-60 py-1 cursor-default">Shipping & Returns</span>
             </div>

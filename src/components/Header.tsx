@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'Home Fragrance', href: '/products?cat=home-fragrance' },
   { label: 'Others', href: '/products?cat=others' },
   { label: 'Our Comfort Story', href: '/about' },
+  { label: 'Contact Us', href: '/contact' },
 ];
 
 export default function Header() {
