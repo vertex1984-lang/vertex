@@ -1,4 +1,5 @@
 import CollectionCard from '@/components/CollectionCard';
+import HeroCarousel from '@/components/HeroCarousel';
 import ProductCard from '@/components/ProductCard';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
@@ -53,69 +54,58 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section
-        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 sm:pt-24 lg:pt-28 pb-[78px] sm:pb-48 lg:pb-52"
-        style={{
-          backgroundImage: `url(${resolveUrl('/images/brand/hero-bg.webp')})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          paddingTop: '104px',
-        }}
+        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 h-[500px] sm:h-[560px] lg:h-[640px]"
       >
-        <div
-          className="absolute inset-0"
-          style={{ backgroundColor: 'rgba(248, 245, 240, 0.7)' }}
-        />
-        <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]">
-          <h4 className="text-lg font-semibold tracking-widest uppercase text-[#333] mb-3">
-            Makimoo Home
-          </h4>
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#8B5A2B] mb-6 leading-tight">
-            SIMPLE LIFE,<br />BETTER COMFORT.
-          </h1>
-          <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto text-center">
-            Experience comfort for living, crafted with materials you&apos;ll love.
-          </p>
-          <a
-            href={resolveUrl('/products')}
-            className="px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-            style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
-          >
-            Shop the Collection
-          </a>
-        </div>
+        <HeroCarousel />
       </section>
 
       {/* Features Strip */}
       <div
-        className="relative w-full border-t px-6 lg:px-10 py-2 sm:py-10 -mt-4 sm:-mt-[60px] z-10"
+        className="relative w-full border-t px-6 lg:px-10 py-5 z-10"
         style={{ backgroundColor: '#F8F5F0', borderColor: 'rgba(0,0,0,0.05)' }}
       >
-        <div className="max-w-4xl mx-auto hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="text-3xl mb-4">🛏️</div>
-            <h3 className="text-lg font-bold mb-4">Plump Comfort</h3>
-            <ul className="text-xs font-medium text-left inline-block space-y-2">
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Plump, overstuffed design</li>
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">High-density compressed poly-fiber fill</li>
-            </ul>
+            <div className="mb-4 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                  <path d="M12 8.5c-.5-.8-1.5-1.3-2.5-1.3-1.8 0-3.2 1.4-3.2 3.2 0 2.2 2.5 4.8 5.7 7.6 3.2-2.8 5.7-5.4 5.7-7.6 0-1.8-1.4-3.2-3.2-3.2-1 0-2 .5-2.5 1.3z" fill="currentColor" stroke="none" />
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold mb-3 tracking-wide">WARM & COMFORTABLE</h3>
+            <p className="text-sm text-[#555] leading-relaxed">
+              Everyone deserves a home that feels like a warm embrace.
+            </p>
           </div>
           <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="text-3xl mb-4">🌤️</div>
-            <h3 className="text-lg font-bold mb-4">Durable Design</h3>
-            <ul className="text-xs font-medium text-left inline-block space-y-2">
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Premium outdoor polyester fabric</li>
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">UV-fade resistant print</li>
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Water-repellent surface</li>
-            </ul>
+            <div className="mb-4 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold mb-3 tracking-wide">SIMPLE & THOUGHTFUL</h3>
+            <p className="text-sm text-[#555] leading-relaxed">
+              Bringing comfort to your home is our mission.
+            </p>
           </div>
           <div className="text-center px-6">
-            <div className="text-3xl mb-4">🫧</div>
-            <h3 className="text-lg font-bold mb-4">Hassle-Free Care</h3>
-            <ul className="text-xs font-medium text-left inline-block space-y-2">
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Reinforced canvas ties</li>
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Spot clean & air dry</li>
-              <li className="pl-5 relative before:content-['✓'] before:absolute before:left-0 before:text-[#8B5A2B] before:font-bold">Breathable non-slip base</li>
-            </ul>
+            <div className="mb-4 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold mb-3 tracking-wide">MADE FOR BETTER LIVING</h3>
+            <p className="text-sm text-[#555] leading-relaxed">
+              Making your life simpler is our top priority.
+            </p>
           </div>
         </div>
       </div>
@@ -130,19 +120,19 @@ export default function HomePage() {
       </section>
 
       {/* Collection Banner - Desktop */}
-      <a href={resolveUrl('/products')} className="w-full hidden sm:block">
+      <a href={resolveUrl('/products')} className="w-full hidden sm:block overflow-hidden">
         <img
           src={resolveUrl('/images/brand/collection-banner.webp')}
           alt="Makimoo Collection Banner"
-          className="w-full h-auto block"
+          className="w-full h-auto block transition-transform duration-500 hover:scale-105"
         />
       </a>
       {/* Collection Banner - Mobile */}
-      <a href={resolveUrl('/products')} className="w-full sm:hidden">
+      <a href={resolveUrl('/products')} className="w-full sm:hidden overflow-hidden">
         <img
           src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
-          className="w-full h-auto block object-contain"
+          className="w-full h-auto block object-contain transition-transform duration-500 hover:scale-105"
           style={{ maxHeight: 'none' }}
         />
       </a>
@@ -175,18 +165,18 @@ export default function HomePage() {
       </section>
 
       {/* About Banner */}
-      <a href={resolveUrl('/products')} className="block relative w-full -mt-[15px] -mb-[15px]">
+      <a href={resolveUrl('/products')} className="block relative w-full -mt-[15px] -mb-[15px] overflow-hidden">
         {/* Desktop: img tag */}
         <img
           src={resolveUrl('/images/brand/about-banner.webp')}
           alt="Makimoo Brand Story"
-          className="w-full h-auto block hidden sm:block"
+          className="w-full h-auto block hidden sm:block transition-transform duration-500 hover:scale-105"
         />
         {/* Mobile: img tag (no fade, no text) */}
         <img
           src={resolveUrl('/images/brand/about-banner-mobile.webp')}
           alt="Makimoo Brand Story"
-          className="w-full h-auto block sm:hidden"
+          className="w-full h-auto block sm:hidden transition-transform duration-500 hover:scale-105"
         />
       </a>
 
