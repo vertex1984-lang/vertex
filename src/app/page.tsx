@@ -66,31 +66,22 @@ export default function HomePage() {
           style={{ backgroundColor: 'rgba(248, 245, 240, 0.7)' }}
         />
         <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]">
-          <h4 className="text-sm font-semibold tracking-widest uppercase text-[#333] mb-3">
-            Makimoo Brand Guidelines in Action
+          <h4 className="text-lg font-semibold tracking-widest uppercase text-[#333] mb-3">
+            Makimoo Home
           </h4>
-          <h1 className="text-4xl lg:text-6xl font-extrabold text-[#8B5A2B] mb-6 leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#8B5A2B] mb-6 leading-tight">
             SIMPLE LIFE,<br />BETTER COMFORT.
           </h1>
           <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto text-center">
             Experience comfort for living, crafted with materials you&apos;ll love.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href={resolveUrl('/products')}
-              className="px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
-            >
-              Shop the Collection
-            </a>
-            <a
-              href={resolveUrl('/about')}
-              className="px-7 py-3 rounded-full text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-[#333] hover:text-white"
-              style={{ color: '#333', border: '2px solid #333' }}
-            >
-              Learn Our Story
-            </a>
-          </div>
+          <a
+            href={resolveUrl('/products')}
+            className="px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+            style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
+          >
+            Shop the Collection
+          </a>
         </div>
       </section>
 

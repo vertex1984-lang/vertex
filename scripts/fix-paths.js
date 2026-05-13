@@ -107,6 +107,12 @@ function fixFile(filePath) {
   // /privacy/ (带尾随斜杠)
   fixed = fixed.replace(/href="\/privacy\/"/g, `href="${prefix}privacy/index.html"`);
 
+  // /terms (无尾随斜杠)
+  fixed = fixed.replace(/href="\/terms"/g, `href="${prefix}terms/index.html"`);
+
+  // /terms/ (带尾随斜杠)
+  fixed = fixed.replace(/href="\/terms\/"/g, `href="${prefix}terms/index.html"`);
+
   // ===== 第三步：修复残留的相对路径目录链接 =====
 
   // href="./xxx/" → href="./xxx/index.html"
@@ -175,6 +181,9 @@ function fixFile(filePath) {
 
   // RSC /privacy
   fixed = fixed.replace(/\\"href\\":\\"\/privacy\\"/g, `\\"href\\":\\"${prefix}privacy/index.html\\"`);
+
+  // RSC /terms
+  fixed = fixed.replace(/\\"href\\":\\"\/terms\\"/g, `\\"href\\":\\"${prefix}terms/index.html\\"`);
 
   // RSC / (首页)
   fixed = fixed.replace(/\\"href\\":\\"\/\\"/g, `\\"href\\":\\"${prefix}index.html\\"`);

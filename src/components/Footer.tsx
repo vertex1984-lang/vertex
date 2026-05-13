@@ -39,6 +39,7 @@ export default function Footer() {
               <a href={resolveUrl('/contact')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Contact Us</a>
               <a href={resolveUrl('/shipping-returns')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Shipping & Returns</a>
               <a href={resolveUrl('/privacy')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Privacy Policy</a>
+              <a href={resolveUrl('/terms')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Terms of Service</a>
               <span className="text-sm opacity-60 py-1 cursor-default">FAQ</span>
             </div>
           </div>
