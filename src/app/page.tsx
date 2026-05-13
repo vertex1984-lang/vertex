@@ -138,7 +138,7 @@ export default function HomePage() {
       </a>
 
       {/* Featured Products Section */}
-      <section className="py-20 px-6 lg:px-10">
+      <section className="pt-20 pb-8 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-xl mx-auto mb-12">
             <p className="text-sm font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Best Sellers</p>
@@ -160,6 +160,62 @@ export default function HomePage() {
             >
               View All Products
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Worry-Free Purchase */}
+      <section className="px-6 lg:px-10 py-[30px] mb-[60px]" style={{ backgroundColor: '#F8F5F0' }}>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl lg:text-3xl font-extrabold text-[#333] mb-8 text-center">Worry-Free Purchase</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Free Shipping */}
+            <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                  <svg className="w-7 h-7 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold mb-2 tracking-wide text-[#333]">Free Shipping</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                We offer free shipping on all orders on our website.
+              </p>
+            </div>
+            {/* Free Return */}
+            <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                  <svg className="w-7 h-7 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="1 4 1 10 7 10" />
+                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold mb-2 tracking-wide text-[#333]">Free Return</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                We will cover return shipping cost.
+              </p>
+            </div>
+            {/* 60-Day Return */}
+            <div className="text-center px-6">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-[#E8E2DA] flex items-center justify-center">
+                  <svg className="w-7 h-7 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold mb-2 tracking-wide text-[#333]">60-Day Return</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                We offer extended return period of 60 days.
+              </p>
+            </div>
           </div>
         </div>
       </section>
