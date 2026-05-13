@@ -89,6 +89,24 @@ function fixFile(filePath) {
   // /cart/ (带尾随斜杠)
   fixed = fixed.replace(/href="\/cart\/"/g, `href="${prefix}cart/index.html"`);
 
+  // /contact (无尾随斜杠)
+  fixed = fixed.replace(/href="\/contact"/g, `href="${prefix}contact/index.html"`);
+
+  // /contact/ (带尾随斜杠)
+  fixed = fixed.replace(/href="\/contact\/"/g, `href="${prefix}contact/index.html"`);
+
+  // /shipping-returns (无尾随斜杠)
+  fixed = fixed.replace(/href="\/shipping-returns"/g, `href="${prefix}shipping-returns/index.html"`);
+
+  // /shipping-returns/ (带尾随斜杠)
+  fixed = fixed.replace(/href="\/shipping-returns\/"/g, `href="${prefix}shipping-returns/index.html"`);
+
+  // /privacy (无尾随斜杠)
+  fixed = fixed.replace(/href="\/privacy"/g, `href="${prefix}privacy/index.html"`);
+
+  // /privacy/ (带尾随斜杠)
+  fixed = fixed.replace(/href="\/privacy\/"/g, `href="${prefix}privacy/index.html"`);
+
   // ===== 第三步：修复残留的相对路径目录链接 =====
 
   // href="./xxx/" → href="./xxx/index.html"
@@ -148,6 +166,15 @@ function fixFile(filePath) {
 
   // RSC /cart
   fixed = fixed.replace(/\\"href\\":\\"\/cart\\"/g, `\\"href\\":\\"${prefix}cart/index.html\\"`);
+
+  // RSC /contact
+  fixed = fixed.replace(/\\"href\\":\\"\/contact\\"/g, `\\"href\\":\\"${prefix}contact/index.html\\"`);
+
+  // RSC /shipping-returns
+  fixed = fixed.replace(/\\"href\\":\\"\/shipping-returns\\"/g, `\\"href\\":\\"${prefix}shipping-returns/index.html\\"`);
+
+  // RSC /privacy
+  fixed = fixed.replace(/\\"href\\":\\"\/privacy\\"/g, `\\"href\\":\\"${prefix}privacy/index.html\\"`);
 
   // RSC / (首页)
   fixed = fixed.replace(/\\"href\\":\\"\/\\"/g, `\\"href\\":\\"${prefix}index.html\\"`);

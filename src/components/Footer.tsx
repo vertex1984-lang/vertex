@@ -37,8 +37,9 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Support</h4>
             <div className="flex flex-col gap-1">
               <a href={resolveUrl('/contact')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Contact Us</a>
+              <a href={resolveUrl('/shipping-returns')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Shipping & Returns</a>
+              <a href={resolveUrl('/privacy')} className="text-sm opacity-60 hover:opacity-100 transition py-1">Privacy Policy</a>
               <span className="text-sm opacity-60 py-1 cursor-default">FAQ</span>
-              <span className="text-sm opacity-60 py-1 cursor-default">Shipping & Returns</span>
             </div>
           </div>
         </div>

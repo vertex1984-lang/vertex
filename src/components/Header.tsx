@@ -11,7 +11,6 @@ const navLinks = [
   { label: 'Travel', href: '/products?cat=travel' },
   { label: 'Home Fragrance', href: '/products?cat=home-fragrance' },
   { label: 'Others', href: '/products?cat=others' },
-  { label: 'Our Comfort Story', href: '/about' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
