@@ -12,6 +12,7 @@ interface ProductDetailClientProps {
 export default function ProductDetailClient({ handle }: ProductDetailClientProps) {
   const product = getProductByHandle(handle);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'description' | 'specifications'>('description');
   const [quantity, setQuantity] = useState(1);
   const [addingToCart, setAddingToCart] = useState(false);
@@ -82,11 +83,14 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Product Images */}
           <div>
-            <div className="aspect-square rounded-xl overflow-hidden bg-white mb-4 border border-[#E8E2DA]">
+            <div
+              className="aspect-square rounded-xl overflow-hidden bg-white mb-4 border border-[#E8E2DA] cursor-zoom-in relative group"
+              onClick={() => setLightboxOpen(true)}
+            >
               <img
                 src={resolveUrl(product.images[selectedImage]?.url || '')}
                 alt={product.images[selectedImage]?.altText || product.title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
               />
             </div>
             {product.images.length > 1 && (
@@ -145,7 +149,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                   <svg className="w-5 h-5 text-[#8B5A2B] mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M20 6L9 17l-5-5"/>
                   </svg>
-                  <span className="text-sm text-[#555]">{feature.trim()}</span>
+                  <span className="text-base text-[#555]">{feature.trim()}</span>
                 </div>
               ))}
             </div>
@@ -231,19 +235,19 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 </svg>
-                <span className="text-xs text-[#555]">30-Day Returns</span>
+                <span className="text-sm text-[#555]">30-Day Returns</span>
               </div>
               <div className="flex flex-col items-center text-center gap-2">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
                 </svg>
-                <span className="text-xs text-[#555]">Fast Shipping</span>
+                <span className="text-sm text-[#555]">Fast Shipping</span>
               </div>
               <div className="flex flex-col items-center text-center gap-2">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 </svg>
-                <span className="text-xs text-[#555]">Secure Payment</span>
+                <span className="text-sm text-[#555]">Secure Payment</span>
               </div>
             </div>
           </div>
@@ -315,6 +319,28 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
           </div>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-[9999] bg-black/80 flex items-center justify-center p-4 cursor-zoom-out"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] w-full">
+            <img
+              src={resolveUrl(product.images[selectedImage]?.url || '')}
+              alt={product.images[selectedImage]?.altText || product.title}
+              className="w-full h-full max-h-[85vh] object-contain rounded-lg"
+            />
+            <button
+              onClick={(e) => { e.stopPropagation(); setLightboxOpen(false); }}
+              className="absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 text-[#333] hover:bg-white flex items-center justify-center text-2xl font-bold transition shadow-md"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

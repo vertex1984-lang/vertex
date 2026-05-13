@@ -54,7 +54,7 @@ export default function Header() {
             <a
               key={link.href}
               href={resolveUrl(link.href)}
-              className="relative py-1 text-[#333] hover:text-[#8B5A2B] transition-colors group"
+              className="relative py-1 text-base text-[#333] hover:text-[#8B5A2B] transition-colors group"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B5A2B] transition-all group-hover:w-full" />
