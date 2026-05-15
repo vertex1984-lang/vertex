@@ -1,8 +1,30 @@
 import CollectionCard from '@/components/CollectionCard';
 import HeroCarousel from '@/components/HeroCarousel';
 import ProductCard from '@/components/ProductCard';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
+import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
+
+const FEATURED_ASINS = [
+  'B0BCJQYYL1',
+  'B098F1BKJQ',
+  'B0BZCLN57S',
+  'B0CBT7R7NN',
+  'B0CC5RGRPS',
+  'B0CW19GMPQ',
+  'B0F1XMTYNC',
+  'B0G6MPTVFD',
+  'B0C4B9T6JV',
+  'B0CQC5QJFJ',
+  'B0CJ8TJL56',
+  'B0F1YCXTRX',
+];
+
+const featuredProducts = FEATURED_ASINS.map((asin) => {
+  const product = PRODUCTS_DATA.find((p) => p.asin.toUpperCase() === asin.toUpperCase());
+  if (!product) return null;
+  const featuredImage = `/images/featured/${asin.toLowerCase()}.png`;
+  return { ...product, featuredImage } as MakimooProduct;
+}).filter(Boolean) as MakimooProduct[];
 
 const collections = [
   {
@@ -148,7 +170,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            {enrichProductsWithShopifyData(PRODUCTS_DATA.slice(0, 8)).map((product) => (
+            {enrichProductsWithShopifyData(featuredProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

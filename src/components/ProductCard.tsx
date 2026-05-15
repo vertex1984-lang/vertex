@@ -6,7 +6,9 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const image = product.images[0];
+  const image = product.featuredImage
+    ? { url: product.featuredImage, altText: product.title, width: 800, height: 800 }
+    : product.images[0];
   const hasShopifyData = product.hasShopifyData;
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;

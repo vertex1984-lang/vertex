@@ -19,6 +19,8 @@ export interface MakimooProduct {
   shopifyCurrencyCode?: string;
   shopifyImages?: string[];
   hasShopifyData?: boolean;
+  // Featured image override (optional)
+  featuredImage?: string;
 }
 
 export const PRODUCTS_DATA: MakimooProduct[] = [
