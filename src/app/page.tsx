@@ -150,7 +150,7 @@ export default function HomePage() {
         />
       </a>
       {/* Collection Banner - Mobile */}
-      <a href={resolveUrl('/products')} className="w-full sm:hidden overflow-hidden">
+      <a href={resolveUrl('/products')} className="w-full sm:hidden block overflow-hidden mt-[50px]">
         <img
           src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
