@@ -11,13 +11,13 @@ const slides = [
     title: 'Simple Life, Better Comfort',
   },
   {
-    image: '/images/brand/hero-bg-2.png',
+    image: '/images/brand/hero-bg-2.webp',
     alt: 'Makimoo Hero Background 2',
     subtitle: 'Pillow & Cushions Collection',
     title: 'Simple Life, Better Comfort',
   },
   {
-    image: '/images/brand/hero-bg-3.png',
+    image: '/images/brand/hero-bg-3.webp',
     alt: 'Makimoo Hero Background 3',
     subtitle: 'Pillow & Cushions Collection',
     title: 'Simple Life, Better Comfort',
