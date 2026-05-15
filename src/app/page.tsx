@@ -152,7 +152,7 @@ export default function HomePage() {
       {/* Collection Banner - Mobile */}
       <a href={resolveUrl('/products')} className="w-full sm:hidden overflow-hidden">
         <img
-          src={resolveUrl('/images/brand/collection-banner-new.webp')}
+          src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block object-contain transition-transform duration-500 hover:scale-105"
           style={{ maxHeight: 'none' }}
@@ -252,7 +252,7 @@ export default function HomePage() {
         />
         {/* Mobile: img tag (no fade, no text) */}
         <img
-          src={resolveUrl('/images/brand/about-banner-new.webp')}
+          src={resolveUrl('/images/brand/about-banner-mobile.webp')}
           alt="Makimoo Brand Story"
           className="w-full h-auto block sm:hidden transition-transform duration-500 hover:scale-105"
         />
