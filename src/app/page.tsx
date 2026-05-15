@@ -22,7 +22,7 @@ const FEATURED_ASINS = [
 const featuredProducts = FEATURED_ASINS.map((asin) => {
   const product = PRODUCTS_DATA.find((p) => p.asin.toUpperCase() === asin.toUpperCase());
   if (!product) return null;
-  const featuredImage = `/images/featured/${asin.toLowerCase()}.png`;
+  const featuredImage = `/images/featured/${asin.toLowerCase()}.webp`;
   return { ...product, featuredImage } as MakimooProduct;
 }).filter(Boolean) as MakimooProduct[];
 
@@ -144,7 +144,7 @@ export default function HomePage() {
       {/* Collection Banner - Desktop */}
       <a href={resolveUrl('/products')} className="w-full hidden sm:block overflow-hidden">
         <img
-          src={resolveUrl('/images/brand/collection-banner-new.png')}
+          src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block transition-transform duration-500 hover:scale-105"
         />
@@ -152,7 +152,7 @@ export default function HomePage() {
       {/* Collection Banner - Mobile */}
       <a href={resolveUrl('/products')} className="w-full sm:hidden overflow-hidden">
         <img
-          src={resolveUrl('/images/brand/collection-banner-new.png')}
+          src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
           className="w-full h-auto block object-contain transition-transform duration-500 hover:scale-105"
           style={{ maxHeight: 'none' }}
@@ -246,13 +246,13 @@ export default function HomePage() {
       <a href={resolveUrl('/products')} className="block relative w-full -mt-[15px] -mb-[15px] overflow-hidden">
         {/* Desktop: img tag */}
         <img
-          src={resolveUrl('/images/brand/about-banner-new.png')}
+          src={resolveUrl('/images/brand/about-banner-new.webp')}
           alt="Makimoo Brand Story"
           className="w-full h-auto block hidden sm:block transition-transform duration-500 hover:scale-105"
         />
         {/* Mobile: img tag (no fade, no text) */}
         <img
-          src={resolveUrl('/images/brand/about-banner-new.png')}
+          src={resolveUrl('/images/brand/about-banner-new.webp')}
           alt="Makimoo Brand Story"
           className="w-full h-auto block sm:hidden transition-transform duration-500 hover:scale-105"
         />
