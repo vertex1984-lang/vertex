@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Makimoo | Simple Life, Better Comfort",
-  description: "Experience premium, overstuffed comfort for indoor and outdoor living, crafted with materials you'll love.",
+  title: "Makimoo: Premium Home Essentials",
+  description: "Shop Makimoo Home Products, Bring Comfort to Your Home. Free Shipping & 60-day Worry Free Return",
 };
 
 export default function RootLayout({
