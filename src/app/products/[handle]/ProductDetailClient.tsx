@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart } from '@/lib/cart';
+import { formatPrice } from '@/lib/currency';
 
 interface ProductDetailClientProps {
   handle: string;
@@ -28,6 +29,11 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
       </div>
     );
   }
+
+  // Use Shopify images if available (CDN), otherwise fallback to local images
+  const productImages = (product.shopifyImages && product.shopifyImages.length > 0)
+    ? product.shopifyImages.map((url) => ({ url, altText: product.title, width: 800, height: 800 }))
+    : product.images;
 
   // Use Shopify price if available; no Shopify data = not in stock, no price
   const hasShopifyData = product.hasShopifyData;
@@ -88,14 +94,14 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
               onClick={() => setLightboxOpen(true)}
             >
               <img
-                src={resolveUrl(product.images[selectedImage]?.url || '')}
-                alt={product.images[selectedImage]?.altText || product.title}
+                src={resolveUrl(productImages[selectedImage]?.url || '')}
+                alt={productImages[selectedImage]?.altText || product.title}
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
               />
             </div>
-            {product.images.length > 1 && (
+            {productImages.length > 1 && (
               <div className="flex gap-3 flex-wrap">
-                {product.images.map((img, i) => (
+                {productImages.map((img, i) => (
                   <button
                     key={i}
                     onClick={() => setSelectedImage(i)}
@@ -132,8 +138,8 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
             {/* Price */}
             {isInStock ? (
               <div className="flex items-center gap-3 mb-8">
-                <span className="text-3xl font-bold text-[#8B5A2B]">${displayPrice}</span>
-                <span className="text-lg text-[#999] line-through">${(parseFloat(displayPrice) * 1.3).toFixed(2)}</span>
+                <span className="text-3xl font-bold text-[#8B5A2B]">{formatPrice(displayPrice, displayCurrency)}</span>
+                <span className="text-lg text-[#999] line-through">{formatPrice((parseFloat(displayPrice) * 1.3).toFixed(2), displayCurrency)}</span>
                 <span className="px-2 py-1 rounded text-xs font-semibold text-white bg-red-500">Save 24%</span>
               </div>
             ) : (
@@ -303,7 +309,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                     <tr className="border-b border-[#E8E2DA]">
                       <td className="py-3 text-sm text-[#555]">Price</td>
                       <td className={`py-3 text-sm font-medium ${isInStock ? 'text-[#333]' : 'text-[#999]'}`}>
-                        {isInStock ? `$${displayPrice} ${displayCurrency}` : 'Out of Stock'}
+                        {isInStock ? formatPrice(displayPrice, displayCurrency) : 'Out of Stock'}
                       </td>
                     </tr>
                     <tr className="border-b border-[#E8E2DA]">
@@ -328,8 +334,8 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         >
           <div className="relative max-w-4xl max-h-[90vh] w-full">
             <img
-              src={resolveUrl(product.images[selectedImage]?.url || '')}
-              alt={product.images[selectedImage]?.altText || product.title}
+              src={resolveUrl(productImages[selectedImage]?.url || '')}
+              alt={productImages[selectedImage]?.altText || product.title}
               className="w-full h-full max-h-[85vh] object-contain rounded-lg"
             />
             <button

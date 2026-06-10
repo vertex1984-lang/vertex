@@ -1,14 +1,18 @@
 import { MakimooProduct } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
+import { formatPrice } from '@/lib/currency';
 
 interface ProductCardProps {
   product: MakimooProduct;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  // Priority: featuredImage > Shopify CDN image > local image
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title, width: 800, height: 800 }
-    : product.images[0];
+    : (product.shopifyImages && product.shopifyImages.length > 0)
+      ? { url: product.shopifyImages[0], altText: product.title, width: 800, height: 800 }
+      : product.images[0];
   const hasShopifyData = product.hasShopifyData;
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
@@ -51,8 +55,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </h3>
         {isInStock ? (
           <p className="text-lg font-semibold text-[#8B5A2B]">
-            {displayCurrency === 'USD' ? '$' : displayCurrency + ' '}
-            {displayPrice}
+            {formatPrice(displayPrice, displayCurrency)}
           </p>
         ) : (
           <p className="text-sm font-semibold text-[#999]">

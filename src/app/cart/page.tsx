@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, LocalCartItem } from '@/lib/cart';
+import { formatPrice } from '@/lib/currency';
 
 interface ShopifyCartLine {
   id: string;
@@ -139,7 +140,7 @@ export default function CartPage() {
                           <p className="text-xs text-[#888]">{line.merchandise.title}</p>
                         )}
                         <p className="text-sm text-[#8B5A2B] font-semibold">
-                          ${line.merchandise.price.amount} {line.merchandise.price.currencyCode}
+                          {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
                         </p>
                       </div>
                       <div className="text-sm font-medium text-[#333]">
@@ -174,7 +175,7 @@ export default function CartPage() {
                         <a href={resolveUrl(`/products/${item.handle}/`)}>
                           <h3 className="font-medium text-[#333] hover:text-[#8B5A2B] transition">{item.title}</h3>
                         </a>
-                        <p className="text-sm text-[#8B5A2B] font-semibold">${item.price}</p>
+                        <p className="text-sm text-[#8B5A2B] font-semibold">{formatPrice(item.price, 'EUR')}</p>
                       </div>
                       <div className="flex items-center border rounded-lg overflow-hidden">
                         <button
@@ -212,16 +213,16 @@ export default function CartPage() {
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm text-[#555]">Store Subtotal</span>
-                <span className="text-sm text-[#333]">${shopifySubtotal.toFixed(2)}</span>
+                <span className="text-sm text-[#333]">{formatPrice(shopifySubtotal, 'EUR')}</span>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <span className="text-sm text-[#555]">Amazon Items Subtotal</span>
-                <span className="text-sm text-[#333]">${localSubtotal.toFixed(2)}</span>
+                <span className="text-sm text-[#333]">{formatPrice(localSubtotal, 'EUR')}</span>
               </div>
               <div className="border-t border-[#E8E2DA] pt-4 mb-4">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-medium text-[#333]">Total</span>
-                  <span className="text-xl font-bold text-[#8B5A2B]">${totalSubtotal.toFixed(2)}</span>
+                  <span className="text-xl font-bold text-[#8B5A2B]">{formatPrice(totalSubtotal, 'EUR')}</span>
                 </div>
               </div>
 
