@@ -72,3 +72,9 @@ button {
     transform: translateY(0);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns {
+    animation: none;
+  }
+}

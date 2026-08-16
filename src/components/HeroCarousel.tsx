@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { resolveUrl } from '@/lib/paths';
 
 const slides = [
@@ -24,9 +24,13 @@ const slides = [
   },
 ];
 
+const SWIPE_THRESHOLD = 50;
+
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
 
   const goTo = useCallback((index: number) => {
     if (isTransitioning || index === current) return;
@@ -43,16 +47,40 @@ export default function HeroCarousel() {
     goTo((current - 1 + slides.length) % slides.length);
   }, [current, goTo]);
 
-  // Auto-rotate every 5 seconds
+  // 预加载其余背景图，避免切换时白屏
   useEffect(() => {
+    slides.forEach((slide, index) => {
+      if (index === 0) return;
+      const img = new Image();
+      img.src = resolveUrl(slide.image);
+    });
+  }, []);
+
+  // Auto-rotate every 5 seconds（hover 或用户偏好减少动态时暂停）
+  useEffect(() => {
+    if (paused) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const timer = setInterval(goNext, 5000);
     return () => clearInterval(timer);
-  }, [goNext]);
+  }, [goNext, paused]);
 
   return (
     <>
       {/* Background images */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div
+        className="absolute inset-0 overflow-hidden"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+        onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+        onTouchEnd={(e) => {
+          if (touchStartX.current === null) return;
+          const delta = e.changedTouches[0].clientX - touchStartX.current;
+          touchStartX.current = null;
+          if (Math.abs(delta) < SWIPE_THRESHOLD) return;
+          if (delta < 0) goNext();
+          else goPrev();
+        }}
+      >
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -110,7 +138,7 @@ export default function HeroCarousel() {
       />
 
       {/* Text content - switches with slide */}
-      <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]">
+      <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]" aria-live="polite">
         {/* Render all text layers, fade in/out */}
         {slides.map((slide, index) => (
           <div

@@ -26,7 +26,14 @@ export default function ProductsPage() {
     }
     return '';
   });
-  const [searchQuery, setSearchQuery] = useState('');
+  // 惰性初始化：客户端首次渲染时同步读取 URL 中的 q 参数（Header 搜索跳转入口）
+  const [searchQuery, setSearchQuery] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('q') || '';
+    }
+    return '';
+  });
   const [filtered, setFiltered] = useState<MakimooProduct[]>(
     () => {
       if (typeof window !== 'undefined') {

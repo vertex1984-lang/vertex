@@ -1,3 +1,5 @@
+import Reveal from '@/components/Reveal';
+
 export default function ContactPage() {
   return (
     <div className="px-6 lg:px-10 py-10">
@@ -12,6 +14,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Cards */}
+        <Reveal delay={100}>
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
             <div className="w-14 h-14 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center mx-auto mb-5">
@@ -61,8 +64,10 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
+        </Reveal>
 
         {/* CTA */}
+        <Reveal delay={150}>
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm text-center">
           <h2 className="text-2xl font-bold text-[#333] mb-3">We&apos;d Love to Hear From You</h2>
           <p className="text-[#555] max-w-xl mx-auto mb-6">
@@ -80,6 +85,7 @@ export default function ContactPage() {
             Send Us an Email
           </a>
         </div>
+        </Reveal>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Makimoo: Premium Home Essentials",
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <BackToTop />
         </div>
       </body>
     </html>

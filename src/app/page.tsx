@@ -1,6 +1,9 @@
 import CollectionCard from '@/components/CollectionCard';
 import HeroCarousel from '@/components/HeroCarousel';
 import ProductCard from '@/components/ProductCard';
+import Reveal from '@/components/Reveal';
+import NewsletterForm from '@/components/NewsletterForm';
+import BestSellers from '@/components/BestSellers';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
 
@@ -25,6 +28,18 @@ const featuredProducts = FEATURED_ASINS.map((asin) => {
   const featuredImage = `/images/featured/${asin.toLowerCase()}.webp`;
   return { ...product, featuredImage } as MakimooProduct;
 }).filter(Boolean) as MakimooProduct[];
+
+// Best Sellers：有 Shopify 数据且在售的产品，按标题去重（同款不同色只出现一次），取前 10 个
+const seenTitles = new Set<string>();
+const bestSellers = enrichProductsWithShopifyData(PRODUCTS_DATA)
+  .filter((p) => p.hasShopifyData && p.shopifyAvailable)
+  .filter((p) => {
+    const key = p.title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  })
+  .slice(0, 10);
 
 const collections = [
   {
@@ -134,46 +149,116 @@ export default function HomePage() {
 
       {/* Floating Collection Cards */}
       <section className="px-6 lg:px-10 py-1 sm:py-5 pb-4 sm:pb-16">
-        <div className="mx-auto flex flex-wrap justify-center gap-5">
-          {collections.map((col, i) => (
-            <CollectionCard key={i} {...col} />
-          ))}
-        </div>
+        <Reveal>
+          <div className="mx-auto flex flex-wrap justify-center gap-5">
+            {collections.map((col, i) => (
+              <CollectionCard key={i} {...col} />
+            ))}
+          </div>
+        </Reveal>
       </section>
 
       {/* Collection Banner - Desktop */}
-      <a href={resolveUrl('/products')} className="w-full hidden sm:block overflow-hidden">
+      <div className="relative w-full hidden sm:block overflow-hidden">
         <img
           src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
-          className="w-full h-auto block transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+          className="w-full h-auto block animate-ken-burns"
         />
-      </a>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="px-10 lg:px-20 max-w-xl">
+            <p className="text-white/85 text-sm font-semibold tracking-widest uppercase mb-3">
+              Exclusive Deals
+            </p>
+            <h2 className="text-3xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+              Up to 50% Off
+            </h2>
+            <a
+              href={resolveUrl('/products')}
+              className="group/btn inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              style={{ backgroundColor: '#8B5A2B' }}
+            >
+              Discover Deals
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform group-hover/btn:translate-x-1"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       {/* Collection Banner - Mobile */}
-      <a href={resolveUrl('/products')} className="w-full sm:hidden block overflow-hidden mt-[50px]">
+      <div className="relative w-full sm:hidden overflow-hidden mt-[50px]">
         <img
           src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
-          className="w-full h-auto block object-contain transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+          className="w-full h-auto block object-contain animate-ken-burns"
           style={{ maxHeight: 'none' }}
         />
-      </a>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="px-6 max-w-xs">
+            <p className="text-white/85 text-xs font-semibold tracking-widest uppercase mb-2">
+              Exclusive Deals
+            </p>
+            <h2 className="text-2xl font-extrabold text-white leading-tight mb-4">
+              Up to 50% Off
+            </h2>
+            <a
+              href={resolveUrl('/products')}
+              className="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white"
+              style={{ backgroundColor: '#8B5A2B' }}
+            >
+              Discover Deals
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform group-hover/btn:translate-x-1"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Featured Products Section */}
       <section className="pt-20 pb-8 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <p className="text-sm font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Best Sellers</p>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#333] mb-3">Featured Products</h2>
-            <p className="text-base text-[#555]">
-              Discover our most-loved cushions and pillows, crafted for comfort that lasts.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            {enrichProductsWithShopifyData(featuredProducts).map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <Reveal>
+            <div className="text-center max-w-xl mx-auto mb-12">
+              <p className="text-sm font-semibold tracking-widest uppercase text-brand mb-2">Curated For You</p>
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-charcoal mb-3">Featured Products</h2>
+              <p className="text-base text-charcoal-light">
+                Discover our most-loved cushions and pillows, crafted for comfort that lasts.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+              {enrichProductsWithShopifyData(featuredProducts).map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </Reveal>
           <div className="text-center">
             <a
               href={resolveUrl('/products')}
@@ -242,51 +327,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Banner */}
-      <a href={resolveUrl('/products')} className="block relative w-full -mt-[15px] -mb-[15px] overflow-hidden">
-        {/* Desktop: img tag */}
-        <img
-          src={resolveUrl('/images/brand/about-banner-new.webp')}
-          alt="Makimoo Brand Story"
-          className="w-full h-auto block hidden sm:block transition-transform duration-500 hover:scale-105"
-        />
-        {/* Mobile: img tag (no fade, no text) */}
-        <img
-          src={resolveUrl('/images/brand/about-banner-mobile.webp')}
-          alt="Makimoo Brand Story"
-          className="w-full h-auto block sm:hidden transition-transform duration-500 hover:scale-105"
-        />
-      </a>
+      {/* Best Sellers horizontal scroller (replaces the old "Don't Miss Out" banner; image assets kept in /public/images/brand/) */}
+      <Reveal>
+        <BestSellers products={bestSellers} />
+      </Reveal>
 
       {/* Newsletter */}
       <section className="py-20 px-6 lg:px-10">
-        <div
-          className="max-w-7xl mx-auto rounded-3xl p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10"
-          style={{ backgroundColor: '#8B5A2B' }}
-        >
-          <div>
-            <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-2">Join the Herd</h2>
-            <p className="text-sm text-white/80">
-              Get exclusive access to new collections, seasonal sales, and comfort tips delivered to your inbox.
-            </p>
-          </div>
-          <form className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto lg:min-w-[380px]">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              required
-              className="flex-1 px-5 py-3.5 rounded-lg border-2 border-white/30 bg-white/10 text-white placeholder:text-white/50 outline-none focus:border-white text-sm"
-              style={{ fontFamily: 'Montserrat, sans-serif' }}
+        <Reveal>
+          <div
+            className="relative max-w-7xl mx-auto rounded-3xl p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, #8B5A2B 0%, #6B4220 100%)' }}
+          >
+            {/* Decorative radial glows */}
+            <div
+              className="absolute -top-24 -right-24 w-80 h-80 rounded-full pointer-events-none"
+              style={{ background: 'radial-gradient(circle, rgba(255,248,240,0.18) 0%, transparent 70%)' }}
             />
-            <button
-              type="submit"
-              className="px-6 py-3.5 rounded-full text-sm font-semibold whitespace-nowrap transition hover:bg-[#F8F5F0]"
-              style={{ backgroundColor: '#fff', color: '#8B5A2B' }}
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
+            <div
+              className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full pointer-events-none"
+              style={{ background: 'radial-gradient(circle, rgba(255,248,240,0.12) 0%, transparent 70%)' }}
+            />
+            <div className="relative">
+              <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-2">Join the Herd</h2>
+              <p className="text-sm text-white/80">
+                Get exclusive access to new collections, seasonal sales, and comfort tips delivered to your inbox.
+              </p>
+            </div>
+            <div className="relative w-full lg:w-auto">
+              <NewsletterForm />
+            </div>
+          </div>
+        </Reveal>
       </section>
     </>
   );

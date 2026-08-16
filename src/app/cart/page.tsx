@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { resolveUrl } from '@/lib/paths';
-import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, LocalCartItem } from '@/lib/cart';
+import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, updateShopifyCartLine, removeShopifyCartLine, LocalCartItem } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 
 interface ShopifyCartLine {
@@ -34,6 +34,9 @@ export default function CartPage() {
   const [localItems, setLocalItems] = useState<LocalCartItem[]>([]);
   const [shopifyCart, setShopifyCart] = useState<ShopifyCart | null>(null);
   const [loading, setLoading] = useState(true);
+  // 加载完成前不写回 localStorage，避免用初始空数组覆盖已保存的购物车
+  const [loaded, setLoaded] = useState(false);
+  const [updatingLineId, setUpdatingLineId] = useState<string | null>(null);
 
   useEffect(() => {
     // Load local cart
@@ -52,14 +55,17 @@ export default function CartPage() {
         setShopifyCart(cart as ShopifyCart);
       }
       setLoading(false);
+      setLoaded(true);
     }).catch(() => {
       setLoading(false);
+      setLoaded(true);
     });
   }, []);
 
   useEffect(() => {
+    if (!loaded) return;
     localStorage.setItem('makimoo-cart', JSON.stringify(localItems));
-  }, [localItems]);
+  }, [localItems, loaded]);
 
   const updateLocalQuantity = (id: string, qty: number) => {
     if (qty < 1) {
@@ -74,6 +80,22 @@ export default function CartPage() {
   const removeLocal = (id: string) => {
     const updated = removeFromLocalCart(id);
     setLocalItems(updated);
+  };
+
+  const updateShopifyQuantity = async (lineId: string, qty: number) => {
+    setUpdatingLineId(lineId);
+    const cart = qty < 1
+      ? await removeShopifyCartLine(lineId)
+      : await updateShopifyCartLine(lineId, qty);
+    if (cart) setShopifyCart(cart as ShopifyCart);
+    setUpdatingLineId(null);
+  };
+
+  const removeShopifyLine = async (lineId: string) => {
+    setUpdatingLineId(lineId);
+    const cart = await removeShopifyCartLine(lineId);
+    if (cart) setShopifyCart(cart as ShopifyCart);
+    setUpdatingLineId(null);
   };
 
   // Calculate totals
@@ -91,8 +113,28 @@ export default function CartPage() {
 
   if (loading) {
     return (
-      <div className="px-6 lg:px-10 py-20 text-center">
-        <p className="text-[#555]">Loading cart...</p>
+      <div className="px-6 lg:px-10 py-10">
+        <div className="max-w-4xl mx-auto animate-pulse">
+          <div className="h-9 w-48 bg-[#E8E2DA] rounded mb-8" />
+          <div className="space-y-4 mb-8">
+            {[0, 1].map((i) => (
+              <div key={i} className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+                <div className="w-20 h-20 bg-[#E8E2DA] rounded-lg flex-shrink-0" />
+                <div className="flex-1">
+                  <div className="h-4 bg-[#E8E2DA] rounded w-2/3 mb-2" />
+                  <div className="h-4 bg-[#E8E2DA] rounded w-24" />
+                </div>
+                <div className="h-8 w-24 bg-[#E8E2DA] rounded-lg" />
+              </div>
+            ))}
+          </div>
+          <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="h-4 bg-[#E8E2DA] rounded w-full mb-3" />
+            <div className="h-4 bg-[#E8E2DA] rounded w-full mb-3" />
+            <div className="h-6 bg-[#E8E2DA] rounded w-40 ml-auto mb-4" />
+            <div className="h-12 bg-[#E8E2DA] rounded-full w-full" />
+          </div>
+        </div>
       </div>
     );
   }
@@ -125,17 +167,24 @@ export default function CartPage() {
                   {shopifyCart.lines.edges.map(({ node: line }) => (
                     <div
                       key={line.id}
-                      className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm"
+                      className={`flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm transition-opacity ${
+                        updatingLineId === line.id ? 'opacity-50 pointer-events-none' : ''
+                      }`}
                     >
-                      {line.merchandise.product.images.edges[0]?.node && (
-                        <img
-                          src={line.merchandise.product.images.edges[0].node.url}
-                          alt={line.merchandise.product.images.edges[0].node.altText || line.merchandise.product.title}
-                          className="w-20 h-20 object-cover rounded-lg"
-                        />
-                      )}
+                      <a href={resolveUrl(`/products/${line.merchandise.product.handle}/`)}>
+                        {line.merchandise.product.images.edges[0]?.node && (
+                          <img
+                            src={line.merchandise.product.images.edges[0].node.url}
+                            alt={line.merchandise.product.images.edges[0].node.altText || line.merchandise.product.title}
+                            loading="lazy"
+                            className="w-20 h-20 object-cover rounded-lg"
+                          />
+                        )}
+                      </a>
                       <div className="flex-1">
-                        <h3 className="font-medium text-[#333]">{line.merchandise.product.title}</h3>
+                        <a href={resolveUrl(`/products/${line.merchandise.product.handle}/`)}>
+                          <h3 className="font-medium text-[#333] hover:text-[#8B5A2B] transition">{line.merchandise.product.title}</h3>
+                        </a>
                         {line.merchandise.title !== 'Default Title' && (
                           <p className="text-xs text-[#888]">{line.merchandise.title}</p>
                         )}
@@ -143,9 +192,35 @@ export default function CartPage() {
                           {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
                         </p>
                       </div>
-                      <div className="text-sm font-medium text-[#333]">
-                        Qty: {line.quantity}
+                      <div className="flex items-center border rounded-lg overflow-hidden">
+                        <button
+                          onClick={() => updateShopifyQuantity(line.id, line.quantity - 1)}
+                          disabled={updatingLineId === line.id}
+                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                        >
+                          -
+                        </button>
+                        <span className="px-3 py-1.5 text-sm font-medium min-w-[2rem] text-center">
+                          {line.quantity}
+                        </span>
+                        <button
+                          onClick={() => updateShopifyQuantity(line.id, line.quantity + 1)}
+                          disabled={updatingLineId === line.id}
+                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                        >
+                          +
+                        </button>
                       </div>
+                      <button
+                        onClick={() => removeShopifyLine(line.id)}
+                        disabled={updatingLineId === line.id}
+                        className="text-[#999] hover:text-red-500 transition p-1"
+                        title="Remove"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                      </button>
                     </div>
                   ))}
                 </div>

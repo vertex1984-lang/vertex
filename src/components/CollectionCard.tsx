@@ -22,6 +22,7 @@ export default function CollectionCard({ title, description, image, href }: Coll
         <img
           src={resolveUrl(image)}
           alt={title}
+          loading="lazy"
           className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-105"
         />
       </div>

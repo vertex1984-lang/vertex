@@ -56,3 +56,13 @@ export function resolveUrl(url: string): string {
   resolved = pathPart + queryHash;
   return resolved;
 }
+
+/**
+ * 为 Shopify CDN 图片追加 width 缩放参数，减少传输体积
+ * 非 cdn.shopify.com 的 URL 原样返回
+ */
+export function shopifyImageUrl(url: string, width: number): string {
+  if (!url.includes('cdn.shopify.com')) return url;
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}width=${width}`;
+}

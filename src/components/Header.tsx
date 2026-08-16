@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { resolveUrl } from '@/lib/paths';
+import { getLocalCart, getShopifyCart } from '@/lib/cart';
 
 const navLinks = [
   { label: 'Shop All', href: '/products' },
@@ -18,6 +19,8 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -32,6 +35,52 @@ export default function Header() {
       document.body.style.overflow = '';
     }
   }, [mobileOpen, searchOpen]);
+
+  // Esc 关闭搜索遮罩和移动端菜单
+  useEffect(() => {
+    if (!mobileOpen && !searchOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setMobileOpen(false);
+        setSearchOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [mobileOpen, searchOpen]);
+
+  // 购物车角标：本地购物车 + Shopify 购物车数量之和
+  // 仅在 mount 和购物车变化事件时刷新（Shopify 数量需一次 API 请求，不在渲染期发起）
+  useEffect(() => {
+    let cancelled = false;
+    const refresh = async () => {
+      const localCount = getLocalCart().reduce((sum, item) => sum + item.quantity, 0);
+      let shopifyCount = 0;
+      const cart = await getShopifyCart();
+      if (cart?.lines?.edges) {
+        shopifyCount = cart.lines.edges.reduce(
+          (sum: number, edge: { node: { quantity: number } }) => sum + edge.node.quantity,
+          0
+        );
+      }
+      if (!cancelled) setCartCount(localCount + shopifyCount);
+    };
+    refresh();
+    window.addEventListener('makimoo:cart-updated', refresh);
+    window.addEventListener('storage', refresh);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('makimoo:cart-updated', refresh);
+      window.removeEventListener('storage', refresh);
+    };
+  }, []);
+
+  const handleSearchSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    const q = searchQuery.trim();
+    if (!q) return;
+    window.location.href = resolveUrl(`/products/?q=${encodeURIComponent(q)}`);
+  };
 
   return (
     <>
@@ -75,12 +124,20 @@ export default function Header() {
 
           <a
             href={resolveUrl('/cart')}
-            className="p-2 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition"
-            aria-label="Cart"
+            className="relative p-2 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition"
+            aria-label={cartCount > 0 ? `Cart, ${cartCount} items` : 'Cart'}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M6 6L5 3H2"/>
             </svg>
+            {cartCount > 0 && (
+              <span
+                className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full text-white text-[10px] font-bold flex items-center justify-center"
+                style={{ backgroundColor: '#8B5A2B' }}
+              >
+                {cartCount > 99 ? '99+' : cartCount}
+              </span>
+            )}
           </a>
 
           <button
@@ -140,23 +197,35 @@ export default function Header() {
           className="fixed inset-0 z-[2000] flex flex-col pt-24 px-6"
           style={{ backgroundColor: 'rgba(248,245,240,0.98)' }}
         >
-          <div className="max-w-xl mx-auto w-full flex items-center gap-3">
+          <form onSubmit={handleSearchSubmit} className="max-w-xl mx-auto w-full flex items-center gap-3">
             <input
               type="text"
               placeholder="Search products..."
               autoFocus
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="flex-1 px-5 py-4 rounded-lg text-lg border-2 border-[#E8E2DA] focus:border-[#8B5A2B] outline-none bg-white"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             />
             <button
+              type="submit"
+              className="px-5 py-4 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
+              style={{ backgroundColor: '#8B5A2B' }}
+              aria-label="Submit search"
+            >
+              Search
+            </button>
+            <button
+              type="button"
               onClick={() => setSearchOpen(false)}
               className="text-3xl text-[#555] hover:text-[#333] transition"
+              aria-label="Close search"
             >
               &times;
             </button>
-          </div>
+          </form>
           <div className="max-w-xl mx-auto w-full mt-5 text-sm text-[#555]">
-            Type to search products...
+            Type a keyword and press Enter to search products.
           </div>
         </div>
       )}

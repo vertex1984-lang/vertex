@@ -285,3 +285,77 @@ export const GET_CART = `
     }
   }
 `;
+
+// cart fragment：update/remove 返回结构与 GET_CART 保持一致，前端可直接替换状态
+const CART_FIELDS = `
+  id
+  checkoutUrl
+  lines(first: 50) {
+    edges {
+      node {
+        id
+        quantity
+        merchandise {
+          ... on ProductVariant {
+            id
+            title
+            price {
+              amount
+              currencyCode
+            }
+            product {
+              title
+              handle
+              images(first: 1) {
+                edges {
+                  node {
+                    url
+                    altText
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  cost {
+    subtotalAmount {
+      amount
+      currencyCode
+    }
+    totalAmount {
+      amount
+      currencyCode
+    }
+  }
+`;
+
+export const UPDATE_CART_LINE = `
+  mutation CartLinesUpdate($cartId: ID!, $lines: [CartLineUpdateInput!]!) {
+    cartLinesUpdate(cartId: $cartId, lines: $lines) {
+      cart {
+        ${CART_FIELDS}
+      }
+      userErrors {
+        field
+        message
+      }
+    }
+  }
+`;
+
+export const REMOVE_CART_LINES = `
+  mutation CartLinesRemove($cartId: ID!, $lineIds: [ID!]!) {
+    cartLinesRemove(cartId: $cartId, lineIds: $lineIds) {
+      cart {
+        ${CART_FIELDS}
+      }
+      userErrors {
+        field
+        message
+      }
+    }
+  }
+`;

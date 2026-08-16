@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getProductByHandle } from '@/data/products';
-import { resolveUrl } from '@/lib/paths';
-import { addToShopifyCart, addToLocalCart } from '@/lib/cart';
+import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
+import { addToShopifyCart, addToLocalCart, notifyCartUpdated } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 
 interface ProductDetailClientProps {
@@ -19,6 +19,16 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
   const [addingToCart, setAddingToCart] = useState(false);
   const [cartMessage, setCartMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
 
+  // Esc 关闭 lightbox
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setLightboxOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [lightboxOpen]);
+
   if (!product) {
     return (
       <div className="px-6 lg:px-10 py-20 text-center">
@@ -32,8 +42,15 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
 
   // Use Shopify images if available (CDN), otherwise fallback to local images
   const productImages = (product.shopifyImages && product.shopifyImages.length > 0)
-    ? product.shopifyImages.map((url) => ({ url, altText: product.title, width: 800, height: 800 }))
-    : product.images;
+    ? product.shopifyImages.map((url) => ({
+        url,
+        mainUrl: shopifyImageUrl(url, 1200),
+        thumbUrl: shopifyImageUrl(url, 200),
+        altText: product.title,
+        width: 800,
+        height: 800,
+      }))
+    : product.images.map((img) => ({ ...img, mainUrl: img.url, thumbUrl: img.url }));
 
   // Use Shopify price if available; no Shopify data = not in stock, no price
   const hasShopifyData = product.hasShopifyData;
@@ -50,6 +67,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         // Use Shopify Cart API
         const result = await addToShopifyCart(product.shopifyVariantId, quantity);
         if (result) {
+          notifyCartUpdated();
           setCartMessage({ text: 'Added to cart!', type: 'success' });
         } else {
           setCartMessage({ text: 'Failed to add to cart. Please try again.', type: 'error' });
@@ -94,8 +112,10 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
               onClick={() => setLightboxOpen(true)}
             >
               <img
-                src={resolveUrl(productImages[selectedImage]?.url || '')}
+                src={resolveUrl(productImages[selectedImage]?.mainUrl || '')}
                 alt={productImages[selectedImage]?.altText || product.title}
+                width={productImages[selectedImage]?.width}
+                height={productImages[selectedImage]?.height}
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
               />
             </div>
@@ -109,7 +129,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                       selectedImage === i ? 'border-[#8B5A2B]' : 'border-transparent'
                     }`}
                   >
-                    <img src={resolveUrl(img.url)} alt={img.altText || ''} className="w-full h-full object-cover" />
+                    <img src={resolveUrl(img.thumbUrl)} alt={img.altText || ''} loading="lazy" className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>
@@ -334,7 +354,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         >
           <div className="relative max-w-4xl max-h-[90vh] w-full">
             <img
-              src={resolveUrl(productImages[selectedImage]?.url || '')}
+              src={resolveUrl(productImages[selectedImage]?.mainUrl || '')}
               alt={productImages[selectedImage]?.altText || product.title}
               className="w-full h-full max-h-[85vh] object-contain rounded-lg"
             />

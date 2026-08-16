@@ -1,5 +1,5 @@
 import { MakimooProduct } from '@/data/products';
-import { resolveUrl } from '@/lib/paths';
+import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { formatPrice } from '@/lib/currency';
 
 interface ProductCardProps {
@@ -11,7 +11,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title, width: 800, height: 800 }
     : (product.shopifyImages && product.shopifyImages.length > 0)
-      ? { url: product.shopifyImages[0], altText: product.title, width: 800, height: 800 }
+      ? { url: shopifyImageUrl(product.shopifyImages[0], 600), altText: product.title, width: 800, height: 800 }
       : product.images[0];
   const hasShopifyData = product.hasShopifyData;
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
@@ -28,6 +28,9 @@ export default function ProductCard({ product }: ProductCardProps) {
           <img
             src={resolveUrl(image.url)}
             alt={image.altText || product.title}
+            width={image.width}
+            height={image.height}
+            loading="lazy"
             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
           />
         )}
