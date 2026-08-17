@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shipping & Returns',
+  description: 'Free shipping on all orders and an extended 60-day worry-free return policy at Makimoo.',
+};
+
 export default function ShippingReturnPage() {
   return (
     <div className="px-6 lg:px-10 py-10">

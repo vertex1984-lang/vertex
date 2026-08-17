@@ -1,14 +1,38 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import { GA_MEASUREMENT_ID } from "@/lib/gtag";
+import MiniCart from "@/components/MiniCart";
+import AnalyticsLoader from "@/components/AnalyticsLoader";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
-  title: "Makimoo: Premium Home Essentials",
+  metadataBase: new URL('https://www.makimoohome.com'),
+  title: {
+    default: "Makimoo: Premium Home Essentials",
+    template: "%s | Makimoo",
+  },
   description: "Shop Makimoo Home Products, Bring Comfort to Your Home. Free Shipping & 60-day Worry Free Return",
+  openGraph: {
+    siteName: "Makimoo",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/brand/hero-bg.webp",
+        width: 1915,
+        height: 821,
+        alt: "Makimoo Home — Simple Life, Better Comfort",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -29,20 +53,11 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <BackToTop />
+          <MiniCart />
+          <CookieConsent />
         </div>
-        {/* GA4：全站为原生 <a> 整页跳转，gtag config 的自动 page_view 即可覆盖 */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
+        {/* GA4 仅在用户同意 Cookie 后由 AnalyticsLoader 加载（严格模式） */}
+        <AnalyticsLoader />
       </body>
     </html>
   );

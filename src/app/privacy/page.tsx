@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'How Makimoo collects, uses, and protects your personal information when you shop with us.',
+};
+
 export default function PrivacyPage() {
   return (
     <div className="px-6 lg:px-10 py-10">

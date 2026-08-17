@@ -1,0 +1,289 @@
+'use client';
+
+import { useState, useEffect, useCallback } from 'react';
+import { resolveUrl } from '@/lib/paths';
+import {
+  getLocalCart,
+  updateLocalCartQuantity,
+  removeFromLocalCart,
+  getShopifyCart,
+  updateShopifyCartLine,
+  removeShopifyCartLine,
+  LocalCartItem,
+} from '@/lib/cart';
+import { formatPrice } from '@/lib/currency';
+
+interface ShopifyCartLine {
+  id: string;
+  quantity: number;
+  merchandise: {
+    id: string;
+    title: string;
+    price: { amount: string; currencyCode: string };
+    product: {
+      title: string;
+      handle: string;
+      images: { edges: { node: { url: string; altText: string } }[] };
+    };
+  };
+}
+
+interface ShopifyCart {
+  id: string;
+  checkoutUrl: string;
+  lines: { edges: { node: ShopifyCartLine }[] };
+  cost: {
+    subtotalAmount: { amount: string; currencyCode: string };
+  };
+}
+
+export default function MiniCart() {
+  const [open, setOpen] = useState(false);
+  const [localItems, setLocalItems] = useState<LocalCartItem[]>([]);
+  const [shopifyCart, setShopifyCart] = useState<ShopifyCart | null>(null);
+  const [updatingId, setUpdatingId] = useState<string | null>(null);
+
+  const refresh = useCallback(async () => {
+    setLocalItems(getLocalCart());
+    const cart = await getShopifyCart();
+    setShopifyCart((cart as ShopifyCart) ?? null);
+  }, []);
+
+  // 打开事件 + 购物车变化时刷新
+  useEffect(() => {
+    const onOpen = () => setOpen(true);
+    window.addEventListener('makimoo:minicart-open', onOpen);
+    window.addEventListener('makimoo:cart-updated', refresh);
+    return () => {
+      window.removeEventListener('makimoo:minicart-open', onOpen);
+      window.removeEventListener('makimoo:cart-updated', refresh);
+    };
+  }, [refresh]);
+
+  // 打开时拉取最新 Shopify 购物车；锁定背景滚动
+  useEffect(() => {
+    if (!open) {
+      document.body.style.overflow = '';
+      return;
+    }
+    refresh();
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open, refresh]);
+
+  // Esc 关闭
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [open]);
+
+  const updateLocalQuantity = (id: string, qty: number) => {
+    const updated = qty < 1 ? removeFromLocalCart(id) : updateLocalCartQuantity(id, qty);
+    setLocalItems([...updated]);
+  };
+
+  const updateShopifyQuantity = async (lineId: string, qty: number) => {
+    setUpdatingId(lineId);
+    const cart = qty < 1 ? await removeShopifyCartLine(lineId) : await updateShopifyCartLine(lineId, qty);
+    if (cart) setShopifyCart(cart as ShopifyCart);
+    setUpdatingId(null);
+  };
+
+  const removeShopifyLine = async (lineId: string) => {
+    setUpdatingId(lineId);
+    const cart = await removeShopifyCartLine(lineId);
+    if (cart) setShopifyCart(cart as ShopifyCart);
+    setUpdatingId(null);
+  };
+
+  const shopifyLines = shopifyCart?.lines?.edges ?? [];
+  const hasItems = localItems.length > 0 || shopifyLines.length > 0;
+
+  const localSubtotal = localItems.reduce((sum, item) => sum + parseFloat(item.price) * item.quantity, 0);
+  const shopifySubtotal = shopifyCart ? parseFloat(shopifyCart.cost.subtotalAmount.amount) : 0;
+  const subtotal = localSubtotal + shopifySubtotal;
+
+  return (
+    <>
+      {/* Overlay */}
+      <div
+        className={`fixed inset-0 bg-black/40 z-[1600] transition-opacity duration-300 ${
+          open ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setOpen(false)}
+        aria-hidden="true"
+      />
+
+      {/* Drawer */}
+      <div
+        className={`fixed top-0 right-0 bottom-0 w-full max-w-md z-[1700] flex flex-col transition-transform duration-300 ${
+          open ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ backgroundColor: '#F8F5F0', boxShadow: '-4px 0 20px rgba(0,0,0,0.15)' }}
+        role="dialog"
+        aria-label="Shopping cart"
+      >
+        <div className="flex items-center justify-between px-6 py-5 border-b border-[#E8E2DA]">
+          <h2 className="text-lg font-bold text-[#333]">Your Cart</h2>
+          <button
+            onClick={() => setOpen(false)}
+            className="w-9 h-9 rounded-full border border-[#E8E2DA] flex items-center justify-center text-xl text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
+            aria-label="Close cart"
+          >
+            &times;
+          </button>
+        </div>
+
+        {!hasItems ? (
+          <div className="flex-1 flex flex-col items-center justify-center gap-4 px-6">
+            <p className="text-[#555]">Your cart is empty.</p>
+            <a
+              href={resolveUrl('/products')}
+              className="px-6 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              style={{ backgroundColor: '#8B5A2B' }}
+            >
+              Continue Shopping
+            </a>
+          </div>
+        ) : (
+          <>
+            <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+              {shopifyLines.map(({ node: line }) => (
+                <div
+                  key={line.id}
+                  className={`flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm transition-opacity ${
+                    updatingId === line.id ? 'opacity-50 pointer-events-none' : ''
+                  }`}
+                >
+                  <a href={resolveUrl(`/products/${line.merchandise.product.handle}/`)} onClick={() => setOpen(false)}>
+                    {line.merchandise.product.images.edges[0]?.node && (
+                      <img
+                        src={line.merchandise.product.images.edges[0].node.url}
+                        alt={line.merchandise.product.images.edges[0].node.altText || line.merchandise.product.title}
+                        loading="lazy"
+                        className="w-16 h-16 object-cover rounded-lg"
+                      />
+                    )}
+                  </a>
+                  <div className="flex-1 min-w-0">
+                    <a href={resolveUrl(`/products/${line.merchandise.product.handle}/`)} onClick={() => setOpen(false)}>
+                      <h3 className="text-sm font-medium text-[#333] hover:text-[#8B5A2B] transition line-clamp-2">
+                        {line.merchandise.product.title}
+                      </h3>
+                    </a>
+                    <p className="text-sm text-[#8B5A2B] font-semibold mt-1">
+                      {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
+                    </p>
+                  </div>
+                  <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
+                    <button
+                      onClick={() => updateShopifyQuantity(line.id, line.quantity - 1)}
+                      disabled={updatingId === line.id}
+                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                    >
+                      -
+                    </button>
+                    <span className="px-2 py-1 text-sm font-medium min-w-[1.75rem] text-center">{line.quantity}</span>
+                    <button
+                      onClick={() => updateShopifyQuantity(line.id, line.quantity + 1)}
+                      disabled={updatingId === line.id}
+                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <button
+                    onClick={() => removeShopifyLine(line.id)}
+                    disabled={updatingId === line.id}
+                    className="text-[#999] hover:text-red-500 transition p-1 flex-shrink-0"
+                    title="Remove"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                  </button>
+                </div>
+              ))}
+
+              {localItems.map((item) => (
+                <div key={item.id} className="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
+                  <a href={resolveUrl(`/products/${item.handle}/`)} onClick={() => setOpen(false)}>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      loading="lazy"
+                      className="w-16 h-16 object-cover rounded-lg"
+                    />
+                  </a>
+                  <div className="flex-1 min-w-0">
+                    <a href={resolveUrl(`/products/${item.handle}/`)} onClick={() => setOpen(false)}>
+                      <h3 className="text-sm font-medium text-[#333] hover:text-[#8B5A2B] transition line-clamp-2">{item.title}</h3>
+                    </a>
+                    <p className="text-sm text-[#8B5A2B] font-semibold mt-1">{formatPrice(item.price, 'USD')}</p>
+                  </div>
+                  <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
+                    <button
+                      onClick={() => updateLocalQuantity(item.id, item.quantity - 1)}
+                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                    >
+                      -
+                    </button>
+                    <span className="px-2 py-1 text-sm font-medium min-w-[1.75rem] text-center">{item.quantity}</span>
+                    <button
+                      onClick={() => updateLocalQuantity(item.id, item.quantity + 1)}
+                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <button
+                    onClick={() => updateLocalQuantity(item.id, 0)}
+                    className="text-[#999] hover:text-red-500 transition p-1 flex-shrink-0"
+                    title="Remove"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            {/* Footer: subtotal + actions */}
+            <div className="border-t border-[#E8E2DA] px-6 py-5">
+              <div className="flex justify-between items-center mb-4">
+                <span className="text-sm text-[#555]">Subtotal</span>
+                <span className="text-lg font-bold text-[#8B5A2B]">{formatPrice(subtotal, 'USD')}</span>
+              </div>
+              <div className="flex gap-3">
+                <a
+                  href={resolveUrl('/cart')}
+                  onClick={() => setOpen(false)}
+                  className="flex-1 text-center px-4 py-3 rounded-full text-sm font-semibold border-2 transition hover:bg-[#E8E2DA]"
+                  style={{ borderColor: '#8B5A2B', color: '#8B5A2B' }}
+                >
+                  View Cart
+                </a>
+                {shopifyCart?.checkoutUrl && (
+                  <button
+                    onClick={() => window.open(shopifyCart.checkoutUrl, '_blank')}
+                    className="flex-1 px-4 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+                    style={{ backgroundColor: '#8B5A2B' }}
+                  >
+                    Checkout
+                  </button>
+                )}
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+    </>
+  );
+}

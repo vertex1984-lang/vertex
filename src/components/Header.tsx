@@ -2,7 +2,7 @@
 
 import { useState, useEffect, FormEvent } from 'react';
 import { resolveUrl } from '@/lib/paths';
-import { getLocalCart, getShopifyCart } from '@/lib/cart';
+import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 
 const navLinks = [
   { label: 'Shop All', href: '/products' },
@@ -122,8 +122,8 @@ export default function Header() {
             </svg>
           </button>
 
-          <a
-            href={resolveUrl('/cart')}
+          <button
+            onClick={openMiniCart}
             className="relative p-2 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition"
             aria-label={cartCount > 0 ? `Cart, ${cartCount} items` : 'Cart'}
           >
@@ -138,7 +138,7 @@ export default function Header() {
                 {cartCount > 99 ? '99+' : cartCount}
               </span>
             )}
-          </a>
+          </button>
 
           <button
             onClick={() => setMobileOpen(true)}

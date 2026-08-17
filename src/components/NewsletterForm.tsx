@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import { subscribeCustomer } from '@/lib/customer';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -9,7 +10,7 @@ export default function NewsletterForm() {
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (status === 'loading' || status === 'success') return;
 
@@ -22,11 +23,15 @@ export default function NewsletterForm() {
 
     setStatus('loading');
     setErrorMsg('');
-    // 纯前端模拟提交（无后端）
-    setTimeout(() => {
+    // 真实订阅：Shopify customerCreate（邮箱已注册也视为成功）
+    const result = await subscribeCustomer(trimmed);
+    if (result === 'error') {
+      setStatus('error');
+      setErrorMsg('Something went wrong. Please try again later.');
+    } else {
       setStatus('success');
       setEmail('');
-    }, 1200);
+    }
   };
 
   if (status === 'success') {

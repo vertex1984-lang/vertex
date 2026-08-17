@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'The terms and conditions governing your use of the Makimoo website and purchases of our products.',
+};
+
 export default function TermsPage() {
   return (
     <div className="px-6 lg:px-10 py-10">

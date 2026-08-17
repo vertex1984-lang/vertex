@@ -21,6 +21,11 @@ export interface MakimooProduct {
   hasShopifyData?: boolean;
   // Featured image override (optional)
   featuredImage?: string;
+  // 真实评价数据（可选；用户整理数据时填入即自动显示，无则不渲染评分区）
+  rating?: number;
+  reviewCount?: number;
+  // 真实原价（可选；填入且高于现价时才显示划线价和 Save 徽章）
+  compareAtPrice?: string;
 }
 
 export const PRODUCTS_DATA: MakimooProduct[] = [

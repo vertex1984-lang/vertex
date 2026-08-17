@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import { resolveUrl } from '@/lib/paths';
 import Reveal from '@/components/Reveal';
+
+export const metadata: Metadata = {
+  title: 'Our Story',
+  description: 'Born from a love of simple living and genuine comfort, Makimoo brings warmth to every corner of your home.',
+};
 
 export default function AboutPage() {
   return (

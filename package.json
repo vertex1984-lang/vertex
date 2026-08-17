@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build-shopify-map.js && next build",
-    "build:local": "node scripts/build-shopify-map.js && next build && node scripts/fix-paths.js",
+    "build": "node scripts/build-sitemap.js && node scripts/build-shopify-map.js && next build",
+    "build:local": "node scripts/build-sitemap.js && node scripts/build-shopify-map.js && next build && node scripts/fix-paths.js",
     "start": "next start",
     "lint": "next lint"
   },

@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Reveal from '@/components/Reveal';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Have a question or need support? Reach out to the Makimoo team — we answer every email within 12 hours.',
+};
 
 export default function ContactPage() {
   return (

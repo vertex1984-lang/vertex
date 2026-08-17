@@ -359,3 +359,21 @@ export const REMOVE_CART_LINES = `
     }
   }
 `;
+
+// Newsletter 订阅：创建接受营销的客户账号（密码随机生成，用户不可见）
+export const CUSTOMER_CREATE = `
+  mutation CustomerCreate($input: CustomerCreateInput!) {
+    customerCreate(input: $input) {
+      customer {
+        id
+        email
+        acceptsMarketing
+      }
+      customerUserErrors {
+        field
+        message
+        code
+      }
+    }
+  }
+`;

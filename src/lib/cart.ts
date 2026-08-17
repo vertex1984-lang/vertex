@@ -43,6 +43,12 @@ export function notifyCartUpdated() {
   window.dispatchEvent(new CustomEvent('makimoo:cart-updated'));
 }
 
+// 通知 MiniCart 抽屉打开（Header 购物车图标、加购成功后调用）
+export function openMiniCart() {
+  if (typeof window === 'undefined') return;
+  window.dispatchEvent(new CustomEvent('makimoo:minicart-open'));
+}
+
 export function addToLocalCart(item: LocalCartItem) {
   const cart = getLocalCart();
   const existing = cart.find((i) => i.id === item.id);

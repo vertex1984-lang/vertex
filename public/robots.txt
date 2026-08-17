@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cart/
+Disallow: /404
+
+Sitemap: https://www.makimoohome.com/sitemap.xml

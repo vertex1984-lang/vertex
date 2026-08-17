@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
-import { addToShopifyCart, addToLocalCart, notifyCartUpdated } from '@/lib/cart';
+import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 
@@ -103,6 +103,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         if (result) {
           notifyCartUpdated();
           trackAddToCart();
+          openMiniCart();
           setCartMessage({ text: 'Added to cart!', type: 'success' });
         } else {
           setCartMessage({ text: 'Failed to add to cart. Please try again.', type: 'error' });
@@ -118,6 +119,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
           handle: product.handle,
         });
         trackAddToCart();
+        openMiniCart();
         setCartMessage({ text: 'Added to cart!', type: 'success' });
       }
     } catch {
@@ -179,24 +181,38 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
             </div>
             <h1 className="text-2xl lg:text-3xl font-bold text-[#333] mb-6 leading-tight">{product.title}</h1>
 
-            {/* Rating */}
-            <div className="flex items-center gap-2 mb-5">
-              <div className="flex text-[#FFB800]">
-                {[1,2,3,4,5].map(i => (
-                  <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
-                ))}
+            {/* Rating：仅在有真实评价数据时显示（数据来自产品数据 rating/reviewCount 字段）。
+                接 Judge.me 真实评价的接入点在此 —— 后续可在此渲染 Judge.me 的星级 widget */}
+            {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
+              <div className="flex items-center gap-2 mb-5">
+                <div className="flex text-[#FFB800]">
+                  {[1,2,3,4,5].map(i => (
+                    <svg key={i} width="18" height="18" viewBox="0 0 24 24"
+                      fill={i <= Math.round(product.rating!) ? 'currentColor' : 'none'}
+                      stroke="currentColor" strokeWidth={i <= Math.round(product.rating!) ? 0 : 1.5}
+                    >
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  ))}
+                </div>
+                <span className="text-sm text-[#555]">
+                  {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
+                </span>
               </div>
-              <span className="text-sm text-[#555]">4.8 (1,247 reviews)</span>
-            </div>
+            )}
 
-            {/* Price */}
+            {/* Price：划线价和 Save 徽章仅在有真实 compareAtPrice 且高于现价时显示 */}
             {isInStock ? (
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-3xl font-bold text-[#8B5A2B]">{formatPrice(displayPrice, displayCurrency)}</span>
-                <span className="text-lg text-[#999] line-through">{formatPrice((parseFloat(displayPrice) * 1.3).toFixed(2), displayCurrency)}</span>
-                <span className="px-2 py-1 rounded text-xs font-semibold text-white bg-red-500">Save 24%</span>
+                {product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice) && (
+                  <>
+                    <span className="text-lg text-[#999] line-through">{formatPrice(product.compareAtPrice, displayCurrency)}</span>
+                    <span className="px-2 py-1 rounded text-xs font-semibold text-white bg-red-500">
+                      Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice)) * 100)}%
+                    </span>
+                  </>
+                )}
               </div>
             ) : (
               <div className="mb-8">
