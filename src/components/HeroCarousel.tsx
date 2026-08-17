@@ -5,9 +5,9 @@ import { resolveUrl } from '@/lib/paths';
 
 const slides = [
   {
-    image: '/images/brand/hero-bg.webp',
-    alt: 'Makimoo Hero Background 1',
-    subtitle: 'Outdoor & Indoor Cushions Collection',
+    image: '/images/brand/hero-bg-3.webp',
+    alt: 'Makimoo Hero Background 3',
+    subtitle: 'Pillow & Cushions Collection',
     title: 'Simple Life, Better Comfort',
   },
   {
@@ -17,9 +17,9 @@ const slides = [
     title: 'Simple Life, Better Comfort',
   },
   {
-    image: '/images/brand/hero-bg-3.webp',
-    alt: 'Makimoo Hero Background 3',
-    subtitle: 'Pillow & Cushions Collection',
+    image: '/images/brand/hero-bg.webp',
+    alt: 'Makimoo Hero Background 1',
+    subtitle: 'Outdoor & Indoor Cushions Collection',
     title: 'Simple Life, Better Comfort',
   },
 ];
