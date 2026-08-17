@@ -5,6 +5,7 @@ import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
+import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 
 interface ProductDetailClientProps {
   handle: string;
@@ -28,6 +29,24 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [lightboxOpen]);
+
+  // GA4: view_item（产品详情页浏览）
+  useEffect(() => {
+    if (!product) return;
+    const price = parseFloat(product.shopifyPrice || product.priceRange.minVariantPrice.amount);
+    trackEvent('view_item', {
+      currency: GA_CURRENCY,
+      value: price,
+      items: [{
+        item_id: product.handle,
+        item_name: product.title,
+        item_category: product.productType,
+        price,
+        quantity: 1,
+      } satisfies GaItem],
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [handle]);
 
   if (!product) {
     return (
@@ -62,12 +81,28 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
     setAddingToCart(true);
     setCartMessage(null);
 
+    const trackAddToCart = () => {
+      const price = parseFloat(displayPrice);
+      trackEvent('add_to_cart', {
+        currency: GA_CURRENCY,
+        value: price * quantity,
+        items: [{
+          item_id: product.handle,
+          item_name: product.title,
+          item_category: product.productType,
+          price,
+          quantity,
+        } satisfies GaItem],
+      });
+    };
+
     try {
       if (product.hasShopifyData && product.shopifyVariantId) {
         // Use Shopify Cart API
         const result = await addToShopifyCart(product.shopifyVariantId, quantity);
         if (result) {
           notifyCartUpdated();
+          trackAddToCart();
           setCartMessage({ text: 'Added to cart!', type: 'success' });
         } else {
           setCartMessage({ text: 'Failed to add to cart. Please try again.', type: 'error' });
@@ -82,6 +117,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
           quantity,
           handle: product.handle,
         });
+        trackAddToCart();
         setCartMessage({ text: 'Added to cart!', type: 'success' });
       }
     } catch {

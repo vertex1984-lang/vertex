@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, updateShopifyCartLine, removeShopifyCartLine, LocalCartItem } from '@/lib/cart';
-import { formatPrice } from '@/lib/currency';
+import { formatPrice, STORE_CURRENCY } from '@/lib/currency';
+import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 
 interface ShopifyCartLine {
   id: string;
@@ -104,6 +105,27 @@ export default function CartPage() {
   const totalSubtotal = localSubtotal + shopifySubtotal;
 
   const handleCheckout = () => {
+    // GA4: begin_checkout（合并 Shopify 行 + 本地行）
+    const items: GaItem[] = [
+      ...(shopifyCart?.lines.edges.map(({ node: line }) => ({
+        item_id: line.merchandise.product.handle,
+        item_name: line.merchandise.product.title,
+        price: parseFloat(line.merchandise.price.amount),
+        quantity: line.quantity,
+      })) ?? []),
+      ...localItems.map((item) => ({
+        item_id: item.handle,
+        item_name: item.title,
+        price: parseFloat(item.price),
+        quantity: item.quantity,
+      })),
+    ];
+    trackEvent('begin_checkout', {
+      currency: GA_CURRENCY,
+      value: totalSubtotal,
+      items,
+    });
+
     if (shopifyCart?.checkoutUrl) {
       window.open(shopifyCart.checkoutUrl, '_blank');
     } else {
@@ -250,7 +272,7 @@ export default function CartPage() {
                         <a href={resolveUrl(`/products/${item.handle}/`)}>
                           <h3 className="font-medium text-[#333] hover:text-[#8B5A2B] transition">{item.title}</h3>
                         </a>
-                        <p className="text-sm text-[#8B5A2B] font-semibold">{formatPrice(item.price, 'EUR')}</p>
+                        <p className="text-sm text-[#8B5A2B] font-semibold">{formatPrice(item.price, STORE_CURRENCY)}</p>
                       </div>
                       <div className="flex items-center border rounded-lg overflow-hidden">
                         <button
@@ -288,16 +310,16 @@ export default function CartPage() {
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm text-[#555]">Store Subtotal</span>
-                <span className="text-sm text-[#333]">{formatPrice(shopifySubtotal, 'EUR')}</span>
+                <span className="text-sm text-[#333]">{formatPrice(shopifySubtotal, shopifyCart?.cost.subtotalAmount.currencyCode || STORE_CURRENCY)}</span>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <span className="text-sm text-[#555]">Amazon Items Subtotal</span>
-                <span className="text-sm text-[#333]">{formatPrice(localSubtotal, 'EUR')}</span>
+                <span className="text-sm text-[#333]">{formatPrice(localSubtotal, STORE_CURRENCY)}</span>
               </div>
               <div className="border-t border-[#E8E2DA] pt-4 mb-4">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-medium text-[#333]">Total</span>
-                  <span className="text-xl font-bold text-[#8B5A2B]">{formatPrice(totalSubtotal, 'EUR')}</span>
+                  <span className="text-xl font-bold text-[#8B5A2B]">{formatPrice(totalSubtotal, shopifyCart?.cost.totalAmount.currencyCode || STORE_CURRENCY)}</span>
                 </div>
               </div>
 

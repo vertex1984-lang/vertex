@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '@/components/ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, getProductsByCategory, searchProducts, enrichProductsWithShopifyData } from '@/data/products';
+import { trackEvent } from '@/lib/gtag';
 
 const categories = [
   { label: 'All', value: '' },
@@ -48,6 +49,11 @@ export default function ProductsPage() {
   // 首次挂载后立即标记为已挂载，此时 state 已从 URL 正确初始化
   useEffect(() => {
     setMounted(true);
+    // GA4: search（URL 带 ?q= 参数进入时触发一次）
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q && q.trim()) {
+      trackEvent('search', { search_term: q.trim() });
+    }
   }, []);
 
   useEffect(() => {

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 
 export const metadata: Metadata = {
   title: "Makimoo: Premium Home Essentials",
@@ -28,6 +30,19 @@ export default function RootLayout({
           <Footer />
           <BackToTop />
         </div>
+        {/* GA4：全站为原生 <a> 整页跳转，gtag config 的自动 page_view 即可覆盖 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
