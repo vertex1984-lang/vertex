@@ -158,32 +158,41 @@ export default function HomePage() {
         </Reveal>
       </section>
 
-      {/* Collection Banner - Desktop */}
-      <div className="relative w-full hidden sm:block overflow-hidden">
+      {/* Collection Banner - Desktop (高度为原图的 80%) */}
+      <div className="relative w-full hidden sm:block overflow-hidden animate-banner-in" style={{ aspectRatio: '1456 / 499' }}>
         <img
           src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
           loading="lazy"
-          className="w-full h-auto block animate-ken-burns"
+          className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent pointer-events-none" />
         <div className="absolute inset-0 flex items-center">
-          <div className="px-10 lg:px-20 max-w-xl">
-            <p className="text-white/85 text-sm font-semibold tracking-widest uppercase mb-3">
-              Exclusive Deals
-            </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+          <div className="px-10 lg:px-20 max-w-2xl">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-white text-2xl font-bold tracking-wide drop-shadow">makimoo</span>
+            </div>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="w-10 h-0.5 bg-white/70" />
+              <p className="text-white/85 text-sm font-semibold tracking-widest uppercase">
+                Exclusive Deals
+              </p>
+            </div>
+            <h2 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-4 drop-shadow-md">
               Up to 50% Off
             </h2>
+            <p className="text-white/85 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
+              Limited-time offers on our most-loved comfort essentials, only on MakimooHome.com.
+            </p>
             <a
               href={resolveUrl('/products')}
-              className="group/btn inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              className="group/btn inline-flex items-center gap-2.5 px-9 py-4 rounded-full text-base font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-xl"
               style={{ backgroundColor: '#8B5A2B' }}
             >
               Discover Deals
               <svg
-                width="16"
-                height="16"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -198,27 +207,29 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* Collection Banner - Mobile */}
-      <div className="relative w-full sm:hidden overflow-hidden mt-[50px]">
+      {/* Collection Banner - Mobile (高度为原图的 80%) */}
+      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '768 / 495' }}>
         <img
           src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
           alt="Makimoo Collection Banner"
           loading="lazy"
-          className="w-full h-auto block object-contain animate-ken-burns"
-          style={{ maxHeight: 'none' }}
+          className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent pointer-events-none" />
         <div className="absolute inset-0 flex items-center">
           <div className="px-6 max-w-xs">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-white text-base font-bold tracking-wide drop-shadow">makimoo</span>
+            </div>
             <p className="text-white/85 text-xs font-semibold tracking-widest uppercase mb-2">
               Exclusive Deals
             </p>
-            <h2 className="text-2xl font-extrabold text-white leading-tight mb-4">
+            <h2 className="text-3xl font-extrabold text-white leading-tight mb-4 drop-shadow-md">
               Up to 50% Off
             </h2>
             <a
               href={resolveUrl('/products')}
-              className="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white"
+              className="group/btn inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white"
               style={{ backgroundColor: '#8B5A2B' }}
             >
               Discover Deals
@@ -270,6 +281,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Best Sellers horizontal scroller (replaces the old "Don't Miss Out" banner; image assets kept in /public/images/brand/) */}
+      <Reveal>
+        <BestSellers products={bestSellers} />
+      </Reveal>
 
       {/* Worry-Free Purchase */}
       <section className="px-6 lg:px-10 py-[30px] mb-[60px]" style={{ backgroundColor: '#F8F5F0' }}>
@@ -326,11 +342,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Best Sellers horizontal scroller (replaces the old "Don't Miss Out" banner; image assets kept in /public/images/brand/) */}
-      <Reveal>
-        <BestSellers products={bestSellers} />
-      </Reveal>
 
       {/* Newsletter */}
       <section className="py-20 px-6 lg:px-10">

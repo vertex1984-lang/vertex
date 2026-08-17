@@ -74,7 +74,8 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-ken-burns {
+  .animate-ken-burns,
+  .animate-banner-in {
     animation: none;
   }
 }

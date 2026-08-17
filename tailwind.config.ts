@@ -32,12 +32,17 @@ const config: Config = {
         },
         kenBurns: {
           from: { transform: "scale(1)" },
-          to: { transform: "scale(1.08)" },
+          to: { transform: "scale(1.1)" },
+        },
+        bannerIn: {
+          from: { opacity: "0", transform: "translateY(24px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
         "fade-in-up": "fadeInUp 0.7s ease-out both",
-        "ken-burns": "kenBurns 16s ease-in-out infinite alternate",
+        "ken-burns": "kenBurns 12s ease-in-out infinite alternate",
+        "banner-in": "bannerIn 0.9s ease-out both",
       },
     },
   },
