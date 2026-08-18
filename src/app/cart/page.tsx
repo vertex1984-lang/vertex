@@ -218,7 +218,7 @@ export default function CartPage() {
                         <button
                           onClick={() => updateShopifyQuantity(line.id, line.quantity - 1)}
                           disabled={updatingLineId === line.id}
-                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                          className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                         >
                           -
                         </button>
@@ -228,7 +228,7 @@ export default function CartPage() {
                         <button
                           onClick={() => updateShopifyQuantity(line.id, line.quantity + 1)}
                           disabled={updatingLineId === line.id}
-                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                          className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                         >
                           +
                         </button>
@@ -277,7 +277,7 @@ export default function CartPage() {
                       <div className="flex items-center border rounded-lg overflow-hidden">
                         <button
                           onClick={() => updateLocalQuantity(item.id, item.quantity - 1)}
-                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                          className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                         >
                           -
                         </button>
@@ -286,7 +286,7 @@ export default function CartPage() {
                         </span>
                         <button
                           onClick={() => updateLocalQuantity(item.id, item.quantity + 1)}
-                          className="px-3 py-1.5 hover:bg-[#E8E2DA] transition"
+                          className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                         >
                           +
                         </button>

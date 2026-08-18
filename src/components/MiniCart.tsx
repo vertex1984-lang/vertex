@@ -185,7 +185,7 @@ export default function MiniCart() {
                     <button
                       onClick={() => updateShopifyQuantity(line.id, line.quantity - 1)}
                       disabled={updatingId === line.id}
-                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                      className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                     >
                       -
                     </button>
@@ -193,7 +193,7 @@ export default function MiniCart() {
                     <button
                       onClick={() => updateShopifyQuantity(line.id, line.quantity + 1)}
                       disabled={updatingId === line.id}
-                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                      className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                     >
                       +
                     </button>
@@ -230,14 +230,14 @@ export default function MiniCart() {
                   <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
                     <button
                       onClick={() => updateLocalQuantity(item.id, item.quantity - 1)}
-                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                      className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                     >
                       -
                     </button>
                     <span className="px-2 py-1 text-sm font-medium min-w-[1.75rem] text-center">{item.quantity}</span>
                     <button
                       onClick={() => updateLocalQuantity(item.id, item.quantity + 1)}
-                      className="px-2.5 py-1 hover:bg-[#E8E2DA] transition"
+                      className="w-11 h-11 flex items-center justify-center hover:bg-[#E8E2DA] transition"
                     >
                       +
                     </button>
@@ -255,8 +255,34 @@ export default function MiniCart() {
               ))}
             </div>
 
-            {/* Footer: subtotal + actions */}
+            {/* Footer: 免邮进度条 + subtotal + actions */}
             <div className="border-t border-[#E8E2DA] px-6 py-5">
+              {/* 免邮进度条（$50 为 hardcode 占位阈值，待真实包邮规则确认后替换） */}
+              {(() => {
+                const FREE_SHIPPING_THRESHOLD = 50;
+                const remaining = FREE_SHIPPING_THRESHOLD - subtotal;
+                const progress = Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100);
+                return remaining > 0 ? (
+                  <div className="mb-4">
+                    <p className="text-xs text-[#555] mb-2">
+                      You&apos;re <span className="font-semibold text-[#8B5A2B]">{formatPrice(remaining, 'USD')}</span> away from free shipping
+                    </p>
+                    <div className="h-1.5 rounded-full bg-[#E8E2DA] overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all duration-500"
+                        style={{ width: `${progress}%`, background: 'linear-gradient(to right, #A67C52, #8B5A2B)' }}
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="mb-4 flex items-center gap-2 text-green-600">
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                    <p className="text-xs font-semibold">You&apos;ve unlocked free shipping!</p>
+                  </div>
+                );
+              })()}
               <div className="flex justify-between items-center mb-4">
                 <span className="text-sm text-[#555]">Subtotal</span>
                 <span className="text-lg font-bold text-[#8B5A2B]">{formatPrice(subtotal, 'USD')}</span>

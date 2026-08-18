@@ -3,6 +3,8 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
+import { getFavorites } from '@/lib/favorites';
+import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 
 const navLinks = [
   { label: 'Shop All', href: '/products' },
@@ -15,12 +17,17 @@ const navLinks = [
   { label: 'Contact Us', href: '/contact' },
 ];
 
+// 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
+const HOT_SEARCHES = ['Cushions', 'Pillows', 'Travel', 'Dining', 'Fragrance'];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [suggestions, setSuggestions] = useState<MakimooProduct[]>([]);
   const [cartCount, setCartCount] = useState(0);
+  const [favCount, setFavCount] = useState(0);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -75,6 +82,31 @@ export default function Header() {
     };
   }, []);
 
+  // 收藏角标
+  useEffect(() => {
+    const refresh = () => setFavCount(getFavorites().length);
+    refresh();
+    window.addEventListener('makimoo:favorites-updated', refresh);
+    window.addEventListener('storage', refresh);
+    return () => {
+      window.removeEventListener('makimoo:favorites-updated', refresh);
+      window.removeEventListener('storage', refresh);
+    };
+  }, []);
+
+  // 搜索建议：300ms 防抖，本地即时过滤
+  useEffect(() => {
+    const q = searchQuery.trim();
+    if (q.length < 2) {
+      setSuggestions([]);
+      return;
+    }
+    const timer = setTimeout(() => {
+      setSuggestions(enrichProductsWithShopifyData(searchProducts(q)).slice(0, 6));
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
   const handleSearchSubmit = (e: FormEvent) => {
     e.preventDefault();
     const q = searchQuery.trim();
@@ -111,10 +143,10 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1 sm:gap-2">
           <button
             onClick={() => setSearchOpen(true)}
-            className="p-2 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition"
+            className="w-11 h-11 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition flex items-center justify-center"
             aria-label="Search"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
@@ -122,9 +154,28 @@ export default function Header() {
             </svg>
           </button>
 
+          {/* 收藏入口（带数量角标；暂无独立收藏页，点击进产品列表） */}
+          <a
+            href={resolveUrl('/products')}
+            className="relative w-11 h-11 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition flex items-center justify-center"
+            aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+            {favCount > 0 && (
+              <span
+                className="absolute top-0.5 right-0.5 min-w-[18px] h-[18px] px-1 rounded-full text-white text-[10px] font-bold flex items-center justify-center"
+                style={{ backgroundColor: '#8B5A2B' }}
+              >
+                {favCount > 99 ? '99+' : favCount}
+              </span>
+            )}
+          </a>
+
           <button
             onClick={openMiniCart}
-            className="relative p-2 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition"
+            className="relative w-11 h-11 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition flex items-center justify-center"
             aria-label={cartCount > 0 ? `Cart, ${cartCount} items` : 'Cart'}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -132,7 +183,7 @@ export default function Header() {
             </svg>
             {cartCount > 0 && (
               <span
-                className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full text-white text-[10px] font-bold flex items-center justify-center"
+                className="absolute top-0.5 right-0.5 min-w-[18px] h-[18px] px-1 rounded-full text-white text-[10px] font-bold flex items-center justify-center"
                 style={{ backgroundColor: '#8B5A2B' }}
               >
                 {cartCount > 99 ? '99+' : cartCount}
@@ -142,7 +193,7 @@ export default function Header() {
 
           <button
             onClick={() => setMobileOpen(true)}
-            className="lg:hidden flex flex-col gap-1 p-2"
+            className="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-1"
             aria-label="Menu"
           >
             <span className="block w-5 h-0.5 bg-[#333] rounded" />
@@ -169,7 +220,7 @@ export default function Header() {
       >
         <button
           onClick={() => setMobileOpen(false)}
-          className="absolute top-5 right-5 w-9 h-9 rounded-full border border-[#E8E2DA] flex items-center justify-center text-xl text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
+          className="absolute top-5 right-5 w-11 h-11 rounded-full border border-[#E8E2DA] flex items-center justify-center text-xl text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
           aria-label="Close menu"
         >
           &times;
@@ -198,18 +249,37 @@ export default function Header() {
           style={{ backgroundColor: 'rgba(248,245,240,0.98)' }}
         >
           <form onSubmit={handleSearchSubmit} className="max-w-xl mx-auto w-full flex items-center gap-3">
-            <input
-              type="text"
-              placeholder="Search products..."
-              autoFocus
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 px-5 py-4 rounded-lg text-lg border-2 border-[#E8E2DA] focus:border-[#8B5A2B] outline-none bg-white"
-              style={{ fontFamily: 'Montserrat, sans-serif' }}
-            />
+            <div className="relative flex-1">
+              <input
+                type="text"
+                placeholder="Search products..."
+                autoFocus
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full h-12 px-5 rounded-lg text-base border-2 border-[#E8E2DA] focus:border-[#8B5A2B] focus:ring-2 focus:ring-[#8B5A2B]/20 outline-none bg-white"
+                style={{ fontFamily: 'Montserrat, sans-serif' }}
+              />
+              {/* 即时建议下拉（300ms 防抖，client-side 过滤） */}
+              {suggestions.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-[#E8E2DA] overflow-hidden z-10">
+                  {suggestions.map((p) => (
+                    <a
+                      key={p.id}
+                      href={resolveUrl(`/products/${p.handle}/`)}
+                      className="flex items-center gap-3 px-4 py-3 hover:bg-[#F8F5F0] transition"
+                    >
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[#8B5A2B] w-20 flex-shrink-0 truncate">
+                        {p.productType}
+                      </span>
+                      <span className="text-sm text-[#333] line-clamp-2">{p.title}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
             <button
               type="submit"
-              className="px-5 py-4 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
+              className="h-12 px-5 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
               style={{ backgroundColor: '#8B5A2B' }}
               aria-label="Submit search"
             >
@@ -218,15 +288,30 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setSearchOpen(false)}
-              className="text-3xl text-[#555] hover:text-[#333] transition"
+              className="w-11 h-11 flex items-center justify-center text-3xl text-[#555] hover:text-[#333] transition"
               aria-label="Close search"
             >
               &times;
             </button>
           </form>
-          <div className="max-w-xl mx-auto w-full mt-5 text-sm text-[#555]">
-            Type a keyword and press Enter to search products.
-          </div>
+
+          {/* 热门搜索 chips */}
+          {suggestions.length === 0 && (
+            <div className="max-w-xl mx-auto w-full mt-5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#999] mb-2.5">Popular Searches</p>
+              <div className="flex flex-wrap gap-2">
+                {HOT_SEARCHES.map((term) => (
+                  <button
+                    key={term}
+                    onClick={() => setSearchQuery(term)}
+                    className="px-4 py-2 rounded-full bg-white border border-[#E8E2DA] text-sm text-[#555] hover:border-[#8B5A2B] hover:text-[#8B5A2B] transition"
+                  >
+                    {term}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </>

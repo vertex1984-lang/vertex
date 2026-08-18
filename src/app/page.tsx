@@ -4,6 +4,8 @@ import ProductCard from '@/components/ProductCard';
 import Reveal from '@/components/Reveal';
 import NewsletterForm from '@/components/NewsletterForm';
 import BestSellers from '@/components/BestSellers';
+import ReviewsSection from '@/components/ReviewsSection';
+import UGCGallery from '@/components/UGCGallery';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { resolveUrl } from '@/lib/paths';
 
@@ -87,11 +89,28 @@ const collections = [
 ];
 
 export default function HomePage() {
+  // ItemList JSON-LD：Featured 产品列表，利于 SEO
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Makimoo Featured Products',
+    itemListElement: enrichProductsWithShopifyData(featuredProducts).map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://www.makimoohome.com/products/${p.handle}/`,
+      name: p.title,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       {/* Hero Section */}
       <section
-        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 h-[500px] sm:h-[560px] lg:h-[640px]"
+        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 min-h-[85vh]"
       >
         <HeroCarousel />
       </section>
@@ -254,6 +273,27 @@ export default function HomePage() {
       {/* Featured Products Section */}
       <section className="pt-20 pb-8 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
+          {/* 信任条：Free Shipping · 30-Day Returns · Secure Checkout · Quality Materials */}
+          <Reveal>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-12 text-xs sm:text-sm font-medium text-[#555]">
+              <span className="inline-flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
+                Free Shipping
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" /></svg>
+                30-Day Returns
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                Secure Checkout
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+                Quality Materials
+              </span>
+            </div>
+          </Reveal>
           <Reveal>
             <div className="text-center max-w-xl mx-auto mb-12">
               <p className="text-sm font-semibold tracking-widest uppercase text-brand mb-2">Curated For You</p>
@@ -264,7 +304,8 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={150}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            {/* 移动端 2 列 / 桌面端 4 列，卡片等高（ProductCard h-full + grid 默认 items-stretch） */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-10">
               {enrichProductsWithShopifyData(featuredProducts).map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -286,6 +327,12 @@ export default function HomePage() {
       <Reveal>
         <BestSellers products={bestSellers} />
       </Reveal>
+
+      {/* Reviews（hardcode 占位评价，待真实数据替换） */}
+      <ReviewsSection />
+
+      {/* UGC / Lifestyle 画廊（hardcode 占位图，待真实买家秀替换） */}
+      <UGCGallery />
 
       {/* Worry-Free Purchase */}
       <section className="px-6 lg:px-10 py-[30px] mb-[60px]" style={{ backgroundColor: '#F8F5F0' }}>

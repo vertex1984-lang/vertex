@@ -26,7 +26,7 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-[1800]">
+    <div className="fixed left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md bottom-[calc(1rem+env(safe-area-inset-bottom))] z-[1800]">
       <div className="bg-white rounded-2xl shadow-2xl border border-[#E8E2DA] p-5">
         <p className="text-sm text-[#333] leading-relaxed mb-4">
           We use cookies to analyze site traffic and improve your experience. See our{' '}

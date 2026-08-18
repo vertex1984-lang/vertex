@@ -58,8 +58,48 @@ export default function Footer() {
 
         {/* Social icons removed: previous placeholders pointed to dead "#" links.
             Restore them here as <a> once real brand profile URLs are available. */}
+
+        {/* 支付方式 + 信任语（纯 SVG 内联图标，无外部资源） */}
+        <div className="flex flex-col items-center gap-3 pt-8 mb-6" style={{ borderTop: '1px solid rgba(248,245,240,0.15)' }}>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            {/* Visa */}
+            <span className="h-7 px-2.5 rounded bg-white/95 flex items-center" title="Visa">
+              <svg width="34" height="12" viewBox="0 0 34 12" fill="none" aria-label="Visa">
+                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="bold" fontStyle="italic" fill="#1A1F71">VISA</text>
+              </svg>
+            </span>
+            {/* Mastercard */}
+            <span className="h-7 px-2.5 rounded bg-white/95 flex items-center" title="Mastercard">
+              <svg width="28" height="16" viewBox="0 0 28 16" aria-label="Mastercard">
+                <circle cx="10" cy="8" r="7" fill="#EB001B" />
+                <circle cx="18" cy="8" r="7" fill="#F79E1B" fillOpacity="0.85" />
+              </svg>
+            </span>
+            {/* American Express */}
+            <span className="h-7 px-2.5 rounded bg-[#2E77BC] flex items-center" title="American Express">
+              <svg width="34" height="12" viewBox="0 0 34 12" fill="none" aria-label="American Express">
+                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="bold" fill="#FFFFFF">AMEX</text>
+              </svg>
+            </span>
+            {/* PayPal */}
+            <span className="h-7 px-2.5 rounded bg-white/95 flex items-center" title="PayPal">
+              <svg width="42" height="12" viewBox="0 0 42 12" fill="none" aria-label="PayPal">
+                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="bold" fontStyle="italic" fill="#003087">Pay<tspan fill="#0079C1">Pal</tspan></text>
+              </svg>
+            </span>
+            {/* Apple Pay */}
+            <span className="h-7 px-2.5 rounded bg-black flex items-center" title="Apple Pay">
+              <svg width="36" height="12" viewBox="0 0 36 12" fill="none" aria-label="Apple Pay">
+                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="600" fill="#FFFFFF"> Pay</text>
+                <path d="M6.2 2.2c-.4.5-1 .8-1.6.8-.1-.6.2-1.2.6-1.6.4-.5 1.1-.8 1.6-.9 0 .7-.2 1.3-.6 1.7zm.6 1c-.9-.1-1.6.5-2.1.5-.4 0-1.1-.5-1.8-.5-1 0-1.9.6-2.4 1.5-1 1.8-.3 4.4.7 5.9.5.7 1 1.4 1.7 1.4.7 0 .9-.4 1.8-.4s1 .4 1.7.4c.7 0 1.2-.7 1.7-1.4.5-.8.7-1.5.7-1.5 0 0-1.4-.5-1.4-2.1 0-1.3 1.1-1.9 1.1-2-.6-.9-1.5-1-1.7-1z" fill="#FFFFFF" transform="translate(-0.5,0) scale(0.85)"/>
+              </svg>
+            </span>
+          </div>
+          <p className="text-xs opacity-50">Secure checkout. Your payment information is always protected.</p>
+        </div>
+
         <div
-          className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8"
+          className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6"
           style={{ borderTop: '1px solid rgba(248,245,240,0.15)' }}
         >
           <p className="text-xs opacity-40">&copy; 2026 Makimoo. All rights reserved.</p>

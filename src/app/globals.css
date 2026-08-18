@@ -73,9 +73,38 @@ button {
   }
 }
 
+/* 表单错误抖动动画 */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Toast 滑入动画 */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-toast-in {
+  animation: toastIn 0.25s ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-ken-burns,
-  .animate-banner-in {
+  .animate-banner-in,
+  .animate-fade-in-up,
+  .animate-bounce,
+  .animate-shake,
+  .animate-toast-in {
     animation: none;
   }
 }

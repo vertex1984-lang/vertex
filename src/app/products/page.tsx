@@ -77,54 +77,57 @@ export default function ProductsPage() {
           <p className="text-[#555]">Browse our complete collection of comfort essentials.</p>
         </div>
 
-        {/* Search */}
-        <div className="max-w-md mx-auto mb-8">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-5 py-3 pl-11 rounded-lg border-2 border-[#E8E2DA] focus:border-[#8B5A2B] outline-none bg-white text-sm"
-              style={{ fontFamily: 'Montserrat, sans-serif' }}
-            />
-            <svg
-              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#888]"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16" y2="16" />
-            </svg>
+        {/* 吸顶过滤区：搜索 + 分类，长列表滚动时随时可切（top 值 = Header 高度） */}
+        <div className="sticky top-[96px] lg:top-[112px] z-30 -mx-6 lg:-mx-10 px-6 lg:px-10 py-3 mb-6" style={{ backgroundColor: '#F8F5F0' }}>
+          {/* Search */}
+          <div className="max-w-md mx-auto mb-4">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full h-12 px-5 pl-11 rounded-lg border-2 border-[#E8E2DA] focus:border-[#8B5A2B] focus:ring-2 focus:ring-[#8B5A2B]/20 outline-none bg-white text-base"
+                style={{ fontFamily: 'Montserrat, sans-serif' }}
+              />
+              <svg
+                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#888]"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16" y2="16" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Category Filter - 始终显示，但在 JS 未加载时不标记当前分类（由 CSS 控制） */}
+          <div className="flex flex-wrap justify-center gap-2">
+            {categories.map((cat) => (
+              <button
+                key={cat.value}
+                onClick={() => setActiveCategory(cat.value)}
+                className={`px-4 py-2 rounded-full text-xs font-semibold transition ${
+                  mounted && activeCategory === cat.value
+                    ? 'text-white'
+                    : 'bg-white text-[#333] hover:bg-[#E8E2DA]'
+                }`}
+                style={mounted && activeCategory === cat.value ? { backgroundColor: '#8B5A2B' } : {}}
+              >
+                {cat.label}
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Category Filter - 始终显示，但在 JS 未加载时不标记当前分类（由 CSS 控制） */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => setActiveCategory(cat.value)}
-              className={`px-4 py-2 rounded-full text-xs font-semibold transition ${
-                mounted && activeCategory === cat.value
-                  ? 'text-white'
-                  : 'bg-white text-[#333] hover:bg-[#E8E2DA]'
-              }`}
-              style={mounted && activeCategory === cat.value ? { backgroundColor: '#8B5A2B' } : {}}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Product Grid - JS 未加载前隐藏，避免闪现 All 产品 */}
+        {/* Product Grid - JS 未加载前隐藏，避免闪现 All 产品（移动端 2 列） */}
         {mounted ? (
           filtered.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
               {filtered.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -146,11 +149,11 @@ export default function ProductsPage() {
           )
         ) : (
           /* JS 加载前的占位：显示骨架屏，避免布局跳动 */
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
             {Array.from({ length: 8 }).map((_, i) => (
               <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm animate-pulse">
-                <div className="h-56 lg:h-64 bg-[#E8E2DA]" />
-                <div className="p-4">
+                <div className="h-40 sm:h-52 lg:h-64 bg-[#E8E2DA]" />
+                <div className="p-3 sm:p-4">
                   <div className="h-3 bg-[#E8E2DA] rounded w-16 mb-2" />
                   <div className="h-4 bg-[#E8E2DA] rounded w-full mb-2" />
                   <div className="h-4 bg-[#E8E2DA] rounded w-3/4 mb-3" />

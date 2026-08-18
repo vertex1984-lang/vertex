@@ -2,10 +2,12 @@
 
 import { useState, FormEvent } from 'react';
 import { subscribeCustomer } from '@/lib/customer';
+import { useToast } from '@/components/Toast';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
 export default function NewsletterForm() {
+  const { toast } = useToast();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
@@ -28,9 +30,11 @@ export default function NewsletterForm() {
     if (result === 'error') {
       setStatus('error');
       setErrorMsg('Something went wrong. Please try again later.');
+      toast('Subscription failed. Please try again.', 'error');
     } else {
       setStatus('success');
       setEmail('');
+      toast('Thanks for subscribing!');
     }
   };
 
@@ -59,13 +63,17 @@ export default function NewsletterForm() {
           }}
           placeholder="Enter your email"
           required
-          className="flex-1 px-5 py-3.5 rounded-lg border-2 border-white/30 bg-white/10 text-white placeholder:text-white/50 outline-none text-sm transition focus:border-white focus:ring-4 focus:ring-white/20"
+          className={`flex-1 h-12 px-5 rounded-lg border-2 bg-white/10 text-white placeholder:text-white/50 outline-none text-base transition focus:ring-2 ${
+            status === 'error'
+              ? 'border-red-400 focus:border-red-300 focus:ring-red-300/30 animate-shake'
+              : 'border-white/30 focus:border-white focus:ring-white/20'
+          }`}
           style={{ fontFamily: 'Montserrat, sans-serif' }}
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="px-6 py-3.5 rounded-full text-sm font-semibold whitespace-nowrap transition hover:bg-[#F8F5F0] disabled:opacity-70 disabled:cursor-wait"
+          className="h-12 px-6 rounded-full text-sm font-semibold whitespace-nowrap transition hover:bg-[#F8F5F0] active:scale-95 disabled:opacity-70 disabled:cursor-wait"
           style={{ backgroundColor: '#fff', color: '#8B5A2B' }}
         >
           {status === 'loading' ? 'Subscribing...' : 'Subscribe'}

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
 import CookieConsent from "@/components/CookieConsent";
+import ToastProvider from "@/components/Toast";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.makimoohome.com'),
@@ -35,6 +36,29 @@ export const metadata: Metadata = {
   },
 };
 
+// viewport-fit=cover：配合 fixed 元素的 env(safe-area-inset-bottom) 适配刘海屏
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
+
+// WebSite + SearchAction JSON-LD（站点级结构化数据）
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Makimoo',
+  url: 'https://www.makimoohome.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://www.makimoohome.com/products/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,18 +70,24 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
       </head>
       <body className="antialiased" style={{ backgroundColor: '#F8F5F0' }}>
-        <div className="w-full max-w-[1400px] mx-auto shadow-lg overflow-hidden" style={{ backgroundColor: '#F8F5F0' }}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <BackToTop />
-          <MiniCart />
-          <CookieConsent />
-        </div>
-        {/* GA4 仅在用户同意 Cookie 后由 AnalyticsLoader 加载（严格模式） */}
-        <AnalyticsLoader />
+        <ToastProvider>
+          <div className="w-full max-w-[1400px] mx-auto shadow-lg overflow-hidden" style={{ backgroundColor: '#F8F5F0' }}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <BackToTop />
+            <MiniCart />
+            <CookieConsent />
+          </div>
+          {/* GA4 仅在用户同意 Cookie 后由 AnalyticsLoader 加载（严格模式） */}
+          <AnalyticsLoader />
+        </ToastProvider>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProductDetailClient from './ProductDetailClient';
 import ProductCard from '@/components/ProductCard';
+import RecentlyViewed from '@/components/RecentlyViewed';
 import Reveal from '@/components/Reveal';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { STORE_CURRENCY } from '@/lib/currency';
@@ -111,7 +112,7 @@ export default function ProductDetailPage({ params }: { params: { handle: string
               </div>
             </Reveal>
             <Reveal delay={150}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                 {related.map((p) => (
                   <ProductCard key={p.id} product={p} />
                 ))}
@@ -120,6 +121,7 @@ export default function ProductDetailPage({ params }: { params: { handle: string
           </div>
         </section>
       )}
+      <RecentlyViewed currentHandle={params.handle} />
     </>
   );
 }

@@ -6,21 +6,21 @@ import { resolveUrl } from '@/lib/paths';
 const slides = [
   {
     image: '/images/brand/hero-bg-3.webp',
-    alt: 'Makimoo Hero Background 3',
-    subtitle: 'Pillow & Cushions Collection',
-    title: 'Simple Life, Better Comfort',
+    alt: 'Makimoo Hero Background 1',
+    headline: 'Made for Better Living.',
+    sub: 'Free shipping and 60-day worry-free returns on every single order.',
   },
   {
     image: '/images/brand/hero-bg-2.webp',
     alt: 'Makimoo Hero Background 2',
-    subtitle: 'Pillow & Cushions Collection',
-    title: 'Simple Life, Better Comfort',
+    headline: 'Sink Into Something Softer.',
+    sub: 'Premium fabrics and plush 3D filling that stay comfortable season after season.',
   },
   {
     image: '/images/brand/hero-bg.webp',
-    alt: 'Makimoo Hero Background 1',
-    subtitle: 'Outdoor & Indoor Cushions Collection',
-    title: 'Simple Life, Better Comfort',
+    alt: 'Makimoo Hero Background 3',
+    headline: 'Comfort, Beautifully Simple.',
+    sub: 'Weather-resistant cushions & pillows crafted for every corner of your home.',
   },
 ];
 
@@ -47,10 +47,17 @@ export default function HeroCarousel() {
     goTo((current - 1 + slides.length) % slides.length);
   }, [current, goTo]);
 
-  // 预加载其余背景图，避免切换时白屏
+  // 预加载其余背景图，避免切换时白屏；首屏图加 preload 提示
   useEffect(() => {
     slides.forEach((slide, index) => {
-      if (index === 0) return;
+      if (index === 0) {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = resolveUrl(slide.image);
+        document.head.appendChild(link);
+        return;
+      }
       const img = new Image();
       img.src = resolveUrl(slide.image);
     });
@@ -66,7 +73,7 @@ export default function HeroCarousel() {
 
   return (
     <>
-      {/* Background images */}
+      {/* Background images（ken-burns 缓慢缩放） */}
       <div
         className="absolute inset-0 overflow-hidden"
         onMouseEnter={() => setPaused(true)}
@@ -86,60 +93,76 @@ export default function HeroCarousel() {
             key={index}
             className="absolute inset-0 transition-opacity duration-700 ease-in-out"
             style={{
-              backgroundImage: `url(${resolveUrl(slide.image)})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
               opacity: index === current ? 1 : 0,
             }}
-          />
+          >
+            <div
+              className="absolute inset-0 animate-ken-burns"
+              style={{
+                backgroundImage: `url(${resolveUrl(slide.image)})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            />
+          </div>
         ))}
 
         {/* Left/Right arrow buttons */}
         <button
           onClick={goPrev}
-          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/30 hover:bg-white/60 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
           aria-label="Previous slide"
         >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#8B5A2B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           onClick={goNext}
-          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/30 hover:bg-white/60 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
           aria-label="Next slide"
         >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#8B5A2B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
 
-        {/* Dot indicators */}
-        <div className="absolute bottom-[30px] left-1/2 -translate-x-1/2 z-20 flex gap-2.5">
+        {/* Dot indicators（触控目标 44px） */}
+        <div className="absolute bottom-[64px] left-1/2 -translate-x-1/2 z-20 flex">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goTo(index)}
-              className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                index === current
-                  ? 'bg-[#8B5A2B] scale-110'
-                  : 'bg-white/60 hover:bg-white/90'
-              }`}
+              className="w-11 h-11 flex items-center justify-center"
               aria-label={`Go to slide ${index + 1}`}
-            />
+            >
+              <span
+                className={`block w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+                  index === current
+                    ? 'bg-white scale-110'
+                    : 'bg-white/50 hover:bg-white/80'
+                }`}
+              />
+            </button>
           ))}
+        </div>
+
+        {/* 向下滚动提示箭头（纯 CSS 动画，无 JS） */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 animate-bounce" aria-hidden="true">
+          <svg className="w-6 h-6 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
       </div>
 
-      {/* Overlay */}
+      {/* 渐变暗罩：左深右浅，突出文案区 */}
       <div
         className="absolute inset-0 z-[5]"
-        style={{ backgroundColor: 'rgba(248, 245, 240, 0.7)' }}
+        style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 55%, rgba(0,0,0,0.08) 100%)' }}
       />
 
-      {/* Text content - switches with slide */}
+      {/* Text content - switches with slide（逐行 stagger 淡入上移） */}
       <div className="relative z-10 max-w-2xl mx-auto lg:mt-[15px]" aria-live="polite">
-        {/* Render all text layers, fade in/out */}
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -151,19 +174,28 @@ export default function HeroCarousel() {
               inset: index === current ? undefined : 0,
             }}
           >
-            <h4 className="text-lg font-semibold tracking-widest uppercase text-[#333] mb-3">
+            <h4
+              className="text-sm lg:text-base font-semibold tracking-widest uppercase text-white/80 mb-4 animate-fade-in-up"
+              style={{ animationDelay: '0ms' }}
+            >
               Makimoo Home
             </h4>
-            <h1 className="text-3xl lg:text-5xl font-extrabold text-[#8B5A2B] mb-6 leading-tight">
-              {slide.subtitle}
+            <h1
+              className="text-3xl lg:text-5xl font-extrabold text-white mb-5 leading-tight drop-shadow-md animate-fade-in-up"
+              style={{ animationDelay: '150ms' }}
+            >
+              {slide.headline}
             </h1>
-            <p className="text-base lg:text-lg text-[#333] font-medium mb-8 max-w-xl mx-auto text-center">
-              {slide.title}
+            <p
+              className="text-base lg:text-lg text-white/85 font-medium mb-8 max-w-xl mx-auto text-center animate-fade-in-up"
+              style={{ animationDelay: '300ms' }}
+            >
+              {slide.sub}
             </p>
             <a
               href={resolveUrl('/products')}
-              className="px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B' }}
+              className="inline-block px-8 py-3.5 rounded-full text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up"
+              style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B', animationDelay: '450ms' }}
             >
               Shop the Collection
             </a>
