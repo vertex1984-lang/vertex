@@ -18,15 +18,15 @@ function getWords(text: string, count: number): string {
 }
 
 function getProductImageUrl(product: MakimooProduct): string {
-  if (product.shopifyImages && product.shopifyImages.length > 0) return product.shopifyImages[0];
-  const local = product.images[0]?.url;
-  if (!local) return `${SITE_URL}/images/brand/hero-bg.webp`;
-  return local.startsWith('http') ? local : `${SITE_URL}${local}`;
+  const first = product.shopifyImages && product.shopifyImages.length > 0 ? product.shopifyImages[0] : product.images[0]?.url;
+  if (!first) return `${SITE_URL}/images/brand/hero-bg.webp`;
+  return first.startsWith('http') ? first : `${SITE_URL}${first}`;
 }
 
 export function generateMetadata({ params }: { params: { handle: string } }): Metadata {
-  const product = PRODUCTS_DATA.find((p) => p.handle === params.handle);
-  if (!product) return { title: 'Product Not Found' };
+  const raw = PRODUCTS_DATA.find((p) => p.handle === params.handle);
+  if (!raw) return { title: 'Product Not Found' };
+  const product = enrichProductsWithShopifyData([raw])[0];
   const title = getWords(product.title, 10);
   const description = getWords(product.title, 15);
   return {

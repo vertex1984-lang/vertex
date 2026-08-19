@@ -55,7 +55,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         href={resolveUrl(`/products/${product.handle}/`)}
         className="group h-full flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       >
-        <div className="relative h-40 sm:h-52 lg:h-64 overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA]">
+        <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA] p-4 sm:p-5">
           {image && (
             <img
               src={resolveUrl(image.url)}

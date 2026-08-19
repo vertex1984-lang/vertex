@@ -28,7 +28,7 @@ export interface MakimooProduct {
   compareAtPrice?: string;
 }
 
-export const PRODUCTS_DATA: MakimooProduct[] = [
+const BASE_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-B098F1BKJQ",
     "asin": "B098F1BKJQ",
@@ -5988,14 +5988,39 @@ export const PRODUCTS_DATA: MakimooProduct[] = [
 ];
 
 import { SHOPIFY_MAP } from './shopify-map';
+import { MATERIALS_MAP } from './materials-map';
+import { MATERIALS_PRODUCTS } from './products-materials';
 
-/** Merge local product data with Shopify data (prices, availability, variant IDs) */
+/** 站点基础产品 + 素材库新增产品 */
+export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS];
+
+/** 应用素材库覆盖（标题/五点描述/图片），返回 null 表示该 ASIN 无素材数据 */
+function applyMaterialsData(product: MakimooProduct): MakimooProduct {
+  const entry = MATERIALS_MAP[product.asin.toLowerCase()];
+  if (!entry) return product;
+  const bullets = entry.bullets.trim();
+  return {
+    ...product,
+    title: entry.title || product.title,
+    description: bullets ? bullets.replace(/\n\n+/g, ' ').replace(/\n/g, ' ') : product.description,
+    descriptionHtml: bullets
+      ? bullets.split(/\n\n+/).map((p) => `<p>${p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, ' ')}</p>`).join('')
+      : product.descriptionHtml,
+    images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
+  };
+}
+
+/** Merge local product data with Shopify data (prices, availability, variant IDs) and materials overrides (title, bullets, images) */
 export function enrichProductsWithShopifyData(products: MakimooProduct[]): MakimooProduct[] {
-  return products.map(product => {
+  return products.map(rawProduct => {
+    const product = applyMaterialsData(rawProduct);
     const asinLower = product.asin.toLowerCase();
     const shopifyEntry = SHOPIFY_MAP[asinLower];
+    const materialsImages = MATERIALS_MAP[asinLower]?.images;
     if (!shopifyEntry) {
-      return { ...product, hasShopifyData: false };
+      return materialsImages
+        ? { ...product, hasShopifyData: false, shopifyImages: materialsImages }
+        : { ...product, hasShopifyData: false };
     }
     return {
       ...product,
@@ -6005,7 +6030,8 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       // Use Shopify price unless it's $0.0 (needs fix), then fallback to local price
       shopifyPrice: shopifyEntry.priceNeedsFix ? product.priceRange.minVariantPrice.amount : shopifyEntry.price,
       shopifyCurrencyCode: shopifyEntry.currencyCode,
-      shopifyImages: shopifyEntry.images,
+      // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
+      shopifyImages: materialsImages || shopifyEntry.images,
     };
   });
 }
