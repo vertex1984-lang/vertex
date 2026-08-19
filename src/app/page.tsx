@@ -177,8 +177,8 @@ export default function HomePage() {
         </Reveal>
       </section>
 
-      {/* Collection Banner - Desktop (高度为原图的 80%) */}
-      <div className="relative w-full hidden sm:block overflow-hidden animate-banner-in" style={{ aspectRatio: '1456 / 499' }}>
+      {/* Collection Banner - Desktop (高度为原图的 92%，即 80% × 1.15) */}
+      <div className="relative w-full hidden sm:block overflow-hidden animate-banner-in" style={{ aspectRatio: '1456 / 574' }}>
         <img
           src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
@@ -188,24 +188,24 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent pointer-events-none" />
         <div className="absolute inset-0 flex items-center">
           <div className="px-10 lg:px-20 max-w-2xl">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-white text-2xl font-bold tracking-wide drop-shadow">makimoo</span>
+            <div className="flex items-center gap-3 mb-7">
+              <span className="text-white text-3xl font-bold tracking-wide drop-shadow">makimoo</span>
             </div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-5">
               <span className="w-10 h-0.5 bg-white/70" />
-              <p className="text-white/85 text-sm font-semibold tracking-widest uppercase">
+              <p className="text-white/85 text-base font-semibold tracking-widest uppercase">
                 Exclusive Deals
               </p>
             </div>
-            <h2 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-4 drop-shadow-md">
+            <h2 className="text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-5 drop-shadow-md">
               Up to 50% Off
             </h2>
-            <p className="text-white/85 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-white/85 text-lg lg:text-xl leading-relaxed mb-9 max-w-md">
               Limited-time offers on our most-loved comfort essentials, only on MakimooHome.com.
             </p>
             <a
               href={resolveUrl('/products')}
-              className="group/btn inline-flex items-center gap-2.5 px-9 py-4 rounded-full text-base font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-xl"
+              className="group/btn inline-flex items-center gap-2.5 px-10 py-4 rounded-full text-lg font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-xl"
               style={{ backgroundColor: '#8B5A2B' }}
             >
               Discover Deals
