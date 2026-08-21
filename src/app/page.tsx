@@ -119,9 +119,9 @@ export default function HomePage() {
         className="relative w-full border-t px-6 lg:px-10 py-5 z-10"
         style={{ backgroundColor: '#F8F5F0', borderColor: 'rgba(0,0,0,0.05)' }}
       >
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+          <div className="bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none p-5 md:p-0 text-center md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+            <div className="mb-3 md:mb-4 flex items-center justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -137,8 +137,8 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
+          <div className="bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none p-5 md:p-0 text-center md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+            <div className="mb-3 md:mb-4 flex items-center justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
@@ -153,8 +153,8 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6">
-            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
+          <div className="col-span-2 md:col-span-1 bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none p-5 md:p-0 text-center md:px-6">
+            <div className="mb-3 md:mb-4 flex items-center justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -231,26 +231,29 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* Collection Banner - Mobile（复用桌面端无字底图，4:3 比例 + object-cover） */}
-      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '4 / 3' }}>
+      {/* Collection Banner - Mobile（竖版 3:4 底图，文字底部排布，占屏比更大） */}
+      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '3 / 4' }}>
         <img
-          src={resolveUrl('/images/brand/collection-banner-new.webp')}
+          src={resolveUrl('/images/brand/collection-banner-mobile-v2.webp')}
           alt="Makimoo Collection Banner"
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 flex items-center">
-          <div className="px-6 max-w-xs">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 flex items-end">
+          <div className="px-6 pb-9">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-white text-base font-bold tracking-wide drop-shadow">makimoo</span>
+              <span className="text-white text-lg font-bold tracking-wide drop-shadow">makimoo</span>
             </div>
             <p className="text-white/85 text-xs font-semibold tracking-widest uppercase mb-2">
               Exclusive Deals
             </p>
-            <h2 className="text-3xl font-extrabold text-white leading-tight mb-4 drop-shadow-md">
+            <h2 className="text-4xl font-extrabold text-white leading-tight mb-3 drop-shadow-md">
               Up to 50% Off
             </h2>
+            <p className="text-white/85 text-sm leading-relaxed mb-6 max-w-xs">
+              Limited-time offers on our most-loved comfort essentials, only on MakimooHome.com.
+            </p>
             <a
               href={resolveUrl('/products')}
               className="group/btn inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white"

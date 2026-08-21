@@ -127,8 +127,8 @@ export default function HeroCarousel() {
           </svg>
         </button>
 
-        {/* Dot indicators（触控目标 44px） */}
-        <div className="absolute bottom-[64px] left-1/2 -translate-x-1/2 z-20 flex">
+        {/* Dot indicators（移动端贴底部，避开 CTA 按钮；触控目标 44px） */}
+        <div className="absolute bottom-5 lg:bottom-[64px] left-1/2 -translate-x-1/2 z-20 flex">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -147,8 +147,8 @@ export default function HeroCarousel() {
           ))}
         </div>
 
-        {/* 向下滚动提示箭头（纯 CSS 动画，无 JS） */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 animate-bounce" aria-hidden="true">
+        {/* 向下滚动提示箭头（纯 CSS 动画，无 JS；移动端隐藏减少干扰） */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden lg:block" aria-hidden="true">
           <svg className="w-6 h-6 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -175,19 +175,19 @@ export default function HeroCarousel() {
             }}
           >
             <h4
-              className="text-sm lg:text-base font-semibold tracking-widest uppercase text-white/80 mb-4 animate-fade-in-up"
+              className="hidden sm:block text-sm lg:text-base font-semibold tracking-widest uppercase text-white/80 mb-4 animate-fade-in-up"
               style={{ animationDelay: '0ms' }}
             >
               Makimoo Home
             </h4>
             <h1
-              className="text-3xl lg:text-5xl font-extrabold text-white mb-5 leading-tight drop-shadow-md animate-fade-in-up"
+              className="text-3xl lg:text-5xl font-extrabold text-white mb-4 lg:mb-5 leading-tight drop-shadow-md animate-fade-in-up"
               style={{ animationDelay: '150ms' }}
             >
               {slide.headline}
             </h1>
             <p
-              className="text-base lg:text-lg text-white/85 font-medium mb-8 max-w-xl mx-auto text-center animate-fade-in-up"
+              className="text-sm sm:text-base lg:text-lg text-white/85 font-medium mb-6 lg:mb-8 max-w-xs sm:max-w-xl mx-auto text-center animate-fade-in-up"
               style={{ animationDelay: '300ms' }}
             >
               {slide.sub}
