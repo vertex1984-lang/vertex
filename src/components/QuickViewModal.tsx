@@ -43,6 +43,8 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
     : (product.shopifyImages && product.shopifyImages.length > 0)
       ? shopifyImageUrl(product.shopifyImages[0], 600)
       : product.images[0]?.url || '';
+  // featuredImage 是场景图不缩放；素材白底图加内边距缩小产品占比
+  const padImage = !product.featuredImage && (product.imageWhiteBg?.[0] ?? false);
   const hasShopifyData = product.hasShopifyData;
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
@@ -93,12 +95,12 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
         onClick={(e) => e.stopPropagation()}
       >
         <div className="grid sm:grid-cols-2 gap-6 p-6">
-          <div className="aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA]">
+          <div className="aspect-square rounded-xl overflow-hidden bg-white border border-[#E8E2DA]">
             {image && (
               <img
                 src={resolveUrl(image)}
                 alt={product.title}
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-contain ${padImage ? 'p-6' : ''}`}
               />
             )}
           </div>

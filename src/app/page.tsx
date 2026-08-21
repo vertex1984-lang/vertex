@@ -21,7 +21,6 @@ const FEATURED_ASINS = [
   'B0C4B9T6JV',
   'B0CQC5QJFJ',
   'B0CJ8TJL56',
-  'B0F1YCXTRX',
 ];
 
 const featuredProducts = FEATURED_ASINS.map((asin) => {
@@ -307,7 +306,7 @@ export default function HomePage() {
             {/* 移动端 2 列 / 桌面端 4 列，卡片等高（ProductCard h-full + grid 默认 items-stretch） */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-10">
               {enrichProductsWithShopifyData(featuredProducts).map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <ProductCard key={product.id} product={product} variant="featured" />
               ))}
             </div>
           </Reveal>
@@ -371,7 +370,7 @@ export default function HomePage() {
                 We will cover return shipping cost.
               </p>
             </div>
-            {/* 60-Day Return */}
+            {/* 30-Day Return */}
             <div className="text-center px-6">
               <div className="mb-4 flex items-center justify-center">
                 <div className="w-14 h-14 rounded-full bg-[#E8E2DA] flex items-center justify-center">
@@ -381,9 +380,9 @@ export default function HomePage() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-2 tracking-wide text-[#333]">60-Day Return</h3>
+              <h3 className="text-lg font-bold mb-2 tracking-wide text-[#333]">30-Day Return</h3>
               <p className="text-sm text-[#555] leading-relaxed">
-                We offer extended return period of 60 days.
+                We offer extended return period of 30 days.
               </p>
             </div>
           </div>

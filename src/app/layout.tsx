@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: "Makimoo: Premium Home Essentials",
     template: "%s | Makimoo",
   },
-  description: "Shop Makimoo Home Products, Bring Comfort to Your Home. Free Shipping & 60-day Worry Free Return",
+  description: "Shop Makimoo Home Products, Bring Comfort to Your Home. Free Shipping & 30-day Worry Free Return",
   openGraph: {
     siteName: "Makimoo",
     locale: "en_US",

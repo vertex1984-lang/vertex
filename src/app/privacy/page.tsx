@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             <ul className="space-y-3">
               {[
                 { title: 'To Process and Fulfill Orders', desc: 'Including processing payments, calculating shipping costs, and delivering your home goods to your address.' },
-                { title: 'To Manage Returns', desc: 'Facilitating our 60-day return process and generating free return shipping labels.' },
+                { title: 'To Manage Returns', desc: 'Facilitating our 30-day return process and generating free return shipping labels.' },
                 { title: 'To Communicate With You', desc: 'Sending order confirmations, shipping updates, and customer support responses.' },
                 { title: 'For Marketing', desc: 'Sending promotional emails, newsletters, and special offers (only if you have opted in).' },
                 { title: 'To Improve Our Site and Services', desc: 'Analyzing usage trends, debugging technical issues, and personalizing your shopping experience.' },

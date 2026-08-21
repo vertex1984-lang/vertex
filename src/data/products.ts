@@ -21,6 +21,8 @@ export interface MakimooProduct {
   hasShopifyData?: boolean;
   // Featured image override (optional)
   featuredImage?: string;
+  // 与素材图对齐的白底标记（true = 白底图，展示时加内边距缩小产品占比）
+  imageWhiteBg?: boolean[];
   // 真实评价数据（可选；用户整理数据时填入即自动显示，无则不渲染评分区）
   rating?: number;
   reviewCount?: number;
@@ -5402,76 +5404,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0F1Y91HPR"
   },
   {
-    "id": "makimoo-B0F1YCXTRX",
-    "asin": "B0F1YCXTRX",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1ycxtrx",
-    "description": "Outdoor/patio cushion made of durable 100% polyester canvas for garden/patio furniture. Specially treated fabric: Water repellent,oil repellent, UV resistant. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 18.5 Inch in diameters; allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester canvas for garden/patio furniture</p><p>Specially treated fabric: Water repellent,oil repellent, UV resistant</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 18.5 Inch in diameters; allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0F1YCXTRX/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F1YCXTRX/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F1YCXTRX/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F1YCXTRX/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-3037-Photorealistic commercial lifestyle phot....webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F1YCXTRX/jimeng-2026-04-02-5250-Photorealistic commercial lifestyle phot....webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Coffee Brown)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0F1YCXTRX",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0F1YCXTRX"
-  },
-  {
     "id": "makimoo-B0F62XRB55",
     "asin": "B0F62XRB55",
     "title": "Makimoo Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
@@ -5988,16 +5920,21 @@ const BASE_PRODUCTS: MakimooProduct[] = [
 ];
 
 import { SHOPIFY_MAP } from './shopify-map';
-import { MATERIALS_MAP } from './materials-map';
+import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
 import { MATERIALS_PRODUCTS } from './products-materials';
+import { SHORT_TITLES } from './short-titles';
 
 /** 站点基础产品 + 素材库新增产品 */
 export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS];
 
-/** 应用素材库覆盖（标题/五点描述/图片），返回 null 表示该 ASIN 无素材数据 */
+/** 应用素材库覆盖（标题/五点描述/图片），返回原产品表示该 ASIN 无素材数据 */
 function applyMaterialsData(product: MakimooProduct): MakimooProduct {
   const entry = MATERIALS_MAP[product.asin.toLowerCase()];
-  if (!entry) return product;
+  if (!entry) {
+    // 素材库之外的老产品：仅应用白底图标记
+    const whiteBg = SITE_ONLY_WHITEBG[product.asin.toLowerCase()];
+    return whiteBg ? { ...product, imageWhiteBg: whiteBg } : product;
+  }
   const bullets = entry.bullets.trim();
   return {
     ...product,
@@ -6007,6 +5944,7 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
       ? bullets.split(/\n\n+/).map((p) => `<p>${p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, ' ')}</p>`).join('')
       : product.descriptionHtml,
     images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
+    imageWhiteBg: entry.whiteBg,
   };
 }
 
@@ -6015,20 +5953,23 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
   return products.map(rawProduct => {
     const product = applyMaterialsData(rawProduct);
     const asinLower = product.asin.toLowerCase();
+    // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖
+    const shortTitle = SHORT_TITLES[asinLower];
+    const titled = shortTitle ? { ...product, title: shortTitle } : product;
     const shopifyEntry = SHOPIFY_MAP[asinLower];
     const materialsImages = MATERIALS_MAP[asinLower]?.images;
     if (!shopifyEntry) {
       return materialsImages
-        ? { ...product, hasShopifyData: false, shopifyImages: materialsImages }
-        : { ...product, hasShopifyData: false };
+        ? { ...titled, hasShopifyData: false, shopifyImages: materialsImages }
+        : { ...titled, hasShopifyData: false };
     }
     return {
-      ...product,
+      ...titled,
       hasShopifyData: true,
       shopifyVariantId: shopifyEntry.variantId,
       shopifyAvailable: shopifyEntry.availableForSale,
       // Use Shopify price unless it's $0.0 (needs fix), then fallback to local price
-      shopifyPrice: shopifyEntry.priceNeedsFix ? product.priceRange.minVariantPrice.amount : shopifyEntry.price,
+      shopifyPrice: shopifyEntry.priceNeedsFix ? titled.priceRange.minVariantPrice.amount : shopifyEntry.price,
       shopifyCurrencyCode: shopifyEntry.currencyCode,
       // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
       shopifyImages: materialsImages || shopifyEntry.images,

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Shipping & Returns',
-  description: 'Free shipping on all orders and an extended 60-day worry-free return policy at Makimoo.',
+  description: 'Free shipping on all orders and an extended 30-day worry-free return policy at Makimoo.',
 };
 
 export default function ShippingReturnPage() {
@@ -78,9 +78,9 @@ export default function ShippingReturnPage() {
 
           <div className="bg-white rounded-2xl p-8 shadow-sm space-y-6">
             <div>
-              <h3 className="text-lg font-bold text-[#333] mb-2">60-Day Returns</h3>
+              <h3 className="text-lg font-bold text-[#333] mb-2">30-Day Returns</h3>
               <p className="text-[#555] leading-relaxed">
-                We stand by the quality of our products. If you are not completely satisfied with your purchase, you may return eligible items within 60 days of delivery for a full refund.
+                We stand by the quality of our products. If you are not completely satisfied with your purchase, you may return eligible items within 30 days of delivery for a full refund.
               </p>
             </div>
 

@@ -41,7 +41,7 @@ const REVIEWS = [
     author: 'Michael B.',
     rating: 4,
     title: 'Great value',
-    body: 'Solid construction and fair pricing. The 60-day return policy made it an easy decision, but I am keeping them.',
+    body: 'Solid construction and fair pricing. The 30-day return policy made it an easy decision, but I am keeping them.',
     product: 'Pillow Inserts',
   },
 ];

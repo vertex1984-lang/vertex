@@ -8,7 +8,7 @@ const slides = [
     image: '/images/brand/hero-bg-3.webp',
     alt: 'Makimoo Hero Background 1',
     headline: 'Made for Better Living.',
-    sub: 'Free shipping and 60-day worry-free returns on every single order.',
+    sub: 'Free shipping and 30-day worry-free returns on every single order.',
   },
   {
     image: '/images/brand/hero-bg-2.webp',

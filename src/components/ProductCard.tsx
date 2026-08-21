@@ -10,9 +10,19 @@ import QuickViewModal from '@/components/QuickViewModal';
 
 interface ProductCardProps {
   product: MakimooProduct;
+  /** featured: 首页 Featured 区块专用，保留旧的固定高度+渐变底图区样式 */
+  variant?: 'default' | 'featured';
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+/** 从标题提取件数："Set of 4" / "4 Pack" / "2-Pack" / "Pack of 2" → 4/4/2/2 */
+function getPackCount(title: string): number | null {
+  const m = title.match(/set of (\d+)|(\d+)[\s-]?pack|pack of (\d+)|(\d+)[\s-]?piece/i);
+  if (!m) return null;
+  const n = parseInt(m[1] || m[2] || m[3] || m[4], 10);
+  return n > 1 ? n : null;
+}
+
+export default function ProductCard({ product, variant = 'default' }: ProductCardProps) {
   const { toast } = useToast();
   const [quickViewOpen, setQuickViewOpen] = useState(false);
   const [fav, setFav] = useState(false);
@@ -35,6 +45,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
+  const packCount = getPackCount(product.title);
 
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -55,7 +66,10 @@ export default function ProductCard({ product }: ProductCardProps) {
         href={resolveUrl(`/products/${product.handle}/`)}
         className="group h-full flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       >
-        <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA] p-4 sm:p-5">
+        <div className={variant === 'featured'
+          ? 'relative h-40 sm:h-52 lg:h-64 overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA]'
+          : 'relative aspect-square overflow-hidden bg-white border-b border-[#E8E2DA]'
+        }>
           {image && (
             <img
               src={resolveUrl(image.url)}
@@ -63,13 +77,18 @@ export default function ProductCard({ product }: ProductCardProps) {
               width={image.width}
               height={image.height}
               loading="lazy"
-              className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+              className={`w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-5 sm:p-7' : ''}`}
             />
           )}
           {!isInStock && (
             <div className="absolute inset-0 bg-white/60 flex items-center justify-center">
               <span className="px-3 py-1 bg-[#333]/80 text-white text-xs font-semibold rounded-full">Out of Stock</span>
             </div>
+          )}
+          {packCount && (
+            <span className="absolute bottom-2 left-2 px-2 py-0.5 bg-[#8B5A2B] text-white text-[11px] font-semibold rounded-full shadow">
+              {packCount} Pack
+            </span>
           )}
           {/* 收藏按钮 */}
           <button

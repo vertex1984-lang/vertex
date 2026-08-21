@@ -22,7 +22,7 @@ const ACCORDION_SECTIONS = [
   },
   {
     title: 'Returns & Refunds',
-    body: 'We offer an extended 60-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
+    body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
   },
   {
     title: 'Materials & Care',
@@ -94,15 +94,16 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
 
   // Use Shopify images if available (CDN), otherwise fallback to local images
   const productImages = (product.shopifyImages && product.shopifyImages.length > 0)
-    ? product.shopifyImages.map((url) => ({
+    ? product.shopifyImages.map((url, i) => ({
         url,
         mainUrl: shopifyImageUrl(url, 1200),
         thumbUrl: shopifyImageUrl(url, 200),
         altText: product.title,
         width: 800,
         height: 800,
+        whiteBg: product.imageWhiteBg?.[i] ?? false,
       }))
-    : product.images.map((img) => ({ ...img, mainUrl: img.url, thumbUrl: img.url }));
+    : product.images.map((img, i) => ({ ...img, mainUrl: img.url, thumbUrl: img.url, whiteBg: product.imageWhiteBg?.[i] ?? false }));
 
   // Use Shopify price if available; no Shopify data = not in stock, no price
   const hasShopifyData = product.hasShopifyData;
@@ -182,7 +183,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
           {/* Product Images */}
           <div>
             <div
-              className="aspect-square rounded-xl overflow-hidden mb-4 border border-[#E8E2DA] cursor-zoom-in relative group bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA]"
+              className="aspect-square rounded-xl overflow-hidden mb-4 border border-[#E8E2DA] cursor-zoom-in relative group bg-white"
               onClick={() => setLightboxOpen(true)}
             >
               {/* 主图加载前 pulse 骨架占位 */}
@@ -195,6 +196,8 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                 height={productImages[selectedImage]?.height}
                 onLoad={() => setMainImageLoaded(true)}
                 className={`relative w-full h-full object-contain transition-all duration-300 group-hover:scale-110 ${
+                  productImages[selectedImage]?.whiteBg ? 'p-6 sm:p-8' : ''
+                } ${
                   mainImageLoaded ? 'opacity-100' : 'opacity-0'
                 }`}
               />
