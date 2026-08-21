@@ -1,35 +1,41 @@
 import type { Metadata } from 'next';
+import { PolicyHeader, PolicyLayout, PolicySection, PolicyContactStrip } from '@/components/Policy';
 
 export const metadata: Metadata = {
   title: 'Shipping & Returns',
   description: 'Free shipping on all orders and an extended 30-day worry-free return policy at Makimoo.',
 };
 
+const toc = [
+  { id: 'shipping', label: 'Shipping Policy' },
+  { id: 'returns', label: 'Return Policy' },
+  { id: 'initiate', label: 'How to Initiate a Return' },
+  { id: 'refunds', label: 'Refunds & Return Shipping' },
+  { id: 'processing', label: 'Refund Processing' },
+  { id: 'damaged', label: 'Damaged or Defective Items?' },
+];
+
 export default function ShippingReturnPage() {
   return (
     <div className="px-6 lg:px-10 py-10">
-      <div className="max-w-3xl mx-auto">
-        {/* Hero */}
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Our Policies</p>
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#333] mb-4">Shipping & Return Policy</h1>
-          <p className="text-lg text-[#555] max-w-2xl mx-auto">
-            At Makimoo, we want you to absolutely love your new home essentials. If things don&apos;t quite work out, we&apos;re here to help make the process as seamless as possible.
-          </p>
-        </div>
+      <PolicyHeader
+        eyebrow="Our Policies"
+        title="Shipping & Return Policy"
+        subtitle="At Makimoo, we want you to absolutely love your new home essentials. If things don&apos;t quite work out, we&apos;re here to help make the process as seamless as possible."
+      />
 
+      <PolicyLayout toc={toc}>
         {/* Shipping Policy */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">Shipping Policy</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-sm space-y-6">
+        <PolicySection
+          id="shipping"
+          title="Shipping Policy"
+          icon={
+            <>
+              <rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+            </>
+          }
+        >
+          <div className="space-y-6">
             <div>
               <h3 className="text-lg font-bold text-[#333] mb-2">Free U.S. Shipping on All Orders</h3>
               <p className="text-[#555] leading-relaxed">
@@ -63,20 +69,19 @@ export default function ShippingReturnPage() {
               </p>
             </div>
           </div>
-        </section>
+        </PolicySection>
 
         {/* Return Policy */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">Return Policy</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-sm space-y-6">
+        <PolicySection
+          id="returns"
+          title="Return Policy"
+          icon={
+            <>
+              <polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
+            </>
+          }
+        >
+          <div className="space-y-6">
             <div>
               <h3 className="text-lg font-bold text-[#333] mb-2">30-Day Returns</h3>
               <p className="text-[#555] leading-relaxed">
@@ -111,50 +116,24 @@ export default function ShippingReturnPage() {
               </ul>
             </div>
           </div>
-        </section>
-
-        {/* Refunds & Return Shipping */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">Refunds & Return Shipping</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-sm space-y-6">
-            <div>
-              <h3 className="text-lg font-bold text-[#333] mb-2">Free Return Shipping Labels</h3>
-              <p className="text-[#555] leading-relaxed mb-3">
-                At Makimoo, we want returns to be hassle-free. We provide a free prepaid return shipping label for all eligible returns. There are no restocking fees, and return shipping costs are completely covered by us.
-              </p>
-              <div className="space-y-2 text-sm text-[#555]">
-                <p className="italic">If you choose to use your own shipping carrier instead of our provided label, return shipping costs will be your responsibility.</p>
-                <p><strong className="text-[#8B5A2B]">Refund Amount:</strong> Your refund will be issued to your original payment method for the full purchase price of the item.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        </PolicySection>
 
         {/* How to Initiate a Return */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">How to Initiate a Return</h2>
-          </div>
-
+        <PolicySection
+          id="initiate"
+          title="How to Initiate a Return"
+          icon={
+            <>
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" />
+            </>
+          }
+        >
           <div className="space-y-4">
             {[
               {
                 step: 1,
                 title: 'Contact Us',
-                desc: 'Email our support team at support@makimoo.com with your order number and the item(s) you wish to return.',
+                desc: 'Email our support team at support@makimoohome.com with your order number and the item(s) you wish to return.',
               },
               {
                 step: 2,
@@ -167,7 +146,7 @@ export default function ShippingReturnPage() {
                 desc: 'Securely pack the item in its original packaging, attach the shipping label, and drop it off at the designated carrier location. Do not send packages back without an RMA number, as they will be refused.',
               },
             ].map((item) => (
-              <div key={item.step} className="bg-white rounded-2xl p-6 shadow-sm flex gap-5">
+              <div key={item.step} className="bg-[#F8F5F0] border border-[#E8E2DA] rounded-2xl p-6 flex gap-5">
                 <div className="w-10 h-10 rounded-full bg-[#8B5A2B] text-white flex items-center justify-center font-bold text-lg shrink-0">
                   {item.step}
                 </div>
@@ -178,20 +157,43 @@ export default function ShippingReturnPage() {
               </div>
             ))}
           </div>
-        </section>
+        </PolicySection>
+
+        {/* Refunds & Return Shipping */}
+        <PolicySection
+          id="refunds"
+          title="Refunds & Return Shipping"
+          icon={
+            <>
+              <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+            </>
+          }
+        >
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-bold text-[#333] mb-2">Free Return Shipping Labels</h3>
+              <p className="text-[#555] leading-relaxed mb-3">
+                At Makimoo, we want returns to be hassle-free. We provide a free prepaid return shipping label for all eligible returns. There are no restocking fees, and return shipping costs are completely covered by us.
+              </p>
+              <div className="space-y-2 text-sm text-[#555]">
+                <p className="italic">If you choose to use your own shipping carrier instead of our provided label, return shipping costs will be your responsibility.</p>
+                <p><strong className="text-[#8B5A2B]">Refund Amount:</strong> Your refund will be issued to your original payment method for the full purchase price of the item.</p>
+              </div>
+            </div>
+          </div>
+        </PolicySection>
 
         {/* Refund Processing */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">Refund Processing</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-sm space-y-4">
+        <PolicySection
+          id="processing"
+          title="Refund Processing"
+          icon={
+            <>
+              <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+            </>
+          }
+        >
+          <div className="space-y-4">
             <p className="text-[#555] leading-relaxed">
               Once we receive your returned item at our warehouse, our team will inspect it to ensure it meets the return criteria.
             </p>
@@ -207,35 +209,34 @@ export default function ShippingReturnPage() {
               ))}
             </ul>
           </div>
-        </section>
+        </PolicySection>
 
         {/* Damaged or Defective Items */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-[#8B5A2B]/10 flex items-center justify-center shrink-0">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" /><line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
-              </svg>
-            </div>
-            <h2 className="text-2xl font-bold text-[#333]">Damaged or Defective Items?</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <p className="text-[#555] leading-relaxed mb-4">
-              If your item arrives damaged or defective, please contact us at{' '}
-              <a href="mailto:support@makimoo.com" className="text-[#8B5A2B] font-medium hover:underline">
-                support@makimoo.com
-              </a>{' '}
-              within 48 hours of delivery. Please include photos of the damaged product and the packaging so we can resolve the issue immediately with a replacement or full refund.
-            </p>
-          </div>
-        </section>
+        <PolicySection
+          id="damaged"
+          title="Damaged or Defective Items?"
+          icon={
+            <>
+              <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" /><line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
+            </>
+          }
+        >
+          <p className="text-[#555] leading-relaxed">
+            If your item arrives damaged or defective, please contact us at{' '}
+            <a href="mailto:support@makimoohome.com" className="text-[#8B5A2B] font-medium hover:underline">
+              support@makimoohome.com
+            </a>{' '}
+            within 48 hours of delivery. Please include photos of the damaged product and the packaging so we can resolve the issue immediately with a replacement or full refund.
+          </p>
+        </PolicySection>
 
         {/* Disclaimer */}
         <div className="text-center text-sm text-[#888] italic">
           Makimoo reserves the right to update this policy at any time. All returns are subject to verification and final approval by our warehouse team.
         </div>
-      </div>
+
+        <PolicyContactStrip />
+      </PolicyLayout>
     </div>
   );
 }

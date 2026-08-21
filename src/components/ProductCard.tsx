@@ -77,7 +77,7 @@ export default function ProductCard({ product, variant = 'default' }: ProductCar
               width={image.width}
               height={image.height}
               loading="lazy"
-              className={`w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-5 sm:p-7' : ''}`}
+              className={`w-full h-full ${variant === 'featured' ? 'object-cover' : 'object-contain'} transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-5 sm:p-7' : ''}`}
             />
           )}
           {!isInStock && (

@@ -107,10 +107,10 @@ export default function HeroCarousel() {
           </div>
         ))}
 
-        {/* Left/Right arrow buttons */}
+        {/* Left/Right arrow buttons（移动端隐藏，避免遮挡文案；滑动切换+圆点已足够） */}
         <button
           onClick={goPrev}
-          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm hidden sm:flex items-center justify-center transition-all duration-300"
           aria-label="Previous slide"
         >
           <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -119,7 +119,7 @@ export default function HeroCarousel() {
         </button>
         <button
           onClick={goNext}
-          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/25 hover:bg-white/50 backdrop-blur-sm hidden sm:flex items-center justify-center transition-all duration-300"
           aria-label="Next slide"
         >
           <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

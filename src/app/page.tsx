@@ -107,9 +107,9 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      {/* Hero Section */}
+      {/* Hero Section（移动端用 4:5 比例，避免桌面宽幅图被过度裁切；桌面端保持 85vh） */}
       <section
-        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 min-h-[85vh]"
+        className="relative flex items-center justify-center text-center overflow-hidden px-6 lg:px-10 aspect-[4/5] lg:aspect-auto lg:min-h-[85vh]"
       >
         <HeroCarousel />
       </section>
@@ -119,9 +119,9 @@ export default function HomePage() {
         className="relative w-full border-t px-6 lg:px-10 py-5 z-10"
         style={{ backgroundColor: '#F8F5F0', borderColor: 'rgba(0,0,0,0.05)' }}
       >
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="mb-4 flex items-center justify-center">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -130,13 +130,15 @@ export default function HomePage() {
                 </svg>
               </div>
             </div>
-            <h3 className="text-lg font-bold mb-3 tracking-wide">WARM & COMFORTABLE</h3>
-            <p className="text-sm text-[#555] leading-relaxed">
-              Everyone deserves a home that feels like a warm embrace.
-            </p>
+            <div>
+              <h3 className="text-base md:text-lg font-bold mb-1 md:mb-3 tracking-wide">WARM & COMFORTABLE</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                Everyone deserves a home that feels like a warm embrace.
+              </p>
+            </div>
           </div>
-          <div className="text-center px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
-            <div className="mb-4 flex items-center justify-center">
+          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6 md:border-r md:border-dotted md:border-[rgba(0,0,0,0.2)]">
+            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
@@ -144,23 +146,27 @@ export default function HomePage() {
                 </svg>
               </div>
             </div>
-            <h3 className="text-lg font-bold mb-3 tracking-wide">SIMPLE & THOUGHTFUL</h3>
-            <p className="text-sm text-[#555] leading-relaxed">
-              Bringing comfort to your home is our mission.
-            </p>
+            <div>
+              <h3 className="text-base md:text-lg font-bold mb-1 md:mb-3 tracking-wide">SIMPLE & THOUGHTFUL</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                Bringing comfort to your home is our mission.
+              </p>
+            </div>
           </div>
-          <div className="text-center px-6">
-            <div className="mb-4 flex items-center justify-center">
+          <div className="flex items-center gap-4 text-left md:block md:text-center px-2 md:px-6">
+            <div className="shrink-0 md:mb-4 md:flex md:items-center md:justify-center">
               <div className="w-12 h-12 rounded-full bg-[#E8E2DA] flex items-center justify-center">
                 <svg className="w-6 h-6 text-[#8B5A2B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                 </svg>
               </div>
             </div>
-            <h3 className="text-lg font-bold mb-3 tracking-wide">MADE FOR BETTER LIVING</h3>
-            <p className="text-sm text-[#555] leading-relaxed">
-              Making your life simpler is our top priority.
-            </p>
+            <div>
+              <h3 className="text-base md:text-lg font-bold mb-1 md:mb-3 tracking-wide">MADE FOR BETTER LIVING</h3>
+              <p className="text-sm text-[#555] leading-relaxed">
+                Making your life simpler is our top priority.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -225,10 +231,10 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* Collection Banner - Mobile (高度为原图的 80%) */}
-      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '768 / 495' }}>
+      {/* Collection Banner - Mobile（复用桌面端无字底图，4:3 比例 + object-cover） */}
+      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '4 / 3' }}>
         <img
-          src={resolveUrl('/images/brand/collection-banner-mobile.webp')}
+          src={resolveUrl('/images/brand/collection-banner-new.webp')}
           alt="Makimoo Collection Banner"
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover animate-ken-burns"

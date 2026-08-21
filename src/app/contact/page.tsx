@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Reveal from '@/components/Reveal';
+import { PolicyHeader, PolicyLayout } from '@/components/Policy';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -9,15 +10,13 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="px-6 lg:px-10 py-10">
-      <div className="max-w-4xl mx-auto">
-        {/* Hero */}
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Get in Touch</p>
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#333] mb-4">Contact Us</h1>
-          <p className="text-lg text-[#555] max-w-2xl mx-auto">
-            Have a question, need support, or just want to say hello? We&apos;re here for you — reach out and we&apos;ll get back to you as soon as we can.
-          </p>
-        </div>
+      <PolicyLayout>
+        {/* Header */}
+        <PolicyHeader
+          eyebrow="Get in Touch"
+          title="Contact Us"
+          subtitle="Have a question, need support, or just want to say hello? We're here for you — reach out and we'll get back to you as soon as we can."
+        />
 
         {/* Contact Cards */}
         <Reveal delay={100}>
@@ -31,10 +30,10 @@ export default function ContactPage() {
             </div>
             <h3 className="text-lg font-bold text-[#333] mb-2">Email</h3>
             <a
-              href="mailto:Contact@Makimoohome.com"
+              href="mailto:support@makimoohome.com"
               className="text-[#8B5A2B] font-medium hover:underline break-all"
             >
-              Contact@Makimoohome.com
+              support@makimoohome.com
             </a>
             <p className="text-sm text-[#888] mt-3">
               We will answer your email within 12 hours.
@@ -80,7 +79,7 @@ export default function ContactPage() {
             Whether it&apos;s product feedback, partnership opportunities, or simply a question about your order — drop us a line and our team will take care of it.
           </p>
           <a
-            href="mailto:Contact@Makimoohome.com"
+            href="mailto:support@makimoohome.com"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold text-sm transition hover:opacity-90"
             style={{ backgroundColor: '#8B5A2B' }}
           >
@@ -92,7 +91,7 @@ export default function ContactPage() {
           </a>
         </div>
         </Reveal>
-      </div>
+      </PolicyLayout>
     </div>
   );
 }
