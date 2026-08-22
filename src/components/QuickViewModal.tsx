@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { MakimooProduct } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
@@ -82,7 +83,7 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
     }
   };
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[2500] bg-black/50 flex items-center justify-center p-4"
       onClick={onClose}
@@ -91,7 +92,7 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
       aria-label={`Quick view: ${product.title}`}
     >
       <div
-        className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="grid sm:grid-cols-2 gap-6 p-6">
@@ -146,6 +147,7 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
           &times;
         </button>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
