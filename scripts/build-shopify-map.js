@@ -62,7 +62,8 @@ const GET_ALL_PRODUCTS = `
   }
 `;
 
-const ASIN_RE = /^B0[A-Z0-9]{8}$/i;
+// 产品标识：亚马逊 ASIN（B0xxxxxxxx）或 1688 供应商标识（1688-xxxx(-Cx)）
+const ASIN_RE = /^(B0[A-Z0-9]{8}|1688-[0-9]+(-C[0-9]+)?)$/i;
 
 // 已从站点剔除的 ASIN（早期错误数据），不再接入映射
 const EXCLUDED_ASINS = new Set(['b0f1ycxtrx']);
@@ -98,7 +99,7 @@ function loadMaterialsSkus() {
   try {
     const src = fs.readFileSync(path.join(__dirname, '..', 'src', 'data', 'materials-map.ts'), 'utf-8');
     const skus = {};
-    const re = /"([a-z0-9]+)": (\{[^\n]*\})/g;
+    const re = /"([a-z0-9-]+)": (\{[^\n]*\})/g;
     let m;
     while ((m = re.exec(src))) {
       try {

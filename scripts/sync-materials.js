@@ -3,10 +3,11 @@
  *
  * 功能：
  *  1. 拉取 groupId=18 (makimoohome) 的全部产品
- *  2. 图片规则：whiteBgImages 优先在前，其余按 images 现有顺序补充（按 URL 去重）；第 1 张为主图
- *  3. 下载图片 → sharp 转 WebP → public/images/products/{ASIN}/{n}.webp（覆盖旧文件）
- *  4. 生成 src/data/materials-map.ts（全部 101 个 ASIN 的标题/五点/图片覆盖表）
- *  5. 生成 src/data/products-materials.ts（站点上没有的新 ASIN 的完整产品条目）
+ *  2. 图片规则：图片池 = images ∪ imageTypes 的 key，按优先级定展示顺序（第 1 张为主图）：
+ *     场景展示图 > 无文字场景图1 > 白底主图 > 用户上传图（非白底在前、白底在后）> 卖点图 > 细节特写图 > 尺寸图 > 营销主图
+ *  3. 下载图片 → sharp 转 WebP → public/images/products/{ASIN}/{n}.webp（文件编号按下载顺序，展示顺序由 map 定义）
+ *  4. 生成 src/data/materials-map.ts（全部素材产品的标题/五点/图片覆盖表，key 为小写 ASIN 或 1688-xxx 标识）
+ *  5. 生成 src/data/products-materials.ts（站点上没有的新产品完整条目，自动分类、白底检测）
  *
  * 用法： node scripts/sync-materials.js <密码>   或   MATERIALS_PASSWORD=xxx node scripts/sync-materials.js
  * 幂等：图片已存在且数量一致时跳过下载；--force 强制全部重下。
@@ -36,10 +37,14 @@ const AMAZON_HOST = { US: 'www.amazon.com', DE: 'www.amazon.de', UK: 'www.amazon
 
 function classify(title) {
   const t = (title || '').toLowerCase();
-  if (/travel|neck pillow/.test(t)) return 'Travel';
+  // Towels/Mats 优先：浴巾/地垫标题常带 "travel"(便携场景) 或 "dining"(kitchen dining)，先拦截
+  if (/bath ?mats?|bath rug|kitchen (mat|rug)|door mat|entryway|floor mat|area rug|diatom/.test(t)) return 'Mats';
+  if (/towels?\b/.test(t)) return 'Towels';
+  // Travel 已并入 Others（全站统一 6 类）
+  if (/travel|neck pillow/.test(t)) return 'Others';
   if (/pillowcase|pillow case|cushion cover|pillow cover|bed pillow|pillow insert|cushion filler|cushion pad|throw pillow insert|quilted.*(insert|pillow)/.test(t)) return 'Pillows';
-  if (/dining/.test(t)) return 'Dining';
-  if (/chair cushion|seat cushion|seat pad|patio.*cushion|cushions? (set|with|2 pack|4 pack)/.test(t)) return 'Cushions';
+  // Dining 已并入 Cushions（全站统一 6 类）
+  if (/dining|chair cushion|seat cushion|seat pad|patio.*cushion|cushions? (set|with|2 pack|4 pack)/.test(t)) return 'Cushions';
   return 'Others';
 }
 
@@ -117,20 +122,25 @@ async function mapLimit(items, limit, fn) {
   const items = list.data.items.filter((i) => i.groupId === GROUP_ID);
   console.log(`素材库 makimoohome 分组产品数: ${items.length}`);
 
-  // 2. 站点现有 ASIN
+  // 2. 站点现有 ASIN（含 1688-xxx 供应商标识）
   const productsSrc = fs.readFileSync(PRODUCTS_TS, 'utf8');
-  const siteAsins = new Set([...productsSrc.matchAll(/"asin": "([A-Z0-9]+)"/g)].map((m) => m[1]));
+  const siteAsins = new Set([...productsSrc.matchAll(/"asin": "([A-Za-z0-9-]+)"/g)].map((m) => m[1]));
 
   // 3. 每个产品整理图片清单并下载转 WebP
+  // 图片池 = images（用户上传）∪ imageTypes 的 key（标注类型的图，含生成的场景图）
+  const itemTypes = {}; // asin -> { url: type }
+  const POOLS = {}; // asin -> 下载顺序的原始 URL 数组
   let downloaded = 0, skipped = 0, failed = 0;
-  const productImages = {}; // asin -> 本地路径数组
+  const productImages = {}; // asin -> 本地路径数组（下载顺序）
   await mapLimit(items, CONCURRENCY, async (item) => {
     const asin = item.asin;
+    itemTypes[asin] = item.imageTypes || {};
     const ordered = [];
     const seen = new Set();
-    for (const u of [...(item.whiteBgImages || []), ...(item.images || [])]) {
+    for (const u of [...(item.images || []), ...(item.whiteBgImages || []), ...Object.keys(item.imageTypes || {})]) {
       if (u && !seen.has(u)) { seen.add(u); ordered.push(u); }
     }
+    POOLS[asin] = ordered;
     if (ordered.length === 0) { console.log(`  [无图] ${asin}`); productImages[asin] = []; return; }
 
     const dir = path.join(IMG_BASE, asin);
@@ -160,15 +170,29 @@ async function mapLimit(items, limit, fn) {
   console.log(`图片处理完成: 下载 ${downloaded}, 跳过 ${skipped}, 失败 ${failed}`);
 
   // 4. 生成 materials-map.ts（覆盖全部素材 ASIN），并对每张图做白底检测
+  // 展示顺序（首图优先级）：场景展示图 > 无文字场景图1 > 白底主图 > 用户上传图（非白底在前、白底在后）> 卖点图 > 细节特写图 > 尺寸图 > 营销主图
+  const TYPE_RANK = { '场景展示图': 0, '无文字场景图1': 1, '白底主图': 2, '卖点图': 5, '细节特写图': 6, '尺寸图': 7, '营销主图': 8 };
   const withImages = items.filter((i) => (productImages[i.asin] || []).length > 0);
   const mapRows = [];
   for (const i of withImages) {
+    const localPaths = productImages[i.asin];
     const whiteBg = [];
-    for (const localPath of productImages[i.asin]) {
+    for (const localPath of localPaths) {
       const abs = path.join(ROOT, 'public', localPath.replace(/\//g, path.sep));
       whiteBg.push(await detectWhiteBg(abs));
     }
-    mapRows.push(`  ${JSON.stringify(i.asin.toLowerCase())}: {"title":${JSON.stringify(i.listingTitle || '')},"bullets":${JSON.stringify(i.listingBullets || '')},"sku":${JSON.stringify(i.sku || '')},"images":${JSON.stringify(productImages[i.asin])},"whiteBg":${JSON.stringify(whiteBg)}},`);
+    // 按优先级重排（文件编号不变，只调整 map 中的展示顺序）
+    const types = itemTypes[i.asin] || {};
+    const rankOf = (idx) => {
+      const type = types[POOLS[i.asin][idx]];
+      if (type !== undefined) return TYPE_RANK[type] !== undefined ? TYPE_RANK[type] : 9;
+      return whiteBg[idx] ? 4 : 3; // 无类型标注的用户上传图：场景（非白底）在前，白底在后
+    };
+    const order = localPaths.map((_, idx) => idx).sort((a, b) => rankOf(a) - rankOf(b) || a - b);
+    const finalImages = order.map((idx) => localPaths[idx]);
+    const finalWhiteBg = order.map((idx) => whiteBg[idx]);
+    productImages[i.asin] = finalImages;
+    mapRows.push(`  ${JSON.stringify(i.asin.toLowerCase())}: {"title":${JSON.stringify(i.listingTitle || '')},"bullets":${JSON.stringify(i.listingBullets || '')},"sku":${JSON.stringify(i.sku || '')},"images":${JSON.stringify(finalImages)},"whiteBg":${JSON.stringify(finalWhiteBg)}},`);
   }
   const mapEntries = mapRows.join('\n');
 
@@ -177,7 +201,7 @@ async function mapLimit(items, limit, fn) {
   const siteOnlyRows = [];
   const entryBlocks = productsSrc.split('"id": "makimoo-').slice(1);
   for (const block of entryBlocks) {
-    const asin = (block.match(/"asin": "([A-Z0-9]+)"/) || [])[1];
+    const asin = (block.match(/"asin": "([A-Za-z0-9-]+)"/) || [])[1];
     if (!asin || matsAsins.has(asin)) continue;
     const urls = [...block.matchAll(/"url": "(\/images\/products\/[^"]+\.webp)"/g)].map((m) => m[1]);
     if (urls.length === 0) continue;
@@ -247,7 +271,8 @@ ${siteOnlyEntries}
         availableForSale: false,
         selectedOptions: [],
       }],
-      amazonUrl: `https://${host}/dp/${i.asin}`,
+      // 1688 供应商产品无亚马逊链接（正常在售时前台也不会显示该按钮）
+      amazonUrl: i.asin.startsWith('B0') ? `https://${host}/dp/${i.asin}` : '',
     };
   });
   fs.writeFileSync(OUT_NEW_TS, `// Auto-generated by scripts/sync-materials.js

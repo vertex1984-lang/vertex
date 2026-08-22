@@ -27,11 +27,11 @@ export default function Footer() {
             <span className="block w-8 h-0.5 rounded bg-white/40 mt-2 mb-4" />
             <div className="flex flex-col gap-1">
               <a href={resolveUrl('/products')} className={footerLinkClass}>All Products</a>
-              <a href={resolveUrl('/products?cat=dining')} className={footerLinkClass}>Dining Cushions</a>
-              <a href={resolveUrl('/products?cat=cushions')} className={footerLinkClass}>Chair Cushions</a>
-              <a href={resolveUrl('/products?cat=pillows')} className={footerLinkClass}>Pillow Inserts</a>
-              <a href={resolveUrl('/products?cat=travel')} className={footerLinkClass}>Travel Pillows</a>
-              <a href={resolveUrl('/products?cat=home-fragrance')} className={footerLinkClass}>Home Fragrance</a>
+              <a href={resolveUrl('/products?cat=cushions')} className={footerLinkClass}>Cushions</a>
+              <a href={resolveUrl('/products?cat=pillows')} className={footerLinkClass}>Pillows</a>
+              <a href={resolveUrl('/products?cat=towels')} className={footerLinkClass}>Towels</a>
+              <a href={resolveUrl('/products?cat=mats')} className={footerLinkClass}>Mats</a>
+              <a href={resolveUrl('/products?cat=others')} className={footerLinkClass}>Others</a>
             </div>
           </div>
           <div>

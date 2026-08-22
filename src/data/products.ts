@@ -5948,28 +5948,62 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
   };
 }
 
+/** 无手工精简标题时的自动精简：去品牌词、≤100 字符（在逗号/空格处截断） */
+function autoShortenTitle(t: string): string {
+  const s = t.replace(/\bmakimoo\b[,\s-]*/i, '').trim();
+  if (s.length <= 100) return s;
+  const cut = s.slice(0, 100);
+  const lastComma = cut.lastIndexOf(',');
+  if (lastComma >= 40) return cut.slice(0, lastComma).trim();
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace >= 40 ? cut.slice(0, lastSpace) : cut).trim();
+}
+
+/** 分类归并（全站统一 6 类）：Dining → Cushions，Home Fragrance / Travel → Others，Bath 按标题拆为 Towels / Mats */
+const CATEGORY_MERGE: Record<string, string> = {
+  dining: 'Cushions',
+  'home fragrance': 'Others',
+  travel: 'Others',
+};
+const MATS_RE = /bath ?mats?|bath rug|kitchen (mat|rug)|door mat|entryway|floor mat|area rug|diatom/i;
+const TOWELS_RE = /towel/i;
+function normalizeCategory(t: string, title = ''): string {
+  if (t.toLowerCase() === 'bath') {
+    if (MATS_RE.test(title)) return 'Mats';
+    if (TOWELS_RE.test(title)) return 'Towels';
+    return 'Mats';
+  }
+  return CATEGORY_MERGE[t.toLowerCase()] || t;
+}
+
 /** Merge local product data with Shopify data (prices, availability, variant IDs) and materials overrides (title, bullets, images) */
 export function enrichProductsWithShopifyData(products: MakimooProduct[]): MakimooProduct[] {
   return products.map(rawProduct => {
     const product = applyMaterialsData(rawProduct);
     const asinLower = product.asin.toLowerCase();
-    // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖
-    const shortTitle = SHORT_TITLES[asinLower];
-    const titled = shortTitle ? { ...product, title: shortTitle } : product;
+    // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖；无手工条目时自动精简
+    const shortTitle = SHORT_TITLES[asinLower] || autoShortenTitle(product.title);
+    const titled = shortTitle !== product.title ? { ...product, title: shortTitle } : product;
+    // 分类归一化（productType + tags）
+    const categorized = {
+      ...titled,
+      productType: normalizeCategory(titled.productType, titled.title),
+      tags: titled.tags.map(t => normalizeCategory(t, titled.title)),
+    };
     const shopifyEntry = SHOPIFY_MAP[asinLower];
     const materialsImages = MATERIALS_MAP[asinLower]?.images;
     if (!shopifyEntry) {
       return materialsImages
-        ? { ...titled, hasShopifyData: false, shopifyImages: materialsImages }
-        : { ...titled, hasShopifyData: false };
+        ? { ...categorized, hasShopifyData: false, shopifyImages: materialsImages }
+        : { ...categorized, hasShopifyData: false };
     }
     return {
-      ...titled,
+      ...categorized,
       hasShopifyData: true,
       shopifyVariantId: shopifyEntry.variantId,
       shopifyAvailable: shopifyEntry.availableForSale,
       // Use Shopify price unless it's $0.0 (needs fix), then fallback to local price
-      shopifyPrice: shopifyEntry.priceNeedsFix ? titled.priceRange.minVariantPrice.amount : shopifyEntry.price,
+      shopifyPrice: shopifyEntry.priceNeedsFix ? categorized.priceRange.minVariantPrice.amount : shopifyEntry.price,
       shopifyCurrencyCode: shopifyEntry.currencyCode,
       // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
       shopifyImages: materialsImages || shopifyEntry.images,
@@ -5984,16 +6018,13 @@ export function getProductByHandle(handle: string): MakimooProduct | undefined {
 }
 
 export function getProductsByCategory(category: string): MakimooProduct[] {
-  let filtered: MakimooProduct[];
-  if (!category) {
-    filtered = PRODUCTS_DATA;
-  } else {
-    filtered = PRODUCTS_DATA.filter(p =>
-      p.productType.toLowerCase() === category.toLowerCase() ||
-      p.tags.some(t => t.toLowerCase().includes(category.toLowerCase()))
-    );
-  }
-  return enrichProductsWithShopifyData(filtered);
+  // 先 enrich（含分类归一化），再按归一化后的分类过滤
+  const enriched = enrichProductsWithShopifyData(PRODUCTS_DATA);
+  if (!category) return enriched;
+  return enriched.filter(p =>
+    p.productType.toLowerCase() === category.toLowerCase() ||
+    p.tags.some(t => t.toLowerCase().includes(category.toLowerCase()))
+  );
 }
 
 export function searchProducts(query: string): MakimooProduct[] {

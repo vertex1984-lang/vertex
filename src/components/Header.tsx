@@ -8,17 +8,16 @@ import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@
 
 const navLinks = [
   { label: 'Shop All', href: '/products' },
-  { label: 'Dining', href: '/products?cat=dining' },
   { label: 'Cushions', href: '/products?cat=cushions' },
   { label: 'Pillows', href: '/products?cat=pillows' },
-  { label: 'Travel', href: '/products?cat=travel' },
-  { label: 'Home Fragrance', href: '/products?cat=home-fragrance' },
+  { label: 'Towels', href: '/products?cat=towels' },
+  { label: 'Mats', href: '/products?cat=mats' },
   { label: 'Others', href: '/products?cat=others' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
 // 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
-const HOT_SEARCHES = ['Cushions', 'Pillows', 'Travel', 'Dining', 'Fragrance'];
+const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

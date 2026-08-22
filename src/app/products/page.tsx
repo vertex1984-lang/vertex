@@ -6,11 +6,11 @@ import { MakimooProduct, PRODUCTS_DATA, getProductsByCategory, enrichProductsWit
 import { trackEvent } from '@/lib/gtag';
 
 const CATEGORY_DEFS = [
-  { label: 'Dining', value: 'dining' },
   { label: 'Cushions', value: 'cushions' },
   { label: 'Pillows', value: 'pillows' },
-  { label: 'Travel', value: 'travel' },
-  { label: 'Home Fragrance', value: 'home-fragrance' },
+  { label: 'Towels', value: 'towels' },
+  { label: 'Mats', value: 'mats' },
+  { label: 'Holiday', value: 'holiday' },
   { label: 'Others', value: 'others' },
 ];
 

@@ -44,46 +44,41 @@ const bestSellers = enrichProductsWithShopifyData(PRODUCTS_DATA)
 
 const collections = [
   {
-    title: 'The Cushions\nCollection:',
-    description: 'Weather-resistant cushions for your patio & garden.',
+    title: 'Comfort for Every Seat',
+    description: 'Tufted & water-resistant cushions, indoors and out.',
     image: '/images/collections/cushions.webp',
     href: '/products?cat=cushions',
   },
   {
-    title: 'The Pillows\nCollection:',
-    description: 'Premium Fabrics & 3D Polyster Filling Ensures Comfortness.',
+    title: 'Softness, Perfectly Filled',
+    description: 'Premium fabrics with plush 3D filling for bed & sofa.',
     image: '/images/collections/pillows.webp',
     href: '/products?cat=pillows',
   },
   {
-    title: 'The Travel\nCollection:',
-    description: 'Comfortable travel pillows for your journey.',
-    image: '/images/collections/travel.webp',
-    href: '/products?cat=travel',
+    title: 'Wrap Yourself in Softness',
+    description: 'Hotel-style cotton towels for bath, beach & beyond.',
+    image: '/images/collections/towels.webp',
+    href: '/products?cat=towels',
   },
   {
-    title: 'The Dinings\nCollection:',
-    description: 'Elegant dining essentials for your home.',
-    image: '/images/collections/dining.webp',
-    href: '/products?cat=dining',
+    title: 'Step Into Comfort',
+    description: 'Absorbent bath mats & durable rugs for every room.',
+    image: '/images/collections/mats.webp',
+    href: '/products?cat=mats',
   },
   {
-    title: 'Holiday\nCollection:',
-    description: 'Make every holiday moment truly unforgettable.',
+    title: 'Light Up Every Moment',
+    description: 'Festive string lights & décor for the holidays.',
     image: '/images/collections/holiday.webp',
     href: '/products?cat=holiday',
+    comingSoon: true,
   },
   {
-    title: 'Home Fragrance\nCollection:',
-    description: 'Elevate your everyday mood with fragrance.',
-    image: '/images/collections/home-fragrance.webp',
-    href: '/products?cat=home-fragrance',
-  },
-  {
-    title: 'The Dining\nCollection:',
-    description: 'Elegant dining essentials for your home.',
-    image: '/images/collections/dining.webp',
-    href: '/products?cat=dining',
+    title: 'The Little Essentials',
+    description: 'Travel pillows, kitchen tools & thoughtful extras for daily living.',
+    image: '/images/collections/others.webp',
+    href: '/products?cat=others',
   },
 ];
 
@@ -171,15 +166,24 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Floating Collection Cards */}
-      <section className="px-6 lg:px-10 py-1 sm:py-5 pb-4 sm:pb-16">
+      {/* Collections：6 大分类卡片（3 列 × 2 行，stagger 入场） */}
+      <section className="px-6 lg:px-10 pt-8 sm:pt-12 pb-16 sm:pb-24">
         <Reveal>
-          <div className="mx-auto flex flex-wrap justify-center gap-5">
-            {collections.map((col, i) => (
-              <CollectionCard key={i} {...col} />
-            ))}
+          <div className="text-center max-w-xl mx-auto mb-10">
+            <p className="text-sm font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Shop by Category</p>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#333] mb-3">Find Your Comfort</h2>
+            <p className="text-base text-[#555]">
+              Six curated collections, one goal — a warmer, softer home.
+            </p>
           </div>
         </Reveal>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+          {collections.map((col, i) => (
+            <Reveal key={col.title} delay={i * 80} className="h-full">
+              <CollectionCard {...col} />
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       {/* Collection Banner - Desktop (高度为原图的 92%，即 80% × 1.15) */}

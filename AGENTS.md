@@ -4,19 +4,35 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ## 产品标识与 SKU 规则（长期遵守）
 
-- **站内内部 key 统一用 ASIN**（`B0xxxxxxxx`，8 位字母数字）。产品数据、图片目录 `public/images/products/{ASIN}/`、各映射文件的 key 都是小写 ASIN。SKU 不在页面展示，不做内部 key。
+- **站内内部 key 统一用素材库的 `asin` 字段**：亚马逊 ASIN（`B0xxxxxxxx`）或 1688 供应商标识（`1688-xxx` / `1688-xxx-Cx`）。产品数据、图片目录 `public/images/products/{标识}/`、各映射文件的 key 都是小写标识。SKU 不在页面展示，不做内部 key。
 - **新格式 SKU**（如 `US-F61ZXX`、`DE-0P0QIZ`）的权威来源是**素材库**（items 的 `sku` 字段）。
-- **Shopify 匹配只认 tags**：Shopify 产品的 tags 里必须恰好打一个 ASIN，且与素材库一致。老的 SKU=ASIN 格式的关联已全部废弃，不得再按 SKU 匹配。
-- **重复 ASIN 处理**：同一 ASIN 出现多个 Shopify 产品时，使用 tags 里带 ASIN 的新上传产品。
-- **校验闭环**：Shopify 产品的 SKU 必须等于素材库中该 ASIN 的 `sku`，不一致要报警（防止 tag 打错/建错产品）。
+- **Shopify 匹配只认 tags**：Shopify 产品的 tags 里必须恰好打一个产品标识（ASIN 或 1688-xxx），且与素材库一致。老的 SKU=ASIN 格式的关联已全部废弃，不得再按 SKU 匹配。
+- **重复标识处理**：同一标识出现多个 Shopify 产品时，使用 tags 里带标识的新上传产品。
+- **校验闭环**：Shopify 产品的 SKU 必须等于素材库中该标识的 `sku`，不一致要报警（防止 tag 打错/建错产品）。
 - **剔除名单**：`B0F1YCXTRX`（早期错误数据，宠物窝误打坐垫 ASIN）已从全站剔除，记录在 `scripts/build-shopify-map.js` 的 `EXCLUDED_ASINS`，重新跑同步脚本时不得重新接入。
 
-## 数据同步流程
+## 产品核实 + 更新流程（每次素材库/Shopify 有更新时直接执行）
 
-1. `node scripts/sync-materials.js` — 拉素材库（makimoohome 分组 groupId=18，密码见脚本/会话记录），白底图优先+去重，下载转 WebP（q82，≤1600px）到 `public/images/products/{ASIN}/`，生成 `materials-map.ts` 和 `products-materials.ts`（新品条目，自动分类、白底检测）。
-2. `node scripts/build-shopify-map.js` — 拉 Shopify 全部产品，按 tags ASIN 匹配，生成 `shopify-map.ts`（variantId/价格/在售状态）。
-3. 标题精简映射 `src/data/short-titles.ts`：≤100 字符、去 "Makimoo" 品牌词、保留件数/关键属性/尺寸/颜色。
-4. `npm run build` 重建。
+1. `node scripts/sync-materials.js <素材库密码>` — 拉素材库（makimoohome 分组 groupId=18），下载转 WebP（q82，≤1600px）到 `public/images/products/{标识}/`，生成 `materials-map.ts`（全部素材产品覆盖表）和 `products-materials.ts`（站点没有的新产品条目，自动分类、白底检测）。幂等，图片数量一致时跳过下载；`--force` 强制重下。
+2. `node scripts/build-shopify-map.js` — 拉 Shopify 全部产品，按 tags 标识匹配，校验 SKU 一致性，生成 `shopify-map.ts`（variantId/价格/在售状态）。
+3. `npm run build` 重建后核验，用户确认后推送。
+
+### 图片展示顺序（首图=第 1 张）
+
+图片池 = 素材库 `images`（用户上传）∪ `imageTypes` 的 key（标注类型的图）。展示优先级：
+
+1. **场景展示图** → 2. **无文字场景图1** → 3. **白底主图** → 4. **用户上传图**（本地白底检测：非白底场景图在前、白底在后）→ 5. 卖点图 → 6. 细节特写图 → 7. 尺寸图 → 8. 营销主图
+
+文件编号按下载顺序固定，展示顺序由 `materials-map.ts` 的 images 数组定义。
+
+### 分类规则
+
+`classify()` 自动分类：标题含 bath mat/towel/rug/kitchen mat/door mat 等 → **Bath**；travel/neck pillow → Travel；pillowcase/insert 等 → Pillows；dining → Dining；chair/seat cushion → Cushions；其余 → Others。Bath 已加入 products 页分类筛选（顶部导航未加，需要时再加）。
+
+### 标题规则
+
+- 手工精简表 `src/data/short-titles.ts`（≤100 字符、去 "Makimoo"、保留件数/关键属性/尺寸/颜色）优先。
+- 无手工条目的新产品由 `products.ts` 的 `autoShortenTitle()` 自动精简（去品牌词，>100 字符在逗号/空格处截断）。
 
 ## 展示规则
 
@@ -25,6 +41,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 首页 Featured 区块用 `variant="featured"`（固定高度+渐变底），与其它卡片样式独立。
 - 全站退货政策统一为 **30 天**。
 - 下单走 `variantId`（`gid://shopify/ProductVariant/...`），随 `shopify-map.ts` 更新，Shopify 后台删老产品不会造成站内断链。
+- 1688 供应商标识的产品无亚马逊链接，`amazonUrl` 为空（在售时前台显示 Add to Cart，不显示 Amazon 按钮）。
 
 ## 本地预览
 
