@@ -181,13 +181,13 @@ export default function HeroCarousel() {
               Makimoo Home
             </h4>
             <h1
-              className="text-3xl lg:text-5xl font-extrabold text-white mb-4 lg:mb-5 leading-tight drop-shadow-md animate-fade-in-up"
+              className="text-3xl lg:text-5xl font-extrabold text-white mb-6 sm:mb-4 lg:mb-5 leading-tight drop-shadow-md animate-fade-in-up"
               style={{ animationDelay: '150ms' }}
             >
               {slide.headline}
             </h1>
             <p
-              className="text-sm sm:text-base lg:text-lg text-white/85 font-medium mb-6 lg:mb-8 max-w-xs sm:max-w-xl mx-auto text-center animate-fade-in-up"
+              className="hidden sm:block text-sm sm:text-base lg:text-lg text-white/85 font-medium mb-6 lg:mb-8 max-w-xs sm:max-w-xl mx-auto text-center animate-fade-in-up"
               style={{ animationDelay: '300ms' }}
             >
               {slide.sub}

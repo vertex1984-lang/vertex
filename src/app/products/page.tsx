@@ -116,6 +116,17 @@ export default function ProductsPage() {
   });
   const [materialSel, setMaterialSel] = useState<string[]>(() => readUrlList('material'));
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  // 移动端筛选抽屉
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  // 抽屉打开时锁定背景滚动 + Esc 关闭
+  useEffect(() => {
+    document.body.style.overflow = filterOpen ? 'hidden' : '';
+    if (!filterOpen) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setFilterOpen(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [filterOpen]);
 
   // 首次挂载后立即标记为已挂载，此时 state 已从 URL 正确初始化
   useEffect(() => {
@@ -263,9 +274,9 @@ export default function ProductsPage() {
           {pageSubtitle && <p className="text-[#555]">{pageSubtitle}</p>}
         </div>
 
-        {/* 筛选区：只在类目视图显示（搜索视图不筛选），常态展开；Collections = 二级分类单选。无边框轻量排布，行间细分隔线 */}
+        {/* 筛选区（桌面端 lg+）：只在类目视图显示（搜索视图不筛选），常态展开；Collections = 二级分类单选。无边框轻量排布，行间细分隔线 */}
         {mounted && activeCategory && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0) && (
-          <div className="mb-8 space-y-3">
+          <div className="hidden lg:block mb-8 space-y-3">
             {collectionOptions.length > 0 && (
               <>
                 <FilterRow label="Collections" options={collectionOptions} selected={activeSub ? [activeSub] : []} onToggle={toggleSub} />
@@ -310,10 +321,29 @@ export default function ProductsPage() {
                   ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`
                   : `${filtered.length} product${filtered.length === 1 ? '' : 's'}`}
               </p>
+              {/* 移动端：筛选+排序抽屉入口（带激活数量角标） */}
+              <button
+                onClick={() => setFilterOpen(true)}
+                className="lg:hidden relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
+                aria-label="Open filters"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+                </svg>
+                Filter &amp; Sort
+                {activeFilterCount > 0 && (
+                  <span
+                    className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full text-white text-[11px] font-bold flex items-center justify-center"
+                    style={{ backgroundColor: '#8B5A2B' }}
+                  >
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
               <select
                 value={sortBy}
                 onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
-                className="h-10 px-3 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm text-[#333] outline-none focus:border-[#8B5A2B]"
+                className="hidden lg:block h-10 px-3 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm text-[#333] outline-none focus:border-[#8B5A2B]"
                 aria-label="Sort products"
               >
                 <option value="featured">Featured</option>
@@ -358,6 +388,113 @@ export default function ProductsPage() {
             )}
           </>
         )}
+      </div>
+
+      {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material（多选），底部 Show N products */}
+      {filterOpen && (
+        <div className="fixed inset-0 bg-black/40 z-[1600] lg:hidden" onClick={() => setFilterOpen(false)} />
+      )}
+      <div
+        className={`fixed top-0 right-0 bottom-0 w-[85%] max-w-sm z-[1700] bg-white flex flex-col transition-transform duration-300 ease-out lg:hidden ${
+          filterOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        role="dialog"
+        aria-label="Filters"
+        aria-hidden={!filterOpen}
+      >
+        <div className="flex items-center justify-between px-5 py-4 border-b border-[#E8E2DA]">
+          <h2 className="text-lg font-bold text-[#333]">Filter &amp; Sort</h2>
+          <button
+            onClick={() => setFilterOpen(false)}
+            className="w-10 h-10 rounded-full border border-[#E8E2DA] flex items-center justify-center text-2xl text-[#333] hover:bg-[#F8F5F0] transition"
+            aria-label="Close filters"
+          >
+            &times;
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-5 py-4">
+          {/* Sort（单选） */}
+          <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Sort By</p>
+          <div className="mb-5">
+            {([['featured', 'Featured'], ['price-asc', 'Price: Low to High'], ['price-desc', 'Price: High to Low']] as [SortKey, string][]).map(([k, l]) => {
+              const active = sortBy === k;
+              return (
+                <button key={k} onClick={() => setFilter({ sort: k })} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
+                  <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}>
+                    {active && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#8B5A2B' }} />}
+                  </span>
+                  <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{l}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Collections（二级分类，单选） */}
+          {collectionOptions.length > 0 && (
+            <>
+              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">Collections</p>
+              <div className="mb-5">
+                {collectionOptions.map((o) => {
+                  const active = activeSub === o.key;
+                  return (
+                    <button key={o.key} onClick={() => toggleSub(o.key)} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
+                      <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}>
+                        {active && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#8B5A2B' }} />}
+                      </span>
+                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label} ({o.count})</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+
+          {/* Material（多选） */}
+          {materialOptions.length > 0 && (
+            <>
+              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">Material</p>
+              <div>
+                {materialOptions.map((o) => {
+                  const active = materialSel.includes(o.key);
+                  return (
+                    <button key={o.key} onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
+                      <span
+                        className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}
+                        style={active ? { backgroundColor: '#8B5A2B' } : {}}
+                      >
+                        {active && (
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        )}
+                      </span>
+                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label} ({o.count})</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="border-t border-[#E8E2DA] px-5 py-4">
+          <button
+            onClick={() => setFilterOpen(false)}
+            className="w-full py-3.5 rounded-full text-sm font-semibold text-white"
+            style={{ backgroundColor: '#8B5A2B' }}
+          >
+            Show {filtered.length} Product{filtered.length === 1 ? '' : 's'}
+          </button>
+          {activeFilterCount > 0 && (
+            <button
+              onClick={clearFilters}
+              className="w-full mt-2.5 text-sm font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
+            >
+              Clear All
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
