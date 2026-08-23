@@ -19,6 +19,9 @@ export interface MakimooProduct {
   shopifyCurrencyCode?: string;
   shopifyImages?: string[];
   hasShopifyData?: boolean;
+  /** Shopify variant 重量（当前单位统一 KILOGRAMS；0/undefined = 未设置，前台不展示） */
+  shopifyWeight?: number;
+  shopifyWeightUnit?: string;
   // Featured image override (optional)
   featuredImage?: string;
   // 与素材图对齐的白底标记（true = 白底图，展示时加内边距缩小产品占比）
@@ -6023,6 +6026,8 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       shopifyCurrencyCode: shopifyEntry.currencyCode,
       // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
       shopifyImages: materialsImages || shopifyEntry.images,
+      shopifyWeight: shopifyEntry.weight,
+      shopifyWeightUnit: shopifyEntry.weightUnit,
     };
   });
 }

@@ -14,8 +14,9 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 ## 产品核实 + 更新流程（每次素材库/Shopify 有更新时直接执行）
 
 1. `node scripts/sync-materials.js <素材库密码>` — 拉素材库（makimoohome 分组 groupId=18），下载转 WebP（q82，≤1600px）到 `public/images/products/{标识}/`，生成 `materials-map.ts`（全部素材产品覆盖表）和 `products-materials.ts`（站点没有的新产品条目，自动分类、白底检测）。幂等，图片数量一致时跳过下载；`--force` 强制重下。
-2. `node scripts/build-shopify-map.js` — 拉 Shopify 全部产品，按 tags 标识匹配，校验 SKU 一致性，生成 `shopify-map.ts`（variantId/价格/在售状态）。
-3. `npm run build` 重建后核验，用户确认后推送。
+2. `node scripts/build-shopify-map.js` — 拉 Shopify 全部产品，按 tags 标识匹配，校验 SKU 一致性，生成 `shopify-map.ts`（variantId/价格/在售状态/重量 weight+weightUnit）。
+3. `node scripts/extract-specs.js` — 从标题/描述/handle 提取尺寸（归一化 cm）和材质（关键词词典），生成 `product-specs.ts` 并打印覆盖率报告。提取不准/缺失的手工补在 `specs-overrides.ts`（前台优先）。
+4. `npm run build` 重建后核验，用户确认后推送。
 
 ### 图片展示顺序（首图=第 1 张）
 
@@ -41,6 +42,8 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 首页 Featured 区块用 `variant="featured"`（固定高度+渐变底），与其它卡片样式独立。
 - 全站退货政策统一为 **30 天**。
 - **Frequently Bought Together（详情页搭配购）暂时下线**：产品数量太少，搭配推荐意义不大。组件保留在 `src/components/BoughtTogether.tsx`，由 `ProductDetailClient.tsx` 顶部的 `SHOW_BOUGHT_TOGETHER = false` 开关控制。**后续产品够多了（用户确认后）改回 `true` 并重新构建即可启用**，启用前注意复核横版布局在桌面端不换行。
+- **规格表（详情页 Specifications）**：Weight 来自 Shopify（`formatWeightDual`，≥1kg 用 kg/lb、<1kg 用 g/oz，两位小数去尾零；Shopify 重量为 0 不显示该行）；Dimensions/Material 来自 `product-specs.ts`（`formatDimensionsDual`，cm 和 in 各自四舍五入到最近的 0.5）。格式化函数在 `src/lib/specs.ts`。
+- **用户会在 Shopify 后台用 metafields 维护尺寸和重量**：当用户要求"抓取 Shopify metafields 覆盖规格"时，扩展同步脚本读取产品 metafields（尺寸/重量），生成或覆盖 `product-specs.ts` 中对应字段（metafields 优先于文本提取，低于 specs-overrides.ts 手工表）。届时需先向用户确认 metafield 的 namespace/key 命名。
 - 下单走 `variantId`（`gid://shopify/ProductVariant/...`），随 `shopify-map.ts` 更新，Shopify 后台删老产品不会造成站内断链。
 - 1688 供应商标识的产品无亚马逊链接，`amazonUrl` 为空（在售时前台显示 Add to Cart，不显示 Amazon 按钮）。
 

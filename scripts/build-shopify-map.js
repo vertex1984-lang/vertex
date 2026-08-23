@@ -38,6 +38,8 @@ const GET_ALL_PRODUCTS = `
                 price { amount currencyCode }
                 availableForSale
                 selectedOptions { name value }
+                weight
+                weightUnit
               }
             }
           }
@@ -172,6 +174,9 @@ function buildMap(products) {
       images: product.images.edges.map(e => e.node.url),
       createdAt: product.createdAt,
       _fromTag: !!asinTag,
+      // 重量（原始值+单位，当前全站为 KILOGRAMS；0 = Shopify 未设置，前台不展示）
+      weight: variant.weight || 0,
+      weightUnit: variant.weightUnit || '',
       // Flag products with $0.0 price
       priceNeedsFix: shopifyPrice === 0,
     };
@@ -193,6 +198,8 @@ function generateTsFile(map) {
     availableForSale: ${data.availableForSale},
     shopifyHandle: "${data.shopifyHandle.replace(/"/g, '\\"')}",
     images: ${JSON.stringify(data.images)},
+    weight: ${data.weight},
+    weightUnit: "${data.weightUnit}",
     priceNeedsFix: ${data.priceNeedsFix},
   }`;
     })
@@ -211,6 +218,9 @@ export interface ShopifyProductEntry {
   availableForSale: boolean;
   shopifyHandle: string;
   images: string[];
+  /** Shopify variant 重量原始值（当前全站单位为 KILOGRAMS；0 = 未设置，前台不展示） */
+  weight: number;
+  weightUnit: string;
   priceNeedsFix: boolean;
 }
 

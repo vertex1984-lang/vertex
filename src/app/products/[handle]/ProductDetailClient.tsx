@@ -10,6 +10,7 @@ import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
+import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
 
 interface ProductDetailClientProps {
   handle: string;
@@ -115,6 +116,11 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
+
+  // 规格：重量（Shopify）+ 尺寸/材质（提取表，规格行无数据则不显示）
+  const specs = getProductSpecs(product.asin);
+  const weightStr = formatWeightDual(product.shopifyWeight, product.shopifyWeightUnit);
+  const dimsStr = formatDimensionsDual(specs?.dimensionsCm);
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
@@ -468,6 +474,24 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                       <td className="py-3 text-sm text-[#555]">Category</td>
                       <td className="py-3 text-sm text-[#333] font-medium">{product.productType}</td>
                     </tr>
+                    {weightStr && (
+                      <tr className="border-b border-[#E8E2DA]">
+                        <td className="py-3 text-sm text-[#555]">Weight</td>
+                        <td className="py-3 text-sm text-[#333] font-medium">{weightStr}</td>
+                      </tr>
+                    )}
+                    {dimsStr && (
+                      <tr className="border-b border-[#E8E2DA]">
+                        <td className="py-3 text-sm text-[#555]">Dimensions</td>
+                        <td className="py-3 text-sm text-[#333] font-medium">{dimsStr}</td>
+                      </tr>
+                    )}
+                    {specs?.material && (
+                      <tr className="border-b border-[#E8E2DA]">
+                        <td className="py-3 text-sm text-[#555]">Material</td>
+                        <td className="py-3 text-sm text-[#333] font-medium">{specs.material}</td>
+                      </tr>
+                    )}
                     <tr className="border-b border-[#E8E2DA]">
                       <td className="py-3 text-sm text-[#555]">Price</td>
                       <td className={`py-3 text-sm font-medium ${isInStock ? 'text-[#333]' : 'text-[#999]'}`}>
