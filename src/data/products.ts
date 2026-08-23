@@ -5990,20 +5990,36 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       productType: normalizeCategory(titled.productType, titled.title),
       tags: titled.tags.map(t => normalizeCategory(t, titled.title)),
     };
+    // Pillows 类目（仅限该类）：把最后一张图（基本是纯白底图）提到首图，缩略图/详情主图都用它
+    let finalProduct = categorized;
+    if (categorized.productType === 'Pillows' && categorized.images.length > 1) {
+      const moveLastToFirst = <T,>(arr: T[]): T[] => { const a = [...arr]; a.unshift(a.pop()!); return a; };
+      finalProduct = {
+        ...categorized,
+        images: moveLastToFirst(categorized.images),
+        imageWhiteBg: categorized.imageWhiteBg && categorized.imageWhiteBg.length === categorized.images.length
+          ? moveLastToFirst(categorized.imageWhiteBg)
+          : categorized.imageWhiteBg,
+      };
+    }
     const shopifyEntry = SHOPIFY_MAP[asinLower];
-    const materialsImages = MATERIALS_MAP[asinLower]?.images;
+    let materialsImages = MATERIALS_MAP[asinLower]?.images;
+    // shopifyImages 与 images 保持同样的首图顺序
+    if (finalProduct !== categorized && materialsImages && materialsImages.length > 1) {
+      const a = [...materialsImages]; a.unshift(a.pop()!); materialsImages = a;
+    }
     if (!shopifyEntry) {
       return materialsImages
-        ? { ...categorized, hasShopifyData: false, shopifyImages: materialsImages }
-        : { ...categorized, hasShopifyData: false };
+        ? { ...finalProduct, hasShopifyData: false, shopifyImages: materialsImages }
+        : { ...finalProduct, hasShopifyData: false };
     }
     return {
-      ...categorized,
+      ...finalProduct,
       hasShopifyData: true,
       shopifyVariantId: shopifyEntry.variantId,
       shopifyAvailable: shopifyEntry.availableForSale,
       // Use Shopify price unless it's $0.0 (needs fix), then fallback to local price
-      shopifyPrice: shopifyEntry.priceNeedsFix ? categorized.priceRange.minVariantPrice.amount : shopifyEntry.price,
+      shopifyPrice: shopifyEntry.priceNeedsFix ? finalProduct.priceRange.minVariantPrice.amount : shopifyEntry.price,
       shopifyCurrencyCode: shopifyEntry.currencyCode,
       // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
       shopifyImages: materialsImages || shopifyEntry.images,

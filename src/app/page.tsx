@@ -44,30 +44,35 @@ const bestSellers = enrichProductsWithShopifyData(PRODUCTS_DATA)
 
 const collections = [
   {
+    category: 'Cushions',
     title: 'Comfort for Every Seat',
     description: 'Tufted & water-resistant cushions, indoors and out.',
     image: '/images/collections/cushions.webp',
     href: '/products?cat=cushions',
   },
   {
+    category: 'Pillows',
     title: 'Softness, Perfectly Filled',
     description: 'Premium fabrics with plush 3D filling for bed & sofa.',
     image: '/images/collections/pillows.webp',
     href: '/products?cat=pillows',
   },
   {
+    category: 'Towels',
     title: 'Wrap Yourself in Softness',
     description: 'Hotel-style cotton towels for bath, beach & beyond.',
     image: '/images/collections/towels.webp',
     href: '/products?cat=towels',
   },
   {
+    category: 'Mats',
     title: 'Step Into Comfort',
-    description: 'Absorbent bath mats & durable rugs for every room.',
+    description: 'Absorbent mats & durable rugs for every room.',
     image: '/images/collections/mats.webp',
     href: '/products?cat=mats',
   },
   {
+    category: 'Holiday',
     title: 'Light Up Every Moment',
     description: 'Festive string lights & décor for the holidays.',
     image: '/images/collections/holiday.webp',
@@ -75,8 +80,9 @@ const collections = [
     comingSoon: true,
   },
   {
+    category: 'Others',
     title: 'The Little Essentials',
-    description: 'Travel pillows, kitchen tools & thoughtful extras for daily living.',
+    description: 'Travel, kitchen & extras for daily living.',
     image: '/images/collections/others.webp',
     href: '/products?cat=others',
   },

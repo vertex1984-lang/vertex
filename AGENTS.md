@@ -40,6 +40,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 产品卡（含 Featured）：标题含 "Set of X" / "X Pack" / "X-Pack" / "Pack of X" 自动打 `{X} Pack` 标签。
 - 首页 Featured 区块用 `variant="featured"`（固定高度+渐变底），与其它卡片样式独立。
 - 全站退货政策统一为 **30 天**。
+- **Frequently Bought Together（详情页搭配购）暂时下线**：产品数量太少，搭配推荐意义不大。组件保留在 `src/components/BoughtTogether.tsx`，由 `ProductDetailClient.tsx` 顶部的 `SHOW_BOUGHT_TOGETHER = false` 开关控制。**后续产品够多了（用户确认后）改回 `true` 并重新构建即可启用**，启用前注意复核横版布局在桌面端不换行。
 - 下单走 `variantId`（`gid://shopify/ProductVariant/...`），随 `shopify-map.ts` 更新，Shopify 后台删老产品不会造成站内断链。
 - 1688 供应商标识的产品无亚马逊链接，`amazonUrl` 为空（在售时前台显示 Add to Cart，不显示 Amazon 按钮）。
 

@@ -1,6 +1,8 @@
 import { resolveUrl } from '@/lib/paths';
 
 interface CollectionCardProps {
+  /** 分类名（如 Cushions），显示为标题上方的眉头小标签 */
+  category: string;
   title: string;
   description: string;
   image: string;
@@ -9,7 +11,7 @@ interface CollectionCardProps {
   comingSoon?: boolean;
 }
 
-export default function CollectionCard({ title, description, image, href, comingSoon }: CollectionCardProps) {
+export default function CollectionCard({ category, title, description, image, href, comingSoon }: CollectionCardProps) {
   const inner = (
     <>
       <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl">
@@ -26,6 +28,7 @@ export default function CollectionCard({ title, description, image, href, coming
         )}
       </div>
       <div className="flex flex-col items-center flex-1 text-center">
+        <p className="text-[11px] font-semibold tracking-widest uppercase text-[#8B5A2B] mb-1.5">{category}</p>
         <h3 className="text-base font-bold text-[#333] mb-1">{title}</h3>
         <p className="text-xs text-[#555] mb-3 leading-relaxed flex-1">{description}</p>
         {comingSoon ? (

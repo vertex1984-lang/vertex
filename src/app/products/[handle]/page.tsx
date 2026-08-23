@@ -46,16 +46,29 @@ export default function ProductDetailPage({ params }: { params: { handle: string
   const product = PRODUCTS_DATA.find((p) => p.handle === params.handle);
   const enriched = product ? enrichProductsWithShopifyData([product])[0] : null;
 
-  // You May Also Like：同分类的其他在售产品，排除自身，最多 4 个
-  const related = product
-    ? enrichProductsWithShopifyData(PRODUCTS_DATA)
-        .filter((p) =>
-          p.handle !== product.handle &&
-          p.productType === product.productType &&
-          p.hasShopifyData &&
-          p.shopifyAvailable
-        )
-        .slice(0, 4)
+  // You May Also Like：同分类（归一化后）的其他在售产品，排除自身，最多 4 个
+  // 排序：同尺寸/同规格优先，其次价格相近
+  const related = enriched
+    ? (() => {
+        const sizeMatch = enriched.title.match(/\d+\s*x\s*\d+/i)?.[0].replace(/\s/g, '').toLowerCase();
+        const price = parseFloat(enriched.shopifyPrice || enriched.priceRange.minVariantPrice.amount);
+        return enrichProductsWithShopifyData(PRODUCTS_DATA)
+          .filter((p) =>
+            p.handle !== enriched.handle &&
+            p.productType === enriched.productType &&
+            p.hasShopifyData &&
+            p.shopifyAvailable
+          )
+          .map((p) => {
+            const pPrice = parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount);
+            const sameSize = sizeMatch ? p.title.replace(/\s/g, '').toLowerCase().includes(sizeMatch) : false;
+            const nearPrice = price > 0 && Math.abs(pPrice - price) / price <= 0.3;
+            return { p, score: (sameSize ? 2 : 0) + (nearPrice ? 1 : 0) };
+          })
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 4)
+          .map(({ p }) => p);
+      })()
     : [];
 
   // JSON-LD Product 结构化数据（有真实评价数据时才输出 aggregateRating）

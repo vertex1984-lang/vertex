@@ -9,6 +9,7 @@ import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
+import BoughtTogether from '@/components/BoughtTogether';
 
 interface ProductDetailClientProps {
   handle: string;
@@ -29,6 +30,10 @@ const ACCORDION_SECTIONS = [
     body: 'Premium outdoor polyester fabric with UV-fade resistance and a water-repellent surface. Spot clean and air dry for hassle-free maintenance.',
   },
 ];
+
+// Frequently Bought Together 搭配购开关：产品数量太少时推荐意义不大，暂时隐藏。
+// 组件保留在 src/components/BoughtTogether.tsx，恢复展示时改为 true 即可。
+const SHOW_BOUGHT_TOGETHER = false;
 
 export default function ProductDetailClient({ handle }: ProductDetailClientProps) {
   const { toast } = useToast();
@@ -195,6 +200,8 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
                 width={productImages[selectedImage]?.width}
                 height={productImages[selectedImage]?.height}
                 onLoad={() => setMainImageLoaded(true)}
+                // 图已在缓存中提前加载完成时 onLoad 不会触发，挂载时直接检查 complete 兜底
+                ref={(el) => { if (el && el.complete && el.naturalWidth > 0) setMainImageLoaded(true); }}
                 className={`relative w-full h-full object-contain transition-all duration-300 group-hover:scale-110 ${
                   productImages[selectedImage]?.whiteBg ? 'p-6 sm:p-8' : ''
                 } ${
@@ -405,6 +412,14 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
             </div>
           </div>
         </div>
+
+        {/* Frequently Bought Together（搭配购，全宽横版；当前产品不在售时内部不渲染）。
+            由 SHOW_BOUGHT_TOGETHER 控制，暂时隐藏 */}
+        {SHOW_BOUGHT_TOGETHER && (
+          <div className="mt-10">
+            <BoughtTogether product={product} />
+          </div>
+        )}
 
         {/* Tabs */}
         <div className="mt-12">

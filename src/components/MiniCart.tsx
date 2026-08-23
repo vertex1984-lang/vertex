@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import {
   getLocalCart,
@@ -9,8 +9,11 @@ import {
   getShopifyCart,
   updateShopifyCartLine,
   removeShopifyCartLine,
+  addToShopifyCart,
+  notifyCartUpdated,
   LocalCartItem,
 } from '@/lib/cart';
+import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { formatPrice } from '@/lib/currency';
 
 interface ShopifyCartLine {
@@ -42,6 +45,7 @@ export default function MiniCart() {
   const [localItems, setLocalItems] = useState<LocalCartItem[]>([]);
   const [shopifyCart, setShopifyCart] = useState<ShopifyCart | null>(null);
   const [updatingId, setUpdatingId] = useState<string | null>(null);
+  const [addingHandle, setAddingHandle] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
     setLocalItems(getLocalCart());
@@ -102,8 +106,50 @@ export default function MiniCart() {
     setUpdatingId(null);
   };
 
-  const shopifyLines = shopifyCart?.lines?.edges ?? [];
+  const shopifyLines = useMemo(() => shopifyCart?.lines?.edges ?? [], [shopifyCart]);
   const hasItems = localItems.length > 0 || shopifyLines.length > 0;
+
+  // 全量产品 enrich 一次，用于购物车交叉推荐
+  const enriched = useMemo(() => enrichProductsWithShopifyData(PRODUCTS_DATA), []);
+
+  // 推荐：在售且不在购物车的产品，同类目优先、低价优先，取 2 个
+  const recommendations = useMemo(() => {
+    if (!hasItems) return [];
+    const cartHandles = new Set<string>([
+      ...localItems.map(i => i.handle),
+      ...shopifyLines.map(({ node }) => node.merchandise.product.handle),
+    ]);
+    const cartTypes = new Set(
+      Array.from(cartHandles)
+        .map(h => enriched.find(p => p.handle === h)?.productType)
+        .filter((t): t is string => !!t)
+    );
+    const inStock = (p: MakimooProduct) =>
+      p.hasShopifyData && p.shopifyAvailable && !!p.shopifyVariantId && !cartHandles.has(p.handle);
+    return enriched
+      .filter(inStock)
+      .sort((a, b) => {
+        const sameCatA = cartTypes.has(a.productType) ? 0 : 1;
+        const sameCatB = cartTypes.has(b.productType) ? 0 : 1;
+        if (sameCatA !== sameCatB) return sameCatA - sameCatB;
+        const priceOf = (p: MakimooProduct) =>
+          parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount);
+        return priceOf(a) - priceOf(b);
+      })
+      .slice(0, 2);
+  }, [hasItems, localItems, shopifyLines, enriched]);
+
+  // 点击推荐 "+"：加购后触发 cart-updated，本抽屉监听到会自动刷新（推荐项随之消失）
+  const handleAddRecommendation = async (p: MakimooProduct) => {
+    if (!p.shopifyVariantId || addingHandle) return;
+    setAddingHandle(p.handle);
+    try {
+      const ok = await addToShopifyCart(p.shopifyVariantId, 1);
+      if (ok) notifyCartUpdated();
+    } finally {
+      setAddingHandle(null);
+    }
+  };
 
   const localSubtotal = localItems.reduce((sum, item) => sum + parseFloat(item.price) * item.quantity, 0);
   const shopifySubtotal = shopifyCart ? parseFloat(shopifyCart.cost.subtotalAmount.amount) : 0;
@@ -253,6 +299,50 @@ export default function MiniCart() {
                   </button>
                 </div>
               ))}
+
+              {/* 交叉推荐：在售且不在购物车的低价品，同类目优先 */}
+              {recommendations.length > 0 && (
+                <div className="border-t border-[#E8E2DA] pt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#999] mb-3">
+                    You May Also Need
+                  </p>
+                  <div className="space-y-3">
+                    {recommendations.map(p => (
+                      <div key={p.handle} className="flex items-center gap-3 bg-white rounded-xl p-2.5 shadow-sm">
+                        <a href={resolveUrl(`/products/${p.handle}/`)} onClick={() => setOpen(false)}>
+                          <img
+                            src={resolveUrl(p.shopifyImages?.[0] || p.images[0]?.url || '')}
+                            alt={p.title}
+                            loading="lazy"
+                            className={`w-12 h-12 rounded-lg object-cover ${p.imageWhiteBg?.[0] ? 'bg-white object-contain p-1' : ''}`}
+                          />
+                        </a>
+                        <div className="flex-1 min-w-0">
+                          <a href={resolveUrl(`/products/${p.handle}/`)} onClick={() => setOpen(false)}>
+                            <h4 className="text-xs font-medium text-[#333] hover:text-[#8B5A2B] transition line-clamp-2">
+                              {p.title}
+                            </h4>
+                          </a>
+                          <p className="text-xs text-[#8B5A2B] font-semibold mt-0.5">
+                            {formatPrice(
+                              p.shopifyPrice || p.priceRange.minVariantPrice.amount,
+                              p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode
+                            )}
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => handleAddRecommendation(p)}
+                          disabled={addingHandle === p.handle}
+                          aria-label={`Add ${p.title} to cart`}
+                          className="w-8 h-8 rounded-full border border-[#8B5A2B] text-[#8B5A2B] flex items-center justify-center flex-shrink-0 text-sm transition hover:bg-[#8B5A2B] hover:text-white disabled:opacity-50"
+                        >
+                          {addingHandle === p.handle ? '...' : '+'}
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Footer: 免邮进度条 + subtotal + actions */}
