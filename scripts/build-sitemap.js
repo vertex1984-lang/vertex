@@ -14,7 +14,8 @@ const handles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m
 // cart/ 和 404 不进 sitemap（robots noindex）
 const staticPages = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
-  { loc: '/products/', priority: '0.9', changefreq: 'daily' },
+  { loc: '/categories/', priority: '0.9', changefreq: 'daily' },
+  { loc: '/products/', priority: '0.8', changefreq: 'daily' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },

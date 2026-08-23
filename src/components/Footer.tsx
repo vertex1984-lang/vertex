@@ -26,7 +26,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider">Shop</h4>
             <span className="block w-8 h-0.5 rounded bg-white/40 mt-2 mb-4" />
             <div className="flex flex-col gap-1">
-              <a href={resolveUrl('/products')} className={footerLinkClass}>All Products</a>
+              <a href={resolveUrl('/categories')} className={footerLinkClass}>All Categories</a>
               <a href={resolveUrl('/products?cat=cushions')} className={footerLinkClass}>Cushions</a>
               <a href={resolveUrl('/products?cat=pillows')} className={footerLinkClass}>Pillows</a>
               <a href={resolveUrl('/products?cat=towels')} className={footerLinkClass}>Towels</a>

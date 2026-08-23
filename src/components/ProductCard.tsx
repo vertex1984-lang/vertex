@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { MakimooProduct } from '@/data/products';
+import { productCategoryTag } from '@/data/subcategories';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { formatPrice } from '@/lib/currency';
 import { isFavorite, toggleFavorite } from '@/lib/favorites';
@@ -125,7 +126,7 @@ export default function ProductCard({ product, variant = 'default' }: ProductCar
         </div>
         <div className="p-3 sm:p-4 flex-1 flex flex-col">
           <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
-            {product.productType || 'Product'}
+            {productCategoryTag(product)}
           </p>
           {/* 标题固定两行高度（line-clamp-2 + min-h），避免同行卡片高度不一 */}
           <h3 className="relative text-sm sm:text-base font-medium text-[#333] line-clamp-2 leading-snug min-h-[2.75em] mb-2 sm:mb-3">

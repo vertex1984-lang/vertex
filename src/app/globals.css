@@ -25,6 +25,9 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  /* 禁用滚动锚定：吸顶导航收缩改变文档高度时，浏览器不再自动补偿 scrollY，
+     避免「收缩→锚定补偿→触发展开→再补偿」的抖动循环 */
+  overflow-anchor: none;
 }
 
 body {
@@ -32,6 +35,7 @@ body {
   background-color: var(--off-white);
   color: var(--charcoal);
   line-height: 1.5;
+  overflow-anchor: none;
 }
 
 img {
@@ -60,6 +64,11 @@ button {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeInUp {

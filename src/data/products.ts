@@ -31,6 +31,8 @@ export interface MakimooProduct {
   reviewCount?: number;
   // 真实原价（可选；填入且高于现价时才显示划线价和 Save 徽章）
   compareAtPrice?: string;
+  // 二级分类 key（enrich 时按 subcategories.ts 规则写入；仅 Cushions/Pillows/Towels/Mats 有）
+  subcategory?: string;
 }
 
 const BASE_PRODUCTS: MakimooProduct[] = [
@@ -5926,6 +5928,7 @@ import { SHOPIFY_MAP } from './shopify-map';
 import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
 import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
+import { classifyProduct } from './subcategories';
 
 /** 站点基础产品 + 素材库新增产品 */
 export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS];
@@ -5976,6 +5979,10 @@ function normalizeCategory(t: string, title = ''): string {
     if (TOWELS_RE.test(title)) return 'Towels';
     return 'Mats';
   }
+  // 个别椅垫在源数据中被错标为 Pillows，按标题归正（如 B0DSGCLBVW / B0DSGCKWXW）
+  if (t.toLowerCase() === 'pillows' && /chair cushion/i.test(title)) return 'Cushions';
+  // 枕套/枕芯类按全站规则（classify: pillowcase/insert → Pillows）从 Others 归正（如 B0F62QGV32 / B0GJLVMHT7）
+  if (t.toLowerCase() === 'others' && /pillow ?case|(pillow|cushion) insert|pillow stuffer/i.test(title)) return 'Pillows';
   return CATEGORY_MERGE[t.toLowerCase()] || t;
 }
 
@@ -5992,6 +5999,12 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       ...titled,
       productType: normalizeCategory(titled.productType, titled.title),
       tags: titled.tags.map(t => normalizeCategory(t, titled.title)),
+      // 二级分类：用完整标题（精简前）判定，避免关键词被截断
+      subcategory: classifyProduct(
+        normalizeCategory(titled.productType, titled.title),
+        product.title,
+        asinLower
+      ),
     };
     // Pillows 类目（仅限该类）：把最后一张图（基本是纯白底图）提到首图，缩略图/详情主图都用它
     let finalProduct = categorized;

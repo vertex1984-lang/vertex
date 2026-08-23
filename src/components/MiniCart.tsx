@@ -190,7 +190,7 @@ export default function MiniCart() {
           <div className="flex-1 flex flex-col items-center justify-center gap-4 px-6">
             <p className="text-[#555]">Your cart is empty.</p>
             <a
-              href={resolveUrl('/products')}
+              href={resolveUrl('/categories')}
               className="px-6 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
               style={{ backgroundColor: '#8B5A2B' }}
             >

@@ -10,6 +10,7 @@ import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
+import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
 
 interface ProductDetailClientProps {
@@ -42,21 +43,12 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
   const [selectedImage, setSelectedImage] = useState(0);
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<'description' | 'specifications'>('description');
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
   const [quantity, setQuantity] = useState(1);
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
-  // Esc 关闭 lightbox
-  useEffect(() => {
-    if (!lightboxOpen) return;
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setLightboxOpen(false);
-    };
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [lightboxOpen]);
+  // （lightbox 的 Esc/方向键/滚动锁定由 ImageLightbox 组件内部处理）
 
   // GA4: view_item（产品详情页浏览）
   useEffect(() => {
@@ -91,8 +83,8 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
     return (
       <div className="px-6 lg:px-10 py-20 text-center">
         <p className="text-lg text-[#555]">Product not found.</p>
-        <a href={resolveUrl('/products')} className="mt-4 inline-block text-[#8B5A2B] underline">
-          Back to products
+        <a href={resolveUrl('/categories')} className="mt-4 inline-block text-[#8B5A2B] underline">
+          Browse all categories
         </a>
       </div>
     );
@@ -103,13 +95,14 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
     ? product.shopifyImages.map((url, i) => ({
         url,
         mainUrl: shopifyImageUrl(url, 1200),
+        lightboxUrl: shopifyImageUrl(url, 2048),
         thumbUrl: shopifyImageUrl(url, 200),
         altText: product.title,
         width: 800,
         height: 800,
         whiteBg: product.imageWhiteBg?.[i] ?? false,
       }))
-    : product.images.map((img, i) => ({ ...img, mainUrl: img.url, thumbUrl: img.url, whiteBg: product.imageWhiteBg?.[i] ?? false }));
+    : product.images.map((img, i) => ({ ...img, mainUrl: img.url, lightboxUrl: img.url, thumbUrl: img.url, whiteBg: product.imageWhiteBg?.[i] ?? false }));
 
   // Use Shopify price if available; no Shopify data = not in stock, no price
   const hasShopifyData = product.hasShopifyData;
@@ -185,7 +178,7 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
         <nav className="flex items-center gap-2 text-sm text-[#555] mb-8">
           <a href={resolveUrl('/')} className="hover:text-[#8B5A2B]">Home</a>
           <span>/</span>
-          <a href={resolveUrl('/products')} className="hover:text-[#8B5A2B]">Products</a>
+          <a href={resolveUrl('/categories')} className="hover:text-[#8B5A2B]">Products</a>
           <span>/</span>
           <span className="text-[#333] truncate max-w-[200px] sm:max-w-md">{product.title}</span>
         </nav>
@@ -427,111 +420,64 @@ export default function ProductDetailClient({ handle }: ProductDetailClientProps
           </div>
         )}
 
-        {/* Tabs */}
+        {/* Product Specifications（Description 与上方五点重复，已移除，不再用 Tabs） */}
         <div className="mt-12">
-          <div className="flex border-b border-[#E8E2DA]">
-            <button
-              onClick={() => setActiveTab('description')}
-              className={`px-6 py-3 text-sm font-semibold transition border-b-2 ${
-                activeTab === 'description'
-                  ? 'text-[#8B5A2B] border-[#8B5A2B]'
-                  : 'text-[#555] border-transparent hover:text-[#333]'
-              }`}
-            >
-              Description
-            </button>
-            <button
-              onClick={() => setActiveTab('specifications')}
-              className={`px-6 py-3 text-sm font-semibold transition border-b-2 ${
-                activeTab === 'specifications'
-                  ? 'text-[#8B5A2B] border-[#8B5A2B]'
-                  : 'text-[#555] border-transparent hover:text-[#333]'
-              }`}
-            >
-              Specifications
-            </button>
-          </div>
-
-          <div className="py-8">
-            {activeTab === 'description' ? (
-              <div className="max-w-3xl">
-                <h3 className="text-xl font-bold text-[#333] mb-4">Product Description</h3>
-                <div
-                  className="text-[#555] leading-relaxed space-y-4"
-                  dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
-                />
-              </div>
-            ) : (
-              <div className="max-w-3xl">
-                <h3 className="text-xl font-bold text-[#333] mb-4">Product Specifications</h3>
-                <table className="w-full">
-                  <tbody>
-                    <tr className="border-b border-[#E8E2DA]">
-                      <td className="py-3 text-sm text-[#555] w-1/3">Brand</td>
-                      <td className="py-3 text-sm text-[#333] font-medium">Makimoo</td>
-                    </tr>
-                    <tr className="border-b border-[#E8E2DA]">
-                      <td className="py-3 text-sm text-[#555]">Category</td>
-                      <td className="py-3 text-sm text-[#333] font-medium">{product.productType}</td>
-                    </tr>
-                    {weightStr && (
-                      <tr className="border-b border-[#E8E2DA]">
-                        <td className="py-3 text-sm text-[#555]">Weight</td>
-                        <td className="py-3 text-sm text-[#333] font-medium">{weightStr}</td>
-                      </tr>
-                    )}
-                    {dimsStr && (
-                      <tr className="border-b border-[#E8E2DA]">
-                        <td className="py-3 text-sm text-[#555]">Dimensions</td>
-                        <td className="py-3 text-sm text-[#333] font-medium">{dimsStr}</td>
-                      </tr>
-                    )}
-                    {specs?.material && (
-                      <tr className="border-b border-[#E8E2DA]">
-                        <td className="py-3 text-sm text-[#555]">Material</td>
-                        <td className="py-3 text-sm text-[#333] font-medium">{specs.material}</td>
-                      </tr>
-                    )}
-                    <tr className="border-b border-[#E8E2DA]">
-                      <td className="py-3 text-sm text-[#555]">Price</td>
-                      <td className={`py-3 text-sm font-medium ${isInStock ? 'text-[#333]' : 'text-[#999]'}`}>
-                        {isInStock ? formatPrice(displayPrice, displayCurrency) : 'Out of Stock'}
-                      </td>
-                    </tr>
-                    <tr className="border-b border-[#E8E2DA]">
-                      <td className="py-3 text-sm text-[#555]">Availability</td>
-                      <td className={`py-3 text-sm font-medium ${isInStock ? 'text-green-600' : 'text-red-500'}`}>
-                        {isInStock ? 'In Stock' : 'Currently Unavailable'}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            )}
+          <div className="max-w-3xl">
+            <h3 className="text-xl font-bold text-[#333] mb-4">Product Specifications</h3>
+            <table className="w-full">
+              <tbody>
+                <tr className="border-b border-[#E8E2DA]">
+                  <td className="py-3 text-sm text-[#555] w-1/3">Brand</td>
+                  <td className="py-3 text-sm text-[#333] font-medium">Makimoo</td>
+                </tr>
+                <tr className="border-b border-[#E8E2DA]">
+                  <td className="py-3 text-sm text-[#555]">Category</td>
+                  <td className="py-3 text-sm text-[#333] font-medium">{product.productType}</td>
+                </tr>
+                {weightStr && (
+                  <tr className="border-b border-[#E8E2DA]">
+                    <td className="py-3 text-sm text-[#555]">Weight</td>
+                    <td className="py-3 text-sm text-[#333] font-medium">{weightStr}</td>
+                  </tr>
+                )}
+                {dimsStr && (
+                  <tr className="border-b border-[#E8E2DA]">
+                    <td className="py-3 text-sm text-[#555]">Dimensions</td>
+                    <td className="py-3 text-sm text-[#333] font-medium">{dimsStr}</td>
+                  </tr>
+                )}
+                {specs?.material && (
+                  <tr className="border-b border-[#E8E2DA]">
+                    <td className="py-3 text-sm text-[#555]">Material</td>
+                    <td className="py-3 text-sm text-[#333] font-medium">{specs.material}</td>
+                  </tr>
+                )}
+                <tr className="border-b border-[#E8E2DA]">
+                  <td className="py-3 text-sm text-[#555]">Price</td>
+                  <td className={`py-3 text-sm font-medium ${isInStock ? 'text-[#333]' : 'text-[#999]'}`}>
+                    {isInStock ? formatPrice(displayPrice, displayCurrency) : 'Out of Stock'}
+                  </td>
+                </tr>
+                <tr className="border-b border-[#E8E2DA]">
+                  <td className="py-3 text-sm text-[#555]">Availability</td>
+                  <td className={`py-3 text-sm font-medium ${isInStock ? 'text-green-600' : 'text-red-500'}`}>
+                    {isInStock ? 'In Stock' : 'Currently Unavailable'}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
 
-      {/* Lightbox */}
+      {/* 全屏图片查看器（缩放/切换/缩略图条） */}
       {lightboxOpen && (
-        <div
-          className="fixed inset-0 z-[9999] bg-black/80 flex items-center justify-center p-4 cursor-zoom-out"
-          onClick={() => setLightboxOpen(false)}
-        >
-          <div className="relative max-w-4xl max-h-[90vh] w-full">
-            <img
-              src={resolveUrl(productImages[selectedImage]?.mainUrl || '')}
-              alt={productImages[selectedImage]?.altText || product.title}
-              className="w-full h-full max-h-[85vh] object-contain rounded-lg"
-            />
-            <button
-              onClick={(e) => { e.stopPropagation(); setLightboxOpen(false); }}
-              className="absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 text-[#333] hover:bg-white flex items-center justify-center text-2xl font-bold transition shadow-md"
-            >
-              &times;
-            </button>
-          </div>
-        </div>
+        <ImageLightbox
+          images={productImages.map((img) => ({ mainUrl: img.lightboxUrl, thumbUrl: img.thumbUrl, altText: img.altText }))}
+          index={selectedImage}
+          onIndexChange={(i) => { setSelectedImage(i); setMainImageLoaded(false); }}
+          onClose={() => setLightboxOpen(false)}
+        />
       )}
 
       {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏） */}

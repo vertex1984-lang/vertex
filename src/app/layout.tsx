@@ -77,7 +77,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased" style={{ backgroundColor: '#F8F5F0' }}>
         <ToastProvider>
-          <div className="w-full max-w-[1400px] mx-auto shadow-lg overflow-hidden" style={{ backgroundColor: '#F8F5F0' }}>
+          {/* overflow-x-clip：防横向溢出且不创建滚动容器（overflow:hidden 会导致 Header sticky 失效） */}
+          <div className="w-full max-w-[1400px] mx-auto shadow-lg overflow-x-clip" style={{ backgroundColor: '#F8F5F0' }}>
             <Header />
             <main>{children}</main>
             <Footer />

@@ -7,7 +7,7 @@ import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 
 const navLinks = [
-  { label: 'Shop All', href: '/products' },
+  { label: 'Shop All', href: '/categories' },
   { label: 'Cushions', href: '/products?cat=cushions' },
   { label: 'Pillows', href: '/products?cat=pillows' },
   { label: 'Towels', href: '/products?cat=towels' },
@@ -29,7 +29,17 @@ export default function Header() {
   const [favCount, setFavCount] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    // 滞回阈值：滚动超过 120px 收缩，回到 40px 以下才展开。
+    // 区间（80px）需大于导航高度差（约 52px），配合 overflow-anchor:none 杜绝抖动
+    let last = false;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const next = last ? y > 40 : y > 120;
+      if (next !== last) {
+        last = next;
+        setScrolled(next);
+      }
+    };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -116,8 +126,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 flex items-center justify-between px-6 lg:px-10 py-4 transition-shadow ${
-          scrolled ? 'shadow-md' : ''
+        className={`sticky top-0 z-50 flex items-center justify-between px-6 lg:px-10 transition-all duration-300 ${
+          scrolled ? 'py-2 shadow-md' : 'py-4'
         }`}
         style={{ backgroundColor: '#F8F5F0', borderBottom: '1px solid rgba(139,90,43,0.1)' }}
       >
@@ -125,7 +135,9 @@ export default function Header() {
           <img
             src={resolveUrl('/images/brand/makimoo-logo.webp')}
             alt="Makimoo"
-            className="h-16 lg:h-20 w-auto object-contain"
+            className={`w-auto object-contain transition-all duration-300 ${
+              scrolled ? 'h-9 lg:h-11' : 'h-16 lg:h-20'
+            }`}
           />
         </a>
 
@@ -153,9 +165,9 @@ export default function Header() {
             </svg>
           </button>
 
-          {/* 收藏入口（带数量角标；暂无独立收藏页，点击进产品列表） */}
+          {/* 收藏入口（带数量角标；暂无独立收藏页，点击进分类汇总页） */}
           <a
-            href={resolveUrl('/products')}
+            href={resolveUrl('/categories')}
             className="relative w-11 h-11 rounded-full hover:bg-[rgba(139,90,43,0.08)] text-[#333] hover:text-[#8B5A2B] transition flex items-center justify-center"
             aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
           >

@@ -1,5 +1,6 @@
 import CollectionCard from '@/components/CollectionCard';
 import HeroCarousel from '@/components/HeroCarousel';
+import BrandBanner from '@/components/BrandBanner';
 import ProductCard from '@/components/ProductCard';
 import Reveal from '@/components/Reveal';
 import NewsletterForm from '@/components/NewsletterForm';
@@ -192,102 +193,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Collection Banner - Desktop (高度为原图的 92%，即 80% × 1.15) */}
-      <div className="relative w-full hidden sm:block overflow-hidden animate-banner-in" style={{ aspectRatio: '1456 / 574' }}>
-        <img
-          src={resolveUrl('/images/brand/collection-banner-new.webp')}
-          alt="Makimoo Collection Banner"
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 flex items-center">
-          <div className="px-10 lg:px-20 max-w-2xl">
-            <div className="flex items-center gap-3 mb-7">
-              <span className="text-white text-3xl font-bold tracking-wide drop-shadow">makimoo</span>
-            </div>
-            <div className="flex items-center gap-3 mb-5">
-              <span className="w-10 h-0.5 bg-white/70" />
-              <p className="text-white/85 text-base font-semibold tracking-widest uppercase">
-                Exclusive Deals
-              </p>
-            </div>
-            <h2 className="text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-5 drop-shadow-md">
-              Up to 50% Off
-            </h2>
-            <p className="text-white/85 text-lg lg:text-xl leading-relaxed mb-9 max-w-md">
-              Limited-time offers on our most-loved comfort essentials, only on MakimooHome.com.
-            </p>
-            <a
-              href={resolveUrl('/products')}
-              className="group/btn inline-flex items-center gap-2.5 px-10 py-4 rounded-full text-lg font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-xl"
-              style={{ backgroundColor: '#8B5A2B' }}
-            >
-              Discover Deals
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform group-hover/btn:translate-x-1"
-              >
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* Collection Banner - Mobile（竖版 3:4 底图，文字底部排布，占屏比更大） */}
-      <div className="relative w-full sm:hidden overflow-hidden mt-[50px] animate-banner-in" style={{ aspectRatio: '3 / 4' }}>
-        <img
-          src={resolveUrl('/images/brand/collection-banner-mobile-v2.webp')}
-          alt="Makimoo Collection Banner"
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 flex items-end">
-          <div className="px-6 pb-9">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-white text-lg font-bold tracking-wide drop-shadow">makimoo</span>
-            </div>
-            <p className="text-white/85 text-xs font-semibold tracking-widest uppercase mb-2">
-              Exclusive Deals
-            </p>
-            <h2 className="text-4xl font-extrabold text-white leading-tight mb-3 drop-shadow-md">
-              Up to 50% Off
-            </h2>
-            <p className="text-white/85 text-sm leading-relaxed mb-6 max-w-xs">
-              Limited-time offers on our most-loved comfort essentials, only on MakimooHome.com.
-            </p>
-            <a
-              href={resolveUrl('/products')}
-              className="group/btn inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white"
-              style={{ backgroundColor: '#8B5A2B' }}
-            >
-              Discover Deals
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform group-hover/btn:translate-x-1"
-              >
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
+      {/* Brand Banner（滚动触发：逐条淡入 + 数字滚动动画） */}
+      <BrandBanner />
       {/* Featured Products Section */}
       <section className="pt-20 pb-8 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
@@ -331,11 +238,11 @@ export default function HomePage() {
           </Reveal>
           <div className="text-center">
             <a
-              href={resolveUrl('/products')}
+              href={resolveUrl('/categories')}
               className="inline-block px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
               style={{ backgroundColor: '#8B5A2B' }}
             >
-              View All Products
+              Browse All Categories
             </a>
           </div>
         </div>
@@ -408,25 +315,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="py-20 px-6 lg:px-10">
+      {/* Newsletter（浅色卡片，与棕色页脚拉开层次） */}
+      <section className="pt-6 pb-16 px-6 lg:px-10">
         <Reveal>
           <div
-            className="relative max-w-7xl mx-auto rounded-3xl p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #8B5A2B 0%, #6B4220 100%)' }}
+            className="relative max-w-7xl mx-auto rounded-3xl p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-8 overflow-hidden bg-white border border-[#E8E2DA]"
+            style={{ boxShadow: '0 8px 30px rgba(0,0,0,0.04)' }}
           >
-            {/* Decorative radial glows */}
+            {/* 角落浅色装饰 */}
             <div
-              className="absolute -top-24 -right-24 w-80 h-80 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(255,248,240,0.18) 0%, transparent 70%)' }}
+              className="absolute -top-20 -right-20 w-64 h-64 rounded-full pointer-events-none"
+              style={{ background: 'radial-gradient(circle, rgba(139,90,43,0.07) 0%, transparent 70%)' }}
             />
-            <div
-              className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(255,248,240,0.12) 0%, transparent 70%)' }}
-            />
-            <div className="relative">
-              <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-2">Join the Herd</h2>
-              <p className="text-sm text-white/80">
+            <div className="relative text-center lg:text-left">
+              <p className="text-xs font-semibold tracking-widest uppercase text-[#8B5A2B] mb-2">Newsletter</p>
+              <h2 className="text-2xl lg:text-3xl font-extrabold text-[#333] mb-2">Join the Herd</h2>
+              <p className="text-sm text-[#555] max-w-md">
                 Get exclusive access to new collections, seasonal sales, and comfort tips delivered to your inbox.
               </p>
             </div>

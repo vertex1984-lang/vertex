@@ -172,7 +172,7 @@ export default function CartPage() {
           <div className="text-center py-20">
             <p className="text-lg text-[#555] mb-6">Your cart is empty.</p>
             <a
-              href={resolveUrl('/products')}
+              href={resolveUrl('/categories')}
               className="inline-block px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
               style={{ backgroundColor: '#8B5A2B' }}
             >

@@ -193,7 +193,7 @@ export default function HeroCarousel() {
               {slide.sub}
             </p>
             <a
-              href={resolveUrl('/products')}
+              href={resolveUrl('/categories')}
               className="inline-block px-8 py-3.5 rounded-full text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up"
               style={{ backgroundColor: '#8B5A2B', border: '2px solid #8B5A2B', animationDelay: '450ms' }}
             >

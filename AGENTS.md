@@ -30,6 +30,21 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 `classify()` 自动分类：标题含 bath mat/towel/rug/kitchen mat/door mat 等 → **Bath**；travel/neck pillow → Travel；pillowcase/insert 等 → Pillows；dining → Dining；chair/seat cushion → Cushions；其余 → Others。Bath 已加入 products 页分类筛选（顶部导航未加，需要时再加）。
 
+### 二级分类（subcategory）
+
+- 注册表与判定逻辑：`src/data/subcategories.ts`（`classifyProduct(productType, title, asin)`，enrich 时写入 `product.subcategory`，URL 参数 `?sub=`）。
+- **判定用完整标题**（素材库覆盖后、精简前），避免关键词被短标题截断。
+- Cushions 按形态/尺寸分组：`rocking`（摇椅垫 = 50×43 上下两件套或标题含 rocking）、`hb-medium`（95×45 连体高背，含 90×45）、`hb-large`（110×55 高背）、`seat-pad`（43×43 方形坐垫 + 47×8 圆形坐垫）。无独立兜底组，判不了的按标题 high-back 词进 hb-medium、否则 seat-pad。
+- 产品卡眉头标签显示二级分类短名（`productCategoryTag()`），无二级分类的显示顶级分类名。
+- 类目页筛选面板：`Collections`（二级分类单选）+ `Material`（多选）；Price/Size/Availability 筛选已移除（用户要求）。二级分类不再以 pills 形式出现在类目页顶部，入口在 /categories 汇总页和 Collections 筛选行。
+- Pillows：quilted→`quilted`；embossed/pillowcase/covers→`embossed`；其余→`basic`。
+- Towels：beach→`beach`；hand/face towel 或 40×80 四件装→`hand-face`；其余→`bath-towels`。
+- Mats：按关键词在标题中**最早出现位置**定主用途（kitchen/door/area-rugs/bath-mats，兜底 other-mats）——标题尾部常堆场景词，不能用包含匹配定优先级。
+- Others：`travel`（neck pillow/travel）、`kitchen-tools`（pepper mill/grinder/kitchen 等）、`extras`（兜底：自行车篮、香薰炉等）。
+- 四个错标产品已按标题归正：95×45 椅垫 B0DSGCLBVW/B0DSGCKWXW（Pillows→Cushions，含 "chair cushion"）；枕芯 B0F62QGV32、枕套 B0GJLVMHT7（Others→Pillows，pillowcase/insert 规则）。顶级计数：Cushions 66 / Pillows 29 / Towels 14 / Mats 14 / Others 15。
+- 裸 `/products` 已取消（前端重定向到 `/categories` 汇总页）；`/products?cat=x` 类目页含二级分类 pills（吸顶）+ 常态展开筛选；`/categories` 为二级分类汇总静态页。
+- `/categories` 二级分类卡片的缩略图目前是**临时的**：自动取该组第一个在售产品的首图（`repImage()`，场景图优先于白底图）。**后续要为每个二级分类生成专属缩略图替换**（用户已确认此计划）。
+
 ### 标题规则
 
 - 手工精简表 `src/data/short-titles.ts`（≤100 字符、去 "Makimoo"、保留件数/关键属性/尺寸/颜色）优先。
