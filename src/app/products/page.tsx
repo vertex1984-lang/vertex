@@ -258,7 +258,7 @@ export default function ProductsPage() {
     <div className="px-6 lg:px-10 py-10">
       <div className="max-w-7xl mx-auto">
         {/* 页头（仿 Interior Define）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
-        <nav className="text-sm text-[#999] mb-3" aria-label="Breadcrumb">
+        <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
           <a href={resolveUrl('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
           <span className="mx-1.5">/</span>
           {activeSub && subDef && categoryDef ? (
@@ -271,9 +271,9 @@ export default function ProductsPage() {
             <span className="text-[#555]">{pageTitle}</span>
           )}
         </nav>
-        <div className="flex items-end justify-between flex-wrap gap-4 mb-8 lg:mb-10">
+        <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
           <div>
-            <h1 className="text-3xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
+            <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
           </div>
           {/* 桌面端：结果数 + 排序（移动端排序在筛选抽屉里） */}
           {mounted && (
@@ -395,13 +395,13 @@ export default function ProductsPage() {
                 )}
               </button>
             </div>
-            <div className="space-y-12 lg:space-y-16">
+            <div className="space-y-10 lg:space-y-16">
               {sections.map(({ def, products }) => (
                 <section key={def.key}>
                   <div className="flex items-end justify-between gap-4 mb-4 lg:mb-5">
-                    <div>
-                      <h2 className="text-xl lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
-                      {def.blurb && <p className="text-sm text-[#777] mt-1">{def.blurb}</p>}
+                    <div className="min-w-0">
+                      <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
+                      {def.blurb && <p className="text-[13px] lg:text-sm text-[#777] mt-1 line-clamp-2 lg:line-clamp-none">{def.blurb}</p>}
                     </div>
                     <button
                       onClick={() => setFilter({ sub: def.key })}
@@ -410,8 +410,8 @@ export default function ProductsPage() {
                       View All {products.length} &rarr;
                     </button>
                   </div>
-                  {/* 移动端：横向滑动（隐藏滚动条，卡片吸附） */}
-                  <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 -mx-6 px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  {/* 移动端：横向滑动（隐藏滚动条，卡片吸附，与页面左右留白对齐） */}
+                  <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {products.map((p) => (
                       <div key={p.id} className="w-[46%] flex-shrink-0 snap-start">
                         <ProductCard product={p} />
