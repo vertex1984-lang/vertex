@@ -23,32 +23,33 @@ export interface SubcategoryDef {
   parent: string; // 顶级分类小写（cushions / pillows / towels / mats）
   label: string; // 完整名（汇总页卡片 / 类目页标题）
   shortLabel: string; // 短名（产品卡眉头标签）
+  blurb?: string; // 一句话简介（类目页分区标题下）
 }
 
 export const SUBCATEGORIES: SubcategoryDef[] = [
   // Cushions（按形态/尺寸分组）
-  { key: 'rocking', parent: 'cushions', label: 'Rocking Chair', shortLabel: 'Rocking Chair' },
-  { key: 'hb-medium', parent: 'cushions', label: 'High-Back Medium', shortLabel: 'High-Back Medium' },
-  { key: 'hb-large', parent: 'cushions', label: 'High-Back Large', shortLabel: 'High-Back Large' },
-  { key: 'seat-pad', parent: 'cushions', label: 'Seat Pads', shortLabel: 'Seat Pads' },
+  { key: 'rocking', parent: 'cushions', label: 'Rocking Chair', shortLabel: 'Rocking Chair', blurb: 'Two-piece tufted sets sized for classic rocking chairs.' },
+  { key: 'hb-medium', parent: 'cushions', label: 'High-Back Medium', shortLabel: 'High-Back Medium', blurb: 'One-piece high-back comfort for normal sized chairs.' },
+  { key: 'hb-large', parent: 'cushions', label: 'High-Back Large', shortLabel: 'High-Back Large', blurb: 'One-piece high-back cushions for larger chairs.' },
+  { key: 'seat-pad', parent: 'cushions', label: 'Seat Pads', shortLabel: 'Seat Pads', blurb: 'Simple tufted pads for dining & desk chairs.' },
   // Pillows
-  { key: 'basic', parent: 'pillows', label: 'Basic', shortLabel: 'Basic' },
-  { key: 'quilted', parent: 'pillows', label: 'Quilted', shortLabel: 'Quilted' },
-  { key: 'embossed', parent: 'pillows', label: 'Embossed & Covers', shortLabel: 'Embossed & Covers' },
+  { key: 'basic', parent: 'pillows', label: 'Basic', shortLabel: 'Basic', blurb: 'Everyday plush pillows for bed & sofa.' },
+  { key: 'quilted', parent: 'pillows', label: 'Quilted', shortLabel: 'Quilted', blurb: 'Quilted texture with extra loft and support.' },
+  { key: 'embossed', parent: 'pillows', label: 'Embossed & Covers', shortLabel: 'Embossed & Covers', blurb: 'Embossed designs and covers to refresh any room.' },
   // Towels
-  { key: 'bath-towels', parent: 'towels', label: 'Bath Towels', shortLabel: 'Bath Towels' },
-  { key: 'beach', parent: 'towels', label: 'Beach Towels', shortLabel: 'Beach Towels' },
-  { key: 'hand-face', parent: 'towels', label: 'Hand & Face Towels', shortLabel: 'Hand & Face' },
+  { key: 'bath-towels', parent: 'towels', label: 'Bath Towels', shortLabel: 'Bath Towels', blurb: 'Soft, absorbent cotton for daily baths.' },
+  { key: 'beach', parent: 'towels', label: 'Beach Towels', shortLabel: 'Beach Towels', blurb: 'Oversized and quick-drying for pool & beach.' },
+  { key: 'hand-face', parent: 'towels', label: 'Hand & Face Towels', shortLabel: 'Hand & Face', blurb: 'Small essentials for hands & face.' },
   // Mats
-  { key: 'kitchen', parent: 'mats', label: 'Kitchen Mats', shortLabel: 'Kitchen Mats' },
-  { key: 'bath-mats', parent: 'mats', label: 'Bath Mats', shortLabel: 'Bath Mats' },
-  { key: 'door', parent: 'mats', label: 'Door Mats', shortLabel: 'Door Mats' },
-  { key: 'area-rugs', parent: 'mats', label: 'Area Rugs', shortLabel: 'Area Rugs' },
-  { key: 'other-mats', parent: 'mats', label: 'Other Mats', shortLabel: 'Other Mats' },
+  { key: 'kitchen', parent: 'mats', label: 'Kitchen Mats', shortLabel: 'Kitchen Mats', blurb: 'Anti-fatigue comfort where you stand most.' },
+  { key: 'bath-mats', parent: 'mats', label: 'Bath Mats', shortLabel: 'Bath Mats', blurb: 'Step onto soft, quick-dry comfort.' },
+  { key: 'door', parent: 'mats', label: 'Door Mats', shortLabel: 'Door Mats', blurb: 'Tough mats that trap dirt at the door.' },
+  { key: 'area-rugs', parent: 'mats', label: 'Area Rugs', shortLabel: 'Area Rugs', blurb: 'Soft grounding for living spaces.' },
+  { key: 'other-mats', parent: 'mats', label: 'Other Mats', shortLabel: 'Other Mats', blurb: 'More mats for every corner.' },
   // Others
-  { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel' },
-  { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools' },
-  { key: 'extras', parent: 'others', label: 'Extras', shortLabel: 'Extras' },
+  { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel', blurb: 'Neck pillows & essentials for the road.' },
+  { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools', blurb: 'Handy tools for everyday cooking.' },
+  { key: 'extras', parent: 'others', label: 'Extras', shortLabel: 'Extras', blurb: 'Little extras that make home better.' },
 ];
 
 export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {

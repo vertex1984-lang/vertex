@@ -61,48 +61,6 @@ interface FilterBundle {
   sort: SortKey;
 }
 
-// 筛选行：label + chips（带数量）；chips 独立容器，换行与首行 chip 对齐而非 label
-// 轻量无边框设计：chips 白底描边浮在页面米色底上，选中为棕色实心
-function FilterRow({
-  label,
-  options,
-  selected,
-  onToggle,
-}: {
-  label: string;
-  options: { key: string; label: string; count: number }[];
-  selected: string[];
-  onToggle: (key: string) => void;
-}) {
-  if (options.length === 0) return null;
-  return (
-    // 移动端 label 独占一行（chips 空间太窄），sm 起恢复左右排布
-    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-start sm:gap-2">
-      <span className="text-xs font-semibold text-[#999] uppercase tracking-wider sm:w-24 flex-shrink-0 sm:pt-1.5">{label}</span>
-      <div className="flex flex-wrap items-center gap-2 flex-1">
-        {options.map((o) => {
-          const active = selected.includes(o.key);
-          return (
-            <button
-              key={o.key}
-              onClick={() => onToggle(o.key)}
-              aria-pressed={active}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium transition ${
-                active
-                  ? 'text-white border border-transparent'
-                  : 'bg-white text-[#555] border border-[#E8E2DA] hover:border-[#8B5A2B] hover:text-[#8B5A2B]'
-              }`}
-              style={active ? { backgroundColor: '#8B5A2B' } : {}}
-            >
-              {o.label} ({o.count})
-            </button>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 export default function ProductsPage() {
   // mounted 标志：防止静态 HTML 在 JS 执行前闪现
   const [mounted, setMounted] = useState(false);
@@ -194,15 +152,17 @@ export default function ProductsPage() {
       .map(([label, count]) => ({ key: label, label, count }));
   }, [scopeProducts]);
 
-  // 统一写 URL（分类 + 二级分类 + 筛选 + 排序，可分享）
-  const writeUrl = (b: FilterBundle) => {
+  // 统一写 URL（分类 + 二级分类 + 筛选 + 排序，可分享）。
+  // 进入/退出二级分类用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
+  const writeUrl = (b: FilterBundle, push = false) => {
     const url = new URL(window.location.href);
     const set = (k: string, v: string) => (v ? url.searchParams.set(k, v) : url.searchParams.delete(k));
     set('cat', b.cat);
     set('sub', b.sub);
     set('material', b.material.join(','));
     set('sort', b.sort === 'featured' ? '' : b.sort);
-    window.history.replaceState(null, '', url.toString());
+    if (push) window.history.pushState(null, '', url.toString());
+    else window.history.replaceState(null, '', url.toString());
   };
 
   // 统一更新筛选状态：合并变更 → 写回 state + URL，重置分页
@@ -219,8 +179,22 @@ export default function ProductsPage() {
     if (over.material) setMaterialSel(over.material);
     if (over.sort) setSortBy(over.sort);
     setVisibleCount(PAGE_SIZE);
-    writeUrl(b);
+    writeUrl(b, over.sub !== undefined);
   };
+
+  // 浏览器前进/后退：从 URL 恢复筛选状态
+  useEffect(() => {
+    const onPop = () => {
+      setActiveCategory(readUrlParam('cat'));
+      setActiveSub(readUrlParam('sub'));
+      setMaterialSel(readUrlList('material'));
+      const s = readUrlParam('sort') as SortKey;
+      setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
+      setVisibleCount(PAGE_SIZE);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   // Collections 单选：点其他项切换，再点当前项取消（回到全类目）
   const toggleSub = (key: string) => {
@@ -254,49 +228,133 @@ export default function ProductsPage() {
 
   const sortedFiltered = useMemo(() => applySort(filtered, sortBy), [filtered, sortBy]);
 
+  // 分区视图：类目默认视图（无搜索/无二级筛选/无材质筛选/默认排序）且产品足够多时，
+  // 按二级分类分区展示，避免长网格单调、信息效率递减
+  const sections = useMemo(() => {
+    if (!activeCategory || isSearching || activeSub || materialSel.length > 0 || sortBy !== 'featured') {
+      return [];
+    }
+    const grouped = getSubcategoriesOf(activeCategory)
+      .map((def) => ({
+        def,
+        products: inStockFirst(categoryProducts.filter((p) => p.subcategory === def.key)),
+      }))
+      .filter((s) => s.products.length > 0);
+    const total = grouped.reduce((n, s) => n + s.products.length, 0);
+    return grouped.length >= 2 && total >= 4 ? grouped : [];
+  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts]);
+
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6';
 
   const subDef = activeSub ? getSubcategoryDef(activeSub) : undefined;
   const pageTitle = isSearching
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Products';
-  const pageSubtitle = isSearching
-    ? ''
-    : subDef
-      ? [categoryDef?.label, categoryDef?.intro].filter(Boolean).join(' — ')
-      : categoryDef?.intro || '';
+
+  // 桌面端左侧筛选栏（lg+）：类目视图且有可选项时显示
+  const showSidebar = mounted && !!activeCategory && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     <div className="px-6 lg:px-10 py-10">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 lg:mb-14">
-          <h1 className="text-3xl lg:text-4xl font-extrabold text-[#333] mb-3">{pageTitle}</h1>
-          {pageSubtitle && <p className="text-[#555]">{pageSubtitle}</p>}
+        {/* 页头（仿 Interior Define）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
+        <nav className="text-sm text-[#999] mb-3" aria-label="Breadcrumb">
+          <a href={resolveUrl('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
+          <span className="mx-1.5">/</span>
+          {activeSub && subDef && categoryDef ? (
+            <>
+              <a href={resolveUrl(`/products/?cat=${activeCategory}`)} className="hover:text-[#8B5A2B] transition-colors">{categoryDef.label}</a>
+              <span className="mx-1.5">/</span>
+              <span className="text-[#555]">{subDef.label}</span>
+            </>
+          ) : (
+            <span className="text-[#555]">{pageTitle}</span>
+          )}
+        </nav>
+        <div className="flex items-end justify-between flex-wrap gap-4 mb-8 lg:mb-10">
+          <div>
+            <h1 className="text-3xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
+          </div>
+          {/* 桌面端：结果数 + 排序（移动端排序在筛选抽屉里） */}
+          {mounted && (
+            <div className="hidden lg:flex items-center gap-4">
+              <p className="text-sm text-[#777]">{filtered.length} result{filtered.length === 1 ? '' : 's'}</p>
+              <select
+                value={sortBy}
+                onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
+                className="h-10 px-3 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm text-[#333] outline-none focus:border-[#8B5A2B]"
+                aria-label="Sort products"
+              >
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          )}
         </div>
 
-        {/* 筛选区（桌面端 lg+）：只在类目视图显示（搜索视图不筛选），常态展开；Collections = 二级分类单选。无边框轻量排布，行间细分隔线 */}
-        {mounted && activeCategory && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0) && (
-          <div className="hidden lg:block mb-8 space-y-3">
-            {collectionOptions.length > 0 && (
-              <>
-                <FilterRow label="Collections" options={collectionOptions} selected={activeSub ? [activeSub] : []} onToggle={toggleSub} />
-                {materialOptions.length > 0 && <div className="border-b border-[#E8E2DA]/70" />}
-              </>
-            )}
-            <FilterRow label="Material" options={materialOptions} selected={materialSel} onToggle={(v) => setFilter({ material: toggleInList(materialSel, v) })} />
-            {activeFilterCount > 0 && (
-              <div className="flex justify-end">
-                <button
-                  onClick={clearFilters}
-                  className="text-xs font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
-                >
-                  Clear All
-                </button>
+        <div className="lg:flex lg:gap-10">
+        {/* 桌面端左侧筛选栏：Collections 单选 + Material 多选，吸顶跟随 */}
+        {showSidebar && (
+          <aside className="hidden lg:block w-56 flex-shrink-0">
+            <div className="sticky top-28">
+              <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8E2DA]">
+                <h2 className="text-sm font-bold uppercase tracking-wider text-[#333]">Filters</h2>
+                {activeFilterCount > 0 && (
+                  <button
+                    onClick={clearFilters}
+                    className="text-xs font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
+                  >
+                    Clear All
+                  </button>
+                )}
               </div>
-            )}
-          </div>
+              {collectionOptions.length > 0 && (
+                <div className="mb-6">
+                  <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Collections</p>
+                  {collectionOptions.map((o) => {
+                    const active = activeSub === o.key;
+                    return (
+                      <button key={o.key} onClick={() => toggleSub(o.key)} aria-pressed={active} className="flex items-center gap-2.5 w-full py-1.5 text-left">
+                        <span className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}>
+                          {active && <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#8B5A2B' }} />}
+                        </span>
+                        <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
+                        <span className="text-xs text-[#999] ml-auto">{o.count}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+              {materialOptions.length > 0 && (
+                <div>
+                  <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Material</p>
+                  {materialOptions.map((o) => {
+                    const active = materialSel.includes(o.key);
+                    return (
+                      <button key={o.key} onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })} aria-pressed={active} className="flex items-center gap-2.5 w-full py-1.5 text-left">
+                        <span
+                          className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}
+                          style={active ? { backgroundColor: '#8B5A2B' } : {}}
+                        >
+                          {active && (
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          )}
+                        </span>
+                        <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
+                        <span className="text-xs text-[#999] ml-auto">{o.count}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </aside>
         )}
 
+        <div className="flex-1 min-w-0">
         {!mounted ? (
           /* JS 加载前的占位：骨架屏与卡片同比例，避免布局跳动 */
           <div className={gridCls}>
@@ -312,19 +370,15 @@ export default function ProductsPage() {
               </div>
             ))}
           </div>
-        ) : (
-          /* 类目视图 / 搜索视图：完整网格 + 排序 + 分批加载 */
-          <>
-            <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
-              <p className="text-sm text-[#777]">
-                {isSearching
-                  ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`
-                  : `${filtered.length} product${filtered.length === 1 ? '' : 's'}`}
-              </p>
-              {/* 移动端：筛选+排序抽屉入口（带激活数量角标） */}
+        ) : sections.length > 0 ? (
+          /* 分区视图：按二级分类分区，移动端横滑、桌面端每区前 8 个 + View All */
+          <div>
+            {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
+            <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
+              <p className="text-sm text-[#777]">{filtered.length} product{filtered.length === 1 ? '' : 's'}</p>
               <button
                 onClick={() => setFilterOpen(true)}
-                className="lg:hidden relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
+                className="relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
                 aria-label="Open filters"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -340,16 +394,80 @@ export default function ProductsPage() {
                   </span>
                 )}
               </button>
-              <select
-                value={sortBy}
-                onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
-                className="hidden lg:block h-10 px-3 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm text-[#333] outline-none focus:border-[#8B5A2B]"
-                aria-label="Sort products"
+            </div>
+            <div className="space-y-12 lg:space-y-16">
+              {sections.map(({ def, products }) => (
+                <section key={def.key}>
+                  <div className="flex items-end justify-between gap-4 mb-4 lg:mb-5">
+                    <div>
+                      <h2 className="text-xl lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
+                      {def.blurb && <p className="text-sm text-[#777] mt-1">{def.blurb}</p>}
+                    </div>
+                    <button
+                      onClick={() => setFilter({ sub: def.key })}
+                      className="flex-shrink-0 text-sm font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
+                    >
+                      View All {products.length} &rarr;
+                    </button>
+                  </div>
+                  {/* 移动端：横向滑动（隐藏滚动条，卡片吸附） */}
+                  <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 -mx-6 px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {products.map((p) => (
+                      <div key={p.id} className="w-[46%] flex-shrink-0 snap-start">
+                        <ProductCard product={p} />
+                      </div>
+                    ))}
+                  </div>
+                  {/* 桌面端：网格前 8 个 */}
+                  <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
+                    {products.slice(0, 8).map((p) => (
+                      <ProductCard key={p.id} product={p} />
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          </div>
+        ) : (
+          /* 类目视图 / 搜索视图：完整网格 + 排序 + 分批加载 */
+          <>
+            {/* 二级分类视图：返回分区视图的链接（浏览器后退同样可用） */}
+            {activeSub && !isSearching && (
+              <button
+                onClick={() => setFilter({ sub: '' })}
+                className="mb-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
               >
-                <option value="featured">Featured</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-              </select>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M19 12H5M11 18l-6-6 6-6" />
+                </svg>
+                Back to All {categoryDef?.label || 'Products'}
+              </button>
+            )}
+            {/* 移动端：结果数 + 筛选抽屉入口（桌面端结果数/排序在页头右侧） */}
+            <div className="flex items-center justify-between mb-5 flex-wrap gap-3 lg:hidden">
+              <p className="text-sm text-[#777]">
+                {isSearching
+                  ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`
+                  : `${filtered.length} product${filtered.length === 1 ? '' : 's'}`}
+              </p>
+              <button
+                onClick={() => setFilterOpen(true)}
+                className="relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
+                aria-label="Open filters"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+                </svg>
+                Filter &amp; Sort
+                {activeFilterCount > 0 && (
+                  <span
+                    className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full text-white text-[11px] font-bold flex items-center justify-center"
+                    style={{ backgroundColor: '#8B5A2B' }}
+                  >
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
             </div>
 
             {sortedFiltered.length > 0 ? (
@@ -377,6 +495,7 @@ export default function ProductsPage() {
             ) : (
               <div className="text-center py-20">
                 <p className="text-[#555] text-lg">No products found.</p>
+                <p className="mt-2 text-sm text-[#999]">Check for spelling mistakes or try searching the name of a collection or product.</p>
                 <button
                   onClick={clearFilters}
                   className="mt-4 px-5 py-2 rounded-full text-sm font-semibold text-white"
@@ -388,6 +507,8 @@ export default function ProductsPage() {
             )}
           </>
         )}
+        </div>
+        </div>
       </div>
 
       {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material（多选），底部 Show N products */}

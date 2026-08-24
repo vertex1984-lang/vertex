@@ -45,7 +45,8 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    if (mobileOpen || searchOpen) {
+    // 只有移动端菜单锁定滚动；搜索面板不锁定（原页面保持可交互）
+    if (mobileOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
@@ -212,6 +213,82 @@ export default function Header() {
             <span className="block w-5 h-0.5 bg-[#333] rounded" />
           </button>
         </div>
+
+        {/* Search Panel：导航下方的下拉面板，不遮全屏、不锁滚动，点外部/Esc 关闭 */}
+        {searchOpen && (
+          <div
+            className="absolute top-full left-0 right-0 bg-[#F8F5F0] border-y border-[#E0D8CC] shadow-[0_12px_32px_rgba(60,45,30,0.12)]"
+            style={{ animation: 'fadeIn 0.18s ease-out' }}
+          >
+            <div className="max-w-2xl mx-auto px-6 py-5">
+              <form onSubmit={handleSearchSubmit} className="flex items-center gap-3">
+                <div className="relative flex-1">
+                  <input
+                    type="text"
+                    placeholder="Search products..."
+                    autoFocus
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full h-11 px-4 rounded-lg text-sm border-2 border-[#E8E2DA] focus:border-[#8B5A2B] focus:ring-2 focus:ring-[#8B5A2B]/20 outline-none bg-white"
+                    style={{ fontFamily: 'Montserrat, sans-serif' }}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="h-11 px-5 rounded-lg text-sm font-semibold text-white transition hover:opacity-90 flex-shrink-0"
+                  style={{ backgroundColor: '#8B5A2B' }}
+                  aria-label="Submit search"
+                >
+                  Search
+                </button>
+              </form>
+
+              {/* 即时建议（300ms 防抖，client-side 过滤） */}
+              {suggestions.length > 0 && (
+                <div className="mt-3 bg-white rounded-xl border border-[#E8E2DA] overflow-hidden max-h-80 overflow-y-auto">
+                  {suggestions.map((p) => (
+                    <a
+                      key={p.id}
+                      href={resolveUrl(`/products/${p.handle}/`)}
+                      className="flex items-center gap-3 px-4 py-2.5 hover:bg-[#F8F5F0] transition"
+                    >
+                      {p.images?.[0] && (
+                        <img
+                          src={resolveUrl(p.images[0].url)}
+                          alt={p.images[0].altText || p.title}
+                          className="w-12 h-12 rounded-lg object-cover flex-shrink-0 bg-[#F8F5F0] border border-[#E8E2DA]"
+                          loading="lazy"
+                        />
+                      )}
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[#8B5A2B] w-16 flex-shrink-0 truncate">
+                        {p.productType}
+                      </span>
+                      <span className="text-sm text-[#333] line-clamp-2">{p.title}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+
+              {/* 热门搜索 chips */}
+              {suggestions.length === 0 && (
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#999] mb-2.5">Popular Searches</p>
+                  <div className="flex flex-wrap gap-2">
+                    {HOT_SEARCHES.map((term) => (
+                      <button
+                        key={term}
+                        onClick={() => setSearchQuery(term)}
+                        className="px-4 py-2 rounded-full bg-white border border-[#E8E2DA] text-sm text-[#555] hover:border-[#8B5A2B] hover:text-[#8B5A2B] transition"
+                      >
+                        {term}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Mobile Overlay */}
@@ -253,77 +330,9 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* Search Overlay */}
+      {/* 点击面板外部区域关闭搜索 */}
       {searchOpen && (
-        <div
-          className="fixed inset-0 z-[2000] flex flex-col pt-24 px-6"
-          style={{ backgroundColor: 'rgba(248,245,240,0.98)' }}
-        >
-          <form onSubmit={handleSearchSubmit} className="max-w-xl mx-auto w-full flex items-center gap-3">
-            <div className="relative flex-1">
-              <input
-                type="text"
-                placeholder="Search products..."
-                autoFocus
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-12 px-5 rounded-lg text-base border-2 border-[#E8E2DA] focus:border-[#8B5A2B] focus:ring-2 focus:ring-[#8B5A2B]/20 outline-none bg-white"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
-              />
-              {/* 即时建议下拉（300ms 防抖，client-side 过滤） */}
-              {suggestions.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-[#E8E2DA] overflow-hidden z-10">
-                  {suggestions.map((p) => (
-                    <a
-                      key={p.id}
-                      href={resolveUrl(`/products/${p.handle}/`)}
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-[#F8F5F0] transition"
-                    >
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[#8B5A2B] w-20 flex-shrink-0 truncate">
-                        {p.productType}
-                      </span>
-                      <span className="text-sm text-[#333] line-clamp-2">{p.title}</span>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-            <button
-              type="submit"
-              className="h-12 px-5 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
-              style={{ backgroundColor: '#8B5A2B' }}
-              aria-label="Submit search"
-            >
-              Search
-            </button>
-            <button
-              type="button"
-              onClick={() => setSearchOpen(false)}
-              className="w-11 h-11 flex items-center justify-center text-3xl text-[#555] hover:text-[#333] transition"
-              aria-label="Close search"
-            >
-              &times;
-            </button>
-          </form>
-
-          {/* 热门搜索 chips */}
-          {suggestions.length === 0 && (
-            <div className="max-w-xl mx-auto w-full mt-5">
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#999] mb-2.5">Popular Searches</p>
-              <div className="flex flex-wrap gap-2">
-                {HOT_SEARCHES.map((term) => (
-                  <button
-                    key={term}
-                    onClick={() => setSearchQuery(term)}
-                    className="px-4 py-2 rounded-full bg-white border border-[#E8E2DA] text-sm text-[#555] hover:border-[#8B5A2B] hover:text-[#8B5A2B] transition"
-                  >
-                    {term}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+        <div className="fixed inset-0 z-40" onClick={() => setSearchOpen(false)} aria-hidden="true" />
       )}
     </>
   );
