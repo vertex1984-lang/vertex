@@ -413,7 +413,7 @@ export default function ProductsPage() {
                   {/* 移动端：横向滑动（隐藏滚动条，卡片吸附，与页面左右留白对齐） */}
                   <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {products.map((p) => (
-                      <div key={p.id} className="w-[46%] flex-shrink-0 snap-start">
+                      <div key={p.id} className="w-[44%] flex-shrink-0 snap-start">
                         <ProductCard product={p} />
                       </div>
                     ))}
