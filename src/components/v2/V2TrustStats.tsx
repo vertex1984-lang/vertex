@@ -11,21 +11,23 @@ const STATS = [
 
 /**
  * V2 首页信任数据内容卡（原 banner 叠加文案的排版版）
- * 左对齐排版，放在 MADE RESPONSIBLY（StorySplit）区域之前；无图片，纯文字卡片。
+ * 卡片打满屏幕宽度（两侧留小空隙），文字内容居中；无图片，纯文字卡片。
  * 移动端保持同一结构（数据横向一排 + 分隔线，字号缩小，不堆叠）。
  */
 export default function V2TrustStats() {
   return (
     <section className="bg-off-white px-4 py-10 sm:px-6 lg:px-10 lg:py-16">
       <Reveal>
-        <div className="max-w-[1200px] mx-auto bg-cream rounded-2xl lg:rounded-3xl shadow-lg px-6 py-10 sm:px-10 lg:px-16 lg:py-14">
+        <div className="bg-cream rounded-2xl lg:rounded-3xl shadow-lg px-6 py-10 sm:px-10 lg:px-16 lg:py-14">
+          {/* 内容块整体水平居中，内部保持左对齐结构 */}
+          <div className="w-fit mx-auto text-left">
           <div className="flex items-center gap-3 mb-3 lg:mb-4">
             <span className="w-8 lg:w-10 h-0.5 bg-brand" />
             <p className="text-[11px] lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand">
               Trusted Worldwide
             </p>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-14 max-w-2xl">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-14">
             Comfort Loved by Millions
           </h2>
           {/* 数据一排展示（移动端同结构，字号缩小）；从第二项起带分隔线 */}
@@ -58,6 +60,7 @@ export default function V2TrustStats() {
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
           </a>
+          </div>
         </div>
       </Reveal>
     </section>
