@@ -4,7 +4,7 @@ import { v2url } from '@/lib/v2paths';
 
 /**
  * V2 首页全宽 Brand Banner（纯图版）
- * 桌面：brand-banner.webp（1456×574 生活场景图）按 1456/444（约 3.3:1）锁定比例全宽展示，
+ * 桌面：brand-banner.webp（1456×574 生活场景图）按 1456/380（约 3.8:1）锁定比例全宽展示，
  *        object-cover 从上下裁切（object-position 保持 center，沙发主体完整露出）；
  *        极宽屏高度超 85vh 时进一步从上下裁切；
  * 移动：brand-banner-mobile.webp（900×1200，正好 3:4）aspect-[3/4] 无裁切。
@@ -16,10 +16,10 @@ export default function V2BrandBanner() {
   return (
     <section className="w-full">
       <Reveal>
-        {/* 桌面端：锁定 1456/444（约 3.3:1）比例全宽展示，极宽屏超 85vh 时从上下进一步裁切 */}
+        {/* 桌面端：锁定 1456/380（约 3.8:1）比例全宽展示，极宽屏超 85vh 时从上下进一步裁切 */}
         <a
           href={v2url('/products/')}
-          className="group relative hidden sm:block w-full aspect-[1456/444] max-h-[85vh] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/380] max-h-[85vh] overflow-hidden"
         >
           <img
             src={resolveUrl('/images/brand/brand-banner.webp')}
