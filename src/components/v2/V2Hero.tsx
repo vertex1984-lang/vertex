@@ -43,7 +43,7 @@ export default function V2Hero() {
   }, [goNext, paused]);
 
   return (
-    <section className="relative h-[92vh] min-h-[560px] overflow-hidden">
+    <section className="relative h-[68vh] min-h-[440px] lg:h-[92vh] lg:min-h-[560px] overflow-hidden">
       {/* Background carousel（ken-burns 缓慢缩放 + 淡切） */}
       <div
         className="absolute inset-0 overflow-hidden"
@@ -97,22 +97,23 @@ export default function V2Hero() {
         </div>
       </div>
 
-      {/* Text content：垂直居中偏下（为 fixed Header 留出顶部视觉空间） */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-center pt-[12vh]">
+      {/* Text content：垂直居中偏下（为 fixed Header 留出顶部视觉空间）；移动端文案精简 */}
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-center pt-[6vh] lg:pt-[12vh]">
         <p
-          className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-5 animate-fade-in-up"
+          className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-4 lg:mb-5 animate-fade-in-up"
           style={{ animationDelay: '0ms' }}
         >
           Makimoo Home
         </p>
         <h1
-          className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-6 animate-fade-in-up"
+          className="text-4xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-5 lg:mb-6 animate-fade-in-up"
           style={{ animationDelay: '150ms' }}
         >
           Comfort, Woven Into Every Day
         </h1>
+        {/* 移动端隐藏副文案，避免文字过多 */}
         <p
-          className="text-base lg:text-lg text-cream/85 max-w-xl mb-9 animate-fade-in-up"
+          className="hidden sm:block text-base lg:text-lg text-cream/85 max-w-xl mb-9 animate-fade-in-up"
           style={{ animationDelay: '300ms' }}
         >
           Cushions, pillows and soft essentials crafted from honest materials —
@@ -121,7 +122,7 @@ export default function V2Hero() {
         <div className="animate-fade-in-up" style={{ animationDelay: '450ms' }}>
           <a
             href={v2url('/products/')}
-            className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-brand hover:text-cream hover:shadow-xl"
+            className="inline-block px-8 py-3.5 lg:px-9 lg:py-4 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-brand hover:text-cream hover:shadow-xl"
           >
             Shop the Collection
           </a>
