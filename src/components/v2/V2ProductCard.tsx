@@ -25,8 +25,10 @@ function formatPrice(amount: string, currency: string): string {
 
 // Parachute 风格：大图 aspect-square + 小标签 + 产品名 + 价格，无卡片边框阴影
 export default function V2ProductCard({ product, badge }: V2ProductCardProps) {
-  const image =
-    product.shopifyImages && product.shopifyImages.length > 0
+  // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
+  const image = product.featuredImage
+    ? { url: product.featuredImage, altText: product.title }
+    : product.shopifyImages && product.shopifyImages.length > 0
       ? { url: shopifyImageUrl(product.shopifyImages[0], 600), altText: product.title }
       : product.images[0];
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
