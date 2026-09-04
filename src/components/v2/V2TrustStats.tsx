@@ -35,29 +35,29 @@ export default function V2TrustStats({ image, imageAlt }: V2TrustStatsProps) {
       {/* 文案半区 */}
       <div className="bg-off-white flex items-center lg:order-1">
         <Reveal className="w-full">
-          <div className="max-w-lg mx-auto px-6 lg:px-14 py-14 lg:py-24">
-            <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-4">
+          <div className="max-w-2xl mx-auto px-6 lg:px-14 py-14 lg:py-24">
+            <p className="text-lg lg:text-xl font-semibold tracking-[0.25em] uppercase text-brand mb-6">
               Trusted Worldwide
             </p>
-            <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-[54px] font-extrabold tracking-tight text-charcoal mb-10 leading-tight">
               Comfort Loved by Millions
             </h2>
             {/* 数据一排展示（移动端同结构，字号缩小）；从第二项起带分隔线 */}
-            <div className="flex items-stretch mb-8">
+            <div className="flex items-stretch mb-10">
               {STATS.map((stat, i) => (
                 <div
                   key={stat.value}
-                  className={i === 0 ? 'pr-4 sm:pr-6' : 'px-4 sm:px-6 border-l border-warm-gray'}
+                  className={i === 0 ? 'pr-3 lg:pr-8' : 'px-3 lg:px-8 border-l border-warm-gray'}
                 >
-                  <p className="text-2xl sm:text-3xl font-extrabold text-charcoal tabular-nums inline-flex items-center gap-1.5">
+                  <p className="text-4xl lg:text-[45px] font-extrabold text-charcoal tabular-nums inline-flex items-center gap-2">
                     {stat.value}
                     {stat.star && (
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5B942" stroke="none" aria-hidden="true" className="w-4 h-4 sm:w-5 sm:h-5">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5B942" stroke="none" aria-hidden="true" className="w-6 h-6 lg:w-7 lg:h-7">
                         <path d={STAR_PATH} />
                       </svg>
                     )}
                   </p>
-                  <p className="text-[11px] sm:text-xs text-charcoal-light mt-1.5 max-w-[110px] leading-snug">
+                  <p className="text-sm lg:text-lg text-charcoal-light mt-2 max-w-[140px] lg:max-w-[180px] leading-snug">
                     {stat.label}
                   </p>
                 </div>
@@ -65,10 +65,10 @@ export default function V2TrustStats({ image, imageAlt }: V2TrustStatsProps) {
             </div>
             <a
               href={v2url('/best-sellers/')}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4"
+              className="inline-flex items-center gap-2 text-lg lg:text-xl font-semibold text-brand tracking-wide hover:underline underline-offset-4"
             >
               Explore Our Best Sellers
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
             </a>
