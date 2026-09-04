@@ -30,13 +30,13 @@ export default function V2BrandBanner() {
           {/* 左下角促销文案（小占比，参考竞品样式） */}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-8 lg:p-12 max-w-md">
-            <h3 className="text-2xl lg:text-3xl font-medium text-cream tracking-tight mb-2 drop-shadow-md">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-cream tracking-tight leading-tight mb-2">
               Instant comfort shift.
             </h3>
-            <p className="text-xs lg:text-sm text-cream/85 mb-4">
+            <p className="text-sm lg:text-base text-cream/85 mb-5">
               New textures, new feeling.
             </p>
-            <span className="inline-block px-5 py-2.5 border border-cream/80 text-cream text-[11px] font-semibold tracking-[0.2em] uppercase transition-colors group-hover:bg-cream group-hover:text-brand">
+            <span className="inline-block px-7 py-3 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
               Discover More
             </span>
           </div>
@@ -55,13 +55,13 @@ export default function V2BrandBanner() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-6 max-w-xs">
-            <h3 className="text-xl font-medium text-cream tracking-tight mb-1.5 drop-shadow-md">
+            <h3 className="text-xl font-extrabold text-cream tracking-tight leading-tight mb-1.5">
               Instant comfort shift.
             </h3>
-            <p className="text-xs text-cream/85 mb-3.5">
+            <p className="text-sm text-cream/85 mb-4">
               New textures, new feeling.
             </p>
-            <span className="inline-block px-4 py-2 border border-cream/80 text-cream text-[10px] font-semibold tracking-[0.2em] uppercase transition-colors group-hover:bg-cream group-hover:text-brand">
+            <span className="inline-block px-6 py-2.5 rounded-full bg-cream text-brand text-xs font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
               Discover More
             </span>
           </div>
