@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef, type ReactNode } from 'react';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { CATEGORY_DEFS, getSubcategoriesOf, getSubcategoryDef } from '@/data/subcategories';
+import { CATEGORY_DEFS, getSubcategoryDef } from '@/data/subcategories';
 import { getProductSpecs } from '@/lib/specs';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -61,9 +61,6 @@ function readUrlList(key: string): string[] {
   return readUrlParam(key).split(',').filter(Boolean);
 }
 
-const toggleInList = (list: string[], v: string) =>
-  list.includes(v) ? list.filter((x) => x !== v) : [...list, v];
-
 interface FilterBundle {
   cat: string;
   sub: string;
@@ -86,14 +83,6 @@ function pageNumbers(current: number, total: number): (number | 'ellipsis')[] {
   return out;
 }
 
-// 侧栏单选项样式：选中态左侧 brand 竖线 + 加粗
-const sideItemCls = (active: boolean) =>
-  `flex items-center gap-2 w-full py-2 pl-3 text-left text-sm border-l-2 transition-colors ${
-    active
-      ? 'border-brand text-brand font-semibold'
-      : 'border-transparent text-charcoal-light hover:text-charcoal'
-  }`;
-
 export default function V2ProductsPage() {
   // mounted 标志：防止静态 HTML 在 JS 执行前闪现
   const [mounted, setMounted] = useState(false);
@@ -107,21 +96,7 @@ export default function V2ProductsPage() {
   });
   const [materialSel, setMaterialSel] = useState<string[]>(() => readUrlList('material'));
   const [page, setPage] = useState(1);
-  // 移动端筛选抽屉
-  const [filterOpen, setFilterOpen] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
-
-  // 抽屉打开时锁定背景滚动 + Esc 关闭
-  useEffect(() => {
-    document.body.style.overflow = filterOpen ? 'hidden' : '';
-    if (!filterOpen) return;
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setFilterOpen(false);
-    window.addEventListener('keydown', onKey);
-    return () => {
-      window.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
-    };
-  }, [filterOpen]);
 
   // 首次挂载后立即标记为已挂载，此时 state 已从 URL 正确初始化
   useEffect(() => {
@@ -150,17 +125,8 @@ export default function V2ProductsPage() {
     );
   }, [allProducts, activeCategory]);
 
-  // Collections 筛选项：当前类目的二级分类（带数量；0 的不显示）
-  const collectionOptions = useMemo(() => {
-    if (!activeCategory) return [];
-    return getSubcategoriesOf(activeCategory)
-      .map((s) => ({
-        key: s.key,
-        label: s.label,
-        count: categoryProducts.filter((p) => p.subcategory === s.key).length,
-      }))
-      .filter((s) => s.count > 0);
-  }, [categoryProducts, activeCategory]);
+  // Collections 筛选项与材质选项已不再在页面上展示（筛选 UI 移除），
+  // 但 URL 参数（cat/sub/material）从 V2Header 导航、Material Guide 等入口带入仍生效。
 
   // 筛选作用域：有类目按类目（V2 裸 /products 即 Shop All，不跳转，展示全部）
   const scopeProducts = useMemo(() => {
@@ -170,17 +136,6 @@ export default function V2ProductsPage() {
     }
     return list;
   }, [allProducts, categoryProducts, activeCategory, activeSub]);
-
-  // 材质筛选聚合（当前类目 + 二级分类内带产品数）
-  const materialOptions = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const p of scopeProducts) {
-      for (const m of materialsOf(p.asin)) counts.set(m, (counts.get(m) || 0) + 1);
-    }
-    return Array.from(counts.entries())
-      .sort((a, b) => b[1] - a[1])
-      .map(([label, count]) => ({ key: label, label, count }));
-  }, [scopeProducts]);
 
   // 统一写 URL（分类 + 二级分类 + 筛选 + 排序，可分享；q 参数原样保留）。
   // 进入/退出二级分类用 pushState（浏览器后退可回到上级视图），其余变更用 replaceState 不污染历史
@@ -225,11 +180,6 @@ export default function V2ProductsPage() {
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
-
-  // Collections 单选：点其他项切换，再点当前项取消（回到全类目）
-  const toggleSub = (key: string) => {
-    setFilter({ sub: activeSub === key ? '' : key });
-  };
 
   // 清空筛选（回到全类目、清材质与排序）
   const clearFilters = () => {
@@ -279,12 +229,10 @@ export default function V2ProductsPage() {
       categoryDef?.intro ||
       'Cushions, pillows, towels, mats and more — every Makimoo essential in one place.';
 
-  // 筛选控件：搜索态隐藏 Collections/Material（材质筛选搜索时不生效），只留排序
-  const showFacetFilters = !isSearching;
-
   // 网格穿插块（Parachute 集合页节奏）：只在第 1 页且无搜索词时显示，翻页/搜索后为纯产品网格
-  // 穿插位 1：第 1 个卡位，竖版场景大图（lg 占 1 列 × 2 行），用当前分类场景图，无分类用品牌竖图
-  // 穿插位 2：第 9 位，方形图文卡（与产品卡图同 aspect）
+  // 穿插位 1：第 9 位（前两行纯产品之后），横版场景大图（占 2 列 × 1 行），
+  //           用当前分类场景图，无分类用品牌竖图，底部渐变 + 分类名 + Shop Now
+  // 穿插位 2：第 17 位，竖版图文卡（lg 占 1 列 × 2 行），居中标语
   const showPromos = currentPage === 1 && !isSearching;
   const promoCat = activeCategory.toLowerCase();
   const promoHeroImage = PROMO_CATS.includes(promoCat)
@@ -297,12 +245,12 @@ export default function V2ProductsPage() {
 
   const gridItems: ReactNode[] = [];
   paged.forEach((product, i) => {
-    if (showPromos && i === 0) {
+    if (showPromos && i === 8) {
       gridItems.push(
         <a
-          key="promo-hero"
+          key="promo-wide"
           href={promoHeroHref}
-          className="group relative col-span-2 lg:col-span-1 lg:row-span-2 aspect-[16/9] lg:aspect-auto overflow-hidden rounded-lg"
+          className="group relative col-span-2 aspect-[16/9] lg:aspect-[2/1] overflow-hidden rounded-lg"
         >
           <img
             src={resolveUrl(promoHeroImage)}
@@ -322,9 +270,12 @@ export default function V2ProductsPage() {
         </a>
       );
     }
-    if (showPromos && i === 7) {
+    if (showPromos && i === 16) {
       gridItems.push(
-        <div key="promo-square" className="relative aspect-square overflow-hidden rounded-lg">
+        <div
+          key="promo-tall"
+          className="relative col-span-2 lg:col-span-1 lg:row-span-2 aspect-[3/4] lg:aspect-auto overflow-hidden rounded-lg"
+        >
           <img
             src={resolveUrl('/images/brand/makimoo-design.webp')}
             alt="Crafted for Slow Mornings"
@@ -332,7 +283,7 @@ export default function V2ProductsPage() {
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/10 to-transparent" />
-          <div className="absolute inset-0 flex items-end justify-center p-6">
+          <div className="absolute inset-0 flex items-center justify-center p-6">
             <p className="text-cream text-lg lg:text-xl font-extrabold tracking-tight text-center">
               Crafted for Slow Mornings
             </p>
@@ -374,12 +325,12 @@ export default function V2ProductsPage() {
                 {mounted ? pageTitle : 'Shop All'}
               </h1>
               <p className="mt-3 lg:mt-4 text-sm lg:text-base text-charcoal-light max-w-2xl">
-                {mounted ? pageIntro : ' '}
+                {mounted ? pageIntro : ' '}
               </p>
             </div>
             <div className="flex items-center gap-4 flex-shrink-0">
               <p className="text-sm text-charcoal-light tabular-nums">
-                {mounted ? `${filtered.length} results` : ' '}
+                {mounted ? `${filtered.length} results` : ' '}
               </p>
               <select
                 value={sortBy}
@@ -398,111 +349,12 @@ export default function V2ProductsPage() {
         </div>
       </section>
 
-      {/* 移动端 sticky 筛选栏：结果数 + Filters 抽屉入口；桌面端用左侧 FILTERS 侧栏，排序在页头右侧 */}
-      <div className="sticky top-28 z-40 bg-off-white border-b border-warm-gray lg:hidden">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="flex items-center justify-between py-3">
-            <p className="text-sm text-charcoal-light">
-              {mounted ? `${filtered.length} product${filtered.length === 1 ? '' : 's'}` : ' '}
-            </p>
-            <button
-              onClick={() => setFilterOpen(true)}
-              className="relative h-10 px-4 rounded-full border border-warm-gray bg-white text-sm font-semibold text-charcoal inline-flex items-center gap-2"
-              aria-label="Open filters"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-              </svg>
-              Filters
-              {activeFilterCount > 0 && (
-                <span className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full bg-brand text-cream text-[11px] font-bold flex items-center justify-center">
-                  {activeFilterCount}
-                </span>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* 产品区：桌面左侧 FILTERS 侧栏 + 右侧网格（Parachute 集合页布局） */}
+      {/* 产品区：无筛选侧栏（Parachute 集合页风格），网格全宽贴边 px-6 / lg:px-10 */}
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14 lg:flex lg:gap-10">
-          {/* 桌面 FILTERS 侧栏：COLLECTIONS 单选 + MATERIAL 多选，sticky 吸附在实底 header 下 */}
-          {mounted && showFacetFilters && (collectionOptions.length > 0 || materialOptions.length > 0) && (
-            <aside className="hidden lg:block w-56 flex-shrink-0 self-start sticky top-[136px] max-h-[calc(100vh-160px)] overflow-y-auto pr-2">
-              <div className="flex items-center justify-between mb-5">
-                <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-charcoal">
-                  Filters
-                </h2>
-                {activeFilterCount > 0 && (
-                  <button
-                    onClick={clearFilters}
-                    className="text-xs font-semibold text-brand hover:underline underline-offset-4"
-                  >
-                    Clear ({activeFilterCount})
-                  </button>
-                )}
-              </div>
-
-              {/* Collections（二级分类，单选，含 All） */}
-              {collectionOptions.length > 0 && (
-                <div className="mb-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2">
-                    Collections
-                  </p>
-                  <button onClick={() => setFilter({ sub: '' })} aria-pressed={!activeSub} className={sideItemCls(!activeSub)}>
-                    All
-                  </button>
-                  {collectionOptions.map((o) => (
-                    <button
-                      key={o.key}
-                      onClick={() => toggleSub(o.key)}
-                      aria-pressed={activeSub === o.key}
-                      className={sideItemCls(activeSub === o.key)}
-                    >
-                      {o.label}
-                      <span className="ml-auto text-xs text-charcoal-light/70">{o.count}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {/* Material（多选 checkbox 风格） */}
-              {materialOptions.length > 0 && (
-                <div className="pt-5 border-t border-warm-gray/70">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2">
-                    Material
-                  </p>
-                  {materialOptions.map((o) => {
-                    const active = materialSel.includes(o.key);
-                    return (
-                      <button
-                        key={o.key}
-                        onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })}
-                        aria-pressed={active}
-                        className="flex items-center gap-3 w-full py-2 text-left"
-                      >
-                        <span className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-brand bg-brand' : 'border-warm-gray'}`}>
-                          {active && (
-                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-cream">
-                              <polyline points="20 6 9 17 4 12" />
-                            </svg>
-                          )}
-                        </span>
-                        <span className={`text-sm ${active ? 'font-semibold text-charcoal' : 'text-charcoal-light'}`}>
-                          {o.label} ({o.count})
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-            </aside>
-          )}
-
+        <div className="px-6 lg:px-10 py-10 lg:py-14">
           <div
             ref={gridRef}
-            className="flex-1 min-w-0 scroll-mt-44 lg:scroll-mt-40"
+            className="min-w-0 scroll-mt-44 lg:scroll-mt-40"
           >
           {!mounted ? (
             /* JS 加载前的占位：骨架屏与卡片同比例，避免布局跳动 */
@@ -603,108 +455,6 @@ export default function V2ProductsPage() {
         </div>
       </section>
 
-      {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material（多选），底部 Show N products */}
-      {filterOpen && (
-        <div className="fixed inset-0 bg-charcoal/40 z-[1600] lg:hidden" onClick={() => setFilterOpen(false)} />
-      )}
-      <div
-        className={`fixed top-0 right-0 bottom-0 w-[85%] max-w-sm z-[1700] bg-off-white flex flex-col transition-transform duration-300 ease-out lg:hidden ${
-          filterOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        role="dialog"
-        aria-label="Filters"
-        aria-hidden={!filterOpen}
-      >
-        <div className="flex items-center justify-between px-5 py-4 border-b border-warm-gray">
-          <h2 className="text-lg font-bold text-charcoal">Filter &amp; Sort</h2>
-          <button
-            onClick={() => setFilterOpen(false)}
-            className="w-10 h-10 rounded-full border border-warm-gray flex items-center justify-center text-2xl text-charcoal hover:bg-warm-gray transition"
-            aria-label="Close filters"
-          >
-            &times;
-          </button>
-        </div>
-
-        <div className="flex-1 overflow-y-auto px-5 py-4">
-          {/* Sort（单选） */}
-          <p className="text-xs font-semibold text-charcoal-light uppercase tracking-wider mb-2">Sort By</p>
-          <div className="mb-5">
-            {SORT_KEYS.map((k) => {
-              const active = sortBy === k;
-              return (
-                <button key={k} onClick={() => setFilter({ sort: k })} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
-                  <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-brand' : 'border-warm-gray'}`}>
-                    {active && <span className="w-2.5 h-2.5 rounded-full bg-brand" />}
-                  </span>
-                  <span className={`text-sm ${active ? 'font-semibold text-charcoal' : 'text-charcoal-light'}`}>{SORT_LABELS[k]}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Collections（二级分类，单选） */}
-          {showFacetFilters && collectionOptions.length > 0 && (
-            <>
-              <p className="text-xs font-semibold text-charcoal-light uppercase tracking-wider mb-2 pt-4 border-t border-warm-gray/70">Collections</p>
-              <div className="mb-5">
-                {collectionOptions.map((o) => {
-                  const active = activeSub === o.key;
-                  return (
-                    <button key={o.key} onClick={() => toggleSub(o.key)} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
-                      <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-brand' : 'border-warm-gray'}`}>
-                        {active && <span className="w-2.5 h-2.5 rounded-full bg-brand" />}
-                      </span>
-                      <span className={`text-sm ${active ? 'font-semibold text-charcoal' : 'text-charcoal-light'}`}>{o.label} ({o.count})</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </>
-          )}
-
-          {/* Material（多选） */}
-          {showFacetFilters && materialOptions.length > 0 && (
-            <>
-              <p className="text-xs font-semibold text-charcoal-light uppercase tracking-wider mb-2 pt-4 border-t border-warm-gray/70">Material</p>
-              <div>
-                {materialOptions.map((o) => {
-                  const active = materialSel.includes(o.key);
-                  return (
-                    <button key={o.key} onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
-                      <span className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-brand bg-brand' : 'border-warm-gray'}`}>
-                        {active && (
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-cream">
-                            <polyline points="20 6 9 17 4 12" />
-                          </svg>
-                        )}
-                      </span>
-                      <span className={`text-sm ${active ? 'font-semibold text-charcoal' : 'text-charcoal-light'}`}>{o.label} ({o.count})</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </>
-          )}
-        </div>
-
-        <div className="border-t border-warm-gray px-5 py-4">
-          <button
-            onClick={() => setFilterOpen(false)}
-            className="w-full py-3.5 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark"
-          >
-            Show {filtered.length} Product{filtered.length === 1 ? '' : 's'}
-          </button>
-          {activeFilterCount > 0 && (
-            <button
-              onClick={clearFilters}
-              className="w-full mt-2.5 text-sm font-semibold text-brand hover:underline underline-offset-4"
-            >
-              Clear All
-            </button>
-          )}
-        </div>
-      </div>
     </>
   );
 }

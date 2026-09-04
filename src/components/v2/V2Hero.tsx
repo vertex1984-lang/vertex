@@ -4,13 +4,12 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
-// 桌面端 3 张轮播；移动端只有一张竖图（hero-bg-mobile），静态展示
+// 全端统一 3 张轮播（ken-burns + 5s 自动切换 + 触摸滑动 + dots 指示器）
 const slides = [
   { image: '/images/brand/hero-bg.webp', alt: 'Makimoo cushions styled in a warm living room' },
   { image: '/images/brand/hero-bg-2.webp', alt: 'Soft Makimoo pillows on a cozy bed' },
   { image: '/images/brand/hero-bg-3.webp', alt: 'Makimoo home textiles in natural light' },
 ];
-const MOBILE_IMAGE = '/images/brand/hero-bg-mobile.webp';
 
 const SWIPE_THRESHOLD = 50;
 
@@ -60,18 +59,11 @@ export default function V2Hero() {
           else goPrev();
         }}
       >
-        {/* 移动端：单张竖图 */}
-        <div
-          className="absolute inset-0 lg:hidden animate-ken-burns bg-cover bg-center"
-          style={{ backgroundImage: `url(${resolveUrl(MOBILE_IMAGE)})` }}
-          role="img"
-          aria-label="Makimoo home comfort essentials"
-        />
-        {/* 桌面端：3 张淡切轮播 */}
+        {/* 全端统一：3 张淡切轮播 */}
         {slides.map((slide, index) => (
           <div
             key={slide.image}
-            className="absolute inset-0 hidden lg:block transition-opacity duration-1000 ease-in-out"
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
             style={{ opacity: index === current ? 1 : 0 }}
           >
             <div
@@ -86,8 +78,8 @@ export default function V2Hero() {
         {/* 渐变暗罩：底部深、顶部浅，保证下方 cream 文案可读 */}
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/25 to-charcoal/10" />
 
-        {/* Dot indicators（移动端仅一张图，无需指示器） */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 hidden lg:flex">
+        {/* Dot indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex">
           {slides.map((_, index) => (
             <button
               key={index}

@@ -11,6 +11,8 @@ const ARROW_PATH = 'M5 12h14M13 6l6 6-6 6';
  *        高度超 85vh 时 object-cover 从上下轻微裁切（object-position 保持 center）；
  * 移动：brand-banner-mobile.webp（900×1200，正好 3:4）aspect-[3/4] 无裁切。
  * 图片本身不含文字，文案与 CTA 以叠加层呈现；整图可点击跳转全部产品。
+ * 两张图均带 ken-burns 缓慢缩放动画（与 hero 同款 12s keyframes）；
+ * CSS animation 会覆盖 transform，故不再使用 hover 缩放（group-hover:scale-105 与之冲突）。
  */
 export default function V2BrandBanner() {
   return (
@@ -25,7 +27,7 @@ export default function V2BrandBanner() {
             src={resolveUrl('/images/brand/brand-banner.webp')}
             alt="Makimoo — comfort essentials loved by millions"
             loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-charcoal/25 to-transparent pointer-events-none" />
           <div className="absolute inset-0 flex items-center">
@@ -77,7 +79,7 @@ export default function V2BrandBanner() {
             src={resolveUrl('/images/brand/brand-banner-mobile.webp')}
             alt="Makimoo — comfort essentials loved by millions"
             loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/20 to-transparent pointer-events-none" />
           <div className="absolute inset-0 flex items-end">

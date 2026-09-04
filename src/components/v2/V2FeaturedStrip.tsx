@@ -12,8 +12,7 @@ interface V2FeaturedStripProps {
 
 /**
  * V2 首页 Featured Products 横向条（Parachute Best Sellers 风格大卡）
- * 标题区限宽对齐站点网格；滚动容器左侧按 1400 限宽线内缩（首卡对齐内容线），
- * 右侧无内距，末卡直接打出屏幕右缘。
+ * 标题区与滚动容器全宽贴边（px-6 / lg:px-10），右侧无内距，末卡直接打出屏幕右缘。
  * 桌面端提供左右翻页箭头（隐藏滚动条后桌面用户没有滑动入口，这是"滑不动"的主要原因）。
  * 数据由页面组装：FEATURED_ASINS 优先，不足 15 用 Best Sellers 逻辑补足。
  */
@@ -34,7 +33,7 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   return (
     <section className="bg-cream py-16 lg:py-24">
       <Reveal>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
+        <div className="px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
           <div>
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
               Hand-Picked
@@ -55,10 +54,10 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
         </div>
       </Reveal>
 
-      {/* 横向滚动条：左侧内缩对齐 1400 限宽线，右侧无内距、末卡 bleed 到屏幕边缘 */}
+      {/* 横向滚动条：左侧 pl-6/lg:pl-10 全宽贴边，右侧无内距、末卡 bleed 到屏幕边缘 */}
       <Reveal delay={120}>
         <div
-          className="relative w-full pl-6 lg:pl-[max(2.5rem,calc((100vw-1400px)/2+2.5rem))]"
+          className="relative w-full pl-6 lg:pl-10"
         >
           <div
             ref={trackRef}
@@ -67,7 +66,7 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
             {products.map((product) => (
               <div
                 key={product.id}
-                className="w-[75vw] sm:w-[40vw] lg:w-[min(24vw,420px)] flex-shrink-0 snap-start"
+                className="w-[48vw] sm:w-[40vw] lg:w-[min(24vw,420px)] flex-shrink-0 snap-start"
               >
                 <V2ProductCard product={product} badge="Featured" />
               </div>
@@ -77,7 +76,7 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
           {/* 桌面翻页箭头（移动端触摸滑动即可） */}
           <button
             onClick={() => scrollByPage(-1)}
-            className={`${arrowCls} left-3 lg:left-[max(0.75rem,calc((100vw-1400px)/2+0.75rem))]`}
+            className={`${arrowCls} left-3 lg:left-4`}
             aria-label="Scroll products left"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
