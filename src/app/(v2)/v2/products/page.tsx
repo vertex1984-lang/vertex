@@ -1,15 +1,19 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef, type ReactNode } from 'react';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, getSubcategoriesOf, getSubcategoryDef } from '@/data/subcategories';
 import { getProductSpecs } from '@/lib/specs';
+import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 
 // 每页数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
+
+// 网格穿插块（第 1 页、无搜索词时）：有对应场景图的分类
+const PROMO_CATS = ['cushions', 'pillows', 'towels', 'mats', 'holiday', 'others'];
 
 type SortKey = 'featured' | 'price-asc' | 'price-desc';
 const SORT_KEYS: SortKey[] = ['featured', 'price-asc', 'price-desc'];
@@ -278,6 +282,67 @@ export default function V2ProductsPage() {
   // 筛选控件：搜索态隐藏 Collections/Material（材质筛选搜索时不生效），只留排序
   const showFacetFilters = !isSearching;
 
+  // 网格穿插块（Parachute 集合页节奏）：只在第 1 页且无搜索词时显示，翻页/搜索后为纯产品网格
+  // 穿插位 1：第 1 个卡位，竖版场景大图（lg 占 1 列 × 2 行），用当前分类场景图，无分类用品牌竖图
+  // 穿插位 2：第 9 位，方形图文卡（与产品卡图同 aspect）
+  const showPromos = currentPage === 1 && !isSearching;
+  const promoCat = activeCategory.toLowerCase();
+  const promoHeroImage = PROMO_CATS.includes(promoCat)
+    ? `/images/collections/${promoCat}.webp`
+    : '/images/brand/brand-banner-mobile.webp';
+  const promoHeroLabel = categoryDef?.label || 'Shop All';
+  const promoHeroHref = activeCategory
+    ? v2url(`/products/?cat=${encodeURIComponent(activeCategory)}`)
+    : v2url('/products/');
+
+  const gridItems: ReactNode[] = [];
+  paged.forEach((product, i) => {
+    if (showPromos && i === 0) {
+      gridItems.push(
+        <a
+          key="promo-hero"
+          href={promoHeroHref}
+          className="group relative col-span-2 lg:col-span-1 lg:row-span-2 aspect-[16/9] lg:aspect-auto overflow-hidden rounded-lg"
+        >
+          <img
+            src={resolveUrl(promoHeroImage)}
+            alt={promoHeroLabel}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+            <p className="text-cream text-xl lg:text-2xl font-extrabold tracking-tight">
+              {promoHeroLabel}
+            </p>
+            <p className="mt-1 text-cream/80 text-xs font-semibold uppercase tracking-[0.2em]">
+              Shop Now
+            </p>
+          </div>
+        </a>
+      );
+    }
+    if (showPromos && i === 7) {
+      gridItems.push(
+        <div key="promo-square" className="relative aspect-square overflow-hidden rounded-lg">
+          <img
+            src={resolveUrl('/images/brand/makimoo-design.webp')}
+            alt="Crafted for Slow Mornings"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/10 to-transparent" />
+          <div className="absolute inset-0 flex items-end justify-center p-6">
+            <p className="text-cream text-lg lg:text-xl font-extrabold tracking-tight text-center">
+              Crafted for Slow Mornings
+            </p>
+          </div>
+        </div>
+      );
+    }
+    gridItems.push(<V2ProductCard key={product.id} product={product} />);
+  });
+
   return (
     <>
       {/* 浅色单色页头（Parachute 集合页风格）：与页面底色一体，V2Header 在本页从首屏即实底 */}
@@ -456,9 +521,7 @@ export default function V2ProductsPage() {
           ) : paged.length > 0 ? (
             <>
               <div className={gridCls}>
-                {paged.map((product) => (
-                  <V2ProductCard key={product.id} product={product} />
-                ))}
+                {gridItems}
               </div>
 
               {/* 分页：PAGE_SIZE=24，描边按钮，当前页实底 */}

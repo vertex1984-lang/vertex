@@ -15,6 +15,7 @@ const navLinks = [
   { label: 'Pillows', href: '/products?cat=pillows' },
   { label: 'Bath', href: '/products?cat=towels' },
   { label: 'Mats', href: '/products?cat=mats' },
+  { label: 'Others', href: '/products?cat=others' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
