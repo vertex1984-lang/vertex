@@ -25,8 +25,8 @@ export default function V2TrustStats() {
   return (
     <section className="w-full">
       <Reveal>
-        {/* 双图并排（左:右 = 3:2，左图明显更宽），中间留细缝 */}
-        <div className="grid lg:grid-cols-[3fr_2fr] gap-2 lg:gap-3">
+        {/* 双图并排（左:右 = 3:2，左图明显更宽），中间留细缝；两侧与屏幕边缘留空隙 */}
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-2 lg:gap-3 px-6 lg:px-10">
           {/* 左图：品牌信任标题（移动端与右图高度比 3:2，同桌面宽度比） */}
           <div className="relative aspect-[4/5] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
             <img
