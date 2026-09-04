@@ -63,8 +63,8 @@ export default function V2HomePage() {
       <V2Hero />
       <V2CategoryGrid />
       <V2FeaturedStrip products={stripProducts} />
-      {/* banner 位于 Featured 与信任双图区之间，上下保持垂直间距 */}
-      <div className="my-10 lg:my-16">
+      {/* banner 位于 Featured 与信任双图区之间；上方只留 Featured 自身底边距，下方保持间距 */}
+      <div className="mb-10 lg:mb-16">
         <V2BrandBanner />
       </div>
       <V2TrustStats />
