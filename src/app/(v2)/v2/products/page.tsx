@@ -82,12 +82,12 @@ function pageNumbers(current: number, total: number): (number | 'ellipsis')[] {
   return out;
 }
 
-// pill 样式：描边，选中态实底 brand
-const pillCls = (active: boolean) =>
-  `inline-flex items-center gap-1.5 px-4 py-2 rounded-full border text-sm transition-colors ${
+// 侧栏单选项样式：选中态左侧 brand 竖线 + 加粗
+const sideItemCls = (active: boolean) =>
+  `flex items-center gap-2 w-full py-2 pl-3 text-left text-sm border-l-2 transition-colors ${
     active
-      ? 'bg-brand text-cream border-brand'
-      : 'bg-white border-warm-gray text-charcoal-light hover:border-brand hover:text-brand'
+      ? 'border-brand text-brand font-semibold'
+      : 'border-transparent text-charcoal-light hover:text-charcoal'
   }`;
 
 export default function V2ProductsPage() {
@@ -263,7 +263,7 @@ export default function V2ProductsPage() {
     gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const gridCls = 'grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-6';
+  const gridCls = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6';
 
   const subDef = activeSub ? getSubcategoryDef(activeSub) : undefined;
   const pageTitle = isSearching
@@ -280,11 +280,11 @@ export default function V2ProductsPage() {
 
   return (
     <>
-      {/* 深色页头：衬住初始透明的 fixed V2Header（announcement bar + header 约 112-120px） */}
-      <section className="bg-brand">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
-          <nav className="text-xs lg:text-sm text-cream/60 mb-3 lg:mb-4" aria-label="Breadcrumb">
-            <a href={v2url('/')} className="hover:text-cream transition-colors">
+      {/* 浅色单色页头（Parachute 集合页风格）：与页面底色一体，V2Header 在本页从首屏即实底 */}
+      <section className="bg-off-white">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-36 pb-8 lg:pb-12">
+          <nav className="text-xs lg:text-sm text-charcoal-light mb-3 lg:mb-4" aria-label="Breadcrumb">
+            <a href={v2url('/')} className="hover:text-brand transition-colors">
               Home
             </a>
             <span className="mx-1.5">/</span>
@@ -292,106 +292,51 @@ export default function V2ProductsPage() {
               <>
                 <a
                   href={v2url(`/products/?cat=${activeCategory}`)}
-                  className="hover:text-cream transition-colors"
+                  className="hover:text-brand transition-colors"
                 >
                   {categoryDef.label}
                 </a>
                 <span className="mx-1.5">/</span>
-                <span className="text-cream">{subDef.label}</span>
+                <span className="text-charcoal">{subDef.label}</span>
               </>
             ) : (
-              <span className="text-cream">{mounted ? pageTitle : 'Shop All'}</span>
+              <span className="text-charcoal">{mounted ? pageTitle : 'Shop All'}</span>
             )}
           </nav>
-          <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-cream">
-            {mounted ? pageTitle : 'Shop All'}
-          </h1>
-          <p className="mt-3 lg:mt-4 text-sm lg:text-base text-cream/75 max-w-2xl">
-            {mounted ? pageIntro : ' '}
-          </p>
-          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/60">
-            {mounted ? `${filtered.length} Product${filtered.length === 1 ? '' : 's'}` : ' '}
-          </p>
+          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+                {mounted ? pageTitle : 'Shop All'}
+              </h1>
+              <p className="mt-3 lg:mt-4 text-sm lg:text-base text-charcoal-light max-w-2xl">
+                {mounted ? pageIntro : ' '}
+              </p>
+            </div>
+            <div className="flex items-center gap-4 flex-shrink-0">
+              <p className="text-sm text-charcoal-light tabular-nums">
+                {mounted ? `${filtered.length} results` : ' '}
+              </p>
+              <select
+                value={sortBy}
+                onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
+                className="h-10 px-4 rounded-full border border-warm-gray bg-white text-sm text-charcoal outline-none focus:border-brand"
+                aria-label="Sort products"
+              >
+                {SORT_KEYS.map((k) => (
+                  <option key={k} value={k}>
+                    {SORT_LABELS[k]}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Sticky 筛选栏：fixed header 实底后总高约 112px（移动端）/ 120px（lg），announcement bar 不随滚动隐藏 */}
-      <div className="sticky top-28 lg:top-[120px] z-40 bg-off-white border-b border-warm-gray">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {/* 桌面端筛选栏 */}
-          <div className="hidden lg:block py-5 space-y-4">
-            <div className="flex items-center gap-6">
-              {mounted && showFacetFilters && collectionOptions.length > 0 && (
-                <div className="flex flex-wrap items-center gap-2 min-w-0">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mr-1">
-                    Collections
-                  </span>
-                  <button onClick={() => setFilter({ sub: '' })} aria-pressed={!activeSub} className={pillCls(!activeSub)}>
-                    All
-                  </button>
-                  {collectionOptions.map((o) => (
-                    <button
-                      key={o.key}
-                      onClick={() => toggleSub(o.key)}
-                      aria-pressed={activeSub === o.key}
-                      className={pillCls(activeSub === o.key)}
-                    >
-                      {o.label}
-                      <span className={activeSub === o.key ? 'text-cream/70' : 'text-charcoal-light/70'}>
-                        {o.count}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              )}
-              <div className="ml-auto flex items-center gap-4 flex-shrink-0">
-                {mounted && activeFilterCount > 0 && (
-                  <button
-                    onClick={clearFilters}
-                    className="text-xs font-semibold text-brand hover:underline underline-offset-4"
-                  >
-                    Clear All ({activeFilterCount})
-                  </button>
-                )}
-                <select
-                  value={sortBy}
-                  onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
-                  className="h-10 px-4 rounded-full border border-warm-gray bg-white text-sm text-charcoal outline-none focus:border-brand"
-                  aria-label="Sort products"
-                >
-                  {SORT_KEYS.map((k) => (
-                    <option key={k} value={k}>
-                      {SORT_LABELS[k]}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-            {mounted && showFacetFilters && materialOptions.length > 0 && (
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mr-1">
-                  Material
-                </span>
-                {materialOptions.map((o) => {
-                  const active = materialSel.includes(o.key);
-                  return (
-                    <button
-                      key={o.key}
-                      onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })}
-                      aria-pressed={active}
-                      className={pillCls(active)}
-                    >
-                      {o.label}
-                      <span className={active ? 'text-cream/70' : 'text-charcoal-light/70'}>{o.count}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-
-          {/* 移动端筛选栏：结果数 + Filters 抽屉入口 */}
-          <div className="flex lg:hidden items-center justify-between py-3">
+      {/* 移动端 sticky 筛选栏：结果数 + Filters 抽屉入口；桌面端用左侧 FILTERS 侧栏，排序在页头右侧 */}
+      <div className="sticky top-28 z-40 bg-off-white border-b border-warm-gray lg:hidden">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <div className="flex items-center justify-between py-3">
             <p className="text-sm text-charcoal-light">
               {mounted ? `${filtered.length} product${filtered.length === 1 ? '' : 's'}` : ' '}
             </p>
@@ -414,12 +359,86 @@ export default function V2ProductsPage() {
         </div>
       </div>
 
-      {/* 产品网格区 */}
+      {/* 产品区：桌面左侧 FILTERS 侧栏 + 右侧网格（Parachute 集合页布局） */}
       <section className="bg-off-white">
-        <div
-          ref={gridRef}
-          className="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14 scroll-mt-44 lg:scroll-mt-56"
-        >
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14 lg:flex lg:gap-10">
+          {/* 桌面 FILTERS 侧栏：COLLECTIONS 单选 + MATERIAL 多选，sticky 吸附在实底 header 下 */}
+          {mounted && showFacetFilters && (collectionOptions.length > 0 || materialOptions.length > 0) && (
+            <aside className="hidden lg:block w-56 flex-shrink-0 self-start sticky top-[136px] max-h-[calc(100vh-160px)] overflow-y-auto pr-2">
+              <div className="flex items-center justify-between mb-5">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-charcoal">
+                  Filters
+                </h2>
+                {activeFilterCount > 0 && (
+                  <button
+                    onClick={clearFilters}
+                    className="text-xs font-semibold text-brand hover:underline underline-offset-4"
+                  >
+                    Clear ({activeFilterCount})
+                  </button>
+                )}
+              </div>
+
+              {/* Collections（二级分类，单选，含 All） */}
+              {collectionOptions.length > 0 && (
+                <div className="mb-6">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2">
+                    Collections
+                  </p>
+                  <button onClick={() => setFilter({ sub: '' })} aria-pressed={!activeSub} className={sideItemCls(!activeSub)}>
+                    All
+                  </button>
+                  {collectionOptions.map((o) => (
+                    <button
+                      key={o.key}
+                      onClick={() => toggleSub(o.key)}
+                      aria-pressed={activeSub === o.key}
+                      className={sideItemCls(activeSub === o.key)}
+                    >
+                      {o.label}
+                      <span className="ml-auto text-xs text-charcoal-light/70">{o.count}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Material（多选 checkbox 风格） */}
+              {materialOptions.length > 0 && (
+                <div className="pt-5 border-t border-warm-gray/70">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2">
+                    Material
+                  </p>
+                  {materialOptions.map((o) => {
+                    const active = materialSel.includes(o.key);
+                    return (
+                      <button
+                        key={o.key}
+                        onClick={() => setFilter({ material: toggleInList(materialSel, o.key) })}
+                        aria-pressed={active}
+                        className="flex items-center gap-3 w-full py-2 text-left"
+                      >
+                        <span className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-brand bg-brand' : 'border-warm-gray'}`}>
+                          {active && (
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-cream">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          )}
+                        </span>
+                        <span className={`text-sm ${active ? 'font-semibold text-charcoal' : 'text-charcoal-light'}`}>
+                          {o.label} ({o.count})
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </aside>
+          )}
+
+          <div
+            ref={gridRef}
+            className="flex-1 min-w-0 scroll-mt-44 lg:scroll-mt-40"
+          >
           {!mounted ? (
             /* JS 加载前的占位：骨架屏与卡片同比例，避免布局跳动 */
             <div className={gridCls}>
@@ -517,6 +536,7 @@ export default function V2ProductsPage() {
               </div>
             </div>
           )}
+          </div>
         </div>
       </section>
 

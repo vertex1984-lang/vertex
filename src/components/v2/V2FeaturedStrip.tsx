@@ -1,3 +1,6 @@
+'use client';
+
+import { useRef } from 'react';
 import Reveal from '@/components/Reveal';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
@@ -8,12 +11,24 @@ interface V2FeaturedStripProps {
 }
 
 /**
- * V2 首页 Featured Products 横向条（替换原第一个 StorySplit 位置）
- * 标题区限宽对齐站点网格；滚动容器打满屏宽，首卡与标题区左缘对齐。
+ * V2 首页 Featured Products 横向条
+ * 标题区限宽对齐站点网格；滚动容器左右两侧都按 1400 限宽线内缩（首尾卡片对齐网格，中间可滚动）。
+ * 桌面端提供左右翻页箭头（隐藏滚动条后桌面用户没有滑动入口，这是"滑不动"的主要原因）。
  * 数据由页面组装：FEATURED_ASINS 优先，不足 15 用 Best Sellers 逻辑补足。
  */
 export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
+  const trackRef = useRef<HTMLDivElement>(null);
+
   if (products.length === 0) return null;
+
+  const scrollByPage = (dir: 1 | -1) => {
+    const el = trackRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * el.clientWidth * 0.85, behavior: 'smooth' });
+  };
+
+  const arrowCls =
+    'hidden lg:flex absolute top-[38%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-warm-gray shadow-md items-center justify-center text-charcoal transition hover:bg-brand hover:text-cream hover:border-brand';
 
   return (
     <section className="bg-cream py-16 lg:py-24">
@@ -39,10 +54,15 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
         </div>
       </Reveal>
 
-      {/* 横向滚动条 bleed 全屏宽：左 padding 对齐 1400px 限宽线，右侧可滚出屏幕边缘 */}
+      {/* 横向滚动条：左右两侧对称 bleed 内距，首尾卡片都对齐 1400 限宽线 */}
       <Reveal delay={120}>
-        <div className="w-full pl-6 lg:pl-[max(2.5rem,calc((100vw-1400px)/2+2.5rem))]">
-          <div className="flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 pr-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <div
+          className="relative w-full pl-6 pr-6 lg:pl-[max(2.5rem,calc((100vw-1400px)/2+2.5rem))] lg:pr-[max(2.5rem,calc((100vw-1400px)/2+2.5rem))]"
+        >
+          <div
+            ref={trackRef}
+            className="flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          >
             {products.map((product) => (
               <div
                 key={product.id}
@@ -52,6 +72,26 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
               </div>
             ))}
           </div>
+
+          {/* 桌面翻页箭头（移动端触摸滑动即可） */}
+          <button
+            onClick={() => scrollByPage(-1)}
+            className={`${arrowCls} left-3 lg:left-[max(0.75rem,calc((100vw-1400px)/2+0.75rem))]`}
+            aria-label="Scroll products left"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={() => scrollByPage(1)}
+            className={`${arrowCls} right-3 lg:right-[max(0.75rem,calc((100vw-1400px)/2+0.75rem))]`}
+            aria-label="Scroll products right"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
       </Reveal>
     </section>

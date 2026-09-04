@@ -6,8 +6,9 @@ const STAR_PATH = 'M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L
 const ARROW_PATH = 'M5 12h14M13 6l6 6-6 6';
 
 /**
- * V2 首页全宽 Brand Banner（替换原 V2BestSellers 位置）
- * 桌面：brand-banner.webp（1456×574 生活场景图）固定高度 + object-cover 截取；
+ * V2 首页全宽 Brand Banner
+ * 桌面：brand-banner.webp（1456×574 生活场景图）按原图比例全宽展示（aspect-[1456/574]），
+ *        高度超 560px 时 object-cover 从上下轻微裁切（object-position 保持 center）；
  * 移动：brand-banner-mobile.webp（900×1200，正好 3:4）aspect-[3/4] 无裁切。
  * 图片本身不含文字，文案与 CTA 以叠加层呈现；整图可点击跳转全部产品。
  */
@@ -15,10 +16,10 @@ export default function V2BrandBanner() {
   return (
     <section className="w-full">
       <Reveal>
-        {/* 桌面端：固定高度，object-cover 取图片中段（沙发与绿植均保留） */}
+        {/* 桌面端：按原图 1456×574 比例全宽展示，超 560px 高时 object-cover 从上下轻微裁切 */}
         <a
           href={v2url('/products/')}
-          className="group relative hidden sm:block w-full h-[380px] lg:h-[460px] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/574] max-h-[560px] overflow-hidden"
         >
           <img
             src={resolveUrl('/images/brand/brand-banner.webp')}

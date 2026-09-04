@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, FormEvent } from 'react';
+import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
@@ -22,6 +23,7 @@ const navLinks = [
 const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
 
 export default function V2Header() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -126,9 +128,15 @@ export default function V2Header() {
     window.location.href = v2url(`/products/?q=${encodeURIComponent(q)}`);
   };
 
-  // 透明态（首屏大图）用 cream 文字，滚动实底后用 charcoal
-  const textColor = scrolled ? 'text-charcoal' : 'text-cream';
-  const iconHover = scrolled
+  // 只有首页（/v2/）和 About（/v2/about/）有大图页头，保持「透明 → 滚动实底」；
+  // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清
+  const normalizedPath = (pathname || '').replace(/\/+$/, '');
+  const transparentStart = normalizedPath === '/v2' || normalizedPath === '/v2/about';
+  const solid = scrolled || !transparentStart;
+
+  // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
+  const textColor = solid ? 'text-charcoal' : 'text-cream';
+  const iconHover = solid
     ? 'hover:bg-brand/10 hover:text-brand'
     : 'hover:bg-cream/15 hover:text-cream';
 
@@ -142,7 +150,7 @@ export default function V2Header() {
 
         <header
           className={`flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ${textColor} ${
-            scrolled ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
+            solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
           }`}
         >
           <a href={v2url('/')} className="flex items-center gap-2">
@@ -150,7 +158,7 @@ export default function V2Header() {
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
               className="h-12 lg:h-14 w-auto object-contain transition-all duration-300"
-              style={scrolled ? undefined : { filter: 'brightness(0) invert(1)' }}
+              style={solid ? undefined : { filter: 'brightness(0) invert(1)' }}
             />
           </a>
 
