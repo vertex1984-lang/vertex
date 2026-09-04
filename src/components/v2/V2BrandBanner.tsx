@@ -7,8 +7,9 @@ const ARROW_PATH = 'M5 12h14M13 6l6 6-6 6';
 
 /**
  * V2 首页全宽 Brand Banner
- * 桌面：brand-banner.webp（1456×574 生活场景图）按原图比例全宽展示（aspect-[1456/574]），
- *        高度超 85vh 时 object-cover 从上下轻微裁切（object-position 保持 center）；
+ * 桌面：brand-banner.webp（1456×574 生活场景图）按 1456/500（约 2.9:1）锁定比例全宽展示，
+ *        object-cover 从上下裁切（object-position 保持 center，沙发主体完整露出）；
+ *        极宽屏高度超 85vh 时进一步从上下裁切；
  * 移动：brand-banner-mobile.webp（900×1200，正好 3:4）aspect-[3/4] 无裁切。
  * 图片本身不含文字，文案与 CTA 以叠加层呈现；整图可点击跳转全部产品。
  * 两张图均带 ken-burns 缓慢缩放动画（与 hero 同款 12s keyframes）；
@@ -18,10 +19,10 @@ export default function V2BrandBanner() {
   return (
     <section className="w-full">
       <Reveal>
-        {/* 桌面端：按原图 1456×574 比例全宽展示，超 85vh 高时 object-cover 从上下轻微裁切 */}
+        {/* 桌面端：锁定 1456/500（约 2.9:1）比例全宽展示，极宽屏超 85vh 时从上下进一步裁切 */}
         <a
           href={v2url('/products/')}
-          className="group relative hidden sm:block w-full aspect-[1456/574] max-h-[85vh] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/500] max-h-[85vh] overflow-hidden"
         >
           <img
             src={resolveUrl('/images/brand/brand-banner.webp')}
