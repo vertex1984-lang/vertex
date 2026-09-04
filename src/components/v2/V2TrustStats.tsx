@@ -95,10 +95,10 @@ export default function V2TrustStats({ products }: V2TrustStatsProps) {
                 ))}
               </div>
               <a
-                href={v2url('/products/')}
+                href={v2url('/best-sellers/')}
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4"
               >
-                Explore Our Collections
+                Explore Our Best Sellers
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
