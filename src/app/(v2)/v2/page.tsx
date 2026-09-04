@@ -66,10 +66,7 @@ export default function V2HomePage() {
       <V2BrandBanner />
       {/* 信任数据分屏区（原 Made Responsibly 位置），与上方 banner 保持垂直间距 */}
       <div className="mt-10 lg:mt-20">
-        <V2TrustStats
-          image="/images/about/about-sustainability.webp"
-          imageAlt="Sustainable materials and responsible production at Makimoo"
-        />
+        <V2TrustStats />
       </div>
       <MaterialGuide />
       <PressBar />
