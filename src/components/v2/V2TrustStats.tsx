@@ -60,10 +60,10 @@ export default function V2TrustStats({ products }: V2TrustStatsProps) {
   return (
     <section className="bg-off-white py-10 lg:py-16">
       <Reveal>
-        <div className="bg-cream px-6 py-10 sm:px-10 lg:pl-16 lg:pr-0 lg:py-14">
+        <div className="bg-cream px-6 py-10 sm:px-10 lg:pl-24 lg:pr-0 lg:py-14">
           <div className="lg:flex lg:items-center lg:gap-12">
             {/* 左侧：文字内容贴左 */}
-            <div className="text-left lg:w-[42%] lg:flex-shrink-0">
+            <div className="text-left lg:w-[34%] lg:flex-shrink-0">
               <div className="flex items-center gap-3 mb-3 lg:mb-4">
                 <span className="w-8 lg:w-10 h-0.5 bg-brand" />
                 <p className="text-[11px] lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand">
@@ -122,7 +122,7 @@ export default function V2TrustStats({ products }: V2TrustStatsProps) {
                   {products.map((product) => (
                     <div
                       key={product.id}
-                      className="w-[42vw] sm:w-[30vw] lg:w-[220px] flex-shrink-0 snap-start"
+                      className="w-[48vw] sm:w-[36vw] lg:w-[280px] flex-shrink-0 snap-start"
                     >
                       <V2ProductCard product={product} />
                     </div>
