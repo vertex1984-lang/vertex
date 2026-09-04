@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import V2Hero from '@/components/v2/V2Hero';
 import V2CategoryGrid from '@/components/v2/V2CategoryGrid';
 import V2BrandBanner from '@/components/v2/V2BrandBanner';
+import V2TrustStats from '@/components/v2/V2TrustStats';
 import V2FeaturedStrip from '@/components/v2/V2FeaturedStrip';
-import StorySplit from '@/components/v2/StorySplit';
 import MaterialGuide from '@/components/v2/MaterialGuide';
 import PressBar from '@/components/v2/PressBar';
 import V2Newsletter from '@/components/v2/V2Newsletter';
@@ -64,18 +64,11 @@ export default function V2HomePage() {
       <V2CategoryGrid />
       <V2FeaturedStrip products={stripProducts} />
       <V2BrandBanner />
-      {/* 与上方 banner 保持垂直间距 */}
+      {/* 信任数据分屏区（原 Made Responsibly 位置），与上方 banner 保持垂直间距 */}
       <div className="mt-10 lg:mt-20">
-        <StorySplit
-        eyebrow="Made Responsibly"
-        title="Comfort That Cares Back"
-        body="From durable, long-lasting materials to packaging we keep to a minimum, we design for years of daily use — because the most sustainable product is the one you never need to replace."
-        ctaLabel="Our Sustainability Promise"
-        ctaHref="/about#sustainability"
-        image="/images/about/about-sustainability.webp"
-        imageAlt="Sustainable materials and responsible production at Makimoo"
-        reverse
-        tone="off-white"
+        <V2TrustStats
+          image="/images/about/about-sustainability.webp"
+          imageAlt="Sustainable materials and responsible production at Makimoo"
         />
       </div>
       <MaterialGuide />
