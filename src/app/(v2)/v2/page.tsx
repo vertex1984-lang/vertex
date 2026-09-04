@@ -63,8 +63,8 @@ export default function V2HomePage() {
     <>
       <V2Hero />
       <V2CategoryGrid />
-      <V2FeaturedStrip products={stripProducts} />
       <V2BrandBanner />
+      <V2FeaturedStrip products={stripProducts} />
       <V2TrustStats products={stripProducts.slice(0, 6)} />
       <StorySplit
         eyebrow="Made Responsibly"
