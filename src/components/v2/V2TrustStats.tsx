@@ -10,15 +10,15 @@ const STATS = [
 ];
 
 /**
- * V2 首页信任数据内容卡（原 banner 叠加文案的排版版）
- * 卡片打满屏幕宽度（两侧留小空隙），文字内容居中；无图片，纯文字卡片。
+ * V2 首页信任数据区块（原 banner 叠加文案的排版版）
+ * cream 色带打满屏幕宽度（无圆角、无阴影、两侧无缝隙），内容块居中、内部左对齐；纯文字。
  * 移动端保持同一结构（数据横向一排 + 分隔线，字号缩小，不堆叠）。
  */
 export default function V2TrustStats() {
   return (
-    <section className="bg-off-white px-4 py-10 sm:px-6 lg:px-10 lg:py-16">
+    <section className="bg-off-white py-10 lg:py-16">
       <Reveal>
-        <div className="bg-cream rounded-2xl lg:rounded-3xl shadow-lg px-6 py-10 sm:px-10 lg:px-16 lg:py-14">
+        <div className="bg-cream px-6 py-10 sm:px-10 lg:px-16 lg:py-14">
           {/* 内容块整体水平居中，内部保持左对齐结构 */}
           <div className="w-fit mx-auto text-left">
           <div className="flex items-center gap-3 mb-3 lg:mb-4">
