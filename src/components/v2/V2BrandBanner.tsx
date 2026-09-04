@@ -7,7 +7,7 @@ import { v2url } from '@/lib/v2paths';
  * 桌面：按 1456/418（约 3.5:1）锁定比例全宽展示，
  *       object-cover 从上下裁切（object-position 保持 center，沙发主体完整露出）；
  *       极宽屏高度超 93vh 时进一步从上下裁切。
- * 移动：同一张图按 4/3.45 展示（保持高度、不压扁成细条），object-cover 居中裁切两侧。
+ * 移动：同一张图按 4/3.97 展示（接近方形，不压扁成细条），object-cover 居中裁切两侧。
  * 促销文案叠加在左下角（小占比，参考 Parachute）：标题 + 副文案 + 胶囊按钮（与 hero 同款）。
  * 整图可点击跳转全部产品，带 ken-burns 缓慢缩放动画（与 hero 同款 12s keyframes）；
  * CSS animation 会覆盖 transform，故不使用 hover 缩放。
@@ -42,10 +42,10 @@ export default function V2BrandBanner() {
           </div>
         </a>
 
-        {/* 移动端：同一张桌面图，4/3.45 比例（较 4/3 高 15%），object-cover 居中裁切两侧 */}
+        {/* 移动端：同一张桌面图，4/3.97 比例（较 4/3 高 30%），object-cover 居中裁切两侧 */}
         <a
           href={v2url('/products/')}
-          className="group relative block sm:hidden w-full aspect-[4/3.45] overflow-hidden"
+          className="group relative block sm:hidden w-full aspect-[4/3.97] overflow-hidden"
         >
           <img
             src={resolveUrl('/images/brand/brand-banner.webp')}
