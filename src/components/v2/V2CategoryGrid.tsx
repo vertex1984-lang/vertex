@@ -66,17 +66,19 @@ export default function V2CategoryGrid() {
         </div>
       </Reveal>
       <Reveal>
-        <div
-          ref={trackRef}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={endDrag}
-          onPointerLeave={endDrag}
-          onClickCapture={onClickCapture}
-          className={`flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory pl-6 lg:pl-10 pr-6 pb-2 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
-            dragging ? 'cursor-grabbing' : 'cursor-grab'
-          }`}
-        >
+        {/* 左缘缝隙用外层 padding 实现：padding 放在滚动容器上会被 scroll-snap 视为可滚动内容，加载时首卡自动吸附回 x=0（scrollLeft=40），缝隙被吃掉 */}
+        <div className="pl-6 lg:pl-10">
+          <div
+            ref={trackRef}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={endDrag}
+            onPointerLeave={endDrag}
+            onClickCapture={onClickCapture}
+            className={`flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory pr-6 pb-2 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
+              dragging ? 'cursor-grabbing' : 'cursor-grab'
+            }`}
+          >
           {CATEGORIES.map((cat) => (
             <a
               key={cat.name}
@@ -104,6 +106,7 @@ export default function V2CategoryGrid() {
               </div>
             </a>
           ))}
+          </div>
         </div>
       </Reveal>
     </section>
