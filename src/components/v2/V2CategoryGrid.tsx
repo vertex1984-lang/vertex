@@ -73,7 +73,7 @@ export default function V2CategoryGrid() {
           onPointerUp={endDrag}
           onPointerLeave={endDrag}
           onClickCapture={onClickCapture}
-          className={`flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory pl-6 lg:pl-[max(2.5rem,calc((100vw-1400px)/2+2.5rem))] pr-6 pb-2 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
+          className={`flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory pl-6 lg:pl-10 pr-6 pb-2 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
             dragging ? 'cursor-grabbing' : 'cursor-grab'
           }`}
         >
@@ -82,7 +82,7 @@ export default function V2CategoryGrid() {
               key={cat.name}
               href={v2url(cat.href)}
               draggable={false}
-              className="group relative block flex-shrink-0 snap-start w-[52vw] sm:w-[34vw] lg:w-[calc(25%-12px)] aspect-[4/5] overflow-hidden rounded-lg"
+              className="group relative block flex-shrink-0 snap-start w-[56vw] sm:w-[38vw] lg:w-[min(30vw,480px)] aspect-[4/5] overflow-hidden rounded-lg"
             >
               <img
                 src={resolveUrl(cat.image)}
