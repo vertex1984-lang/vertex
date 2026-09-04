@@ -65,7 +65,7 @@ export default function V2HomePage() {
       <V2CategoryGrid />
       <V2FeaturedStrip products={stripProducts} />
       <V2BrandBanner />
-      <V2TrustStats />
+      <V2TrustStats products={stripProducts.slice(0, 6)} />
       <StorySplit
         eyebrow="Made Responsibly"
         title="Comfort That Cares Back"
