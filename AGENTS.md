@@ -94,3 +94,29 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - **轮询**：查询任务状态/结果的具体端点以文档为准（生成后从任务接口取图 URL，下载转 WebP 进 `public/images/`）
 - **能力**：文生图、参考图生图、白底图（一键抠图换底）、AI 图片编辑（抠图/扩图/消除/变清晰）、AI 视频
 - 风格约定：全站米色 #F8F5F0 + 暖棕 #8B5A2B 家居调性，prompt 里注明色调；品牌 Logo/吉祥物不要让 AI 画（易变形）
+
+## V2 重构（feature/v2-redesign 分支）
+
+### 双版本结构
+
+- **`src/app/(classic)/` = 线上版**：URL 不变（`/`、`/products/` 等），经典壳（Header/Footer）在 `(classic)/layout.tsx`。**不要改动 (classic) 下任何文件**。
+- **`src/app/(v2)/v2/` = 新版**：URL 前缀 `/v2/`，组件在 `src/components/v2/`（V2Header fixed 透明→实底 / V2Footer / V2PageHeader 深色页头等）。
+- 根 `src/app/layout.tsx` 是极简壳（fonts/Toast/Analytics/全站 metadata），两个 route group 各自带自己的 Header/Footer 壳。
+
+### V2 开发约定
+
+- **站内链接一律走 `v2url()`**（`src/lib/v2paths.ts`）：自动加 `/v2` 前缀再交给 `resolveUrl` 处理 file:// 兼容；图片等静态资源用 `resolveUrl()`。
+- **颜色只用 Tailwind token**（`brand` / `cream` / `off-white` / `charcoal` / `warm-gray`），不写死 hex。例外：从 (classic) 复用/沿用的组件与内容（如政策页复用 `src/components/Policy.tsx`，正文沿用旧版样式）保持原样。
+- 新组件放 `src/components/v2/`，页面放 `src/app/(v2)/v2/`；fixed 透明 Header 要求每个页面第一屏能衬住（首页/ about 大图页头，内页 `V2PageHeader` 的 bg-brand + pt-32）。
+- client 页面的 metadata 由同目录 route `layout.tsx` 提供（见 `v2/cart/layout.tsx`、`v2/products/layout.tsx`）。
+
+### 切换流程（验收后执行）
+
+1. 把 `(v2)/v2/` 下页面移到 `src/app/` 根路径。注意 route group 冲突：`(classic)` 与根路径同名页面不能共存，需先把 `(classic)` 整体改名或删除。
+2. 全站链接去掉 `/v2` 前缀：`src/lib/v2paths.ts` 的 `v2url()` 改为直通 `resolveUrl(path)` 即可，一处改动。
+3. 重新构建部署。
+4. 回滚 = `git revert` 切换 commit。
+
+### 构建副作用提醒
+
+`npm run build` 会更新 `src/data/shopify-map.ts` 和 `public/sitemap.xml` 的时间戳。提交前如非有意更新数据，先还原：`git checkout -- src/data/shopify-map.ts public/sitemap.xml`。
