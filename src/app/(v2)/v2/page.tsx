@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import V2Hero from '@/components/v2/V2Hero';
 import V2CategoryGrid from '@/components/v2/V2CategoryGrid';
 import V2BrandBanner from '@/components/v2/V2BrandBanner';
+import V2TrustStats from '@/components/v2/V2TrustStats';
 import V2FeaturedStrip from '@/components/v2/V2FeaturedStrip';
 import StorySplit from '@/components/v2/StorySplit';
 import MaterialGuide from '@/components/v2/MaterialGuide';
@@ -64,6 +65,7 @@ export default function V2HomePage() {
       <V2CategoryGrid />
       <V2FeaturedStrip products={stripProducts} />
       <V2BrandBanner />
+      <V2TrustStats />
       <StorySplit
         eyebrow="Made Responsibly"
         title="Comfort That Cares Back"
