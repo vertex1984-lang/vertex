@@ -1,11 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import BackToTop from "@/components/BackToTop";
-import MiniCart from "@/components/MiniCart";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
-import CookieConsent from "@/components/CookieConsent";
 import ToastProvider from "@/components/Toast";
 
 export const metadata: Metadata = {
@@ -77,15 +72,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased" style={{ backgroundColor: '#F8F5F0' }}>
         <ToastProvider>
-          {/* overflow-x-clip：防横向溢出且不创建滚动容器（overflow:hidden 会导致 Header sticky 失效） */}
-          <div className="w-full max-w-[1400px] mx-auto shadow-lg overflow-x-clip" style={{ backgroundColor: '#F8F5F0' }}>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <BackToTop />
-            <MiniCart />
-            <CookieConsent />
-          </div>
+          {children}
           {/* GA4 仅在用户同意 Cookie 后由 AnalyticsLoader 加载（严格模式） */}
           <AnalyticsLoader />
         </ToastProvider>
