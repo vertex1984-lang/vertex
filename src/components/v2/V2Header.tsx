@@ -16,8 +16,6 @@ const navLinks = [
   { label: 'Bath', href: '/products?cat=towels' },
   { label: 'Mats', href: '/products?cat=mats' },
   { label: 'Others', href: '/products?cat=others' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 // 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）

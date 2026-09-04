@@ -109,6 +109,17 @@ export default function V2CategoryGrid() {
           </div>
         </div>
       </Reveal>
+      {/* 卡片条下方居中 Shop All Collections 描边按钮（与 Featured 区底部按钮同款） */}
+      <Reveal>
+        <div className="mt-10 lg:mt-14 text-center">
+          <a
+            href={v2url('/products/')}
+            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide transition hover:bg-brand hover:text-cream"
+          >
+            Shop All Collections
+          </a>
+        </div>
+      </Reveal>
     </section>
   );
 }
