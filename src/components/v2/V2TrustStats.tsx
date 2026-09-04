@@ -60,7 +60,7 @@ export default function V2TrustStats({ products }: V2TrustStatsProps) {
   return (
     <section className="bg-off-white py-10 lg:py-16">
       <Reveal>
-        <div className="bg-cream px-6 py-10 sm:px-10 lg:pl-24 lg:pr-0 lg:py-14">
+        <div className="px-6 py-10 sm:px-10 lg:pl-24 lg:pr-0 lg:py-14">
           <div className="lg:flex lg:items-center lg:gap-12">
             {/* 左侧：文字内容贴左 */}
             <div className="text-left lg:w-[34%] lg:flex-shrink-0">
