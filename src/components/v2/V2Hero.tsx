@@ -106,7 +106,7 @@ export default function V2Hero() {
       </div>
 
       {/* Text content：垂直居中偏下（为 fixed Header 留出顶部视觉空间） */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-center pb-[10vh]">
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-center pt-[12vh]">
         <p
           className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-5 animate-fade-in-up"
           style={{ animationDelay: '0ms' }}
