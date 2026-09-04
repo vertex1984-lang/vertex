@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
@@ -13,11 +13,13 @@ interface V2FeaturedStripProps {
 /**
  * V2 首页 Featured Products 横向条（Parachute Best Sellers 风格大卡）
  * 标题区与滚动容器全宽贴边（px-6 / lg:px-10），右侧无内距，末卡直接打出屏幕右缘。
- * 桌面端提供左右翻页箭头（隐藏滚动条后桌面用户没有滑动入口，这是"滑不动"的主要原因）。
+ * 桌面端提供左右翻页箭头 + 鼠标按住拖拽（抓取光标，拖拽超 5px 抑制误触点击）。
  * 数据由页面组装：FEATURED_ASINS 优先，不足 15 用 Best Sellers 逻辑补足。
  */
 export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const dragState = useRef({ startX: 0, scrollLeft: 0, dragging: false, moved: false });
+  const [dragging, setDragging] = useState(false);
 
   if (products.length === 0) return null;
 
@@ -25,6 +27,35 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
     const el = trackRef.current;
     if (!el) return;
     el.scrollBy({ left: dir * el.clientWidth * 0.85, behavior: 'smooth' });
+  };
+
+  // 鼠标拖拽滚动（移动端原生触摸滑动，无需处理）
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    const track = trackRef.current;
+    if (!track) return;
+    dragState.current = { startX: e.clientX, scrollLeft: track.scrollLeft, dragging: true, moved: false };
+    setDragging(true);
+  };
+  const onPointerMove = (e: React.PointerEvent) => {
+    const state = dragState.current;
+    const track = trackRef.current;
+    if (!state.dragging || !track) return;
+    const delta = e.clientX - state.startX;
+    if (Math.abs(delta) > 5) state.moved = true;
+    track.scrollLeft = state.scrollLeft - delta;
+  };
+  const endDrag = () => {
+    dragState.current.dragging = false;
+    setDragging(false);
+  };
+  // 拖拽后抑制误触点击
+  const onClickCapture = (e: React.SyntheticEvent) => {
+    if (dragState.current.moved) {
+      e.preventDefault();
+      e.stopPropagation();
+      dragState.current.moved = false;
+    }
   };
 
   const arrowCls =
@@ -61,7 +92,14 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
         >
           <div
             ref={trackRef}
-            className="flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={endDrag}
+            onPointerLeave={endDrag}
+            onClickCapture={onClickCapture}
+            className={`flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 select-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${
+              dragging ? 'cursor-grabbing' : 'cursor-grab'
+            }`}
           >
             {products.map((product) => (
               <div
