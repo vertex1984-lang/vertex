@@ -64,12 +64,9 @@ export default function V2TrustStats({ products }: V2TrustStatsProps) {
           <div className="lg:flex lg:items-center lg:gap-12">
             {/* 左侧：文字内容贴左 */}
             <div className="text-left lg:w-[34%] lg:flex-shrink-0">
-              <div className="flex items-center gap-3 mb-3 lg:mb-4">
-                <span className="w-8 lg:w-10 h-0.5 bg-brand" />
-                <p className="text-[11px] lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand">
-                  Trusted Worldwide
-                </p>
-              </div>
+              <p className="text-[11px] lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3 lg:mb-4">
+                Trusted Worldwide
+              </p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-12">
                 Comfort Loved by Millions
               </h2>
