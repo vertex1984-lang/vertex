@@ -27,8 +27,8 @@ export default function V2TrustStats() {
       <Reveal>
         {/* 双图并排（左:右 = 3:2，左图明显更宽），中间留细缝 */}
         <div className="grid lg:grid-cols-[3fr_2fr] gap-2 lg:gap-3">
-          {/* 左图：品牌信任标题 */}
-          <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
+          {/* 左图：品牌信任标题（移动端与右图高度比 3:2，同桌面宽度比） */}
+          <div className="relative aspect-[4/5] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
             <img
               src={resolveUrl(LEFT_IMAGE.src)}
               alt={LEFT_IMAGE.alt}
@@ -46,8 +46,8 @@ export default function V2TrustStats() {
             </div>
           </div>
 
-          {/* 右图：三项数据 */}
-          <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
+          {/* 右图：三项数据（移动端高度为左图的 2/3） */}
+          <div className="relative aspect-[6/5] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
             <img
               src={resolveUrl(RIGHT_IMAGE.src)}
               alt={RIGHT_IMAGE.alt}
