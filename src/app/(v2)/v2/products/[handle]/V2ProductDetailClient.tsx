@@ -172,27 +172,9 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
 
   return (
     <>
-      {/* 深色页头：面包屑，衬住初始透明的 fixed V2Header（与 V2 列表页页头同风格） */}
-      <section className="bg-brand">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-36 pb-8 lg:pb-10">
-          <nav className="text-xs lg:text-sm text-cream/60" aria-label="Breadcrumb">
-            <a href={v2url('/')} className="hover:text-cream transition-colors">Home</a>
-            <span className="mx-1.5">/</span>
-            <a
-              href={v2url(`/products/?cat=${product.productType.toLowerCase()}`)}
-              className="hover:text-cream transition-colors"
-            >
-              {product.productType}
-            </a>
-            <span className="mx-1.5">/</span>
-            <span className="text-cream">{product.title.replace(/^Makimoo\s+/i, '').slice(0, 60)}</span>
-          </nav>
-        </div>
-      </section>
-
-      {/* 主区：左图库（约 58%）+ 右购买区（sticky） */}
+      {/* 主区：左图库（约 58%）+ 右购买区（sticky）；pt-32/36 让内容避开 fixed 导航 */}
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-8 lg:py-14">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-8 lg:pb-14">
           <div className="grid lg:grid-cols-[7fr_5fr] gap-8 lg:gap-14">
             {/* Gallery：桌面端缩略图竖排在左，移动端横排在下 */}
             <div className="flex flex-col-reverse lg:flex-row gap-3 lg:gap-4">

@@ -50,7 +50,7 @@ export default function V2CategoryGrid() {
   };
 
   return (
-    <section className="pt-16 lg:pt-24">
+    <section className="pt-16 lg:pt-24 pb-10 lg:pb-12">
       {/* 标题区限宽居中；卡片横滑条全宽 bleed，左缘对齐内容线 */}
       <Reveal>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center mb-10 lg:mb-14">
@@ -107,6 +107,17 @@ export default function V2CategoryGrid() {
             </a>
           ))}
           </div>
+        </div>
+      </Reveal>
+      {/* 卡片条下方居中 View More 描边按钮（与 Featured 条按钮同款） */}
+      <Reveal delay={120}>
+        <div className="mt-10 lg:mt-12 text-center">
+          <a
+            href={v2url('/categories/')}
+            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
+          >
+            View More
+          </a>
         </div>
       </Reveal>
     </section>

@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
 import V2ProductCard from '@/components/v2/V2ProductCard';
+import { v2url } from '@/lib/v2paths';
 import type { MakimooProduct } from '@/data/products';
 
 interface V2NewArrivalsProps {
@@ -10,9 +11,9 @@ interface V2NewArrivalsProps {
 }
 
 /**
- * V2 首页 New Arrivals 模块（Parachute 分类导览版式）
- * 左侧固定介绍栏（600px：eyebrow + 标题 + 两段介绍文案，文字限宽 380px、多出宽度留白），
- * 右侧横向滚动产品卡。卡片复用 V2ProductCard（与 Featured 条同款同尺寸：方图 + 分类 eyebrow + 产品名 + 价格）。
+ * V2 首页 New Arrivals 模块（与 Featured 条同构）
+ * 左侧固定介绍栏（600px：eyebrow + 标题 + 一句介绍，文字限宽 380px、多出宽度留白、与产品卡图片顶部对齐），
+ * 右侧横向滚动产品卡（V2ProductCard 同款同尺寸），卡片条下方居中 VIEW MORE 描边按钮。
  * 桌面端左右翻页箭头 + 鼠标按住拖拽（拖拽超 5px 抑制误触点击），移动端原生触摸滑动。
  */
 export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
@@ -61,8 +62,8 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
     <section className="bg-cream py-16 lg:py-24">
       <Reveal>
         <div className="lg:flex lg:items-stretch">
-          {/* 左侧介绍栏：移动端在上，桌面端固定宽左栏（宽度 600px，文字保持原缩进断行，多出宽度留白） */}
-          <div className="px-6 lg:pl-28 lg:pr-6 mb-8 lg:mb-0 lg:w-[600px] lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center">
+          {/* 左侧介绍栏：移动端在上，桌面端固定宽左栏（宽度 600px，文字限宽留白，与产品卡图片顶部对齐） */}
+          <div className="px-6 lg:pl-28 lg:pr-6 mb-8 lg:mb-0 lg:w-[600px] lg:flex-shrink-0 lg:flex lg:flex-col">
             <div className="lg:max-w-[380px]">
               <p className="text-sm lg:text-base font-semibold tracking-[0.25em] uppercase text-brand mb-4">
                 Just Landed
@@ -70,12 +71,8 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
               <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal leading-tight mb-5">
                 New Arrivals
               </h2>
-              <p className="text-base lg:text-lg text-charcoal-light leading-relaxed mb-5">
-                Fresh textures and easy-living essentials, newly added to the collection.
-              </p>
               <p className="text-base lg:text-lg text-charcoal-light leading-relaxed">
-                Honest materials, thoughtful details — soft cushions, cozy pillows and everyday
-                comforts crafted to settle into every corner of your home.
+                Fresh textures and easy-living essentials, newly added to the collection.
               </p>
             </div>
           </div>
@@ -123,6 +120,18 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
               </svg>
             </button>
           </div>
+        </div>
+      </Reveal>
+
+      {/* 卡片条下方居中 View More 描边按钮（与 Featured 条同款） */}
+      <Reveal delay={200}>
+        <div className="mt-10 lg:mt-12 text-center">
+          <a
+            href={v2url('/products/')}
+            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
+          >
+            View More
+          </a>
         </div>
       </Reveal>
     </section>

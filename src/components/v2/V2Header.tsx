@@ -7,16 +7,45 @@ import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
+import { getSubcategoriesOf } from '@/data/subcategories';
 
-// V2 导航：Bath 沿用现有分类 query 参数 towels
+// V2 导航：Bath 沿用现有分类 query 参数 towels；cat 非空的项带 mega menu（二级类目 + 示例图卡）
 const navLinks = [
-  { label: 'Shop All', href: '/products' },
-  { label: 'Cushions', href: '/products?cat=cushions' },
-  { label: 'Pillows', href: '/products?cat=pillows' },
-  { label: 'Bath', href: '/products?cat=towels' },
-  { label: 'Mats', href: '/products?cat=mats' },
-  { label: 'Others', href: '/products?cat=others' },
+  { label: 'Shop All', href: '/products', cat: '' },
+  { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
+  { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
+  { label: 'Bath', href: '/products?cat=towels', cat: 'towels' },
+  { label: 'Mats', href: '/products?cat=mats', cat: 'mats' },
+  { label: 'Others', href: '/products?cat=others', cat: 'others' },
 ];
+
+// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图）
+interface MenuCard {
+  image: string;
+  caption: string;
+  linkLabel: string;
+  href: string;
+}
+const MEGA_CARDS: Record<string, MenuCard[]> = {
+  cushions: [
+    { image: '/images/collections/cushions.webp', caption: 'Comfort for every seat.', linkLabel: 'Shop Cushions', href: '/products?cat=cushions' },
+    { image: '/images/featured/b0cbt7r7nn.webp', caption: 'A best seller for a reason.', linkLabel: 'Shop Rocking Chair', href: '/products?cat=cushions&sub=rocking' },
+  ],
+  pillows: [
+    { image: '/images/collections/pillows.webp', caption: 'Plush fillings, premium covers.', linkLabel: 'Shop Pillows', href: '/products?cat=pillows' },
+    { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Pillow Inserts', href: '/products?cat=pillows&sub=basic' },
+  ],
+  towels: [
+    { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Bath', href: '/products?cat=towels' },
+  ],
+  mats: [
+    { image: '/images/collections/mats.webp', caption: 'Soft grounding for every room.', linkLabel: 'Shop Mats', href: '/products?cat=mats' },
+  ],
+  others: [
+    { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
+    { image: '/images/featured/b0bzcln57s.webp', caption: 'Comfort on the road.', linkLabel: 'Shop Travel', href: '/products?cat=others&sub=travel' },
+  ],
+};
 
 // 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
 const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
@@ -30,6 +59,8 @@ export default function V2Header() {
   const [suggestions, setSuggestions] = useState<MakimooProduct[]>([]);
   const [cartCount, setCartCount] = useState(0);
   const [favCount, setFavCount] = useState(0);
+  // Mega menu：当前展开的分类（'' = 收起）
+  const [openMenu, setOpenMenu] = useState('');
 
   useEffect(() => {
     // 滞回阈值：滚动超过 60px 变实底，回到 30px 以下才恢复透明，
@@ -56,18 +87,24 @@ export default function V2Header() {
     }
   }, [mobileOpen, searchOpen]);
 
-  // Esc 关闭搜索遮罩和移动端菜单
+  // Esc 关闭搜索遮罩、mega menu 和移动端菜单
   useEffect(() => {
-    if (!mobileOpen && !searchOpen) return;
+    if (!mobileOpen && !searchOpen && !openMenu) return;
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setMobileOpen(false);
         setSearchOpen(false);
+        setOpenMenu('');
       }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [mobileOpen, searchOpen]);
+  }, [mobileOpen, searchOpen, openMenu]);
+
+  // 路由变化时收起 mega menu
+  useEffect(() => {
+    setOpenMenu('');
+  }, [pathname]);
 
   // 购物车角标：本地购物车 + Shopify 购物车数量之和
   // 仅在 mount 和购物车变化事件时刷新（Shopify 数量需一次 API 请求，不在渲染期发起）
@@ -131,7 +168,8 @@ export default function V2Header() {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清
   const normalizedPath = (pathname || '').replace(/\/+$/, '');
   const transparentStart = normalizedPath === '/v2' || normalizedPath === '/v2/about';
-  const solid = scrolled || !transparentStart;
+  // mega menu 展开时强制实底，保证导航文字在面板上可读
+  const solid = scrolled || !transparentStart || openMenu !== '';
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
   const textColor = solid ? 'text-charcoal' : 'text-cream';
@@ -141,7 +179,7 @@ export default function V2Header() {
 
   return (
     <>
-      <div className="fixed top-0 z-50 w-full">
+      <div className="fixed top-0 z-50 w-full" onMouseLeave={() => setOpenMenu('')}>
         {/* Announcement Bar */}
         <div className="bg-brand text-cream text-center text-xs font-medium tracking-wide py-2 px-4">
           Free Shipping on Orders Over $49 | 30-Day Easy Returns
@@ -166,10 +204,14 @@ export default function V2Header() {
               <a
                 key={link.href}
                 href={v2url(link.href)}
+                onMouseEnter={() => setOpenMenu(link.cat)}
+                onFocus={() => setOpenMenu(link.cat)}
                 className="relative py-1 text-base hover:text-brand transition-colors group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all group-hover:w-full" />
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-brand transition-all ${
+                  openMenu && openMenu === link.cat ? 'w-full' : 'w-0 group-hover:w-full'
+                }`} />
               </a>
             ))}
           </nav>
@@ -302,6 +344,70 @@ export default function V2Header() {
             </div>
           )}
         </header>
+
+        {/* Mega Menu（桌面端）：悬停/聚焦分类导航展开，左侧二级类目 + 右侧示例图卡（Parachute 风格） */}
+        {openMenu && (
+          <div
+            className="hidden lg:block absolute top-full left-0 right-0 bg-off-white border-y border-warm-gray shadow-[0_12px_32px_rgba(60,45,30,0.12)] text-charcoal"
+            style={{ animation: 'fadeIn 0.18s ease-out' }}
+          >
+            <div className="px-6 lg:px-10 py-9 flex gap-14 justify-center">
+              {/* 左：分类总链接 + 二级类目列表 */}
+              <div className="flex-shrink-0 w-56">
+                <a
+                  href={v2url(navLinks.find((l) => l.cat === openMenu)?.href || '/products')}
+                  className="group/title inline-flex items-center gap-2 text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20 hover:text-brand transition-colors"
+                >
+                  {navLinks.find((l) => l.cat === openMenu)?.label}
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/title:translate-x-1">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </a>
+                <div className="flex flex-col gap-3.5">
+                  {getSubcategoriesOf(openMenu).map((sub) => (
+                    <a
+                      key={sub.key}
+                      href={v2url(`/products?cat=${openMenu}&sub=${sub.key}`)}
+                      className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
+                    >
+                      {sub.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* 右：示例图卡（图 + 大写小标题 + 下划线跳转链接） */}
+              <div className="flex gap-6">
+                {(MEGA_CARDS[openMenu] || []).map((card) => (
+                  <div key={card.image} className="w-[230px]">
+                    <a href={v2url(card.href)} className="group/card block">
+                      <div className="aspect-[4/5] overflow-hidden rounded-lg bg-warm-gray">
+                        <img
+                          src={resolveUrl(card.image)}
+                          alt={card.caption}
+                          loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+                        />
+                      </div>
+                    </a>
+                    <p className="mt-3 text-[11px] font-semibold tracking-[0.12em] uppercase text-charcoal-light">
+                      {card.caption}
+                    </p>
+                    <a
+                      href={v2url(card.href)}
+                      className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-charcoal underline underline-offset-4 decoration-charcoal/30 hover:text-brand hover:decoration-brand transition-colors"
+                    >
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
+                      {card.linkLabel}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Mobile Full-screen Drawer */}
@@ -323,14 +429,27 @@ export default function V2Header() {
               Home
             </a>
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={v2url(link.href)}
-                onClick={() => setMobileOpen(false)}
-                className="text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
-              >
-                {link.label}
-              </a>
+              <div key={link.href}>
+                <a
+                  href={v2url(link.href)}
+                  onClick={() => setMobileOpen(false)}
+                  className="block text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                >
+                  {link.label}
+                </a>
+                {/* 有二级类目的分类在移动端抽屉中缩进展示 */}
+                {link.cat &&
+                  getSubcategoriesOf(link.cat).map((sub) => (
+                    <a
+                      key={sub.key}
+                      href={v2url(`/products?cat=${link.cat}&sub=${sub.key}`)}
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                    >
+                      {sub.label}
+                    </a>
+                  ))}
+              </div>
             ))}
           </nav>
         </div>

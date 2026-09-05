@@ -11,9 +11,10 @@ interface V2FeaturedStripProps {
 }
 
 /**
- * V2 首页 Featured Products 横向条（Parachute Best Sellers 风格大卡）
- * 标题区与滚动容器全宽贴边（px-6 / lg:px-10），右侧无内距，末卡直接打出屏幕右缘。
- * 桌面端提供左右翻页箭头 + 鼠标按住拖拽（抓取光标，拖拽超 5px 抑制误触点击）。
+ * V2 首页 Featured Products 区（与 New Arrivals 同构）
+ * 左侧固定介绍栏（600px：eyebrow + 标题 + 介绍文案，文字限宽 380px、多出宽度留白），
+ * 右侧横向滚动产品卡（V2ProductCard，桌面约 25vw/440px）。
+ * 桌面端左右翻页箭头 + 鼠标按住拖拽（拖拽超 5px 抑制误触点击），移动端原生触摸滑动。
  * 数据由页面组装：FEATURED_ASINS 优先，不足 15 用 Best Sellers 逻辑补足。
  */
 export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
@@ -58,89 +59,79 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
     }
   };
 
-  const arrowCls =
-    'hidden lg:flex absolute top-[38%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-warm-gray shadow-md items-center justify-center text-charcoal transition hover:bg-brand hover:text-cream hover:border-brand';
-
   return (
-    <section className="bg-cream py-16 lg:py-24">
+    <section className="bg-cream pt-6 lg:pt-12 pb-16 lg:pb-24">
       <Reveal>
-        <div className="px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
-          <div>
-            <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
-              Hand-Picked
-            </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
-              Featured Products
-            </h2>
+        <div className="lg:flex lg:items-stretch">
+          {/* 左侧介绍栏：移动端在上，桌面端固定宽左栏（宽度 600px，文字限宽留白，与产品卡图片顶部对齐） */}
+          <div className="px-6 lg:pl-28 lg:pr-6 mb-8 lg:mb-0 lg:w-[600px] lg:flex-shrink-0 lg:flex lg:flex-col">
+            <div className="lg:max-w-[380px]">
+              <p className="text-sm lg:text-base font-semibold tracking-[0.25em] uppercase text-brand mb-4">
+                Hand-Picked
+              </p>
+              <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal leading-tight mb-5">
+                Featured Products
+              </h2>
+              <p className="text-base lg:text-lg text-charcoal-light leading-relaxed">
+                Our most-loved pieces, hand-picked for everyday comfort.
+              </p>
+            </div>
           </div>
-          <a
-            href={v2url('/products/')}
-            className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4 flex-shrink-0"
-          >
-            Shop All
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </a>
+
+          {/* 右侧横向滚动产品卡：右侧无内距、末卡 bleed 到屏幕边缘 */}
+          <div className="relative flex-1 min-w-0 pl-6 lg:pl-4">
+            <div
+              ref={trackRef}
+              onPointerDown={onPointerDown}
+              onPointerMove={onPointerMove}
+              onPointerUp={endDrag}
+              onPointerLeave={endDrag}
+              onClickCapture={onClickCapture}
+              className={`flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 select-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${
+                dragging ? 'cursor-grabbing' : 'cursor-grab'
+              }`}
+            >
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
+                >
+                  <V2ProductCard product={product} badge="Featured" />
+                </div>
+              ))}
+            </div>
+
+            {/* 桌面翻页箭头（移动端触摸滑动即可） */}
+            <button
+              onClick={() => scrollByPage(-1)}
+              className="hidden lg:flex absolute top-[38%] -translate-y-1/2 left-7 z-10 w-12 h-12 rounded-full bg-white border border-warm-gray shadow-md items-center justify-center text-charcoal transition hover:bg-brand hover:text-cream hover:border-brand"
+              aria-label="Scroll products left"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={() => scrollByPage(1)}
+              className="hidden lg:flex absolute top-[38%] -translate-y-1/2 right-4 z-10 w-12 h-12 rounded-full bg-white border border-warm-gray shadow-md items-center justify-center text-charcoal transition hover:bg-brand hover:text-cream hover:border-brand"
+              aria-label="Scroll products right"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </Reveal>
 
-      {/* 横向滚动条：左侧 pl-6/lg:pl-10 全宽贴边，右侧无内距、末卡 bleed 到屏幕边缘 */}
-      <Reveal delay={120}>
-        <div
-          className="relative w-full pl-6 lg:pl-10"
-        >
-          <div
-            ref={trackRef}
-            onPointerDown={onPointerDown}
-            onPointerMove={onPointerMove}
-            onPointerUp={endDrag}
-            onPointerLeave={endDrag}
-            onClickCapture={onClickCapture}
-            className={`flex gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 select-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${
-              dragging ? 'cursor-grabbing' : 'cursor-grab'
-            }`}
-          >
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
-              >
-                <V2ProductCard product={product} badge="Featured" />
-              </div>
-            ))}
-          </div>
-
-          {/* 桌面翻页箭头（移动端触摸滑动即可） */}
-          <button
-            onClick={() => scrollByPage(-1)}
-            className={`${arrowCls} left-3 lg:left-4`}
-            aria-label="Scroll products left"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={() => scrollByPage(1)}
-            className={`${arrowCls} right-4 lg:right-6`}
-            aria-label="Scroll products right"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-      </Reveal>
-
-      {/* 卡片条下方居中 Shop All 描边按钮（标题区右上角的 Shop All → 链接保留） */}
+      {/* 卡片条下方居中 View More 描边按钮 */}
       <Reveal delay={200}>
         <div className="mt-10 lg:mt-12 text-center">
           <a
             href={v2url('/products/')}
-            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide transition hover:bg-brand hover:text-cream"
+            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
           >
-            Shop All
+            View More
           </a>
         </div>
       </Reveal>
