@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import V2Hero from '@/components/v2/V2Hero';
 import V2CategoryGrid from '@/components/v2/V2CategoryGrid';
 import V2BrandBanner from '@/components/v2/V2BrandBanner';
+import V2NewArrivals from '@/components/v2/V2NewArrivals';
 import V2TrustStats from '@/components/v2/V2TrustStats';
 import V2FeaturedStrip from '@/components/v2/V2FeaturedStrip';
 import MaterialGuide from '@/components/v2/MaterialGuide';
@@ -57,16 +58,33 @@ const featuredFillers = enrichProductsWithShopifyData(PRODUCTS_DATA)
 
 const stripProducts = [...enrichProductsWithShopifyData(featuredProducts), ...featuredFillers].slice(0, 15);
 
+// New Arrivals：展示用的新到产品（暂选 B0F/B0G 批次新品 ASIN，与 Featured 不重复）
+const NEW_ARRIVAL_ASINS = [
+  'B0F1XFWZVY',
+  'B0F1XS27XS',
+  'B0F1XS7VKY',
+  'B0F1Y4J48T',
+  'B0F1Y91HPR',
+  'B0F62XRB55',
+  'B0FNQRRV78',
+  'B0G6M3F7CY',
+];
+
+const newArrivalProducts = NEW_ARRIVAL_ASINS.map((asin) =>
+  PRODUCTS_DATA.find((p) => p.asin.toUpperCase() === asin.toUpperCase())
+).filter(Boolean) as MakimooProduct[];
+
 export default function V2HomePage() {
   return (
     <>
       <V2Hero />
       <V2CategoryGrid />
       <V2FeaturedStrip products={stripProducts} />
-      {/* banner 位于 Featured 与信任双图区之间；上方只留 Featured 自身底边距，下方保持间距 */}
+      {/* banner 位于 Featured 与 New Arrivals 之间；下方保持与 New Arrivals 的间距 */}
       <div className="mb-10 lg:mb-16">
         <V2BrandBanner />
       </div>
+      <V2NewArrivals products={enrichProductsWithShopifyData(newArrivalProducts)} />
       <V2TrustStats />
       <MaterialGuide />
       <PressBar />
