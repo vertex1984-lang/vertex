@@ -74,6 +74,14 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 - remote：`git@github.com:vertex1984-lang/vertex.git`，推送后 Vercel 自动部署。commit/push 必须用户明确要求后才执行。
 
+## 协作开发
+
+- 仓库为 **Public**，协作者：**OnishiAguri**（Write 权限，2026-09 加入）。
+- **`main` 已启用服务端分支保护**（ruleset `protect-main`，2026-09 配置）：禁止直接推送、禁止 force push、禁止删除分支；所有改动必须开分支 → 提 Pull Request → **1 次 approving review**（用户本人）后才可合并（Squash merge）。推 main 被 GitHub 拒绝是正常现象，不是配置错误。
+- 合并进 `main` 即触发 Vercel 自动上线，review 时注意改动影响。
+- 动工前先 `git pull` 并基于最新 `main` 开分支，避免冲突。
+- `.env.local` 不进仓库：协作者需自行创建（Shopify 三个环境变量 + `SEEANY_API_KEY`，由用户线下私下传递）。
+
 ## SeeAny AI 生图 API
 
 用于生成/编辑网站配图（电商场景优化）。文档：https://www.seeany.com/developer
