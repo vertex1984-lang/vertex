@@ -37,9 +37,11 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   towels: [
     { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Bath', href: '/products?cat=towels' },
+    { image: '/images/products/1688-952595759182/1.webp', caption: 'Oversized and quick-drying.', linkLabel: 'Shop Beach Towels', href: '/products?cat=towels&sub=beach' },
   ],
   mats: [
     { image: '/images/collections/mats.webp', caption: 'Soft grounding for every room.', linkLabel: 'Shop Mats', href: '/products?cat=mats' },
+    { image: '/images/products/1688-1046667161713/1.webp', caption: 'Cushioned comfort underfoot.', linkLabel: 'Shop Kitchen Mats', href: '/products?cat=mats&sub=kitchen' },
   ],
   others: [
     { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
@@ -179,7 +181,7 @@ export default function V2Header() {
 
   return (
     <>
-      <div className="fixed top-0 z-50 w-full" onMouseLeave={() => setOpenMenu('')}>
+      <div className="fixed top-0 z-50 w-full">
         {/* Announcement Bar：向下滚动超过阈值后收起（桌面/移动一致），回到顶部附近再展开 */}
         <div
           className={`bg-brand text-cream text-center text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
@@ -208,8 +210,14 @@ export default function V2Header() {
               <a
                 key={link.href}
                 href={v2url(link.href)}
-                onMouseEnter={() => setOpenMenu(link.cat)}
-                onFocus={() => setOpenMenu(link.cat)}
+                onClick={(e) => {
+                  // 有 mega menu 的分类：点击切换菜单展开/收起，不直接跳转
+                  //（分类汇总页从菜单内的标题链接进入）；无菜单的项（Shop All）正常跳转
+                  if (!link.cat) return;
+                  e.preventDefault();
+                  setOpenMenu((prev) => (prev === link.cat ? '' : link.cat));
+                }}
+                aria-expanded={link.cat ? openMenu === link.cat : undefined}
                 className="relative py-1 text-base hover:text-brand transition-colors group"
               >
                 {link.label}
@@ -349,7 +357,7 @@ export default function V2Header() {
           )}
         </header>
 
-        {/* Mega Menu（桌面端）：悬停/聚焦分类导航展开，左侧二级类目 + 右侧示例图卡（Parachute 风格） */}
+        {/* Mega Menu（桌面端）：点击分类导航展开/收起，左侧二级类目 + 右侧示例图卡（Parachute 风格）；Esc / 点外部 / 路由变化关闭 */}
         {openMenu && (
           <div
             className="hidden lg:block absolute top-full left-0 right-0 bg-off-white border-y border-warm-gray shadow-[0_12px_32px_rgba(60,45,30,0.12)] text-charcoal"
@@ -394,17 +402,21 @@ export default function V2Header() {
                         />
                       </div>
                     </a>
-                    <p className="mt-3 text-[11px] font-semibold tracking-[0.12em] uppercase text-charcoal-light">
+                    {/* 文案样式与全站产品卡一致：品牌棕 eyebrow + 深灰标题 + 下划线 hover 渐入 */}
+                    <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-[#8B5A2B]">
                       {card.caption}
                     </p>
                     <a
                       href={v2url(card.href)}
-                      className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-charcoal underline underline-offset-4 decoration-charcoal/30 hover:text-brand hover:decoration-brand transition-colors"
+                      className="group/link mt-1 inline-flex items-center gap-1.5 text-[#8B5A2B]"
                     >
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover/link:translate-x-0.5">
                         <path d="M5 12h14M13 6l6 6-6 6" />
                       </svg>
-                      {card.linkLabel}
+                      <span className="relative text-sm font-medium text-[#333]">
+                        {card.linkLabel}
+                        <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover/link:w-full" />
+                      </span>
                     </a>
                   </div>
                 ))}
@@ -459,9 +471,12 @@ export default function V2Header() {
         </div>
       )}
 
-      {/* 点击面板外部区域关闭搜索 */}
+      {/* 点击面板外部区域关闭搜索 / mega menu */}
       {searchOpen && (
         <div className="fixed inset-0 z-40" onClick={() => setSearchOpen(false)} aria-hidden="true" />
+      )}
+      {openMenu && (
+        <div className="fixed inset-0 z-40" onClick={() => setOpenMenu('')} aria-hidden="true" />
       )}
     </>
   );
