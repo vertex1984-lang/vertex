@@ -30,7 +30,7 @@ const PILLARS = [
 
 export default function MaterialGuide() {
   return (
-    <section className="bg-cream py-16 lg:py-24">
+    <section className="bg-off-white py-16 lg:py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-10 text-center">
         <Reveal>
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">

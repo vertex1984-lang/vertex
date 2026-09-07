@@ -180,8 +180,12 @@ export default function V2Header() {
   return (
     <>
       <div className="fixed top-0 z-50 w-full" onMouseLeave={() => setOpenMenu('')}>
-        {/* Announcement Bar */}
-        <div className="bg-brand text-cream text-center text-xs font-medium tracking-wide py-2 px-4">
+        {/* Announcement Bar：向下滚动超过阈值后收起（桌面/移动一致），回到顶部附近再展开 */}
+        <div
+          className={`bg-brand text-cream text-center text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
+            scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
+          }`}
+        >
           Free Shipping on Orders Over $49 | 30-Day Easy Returns
         </div>
 

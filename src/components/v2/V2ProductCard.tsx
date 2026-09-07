@@ -94,13 +94,16 @@ export default function V2ProductCard({ product, badge }: V2ProductCardProps) {
         )}
       </div>
       <div className="pt-3.5">
-        <p className="text-[11px] font-semibold uppercase tracking-wider text-charcoal-light mb-1">
+        {/* 类目标签/标题/价格沿用 v1 classic ProductCard 的样式与颜色 */}
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
           {productCategoryTag(product)}
         </p>
-        <h3 className="text-sm font-semibold text-charcoal leading-snug line-clamp-2 transition-colors group-hover:text-brand">
+        <h3 className="relative text-sm sm:text-base font-medium text-[#333] leading-snug line-clamp-2">
           {shortTitle(product.title)}
+          {/* 标题下划线 hover 渐入（v1 同款） */}
+          <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
         </h3>
-        <p className="mt-1 text-sm text-charcoal-light">
+        <p className="mt-1 text-base sm:text-lg font-semibold text-[#8B5A2B]">
           {formatPrice(displayPrice, displayCurrency)}
         </p>
       </div>

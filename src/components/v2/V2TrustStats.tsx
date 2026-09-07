@@ -46,8 +46,8 @@ export default function V2TrustStats() {
             </div>
           </div>
 
-          {/* 右图：三项数据（移动端高度为左图的 2/3） */}
-          <div className="relative aspect-[3/2] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
+          {/* 右图：三项数据（移动端 15:13，高度较原 3:2 增加 30%） */}
+          <div className="relative aspect-[15/13] lg:aspect-auto lg:h-[38vw] lg:max-h-[85vh] overflow-hidden">
             <img
               src={resolveUrl(RIGHT_IMAGE.src)}
               alt={RIGHT_IMAGE.alt}

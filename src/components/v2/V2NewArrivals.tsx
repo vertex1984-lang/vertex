@@ -59,7 +59,7 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
   };
 
   return (
-    <section className="bg-cream py-16 lg:py-24">
+    <section className="bg-off-white py-16 lg:py-24">
       <Reveal>
         <div className="lg:flex lg:items-stretch">
           {/* 左侧介绍栏：移动端在上，桌面端固定宽左栏（宽度 600px，文字限宽留白，与产品卡图片顶部对齐） */}

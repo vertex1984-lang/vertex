@@ -49,6 +49,9 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 - 手工精简表 `src/data/short-titles.ts`（≤100 字符、去 "Makimoo"、保留件数/关键属性/尺寸/颜色）优先。
 - 无手工条目的新产品由 `products.ts` 的 `autoShortenTitle()` 自动精简（去品牌词，>100 字符在逗号/空格处截断）。
+- **按二级类目标题化**（用户确认的新方向，逐个类目推进）：标题只写属性，不写产品类名，标点一律英文。已完成：**Rocking Chair** = `材质/图案, Tufted, with Ties - 95x45cm, 颜色`（统一标注 95x45cm，不写 Set/Pack 件数）；**High-Back Medium** = `Outdoor Cushions, 尺寸 - 颜色/图案`（95 款写 95 x 45cm，90 款写 90 x 45cm，颜色/图案按素材库实际描述区分，如 Blue Monet Garden / Red Green Geometric / Khaki）；**High-Back Large** = 同格式（110 x 55cm，圆背款实际标注 110 x 53cm；同一颜色图案同时有 2 件装和 4 件装的，末尾加 `, Set of 2/4` 区分）；**Seat Pads** = `Seat Cushions, Tufted, 尺寸 - 颜色/图案`（43 款写 43 x 43cm，圆形写 47cm Round，18.5 英寸款写 47 x 47cm；4 个藤椅垫非 Tufted 工艺，标题不带 Tufted）；**Pillows/Basic** = `Pillow Inserts, 尺寸, Soft & Durable White`（全部白色枕芯；两个 45 x 45cm 同款用 Throw Pillow Inserts / Pillow Inserts 区分）；**Pillows/Quilted** = `Pillow Inserts, 尺寸, Premium Quality White`；**Pillows/Embossed** = `Pillowcases, 尺寸, Premium Quality, 颜色`（11 个枕套/枕罩按此格式；3 个 b0gd* 是填充睡枕而非枕套，写 `Bed Pillows, 尺寸, Premium Quality, White`）；**Towels/Bath Towels**（仅白底+条纹款）= `Luxury Cotton Bath Towels, Premium Quality, 颜色`（bath-towels 共 8 个，只有 1688-1044064113195 系列 3 个是白底条纹款；两个 Grey 条纹款尺寸不同，末尾加 `, 80 x 160cm` / `, 70 x 140cm` 区分；其余 5 个纯色款未标题化，等用户给格式）；**Towels/Beach** = `Thick Cotton Beach Towels, 颜色`（4 个全是双色条纹款，颜色统一写 X and White：Red / Grey / Yellow / Blue and White）；**Towels/Hand & Face** = `Cotton Hand Towels Hotel Spa Style, 颜色`（2 个：White / Grey，其中 White 款原标题是 Face Towels，按用户格式统一写 Hand Towels）；**Mats 全部四个子类目**（kitchen 5 / bath-mats 6 / door 1 / area-rugs 2，共 14 个）= `材质+样式+功能`，每条 ≤10 个单词，逐个按素材库标题+首图拟写；同款区分：两个 Beige 厨房垫用 Vintage Tile / Solid Cuttable 区分，三个白色棉浴室垫用 Embossed Footprint / Jacquard Stone Pattern / Plain Extra Thick 区分，成对的椭圆垫和圆地毯末尾加颜色（Off White / Brown、Camel / White）；**Others**（15 个）= 逐条 ≤10 单词：12 个旅行颈枕分三组写 `Memory Foam Travel Neck Pillow with Storage Bag, 颜色` / `Adjustable Memory Foam Travel Neck Pillow, 颜色` / `Inflatable Velvet Travel Neck Pillow with Carry Bag, 颜色`（各 Black/Grey/Blue/Pink），另 3 个单品：Wicker Bicycle Basket / Hanging Cauldron Oil Burner / Greek Pepper Mill。
+
+注意：产品原始数据有两处来源——`products.ts` 的 BASE_PRODUCTS 和 `products-materials.ts` 的 MATERIALS_PRODUCTS，枚举类目成员时两个文件都要解析（travel/home fragrance→Others 的归并只影响 BASE_PRODUCTS）。
 
 ## 展示规则
 
@@ -108,6 +111,8 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - **站内链接一律走 `v2url()`**（`src/lib/v2paths.ts`）：自动加 `/v2` 前缀再交给 `resolveUrl` 处理 file:// 兼容；图片等静态资源用 `resolveUrl()`。
 - **颜色只用 Tailwind token**（`brand` / `cream` / `off-white` / `charcoal` / `warm-gray`），不写死 hex。例外：从 (classic) 复用/沿用的组件与内容（如政策页复用 `src/components/Policy.tsx`，正文沿用旧版样式）保持原样。
 - 新组件放 `src/components/v2/`，页面放 `src/app/(v2)/v2/`；fixed 透明 Header 要求每个页面第一屏能衬住（首页/ about 大图页头，内页 `V2PageHeader` 的 bg-brand + pt-32）。
+- V2Header 顶部促销条（Announcement Bar）向下滚动超过阈值后自动收起（桌面/移动一致），回到顶部附近再展开，由 `scrolled` 滞回阈值（60/30px）控制。
+- V2 产品列表页（`v2/products/page.tsx`）展示样式回归 v1：classic `ProductCard` 白卡 + Collections/Material 左侧筛选栏 + 二级分类分区视图 + Load More；版心是 V2 全宽容器（px-6 / lg:px-10，无 1400px 边框盒），列数不变，产品卡随页面宽度等比增大。产品卡与 QuickViewModal 通过可选 `href`/`detailHref` prop 覆盖详情链接，保持 /v2 前缀，classic 调用方不受影响。
 - client 页面的 metadata 由同目录 route `layout.tsx` 提供（见 `v2/cart/layout.tsx`、`v2/products/layout.tsx`）。
 
 ### 切换流程（验收后执行）

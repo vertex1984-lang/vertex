@@ -12,9 +12,11 @@ interface QuickViewModalProps {
   product: MakimooProduct;
   open: boolean;
   onClose: () => void;
+  /** 覆盖「查看详情」链接（v2 页面传入带 /v2 前缀的链接）；缺省走 classic 路径 */
+  detailHref?: string;
 }
 
-export default function QuickViewModal({ product, open, onClose }: QuickViewModalProps) {
+export default function QuickViewModal({ product, open, onClose, detailHref }: QuickViewModalProps) {
   const { toast } = useToast();
   const [adding, setAdding] = useState(false);
 
@@ -130,7 +132,7 @@ export default function QuickViewModal({ product, open, onClose }: QuickViewModa
                 </button>
               )}
               <a
-                href={resolveUrl(`/products/${product.handle}/`)}
+                href={detailHref ?? resolveUrl(`/products/${product.handle}/`)}
                 className="w-full text-center px-5 py-3 rounded-full text-sm font-semibold border-2 transition hover:bg-[#E8E2DA]"
                 style={{ borderColor: '#8B5A2B', color: '#8B5A2B' }}
               >

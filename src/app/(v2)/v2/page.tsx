@@ -5,7 +5,7 @@ import V2BrandBanner from '@/components/v2/V2BrandBanner';
 import V2NewArrivals from '@/components/v2/V2NewArrivals';
 import V2TrustStats from '@/components/v2/V2TrustStats';
 import V2FeaturedStrip from '@/components/v2/V2FeaturedStrip';
-import MaterialGuide from '@/components/v2/MaterialGuide';
+import V2FeaturedProducts from '@/components/v2/V2FeaturedProducts';
 import PressBar from '@/components/v2/PressBar';
 import V2Newsletter from '@/components/v2/V2Newsletter';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
@@ -38,14 +38,14 @@ const featuredProducts = FEATURED_ASINS.map((asin) => {
   return { ...product, featuredImage } as MakimooProduct;
 }).filter(Boolean) as MakimooProduct[];
 
-// Featured 横向条共展示 15 个：FEATURED_ASINS 优先，不足部分用 Best Sellers 筛选逻辑
-//（有 Shopify 数据且在售、按标题去重）补足，且不与 Featured 重复
+// Best Sellers 横向条：Best Sellers 筛选逻辑（有 Shopify 数据且在售、按标题去重）取 15 个，
+// 排除 Featured Products 区已展示的 ASIN，避免相邻区块重复
 const titleKey = (title: string) =>
   title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
 
 const featuredIds = new Set(featuredProducts.map((p) => p.id));
 const seenTitles = new Set(featuredProducts.map((p) => titleKey(p.title)));
-const featuredFillers = enrichProductsWithShopifyData(PRODUCTS_DATA)
+const stripProducts = enrichProductsWithShopifyData(PRODUCTS_DATA)
   .filter((p) => p.hasShopifyData && p.shopifyAvailable)
   .filter((p) => !featuredIds.has(p.id))
   .filter((p) => {
@@ -54,9 +54,7 @@ const featuredFillers = enrichProductsWithShopifyData(PRODUCTS_DATA)
     seenTitles.add(key);
     return true;
   })
-  .slice(0, Math.max(0, 15 - featuredProducts.length));
-
-const stripProducts = [...enrichProductsWithShopifyData(featuredProducts), ...featuredFillers].slice(0, 15);
+  .slice(0, 15);
 
 // New Arrivals：展示用的新到产品（暂选 B0F/B0G 批次新品 ASIN，与 Featured 不重复）
 const NEW_ARRIVAL_ASINS = [
@@ -79,14 +77,12 @@ export default function V2HomePage() {
     <>
       <V2Hero />
       <V2CategoryGrid />
+      <V2FeaturedProducts products={enrichProductsWithShopifyData(featuredProducts)} />
+      {/* banner 位于 Featured Products 与 Best Sellers 之间；下方保持与 Best Sellers 的间距 */}
+      <V2BrandBanner />
       <V2FeaturedStrip products={stripProducts} />
-      {/* banner 位于 Featured 与 New Arrivals 之间；下方保持与 New Arrivals 的间距 */}
-      <div className="mb-10 lg:mb-16">
-        <V2BrandBanner />
-      </div>
-      <V2NewArrivals products={enrichProductsWithShopifyData(newArrivalProducts)} />
       <V2TrustStats />
-      <MaterialGuide />
+      <V2NewArrivals products={enrichProductsWithShopifyData(newArrivalProducts)} />
       <PressBar />
       <V2Newsletter />
     </>

@@ -13,6 +13,8 @@ interface ProductCardProps {
   product: MakimooProduct;
   /** featured: 首页 Featured 区块专用，保留旧的固定高度+渐变底图区样式 */
   variant?: 'default' | 'featured';
+  /** 覆盖详情页链接（v2 页面传入带 /v2 前缀的链接）；缺省走 classic 路径 */
+  href?: string;
 }
 
 /** 从标题提取件数："Set of 4" / "4 Pack" / "2-Pack" / "Pack of 2" → 4/4/2/2 */
@@ -23,10 +25,11 @@ function getPackCount(title: string): number | null {
   return n > 1 ? n : null;
 }
 
-export default function ProductCard({ product, variant = 'default' }: ProductCardProps) {
+export default function ProductCard({ product, variant = 'default', href }: ProductCardProps) {
   const { toast } = useToast();
   const [quickViewOpen, setQuickViewOpen] = useState(false);
   const [fav, setFav] = useState(false);
+  const detailHref = href ?? resolveUrl(`/products/${product.handle}/`);
 
   // 收藏态在 mount 后从 localStorage 读，并监听全局收藏事件同步
   useEffect(() => {
@@ -64,7 +67,7 @@ export default function ProductCard({ product, variant = 'default' }: ProductCar
   return (
     <>
       <a
-        href={resolveUrl(`/products/${product.handle}/`)}
+        href={detailHref}
         className="group h-full flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       >
         <div className={variant === 'featured'
@@ -148,7 +151,7 @@ export default function ProductCard({ product, variant = 'default' }: ProductCar
           </div>
         </div>
       </a>
-      <QuickViewModal product={product} open={quickViewOpen} onClose={() => setQuickViewOpen(false)} />
+      <QuickViewModal product={product} open={quickViewOpen} onClose={() => setQuickViewOpen(false)} detailHref={detailHref} />
     </>
   );
 }

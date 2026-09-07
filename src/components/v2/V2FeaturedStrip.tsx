@@ -11,11 +11,12 @@ interface V2FeaturedStripProps {
 }
 
 /**
- * V2 首页 Featured Products 区（与 New Arrivals 同构）
+ * V2 首页 Best Sellers 区（与 New Arrivals 同构）
  * 左侧固定介绍栏（600px：eyebrow + 标题 + 介绍文案，文字限宽 380px、多出宽度留白），
  * 右侧横向滚动产品卡（V2ProductCard，桌面约 25vw/440px）。
  * 桌面端左右翻页箭头 + 鼠标按住拖拽（拖拽超 5px 抑制误触点击），移动端原生触摸滑动。
- * 数据由页面组装：FEATURED_ASINS 优先，不足 15 用 Best Sellers 逻辑补足。
+ * 数据由页面组装：按 Best Sellers 逻辑筛选（有 Shopify 数据且在售、按标题去重），
+ * 不含 Featured Products 区已展示的 ASIN。
  */
 export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -60,20 +61,20 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   };
 
   return (
-    <section className="bg-cream pt-6 lg:pt-12 pb-16 lg:pb-24">
+    <section className="bg-off-white pt-16 lg:pt-24 pb-16 lg:pb-24">
       <Reveal>
         <div className="lg:flex lg:items-stretch">
           {/* 左侧介绍栏：移动端在上，桌面端固定宽左栏（宽度 600px，文字限宽留白，与产品卡图片顶部对齐） */}
           <div className="px-6 lg:pl-28 lg:pr-6 mb-8 lg:mb-0 lg:w-[600px] lg:flex-shrink-0 lg:flex lg:flex-col">
             <div className="lg:max-w-[380px]">
               <p className="text-sm lg:text-base font-semibold tracking-[0.25em] uppercase text-brand mb-4">
-                Hand-Picked
+                Customer Favorites
               </p>
               <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal leading-tight mb-5">
-                Featured Products
+                Best Sellers
               </h2>
               <p className="text-base lg:text-lg text-charcoal-light leading-relaxed">
-                Our most-loved pieces, hand-picked for everyday comfort.
+                Tried, tested, and reordered — the pieces our customers reach for again and again.
               </p>
             </div>
           </div>
@@ -96,7 +97,7 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
                   key={product.id}
                   className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
                 >
-                  <V2ProductCard product={product} badge="Featured" />
+                  <V2ProductCard product={product} badge="Best Seller" />
                 </div>
               ))}
             </div>
