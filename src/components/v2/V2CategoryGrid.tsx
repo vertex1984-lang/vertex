@@ -21,10 +21,12 @@ export default function V2CategoryGrid() {
   const [dragging, setDragging] = useState(false);
 
   // 鼠标拖拽滚动（移动端原生触摸滑动，无需处理）
+  // pointer capture：拖出轨道区域也不中断；拖拽时禁用 scroll-snap，避免吸附与拖拽打架造成顿挫
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType !== 'mouse') return;
     const track = trackRef.current;
     if (!track) return;
+    track.setPointerCapture(e.pointerId);
     dragState.current = { startX: e.clientX, scrollLeft: track.scrollLeft, dragging: true, moved: false };
     setDragging(true);
   };
@@ -75,8 +77,8 @@ export default function V2CategoryGrid() {
             onPointerUp={endDrag}
             onPointerLeave={endDrag}
             onClickCapture={onClickCapture}
-            className={`flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory pr-6 pb-2 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
-              dragging ? 'cursor-grabbing' : 'cursor-grab'
+            className={`flex gap-3 lg:gap-4 overflow-x-auto pb-2 pr-6 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
+              dragging ? 'cursor-grabbing snap-none' : 'snap-x snap-mandatory cursor-grab'
             }`}
           >
           {CATEGORIES.map((cat) => (
