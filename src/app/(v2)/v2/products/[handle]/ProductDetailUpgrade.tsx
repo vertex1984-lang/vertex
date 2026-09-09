@@ -233,7 +233,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [] }: Pro
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
     specs?.material ? { icon: 'swatch', label: 'Material', value: specs.material } : null,
-    { icon: 'sparkle', label: 'Care', value: 'Vacuum & spot clean' },
+    // Care 卡已按领导反馈移除（护理信息保留在底部 Specifications 表中）
   ].filter(Boolean) as { icon: string; label: string; value: string }[];
 
   const specRows: { label: string; value: string; muted?: boolean }[] = [
