@@ -26,6 +26,8 @@ export interface MakimooProduct {
   featuredImage?: string;
   // 与素材图对齐的白底标记（true = 白底图，展示时加内边距缩小产品占比）
   imageWhiteBg?: boolean[];
+  // 详情页附图（可选；来自素材条目 detailImages，有才渲染，无则不显示）
+  detailImages?: string[];
   // 真实评价数据（可选；用户整理数据时填入即自动显示，无则不渲染评分区）
   rating?: number;
   reviewCount?: number;
@@ -5951,6 +5953,8 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
       : product.descriptionHtml,
     images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
     imageWhiteBg: entry.whiteBg,
+    // 详情附图（可选；有数据的条目在 PDP 渲染套图叙事）
+    ...(entry.detailImages ? { detailImages: entry.detailImages } : {}),
   };
 }
 
