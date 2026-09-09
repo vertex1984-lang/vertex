@@ -118,8 +118,14 @@ function loadMaterialsSkus() {
 function buildMap(products) {
   const map = {};
   const materialsSkus = loadMaterialsSkus();
+  // SKU → ASIN 反查表（素材库 sku 字段），用于无 tag 产品的兜底匹配
+  const materialsSkuToAsin = {};
+  for (const [asin, sku] of Object.entries(materialsSkus)) {
+    if (!materialsSkuToAsin[sku]) materialsSkuToAsin[sku] = asin;
+  }
   let dupCount = 0;
   let skuMismatch = 0;
+  let skuFallbackCount = 0;
 
   for (const product of products) {
     const variant = product.variants.edges[0]?.node;
@@ -128,15 +134,24 @@ function buildMap(products) {
       continue;
     }
 
-    // ASIN 优先取 tags（新上传产品）；无 tag 时，若 SKU 本身是 ASIN 格式（4-5 月导入的老产品）也接入，
-    // 但老记录只作兜底：一旦同 ASIN 出现带 tag 的新记录，新记录永远优先
+    // ASIN 优先取 tags（新上传产品）；无 tag 时，若 SKU 本身是 ASIN 格式（4-5 月导入的老产品）也接入；
+    // 再无 tag 且 SKU 非 ASIN 时，按 SKU 反查素材库兜底（素材库是 SKU 权威来源，如 BEDSET4 床品件套）
+    // 但兜底记录只作兜底：一旦同 ASIN 出现带 tag 的新记录，新记录永远优先
     const asinTag = (product.tags || []).map(t => t.trim()).find(t => ASIN_RE.test(t));
-    const skuIsAsin = variant.sku && ASIN_RE.test(variant.sku.trim());
-    if (!asinTag && !skuIsAsin) {
+    const shopSkuRaw = (variant.sku || '').trim();
+    const skuIsAsin = shopSkuRaw && ASIN_RE.test(shopSkuRaw);
+    const skuFallbackAsin = !asinTag && !skuIsAsin && shopSkuRaw
+      ? (materialsSkuToAsin[shopSkuRaw.toLowerCase()] || null)
+      : null;
+    if (!asinTag && !skuIsAsin && !skuFallbackAsin) {
       console.warn(`Skipping product with no ASIN (tag/sku): ${product.title} (sku=${variant.sku || '-'})`);
       continue;
     }
-    const asinLower = (asinTag || variant.sku.trim()).toLowerCase();
+    if (skuFallbackAsin) {
+      skuFallbackCount++;
+      console.log(`SKU fallback: ${shopSkuRaw} → ${skuFallbackAsin} (${product.title.slice(0, 50)})`);
+    }
+    const asinLower = (asinTag || (skuIsAsin ? shopSkuRaw : skuFallbackAsin)).toLowerCase();
     if (EXCLUDED_ASINS.has(asinLower)) continue;
 
     if (map[asinLower]) {
@@ -183,6 +198,7 @@ function buildMap(products) {
   }
 
   if (dupCount) console.log(`Resolved ${dupCount} duplicate ASIN(s) (newer record wins)`);
+  if (skuFallbackCount) console.log(`SKU fallback matched ${skuFallbackCount} product(s) via materials SKU`);
   if (skuMismatch) console.warn(`WARNING: ${skuMismatch} product(s) with SKU mismatch vs materials library`);
   return map;
 }

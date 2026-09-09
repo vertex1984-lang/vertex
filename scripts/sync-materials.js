@@ -3,14 +3,13 @@
  *
  * 功能：
  *  1. 拉取 groupId=18 (makimoohome) 的全部产品
- *  2. 图片规则：图片池 = images ∪ imageTypes 的 key，按优先级定展示顺序（第 1 张为主图）：
- *     场景展示图 > 无文字场景图1 > 白底主图 > 用户上传图（非白底在前、白底在后）> 卖点图 > 细节特写图 > 尺寸图 > 营销主图
+ *  2. 图片规则：图片池 = 素材库"初审定版图"（images 数组，顺序即展示顺序，与素材库详情页一致）
  *  3. 下载图片 → sharp 转 WebP → public/images/products/{ASIN}/{n}.webp（文件编号按下载顺序，展示顺序由 map 定义）
  *  4. 生成 src/data/materials-map.ts（全部素材产品的标题/五点/图片覆盖表，key 为小写 ASIN 或 1688-xxx 标识）
  *  5. 生成 src/data/products-materials.ts（站点上没有的新产品完整条目，自动分类、白底检测）
  *
  * 用法： node scripts/sync-materials.js <密码>   或   MATERIALS_PASSWORD=xxx node scripts/sync-materials.js
- * 幂等：图片已存在且数量一致时跳过下载；--force 强制全部重下。
+ * 幂等：有 scripts/materials-manifest.json 时按 URL 顺序逐产品对比，顺序/内容有变才重下（打印 [图片更新]）；无 manifest 时按数量跳过。--force 强制全部重下；--keep-order 保持素材库原始图片顺序（不做优先级重排）。
  */
 
 const fs = require('fs');
@@ -26,6 +25,17 @@ const OUT_NEW_TS = path.join(ROOT, 'src/data/products-materials.ts');
 const IMG_BASE = path.join(ROOT, 'public/images/products');
 const CONCURRENCY = 6;
 const FORCE = process.argv.includes('--force');
+// 保持素材库原始顺序，不做展示优先级重排（素材库上已排好序时使用）
+const KEEP_ORDER = process.argv.includes('--keep-order');
+
+// 首图置顶：含这些 URL 的产品把该"铺床场景图"排为第一展示图（用户指定样式，参照 1688-969627065032-C40），其余图顺位后移；文件编号不变
+const PIN_FIRST_URLS = new Set([
+  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787753115875-289349635.png', // 深灰族 C31-C35
+  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787755009676-389264703.png', // 蓝族 C21-C25
+  'https://img1.seeany.com/20260826/6c1a7df1-7b34-4860-b1d9-9e69202e75d8.png', // 银灰族 C36-C40
+  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787752452401-505148488.png', // 奶黄族 C26-C30
+  'https://img1.seeany.com/20260825/f4c9f0f2-06fb-4366-bfde-a89b41acd6aa.png', // 浅紫族 C41-C43
+]);
 
 const password = process.env.MATERIALS_PASSWORD || process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
 if (!password) {
@@ -35,11 +45,17 @@ if (!password) {
 
 const AMAZON_HOST = { US: 'www.amazon.com', DE: 'www.amazon.de', UK: 'www.amazon.co.uk' };
 
+// 用户要求全站隐藏的产品（素材库保留，不生成站点条目；小写标识）
+const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2']);
+
 function classify(title) {
   const t = (title || '').toLowerCase();
   // Towels/Mats 优先：浴巾/地垫标题常带 "travel"(便携场景) 或 "dining"(kitchen dining)，先拦截
   if (/bath ?mats?|bath rug|kitchen (mat|rug)|door mat|entryway|floor mat|area rug|diatom/.test(t)) return 'Mats';
   if (/towels?\b/.test(t)) return 'Towels';
+  // Bedding/Blanket 先于 Pillows：床品件套标题常带 pillowcases，毯子标题常带 couch/sofa
+  if (/duvet|bedding|bed linen|quilt cover|comforter|fitted sheet|bed sheet/.test(t)) return 'Bedding';
+  if (/blanket/.test(t)) return 'Blankets';
   // Travel 已并入 Others（全站统一 6 类）
   if (/travel|neck pillow/.test(t)) return 'Others';
   if (/pillowcase|pillow case|cushion cover|pillow cover|bed pillow|pillow insert|cushion filler|cushion pad|throw pillow insert|quilted.*(insert|pillow)/.test(t)) return 'Pillows';
@@ -127,7 +143,12 @@ async function mapLimit(items, limit, fn) {
   const siteAsins = new Set([...productsSrc.matchAll(/"asin": "([A-Za-z0-9-]+)"/g)].map((m) => m[1]));
 
   // 3. 每个产品整理图片清单并下载转 WebP
-  // 图片池 = images（用户上传）∪ imageTypes 的 key（标注类型的图，含生成的场景图）
+  // 图片池 = 素材库"初审定版图"（images 数组，素材库详情页展示的就是它；imageTypes 的标注图不入站）
+  // manifest 记录每个产品的图片 URL 顺序：数量没变但顺序/内容有更新的产品也能被检出并重下
+  const MANIFEST_PATH = path.join(__dirname, 'materials-manifest.json');
+  const manifestExists = fs.existsSync(MANIFEST_PATH);
+  let manifest = {};
+  if (manifestExists) { try { manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch { /* 损坏则视为无 */ } }
   const itemTypes = {}; // asin -> { url: type }
   const POOLS = {}; // asin -> 下载顺序的原始 URL 数组
   let downloaded = 0, skipped = 0, failed = 0;
@@ -137,7 +158,7 @@ async function mapLimit(items, limit, fn) {
     itemTypes[asin] = item.imageTypes || {};
     const ordered = [];
     const seen = new Set();
-    for (const u of [...(item.images || []), ...(item.whiteBgImages || []), ...Object.keys(item.imageTypes || {})]) {
+    for (const u of [...(item.images || [])]) {
       if (u && !seen.has(u)) { seen.add(u); ordered.push(u); }
     }
     POOLS[asin] = ordered;
@@ -146,12 +167,15 @@ async function mapLimit(items, limit, fn) {
     const dir = path.join(IMG_BASE, asin);
     const localPaths = ordered.map((_, i) => `/images/products/${asin}/${i + 1}.webp`);
     const existing = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.webp')) : [];
-    if (!FORCE && existing.length === ordered.length) {
+    const prevUrls = manifest[asin];
+    const sameOrder = prevUrls && prevUrls.length === ordered.length && prevUrls.every((u, i) => u === ordered[i]);
+    if (!FORCE && existing.length === ordered.length && (sameOrder || !manifestExists)) {
       skipped += ordered.length;
       productImages[asin] = localPaths;
       return;
     }
-    // 数量不一致或 force：清掉旧图重下
+    // 数量/顺序/内容不一致或 force：清掉旧图重下
+    if (!FORCE && existing.length === ordered.length) console.log(`  [图片更新] ${asin}（数量不变，顺序/内容有变化）`);
     fs.mkdirSync(dir, { recursive: true });
     for (const f of existing) fs.unlinkSync(path.join(dir, f));
     for (let i = 0; i < ordered.length; i++) {
@@ -167,6 +191,7 @@ async function mapLimit(items, limit, fn) {
     // 只保留实际下载成功的图
     productImages[asin] = localPaths.filter((_, i) => fs.existsSync(path.join(dir, `${i + 1}.webp`)));
   });
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(POOLS, null, 1));
   console.log(`图片处理完成: 下载 ${downloaded}, 跳过 ${skipped}, 失败 ${failed}`);
 
   // 4. 生成 materials-map.ts（覆盖全部素材 ASIN），并对每张图做白底检测
@@ -181,14 +206,22 @@ async function mapLimit(items, limit, fn) {
       const abs = path.join(ROOT, 'public', localPath.replace(/\//g, path.sep));
       whiteBg.push(await detectWhiteBg(abs));
     }
-    // 按优先级重排（文件编号不变，只调整 map 中的展示顺序）
+    // 按优先级重排（文件编号不变，只调整 map 中的展示顺序）；--keep-order 时保持素材库原始顺序
     const types = itemTypes[i.asin] || {};
     const rankOf = (idx) => {
       const type = types[POOLS[i.asin][idx]];
       if (type !== undefined) return TYPE_RANK[type] !== undefined ? TYPE_RANK[type] : 9;
       return whiteBg[idx] ? 4 : 3; // 无类型标注的用户上传图：场景（非白底）在前，白底在后
     };
-    const order = localPaths.map((_, idx) => idx).sort((a, b) => rankOf(a) - rankOf(b) || a - b);
+    const order = KEEP_ORDER
+      ? localPaths.map((_, idx) => idx)
+      : localPaths.map((_, idx) => idx).sort((a, b) => rankOf(a) - rankOf(b) || a - b);
+    // 首图置顶：命中的铺床场景图排到最前，其余保持相对顺序
+    const pinIdx = order.find((idx) => PIN_FIRST_URLS.has(POOLS[i.asin][idx]));
+    if (pinIdx !== undefined && order[0] !== pinIdx) {
+      order.splice(order.indexOf(pinIdx), 1);
+      order.unshift(pinIdx);
+    }
     const finalImages = order.map((idx) => localPaths[idx]);
     const finalWhiteBg = order.map((idx) => whiteBg[idx]);
     productImages[i.asin] = finalImages;
@@ -238,8 +271,8 @@ ${siteOnlyEntries}
 `);
   console.log(`已生成 ${path.relative(ROOT, OUT_MAP_TS)} (${items.length} 条素材 + ${siteOnlyRows.length} 条老产品标记)`);
 
-  // 5. 生成 products-materials.ts（站点没有的新 ASIN）
-  const newItems = items.filter((i) => !siteAsins.has(i.asin) && (productImages[i.asin] || []).length > 0);
+  // 5. 生成 products-materials.ts（站点没有的新 ASIN；HIDDEN_ASINS 用户要求隐藏的不生成）
+  const newItems = items.filter((i) => !HIDDEN_ASINS.has(i.asin.toLowerCase()) && !siteAsins.has(i.asin) && (productImages[i.asin] || []).length > 0);
   const entries = newItems.map((i) => {
     const title = i.listingTitle || i.productTitleCn || i.asin;
     const bullets = (i.listingBullets || '').trim();

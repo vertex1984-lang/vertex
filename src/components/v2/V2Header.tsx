@@ -9,14 +9,15 @@ import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { getSubcategoriesOf } from '@/data/subcategories';
 
-// V2 导航：Bath 沿用现有分类 query 参数 towels；cat 非空的项带 mega menu（二级类目 + 示例图卡）
+// V2 导航：cat 非空的项带 mega menu（二级类目 + 示例图卡）
 const navLinks = [
   { label: 'Shop All', href: '/products', cat: '' },
-  { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
+  { label: 'Bedding', href: '/products?cat=bedding', cat: 'bedding' },
   { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
-  { label: 'Bath', href: '/products?cat=towels', cat: 'towels' },
+  { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
+  { label: 'Towels', href: '/products?cat=towels', cat: 'towels' },
   { label: 'Mats', href: '/products?cat=mats', cat: 'mats' },
-  { label: 'Others', href: '/products?cat=others', cat: 'others' },
+  { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
 ];
 
 // Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图）
@@ -27,16 +28,24 @@ interface MenuCard {
   href: string;
 }
 const MEGA_CARDS: Record<string, MenuCard[]> = {
+  bedding: [
+    { image: '/images/collections/bedding.webp', caption: 'Soft, breathable bedding sets.', linkLabel: 'Shop Bedding', href: '/products?cat=bedding' },
+    { image: '/images/featured/bedset4-beige-full.webp', caption: 'All-season comfort, easy care.', linkLabel: 'Shop Duvet Sets', href: '/products?cat=bedding' },
+  ],
+  blankets: [
+    { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
+    { image: '/images/products/1688-969627065032-C39/1.webp', caption: 'Faux rabbit fur softness.', linkLabel: 'Shop Faux Fur', href: '/products?cat=blankets' },
+  ],
   cushions: [
     { image: '/images/collections/cushions.webp', caption: 'Comfort for every seat.', linkLabel: 'Shop Cushions', href: '/products?cat=cushions' },
-    { image: '/images/featured/b0cbt7r7nn.webp', caption: 'A best seller for a reason.', linkLabel: 'Shop Rocking Chair', href: '/products?cat=cushions&sub=rocking' },
+    { image: '/images/products/B0CBT7R7NN/1.webp', caption: 'A best seller for a reason.', linkLabel: 'Shop Rocking Chair', href: '/products?cat=cushions&sub=rocking' },
   ],
   pillows: [
     { image: '/images/collections/pillows.webp', caption: 'Plush fillings, premium covers.', linkLabel: 'Shop Pillows', href: '/products?cat=pillows' },
     { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Pillow Inserts', href: '/products?cat=pillows&sub=basic' },
   ],
   towels: [
-    { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Bath', href: '/products?cat=towels' },
+    { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Towels', href: '/products?cat=towels' },
     { image: '/images/products/1688-952595759182/1.webp', caption: 'Oversized and quick-drying.', linkLabel: 'Shop Beach Towels', href: '/products?cat=towels&sub=beach' },
   ],
   mats: [
@@ -166,10 +175,10 @@ export default function V2Header() {
     window.location.href = v2url(`/products/?q=${encodeURIComponent(q)}`);
   };
 
-  // 只有首页（/v2/）和 About（/v2/about/）有大图页头，保持「透明 → 滚动实底」；
+  // 只有首页（/）和 About（/about/）有大图页头，保持「透明 → 滚动实底」；
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清
   const normalizedPath = (pathname || '').replace(/\/+$/, '');
-  const transparentStart = normalizedPath === '/v2' || normalizedPath === '/v2/about';
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about';
   // mega menu 展开时强制实底，保证导航文字在面板上可读
   const solid = scrolled || !transparentStart || openMenu !== '';
 

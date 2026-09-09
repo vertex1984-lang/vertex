@@ -8,11 +8,12 @@ import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@
 
 const navLinks = [
   { label: 'Shop All', href: '/categories' },
-  { label: 'Cushions', href: '/products?cat=cushions' },
+  { label: 'Bedding', href: '/products?cat=bedding' },
   { label: 'Pillows', href: '/products?cat=pillows' },
+  { label: 'Cushions', href: '/products?cat=cushions' },
   { label: 'Towels', href: '/products?cat=towels' },
   { label: 'Mats', href: '/products?cat=mats' },
-  { label: 'Others', href: '/products?cat=others' },
+  { label: 'Blankets', href: '/products?cat=blankets' },
   { label: 'Contact Us', href: '/contact' },
 ];
 

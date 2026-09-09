@@ -20,7 +20,7 @@ interface V2FeaturedStripProps {
  */
 export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const dragState = useRef({ startX: 0, scrollLeft: 0, dragging: false, moved: false });
+  const dragState = useRef({ startX: 0, scrollLeft: 0, dragging: false, moved: false, captured: false });
   const [dragging, setDragging] = useState(false);
 
   if (products.length === 0) return null;
@@ -32,15 +32,14 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
   };
 
   // 鼠标拖拽滚动（移动端原生触摸滑动，无需处理）
-  // pointer capture：拖出轨道区域也不中断；拖拽时禁用 scroll-snap，避免吸附与拖拽打架造成顿挫
+  // pointer capture 推迟到拖动超阈值才启用：pointerdown 就 capture 会把 click 重定向到轨道，吞掉卡片跳转
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType !== 'mouse') return;
     const track = trackRef.current;
     if (!track) return;
     // 阻止浏览器原生图片拖拽（产品卡 img 会抢走手势，导致只剩箭头可翻页）
     e.preventDefault();
-    track.setPointerCapture(e.pointerId);
-    dragState.current = { startX: e.clientX, scrollLeft: track.scrollLeft, dragging: true, moved: false };
+    dragState.current = { startX: e.clientX, scrollLeft: track.scrollLeft, dragging: true, moved: false, captured: false };
     setDragging(true);
   };
   const onPointerMove = (e: React.PointerEvent) => {
@@ -48,7 +47,14 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
     const track = trackRef.current;
     if (!state.dragging || !track) return;
     const delta = e.clientX - state.startX;
-    if (Math.abs(delta) > 5) state.moved = true;
+    if (Math.abs(delta) > 5) {
+      state.moved = true;
+      // 真正开始拖拽后才接管指针：拖出轨道区域也不中断；拖拽时禁用 scroll-snap，避免吸附与拖拽打架造成顿挫
+      if (!state.captured) {
+        track.setPointerCapture(e.pointerId);
+        state.captured = true;
+      }
+    }
     track.scrollLeft = state.scrollLeft - delta;
   };
   const endDrag = () => {

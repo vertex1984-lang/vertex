@@ -6006,24 +6006,10 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
         asinLower
       ),
     };
-    // Pillows 类目（仅限该类）：把最后一张图（基本是纯白底图）提到首图，缩略图/详情主图都用它
-    let finalProduct = categorized;
-    if (categorized.productType === 'Pillows' && categorized.images.length > 1) {
-      const moveLastToFirst = <T,>(arr: T[]): T[] => { const a = [...arr]; a.unshift(a.pop()!); return a; };
-      finalProduct = {
-        ...categorized,
-        images: moveLastToFirst(categorized.images),
-        imageWhiteBg: categorized.imageWhiteBg && categorized.imageWhiteBg.length === categorized.images.length
-          ? moveLastToFirst(categorized.imageWhiteBg)
-          : categorized.imageWhiteBg,
-      };
-    }
+    // 图片顺序完全以素材库为准（--keep-order 同步），不做类目级重排
+    const finalProduct = categorized;
     const shopifyEntry = SHOPIFY_MAP[asinLower];
-    let materialsImages = MATERIALS_MAP[asinLower]?.images;
-    // shopifyImages 与 images 保持同样的首图顺序
-    if (finalProduct !== categorized && materialsImages && materialsImages.length > 1) {
-      const a = [...materialsImages]; a.unshift(a.pop()!); materialsImages = a;
-    }
+    const materialsImages = MATERIALS_MAP[asinLower]?.images;
     if (!shopifyEntry) {
       return materialsImages
         ? { ...finalProduct, hasShopifyData: false, shopifyImages: materialsImages }

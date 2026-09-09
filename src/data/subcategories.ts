@@ -8,12 +8,14 @@ export interface CategoryDef {
   intro: string;
 }
 
-/** 顶级分类（全站统一 6 类；Holiday 暂无产品不展示） */
+/** 顶级分类（全站统一 8 类；Holiday 暂无产品不展示） */
 export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Cushions', value: 'cushions', intro: 'Tufted, water-resistant comfort for every seat — indoors and out.' },
   { label: 'Pillows', value: 'pillows', intro: 'Premium inserts and covers with plush fillings for bed & sofa.' },
   { label: 'Towels', value: 'towels', intro: 'Hotel-style cotton towels for bath, beach & beyond.' },
   { label: 'Mats', value: 'mats', intro: 'Absorbent mats & durable rugs for every room.' },
+  { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
+  { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
   { label: 'Others', value: 'others', intro: 'Travel, kitchen & extras for daily living.' },
 ];
@@ -147,7 +149,16 @@ function classifyOther(title: string): string {
  * 计算产品的二级分类 key；不属于五大类目时返回 undefined。
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
  */
+// 手工指定二级分类（用户确认）：三个连体靠背垫归 Rocking Chair
+const SUB_OVERRIDES: Record<string, string> = {
+  b0cw1tbzv3: 'rocking',
+  b0cw17pzyt: 'rocking',
+  b0cw1ldn6l: 'rocking',
+};
+
 export function classifyProduct(productType: string, title: string, asin: string): string | undefined {
+  const override = SUB_OVERRIDES[asin.toLowerCase()];
+  if (override) return override;
   switch (productType.toLowerCase()) {
     case 'cushions':
       return classifyCushion(title, asin);
