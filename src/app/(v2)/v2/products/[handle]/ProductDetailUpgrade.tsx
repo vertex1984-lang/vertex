@@ -348,8 +348,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [] }: Pro
 
   return (
     <div className="bg-off-white pb-24 lg:pb-0">
-      {/* 面包屑 */}
-      <div className="px-6 lg:px-10 pt-6">
+      {/* 面包屑（pt-32/40 避开 fixed 头部，与老版 PDP 避让高度一致） */}
+      <div className="px-6 lg:px-10 pt-32 lg:pt-40">
         <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
