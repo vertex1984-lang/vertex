@@ -28,6 +28,8 @@ export interface MakimooProduct {
   imageWhiteBg?: boolean[];
   // 详情页附图（可选；来自素材条目 detailImages，有才渲染，无则不显示）
   detailImages?: string[];
+  // 五点卖点缩写（素材库 short-bullets；详情页卖点列表优先使用，无则回退描述切分）
+  featureBullets?: string[];
   // 真实评价数据（可选；用户整理数据时填入即自动显示，无则不渲染评分区）
   rating?: number;
   reviewCount?: number;
@@ -5928,6 +5930,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
 
 import { SHOPIFY_MAP } from './shopify-map';
 import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
+import { MATERIALS_SHORT_BULLETS } from './materials-short-bullets';
 import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
 import { classifyProduct } from './subcategories';
@@ -5953,6 +5956,8 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
       : product.descriptionHtml,
     images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
     imageWhiteBg: entry.whiteBg,
+    // 五点卖点缩写（详情页卖点列表优先使用）
+    featureBullets: MATERIALS_SHORT_BULLETS[product.asin.toLowerCase()],
     // 详情附图（可选；有数据的条目在 PDP 渲染套图叙事）
     ...(entry.detailImages ? { detailImages: entry.detailImages } : {}),
   };
