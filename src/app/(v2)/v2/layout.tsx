@@ -3,6 +3,7 @@ import V2Footer from "@/components/v2/V2Footer";
 import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
 import CookieConsent from "@/components/CookieConsent";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function V2Layout({
   children,
@@ -19,6 +20,7 @@ export default function V2Layout({
       <MiniCart />
       <CookieConsent />
       <BackToTop />
+      <ChatWidget />
     </div>
   );
 }
