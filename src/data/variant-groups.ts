@@ -229,6 +229,97 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-1046667161713-c2', handle: 'set-of-2-vintage-tile-pattern-kitchen-mats-non-slip-oil-1688-1046667161713-c2', color: 'Beige Vintage Tile' },
     ],
   },
+  {
+    id: 'b0-inserts-square',
+    optionName: 'Size',
+    members: [
+    { asin: 'b0f62y3xt9', handle: 'premium-square-throw-pillow-inserts-60-x-60-cm-set-of-2-b0f62y3xt9', color: 'White', size: '60 x 60 cm' },
+    { asin: 'b0f62zy8zn', handle: 'square-throw-pillow-inserts-50-x-50-cm-set-of-2-cushion-b0f62zy8zn', color: 'White', size: '50 x 50 cm' },
+    { asin: 'b0h4v662hl', handle: 'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl', color: 'White', size: '45 x 45 cm' },
+    { asin: 'b0f62qgv32', handle: 'makimoo-square-cushion-inserts-30-x-30-cm-set-of-2-soft-b0f62qgv32', color: 'White', size: '30 x 30 cm' },
+    ],
+  },
+  {
+    id: 'b0-inserts-rect',
+    optionName: 'Size',
+    members: [
+    { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
+    { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
+    ],
+  },
+  {
+    id: 'b0-inserts-quilted',
+    optionName: 'Size',
+    members: [
+    { asin: 'b0gxwm4n7j', handle: 'makimoo-quilted-square-cushion-inserts-set-of-2-decorative-b0gxwm4n7j', color: 'White', size: '40 x 40 cm' },
+    { asin: 'b0g6lxsf4t', handle: 'makimoo-quilted-throw-pillow-inserts-40-x-40-cm-pack-of-2-b0g6lxsf4t', color: 'White', size: '40 x 40 cm' },
+    { asin: 'b0grj8m3tm', handle: 'makimoo-quilted-pillow-inserts-2-pack-decorative-cushion-b0grj8m3tm', color: 'White', size: '40 x 80 cm' },
+    ],
+  },
+  {
+    id: 'b0-bed-pillows',
+    optionName: 'Size',
+    members: [
+    { asin: 'b0gd87zbn9', handle: 'premium-embossed-microfiber-bed-pillows-2-pack-soft-fluffy-b0gd87zbn9', color: 'White', size: '50 x 70 cm' },
+    { asin: 'b0gd843wmn', handle: 'set-of-2-embossed-microfibre-bed-pillows-for-sleeping-soft-b0gd843wmn', color: 'White', size: '40 x 80 cm' },
+    { asin: 'b0gd846fs2', handle: 'set-of-2-soft-embossed-microfiber-bed-pillows-40-x-70-cm-b0gd846fs2', color: 'White', size: '40 x 70 cm' },
+    ],
+  },
+  {
+    id: 'b0-round-cushions',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0gjlpxb6f', handle: 'makimoo-water-resistant-tufted-round-seat-cushions-set-of-2-b0gjlpxb6f', color: 'Burgundy' },
+    { asin: 'b0f1ydrdtx', handle: 'set-of-2-plush-round-tufted-seat-cushions-water-resistant-b0f1ydrdtx', color: 'Navy Blue' },
+    ],
+  },
+  {
+    id: 'b0-highback-2pk',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0gjlrgvdj', handle: '2-pack-all-weather-outdoor-chair-cushions-waterproof-solid-b0gjlrgvdj', color: 'Brown', size: '45 x 10 cm' },
+    { asin: 'b0gjsttgy5', handle: 'makimoo-outdoor-chair-cushions-2-pack-waterproof-tufted-b0gjsttgy5', color: 'Forest Green', size: '45 x 10 cm' },
+    { asin: 'b0f1v8vmp4', handle: 'makimoo-2-pack-outdoor-chair-cushions-water-resistant-solid-b0f1v8vmp4', color: 'Navy Blue', size: '45 x 10 cm' },
+    { asin: 'b0cw1tbzv3', handle: 'makimoo-2-pack-chair-cushions-with-backrest-and-seat-tufted-b0cw1tbzv3', color: 'Green Damask', size: '95 x 45 cm' },
+    { asin: 'b0dsgfxldv', handle: 'makimoo-2-pack-patio-chair-cushions-with-ties-one-piece-b0dsgfxldv', color: 'Painted Petals', size: '95 x 45 cm' },
+    { asin: 'b0dsgckwxw', handle: 'set-of-2-thick-outdoor-chair-cushions-with-ties-1-piece-b0dsgckwxw', color: 'Red Floral', size: '95 x 45 cm' },
+    ],
+  },
+  {
+    id: 'b0-highback-4pk',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0bcjw18sp', handle: 'makimoo-outdoor-chair-cushions-set-of-4-thick-padded-all-b0bcjw18sp', color: 'Hummingbird Garden', size: '110 x 55 cm' },
+    { asin: 'b0bcjrtf3x', handle: 'makimoo-outdoor-chair-cushions-set-of-4-water-resistant-b0bcjrtf3x', color: 'Teal Palm Leaf', size: '110 x 55 cm' },
+    ],
+  },
+  {
+    id: 'b0-square-pads',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0gd81wt1b', handle: 'indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b', color: 'Teal Floral', size: '43 x 43 cm' },
+    { asin: 'b0gd84d8vc', handle: 'set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc', color: 'Green Batik', size: '43 x 43 cm' },
+    { asin: 'b0gd93xkhr', handle: 'makimoo-set-of-2-thick-comfortable-tufted-colorful-floral-b0gd93xkhr', color: 'Colorful Floral', size: '43 x 43 cm' },
+    { asin: 'b0gd7rr5ph', handle: 'makimoo-outdoor-chair-cushions-2-pack-thick-tufted-square-b0gd7rr5ph', color: 'Botanical Art', size: '43 x 43 cm' },
+    ],
+  },
+  {
+    id: 'b0-embossed-cases',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0gjlsdz52', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52', color: 'White', size: '40 x 80 cm' },
+    { asin: 'b0gjlp59k1', handle: 'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1', color: 'White', size: '50 x 70 cm' },
+    { asin: 'b0gjlnmx2g', handle: 'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g', color: 'Light Grey', size: '40 x 70 cm' },
+    { asin: 'b0gjlp4pr2', handle: 'makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2', color: 'Pink', size: '40 x 70 cm' },
+    { asin: 'b0gjlmc6z4', handle: 'makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4', color: 'White', size: '30 x 50 cm' },
+    { asin: 'b0gjlgxtl4', handle: 'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4', color: 'Pink', size: '40 x 80 cm' },
+    { asin: 'b0gjlgm6xg', handle: 'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg', color: 'White', size: '40 x 80 cm' },
+    { asin: 'b0gjldwt6x', handle: 'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x', color: 'Sage Green', size: '30 x 50 cm' },
+    { asin: 'b0gjldmt57', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57', color: 'Light Grey', size: '50 x 70 cm' },
+    { asin: 'b0gjlmjws1', handle: 'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1', color: 'Pink', size: '50 x 70 cm' },
+    { asin: 'b0gjlvmht7', handle: 'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7', color: 'Pink', size: '30 x 50 cm' },
+    ],
+  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();
