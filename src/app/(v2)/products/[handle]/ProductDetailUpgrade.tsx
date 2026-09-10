@@ -234,8 +234,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
-    specs?.material ? { icon: 'swatch', label: 'Material', value: specs.material } : null,
-    // Care 卡已按领导反馈移除（护理信息保留在底部 Specifications 表中）
+    // Material / Care 卡已按领导反馈移除（材料与护理信息保留在底部 Specifications 表中）
   ].filter(Boolean) as { icon: string; label: string; value: string }[];
 
   const specRows: { label: string; value: string; muted?: boolean }[] = [
@@ -575,7 +574,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               )
             )}
 
-            {/* 规格速览 chips */}
+            {/* 规格速览 chips（Material/Care 卡已按领导反馈移除，材料与护理信息保留在底部 Specifications 表） */}
+            {quickSpecs.length > 0 && (
             <div className="grid grid-cols-2 gap-2.5 mb-7">
               {quickSpecs.map((spec) => (
                 <div key={spec.label} className="flex items-start gap-2.5 rounded-xl bg-white border border-warm-gray px-3.5 py-3">
@@ -587,6 +587,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 </div>
               ))}
             </div>
+            )}
 
             {/* 数量 + 加购 */}
             {isInStock && (
