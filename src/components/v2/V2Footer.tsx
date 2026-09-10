@@ -20,8 +20,10 @@ export default function V2Footer() {
               <a href={v2url('/products')} className={footerLinkClass}>Shop All</a>
               <a href={v2url('/products?cat=cushions')} className={footerLinkClass}>Cushions</a>
               <a href={v2url('/products?cat=pillows')} className={footerLinkClass}>Pillows</a>
-              <a href={v2url('/products?cat=towels')} className={footerLinkClass}>Bath</a>
+              <a href={v2url('/products?cat=towels')} className={footerLinkClass}>Towels</a>
               <a href={v2url('/products?cat=mats')} className={footerLinkClass}>Mats</a>
+              <a href={v2url('/products?cat=bedding')} className={footerLinkClass}>Bedding</a>
+              <a href={v2url('/products?cat=blankets')} className={footerLinkClass}>Blankets</a>
             </div>
           </div>
           <div>

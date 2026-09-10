@@ -31,6 +31,8 @@ export default function Footer() {
               <a href={resolveUrl('/products?cat=pillows')} className={footerLinkClass}>Pillows</a>
               <a href={resolveUrl('/products?cat=towels')} className={footerLinkClass}>Towels</a>
               <a href={resolveUrl('/products?cat=mats')} className={footerLinkClass}>Mats</a>
+              <a href={resolveUrl('/products?cat=bedding')} className={footerLinkClass}>Bedding</a>
+              <a href={resolveUrl('/products?cat=blankets')} className={footerLinkClass}>Blankets</a>
               <a href={resolveUrl('/products?cat=others')} className={footerLinkClass}>Others</a>
             </div>
           </div>

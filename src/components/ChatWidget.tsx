@@ -131,7 +131,7 @@ export default function ChatWidget() {
   const [hasReplied, setHasReplied] = useState(false);
   const [topicsOpen, setTopicsOpen] = useState(false);
   const pathname = usePathname();
-  const isPDP = pathname?.startsWith("/v2/products/") ?? false;
+  const isPDP = pathname?.startsWith("/products/") ?? false;
   /** AI 导购模式：开启后 24/7 由 LLM 接待，服务时间仅作为"人工跟进时段"文案 */
   const aiMode = CONTACT_CONFIG.llm.enabled;
   const scrollRef = useRef<HTMLDivElement>(null);
