@@ -84,7 +84,10 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           };
         };
         const hasSizes = group.members.some((m) => m.size);
-        const currentMember = group.members.find((m) => m.asin === enriched.asin);
+        // 大小写不敏感匹配当前成员（B0 组成员为小写、商品数据为大写）
+        const currentMember = group.members.find(
+          (m) => m.asin.toLowerCase() === enriched.asin.toLowerCase()
+        );
         if (!hasSizes) {
           return { colorVariants: group.members.map(toVariant), sizeVariants: [] };
         }
