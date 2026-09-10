@@ -59,6 +59,9 @@ export function generateMetadata({ params }: { params: { handle: string } }): Me
   };
 }
 
+// asin 大小写不敏感的唯一查找入口（变体组成员为小写、商品数据可能为大写，如 B0 系列）
+const PRODUCTS_BY_ASIN = new Map(PRODUCTS_DATA.map((p) => [p.asin.toLowerCase(), p]));
+
 export default function V2ProductDetailPage({ params }: { params: { handle: string } }) {
   const product = PRODUCTS_DATA.find((p) => p.handle === params.handle);
   const enriched = product ? enrichProductsWithShopifyData([product])[0] : null;
@@ -72,7 +75,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         const group = getVariantGroupOf(enriched.asin);
         if (!group) return { colorVariants: [], sizeVariants: [] };
         const toVariant = (m: (typeof group.members)[number]) => {
-          const p = PRODUCTS_DATA.find((x) => x.asin === m.asin);
+          const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
           const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
           return {
             asin: m.asin,
