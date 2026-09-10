@@ -237,6 +237,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f62zy8zn', handle: 'square-throw-pillow-inserts-50-x-50-cm-set-of-2-cushion-b0f62zy8zn', color: 'White', size: '50 x 50 cm' },
     { asin: 'b0h4v662hl', handle: 'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl', color: 'White', size: '45 x 45 cm' },
     { asin: 'b0f62qgv32', handle: 'makimoo-square-cushion-inserts-30-x-30-cm-set-of-2-soft-b0f62qgv32', color: 'White', size: '30 x 30 cm' },
+    { asin: 'b0g6mptvfd', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6mptvfd', color: 'White', size: '45 x 45 cm' },
+    { asin: 'b0cqc6h9mz', handle: 'throw-pillow-inserts-45cm-x-45cm-18-x-18-cushion-inserts-hol-b0cqc6h9mz', color: 'White', size: '45 x 45 cm' },
+    { asin: 'b0cqc5qjfj', handle: 'throw-pillow-inserts-40cm-x-40cm-16-x-16-cushion-inserts-hol-b0cqc5qjfj', color: 'White', size: '40 x 40 cm' },
+    { asin: 'b0f62xrb55', handle: 'throw-pillow-inserts-35-x-35cm-14-x-14-cushion-inserts-hollo-b0f62xrb55', color: 'White', size: '35 x 35 cm' },
     ],
   },
   {
@@ -245,6 +249,8 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
     { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
+    { asin: 'b0cqbzm49v', handle: 'throw-pillow-inserts-30-x-50cm-12-x-20-cushion-inserts-hollo-b0cqbzm49v', color: 'White', size: '30 x 50 cm' },
+    { asin: 'b0g6m3f7cy', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6m3f7cy', color: 'White', size: '30 x 50 cm' },
     ],
   },
   {
@@ -318,6 +324,67 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0gjldmt57', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57', color: 'Light Grey', size: '50 x 70 cm' },
     { asin: 'b0gjlmjws1', handle: 'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1', color: 'Pink', size: '50 x 70 cm' },
     { asin: 'b0gjlvmht7', handle: 'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7', color: 'Pink', size: '30 x 50 cm' },
+    ],
+  },
+  {
+    id: 'b0-seat-cushions',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0c4b9t6jv', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4b9t6jv', color: 'Green Plaid' },
+    { asin: 'b0c4bbvs53', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bbvs53', color: 'Blue Paisley' },
+    { asin: 'b0c4bc7q4s', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bc7q4s', color: 'Khaki Floral' },
+    { asin: 'b0c4bcd4dy', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bcd4dy', color: 'Pink Watercolor Floral' },
+    { asin: 'b0c4bd7q5x', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bd7q5x', color: 'Blue Red Floral' },
+    { asin: 'b0c4bdllfk', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bdllfk', color: 'Orange Red Striped' },
+    { asin: 'b0cjhx7xkl', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhx7xkl', color: 'Navy Blue Houndstooth' },
+    { asin: 'b0fnqrrv78', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0fnqrrv78', color: 'Navy Blue Red Color Block' },
+    { asin: 'b0cj8tjl56', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cj8tjl56', color: 'Green Houndstooth' },
+    { asin: 'b0cjhslcz5', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhslcz5', color: 'Red Houndstooth' },
+    { asin: 'b0f1y4j48t', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y4j48t', color: 'Green Brown' },
+    { asin: 'b0f1y91hpr', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y91hpr', color: 'Dark Green', size: '47 x 47 cm' },
+    ],
+  },
+  {
+    id: 'b0-rocking-95x45',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0cbt7b1ty', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty', color: 'Corduroy Blue' },
+    { asin: 'b0cbt7r7nn', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7r7nn', color: 'Corduroy Grey' },
+    { asin: 'b0cbt7rfk2', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7rfk2', color: 'Corduroy Coffee' },
+    { asin: 'b0cw182mcy', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw182mcy', color: 'Houndstooth Red' },
+    { asin: 'b0cw19gmpq', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw19gmpq', color: 'Houndstooth Navy Blue' },
+    { asin: 'b0cw1h96y5', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw1h96y5', color: 'Houndstooth Green' },
+    { asin: 'b0cw193n7m', handle: 'patio-cushion-rocking-chair-cushion-tufted-pads-set-of-upper-b0cw193n7m', color: 'Floral Black Purple' },
+    ],
+  },
+  {
+    id: 'b0-travel-memory',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0bxckknn8', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0bxckknn8', color: 'Black' },
+    { asin: 'b0c2z9jrdm', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9jrdm', color: 'Pink' },
+    { asin: 'b0c2z9pffk', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk', color: 'Grey' },
+    { asin: 'b0c2zcxvx7', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2zcxvx7', color: 'Blue' },
+    ],
+  },
+  {
+    id: 'b0-travel-inflatable',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0c69qnsb3', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69qnsb3', color: 'Grey' },
+    { asin: 'b0c69rjvvt', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rjvvt', color: 'Black' },
+    { asin: 'b0c69rr6gf', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rr6gf', color: 'Navy Blue' },
+    { asin: 'b0c69rryxm', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rryxm', color: 'Pink' },
+    ],
+  },
+  {
+    id: 'b0-travel-adjustable',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0bzcln57s', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcln57s', color: 'Black' },
+    { asin: 'b0bzcmdzns', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcmdzns', color: 'Grey' },
+    { asin: 'b0c8j237v3', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j237v3', color: 'Navy Blue' },
+    { asin: 'b0c8j292wf', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j292wf', color: 'Pink' },
     ],
   },
 ];
