@@ -5933,6 +5933,7 @@ import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
 import { MATERIALS_SHORT_BULLETS } from './materials-short-bullets';
 import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
+import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { classifyProduct } from './subcategories';
 
 /** 站点基础产品 + 素材库新增产品 */
@@ -5958,8 +5959,10 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
     imageWhiteBg: entry.whiteBg,
     // 五点卖点缩写（详情页卖点列表优先使用）
     featureBullets: MATERIALS_SHORT_BULLETS[product.asin.toLowerCase()],
-    // 详情附图（可选；有数据的条目在 PDP 渲染套图叙事）
-    ...(entry.detailImages ? { detailImages: entry.detailImages } : {}),
+    // 详情附图（可选；覆盖表优先——独立文件不受 materials-map 再生成影响）
+    ...(DETAIL_IMAGES_OVERRIDES[product.asin.toLowerCase()] || entry.detailImages
+      ? { detailImages: DETAIL_IMAGES_OVERRIDES[product.asin.toLowerCase()] || entry.detailImages }
+      : {}),
   };
 }
 
