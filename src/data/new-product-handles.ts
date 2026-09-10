@@ -72,8 +72,32 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full',
   'makimoo-duvet-cover-set-3-pieces-twin-size-soft-breathable-duvset-beige-twin',
   'luxuriously-soft-duvet-cover-set-with-2-pillowcases-duvset-beige-full',
+  '2-pack-soft-thick-cotton-beach-towels-oversized-striped-1688-952595759182',
+  '2-pack-thick-oversized-cotton-beach-towels-for-adults-soft-1688-952595759182-c2',
+  '2-pack-oversized-cotton-beach-towels-75-x-180-cm-extra-1688-952595759182-c3',
+  '2-pack-oversized-plush-soft-cotton-beach-towels-extra-large-1688-952595759182-c4',
+  'plush-hotel-style-thick-cotton-bath-mats-set-of-2-non-slip-1688-828008656438',
+  '2-pack-luxury-hotel-style-100-cotton-bath-mats-50-x-80-cm-1688-828008656438-c2',
+  '2-pack-luxury-hotel-style-cotton-bath-mat-set-extra-thick-1688-828008656438-c3',
+  '2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195',
+  '2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2',
+  '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3',
+  'premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4',
+  'plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6',
+  'premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7',
+  'premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034',
+  '2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4',
+  '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172',
+  '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2',
+  'oval-bathroom-rug-non-slip-water-absorbent-floor-mat-solid-1688-1064068114006',
+  'premium-thick-oval-bath-mat-imitation-sisal-woven-bathroom-1688-1064068114006-c2',
+  'round-outdoor-area-rug-sisal-look-woven-texture-floor-mat-1688-1052755373494',
+  'round-sisal-inspired-area-rug-100-x-100-cm-low-profile-1688-1052755373494-c2',
+  'american-style-checkered-kitchen-mat-diatomaceous-earth-1688-1038477616596',
+  'american-style-lattice-diatom-mud-kitchen-mat-anti-slip-1688-1038477616596-c2',
+  'american-vintage-kitchen-rug-non-slip-absorbent-1688-1046667161713',
+  'set-of-2-vintage-tile-pattern-kitchen-mats-non-slip-oil-1688-1046667161713-c2',
 ]);
-
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);
 }
