@@ -24,8 +24,10 @@ import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/s
 
 interface ProductDetailUpgradeProps {
   handle: string;
-  /** 同款异色成员（含缩略图 URL），由服务端 page 组装传入 */
-  colorVariants?: { asin: string; handle: string; color: string; thumb: string; inStock: boolean }[];
+  /** 同款异色成员（含缩略图 URL），由服务端 page 组装传入；二维家族已按颜色去重 */
+  colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
+  /** 同色其他尺寸（可选；二维/尺寸家族才有，传入后尺寸选择器变为功能型跳转） */
+  sizeVariants?: { handle: string; size: string; inStock: boolean }[];
 }
 
 // ⚠️ DEMO 数据（设计演示用示例，非真实评价）：接入 Judge.me / Shopify Reviews 后删除替换。
@@ -107,7 +109,7 @@ function Stars({ rating, size = 16 }: { rating: number; size?: number }) {
   );
 }
 
-export default function ProductDetailUpgrade({ handle, colorVariants = [] }: ProductDetailUpgradeProps) {
+export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
   const [selectedImage, setSelectedImage] = useState(0);
@@ -514,8 +516,38 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [] }: Pro
               );
             })()}
 
-            {/* 尺寸选择器（当前尺寸选中；其余灰色 Coming soon） */}
-            {currentSizeStr && (
+            {/* 尺寸选择器：变体组带尺寸 → 功能型（同色跳尺寸页）；否则展示预设（灰色 Coming soon） */}
+            {sizeVariants.length > 0 ? (
+              <div className="mb-7">
+                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Size</p>
+                <div className="flex flex-wrap gap-3">
+                  {sizeVariants.map((sv) => {
+                    const active = sv.handle === handle;
+                    const inner = (
+                      <>
+                        {sv.size}
+                        {!sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
+                      </>
+                    );
+                    const cls = `px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition ${
+                      active
+                        ? 'border-brand bg-brand text-cream cursor-default'
+                        : 'border-warm-gray bg-white text-charcoal hover:border-brand/40'
+                    }`;
+                    return active ? (
+                      <button key={sv.size} aria-pressed="true" className={cls}>
+                        {inner}
+                      </button>
+                    ) : (
+                      <a key={sv.size} href={v2url(`/products/${sv.handle}/`)} className={cls}>
+                        {inner}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : (
+              currentSizeStr && (
               <div className="mb-7">
                 <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Size</p>
                 <div className="flex flex-wrap gap-3">
@@ -540,6 +572,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [] }: Pro
                   })}
                 </div>
               </div>
+              )
             )}
 
             {/* 规格速览 chips */}

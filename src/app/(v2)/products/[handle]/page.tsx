@@ -64,24 +64,61 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
   const enriched = product ? enrichProductsWithShopifyData([product])[0] : null;
   const isNew = isNewProductHandle(params.handle);
 
-  // 花色切换数据（仅白名单新品）：同 1688 listing 的同款异色成员
-  const colorVariants = enriched && isNew
+  // 花色/尺寸切换数据（仅白名单新品）：
+  // - 纯颜色家族（地毯）：色圆点 = 全部成员
+  // - 二维/尺寸家族（成员带 size）：色圆点按颜色去重（代表成员优先当前尺寸）；尺寸项 = 同色其他尺寸
+  const variantData = enriched && isNew
     ? (() => {
         const group = getVariantGroupOf(enriched.asin);
-        if (!group) return [];
-        return group.members.map((m) => {
+        if (!group) return { colorVariants: [], sizeVariants: [] };
+        const toVariant = (m: (typeof group.members)[number]) => {
           const p = PRODUCTS_DATA.find((x) => x.asin === m.asin);
           const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
           return {
             asin: m.asin,
             handle: m.handle,
             color: m.color,
+            size: m.size,
             thumb: ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
             inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : false) : false,
           };
-        });
+        };
+        const hasSizes = group.members.some((m) => m.size);
+        const currentMember = group.members.find((m) => m.asin === enriched.asin);
+        if (!hasSizes) {
+          return { colorVariants: group.members.map(toVariant), sizeVariants: [] };
+        }
+        // 同尺寸成员优先作色代表；色圆点按颜色去重
+        const ordered = currentMember
+          ? [...group.members].sort(
+              (a, b) => Number(b.size === currentMember.size) - Number(a.size === currentMember.size)
+            )
+          : group.members;
+        const seenColors = new Set<string>();
+        const colorVariants = ordered
+          .filter((m) => {
+            if (seenColors.has(m.color)) return false;
+            seenColors.add(m.color);
+            return true;
+          })
+          .map(toVariant);
+        // 尺寸项：同色成员按尺寸去重（同尺寸重复 SKU 取第一个）
+        const seenSizes = new Set<string>();
+        const sizeVariants = group.members
+          .filter((m) => m.color === currentMember?.color && m.size)
+          .filter((m) => {
+            if (seenSizes.has(m.size!)) return false;
+            seenSizes.add(m.size!);
+            return true;
+          })
+          .map((m) => {
+            const v = toVariant(m);
+            return { handle: v.handle, size: v.size!, inStock: v.inStock };
+          });
+        return { colorVariants, sizeVariants };
       })()
-    : [];
+    : { colorVariants: [], sizeVariants: [] };
+  const { colorVariants, sizeVariants } = variantData;
 
   // Complete the Look（仅白名单新品）：互补类目轮转选取 6 款在售产品
   const quickAddCards: QuickAddCardData[] = enriched && isNew
@@ -197,7 +234,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         />
       )}
       {isNew ? (
-        <ProductDetailUpgrade handle={params.handle} colorVariants={colorVariants} />
+        <ProductDetailUpgrade handle={params.handle} colorVariants={colorVariants} sizeVariants={sizeVariants} />
       ) : (
         <V2ProductDetailClient handle={params.handle} />
       )}
