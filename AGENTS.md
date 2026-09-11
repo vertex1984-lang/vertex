@@ -28,7 +28,16 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ### 分类规则
 
-`classify()` 自动分类：标题含 duvet/bedding/bed linen/quilt cover/comforter/fitted sheet 等 → **Bedding**；含 blanket → **Blankets**（两条先于 Pillows 判定，床品标题常带 pillowcases）；含 bath mat/towel/rug/kitchen mat/door mat 等 → **Bath**；travel/neck pillow → Travel；pillowcase/insert 等 → Pillows；dining → Dining；chair/seat cushion → Cushions；其余 → Others。全站一级类目 8 个：Cushions / Pillows / Towels / Mats / Bedding / Blankets / Holiday（暂无产品）/ Others；V2 导航曾用的 Bath 标签已统一改名为 **Towels**。顶部导航顺序（双版本一致）：Shop All → **Bedding → Pillows → Cushions → Towels → Mats → Blankets**（Others 不在导航，仅页脚）。Bedding/Blankets 无二级类目，mega menu 只展示右侧图卡。
+`classify()` 自动分类：标题含 duvet/bedding/bed linen/quilt cover/comforter/fitted sheet 等 → **Bedding**；含 blanket → **Blankets**（两条先于 Pillows 判定，床品标题常带 pillowcases）；含 bath mat/towel/rug/kitchen mat/door mat 等 → **Bath**；travel/neck pillow → Travel；pillowcase/insert 等 → Pillows；dining → Dining；chair/seat cushion → Cushions；其余 → Others。全站一级类目 8 个：Cushions / Pillows / Towels / Mats / Bedding / Blankets / Holiday（暂无产品）/ Others；V2 导航曾用的 Bath 标签已统一改名为 **Towels**。顶部导航顺序：**Featured → Bedding → Pillows → Cushions → Towels → Mats → Blankets**（Others 不在导航，仅页脚；原 Shop All 首项 2026-09 改为 Featured，仅作弹窗入口、href 为空，菜单标题/移动端主项为纯文字不跳转；弹窗三子项 + 3 张图卡分别指向三个独立精选页 `/featured-products`、`/best-sellers`、`/new-arrivals`——大占屏比编辑画报风格，含关联促销模块（Shop the Look / Top 10 榜单 / Pairs Well With 搭配购 / 类目入口卡 / 相互 teaser 横条 / Newsletter），三模块数据源统一在 `src/data/featured-sections.ts`，与首页共用，图上大产品卡共用 `src/components/v2/V2OverlayCard.tsx`；原 `/featured` 汇总页保留但全站无入口。首页 Featured/Best Sellers/New Arrivals 模块的 View All / View More 已分别改指三个独立页）。Bedding/Blankets 无二级类目，mega menu 只展示右侧图卡。
+
+### 产品标签体系（色系 + 场景，2026-09）
+
+- `/featured-products` 页 = **Complete the Look**（该页只保留此模块，client 页面 + 同目录 layout.tsx 供 metadata）：页头 → 吸顶筛选栏（场景单选 pill + 色系多选 chip，均带计数）→ 按场景分区的产品网格（交替底色），产品卡上同时打色系色点 + 场景 pill。
+- **标签持久化在 `src/data/product-tags.json`**（key = 小写 asin，字段 `color` / `scene` / `pieces`），由 `node scripts/generate-tags.js` 生成（复用 `check-tags.js` 的产品枚举管线，遍历全部在售产品）；**新品上架或规则变更后需重跑该脚本**。页面读取时 **JSON 优先、现算兜底**：asin 不在 JSON 里时回退到 `getColorTag`/`getSceneTag` 现算，保证新品未跑脚本页面不炸。
+- 标签规则在 `src/data/product-tags.ts`：**色系**14 个，主色原则——纯色/花色一视同仁，取标题中位置最靠前的颜色词；标题完全无颜色词的走 `COLOR_OVERRIDES` 人工指定表（key = 小写 asin，含 `1688-xxx` 标识，用户看图确认后填入）。**场景**9 个：Living Room / Bedroom / Kitchen / Bathroom / Dining Room / Garden & Lawn / Entryway / Beach & Pool / Travel，按 `SCENE_PRIORITY`（具体 → 宽泛）取第一个命中，标题无场景词按 productType 兜底（`TYPE_FALLBACK`）。每个产品恰好一个 color 和一个 scene。匹配用词边界正则（允许复数 s）。
+- **Others 类目的产品不做 color/scene 分类**（2026-09 用户定）：`generate-tags.js`/`check-tags.js` 跳过 Others（不写进 product-tags.json），`featured-products/tagged.ts` 的 ALL 及首页 Shop by Color / Shop by Scene 同步排除，前端展示自动不含 Others；推荐区（V2Recommended）里 Others 只按类目参与打分。
+- **打标必须用完整标题**（`MATERIALS_MAP[asin]?.title || p.title`，即素材库覆盖后、精简前），enrich 后的短标题会丢颜色词。
+- 每个在 product-tags.json 中出现的 color/scene 分类，构建时自动拥有独立静态页 `/featured-products/color/<key>/` 和 `/featured-products/scene/<key>/`（generateStaticParams 驱动，空分类不生成；页面代码在 `featured-products/color/[color]/` 和 `featured-products/scene/[scene]/`，共享打标逻辑/产品卡/筛选栏在 `featured-products/tagged.ts`、`look-card.tsx`、`filter-bar.tsx`）；新增色系/场景只需改 COLOR_RULES/SCENE_RULES + 重跑 generate-tags.js + 构建。主页及分类页的筛选 chip 是分类导航（点击跳对应 URL），老参数 `?scene=`/`?color=` 由主页 client 端 router.replace 兼容跳转。
 
 ### 隐藏名单
 

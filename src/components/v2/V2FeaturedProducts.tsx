@@ -63,7 +63,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
             </p>
           </div>
           <a
-            href={v2url('/products/')}
+            href={v2url('/featured-products/')}
             className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4 flex-shrink-0"
           >
             View All
@@ -166,6 +166,18 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
           </div>
         </div>
       </div>
+
+      {/* 产品卡下方居中 VIEW MORE 描边按钮（与 Shop by Category 按钮同款） */}
+      <Reveal delay={200}>
+        <div className="mt-10 lg:mt-12 text-center">
+          <a
+            href={v2url('/featured-products/')}
+            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
+          >
+            View More
+          </a>
+        </div>
+      </Reveal>
     </section>
   );
 }

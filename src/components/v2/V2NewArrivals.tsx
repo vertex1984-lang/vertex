@@ -137,7 +137,7 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
       <Reveal delay={200}>
         <div className="mt-10 lg:mt-12 text-center">
           <a
-            href={v2url('/products/')}
+            href={v2url('/new-arrivals/')}
             className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
           >
             View More

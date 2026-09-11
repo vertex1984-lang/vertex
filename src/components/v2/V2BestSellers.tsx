@@ -23,7 +23,7 @@ export default function V2BestSellers({ products }: V2BestSellersProps) {
             </h2>
           </div>
           <a
-            href={v2url('/products/')}
+            href={v2url('/best-sellers/')}
             className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4 flex-shrink-0"
           >
             Shop All
