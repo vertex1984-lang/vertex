@@ -32,7 +32,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ### 产品标签体系（色系 + 场景，2026-09）
 
-- `/featured-products` 页 = **Complete the Look**（该页只保留此模块，client 页面 + 同目录 layout.tsx 供 metadata）：页头 → 吸顶筛选栏（场景单选 pill + 色系多选 chip，均带计数）→ 按场景分区的产品网格（交替底色），产品卡上同时打色系色点 + 场景 pill。
+- `/featured-products` 页 = **Complete the Look**（该页只保留此模块，client 页面 + 同目录 layout.tsx 供 metadata）：页头 → 吸顶筛选栏（场景单选 pill + 色系多选 chip，均带计数）→ 按场景分区的产品网格（交替底色），产品卡上同时打色系色点 + 场景 pill。**color/scene 聚合子页（`/featured-products/color/<key>/`、`/scene/<key>/`）无筛选栏，产品卡（look-card）也不打 color/scene 标签**（2026-09 用户要求）。
 - **标签持久化在 `src/data/product-tags.json`**（key = 小写 asin，字段 `color` / `scene` / `pieces`），由 `node scripts/generate-tags.js` 生成（复用 `check-tags.js` 的产品枚举管线，遍历全部在售产品）；**新品上架或规则变更后需重跑该脚本**。页面读取时 **JSON 优先、现算兜底**：asin 不在 JSON 里时回退到 `getColorTag`/`getSceneTag` 现算，保证新品未跑脚本页面不炸。
 - 标签规则在 `src/data/product-tags.ts`：**色系**14 个，主色原则——纯色/花色一视同仁，取标题中位置最靠前的颜色词；标题完全无颜色词的走 `COLOR_OVERRIDES` 人工指定表（key = 小写 asin，含 `1688-xxx` 标识，用户看图确认后填入）。**场景**9 个：Living Room / Bedroom / Kitchen / Bathroom / Dining Room / Garden & Lawn / Entryway / Beach & Pool / Travel，按 `SCENE_PRIORITY`（具体 → 宽泛）取第一个命中，标题无场景词按 productType 兜底（`TYPE_FALLBACK`）。每个产品恰好一个 color 和一个 scene。匹配用词边界正则（允许复数 s）。
 - **Others 类目的产品不做 color/scene 分类**（2026-09 用户定）：`generate-tags.js`/`check-tags.js` 跳过 Others（不写进 product-tags.json），`featured-products/tagged.ts` 的 ALL 及首页 Shop by Color / Shop by Scene 同步排除，前端展示自动不含 Others；推荐区（V2Recommended）里 Others 只按类目参与打分。
@@ -134,7 +134,8 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 新组件放 `src/components/v2/`，页面放 `src/app/(v2)/`；fixed 透明 Header 要求每个页面第一屏能衬住（首页/ about 大图页头，内页 `V2PageHeader` 的 bg-brand + pt-32）。
 - V2Header 顶部促销条（Announcement Bar）向下滚动超过阈值后自动收起（桌面/移动一致），回到顶部附近再展开，由 `scrolled` 滞回阈值（60/30px）控制。透明起始页判定：首页（`/`）和 `/about/`。
 - 产品列表页（`(v2)/products/page.tsx`）展示样式：classic `ProductCard` 白卡 + Collections/Material 左侧筛选栏 + 二级分类分区视图 + Load More；版心是 V2 全宽容器（px-6 / lg:px-10，无 1400px 边框盒），列数不变，产品卡随页面宽度等比增大。产品卡与 QuickViewModal 通过可选 `href`/`detailHref` prop 覆盖详情链接。
-- client 页面的 metadata 由同目录 route `layout.tsx` 提供（见 `(v2)/cart/layout.tsx`、`(v2)/products/layout.tsx`）。
+- client 页面的 metadata 由同目录 route `layout.tsx` 提供（见 `(v2)/cart/layout.tsx`、`(v2)/products/layout.tsx`、`(v2)/favorites/layout.tsx`）。
+- 心愿单页 `(v2)/favorites/`：读 localStorage（`makimoo-favorites`，存 product.id）渲染 classic `ProductCard` 网格，最近收藏在前；导航心形图标入口在 V2Header（角标监听 `makimoo:favorites-updated`）。
 - 首页 Featured Products 区：桌面端 5:8 bento 网格（左侧两张 1:1 焦点大卡上下排列 + 右侧 2×2 小卡，两侧总高对齐）；移动端为横向滚动条（6 张统一大小 V2ProductCard），两套布局 `lg:hidden` / `hidden lg:block` 互斥。
 
 ### 构建副作用提醒

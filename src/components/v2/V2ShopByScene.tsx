@@ -161,8 +161,14 @@ export default function V2ShopByScene() {
     };
   }, [availableScenes.length]);
 
-  // 场景切换后，把选中胶囊滚动到可视区中间（手势切换时胶囊行可能看不到选中项）
+  // 场景切换后，把选中胶囊滚动到可视区中间（手势切换时胶囊行可能看不到选中项）。
+  // 跳过首次挂载：否则页面刚加载就把整页往下拉到胶囊行（从其它页点 logo 回主页会落在 Shop by Color 处）
+  const firstSceneRun = useRef(true);
   useEffect(() => {
+    if (firstSceneRun.current) {
+      firstSceneRun.current = false;
+      return;
+    }
     pillRef.current
       ?.querySelector('[aria-pressed="true"]')
       ?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
@@ -341,7 +347,7 @@ export default function V2ShopByScene() {
             <div className="mt-10 lg:mt-12 text-center">
               <a
                 href={v2url(`/featured-products/scene/${active.rule.key}/`)}
-                className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
+                className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
               >
                 Shop {active.rule.label}
               </a>

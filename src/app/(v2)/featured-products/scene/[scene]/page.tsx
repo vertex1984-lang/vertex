@@ -4,7 +4,6 @@ import V2PageHeader from '@/components/v2/V2PageHeader';
 import { SCENE_RULES } from '@/data/product-tags';
 import { ALL, SCENE_BLURBS, sceneKeysWithProducts } from '../../tagged';
 import LookCard from '../../look-card';
-import FilterBar from '../../filter-bar';
 
 // 静态导出：只为 generateStaticParams 返回的分类生成页面，其余 404
 export const dynamicParams = false;
@@ -43,9 +42,6 @@ export default function SceneCategoryPage({ params }: { params: { scene: string 
         title={rule.label}
         subtitle={`${SCENE_BLURBS[rule.key] || ''} · ${products.length} pieces`}
       />
-
-      {/* 吸顶筛选栏：分类导航，当前场景高亮 */}
-      <FilterBar activeScene={rule.key} />
 
       <section className="py-12 lg:py-16">
         <div className="px-6 lg:px-10">

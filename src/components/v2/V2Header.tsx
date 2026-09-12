@@ -265,7 +265,7 @@ export default function V2Header() {
 
             {/* 收藏入口（带数量角标；暂无独立收藏页，点击进商品汇总页） */}
             <a
-              href={v2url('/products')}
+              href={v2url('/favorites/')}
               className={`relative w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
               aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
             >
