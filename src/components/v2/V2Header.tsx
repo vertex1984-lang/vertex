@@ -11,7 +11,8 @@ import { getSubcategoriesOf } from '@/data/subcategories';
 
 // V2 导航：cat 非空的项带 mega menu（二级类目 + 示例图卡）
 // 首项 Featured 只作弹窗入口（href 空 = 菜单标题/移动端主项不跳转）；
-// 弹窗三子项分别指向三个独立页 /featured-products、/best-sellers、/new-arrivals，
+// 弹窗子项指向两个独立精选页 /best-sellers、/new-arrivals
+//（/featured-products 已隐藏并移除导航入口，2026-09 用户要求），
 // 原 /featured 汇总页保留但全站无入口
 const navLinks = [
   { label: 'Featured', href: '', cat: 'featured' },
@@ -23,14 +24,13 @@ const navLinks = [
   { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
 ];
 
-// Featured 弹窗的左侧子项：三个独立精选页
+// Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）
 const FEATURED_SUBS = [
-  { label: 'Featured Products', href: '/featured-products' },
   { label: 'Best Sellers', href: '/best-sellers' },
   { label: 'New Arrivals', href: '/new-arrivals' },
 ];
 
-// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图；Featured 为 3 张对应三个模块）
+// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图；Featured 为 2 张对应两个模块）
 interface MenuCard {
   image: string;
   caption: string;
@@ -39,7 +39,6 @@ interface MenuCard {
 }
 const MEGA_CARDS: Record<string, MenuCard[]> = {
   featured: [
-    { image: '/images/featured/bedset4-beige-full.webp', caption: "Editor's Picks", linkLabel: 'Featured Products', href: '/featured-products' },
     { image: '/images/featured/b0cbt7r7nn.webp', caption: 'Customer Favorites', linkLabel: 'Best Sellers', href: '/best-sellers' },
     { image: '/images/products/B0F1XFWZVY/1.webp', caption: 'Just Landed', linkLabel: 'New Arrivals', href: '/new-arrivals' },
   ],

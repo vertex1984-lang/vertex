@@ -7,9 +7,10 @@ import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getColorTag, COLOR_RULES } from '@/data/product-tags';
+import { sortByWeight } from '@/lib/weights';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
-type PersistedTag = { color: string | null; scene: string; pieces: number | null };
+type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
 const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
 
 const MAX_PER_COLOR = 10;
@@ -53,10 +54,10 @@ export default function V2ShopByColor() {
 
   const products = useMemo(
     () =>
-      taggedInStock
-        .filter((t) => t.color === activeColor)
-        .slice(0, MAX_PER_COLOR)
-        .map((t) => t.product),
+      // 权重排序：高分优先（同分按类目平均分），取前 MAX_PER_COLOR
+      sortByWeight(
+        taggedInStock.filter((t) => t.color === activeColor).map((t) => t.product)
+      ).slice(0, MAX_PER_COLOR),
     [taggedInStock, activeColor]
   );
 

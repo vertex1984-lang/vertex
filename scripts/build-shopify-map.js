@@ -214,6 +214,7 @@ function generateTsFile(map) {
     availableForSale: ${data.availableForSale},
     shopifyHandle: "${data.shopifyHandle.replace(/"/g, '\\"')}",
     images: ${JSON.stringify(data.images)},
+    createdAt: "${data.createdAt}",
     weight: ${data.weight},
     weightUnit: "${data.weightUnit}",
     priceNeedsFix: ${data.priceNeedsFix},
@@ -234,6 +235,8 @@ export interface ShopifyProductEntry {
   availableForSale: boolean;
   shopifyHandle: string;
   images: string[];
+  /** Shopify 产品创建时间（ISO），New Arrivals 按它倒序取最新 */
+  createdAt: string;
   /** Shopify variant 重量原始值（当前全站单位为 KILOGRAMS；0 = 未设置，前台不展示） */
   weight: number;
   weightUnit: string;

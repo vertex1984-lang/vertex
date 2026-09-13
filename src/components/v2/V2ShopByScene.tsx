@@ -7,9 +7,10 @@ import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getSceneTag, SCENE_RULES } from '@/data/product-tags';
+import { sortByWeight } from '@/lib/weights';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
-type PersistedTag = { color: string | null; scene: string; pieces: number | null };
+type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
 const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
 
 const MAX_PER_SCENE = 8;
@@ -115,20 +116,21 @@ export default function V2ShopByScene() {
   );
 
   // 有 ≥MIN_PRODUCTS 款在售产品（去重后）的场景，按 SCENE_RULES 展示顺序
+  // 场景内产品按权重排序（高分优先，同分按类目平均分），去重保留权重最高的一款
   const availableScenes = useMemo(
     () =>
       SCENE_RULES.map((rule) => {
         const seen = new Set<string>();
-        const products = taggedInStock
-          .filter((t) => t.scene === rule.key)
-          .filter((t) => {
-            const key = titleKey(t.product.title);
+        const products = sortByWeight(
+          taggedInStock.filter((t) => t.scene === rule.key).map((t) => t.product)
+        )
+          .filter((p) => {
+            const key = titleKey(p.title);
             if (seen.has(key)) return false;
             seen.add(key);
             return true;
           })
-          .slice(0, MAX_PER_SCENE)
-          .map((t) => t.product);
+          .slice(0, MAX_PER_SCENE);
         return { rule, products };
       }).filter((s) => s.products.length >= MIN_PRODUCTS),
     [taggedInStock]
@@ -140,9 +142,17 @@ export default function V2ShopByScene() {
   const activeIndex = availableScenes.findIndex((s) => s.rule.key === activeScene);
   const active = availableScenes[activeIndex];
 
+  // 只有用户主动切换（点胶囊/滑手势）时才置位；dev 下 StrictMode 会重复执行 effect，
+  // 用"是否交互过"而不是"是否首次执行"做判断，避免首挂载把整页拉下来
+  const sceneTouched = useRef(false);
+  const selectScene = (key: string) => {
+    sceneTouched.current = true;
+    setActiveScene(key);
+  };
+
   const switchScene = (step: 1 | -1) => {
     const next = availableScenes[activeIndex + step];
-    if (next) setActiveScene(next.rule.key);
+    if (next) selectScene(next.rule.key);
   };
 
   // 胶囊行右侧"还有更多"箭头：可继续右滑时显示，滚到底自动隐藏
@@ -162,13 +172,9 @@ export default function V2ShopByScene() {
   }, [availableScenes.length]);
 
   // 场景切换后，把选中胶囊滚动到可视区中间（手势切换时胶囊行可能看不到选中项）。
-  // 跳过首次挂载：否则页面刚加载就把整页往下拉到胶囊行（从其它页点 logo 回主页会落在 Shop by Color 处）
-  const firstSceneRun = useRef(true);
+  // 仅响应用户主动切换：否则页面刚加载就把整页往下拉到胶囊行（从其它页点 logo 回主页会落在 Shop by Color 处）
   useEffect(() => {
-    if (firstSceneRun.current) {
-      firstSceneRun.current = false;
-      return;
-    }
+    if (!sceneTouched.current) return;
     pillRef.current
       ?.querySelector('[aria-pressed="true"]')
       ?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
@@ -258,7 +264,7 @@ export default function V2ShopByScene() {
                 return (
                   <button
                     key={rule.key}
-                    onClick={() => setActiveScene(rule.key)}
+                    onClick={() => selectScene(rule.key)}
                     aria-pressed={isActive}
                     className={`flex items-center gap-2 flex-shrink-0 px-5 py-2.5 rounded-full border text-sm font-semibold tracking-wide transition ${
                       isActive

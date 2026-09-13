@@ -15,8 +15,8 @@ const sections = getBestSellersByCategory();
 
 /**
  * Best Sellers 独立页：按类目分区的榜单。
- * 每个类目展示 4 款精选产品，卡片网格与 /products?cat= 列表页一致（无筛选栏）；
- * 产品选择见 featured-sections.ts 的 BEST_SELLER_BY_CATEGORY（暂无销量数据，人工编排）。
+ * 每个类目按权重展示 4 款产品，卡片网格与 /products?cat= 列表页一致（无筛选栏）；
+ * 产品选择为权重驱动（sortByWeight 降序 + 标题去重），见 featured-sections.ts。
  */
 export default function BestSellersPage() {
   return (

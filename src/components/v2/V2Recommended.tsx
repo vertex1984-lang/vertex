@@ -11,7 +11,7 @@ import { getColorTag, getSceneTag } from '@/data/product-tags';
 import { getBestSellerProducts } from '@/data/featured-sections';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
-type PersistedTag = { color: string | null; scene: string; pieces: number | null };
+type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
 const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
 
 const MAX_ITEMS = 10;

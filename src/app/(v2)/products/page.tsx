@@ -7,6 +7,7 @@ import { CATEGORY_DEFS, getSubcategoriesOf, getSubcategoryDef } from '@/data/sub
 import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
+import { sortByWeight } from '@/lib/weights';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -34,8 +35,9 @@ function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
 }
 
 function applySort(list: MakimooProduct[], sort: SortKey): MakimooProduct[] {
+  // featured = 权重排序（表现分 + 人工赋权，含在售优先/沉底/置顶/排除）
+  if (sort === 'featured') return sortByWeight(list);
   const grouped = inStockFirst(list);
-  if (sort === 'featured') return grouped;
   // 价格排序只在在售组内生效，缺货组保持沉底
   const inStock = grouped.filter(isInStock);
   const out = grouped.filter((p) => !isInStock(p));
@@ -71,15 +73,13 @@ interface FilterBundle {
 export default function V2ProductsPage() {
   // mounted 标志：防止静态 HTML 在 JS 执行前闪现
   const [mounted, setMounted] = useState(false);
-  const [activeCategory, setActiveCategory] = useState(() => readUrlParam('cat'));
-  const [activeSub, setActiveSub] = useState(() => readUrlParam('sub'));
+  // 首屏必须用默认值，保证水合 HTML 与服务端一致；URL 参数在挂载后读取（见下方 useEffect）
+  const [activeCategory, setActiveCategory] = useState('');
+  const [activeSub, setActiveSub] = useState('');
   // 搜索词只从 URL 读取（页面搜索框已移除，入口在 V2Header 搜索）
-  const [searchQuery] = useState(() => readUrlParam('q'));
-  const [sortBy, setSortBy] = useState<SortKey>(() => {
-    const s = readUrlParam('sort') as SortKey;
-    return SORT_KEYS.includes(s) ? s : 'featured';
-  });
-  const [materialSel, setMaterialSel] = useState<string[]>(() => readUrlList('material'));
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortBy, setSortBy] = useState<SortKey>('featured');
+  const [materialSel, setMaterialSel] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   // 移动端筛选抽屉
   const [filterOpen, setFilterOpen] = useState(false);
@@ -93,8 +93,14 @@ export default function V2ProductsPage() {
     return () => window.removeEventListener('keydown', onKey);
   }, [filterOpen]);
 
-  // 首次挂载后立即标记为已挂载，此时 state 已从 URL 正确初始化
+  // 首次挂载后从 URL 恢复筛选状态，再标记为已挂载（此时首屏水合已完成，不会与服务端 HTML 冲突）
   useEffect(() => {
+    setActiveCategory(readUrlParam('cat'));
+    setActiveSub(readUrlParam('sub'));
+    setSearchQuery(readUrlParam('q'));
+    const s = readUrlParam('sort') as SortKey;
+    setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
+    setMaterialSel(readUrlList('material'));
     setMounted(true);
     // GA4: search（URL 带 ?q= 参数进入时触发一次）
     const q = new URLSearchParams(window.location.search).get('q');
@@ -374,7 +380,7 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : sections.length > 0 ? (
-        /* 分区视图：按二级分类分区，移动端横滑、桌面端每区前 8 个 + View All */
+        /* 分区视图：按二级分类分区，移动端横滑、桌面端网格展示全部（2026-09-14 起取消「前 8 个 + View All」截断） */
         <div>
           {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
           <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
@@ -401,17 +407,9 @@ export default function V2ProductsPage() {
           <div className="space-y-10 lg:space-y-16">
             {sections.map(({ def, products }) => (
               <section key={def.key}>
-                <div className="flex items-end justify-between gap-4 mb-4 lg:mb-5">
-                  <div className="min-w-0">
-                    <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
-                    {def.blurb && <p className="text-[13px] lg:text-sm text-[#777] mt-1 line-clamp-2 lg:line-clamp-none">{def.blurb}</p>}
-                  </div>
-                  <button
-                    onClick={() => setFilter({ sub: def.key })}
-                    className="flex-shrink-0 text-sm font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
-                  >
-                    View All {products.length} &rarr;
-                  </button>
+                <div className="mb-4 lg:mb-5">
+                  <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
+                  {def.blurb && <p className="text-[13px] lg:text-sm text-[#777] mt-1 line-clamp-2 lg:line-clamp-none">{def.blurb}</p>}
                 </div>
                 {/* 移动端：横向滑动（隐藏滚动条，卡片吸附，与页面左右留白对齐） */}
                 <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -421,9 +419,9 @@ export default function V2ProductsPage() {
                     </div>
                   ))}
                 </div>
-                {/* 桌面端：网格前 8 个 */}
+                {/* 桌面端：网格展示该分区全部产品 */}
                 <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
-                  {products.slice(0, 8).map((p) => (
+                  {products.map((p) => (
                     <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>

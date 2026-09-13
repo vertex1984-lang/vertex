@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import V2PageHeader from '@/components/v2/V2PageHeader';
+import ProductCard from '@/components/ProductCard';
+import { v2url } from '@/lib/v2paths';
 import { SCENE_RULES } from '@/data/product-tags';
 import { ALL, SCENE_BLURBS, sceneKeysWithProducts } from '../../tagged';
-import LookCard from '../../look-card';
 
 // 静态导出：只为 generateStaticParams 返回的分类生成页面，其余 404
 export const dynamicParams = false;
@@ -25,33 +25,33 @@ export function generateMetadata({ params }: { params: { scene: string } }): Met
   };
 }
 
-/** 场景分类页：/featured-products/scene/<key>/ — 该场景全部在售产品 */
+/** 场景分类页：/featured-products/scene/<key>/ — 该场景全部在售产品。
+ *  页头/产品卡样式对齐 /products 类目页（浅色面包屑页头 + 白底产品卡）。 */
 export default function SceneCategoryPage({ params }: { params: { scene: string } }) {
   const rule = SCENE_RULES.find((s) => s.key === params.scene);
   const products = ALL.filter((p) => p.sceneTag.key === params.scene);
   if (!rule || products.length === 0) notFound();
 
   return (
-    <>
-      <V2PageHeader
-        crumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Featured Products', href: '/featured-products/' },
-          { label: rule.label },
-        ]}
-        title={rule.label}
-        subtitle={`${SCENE_BLURBS[rule.key] || ''} · ${products.length} pieces`}
-      />
+    <div className="px-6 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+      {/* 页头（同 /products 类目页）：面包屑 + 左对齐标题 + 右侧结果数 */}
+      <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
+        <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
+        <span className="mx-1.5">/</span>
+        <a href={v2url('/best-sellers/')} className="hover:text-[#8B5A2B] transition-colors">Best Sellers</a>
+        <span className="mx-1.5">/</span>
+        <span className="text-[#555]">{rule.label}</span>
+      </nav>
+      <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
+        <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
+        <p className="text-sm text-[#777]">{products.length} result{products.length === 1 ? '' : 's'}</p>
+      </div>
 
-      <section className="py-12 lg:py-16">
-        <div className="px-6 lg:px-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-8 lg:gap-x-6">
-            {products.map((p) => (
-              <LookCard key={p.id} product={p} />
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+        {products.map((p) => (
+          <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
+        ))}
+      </div>
+    </div>
   );
 }

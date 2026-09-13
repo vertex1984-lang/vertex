@@ -1,8 +1,9 @@
 {
   "1688-1016436401519": {
     "color": "brown",
-    "scene": "entryway",
-    "pieces": 2
+    "scene": null,
+    "pieces": 2,
+    "manual": true
   },
   "1688-1038477616596": {
     "color": "brown",
@@ -31,18 +32,21 @@
   },
   "1688-1046667161713": {
     "color": "brown",
-    "scene": "entryway",
-    "pieces": null
+    "scene": "kitchen",
+    "pieces": null,
+    "manual": true
   },
   "1688-1046667161713-c2": {
     "color": "beige",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "kitchen",
+    "pieces": 2,
+    "manual": true
   },
   "1688-1052742241013": {
-    "color": "orange",
+    "color": "brown",
     "scene": "living-room",
-    "pieces": null
+    "pieces": null,
+    "manual": true
   },
   "1688-1052742241013-c2": {
     "color": "blue",
@@ -65,19 +69,22 @@
     "pieces": null
   },
   "1688-1052742241013-c6": {
-    "color": "orange",
+    "color": "brown",
     "scene": "living-room",
-    "pieces": null
+    "pieces": null,
+    "manual": true
   },
   "1688-1052755373494": {
     "color": "brown",
-    "scene": "garden-lawn",
-    "pieces": null
+    "scene": "living-room",
+    "pieces": null,
+    "manual": true
   },
   "1688-1052755373494-c2": {
     "color": "white",
-    "scene": "garden-lawn",
-    "pieces": null
+    "scene": "living-room",
+    "pieces": null,
+    "manual": true
   },
   "1688-1056325209172": {
     "color": "white",
@@ -86,13 +93,15 @@
   },
   "1688-1056325209172-c2": {
     "color": "grey",
-    "scene": "travel",
-    "pieces": 4
+    "scene": "bathroom",
+    "pieces": 4,
+    "manual": true
   },
   "1688-1064068114006": {
     "color": "white",
-    "scene": "entryway",
-    "pieces": null
+    "scene": "kitchen",
+    "pieces": null,
+    "manual": true
   },
   "1688-1064068114006-c2": {
     "color": "brown",
@@ -121,13 +130,15 @@
   },
   "1688-743666513356-c6": {
     "color": "grey",
-    "scene": "travel",
-    "pieces": 2
+    "scene": "bathroom",
+    "pieces": 2,
+    "manual": true
   },
   "1688-743666513356-c7": {
     "color": "blue",
-    "scene": "travel",
-    "pieces": 2
+    "scene": "bathroom",
+    "pieces": 2,
+    "manual": true
   },
   "1688-744995685423": {
     "color": "brown",
@@ -140,14 +151,16 @@
     "pieces": null
   },
   "1688-745181807454": {
-    "color": "beige",
+    "color": "multi-color",
     "scene": "living-room",
-    "pieces": null
+    "pieces": null,
+    "manual": true
   },
   "1688-745181807454-c2": {
-    "color": "brown",
+    "color": "blue",
     "scene": "living-room",
-    "pieces": null
+    "pieces": null,
+    "manual": true
   },
   "1688-745181807454-c3": {
     "color": "beige",
@@ -156,8 +169,9 @@
   },
   "1688-745181807454-c4": {
     "color": "white",
-    "scene": "dining-room",
-    "pieces": null
+    "scene": "living-room",
+    "pieces": null,
+    "manual": true
   },
   "1688-745181807454-c5": {
     "color": "cream",
@@ -165,14 +179,16 @@
     "pieces": null
   },
   "1688-745181807454-c6": {
-    "color": "blue",
-    "scene": "dining-room",
-    "pieces": null
-  },
-  "1688-745181807454-c7": {
     "color": "brown",
     "scene": "living-room",
-    "pieces": null
+    "pieces": null,
+    "manual": true
+  },
+  "1688-745181807454-c7": {
+    "color": "multi-color",
+    "scene": "living-room",
+    "pieces": null,
+    "manual": true
   },
   "1688-745181807454-c8": {
     "color": "brown",
@@ -196,18 +212,21 @@
   },
   "1688-856468238034": {
     "color": "orange",
-    "scene": "travel",
-    "pieces": 2
+    "scene": "bathroom",
+    "pieces": 2,
+    "manual": true
   },
   "1688-856468238034-c4": {
     "color": "black",
-    "scene": "travel",
-    "pieces": 2
+    "scene": "bathroom",
+    "pieces": 2,
+    "manual": true
   },
   "1688-895014679429": {
     "color": "beige",
-    "scene": "entryway",
-    "pieces": 2
+    "scene": "kitchen",
+    "pieces": 2,
+    "manual": true
   },
   "1688-916370884976-c5": {
     "color": "blue",
@@ -225,11 +244,6 @@
     "pieces": null
   },
   "1688-916370884976-c8": {
-    "color": "blue",
-    "scene": "bedroom",
-    "pieces": null
-  },
-  "1688-916370884976-c9": {
     "color": "blue",
     "scene": "bedroom",
     "pieces": null
@@ -371,8 +385,9 @@
   },
   "1688-985677811504": {
     "color": "grey",
-    "scene": "entryway",
-    "pieces": 2
+    "scene": null,
+    "pieces": 2,
+    "manual": true
   },
   "1688-996768645117": {
     "color": "khaki",
@@ -406,8 +421,9 @@
   },
   "b0bcjrtf3x": {
     "color": "green",
-    "scene": "dining-room",
-    "pieces": 4
+    "scene": "garden-lawn",
+    "pieces": 4,
+    "manual": true
   },
   "b0bcjt2gfw": {
     "color": "orange",
@@ -536,8 +552,9 @@
   },
   "b0cc5rgrps": {
     "color": "blue",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "garden-lawn",
+    "pieces": 2,
+    "manual": true
   },
   "b0cc5tlwfs": {
     "color": "red",
@@ -561,8 +578,9 @@
   },
   "b0cj8tjl56": {
     "color": "green",
-    "scene": "living-room",
-    "pieces": null
+    "scene": "dining-room",
+    "pieces": null,
+    "manual": true
   },
   "b0cjhl4lzp": {
     "color": "yellow",
@@ -571,8 +589,9 @@
   },
   "b0cjhslcz5": {
     "color": "red",
-    "scene": "living-room",
-    "pieces": null
+    "scene": "dining-room",
+    "pieces": null,
+    "manual": true
   },
   "b0cjhx7xkl": {
     "color": "blue",
@@ -581,8 +600,10 @@
   },
   "b0cqbzm49v": {
     "color": "white",
-    "scene": "travel",
-    "pieces": null
+    "scene": "bedroom",
+    "pieces": 2,
+    "manual": true,
+    "manualPieces": true
   },
   "b0cqc5qjfj": {
     "color": "white",
@@ -596,8 +617,9 @@
   },
   "b0cw17pzyt": {
     "color": "white",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "garden-lawn",
+    "pieces": 2,
+    "manual": true
   },
   "b0cw182mcy": {
     "color": "red",
@@ -621,23 +643,27 @@
   },
   "b0cw1ldn6l": {
     "color": "green",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "garden-lawn",
+    "pieces": 2,
+    "manual": true
   },
   "b0cw1tbzv3": {
     "color": "green",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "garden-lawn",
+    "pieces": 2,
+    "manual": true
   },
   "b0cxdzf2wq": {
     "color": "orange",
-    "scene": "dining-room",
-    "pieces": 4
+    "scene": "garden-lawn",
+    "pieces": 4,
+    "manual": true
   },
   "b0d5dnwx8j": {
-    "color": "blue",
+    "color": "red",
     "scene": "garden-lawn",
-    "pieces": 2
+    "pieces": 2,
+    "manual": true
   },
   "b0dsgckwxw": {
     "color": "red",
@@ -676,18 +702,21 @@
   },
   "b0f1xs7vky": {
     "color": "brown",
-    "scene": "dining-room",
-    "pieces": 2
+    "scene": "garden-lawn",
+    "pieces": 2,
+    "manual": true
   },
   "b0f1y4j48t": {
     "color": "green",
-    "scene": "living-room",
-    "pieces": null
+    "scene": "dining-room",
+    "pieces": null,
+    "manual": true
   },
   "b0f1y91hpr": {
     "color": "green",
-    "scene": "living-room",
-    "pieces": null
+    "scene": "dining-room",
+    "pieces": null,
+    "manual": true
   },
   "b0f1ydrdtx": {
     "color": "blue",
@@ -727,12 +756,14 @@
   "b0g6lxsf4t": {
     "color": "white",
     "scene": "bedroom",
-    "pieces": null
+    "pieces": 2,
+    "manualPieces": true
   },
   "b0g6m3f7cy": {
     "color": "white",
     "scene": "bedroom",
-    "pieces": null
+    "pieces": 2,
+    "manualPieces": true
   },
   "b0g6mptvfd": {
     "color": "white",
@@ -816,8 +847,9 @@
   },
   "b0gjlp59k1": {
     "color": "white",
-    "scene": "living-room",
-    "pieces": 2
+    "scene": "bathroom",
+    "pieces": 2,
+    "manual": true
   },
   "b0gjlpxb6f": {
     "color": "red",
@@ -836,8 +868,9 @@
   },
   "b0gjlvmht7": {
     "color": "pink",
-    "scene": "travel",
-    "pieces": 2
+    "scene": "bedroom",
+    "pieces": 2,
+    "manual": true
   },
   "b0gjsttgy5": {
     "color": "green",
@@ -1201,6 +1234,106 @@
   },
   "duvset-white-twin": {
     "color": "white",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-charcoal-full": {
+    "color": "grey",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-charcoal-king": {
+    "color": "grey",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-charcoal-queen": {
+    "color": "grey",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-charcoal-twin": {
+    "color": "grey",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-dustyblue-full": {
+    "color": "blue",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-dustyblue-king": {
+    "color": "blue",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-dustyblue-queen": {
+    "color": "blue",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-dustyblue-twin": {
+    "color": "blue",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-ivory-full": {
+    "color": "white",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-ivory-king": {
+    "color": "white",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-ivory-queen": {
+    "color": "white",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-ivory-twin": {
+    "color": "white",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-oatmeal-full": {
+    "color": "beige",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-oatmeal-king": {
+    "color": "beige",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-oatmeal-queen": {
+    "color": "beige",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-oatmeal-twin": {
+    "color": "beige",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-sage-full": {
+    "color": "green",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-sage-king": {
+    "color": "green",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-sage-queen": {
+    "color": "green",
+    "scene": "bedroom",
+    "pieces": 3
+  },
+  "linen3-sage-twin": {
+    "color": "green",
     "scene": "bedroom",
     "pieces": 3
   }

@@ -18,6 +18,7 @@ import {
   SceneTag,
 } from '@/data/product-tags';
 import PRODUCT_TAGS from '@/data/product-tags.json';
+import { sortByWeight } from '@/lib/weights';
 
 export interface TaggedProduct extends MakimooProduct {
   colorTag: ColorTag | null;
@@ -30,7 +31,7 @@ export interface TaggedProduct extends MakimooProduct {
 const fullTitleOf = (p: MakimooProduct) =>
   MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
 
-type PersistedTag = { color: string | null; scene: string; pieces: number | null };
+type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
 const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
 
 const persistedTagOf = (asin: string) => TAGS[asin.toLowerCase()];
@@ -48,16 +49,19 @@ const sceneTagOf = (p: MakimooProduct, fullTitle: string): SceneTag => {
   return rule ? { key: rule.key, label: rule.label } : getSceneTag(fullTitle, p.productType);
 };
 
-export const ALL: TaggedProduct[] = enrichProductsWithShopifyData(PRODUCTS_DATA)
-  .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
-  .map((p) => {
-    const fullTitle = fullTitleOf(p);
-    return {
-      ...p,
-      colorTag: colorTagOf(p, fullTitle),
-      sceneTag: sceneTagOf(p, fullTitle),
-    };
-  });
+// 2026-09 起接入权重排序：color/scene 分类页按总分降序展示（同分按类目平均分）
+export const ALL: TaggedProduct[] = sortByWeight(
+  enrichProductsWithShopifyData(PRODUCTS_DATA)
+    .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
+    .map((p) => {
+      const fullTitle = fullTitleOf(p);
+      return {
+        ...p,
+        colorTag: colorTagOf(p, fullTitle),
+        sceneTag: sceneTagOf(p, fullTitle),
+      };
+    })
+);
 
 /**
  * generateStaticParams 驱动：product-tags.json 里出现、且在规则表中有定义、

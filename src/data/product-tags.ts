@@ -11,7 +11,17 @@
  * - 场景：按 SCENE_PRIORITY（具体 → 宽泛）取第一个命中的场景；
  *   标题无场景词时按 productType 兜底（TYPE_FALLBACK），最终兜底 Living Room。
  * - 匹配用词边界正则（允许复数 s），避免 "red" 误中 "covered"、"door mat" 误中 "outdoor"。
+ *
+ * 规则覆盖机制（2026-09 新增，本地管理工具 scripts/admin-server.js 维护）：
+ * tag-rules-overrides.json 可禁用内置色系/场景（disabledColors/disabledScenes）
+ * 或追加自定义项（customColors/customScenes）。下方导出的 COLOR_RULES/SCENE_RULES
+ * 均为「内置未被禁用 + 自定义追加在后」的生效合集；SCENE_PRIORITY 把自定义场景插到最前
+ * （用户自定义 = 更具体），并过滤掉被禁用的 key。
  */
+
+// 注意用 namespace import：本地脚本（scripts/*.js）的 TS shim 不开 esModuleInterop，
+// default import 编译成 require(...).default 会取不到值；namespace import 两种环境都拿到 JSON 本体
+import * as TAG_RULE_OVERRIDES from './tag-rules-overrides.json';
 
 export interface ColorTag {
   key: string;
@@ -32,8 +42,8 @@ interface SceneRule extends SceneTag {
   words: string[];
 }
 
-// 色系表（顺序即展示顺序）
-export const COLOR_RULES: ColorRule[] = [
+// 内置色系表（顺序即展示顺序）；生效合集见下方导出的 COLOR_RULES
+export const BASE_COLOR_RULES: ColorRule[] = [
   { key: 'white', label: 'White', hex: '#FFFFFF', words: ['white', 'off white'] },
   { key: 'cream', label: 'Cream', hex: '#F3E9D2', words: ['cream', 'ivory', 'ecru', 'beige white'] },
   { key: 'beige', label: 'Beige', hex: '#D9C7A7', words: ['beige', 'tan', 'sand'] },
@@ -73,10 +83,14 @@ export const COLOR_OVERRIDES: Record<string, string> = {
   '1688-1052742241013-c4': 'red',
   '1688-745181807454-c4': 'white',
   '1688-745181807454-c6': 'blue',
+  'linen3-oatmeal-twin': 'beige', // 燕麦色亚麻套件（看图定，浅燕麦归 Beige）
+  'linen3-oatmeal-full': 'beige',
+  'linen3-oatmeal-queen': 'beige',
+  'linen3-oatmeal-king': 'beige',
 };
 
-// 场景表（顺序即展示顺序）
-export const SCENE_RULES: SceneRule[] = [
+// 内置场景表（顺序即展示顺序）；生效合集见下方导出的 SCENE_RULES
+export const BASE_SCENE_RULES: SceneRule[] = [
   { key: 'living-room', label: 'Living Room', words: ['sofa', 'couch', 'area rug', 'throw pillow', 'blanket', 'rug'] },
   { key: 'bedroom', label: 'Bedroom', words: ['duvet', 'bedding', 'comforter', 'quilt', 'fitted sheet', 'bed sheet', 'bed pillow', 'pillow insert', 'pillowcase', 'pillow case', 'blanket', 'throw'] },
   { key: 'kitchen', label: 'Kitchen', words: ['kitchen', 'pepper', 'grinder', 'mill'] },
@@ -88,10 +102,40 @@ export const SCENE_RULES: SceneRule[] = [
   { key: 'travel', label: 'Travel', words: ['travel', 'neck pillow'] },
 ];
 
-// 场景判定优先级：具体 → 宽泛（blanket 同时命中 living/bedroom 时归 Bedroom，以此类推）
-const SCENE_PRIORITY = [
+// 场景判定优先级（内置）：具体 → 宽泛（blanket 同时命中 living/bedroom 时归 Bedroom，以此类推）
+const BASE_SCENE_PRIORITY = [
   'travel', 'beach-pool', 'entryway', 'dining-room', 'kitchen',
   'bathroom', 'garden-lawn', 'bedroom', 'living-room',
+];
+
+// ---- 规则覆盖合成（tag-rules-overrides.json，由 scripts/admin-server.js 维护）----
+// 显式标注类型：JSON 为四个空数组时 resolveJsonModule 会推断成 never[]
+interface TagRuleOverrides {
+  disabledColors: string[];
+  disabledScenes: string[];
+  customColors: ColorRule[];
+  customScenes: SceneRule[];
+}
+const OVERRIDES: TagRuleOverrides = TAG_RULE_OVERRIDES;
+const DISABLED_COLORS = new Set<string>(OVERRIDES.disabledColors ?? []);
+const DISABLED_SCENES = new Set<string>(OVERRIDES.disabledScenes ?? []);
+
+/** 生效色系：内置未被禁用的 + 自定义追加在后（顺序即展示顺序） */
+export const COLOR_RULES: ColorRule[] = [
+  ...BASE_COLOR_RULES.filter((c) => !DISABLED_COLORS.has(c.key)),
+  ...(OVERRIDES.customColors ?? []),
+];
+
+/** 生效场景：内置未被禁用的 + 自定义追加在后（顺序即展示顺序） */
+export const SCENE_RULES: SceneRule[] = [
+  ...BASE_SCENE_RULES.filter((s) => !DISABLED_SCENES.has(s.key)),
+  ...(OVERRIDES.customScenes ?? []),
+];
+
+// 生效优先级：自定义场景插到最前（用户自定义 = 更具体），过滤被禁用的内置 key
+const SCENE_PRIORITY = [
+  ...(OVERRIDES.customScenes ?? []).map((s) => s.key),
+  ...BASE_SCENE_PRIORITY.filter((k) => !DISABLED_SCENES.has(k)),
 ];
 
 // 标题无场景词时按一级类目兜底

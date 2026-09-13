@@ -46,7 +46,7 @@ if (!password) {
 const AMAZON_HOST = { US: 'www.amazon.com', DE: 'www.amazon.de', UK: 'www.amazon.co.uk' };
 
 // 用户要求全站隐藏的产品（素材库保留，不生成站点条目；小写标识）
-const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2']);
+const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2', '1688-916370884976-c9']);
 
 function classify(title) {
   const t = (title || '').toLowerCase();

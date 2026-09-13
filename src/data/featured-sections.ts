@@ -5,19 +5,58 @@
 
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { CATEGORY_DEFS } from '@/data/subcategories';
+import { sortByWeight } from '@/lib/weights';
+import PRODUCT_TAGS_JSON from '@/data/product-tags.json';
 
-// Featured：与 (classic) 首页一致的 9 个精选 ASIN（Others 类目不进此区），展示用产品首图
-export const FEATURED_ASINS = [
-  'BEDSET4-BEIGE-FULL',
-  'B0CBT7R7NN',
-  'B0CC5RGRPS',
-  'B0CW19GMPQ',
-  'B0F1XMTYNC',
-  'B0G6MPTVFD',
-  'B0C4B9T6JV',
-  'B0CQC5QJFJ',
-  'B0CJ8TJL56',
-];
+const PRODUCT_TAGS = PRODUCT_TAGS_JSON as Record<string, { color: string | null }>;
+
+// Featured：类目配额制（2026-09 用户定），共 8 个卡位：
+// 1. 类目权重 = 该类目在售产品数 / 总在售产品数（Others 不参与），配额 = 份额 × 8 四舍五入，
+//    再按四舍五入误差修正到恰好 8（补位优先误差最大者，减位保底每类 1 个）
+// 2. 类目内部按 sortByWeight（总分降序，同分保持自然顺序）
+// 3. 卡片顺序：类目权重（份额）高的类目整组靠前，组内按产品权重
+export const FEATURED_COUNT = 8;
+
+export function getFeaturedProducts(): MakimooProduct[] {
+  const pool = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+    (p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others'
+  );
+  const byType: Record<string, MakimooProduct[]> = {};
+  for (const p of pool) (byType[p.productType] ||= []).push(p);
+  const total = pool.length || 1;
+  const cats = Object.entries(byType).map(([type, products]) => {
+    const exact = (products.length / total) * FEATURED_COUNT;
+    return {
+      type,
+      products: sortByWeight(products),
+      share: products.length / total,
+      exact,
+      quota: Math.min(Math.round(exact), products.length),
+    };
+  });
+  let sum = cats.reduce((s, c) => s + c.quota, 0);
+  // 不足 8：按四舍五入误差（exact - quota）降序补位
+  while (sum < FEATURED_COUNT) {
+    const cand = cats
+      .filter((c) => c.quota < c.products.length)
+      .sort((a, b) => b.exact - b.quota - (a.exact - a.quota))[0];
+    if (!cand) break;
+    cand.quota++;
+    sum++;
+  }
+  // 超出 8：按误差（quota - exact）降序减位，保底每类 1 个
+  while (sum > FEATURED_COUNT) {
+    const cand = cats
+      .filter((c) => c.quota > 1)
+      .sort((a, b) => b.quota - b.exact - (a.quota - a.exact))[0];
+    if (!cand) break;
+    cand.quota--;
+    sum--;
+  }
+  return cats
+    .sort((a, b) => b.share - a.share)
+    .flatMap((c) => c.products.slice(0, c.quota));
+}
 
 // New Arrivals：展示用的新到产品（暂选 B0F/B0G 批次新品 ASIN，与 Featured 不重复）
 export const NEW_ARRIVAL_ASINS = [
@@ -36,24 +75,22 @@ const byAsin = (asins: string[]) =>
     .map((asin) => PRODUCTS_DATA.find((p) => p.asin.toUpperCase() === asin.toUpperCase()))
     .filter(Boolean) as MakimooProduct[];
 
-export function getFeaturedProducts(): MakimooProduct[] {
-  return enrichProductsWithShopifyData(byAsin(FEATURED_ASINS));
-}
-
 const titleKey = (title: string) =>
   title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
 
 /**
- * Best Sellers：有 Shopify 数据且在售、按标题去重，取 15 个；
- * 排除 Featured Products 已展示的 ASIN，避免相邻区块重复
+ * Best Sellers：有 Shopify 数据且在售、按标题去重，按权重总分降序取 15 个；
+ * 排除 Featured Products 已展示的产品，避免相邻区块重复
  */
 export function getBestSellerProducts(): MakimooProduct[] {
-  const featured = byAsin(FEATURED_ASINS);
+  const featured = getFeaturedProducts();
   const featuredIds = new Set(featured.map((p) => p.id));
   const seenTitles = new Set(featured.map((p) => titleKey(p.title)));
-  return enrichProductsWithShopifyData(PRODUCTS_DATA)
+  const pool = enrichProductsWithShopifyData(PRODUCTS_DATA)
     .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
-    .filter((p) => !featuredIds.has(p.id))
+    .filter((p) => !featuredIds.has(p.id));
+  // 先按权重排序，再去重取前 15：同标题保留权重最高的一款
+  return sortByWeight(pool)
     .filter((p) => {
       const key = titleKey(p.title);
       if (seenTitles.has(key)) return false;
@@ -70,66 +107,11 @@ export function getNewArrivalProducts(): MakimooProduct[] {
 }
 
 /**
- * Best Sellers 页：按类目精选榜单（暂无真实销量数据，人工编排）。
- * 每类 4 款在售产品，尽量覆盖不同子类与颜色；接入销量数据后改为按销量排序替换。
+ * Best Sellers 页：按类目分区榜单，每类 4 款。
+ * 2026-09 起改为权重驱动：在售产品按 sortByWeight（总分降序，同分按类目平均分），
+ * 按标题去重后每类取前 4（替代原 BEST_SELLER_BY_CATEGORY 人工编排）。
  */
-export const BEST_SELLER_BY_CATEGORY: { cat: string; asins: string[] }[] = [
-  {
-    cat: 'bedding',
-    asins: [
-      'BEDSET4-GRAY-QUEEN',      // 纯色灰 4 件套
-      'DUVSET-WHITE-QUEEN',      // 纯白 3 件套
-      'BEDSET4-SAGE-QUEEN',      // 植物花卉
-      'BEDSET4-PLAID-KING',      // 格纹
-    ],
-  },
-  {
-    cat: 'pillows',
-    asins: [
-      'B0CQC6H9MZ',   // 45x45 枕芯
-      'B0G6M3F7CY',   // 30x50 枕芯
-      'B0GD843WMN',   // 40x80 睡眠枕
-      'B0GJLP59K1',   // 50x70 白色枕套
-    ],
-  },
-  {
-    cat: 'cushions',
-    asins: [
-      'B0BBZW4LZR',   // 110x55 高背 花色 2 件
-      'B0C4B9T6JV',   // 43x43 坐垫 绿格
-      'B0CBT7R7NN',   // 灯芯绒 95x45 灰
-      'B0GJLPXB6F',   // 圆形坐垫 安哥拉红
-    ],
-  },
-  {
-    cat: 'towels',
-    asins: [
-      '1688-856468238034',      // 浴巾 2 条装
-      '1688-952595759182-C4',   // 蓝白沙滩巾
-      '1688-1056325209172',     // 白色手巾 4 条装
-      '1688-1044064113195',     // 灰色加大浴巾
-    ],
-  },
-  {
-    cat: 'mats',
-    asins: [
-      '1688-828008656438',      // 全棉浴室地垫 2 条装
-      '1688-1038477616596',     // 硅藻泥格纹厨房垫
-      '1688-595229918569',      // 仿兔毛地毯
-      '1688-745181807454',      // 波斯复古地毯
-    ],
-  },
-  {
-    cat: 'blankets',
-    // 毯子为同品多色（标题几乎一致），精选 4 个色系族避免卡片重复
-    asins: [
-      '1688-969627065032-C21',  // 蓝族
-      '1688-969627065032-C26',  // 奶黄族
-      '1688-969627065032-C31',  // 深灰族
-      '1688-969627065032-C41',  // 浅紫族
-    ],
-  },
-];
+const BEST_SELLER_CATS = ['bedding', 'pillows', 'cushions', 'towels', 'mats', 'blankets'];
 
 export interface BestSellerSection {
   cat: string;
@@ -139,13 +121,25 @@ export interface BestSellerSection {
 }
 
 export function getBestSellersByCategory(): BestSellerSection[] {
-  return BEST_SELLER_BY_CATEGORY.map(({ cat, asins }) => {
+  const seenKeys = new Set<string>();
+  return BEST_SELLER_CATS.map((cat) => {
     const def = CATEGORY_DEFS.find((d) => d.value === cat);
-    return {
-      cat,
-      label: def?.label ?? cat,
-      intro: def?.intro ?? '',
-      products: enrichProductsWithShopifyData(byAsin(asins)),
-    };
+    const products = sortByWeight(
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.hasShopifyData && p.shopifyAvailable && p.productType.toLowerCase() === cat
+      )
+    )
+      .filter((p) => {
+        // Blankets 是同品多色（标题几乎一致），按色系去重保证 4 张卡不同色族；其余类目按标题去重
+        const key =
+          p.productType === 'Blankets'
+            ? `blanket-${PRODUCT_TAGS[p.asin.toLowerCase()]?.color ?? titleKey(p.title)}`
+            : titleKey(p.title);
+        if (seenKeys.has(key)) return false;
+        seenKeys.add(key);
+        return true;
+      })
+      .slice(0, 4);
+    return { cat, label: def?.label ?? cat, intro: def?.intro ?? '', products };
   }).filter((s) => s.products.length > 0);
 }

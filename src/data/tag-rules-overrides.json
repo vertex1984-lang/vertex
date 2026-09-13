@@ -1,0 +1,17 @@
+{
+  "disabledColors": [],
+  "disabledScenes": [
+    "entryway"
+  ],
+  "customColors": [
+    {
+      "key": "multi-color",
+      "label": "Multi-Color",
+      "hex": "#cccccc",
+      "words": [
+        "multi-color"
+      ]
+    }
+  ],
+  "customScenes": []
+}

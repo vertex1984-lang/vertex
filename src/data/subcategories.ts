@@ -48,6 +48,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'door', parent: 'mats', label: 'Door Mats', shortLabel: 'Door Mats', blurb: 'Tough mats that trap dirt at the door.' },
   { key: 'area-rugs', parent: 'mats', label: 'Area Rugs', shortLabel: 'Area Rugs', blurb: 'Soft grounding for living spaces.' },
   { key: 'other-mats', parent: 'mats', label: 'Other Mats', shortLabel: 'Other Mats', blurb: 'More mats for every corner.' },
+  // Bedding（按材质分组，材质数据来自 product-specs / specs-overrides）
+  { key: 'microfiber', parent: 'bedding', label: 'Microfiber', shortLabel: 'Microfiber', blurb: 'Brushed microfiber — soft, wrinkle-resistant & easy care.' },
+  { key: 'linen', parent: 'bedding', label: 'Linen', shortLabel: 'Linen', blurb: '100% natural linen, breathable with lived-in texture.' },
+  { key: 'cotton', parent: 'bedding', label: 'Cotton', shortLabel: 'Cotton', blurb: 'Washed cotton for crisp, airy comfort.' },
   // Others
   { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel', blurb: 'Neck pillows & essentials for the road.' },
   { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools', blurb: 'Handy tools for everyday cooking.' },
@@ -145,6 +149,17 @@ function classifyOther(title: string): string {
   return 'extras';
 }
 
+/** Bedding 按材质分组：取规格表主材质（逗号前第一个）；Bamboo 等暂不分组返回 undefined */
+function classifyBedding(asin: string): string | undefined {
+  const material = getProductSpecs(asin)?.material;
+  if (!material) return undefined;
+  const primary = material.split(',')[0].trim().toLowerCase();
+  if (primary === 'microfiber') return 'microfiber';
+  if (primary === 'linen') return 'linen';
+  if (primary === 'cotton') return 'cotton';
+  return undefined;
+}
+
 /**
  * 计算产品的二级分类 key；不属于五大类目时返回 undefined。
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
@@ -168,6 +183,8 @@ export function classifyProduct(productType: string, title: string, asin: string
       return classifyTowel(title, asin);
     case 'mats':
       return classifyMat(title);
+    case 'bedding':
+      return classifyBedding(asin);
     case 'others':
       return classifyOther(title);
     default:

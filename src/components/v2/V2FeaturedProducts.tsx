@@ -34,23 +34,23 @@ function spotlightImage(product: MakimooProduct) {
 }
 
 /**
- * 桌面端：编辑画报式不对称网格（bento），左右 5:8 两列——左侧两张 1:1 焦点大卡上下排列
+ * 桌面端：编辑画报式不对称网格（bento），容器 max-w-[1800px]、左右 5:12 两列——左侧两张 1:1 焦点大卡上下排列
  * （01/02 号产品，中间留缝，图上渐变遮罩 + 类目/标题/价格/Shop Now + 超大序号），
- * 右侧 2×2 小卡网格（03–06，V2ProductCard），两侧总高自然对齐。
- * 移动端：Best Sellers 同款横向滚动条，6 张 V2ProductCard 统一大小（lg:hidden / hidden lg:block 两套布局互斥，互不干扰）。
- * 数据由页面传入（FEATURED_ASINS，取前 6 个）。
+ * 右侧 3×2 小卡网格（03–08，V2ProductCard，上排 3/4/5、下排 6/7/8）。
+ * 移动端：Best Sellers 同款横向滚动条，8 张 V2ProductCard 统一大小（lg:hidden / hidden lg:block 两套布局互斥，互不干扰）。
+ * 数据由页面传入（getFeaturedProducts 类目配额制，共 8 个）。
  */
 export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps) {
   if (products.length === 0) return null;
 
   const spotlights = products.slice(0, 2);
-  const rest = products.slice(2, 6);
+  const rest = products.slice(2, 8);
 
   return (
     <section className="pt-4 lg:pt-6 pb-16 lg:pb-24">
       {/* 标题行：左侧 eyebrow + 标题 + 文案，右侧 View All 链接（与 Best Sellers 头部呼应） */}
       <Reveal>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
           <div>
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
               Editor&apos;s Picks
@@ -59,11 +59,11 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
               Featured Products
             </h2>
             <p className="text-base text-charcoal-light max-w-xl">
-              Two spotlights, four companions — the pieces our editors would bring home first.
+              Two spotlights, six companions — the pieces our editors would bring home first.
             </p>
           </div>
           <a
-            href={v2url('/featured-products/')}
+            href={v2url('/best-sellers/')}
             className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4 flex-shrink-0"
           >
             View All
@@ -74,11 +74,11 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
         </div>
       </Reveal>
 
-      {/* 移动端：Best Sellers 同款横向滚动条，6 张卡统一大小（桌面端隐藏） */}
+      {/* 移动端：Best Sellers 同款横向滚动条，8 张卡统一大小（桌面端隐藏） */}
       <Reveal>
         <div className="lg:hidden pl-6">
           <div className="flex gap-5 overflow-x-auto pb-2 pr-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {products.slice(0, 6).map((product) => (
+            {products.slice(0, 8).map((product) => (
               <div key={product.id} className="w-[56vw] sm:w-[42vw] flex-shrink-0 snap-start">
                 <V2ProductCard product={product} badge="Featured" />
               </div>
@@ -87,10 +87,10 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
         </div>
       </Reveal>
 
-      {/* 桌面端 bento 网格（移动端隐藏） */}
-      <div className="hidden lg:block max-w-[1400px] mx-auto px-6 lg:px-10">
-        {/* 桌面端左右 5:8 不等宽：左列两张 1:1 大卡的总高与右列 2×2 小卡（1:1 图 + 文字区）的总高自然对齐 */}
-        <div className="grid grid-cols-1 lg:grid-cols-[5fr_8fr] gap-5 lg:gap-6 lg:items-stretch">
+      {/* 桌面端 bento 网格（移动端隐藏）。容器 1800px + 5:12 列比：右栏 3 列小卡保持原 2×2 时代的卡宽，靠加宽区域容纳第 3 列 */}
+      <div className="hidden lg:block max-w-[1800px] mx-auto px-6 lg:px-10">
+        {/* 桌面端左右 5:12 不等宽：左列两张 1:1 大卡的总高与右列 3×2 小卡（1:1 图 + 文字区）的总高自然对齐 */}
+        <div className="grid grid-cols-1 lg:grid-cols-[5fr_12fr] gap-5 lg:gap-6 lg:items-stretch">
           {/* 左侧两张焦点大卡：上下 1:1、中间留缝，图上文字 + 超大序号 */}
           <div className="grid grid-cols-1 lg:grid-rows-2 gap-5 lg:gap-6 lg:h-full">
             {spotlights.map((spotlight, i) => {
@@ -150,8 +150,8 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
             })}
           </div>
 
-          {/* 右侧 2×2 小卡网格，错峰入场 */}
-          <div className="grid grid-cols-2 gap-5 lg:gap-6">
+          {/* 右侧 3×2 小卡网格（上排 03–05、下排 06–08），错峰入场 */}
+          <div className="grid grid-cols-3 gap-5 lg:gap-6">
             {rest.map((product, i) => (
               <Reveal key={product.id} delay={(i + 1) * 100} className="relative">
                 <span
@@ -171,7 +171,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
       <Reveal delay={200}>
         <div className="mt-10 lg:mt-12 text-center">
           <a
-            href={v2url('/featured-products/')}
+            href={v2url('/best-sellers/')}
             className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
           >
             View More
