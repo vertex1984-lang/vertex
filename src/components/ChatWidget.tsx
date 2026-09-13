@@ -209,8 +209,10 @@ export default function ChatWidget() {
     setFlowChips(null);
     setHasReplied(true);
     setTopicsOpen(false);
-    // 留言走剧本（本地保存，人工跟进）；其余场景 AI 24/7 接待，失败降级剧本（按真实人工在线状态处理）
-    if (!aiMode || text === "Leave a message") {
+    // 留言/收邮箱等剧本流程一旦开启（flow !== "idle"）必须走剧本引擎走完，不能进 LLM：
+    // 否则用户输入的邮箱（PII）会被发给第三方 LLM，且收集流程会被 LLM 回复打断（flow 被重置为 idle）。
+    // 其余场景 AI 24/7 接待，失败降级剧本（按真实人工在线状态处理）。
+    if (!aiMode || text === "Leave a message" || flow !== "idle") {
       runScriptEngine(text);
       return;
     }

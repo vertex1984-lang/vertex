@@ -12,6 +12,10 @@ type LlmProxyReply = {
   error?: string;
 };
 
+// PII 防护：邮箱属个人敏感信息，出站给第三方 LLM 前统一掩码（当前消息与历史一视同仁）
+const OUTBOUND_EMAIL_RE = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g;
+const maskEmails = (text: string): string => text.replace(OUTBOUND_EMAIL_RE, "[email]");
+
 /** 询问 AI 导购。成功返回 { text, products }；失败抛异常。 */
 export async function askShoppingAssistant(
   message: string,
@@ -21,7 +25,10 @@ export async function askShoppingAssistant(
   const res = await fetch(`${baseUrl}/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message, history }),
+    body: JSON.stringify({
+      message: maskEmails(message),
+      history: history.map((h) => ({ ...h, content: maskEmails(h.content) })),
+    }),
     signal: AbortSignal.timeout(timeoutMs),
   });
   if (!res.ok) throw new Error(`聊天代理 HTTP ${res.status}`);

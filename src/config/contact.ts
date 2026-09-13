@@ -34,12 +34,14 @@ export const CONTACT_CONFIG = {
     { intent: "order_support", label: "Shipping & order questions" },
     { intent: "leave_message", label: "Leave a message" },
   ] as QuickReply[],
-  // LLM 导购配置：enabled 且代理可用 → 真 AI 接待；代理失败或非服务时间自动回退本地剧本引擎。
-  // baseUrl 指向本地代理（headless-store 里 npm run chat-proxy 启动）；上线后换成 serverless 地址，前端零改动。
+  // LLM 导购配置：构建时经环境变量注入（NEXT_PUBLIC_* 在打包时内联），两个变量齐全才启用 AI 模式。
+  // 任一缺失（如 Vercel 未配置）→ enabled 为 false，ChatWidget 全程走本地剧本引擎，不发任何网络请求。
+  // 本地演示：项目根目录 .env.local（已被 .gitignore 忽略）配置两项，指向本地代理 npm run chat-proxy。
   llm: {
-    enabled: true as boolean,
-    // vertex 站：本地演示指向本地代理（npm run chat-proxy）；线上托管地址待定
-    baseUrl: "http://localhost:8787",
+    enabled:
+      process.env.NEXT_PUBLIC_CHAT_LLM_ENABLED === "true" &&
+      !!process.env.NEXT_PUBLIC_CHAT_LLM_BASE_URL,
+    baseUrl: process.env.NEXT_PUBLIC_CHAT_LLM_BASE_URL ?? "",
     timeoutMs: 30000,
   },
 };
