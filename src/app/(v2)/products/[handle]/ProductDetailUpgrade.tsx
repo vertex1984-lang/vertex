@@ -75,11 +75,12 @@ const SECTIONS = [
   { id: 'pdp2-reviews', label: 'Reviews' },
 ];
 
-// 尺寸选项（占位数据：当前尺寸可选中，其余灰色"即将推出"；
-// 真实多尺寸上架后替换为变体数据，灰色项改为可跳转链接）
+// 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
+// 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
 const SIZE_PRESETS = ['140 x 200 cm', '160 x 200 cm', '160 x 230 cm', '180 x 250 cm', '100 x 200 cm', '100 x 160 cm'];
 
-const ACCORDION_SECTIONS = [
+// Shipping / Returns 两节为通用文案；Care 节由 getCareCopy 按分类生成（组件内拼接）
+const ACCORDION_SECTIONS_BASE = [
   {
     title: 'Shipping & Delivery',
     body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location.',
@@ -88,11 +89,57 @@ const ACCORDION_SECTIONS = [
     title: 'Returns & Refunds',
     body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
   },
-  {
-    title: 'Care & Maintenance',
-    body: 'The low-pile surface stands up to daily foot traffic and is simple to vacuum. Spot-clean spills quickly to preserve the colors.',
-  },
 ];
+
+// 护理文案映射（review #3：地毯专属护理文案串台到全部分类）。
+// spec = 规格表 Care 行短句；long = Care & Maintenance 手风琴长句。
+// 地毯按标题关键词特判（productType "Mats" 混合了地毯与门垫/厨房垫，不能只按分类）。
+// 文案口径调整只需改这一处映射。
+type CareCopy = { spec: string; long: string };
+
+const CARE_RUG: CareCopy = {
+  spec: 'Vacuum regularly; spot-clean spills promptly',
+  long: 'The low-pile surface stands up to daily foot traffic and is simple to vacuum. Spot-clean spills quickly to preserve the colors.',
+};
+
+const CARE_BY_TYPE: Record<string, CareCopy> = {
+  towels: {
+    spec: 'Machine wash warm with like colors; tumble dry low; do not bleach',
+    long: 'Machine wash warm with like colors and tumble dry low. Skip fabric softener to keep the fibers absorbent.',
+  },
+  bedding: {
+    spec: 'Machine wash cold on gentle; tumble dry low',
+    long: 'Machine wash cold on a gentle cycle and tumble dry low. Wash separately before first use.',
+  },
+  blankets: {
+    spec: 'Machine wash cold on gentle; lay flat or tumble dry low',
+    long: 'Machine wash cold on a gentle cycle, then lay flat or tumble dry low to keep it soft and plush.',
+  },
+  pillows: {
+    spec: 'Fluff regularly; spot-clean or hand wash cover',
+    long: 'Fluff regularly to keep the fill lofty. Spot-clean or hand-wash the cover and air dry fully.',
+  },
+  cushions: {
+    spec: 'Spot-clean cover; air dry; fluff to restore shape',
+    long: 'Spot-clean the cover with mild detergent and air dry. Fluff regularly to restore the shape.',
+  },
+  mats: {
+    spec: 'Machine wash cold; air dry flat',
+    long: 'Machine wash cold and air dry flat. Shake out loose dirt regularly.',
+  },
+};
+
+const CARE_DEFAULT: CareCopy = {
+  spec: 'Follow the care label on your product',
+  long: 'For best results, follow the care instructions on the product label. Questions? We are happy to help.',
+};
+
+const RUG_TITLE_RE = /\b(rugs?|carpets?)\b/i;
+
+function getCareCopy(productType: string, title: string): CareCopy {
+  if (RUG_TITLE_RE.test(title)) return CARE_RUG;
+  return CARE_BY_TYPE[(productType || '').toLowerCase()] ?? CARE_DEFAULT;
+}
 
 function Stars({ rating, size = 16 }: { rating: number; size?: number }) {
   return (
@@ -232,6 +279,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     ? [...SIZE_PRESETS, currentSizeStr]
     : SIZE_PRESETS;
 
+  // 护理文案（按分类映射，地毯特判）+ 地毯判断（尺寸占位仅地毯显示）
+  const careCopy = getCareCopy(product.productType, product.title);
+  const isRug = RUG_TITLE_RE.test(product.title);
+
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
     // Material / Care 卡已按领导反馈移除（材料与护理信息保留在底部 Specifications 表中）
@@ -246,7 +297,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     ...(pileStr ? [{ label: 'Pile Height', value: pileStr }] : []),
     ...(weightStr ? [{ label: 'Weight', value: weightStr }] : []),
     ...(materialSku ? [{ label: 'SKU', value: materialSku }] : []),
-    { label: 'Care', value: 'Vacuum regularly; spot-clean spills promptly' },
+    { label: 'Care', value: careCopy.spec },
     { label: 'Availability', value: isInStock ? 'In Stock' : 'Currently Unavailable', muted: !isInStock },
   ];
 
@@ -300,6 +351,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   };
 
   // 运保 + 信任徽章 + 手风琴（桌面在左栏图集下方，移动端在右栏底部）
+  const accordionSections = [...ACCORDION_SECTIONS_BASE, { title: 'Care & Maintenance', body: careCopy.long }];
   const shippingCareBlock = (
     <>
       <p className="text-sm text-charcoal-light mb-6">
@@ -320,7 +372,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         ))}
       </div>
       <div className="border-b border-warm-gray">
-        {ACCORDION_SECTIONS.map((section, i) => (
+        {accordionSections.map((section, i) => (
           <div key={section.title} className="border-t border-warm-gray">
             <button
               onClick={() => setOpenAccordion(openAccordion === i ? null : i)}
@@ -546,7 +598,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 </div>
               </div>
             ) : (
-              currentSizeStr && (
+              isRug && currentSizeStr && (
               <div className="mb-7">
                 <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Size</p>
                 <div className="flex flex-wrap gap-3">
