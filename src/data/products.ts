@@ -5977,12 +5977,13 @@ function autoShortenTitle(t: string): string {
   return (lastSpace >= 40 ? cut.slice(0, lastSpace) : cut).trim();
 }
 
-/** 分类归并（全站统一 6 类）：Dining → Cushions，Home Fragrance / Travel → Others，Bath 按标题拆为 Towels / Mats */
+/** 分类归并：Home Fragrance / Travel → Others，Bath 按标题拆为 Towels / Mats；
+ * Dining 按标题拆分（2026-09 起 Dining 为正式类目）：托盘/餐具类 → Dining，餐椅垫类 → Cushions */
 const CATEGORY_MERGE: Record<string, string> = {
-  dining: 'Cushions',
   'home fragrance': 'Others',
   travel: 'Others',
 };
+const DINING_TRAY_RE = /tray|serving basket|fruit (plate|basket|bowl)|snack (plate|bowl|tray)|platter|bread basket|placemat|coaster/i;
 const MATS_RE = /bath ?mats?|bath rug|kitchen (mat|rug)|door mat|entryway|floor mat|area rug|diatom/i;
 const TOWELS_RE = /towel/i;
 function normalizeCategory(t: string, title = ''): string {
@@ -5991,6 +5992,8 @@ function normalizeCategory(t: string, title = ''): string {
     if (TOWELS_RE.test(title)) return 'Towels';
     return 'Mats';
   }
+  // Dining：托盘/餐具类归 Dining，餐椅垫等其余归 Cushions
+  if (t.toLowerCase() === 'dining') return DINING_TRAY_RE.test(title) ? 'Dining' : 'Cushions';
   // 个别椅垫在源数据中被错标为 Pillows，按标题归正（如 B0DSGCLBVW / B0DSGCKWXW）
   if (t.toLowerCase() === 'pillows' && /chair cushion/i.test(title)) return 'Cushions';
   // 枕套/枕芯类按全站规则（classify: pillowcase/insert → Pillows）从 Others 归正（如 B0F62QGV32 / B0GJLVMHT7）

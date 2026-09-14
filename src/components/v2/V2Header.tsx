@@ -22,6 +22,8 @@ const navLinks = [
   { label: 'Towels', href: '/products?cat=towels', cat: 'towels' },
   { label: 'Mats', href: '/products?cat=mats', cat: 'mats' },
   { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
+  { label: 'Decor', href: '/products?cat=decor', cat: 'decor' },
+  { label: 'Dining', href: '/products?cat=dining', cat: 'dining' },
 ];
 
 // Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）
@@ -69,6 +71,14 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   others: [
     { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
     { image: '/images/featured/b0bzcln57s.webp', caption: 'Comfort on the road.', linkLabel: 'Shop Travel', href: '/products?cat=others&sub=travel' },
+  ],
+  decor: [
+    { image: '/images/products/1688-807393887857-C2/1.webp', caption: 'Framed canvas, tribal style.', linkLabel: 'Shop Wall Art', href: '/products?cat=decor&sub=wall-art' },
+    { image: '/images/products/1688-730512046265-C2/1.webp', caption: 'Boho burlap textures.', linkLabel: 'Shop Boho Art', href: '/products?cat=decor&sub=wall-art' },
+  ],
+  dining: [
+    { image: '/images/products/1688-899672152256-C2/1.webp', caption: 'Handwoven rattan trays.', linkLabel: 'Shop Trays', href: '/products?cat=dining&sub=trays' },
+    { image: '/images/products/1688-743606980882-C2/1.webp', caption: 'Serve & display in style.', linkLabel: 'Shop Serving', href: '/products?cat=dining&sub=trays' },
   ],
 };
 

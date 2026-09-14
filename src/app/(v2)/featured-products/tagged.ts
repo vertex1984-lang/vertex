@@ -14,6 +14,7 @@ import {
   getSceneTag,
   COLOR_RULES,
   SCENE_RULES,
+  NO_TAG_TYPES,
   ColorTag,
   SceneTag,
 } from '@/data/product-tags';
@@ -25,7 +26,7 @@ export interface TaggedProduct extends MakimooProduct {
   sceneTag: SceneTag;
 }
 
-// 全部在售产品（**Others 除外**：2026-09 用户定，Others 不参与 color/scene 分类，自动被展示排除）；
+// 全部在售产品（**Others / Decor / Dining 除外**：2026-09 用户定，不参与 color/scene 分类，自动被展示排除）；
 // 规则要求每产品恰好一个 color 和一个 scene。
 // 打标用完整标题（素材库覆盖后、精简前），避免颜色/场景关键词被短标题截断
 const fullTitleOf = (p: MakimooProduct) =>
@@ -52,7 +53,7 @@ const sceneTagOf = (p: MakimooProduct, fullTitle: string): SceneTag => {
 // 2026-09 起接入权重排序：color/scene 分类页按总分降序展示（同分按类目平均分）
 export const ALL: TaggedProduct[] = sortByWeight(
   enrichProductsWithShopifyData(PRODUCTS_DATA)
-    .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
+    .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
     .map((p) => {
       const fullTitle = fullTitleOf(p);
       return {

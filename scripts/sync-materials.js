@@ -9,7 +9,7 @@
  *  5. 生成 src/data/products-materials.ts（站点上没有的新产品完整条目，自动分类、白底检测）
  *
  * 用法： node scripts/sync-materials.js <密码>   或   MATERIALS_PASSWORD=xxx node scripts/sync-materials.js
- * 幂等：有 scripts/materials-manifest.json 时按 URL 顺序逐产品对比，顺序/内容有变才重下（打印 [图片更新]）；无 manifest 时按数量跳过。--force 强制全部重下；--keep-order 保持素材库原始图片顺序（不做优先级重排）。
+ * 幂等：有 scripts/materials-manifest.json 时按 URL 顺序逐产品对比，顺序/内容有变才重下（打印 [图片更新]）；无 manifest 时按数量跳过。--force 强制全部重下；默认保持素材库原始图片顺序（keep-order 为默认行为，--reorder 才做旧的优先级重排）。
  */
 
 const fs = require('fs');
@@ -25,8 +25,8 @@ const OUT_NEW_TS = path.join(ROOT, 'src/data/products-materials.ts');
 const IMG_BASE = path.join(ROOT, 'public/images/products');
 const CONCURRENCY = 6;
 const FORCE = process.argv.includes('--force');
-// 保持素材库原始顺序，不做展示优先级重排（素材库上已排好序时使用）
-const KEEP_ORDER = process.argv.includes('--keep-order');
+// 默认保持素材库原始顺序，不做展示优先级重排（素材库上已排好序）；需要旧的优先级重排时显式传 --reorder
+const KEEP_ORDER = !process.argv.includes('--reorder');
 
 // 首图置顶：含这些 URL 的产品把该"铺床场景图"排为第一展示图（用户指定样式，参照 1688-969627065032-C40），其余图顺位后移；文件编号不变
 const PIN_FIRST_URLS = new Set([
@@ -37,9 +37,20 @@ const PIN_FIRST_URLS = new Set([
   'https://img1.seeany.com/20260825/f4c9f0f2-06fb-4366-bfde-a89b41acd6aa.png', // 浅紫族 C41-C43
 ]);
 
-const password = process.env.MATERIALS_PASSWORD || process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
+const password =
+  process.env.MATERIALS_PASSWORD ||
+  (() => {
+    // 与 seeany-*.js 同款：直接从 .env.local 读 MATERIALS_PASSWORD=xxx
+    try {
+      const env = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
+      return (env.match(/^MATERIALS_PASSWORD=(.+)$/m) || [])[1]?.trim();
+    } catch {
+      return undefined;
+    }
+  })() ||
+  process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
 if (!password) {
-  console.error('缺少密码：node scripts/sync-materials.js <密码>');
+  console.error('缺少密码：.env.local 加 MATERIALS_PASSWORD=xxx，或 node scripts/sync-materials.js <密码>');
   process.exit(1);
 }
 
@@ -61,7 +72,10 @@ function classify(title) {
   // 椅垫先于 Pillows：户外椅垫标题常带 "cushion pad"/"lounge pillow"，避免误入 Pillows
   if (/chair cushions?|seat cushions?|seat pads?|lounge pillow|deep seat|high.?back/.test(t) && !/pillow insert|cushion insert|cushion filler|pillow stuffer/.test(t)) return 'Cushions';
   if (/pillowcase|pillow case|cushion cover|pillow cover|bed pillow|pillow insert|cushion inserts?|pillow stuffer|cushion filler|cushion pad|throw pillow insert|quilted.*(insert|pillow)/.test(t)) return 'Pillows';
-  // Dining 已并入 Cushions（全站统一 6 类）
+  // Decor/挂画、Dining/托盘：先于 Cushions 的 dining 兜底，托盘标题常带 "dining table" 场景词
+  if (/wall art|canvas (print|painting|wall)|framed (art|print|canvas)|decorative painting|wall decor|hanging (painting|picture)/.test(t)) return 'Decor';
+  if (/tray|serving basket|fruit (plate|basket|bowl)|snack (plate|bowl|tray)|platter|bread basket/.test(t)) return 'Dining';
+  // Dining 场景词兜底仍归 Cushions（椅垫标题常带 "dining"）
   if (/dining|chair cushion|seat cushion|seat pad|patio.*cushion|cushions? (set|with|2 pack|4 pack)/.test(t)) return 'Cushions';
   return 'Others';
 }
@@ -208,7 +222,7 @@ async function mapLimit(items, limit, fn) {
       const abs = path.join(ROOT, 'public', localPath.replace(/\//g, path.sep));
       whiteBg.push(await detectWhiteBg(abs));
     }
-    // 按优先级重排（文件编号不变，只调整 map 中的展示顺序）；--keep-order 时保持素材库原始顺序
+    // 展示顺序：默认保持素材库原始顺序（KEEP_ORDER 默认开启）；--reorder 时按优先级重排（文件编号不变，只调整 map 中的展示顺序）
     const types = itemTypes[i.asin] || {};
     const rankOf = (idx) => {
       const type = types[POOLS[i.asin][idx]];

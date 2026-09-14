@@ -27,7 +27,7 @@ Module._resolveFilename = function (request, ...args) {
 const ROOT = process.cwd();
 const { PRODUCTS_DATA, enrichProductsWithShopifyData } = require(path.join(ROOT, 'src/data/products.ts'));
 const { MATERIALS_MAP } = require(path.join(ROOT, 'src/data/materials-map.ts'));
-const { getColorTag, getSceneTag } = require(path.join(ROOT, 'src/data/product-tags.ts'));
+const { getColorTag, getSceneTag, NO_TAG_TYPES } = require(path.join(ROOT, 'src/data/product-tags.ts'));
 
 // 套装数：从完整标题提取，取第一个命中，都没有则 null
 const PIECES_PATTERNS = [
@@ -45,9 +45,9 @@ const extractPieces = (title) => {
 
 // 在售产品 + 素材库新品（无 Shopify 数据）：新品提前打标持久化，建品上架后自动生效；
 // 静态页仍只按在售产品生成（tagged.ts 过滤），缺货新品的标签不会影响现有页面。
-// Others 类目不参与 color/scene 分类（2026-09 用户定），直接跳过
+// Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定），直接跳过
 const inStock = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-  (p) => ((p.hasShopifyData && p.shopifyAvailable) || !p.hasShopifyData) && p.productType !== 'Others'
+  (p) => ((p.hasShopifyData && p.shopifyAvailable) || !p.hasShopifyData) && !NO_TAG_TYPES.has(p.productType)
 );
 
 const tags = {};

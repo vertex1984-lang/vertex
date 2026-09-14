@@ -5,6 +5,7 @@
 
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { CATEGORY_DEFS } from '@/data/subcategories';
+import { NO_TAG_TYPES } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
 import PRODUCT_TAGS_JSON from '@/data/product-tags.json';
 
@@ -19,7 +20,7 @@ export const FEATURED_COUNT = 8;
 
 export function getFeaturedProducts(): MakimooProduct[] {
   const pool = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-    (p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others'
+    (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
   );
   const byType: Record<string, MakimooProduct[]> = {};
   for (const p of pool) (byType[p.productType] ||= []).push(p);
@@ -87,7 +88,7 @@ export function getBestSellerProducts(): MakimooProduct[] {
   const featuredIds = new Set(featured.map((p) => p.id));
   const seenTitles = new Set(featured.map((p) => titleKey(p.title)));
   const pool = enrichProductsWithShopifyData(PRODUCTS_DATA)
-    .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
+    .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
     .filter((p) => !featuredIds.has(p.id));
   // 先按权重排序，再去重取前 15：同标题保留权重最高的一款
   return sortByWeight(pool)
@@ -102,7 +103,7 @@ export function getBestSellerProducts(): MakimooProduct[] {
 
 export function getNewArrivalProducts(): MakimooProduct[] {
   return enrichProductsWithShopifyData(byAsin(NEW_ARRIVAL_ASINS)).filter(
-    (p) => p.productType !== 'Others'
+    (p) => !NO_TAG_TYPES.has(p.productType)
   );
 }
 
