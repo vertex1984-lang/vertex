@@ -586,7 +586,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                       active
                         ? 'border-brand bg-brand text-cream cursor-default'
                         : unavailable
-                          ? 'border-warm-gray bg-white text-charcoal-light/50 line-through cursor-not-allowed'
+                          ? 'border-warm-gray bg-white text-charcoal-light/50 cursor-not-allowed'
                           : 'border-warm-gray bg-white text-charcoal hover:border-brand/40'
                     }`;
                     if (unavailable) {
