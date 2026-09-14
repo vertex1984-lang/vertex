@@ -463,6 +463,68 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'LINEN3-IVORY-FULL', handle: 'makimoo-100-percent-linen-duvet-cover-set-full-size-3-piece-linen3-ivory-full', color: 'Ivory', size: '200 x 220 cm' },
     ],
   },
+  {
+    id: '1688-807393887857',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-807393887857-C2', handle: 'framed-african-geometric-wall-art-bohemian-folk-decor-with-1688-807393887857-c2', color: 'Woven Baskets', size: 'Single' },
+    { asin: '1688-807393887857-C3', handle: 'vintage-style-square-framed-canvas-wall-art-african-1688-807393887857-c3', color: 'Basket Weave', size: 'Single' },
+    { asin: '1688-807393887857-C4', handle: 'handmade-african-bohemian-folk-art-canvas-wall-decor-with-1688-807393887857-c4', color: 'Mudcloth', size: 'Single' },
+    { asin: '1688-807393887857-C5', handle: 'folk-art-wall-decor-canvas-linen-print-with-wooden-frame-1688-807393887857-c5', color: 'Diamond Stitch', size: 'Single' },
+    { asin: '1688-807393887857-C6', handle: '4-piece-square-folk-art-canvas-wall-decor-set-with-wooden-1688-807393887857-c6', color: 'Folk Art', size: 'Set of 4' },
+    ],
+  },
+  {
+    id: '1688-730512046265',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-730512046265-C2', handle: 'boho-vibrant-african-geometric-burlap-canvas-wall-art-1688-730512046265-c2', color: 'Vibrant Bowls', size: 'Single' },
+    { asin: '1688-730512046265-C3', handle: 'african-style-burlap-wall-art-decorative-painting-rustic-1688-730512046265-c3', color: 'Autumn Baskets', size: 'Single' },
+    { asin: '1688-730512046265-C4', handle: 'rustic-ethnic-burlap-framed-wall-art-geometric-african-1688-730512046265-c4', color: 'Blue & Rust', size: 'Single' },
+    { asin: '1688-730512046265-C5', handle: 'tribal-african-ethnic-style-burlap-wall-art-framed-1688-730512046265-c5', color: 'Pottery Still', size: 'Single' },
+    { asin: '1688-730512046265-C6', handle: 'traditional-african-woven-basket-art-framed-linen-canvas-1688-730512046265-c6', color: 'Tribal Vases', size: 'Single' },
+    ],
+  },
+  {
+    id: '1688-743606980882',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-743606980882-C2', handle: 'woven-rattan-serving-tray-with-shell-mosaic-green-checkered-1688-743606980882-c2', color: 'Golden Bloom', size: 'Single' },
+    { asin: '1688-743606980882-C10', handle: 'handcrafted-woven-rattan-rectangular-serving-tray-with-1688-743606980882-c10', color: 'Green Leaf', size: 'Single' },
+    { asin: '1688-743606980882-C20', handle: 'handwoven-rattan-shell-tray-set-of-3-rectangular-storage-1688-743606980882-c20', color: 'Blue Floral', size: 'Set of 3' },
+    { asin: '1688-743606980882-C32', handle: 'handwoven-rattan-tray-set-of-3-with-green-four-leaf-clover-1688-743606980882-c32', color: 'Green Clover', size: 'Set of 3' },
+    { asin: '1688-743606980882-C41', handle: 'elegant-decorative-woven-rattan-rectangular-serving-tray-1688-743606980882-c41', color: 'Petal Mandala', size: 'Single' },
+    { asin: '1688-743606980882-C52', handle: 'handwoven-rattan-serving-tray-set-of-3-rectangular-woven-1688-743606980882-c52', color: 'Blue Leaf', size: 'Set of 3' },
+    { asin: '1688-743606980882-C61', handle: 'woven-rattan-serving-tray-rectangular-wicker-basket-with-1688-743606980882-c61', color: 'Blue Medallion', size: 'Single' },
+    { asin: '1688-743606980882-C71', handle: 'handwoven-rattan-rectangular-serving-tray-basket-with-blue-1688-743606980882-c71', color: 'Cobalt Leaf', size: 'Single' },
+    { asin: '1688-743606980882-C80', handle: 'woven-rattan-basket-set-rectangular-serving-tray-with-1688-743606980882-c80', color: 'Checkered', size: 'Set of 3' },
+    { asin: '1688-743606980882-C89', handle: 'handwoven-rattan-rectangular-serving-tray-with-colorful-1688-743606980882-c89', color: 'Flower Market', size: 'Single' },
+    ],
+  },
+  {
+    id: '1688-899672152256',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-899672152256-C2', handle: 'handwoven-rattan-tray-with-green-leaf-shell-pattern-round-1688-899672152256-c2', color: 'Green Leaf', size: 'Single' },
+    { asin: '1688-899672152256-C13', handle: 'handwoven-rattan-shell-tray-set-of-3-round-woven-fruit-1688-899672152256-c13', color: 'Monstera', size: 'Set of 3' },
+    { asin: '1688-899672152256-C22', handle: 'handmade-round-rattan-shell-inlay-tray-woven-serving-basket-1688-899672152256-c22', color: 'Fish School', size: 'Single' },
+    { asin: '1688-899672152256-C33', handle: 'handwoven-rattan-shell-tray-set-of-3-round-woven-basket-1688-899672152256-c33', color: 'Blue Mosaic', size: 'Set of 3' },
+    { asin: '1688-899672152256-C42', handle: 'handcrafted-woven-rattan-shell-tray-with-green-floral-1688-899672152256-c42', color: 'Teal Dahlia', size: 'Single' },
+    { asin: '1688-899672152256-C52', handle: 'woven-rattan-shell-mosaic-round-tray-basket-for-fruit-snack-1688-899672152256-c52', color: 'Petal Mosaic', size: 'Single' },
+    { asin: '1688-899672152256-C61', handle: 'handwoven-rattan-shell-tray-set-of-3-nesting-woven-baskets-1688-899672152256-c61', color: 'Blue Dahlia', size: 'Set of 3' },
+    { asin: '1688-899672152256-C70', handle: 'handwoven-rattan-seashell-mosaic-tray-with-sunflower-1688-899672152256-c70', color: 'Daisy Field', size: 'Single' },
+    { asin: '1688-899672152256-C78', handle: 'handwoven-rattan-shell-tray-with-flower-and-leaf-pattern-1688-899672152256-c78', color: 'Monstera Grove', size: 'Single' },
+    { asin: '1688-899672152256-C85', handle: 'woven-rattan-nesting-trays-with-green-clover-pattern-round-1688-899672152256-c85', color: 'Green Floral', size: 'Set of 3' },
+    ],
+  },
+  {
+    id: '1688-663341114084',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-663341114084-C2', handle: 'vietnamese-rattan-ceramic-oval-serving-tray-with-raindrop-1688-663341114084-c2', color: 'Black Rays', size: 'Single' },
+    { asin: '1688-663341114084-C3', handle: 'natural-rattan-woven-ceramic-oval-snack-fruit-plate-hand-1688-663341114084-c3', color: 'Terracotta Fish', size: 'Single' },
+    ],
+  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();
