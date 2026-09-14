@@ -77,4 +77,23 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "b0gjlmc6z4": { material: "Microfiber" },  // 浮雕系列
   "b0gjlgxtl4": { material: "Microfiber" },  // 浮雕系列
   "b0gd843wmn": { material: "Microfiber" },  // 标题含 Microfibre
+  "linen3-charcoal-full": { material: "100% Linen" },
+  "linen3-sage-full": { material: "100% Linen" },
+  "linen3-charcoal-queen": { material: "100% Linen" },
+  "linen3-oatmeal-queen": { material: "100% Linen" },
+  "linen3-dustyblue-queen": { material: "100% Linen" },
+  "linen3-sage-king": { material: "100% Linen" },
+  "linen3-charcoal-twin": { material: "100% Linen" },
+  "linen3-dustyblue-king": { material: "100% Linen" },
+  "linen3-dustyblue-twin": { material: "100% Linen" },
+  "linen3-sage-queen": { material: "100% Linen" },
+  "linen3-oatmeal-king": { material: "100% Linen" },
+  "linen3-ivory-queen": { material: "100% Linen" },
+  "linen3-sage-twin": { material: "100% Linen" },
+  "linen3-ivory-twin": { material: "100% Linen" },
+  "linen3-oatmeal-twin": { material: "100% Linen" },
+  "linen3-dustyblue-full": { material: "100% Linen" },
+  "linen3-oatmeal-full": { material: "100% Linen" },
+  "linen3-ivory-king": { material: "100% Linen" },
+  "linen3-ivory-full": { material: "100% Linen" },
 };
