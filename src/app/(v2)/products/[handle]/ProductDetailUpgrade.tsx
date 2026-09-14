@@ -26,8 +26,8 @@ interface ProductDetailUpgradeProps {
   handle: string;
   /** 同款异色成员（含缩略图 URL），由服务端 page 组装传入；二维家族已按颜色去重 */
   colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
-  /** 同色其他尺寸（可选；二维/尺寸家族才有，传入后尺寸选择器变为功能型跳转） */
-  sizeVariants?: { handle: string; size: string; inStock: boolean }[];
+  /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选 */
+  sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
 }
 
 // ⚠️ DEMO 数据（设计演示用示例，非真实评价）：接入 Judge.me / Shopify Reviews 后删除替换。
@@ -574,17 +574,28 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 <div className="flex flex-wrap gap-3">
                   {sizeVariants.map((sv) => {
                     const active = sv.handle === handle;
+                    const unavailable = sv.handle === null;
                     const inner = (
                       <>
                         {sv.size}
-                        {!sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
+                        {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
+                        {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
                       </>
                     );
                     const cls = `px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition ${
                       active
                         ? 'border-brand bg-brand text-cream cursor-default'
-                        : 'border-warm-gray bg-white text-charcoal hover:border-brand/40'
+                        : unavailable
+                          ? 'border-warm-gray bg-white text-charcoal-light/50 line-through cursor-not-allowed'
+                          : 'border-warm-gray bg-white text-charcoal hover:border-brand/40'
                     }`;
+                    if (unavailable) {
+                      return (
+                        <span key={sv.size} title="Not available in this pattern" aria-disabled="true" className={cls}>
+                          {inner}
+                        </span>
+                      );
+                    }
                     return active ? (
                       <button key={sv.size} aria-pressed="true" className={cls}>
                         {inner}

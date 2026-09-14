@@ -110,16 +110,30 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           .map(toVariant);
         // 尺寸项：同色成员按尺寸去重（同尺寸重复 SKU 取第一个）
         const seenSizes = new Set<string>();
-        const sizeVariants = group.members
-          .filter((m) => m.color === currentMember?.color && m.size)
+        // 尺寸行 = 全家族出现过的尺寸档（Single → Set of N → cm 数字升序）；
+        // 当前花色有该档 → 返回可跳转成员；当前花色没有该档 → handle=null（前端渲染为置灰不可选）
+        const sizeRank = (s: string): number => {
+          const setM = s.match(/^Set of (\d+)/i);
+          if (setM) return 1000 + Number(setM[1]);
+          const numM = s.match(/^(\d+)/);
+          if (numM) return Number(numM[1]);
+          return 1;
+        };
+        const sizeVariants = [...group.members]
+          .filter((m) => m.size)
+          .sort((a, b) => sizeRank(a.size!) - sizeRank(b.size!))
           .filter((m) => {
             if (seenSizes.has(m.size!)) return false;
             seenSizes.add(m.size!);
             return true;
           })
           .map((m) => {
-            const v = toVariant(m);
-            return { handle: v.handle, size: v.size!, inStock: v.inStock };
+            const sameCombo = currentMember
+              ? group.members.find((x) => x.size === m.size && x.color === currentMember.color)
+              : undefined;
+            if (!sameCombo) return { handle: null as string | null, size: m.size!, inStock: false };
+            const v = toVariant(sameCombo);
+            return { handle: v.handle, size: m.size!, inStock: v.inStock };
           });
         return { colorVariants, sizeVariants };
       })()

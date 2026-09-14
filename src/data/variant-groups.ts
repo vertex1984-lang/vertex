@@ -471,12 +471,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-807393887857-C4', handle: 'handmade-african-bohemian-folk-art-canvas-wall-decor-with-1688-807393887857-c4', color: 'Mudcloth', size: 'Single' },
     { asin: '1688-807393887857-C5', handle: 'folk-art-wall-decor-canvas-linen-print-with-wooden-frame-1688-807393887857-c5', color: 'Diamond Stitch', size: 'Single' },
     { asin: '1688-807393887857-C6', handle: '4-piece-square-folk-art-canvas-wall-decor-set-with-wooden-1688-807393887857-c6', color: 'Folk Art', size: 'Set of 4' },
-    ],
-  },
-  {
-    id: '1688-730512046265',
-    optionName: 'Color',
-    members: [
     { asin: '1688-730512046265-C2', handle: 'boho-vibrant-african-geometric-burlap-canvas-wall-art-1688-730512046265-c2', color: 'Vibrant Bowls', size: 'Single' },
     { asin: '1688-730512046265-C3', handle: 'african-style-burlap-wall-art-decorative-painting-rustic-1688-730512046265-c3', color: 'Autumn Baskets', size: 'Single' },
     { asin: '1688-730512046265-C4', handle: 'rustic-ethnic-burlap-framed-wall-art-geometric-african-1688-730512046265-c4', color: 'Blue & Rust', size: 'Single' },
