@@ -2,7 +2,7 @@
  * 产品标签体系：色系 + 场景（Complete the Look 主题，/featured-products 使用）
  *
  * 规则（2026-09 用户定）：color 和 scene 是产品的必要 tag，每个产品恰好一个 color 和一个 scene。
- * **Others 类目不参与 color/scene 分类**（2026-09 用户定）：打标脚本跳过 Others，
+ * **Others / Decor / Dining 类目不参与 color/scene 分类**（2026-09 用户定）：打标脚本跳过这些类目，
  * 前端展示（Complete the Look / Shop by Color / Shop by Scene）同步排除，见 generate-tags.js / tagged.ts。
  *
  * - 色系（主色原则）：纯色/花色一视同仁，取标题中位置最靠前的颜色词作为主色
@@ -41,6 +41,9 @@ interface ColorRule extends ColorTag {
 interface SceneRule extends SceneTag {
   words: string[];
 }
+
+/** 不参与 color/scene 标签与 Featured/榜单配额的一级类目（productType 值） */
+export const NO_TAG_TYPES: ReadonlySet<string> = new Set(['Others', 'Decor', 'Dining']);
 
 // 内置色系表（顺序即展示顺序）；生效合集见下方导出的 COLOR_RULES
 export const BASE_COLOR_RULES: ColorRule[] = [

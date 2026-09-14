@@ -7,7 +7,7 @@ import { v2url } from '@/lib/v2paths';
 import { getRecentlyViewed } from '@/lib/recently-viewed';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
-import { getColorTag, getSceneTag } from '@/data/product-tags';
+import { getColorTag, getSceneTag, NO_TAG_TYPES } from '@/data/product-tags';
 import { getBestSellerProducts } from '@/data/featured-sections';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
@@ -46,13 +46,13 @@ export default function V2Recommended() {
         .map((p) => {
           const fullTitle = MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
           const persisted = TAGS[p.asin.toLowerCase()];
-          // Others 类目不参与 color/scene 分类（2026-09 用户定）：不打标签，只按类目参与推荐打分
-          const isOthers = p.productType === 'Others';
+          // Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定）：不打标签，只按类目参与推荐打分
+          const isExcluded = NO_TAG_TYPES.has(p.productType);
           return {
             product: p,
             category: p.productType,
-            color: isOthers ? null : persisted?.color ?? getColorTag(fullTitle, p.asin)?.key ?? null,
-            scene: isOthers ? '' : persisted?.scene ?? getSceneTag(fullTitle, p.productType).key,
+            color: isExcluded ? null : persisted?.color ?? getColorTag(fullTitle, p.asin)?.key ?? null,
+            scene: isExcluded ? '' : persisted?.scene ?? getSceneTag(fullTitle, p.productType).key,
           };
         }),
     []

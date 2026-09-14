@@ -6,7 +6,7 @@ import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
-import { getSceneTag, SCENE_RULES } from '@/data/product-tags';
+import { getSceneTag, SCENE_RULES, NO_TAG_TYPES } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
@@ -100,11 +100,11 @@ const SCENE_ICONS: Record<string, React.ReactNode> = {
  */
 export default function V2ShopByScene() {
   // 在售产品 + 各自场景 key（预先算一次，切换场景只是过滤）
-  // Others 类目不参与 color/scene 分类（2026-09 用户定），排除
+  // Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定），排除
   const taggedInStock = useMemo(
     () =>
       enrichProductsWithShopifyData(PRODUCTS_DATA)
-        .filter((p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others')
+        .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
         .map((p) => {
           const fullTitle = MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
           const persisted = TAGS[p.asin.toLowerCase()];

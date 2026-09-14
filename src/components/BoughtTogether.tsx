@@ -15,6 +15,8 @@ const CATEGORY_COMPANIONS: Record<string, string[]> = {
   Towels: ['Mats'],
   Mats: ['Towels', 'Cushions'],
   Others: ['Others'],
+  Decor: ['Decor'],
+  Dining: ['Dining'],
   Holiday: [],
 };
 

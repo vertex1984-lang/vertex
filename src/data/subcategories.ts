@@ -8,7 +8,7 @@ export interface CategoryDef {
   intro: string;
 }
 
-/** 顶级分类（全站统一 8 类；Holiday 暂无产品不展示） */
+/** 顶级分类（全站统一 10 类；Holiday 暂无产品不展示） */
 export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Cushions', value: 'cushions', intro: 'Tufted, water-resistant comfort for every seat — indoors and out.' },
   { label: 'Pillows', value: 'pillows', intro: 'Premium inserts and covers with plush fillings for bed & sofa.' },
@@ -16,6 +16,8 @@ export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Mats', value: 'mats', intro: 'Absorbent mats & durable rugs for every room.' },
   { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
   { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
+  { label: 'Decor', value: 'decor', intro: 'Framed canvas wall art to finish every room.' },
+  { label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
   { label: 'Others', value: 'others', intro: 'Travel, kitchen & extras for daily living.' },
 ];
@@ -52,6 +54,11 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'microfiber', parent: 'bedding', label: 'Microfiber', shortLabel: 'Microfiber', blurb: 'Brushed microfiber — soft, wrinkle-resistant & easy care.' },
   { key: 'linen', parent: 'bedding', label: 'Linen', shortLabel: 'Linen', blurb: '100% natural linen, breathable with lived-in texture.' },
   { key: 'cotton', parent: 'bedding', label: 'Cotton', shortLabel: 'Cotton', blurb: 'Washed cotton for crisp, airy comfort.' },
+  // Decor
+  { key: 'wall-art', parent: 'decor', label: 'Wall Art', shortLabel: 'Wall Art', blurb: 'Framed canvas prints, boho & tribal styles.' },
+  // Dining
+  { key: 'trays', parent: 'dining', label: 'Trays', shortLabel: 'Trays', blurb: 'Handwoven rattan trays for serving & display.' },
+  { key: 'placemats', parent: 'dining', label: 'Placemats', shortLabel: 'Placemats', blurb: 'Table pads & placemats for everyday dining.' },
   // Others
   { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel', blurb: 'Neck pillows & essentials for the road.' },
   { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools', blurb: 'Handy tools for everyday cooking.' },
@@ -185,6 +192,10 @@ export function classifyProduct(productType: string, title: string, asin: string
       return classifyMat(title);
     case 'bedding':
       return classifyBedding(asin);
+    case 'decor':
+      return 'wall-art';
+    case 'dining':
+      return /placemat|coaster|table (pad|mat)/i.test(title) ? 'placemats' : 'trays';
     case 'others':
       return classifyOther(title);
     default:

@@ -21,11 +21,11 @@ Module._resolveFilename = function (request, ...args) {
 const ROOT = process.cwd();
 const { PRODUCTS_DATA, enrichProductsWithShopifyData } = require(path.join(ROOT, 'src/data/products.ts'));
 const { MATERIALS_MAP } = require(path.join(ROOT, 'src/data/materials-map.ts'));
-const { getColorTag, getSceneTag } = require(path.join(ROOT, 'src/data/product-tags.ts'));
+const { getColorTag, getSceneTag, NO_TAG_TYPES } = require(path.join(ROOT, 'src/data/product-tags.ts'));
 
-// Others 类目不参与 color/scene 分类（2026-09 用户定），分析时跳过
+// Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定），分析时跳过
 const inStock = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-  (p) => p.hasShopifyData && p.shopifyAvailable && p.productType !== 'Others'
+  (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
 );
 
 const colorDist = {}, sceneDist = {};
