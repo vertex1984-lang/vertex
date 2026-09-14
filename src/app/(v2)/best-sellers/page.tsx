@@ -48,7 +48,7 @@ export default function BestSellersPage() {
       {/* 类目榜单：每类 4 款，产品卡网格同 /products?cat= 页，奇偶区交替底色 */}
       {sections.map((sec, i) => (
         <section key={sec.cat} className={`py-8 lg:py-12 ${i % 2 === 1 ? 'bg-off-white' : ''}`}>
-          <div className="px-6 lg:px-10">
+          <div className="px-3 lg:px-10">
             <Reveal>
               <div className="flex items-end justify-between gap-6 mb-8 lg:mb-10">
                 <div>
@@ -68,7 +68,7 @@ export default function BestSellersPage() {
                 </a>
               </div>
             </Reveal>
-            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
               {sec.products.map((p) => (
                 <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
               ))}

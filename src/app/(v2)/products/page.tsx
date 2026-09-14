@@ -250,7 +250,7 @@ export default function V2ProductsPage() {
     return grouped.length >= 2 && total >= 4 ? grouped : [];
   }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts]);
 
-  const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6';
+  const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
 
   const subDef = activeSub ? getSubcategoryDef(activeSub) : undefined;
   const pageTitle = isSearching
@@ -265,7 +265,7 @@ export default function V2ProductsPage() {
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
-    <div className="px-6 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>

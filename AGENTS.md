@@ -81,7 +81,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ## 展示规则
 
-- 白底图（四边像素 R/G/B≥245 比例≥70% 判定）：产品卡加 `p-5 sm:p-7`、详情主图 `p-6 sm:p-8` 缩小显示；场景图打满。图区容器统一白底。缺货产品灰化 40% 并沉底。
+- 白底图（四边像素 R/G/B≥245 比例≥70% 判定）：产品卡加 `p-2 sm:p-7`（2026-09 移动端从 p-5 收紧到 p-2，提高小屏图片占屏比）、详情主图 `p-6 sm:p-8` 缩小显示；场景图打满。图区容器统一白底。缺货产品灰化 40% 并沉底。
 - 产品卡（含 Featured）：标题含 "Set of X" / "X Pack" / "X-Pack" / "Pack of X" 自动打 `{X} Pack` 标签。
 - 首页 Featured 区块用 `variant="featured"`（固定高度+渐变底），与其它卡片样式独立。
 - 全站退货政策统一为 **30 天**。
@@ -146,7 +146,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - **颜色只用 Tailwind token**（`brand` / `cream` / `off-white` / `charcoal` / `warm-gray`），不写死 hex。例外：从 classic 复用/沿用的组件与内容（如政策页复用 `src/components/Policy.tsx`，正文沿用旧版样式）保持原样。
 - 新组件放 `src/components/v2/`，页面放 `src/app/(v2)/`；fixed 透明 Header 要求每个页面第一屏能衬住（首页/ about 大图页头，内页 `V2PageHeader` 的 bg-brand + pt-32）。
 - V2Header 顶部促销条（Announcement Bar）向下滚动超过阈值后自动收起（桌面/移动一致），回到顶部附近再展开，由 `scrolled` 滞回阈值（60/30px）控制。透明起始页判定：首页（`/`）和 `/about/`。
-- 产品列表页（`(v2)/products/page.tsx`）展示样式：classic `ProductCard` 白卡 + Collections/Material 左侧筛选栏 + 二级分类分区视图 + Load More；版心是 V2 全宽容器（px-6 / lg:px-10，无 1400px 边框盒），列数不变，产品卡随页面宽度等比增大。产品卡与 QuickViewModal 通过可选 `href`/`detailHref` prop 覆盖详情链接。
+- 产品列表页（`(v2)/products/page.tsx`）展示样式：classic `ProductCard` 白卡 + Collections/Material 左侧筛选栏 + 二级分类分区视图 + Load More；版心是 V2 全宽容器（无 1400px 边框盒；2026-09 起移动端收窄为 px-3 / gap-2 提高产品卡占屏比，桌面端仍 px-10 / gap-6），列数不变，产品卡随页面宽度等比增大。产品卡与 QuickViewModal 通过可选 `href`/`detailHref` prop 覆盖详情链接。同款产品网格页（new-arrivals / featured-products 的 color/scene 子页 / favorites）同步应用该移动端收窄规则。
 - client 页面的 metadata 由同目录 route `layout.tsx` 提供（见 `(v2)/cart/layout.tsx`、`(v2)/products/layout.tsx`、`(v2)/favorites/layout.tsx`）。
 - 心愿单页 `(v2)/favorites/`：读 localStorage（`makimoo-favorites`，存 product.id）渲染 classic `ProductCard` 网格，最近收藏在前；导航心形图标入口在 V2Header（角标监听 `makimoo:favorites-updated`）。
 - 首页 Featured Products 区：桌面端 bento 网格（容器 max-w-[1800px]、左右 5:12——宽度按「右侧 3 列小卡保持原 2×2 时代卡宽」推算，左侧两张 1:1 焦点大卡上下排列 = 位次 1/2 + 右侧 3×2 小卡 = 位次 3–8，上排 3/4/5、下排 6/7/8）；移动端为横向滚动条（8 张统一大小 V2ProductCard），两套布局 `lg:hidden` / `hidden lg:block` 互斥。**选品为类目配额制**（2026-09 用户定，`featured-sections.ts` 的 `getFeaturedProducts()`，共 8 个卡位）：类目权重 = 该类目在售产品数占总在售产品数（不含 Others/Decor/Dining，见 `NO_TAG_TYPES`）的比例，配额 = 比例 × 8 四舍五入再按误差修正到恰好 8；类目内部按 `sortByWeight()` 总分降序；卡片顺序按类目份额降序整组排列（份额高的类目靠前）。原 FEATURED_ASINS 人工清单已废止；首页 Best Sellers 区块排除 Featured 已展示产品避免重复。
