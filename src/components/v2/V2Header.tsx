@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, useEffect, useRef, FormEvent } from 'react';
 import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -96,6 +96,14 @@ export default function V2Header() {
   const [favCount, setFavCount] = useState(0);
   // Mega menu：当前展开的分类（'' = 收起）
   const [openMenu, setOpenMenu] = useState('');
+  // 移动抽屉顶端对齐到页头下缘（页头保持露出可点）；打开瞬间量一次页头高度
+  const headerRef = useRef<HTMLDivElement>(null);
+  const [drawerTop, setDrawerTop] = useState(96);
+  // 抽屉里当前展开二级类目的一级类目（'' = 全部折叠）；抽屉关闭时复位
+  const [expandedCat, setExpandedCat] = useState('');
+  useEffect(() => {
+    if (!mobileOpen) setExpandedCat('');
+  }, [mobileOpen]);
 
   useEffect(() => {
     // 滞回阈值：滚动超过 60px 变实底，回到 30px 以下才恢复透明，
@@ -214,7 +222,7 @@ export default function V2Header() {
 
   return (
     <>
-      <div className="fixed top-0 z-50 w-full">
+      <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* Announcement Bar：向下滚动超过阈值后收起（桌面/移动一致），回到顶部附近再展开 */}
         <div
           className={`bg-brand text-cream text-center text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
@@ -303,14 +311,27 @@ export default function V2Header() {
               )}
             </button>
 
+            {/* 汉堡按钮 = 抽屉开关：打开时图标变 ×，再点一次关闭（页头始终露出在抽屉上方） */}
             <button
-              onClick={() => setMobileOpen(true)}
+              onClick={() => {
+                if (!mobileOpen) {
+                  setDrawerTop(headerRef.current?.offsetHeight ?? 96);
+                }
+                setMobileOpen((v) => !v);
+              }}
               className="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-1"
-              aria-label="Menu"
+              aria-label={mobileOpen ? 'Close menu' : 'Menu'}
+              aria-expanded={mobileOpen}
             >
-              <span className="block w-5 h-0.5 bg-current rounded" />
-              <span className="block w-5 h-0.5 bg-current rounded" />
-              <span className="block w-5 h-0.5 bg-current rounded" />
+              {mobileOpen ? (
+                <span className="text-2xl leading-none">&times;</span>
+              ) : (
+                <>
+                  <span className="block w-5 h-0.5 bg-current rounded" />
+                  <span className="block w-5 h-0.5 bg-current rounded" />
+                  <span className="block w-5 h-0.5 bg-current rounded" />
+                </>
+              )}
             </button>
           </div>
 
@@ -480,16 +501,30 @@ export default function V2Header() {
         )}
       </div>
 
-      {/* Mobile Full-screen Drawer */}
+      {/* Mobile Drawer：不再铺满全屏——z-40 低于页头（z-50），页头保持露出，
+          汉堡/× 按钮始终可点；抽屉从页头下缘开始，限高内部滚动，
+          其余区域盖半透明遮罩，点遮罩（抽屉外任意处）关闭 */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[1500] bg-off-white text-charcoal p-8 pt-20 overflow-y-auto lg:hidden">
-          <button
-            onClick={() => setMobileOpen(false)}
-            className="absolute top-5 right-5 w-11 h-11 rounded-full border border-warm-gray flex items-center justify-center text-xl text-charcoal hover:bg-warm-gray hover:text-brand transition"
-            aria-label="Close menu"
+        <div
+          className="fixed inset-0 z-40 bg-charcoal/40 lg:hidden"
+          onClick={() => setMobileOpen(false)}
+          // touchend 即 preventDefault + 关闭：阻止浏览器在抽屉消失后向同一触点
+          // 补发 click（幽灵点击会落到下层原始网页的链接上触发转跳）
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            setMobileOpen(false);
+          }}
+        >
+          <div
+            className="absolute left-0 right-0 bg-off-white text-charcoal px-8 pb-8 pt-4 overflow-y-auto shadow-[0_16px_40px_rgba(60,45,30,0.25)]"
+            style={{
+              top: drawerTop,
+              maxHeight: `calc(100vh - ${drawerTop}px)`,
+              animation: 'fadeIn 0.18s ease-out',
+            }}
+            onClick={(e) => e.stopPropagation()}
+            onTouchEnd={(e) => e.stopPropagation()}
           >
-            &times;
-          </button>
           <nav className="flex flex-col gap-1">
             <a
               href={v2url('/')}
@@ -498,48 +533,66 @@ export default function V2Header() {
             >
               Home
             </a>
-            {navLinks.map((link) => (
-              <div key={link.label}>
-                {link.href ? (
-                  <a
-                    href={v2url(link.href)}
-                    onClick={() => setMobileOpen(false)}
-                    className="block text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+            {/* 一级类目整行点击展开/收起二级类目（默认折叠）；展开后首项
+                "Shop All {类目}" 链到类目汇总页（Featured 无汇总页，无此项） */}
+            {navLinks.map((link) => {
+              const expanded = expandedCat === link.cat;
+              const subs =
+                link.cat === 'featured'
+                  ? FEATURED_SUBS.map((s) => ({ key: s.href, label: s.label, href: s.href }))
+                  : getSubcategoriesOf(link.cat).map((s) => ({
+                      key: s.key,
+                      label: s.label,
+                      href: `/products?cat=${link.cat}&sub=${s.key}`,
+                    }));
+              return (
+                <div key={link.label}>
+                  <button
+                    onClick={() => setExpandedCat(expanded ? '' : link.cat)}
+                    aria-expanded={expanded}
+                    className="w-full flex items-center justify-between text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
                   >
                     {link.label}
-                  </a>
-                ) : (
-                  // Featured 无汇总页入口：主项为纯文字，三个独立页在下方缩进展示
-                  <span className="block text-base font-semibold text-charcoal py-3 px-4">
-                    {link.label}
-                  </span>
-                )}
-                {/* 有二级类目的分类在移动端抽屉中缩进展示；Featured 展示三个独立页入口 */}
-                {link.cat === 'featured' &&
-                  FEATURED_SUBS.map((sub) => (
-                    <a
-                      key={sub.href}
-                      href={v2url(sub.href)}
-                      onClick={() => setMobileOpen(false)}
-                      className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                    <svg
+                      className={`w-4 h-4 text-charcoal-light transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                     >
-                      {sub.label}
-                    </a>
-                  ))}
-                {link.cat && link.cat !== 'featured' &&
-                  getSubcategoriesOf(link.cat).map((sub) => (
-                    <a
-                      key={sub.key}
-                      href={v2url(`/products?cat=${link.cat}&sub=${sub.key}`)}
-                      onClick={() => setMobileOpen(false)}
-                      className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
-                    >
-                      {sub.label}
-                    </a>
-                  ))}
-              </div>
-            ))}
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  {/* grid-rows 0fr/1fr 过渡实现高度自适应的展开动画，无需写死高度 */}
+                  <div
+                    className={`grid transition-all duration-300 ${
+                      expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      {link.href && (
+                        <a
+                          href={v2url(link.href)}
+                          onClick={() => setMobileOpen(false)}
+                          className="block text-sm font-semibold text-brand py-2 pl-8 pr-4 rounded-lg hover:bg-brand/5 transition"
+                        >
+                          Shop All {link.label} →
+                        </a>
+                      )}
+                      {subs.map((sub) => (
+                        <a
+                          key={sub.key}
+                          href={v2url(sub.href)}
+                          onClick={() => setMobileOpen(false)}
+                          className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                        >
+                          {sub.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </nav>
+          </div>
         </div>
       )}
 

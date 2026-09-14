@@ -380,7 +380,7 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : sections.length > 0 ? (
-        /* 分区视图：按二级分类分区，移动端横滑、桌面端网格展示全部（2026-09-14 起取消「前 8 个 + View All」截断） */
+        /* 分区视图：按二级分类分区，移动端 2 列网格、桌面端 3/4 列网格展示全部（2026-09-14 起取消「前 8 个 + View All」截断；同日移动端由横滑条统一为网格） */
         <div>
           {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
           <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
@@ -411,12 +411,10 @@ export default function V2ProductsPage() {
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
                   {def.blurb && <p className="text-[13px] lg:text-sm text-[#777] mt-1 line-clamp-2 lg:line-clamp-none">{def.blurb}</p>}
                 </div>
-                {/* 移动端：横向滑动（隐藏滚动条，卡片吸附，与页面左右留白对齐） */}
-                <div className="lg:hidden flex gap-3 overflow-x-auto snap-x pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {/* 移动端：2 列网格平铺（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
+                <div className="lg:hidden grid grid-cols-2 gap-2">
                   {products.map((p) => (
-                    <div key={p.id} className="w-[44%] flex-shrink-0 snap-start">
-                      <ProductCard product={p} href={cardHref(p)} />
-                    </div>
+                    <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>
                 {/* 桌面端：网格展示该分区全部产品 */}

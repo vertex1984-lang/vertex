@@ -248,7 +248,7 @@ export default function V2ShopByScene() {
   return (
     <section className="bg-off-white pt-8 lg:pt-12 pb-16 lg:pb-24">
       <Reveal>
-        <div className="px-6 lg:px-10">
+        <div className="px-3 lg:px-10">
           <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Scene
           </h2>
@@ -340,8 +340,9 @@ export default function V2ShopByScene() {
               </div>
             </div>
 
-            {/* 移动端平铺：2 列最多 3 行，奇数款已去掉末尾 1 款（桌面端隐藏） */}
-            <div className="lg:hidden grid grid-cols-2 gap-5">
+            {/* 移动端平铺：2 列最多 3 行，奇数款已去掉末尾 1 款（桌面端隐藏）。
+                gap-2 与分类页移动端一致，卡更宽图更大 */}
+            <div className="lg:hidden grid grid-cols-2 gap-2">
               {mobileProducts.map((product) => (
                 <V2ProductCard key={product.id} product={product} />
               ))}

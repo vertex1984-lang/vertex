@@ -175,9 +175,12 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
       {/* 主区：左图库（约 58%）+ 右购买区（sticky）；pt-32/36 让内容避开 fixed 导航 */}
       <section className="bg-off-white">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-8 lg:pb-14">
-          <div className="grid lg:grid-cols-[7fr_5fr] gap-8 lg:gap-14">
+          {/* 移动端必须显式 grid-cols-1 + 子项 min-w-0：隐式 auto 列会被图库内容
+              （缩略图横排/带 width 属性的主图）撑到内容宽度，导致整页横向溢出、
+              标题和主图右缘被裁掉 */}
+          <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-8 lg:gap-14">
             {/* Gallery：桌面端缩略图竖排在左，移动端横排在下 */}
-            <div className="flex flex-col-reverse lg:flex-row gap-3 lg:gap-4">
+            <div className="flex flex-col-reverse lg:flex-row gap-3 lg:gap-4 min-w-0">
               {productImages.length > 1 && (
                 <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto lg:max-h-[640px] flex-shrink-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                   {productImages.map((img, i) => (
@@ -218,8 +221,9 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
               </div>
             </div>
 
-            {/* 购买区：desktop sticky（fixed header 实底后总高约 120px，top-32=128px 避开） */}
-            <div className="lg:sticky lg:top-32 lg:self-start">
+            {/* 购买区：desktop sticky（fixed header 实底后总高约 120px，top-32=128px 避开）。
+                min-w-0 防止 grid 隐式列被内容撑宽（见上方 grid 注释） */}
+            <div className="lg:sticky lg:top-32 lg:self-start min-w-0">
               <div className="flex items-center gap-3 mb-4">
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
                   {product.productType}
