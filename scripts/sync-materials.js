@@ -46,7 +46,7 @@ if (!password) {
 const AMAZON_HOST = { US: 'www.amazon.com', DE: 'www.amazon.de', UK: 'www.amazon.co.uk' };
 
 // 用户要求全站隐藏的产品（素材库保留，不生成站点条目；小写标识）
-const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2']);
+const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2', '1688-916370884976-c9']);
 
 function classify(title) {
   const t = (title || '').toLowerCase();
@@ -56,9 +56,11 @@ function classify(title) {
   // Bedding/Blanket 先于 Pillows：床品件套标题常带 pillowcases，毯子标题常带 couch/sofa
   if (/duvet|bedding|bed linen|quilt cover|comforter|fitted sheet|bed sheet/.test(t)) return 'Bedding';
   if (/blanket/.test(t)) return 'Blankets';
-  // Travel 已并入 Others（全站统一 6 类）
-  if (/travel|neck pillow/.test(t)) return 'Others';
-  if (/pillowcase|pillow case|cushion cover|pillow cover|bed pillow|pillow insert|cushion filler|cushion pad|throw pillow insert|quilted.*(insert|pillow)/.test(t)) return 'Pillows';
+  // Travel 已并入 Others（全站统一 6 类）；枕套类标题常带 "travel"（旅行场景用法），仍归 Pillows
+  if (/travel|neck pillow/.test(t) && !/pillowcase|pillow case|pillow cover|cushion cover|cushion sham/.test(t)) return 'Others';
+  // 椅垫先于 Pillows：户外椅垫标题常带 "cushion pad"/"lounge pillow"，避免误入 Pillows
+  if (/chair cushions?|seat cushions?|seat pads?|lounge pillow|deep seat|high.?back/.test(t) && !/pillow insert|cushion insert|cushion filler|pillow stuffer/.test(t)) return 'Cushions';
+  if (/pillowcase|pillow case|cushion cover|pillow cover|bed pillow|pillow insert|cushion inserts?|pillow stuffer|cushion filler|cushion pad|throw pillow insert|quilted.*(insert|pillow)/.test(t)) return 'Pillows';
   // Dining 已并入 Cushions（全站统一 6 类）
   if (/dining|chair cushion|seat cushion|seat pad|patio.*cushion|cushions? (set|with|2 pack|4 pack)/.test(t)) return 'Cushions';
   return 'Others';

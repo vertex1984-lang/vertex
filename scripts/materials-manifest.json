@@ -1307,6 +1307,76 @@
   "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/supply/1788938941849-828444937.jpg",
   "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/supply/1788933322401-40405631.jpg"
  ],
+ "DUVSET-GRAY-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101204685-454556295.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101205422-166721504.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101206204-619432124.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101206948-32012639.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101207712-86797624.png"
+ ],
+ "DUVSET-GRAY-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101208519-766622409.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101209230-652569210.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101210004-655470643.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101210776-213504657.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101211578-137383599.png"
+ ],
+ "DUVSET-GRAY-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101200140-427578698.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101201015-656475974.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101201921-925348035.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101202718-24608875.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101203729-973912905.png"
+ ],
+ "DUVSET-GRAY-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101212445-97263023.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101213181-44209567.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101213905-966023711.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101214700-280259842.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101215526-737997557.png"
+ ],
+ "DUVSET-PINK-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101220073-536082190.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101220808-259669974.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101221484-623125737.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101222270-421936009.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101222970-593760136.png"
+ ],
+ "DUVSET-PINK-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101223858-557524999.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101224730-715262089.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101225810-342262410.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101226652-467698678.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101227402-221350214.png"
+ ],
+ "DUVSET-PINK-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101216303-390067757.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101217022-665641318.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101217747-110240516.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101218479-262861146.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101219323-167841882.png"
+ ],
+ "DUVSET-PINK-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101228185-866283177.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101228916-963830566.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101229662-96568226.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101230420-32428831.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101231190-969390494.png"
+ ],
+ "DUVSET-BEIGE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101191783-523023092.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101192708-793913208.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101193543-202734812.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101194444-488097976.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101195232-380731809.png"
+ ],
+ "DUVSET-BEIGE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101196095-561248074.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101197048-986883875.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101197831-370371774.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101198542-728498212.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101199300-944644056.png"
+ ],
  "DUVSET-BEIGE-FULL": [
   "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1788948305795-458257872.jpg",
   "https://img1.seeany.com/20260909/b0aa265b-dcf3-40b9-90d2-513360ba41fe.png",
@@ -1321,11 +1391,431 @@
   "https://img1.seeany.com/20260909/0b8182de-cc15-4321-890e-ed6415840103.png",
   "https://img1.seeany.com/20260909/9e72a6b3-cf3c-43dc-a056-29faadf6e069.png"
  ],
+ "DUVSET-WHITE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101235737-762403316.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101236478-887561260.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101237189-353211311.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101238045-6984602.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101238785-173804519.png"
+ ],
+ "DUVSET-WHITE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101232024-182978900.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101232754-81204806.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101233556-767586819.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101234305-198822730.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101235011-855173404.png"
+ ],
+ "DUVSET-WHITE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101239590-315461260.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101240336-559041986.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101240961-207329710.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101241775-687463354.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101242576-193798230.png"
+ ],
+ "DUVSET-WHITE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101243265-773521768.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101244031-371027634.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101244721-984979264.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101245418-309397756.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789101246082-689025042.png"
+ ],
  "B0BY8LY757": [
   "https://img1.seeany.com/20260909/91e4a9c2-c2bc-4e60-9080-d2720766210a.png",
   "https://img1.seeany.com/20260909/3088ce36-412d-442e-b220-1851d82caddf.png",
   "https://img1.seeany.com/20260909/bdc8c459-f6b9-417a-bf37-ea6dd12c3401.png",
   "https://img1.seeany.com/20260909/6a2239f9-7143-4dbd-84bc-1803a1839954.png",
   "https://img1.seeany.com/20260909/2804e7c8-c508-4e67-83b7-48c087d0b307.png"
+ ],
+ "BEDSET4-LILAC-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034767883-53136904.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034768890-94477231.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034769678-168475406.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034770475-544916254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034771309-338478318.png"
+ ],
+ "BEDSET4-LILAC-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034767883-53136904.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034768890-94477231.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034769678-168475406.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034770475-544916254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034771309-338478318.png"
+ ],
+ "BEDSET4-LILAC-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034767883-53136904.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034768890-94477231.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034769678-168475406.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034770475-544916254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034771309-338478318.png"
+ ],
+ "BEDSET4-LILAC-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034767883-53136904.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034768890-94477231.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034769678-168475406.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034770475-544916254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034771309-338478318.png"
+ ],
+ "BEDSET4-SLATE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034772181-244191634.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034773023-166387095.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774072-719352086.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774911-633234131.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034775722-898453093.png"
+ ],
+ "BEDSET4-SLATE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034772181-244191634.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034773023-166387095.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774072-719352086.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774911-633234131.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034775722-898453093.png"
+ ],
+ "BEDSET4-SLATE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034772181-244191634.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034773023-166387095.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774072-719352086.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774911-633234131.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034775722-898453093.png"
+ ],
+ "BEDSET4-SLATE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034772181-244191634.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034773023-166387095.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774072-719352086.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034774911-633234131.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034775722-898453093.png"
+ ],
+ "BEDSET4-TAN-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034776587-283417666.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034777447-423662367.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034778261-318549647.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779201-15468507.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779966-797508755.png"
+ ],
+ "BEDSET4-TAN-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034776587-283417666.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034777447-423662367.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034778261-318549647.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779201-15468507.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779966-797508755.png"
+ ],
+ "BEDSET4-TAN-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034776587-283417666.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034777447-423662367.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034778261-318549647.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779201-15468507.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779966-797508755.png"
+ ],
+ "BEDSET4-TAN-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034776587-283417666.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034777447-423662367.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034778261-318549647.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779201-15468507.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034779966-797508755.png"
+ ],
+ "BEDSET4-SAGE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034780785-887928584.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034781548-462503259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034782325-926434091.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783220-150558145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783986-244982001.png"
+ ],
+ "BEDSET4-SAGE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034780785-887928584.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034781548-462503259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034782325-926434091.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783220-150558145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783986-244982001.png"
+ ],
+ "BEDSET4-SAGE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034780785-887928584.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034781548-462503259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034782325-926434091.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783220-150558145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783986-244982001.png"
+ ],
+ "BEDSET4-SAGE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034780785-887928584.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034781548-462503259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034782325-926434091.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783220-150558145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034783986-244982001.png"
+ ],
+ "BEDSET4-MAUVE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034784877-597019157.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034785743-542455194.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034786448-560982579.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787201-121704408.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787951-685634863.png"
+ ],
+ "BEDSET4-MAUVE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034784877-597019157.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034785743-542455194.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034786448-560982579.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787201-121704408.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787951-685634863.png"
+ ],
+ "BEDSET4-MAUVE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034784877-597019157.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034785743-542455194.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034786448-560982579.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787201-121704408.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787951-685634863.png"
+ ],
+ "BEDSET4-MAUVE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034784877-597019157.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034785743-542455194.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034786448-560982579.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787201-121704408.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034787951-685634863.png"
+ ],
+ "BEDSET4-MOSS-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034788882-542381449.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034789634-767569192.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034790376-692968105.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791192-357391262.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791949-777460532.png"
+ ],
+ "BEDSET4-MOSS-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034788882-542381449.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034789634-767569192.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034790376-692968105.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791192-357391262.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791949-777460532.png"
+ ],
+ "BEDSET4-MOSS-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034788882-542381449.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034789634-767569192.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034790376-692968105.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791192-357391262.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791949-777460532.png"
+ ],
+ "BEDSET4-MOSS-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034788882-542381449.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034789634-767569192.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034790376-692968105.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791192-357391262.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034791949-777460532.png"
+ ],
+ "BEDSET4-COFFEE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034792908-526875039.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034793654-599931088.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034794544-455472943.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034795375-584668054.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034796240-446375478.png"
+ ],
+ "BEDSET4-COFFEE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034792908-526875039.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034793654-599931088.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034794544-455472943.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034795375-584668054.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034796240-446375478.png"
+ ],
+ "BEDSET4-COFFEE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034792908-526875039.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034793654-599931088.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034794544-455472943.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034795375-584668054.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034796240-446375478.png"
+ ],
+ "BEDSET4-COFFEE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034792908-526875039.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034793654-599931088.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034794544-455472943.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034795375-584668054.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034796240-446375478.png"
+ ],
+ "BEDSET4-BLUE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034797254-278721965.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034798259-41508074.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799086-173829187.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799965-71475025.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034800748-577383627.png"
+ ],
+ "BEDSET4-BLUE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034797254-278721965.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034798259-41508074.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799086-173829187.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799965-71475025.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034800748-577383627.png"
+ ],
+ "BEDSET4-BLUE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034797254-278721965.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034798259-41508074.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799086-173829187.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799965-71475025.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034800748-577383627.png"
+ ],
+ "BEDSET4-BLUE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034797254-278721965.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034798259-41508074.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799086-173829187.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034799965-71475025.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034800748-577383627.png"
+ ],
+ "BEDSET4-PLAID-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034801651-477252817.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034802605-382726283.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034803379-706393907.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804214-683267215.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804979-321957690.png"
+ ],
+ "BEDSET4-PLAID-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034801651-477252817.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034802605-382726283.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034803379-706393907.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804214-683267215.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804979-321957690.png"
+ ],
+ "BEDSET4-PLAID-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034801651-477252817.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034802605-382726283.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034803379-706393907.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804214-683267215.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804979-321957690.png"
+ ],
+ "BEDSET4-PLAID-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034801651-477252817.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034802605-382726283.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034803379-706393907.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804214-683267215.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789034804979-321957690.png"
+ ],
+ "LINEN3-SAGE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234134119-354035773.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234135331-776270228.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234136414-80447578.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234137459-184678142.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234139884-509930743.png"
+ ],
+ "LINEN3-SAGE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234134119-354035773.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234135331-776270228.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234136414-80447578.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234137459-184678142.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234139884-509930743.png"
+ ],
+ "LINEN3-SAGE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234134119-354035773.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234135331-776270228.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234136414-80447578.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234137459-184678142.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234139884-509930743.png"
+ ],
+ "LINEN3-SAGE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234134119-354035773.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234135331-776270228.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234136414-80447578.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234137459-184678142.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234139884-509930743.png"
+ ],
+ "LINEN3-CHARCOAL-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234141070-336554501.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234143510-91947383.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234144632-347007789.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147002-264433722.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147946-207824526.png"
+ ],
+ "LINEN3-CHARCOAL-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234141070-336554501.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234143510-91947383.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234144632-347007789.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147002-264433722.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147946-207824526.png"
+ ],
+ "LINEN3-CHARCOAL-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234141070-336554501.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234143510-91947383.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234144632-347007789.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147002-264433722.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147946-207824526.png"
+ ],
+ "LINEN3-CHARCOAL-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234141070-336554501.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234143510-91947383.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234144632-347007789.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147002-264433722.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234147946-207824526.png"
+ ],
+ "LINEN3-DUSTYBLUE-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234149078-606741581.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234150099-361994256.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234151149-925695259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234152206-364247005.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234153297-315621211.png"
+ ],
+ "LINEN3-DUSTYBLUE-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234149078-606741581.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234150099-361994256.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234151149-925695259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234152206-364247005.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234153297-315621211.png"
+ ],
+ "LINEN3-DUSTYBLUE-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234149078-606741581.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234150099-361994256.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234151149-925695259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234152206-364247005.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234153297-315621211.png"
+ ],
+ "LINEN3-DUSTYBLUE-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234149078-606741581.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234150099-361994256.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234151149-925695259.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234152206-364247005.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234153297-315621211.png"
+ ],
+ "LINEN3-IVORY-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234154366-943387145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234156042-809086254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234157065-839081351.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234158043-9579041.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234160672-738554326.png"
+ ],
+ "LINEN3-IVORY-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234154366-943387145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234156042-809086254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234157065-839081351.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234158043-9579041.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234160672-738554326.png"
+ ],
+ "LINEN3-IVORY-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234154366-943387145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234156042-809086254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234157065-839081351.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234158043-9579041.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234160672-738554326.png"
+ ],
+ "LINEN3-IVORY-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234154366-943387145.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234156042-809086254.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234157065-839081351.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234158043-9579041.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234160672-738554326.png"
+ ],
+ "LINEN3-OATMEAL-TWIN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234161734-57715865.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234164309-871679980.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234165230-78749201.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234166221-295191830.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234168808-992389882.png"
+ ],
+ "LINEN3-OATMEAL-FULL": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234161734-57715865.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234164309-871679980.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234165230-78749201.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234166221-295191830.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234168808-992389882.png"
+ ],
+ "LINEN3-OATMEAL-QUEEN": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234161734-57715865.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234164309-871679980.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234165230-78749201.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234166221-295191830.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234168808-992389882.png"
+ ],
+ "LINEN3-OATMEAL-KING": [
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234161734-57715865.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234164309-871679980.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234165230-78749201.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234166221-295191830.png",
+  "https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1789234168808-992389882.png"
  ]
 }

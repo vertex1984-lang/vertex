@@ -10,8 +10,12 @@ import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@
 import { getSubcategoriesOf } from '@/data/subcategories';
 
 // V2 导航：cat 非空的项带 mega menu（二级类目 + 示例图卡）
+// 首项 Featured 只作弹窗入口（href 空 = 菜单标题/移动端主项不跳转）；
+// 弹窗子项指向两个独立精选页 /best-sellers、/new-arrivals
+//（/featured-products 已隐藏并移除导航入口，2026-09 用户要求），
+// 原 /featured 汇总页保留但全站无入口
 const navLinks = [
-  { label: 'Shop All', href: '/products', cat: '' },
+  { label: 'Featured', href: '', cat: 'featured' },
   { label: 'Bedding', href: '/products?cat=bedding', cat: 'bedding' },
   { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
   { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
@@ -20,7 +24,13 @@ const navLinks = [
   { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
 ];
 
-// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图）
+// Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）
+const FEATURED_SUBS = [
+  { label: 'Best Sellers', href: '/best-sellers' },
+  { label: 'New Arrivals', href: '/new-arrivals' },
+];
+
+// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图；Featured 为 2 张对应两个模块）
 interface MenuCard {
   image: string;
   caption: string;
@@ -28,6 +38,10 @@ interface MenuCard {
   href: string;
 }
 const MEGA_CARDS: Record<string, MenuCard[]> = {
+  featured: [
+    { image: '/images/featured/b0cbt7r7nn.webp', caption: 'Customer Favorites', linkLabel: 'Best Sellers', href: '/best-sellers' },
+    { image: '/images/products/B0F1XFWZVY/1.webp', caption: 'Just Landed', linkLabel: 'New Arrivals', href: '/new-arrivals' },
+  ],
   bedding: [
     { image: '/images/collections/bedding.webp', caption: 'Soft, breathable bedding sets.', linkLabel: 'Shop Bedding', href: '/products?cat=bedding' },
     { image: '/images/featured/bedset4-beige-full.webp', caption: 'All-season comfort, easy care.', linkLabel: 'Shop Duvet Sets', href: '/products?cat=bedding' },
@@ -220,8 +234,8 @@ export default function V2Header() {
                 key={link.href}
                 href={v2url(link.href)}
                 onClick={(e) => {
-                  // 有 mega menu 的分类：点击切换菜单展开/收起，不直接跳转
-                  //（分类汇总页从菜单内的标题链接进入）；无菜单的项（Shop All）正常跳转
+                  // 所有导航项都带 mega menu：点击切换菜单展开/收起，不直接跳转
+                  //（汇总页/类目页从菜单内的标题链接进入）
                   if (!link.cat) return;
                   e.preventDefault();
                   setOpenMenu((prev) => (prev === link.cat ? '' : link.cat));
@@ -250,7 +264,7 @@ export default function V2Header() {
 
             {/* 收藏入口（带数量角标；暂无独立收藏页，点击进商品汇总页） */}
             <a
-              href={v2url('/products')}
+              href={v2url('/favorites/')}
               className={`relative w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
               aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
             >
@@ -373,27 +387,47 @@ export default function V2Header() {
             style={{ animation: 'fadeIn 0.18s ease-out' }}
           >
             <div className="px-6 lg:px-10 py-9 flex gap-14 justify-center">
-              {/* 左：分类总链接 + 二级类目列表 */}
+              {/* 左：分类总链接 + 二级类目列表（Featured 无汇总页入口，标题为纯文字） */}
               <div className="flex-shrink-0 w-56">
-                <a
-                  href={v2url(navLinks.find((l) => l.cat === openMenu)?.href || '/products')}
-                  className="group/title inline-flex items-center gap-2 text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20 hover:text-brand transition-colors"
-                >
-                  {navLinks.find((l) => l.cat === openMenu)?.label}
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/title:translate-x-1">
-                    <path d="M5 12h14M13 6l6 6-6 6" />
-                  </svg>
-                </a>
-                <div className="flex flex-col gap-3.5">
-                  {getSubcategoriesOf(openMenu).map((sub) => (
-                    <a
-                      key={sub.key}
-                      href={v2url(`/products?cat=${openMenu}&sub=${sub.key}`)}
-                      className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
-                    >
-                      {sub.label}
+                {(() => {
+                  const current = navLinks.find((l) => l.cat === openMenu);
+                  const titleClass =
+                    'inline-flex items-center gap-2 text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20';
+                  const arrow = (
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/title:translate-x-1">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  );
+                  return current?.href ? (
+                    <a href={v2url(current.href)} className={`group/title ${titleClass} hover:text-brand transition-colors`}>
+                      {current.label}
+                      {arrow}
                     </a>
-                  ))}
+                  ) : (
+                    <span className={titleClass}>{current?.label}</span>
+                  );
+                })()}
+                <div className="flex flex-col gap-3.5">
+                  {openMenu === 'featured'
+                    ? FEATURED_SUBS.map((sub) => (
+                        <a
+                          key={sub.href}
+                          href={v2url(sub.href)}
+                          onClick={() => setOpenMenu('')}
+                          className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
+                        >
+                          {sub.label}
+                        </a>
+                      ))
+                    : getSubcategoriesOf(openMenu).map((sub) => (
+                        <a
+                          key={sub.key}
+                          href={v2url(`/products?cat=${openMenu}&sub=${sub.key}`)}
+                          className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
+                        >
+                          {sub.label}
+                        </a>
+                      ))}
                 </div>
               </div>
 
@@ -401,7 +435,7 @@ export default function V2Header() {
               <div className="flex gap-6">
                 {(MEGA_CARDS[openMenu] || []).map((card) => (
                   <div key={card.image} className="w-[230px]">
-                    <a href={v2url(card.href)} className="group/card block">
+                    <a href={v2url(card.href)} onClick={() => setOpenMenu('')} className="group/card block">
                       <div className="aspect-[4/5] overflow-hidden rounded-lg bg-warm-gray">
                         <img
                           src={resolveUrl(card.image)}
@@ -417,6 +451,7 @@ export default function V2Header() {
                     </p>
                     <a
                       href={v2url(card.href)}
+                      onClick={() => setOpenMenu('')}
                       className="group/link mt-1 inline-flex items-center gap-1.5 text-[#8B5A2B]"
                     >
                       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover/link:translate-x-0.5">
@@ -454,16 +489,34 @@ export default function V2Header() {
               Home
             </a>
             {navLinks.map((link) => (
-              <div key={link.href}>
-                <a
-                  href={v2url(link.href)}
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
-                >
-                  {link.label}
-                </a>
-                {/* 有二级类目的分类在移动端抽屉中缩进展示 */}
-                {link.cat &&
+              <div key={link.label}>
+                {link.href ? (
+                  <a
+                    href={v2url(link.href)}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-base font-semibold text-charcoal py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  // Featured 无汇总页入口：主项为纯文字，三个独立页在下方缩进展示
+                  <span className="block text-base font-semibold text-charcoal py-3 px-4">
+                    {link.label}
+                  </span>
+                )}
+                {/* 有二级类目的分类在移动端抽屉中缩进展示；Featured 展示三个独立页入口 */}
+                {link.cat === 'featured' &&
+                  FEATURED_SUBS.map((sub) => (
+                    <a
+                      key={sub.href}
+                      href={v2url(sub.href)}
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                    >
+                      {sub.label}
+                    </a>
+                  ))}
+                {link.cat && link.cat !== 'featured' &&
                   getSubcategoriesOf(link.cat).map((sub) => (
                     <a
                       key={sub.key}

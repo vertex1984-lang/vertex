@@ -1,0 +1,556 @@
+{
+  "categories": [],
+  "tags": [
+    {
+      "key": "set-of-3",
+      "label": "Set of 3"
+    },
+    {
+      "key": "set-of-4",
+      "label": "Set of 4"
+    }
+  ],
+  "assignments": {
+    "1688-916370884976-c5": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "1688-916370884976-c6": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "1688-916370884976-c7": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "1688-916370884976-c8": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "bedset4-beige-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-beige-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-beige-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-beige-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-blue-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-blue-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-blue-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-blue-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-coffee-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-coffee-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-coffee-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-coffee-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-gray-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-gray-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-gray-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-gray-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-lilac-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-lilac-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-lilac-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-lilac-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-mauve-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-mauve-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-mauve-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-mauve-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-moss-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-moss-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-pink-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-pink-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-pink-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-pink-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-plaid-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-plaid-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-plaid-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-plaid-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-sage-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-sage-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-sage-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-slate-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-slate-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-slate-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-slate-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-tan-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-tan-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-tan-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-tan-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-white-full": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-white-king": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-white-queen": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "bedset4-white-twin": {
+      "category": null,
+      "tags": [
+        "set-of-4"
+      ]
+    },
+    "duvset-beige-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-beige-king": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-beige-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-beige-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-gray-full": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-gray-king": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-gray-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-gray-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-pink-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-pink-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-pink-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-pink-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-white-full": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "duvset-white-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-white-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "duvset-white-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3",
+        "set-of-4"
+      ]
+    },
+    "linen3-charcoal-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-charcoal-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-charcoal-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-charcoal-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-dustyblue-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-dustyblue-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-dustyblue-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-dustyblue-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-ivory-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-ivory-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-ivory-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-ivory-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-oatmeal-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-oatmeal-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-oatmeal-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-oatmeal-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-sage-full": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-sage-king": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-sage-queen": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    },
+    "linen3-sage-twin": {
+      "category": null,
+      "tags": [
+        "set-of-3"
+      ]
+    }
+  }
+}

@@ -125,7 +125,7 @@ export default function V2CategoryGrid() {
         <div className="mt-10 lg:mt-12 text-center">
           <a
             href={v2url('/categories/')}
-            className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
+            className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
           >
             View More
           </a>

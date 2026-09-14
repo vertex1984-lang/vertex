@@ -38,11 +38,16 @@ const config: Config = {
           from: { opacity: "0", transform: "translateY(24px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "fade-in-up": "fadeInUp 0.7s ease-out both",
         "ken-burns": "kenBurns 12s ease-in-out infinite alternate",
         "banner-in": "bannerIn 0.9s ease-out both",
+        marquee: "marquee 36s linear infinite",
       },
     },
   },
