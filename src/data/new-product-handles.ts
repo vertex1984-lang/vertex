@@ -27,7 +27,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'colorful-geometric-tribal-turkish-persian-style-area-rug-1688-745181807454-c7',
   'elegant-turkish-persian-area-rug-vintage-oriental-medallion-1688-745181807454-c8',
   'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c8',
-  'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c9',
   'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c6',
   'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c5',
   'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c7',

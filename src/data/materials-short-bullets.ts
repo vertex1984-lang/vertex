@@ -160,13 +160,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-916370884976-c9": [
-    "Soft Washed Cotton: naturally soft, breathable and skin-friendly for better sleep",
-    "Reversible Two-Tone Look: light blue front, cheese-yellow reverse - two styles in one",
-    "Complete 3-Piece Set: duvet cover + 2 pillowcases, bed ready in minutes",
-    "Smooth Zipper Closure: easy on and off for washing",
-    "Easy Everyday Care: machine washable, keeps its smooth texture and color",
-  ],
   "1688-916370884976-c5": [
     "Soft Washed Cotton: naturally soft, breathable and skin-friendly for better sleep",
     "Reversible Two-Tone Look: light blue front, cheese-yellow reverse - two styles in one",

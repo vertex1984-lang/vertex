@@ -272,5 +272,4 @@ export const SHORT_TITLES: Record<string, string> = {
   "1688-745181807454": "Colorful Anatolian Tribal Striped Area Rug - 160x230cm, Multicolor",
   "1688-1052742241013": "Plush Vintage Persian Area Rug - 160x230cm, Rust Orange",
   "1688-969627065032-c33": "Faux Rabbit Fur Throw Blanket - 180x200cm, Dark Gray",
-  "1688-916370884976-c9": "Washed Cotton Comforter Set 3 Pcs - 220x180cm, Light Blue & Cheese"
 };

@@ -78,7 +78,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Size',
     members: [
     { asin: '1688-916370884976-C8', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c8', color: 'Light Blue & Cheese', size: '200 x 150 cm' },
-    { asin: '1688-916370884976-C9', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c9', color: 'Light Blue & Cheese', size: '220 x 180 cm' },
     { asin: '1688-916370884976-C6', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c6', color: 'Light Blue & Cheese', size: '220 x 180 cm' },
     { asin: '1688-916370884976-C5', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c5', color: 'Light Blue & Cheese', size: '230 x 200 cm' },
     { asin: '1688-916370884976-C7', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c7', color: 'Light Blue & Cheese', size: '240 x 220 cm' },
