@@ -77,12 +77,15 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         const toVariant = (m: (typeof group.members)[number]) => {
           const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
           const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
+          // 色点缩略图：优先白底图（imageWhiteBg 与 shopifyImages 同源同序，见 products.ts applyMaterialsData）
+          const wbIdx = ep?.imageWhiteBg?.indexOf(true) ?? -1;
+          const wbThumb = wbIdx >= 0 ? ep?.shopifyImages?.[wbIdx] : undefined;
           return {
             asin: m.asin,
             handle: m.handle,
             color: m.color,
             size: m.size,
-            thumb: ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
+            thumb: wbThumb || ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
             inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : false) : false,
           };
         };
