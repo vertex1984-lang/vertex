@@ -30,49 +30,9 @@ interface ProductDetailUpgradeProps {
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
 }
 
-// ⚠️ DEMO 数据（设计演示用示例，非真实评价）：接入 Judge.me / Shopify Reviews 后删除替换。
-const DEMO_RATING = { average: 4.8, count: 127 };
-const DEMO_RATING_BARS = [
-  { stars: 5, pct: 82 },
-  { stars: 4, pct: 12 },
-  { stars: 3, pct: 4 },
-  { stars: 2, pct: 1 },
-  { stars: 1, pct: 1 },
-];
-const DEMO_REVIEWS = [
-  {
-    author: 'Melissa T.',
-    location: 'Austin, TX',
-    rating: 5,
-    date: 'August 2026',
-    title: 'Looks even better in person',
-    body: 'The colors are rich but not loud, and it lays completely flat — exactly like the photos. No curling edges at all.',
-    verified: true,
-  },
-  {
-    author: 'James & Nora H.',
-    location: 'Portland, OR',
-    rating: 5,
-    date: 'July 2026',
-    title: 'Perfect for our living room',
-    body: 'Great coverage for our seating area and the low profile means the robot vacuum glides right over it. Everyday crumbs hide surprisingly well.',
-    verified: true,
-  },
-  {
-    author: 'Karen W.',
-    location: 'Raleigh, NC',
-    rating: 4,
-    date: 'July 2026',
-    title: 'Beautiful rug, pleasingly slim',
-    body: 'Love the pattern and palette. Keep in mind it is a low-pile rug, so do not expect plush — exactly what we wanted, and spills spot-cleaned easily.',
-    verified: true,
-  },
-];
-
 const SECTIONS = [
   { id: 'pdp2-description', label: 'Description' },
   { id: 'pdp2-specs', label: 'Specifications' },
-  { id: 'pdp2-reviews', label: 'Reviews' },
 ];
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
@@ -139,21 +99,6 @@ const RUG_TITLE_RE = /\b(rugs?|carpets?)\b/i;
 function getCareCopy(productType: string, title: string): CareCopy {
   if (RUG_TITLE_RE.test(title)) return CARE_RUG;
   return CARE_BY_TYPE[(productType || '').toLowerCase()] ?? CARE_DEFAULT;
-}
-
-function Stars({ rating, size = 16 }: { rating: number; size?: number }) {
-  return (
-    <div className="flex text-[#FFB800]" aria-label={`${rating} out of 5 stars`}>
-      {[1, 2, 3, 4, 5].map((i) => (
-        <svg key={i} width={size} height={size} viewBox="0 0 24 24"
-          fill={i <= Math.round(rating) ? 'currentColor' : 'none'}
-          stroke="currentColor" strokeWidth={i <= Math.round(rating) ? 0 : 1.5}
-        >
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-      ))}
-    </div>
-  );
 }
 
 export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [] }: ProductDetailUpgradeProps) {
@@ -489,12 +434,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               <p className="text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
             )}
 
-            <button onClick={() => scrollToSection('pdp2-reviews')} className="flex items-center gap-2 mb-5 group">
-              <Stars rating={DEMO_RATING.average} />
-              <span className="text-sm font-semibold text-charcoal">{DEMO_RATING.average}</span>
-              <span className="text-sm text-brand group-hover:underline">{DEMO_RATING.count} reviews</span>
-            </button>
-
             {isInStock ? (
               <div className="flex items-baseline gap-3 mb-6">
                 <span className="text-3xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
@@ -765,64 +704,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      {/* ⑤ Reviews（示例评价，接入真实数据后替换） */}
-      <section id="pdp2-reviews" className="px-6 lg:px-10 py-14 scroll-mt-28 lg:scroll-mt-36 bg-off-white">
-        <div className="max-w-[1400px] mx-auto">
-          <p className="text-sm font-semibold tracking-widest uppercase text-brand mb-2">Reviews</p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-charcoal mb-8">What Customers Say</h2>
-          <div className="grid lg:grid-cols-[300px_1fr] gap-10">
-            <div className="bg-white rounded-2xl border border-warm-gray p-6 self-start">
-              <div className="flex items-end gap-3 mb-1">
-                <span className="text-5xl font-extrabold text-charcoal leading-none">{DEMO_RATING.average}</span>
-                <span className="text-sm text-charcoal-light mb-1">out of 5</span>
-              </div>
-              <Stars rating={DEMO_RATING.average} size={18} />
-              <p className="text-sm text-charcoal-light mt-2 mb-5">Based on {DEMO_RATING.count} reviews</p>
-              <div className="space-y-2">
-                {DEMO_RATING_BARS.map((bar) => (
-                  <div key={bar.stars} className="flex items-center gap-2.5">
-                    <span className="text-xs text-charcoal-light w-7">{bar.stars} ★</span>
-                    <div className="flex-1 h-2 rounded-full bg-warm-gray overflow-hidden">
-                      <div className="h-full rounded-full bg-brand" style={{ width: `${bar.pct}%` }} />
-                    </div>
-                    <span className="text-xs text-charcoal-light w-9 text-right">{bar.pct}%</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
-              {DEMO_REVIEWS.map((review) => (
-                <div key={review.author} className="bg-white rounded-2xl border border-warm-gray p-6 flex flex-col shadow-sm">
-                  <div className="flex items-center justify-between mb-3">
-                    <Stars rating={review.rating} />
-                    <span className="text-xs text-charcoal-light">{review.date}</span>
-                  </div>
-                  <h3 className="text-sm font-bold text-charcoal mb-2">{review.title}</h3>
-                  <p className="text-sm text-charcoal-light leading-relaxed flex-1">{review.body}</p>
-                  <div className="mt-4 pt-4 border-t border-warm-gray">
-                    <p className="text-sm font-semibold text-charcoal">
-                      {review.author}
-                      <span className="font-normal text-charcoal-light"> · {review.location}</span>
-                    </p>
-                    {review.verified && (
-                      <p className="text-xs text-green-600 mt-1 flex items-center gap-1">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M20 6L9 17l-5-5" />
-                        </svg>
-                        Verified Buyer
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <p className="text-xs text-[#B0A391] mt-6">
-            Sample reviews shown for design preview — real customer reviews coming soon.
-          </p>
         </div>
       </section>
 

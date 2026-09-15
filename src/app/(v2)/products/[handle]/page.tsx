@@ -108,6 +108,15 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
             return true;
           })
           .map(toVariant);
+        // 展示顺序 = 颜色在家族文件序中的首次出现位置（与当前页/代表成员尺寸无关，
+        // 任何成员页色点排列一致）；去重代表仍优先同尺寸（上方 ordered 排序），点击色点尽量保持当前尺寸
+        const colorFirstIdx = new Map<string, number>();
+        group.members.forEach((m, i) => {
+          if (!colorFirstIdx.has(m.color)) colorFirstIdx.set(m.color, i);
+        });
+        colorVariants.sort(
+          (a, b) => (colorFirstIdx.get(a.color) ?? 0) - (colorFirstIdx.get(b.color) ?? 0)
+        );
         // 尺寸项：同色成员按尺寸去重（同尺寸重复 SKU 取第一个）
         const seenSizes = new Set<string>();
         // 尺寸行 = 全家族出现过的尺寸档（Single → Set of N → cm 数字升序）；
