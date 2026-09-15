@@ -634,14 +634,14 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Diatomaceous Earth: super absorbent, quick-dry surface",
     "Non-Slip & Oil Proof: dependable kitchen floor protection",
     "Soft & Washable: comfortable underfoot, easy to clean",
-    "Set Options: single rug or 2-piece set for sink & stove",
+    "Also in Series: 2-piece sink & stove set (Beige Tile)",
   ],
   "1688-1046667161713-c2": [
     "Vintage Tile & Tapestry Looks: carved textures, scalloped edges",
     "Diatomaceous Earth: super absorbent, quick-dry surface",
     "Non-Slip & Oil Proof: dependable kitchen floor protection",
     "Soft & Washable: comfortable underfoot, easy to clean",
-    "Set Options: single rug or 2-piece set for sink & stove",
+    "Also in Series: single kitchen rug (Multicolor Tapestry)",
   ],
   "b0f62y3xt9": [
     "Plush Hollow Fiber Fill: plump, supportive and lump-free",
