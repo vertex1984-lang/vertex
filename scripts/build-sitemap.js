@@ -11,11 +11,16 @@ const SITE = 'https://www.makimoohome.com';
 const productsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf8');
 const handles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 
+// Blog 文章 slug（从 blog-posts.ts 提取，recos 引用的 slug 与文章本身重复，需去重）
+const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');
+const blogSlugs = [...new Set([...blogSrc.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]))];
+
 // cart/ 和 404 不进 sitemap（robots noindex）
 const staticPages = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/categories/', priority: '0.9', changefreq: 'daily' },
   { loc: '/products/', priority: '0.8', changefreq: 'daily' },
+  { loc: '/blog/', priority: '0.6', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },
@@ -42,6 +47,14 @@ const urls = [
     <priority>0.7</priority>
   </url>`
   ),
+  ...blogSlugs.map(
+    (s) => `  <url>
+    <loc>${SITE}/blog/${s}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>`
+  ),
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -52,4 +65,4 @@ ${urls.join('\n')}
 
 const outPath = path.join(__dirname, '../public/sitemap.xml');
 fs.writeFileSync(outPath, xml, 'utf8');
-console.log(`sitemap.xml generated: ${staticPages.length} pages + ${handles.length} products`);
+console.log(`sitemap.xml generated: ${staticPages.length} pages + ${handles.length} products + ${blogSlugs.length} blog posts`);

@@ -24,6 +24,7 @@ const navLinks = [
   { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
   { label: 'Decor', href: '/products?cat=decor', cat: 'decor' },
   { label: 'Dining', href: '/products?cat=dining', cat: 'dining' },
+  { label: 'Blog', href: '/blog', cat: '' },
 ];
 
 // Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）

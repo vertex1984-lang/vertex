@@ -1,0 +1,607 @@
+/* ============================================================
+   Ideas & Inspiration（Blog）专属样式
+   - 全部类名以 bl- 前缀，与主站样式隔离
+   - 视觉：Castlery 编辑风 + 主站棕米 token
+   - 字体：标题 Cormorant Garamond / 正文 Lora（根 layout 已引入）
+   ============================================================ */
+
+.bl-scope {
+  --bl-brown: #8b5a2b;
+  --bl-brown-dark: #74491f;
+  --bl-brown-light: #a67c52;
+  --bl-cream: #fff8f0;
+  --bl-off: #f8f5f0;
+  --bl-ink: #3e362e;
+  --bl-ink-soft: #6b6156;
+  --bl-ink-faint: #9a8f82;
+  --bl-line: #e2d9cc;
+  --bl-radius: 4px;
+
+  font-family: 'Lora', Georgia, 'PingFang SC', 'Microsoft YaHei', serif;
+  color: var(--bl-ink);
+  background: var(--bl-off);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.bl-scope a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+.bl-scope img {
+  max-width: 100%;
+  display: block;
+}
+
+.bl-btn {
+  display: inline-block;
+  background: var(--bl-brown);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.bl-btn:hover {
+  background: var(--bl-brown-dark);
+}
+
+/* ===== 面包屑 ===== */
+.bl-crumb {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 22px 40px 18px;
+  font-size: 14.5px;
+  color: var(--bl-ink-soft);
+}
+.bl-crumb a:hover {
+  color: var(--bl-brown);
+}
+.bl-crumb .bl-sep {
+  margin: 0 10px;
+  color: var(--bl-ink-faint);
+  font-size: 12px;
+}
+.bl-crumb .bl-current {
+  color: var(--bl-ink);
+}
+
+/* ===== 列表页 Hero ===== */
+.bl-hero {
+  margin: 0 40px;
+  position: relative;
+  border-radius: var(--bl-radius);
+  overflow: hidden;
+  height: 420px;
+  background: #2e261e;
+}
+.bl-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+}
+.bl-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(38, 28, 18, 0.45), rgba(38, 28, 18, 0.4));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+.bl-hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin: 0;
+}
+.bl-hero-sub {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.93);
+  margin-top: 12px;
+}
+@media (max-width: 780px) {
+  .bl-hero {
+    height: 320px;
+    margin: 0 20px;
+  }
+  .bl-hero-title {
+    font-size: 36px;
+  }
+  .bl-hero-sub {
+    font-size: 16px;
+  }
+}
+
+/* ===== 列表页卡片网格 ===== */
+.bl-gridwrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 44px 40px 80px;
+}
+.bl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px 40px;
+}
+.bl-card {
+  position: relative;
+  display: block;
+}
+.bl-card-img {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: var(--bl-radius);
+  background: var(--bl-cream);
+}
+.bl-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.bl-card:hover .bl-card-img img {
+  transform: scale(1.04);
+}
+.bl-cat {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--bl-brown);
+  margin: 18px 0 8px;
+}
+.bl-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--bl-ink);
+  margin: 0 0 8px;
+}
+.bl-card:hover .bl-card-title {
+  color: var(--bl-brown);
+}
+.bl-exc {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bl-ink);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.bl-meta {
+  font-size: 12.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--bl-ink-faint);
+}
+@media (max-width: 980px) {
+  .bl-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 28px;
+  }
+}
+@media (max-width: 640px) {
+  .bl-grid {
+    grid-template-columns: 1fr;
+  }
+  .bl-gridwrap {
+    padding: 30px 20px 70px;
+  }
+}
+
+/* ===== 文章页 ===== */
+.bl-article-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 24px 0;
+}
+.bl-article-head {
+  text-align: center;
+  padding-top: 26px;
+}
+.bl-article-head h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 4.4vw, 44px);
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--bl-ink);
+  margin: 0 0 16px;
+}
+.bl-byline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 12.5px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--bl-ink-faint);
+  margin-bottom: 14px;
+}
+.bl-byline b {
+  color: var(--bl-brown);
+  font-weight: 600;
+}
+.bl-dot {
+  color: var(--bl-brown-light);
+}
+.bl-head-rule {
+  width: 56px;
+  height: 1px;
+  background: var(--bl-line);
+  margin: 0 auto 42px;
+}
+
+.bl-article-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 20px;
+  font-size: 17px;
+  color: #4a4238;
+  line-height: 1.85;
+}
+.bl-article-body p {
+  margin: 0 0 24px;
+}
+.bl-lede {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--bl-ink);
+}
+.bl-article-body h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--bl-ink);
+  margin: 52px 0 18px;
+  line-height: 1.3;
+}
+.bl-article-body ul,
+.bl-article-body ol {
+  margin: 0 0 24px 24px;
+}
+.bl-article-body li {
+  margin-bottom: 10px;
+}
+.bl-article-body figure {
+  margin: 30px 0;
+}
+.bl-article-body figure img {
+  border-radius: var(--bl-radius);
+  width: 100%;
+}
+.bl-article-body figcaption {
+  font-size: 14px;
+  color: var(--bl-ink-faint);
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* 表格 */
+.bl-tbl-wrap {
+  overflow-x: auto;
+  margin: 26px 0 30px;
+  border: 1px solid var(--bl-line);
+  border-radius: var(--bl-radius);
+  background: #fdfbf7;
+}
+.bl-scope table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15.5px;
+}
+.bl-scope th {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--bl-brown-dark);
+  background: var(--bl-cream);
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--bl-line);
+  white-space: nowrap;
+}
+.bl-scope td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--bl-line);
+  vertical-align: top;
+}
+.bl-scope tr:last-child td {
+  border-bottom: none;
+}
+.bl-scope td b {
+  color: var(--bl-ink);
+  font-weight: 600;
+}
+
+/* 优缺点 */
+.bl-pc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 26px 0 30px;
+}
+.bl-pc-box {
+  background: #fdfbf7;
+  border: 1px solid var(--bl-line);
+  border-radius: var(--bl-radius);
+  padding: 20px 22px;
+}
+.bl-pc-box h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.bl-pc-box.bl-pros h4 {
+  color: #5b7a55;
+}
+.bl-pc-box.bl-cons h4 {
+  color: #a4553a;
+}
+.bl-pc-box ul {
+  list-style: none;
+  margin: 0;
+}
+.bl-pc-box li {
+  font-size: 15.5px;
+  color: var(--bl-ink-soft);
+  padding-left: 22px;
+  position: relative;
+  margin-bottom: 9px;
+  line-height: 1.6;
+}
+.bl-pc-box.bl-pros li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #5b7a55;
+  font-weight: 600;
+}
+.bl-pc-box.bl-cons li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #a4553a;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .bl-pc {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 产品嵌入卡 */
+.bl-product {
+  display: flex;
+  gap: 22px;
+  background: #fdfbf7;
+  border: 1px solid var(--bl-line);
+  border-radius: var(--bl-radius);
+  padding: 20px;
+  margin: 32px 0 8px;
+  align-items: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.bl-product:hover {
+  border-color: var(--bl-brown-light);
+  box-shadow: 0 8px 22px rgba(60, 45, 30, 0.08);
+}
+.bl-product-img {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: var(--bl-radius);
+  overflow: hidden;
+  background: var(--bl-cream);
+}
+.bl-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bl-product-info {
+  flex: 1;
+}
+.bl-product-cat {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--bl-brown);
+  margin-bottom: 6px;
+}
+.bl-product h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  line-height: 1.35;
+  color: var(--bl-ink);
+}
+.bl-product-desc {
+  font-size: 15px;
+  color: var(--bl-ink-soft);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+.bl-product-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.bl-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bl-ink);
+}
+.bl-product .bl-btn {
+  padding: 10px 22px;
+}
+.bl-product-note {
+  font-size: 12px;
+  color: #b3a899;
+  margin: 0 0 28px;
+  text-align: right;
+  font-style: italic;
+}
+@media (max-width: 560px) {
+  .bl-product {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .bl-product-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* FAQ 折叠 */
+.bl-faq {
+  margin: 24px 0;
+}
+.bl-faq details {
+  border-bottom: 1px solid var(--bl-line);
+}
+.bl-faq summary {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--bl-ink);
+  cursor: pointer;
+  padding: 16px 30px 16px 0;
+  position: relative;
+  list-style: none;
+}
+.bl-faq summary::-webkit-details-marker {
+  display: none;
+}
+.bl-faq summary::after {
+  content: '+';
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: var(--bl-brown);
+  font-weight: 400;
+}
+.bl-faq details[open] summary::after {
+  content: '−';
+}
+.bl-faq details p {
+  font-size: 16px;
+  margin: 0 0 20px;
+  color: var(--bl-ink-soft);
+  line-height: 1.75;
+}
+
+/* Takeaway */
+.bl-takeaway {
+  background: var(--bl-cream);
+  border: 1px solid var(--bl-line);
+  border-left: 3px solid var(--bl-brown);
+  border-radius: var(--bl-radius);
+  padding: 22px 26px;
+  margin: 34px 0 10px;
+  font-size: 17px;
+  color: var(--bl-ink);
+  font-style: italic;
+}
+
+/* Recommended Reading */
+.bl-reco {
+  border-top: 1px solid var(--bl-line);
+  margin-top: 48px;
+  padding: 54px 40px 20px;
+}
+.bl-reco-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bl-ink);
+  margin-bottom: 26px;
+  text-align: center;
+}
+.bl-reco-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.bl-reco-card {
+  display: block;
+}
+.bl-reco-img {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: var(--bl-radius);
+  background: var(--bl-cream);
+}
+.bl-reco-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.bl-reco-card:hover .bl-reco-img img {
+  transform: scale(1.04);
+}
+.bl-reco-card .bl-cat {
+  margin-top: 14px;
+}
+.bl-reco-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--bl-ink);
+  margin: 0;
+}
+.bl-reco-card:hover h4 {
+  color: var(--bl-brown);
+}
+@media (max-width: 640px) {
+  .bl-reco-row {
+    grid-template-columns: 1fr;
+  }
+  .bl-reco {
+    padding: 44px 20px 10px;
+  }
+}
+
+/* 底部 CTA */
+.bl-cta-band {
+  text-align: center;
+  padding: 64px 24px 80px;
+}
+.bl-cta-band h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.bl-cta-band p {
+  font-size: 17px;
+  color: var(--bl-ink-soft);
+  margin: 0 0 26px;
+}

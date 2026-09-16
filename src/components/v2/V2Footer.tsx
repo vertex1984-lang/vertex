@@ -40,9 +40,10 @@ export default function V2Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider">About</h4>
             <span className="block w-8 h-0.5 rounded bg-cream/40 mt-2 mb-4" />
             <div className="flex flex-col gap-1">
-              <a href={v2url('/about')} className={footerLinkClass}>Our Story</a>
-              <a href={v2url('/about#quality')} className={footerLinkClass}>Quality Promise</a>
-              <a href={v2url('/about#sustainability')} className={footerLinkClass}>Sustainability</a>
+                <a href={v2url('/about')} className={footerLinkClass}>Our Story</a>
+                <a href={v2url('/about#quality')} className={footerLinkClass}>Quality Promise</a>
+                <a href={v2url('/about#sustainability')} className={footerLinkClass}>Sustainability</a>
+                <a href={v2url('/blog')} className={footerLinkClass}>Blog</a>
             </div>
           </div>
           <div>
