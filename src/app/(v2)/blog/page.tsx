@@ -5,7 +5,7 @@ import { resolveUrl } from '@/lib/paths';
 import './blog.css';
 
 const SITE_URL = 'https://www.makimoohome.com';
-const HERO_IMAGE = '/images/blog/blog-hero.svg';
+const HERO_IMAGE = '/images/blog/photo-hero.jpg';
 
 export const metadata: Metadata = {
   title: 'Ideas & Inspiration',

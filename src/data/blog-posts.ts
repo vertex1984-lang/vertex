@@ -81,7 +81,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     excerpt:
       "Which soft rug material actually fits your room? A plain-language comparison of the three materials behind most affordable area rugs, including the trade-offs listings rarely mention.",
-    cardImage: "/images/blog/rug-materials.svg",
+    cardImage: "/images/blog/photo-rug-materials.jpg",
     metaDescription:
       "Faux rabbit fur vs faux cashmere vs printed polyester rugs compared: feel, durability, shedding, care and the trade-offs product listings rarely mention.",
     lede:
@@ -182,8 +182,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "rug-size-guide", image: "/images/blog/rug-size-guide.svg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
-      { slug: "low-pile-vs-shag", image: "/images/blog/low-pile-vs-shag.svg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
+      { slug: "rug-size-guide", image: "/images/blog/photo-rug-size-guide.jpg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
+      { slug: "low-pile-vs-shag", image: "/images/blog/photo-low-pile-vs-shag.jpg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
     ],
     cta: {
       heading: "Explore soft, easy-care rugs",
@@ -202,7 +202,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     excerpt:
       "The front-leg rule, room-by-room size charts, and the sizing mistake almost everyone makes.",
-    cardImage: "/images/blog/rug-size-guide.svg",
+    cardImage: "/images/blog/photo-rug-size-guide.jpg",
     metaDescription:
       "Rug size guide with room-by-room charts in inches and centimeters: living room, bedroom, nursery and dining — plus the front-leg rule and four sizing mistakes to avoid.",
     lede:
@@ -312,8 +312,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "rug-materials", image: "/images/blog/rug-materials.svg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
-      { slug: "nursery-rugs", image: "/images/blog/nursery-rugs.svg", cat: "Buying Guides", title: "Nursery & Bedroom Rugs: Softness, Safety and Size" },
+      { slug: "rug-materials", image: "/images/blog/photo-rug-materials.jpg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
+      { slug: "nursery-rugs", image: "/images/blog/photo-nursery-rugs.jpg", cat: "Buying Guides", title: "Nursery & Bedroom Rugs: Softness, Safety and Size" },
     ],
     cta: {
       heading: "Find your size",
@@ -332,7 +332,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     excerpt:
       "What's inside matters less than what's outside: how to match the cover fabric to the room.",
-    cardImage: "/images/blog/cushion-materials.svg",
+    cardImage: "/images/blog/photo-cushion-materials.jpg",
     metaDescription:
       "Chair cushion materials explained: polyester fiberfill vs foam, corduroy vs printed polyester vs water-resistant covers — with honest pros, cons and care guidance.",
     lede:
@@ -410,8 +410,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "cushion-size-guide", image: "/images/blog/cushion-size-guide.svg", cat: "Buying Guides", title: "Chair Cushion Size Guide: Seat Pads, High-Back Sets & Rocking Chair Cushions" },
-      { slug: "rug-materials", image: "/images/blog/rug-materials.svg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
+      { slug: "cushion-size-guide", image: "/images/blog/photo-cushion-size-guide.jpg", cat: "Buying Guides", title: "Chair Cushion Size Guide: Seat Pads, High-Back Sets & Rocking Chair Cushions" },
+      { slug: "rug-materials", image: "/images/blog/photo-rug-materials.jpg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
     ],
     cta: {
       heading: "Cushion your chairs",
@@ -430,7 +430,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     excerpt:
       "Measure once, buy right: the three measurements that decide whether a cushion fits your chair.",
-    cardImage: "/images/blog/cushion-size-guide.svg",
+    cardImage: "/images/blog/photo-cushion-size-guide.jpg",
     metaDescription:
       "Chair cushion size guide: measure for seat pads (43 × 43 cm), high-back sets (95 × 45 cm), rocking chair two-piece sets and oversized patio cushions — plus three fit mistakes to avoid.",
     lede:
@@ -515,8 +515,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "cushion-materials", image: "/images/blog/cushion-materials.svg", cat: "Materials", title: "Chair Cushion Materials Compared: Fiberfill, Corduroy & Water-Resistant Fabrics" },
-      { slug: "door-mats-101", image: "/images/blog/door-mats-101.svg", cat: "Mats", title: "Door Mats 101: How Entry Mats Actually Trap Dirt" },
+      { slug: "cushion-materials", image: "/images/blog/photo-cushion-materials.jpg", cat: "Materials", title: "Chair Cushion Materials Compared: Fiberfill, Corduroy & Water-Resistant Fabrics" },
+      { slug: "door-mats-101", image: "/images/blog/photo-door-mats-101.jpg", cat: "Mats", title: "Door Mats 101: How Entry Mats Actually Trap Dirt" },
     ],
     cta: {
       heading: "Find your chair's fit",
@@ -535,7 +535,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     excerpt:
       "Three fills, three very different nights. Which one matches how you actually sleep.",
-    cardImage: "/images/blog/pillow-filling.svg",
+    cardImage: "/images/blog/photo-pillow-filling.jpg",
     metaDescription:
       "Pillow filling guide: hollow-fibre polyester vs down alternative vs memory foam — feel, support, washing and which fill matches your sleep position and budget.",
     lede:
@@ -616,8 +616,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "rug-materials", image: "/images/blog/rug-materials.svg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
-      { slug: "door-mats-101", image: "/images/blog/door-mats-101.svg", cat: "Mats", title: "Door Mats 101: How Entry Mats Actually Trap Dirt" },
+      { slug: "rug-materials", image: "/images/blog/photo-rug-materials.jpg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
+      { slug: "door-mats-101", image: "/images/blog/photo-door-mats-101.jpg", cat: "Mats", title: "Door Mats 101: How Entry Mats Actually Trap Dirt" },
     ],
     cta: {
       heading: "Pillows for every night",
@@ -636,7 +636,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 5,
     excerpt:
       "Scrape, absorb, hold: the three-zone principle behind a mat that really keeps floors clean.",
-    cardImage: "/images/blog/door-mats-101.svg",
+    cardImage: "/images/blog/photo-door-mats-101.jpg",
     metaDescription:
       "How door mats work: the scrape-absorb-hold principle, indoor vs outdoor placement, material comparison (coir, rubber, imitation sisal, microfibre) and proper mat sizing.",
     lede:
@@ -717,8 +717,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "cushion-size-guide", image: "/images/blog/cushion-size-guide.svg", cat: "Buying Guides", title: "Chair Cushion Size Guide: Seat Pads, High-Back Sets & Rocking Chair Cushions" },
-      { slug: "rug-size-guide", image: "/images/blog/rug-size-guide.svg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
+      { slug: "cushion-size-guide", image: "/images/blog/photo-cushion-size-guide.jpg", cat: "Buying Guides", title: "Chair Cushion Size Guide: Seat Pads, High-Back Sets & Rocking Chair Cushions" },
+      { slug: "rug-size-guide", image: "/images/blog/photo-rug-size-guide.jpg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
     ],
     cta: {
       heading: "Start at the door",
@@ -737,7 +737,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     excerpt:
       "What pile height means for comfort, cleaning and where a rug can go.",
-    cardImage: "/images/blog/low-pile-vs-shag.svg",
+    cardImage: "/images/blog/photo-low-pile-vs-shag.jpg",
     metaDescription:
       "Low pile vs medium vs shag rugs: what pile height means for comfort, door clearance, cleaning and durability — with a band-by-band comparison table.",
     lede:
@@ -809,8 +809,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "clean-soft-rug", image: "/images/blog/clean-soft-rug.svg", cat: "Care & Cleaning", title: "How to Clean a Soft Rug (Without Ruining It)" },
-      { slug: "rug-materials", image: "/images/blog/rug-materials.svg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
+      { slug: "clean-soft-rug", image: "/images/blog/photo-clean-soft-rug.jpg", cat: "Care & Cleaning", title: "How to Clean a Soft Rug (Without Ruining It)" },
+      { slug: "rug-materials", image: "/images/blog/photo-rug-materials.jpg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
     ],
     cta: {
       heading: "Pick your pile",
@@ -829,7 +829,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     excerpt:
       "Vacuum settings, spill response and the mistakes that flatten plush fibers for good.",
-    cardImage: "/images/blog/clean-soft-rug.svg",
+    cardImage: "/images/blog/photo-clean-soft-rug.jpg",
     metaDescription:
       "How to clean soft rugs without damage: gentle vacuuming settings, the blot protocol for spills, a stain quick-reference table, deep-cleaning frequency and what actually ruins plush fibers.",
     lede:
@@ -926,8 +926,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "low-pile-vs-shag", image: "/images/blog/low-pile-vs-shag.svg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
-      { slug: "rug-materials", image: "/images/blog/rug-materials.svg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
+      { slug: "low-pile-vs-shag", image: "/images/blog/photo-low-pile-vs-shag.jpg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
+      { slug: "rug-materials", image: "/images/blog/photo-rug-materials.jpg", cat: "Materials", title: "Rug Materials Explained: Faux Rabbit Fur, Faux Cashmere & Printed Polyester" },
     ],
     cta: {
       heading: "Rugs worth keeping",
@@ -946,7 +946,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     excerpt:
       "Five room scenarios, a color rule you can remember, and the combos that quietly fail.",
-    cardImage: "/images/blog/persian-styling.svg",
+    cardImage: "/images/blog/photo-persian-styling.jpg",
     metaDescription:
       "Styling a vintage Persian-style rug in a modern home: five room pairings, the one-color rule for accents, and four combinations that quietly fail — with practical color tables.",
     lede:
@@ -1039,8 +1039,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "rug-size-guide", image: "/images/blog/rug-size-guide.svg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
-      { slug: "low-pile-vs-shag", image: "/images/blog/low-pile-vs-shag.svg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
+      { slug: "rug-size-guide", image: "/images/blog/photo-rug-size-guide.jpg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
+      { slug: "low-pile-vs-shag", image: "/images/blog/photo-low-pile-vs-shag.jpg", cat: "Rug 101", title: "Low Pile vs. Shag: Pile Height, Explained" },
     ],
     cta: {
       heading: "Ground the room",
@@ -1059,7 +1059,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     excerpt:
       "What matters more in a bedroom rug: pile, padding or washability? All three, ranked.",
-    cardImage: "/images/blog/nursery-rugs.svg",
+    cardImage: "/images/blog/photo-nursery-rugs.jpg",
     metaDescription:
       "Nursery and bedroom rug guide: safety priorities (non-slip, pile height by age), size charts for bedside and full-surround placement, and material picks that survive real life.",
     lede:
@@ -1141,8 +1141,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     recos: [
-      { slug: "rug-size-guide", image: "/images/blog/rug-size-guide.svg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
-      { slug: "clean-soft-rug", image: "/images/blog/clean-soft-rug.svg", cat: "Care & Cleaning", title: "How to Clean a Soft Rug (Without Ruining It)" },
+      { slug: "rug-size-guide", image: "/images/blog/photo-rug-size-guide.jpg", cat: "Buying Guides", title: "Rug Size Guide: How to Choose the Right Rug for Every Room" },
+      { slug: "clean-soft-rug", image: "/images/blog/photo-clean-soft-rug.jpg", cat: "Care & Cleaning", title: "How to Clean a Soft Rug (Without Ruining It)" },
     ],
     cta: {
       heading: "Soft landings",
