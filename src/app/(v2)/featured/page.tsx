@@ -9,7 +9,7 @@ import {
 } from '@/data/featured-sections';
 
 export const metadata: Metadata = {
-  title: 'Featured | Makimoo',
+  title: 'Featured',
   description:
     'Makimoo featured picks — editor-selected products, best sellers and new arrivals in one place.',
 };

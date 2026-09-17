@@ -24,6 +24,7 @@ const navLinks = [
   { label: 'Blankets', href: '/products?cat=blankets', cat: 'blankets' },
   { label: 'Decor', href: '/products?cat=decor', cat: 'decor' },
   { label: 'Dining', href: '/products?cat=dining', cat: 'dining' },
+  // Blog 不放在顶部导航（2026-09 用户要求），仅保留底部 footer 入口
 ];
 
 // Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）
@@ -247,26 +248,48 @@ export default function V2Header() {
           </a>
 
           <nav className="hidden lg:flex items-center gap-7 text-sm font-medium">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={v2url(link.href)}
-                onClick={(e) => {
-                  // 所有导航项都带 mega menu：点击切换菜单展开/收起，不直接跳转
-                  //（汇总页/类目页从菜单内的标题链接进入）
-                  if (!link.cat) return;
-                  e.preventDefault();
-                  setOpenMenu((prev) => (prev === link.cat ? '' : link.cat));
-                }}
-                aria-expanded={link.cat ? openMenu === link.cat : undefined}
-                className="relative py-1 text-base hover:text-brand transition-colors group"
-              >
-                {link.label}
+            {navLinks.map((link) => {
+              const navCls = 'relative py-1 text-base hover:text-brand transition-colors group';
+              const underline = (
                 <span className={`absolute bottom-0 left-0 h-0.5 bg-brand transition-all ${
                   openMenu && openMenu === link.cat ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
-              </a>
-            ))}
+              );
+              // Featured 没有落地页（href 为空）：用 button 只切换 mega menu，
+              // 避免空 href 的 <a> 在中键点击/无 JS 时刷新当前页
+              if (!link.href) {
+                return (
+                  <button
+                    key={link.label}
+                    type="button"
+                    onClick={() => setOpenMenu((prev) => (prev === link.cat ? '' : link.cat))}
+                    aria-expanded={openMenu === link.cat}
+                    className={navCls}
+                  >
+                    {link.label}
+                    {underline}
+                  </button>
+                );
+              }
+              return (
+                <a
+                  key={link.href}
+                  href={v2url(link.href)}
+                  onClick={(e) => {
+                    // 带 mega menu 的导航项：点击切换菜单展开/收起，不直接跳转
+                    //（汇总页/类目页从菜单内的标题链接进入）
+                    if (!link.cat) return;
+                    e.preventDefault();
+                    setOpenMenu((prev) => (prev === link.cat ? '' : link.cat));
+                  }}
+                  aria-expanded={link.cat ? openMenu === link.cat : undefined}
+                  className={navCls}
+                >
+                  {link.label}
+                  {underline}
+                </a>
+              );
+            })}
           </nav>
 
           <div className="flex items-center gap-1 sm:gap-2">

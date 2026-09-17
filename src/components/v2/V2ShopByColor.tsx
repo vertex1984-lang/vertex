@@ -1,67 +1,29 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import V2ProductCard, { V2CardProduct } from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { MATERIALS_MAP } from '@/data/materials-map';
-import { getColorTag, COLOR_RULES, NO_TAG_TYPES } from '@/data/product-tags';
-import { sortByWeight } from '@/lib/weights';
-import PRODUCT_TAGS from '@/data/product-tags.json';
+import type { ColorOption } from '@/data/home-sections';
 
-type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
-const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
-
-const MAX_PER_COLOR = 10;
+interface V2ShopByColorProps {
+  // 服务端已选好（src/data/home-sections.ts）：有 ≥1 款在售产品的色系 + 每色系权重前 10 的精简卡片
+  colors: ColorOption[];
+  productsByColor: Record<string, V2CardProduct[]>;
+}
 
 /**
  * V2 首页 Shop by Color 区（替换原 Best Sellers 横条）
  * 顶部可横滑色板行（圆圈色块 + 名称，选中态描边），下方展示该色系在售产品（最多 10 款），
  * 底部 SHOP {COLOR} 按钮跳 /featured-products/color/{key}/ 色系聚合页。
  * 产品条滑动方式同 Shop by Category：触摸滑动 + 鼠标拖拽，无翻页箭头。
- * 色系数据与标签页同一来源：product-tags.json（缺失时按规则现算），只统计在售产品。
+ * 数据由 server 端选好传入（只含在售产品，来源 product-tags.json / 规则现算），组件本身不 import 目录数据。
  */
-export default function V2ShopByColor() {
-  // 在售产品 + 各自色系 key（预先算一次，切换色板只是过滤）
-  // Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定），排除
-  const taggedInStock = useMemo(
-    () =>
-      enrichProductsWithShopifyData(PRODUCTS_DATA)
-        .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
-        .map((p) => {
-          const fullTitle = MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
-          const persisted = TAGS[p.asin.toLowerCase()];
-          const color =
-            persisted?.color ?? getColorTag(fullTitle, p.asin)?.key ?? null;
-          return { product: p, color };
-        }),
-    []
-  );
+export default function V2ShopByColor({ colors, productsByColor }: V2ShopByColorProps) {
+  const [activeColor, setActiveColor] = useState<string>(colors[0]?.key ?? '');
 
-  // 有 ≥1 款在售产品的色系，按 COLOR_RULES 展示顺序
-  const availableColors = useMemo(
-    () =>
-      COLOR_RULES.filter((rule) =>
-        taggedInStock.some((t) => t.color === rule.key)
-      ),
-    [taggedInStock]
-  );
-
-  const [activeColor, setActiveColor] = useState<string>(
-    availableColors[0]?.key ?? ''
-  );
-
-  const products = useMemo(
-    () =>
-      // 权重排序：高分优先（同分按类目平均分），取前 MAX_PER_COLOR
-      sortByWeight(
-        taggedInStock.filter((t) => t.color === activeColor).map((t) => t.product)
-      ).slice(0, MAX_PER_COLOR),
-    [taggedInStock, activeColor]
-  );
-
-  const activeRule = COLOR_RULES.find((c) => c.key === activeColor);
+  const products = productsByColor[activeColor] ?? [];
+  const activeRule = colors.find((c) => c.key === activeColor);
 
   // 产品横滑轨道：触摸滑动 + 鼠标拖拽（同 Shop by Category，无翻页箭头）
   const trackRef = useRef<HTMLDivElement>(null);
@@ -119,9 +81,9 @@ export default function V2ShopByColor() {
       el.removeEventListener('scroll', check);
       window.removeEventListener('resize', check);
     };
-  }, [availableColors.length]);
+  }, [colors.length]);
 
-  if (availableColors.length === 0) return null;
+  if (colors.length === 0) return null;
 
   return (
     <section className="bg-white pt-16 lg:pt-24 pb-16 lg:pb-24">
@@ -138,7 +100,7 @@ export default function V2ShopByColor() {
               ref={swatchRef}
               className="flex gap-6 lg:gap-8 overflow-x-auto p-1 -m-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
             >
-              {availableColors.map((rule) => {
+              {colors.map((rule) => {
                 const active = rule.key === activeColor;
                 return (
                   <button

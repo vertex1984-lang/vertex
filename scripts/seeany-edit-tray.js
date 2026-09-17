@@ -8,10 +8,14 @@
 const fs = require('fs');
 const path = require('path');
 const KEY = (() => {
-  const env = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
-  return (env.match(/^SEEANY_API_KEY=(.+)$/m) || [])[1]?.trim();
+  try {
+    const env = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
+    return (env.match(/^SEEANY_API_KEY=(.+)$/m) || [])[1]?.trim();
+  } catch {
+    return undefined;
+  }
 })();
-if (!KEY) { console.error('缺少 SEEANY_API_KEY'); process.exit(1); }
+if (!KEY) { console.error('缺少 SEEANY_API_KEY：请在 .env.local 中加 SEEANY_API_KEY=xxx'); process.exit(1); }
 
 const API = 'https://api.seeany.com/api/ai/smarttask';
 const OUT = path.join(__dirname, 'seeany-edit-preview', '1688-899672152256-C42');
@@ -89,6 +93,7 @@ async function pollTask(uuid) {
     const imgUrl = await pollTask(uuid);
     console.log(`  结果: ${imgUrl}`);
     const res = await fetch(imgUrl);
+    if (!res.ok) throw new Error(`结果图下载失败: HTTP ${res.status} ${res.statusText} (${imgUrl})`);
     const buf = Buffer.from(await res.arrayBuffer());
     fs.writeFileSync(dest, buf);
     console.log(`  已保存 ${dest} (${buf.length} bytes)`);

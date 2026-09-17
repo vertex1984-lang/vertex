@@ -3,8 +3,24 @@ import { v2url } from '@/lib/v2paths';
 import { productCategoryTag } from '@/data/subcategories';
 import type { MakimooProduct } from '@/data/products';
 
+/** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle */
+export type V2CardProduct = Pick<
+  MakimooProduct,
+  | 'id'
+  | 'title'
+  | 'handle'
+  | 'productType'
+  | 'subcategory'
+  | 'featuredImage'
+  | 'shopifyImages'
+  | 'shopifyPrice'
+  | 'shopifyCurrencyCode'
+  | 'images'
+  | 'priceRange'
+>;
+
 interface V2ProductCardProps {
-  product: MakimooProduct;
+  product: V2CardProduct;
   badge?: string;
 }
 

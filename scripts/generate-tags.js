@@ -5,7 +5,8 @@
  *
  * 手工配置保护：现有 JSON 中带 "manual": true 的条目（管理工具人工指定的 color/scene）
  * 不被自动打标覆盖——保留其手工 color/scene 和 manual 标记，只刷新 pieces。
- * 带 "manualPieces": true 的条目（管理工具人工指定的 Pack 件数）保留其手工 pieces，不刷新。 */
+ * 带 "manualPieces": true 的条目（管理工具人工指定的 Pack 件数）保留其手工 pieces，不刷新。
+ * 被在售过滤排除的产品（如缺货）：带 manual/manualPieces 的条目原样保留，不随重建删除。 */
 const fs = require('fs');
 const path = require('path');
 const ts = require('typescript');
@@ -91,6 +92,19 @@ inStock.forEach((p) => {
   if (!keepPieces && pieces !== null) piecesCount++;
 });
 
+// 被在售过滤排除的产品（如缺货）：其手工 color/scene 和 manualPieces 原样保留，
+// 否则输出 JSON 全量重建会把这些手工配置静默删掉
+const inStockAsins = new Set(inStock.map((p) => p.asin.toLowerCase()));
+let manualCarriedCount = 0;
+Object.keys(existing).forEach((asin) => {
+  const prev = existing[asin];
+  if (!prev || inStockAsins.has(asin)) return;
+  if (prev.manual || prev.manualPieces) {
+    tags[asin] = prev;
+    manualCarriedCount++;
+  }
+});
+
 const sorted = {};
 Object.keys(tags).sort().forEach((k) => { sorted[k] = tags[k]; });
 
@@ -100,6 +114,7 @@ console.log('written:', path.relative(ROOT, outPath));
 console.log('in-stock total:', inStock.length);
 console.log('manual preserved:', manualCount);
 console.log('manual pieces preserved:', manualPiecesCount);
+console.log('manual carried (excluded/out-of-stock):', manualCarriedCount);
 console.log('colors:', JSON.stringify(colorDist));
 console.log('scenes:', JSON.stringify(sceneDist));
 console.log('pieces extracted:', piecesCount);

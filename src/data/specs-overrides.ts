@@ -4,6 +4,27 @@
 import type { ProductSpecs } from './product-specs';
 
 export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
+  // 示例：
+  // "b0xxxxxxx": { dimensionsCm: [45, 45], material: "Polyester" },
+  "1688-595229918569": { material: "Faux Rabbit Fur" },
+  "1688-595229918569-c2": { material: "Faux Rabbit Fur" },
+  "1688-595229918569-c3": { material: "Faux Rabbit Fur" },
+  "1688-1052742241013": { material: "Faux Cashmere" },
+  "1688-1052742241013-c2": { material: "Faux Cashmere" },
+  "1688-1052742241013-c3": { material: "Faux Cashmere" },
+  "1688-1052742241013-c4": { material: "Faux Cashmere" },
+  "1688-1052742241013-c5": { material: "Faux Cashmere" },
+  "1688-1052742241013-c6": { material: "Faux Cashmere" },
+  "1688-996768645117-c2": { material: "Polyester Shaggy" },
+  "1688-996768645117-c3": { material: "Polyester Shaggy" },
+  "1688-745181807454": { material: "Printed Polyester" },
+  "1688-745181807454-c2": { material: "Printed Polyester" },
+  "1688-745181807454-c3": { material: "Printed Polyester" },
+  "1688-745181807454-c4": { material: "Printed Polyester" },
+  "1688-745181807454-c5": { material: "Printed Polyester" },
+  "1688-745181807454-c6": { material: "Printed Polyester" },
+  "1688-745181807454-c7": { material: "Printed Polyester" },
+  "1688-745181807454-c8": { material: "Printed Polyester" },
   // ── Bedding：bedset4/duvset 系列全部为 Microfiber（同系列已提取的兄弟款即 Microfiber）──
   "bedset4-gray-queen": { material: "Microfiber" },
   "bedset4-pink-queen": { material: "Microfiber" },
@@ -56,4 +77,23 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "b0gjlmc6z4": { material: "Microfiber" },  // 浮雕系列
   "b0gjlgxtl4": { material: "Microfiber" },  // 浮雕系列
   "b0gd843wmn": { material: "Microfiber" },  // 标题含 Microfibre
+  "linen3-charcoal-full": { material: "100% Linen" },
+  "linen3-sage-full": { material: "100% Linen" },
+  "linen3-charcoal-queen": { material: "100% Linen" },
+  "linen3-oatmeal-queen": { material: "100% Linen" },
+  "linen3-dustyblue-queen": { material: "100% Linen" },
+  "linen3-sage-king": { material: "100% Linen" },
+  "linen3-charcoal-twin": { material: "100% Linen" },
+  "linen3-dustyblue-king": { material: "100% Linen" },
+  "linen3-dustyblue-twin": { material: "100% Linen" },
+  "linen3-sage-queen": { material: "100% Linen" },
+  "linen3-oatmeal-king": { material: "100% Linen" },
+  "linen3-ivory-queen": { material: "100% Linen" },
+  "linen3-sage-twin": { material: "100% Linen" },
+  "linen3-ivory-twin": { material: "100% Linen" },
+  "linen3-oatmeal-twin": { material: "100% Linen" },
+  "linen3-dustyblue-full": { material: "100% Linen" },
+  "linen3-oatmeal-full": { material: "100% Linen" },
+  "linen3-ivory-king": { material: "100% Linen" },
+  "linen3-ivory-full": { material: "100% Linen" },
 };

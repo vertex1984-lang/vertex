@@ -586,6 +586,32 @@ function sendJson(res, code, obj) {
   res.end(body);
 }
 
+// CSRF 防护：带 Origin 的跨站请求一律拒绝（无 Origin 的非浏览器客户端放行）
+function sameOrigin(req) {
+  const origin = req.headers.origin;
+  if (!origin) return true;
+  try {
+    return new URL(origin).host === req.headers.host;
+  } catch {
+    return false;
+  }
+}
+
+// 收集 POST body；超过 10MB 先回 413 再断开，回调不再触发
+function collectBody(req, res, cb) {
+  let body = '';
+  let tooLarge = false;
+  req.on('data', (c) => {
+    body += c;
+    if (!tooLarge && body.length > 10 * 1024 * 1024) {
+      tooLarge = true;
+      sendJson(res, 413, { ok: false, error: '请求体过大（上限 10MB）' });
+      req.destroy();
+    }
+  });
+  req.on('end', () => { if (!tooLarge) cb(body); });
+}
+
 function serveStatic(res, urlPath) {
   let rel;
   try {
@@ -595,7 +621,7 @@ function serveStatic(res, urlPath) {
     return;
   }
   const file = path.normalize(path.join(OUT_DIR, rel));
-  if (!file.startsWith(OUT_DIR) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
+  if (!file.startsWith(OUT_DIR + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
     res.writeHead(404).end('not found');
     return;
   }
@@ -607,6 +633,9 @@ const PAGE = buildPage();
 
 const server = http.createServer((req, res) => {
   const u = new URL(req.url, 'http://localhost');
+  if (req.method === 'POST' && !sameOrigin(req)) {
+    return sendJson(res, 403, { ok: false, error: '跨站请求被拒绝' });
+  }
   if (req.method === 'GET' && u.pathname === '/') {
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(PAGE);
@@ -631,21 +660,11 @@ const server = http.createServer((req, res) => {
     return;
   }
   if (req.method === 'POST' && u.pathname === '/api/save') {
-    let body = '';
-    req.on('data', (c) => {
-      body += c;
-      if (body.length > 10 * 1024 * 1024) req.destroy();
-    });
-    req.on('end', () => handleSave(body, res));
+    collectBody(req, res, (body) => handleSave(body, res));
     return;
   }
   if (req.method === 'POST' && u.pathname === '/api/taxonomy') {
-    let body = '';
-    req.on('data', (c) => {
-      body += c;
-      if (body.length > 10 * 1024 * 1024) req.destroy();
-    });
-    req.on('end', () => {
+    collectBody(req, res, (body) => {
       let t;
       try {
         t = JSON.parse(body);
@@ -670,7 +689,7 @@ const server = http.createServer((req, res) => {
   res.writeHead(405).end('method not allowed');
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`分类管理工具（仅本地使用）: http://localhost:${PORT}`);
   console.log('数据写入 src/data/taxonomy.json');
 });

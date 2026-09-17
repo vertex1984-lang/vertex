@@ -56,10 +56,14 @@ function main() {
   const { PRODUCT_SPECS } = loadTs('src/data/product-specs.ts');
   const { WEIGHT_OVERRIDES, GROUP_BOOSTS } = loadTs('src/data/weights-overrides.ts');
 
-  // 销量数据（可选）：{ "asin": units90d }
+  // 销量数据（可选）：{ "asin": units90d }；文件损坏时降级为销量 0，不阻断构建
   let sales = {};
   if (fs.existsSync(SALES_JSON)) {
-    sales = JSON.parse(fs.readFileSync(SALES_JSON, 'utf8'));
+    try {
+      sales = JSON.parse(fs.readFileSync(SALES_JSON, 'utf8'));
+    } catch (e) {
+      console.warn(`WARNING: scripts/sales-data.json 解析失败（${e.message}），销量信号按 0 计`);
+    }
   } else {
     console.log('未找到 scripts/sales-data.json，销量信号按 0 计（接入 Shopify Admin API 后生成该文件）');
   }

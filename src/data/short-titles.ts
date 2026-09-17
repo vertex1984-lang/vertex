@@ -259,4 +259,17 @@ export const SHORT_TITLES: Record<string, string> = {
   "1688-745181807454-c6": "Low-Pile Vintage Persian Area Rug, Brown Medallion",
   "1688-745181807454-c7": "Low-Pile Vintage Persian Area Rug, Multi-Color Tribal",
   "1688-745181807454-c8": "Low-Pile Vintage Persian Area Rug, Brown Oriental",
+
+  "1688-744995685423-c2": "Minimalist Geometric Striped Area Rug - 100x200cm, Black and White",
+  "1688-595229918569-c2": "Plush Faux Rabbit Fur Area Rug - 160x200cm, Off White",
+  "1688-744995685423": "Modern Geometric Stain-Resistant Area Rug - 100x200cm, Grey Beige",
+  "1688-595229918569": "Ultra Soft Faux Rabbit Fur Area Rug - 160x200cm, Light Camel",
+  "1688-745181807454-c3": "Distressed Persian Medallion Area Rug - 160x230cm, Beige Multicolor",
+  "1688-745181807454-c2": "Turkish Geometric Diamond Area Rug - 160x230cm, Navy Blue",
+  "1688-1052742241013-c3": "Vintage Boho Persian Medallion Area Rug - 160x230cm, Sage Green",
+  "1688-1052742241013-c2": "Vintage Bohemian Faux Cashmere Area Rug - 160x230cm, Navy Blue",
+  "1688-996768645117": "Luxury Oval Shaggy Area Rug - 100x200cm, Khaki",
+  "1688-745181807454": "Colorful Anatolian Tribal Striped Area Rug - 160x230cm, Multicolor",
+  "1688-1052742241013": "Plush Vintage Persian Area Rug - 160x230cm, Rust Orange",
+  "1688-969627065032-c33": "Faux Rabbit Fur Throw Blanket - 180x200cm, Dark Gray",
 };

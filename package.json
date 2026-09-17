@@ -7,7 +7,8 @@
     "build": "node scripts/build-sitemap.js && node scripts/build-shopify-map.js && node scripts/build-weights.js && next build",
     "build:local": "node scripts/build-sitemap.js && node scripts/build-shopify-map.js && node scripts/build-weights.js && next build && node scripts/fix-paths.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "chat-proxy": "node scripts/chat-proxy/server.mjs"
   },
   "dependencies": {
     "@shopify/storefront-api-client": "^1.0.10",

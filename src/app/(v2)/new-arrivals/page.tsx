@@ -5,14 +5,14 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
 
 export const metadata: Metadata = {
-  title: 'New Arrivals | Makimoo',
+  title: 'New Arrivals',
   description:
     'Just landed at Makimoo — the 20 newest pieces added to the collection.',
 };
 
 // 最新上架：按 Shopify 产品创建时间倒序取前 20，不区分类目、平铺展示
 const newArrivals = enrichProductsWithShopifyData(PRODUCTS_DATA)
-  .filter((p) => p.hasShopifyData)
+  .filter((p) => p.hasShopifyData && p.shopifyAvailable)
   .sort((a, b) => {
     const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
     const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import V2PageHeader from '@/components/v2/V2PageHeader';
 import ProductCard from '@/components/ProductCard';
 import { v2url } from '@/lib/v2paths';
-import { getFavorites } from '@/lib/favorites';
+import { pruneFavorites } from '@/lib/favorites';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 
 /**
@@ -19,8 +19,10 @@ export default function V2FavoritesPage() {
 
   useEffect(() => {
     const refresh = () => {
-      const ids = getFavorites().slice().reverse();
       const enriched = enrichProductsWithShopifyData(PRODUCTS_DATA);
+      const inCatalog = new Set(enriched.map((p) => p.id));
+      // 先剪掉目录里已不存在的 ghost id（写回 localStorage 并同步 Header 角标），再渲染网格
+      const ids = pruneFavorites((id) => inCatalog.has(id)).slice().reverse();
       setProducts(
         ids
           .map((id) => enriched.find((p) => p.id === id))

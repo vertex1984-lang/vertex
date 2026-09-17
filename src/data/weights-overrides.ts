@@ -42,6 +42,7 @@ const BASE_WEIGHT_OVERRIDES: Record<string, WeightOverride> = {
   // 'b0cqc5qjfj': { boost: 20, note: 'Q4 主推枕芯' },
   // 'linen3-oatmeal-queen': { pin: 3, note: '新品主推，置顶到第 3 位', until: '2026-10-31' },
   // 'b0f1y91hpr': { bury: true, note: '转化差，沉底观察' },
+  'b0cjhl4lzp': { boost: 2.1, note: '43x43 油画花卉单品（用户指定不入组），排序紧邻 Outdoor 椅垫家族簇' },
 };
 
 /** 生效人工赋权表 = TS 原有条目 + weight-boosts.json 打分（同 asin 时 JSON 优先） */

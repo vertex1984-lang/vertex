@@ -6,7 +6,7 @@ import { v2url } from '@/lib/v2paths';
 import { getBestSellersByCategory } from '@/data/featured-sections';
 
 export const metadata: Metadata = {
-  title: 'Best Sellers | Makimoo',
+  title: 'Best Sellers',
   description:
     'Shop Makimoo best sellers by category — the comfort essentials our customers love most, in bedding, pillows, cushions, towels, mats and blankets.',
 };

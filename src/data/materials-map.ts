@@ -10,6 +10,8 @@ export interface MaterialsEntry {
   images: string[];
   /** 与 images 对齐：true = 白底图（前端加内边距缩小显示），false = 场景图（打满） */
   whiteBg: boolean[];
+  /** 详情页附图（可选；素材平台 detailImages，有才渲染，无则不显示） */
+  detailImages?: string[];
 }
 
 export const MATERIALS_MAP: Record<string, MaterialsEntry> = {
