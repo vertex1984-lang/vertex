@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Montserrat, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#fff8f0"/>
+  <rect x="120" y="100" width="860" height="600" fill="#f8f5f0" stroke="#6b6156" stroke-width="4"/>
+  <rect x="220" y="240" width="520" height="380" rx="8" fill="#8b5a2b"/>
+  <rect x="238" y="258" width="484" height="344" rx="6" fill="none" stroke="#fff8f0" stroke-width="2.5" opacity="0.6"/>
+  <g fill="#3e362e">
+    <rect x="290" y="140" width="380" height="120" rx="18"/>
+    <rect x="290" y="236" width="380" height="24" rx="9" fill="#4a4238"/>
+  </g>
+  <circle cx="326" cy="282" r="13" fill="#3e362e"/>
+  <circle cx="634" cy="282" r="13" fill="#3e362e"/>
+  <circle cx="326" cy="122" r="10" fill="#9a8f82"/>
+  <circle cx="634" cy="122" r="10" fill="#9a8f82"/>
+  <circle cx="480" cy="430" r="52" fill="#a67c52"/>
+  <circle cx="480" cy="430" r="52" fill="none" stroke="#74491f" stroke-width="3"/>
+  <g stroke="#9a8f82" stroke-width="2.5">
+    <line x1="170" y1="240" x2="170" y2="620"/>
+    <line x1="158" y1="240" x2="182" y2="240"/>
+    <line x1="158" y1="620" x2="182" y2="620"/>
+    <line x1="220" y1="665" x2="740" y2="665"/>
+    <line x1="220" y1="653" x2="220" y2="677"/>
+    <line x1="740" y1="653" x2="740" y2="677"/>
+    <line x1="810" y1="240" x2="810" y2="620"/>
+    <line x1="798" y1="240" x2="822" y2="240"/>
+    <line x1="798" y1="620" x2="822" y2="620"/>
+  </g>
+  <text x="655" y="290" font-size="30" fill="#3e362e" font-weight="600">Front legs on</text>
+  <text x="540" y="440" font-size="26" fill="#fff8f0" text-anchor="middle">table</text>
+  <text x="900" y="435" font-size="28" fill="#6b6156" text-anchor="middle">30&#8211;45 cm</text>
+  <text x="900" y="470" font-size="28" fill="#6b6156" text-anchor="middle">bare floor</text>
+  <text x="480" y="710" font-size="28" fill="#6b6156" text-anchor="middle">rug extends 15&#8211;30 cm past the furniture on each side</text>
+  <text x="150" y="90" font-size="28" fill="#6b6156">back legs off the rug</text>
+</svg>

@@ -5,7 +5,7 @@ import { resolveUrl } from '@/lib/paths';
 import './blog.css';
 
 const SITE_URL = 'https://www.makimoohome.com';
-const HERO_IMAGE = '/images/products/1688-744995685423-C2/1.webp';
+const HERO_IMAGE = '/images/blog/blog-hero.svg';
 
 export const metadata: Metadata = {
   title: 'Ideas & Inspiration',
@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
       </div>
 
       <div className="bl-hero">
-        <img src={resolveUrl(HERO_IMAGE)} alt="Living room styled with a Makimoo area rug" />
+        <img src={resolveUrl(HERO_IMAGE)} alt="Illustration of a living room styled with an area rug" />
         <div className="bl-hero-overlay">
           <h1 className="bl-hero-title">Ideas &amp; Inspiration</h1>
           <p className="bl-hero-sub">

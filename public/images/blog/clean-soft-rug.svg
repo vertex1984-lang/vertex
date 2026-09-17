@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <clipPath id="rugclip"><rect x="200" y="300" width="420" height="330" rx="22"/></clipPath>
+  </defs>
+  <rect width="800" height="800" fill="#f8f5f0"/>
+  <rect x="40" y="40" width="720" height="720" rx="18" fill="none" stroke="#e2d9cc" stroke-width="2"/>
+  <rect x="200" y="300" width="420" height="330" rx="22" fill="#8b5a2b"/>
+  <rect x="220" y="320" width="380" height="290" rx="14" fill="none" stroke="#fff8f0" stroke-width="2.5" opacity="0.6"/>
+  <g clip-path="url(#rugclip)" stroke="#fff8f0" stroke-width="3" stroke-linecap="round" opacity="0.45" fill="none">
+    <path d="M210 380 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0"/>
+    <path d="M210 450 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0"/>
+    <path d="M210 520 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0"/>
+    <path d="M210 590 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0"/>
+  </g>
+  <g fill="#e2d9cc" stroke="#9a8f82" stroke-width="2.5">
+    <path d="M330 220 c-13 18 -11 36 2 36 c13 0 15 -18 2 -36 l-2 -5 z"/>
+    <path d="M400 180 c-13 18 -11 36 2 36 c13 0 15 -18 2 -36 l-2 -5 z"/>
+    <path d="M470 220 c-13 18 -11 36 2 36 c13 0 15 -18 2 -36 l-2 -5 z"/>
+  </g>
+  <g fill="none" stroke="#a67c52" stroke-width="3">
+    <circle cx="560" cy="160" r="12"/><circle cx="584" cy="146" r="8"/><circle cx="548" cy="140" r="7"/>
+  </g>
+  <g transform="rotate(-24 190 560)">
+    <rect x="120" y="540" width="90" height="26" rx="12" fill="#74491f"/>
+    <path d="M210 534 l44 -8 0 44 -44 -8 z" fill="#a67c52"/>
+    <g stroke="#fff8f0" stroke-width="3" stroke-linecap="round" opacity="0.7">
+      <path d="M232 534 v36"/><path d="M244 532 v40"/><path d="M256 534 v36"/>
+    </g>
+  </g>
+</svg>

@@ -2,7 +2,7 @@
    Ideas & Inspiration（Blog）专属样式
    - 全部类名以 bl- 前缀，与主站样式隔离
    - 视觉：Castlery 编辑风 + 主站棕米 token
-   - 字体：标题 Cormorant Garamond / 正文 Lora（根 layout 已引入）
+   - 字体：与主站一致（Montserrat，globals.css 全局生效）
    ============================================================ */
 
 .bl-scope {
@@ -17,7 +17,6 @@
   --bl-line: #e2d9cc;
   --bl-radius: 4px;
 
-  font-family: 'Lora', Georgia, 'PingFang SC', 'Microsoft YaHei', serif;
   color: var(--bl-ink);
   background: var(--bl-off);
   font-size: 17px;
@@ -97,7 +96,7 @@
   padding: 0 24px;
 }
 .bl-hero-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   font-weight: 600;
   color: #fff;
@@ -162,7 +161,7 @@
   margin: 18px 0 8px;
 }
 .bl-card-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 1.3;
@@ -211,7 +210,7 @@
   padding-top: 26px;
 }
 .bl-article-head h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(30px, 4.4vw, 44px);
   font-weight: 700;
   line-height: 1.22;
@@ -260,7 +259,7 @@
   color: var(--bl-ink);
 }
 .bl-article-body h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 29px;
   font-weight: 700;
   color: var(--bl-ink);
@@ -304,7 +303,7 @@
 }
 .bl-scope th {
   text-align: left;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -342,7 +341,7 @@
   padding: 20px 22px;
 }
 .bl-pc-box h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 1.6px;
@@ -428,7 +427,7 @@
   margin-bottom: 6px;
 }
 .bl-product h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 5px;
@@ -448,7 +447,7 @@
   flex-wrap: wrap;
 }
 .bl-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--bl-ink);
@@ -482,7 +481,7 @@
   border-bottom: 1px solid var(--bl-line);
 }
 .bl-faq summary {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--bl-ink);
@@ -534,7 +533,7 @@
   padding: 54px 40px 20px;
 }
 .bl-reco-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 700;
   color: var(--bl-ink);
@@ -570,7 +569,7 @@
   margin-top: 14px;
 }
 .bl-reco-card h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
@@ -595,7 +594,7 @@
   padding: 64px 24px 80px;
 }
 .bl-cta-band h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 10px;
