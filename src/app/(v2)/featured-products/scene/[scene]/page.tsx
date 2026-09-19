@@ -6,7 +6,9 @@ import { SCENE_RULES } from '@/data/product-tags';
 import { ALL, SCENE_BLURBS, sceneKeysWithProducts } from '../../tagged';
 
 // 静态导出：只为 generateStaticParams 返回的分类生成页面，其余 404
-export const dynamicParams = false;
+// 注意：不要导出 dynamicParams=false —— dev 模式下 output:'export' 会因此把
+// fallbackMode 判为非 "static" 而抛 "missing generateStaticParams()" 500；
+// 静态导出本就只生成 generateStaticParams 返回的路径，无需该导出
 
 // 只为 product-tags.json 中有 ≥1 个在售产品的场景生成静态页
 export function generateStaticParams() {
@@ -43,7 +45,7 @@ export default function SceneCategoryPage({ params }: { params: { scene: string 
         <span className="text-[#555]">{rule.label}</span>
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
-        <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
         <p className="text-sm text-[#777]">{products.length} result{products.length === 1 ? '' : 's'}</p>
       </div>
 

@@ -156,11 +156,12 @@ function classifyOther(title: string): string {
   return 'extras';
 }
 
-/** Bedding 按材质分组：取规格表主材质（逗号前第一个）；Bamboo 等暂不分组返回 undefined */
+/** Bedding 按材质分组：取规格表主材质（逗号前第一个，去掉 "100% " 前缀归一化——
+ *  specs-overrides 把 linen3 系列写成 "100% Linen"，不归一化会漏分组）；Bamboo 等暂不分组返回 undefined */
 function classifyBedding(asin: string): string | undefined {
   const material = getProductSpecs(asin)?.material;
   if (!material) return undefined;
-  const primary = material.split(',')[0].trim().toLowerCase();
+  const primary = material.split(',')[0].trim().toLowerCase().replace(/^100%\s+/, '');
   if (primary === 'microfiber') return 'microfiber';
   if (primary === 'linen') return 'linen';
   if (primary === 'cotton') return 'cotton';

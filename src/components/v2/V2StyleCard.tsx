@@ -4,7 +4,7 @@ import { StyleCardData } from '@/data/style-tagged';
 
 /**
  * 风格入口卡（首页 Shop by Style 与 /featured-products/style/ 汇总页共用）：
- * 代表图 + 渐变遮罩 + 偏小字号风格名 + 件数（无 CTA 箭头，2026-09 用户定）。
+ * 代表图 + 渐变遮罩 + 偏小字号风格名（无件数、无 CTA 箭头，2026-09 用户定）。
  * big = 2×2 主卡（Bento 用）；wide = 桌面端拉宽补齐行（Bento 用）。
  */
 export default function V2StyleCard({
@@ -41,9 +41,6 @@ export default function V2StyleCard({
         {big && card.blurb && (
           <p className="mt-1 text-xs lg:text-sm text-cream/85 max-w-md">{card.blurb}</p>
         )}
-        <p className="mt-1 text-[10px] lg:text-xs font-semibold uppercase tracking-widest text-cream/80">
-          {card.count} pieces
-        </p>
       </div>
     </a>
   );

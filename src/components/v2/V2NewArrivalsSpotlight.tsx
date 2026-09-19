@@ -34,7 +34,7 @@ export default function V2NewArrivalsSpotlight({ products }: V2NewArrivalsSpotli
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
               Just Landed
             </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
+            <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
               New Arrivals
             </h2>
             <p className="text-base text-charcoal-light max-w-xl">

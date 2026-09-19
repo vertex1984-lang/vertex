@@ -202,6 +202,7 @@ export interface StyleTag {
 interface StyleRule extends StyleTag {
   words: string[];
 }
+export type { StyleRule };
 
 export const STYLE_RULES: StyleRule[] = [
   { key: 'african-tribal', label: 'African & Tribal', words: ['african', 'tribal', 'ethnic', 'mudcloth', 'kente'] },
@@ -230,4 +231,23 @@ export function getStyleTag(title: string, productType?: string): StyleTag {
   const fallbackKey = (productType && STYLE_TYPE_FALLBACK[productType]) || 'modern';
   const rule = STYLE_RULES.find((s) => s.key === fallbackKey) || STYLE_RULES[STYLE_RULES.length - 1];
   return { key: rule.key, label: rule.label };
+}
+
+// 风格人工指定（2026-09 用户定）：key = 小写 asin，value = 风格 key。
+// Slate Bamboo 床品四件套标题含 bamboo 被规则误判为 Rattan & Woven，实为 Farmhouse 水墨竹印花
+const STYLE_OVERRIDES: Record<string, string> = {
+  'bedset4-slate-twin': 'farmhouse',
+  'bedset4-slate-full': 'farmhouse',
+  'bedset4-slate-queen': 'farmhouse',
+  'bedset4-slate-king': 'farmhouse',
+};
+
+/** getStyleTag + 人工覆盖（STYLE_OVERRIDES 优先）。asin 传产品 asin（大小写不限） */
+export function getStyleTagWithOverride(title: string, productType: string | undefined, asin: string): StyleTag {
+  const key = STYLE_OVERRIDES[asin.toLowerCase()];
+  if (key) {
+    const rule = STYLE_RULES.find((s) => s.key === key);
+    if (rule) return { key: rule.key, label: rule.label };
+  }
+  return getStyleTag(title, productType);
 }

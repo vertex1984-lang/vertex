@@ -123,14 +123,9 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             {personalized ? 'Based on Your Browsing' : 'Customer Favorites'}
           </p>
-          <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
+          <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
             You May Also Like
           </h2>
-          <p className="text-base text-charcoal-light max-w-xl">
-            {personalized
-              ? 'Picked from the categories, colors and rooms you have been looking at.'
-              : 'The pieces our customers reach for again and again.'}
-          </p>
         </div>
 
         {/* 产品区：单行可横滑（触摸滑动 + 鼠标拖拽，同 Shop by Category，无箭头）。

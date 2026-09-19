@@ -3,7 +3,9 @@ import { v2url } from '@/lib/v2paths';
 import { productCategoryTag } from '@/data/subcategories';
 import type { MakimooProduct } from '@/data/products';
 
-/** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle */
+/** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle。
+ *  tagLabel 为可选附加字段：设置后类目标签位显示该值（Shop by Color 传场景名、Shop by Scene 传一级类目），
+ *  否则回退到 productCategoryTag（二级类目 shortLabel 优先于 productType） */
 export type V2CardProduct = Pick<
   MakimooProduct,
   | 'id'
@@ -17,11 +19,10 @@ export type V2CardProduct = Pick<
   | 'shopifyCurrencyCode'
   | 'images'
   | 'priceRange'
->;
+> & { tagLabel?: string };
 
 interface V2ProductCardProps {
   product: V2CardProduct;
-  badge?: string;
 }
 
 /** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明 */
@@ -33,14 +34,6 @@ function shortTitle(title: string): string {
     .trim();
 }
 
-/** 从标题提取件数："Set of 4" / "4 Pack" / "2-Pack" / "Pack of 2" / "4-Piece" → 4/4/2/2/4（与 classic ProductCard 同一规则） */
-function getPackCount(title: string): number | null {
-  const m = title.match(/set of (\d+)|(\d+)[\s-]?pack|pack of (\d+)|(\d+)[\s-]?piece/i);
-  if (!m) return null;
-  const n = parseInt(m[1] || m[2] || m[3] || m[4], 10);
-  return n > 1 ? n : null;
-}
-
 function formatPrice(amount: string, currency: string): string {
   const value = parseFloat(amount);
   if (Number.isNaN(value)) return '';
@@ -49,7 +42,7 @@ function formatPrice(amount: string, currency: string): string {
 }
 
 // Parachute 风格：大图 aspect-square + 分类 eyebrow + 产品名 + 价格，无卡片边框阴影
-export default function V2ProductCard({ product, badge }: V2ProductCardProps) {
+export default function V2ProductCard({ product }: V2ProductCardProps) {
   // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title }
@@ -69,7 +62,6 @@ export default function V2ProductCard({ product, badge }: V2ProductCardProps) {
       : undefined;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-  const packCount = getPackCount(product.title);
 
   return (
     <a href={v2url(`/products/${product.handle}/`)} className="group block h-full">
@@ -94,27 +86,15 @@ export default function V2ProductCard({ product, badge }: V2ProductCardProps) {
             />
           )}
         </div>
-        {(badge || packCount) && (
-          <div className="absolute top-3 left-3 flex flex-col items-start gap-1.5">
-            {badge && (
-              <span className="px-2.5 py-1 rounded-full bg-cream text-brand text-[10px] font-semibold tracking-widest uppercase shadow-sm">
-                {badge}
-              </span>
-            )}
-            {packCount && (
-              <span className="px-2.5 py-1 rounded-full bg-brand text-cream text-[10px] font-semibold tracking-widest uppercase shadow-sm">
-                {packCount} Pack
-              </span>
-            )}
-          </div>
-        )}
       </div>
       <div className="pt-3.5">
-        {/* 类目标签/标题/价格沿用 v1 classic ProductCard 的样式与颜色 */}
+        {/* 类目标签/标题/价格沿用 v1 classic ProductCard 的样式与颜色；带 tagLabel 时优先显示该值。
+            badge / N Pack 标签已按用户要求全站移除（2026-09） */}
         <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
-          {productCategoryTag(product)}
+          {product.tagLabel || productCategoryTag(product)}
         </p>
-        <h3 className="relative text-sm sm:text-base font-medium text-[#333] leading-snug line-clamp-2">
+        {/* 标题全端单行截断（truncate + 省略号），字号全端统一 text-xs */}
+        <h3 className="relative text-xs font-medium text-[#333] leading-snug truncate">
           {shortTitle(product.title)}
           {/* 标题下划线 hover 渐入（v1 同款） */}
           <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />

@@ -79,9 +79,17 @@ export interface ShopByColorData {
   productsByColor: Record<string, V2CardProduct[]>;
 }
 
-// Shop by Color：有 ≥1 款在售产品的色系按 COLOR_RULES 顺序展示，每色系按权重取前 MAX_PER_COLOR
+// Shop by Color：有 ≥1 款在售产品的色系按 COLOR_RULES 顺序展示，每色系按权重取前 MAX_PER_COLOR。
+// 卡片类目标签位统一显示场景名（tagLabel）：色系区内产品类目各异（Bedding/Microfiber…），
+// 显示场景标签（Bedroom/Living Room…）口径统一；无场景标签的产品回退到子类目/productType
 export function getShopByColorData(): ShopByColorData {
   const tagged = taggedInStock();
+  const sceneLabelByHandle = new Map(
+    tagged.map((t) => [
+      t.product.handle,
+      SCENE_RULES.find((r) => r.key === t.scene)?.label,
+    ])
+  );
   const colors = COLOR_RULES.filter((rule) => tagged.some((t) => t.color === rule.key));
   const productsByColor: Record<string, V2CardProduct[]> = {};
   for (const rule of colors) {
@@ -89,7 +97,12 @@ export function getShopByColorData(): ShopByColorData {
       tagged.filter((t) => t.color === rule.key).map((t) => t.product)
     )
       .slice(0, MAX_PER_COLOR)
-      .map(toCardProduct);
+      .map((p) => {
+        const card = toCardProduct(p);
+        const sceneLabel = sceneLabelByHandle.get(p.handle);
+        if (sceneLabel) card.tagLabel = sceneLabel;
+        return card;
+      });
   }
   return {
     colors: colors.map(({ key, label, hex }) => ({ key, label, hex })),
@@ -108,7 +121,9 @@ export interface ShopBySceneData {
 }
 
 // Shop by Scene：有 ≥MIN_PRODUCTS 款在售产品（按标题去重后）的场景按 SCENE_RULES 顺序展示，
-// 场景内按权重排序（去重保留权重最高的一款），取前 MAX_PER_SCENE
+// 场景内按权重排序（去重保留权重最高的一款），取前 MAX_PER_SCENE。
+// 卡片类目标签位统一显示一级类目 productType（tagLabel）：productCategoryTag 对设置了二级类目
+// 的产品会显示 Microfiber 等 shortLabel，同一区内 Bedding/Microfiber 混排观感不统一（2026-09 用户定）
 export function getShopBySceneData(): ShopBySceneData {
   const tagged = taggedInStock();
   const scenes = SCENE_RULES.map((rule) => {
@@ -129,7 +144,7 @@ export function getShopBySceneData(): ShopBySceneData {
     scenes: scenes.map((s) => ({
       key: s.rule.key,
       label: s.rule.label,
-      products: s.products.map(toCardProduct),
+      products: s.products.map((p) => ({ ...toCardProduct(p), tagLabel: p.productType })),
     })),
   };
 }

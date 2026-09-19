@@ -96,10 +96,10 @@ export default function V2BestSellersBento({ products }: V2BestSellersBentoProps
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
               Customer Favorites
             </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
+            <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
               Best Sellers
             </h2>
-            <p className="text-base text-charcoal-light max-w-xl">
+            <p className="hidden sm:block text-sm lg:text-base text-charcoal-light max-w-xl">
               The pieces our customers keep coming back for.
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function V2BestSellersBento({ products }: V2BestSellersBentoProps
                 >
                   {String(i + 2).padStart(2, '0')}
                 </span>
-                <V2ProductCard product={product} badge="Best Seller" />
+                <V2ProductCard product={product} />
               </Reveal>
             ))}
           </div>

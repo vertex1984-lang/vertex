@@ -48,29 +48,15 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
 
   return (
     <section className="pt-4 lg:pt-6 pb-16 lg:pb-24">
-      {/* 标题行：左侧 eyebrow + 标题 + 文案，右侧 View All 链接（与 Best Sellers 头部呼应） */}
+      {/* 标题行：仅 eyebrow + 标题（副标题与 View All 链接已按用户要求移除，2026-09） */}
       <Reveal>
-        <div className="max-w-[1800px] mx-auto px-6 lg:px-10 flex items-end justify-between gap-6 mb-10 lg:mb-12">
-          <div>
-            <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
-              Editor&apos;s Picks
-            </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
-              Featured Products
-            </h2>
-            <p className="text-base text-charcoal-light max-w-xl">
-              Two spotlights, six companions — the pieces our editors would bring home first.
-            </p>
-          </div>
-          <a
-            href={v2url('/best-sellers/')}
-            className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-brand tracking-wide hover:underline underline-offset-4 flex-shrink-0"
-          >
-            View All
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </a>
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-10 mb-8 lg:mb-12">
+          <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
+            Editor&apos;s Picks
+          </p>
+          <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+            Featured Products
+          </h2>
         </div>
       </Reveal>
 
@@ -80,7 +66,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
           <div className="flex gap-5 overflow-x-auto pb-2 pr-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {products.slice(0, 8).map((product) => (
               <div key={product.id} className="w-[56vw] sm:w-[42vw] flex-shrink-0 snap-start">
-                <V2ProductCard product={product} badge="Featured" />
+                <V2ProductCard product={product} />
               </div>
             ))}
           </div>
@@ -121,15 +107,13 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
                     >
                       {String(i + 1).padStart(2, '0')}
                     </span>
-                    <span className="absolute top-5 right-5 px-2.5 py-1 rounded-full bg-cream text-brand text-[10px] font-semibold tracking-widest uppercase shadow-sm">
-                      Featured
-                    </span>
+                    {/* Featured 标签已按用户要求移除（2026-09） */}
                     {/* 图上底部文字区 */}
                     <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-8">
                       <p className="text-xs font-semibold uppercase tracking-wider text-cream/70 mb-1.5">
                         {productCategoryTag(spotlight)}
                       </p>
-                      <h3 className="text-xl lg:text-2xl font-bold text-cream leading-snug mb-2 line-clamp-2">
+                      <h3 className="text-base lg:text-lg font-bold text-cream leading-snug mb-2 line-clamp-2">
                         {shortTitle(spotlight.title)}
                       </h3>
                       <div className="flex items-center justify-between gap-4">
@@ -160,7 +144,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
                 >
                   {String(i + 3).padStart(2, '0')}
                 </span>
-                <V2ProductCard product={product} badge="Featured" />
+                <V2ProductCard product={product} />
               </Reveal>
             ))}
           </div>

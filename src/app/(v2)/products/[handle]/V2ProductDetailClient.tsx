@@ -234,7 +234,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 </span>
               </div>
 
-              <h1 className="text-2xl lg:text-[32px] font-extrabold tracking-tight text-charcoal leading-tight mb-4">
+              <h1 className="text-xl lg:text-[32px] font-extrabold tracking-tight text-charcoal leading-tight mb-4">
                 {product.title}
               </h1>
 

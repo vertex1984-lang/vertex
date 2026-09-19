@@ -1,7 +1,7 @@
 /**
  * Shop by Style 共享打标数据（2026-09 新增）：首页风格模块与 /featured-products/style/[style]/ 聚合页共用。
  * 与 featured-products/tagged.ts 的关键差异：风格**全类目参与**（含 Others/Decor/Dining），
- * 标签由 getStyleTag 规则现算（暂无持久化/人工覆盖；后续要人工改可仿 color/scene 加 product-tags.json 字段）。
+ * 标签由 getStyleTagWithOverride 现算（规则打标 + STYLE_OVERRIDES 人工指定，见 product-tags.ts）。
  */
 import {
   PRODUCTS_DATA,
@@ -9,7 +9,7 @@ import {
   MakimooProduct,
 } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
-import { getStyleTag, STYLE_RULES, StyleTag } from '@/data/product-tags';
+import { getStyleTagWithOverride, STYLE_RULES, StyleTag, StyleRule } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
 
 export interface StyledProduct extends MakimooProduct {
@@ -24,7 +24,7 @@ const fullTitleOf = (p: MakimooProduct) =>
 export const ALL_STYLED: StyledProduct[] = sortByWeight(
   enrichProductsWithShopifyData(PRODUCTS_DATA)
     .filter((p) => p.hasShopifyData && p.shopifyAvailable)
-    .map((p) => ({ ...p, styleTag: getStyleTag(fullTitleOf(p), p.productType) }))
+    .map((p) => ({ ...p, styleTag: getStyleTagWithOverride(fullTitleOf(p), p.productType, p.asin) }))
 );
 
 /** 有 ≥1 个在售产品的风格 key（驱动静态页生成与首页展示）。
@@ -40,6 +40,33 @@ const STYLE_DISPLAY_ORDER = [
   'bohemian',
   'persian-vintage',
 ];
+
+// 展示顺序对应的规则列表（/products 的 Collections 筛选与分区视图复用，与首页 Shop by Style 同序）
+export const STYLE_DISPLAY_RULES: StyleRule[] = [
+  ...STYLE_DISPLAY_ORDER.map((k) => STYLE_RULES.find((r) => r.key === k)!),
+  ...STYLE_RULES.filter((r) => !STYLE_DISPLAY_ORDER.includes(r.key)),
+];
+
+/** 每个一级类目（小写 productType）下有 ≥1 款在售产品的风格，按首页展示顺序。
+ *  顶部导航下拉子项用（2026-09 用户定：导航子项与 /products Collections、首页 Shop by Style 同步） */
+export function stylesByCategory(): Record<string, StyleTag[]> {
+  const result: Record<string, StyleTag[]> = {};
+  for (const p of ALL_STYLED) {
+    const cat = p.productType.toLowerCase();
+    if (!result[cat]) result[cat] = [];
+    if (!result[cat].some((s) => s.key === p.styleTag.key)) {
+      result[cat].push({ key: p.styleTag.key, label: p.styleTag.label });
+    }
+  }
+  for (const cat of Object.keys(result)) {
+    const keys = new Set(result[cat].map((s) => s.key));
+    result[cat] = STYLE_DISPLAY_RULES.filter((r) => keys.has(r.key)).map((r) => ({
+      key: r.key,
+      label: r.label,
+    }));
+  }
+  return result;
+}
 
 export const styleKeysWithProducts = () => {
   const keys = STYLE_RULES.map((r) => r.key).filter((key) =>

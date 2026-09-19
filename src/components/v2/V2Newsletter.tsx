@@ -9,7 +9,7 @@ export default function V2Newsletter() {
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             Newsletter
           </p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-3">
+          <h2 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-3">
             Join the Makimoo Family
           </h2>
           <p className="text-sm lg:text-base text-charcoal-light mb-8">

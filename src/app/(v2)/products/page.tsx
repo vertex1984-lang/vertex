@@ -3,7 +3,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import ProductCard from '@/components/ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { CATEGORY_DEFS, getSubcategoriesOf, getSubcategoryDef } from '@/data/subcategories';
+import { CATEGORY_DEFS } from '@/data/subcategories';
+import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
+import { STYLE_BLURBS, STYLE_DISPLAY_RULES } from '@/data/style-tagged';
+import { MATERIALS_MAP } from '@/data/materials-map';
 import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
@@ -11,6 +14,10 @@ import { sortByWeight } from '@/lib/weights';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
+
+// 分区视图（一级类目页）每个 collection 最多展示的产品卡数；
+// 超出的出「View More」按钮，点击进入该 collection 子分类页看全部（2026-09 用户定）
+const SECTION_LIMIT = 10;
 
 type SortKey = 'featured' | 'price-asc' | 'price-desc';
 const SORT_KEYS: SortKey[] = ['featured', 'price-asc', 'price-desc'];
@@ -23,10 +30,12 @@ function priceOf(p: MakimooProduct): number {
   return parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount) || 0;
 }
 
-// 产品材质列表（提取表 + 手工覆盖表合并后的展示字符串，如 "Polyester, Canvas"）
+// 产品材质列表（提取表 + 手工覆盖表合并后的展示字符串，如 "Polyester, Canvas"）。
+// 筛选项计数时去掉 "100% " 前缀归一化（"100% Linen" 与 "Linen" 合并为一个选项，与风格分组口径一致）；
+// 详情页规格展示仍用原始字符串，不受影响
 function materialsOf(asin: string): string[] {
   const m = getProductSpecs(asin)?.material;
-  return m ? m.split(', ') : [];
+  return m ? m.split(', ').map((x) => x.replace(/^100%\s+/i, '')) : [];
 }
 
 /** 在售优先，缺货沉底；组内保持原顺序 */
@@ -65,7 +74,7 @@ interface FilterBundle {
 }
 
 /**
- * V2 产品列表页：展示样式回归 v1（白底产品卡 + 左侧筛选栏 + 二级分类分区视图 + Load More），
+ * V2 产品列表页：展示样式回归 v1（白底产品卡 + 左侧筛选栏 + 风格分区视图 + Load More），
  * 差异只在版心——v1 是 max-w-7xl 盒子且外层有 1400px 边框框，这里用 V2 全宽容器
  * （px-6 / lg:px-10，无页面边框），列数不变，产品卡随页面宽度等比增大。
  * 站内链接统一走 v2url()（含产品卡 href 覆盖），避免从 v2 跳回 classic 页面。
@@ -109,14 +118,26 @@ export default function V2ProductsPage() {
     }
   }, []);
 
-  // 全部产品（含 Shopify 价格/库存、素材库标题/图片覆盖、二级分类）
+  // 全部产品（含 Shopify 价格/库存、素材库标题/图片覆盖）
   const allProducts = useMemo(() => enrichProductsWithShopifyData(PRODUCTS_DATA), []);
+
+  // 产品 → 风格 key（与首页 Shop by Style 同一规则：完整标题（素材库覆盖后、精简前）+ productType 现算）。
+  // Collections 筛选/分区视图/URL sub 参数统一按风格分组（2026-09 用户定，替代原二级分类分组）
+  const styleKeyOf = useMemo(() => {
+    const map = new Map(
+      allProducts.map((p) => [
+        p.handle,
+        getStyleTagWithOverride(MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title, p.productType, p.asin).key,
+      ])
+    );
+    return (p: MakimooProduct) => map.get(p.handle) || '';
+  }, [allProducts]);
 
   const isSearching = searchQuery.trim().length > 0;
 
   const categoryDef = CATEGORY_DEFS.find((c) => c.value === activeCategory.toLowerCase());
 
-  // 当前类目下的产品（不含二级分类过滤；用于 Collections 计数）
+  // 当前类目下的产品（不含风格过滤；用于 Collections 计数）
   const categoryProducts = useMemo(() => {
     if (!activeCategory) return [];
     return allProducts.filter(
@@ -126,28 +147,26 @@ export default function V2ProductsPage() {
     );
   }, [allProducts, activeCategory]);
 
-  // Collections 筛选项：当前类目的二级分类（带数量；0 的不显示）
+  // Collections 筛选项：按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致
   const collectionOptions = useMemo(() => {
     if (!activeCategory) return [];
-    return getSubcategoriesOf(activeCategory)
-      .map((s) => ({
-        key: s.key,
-        label: s.label,
-        count: categoryProducts.filter((p) => p.subcategory === s.key).length,
-      }))
-      .filter((s) => s.count > 0);
-  }, [categoryProducts, activeCategory]);
+    return STYLE_DISPLAY_RULES.map((s) => ({
+      key: s.key,
+      label: s.label,
+      count: categoryProducts.filter((p) => styleKeyOf(p) === s.key).length,
+    })).filter((s) => s.count > 0);
+  }, [categoryProducts, activeCategory, styleKeyOf]);
 
-  // 筛选作用域：有类目按类目，无类目（V2 裸 /products = Shop All）取全部；再叠二级分类过滤
+  // 筛选作用域：有类目按类目，无类目（V2 裸 /products = Shop All）取全部；再叠风格过滤
   const scopeProducts = useMemo(() => {
     let list = activeCategory ? categoryProducts : allProducts;
     if (activeSub) {
-      list = list.filter((p) => p.subcategory === activeSub);
+      list = list.filter((p) => styleKeyOf(p) === activeSub);
     }
     return list;
-  }, [allProducts, categoryProducts, activeCategory, activeSub]);
+  }, [allProducts, categoryProducts, activeCategory, activeSub, styleKeyOf]);
 
-  // 材质筛选聚合（当前类目 + 二级分类内带产品数）
+  // 材质筛选聚合（当前类目 + 风格分组内带产品数）
   const materialOptions = useMemo(() => {
     const counts = new Map<string, number>();
     for (const p of scopeProducts) {
@@ -158,8 +177,8 @@ export default function V2ProductsPage() {
       .map(([label, count]) => ({ key: label, label, count }));
   }, [scopeProducts]);
 
-  // 统一写 URL（分类 + 二级分类 + 筛选 + 排序，可分享；q 参数原样保留）。
-  // 进入/退出二级分类用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
+  // 统一写 URL（分类 + 风格 + 筛选 + 排序，可分享；q 参数原样保留）。
+  // 进入/退出风格分组用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
   const writeUrl = (b: FilterBundle, push = false) => {
     const url = new URL(window.location.href);
     const set = (k: string, v: string) => (v ? url.searchParams.set(k, v) : url.searchParams.delete(k));
@@ -214,7 +233,7 @@ export default function V2ProductsPage() {
 
   const activeFilterCount = materialSel.length + (activeSub ? 1 : 0);
 
-  // 当前筛选结果：类目 + 二级分类 → 搜索 → 材质
+  // 当前筛选结果：类目 + 风格 → 搜索 → 材质
   // （启用材质筛选时，没有材质数据的产品不显示；搜索时材质筛选不生效，与旧页一致）
   const filtered = useMemo(() => {
     let result = scopeProducts;
@@ -234,25 +253,24 @@ export default function V2ProductsPage() {
 
   const sortedFiltered = useMemo(() => applySort(filtered, sortBy), [filtered, sortBy]);
 
-  // 分区视图：类目默认视图（无搜索/无二级筛选/无材质筛选/默认排序）且产品足够多时，
-  // 按二级分类分区展示，避免长网格单调、信息效率递减
+  // 分区视图：类目默认视图（无搜索/无风格筛选/无材质筛选/默认排序）且产品足够多时，
+  // 按风格分区展示（与 Collections 筛选同一分组口径），避免长网格单调、信息效率递减；
+  // 分区内产品按 catalogue 权重分排序（pin 置顶/缺货沉底/excluded 排除，与子分类页 featured 排序同一口径）
   const sections = useMemo(() => {
     if (!activeCategory || isSearching || activeSub || materialSel.length > 0 || sortBy !== 'featured') {
       return [];
     }
-    const grouped = getSubcategoriesOf(activeCategory)
-      .map((def) => ({
-        def,
-        products: inStockFirst(categoryProducts.filter((p) => p.subcategory === def.key)),
-      }))
-      .filter((s) => s.products.length > 0);
+    const grouped = STYLE_DISPLAY_RULES.map((rule) => ({
+      def: { key: rule.key, label: rule.label, blurb: STYLE_BLURBS[rule.key] || '' },
+      products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
+    })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
     return grouped.length >= 2 && total >= 4 ? grouped : [];
-  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts]);
+  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts, styleKeyOf]);
 
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
 
-  const subDef = activeSub ? getSubcategoryDef(activeSub) : undefined;
+  const subDef = activeSub ? STYLE_RULES.find((r) => r.key === activeSub) : undefined;
   const pageTitle = isSearching
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Shop All';
@@ -260,8 +278,8 @@ export default function V2ProductsPage() {
   // 产品卡详情链接：v2 页面内保持 /v2 前缀
   const cardHref = (p: MakimooProduct) => v2url(`/products/${p.handle}/`);
 
-  // 桌面端左侧筛选栏（lg+）：类目视图且有可选项时显示
-  const showSidebar = mounted && !!activeCategory && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0);
+  // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
@@ -282,7 +300,7 @@ export default function V2ProductsPage() {
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
         <div>
-          <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
+          <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
         </div>
         {/* 桌面端：结果数 + 排序（移动端排序在筛选抽屉里） */}
         {mounted && (
@@ -380,7 +398,8 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : sections.length > 0 ? (
-        /* 分区视图：按二级分类分区，移动端 2 列网格、桌面端 3/4 列网格展示全部（2026-09-14 起取消「前 8 个 + View All」截断；同日移动端由横滑条统一为网格） */
+        /* 分区视图：按风格分区，移动端 2 列网格、桌面端 3/4 列网格；每个 collection 最多展示
+           SECTION_LIMIT 张卡，超出出「View More」进入子分类页看全部（2026-09 用户定） */
         <div>
           {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
           <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
@@ -405,7 +424,9 @@ export default function V2ProductsPage() {
             </button>
           </div>
           <div className="space-y-10 lg:space-y-16">
-            {sections.map(({ def, products }) => (
+            {sections.map(({ def, products }) => {
+              const shown = products.slice(0, SECTION_LIMIT);
+              return (
               <section key={def.key}>
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
@@ -413,24 +434,39 @@ export default function V2ProductsPage() {
                 </div>
                 {/* 移动端：2 列网格平铺（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
-                  {products.map((p) => (
+                  {shown.map((p) => (
                     <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>
-                {/* 桌面端：网格展示该分区全部产品 */}
+                {/* 桌面端：网格展示该分区前 SECTION_LIMIT 个产品 */}
                 <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
-                  {products.map((p) => (
+                  {shown.map((p) => (
                     <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>
+                {products.length > SECTION_LIMIT && (
+                  <div className="mt-5 lg:mt-8 text-center">
+                    <button
+                      onClick={() => setFilter({ sub: def.key })}
+                      className="inline-flex items-center gap-1.5 px-8 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+                      style={{ backgroundColor: '#8B5A2B' }}
+                    >
+                      View More
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
+                    </button>
+                  </div>
+                )}
               </section>
-            ))}
+              );
+            })}
           </div>
         </div>
       ) : (
         /* 类目视图 / 搜索视图：完整网格 + 排序 + 分批加载 */
         <>
-          {/* 二级分类视图：返回分区视图的链接（浏览器后退同样可用） */}
+          {/* 风格分组视图：返回分区视图的链接（浏览器后退同样可用） */}
           {activeSub && !isSearching && (
             <button
               onClick={() => setFilter({ sub: '' })}
@@ -442,13 +478,14 @@ export default function V2ProductsPage() {
               Back to All {categoryDef?.label || 'Products'}
             </button>
           )}
-          {/* 移动端：结果数 + 筛选抽屉入口（桌面端结果数/排序在页头右侧） */}
+          {/* 移动端：结果数 + 筛选抽屉入口（桌面端结果数/排序在页头右侧）；子分类页不展示筛选入口（2026-09 用户定） */}
           <div className="flex items-center justify-between mb-5 flex-wrap gap-3 lg:hidden">
             <p className="text-sm text-[#777]">
               {isSearching
                 ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`
                 : `${filtered.length} product${filtered.length === 1 ? '' : 's'}`}
             </p>
+            {!activeSub && (
             <button
               onClick={() => setFilterOpen(true)}
               className="relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
@@ -467,6 +504,7 @@ export default function V2ProductsPage() {
                 </span>
               )}
             </button>
+            )}
           </div>
 
           {sortedFiltered.length > 0 ? (
@@ -549,7 +587,7 @@ export default function V2ProductsPage() {
             })}
           </div>
 
-          {/* Collections（二级分类，单选） */}
+          {/* Collections（风格分组，单选） */}
           {collectionOptions.length > 0 && (
             <>
               <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">Collections</p>

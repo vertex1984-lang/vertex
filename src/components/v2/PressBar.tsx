@@ -3,17 +3,17 @@ import Reveal from '@/components/Reveal';
 // 占位评价（与旧 ReviewsSection 同源，待真实评价数据接入后替换）
 const QUOTES = [
   {
-    body: 'The cushions are thick, the fabric feels premium, and they have survived two rainstorms without fading. Could not be happier.',
+    body: 'Thick, premium-feeling cushions that survived two rainstorms without fading. Could not be happier.',
     author: 'Sarah M.',
     product: 'Outdoor Dining Chair Cushions',
   },
   {
-    body: 'My wooden chairs went from torture devices to the most comfortable seats in the house. The colors match the photos exactly.',
+    body: 'Torture-device chairs turned into the most comfortable seats; colors match the photos exactly.',
     author: 'Olivia T.',
     product: 'Dining Chair Cushions',
   },
   {
-    body: 'You can tell these were designed with care. The ties are sturdy and the fabric is soft but durable. Will buy again.',
+    body: 'Designed with care — sturdy ties, soft but durable fabric. Will buy again.',
     author: 'Daniel K.',
     product: 'Chair Cushions',
   },

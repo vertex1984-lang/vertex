@@ -7,9 +7,8 @@ import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
-import { getSubcategoriesOf } from '@/data/subcategories';
 
-// V2 导航：cat 非空的项带 mega menu（二级类目 + 示例图卡）
+// V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
 // 首项 Featured 只作弹窗入口（href 空 = 菜单标题/移动端主项不跳转）；
 // 弹窗子项指向两个独立精选页 /best-sellers、/new-arrivals
 //（/featured-products 已隐藏并移除导航入口，2026-09 用户要求），
@@ -86,7 +85,13 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
 // 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
 const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
 
-export default function V2Header() {
+interface V2HeaderProps {
+  /** 各类目（小写 productType）在售产品的风格列表，服务端 stylesByCategory() 传入；
+   *  导航下拉子项与 /products Collections、首页 Shop by Style 同步（2026-09 用户定） */
+  catStyles?: Record<string, { key: string; label: string }[]>;
+}
+
+export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -473,7 +478,7 @@ export default function V2Header() {
                           {sub.label}
                         </a>
                       ))
-                    : getSubcategoriesOf(openMenu).map((sub) => (
+                    : (catStyles[openMenu] || []).map((sub) => (
                         <a
                           key={sub.key}
                           href={v2url(`/products?cat=${openMenu}&sub=${sub.key}`)}
@@ -556,14 +561,14 @@ export default function V2Header() {
             >
               Home
             </a>
-            {/* 一级类目整行点击展开/收起二级类目（默认折叠）；展开后首项
+            {/* 一级类目整行点击展开/收起该类目风格列表（默认折叠）；展开后首项
                 "Shop All {类目}" 链到类目汇总页（Featured 无汇总页，无此项） */}
             {navLinks.map((link) => {
               const expanded = expandedCat === link.cat;
               const subs =
                 link.cat === 'featured'
                   ? FEATURED_SUBS.map((s) => ({ key: s.href, label: s.label, href: s.href }))
-                  : getSubcategoriesOf(link.cat).map((s) => ({
+                  : (catStyles[link.cat] || []).map((s) => ({
                       key: s.key,
                       label: s.label,
                       href: `/products?cat=${link.cat}&sub=${s.key}`,

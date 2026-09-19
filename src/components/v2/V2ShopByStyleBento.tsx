@@ -25,7 +25,7 @@ export default function V2ShopByStyleBento() {
       <Reveal>
         <div className="px-3 lg:px-10">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Find Your Look</p>
-          <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Style
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5">

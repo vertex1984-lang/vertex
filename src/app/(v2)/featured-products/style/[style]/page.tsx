@@ -6,7 +6,9 @@ import { STYLE_RULES } from '@/data/product-tags';
 import { ALL_STYLED, STYLE_BLURBS, styleKeysWithProducts } from '@/data/style-tagged';
 
 // 静态导出：只为 generateStaticParams 返回的风格生成页面，其余 404
-export const dynamicParams = false;
+// 注意：不要导出 dynamicParams=false —— dev 模式下 output:'export' 会因此把
+// fallbackMode 判为非 "static" 而抛 "missing generateStaticParams()" 500；
+// 静态导出本就只生成 generateStaticParams 返回的路径，无需该导出
 
 // 只为有 ≥1 个在售产品的风格生成静态页
 export function generateStaticParams() {
@@ -43,7 +45,7 @@ export default function StyleCategoryPage({ params }: { params: { style: string 
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
         <div>
-          <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
+          <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
           {STYLE_BLURBS[rule.key] && (
             <p className="text-sm text-[#777] mt-2">{STYLE_BLURBS[rule.key]}</p>
           )}

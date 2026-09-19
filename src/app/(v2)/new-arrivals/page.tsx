@@ -35,7 +35,7 @@ export default function NewArrivalsPage() {
         <span className="text-[#555]">New Arrivals</span>
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
-        <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">New Arrivals</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">New Arrivals</h1>
         <p className="text-sm text-[#777]">{newArrivals.length} result{newArrivals.length === 1 ? '' : 's'}</p>
       </div>
 

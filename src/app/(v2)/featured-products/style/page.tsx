@@ -24,7 +24,7 @@ export default function StylesIndexPage() {
         <span className="text-[#555]">Shop by Style</span>
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
-        <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">Shop by Style</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">Shop by Style</h1>
         <p className="text-sm text-[#777]">{cards.length} style{cards.length === 1 ? '' : 's'}</p>
       </div>
 

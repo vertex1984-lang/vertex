@@ -40,7 +40,7 @@ export default function V2TrustStats() {
               <p className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/85 mb-4">
                 Trusted Worldwide
               </p>
-              <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-cream leading-tight max-w-md">
+              <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-cream leading-tight max-w-md">
                 Comfort Loved by Millions
               </h2>
             </div>

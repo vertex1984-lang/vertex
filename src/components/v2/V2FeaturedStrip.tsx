@@ -107,7 +107,7 @@ export default function V2FeaturedStrip({ products }: V2FeaturedStripProps) {
                   key={product.id}
                   className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
                 >
-                  <V2ProductCard product={product} badge="Best Seller" />
+                  <V2ProductCard product={product} />
                 </div>
               ))}
             </div>

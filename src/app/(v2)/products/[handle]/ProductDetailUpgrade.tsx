@@ -429,7 +429,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </button>
             </div>
 
-            <h1 className="text-[1.65rem] lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
+            <h1 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
             {longTitle !== shortTitle && (
               <p className="text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
             )}

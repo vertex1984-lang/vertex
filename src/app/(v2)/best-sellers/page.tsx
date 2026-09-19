@@ -35,7 +35,7 @@ export default function BestSellersPage() {
             <p className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/70 mb-4">
               Customer Favorites
             </p>
-            <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[0.95] mb-5">
+            <h1 className="text-3xl sm:text-4xl lg:text-7xl font-extrabold tracking-tight leading-[0.95] mb-5">
               Best Sellers
             </h1>
             <p className="text-base text-cream/80 max-w-xl">

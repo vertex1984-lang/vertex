@@ -39,7 +39,7 @@ export default function V2PageHeader({
             </span>
           ))}
         </nav>
-        <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-cream">{title}</h1>
+        <h1 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-cream">{title}</h1>
         {subtitle && (
           <p className="mt-3 lg:mt-4 text-sm lg:text-base text-cream/75 max-w-2xl">{subtitle}</p>
         )}

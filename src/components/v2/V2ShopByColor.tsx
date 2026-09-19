@@ -89,7 +89,7 @@ export default function V2ShopByColor({ colors, productsByColor }: V2ShopByColor
     <section className="bg-white pt-16 lg:pt-24 pb-16 lg:pb-24">
       <Reveal>
         <div className="px-6 lg:px-10">
-          <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Color
           </h2>
 

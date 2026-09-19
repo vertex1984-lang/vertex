@@ -36,10 +36,10 @@ export default function MaterialGuide() {
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             Our Philosophy
           </p>
-          <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
+          <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
             What We Believe In
           </h2>
-          <p className="text-base text-charcoal-light max-w-xl mx-auto mb-12 lg:mb-16">
+          <p className="hidden sm:block text-sm lg:text-base text-charcoal-light max-w-xl mx-auto mb-12 lg:mb-16">
             Four simple ideas behind every Makimoo piece.
           </p>
         </Reveal>

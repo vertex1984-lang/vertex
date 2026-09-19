@@ -200,10 +200,10 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
   if (scenes.length === 0) return null;
 
   return (
-    <section className="bg-off-white pt-8 lg:pt-12 pb-16 lg:pb-24">
+    <section className="bg-off-white pt-8 lg:pt-12 pb-8 lg:pb-24">
       <Reveal>
         <div className="px-3 lg:px-10">
-          <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Scene
           </h2>
 
