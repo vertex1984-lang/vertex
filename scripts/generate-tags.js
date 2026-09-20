@@ -73,14 +73,15 @@ inStock.forEach((p) => {
   const keepPieces = prev && prev.manualPieces;
   const pieces = keepPieces ? prev.pieces ?? null : extractPieces(fullTitle);
   if (prev && prev.manual) {
-    // 手工配置：color/scene 原样保留，只刷新 pieces（manualPieces 除外）
-    tags[asin] = { color: prev.color ?? null, scene: prev.scene ?? null, pieces, manual: true };
+    // 手工配置：color/scene 原样保留，只刷新 pieces（manualPieces 除外）；style 覆盖（管理工具维护）同样保留
+    tags[asin] = { color: prev.color ?? null, scene: prev.scene ?? null, pieces, manual: true, ...(prev.style ? { style: prev.style } : {}) };
     colorDist['MANUAL'] = (colorDist['MANUAL'] || 0) + 1;
     manualCount++;
   } else {
     const c = getColorTag(fullTitle, p.asin);
     const s = getSceneTag(fullTitle, p.productType);
-    tags[asin] = { color: c ? c.key : null, scene: s.key, pieces };
+    // 自动打标的 color/scene 会刷新，但 style 人工覆盖（无 manual 标记时）仍保留，不被重建冲掉
+    tags[asin] = { color: c ? c.key : null, scene: s.key, pieces, ...(prev && prev.style ? { style: prev.style } : {}) };
     colorDist[c ? c.key : 'NONE'] = (colorDist[c ? c.key : 'NONE'] || 0) + 1;
     sceneDist[s.key] = (sceneDist[s.key] || 0) + 1;
     if (!c) noColor.push({ asin, title: fullTitle });
@@ -92,14 +93,14 @@ inStock.forEach((p) => {
   if (!keepPieces && pieces !== null) piecesCount++;
 });
 
-// 被在售过滤排除的产品（如缺货）：其手工 color/scene 和 manualPieces 原样保留，
+// 被在售过滤排除的产品（如缺货）：其手工 color/scene、style 覆盖和 manualPieces 原样保留，
 // 否则输出 JSON 全量重建会把这些手工配置静默删掉
 const inStockAsins = new Set(inStock.map((p) => p.asin.toLowerCase()));
 let manualCarriedCount = 0;
 Object.keys(existing).forEach((asin) => {
   const prev = existing[asin];
   if (!prev || inStockAsins.has(asin)) return;
-  if (prev.manual || prev.manualPieces) {
+  if (prev.manual || prev.manualPieces || prev.style) {
     tags[asin] = prev;
     manualCarriedCount++;
   }

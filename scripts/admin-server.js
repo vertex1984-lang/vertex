@@ -33,9 +33,10 @@ const OUT_DIR = path.join(ROOT, 'out');
 const PORT = 8090;
 
 const { PRODUCTS_DATA, enrichProductsWithShopifyData } = require(path.join(ROOT, 'src/data/products.ts'));
-const { BASE_COLOR_RULES, BASE_SCENE_RULES } = require(path.join(ROOT, 'src/data/product-tags.ts'));
+const { BASE_COLOR_RULES, BASE_SCENE_RULES, STYLE_RULES, getStyleTag } = require(path.join(ROOT, 'src/data/product-tags.ts'));
 const { PRODUCT_SPECS } = require(path.join(ROOT, 'src/data/product-specs.ts'));
 const { SPECS_OVERRIDES } = require(path.join(ROOT, 'src/data/specs-overrides.ts'));
+const { MATERIALS_MAP } = require(path.join(ROOT, 'src/data/materials-map.ts'));
 
 function loadProductTags() {
   try {
@@ -122,6 +123,10 @@ function buildProducts() {
   return enrichProductsWithShopifyData(PRODUCTS_DATA).map((p) => {
     const asin = p.asin.toLowerCase();
     const t = tags[asin] || {};
+    // 风格：与站点同一口径（完整标题 MATERIALS_MAP 优先 + productType 现算，规则见 product-tags.ts）。
+    // 人工覆盖每次请求从磁盘重读（不用 require 缓存的 getStyleTagWithOverride，保存后立即可见）
+    const fullTitle = MATERIALS_MAP[asin]?.title || p.title;
+    const styleAuto = getStyleTag(fullTitle, p.productType).key;
     return {
       asin,
       title: p.title,
@@ -131,6 +136,9 @@ function buildProducts() {
       image: (p.images && p.images[0] && p.images[0].url) || null,
       color: t.color || null,
       scene: t.scene || null,
+      style: t.style || styleAuto,      // 生效风格（人工覆盖优先）
+      styleAuto,                       // 规则自动判定（重置「自动」时显示用）
+      styleManual: !!t.style,          // 是否人工指定
       pieces: t.pieces ?? null,
       piecesManual: !!t.manualPieces,
       material: effectiveMaterial(asin, mo),
@@ -290,6 +298,7 @@ function writeTagRules(tr) {
 
 function validateTagAssignments(ta, colorKeys, sceneKeys) {
   if (!ta || typeof ta !== 'object' || Array.isArray(ta)) return 'tagAssignments 必须是对象';
+  const styleKeys = new Set(STYLE_RULES.map((s) => s.key));
   for (const [asin, a] of Object.entries(ta)) {
     if (typeof asin !== 'string' || asin !== asin.toLowerCase()) return `asin 必须小写: "${asin}"`;
     if (!a || typeof a !== 'object') return `tagAssignments["${asin}"] 必须是对象`;
@@ -298,6 +307,9 @@ function validateTagAssignments(ta, colorKeys, sceneKeys) {
     }
     if (a.scene !== null && a.scene !== undefined && !sceneKeys.has(a.scene)) {
       return `tagAssignments["${asin}"].scene 引用了不存在的场景: "${a.scene}"`;
+    }
+    if (a.style !== null && a.style !== undefined && !styleKeys.has(a.style)) {
+      return `tagAssignments["${asin}"].style 引用了不存在的风格: "${a.style}"`;
     }
   }
   return null;
@@ -464,18 +476,24 @@ function applyTagAssignments(ta, staleColorKeys, staleSceneKeys) {
       if (touched) delete entry.manual;
     }
   }
-  // 2) 应用手工配置：保留 pieces；任一项非 null 则标记 manual；两项都 null 则去掉 manual
+  // 2) 应用手工配置：保留 pieces/style；任一项非 null 则标记 manual；两项都 null 则去掉 manual
   for (const [asin, a] of Object.entries(ta)) {
     const color = a.color ?? null;
     const scene = a.scene ?? null;
+    const style = a.style ?? null; // 仅用于「无需创建」判断；写入见下方 'style' in a
     let entry = tags[asin];
     if (!entry) {
-      if (!color && !scene) continue; // 无条目且两项都未设置，无需创建
+      if (!color && !scene && !style) continue; // 无条目且都未设置，无需创建
       entry = { color: null, scene: null, pieces: null };
       tags[asin] = entry;
     }
     entry.color = color;
     entry.scene = scene;
+    // style 字段存在才处理（缺省 = 不动现有覆盖；防旧缓存页面保存时误清）
+    if ('style' in a) {
+      if (a.style) entry.style = a.style;
+      else delete entry.style;
+    }
     if (!color && !scene) delete entry.manual;
     else entry.manual = true;
   }
@@ -637,7 +655,8 @@ const server = http.createServer((req, res) => {
     return sendJson(res, 403, { ok: false, error: '跨站请求被拒绝' });
   }
   if (req.method === 'GET' && u.pathname === '/') {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    // no-store：工具页经常改，禁止浏览器缓存旧 HTML/JS（否则重启 server 后用户仍跑旧逻辑）
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
     res.end(PAGE);
     return;
   }
@@ -653,6 +672,7 @@ const server = http.createServer((req, res) => {
       baseColors: BASE_COLOR_RULES.map((c) => ({ key: c.key, label: c.label, hex: c.hex })),
       baseScenes: BASE_SCENE_RULES.map((s) => ({ key: s.key, label: s.label })),
       tagRules: ov,
+      styleRules: STYLE_RULES.map((s) => ({ key: s.key, label: s.label })),
       materialOptions: buildMaterialOptions(products, mo),
       materials: mo.materials,
       weightLimits: readWeightBoosts().limits,
@@ -704,7 +724,7 @@ function buildPage() {
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 14px/1.5 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; color: #222; background: #f5f5f4; }
-  header { background: #2d2a26; color: #fff; padding: 10px 16px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  header { position: sticky; top: 0; z-index: 50; background: #2d2a26; color: #fff; padding: 10px 16px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
   header h1 { font-size: 16px; margin: 0; }
   header .note { font-size: 12px; color: #d6c9b8; }
   #saveBtn { margin-left: auto; padding: 6px 18px; border: 0; border-radius: 4px; background: #b4443c; color: #fff; font-size: 14px; cursor: pointer; }
@@ -713,7 +733,7 @@ function buildPage() {
   #toast { position: fixed; top: 12px; right: 12px; background: #2d6a4f; color: #fff; padding: 8px 16px; border-radius: 4px; display: none; z-index: 99; }
   #toast.err { background: #b4443c; }
   .layout { display: flex; align-items: flex-start; }
-  aside { width: 270px; flex: none; background: #fff; border-right: 1px solid #e3e0da; min-height: calc(100vh - 44px); padding: 12px; position: sticky; top: 0; }
+  aside { width: 270px; flex: none; background: #fff; border-right: 1px solid #e3e0da; min-height: calc(100vh - 44px); padding: 12px; position: sticky; top: 44px; }
   aside h2 { font-size: 13px; margin: 14px 0 6px; color: #6b655c; text-transform: uppercase; letter-spacing: .05em; }
   .item { display: flex; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 4px; }
   .item:hover { background: #f0ede8; }
@@ -731,7 +751,7 @@ function buildPage() {
   .filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e3e0da; }
   .filters select, .filters input[type=search] { padding: 5px 8px; border: 1px solid #d6d0c6; border-radius: 4px; }
   .filters input[type=search] { width: 220px; }
-  #batchBar { display: none; position: sticky; top: 0; z-index: 30; background: #fff8ec; border: 1px solid #e5c04b; border-radius: 6px; padding: 8px 10px; margin-bottom: 10px; align-items: center; gap: 8px; flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  #batchBar { display: none; position: sticky; top: 44px; z-index: 30; background: #fff8ec; border: 1px solid #e5c04b; border-radius: 6px; padding: 8px 10px; margin-bottom: 10px; align-items: center; gap: 8px; flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
   #batchBar .bLbl { font-weight: 700; color: #8a6d1a; }
   #batchBar select, #batchBar input[type=number] { padding: 4px 6px; border: 1px solid #d6d0c6; border-radius: 4px; background: #fff; max-width: 150px; }
   #batchBar input[type=number] { width: 64px; }
@@ -747,10 +767,11 @@ function buildPage() {
   .small { font-size: 12px; color: #999; }
   .asin { font-family: monospace; font-size: 12px; }
   select.cat, select.cs { max-width: 130px; padding: 3px 4px; border: 1px solid #d6d0c6; border-radius: 4px; }
+  select.cs.stl.manual { font-weight: 700; border-color: #b7a077; background: #fdf6ec; }
   .tagbox { position: relative; display: inline-block; }
   .tagbox > button { padding: 3px 8px; border: 1px solid #d6d0c6; border-radius: 4px; background: #fff; cursor: pointer; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .tagbox > button .mMark { color: #b4443c; }
-  .tagbox .pop { display: none; position: absolute; z-index: 40; background: #fff; border: 1px solid #d6d0c6; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,.12); padding: 6px; min-width: 170px; max-height: 260px; overflow: auto; }
+  .tagbox .pop { display: none; position: absolute; z-index: 60; background: #fff; border: 1px solid #d6d0c6; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,.12); padding: 6px; min-width: 170px; max-height: 260px; overflow: auto; }
   .tagbox.open .pop { display: block; }
   .tagbox .pop label { display: flex; gap: 6px; align-items: center; padding: 3px 4px; font-size: 13px; cursor: pointer; border-radius: 3px; }
   .tagbox .pop label:hover { background: #f0ede8; }
@@ -843,7 +864,7 @@ function buildPage() {
     </div>
     <table>
       <thead><tr>
-        <th class="selCol"><input type="checkbox" id="selAll" title="全选/取消当前筛选结果"></th><th>图</th><th>标题</th><th>ASIN</th><th>权重</th><th>现有类目</th><th>Color</th><th>Scene</th><th>材质 / Pack</th><th>自定义类目</th><th>自定义 Tag</th>
+        <th class="selCol"><input type="checkbox" id="selAll" title="全选/取消当前筛选结果"></th><th>图</th><th>标题</th><th>ASIN</th><th>权重</th><th>现有类目</th><th>Color</th><th>Scene</th><th>Style</th><th>材质 / Pack</th><th>自定义类目</th><th>自定义 Tag</th>
       </tr></thead>
       <tbody id="tbody"></tbody>
     </table>
@@ -853,7 +874,7 @@ function buildPage() {
 let products = [];
 let taxonomy = { categories: [], tags: [], assignments: {} };
 let tagRules = { disabledColors: [], disabledScenes: [], customColors: [], customScenes: [] };
-let baseColors = [], baseScenes = [];
+let baseColors = [], baseScenes = [], styleRules = [];
 let materialOptions = [], materialsList = [];
 let tagAssignDiff = {};   // asin -> { color, scene }（只记录改动过的产品）
 let matAssignDiff = {};   // asin -> string[] | null（null = 删除材质覆盖，回退自动规格）
@@ -868,6 +889,14 @@ let bMats = new Set();      // 批量材质勾选
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// 展示标题与网站产品卡同步（站点 ProductCard.displayTitle 同款规则）：
+// Bedding 去掉标题开头/中间的材质词（Microfiber、100% Linen 等），其他类目原样。
+// 完整标题保留在 tooltip 与搜索匹配里（搜 "microfiber" 仍能命中）
+const dispTitle = (p) => p.productType.toLowerCase() !== 'bedding' ? p.title : p.title
+  .replace(/^(100%\\s+)?(microfiber|linen|cotton|polyester|bamboo)\\s+/i, '')
+  .replace(/\\b100%\\s+(microfiber|linen|cotton|polyester|bamboo)\\s*/gi, '')
+  .replace(/\\s{2,}/g, ' ')
+  .trim();
 
 // 生效规则 = 内置未禁用 + 自定义在后（与服务端合成一致）
 const effColors = () => [
@@ -879,13 +908,14 @@ const effScenes = () => [
   ...tagRules.customScenes.map(s => ({ key: s.key, label: s.label, custom: true })),
 ];
 
-// 产品当前的 color/scene：未保存改动优先，否则用持久化值
-const curAssign = (p) => tagAssignDiff[p.asin] || { color: p.color, scene: p.scene };
+// 产品当前的 color/scene/style：未保存改动优先，否则用持久化值（style 持久化值 = 人工覆盖，null = 自动判定）
+const curAssign = (p) => tagAssignDiff[p.asin] || { color: p.color, scene: p.scene, style: p.styleManual ? p.style : null };
 function setTagAssign(asin, field, value) {
   const p = products.find(x => x.asin === asin);
   const cur = { ...curAssign(p) };
   cur[field] = value || null;
-  if (cur.color === p.color && cur.scene === p.scene) delete tagAssignDiff[asin];
+  const baseStyle = p.styleManual ? p.style : null;
+  if (cur.color === p.color && cur.scene === p.scene && (cur.style || null) === baseStyle) delete tagAssignDiff[asin];
   else tagAssignDiff[asin] = cur;
 }
 
@@ -966,13 +996,22 @@ function onLimitsChange() {
 const weightLimitsChanged = () => weightLimits.min !== savedWeightLimits.min || weightLimits.max !== savedWeightLimits.max;
 function addMaterialWord(asin, input) {
   const v = input.value.trim();
-  if (!v || v.length > 40) return;
+  if (!v || v.length > 40) return toast('材质词需为 1-40 个字符', true);
   if (!materialOptions.includes(v)) { materialOptions.push(v); materialsList.push(v); }
   const p = products.find(x => x.asin === asin);
   const cur = new Set(curMats(p));
   cur.add(v);
   setMatAssign(asin, [...cur]);
   markDirty(); renderTable();
+  // 重绘会收起下拉：重新展开该行材质下拉并滚动到新材质行，让用户立即看到
+  // 新选项已勾选（原行为：下拉默默关闭、新项压在列表末尾不可见，误以为没加上、要点保存才出现）
+  const box = document.querySelector('#tbody tr[data-asin="' + asin + '"] .tagbox');
+  if (box) {
+    box.classList.add('open');
+    const labels = box.querySelectorAll('.pop label');
+    if (labels.length) labels[labels.length - 1].scrollIntoView({ block: 'nearest' });
+  }
+  toast('已添加材质「' + v + '」并勾选到当前产品');
 }
 
 function getAssign(asin) {
@@ -1232,12 +1271,19 @@ function renderTable() {
     return '<tr data-asin="' + p.asin + '"' + (changed ? ' class="changed"' : '') + '>' +
       '<td class="selCol"><input type="checkbox" class="rowSel" data-asin="' + p.asin + '"' + (selected.has(p.asin) ? ' checked' : '') + '></td>' +
       '<td>' + (p.image ? '<img loading="lazy" src="' + esc(p.image) + '" alt="">' : '') + '</td>' +
-      '<td class="ttl">' + esc(p.title) + '</td>' +
+      '<td class="ttl" title="' + esc(p.title) + '">' + esc(dispTitle(p)) + '</td>' +
       '<td class="asin">' + esc(p.asin) + '</td>' +
       '<td>' + weightHtml + '</td>' +
       '<td class="small">' + esc(p.productType) + (p.subcategory ? ' / ' + esc(p.subcategory) : '') + '</td>' +
       '<td><select class="cs" data-asin="' + p.asin + '" data-field="color">' + mkOpts(colors, cs.color) + '</select></td>' +
       '<td><select class="cs" data-asin="' + p.asin + '" data-field="scene">' + mkOpts(scenes, cs.scene) + '</select></td>' +
+      // Style：预读取生效分类（自动判定的显示「自动（Xxx）」；人工指定的选中对应风格并加 manual 标记）
+      '<td>' + (() => {
+        const autoLabel = (styleRules.find(s => s.key === p.styleAuto) || {}).label || p.styleAuto;
+        const opts = '<option value="">自动（' + esc(autoLabel) + '）</option>' +
+          styleRules.map(s => '<option value="' + esc(s.key) + '"' + (cs.style === s.key ? ' selected' : '') + '>' + esc(s.label) + '</option>').join('');
+        return '<select class="cs stl' + (cs.style ? ' manual' : '') + '" data-asin="' + p.asin + '" data-field="style">' + opts + '</select>';
+      })() + '</td>' +
       '<td><div style="margin-bottom:4px"><span class="tagbox"><button type="button">' + matBtn + ' ▾</button><span class="pop">' + matPop + '</span></span></div>' + piecesHtml + '</td>' +
       '<td><select class="cat" data-asin="' + p.asin + '">' + catOpts + '</select></td>' +
       '<td><span class="tagbox"><button type="button">' + tagBtn + ' ▾</button><span class="pop">' + tagPop + '</span></span></td>' +
@@ -1471,6 +1517,7 @@ async function loadData() {
   tagRules = data.tagRules;
   baseColors = data.baseColors;
   baseScenes = data.baseScenes;
+  styleRules = data.styleRules || [];
   materialOptions = data.materialOptions || [];
   materialsList = data.materials || [];
   tagAssignDiff = {};

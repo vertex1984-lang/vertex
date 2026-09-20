@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import ProductCard from '@/components/ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
-import { STYLE_BLURBS, STYLE_DISPLAY_RULES } from '@/data/style-tagged';
+import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
@@ -15,9 +15,10 @@ import { sortByWeight } from '@/lib/weights';
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
 
-// 分区视图（一级类目页）每个 collection 最多展示的产品卡数；
-// 超出的出「View More」按钮，点击进入该 collection 子分类页看全部（2026-09 用户定）
-const SECTION_LIMIT = 10;
+// 分区视图（一级类目页）每个 collection 展示 3 行产品卡后截断；
+// 超出的出「View More」按钮，点击进入该 collection 子分类页看全部（2026-09 用户定）。
+// 截断数 = 3 行 × 各断点列数：移动端 2 列 → 6 张；lg 3 列 → 9 张；xl 4 列 → 12 张
+const SECTION_LIMITS = { mobile: 6, lg: 9, xl: 12 };
 
 type SortKey = 'featured' | 'price-asc' | 'price-desc';
 const SORT_KEYS: SortKey[] = ['featured', 'price-asc', 'price-desc'];
@@ -253,6 +254,21 @@ export default function V2ProductsPage() {
 
   const sortedFiltered = useMemo(() => applySort(filtered, sortBy), [filtered, sortBy]);
 
+  // 无限滚动：哨兵进入视口即加载下一批（2026-09 用户定：子分类页下拉自动显示更多，替代 Load More 按钮）。
+  // rootMargin 提前 600px 触发，滚到底之前内容已就位；视口过大时哨兵持续可见会连续触发，直到填满或加载完
+  const hasMore = visibleCount < sortedFiltered.length;
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el || !hasMore) return;
+    const ob = new IntersectionObserver(
+      (entries) => entries[0].isIntersecting && setVisibleCount((c) => c + PAGE_SIZE),
+      { rootMargin: '600px 0px' }
+    );
+    ob.observe(el);
+    return () => ob.disconnect();
+  }, [hasMore, sortedFiltered.length]);
+
   // 分区视图：类目默认视图（无搜索/无风格筛选/无材质筛选/默认排序）且产品足够多时，
   // 按风格分区展示（与 Collections 筛选同一分组口径），避免长网格单调、信息效率递减；
   // 分区内产品按 catalogue 权重分排序（pin 置顶/缺货沉底/excluded 排除，与子分类页 featured 排序同一口径）
@@ -261,7 +277,7 @@ export default function V2ProductsPage() {
       return [];
     }
     const grouped = STYLE_DISPLAY_RULES.map((rule) => ({
-      def: { key: rule.key, label: rule.label, blurb: STYLE_BLURBS[rule.key] || '' },
+      def: { key: rule.key, label: rule.label },
       products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
     })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
@@ -398,8 +414,8 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : sections.length > 0 ? (
-        /* 分区视图：按风格分区，移动端 2 列网格、桌面端 3/4 列网格；每个 collection 最多展示
-           SECTION_LIMIT 张卡，超出出「View More」进入子分类页看全部（2026-09 用户定） */
+        /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
+           超出出「View More」进入子分类页看全部（2026-09 用户定） */
         <div>
           {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
           <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
@@ -424,28 +440,36 @@ export default function V2ProductsPage() {
             </button>
           </div>
           <div className="space-y-10 lg:space-y-16">
-            {sections.map(({ def, products }) => {
-              const shown = products.slice(0, SECTION_LIMIT);
-              return (
+            {sections.map(({ def, products }) => (
               <section key={def.key}>
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
-                  {def.blurb && <p className="text-[13px] lg:text-sm text-[#777] mt-1 line-clamp-2 lg:line-clamp-none">{def.blurb}</p>}
                 </div>
-                {/* 移动端：2 列网格平铺（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
+                {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
-                  {shown.map((p) => (
+                  {products.slice(0, SECTION_LIMITS.mobile).map((p) => (
                     <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>
-                {/* 桌面端：网格展示该分区前 SECTION_LIMIT 个产品 */}
-                <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
-                  {shown.map((p) => (
+                {/* 桌面 lg：3 列 × 3 行 */}
+                <div className="hidden lg:grid xl:hidden grid-cols-3 gap-6">
+                  {products.slice(0, SECTION_LIMITS.lg).map((p) => (
                     <ProductCard key={p.id} product={p} href={cardHref(p)} />
                   ))}
                 </div>
-                {products.length > SECTION_LIMIT && (
-                  <div className="mt-5 lg:mt-8 text-center">
+                {/* 桌面 xl：4 列 × 3 行 */}
+                <div className="hidden xl:grid grid-cols-4 gap-6">
+                  {products.slice(0, SECTION_LIMITS.xl).map((p) => (
+                    <ProductCard key={p.id} product={p} href={cardHref(p)} />
+                  ))}
+                </div>
+                {/* View More：只在当前断点确实有截断时显示（7-9 款仅移动端截断，10-12 款仅 lg 截断） */}
+                {products.length > SECTION_LIMITS.mobile && (
+                  <div
+                    className={`mt-5 lg:mt-8 text-center ${
+                      products.length <= SECTION_LIMITS.lg ? 'lg:hidden' : products.length <= SECTION_LIMITS.xl ? 'xl:hidden' : ''
+                    }`}
+                  >
                     <button
                       onClick={() => setFilter({ sub: def.key })}
                       className="inline-flex items-center gap-1.5 px-8 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
@@ -459,8 +483,7 @@ export default function V2ProductsPage() {
                   </div>
                 )}
               </section>
-              );
-            })}
+            ))}
           </div>
         </div>
       ) : (
@@ -514,18 +537,12 @@ export default function V2ProductsPage() {
                   <ProductCard key={product.id} product={product} href={cardHref(product)} />
                 ))}
               </div>
-              {visibleCount < sortedFiltered.length && (
-                <div className="text-center mt-10">
-                  <p className="text-sm text-[#999] mb-3">
-                    Showing {visibleCount} of {sortedFiltered.length}
+              {/* 无限滚动哨兵：进入视口自动加载下一批（保留计数文案） */}
+              {hasMore && (
+                <div ref={sentinelRef} className="text-center mt-10 py-3">
+                  <p className="text-sm text-[#999]">
+                    Showing {Math.min(visibleCount, sortedFiltered.length)} of {sortedFiltered.length}
                   </p>
-                  <button
-                    onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                    className="px-8 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-                    style={{ backgroundColor: '#8B5A2B' }}
-                  >
-                    Load More
-                  </button>
                 </div>
               )}
             </>

@@ -400,7 +400,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
       <section className="bg-off-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 py-14 lg:py-20">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2 text-center">Details</p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-6 text-center">
+          <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-6 text-center">
             About This Product
           </h2>
           <div className="space-y-4">
@@ -409,14 +409,14 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 <svg className="w-5 h-5 text-brand mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span className="text-base text-charcoal-light leading-relaxed">{feature.trim()}</span>
+                <span className="text-sm lg:text-base text-charcoal-light leading-relaxed">{feature.trim()}</span>
               </div>
             ))}
           </div>
 
           {/* Product Specifications */}
           <div className="mt-12">
-            <h3 className="text-xl font-bold text-charcoal mb-4">Specifications</h3>
+            <h3 className="text-lg lg:text-xl font-bold text-charcoal mb-4">Specifications</h3>
             <table className="w-full">
               <tbody>
                 <tr className="border-b border-warm-gray">

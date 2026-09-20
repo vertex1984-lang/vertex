@@ -233,18 +233,16 @@ export function getStyleTag(title: string, productType?: string): StyleTag {
   return { key: rule.key, label: rule.label };
 }
 
-// 风格人工指定（2026-09 用户定）：key = 小写 asin，value = 风格 key。
-// Slate Bamboo 床品四件套标题含 bamboo 被规则误判为 Rattan & Woven，实为 Farmhouse 水墨竹印花
-const STYLE_OVERRIDES: Record<string, string> = {
-  'bedset4-slate-twin': 'farmhouse',
-  'bedset4-slate-full': 'farmhouse',
-  'bedset4-slate-queen': 'farmhouse',
-  'bedset4-slate-king': 'farmhouse',
-};
+// 风格人工指定：存 product-tags.json 各产品的 style 字段（管理工具维护，与 color/scene 手工配置同文件）。
+// 迁移记录（2026-09）：原硬编码 STYLE_OVERRIDES（Slate Bamboo 床品四件套标题含 bamboo 被规则误判为
+// Rattan & Woven，实为 Farmhouse 水墨竹印花）已迁入 product-tags.json。
+// default import 编译成 require(...).default 会取不到值；namespace import 两种环境都拿到 JSON 本体
+import * as PRODUCT_TAGS_JSON from './product-tags.json';
+const PRODUCT_TAG_OVERRIDES = PRODUCT_TAGS_JSON as unknown as Record<string, { style?: string | null }>;
 
-/** getStyleTag + 人工覆盖（STYLE_OVERRIDES 优先）。asin 传产品 asin（大小写不限） */
+/** getStyleTag + 人工覆盖（product-tags.json 的 style 字段优先）。asin 传产品 asin（大小写不限） */
 export function getStyleTagWithOverride(title: string, productType: string | undefined, asin: string): StyleTag {
-  const key = STYLE_OVERRIDES[asin.toLowerCase()];
+  const key = PRODUCT_TAG_OVERRIDES[asin.toLowerCase()]?.style;
   if (key) {
     const rule = STYLE_RULES.find((s) => s.key === key);
     if (rule) return { key: rule.key, label: rule.label };
