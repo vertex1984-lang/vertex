@@ -23,3 +23,15 @@ export function toggleFavorite(id: string): boolean {
   window.dispatchEvent(new CustomEvent('makimoo:favorites-updated'));
   return index < 0;
 }
+
+// 剪掉目录里已不存在的收藏 id（ghost），保持原顺序；有变更时写回并广播事件，
+// 让 Header 角标与收藏页网格数量一致（角标按 localStorage id 计数）
+export function pruneFavorites(keep: (id: string) => boolean): string[] {
+  const favorites = getFavorites();
+  const pruned = favorites.filter(keep);
+  if (pruned.length !== favorites.length) {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(pruned));
+    window.dispatchEvent(new CustomEvent('makimoo:favorites-updated'));
+  }
+  return pruned;
+}

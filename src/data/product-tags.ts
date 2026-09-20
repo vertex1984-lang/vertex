@@ -188,3 +188,65 @@ export function getSceneTag(title: string, productType?: string): SceneTag {
   const rule = SCENE_RULES.find((s) => s.key === fallbackKey) || SCENE_RULES[0];
   return { key: rule.key, label: rule.label };
 }
+
+// ==================== 风格标签（Shop by Style，2026-09 新增）====================
+// 与 color/scene 的关键差异：**全类目参与**（含 NO_TAG_TYPES 的 Decor/Dining/Others）——
+// African & Tribal 主体是 Decor 挂画、Rattan & Woven 主体是 Dining 藤编，排除它们风格就空了。
+// 风格清单（用户定，共 7 个）：日式不单独设立，禅意/天然材质词并入 Rattan & Woven。
+// 数组顺序 = 打标优先级（具体 → 宽泛），改顺序会改变归类产品，勿动；
+// 首页/汇总页展示顺序在 style-tagged.ts 单独定义（Modern/Farmhouse/Hotel 受众最广排前）。
+export interface StyleTag {
+  key: string;
+  label: string;
+}
+
+interface StyleRule extends StyleTag {
+  words: string[];
+}
+export type { StyleRule };
+
+export const STYLE_RULES: StyleRule[] = [
+  { key: 'african-tribal', label: 'African & Tribal', words: ['african', 'tribal', 'ethnic', 'mudcloth', 'kente'] },
+  { key: 'rattan-woven', label: 'Rattan & Woven', words: ['rattan', 'wicker', 'bamboo', 'seagrass', 'sisal', 'shell inlay', 'shell mosaic', 'zen', 'wabi', 'japanese'] },
+  { key: 'bohemian', label: 'Bohemian', words: ['boho', 'bohemian'] },
+  { key: 'persian-vintage', label: 'Persian & Vintage', words: ['persian', 'oriental', 'medallion', 'turkish', 'anatolian', 'distressed', 'vintage'] },
+  { key: 'farmhouse', label: 'Farmhouse', words: ['farmhouse', 'cottage', 'country', 'floral', 'botanical', 'lace', 'patchwork', 'block print', 'checkered', 'plaid', 'gingham'] },
+  { key: 'hotel', label: 'Hotel', words: ['hotel'] },
+  { key: 'modern', label: 'Modern', words: ['modern', 'contemporary', 'minimalist', 'abstract', 'geometric', 'solid'] },
+];
+
+// 标题无风格词时按一级类目兜底（现况：Decor 全是部落挂画、Dining 全是藤编、毛巾多为酒店棉）
+const STYLE_TYPE_FALLBACK: Record<string, string> = {
+  Decor: 'african-tribal',
+  Dining: 'rattan-woven',
+  Towels: 'hotel',
+};
+
+/** 唯一风格标签：按 STYLE_RULES 顺序取第一个命中 → productType 兜底 → Modern */
+export function getStyleTag(title: string, productType?: string): StyleTag {
+  for (const rule of STYLE_RULES) {
+    if (rule.words.some((w) => wordRegex(w).test(title))) {
+      return { key: rule.key, label: rule.label };
+    }
+  }
+  const fallbackKey = (productType && STYLE_TYPE_FALLBACK[productType]) || 'modern';
+  const rule = STYLE_RULES.find((s) => s.key === fallbackKey) || STYLE_RULES[STYLE_RULES.length - 1];
+  return { key: rule.key, label: rule.label };
+}
+
+// 风格人工指定：存 product-tags.json 各产品的 style 字段（管理工具维护，与 color/scene 手工配置同文件）。
+// 迁移记录（2026-09）：原硬编码 STYLE_OVERRIDES（Slate Bamboo 床品四件套标题含 bamboo 被规则误判为
+// Rattan & Woven，实为 Farmhouse 水墨竹印花）已迁入 product-tags.json。
+// default import 编译成 require(...).default 会取不到值；namespace import 两种环境都拿到 JSON 本体
+import * as PRODUCT_TAGS_JSON from './product-tags.json';
+const PRODUCT_TAG_OVERRIDES = PRODUCT_TAGS_JSON as unknown as Record<string, { style?: string | null }>;
+
+/** getStyleTag + 人工覆盖（product-tags.json 的 style 字段优先）。asin 传产品 asin（大小写不限） */
+export function getStyleTagWithOverride(title: string, productType: string | undefined, asin: string): StyleTag {
+  const key = PRODUCT_TAG_OVERRIDES[asin.toLowerCase()]?.style;
+  if (key) {
+    const rule = STYLE_RULES.find((s) => s.key === key);
+    if (rule) return { key: rule.key, label: rule.label };
+  }
+  return getStyleTag(title, productType);
+}

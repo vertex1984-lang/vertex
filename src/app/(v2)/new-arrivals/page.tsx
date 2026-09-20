@@ -5,14 +5,14 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
 
 export const metadata: Metadata = {
-  title: 'New Arrivals | Makimoo',
+  title: 'New Arrivals',
   description:
     'Just landed at Makimoo — the 20 newest pieces added to the collection.',
 };
 
 // 最新上架：按 Shopify 产品创建时间倒序取前 20，不区分类目、平铺展示
 const newArrivals = enrichProductsWithShopifyData(PRODUCTS_DATA)
-  .filter((p) => p.hasShopifyData)
+  .filter((p) => p.hasShopifyData && p.shopifyAvailable)
   .sort((a, b) => {
     const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
     const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
@@ -27,7 +27,7 @@ const newArrivals = enrichProductsWithShopifyData(PRODUCTS_DATA)
  */
 export default function NewArrivalsPage() {
   return (
-    <div className="px-6 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
       {/* 页头（同 /products 类目页）：面包屑 + 左对齐标题 + 右侧结果数 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -35,11 +35,11 @@ export default function NewArrivalsPage() {
         <span className="text-[#555]">New Arrivals</span>
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
-        <h1 className="text-2xl lg:text-4xl font-extrabold text-[#333]">New Arrivals</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">New Arrivals</h1>
         <p className="text-sm text-[#777]">{newArrivals.length} result{newArrivals.length === 1 ? '' : 's'}</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
         {newArrivals.map((p) => (
           <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
         ))}

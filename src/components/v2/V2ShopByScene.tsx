@@ -4,22 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { MATERIALS_MAP } from '@/data/materials-map';
-import { getSceneTag, SCENE_RULES, NO_TAG_TYPES } from '@/data/product-tags';
-import { sortByWeight } from '@/lib/weights';
-import PRODUCT_TAGS from '@/data/product-tags.json';
-
-type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
-const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
-
-const MAX_PER_SCENE = 8;
-// 场景至少有这么款在售产品才展示（太少的场景卡片排不满，观感差）
-const MIN_PRODUCTS = 4;
-
-// 标题去重 key（同 featured-sections）：同款多色/多尺寸只占一个卡片位
-const titleKey = (title: string) =>
-  title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
+import type { SceneOption } from '@/data/home-sections';
 
 // 场景胶囊的线条小图标（24 视图框、描边风格，随文字色）
 const SCENE_ICONS: Record<string, React.ReactNode> = {
@@ -55,7 +40,7 @@ const SCENE_ICONS: Record<string, React.ReactNode> = {
   ),
   'dining-room': (
     <>
-      <path d="M6 3v5a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3" />
+      <path d="M6 3v5a2 2 0 0 0 2 2 2 0 0 0 2-2V3" />
       <path d="M8 10v11" />
       <path d="M16 3c-1.4 2-2 4.3-2 6.5V13h2v8" />
       <path d="M16 3v6.5" />
@@ -89,58 +74,26 @@ const SCENE_ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
+interface V2ShopBySceneProps {
+  // 服务端已选好（src/data/home-sections.ts）：≥4 款在售（标题去重后）的场景 + 每场权重前 8 的精简卡片
+  scenes: SceneOption[];
+}
+
 /**
  * V2 首页 Shop by Scene 区（位于 Shop by Color 下方）
  * 胶囊场景行（图标 + 文字，点击切换 + 可横滑，右缘渐隐箭头提示），
  * 产品区：桌面端与 Shop by Color 同款单行横滑（触摸滑动 + 鼠标拖拽，无箭头），最多 8 款；
  * 移动端 2 列平铺、最多 3 行（6 款），遇奇数款去掉最后 1 款，避免最后一行只落单 1 张卡。
- * 卡片区支持左右滑手势切换上一个/下一个场景（横向位移 >60px 且明显大于纵向才触发，不干扰上下滚动）。
+ * 移动端卡片区支持左右滑手势切换上一个/下一个场景（横向位移 >60px 且明显大于纵向才触发，不干扰上下滚动）。
  * 底部 SHOP {SCENE} 按钮跳 /featured-products/scene/{key}/ 场景聚合页。
- * 数据与标签页同一来源：product-tags.json（缺失时按规则现算），只统计在售产品并按标题去重。
+ * 数据由 server 端选好传入（只含在售产品并按标题去重），组件本身不 import 目录数据。
  */
-export default function V2ShopByScene() {
-  // 在售产品 + 各自场景 key（预先算一次，切换场景只是过滤）
-  // Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定），排除
-  const taggedInStock = useMemo(
-    () =>
-      enrichProductsWithShopifyData(PRODUCTS_DATA)
-        .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
-        .map((p) => {
-          const fullTitle = MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
-          const persisted = TAGS[p.asin.toLowerCase()];
-          const scene =
-            persisted?.scene ?? getSceneTag(fullTitle, p.productType).key;
-          return { product: p, scene };
-        }),
-    []
-  );
-
-  // 有 ≥MIN_PRODUCTS 款在售产品（去重后）的场景，按 SCENE_RULES 展示顺序
-  // 场景内产品按权重排序（高分优先，同分按类目平均分），去重保留权重最高的一款
-  const availableScenes = useMemo(
-    () =>
-      SCENE_RULES.map((rule) => {
-        const seen = new Set<string>();
-        const products = sortByWeight(
-          taggedInStock.filter((t) => t.scene === rule.key).map((t) => t.product)
-        )
-          .filter((p) => {
-            const key = titleKey(p.title);
-            if (seen.has(key)) return false;
-            seen.add(key);
-            return true;
-          })
-          .slice(0, MAX_PER_SCENE);
-        return { rule, products };
-      }).filter((s) => s.products.length >= MIN_PRODUCTS),
-    [taggedInStock]
-  );
-
+export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
   const [activeScene, setActiveScene] = useState<string>(
-    availableScenes[0]?.rule.key ?? ''
+    scenes[0]?.key ?? ''
   );
-  const activeIndex = availableScenes.findIndex((s) => s.rule.key === activeScene);
-  const active = availableScenes[activeIndex];
+  const activeIndex = scenes.findIndex((s) => s.key === activeScene);
+  const active = scenes[activeIndex];
 
   // 只有用户主动切换（点胶囊/滑手势）时才置位；dev 下 StrictMode 会重复执行 effect，
   // 用"是否交互过"而不是"是否首次执行"做判断，避免首挂载把整页拉下来
@@ -151,8 +104,8 @@ export default function V2ShopByScene() {
   };
 
   const switchScene = (step: 1 | -1) => {
-    const next = availableScenes[activeIndex + step];
-    if (next) selectScene(next.rule.key);
+    const next = scenes[activeIndex + step];
+    if (next) selectScene(next.key);
   };
 
   // 胶囊行右侧"还有更多"箭头：可继续右滑时显示，滚到底自动隐藏
@@ -169,7 +122,7 @@ export default function V2ShopByScene() {
       el.removeEventListener('scroll', check);
       window.removeEventListener('resize', check);
     };
-  }, [availableScenes.length]);
+  }, [scenes.length]);
 
   // 场景切换后，把选中胶囊滚动到可视区中间（手势切换时胶囊行可能看不到选中项）。
   // 仅响应用户主动切换：否则页面刚加载就把整页往下拉到胶囊行（从其它页点 logo 回主页会落在 Shop by Color 处）
@@ -180,7 +133,8 @@ export default function V2ShopByScene() {
       ?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
   }, [activeScene]);
 
-  // 卡片区左右滑手势切换场景：横向位移 >60px 且 |dx| > 1.5|dy| 才触发，不干扰页面上下滚动
+  // 移动端卡片区左右滑手势切换场景：横向位移 >60px 且 |dx| > 1.5|dy| 才触发，不干扰页面上下滚动。
+  // 只挂在移动端平铺容器上：桌面横滑轨道自带触摸滚动，挂外层会让触屏笔记本滑产品轨时误触场景切换并丢失滚动位置
   const swipeStart = useRef<{ x: number; y: number } | null>(null);
   const onTouchStart = (e: React.TouchEvent) => {
     swipeStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
@@ -243,13 +197,13 @@ export default function V2ShopByScene() {
     }
   };
 
-  if (availableScenes.length === 0) return null;
+  if (scenes.length === 0) return null;
 
   return (
-    <section className="bg-off-white pt-8 lg:pt-12 pb-16 lg:pb-24">
+    <section className="bg-off-white pt-8 lg:pt-12 pb-8 lg:pb-24">
       <Reveal>
-        <div className="px-6 lg:px-10">
-          <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
+        <div className="px-3 lg:px-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Scene
           </h2>
 
@@ -259,12 +213,12 @@ export default function V2ShopByScene() {
               ref={pillRef}
               className="flex gap-3 lg:gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
             >
-              {availableScenes.map(({ rule }) => {
-                const isActive = rule.key === activeScene;
+              {scenes.map(({ key, label }) => {
+                const isActive = key === activeScene;
                 return (
                   <button
-                    key={rule.key}
-                    onClick={() => selectScene(rule.key)}
+                    key={key}
+                    onClick={() => selectScene(key)}
                     aria-pressed={isActive}
                     className={`flex items-center gap-2 flex-shrink-0 px-5 py-2.5 rounded-full border text-sm font-semibold tracking-wide transition ${
                       isActive
@@ -282,9 +236,9 @@ export default function V2ShopByScene() {
                       strokeLinejoin="round"
                       aria-hidden="true"
                     >
-                      {SCENE_ICONS[rule.key]}
+                      {SCENE_ICONS[key]}
                     </svg>
-                    {rule.label}
+                    {label}
                   </button>
                 );
               })}
@@ -307,14 +261,9 @@ export default function V2ShopByScene() {
             )}
           </div>
 
-          {/* 产品区：key 重挂载触发淡入过渡；左右滑手势切换场景。
+          {/* 产品区：key 重挂载触发淡入过渡。
               桌面端单行横滑（拖拽同 Shop by Color，无箭头）；移动端 2 列平铺最多 3 行 */}
-          <div
-            key={activeScene}
-            onTouchStart={onTouchStart}
-            onTouchEnd={onTouchEnd}
-            className="animate-fade-in-up"
-          >
+          <div key={activeScene} className="animate-fade-in-up">
             {/* 桌面端横滑条（移动端隐藏）。负 margin + 内 padding 让轨道全宽 bleed 且左缘对齐内容线；
                 padding 放在滚动容器上会被 scroll-snap 视为可滚动内容，加载时首卡自动吸附回 x=0，缝隙被吃掉 */}
             <div className="hidden lg:block -mx-10 pl-10">
@@ -340,8 +289,13 @@ export default function V2ShopByScene() {
               </div>
             </div>
 
-            {/* 移动端平铺：2 列最多 3 行，奇数款已去掉末尾 1 款（桌面端隐藏） */}
-            <div className="lg:hidden grid grid-cols-2 gap-5">
+            {/* 移动端平铺：2 列最多 3 行，奇数款已去掉末尾 1 款（桌面端隐藏）。
+                gap-2 与分类页移动端一致，卡更宽图更大；左右滑手势切换场景只挂在这个容器上 */}
+            <div
+              className="lg:hidden grid grid-cols-2 gap-2"
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
+            >
               {mobileProducts.map((product) => (
                 <V2ProductCard key={product.id} product={product} />
               ))}
@@ -352,10 +306,10 @@ export default function V2ShopByScene() {
           {active && (
             <div className="mt-10 lg:mt-12 text-center">
               <a
-                href={v2url(`/featured-products/scene/${active.rule.key}/`)}
+                href={v2url(`/featured-products/scene/${active.key}/`)}
                 className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
               >
-                Shop {active.rule.label}
+                Shop {active.label}
               </a>
             </div>
           )}

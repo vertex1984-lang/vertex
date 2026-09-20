@@ -18,7 +18,7 @@ export default function V2BestSellers({ products }: V2BestSellersProps) {
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
               Customer Favorites
             </p>
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+            <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
               Best Sellers
             </h2>
           </div>
@@ -43,7 +43,7 @@ export default function V2BestSellers({ products }: V2BestSellersProps) {
                 key={product.id}
                 className="w-[68vw] sm:w-[42vw] lg:w-[calc(25%-18px)] flex-shrink-0 snap-start"
               >
-                <V2ProductCard product={product} badge="Best Seller" />
+                <V2ProductCard product={product} />
               </div>
             ))}
           </div>

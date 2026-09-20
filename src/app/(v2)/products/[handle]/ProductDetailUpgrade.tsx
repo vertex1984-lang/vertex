@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 /**
  * PDP v2 升级版详情页（仅 NEW_PRODUCT_HANDLES 白名单内商品使用）。
@@ -312,7 +312,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         ].map((badge) => (
           <div key={badge.label} className="flex flex-col items-center text-center gap-1.5">
             <TrustIcon name={badge.icon} />
-            <span className="text-xs sm:text-sm text-charcoal-light leading-tight">{badge.label}</span>
+            <span className="text-xs lg:text-sm text-charcoal-light leading-tight">{badge.label}</span>
           </div>
         ))}
       </div>
@@ -348,7 +348,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     <div className="bg-off-white pb-24 lg:pb-0">
       {/* 面包屑（pt-32/40 避开 fixed 头部，与老版 PDP 避让高度一致） */}
       <div className="px-6 lg:px-10 pt-32 lg:pt-40">
-        <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-sm text-charcoal-light">
+        <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
           <a href={v2url('/products/')} className="hover:text-brand">Products</a>
@@ -357,11 +357,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </nav>
       </div>
 
-      {/* ① 顶部：左图集 + 右购买信息 */}
+      {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
+          隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑） */}
       <section className="px-6 lg:px-10 mt-6 lg:mt-10">
-        <div className="max-w-[1400px] mx-auto grid gap-10 lg:gap-14 lg:grid-cols-2">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
           {/* 左：图集（大图 + 缩略图横排在下，全端一致） */}
-          <div>
+          <div className="min-w-0">
             <div
               className="aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white"
               onClick={() => setLightboxOpen(true)}
@@ -404,8 +405,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </div>
           </div>
 
-          {/* 右：购买信息栏 */}
-          <div className="lg:pt-2">
+          {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
+          <div className="lg:pt-2 min-w-0">
             <div className="flex items-center justify-between gap-4 mb-4">
               <div className="flex items-center gap-2">
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
@@ -429,17 +430,17 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </button>
             </div>
 
-            <h1 className="text-[1.65rem] lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
+            <h1 className="text-xl lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
             {longTitle !== shortTitle && (
-              <p className="text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
+              <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
             )}
 
             {isInStock ? (
               <div className="flex items-baseline gap-3 mb-6">
-                <span className="text-3xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
+                <span className="text-2xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
                 {showCompareAt && (
                   <>
-                    <span className="text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
+                    <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
                     <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
                       Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice!)) * 100)}%
                     </span>
@@ -464,7 +465,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                           <path d="M20 6L9 17l-5-5" />
                         </svg>
                       </span>
-                      <span className="text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
+                      <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
                     </li>
                   ))}
                 </ul>
@@ -530,9 +531,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                     }`;
                     if (unavailable) {
                       return (
-                        <span key={sv.size} title="Not available in this pattern" aria-disabled="true" className={cls}>
+                        <button
+                          key={sv.size}
+                          type="button"
+                          disabled
+                          aria-label={`${sv.size} — not available in this pattern`}
+                          className={cls}
+                        >
                           {inner}
-                        </span>
+                        </button>
                       );
                     }
                     return active ? (
@@ -604,7 +611,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   </button>
                   <input
                     type="number" value={quantity} min={1} max={99} readOnly
-                    className="w-14 h-12 border-none text-center text-base font-semibold text-charcoal bg-white outline-none"
+                    className="w-14 h-12 border-none text-center text-sm lg:text-base font-semibold text-charcoal bg-white outline-none"
                     aria-label="Quantity"
                   />
                   <button
@@ -619,7 +626,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <button
                     onClick={handleAddToCart}
                     disabled={addingToCart}
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
                   >
                     {addingToCart ? 'Adding...' : 'Add to Cart'}
                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -630,7 +637,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <a
                     href={product.amazonUrl}
                     target="_blank" rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold text-cream bg-brand transition hover:bg-brand-dark"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark"
                   >
                     Shop on Amazon
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -688,8 +695,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       {/* ④ Specifications */}
       <section id="pdp2-specs" className="px-6 lg:px-10 py-14 scroll-mt-28 lg:scroll-mt-36">
         <div className="max-w-[1400px] mx-auto">
-          <p className="text-sm font-semibold tracking-widest uppercase text-brand mb-2">Specifications</p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-charcoal mb-8">Product Details at a Glance</h2>
+          <p className="text-xs lg:text-sm font-semibold tracking-widest uppercase text-brand mb-2">Specifications</p>
+          <h2 className="text-xl lg:text-3xl font-extrabold text-charcoal mb-8">Product Details at a Glance</h2>
           <div className="max-w-3xl bg-white rounded-2xl border border-warm-gray overflow-hidden">
             <table className="w-full">
               <tbody>

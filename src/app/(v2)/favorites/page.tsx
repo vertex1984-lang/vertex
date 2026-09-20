@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import V2PageHeader from '@/components/v2/V2PageHeader';
 import ProductCard from '@/components/ProductCard';
 import { v2url } from '@/lib/v2paths';
-import { getFavorites } from '@/lib/favorites';
+import { pruneFavorites } from '@/lib/favorites';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 
 /**
@@ -19,8 +19,10 @@ export default function V2FavoritesPage() {
 
   useEffect(() => {
     const refresh = () => {
-      const ids = getFavorites().slice().reverse();
       const enriched = enrichProductsWithShopifyData(PRODUCTS_DATA);
+      const inCatalog = new Set(enriched.map((p) => p.id));
+      // 先剪掉目录里已不存在的 ghost id（写回 localStorage 并同步 Header 角标），再渲染网格
+      const ids = pruneFavorites((id) => inCatalog.has(id)).slice().reverse();
       setProducts(
         ids
           .map((id) => enriched.find((p) => p.id === id))
@@ -52,7 +54,7 @@ export default function V2FavoritesPage() {
         }
       />
 
-      <section className="px-6 lg:px-10 py-10 lg:py-14">
+      <section className="px-3 lg:px-10 py-10 lg:py-14">
         {products === null ? null : products.length === 0 ? (
           /* 空状态：心形线框 + 引导去逛产品 */
           <div className="py-16 lg:py-24 text-center">
@@ -83,7 +85,7 @@ export default function V2FavoritesPage() {
           </div>
         ) : (
           /* 收藏网格：与 /products 列表页同款 ProductCard，爱心点击即移除 */
-          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
             {products.map((p) => {
               const unavailable = p.hasShopifyData && !p.shopifyAvailable;
               return (

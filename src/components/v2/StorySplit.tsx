@@ -48,7 +48,7 @@ export default function StorySplit({
             <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-4">
               {eyebrow}
             </p>
-            <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-5 leading-tight">
+            <h2 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-5 leading-tight">
               {title}
             </h2>
             <p className="text-base text-charcoal-light leading-relaxed mb-8">{body}</p>

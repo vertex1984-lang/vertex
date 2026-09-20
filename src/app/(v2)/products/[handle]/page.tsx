@@ -275,7 +275,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-14 lg:py-20">
             <div className="max-w-2xl mb-8 lg:mb-10">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Complete the Look</p>
-              <h2 className="text-2xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-3">
+              <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-3">
                 You May Also Like
               </h2>
               <p className="text-sm lg:text-base text-charcoal-light">
@@ -292,14 +292,14 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       )}
       {!isNew && related.length > 0 && (
         <section className="bg-off-white">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-14 lg:py-20">
+          <div className="max-w-[1400px] mx-auto px-3 lg:px-10 py-14 lg:py-20">
             <div className="mb-8 lg:mb-12">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">More Comfort</p>
-              <h2 className="text-2xl lg:text-3xl font-extrabold tracking-tight text-charcoal">
+              <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal">
                 You May Also Like
               </h2>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-6">
               {related.map((p) => (
                 <V2ProductCard key={p.id} product={p} />
               ))}

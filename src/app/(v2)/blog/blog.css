@@ -263,6 +263,15 @@
   line-height: 1.7;
   color: var(--bl-ink);
 }
+@media (max-width: 640px) {
+  .bl-article-body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .bl-lede {
+    font-size: 16px;
+  }
+}
 .bl-article-body h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 29px;

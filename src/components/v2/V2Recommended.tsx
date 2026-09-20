@@ -1,18 +1,11 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import V2ProductCard, { V2CardProduct } from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { getRecentlyViewed } from '@/lib/recently-viewed';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
-import { MATERIALS_MAP } from '@/data/materials-map';
-import { getColorTag, getSceneTag, NO_TAG_TYPES } from '@/data/product-tags';
-import { getBestSellerProducts } from '@/data/featured-sections';
-import PRODUCT_TAGS from '@/data/product-tags.json';
-
-type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
-const TAGS = PRODUCT_TAGS as Record<string, PersistedTag>;
+import type { RecommendedCandidate } from '@/data/home-sections';
 
 const MAX_ITEMS = 10;
 // 只参考最近浏览的 5 个产品，越近权重越高（5→1）
@@ -22,11 +15,11 @@ const HISTORY_DEPTH = 5;
 const titleKey = (title: string) =>
   title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
 
-interface ScoredProduct {
-  product: MakimooProduct;
-  category: string;
-  color: string | null;
-  scene: string;
+interface V2RecommendedProps {
+  // 服务端已选好（src/data/home-sections.ts）：无浏览历史时的兜底榜单（Best Sellers 前 10）
+  fallback: V2CardProduct[];
+  // 全部在售产品的精简卡片 + 打分标签（按 handle 索引），供 client 按浏览历史个性化
+  candidates: Record<string, RecommendedCandidate>;
 }
 
 /**
@@ -34,49 +27,28 @@ interface ScoredProduct {
  * 算法：取最近浏览的 5 个产品（权重 5→1 递减），对每个候选在售产品打分——
  *   同类目 +3、同色系 +2、同场景 +1（乘以浏览权重累加），
  * 排除已浏览产品、按标题去重，取分数最高的 10 款。
- * 无浏览历史（或无有效推荐）时回退到 Best Sellers 榜单。
+ * 无浏览历史（或无有效推荐）时回退到 server 传入的 Best Sellers 兜底榜单。
  * 展示与 Shop by Color 相同：标题 + 单行横滑产品卡（触摸滑动 + 鼠标拖拽，同 Shop by Category，无箭头）+ 底部 View More 按钮。
  */
-export default function V2Recommended() {
-  // 在售产品 + 类目/色系/场景标签（预先算一次）
-  const taggedInStock = useMemo<ScoredProduct[]>(
-    () =>
-      enrichProductsWithShopifyData(PRODUCTS_DATA)
-        .filter((p) => p.hasShopifyData && p.shopifyAvailable)
-        .map((p) => {
-          const fullTitle = MATERIALS_MAP[p.asin.toLowerCase()]?.title || p.title;
-          const persisted = TAGS[p.asin.toLowerCase()];
-          // Others / Decor / Dining 类目不参与 color/scene 分类（2026-09 用户定）：不打标签，只按类目参与推荐打分
-          const isExcluded = NO_TAG_TYPES.has(p.productType);
-          return {
-            product: p,
-            category: p.productType,
-            color: isExcluded ? null : persisted?.color ?? getColorTag(fullTitle, p.asin)?.key ?? null,
-            scene: isExcluded ? '' : persisted?.scene ?? getSceneTag(fullTitle, p.productType).key,
-          };
-        }),
-    []
-  );
-
+export default function V2Recommended({ fallback, candidates }: V2RecommendedProps) {
   // SSR / 首帧用 Best Sellers 兜底，挂载后如有浏览历史则换成个性化推荐
-  const fallback = useMemo(() => getBestSellerProducts().slice(0, MAX_ITEMS), []);
-  const [products, setProducts] = useState<MakimooProduct[]>(fallback);
+  const [products, setProducts] = useState<V2CardProduct[]>(fallback);
   const [personalized, setPersonalized] = useState(false);
 
   useEffect(() => {
     const handles = getRecentlyViewed().slice(0, HISTORY_DEPTH);
     if (handles.length === 0) return;
     const viewed = handles
-      .map((h) => taggedInStock.find((t) => t.product.handle === h))
-      .filter(Boolean) as ScoredProduct[];
+      .map((h) => candidates[h])
+      .filter(Boolean) as RecommendedCandidate[];
     if (viewed.length === 0) return;
 
-    const viewedIds = new Set(viewed.map((v) => v.product.id));
+    const viewedIds = new Set(viewed.map((v) => v.card.id));
     const seen = new Set<string>();
-    const scored = taggedInStock
-      .filter((t) => !viewedIds.has(t.product.id))
+    const scored = Object.values(candidates)
+      .filter((t) => !viewedIds.has(t.card.id))
       .filter((t) => {
-        const key = titleKey(t.product.title);
+        const key = titleKey(t.card.title);
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
@@ -96,10 +68,10 @@ export default function V2Recommended() {
       .slice(0, MAX_ITEMS);
 
     if (scored.length > 0) {
-      setProducts(scored.map((s) => s.t.product));
+      setProducts(scored.map((s) => s.t.card));
       setPersonalized(true);
     }
-  }, [taggedInStock]);
+  }, [candidates]);
 
   // 产品横滑轨道：触摸滑动 + 鼠标拖拽（同 Shop by Category，无翻页箭头）
   const trackRef = useRef<HTMLDivElement>(null);
@@ -151,14 +123,9 @@ export default function V2Recommended() {
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             {personalized ? 'Based on Your Browsing' : 'Customer Favorites'}
           </p>
-          <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-4">
+          <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
             You May Also Like
           </h2>
-          <p className="text-base text-charcoal-light max-w-xl">
-            {personalized
-              ? 'Picked from the categories, colors and rooms you have been looking at.'
-              : 'The pieces our customers reach for again and again.'}
-          </p>
         </div>
 
         {/* 产品区：单行可横滑（触摸滑动 + 鼠标拖拽，同 Shop by Category，无箭头）。

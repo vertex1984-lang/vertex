@@ -37,13 +37,13 @@ export default function V2BrandBanner() {
           {/* 左下角促销文案（小占比，参考竞品样式） */}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-11 lg:p-16 max-w-xl">
-            <h3 className="text-[33px] lg:text-[40px] font-extrabold text-cream tracking-tight leading-tight mb-3">
+            <h3 className="text-2xl sm:text-[33px] lg:text-[40px] font-extrabold text-cream tracking-tight leading-tight mb-3">
               Instant comfort shift.
             </h3>
-            <p className="text-[17px] lg:text-[20px] text-cream/85 mb-7">
+            <p className="text-sm sm:text-[17px] lg:text-[20px] text-cream/85 mb-7">
               New textures, new feeling.
             </p>
-            <span className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
+            <span className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
               Discover More
             </span>
           </div>

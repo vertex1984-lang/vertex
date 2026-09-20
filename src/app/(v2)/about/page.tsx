@@ -51,7 +51,7 @@ export default function V2AboutPage() {
           <p className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-3">
             Our Story
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-cream mb-4 drop-shadow-lg">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-cream mb-4 drop-shadow-lg">
             The Makimoo Story
           </h1>
           <p className="text-base sm:text-lg text-cream/90 max-w-2xl">
@@ -64,7 +64,7 @@ export default function V2AboutPage() {
       <StorySplit
         eyebrow="Why We Exist"
         title="Comfort, Designed With Intention"
-        body="Makimoo was founded on a simple belief: everyone deserves a home that feels like a warm embrace. Every product we create uses premium materials, thoughtful craftsmanship, and a deep respect for the planet — we don't just sell cushions and pillows; we deliver comfort that transforms spaces into sanctuaries."
+        body="Makimoo began with a simple belief: everyone deserves a home that feels like a warm embrace. Premium materials and thoughtful craftsmanship turn everyday spaces into sanctuaries."
         ctaLabel="Shop the Collection"
         ctaHref="/products/"
         image="/images/about/about-story.webp"
@@ -107,7 +107,7 @@ export default function V2AboutPage() {
       <StorySplit
         eyebrow="Our Quality Promise"
         title="Built to Last, Made to Love"
-        body="High-density compressed poly-fiber fill keeps its loft season after season. Premium outdoor polyester holds its color under the sun, a water-repellent surface makes care effortless, and reinforced canvas ties keep every cushion exactly where you want it — all backed by a 30-day worry-free return policy."
+        body="High-density fill keeps its loft season after season, premium fabrics hold their color in the sun, and reinforced ties keep cushions in place — backed by a 30-day worry-free return policy."
         ctaLabel="Shop Best Sellers"
         ctaHref="/products/"
         image="/images/brand/makimoo-vi.webp"
@@ -121,7 +121,7 @@ export default function V2AboutPage() {
         <StorySplit
           eyebrow="Made Responsibly"
           title="Sustainability"
-          body="We're committed to reducing our environmental footprint. From sustainable sourcing to minimal packaging, every decision we make considers the impact on our planet — because a comfortable home shouldn't come at the cost of the Earth."
+          body="From sustainable sourcing to minimal packaging, every decision considers our planet — because a comfortable home shouldn't come at the Earth's expense."
           ctaLabel="Get in Touch"
           ctaHref="/contact/"
           image="/images/about/about-sustainability.webp"

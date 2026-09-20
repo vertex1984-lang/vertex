@@ -17,12 +17,15 @@ interface ProductCardProps {
   href?: string;
 }
 
-/** 从标题提取件数："Set of 4" / "4 Pack" / "2-Pack" / "Pack of 2" → 4/4/2/2 */
-function getPackCount(title: string): number | null {
-  const m = title.match(/set of (\d+)|(\d+)[\s-]?pack|pack of (\d+)|(\d+)[\s-]?piece/i);
-  if (!m) return null;
-  const n = parseInt(m[1] || m[2] || m[3] || m[4], 10);
-  return n > 1 ? n : null;
+/** Bedding 卡片的展示标题：去掉材质词（Microfiber / 100% Linen 等，材质已有 Collections/Material 筛选承载）。
+ *  只去开头的材质词和 "100% X" 短语，印花/图案名（如 Slate Bamboo、Cotton 字样在非开头）不受影响 */
+function displayTitle(p: MakimooProduct): string {
+  if (p.productType.toLowerCase() !== 'bedding') return p.title;
+  return p.title
+    .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
+    .replace(/\b100%\s+(microfiber|linen|cotton|polyester|bamboo)\s*/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 }
 
 export default function ProductCard({ product, variant = 'default', href }: ProductCardProps) {
@@ -49,7 +52,6 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-  const packCount = getPackCount(product.title);
 
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -81,18 +83,13 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
               width={image.width}
               height={image.height}
               loading="lazy"
-              className={`w-full h-full ${variant === 'featured' ? 'object-cover' : 'object-contain'} transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-5 sm:p-7' : ''}`}
+              className={`w-full h-full ${variant === 'featured' ? 'object-cover' : 'object-contain'} transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-2 sm:p-7' : ''}`}
             />
           )}
           {!isInStock && (
             <div className="absolute inset-0 bg-white/60 flex items-center justify-center">
               <span className="px-3 py-1 bg-[#333]/80 text-white text-xs font-semibold rounded-full">Out of Stock</span>
             </div>
-          )}
-          {packCount && (
-            <span className="absolute bottom-2 left-2 px-2 py-0.5 bg-[#8B5A2B] text-white text-[11px] font-semibold rounded-full shadow">
-              {packCount} Pack
-            </span>
           )}
           {/* 收藏按钮 */}
           <button
@@ -131,9 +128,9 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
           <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
             {productCategoryTag(product)}
           </p>
-          {/* 标题固定两行高度（line-clamp-2 + min-h），避免同行卡片高度不一 */}
-          <h3 className="relative text-sm sm:text-base font-medium text-[#333] line-clamp-2 leading-snug min-h-[2.75em] mb-2 sm:mb-3">
-            {product.title}
+          {/* 标题全端单行截断（truncate + 省略号），字号全端统一 text-xs；Bedding 去掉材质词 */}
+          <h3 className="relative text-xs font-medium text-[#333] leading-snug mb-2 sm:mb-3 truncate">
+            {displayTitle(product)}
             {/* 标题下划线 hover 渐入 */}
             <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
           </h3>

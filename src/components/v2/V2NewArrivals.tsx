@@ -105,7 +105,7 @@ export default function V2NewArrivals({ products }: V2NewArrivalsProps) {
                   key={product.id}
                   className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
                 >
-                  <V2ProductCard product={product} badge="New" />
+                  <V2ProductCard product={product} />
                 </div>
               ))}
             </div>

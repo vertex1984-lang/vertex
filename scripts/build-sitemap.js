@@ -11,9 +11,9 @@ const SITE = 'https://www.makimoohome.com';
 const productsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf8');
 const handles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 
-// Blog 文章 slug（从 blog-posts.ts 提取，recos 引用的 slug 与文章本身重复，需去重）
+// Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）
 const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');
-const blogSlugs = [...new Set([...blogSrc.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]))];
+const blogSlugs = [...blogSrc.matchAll(/^ {4}slug:\s*"([^"]+)"/gm)].map((m) => m[1]);
 
 // cart/ 和 404 不进 sitemap（robots noindex）
 const staticPages = [
