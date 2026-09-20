@@ -49,7 +49,7 @@ export default function QuickViewModal({ product, open, onClose, detailHref }: Q
   // featuredImage 是场景图不缩放；素材白底图加内边距缩小产品占比
   const padImage = !product.featuredImage && (product.imageWhiteBg?.[0] ?? false);
   const hasShopifyData = product.hasShopifyData;
-  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
+  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
   // 简述：取描述前两句

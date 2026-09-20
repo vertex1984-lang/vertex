@@ -105,7 +105,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
 
   // Use Shopify price if available; no Shopify data = not in stock, no price
   const hasShopifyData = product.hasShopifyData;
-  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
+  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
 

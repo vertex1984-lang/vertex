@@ -194,7 +194,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     : product.images.map((img) => img.url);
 
   const hasShopifyData = product.hasShopifyData;
-  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
+  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
   const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);

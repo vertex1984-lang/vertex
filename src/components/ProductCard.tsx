@@ -46,7 +46,7 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
       ? { url: shopifyImageUrl(product.shopifyImages[0], 600), altText: product.title, width: 800, height: 800 }
       : product.images[0];
   const hasShopifyData = product.hasShopifyData;
-  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : false;
+  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
   const packCount = getPackCount(product.title);

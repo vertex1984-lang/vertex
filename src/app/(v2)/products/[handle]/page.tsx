@@ -86,7 +86,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
             color: m.color,
             size: m.size,
             thumb: wbThumb || ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
-            inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : false) : false,
+            inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : (ep.availableForSale === true)) : false,
           };
         };
         const hasSizes = group.members.some((m) => m.size);
@@ -193,7 +193,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           image: p.shopifyImages?.[0] || p.images[0]?.url || '',
           price: p.shopifyPrice || p.priceRange.minVariantPrice.amount,
           currency: p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode,
-          inStock: p.hasShopifyData ? (p.shopifyAvailable ?? false) : false,
+          inStock: p.hasShopifyData ? (p.shopifyAvailable ?? false) : (p.availableForSale === true),
           whiteBg: p.imageWhiteBg?.[0] ?? false,
           productType: p.productType,
           variantId: p.shopifyVariantId,
