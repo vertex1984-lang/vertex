@@ -52,3 +52,33 @@ export function dedupeFamilyColors<T extends MakimooProduct>(
     return !key || representative.get(key) === p;
   });
 }
+
+/**
+ * 家族聚拢排序（2026-09 用户定）：同一变体族的色卡在列表中必须相邻展示。
+ * 在调用方完成权重/价格等排序之后调用：遍历列表，遇到某家族第一个成员时，
+ * 把该家族在列表中的其余成员按原有相对顺序紧随其后（家族块的位置由其最靠前成员决定）。
+ * 非家族成员保持原位。
+ */
+export function clusterFamilies<T extends { handle: string }>(products: T[]): T[] {
+  const famOf = (p: T) => {
+    const k = familyColorByHandle.get(p.handle);
+    return k ? k.slice(0, k.indexOf('::')) : null;
+  };
+  const seen = new Set<string>();
+  const out: T[] = [];
+  for (const p of products) {
+    if (seen.has(p.handle)) continue;
+    seen.add(p.handle);
+    out.push(p);
+    const fam = famOf(p);
+    if (!fam) continue;
+    for (const q of products) {
+      if (seen.has(q.handle)) continue;
+      if (famOf(q) === fam) {
+        seen.add(q.handle);
+        out.push(q);
+      }
+    }
+  }
+  return out;
+}

@@ -11,7 +11,7 @@ import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
-import { dedupeFamilyColors } from '@/lib/listing-dedupe';
+import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -64,14 +64,15 @@ function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
 }
 
 function applySort(list: MakimooProduct[], sort: SortKey): MakimooProduct[] {
-  // featured = 权重排序（表现分 + 人工赋权，含在售优先/沉底/置顶/排除）
-  if (sort === 'featured') return sortByWeight(list);
+  // featured = 权重排序（表现分 + 人工赋权，含在售优先/沉底/置顶/排除）；同家族色卡聚拢相邻（2026-09 用户定）
+  if (sort === 'featured') return clusterFamilies(sortByWeight(list));
   const grouped = inStockFirst(list);
   // 价格排序只在在售组内生效，缺货组保持沉底
   const inStock = grouped.filter(isInStock);
   const out = grouped.filter((p) => !isInStock(p));
   inStock.sort((a, b) => (sort === 'price-asc' ? priceOf(a) - priceOf(b) : priceOf(b) - priceOf(a)));
-  return [...inStock, ...out];
+  // 价格序同样保持家族聚拢：块位置由组内最靠前成员决定
+  return clusterFamilies([...inStock, ...out]);
 }
 
 function readUrlParam(key: string): string {
@@ -327,12 +328,12 @@ export default function V2ProductsPage() {
       ? collectionOptions
           .map((o) => ({
             def: { key: o.key, label: o.label },
-            products: sortByWeight(categoryProducts.filter((p) => rawMaterialsOf(p.asin).includes(o.key))),
+            products: clusterFamilies(sortByWeight(categoryProducts.filter((p) => rawMaterialsOf(p.asin).includes(o.key)))),
           }))
           .filter((s) => s.products.length > 0)
       : STYLE_DISPLAY_RULES.map((rule) => ({
           def: { key: rule.key, label: rule.label },
-          products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
+          products: clusterFamilies(sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key))),
         })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
     return grouped.length >= 2 && total >= 4 ? grouped : [];

@@ -7,7 +7,7 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/
 import { CATEGORY_DEFS } from '@/data/subcategories';
 import { NO_TAG_TYPES } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
-import { dedupeFamilyColors } from '@/lib/listing-dedupe';
+import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 
 // Featured：类目配额制（2026-09 用户定），共 8 个卡位：
 // 1. 类目权重 = 该类目在售产品数 / 总在售产品数（Others 不参与），配额 = 份额 × 8 四舍五入，
@@ -55,9 +55,11 @@ export function getFeaturedProducts(): MakimooProduct[] {
     cand.quota--;
     sum--;
   }
-  return cats
-    .sort((a, b) => b.share - a.share)
-    .flatMap((c) => c.products.slice(0, c.quota));
+  return clusterFamilies(
+    cats
+      .sort((a, b) => b.share - a.share)
+      .flatMap((c) => c.products.slice(0, c.quota))
+  );
 }
 
 // New Arrivals：展示用的新到产品（暂选 B0F/B0G 批次新品 ASIN，与 Featured 不重复）
@@ -93,15 +95,17 @@ export function getBestSellerProducts(): MakimooProduct[] {
       .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
       .filter((p) => !featuredIds.has(p.id))
   );
-  // 先按权重排序，再去重取前 15：同标题保留权重最高的一款
-  return sortByWeight(pool)
-    .filter((p) => {
-      const key = titleKey(p.title);
-      if (seenTitles.has(key)) return false;
-      seenTitles.add(key);
-      return true;
-    })
-    .slice(0, 15);
+  // 先按权重排序，再去重取前 15：同标题保留权重最高的一款；家族聚拢保证同族色卡相邻
+  return clusterFamilies(
+    sortByWeight(pool)
+      .filter((p) => {
+        const key = titleKey(p.title);
+        if (seenTitles.has(key)) return false;
+        seenTitles.add(key);
+        return true;
+      })
+      .slice(0, 15)
+  );
 }
 
 export function getNewArrivalProducts(): MakimooProduct[] {
@@ -128,21 +132,21 @@ export function getBestSellersByCategory(): BestSellerSection[] {
   const seenKeys = new Set<string>();
   return BEST_SELLER_CATS.map((cat) => {
     const def = CATEGORY_DEFS.find((d) => d.value === cat);
-    const products = dedupeFamilyColors(
-      sortByWeight(
-        enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-          (p) => p.hasShopifyData && p.shopifyAvailable && p.productType.toLowerCase() === cat
+    const products = clusterFamilies(
+      dedupeFamilyColors(
+        sortByWeight(
+          enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+            (p) => p.hasShopifyData && p.shopifyAvailable && p.productType.toLowerCase() === cat
+          )
         )
-      )
-    )
-      .filter((p) => {
+      ).filter((p) => {
         // 变体族同色去重已由 dedupeFamilyColors 完成（含原 Blankets 色系特判）；此处按标题兜底去重非家族同名款
         const key = titleKey(p.title);
         if (seenKeys.has(key)) return false;
         seenKeys.add(key);
         return true;
       })
-      .slice(0, 4);
+    ).slice(0, 4);
     return { cat, label: def?.label ?? cat, intro: def?.intro ?? '', products };
   }).filter((s) => s.products.length > 0);
 }
