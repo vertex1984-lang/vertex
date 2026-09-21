@@ -84,7 +84,7 @@ export default function V2CategoryGrid() {
             onPointerUp={endDrag}
             onPointerLeave={endDrag}
             onClickCapture={onClickCapture}
-            className={`flex gap-3 lg:gap-4 overflow-x-auto pb-2 pr-6 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
+            className={`flex gap-3 lg:gap-4 overflow-x-auto pb-2 pr-6 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:[mask-image:linear-gradient(to_left,transparent_0,black_96px)] ${
               dragging ? 'cursor-grabbing snap-none' : 'snap-x snap-mandatory cursor-grab'
             }`}
           >
@@ -93,7 +93,7 @@ export default function V2CategoryGrid() {
               key={cat.name}
               href={v2url(cat.href)}
               draggable={false}
-              className="group relative block flex-shrink-0 snap-start w-[56vw] sm:w-[38vw] lg:w-[min(30vw,480px)] aspect-[4/5] overflow-hidden rounded-lg"
+              className="group relative block flex-shrink-0 snap-start w-[68.4vw] sm:w-[38vw] lg:w-[min(26vw,440px)] aspect-[4/5] overflow-hidden rounded-lg"
             >
               <img
                 src={resolveUrl(cat.image)}

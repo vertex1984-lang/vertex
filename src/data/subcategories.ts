@@ -71,7 +71,7 @@ export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {
 
 /** Bedding 材质分组的展示顺序（2026-09 用户定）：类目页分区/Filter/顶部导航 mega menu 三处统一。
  *  未收录的材质排在后面（按产品数降序兜底） */
-export const BEDDING_MATERIAL_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like'];
+export const BEDDING_MATERIAL_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Organic Cotton'];
 
 /** 材质分组排序：先按 BEDDING_MATERIAL_ORDER 固定位次，未收录的按数量降序排在尾部 */
 export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [string, T]) => number): [string, T][] {

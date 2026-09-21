@@ -2,15 +2,22 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import ProductCard from '@/components/ProductCard';
+import V2BeddingLanding, { BEDDING_TEXTURE_ORDER } from '@/components/v2/V2BeddingLanding';
+import { spotlightImage } from '@/components/v2/card-utils';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials } from '@/data/subcategories';
-import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
-import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
+import { STYLE_RULES, COLOR_RULES, getStyleTagWithOverride, getColorTag } from '@/data/product-tags';
+import { STYLE_DISPLAY_RULES, STYLE_BLURBS } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
+import { SHOPIFY_MAP } from '@/data/shopify-map';
 import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
+import * as PRODUCT_TAGS_JSON from '@/data/product-tags.json';
+
+// 产品色系持久化标签（product-tags.json，管理工具维护）；asin 不在表里时回退 getColorTag 现算
+const PRODUCT_TAGS = PRODUCT_TAGS_JSON as unknown as Record<string, { color?: string | null }>;
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -20,8 +27,8 @@ const PAGE_SIZE = 24;
 // 截断数 = 3 行 × 各断点列数：移动端 2 列 → 6 张；lg 3 列 → 9 张；xl 4 列 → 12 张
 const SECTION_LIMITS = { mobile: 6, lg: 9, xl: 12 };
 
-type SortKey = 'featured' | 'price-asc' | 'price-desc';
-const SORT_KEYS: SortKey[] = ['featured', 'price-asc', 'price-desc'];
+type SortKey = 'featured' | 'price-asc' | 'price-desc' | 'newest';
+const SORT_KEYS: SortKey[] = ['featured', 'price-asc', 'price-desc', 'newest'];
 
 function isInStock(p: MakimooProduct): boolean {
   return p.hasShopifyData === true && p.shopifyAvailable === true;
@@ -39,23 +46,11 @@ function materialsOf(asin: string): string[] {
   return m ? m.split(', ').map((x) => x.replace(/^100%\s+/i, '')) : [];
 }
 
-// 原始材质列表（不做 "100% " 归一化）：bedding 类目按材质分组展示时使用（2026-09 用户定）
+// 原始材质列表（不做 "100% " 归一化）：bedding 类目按材质分组/筛选时使用（2026-09 用户定）
 function rawMaterialsOf(asin: string): string[] {
   const m = getProductSpecs(asin)?.material;
   return m ? m.split(', ') : [];
 }
-
-// bedding 分区视图：材质标题下的一句话描述（小字，2026-09 用户定）；未收录的材质不显示描述行
-const MATERIAL_BLURBS: Record<string, string> = {
-  'Washed Cotton-Like': 'Soft washed feel with a relaxed, lived-in look — easy everyday care.',
-  'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
-  '100% Linen': 'Pure natural linen — breathable, durable, and softer with every wash.',
-  'Silk-Modal': 'Silky-smooth modal blend with a cool, gentle touch.',
-  'Sateen': 'Smooth sateen weave with a subtle sheen and buttery feel.',
-  Microfiber: 'Brushed microfiber — soft, wrinkle-resistant & easy care.',
-  Bamboo: 'Bamboo-blend fabric — cool, breathable & moisture-wicking.',
-  Linen: 'Natural linen — breathable with a lived-in texture.',
-};
 
 /** 在售优先，缺货沉底；组内保持原顺序 */
 function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
@@ -65,6 +60,13 @@ function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
 function applySort(list: MakimooProduct[], sort: SortKey): MakimooProduct[] {
   // featured = 权重排序（表现分 + 人工赋权，含在售优先/沉底/置顶/排除）
   if (sort === 'featured') return sortByWeight(list);
+  // newest = 上架时间倒序（Shopify createdAt，与 /new-arrivals 页同一机制），缺货沉底
+  if (sort === 'newest') {
+    const createdOf = (p: MakimooProduct) => SHOPIFY_MAP[p.asin.toLowerCase()]?.createdAt ?? '';
+    return [...list].sort(
+      (a, b) => Number(isInStock(b)) - Number(isInStock(a)) || createdOf(b).localeCompare(createdOf(a))
+    );
+  }
   const grouped = inStockFirst(list);
   // 价格排序只在在售组内生效，缺货组保持沉底
   const inStock = grouped.filter(isInStock);
@@ -88,6 +90,7 @@ const toggleInList = (list: string[], v: string) =>
 interface FilterBundle {
   cat: string;
   sub: string;
+  color: string;
   material: string[];
   sort: SortKey;
 }
@@ -104,6 +107,8 @@ export default function V2ProductsPage() {
   // 首屏必须用默认值，保证水合 HTML 与服务端一致；URL 参数在挂载后读取（见下方 useEffect）
   const [activeCategory, setActiveCategory] = useState('');
   const [activeSub, setActiveSub] = useState('');
+  // 色系筛选（单选；landing 色系卡的落点，URL color 参数）
+  const [colorSel, setColorSel] = useState('');
   // 搜索词只从 URL 读取（页面搜索框已移除，入口在 V2Header 搜索）
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<SortKey>('featured');
@@ -125,6 +130,7 @@ export default function V2ProductsPage() {
   useEffect(() => {
     setActiveCategory(readUrlParam('cat'));
     setActiveSub(readUrlParam('sub'));
+    setColorSel(readUrlParam('color'));
     setSearchQuery(readUrlParam('q'));
     const s = readUrlParam('sort') as SortKey;
     setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
@@ -150,6 +156,19 @@ export default function V2ProductsPage() {
       ])
     );
     return (p: MakimooProduct) => map.get(p.handle) || '';
+  }, [allProducts]);
+
+  // 产品 → 色系 key（persisted color 优先，asin 不在 product-tags.json 时 getColorTag 现算；
+  // 与 home-sections.taggedInStock 同口径）。landing 色系分组 + color 筛选共用
+  const colorOf = useMemo(() => {
+    const map = new Map(
+      allProducts.map((p) => {
+        const asin = p.asin.toLowerCase();
+        const persisted = PRODUCT_TAGS[asin]?.color;
+        return [p.handle, persisted || getColorTag(MATERIALS_MAP[asin]?.title || p.title, p.asin)?.key || null];
+      })
+    );
+    return (p: MakimooProduct) => map.get(p.handle) ?? null;
   }, [allProducts]);
 
   const isSearching = searchQuery.trim().length > 0;
@@ -190,7 +209,7 @@ export default function V2ProductsPage() {
   }, [categoryProducts, activeCategory, beddingMaterialMode, styleKeyOf]);
 
   // 筛选作用域：有类目按类目，无类目（V2 裸 /products = Shop All）取全部；再叠分组过滤
-  // （默认按风格 key；bedding 按材质）
+  // （默认按风格 key；bedding 按材质）与色系（color 参数，单选）
   const scopeProducts = useMemo(() => {
     let list = activeCategory ? categoryProducts : allProducts;
     if (activeSub) {
@@ -198,8 +217,11 @@ export default function V2ProductsPage() {
         ? list.filter((p) => rawMaterialsOf(p.asin).includes(activeSub))
         : list.filter((p) => styleKeyOf(p) === activeSub);
     }
+    if (colorSel) {
+      list = list.filter((p) => colorOf(p) === colorSel);
+    }
     return list;
-  }, [allProducts, categoryProducts, activeCategory, activeSub, beddingMaterialMode, styleKeyOf]);
+  }, [allProducts, categoryProducts, activeCategory, activeSub, colorSel, beddingMaterialMode, styleKeyOf, colorOf]);
 
   // 第二组筛选项聚合（当前类目 + 分组内带产品数）：默认材质多选；bedding 改为风格（Style）多选
   const materialOptions = useMemo(() => {
@@ -219,6 +241,80 @@ export default function V2ProductsPage() {
       .map(([label, count]) => ({ key: label, label, count }));
   }, [scopeProducts, beddingMaterialMode, styleKeyOf]);
 
+  // ── bedding landing 数据（2026-09 重构：默认落地视图 = Texture/Color/Style/New Arrivals 聚合页）──
+  // landing 材质（Texture）卡：固定目录全展示（2026-09 用户定：无产品的材质也出卡，借用全类目权重最高产品图占位，
+  // 组件侧标 Coming Soon）；目录外材质（历史遗留）按数量追加尾部。卡图 = 权重最高（优先有场景图）产品
+  const beddingTextureCards = useMemo(() => {
+    if (!beddingMaterialMode) return [];
+    const inStock = sortByWeight(categoryProducts.filter(isInStock));
+    const byMat = new Map<string, MakimooProduct[]>();
+    for (const p of inStock) {
+      for (const m of rawMaterialsOf(p.asin)) {
+        const list = byMat.get(m);
+        if (list) list.push(p);
+        else byMat.set(m, [p]);
+      }
+    }
+    const extra = Array.from(byMat.keys()).filter((m) => !BEDDING_TEXTURE_ORDER.includes(m));
+    const ordered = [...BEDDING_TEXTURE_ORDER, ...extra];
+    const fallback = inStock.length > 0 ? spotlightImage(inStock.find((p) => p.featuredImage) || inStock[0]).url : '';
+    return ordered.map((label) => {
+      const products = byMat.get(label) || [];
+      const first = products.find((p) => p.featuredImage) || products[0];
+      return {
+        key: label,
+        label,
+        count: products.length,
+        image: first ? spotlightImage(first).url : fallback,
+      };
+    });
+  }, [beddingMaterialMode, categoryProducts]);
+
+  // landing 色系分组：COLOR_RULES 顺序、有色才有、每色按权重取前 10
+  const beddingColorGroups = useMemo(() => {
+    if (!beddingMaterialMode) return [];
+    const inStock = categoryProducts.filter(isInStock);
+    return COLOR_RULES.map((rule) => ({
+      key: rule.key,
+      label: rule.label,
+      hex: rule.hex,
+      products: sortByWeight(inStock.filter((p) => colorOf(p) === rule.key)).slice(0, 10),
+    })).filter((g) => g.products.length > 0);
+  }, [beddingMaterialMode, categoryProducts, colorOf]);
+
+  // landing 风格 bento 卡：≥4 款的风格才出卡（bohemian 等孤款不出）；
+  // 卡图 = 权重最高（优先有场景图）产品的 featuredImage > Shopify 首图 > 本地首图
+  const beddingStyleCards = useMemo(() => {
+    if (!beddingMaterialMode) return [];
+    const inStock = sortByWeight(categoryProducts.filter(isInStock));
+    return STYLE_DISPLAY_RULES.map((rule) => {
+      const products = inStock.filter((p) => styleKeyOf(p) === rule.key);
+      if (products.length < 4) return null;
+      const first = products.find((p) => p.featuredImage) || products[0];
+      return {
+        key: rule.key,
+        label: rule.label,
+        count: products.length,
+        blurb: STYLE_BLURBS[rule.key] || '',
+        image: spotlightImage(first).url,
+      };
+    }).filter((c): c is NonNullable<typeof c> => c !== null);
+  }, [beddingMaterialMode, categoryProducts, styleKeyOf]);
+
+  // landing 新品：createdAt 倒序前 10（与 /new-arrivals 页同一机制，限 bedding 类目）
+  const beddingNewest = useMemo(() => {
+    if (!beddingMaterialMode) return [];
+    const createdOf = (p: MakimooProduct) => SHOPIFY_MAP[p.asin.toLowerCase()]?.createdAt ?? '';
+    return [...categoryProducts.filter(isInStock)]
+      .sort((a, b) => createdOf(b).localeCompare(createdOf(a)))
+      .slice(0, 10);
+  }, [beddingMaterialMode, categoryProducts]);
+
+  // 是否处于 landing 默认视图：bedding 类目 + 无任何筛选/分组/排序激活
+  const isLanding =
+    beddingMaterialMode && !isSearching && !activeSub && !colorSel &&
+    materialSel.length === 0 && sortBy === 'featured';
+
   // 统一写 URL（分类 + 风格 + 筛选 + 排序，可分享；q 参数原样保留）。
   // 进入/退出风格分组用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
   const writeUrl = (b: FilterBundle, push = false) => {
@@ -226,6 +322,7 @@ export default function V2ProductsPage() {
     const set = (k: string, v: string) => (v ? url.searchParams.set(k, v) : url.searchParams.delete(k));
     set('cat', b.cat);
     set('sub', b.sub);
+    set('color', b.color);
     set('material', b.material.join(','));
     set('sort', b.sort === 'featured' ? '' : b.sort);
     if (push) window.history.pushState(null, '', url.toString());
@@ -237,12 +334,14 @@ export default function V2ProductsPage() {
     const b: FilterBundle = {
       cat: activeCategory,
       sub: activeSub,
+      color: colorSel,
       material: materialSel,
       sort: sortBy,
       ...over,
     };
     if (over.cat !== undefined) setActiveCategory(over.cat);
     if (over.sub !== undefined) setActiveSub(over.sub);
+    if (over.color !== undefined) setColorSel(over.color);
     if (over.material) setMaterialSel(over.material);
     if (over.sort) setSortBy(over.sort);
     setVisibleCount(PAGE_SIZE);
@@ -254,6 +353,7 @@ export default function V2ProductsPage() {
     const onPop = () => {
       setActiveCategory(readUrlParam('cat'));
       setActiveSub(readUrlParam('sub'));
+      setColorSel(readUrlParam('color'));
       setMaterialSel(readUrlList('material'));
       const s = readUrlParam('sort') as SortKey;
       setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
@@ -268,12 +368,12 @@ export default function V2ProductsPage() {
     setFilter({ sub: activeSub === key ? '' : key });
   };
 
-  // 清空筛选（回到全类目、清材质与排序）
+  // 清空筛选（回到全类目、清色系/材质与排序，即回 landing）
   const clearFilters = () => {
-    setFilter({ sub: '', material: [], sort: 'featured' });
+    setFilter({ sub: '', color: '', material: [], sort: 'featured' });
   };
 
-  const activeFilterCount = materialSel.length + (activeSub ? 1 : 0);
+  const activeFilterCount = materialSel.length + (activeSub ? 1 : 0) + (colorSel ? 1 : 0);
 
   // 当前筛选结果：类目 + 分组 → 搜索 → 第二组筛选
   // （启用第二组筛选时，没有对应数据的产品不显示；搜索时不生效，与旧页一致。bedding 按风格筛选，其余类目按材质）
@@ -315,44 +415,39 @@ export default function V2ProductsPage() {
   }, [hasMore, sortedFiltered.length]);
 
   // 分区视图：类目默认视图（无搜索/无分组筛选/无第二组筛选/默认排序）且产品足够多时，
-  // 按分组分区展示（与 Collections 筛选同一分组口径：默认风格，bedding 材质），避免长网格单调、信息效率递减；
-  // 分区内产品按 catalogue 权重分排序（pin 置顶/缺货沉底/excluded 排除，与子分类页 featured 排序同一口径）
+  // 按风格分区展示（与 Collections 筛选同一分组口径），避免长网格单调、信息效率递减；
+  // 分区内产品按 catalogue 权重分排序（pin 置顶/缺货沉底/excluded 排除，与子分类页 featured 排序同一口径）。
+  // bedding 默认视图已由 V2BeddingLanding 聚合页取代（2026-09 重构），不再出分区；色系视图直接进网格
   const sections = useMemo(() => {
-    if (!activeCategory || isSearching || activeSub || materialSel.length > 0 || sortBy !== 'featured') {
+    if (!activeCategory || isSearching || activeSub || colorSel || beddingMaterialMode || materialSel.length > 0 || sortBy !== 'featured') {
       return [];
     }
-    const grouped = beddingMaterialMode
-      ? collectionOptions
-          .map((o) => ({
-            def: { key: o.key, label: o.label },
-            products: sortByWeight(categoryProducts.filter((p) => rawMaterialsOf(p.asin).includes(o.key))),
-          }))
-          .filter((s) => s.products.length > 0)
-      : STYLE_DISPLAY_RULES.map((rule) => ({
-          def: { key: rule.key, label: rule.label },
-          products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
-        })).filter((s) => s.products.length > 0);
+    const grouped = STYLE_DISPLAY_RULES.map((rule) => ({
+      def: { key: rule.key, label: rule.label },
+      products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
+    })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
     return grouped.length >= 2 && total >= 4 ? grouped : [];
-  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts, beddingMaterialMode, collectionOptions, styleKeyOf]);
+  }, [activeCategory, isSearching, activeSub, colorSel, beddingMaterialMode, materialSel, sortBy, categoryProducts, styleKeyOf]);
 
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
 
-  // 分组名：默认查风格规则；bedding 的 sub 是材质名，直接展示
+  // 分组名：默认查风格规则；bedding 的 sub 是材质名，直接展示；色系视图查 COLOR_RULES
   const subDef = activeSub
     ? beddingMaterialMode
       ? { key: activeSub, label: activeSub }
       : STYLE_RULES.find((r) => r.key === activeSub)
     : undefined;
+  const colorDef = colorSel ? COLOR_RULES.find((c) => c.key === colorSel) : undefined;
   const pageTitle = isSearching
     ? 'Search Results'
-    : subDef?.label || categoryDef?.label || 'Shop All';
+    : subDef?.label || colorDef?.label || categoryDef?.label || 'Shop All';
 
   // 产品卡详情链接：v2 页面内保持 /v2 前缀
   const cardHref = (p: MakimooProduct) => v2url(`/products/${p.handle}/`);
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !isLanding && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
@@ -361,11 +456,11 @@ export default function V2ProductsPage() {
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
         <span className="mx-1.5">/</span>
-        {activeSub && subDef && categoryDef ? (
+        {(activeSub || colorSel) && (subDef || colorDef) && categoryDef ? (
           <>
             <a href={v2url(`/products/?cat=${activeCategory}`)} className="hover:text-[#8B5A2B] transition-colors">{categoryDef.label}</a>
             <span className="mx-1.5">/</span>
-            <span className="text-[#555]">{subDef.label}</span>
+            <span className="text-[#555]">{subDef?.label || colorDef?.label}</span>
           </>
         ) : (
           <span className="text-[#555]">{pageTitle}</span>
@@ -376,8 +471,10 @@ export default function V2ProductsPage() {
           {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
           <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
         </div>
-        {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定） */}
-        {mounted && (
+        {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定）。
+            landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
+            老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入） */}
+        {mounted && !isLanding && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -386,6 +483,7 @@ export default function V2ProductsPage() {
               aria-label="Sort products"
             >
               <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
               <option value="price-asc">Price: Low to High</option>
               <option value="price-desc">Price: High to Low</option>
             </select>
@@ -468,6 +566,15 @@ export default function V2ProductsPage() {
             </div>
           ))}
         </div>
+      ) : isLanding ? (
+        /* bedding 默认落地视图：Color / Style / New Arrivals 聚合页（2026-09 重构，替代原材质分区网格） */
+        <V2BeddingLanding
+          categoryKey={activeCategory.toLowerCase()}
+          textures={beddingTextureCards}
+          colorGroups={beddingColorGroups}
+          styleCards={beddingStyleCards}
+          newest={beddingNewest}
+        />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -490,10 +597,6 @@ export default function V2ProductsPage() {
               <section key={def.key}>
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
-                  {/* bedding 材质分区：标题下一句话材质描述（小字灰）；风格分区无描述 */}
-                  {beddingMaterialMode && MATERIAL_BLURBS[def.label] && (
-                    <p className="mt-1 text-xs lg:text-sm text-[#999]">{MATERIAL_BLURBS[def.label]}</p>
-                  )}
                 </div>
                 {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
@@ -539,10 +642,10 @@ export default function V2ProductsPage() {
       ) : (
         /* 类目视图 / 搜索视图：完整网格 + 排序 + 分批加载 */
         <>
-          {/* 风格分组视图：返回分区视图的链接（浏览器后退同样可用） */}
-          {activeSub && !isSearching && (
+          {/* 分组/色系视图：返回类目默认视图的链接（浏览器后退同样可用） */}
+          {(activeSub || colorSel) && !isSearching && (
             <button
-              onClick={() => setFilter({ sub: '' })}
+              onClick={() => setFilter({ sub: '', color: '' })}
               className="mb-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#8B5A2B] hover:underline underline-offset-4"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -634,7 +737,7 @@ export default function V2ProductsPage() {
           {/* Sort（单选） */}
           <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Sort By</p>
           <div className="mb-5">
-            {([['featured', 'Featured'], ['price-asc', 'Price: Low to High'], ['price-desc', 'Price: High to Low']] as [SortKey, string][]).map(([k, l]) => {
+            {([['featured', 'Featured'], ['newest', 'Newest'], ['price-asc', 'Price: Low to High'], ['price-desc', 'Price: High to Low']] as [SortKey, string][]).map(([k, l]) => {
               const active = sortBy === k;
               return (
                 <button key={k} onClick={() => setFilter({ sort: k })} aria-pressed={active} className="flex items-center gap-3 w-full py-2.5 text-left">
