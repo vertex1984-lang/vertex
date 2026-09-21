@@ -574,18 +574,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f1xs7vky', handle: 'set-of-2-high-back-tufted-outdoor-chair-cushion-44-x-21-inch-b0f1xs7vky', color: 'Coffee' },
     ],
   },
-  {
-    id: '1688-730512046265',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-730512046265-C14', handle: 'ancient-greek-mythology-pottery-style-linen-wall-art-with-1688-730512046265-c14', color: 'Greek Figures' },
-    { asin: '1688-730512046265-C15', handle: 'african-ethnic-decorative-burlap-framed-wall-art-featuring-1688-730512046265-c15', color: 'Round Basket Weave' },
-    { asin: '1688-730512046265-C16', handle: 'ethnic-burlap-wall-art-decorative-painting-for-hotel-1688-730512046265-c16', color: 'Tribal Circles' },
-    { asin: '1688-730512046265-C17', handle: 'ethnic-linen-framed-wall-art-greek-figure-motif-vintage-1688-730512046265-c17', color: 'Red-Figure Greek' },
-    { asin: '1688-730512046265-C18', handle: 'square-african-style-woven-fabric-wall-art-with-solid-wood-1688-730512046265-c18', color: 'Woven Basket' },
-    { asin: '1688-730512046265-C19', handle: 'african-style-woven-basket-motif-linen-wall-art-with-solid-1688-730512046265-c19', color: 'Basket Motif' },
-    ],
-  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();

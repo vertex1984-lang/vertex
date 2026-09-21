@@ -68,7 +68,6 @@ export const BASE_COLOR_RULES: ColorRule[] = [
  * 由用户看图确认后填入；分析脚本 scripts/ 会列出缺颜色的产品。
  */
 export const COLOR_OVERRIDES: Record<string, string> = {
-  "1688-1052742241013-c9": 'teal', // Teal 未命中内置词，看图定
   b0d9lh1y55: 'yellow', // 黄铜研磨器，金色（看图定）
   b0bbzsgdbq: 'red',
   b0bbzw4lzr: 'red',

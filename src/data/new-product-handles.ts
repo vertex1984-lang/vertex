@@ -303,18 +303,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33m24l3',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c6h5xzmz',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0cxdzf2wq',
-  'african-ethnic-decorative-burlap-framed-wall-art-featuring-1688-730512046265-c15',
-  'african-style-woven-basket-motif-linen-wall-art-with-solid-1688-730512046265-c19',
-  'ancient-greek-mythology-pottery-style-linen-wall-art-with-1688-730512046265-c14',
-  'ethnic-burlap-wall-art-decorative-painting-for-hotel-1688-730512046265-c16',
-  'ethnic-linen-framed-wall-art-greek-figure-motif-vintage-1688-730512046265-c17',
-  'square-african-style-woven-fabric-wall-art-with-solid-wood-1688-730512046265-c18',
-  'vintage-bohemian-persian-boho-chic-area-rug-soft-faux-1688-1052742241013-c10',
-  'vintage-boho-persian-area-rug-faux-cashmere-non-slip-1688-1052742241013-c11',
-  'vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-1688-1052742241013-c7',
-  'vintage-persian-area-rug-faux-cashmere-boho-non-slip-1688-1052742241013-c8',
-  'vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-1688-1052742241013-c9',
-  'vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1688-1052742241013-c12',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);
