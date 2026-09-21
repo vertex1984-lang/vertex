@@ -8,8 +8,12 @@ const path = require('path');
 
 const SITE = 'https://www.makimoohome.com';
 
+// 基础目录 + 素材库目录都收进 sitemap（此前只读 products.ts，241 个素材库商品 PDP 漏收）
 const productsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf8');
-const handles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
+const baseHandles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
+const materialsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products-materials.ts'), 'utf8');
+const materialHandles = [...materialsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
+const handles = [...new Set([...baseHandles, ...materialHandles])];
 
 // Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）
 const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');
