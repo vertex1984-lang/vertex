@@ -85,26 +85,7 @@ export default function BestSellersPage() {
           </div>
         </section>
       ))}
-
-      {/* 深色 CTA 带 */}
-      <section className="bg-charcoal text-cream py-16 lg:py-20">
-        <Reveal>
-          <div className="px-6 lg:px-10 text-center">
-            <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight mb-4">
-              Loved by Thousands, Returned by Few
-            </h2>
-            <p className="text-cream/70 text-base max-w-xl mx-auto mb-8">
-              Every best seller ships free over $49 — with 30 days to make sure it earns its place.
-            </p>
-            <a
-              href={v2url('/products/')}
-              className="inline-block px-9 py-3.5 rounded-full bg-cream text-charcoal text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
-            >
-              Shop All Products
-            </a>
-          </div>
-        </Reveal>
-      </section>
+      {/* 底部深色 CTA 带（Loved by Thousands）已按用户要求移除（2026-09） */}
     </>
   );
 }

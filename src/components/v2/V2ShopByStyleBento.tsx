@@ -21,7 +21,7 @@ export default function V2ShopByStyleBento() {
   const rest = cards.filter((c) => c.key !== hero.key);
 
   return (
-    <section className="bg-off-white pt-8 lg:pt-12 pb-16 lg:pb-24">
+    <section className="bg-off-white pt-8 lg:pt-12 pb-10 lg:pb-24">
       <Reveal>
         <div className="px-3 lg:px-10">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Find Your Look</p>

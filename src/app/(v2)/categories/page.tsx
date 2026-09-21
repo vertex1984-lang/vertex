@@ -58,9 +58,6 @@ export default function V2CategoriesPage() {
                         <h2 className="text-2xl lg:text-3xl font-bold text-cream tracking-wide">
                           {cat.label}
                         </h2>
-                        <p className="mt-1 text-xs font-medium tracking-widest uppercase text-cream/70">
-                          {cat.count} Product{cat.count === 1 ? '' : 's'}
-                        </p>
                       </div>
                       <span className="inline-flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-cream/80 transition-colors group-hover:text-cream flex-shrink-0">
                         View All

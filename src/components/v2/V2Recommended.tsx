@@ -117,7 +117,7 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
   if (products.length === 0) return null;
 
   return (
-    <section className="pt-16 lg:pt-24 pb-16 lg:pb-24">
+    <section className="pt-6 lg:pt-24 pb-16 lg:pb-24">
       <Reveal>
         <div className="px-6 lg:px-10 mb-10 lg:mb-12">
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">

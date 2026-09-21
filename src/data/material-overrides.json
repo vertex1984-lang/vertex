@@ -1,6 +1,11 @@
 {
   "materials": [
-    "Faux Fur"
+    "Faux Fur",
+    "Washed Cotton-Like",
+    "100% Linen",
+    "Silk-Modal",
+    "Sateen",
+    "Linen-Like"
   ],
   "assignments": {
     "1688-1038477616596-c2": [
@@ -46,16 +51,16 @@
       "Polyester"
     ],
     "1688-916370884976-c5": [
-      "Microfiber"
+      "Washed Cotton-Like"
     ],
     "1688-916370884976-c6": [
-      "Microfiber"
+      "Washed Cotton-Like"
     ],
     "1688-916370884976-c7": [
-      "Microfiber"
+      "Washed Cotton-Like"
     ],
     "1688-916370884976-c8": [
-      "Microfiber"
+      "Washed Cotton-Like"
     ],
     "1688-969627065032-c21": [
       "Faux Fur"
@@ -360,14 +365,209 @@
     "b0h4v662hl": [
       "Microfiber"
     ],
+    "bedset4-beige-full": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-beige-king": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-beige-queen": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-beige-twin": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-blue-full": [
+      "Linen-Like"
+    ],
+    "bedset4-blue-king": [
+      "Linen-Like"
+    ],
+    "bedset4-blue-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-blue-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-coffee-full": [
+      "Linen-Like"
+    ],
+    "bedset4-coffee-king": [
+      "Linen-Like"
+    ],
+    "bedset4-coffee-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-coffee-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-gray-full": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-gray-king": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-gray-queen": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-gray-twin": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-lilac-full": [
+      "Linen-Like"
+    ],
+    "bedset4-lilac-king": [
+      "Linen-Like"
+    ],
+    "bedset4-lilac-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-lilac-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-mauve-full": [
+      "Linen-Like"
+    ],
+    "bedset4-mauve-king": [
+      "Linen-Like"
+    ],
+    "bedset4-mauve-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-mauve-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-moss-full": [
+      "Linen-Like"
+    ],
+    "bedset4-moss-king": [
+      "Linen-Like"
+    ],
+    "bedset4-moss-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-moss-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-pink-full": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-pink-king": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-pink-queen": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-pink-twin": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-plaid-full": [
+      "Linen-Like"
+    ],
+    "bedset4-plaid-king": [
+      "Linen-Like"
+    ],
+    "bedset4-plaid-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-plaid-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-sage-full": [
+      "Linen-Like"
+    ],
+    "bedset4-sage-king": [
+      "Linen-Like"
+    ],
+    "bedset4-sage-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-sage-twin": [
+      "Linen-Like"
+    ],
     "bedset4-slate-full": [
-      "Microfiber"
+      "Linen-Like"
+    ],
+    "bedset4-slate-king": [
+      "Linen-Like"
     ],
     "bedset4-slate-queen": [
-      "Microfiber"
+      "Linen-Like"
     ],
     "bedset4-slate-twin": [
-      "Microfiber"
+      "Linen-Like"
+    ],
+    "bedset4-tan-full": [
+      "Linen-Like"
+    ],
+    "bedset4-tan-king": [
+      "Linen-Like"
+    ],
+    "bedset4-tan-queen": [
+      "Linen-Like"
+    ],
+    "bedset4-tan-twin": [
+      "Linen-Like"
+    ],
+    "bedset4-white-full": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-white-king": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-white-queen": [
+      "Washed Cotton-Like"
+    ],
+    "bedset4-white-twin": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-beige-full": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-beige-king": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-beige-queen": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-beige-twin": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-gray-full": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-gray-king": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-gray-queen": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-gray-twin": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-pink-full": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-pink-king": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-pink-queen": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-pink-twin": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-white-full": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-white-king": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-white-queen": [
+      "Washed Cotton-Like"
+    ],
+    "duvset-white-twin": [
+      "Washed Cotton-Like"
     ]
   }
 }

@@ -69,12 +69,31 @@ export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {
   return SUBCATEGORIES.filter((s) => s.parent === categoryValue.toLowerCase());
 }
 
+/** Bedding 材质分组的展示顺序（2026-09 用户定）：类目页分区/Filter/顶部导航 mega menu 三处统一。
+ *  未收录的材质排在后面（按产品数降序兜底） */
+export const BEDDING_MATERIAL_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like'];
+
+/** 材质分组排序：先按 BEDDING_MATERIAL_ORDER 固定位次，未收录的按数量降序排在尾部 */
+export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [string, T]) => number): [string, T][] {
+  return [...entries].sort((a, b) => {
+    const ia = BEDDING_MATERIAL_ORDER.indexOf(a[0]);
+    const ib = BEDDING_MATERIAL_ORDER.indexOf(b[0]);
+    if (ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    return countOf(b) - countOf(a);
+  });
+}
+
 export function getSubcategoryDef(key: string): SubcategoryDef | undefined {
   return SUBCATEGORIES.find((s) => s.key === key);
 }
 
-/** 产品卡的分类标签：有二级分类用短标签，否则用顶级分类名 */
-export function productCategoryTag(p: { productType: string; subcategory?: string }): string {
+/** 产品卡的分类标签：Bedding 统一显示材质（原始字符串，不去 "100% " 前缀，与 Collections 材质分组口径一致，
+ *  2026-09 用户定）；其他类目有二级分类用短标签，否则用顶级分类名 */
+export function productCategoryTag(p: { productType: string; subcategory?: string; asin?: string }): string {
+  if (p.productType.toLowerCase() === 'bedding' && p.asin) {
+    const material = getProductSpecs(p.asin)?.material;
+    if (material) return material;
+  }
   const sub = p.subcategory ? getSubcategoryDef(p.subcategory) : undefined;
   return sub?.shortLabel || p.productType || 'Product';
 }

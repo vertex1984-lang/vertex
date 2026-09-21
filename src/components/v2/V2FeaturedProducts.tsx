@@ -1,4 +1,5 @@
 import Reveal from '@/components/Reveal';
+import DragScroll from '@/components/v2/DragScroll';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -47,7 +48,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
   const rest = products.slice(2, 8);
 
   return (
-    <section className="pt-4 lg:pt-6 pb-16 lg:pb-24">
+    <section className="pt-8 lg:pt-12 pb-16 lg:pb-24">
       {/* 标题行：仅 eyebrow + 标题（副标题与 View All 链接已按用户要求移除，2026-09） */}
       <Reveal>
         <div className="max-w-[1800px] mx-auto px-6 lg:px-10 mb-8 lg:mb-12">
@@ -60,16 +61,16 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
         </div>
       </Reveal>
 
-      {/* 移动端：Best Sellers 同款横向滚动条，8 张卡统一大小（桌面端隐藏） */}
+      {/* 移动端（含窄桌面窗口）：Best Sellers 同款横向滚动条，8 张卡统一大小；支持鼠标拖拽滚动（DragScroll） */}
       <Reveal>
         <div className="lg:hidden pl-6">
-          <div className="flex gap-5 overflow-x-auto pb-2 pr-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <DragScroll className="flex gap-5 overflow-x-auto pb-2 pr-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {products.slice(0, 8).map((product) => (
               <div key={product.id} className="w-[56vw] sm:w-[42vw] flex-shrink-0 snap-start">
                 <V2ProductCard product={product} />
               </div>
             ))}
-          </div>
+          </DragScroll>
         </div>
       </Reveal>
 
