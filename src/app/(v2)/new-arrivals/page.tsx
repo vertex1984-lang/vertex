@@ -3,6 +3,7 @@ import ProductCard from '@/components/ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
+import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 
 export const metadata: Metadata = {
   title: 'New Arrivals',
@@ -10,15 +11,18 @@ export const metadata: Metadata = {
     'Just landed at Makimoo — the 20 newest pieces added to the collection.',
 };
 
-// 最新上架：按 Shopify 产品创建时间倒序取前 20，不区分类目、平铺展示
-const newArrivals = enrichProductsWithShopifyData(PRODUCTS_DATA)
-  .filter((p) => p.hasShopifyData && p.shopifyAvailable)
-  .sort((a, b) => {
-    const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
-    const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
-    return tb.localeCompare(ta);
-  })
-  .slice(0, 20);
+// 最新上架：按 Shopify 产品创建时间倒序，变体族同色去重（同色最新上架者为代表，prefer 'order'
+// 保持时间序取首个）后取前 20，不区分类目、平铺展示
+const newArrivals = dedupeFamilyColors(
+  enrichProductsWithShopifyData(PRODUCTS_DATA)
+    .filter((p) => p.hasShopifyData && p.shopifyAvailable)
+    .sort((a, b) => {
+      const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
+      const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
+      return tb.localeCompare(ta);
+    }),
+  'order'
+).slice(0, 20);
 
 /**
  * New Arrivals 独立页：浅色面包屑页头 + 白底 ProductCard 平铺网格（样式同 /products 类目页），

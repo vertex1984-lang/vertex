@@ -5,6 +5,7 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, getSubcategoriesOf } from '@/data/subcategories';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
+import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 
 export const metadata: Metadata = {
   title: 'Shop by Category | Makimoo',
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 export default function V2CategoriesPage() {
-  const allProducts = enrichProductsWithShopifyData(PRODUCTS_DATA);
+  // 变体族同色去重后的口径：类目计数/子分类 chips 反映买家实际可见的卡数（2026-09 用户定）
+  const allProducts = dedupeFamilyColors(enrichProductsWithShopifyData(PRODUCTS_DATA));
 
   // 与 (classic) 分类页相同的归组逻辑：顶级分类 + 有产品的二级分类
   const sections = CATEGORY_DEFS.map((cat) => {

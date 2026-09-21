@@ -7,9 +7,7 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/
 import { CATEGORY_DEFS } from '@/data/subcategories';
 import { NO_TAG_TYPES } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
-import PRODUCT_TAGS_JSON from '@/data/product-tags.json';
-
-const PRODUCT_TAGS = PRODUCT_TAGS_JSON as Record<string, { color: string | null }>;
+import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 
 // Featured：类目配额制（2026-09 用户定），共 8 个卡位：
 // 1. 类目权重 = 该类目在售产品数 / 总在售产品数（Others 不参与），配额 = 份额 × 8 四舍五入，
@@ -19,8 +17,11 @@ const PRODUCT_TAGS = PRODUCT_TAGS_JSON as Record<string, { color: string | null 
 export const FEATURED_COUNT = 8;
 
 export function getFeaturedProducts(): MakimooProduct[] {
-  const pool = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-    (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
+  // 变体族同色去重后再算类目配额：同一颜色只占一个卡位，配额份额反映买家可见的真实款数（2026-09 用户定）
+  const pool = dedupeFamilyColors(
+    enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+      (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
+    )
   );
   const byType: Record<string, MakimooProduct[]> = {};
   for (const p of pool) (byType[p.productType] ||= []).push(p);
@@ -87,9 +88,11 @@ export function getBestSellerProducts(): MakimooProduct[] {
   const featured = getFeaturedProducts();
   const featuredIds = new Set(featured.map((p) => p.id));
   const seenTitles = new Set(featured.map((p) => titleKey(p.title)));
-  const pool = enrichProductsWithShopifyData(PRODUCTS_DATA)
-    .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
-    .filter((p) => !featuredIds.has(p.id));
+  const pool = dedupeFamilyColors(
+    enrichProductsWithShopifyData(PRODUCTS_DATA)
+      .filter((p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType))
+      .filter((p) => !featuredIds.has(p.id))
+  );
   // 先按权重排序，再去重取前 15：同标题保留权重最高的一款
   return sortByWeight(pool)
     .filter((p) => {
@@ -125,17 +128,16 @@ export function getBestSellersByCategory(): BestSellerSection[] {
   const seenKeys = new Set<string>();
   return BEST_SELLER_CATS.map((cat) => {
     const def = CATEGORY_DEFS.find((d) => d.value === cat);
-    const products = sortByWeight(
-      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-        (p) => p.hasShopifyData && p.shopifyAvailable && p.productType.toLowerCase() === cat
+    const products = dedupeFamilyColors(
+      sortByWeight(
+        enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+          (p) => p.hasShopifyData && p.shopifyAvailable && p.productType.toLowerCase() === cat
+        )
       )
     )
       .filter((p) => {
-        // Blankets 是同品多色（标题几乎一致），按色系去重保证 4 张卡不同色族；其余类目按标题去重
-        const key =
-          p.productType === 'Blankets'
-            ? `blanket-${PRODUCT_TAGS[p.asin.toLowerCase()]?.color ?? titleKey(p.title)}`
-            : titleKey(p.title);
+        // 变体族同色去重已由 dedupeFamilyColors 完成（含原 Blankets 色系特判）；此处按标题兜底去重非家族同名款
+        const key = titleKey(p.title);
         if (seenKeys.has(key)) return false;
         seenKeys.add(key);
         return true;

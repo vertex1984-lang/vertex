@@ -11,6 +11,7 @@ import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
+import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -137,8 +138,9 @@ export default function V2ProductsPage() {
     }
   }, []);
 
-  // 全部产品（含 Shopify 价格/库存、素材库标题/图片覆盖）
-  const allProducts = useMemo(() => enrichProductsWithShopifyData(PRODUCTS_DATA), []);
+  // 全部产品（含 Shopify 价格/库存、素材库标题/图片覆盖）。
+  // 变体族同色去重：同族同色只保留一张卡（不同颜色各自保留一个入口），计数/筛选/分区/网格同步该口径（2026-09 用户定）
+  const allProducts = useMemo(() => dedupeFamilyColors(enrichProductsWithShopifyData(PRODUCTS_DATA)), []);
 
   // 产品 → 风格 key（与首页 Shop by Style 同一规则：完整标题（素材库覆盖后、精简前）+ productType 现算）。
   // Collections 筛选/分区视图/URL sub 参数统一按风格分组（2026-09 用户定，替代原二级分类分组）
