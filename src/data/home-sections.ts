@@ -16,6 +16,7 @@ import {
   NO_TAG_TYPES,
 } from '@/data/product-tags';
 import { sortByWeight } from '@/lib/weights';
+import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { getBestSellerProducts } from '@/data/featured-sections';
 import type { V2CardProduct } from '@/components/v2/V2ProductCard';
 import PRODUCT_TAGS from '@/data/product-tags.json';
@@ -81,6 +82,7 @@ export interface ShopByColorData {
 }
 
 // Shop by Color：有 ≥1 款在售产品的色系按 COLOR_RULES 顺序展示，每色系按权重取前 MAX_PER_COLOR。
+// 色系内先做变体族同色去重（同族同色的不同尺寸只占一个卡位，2026-09 用户定与列表页同步）。
 // 卡片类目标签位统一显示场景名（tagLabel）：色系区内产品类目各异（Bedding/Microfiber…），
 // 显示场景标签（Bedroom/Living Room…）口径统一；无场景标签的产品回退到子类目/productType
 export function getShopByColorData(): ShopByColorData {
@@ -94,9 +96,9 @@ export function getShopByColorData(): ShopByColorData {
   const colors = COLOR_RULES.filter((rule) => tagged.some((t) => t.color === rule.key));
   const productsByColor: Record<string, V2CardProduct[]> = {};
   for (const rule of colors) {
-    productsByColor[rule.key] = sortByWeight(
+    productsByColor[rule.key] = dedupeFamilyColors(sortByWeight(
       tagged.filter((t) => t.color === rule.key).map((t) => t.product)
-    )
+    ))
       .slice(0, MAX_PER_COLOR)
       .map((p) => {
         const card = toCardProduct(p);
@@ -121,24 +123,24 @@ export interface ShopBySceneData {
   scenes: SceneOption[];
 }
 
-// Shop by Scene：有 ≥MIN_PRODUCTS 款在售产品（按标题去重后）的场景按 SCENE_RULES 顺序展示，
-// 场景内按权重排序（去重保留权重最高的一款），取前 MAX_PER_SCENE。
+// Shop by Scene：有 ≥MIN_PRODUCTS 款在售产品（变体族同色去重 + 按标题兜底去重后）的场景按
+// SCENE_RULES 顺序展示，场景内按权重排序并做家族聚拢（同族色卡相邻），取前 MAX_PER_SCENE。
 // 卡片类目标签位统一显示一级类目 productType（tagLabel）：productCategoryTag 对设置了二级类目
 // 的产品会显示 Microfiber 等 shortLabel，同一区内 Bedding/Microfiber 混排观感不统一（2026-09 用户定）
 export function getShopBySceneData(): ShopBySceneData {
   const tagged = taggedInStock();
   const scenes = SCENE_RULES.map((rule) => {
     const seen = new Set<string>();
-    const products = sortByWeight(
-      tagged.filter((t) => t.scene === rule.key).map((t) => t.product)
-    )
-      .filter((p) => {
+    const products = clusterFamilies(
+      dedupeFamilyColors(sortByWeight(
+        tagged.filter((t) => t.scene === rule.key).map((t) => t.product)
+      )).filter((p) => {
         const key = titleKey(p.title);
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
       })
-      .slice(0, MAX_PER_SCENE);
+    ).slice(0, MAX_PER_SCENE);
     return { rule, products };
   }).filter((s) => s.products.length >= MIN_PRODUCTS);
   return {
