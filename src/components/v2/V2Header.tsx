@@ -9,12 +9,9 @@ import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
-// 首项 Featured 只作弹窗入口（href 空 = 菜单标题/移动端主项不跳转）；
-// 弹窗子项指向两个独立精选页 /best-sellers、/new-arrivals
-//（/featured-products 已隐藏并移除导航入口，2026-09 用户要求），
-// 原 /featured 汇总页保留但全站无入口
+// Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
+// 两个精选页保留（首页 View More 等入口进入），原 /featured 汇总页保留但全站无入口
 const navLinks = [
-  { label: 'Featured', href: '', cat: 'featured' },
   { label: 'Bedding', href: '/products?cat=bedding', cat: 'bedding' },
   { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
   { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
@@ -26,13 +23,7 @@ const navLinks = [
   // Blog 不放在顶部导航（2026-09 用户要求），仅保留底部 footer 入口
 ];
 
-// Featured 弹窗的左侧子项：两个独立精选页（Featured Products 项已随页面隐藏移除）
-const FEATURED_SUBS = [
-  { label: 'Best Sellers', href: '/best-sellers' },
-  { label: 'New Arrivals', href: '/new-arrivals' },
-];
-
-// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图；Featured 为 2 张对应两个模块）
+// Mega menu 右侧示例图卡（每类 1-2 张：collections 分类图 + featured 场景图）
 interface MenuCard {
   image: string;
   caption: string;
@@ -40,13 +31,9 @@ interface MenuCard {
   href: string;
 }
 const MEGA_CARDS: Record<string, MenuCard[]> = {
-  featured: [
-    { image: '/images/featured/b0cbt7r7nn.webp', caption: 'Customer Favorites', linkLabel: 'Best Sellers', href: '/best-sellers' },
-    { image: '/images/products/B0F1XFWZVY/1.webp', caption: 'Just Landed', linkLabel: 'New Arrivals', href: '/new-arrivals' },
-  ],
   bedding: [
-    { image: '/images/collections/bedding.webp', caption: 'Soft, breathable bedding sets.', linkLabel: 'Shop Bedding', href: '/products?cat=bedding' },
-    { image: '/images/featured/bedset4-beige-full.webp', caption: 'All-season comfort, easy care.', linkLabel: 'Shop Duvet Sets', href: '/products?cat=bedding' },
+    { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/products?cat=bedding&sub=100%25%20Linen' },
+    { image: '/images/products/1688-916370884976-C5/1.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/products?cat=bedding&sub=Washed%20Cotton-Like' },
   ],
   blankets: [
     { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
@@ -260,22 +247,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                   openMenu && openMenu === link.cat ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
               );
-              // Featured 没有落地页（href 为空）：用 button 只切换 mega menu，
-              // 避免空 href 的 <a> 在中键点击/无 JS 时刷新当前页
-              if (!link.href) {
-                return (
-                  <button
-                    key={link.label}
-                    type="button"
-                    onClick={() => setOpenMenu((prev) => (prev === link.cat ? '' : link.cat))}
-                    aria-expanded={openMenu === link.cat}
-                    className={navCls}
-                  >
-                    {link.label}
-                    {underline}
-                  </button>
-                );
-              }
               return (
                 <a
                   key={link.href}
@@ -446,7 +417,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             style={{ animation: 'fadeIn 0.18s ease-out' }}
           >
             <div className="px-6 lg:px-10 py-9 flex gap-14 justify-center">
-              {/* 左：分类总链接 + 二级类目列表（Featured 无汇总页入口，标题为纯文字） */}
+              {/* 左：分类总链接 + 二级类目列表 */}
               <div className="flex-shrink-0 w-56">
                 {(() => {
                   const current = navLinks.find((l) => l.cat === openMenu);
@@ -467,26 +438,15 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                   );
                 })()}
                 <div className="flex flex-col gap-3.5">
-                  {openMenu === 'featured'
-                    ? FEATURED_SUBS.map((sub) => (
-                        <a
-                          key={sub.href}
-                          href={v2url(sub.href)}
-                          onClick={() => setOpenMenu('')}
-                          className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
-                        >
-                          {sub.label}
-                        </a>
-                      ))
-                    : (catStyles[openMenu] || []).map((sub) => (
-                        <a
-                          key={sub.key}
-                          href={v2url(`/products?cat=${openMenu}&sub=${sub.key}`)}
-                          className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
-                        >
-                          {sub.label}
-                        </a>
-                      ))}
+                  {(catStyles[openMenu] || []).map((sub) => (
+                    <a
+                      key={sub.key}
+                      href={v2url(`/products?cat=${openMenu}&sub=${encodeURIComponent(sub.key)}`)}
+                      className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
+                    >
+                      {sub.label}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -562,17 +522,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
               Home
             </a>
             {/* 一级类目整行点击展开/收起该类目风格列表（默认折叠）；展开后首项
-                "Shop All {类目}" 链到类目汇总页（Featured 无汇总页，无此项） */}
+                "Shop All {类目}" 链到类目汇总页 */}
             {navLinks.map((link) => {
               const expanded = expandedCat === link.cat;
-              const subs =
-                link.cat === 'featured'
-                  ? FEATURED_SUBS.map((s) => ({ key: s.href, label: s.label, href: s.href }))
-                  : (catStyles[link.cat] || []).map((s) => ({
-                      key: s.key,
-                      label: s.label,
-                      href: `/products?cat=${link.cat}&sub=${s.key}`,
-                    }));
+              const subs = (catStyles[link.cat] || []).map((s) => ({
+                key: s.key,
+                label: s.label,
+                href: `/products?cat=${link.cat}&sub=${encodeURIComponent(s.key)}`,
+              }));
               return (
                 <div key={link.label}>
                   <button

@@ -39,7 +39,7 @@ export default function V2Hero() {
         </h1>
         <div className="animate-fade-in-up" style={{ animationDelay: '450ms' }}>
           <a
-            href={v2url('/featured-products/scene/bedroom/')}
+            href={v2url('/products/?cat=bedding')}
             className="inline-block px-6 py-2.5 lg:px-7 lg:py-3 rounded-full bg-transparent border-2 border-cream text-cream text-xs lg:text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-cream hover:text-brand hover:shadow-xl"
           >
             Shop Beddings

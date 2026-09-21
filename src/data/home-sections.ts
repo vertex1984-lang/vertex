@@ -37,6 +37,7 @@ const titleKey = (title: string) =>
 export function toCardProduct(p: MakimooProduct): V2CardProduct {
   return {
     id: p.id,
+    asin: p.asin,
     title: p.title,
     handle: p.handle,
     productType: p.productType,

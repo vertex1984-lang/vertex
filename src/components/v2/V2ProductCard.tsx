@@ -5,10 +5,11 @@ import type { MakimooProduct } from '@/data/products';
 
 /** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle。
  *  tagLabel 为可选附加字段：设置后类目标签位显示该值（Shop by Color 传场景名、Shop by Scene 传一级类目），
- *  否则回退到 productCategoryTag（二级类目 shortLabel 优先于 productType） */
+ *  否则回退到 productCategoryTag（Bedding 显示材质；其他类目二级 shortLabel 优先于 productType） */
 export type V2CardProduct = Pick<
   MakimooProduct,
   | 'id'
+  | 'asin'
   | 'title'
   | 'handle'
   | 'productType'
@@ -25,13 +26,18 @@ interface V2ProductCardProps {
   product: V2CardProduct;
 }
 
-/** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明 */
-function shortTitle(title: string): string {
-  return title
+/** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明；
+ *  Bedding 再去掉材质词（与 classic ProductCard 的 displayTitle 同规则——材质已由卡片标签位展示，标题不重复） */
+function shortTitle(title: string, productType?: string): string {
+  let t = title
     .replace(/^Makimoo\s+/i, '')
-    .replace(/\s*\(.*?\)\s*/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+    .replace(/\s*\(.*?\)\s*/g, ' ');
+  if (productType?.toLowerCase() === 'bedding') {
+    t = t
+      .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
+      .replace(/\b100%\s+(microfiber|linen|cotton|polyester|bamboo)\s*/gi, '');
+  }
+  return t.replace(/\s+/g, ' ').trim();
 }
 
 function formatPrice(amount: string, currency: string): string {
@@ -95,7 +101,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
         </p>
         {/* 标题全端单行截断（truncate + 省略号），字号全端统一 text-xs */}
         <h3 className="relative text-xs font-medium text-[#333] leading-snug truncate">
-          {shortTitle(product.title)}
+          {shortTitle(product.title, product.productType)}
           {/* 标题下划线 hover 渐入（v1 同款） */}
           <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
         </h3>

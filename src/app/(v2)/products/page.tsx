@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import ProductCard from '@/components/ProductCard';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { CATEGORY_DEFS } from '@/data/subcategories';
+import { CATEGORY_DEFS, sortBeddingMaterials } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
 import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
@@ -38,6 +38,24 @@ function materialsOf(asin: string): string[] {
   const m = getProductSpecs(asin)?.material;
   return m ? m.split(', ').map((x) => x.replace(/^100%\s+/i, '')) : [];
 }
+
+// 原始材质列表（不做 "100% " 归一化）：bedding 类目按材质分组展示时使用（2026-09 用户定）
+function rawMaterialsOf(asin: string): string[] {
+  const m = getProductSpecs(asin)?.material;
+  return m ? m.split(', ') : [];
+}
+
+// bedding 分区视图：材质标题下的一句话描述（小字，2026-09 用户定）；未收录的材质不显示描述行
+const MATERIAL_BLURBS: Record<string, string> = {
+  'Washed Cotton-Like': 'Soft washed feel with a relaxed, lived-in look — easy everyday care.',
+  'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
+  '100% Linen': 'Pure natural linen — breathable, durable, and softer with every wash.',
+  'Silk-Modal': 'Silky-smooth modal blend with a cool, gentle touch.',
+  'Sateen': 'Smooth sateen weave with a subtle sheen and buttery feel.',
+  Microfiber: 'Brushed microfiber — soft, wrinkle-resistant & easy care.',
+  Bamboo: 'Bamboo-blend fabric — cool, breathable & moisture-wicking.',
+  Linen: 'Natural linen — breathable with a lived-in texture.',
+};
 
 /** 在售优先，缺货沉底；组内保持原顺序 */
 function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
@@ -138,6 +156,10 @@ export default function V2ProductsPage() {
 
   const categoryDef = CATEGORY_DEFS.find((c) => c.value === activeCategory.toLowerCase());
 
+  // bedding 类目特殊规则（2026-09 用户定）：Collections 按材质分组（替代风格分组），
+  // 筛选区第二组由 Material 改为 Style（按风格多选筛选）
+  const beddingMaterialMode = activeCategory.toLowerCase() === 'bedding';
+
   // 当前类目下的产品（不含风格过滤；用于 Collections 计数）
   const categoryProducts = useMemo(() => {
     if (!activeCategory) return [];
@@ -148,27 +170,46 @@ export default function V2ProductsPage() {
     );
   }, [allProducts, activeCategory]);
 
-  // Collections 筛选项：按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致
+  // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
+  // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
   const collectionOptions = useMemo(() => {
     if (!activeCategory) return [];
+    if (beddingMaterialMode) {
+      const counts = new Map<string, number>();
+      for (const p of categoryProducts) {
+        for (const m of rawMaterialsOf(p.asin)) counts.set(m, (counts.get(m) || 0) + 1);
+      }
+      return sortBeddingMaterials(Array.from(counts.entries()), (e) => e[1])
+        .map(([label, count]) => ({ key: label, label, count }));
+    }
     return STYLE_DISPLAY_RULES.map((s) => ({
       key: s.key,
       label: s.label,
       count: categoryProducts.filter((p) => styleKeyOf(p) === s.key).length,
     })).filter((s) => s.count > 0);
-  }, [categoryProducts, activeCategory, styleKeyOf]);
+  }, [categoryProducts, activeCategory, beddingMaterialMode, styleKeyOf]);
 
-  // 筛选作用域：有类目按类目，无类目（V2 裸 /products = Shop All）取全部；再叠风格过滤
+  // 筛选作用域：有类目按类目，无类目（V2 裸 /products = Shop All）取全部；再叠分组过滤
+  // （默认按风格 key；bedding 按材质）
   const scopeProducts = useMemo(() => {
     let list = activeCategory ? categoryProducts : allProducts;
     if (activeSub) {
-      list = list.filter((p) => styleKeyOf(p) === activeSub);
+      list = beddingMaterialMode
+        ? list.filter((p) => rawMaterialsOf(p.asin).includes(activeSub))
+        : list.filter((p) => styleKeyOf(p) === activeSub);
     }
     return list;
-  }, [allProducts, categoryProducts, activeCategory, activeSub, styleKeyOf]);
+  }, [allProducts, categoryProducts, activeCategory, activeSub, beddingMaterialMode, styleKeyOf]);
 
-  // 材质筛选聚合（当前类目 + 风格分组内带产品数）
+  // 第二组筛选项聚合（当前类目 + 分组内带产品数）：默认材质多选；bedding 改为风格（Style）多选
   const materialOptions = useMemo(() => {
+    if (beddingMaterialMode) {
+      return STYLE_DISPLAY_RULES.map((s) => ({
+        key: s.key,
+        label: s.label,
+        count: scopeProducts.filter((p) => styleKeyOf(p) === s.key).length,
+      })).filter((s) => s.count > 0);
+    }
     const counts = new Map<string, number>();
     for (const p of scopeProducts) {
       for (const m of materialsOf(p.asin)) counts.set(m, (counts.get(m) || 0) + 1);
@@ -176,7 +217,7 @@ export default function V2ProductsPage() {
     return Array.from(counts.entries())
       .sort((a, b) => b[1] - a[1])
       .map(([label, count]) => ({ key: label, label, count }));
-  }, [scopeProducts]);
+  }, [scopeProducts, beddingMaterialMode, styleKeyOf]);
 
   // 统一写 URL（分类 + 风格 + 筛选 + 排序，可分享；q 参数原样保留）。
   // 进入/退出风格分组用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
@@ -234,8 +275,8 @@ export default function V2ProductsPage() {
 
   const activeFilterCount = materialSel.length + (activeSub ? 1 : 0);
 
-  // 当前筛选结果：类目 + 风格 → 搜索 → 材质
-  // （启用材质筛选时，没有材质数据的产品不显示；搜索时材质筛选不生效，与旧页一致）
+  // 当前筛选结果：类目 + 分组 → 搜索 → 第二组筛选
+  // （启用第二组筛选时，没有对应数据的产品不显示；搜索时不生效，与旧页一致。bedding 按风格筛选，其余类目按材质）
   const filtered = useMemo(() => {
     let result = scopeProducts;
     if (isSearching) {
@@ -244,13 +285,17 @@ export default function V2ProductsPage() {
         (p) => p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
       );
     } else if (materialSel.length > 0) {
-      result = result.filter((p) => {
-        const mats = materialsOf(p.asin);
-        return mats.length > 0 && materialSel.some((m) => mats.includes(m));
-      });
+      if (beddingMaterialMode) {
+        result = result.filter((p) => materialSel.includes(styleKeyOf(p)));
+      } else {
+        result = result.filter((p) => {
+          const mats = materialsOf(p.asin);
+          return mats.length > 0 && materialSel.some((m) => mats.includes(m));
+        });
+      }
     }
     return result;
-  }, [scopeProducts, searchQuery, isSearching, materialSel]);
+  }, [scopeProducts, searchQuery, isSearching, materialSel, beddingMaterialMode, styleKeyOf]);
 
   const sortedFiltered = useMemo(() => applySort(filtered, sortBy), [filtered, sortBy]);
 
@@ -269,24 +314,36 @@ export default function V2ProductsPage() {
     return () => ob.disconnect();
   }, [hasMore, sortedFiltered.length]);
 
-  // 分区视图：类目默认视图（无搜索/无风格筛选/无材质筛选/默认排序）且产品足够多时，
-  // 按风格分区展示（与 Collections 筛选同一分组口径），避免长网格单调、信息效率递减；
+  // 分区视图：类目默认视图（无搜索/无分组筛选/无第二组筛选/默认排序）且产品足够多时，
+  // 按分组分区展示（与 Collections 筛选同一分组口径：默认风格，bedding 材质），避免长网格单调、信息效率递减；
   // 分区内产品按 catalogue 权重分排序（pin 置顶/缺货沉底/excluded 排除，与子分类页 featured 排序同一口径）
   const sections = useMemo(() => {
     if (!activeCategory || isSearching || activeSub || materialSel.length > 0 || sortBy !== 'featured') {
       return [];
     }
-    const grouped = STYLE_DISPLAY_RULES.map((rule) => ({
-      def: { key: rule.key, label: rule.label },
-      products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
-    })).filter((s) => s.products.length > 0);
+    const grouped = beddingMaterialMode
+      ? collectionOptions
+          .map((o) => ({
+            def: { key: o.key, label: o.label },
+            products: sortByWeight(categoryProducts.filter((p) => rawMaterialsOf(p.asin).includes(o.key))),
+          }))
+          .filter((s) => s.products.length > 0)
+      : STYLE_DISPLAY_RULES.map((rule) => ({
+          def: { key: rule.key, label: rule.label },
+          products: sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key)),
+        })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
     return grouped.length >= 2 && total >= 4 ? grouped : [];
-  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts, styleKeyOf]);
+  }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts, beddingMaterialMode, collectionOptions, styleKeyOf]);
 
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
 
-  const subDef = activeSub ? STYLE_RULES.find((r) => r.key === activeSub) : undefined;
+  // 分组名：默认查风格规则；bedding 的 sub 是材质名，直接展示
+  const subDef = activeSub
+    ? beddingMaterialMode
+      ? { key: activeSub, label: activeSub }
+      : STYLE_RULES.find((r) => r.key === activeSub)
+    : undefined;
   const pageTitle = isSearching
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Shop All';
@@ -314,14 +371,14 @@ export default function V2ProductsPage() {
           <span className="text-[#555]">{pageTitle}</span>
         )}
       </nav>
-      <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
+      <div className="flex items-end justify-between flex-wrap gap-4 mb-4 lg:mb-10">
         <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
+          {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
+          <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
         </div>
-        {/* 桌面端：结果数 + 排序（移动端排序在筛选抽屉里） */}
+        {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定） */}
         {mounted && (
           <div className="hidden lg:flex items-center gap-4">
-            <p className="text-sm text-[#777]">{filtered.length} result{filtered.length === 1 ? '' : 's'}</p>
             <select
               value={sortBy}
               onChange={(e) => setFilter({ sort: e.target.value as SortKey })}
@@ -337,7 +394,7 @@ export default function V2ProductsPage() {
       </div>
 
       <div className="lg:flex lg:gap-10">
-      {/* 桌面端左侧筛选栏：Collections 单选 + Material 多选，吸顶跟随 */}
+      {/* 桌面端左侧筛选栏：Collections 单选 + Material/Style 多选（bedding 为 Style），吸顶跟随 */}
       {showSidebar && (
         <aside className="hidden lg:block w-56 flex-shrink-0">
           <div className="sticky top-28">
@@ -354,7 +411,7 @@ export default function V2ProductsPage() {
             </div>
             {collectionOptions.length > 0 && (
               <div className="mb-6">
-                <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Collections</p>
+                <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">{beddingMaterialMode ? 'Material' : 'Collections'}</p>
                 {collectionOptions.map((o) => {
                   const active = activeSub === o.key;
                   return (
@@ -363,7 +420,6 @@ export default function V2ProductsPage() {
                         {active && <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#8B5A2B' }} />}
                       </span>
                       <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
-                      <span className="text-xs text-[#999] ml-auto">{o.count}</span>
                     </button>
                   );
                 })}
@@ -371,7 +427,7 @@ export default function V2ProductsPage() {
             )}
             {materialOptions.length > 0 && (
               <div>
-                <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">Material</p>
+                <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2">{beddingMaterialMode ? 'Style' : 'Material'}</p>
                 {materialOptions.map((o) => {
                   const active = materialSel.includes(o.key);
                   return (
@@ -387,7 +443,6 @@ export default function V2ProductsPage() {
                         )}
                       </span>
                       <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
-                      <span className="text-xs text-[#999] ml-auto">{o.count}</span>
                     </button>
                   );
                 })}
@@ -417,26 +472,17 @@ export default function V2ProductsPage() {
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
         <div>
-          {/* 移动端：结果数 + 筛选抽屉入口（桌面端在页头右侧） */}
-          <div className="flex items-center justify-between mb-6 gap-3 lg:hidden">
-            <p className="text-sm text-[#777]">{filtered.length} product{filtered.length === 1 ? '' : 's'}</p>
+          {/* 移动端：筛选抽屉入口（桌面端在页头右侧）；不显示产品数量（2026-09 用户定） */}
+          <div className="flex items-center justify-end mb-3 gap-3 lg:hidden">
             <button
               onClick={() => setFilterOpen(true)}
-              className="relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
+              className="inline-flex items-center gap-1.5 py-1 text-[13px] font-medium text-[#999] hover:text-[#8B5A2B] transition-colors"
               aria-label="Open filters"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
               </svg>
-              Filter &amp; Sort
-              {activeFilterCount > 0 && (
-                <span
-                  className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full text-white text-[11px] font-bold flex items-center justify-center"
-                  style={{ backgroundColor: '#8B5A2B' }}
-                >
-                  {activeFilterCount}
-                </span>
-              )}
+              Filter &amp; Sort{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
             </button>
           </div>
           <div className="space-y-10 lg:space-y-16">
@@ -444,6 +490,10 @@ export default function V2ProductsPage() {
               <section key={def.key}>
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
+                  {/* bedding 材质分区：标题下一句话材质描述（小字灰）；风格分区无描述 */}
+                  {beddingMaterialMode && MATERIAL_BLURBS[def.label] && (
+                    <p className="mt-1 text-xs lg:text-sm text-[#999]">{MATERIAL_BLURBS[def.label]}</p>
+                  )}
                 </div>
                 {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
@@ -501,34 +551,29 @@ export default function V2ProductsPage() {
               Back to All {categoryDef?.label || 'Products'}
             </button>
           )}
-          {/* 移动端：结果数 + 筛选抽屉入口（桌面端结果数/排序在页头右侧）；子分类页不展示筛选入口（2026-09 用户定） */}
-          <div className="flex items-center justify-between mb-5 flex-wrap gap-3 lg:hidden">
+          {/* 移动端：搜索结果数 + 筛选抽屉入口（桌面端排序在页头右侧）；子分类页不展示筛选入口；
+              一级类目/子类目页不显示产品数量，仅搜索视图保留结果数（2026-09 用户定） */}
+          {(isSearching || !activeSub) && (
+          <div className={`flex items-center mb-3 flex-wrap gap-3 lg:hidden ${isSearching ? 'justify-between' : 'justify-end'}`}>
+            {isSearching && (
             <p className="text-sm text-[#777]">
-              {isSearching
-                ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`
-                : `${filtered.length} product${filtered.length === 1 ? '' : 's'}`}
+              {`${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`}
             </p>
+            )}
             {!activeSub && (
             <button
               onClick={() => setFilterOpen(true)}
-              className="relative h-10 px-4 rounded-lg border-2 border-[#E8E2DA] bg-white text-sm font-semibold text-[#333] inline-flex items-center gap-2"
+              className="inline-flex items-center gap-1.5 py-1 text-[13px] font-medium text-[#999] hover:text-[#8B5A2B] transition-colors"
               aria-label="Open filters"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
               </svg>
-              Filter &amp; Sort
-              {activeFilterCount > 0 && (
-                <span
-                  className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full text-white text-[11px] font-bold flex items-center justify-center"
-                  style={{ backgroundColor: '#8B5A2B' }}
-                >
-                  {activeFilterCount}
-                </span>
-              )}
+              Filter &amp; Sort{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
             </button>
             )}
           </div>
+          )}
 
           {sortedFiltered.length > 0 ? (
             <>
@@ -537,12 +582,10 @@ export default function V2ProductsPage() {
                   <ProductCard key={product.id} product={product} href={cardHref(product)} />
                 ))}
               </div>
-              {/* 无限滚动哨兵：进入视口自动加载下一批（保留计数文案） */}
+              {/* 无限滚动哨兵：进入视口自动加载下一批；不显示产品数量，仅提示加载中（2026-09 用户定） */}
               {hasMore && (
                 <div ref={sentinelRef} className="text-center mt-10 py-3">
-                  <p className="text-sm text-[#999]">
-                    Showing {Math.min(visibleCount, sortedFiltered.length)} of {sortedFiltered.length}
-                  </p>
+                  <p className="text-sm text-[#999]">Loading more…</p>
                 </div>
               )}
             </>
@@ -564,7 +607,7 @@ export default function V2ProductsPage() {
       </div>
       </div>
 
-      {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material（多选），底部 Show N products */}
+      {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material/Style（多选，bedding 为 Style），底部 Show Products（不显示数量，2026-09 用户定） */}
       {filterOpen && (
         <div className="fixed inset-0 bg-black/40 z-[1600] lg:hidden" onClick={() => setFilterOpen(false)} />
       )}
@@ -604,10 +647,10 @@ export default function V2ProductsPage() {
             })}
           </div>
 
-          {/* Collections（风格分组，单选） */}
+          {/* Collections（分组，单选；默认风格，bedding 材质——bedding 下组名显示 Material） */}
           {collectionOptions.length > 0 && (
             <>
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">Collections</p>
+              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">{beddingMaterialMode ? 'Material' : 'Collections'}</p>
               <div className="mb-5">
                 {collectionOptions.map((o) => {
                   const active = activeSub === o.key;
@@ -616,7 +659,7 @@ export default function V2ProductsPage() {
                       <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${active ? 'border-[#8B5A2B]' : 'border-[#D8D2C8]'}`}>
                         {active && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#8B5A2B' }} />}
                       </span>
-                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label} ({o.count})</span>
+                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
                     </button>
                   );
                 })}
@@ -624,10 +667,10 @@ export default function V2ProductsPage() {
             </>
           )}
 
-          {/* Material（多选） */}
+          {/* Material/Style（多选；bedding 为 Style） */}
           {materialOptions.length > 0 && (
             <>
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">Material</p>
+              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider mb-2 pt-4 border-t border-[#E8E2DA]/70">{beddingMaterialMode ? 'Style' : 'Material'}</p>
               <div>
                 {materialOptions.map((o) => {
                   const active = materialSel.includes(o.key);
@@ -643,7 +686,7 @@ export default function V2ProductsPage() {
                           </svg>
                         )}
                       </span>
-                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label} ({o.count})</span>
+                      <span className={`text-sm ${active ? 'font-semibold text-[#333]' : 'text-[#555]'}`}>{o.label}</span>
                     </button>
                   );
                 })}
@@ -658,7 +701,7 @@ export default function V2ProductsPage() {
             className="w-full py-3.5 rounded-full text-sm font-semibold text-white"
             style={{ backgroundColor: '#8B5A2B' }}
           >
-            Show {filtered.length} Product{filtered.length === 1 ? '' : 's'}
+            Show Products
           </button>
           {activeFilterCount > 0 && (
             <button

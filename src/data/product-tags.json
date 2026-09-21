@@ -1588,21 +1588,25 @@
   "linen3-sage-full": {
     "color": "green",
     "scene": "bedroom",
-    "pieces": 3
+    "pieces": 3,
+    "style": "farmhouse"
   },
   "linen3-sage-king": {
     "color": "green",
     "scene": "bedroom",
-    "pieces": 3
+    "pieces": 3,
+    "style": "farmhouse"
   },
   "linen3-sage-queen": {
     "color": "green",
     "scene": "bedroom",
-    "pieces": 3
+    "pieces": 3,
+    "style": "farmhouse"
   },
   "linen3-sage-twin": {
     "color": "green",
     "scene": "bedroom",
-    "pieces": 3
+    "pieces": 3,
+    "style": "farmhouse"
   }
 }

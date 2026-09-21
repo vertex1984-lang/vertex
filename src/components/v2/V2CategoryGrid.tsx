@@ -6,12 +6,13 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
 // V2 分类横滑条：沿用现有 cat 查询参数（与 (classic) 产品页一致）
+// 排列顺序与顶部导航一致（2026-09 用户定）；Holiday/Others 不在导航内，排最后
 const CATEGORIES = [
-  { name: 'Cushions', image: '/images/collections/cushions.webp', href: '/products/?cat=cushions' },
+  { name: 'Bedding', image: '/images/collections/bedding.webp', href: '/products/?cat=bedding' },
   { name: 'Pillows', image: '/images/collections/pillows.webp', href: '/products/?cat=pillows' },
+  { name: 'Cushions', image: '/images/collections/cushions.webp', href: '/products/?cat=cushions' },
   { name: 'Towels', image: '/images/collections/towels.webp', href: '/products/?cat=towels' },
   { name: 'Mats', image: '/images/collections/mats.webp', href: '/products/?cat=mats' },
-  { name: 'Bedding', image: '/images/collections/bedding.webp', href: '/products/?cat=bedding' },
   { name: 'Blankets', image: '/images/products/1688-969627065032-C37/4.webp', href: '/products/?cat=blankets' },
   { name: 'Holiday', image: '/images/collections/holiday.webp', href: '/products/?cat=holiday' },
   { name: 'Others', image: '/images/collections/others.webp', href: '/products/?cat=others' },
@@ -115,17 +116,6 @@ export default function V2CategoryGrid() {
             </a>
           ))}
           </div>
-        </div>
-      </Reveal>
-      {/* 卡片条下方居中 View More 描边按钮（与 Featured 条按钮同款） */}
-      <Reveal delay={120}>
-        <div className="mt-10 lg:mt-12 text-center">
-          <a
-            href={v2url('/categories/')}
-            className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
-          >
-            View More
-          </a>
         </div>
       </Reveal>
     </section>

@@ -68,7 +68,7 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "bedset4-tan-queen": { material: "Microfiber" },    // 原 "Linen"
   "bedset4-coffee-king": { material: "Microfiber" },  // 原 "Microfiber, Linen"
   // linen3 系列是真 100% Linen，仅去掉 Rattan 误报
-  "linen3-charcoal-king": { material: "Linen" },      // 原 "Linen, Rattan"
+  "linen3-charcoal-king": { material: "100% Linen" }, // 原 "Linen, Rattan"（与 linen3 系列其余规格统一为 100% Linen）
 
   // ── Pillows：补材质 ──
   "b0f62y59cw": { material: "Hollowfibre" },
