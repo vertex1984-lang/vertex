@@ -5,16 +5,14 @@ import { StyleCardData } from '@/data/style-tagged';
 /**
  * 风格入口卡（首页 Shop by Style 与 /featured-products/style/ 汇总页共用）：
  * 代表图 + 渐变遮罩 + 偏小字号风格名（无件数、无 CTA 箭头，2026-09 用户定）。
- * big = 2×2 主卡（Bento 用）；wide = 桌面端拉宽补齐行（Bento 用）。
+ * big = 2×2 主卡（Bento 用）；原 wide（桌面拉宽补行）随 2026-09-22 Bento 改 5 列两行布局移除。
  */
 export default function V2StyleCard({
   card,
   big,
-  wide,
 }: {
   card: StyleCardData;
   big?: boolean;
-  wide?: boolean;
 }) {
   return (
     <a
@@ -22,9 +20,7 @@ export default function V2StyleCard({
       className={`group relative block overflow-hidden rounded-xl bg-warm-gray ${
         big
           ? 'col-span-2 row-span-2 lg:col-span-2 lg:row-span-2 aspect-[2/1] lg:aspect-auto'
-          : wide
-            ? 'lg:col-span-2 aspect-square lg:aspect-[2/1]'
-            : 'aspect-square'
+          : 'aspect-square'
       }`}
     >
       <img

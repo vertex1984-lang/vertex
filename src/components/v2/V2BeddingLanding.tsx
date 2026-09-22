@@ -63,6 +63,7 @@ const FABRIC_HOTSPOT_X = [10, 26.5, 43, 57.5, 72.5, 87.5];
  * Shop by Texture + Fabric Guide（同一底色带大模块，置顶：材质竖版大卡横滑 + 面料指南小卡 → /fabric-guide/）
  * → Shop by Style（bento 大图卡）
  * → Shop by Color（色系 chip 单行横滑 + 横滑产品条）→ New Arrivals（左标题右横滑）。
+ * 两区产品卡尺寸 2026-09-22 起与主页 Shop by Scene / You May Also Like 一致（w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)]）。
  * 无 scene 维度（bedding 全部产品 scene=bedroom，无分组意义）。
  * 入口去向：材质卡 → ?sub= 网格视图；色系底链 → ?color= 网格视图；风格卡 → ?material= 网格视图；View More → ?sort=newest 网格视图。
  */
@@ -182,11 +183,13 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
         </section>
       )}
 
-      {/* ── Section 2: Shop by Style（bento 大图卡，整卡进 ?material= 网格） ── */}
+      {/* ── Section 2: Shop by Style（bento 大图卡，整卡进 ?material= 网格） ──
+          2026-09-22 用户定：桌面端整体收窄为 90% 宽居中（lg:w-[90%]），所有卡片宽高随之缩小约 10%，
+          两侧离屏幕边空隙增大；网格列数不变 */}
       {styleCards.length > 0 && heroStyle && (
         <section className="py-10 lg:py-16">
           <Reveal>
-            <div className="px-3 lg:px-10">
+            <div className="px-3 lg:px-10 lg:w-[90%] lg:mx-auto">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Find Your Look</p>
               <h2 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-6 lg:mb-8">Shop by Style</h2>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5">
@@ -262,7 +265,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
             <div className="pl-3 lg:pl-10">
               <DragScroll className={stripCls}>
                 {activeGroup.products.map((p) => (
-                  <div key={p.id} className="w-[44vw] sm:w-[30vw] lg:w-[min(22vw,320px)] flex-shrink-0">
+                  <div key={p.id} className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0">
                     <V2ProductCard product={p} />
                   </div>
                 ))}
@@ -307,7 +310,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
               <div className="flex-1 min-w-0 pl-3 lg:pl-4">
                 <DragScroll className={stripCls}>
                   {newest.map((p) => (
-                    <div key={p.id} className="w-[44vw] sm:w-[30vw] lg:w-[min(22vw,320px)] flex-shrink-0">
+                    <div key={p.id} className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0">
                       <V2ProductCard product={p} />
                     </div>
                   ))}

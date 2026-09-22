@@ -439,15 +439,24 @@ export default function V2ProductsPage() {
       : STYLE_RULES.find((r) => r.key === activeSub)
     : undefined;
   const colorDef = colorSel ? COLOR_RULES.find((c) => c.key === colorSel) : undefined;
+  // 带筛选条件进入时标题显示筛选关键词（2026-09 用户定）：bedding 的 material 参数是风格 key，
+  // 查 STYLE_RULES 取 label（本身首字母大写，如 farmhouse → Farmhouse）；多选用逗号拼接。字体沿用原标题 h1
+  const materialTitle =
+    beddingMaterialMode && materialSel.length > 0
+      ? materialSel
+          .map((k) => STYLE_RULES.find((r) => r.key === k)?.label || k.charAt(0).toUpperCase() + k.slice(1))
+          .join(', ')
+      : '';
   const pageTitle = isSearching
     ? 'Search Results'
-    : subDef?.label || colorDef?.label || categoryDef?.label || 'Shop All';
+    : subDef?.label || colorDef?.label || materialTitle || categoryDef?.label || 'Shop All';
 
   // 产品卡详情链接：v2 页面内保持 /v2 前缀
   const cardHref = (p: MakimooProduct) => v2url(`/products/${p.handle}/`);
 
-  // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !isLanding && (collectionOptions.length > 0 || materialOptions.length > 0);
+  // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
+  // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !isLanding && !beddingMaterialMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
@@ -463,7 +472,8 @@ export default function V2ProductsPage() {
             <span className="text-[#555]">{subDef?.label || colorDef?.label}</span>
           </>
         ) : (
-          <span className="text-[#555]">{pageTitle}</span>
+          /* 面包屑展示真实路径，不受筛选关键词影响（2026-09 用户定）：筛选视图仍显示类目名 */
+          <span className="text-[#555]">{isSearching ? 'Search Results' : categoryDef?.label || 'Shop All'}</span>
         )}
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-4 lg:mb-10">
@@ -473,8 +483,9 @@ export default function V2ProductsPage() {
         </div>
         {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定）。
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
-            老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入） */}
-        {mounted && !isLanding && (
+            老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
+            bedding 类目页不展示排序下拉（2026-09 用户定） */}
+        {mounted && !isLanding && !beddingMaterialMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -663,7 +674,8 @@ export default function V2ProductsPage() {
               {`${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${searchQuery.trim()}"`}
             </p>
             )}
-            {!activeSub && (
+            {/* bedding 类目页不展示筛选入口（2026-09 用户定，与桌面端一致） */}
+            {!activeSub && !beddingMaterialMode && (
             <button
               onClick={() => setFilterOpen(true)}
               className="inline-flex items-center gap-1.5 py-1 text-[13px] font-medium text-[#999] hover:text-[#8B5A2B] transition-colors"

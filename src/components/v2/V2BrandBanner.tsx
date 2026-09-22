@@ -4,8 +4,8 @@ import { v2url } from '@/lib/v2paths';
 
 /**
  * V2 首页全宽 Brand Banner（品牌意境视频 brand-banner.mp4，自动播放/静音/循环）
- * 桌面：按 1456/418（约 3.5:1）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
- *       极宽屏高度超 93vh 时进一步从上下裁切。
+ * 桌面：按 1456/459.8（约 3.17:1）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
+ *       高度为原 1456/418 的 1.1 倍（2026-09-22 用户要求 +10%）；极宽屏高度超 93vh 时进一步从上下裁切。
  * 移动：同一路视频按 4/3.97 展示（接近方形，不压扁成细条），object-cover 居中裁切两侧。
  * poster 用视频首帧（brand-banner-poster.webp），视频加载前立即有画面；
  * preload="metadata" 避免阻塞首屏，muted+playsInline 保证 iOS/安卓可自动播放。
@@ -24,12 +24,12 @@ export default function V2BrandBanner() {
   };
 
   return (
-    <section className="w-full">
+    <section className="w-full mt-4 lg:mt-8">{/* mt：与上方 Shop by Style 的间距（2026-09-22 用户要求稍调大） */}
       <Reveal>
-        {/* 桌面端：1456/418 宽横幅 */}
+        {/* 桌面端：1456/459.8 宽横幅（原 1456/418 高度 +10%，2026-09-22） */}
         <a
           href={v2url('/products/')}
-          className="group relative hidden sm:block w-full aspect-[1456/418] max-h-[93vh] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/459.8] max-h-[93vh] overflow-hidden"
         >
           <video {...videoProps}>
             <source src={resolveUrl('/videos/brand-banner.mp4')} type="video/mp4" />
