@@ -7,6 +7,8 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   // 示例：
   // "b0xxxxxxx": { dimensionsCm: [45, 45], material: "Polyester" },
   "1688-595229918569": { material: "Faux Rabbit Fur" },
+  // ── Wall Art：C15 尺寸修正（38 宽 × 48 高，竖版）──
+  "1688-730512046265-c15": { dimensionsCm: [38, 48] },
   "1688-595229918569-c2": { material: "Faux Rabbit Fur" },
   "1688-595229918569-c3": { material: "Faux Rabbit Fur" },
   "1688-1052742241013": { material: "Faux Cashmere" },
