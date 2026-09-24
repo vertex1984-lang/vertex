@@ -13,7 +13,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ## 产品核实 + 更新流程（每次素材库/Shopify 有更新时直接执行）
 
-1. `node scripts/sync-materials.js <素材库密码>` — 拉素材库（makimoohome 分组 groupId=18），下载转 WebP（q82，≤1600px）到 `public/images/products/{标识}/`，生成 `materials-map.ts`（全部素材产品覆盖表）和 `products-materials.ts`（站点没有的新产品条目，自动分类、白底检测）。幂等：`scripts/materials-manifest.json` 记录每个产品的图片 URL 顺序，数量/顺序/内容有变才重下（打印 `[图片更新]`）；`--force` 强制全部重下；**图片展示顺序默认保持素材库原始顺序（keep-order 为默认行为，2026-09-14 起）**，旧的优先级重排需显式加 `--reorder`。
+1. `node scripts/sync-materials.js <素材库密码>`（或 `MATERIALS_JWT=xxx` 写进 `.env.local`，**推荐**：平台公开素材接口已按密码归属用户隔离，单密码只能取到该用户自己的素材，全组同步必须走管理端 JWT 通道）— 拉素材库（makimoohome 分组 groupId=18），下载转 WebP（q82，≤1600px）到 `public/images/products/{标识}/`，生成 `materials-map.ts`（全部素材产品覆盖表）和 `products-materials.ts`（站点没有的新产品条目，自动分类、白底检测）。幂等：`scripts/materials-manifest.json` 记录每个产品的图片 URL 顺序，数量/顺序/内容有变才重下（打印 `[图片更新]`）；`--force` 强制全部重下；**图片展示顺序默认保持素材库原始顺序（keep-order 为默认行为，2026-09-14 起）**，旧的优先级重排需显式加 `--reorder`。注意：更新重下时只清数字编号定图（`^\d+\.webp$`），`detail-*.webp` 等附属图保留（防 overrides 死链，2026-09-24）。
 2. `node scripts/build-shopify-map.js` — 拉 Shopify 全部产品，按 tags 标识匹配，校验 SKU 一致性，生成 `shopify-map.ts`（variantId/价格/在售状态/重量 weight+weightUnit/创建时间 createdAt）。
 3. `node scripts/build-weights.js` — 产品权重体系（已入 build 链）：表现分（销量 60 / 新鲜度 15 / 评价 15 / 内容 10）+ 人工赋权表 `src/data/weights-overrides.ts`（单品：boost ±30 封顶 / pin 置顶 ≤3 个 / bury 沉底 / exclude 排除 / until 限时 / note 必填；分组规则 GROUP_BOOSTS：按 productType/subcategory/materialIncludes/asinIncludes 组合命中，与单品 boost 叠加合计 ±30 封顶——2026-09 首批规则已于 2026-09-14 应用户要求全部清零，当前人工权重只保留管理工具的单品打分 weight-boosts.json），生成 `src/data/product-weights.ts`（含类目 type 字段）；排序统一走 `src/lib/weights.ts` 的 `sortByWeight()`（缺货沉底 > pin 固定位 > 总分降序 > **同分按类目平均分降序** > buried > 缺货；类目平均分 = 该类目全部在售产品总分均值，不做类目配额平衡），已接入类目页 featured 排序与 Best Sellers 选品。销量信号读 `scripts/sales-data.json`（asin → 近 90 天销量），暂无该文件时按 0 计（待 Shopify Admin API token 开通后生成）。
 4. `node scripts/extract-specs.js` — 从标题/描述/handle 提取尺寸（归一化 cm）和材质（关键词词典），生成 `product-specs.ts` 并打印覆盖率报告。提取不准/缺失的手工补在 `specs-overrides.ts`（前台优先）。
@@ -51,7 +51,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 与现有一级/二级类目体系**并存且互不干扰**；当前前端不读 taxonomy.json，供后续按需接入（如专题页、权重分组）。
 - 管理页改动保存后需重新构建网站才会反映到任何已接入的页面。
 
-`scripts/sync-materials.js` 的 `HIDDEN_ASINS`：素材库保留但不生成站点条目。当前：`1688-1051650740507` / `1688-1051650740507-C2`（两款蕾丝边被套，用户要求全站隐藏）、`1688-916370884976-C9`（与 C6 完全重复的被子变体，2026-09-14 用户确认隐藏，products-materials.ts 条目已同步移除）。
+`scripts/sync-materials.js` 的 `HIDDEN_ASINS`：素材库保留但不生成站点条目。当前仅 `1688-916370884976-C9`（与 C6 完全重复的被子变体，2026-09-14 用户确认隐藏）。原隐藏的 `1688-1051650740507` / `1688-1051650740507-C2`（蕾丝边被套）已于 2026-09-24 应户要求解除隐藏并全量上站（花边-禾时三码组）。
 
 ### 二级分类（subcategory）
 

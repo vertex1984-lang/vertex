@@ -9,6 +9,7 @@
  *  5. 生成 src/data/products-materials.ts（站点上没有的新产品完整条目，自动分类、白底检测）
  *
  * 用法： node scripts/sync-materials.js <密码>   或   MATERIALS_PASSWORD=xxx node scripts/sync-materials.js
+ *  全量： MATERIALS_JWT=xxx node scripts/sync-materials.js（推荐；公开密码接口已按密码归属用户隔离，只有 JWT 能拉到全组数据）
  * 幂等：有 scripts/materials-manifest.json 时按 URL 顺序逐产品对比，顺序/内容有变才重下（打印 [图片更新]）；无 manifest 时按数量跳过。--force 强制全部重下；默认保持素材库原始图片顺序（keep-order 为默认行为，--reorder 才做旧的优先级重排）。
  */
 
@@ -17,6 +18,21 @@ const path = require('path');
 const sharp = require('sharp');
 
 const API_BASE = 'http://106.55.160.52:8080/api/public/materials';
+const PLATFORM_BASE = 'http://106.55.160.52:8080';
+// 管理端 JWT 通道：平台公开素材接口已按密码归属用户隔离（单密码只能取到该用户自己的素材，2026-09-24 实测），
+// 全组同步需提供有权限账号的 JWT：MATERIALS_JWT=xxx node scripts/sync-materials.js
+const MATERIALS_JWT =
+  process.env.MATERIALS_JWT ||
+  (() => {
+    // 与 MATERIALS_PASSWORD 同款：直接从 .env.local 读 MATERIALS_JWT=xxx
+    try {
+      const env = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
+      return (env.match(/^MATERIALS_JWT=(.+)$/m) || [])[1]?.trim();
+    } catch {
+      return undefined;
+    }
+  })() ||
+  '';
 const GROUP_ID = 18; // makimoohome
 const ROOT = path.join(__dirname, '..');
 const PRODUCTS_TS = path.join(ROOT, 'src/data/products.ts');
@@ -49,15 +65,16 @@ const password =
     }
   })() ||
   process.argv.find((a, i) => i >= 2 && !a.startsWith('--'));
-if (!password) {
-  console.error('缺少密码：.env.local 加 MATERIALS_PASSWORD=xxx，或 node scripts/sync-materials.js <密码>');
+if (!password && !MATERIALS_JWT) {
+  console.error('缺少凭据：.env.local 加 MATERIALS_PASSWORD=xxx / MATERIALS_JWT=xxx，或 node scripts/sync-materials.js <密码>');
   process.exit(1);
 }
 
 const AMAZON_HOST = { US: 'www.amazon.com', DE: 'www.amazon.de', UK: 'www.amazon.co.uk' };
 
 // 用户要求全站隐藏的产品（素材库保留，不生成站点条目；小写标识）
-const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2', '1688-916370884976-c9']);
+// 2026-09-24：花边-禾时 main/C2（1688-1051650740507 / -c2）应 owner 要求解除隐藏，27 SKU 全量上站
+const HIDDEN_ASINS = new Set(['1688-916370884976-c9']);
 
 function classify(title) {
   const t = (title || '').toLowerCase();
@@ -143,16 +160,63 @@ async function mapLimit(items, limit, fn) {
 }
 
 (async () => {
-  // 1. 验证 & 拉取
-  const verify = await fetchJson(`${API_BASE}/verify`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ password }),
-  });
-  if (!verify.success) throw new Error('素材库密码验证失败');
-  const list = await fetchJson(`${API_BASE}/`, { headers: { 'x-materials-token': verify.data.token } });
-  const items = list.data.items.filter((i) => i.groupId === GROUP_ID);
-  console.log(`素材库 makimoohome 分组产品数: ${items.length}`);
+  // 0. 旧 materials-map.ts 行解析：老产品 SKU 回收 + 定版图为空的老产品沿用本地图片序列（磁盘 WebP 仍在，
+  //    管理端 items 的 finalProductImages 对未定版/历史产品为空，直接丢行会让在售产品从站点消失）
+  const oldMapRows = {};
+  try {
+    for (const line of fs.readFileSync(OUT_MAP_TS, 'utf8').split('\n')) {
+      const m = line.match(/^\s*"([a-z0-9-]+)":\s*(\{.*\}),\s*$/);
+      if (m) {
+        try { oldMapRows[m[1]] = JSON.parse(m[2]); } catch { /* 坏行忽略 */ }
+      }
+    }
+  } catch { /* 首次运行无旧文件 */ }
+  const oldSku = {};
+  for (const [k, v] of Object.entries(oldMapRows)) if (v && typeof v.sku === 'string') oldSku[k] = v.sku;
+
+  // 1. 拉取：JWT 通道 = 管理端全量；密码通道 = 公开接口（只能取到密码归属用户自己的素材）
+  let items;
+  if (MATERIALS_JWT) {
+    const r = await fetchJson(`${PLATFORM_BASE}/api/materials/items?groupId=${GROUP_ID}`, {
+      headers: { Authorization: `Bearer ${MATERIALS_JWT}` },
+    });
+    const raw = (r.data && r.data.items) || r.data || [];
+    items = raw
+      .filter((i) => i.groupId === GROUP_ID)
+      .map((i) => {
+        const key = (i.asin || '').toLowerCase();
+        let images = i.finalProductImages || [];
+        let carryLocal = false;
+        const oldRow = oldMapRows[key];
+        if (!images.length && oldRow && Array.isArray(oldRow.images) && oldRow.images.length &&
+            oldRow.images.every((p) => fs.existsSync(path.join(ROOT, 'public', p.replace(/\//g, path.sep))))) {
+          images = oldRow.images.slice(); // 沿用本地序列，文件编号与磁盘一致
+          carryLocal = true;
+        }
+        return {
+          groupId: i.groupId,
+          asin: i.asin,
+          marketplace: i.marketplace,
+          productTitleCn: i.productTitleCn,
+          listingTitle: i.listingTitle,
+          listingBullets: i.listingBullets,
+          sku: i.sku || '',
+          images,
+          imageTypes: {},
+          carryLocal,
+        };
+      });
+  } else {
+    const verify = await fetchJson(`${API_BASE}/verify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password }),
+    });
+    if (!verify.success) throw new Error('素材库密码验证失败');
+    const list = await fetchJson(`${API_BASE}/`, { headers: { 'x-materials-token': verify.data.token } });
+    items = list.data.items.filter((i) => i.groupId === GROUP_ID);
+  }
+  console.log(`素材库 makimoohome 分组产品数: ${items.length}${MATERIALS_JWT ? '（管理端全量）' : ''}`);
 
   // 2. 站点现有 ASIN（含 1688-xxx 供应商标识）
   const productsSrc = fs.readFileSync(PRODUCTS_TS, 'utf8');
@@ -165,6 +229,10 @@ async function mapLimit(items, limit, fn) {
   const manifestExists = fs.existsSync(MANIFEST_PATH);
   let manifest = {};
   if (manifestExists) { try { manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch { /* 损坏则视为无 */ } }
+  // carryLocal 产品（定版图为空、沿用本地序列）：预置 manifest 保证幂等跳过，不触发误重下
+  for (const it of items) {
+    if (it.carryLocal && !((manifest[it.asin] || []).length)) manifest[it.asin] = it.images;
+  }
   const itemTypes = {}; // asin -> { url: type }
   const POOLS = {}; // asin -> 下载顺序的原始 URL 数组
   let downloaded = 0, skipped = 0, failed = 0;
@@ -190,10 +258,13 @@ async function mapLimit(items, limit, fn) {
       productImages[asin] = localPaths;
       return;
     }
-    // 数量/顺序/内容不一致或 force：清掉旧图重下
+    // 数量/顺序/内容不一致或 force：清掉旧图重下（只清数字编号定图；detail-*.webp 等附属图保留，防 overrides 死链）
     if (!FORCE && existing.length === ordered.length) console.log(`  [图片更新] ${asin}（数量不变，顺序/内容有变化）`);
     fs.mkdirSync(dir, { recursive: true });
-    for (const f of existing) fs.unlinkSync(path.join(dir, f));
+    for (const f of existing) {
+      if (!/^\d+\.webp$/.test(f)) continue;
+      fs.unlinkSync(path.join(dir, f));
+    }
     for (let i = 0; i < ordered.length; i++) {
       const dest = path.join(dir, `${i + 1}.webp`);
       try {
@@ -241,7 +312,7 @@ async function mapLimit(items, limit, fn) {
     const finalImages = order.map((idx) => localPaths[idx]);
     const finalWhiteBg = order.map((idx) => whiteBg[idx]);
     productImages[i.asin] = finalImages;
-    mapRows.push(`  ${JSON.stringify(i.asin.toLowerCase())}: {"title":${JSON.stringify(i.listingTitle || '')},"bullets":${JSON.stringify(i.listingBullets || '')},"sku":${JSON.stringify(i.sku || '')},"images":${JSON.stringify(finalImages)},"whiteBg":${JSON.stringify(finalWhiteBg)}},`);
+    mapRows.push(`  ${JSON.stringify(i.asin.toLowerCase())}: {"title":${JSON.stringify(i.listingTitle || '')},"bullets":${JSON.stringify(i.listingBullets || '')},"sku":${JSON.stringify(i.sku || oldSku[(i.asin || '').toLowerCase()] || '')},"images":${JSON.stringify(finalImages)},"whiteBg":${JSON.stringify(finalWhiteBg)}},`);
   }
   const mapEntries = mapRows.join('\n');
 

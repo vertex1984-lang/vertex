@@ -574,6 +574,51 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f1xs7vky', handle: 'set-of-2-high-back-tufted-outdoor-chair-cushion-44-x-21-inch-b0f1xs7vky', color: 'Coffee' },
     ],
   },
+  {
+    id: '1688-1061371343572',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-1061371343572-C3', handle: 'cooling-ice-silk-duvet-cover-silky-smooth-soft-breathable-1688-1061371343572-c3', color: 'Milk Tea Brown', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C2', handle: 'luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2', color: 'Milk Tea Brown', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572', handle: 'luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572', color: 'Milk Tea Brown', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C6', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c6', color: 'Champagne Green', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C5', handle: 'cooling-ice-silk-duvet-cover-breathable-smooth-solid-color-1688-1061371343572-c5', color: 'Champagne Green', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C4', handle: 'cooling-silk-touch-duvet-cover-breathable-silky-smooth-soft-1688-1061371343572-c4', color: 'Champagne Green', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C9', handle: 'cooling-silky-duvet-cover-breathable-smooth-bedding-cover-1688-1061371343572-c9', color: 'Camel Grey', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C8', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c8', color: 'Camel Grey', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C7', handle: 'cooling-ice-silk-duvet-cover-200-x-230-cm-silky-breathable-1688-1061371343572-c7', color: 'Camel Grey', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C11', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c11', color: 'Milk Tea Beige', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C10', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c10', color: 'Milk Tea Beige', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C14', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c14', color: 'Cream White', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C13', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c13', color: 'Cream White', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C12', handle: 'luxury-soft-cooling-ice-silk-duvet-cover-silky-breathable-1688-1061371343572-c12', color: 'Cream White', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C17', handle: 'cooling-ice-silk-duvet-cover-smooth-breathable-silky-solid-1688-1061371343572-c17', color: 'Peach Pink', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C16', handle: 'luxury-ice-silk-duvet-cover-cooling-silky-breathable-solid-1688-1061371343572-c16', color: 'Peach Pink', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C15', handle: '1-piece-cooling-ice-silk-duvet-cover-silky-breathable-solid-1688-1061371343572-c15', color: 'Peach Pink', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C19', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-quilt-cover-1688-1061371343572-c19', color: 'Pale Lemon', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C18', handle: 'premium-cooling-ice-silk-duvet-cover-soft-silky-breathable-1688-1061371343572-c18', color: 'Pale Lemon', size: '200 x 230 cm' },
+    { asin: '1688-1061371343572-C22', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c22', color: 'Peach Taro Purple', size: '150 x 200 cm' },
+    { asin: '1688-1061371343572-C21', handle: 'cooling-ice-silk-duvet-cover-solid-color-silky-breathable-1688-1061371343572-c21', color: 'Peach Taro Purple', size: '180 x 220 cm' },
+    { asin: '1688-1061371343572-C20', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-1688-1061371343572-c20', color: 'Peach Taro Purple', size: '200 x 230 cm' },
+    ],
+  },
+  {
+    id: '1688-1048207560416',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-1048207560416-C2', handle: 'cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2', color: 'Milkshake White', size: '150 x 200 cm' },
+    { asin: '1688-1048207560416', handle: 'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416', color: 'Milkshake White', size: '180 x 220 cm' },
+    ],
+  },
+  {
+    id: '1688-1051650740507',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-1051650740507-C3', handle: 'korean-style-double-lace-duvet-cover-soft-cotton-like-cloud-1688-1051650740507-c3', color: 'Cherry Pink', size: '150 x 200 cm' },
+    { asin: '1688-1051650740507-C2', handle: 'korean-style-double-lace-edge-duvet-cover-soft-cotton-like-1688-1051650740507-c2', color: 'Cherry Pink', size: '180 x 220 cm' },
+    { asin: '1688-1051650740507', handle: 'korean-style-lace-trim-duvet-cover-soft-cotton-blend-cloud-1688-1051650740507', color: 'Cherry Pink', size: '200 x 230 cm' },
+    ],
+  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();

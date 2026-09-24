@@ -453,24 +453,22 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Details 五点卖点（紧凑单列；按领导要求置于花色上方，平衡上半部分） */}
-            {isInStock && (
-              <div className="mb-7">
-                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Details</p>
-                <ul className="space-y-2.5">
-                  {(product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5).map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2.5">
-                      <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M20 6L9 17l-5-5" />
-                        </svg>
-                      </span>
-                      <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            {/* Details 五点卖点（紧凑单列；按领导要求置于花色上方，平衡上半部分；缺货/未发布也展示） */}
+            <div className="mb-7">
+              <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Details</p>
+              <ul className="space-y-2.5">
+                {(product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5).map((feature, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>
+                    <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {/* 花色切换器（同款异色圆点，点击跳转对应花色页） */}
             {colorVariants.length > 1 && (() => {
