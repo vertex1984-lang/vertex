@@ -25,6 +25,16 @@ const staticPages = [
   { loc: '/categories/', priority: '0.9', changefreq: 'daily' },
   { loc: '/products/', priority: '0.8', changefreq: 'daily' },
   { loc: '/blog/', priority: '0.6', changefreq: 'weekly' },
+  { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
+  { loc: '/bedding/', priority: '0.7', changefreq: 'weekly' },
+  // 面料二级 PLP（与 src/data/bedding-fabrics.ts 注册表手动同步）
+  { loc: '/bedding/linen/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
+  // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
+  // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap
+  { loc: '/bedding/bed-sets/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/comforter-sets/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },

@@ -1,7 +1,10 @@
 /**
- * seeany-banner.js — 生成移动端 collection banner 竖版底图（无文字）
- * 用法: node scripts/seeany-banner.js
- * 输出: public/images/brand/collection-banner-mobile-v2.png
+ * seeany-trust-texture.js — 生成首页信任区左卡（文案卡）配图（2026-09-22 用户定：材质细节特写，
+ * 替换原卧室图 trust-reviews.webp）
+ * 用法: node scripts/seeany-trust-texture.js
+ * 16:9 横板（与左卡桌面 aspect-[16/9] 一致；移动端 4/5 由 object-cover 裁切）：
+ * 毯子局部细节 + 部分枕头特写，凸显材质感与舒适放松感，色调参照用户提供的
+ * 暖米色织物参考图（柔和阳光 + 叶影）。输出 public/images/brand/trust-texture.png/.webp
  */
 const fs = require('fs');
 const path = require('path');
@@ -13,12 +16,16 @@ if (!KEY) { console.error('缺少 SEEANY_API_KEY'); process.exit(1); }
 
 const API = 'https://api.seeany.com/api/ai/smarttask';
 const OUT = path.join(__dirname, '..', 'public', 'images', 'brand');
-const DEST = path.join(OUT, 'collection-banner-mobile-v2.png');
 
 const STYLE = '暖色调家居摄影风格，米色和暖棕色调（beige & warm brown palette），柔和自然光，高级电商品牌质感，写实摄影，无文字无水印无logo';
-const PROMPT = `竖版构图的温馨卧室场景：木质床架上铺着米白色绗缝被和米色毯子，床头摆着蓬松的白色抱枕，床边木质床头柜上有陶瓷台灯和绿植，窗外柔和晨光洒入，画面下半部分保留相对简洁的空间适合叠加文字。${STYLE}`;
 
-async function createTask() {
+const JOB = {
+  name: 'trust-texture',
+  ratio: '16:9',
+  prompt: `织物材质特写镜头，横板宽幅构图：一条米色针织毯的局部细节占据画面主体，绒感与织纹清晰可见，毯子边缘有细腻流苏；画面一角露出亚麻枕头的柔软局部；午后柔和阳光斜照，墙面上有绿植叶片投下的斑驳影子，光线温暖慵懒，氛围舒适放松。浅景深，焦点在毯子织纹上；画面左侧留出相对平缓的区域（便于叠加文字）。${STYLE}`,
+};
+
+async function createTask(size) {
   const res = await fetch(API, {
     method: 'POST',
     headers: {
@@ -29,18 +36,19 @@ async function createTask() {
     body: JSON.stringify({
       aiTypeId: 113,
       aiType: 'smartImg',
-      prompt: PROMPT,
+      prompt: JOB.prompt,
       imgNum: 1,
-      imgRatio: '3:4',
+      imgRatio: JOB.ratio,
       mode: 'gpt-image-2.5-sunburst',
-      size: '1K',
+      size,
     }),
   });
   const data = await res.json();
-  if (data.code !== 0) throw new Error(`创建失败: ${JSON.stringify(data)}`);
+  if (data.code !== 0) throw new Error(`${JSON.stringify(data)}`);
   return data.data.task_uuid;
 }
 
+// 轮询任务结果：GET /api/developer/task/status?task_uuid=xxx
 async function pollTask(uuid) {
   const url = `https://api.seeany.com/api/developer/task/status?task_uuid=${encodeURIComponent(uuid)}`;
   for (let i = 0; i < 90; i++) {
@@ -63,14 +71,25 @@ async function pollTask(uuid) {
 }
 
 (async () => {
-  if (fs.existsSync(DEST)) { console.log('已存在，跳过:', DEST); return; }
-  console.log('创建任务 (3:4 竖版)...');
-  const uuid = await createTask();
+  const dest = path.join(OUT, `${JOB.name}.png`);
+  if (fs.existsSync(dest)) { console.log(`跳过已存在: ${dest}`); process.exit(0); }
+  let uuid;
+  try {
+    uuid = await createTask('2K');
+  } catch (e) {
+    console.log(`2K 创建失败（${e.message}），回退 1K`);
+    uuid = await createTask('1K');
+  }
   console.log(`task_uuid=${uuid}, 等待生成...`);
   const imgUrl = await pollTask(uuid);
-  console.log('结果:', imgUrl);
+  console.log(`结果: ${imgUrl}`);
   const res = await fetch(imgUrl);
   const buf = Buffer.from(await res.arrayBuffer());
-  fs.writeFileSync(DEST, buf);
-  console.log(`已保存 ${DEST} (${buf.length} bytes)`);
+  fs.writeFileSync(dest, buf);
+  console.log(`已保存 ${dest} (${buf.length} bytes)`);
+  // 同步转 webp（与站内其他生成图一致，q82）
+  const sharp = require('sharp');
+  const webp = path.join(OUT, `${JOB.name}.webp`);
+  await sharp(buf).webp({ quality: 82 }).toFile(webp);
+  console.log(`已转换 ${webp}`);
 })().catch(e => { console.error('失败:', e.message); process.exit(1); });

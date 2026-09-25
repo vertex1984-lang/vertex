@@ -1,12 +1,10 @@
 /**
- * seeany-category-banners.js — 生成类目页页头横幅底图（无文字，文字用 HTML 叠加）
- * 用法: node scripts/seeany-category-banners.js
- * 输出: public/images/brand/cat-banner-<cat>.webp（1600x560）
- * 目前只生成 cushions 做演示，确认效果后再补其他类目
+ * seeany-trust-living.js — 生成首页信任区右卡（评价卡）配图（2026-09-22 用户定：客厅场景）
+ * 用法: node scripts/seeany-trust-living.js
+ * 4:3 客厅场景，构图饱满，输出 public/images/brand/trust-living.png（转 webp 后组件引用）
  */
 const fs = require('fs');
 const path = require('path');
-const sharp = require('sharp');
 const KEY = (() => {
   const env = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
   return (env.match(/^SEEANY_API_KEY=(.+)$/m) || [])[1]?.trim();
@@ -15,18 +13,16 @@ if (!KEY) { console.error('缺少 SEEANY_API_KEY'); process.exit(1); }
 
 const API = 'https://api.seeany.com/api/ai/smarttask';
 const OUT = path.join(__dirname, '..', 'public', 'images', 'brand');
-fs.mkdirSync(OUT, { recursive: true });
 
-const STYLE = '暖色调家居摄影风格，米色和暖棕色调（beige & warm brown palette），柔和自然光，高级电商品牌质感，写实摄影，画面干净有呼吸感，无文字无水印无logo';
+const STYLE = '暖色调家居摄影风格，米色和暖棕色调（beige & warm brown palette），柔和自然光，高级电商品牌质感，写实摄影，无文字无水印无logo';
 
-const JOBS = [
-  {
-    name: 'cat-banner-cushions',
-    prompt: `超宽幅横版构图的明亮通透餐区场景：整体高调照明（high-key lighting），大面积白色和浅米色，几把浅木色餐椅上放着米白色簇绒椅垫，白纱帘透入充足日光，背景虚化的绿植点缀，画面轻盈明亮、曝光充足，左侧保留干净浅色墙面空间适合叠加深色文字。${STYLE}`,
-  },
-];
+const JOB = {
+  name: 'trust-living',
+  ratio: '4:3',
+  prompt: `温馨客厅场景：米色布艺沙发上摆放着亚麻抱枕和针织毯，前方木质茶几上有书籍与陶瓷杯，旁边绿植点缀，柔和窗光洒入，画面下半部为沙发与地毯（便于底部叠加文字），构图饱满。${STYLE}`,
+};
 
-async function createTask(job) {
+async function createTask(size) {
   const res = await fetch(API, {
     method: 'POST',
     headers: {
@@ -37,18 +33,19 @@ async function createTask(job) {
     body: JSON.stringify({
       aiTypeId: 113,
       aiType: 'smartImg',
-      prompt: job.prompt,
+      prompt: JOB.prompt,
       imgNum: 1,
-      imgRatio: '21:9',
+      imgRatio: JOB.ratio,
       mode: 'gpt-image-2.5-sunburst',
-      size: '2K',
+      size,
     }),
   });
   const data = await res.json();
-  if (data.code !== 0) throw new Error(`${job.name}: ${JSON.stringify(data)}`);
+  if (data.code !== 0) throw new Error(`${JSON.stringify(data)}`);
   return data.data.task_uuid;
 }
 
+// 轮询任务结果：GET /api/developer/task/status?task_uuid=xxx
 async function pollTask(uuid) {
   const url = `https://api.seeany.com/api/developer/task/status?task_uuid=${encodeURIComponent(uuid)}`;
   for (let i = 0; i < 90; i++) {
@@ -71,17 +68,20 @@ async function pollTask(uuid) {
 }
 
 (async () => {
-  for (const job of JOBS) {
-    const dest = path.join(OUT, `${job.name}.webp`);
-    if (fs.existsSync(dest)) { console.log('已存在，跳过:', dest); continue; }
-    console.log(`创建任务: ${job.name} (21:9)`);
-    const uuid = await createTask(job);
-    console.log(`  task_uuid=${uuid}, 等待生成...`);
-    const imgUrl = await pollTask(uuid);
-    const res = await fetch(imgUrl);
-    const buf = Buffer.from(await res.arrayBuffer());
-    await sharp(buf).resize(1600, 560, { fit: 'cover', position: 'attention' }).webp({ quality: 82 }).toFile(dest);
-    console.log(`  已保存 ${dest}`);
+  const dest = path.join(OUT, `${JOB.name}.png`);
+  if (fs.existsSync(dest)) { console.log(`跳过已存在: ${dest}`); process.exit(0); }
+  let uuid;
+  try {
+    uuid = await createTask('2K');
+  } catch (e) {
+    console.log(`2K 创建失败（${e.message}），回退 1K`);
+    uuid = await createTask('1K');
   }
-  console.log('全部完成');
+  console.log(`task_uuid=${uuid}, 等待生成...`);
+  const imgUrl = await pollTask(uuid);
+  console.log(`结果: ${imgUrl}`);
+  const res = await fetch(imgUrl);
+  const buf = Buffer.from(await res.arrayBuffer());
+  fs.writeFileSync(dest, buf);
+  console.log(`已保存 ${dest} (${buf.length} bytes)`);
 })().catch(e => { console.error('失败:', e.message); process.exit(1); });

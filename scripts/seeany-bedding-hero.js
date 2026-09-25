@@ -1,8 +1,9 @@
 /**
- * seeany-brand-banner.js — 生成主页品牌影响力横幅底图（无文字，文字用 HTML 叠加）
- * 用法: node scripts/seeany-brand-banner.js
- * 输出: public/images/brand/brand-banner.webp（桌面横版 1456x574）
- *       public/images/brand/brand-banner-mobile.webp（移动竖版 3:4）
+ * seeany-bedding-hero.js — 生成新 bedding 页主视觉横幅底图（无文字，文字用 HTML 叠加）
+ * 主题：舒适 & 睡眠质量——一张让人想躺进去的床
+ * 用法: node scripts/seeany-bedding-hero.js
+ * 输出: public/images/bedding/hero-desktop.webp（横版 21:9）
+ *       public/images/bedding/hero-mobile.webp（竖版 3:4）
  */
 const fs = require('fs');
 const path = require('path');
@@ -14,25 +15,25 @@ const KEY = (() => {
 if (!KEY) { console.error('缺少 SEEANY_API_KEY'); process.exit(1); }
 
 const API = 'https://api.seeany.com/api/ai/smarttask';
-const OUT = path.join(__dirname, '..', 'public', 'images', 'brand');
+const OUT = path.join(__dirname, '..', 'public', 'images', 'bedding');
 fs.mkdirSync(OUT, { recursive: true });
 
-const STYLE = '暖色调家居摄影风格，米色和暖棕色调（beige & warm brown palette），柔和自然光，高级电商品牌质感，写实摄影，画面干净有呼吸感，无文字无水印无logo';
+const STYLE = '暖色调家居摄影风格，米色奶油色系（beige & cream palette），柔和晨光，高级电商品牌质感，写实摄影，画面干净有呼吸感，无文字无水印无logo，无人';
 
 const JOBS = [
   {
-    name: 'brand-banner',
+    name: 'hero-desktop',
     ratio: '21:9',
-    width: 1456,
-    height: 574,
-    prompt: `极简主义超宽幅横版构图：画面左侧三分之二是一面干净的暖灰米色纯色墙面，大面积留白，柔和晨光在墙面上形成淡淡的渐变；画面最右侧边缘只露出米色布艺沙发的一角和一个抱枕，小面积点缀，浅景深。整体安静、高级、极简。${STYLE}`,
+    width: 1680,
+    height: 720,
+    prompt: `超宽幅横版卧室场景：画面右侧一张铺得蓬松柔软的大床，米白色亚麻床品层叠，被子有自然褶皱和柔软起伏，几个抱枕慵懒地靠在床头，质感细腻可见织物纹理，晨光从左侧纱帘透进来在被子上形成柔和光影；画面左侧三分之一是干净的暖米色墙面和纱帘柔光，大面积安静留白（用于叠加文字）。整体传达深度睡眠的舒适与安宁。${STYLE}`,
   },
   {
-    name: 'brand-banner-mobile',
+    name: 'hero-mobile',
     ratio: '3:4',
     width: 900,
     height: 1200,
-    prompt: `极简主义竖版构图：画面上半部分是米色沙发一角和一个抱枕，浅景深柔和虚化；下半部分三分之二是大面积干净的暖灰米色纯色地面和墙面留白，光线柔和渐变。整体安静、高级、极简。${STYLE}`,
+    prompt: `竖版卧室场景：中景一张铺得蓬松柔软的大床，米白色亚麻床品层叠，被子有自然褶皱和柔软起伏，抱枕慵懒靠在床头，织物纹理细腻，晨光透过纱帘洒在被子上形成柔和光影；画面上半部分保留安静的暖米色墙面留白（用于叠加文字）。整体传达深度睡眠的舒适与安宁。${STYLE}`,
   },
 ];
 

@@ -28,8 +28,8 @@ export default function V2BrandBanner() {
       <Reveal>
         {/* 桌面端：1456/418 宽横幅 */}
         <a
-          href={v2url('/products/')}
-          className="group relative hidden sm:block w-full aspect-[1456/418] max-h-[93vh] overflow-hidden"
+          href={v2url('/better-texture/')}
+          className="group relative hidden sm:block w-full aspect-[1456/459.8] max-h-[93vh] overflow-hidden"
         >
           <video {...videoProps}>
             <source src={resolveUrl('/videos/brand-banner.mp4')} type="video/mp4" />
@@ -38,10 +38,10 @@ export default function V2BrandBanner() {
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-11 lg:p-16 max-w-xl">
             <h3 className="text-2xl sm:text-[33px] lg:text-[40px] font-extrabold text-cream tracking-tight leading-tight mb-3">
-              Instant comfort shift.
+              Better Texture,
             </h3>
             <p className="text-sm sm:text-[17px] lg:text-[20px] text-cream/85 mb-7">
-              New textures, new feeling.
+              Better Feeling.
             </p>
             <span className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
               Discover More
@@ -51,7 +51,7 @@ export default function V2BrandBanner() {
 
         {/* 移动端：同一路视频，4/3.97 比例（较 4/3 高 30%），object-cover 居中裁切两侧 */}
         <a
-          href={v2url('/products/')}
+          href={v2url('/better-texture/')}
           className="group relative block sm:hidden w-full aspect-[4/3.97] overflow-hidden"
         >
           <video {...videoProps}>
@@ -60,10 +60,10 @@ export default function V2BrandBanner() {
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-7 max-w-xs">
             <h3 className="text-[23px] font-extrabold text-cream tracking-tight leading-tight mb-2">
-              Instant comfort shift.
+              Better Texture,
             </h3>
             <p className="text-base text-cream/85 mb-5">
-              New textures, new feeling.
+              Better Feeling.
             </p>
             <span className="inline-block px-7 py-3 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
               Discover More

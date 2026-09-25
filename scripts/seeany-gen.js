@@ -49,7 +49,7 @@ async function createTask(job) {
       prompt: job.prompt,
       imgNum: 1,
       imgRatio: job.ratio,
-      mode: 'nano-banana-pro',
+      mode: 'gpt-image-2.5-sunburst',
       size: '1K',
     }),
   });

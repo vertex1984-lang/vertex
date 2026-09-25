@@ -1,5 +1,5 @@
 /**
- * seeany-edit-tray.js — 用 SeeAny API（nano-banana-pro 参考图编辑）修正托盘场景图比例
+ * seeany-edit-tray.js — 用 SeeAny API（gpt-image-2.5-sunburst 参考图编辑）修正托盘场景图比例
  * 背景：1688-899672152256-C42 托盘实际 28×28cm，但场景图里占了茶几 60-70% 宽度，比例失真。
  * 本脚本以原图（素材库源 URL）为参考图，让模型把托盘缩小到真实比例，输出到
  * scripts/seeany-edit-preview/ 供用户确认，确认后再替换 public/images/products/ 里的图。
@@ -53,7 +53,7 @@ async function createTask(job) {
       inputImgs: [job.src],
       imgNum: 1,
       imgRatio: '1:1',
-      mode: 'nano-banana-pro',
+      mode: 'gpt-image-2.5-sunburst',
       size: '1K',
     }),
   });

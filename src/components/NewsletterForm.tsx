@@ -40,7 +40,7 @@ export default function NewsletterForm() {
 
   if (status === 'success') {
     return (
-      <div className="flex items-center gap-3 w-full lg:w-auto lg:min-w-[380px]">
+      <div className="flex items-center gap-3 w-full">
         <span className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M20 6L9 17l-5-5" />
@@ -52,7 +52,7 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full lg:w-auto lg:min-w-[380px]" noValidate>
+    <form onSubmit={handleSubmit} className="w-full" noValidate>
       <div className="flex flex-col sm:flex-row gap-3">
         <input
           type="email"

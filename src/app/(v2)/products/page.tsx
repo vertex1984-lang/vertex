@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import ProductCard from '@/components/ProductCard';
+import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
+import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
@@ -222,6 +224,10 @@ export default function V2ProductsPage() {
       .map(([label, count]) => ({ key: label, label, count }));
   }, [scopeProducts, beddingMaterialMode, styleKeyOf]);
 
+  // ── bedding 选购视图（2026-09 重做：付费搜索落地页，替代 V2BeddingLanding 聚合页）──
+  // 视图组件 = V2BeddingShop（意图回显行 + 粘性筛选条 + 家族卡网格），URL 参数自管理；
+  // 聚合页时代的 texture/colorGroups/styleCards/newest memos 已随 landing 一并移除
+
   // 统一写 URL（分类 + 风格 + 筛选 + 排序，可分享；q 参数原样保留）。
   // 进入/退出风格分组用 pushState（浏览器后退可回到分区视图），其余变更用 replaceState 不污染历史
   const writeUrl = (b: FilterBundle, push = false) => {
@@ -354,8 +360,9 @@ export default function V2ProductsPage() {
   // 产品卡详情链接：v2 页面内保持 /v2 前缀
   const cardHref = (p: MakimooProduct) => v2url(`/products/${p.handle}/`);
 
-  // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && (collectionOptions.length > 0 || materialOptions.length > 0);
+  // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
+  // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
@@ -379,8 +386,11 @@ export default function V2ProductsPage() {
           {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
           <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
         </div>
-        {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定） */}
-        {mounted && (
+        {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定）。
+            landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
+            老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
+            bedding 类目页不展示排序下拉（2026-09 用户定） */}
+        {mounted && !beddingMaterialMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -471,6 +481,9 @@ export default function V2ProductsPage() {
             </div>
           ))}
         </div>
+      ) : beddingMaterialMode && !isSearching ? (
+        /* bedding 选购视图（2026-09 重做，付费搜索落地页）：意图回显 + 粘性筛选条 + 家族卡网格 */
+        <V2BeddingShop products={categoryProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -609,6 +622,16 @@ export default function V2ProductsPage() {
       )}
       </div>
       </div>
+
+      {/* "Need help deciding?" 教育模块（优化手册 PLP 模块：网格下方链 3 篇指南；搜索视图不显示） */}
+      {mounted && activeCategory && !isSearching && (
+        <V2RelatedGuides
+          cat={activeCategory.toLowerCase()}
+          eyebrow="Need Help Deciding?"
+          heading="Need help deciding?"
+          sub="A few quick guides to help you choose the right one."
+        />
+      )}
 
       {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material/Style（多选，bedding 为 Style），底部 Show Products（不显示数量，2026-09 用户定） */}
       {filterOpen && (

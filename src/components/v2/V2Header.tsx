@@ -7,12 +7,15 @@ import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
+import { fabricByMaterial } from '@/data/bedding-fabrics';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
 // Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
 // 两个精选页保留（首页 View More 等入口进入），原 /featured 汇总页保留但全站无入口
 const navLinks = [
-  { label: 'Bedding', href: '/products?cat=bedding', cat: 'bedding' },
+  // Bedding 一级入口 2026-09 改为 /bedding/ 落地页（按面料拆二级 PLP 后，
+  // /products?cat=bedding 大杂烩页全站无入口、仅保留兜底）
+  { label: 'Bedding', href: '/bedding/', cat: 'bedding' },
   { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
   { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
   { label: 'Towels', href: '/products?cat=towels', cat: 'towels' },
@@ -32,8 +35,8 @@ interface MenuCard {
 }
 const MEGA_CARDS: Record<string, MenuCard[]> = {
   bedding: [
-    { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/products?cat=bedding&sub=100%25%20Linen' },
-    { image: '/images/products/1688-916370884976-C5/1.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/products?cat=bedding&sub=Washed%20Cotton-Like' },
+    { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/bedding/linen/' },
+    { image: '/images/products/1688-916370884976-C5/1.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/bedding/washed-cotton/' },
   ],
   blankets: [
     { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
@@ -71,6 +74,66 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
 
 // 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
 const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
+
+// ── Mega menu 多列布局（2026-09 升级，对标 Parachute）──
+interface MenuLink {
+  label: string;
+  /** 链接下一行小字描述（Parachute "Crisp. Cool." 式，可选） */
+  desc?: string;
+  href: string;
+}
+interface MenuColumn {
+  title: string;
+  /** 列标题可点（→ 类目汇总页）；无则纯标题 */
+  href?: string;
+  links: MenuLink[];
+}
+
+/** 组装某个类目的 mega menu 列：首列 = 类目子项（bedding 为面料列，描述取自 bedding-fabrics
+ *  注册表，链接直达面料二级 PLP /bedding/[fabric]/），次列 = Featured 固定入口
+ *  （bedding 例外，2026-09 用户定：次列改为 "Bedding" 产品类型列，标题链 /bedding/，
+ *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 移至面料列末尾） */
+function menuColumns(cat: string, styles: { key: string; label: string }[]): MenuColumn[] {
+  const current = navLinks.find((l) => l.cat === cat);
+  const first: MenuColumn = {
+    title: cat === 'bedding' ? 'Shop by Fabric' : (current?.label || cat),
+    // bedding 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）；其他类目链到类目页
+    href: cat === 'bedding' ? undefined : current?.href,
+    links: styles.map((s) => {
+      const fb = cat === 'bedding' ? fabricByMaterial(s.key) : undefined;
+      return {
+        label: s.label,
+        desc: fb?.desc,
+        href: fb ? `/bedding/${fb.slug}/` : `/products?cat=${cat}&sub=${encodeURIComponent(s.key)}`,
+      };
+    }),
+  };
+  if (cat === 'bedding') {
+    first.links.push({ label: 'Fabric Guide', desc: 'Find your feel.', href: '/fabric-guide/' });
+    return [
+      first,
+      {
+        title: 'Bedding',
+        href: '/bedding/',
+        links: [
+          // Bed Sets 合并入口（2026-09 用户定：4P/3P 合并为一项，页内两分区展示）；
+          // 单类型页 /bedding/4-piece-sets/、/bedding/3-piece-sets/ 保留兜底无入口；
+          // Sheets/Duvet Covers 无产品仍指 Coming Soon 锚点
+          { label: 'Bed Sets', desc: 'Duvet covers, sheets & pillowcases.', href: '/bedding/bed-sets/' },
+          { label: 'Comforter Sets', desc: 'Plush warmth, no layering.', href: '/bedding/comforter-sets/' },
+          { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
+          { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
+          { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
+        ],
+      },
+    ];
+  }
+  const featured: MenuLink[] = [
+    { label: 'Best Sellers', desc: 'Most loved.', href: '/best-sellers/' },
+    { label: 'New Arrivals', desc: 'Just landed.', href: '/new-arrivals/' },
+  ];
+  return [first, { title: 'Featured', links: featured }];
+}
 
 interface V2HeaderProps {
   /** 各类目（小写 productType）在售产品的风格列表，服务端 stylesByCategory() 传入；
@@ -110,8 +173,24 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
         setScrolled(next);
       }
     };
-    window.addEventListener('scroll', onScroll);
+    // 挂载时立即同步一次：浏览器刷新后恢复滚动位置时不会再发 scroll 事件，
+    // 不初始化会卡在透明态，导航文字与页面内容重叠
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // 双保险（2026-09 用户环境 scroll 事件疑似不生效）：文档顶部 60px 处的哨兵离开视口即实底。
+  // IntersectionObserver 与 scroll 事件是相互独立的机制，任一可用都能驱动 solid 状态
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el || !('IntersectionObserver' in window)) return;
+    const ob = new IntersectionObserver(
+      (entries) => setScrolled(!entries[0].isIntersecting)
+    );
+    ob.observe(el);
+    return () => ob.disconnect();
   }, []);
 
   useEffect(() => {
@@ -201,8 +280,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   };
 
   // 只有首页（/）和 About（/about/）有大图页头，保持「透明 → 滚动实底」；
-  // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清
-  const normalizedPath = (pathname || '').replace(/\/+$/, '');
+  // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
+  // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
+  const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
   const transparentStart = normalizedPath === '' || normalizedPath === '/about';
   // mega menu 展开时强制实底，保证导航文字在面板上可读
   const solid = scrolled || !transparentStart || openMenu !== '';
@@ -215,6 +295,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
   return (
     <>
+      {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
+          滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
+      <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* Announcement Bar：向下滚动超过阈值后收起（桌面/移动一致），回到顶部附近再展开 */}
         <div
@@ -417,37 +500,43 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             style={{ animation: 'fadeIn 0.18s ease-out' }}
           >
             <div className="px-6 lg:px-10 py-9 flex gap-14 justify-center">
-              {/* 左：分类总链接 + 二级类目列表 */}
-              <div className="flex-shrink-0 w-56">
-                {(() => {
-                  const current = navLinks.find((l) => l.cat === openMenu);
-                  const titleClass =
-                    'inline-flex items-center gap-2 text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20';
-                  const arrow = (
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/title:translate-x-1">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                  );
-                  return current?.href ? (
-                    <a href={v2url(current.href)} className={`group/title ${titleClass} hover:text-brand transition-colors`}>
-                      {current.label}
-                      {arrow}
-                    </a>
-                  ) : (
-                    <span className={titleClass}>{current?.label}</span>
-                  );
-                })()}
-                <div className="flex flex-col gap-3.5">
-                  {(catStyles[openMenu] || []).map((sub) => (
-                    <a
-                      key={sub.key}
-                      href={v2url(`/products?cat=${openMenu}&sub=${encodeURIComponent(sub.key)}`)}
-                      className="text-sm font-medium text-charcoal-light hover:text-brand transition-colors"
-                    >
-                      {sub.label}
-                    </a>
-                  ))}
-                </div>
+              {/* 左：多列链接（Parachute 风格）——首列类目子项（bedding = 面料列，带质感短句），次列 Featured 固定入口 */}
+              <div className="flex gap-12">
+                {menuColumns(openMenu, catStyles[openMenu] || []).map((col) => (
+                  <div key={col.title} className="flex-shrink-0 w-44">
+                    {col.href ? (
+                      <a
+                        href={v2url(col.href)}
+                        onClick={() => setOpenMenu('')}
+                        className="group/title inline-flex items-center gap-2 text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20 hover:text-brand transition-colors"
+                      >
+                        {col.title}
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/title:translate-x-1">
+                          <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center text-sm font-bold tracking-[0.15em] uppercase text-charcoal pb-3 mb-4 border-b border-charcoal/20">
+                        {col.title}
+                      </span>
+                    )}
+                    <div className="flex flex-col gap-3.5">
+                      {col.links.map((l) => (
+                        <a
+                          key={l.href + l.label}
+                          href={v2url(l.href)}
+                          onClick={() => setOpenMenu('')}
+                          className="group/item"
+                        >
+                          <span className="block text-sm font-medium text-charcoal-light group-hover/item:text-brand transition-colors">
+                            {l.label}
+                          </span>
+                          {l.desc && <span className="mt-0.5 block text-xs text-[#999]">{l.desc}</span>}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
 
               {/* 右：示例图卡（图 + 大写小标题 + 下划线跳转链接） */}
@@ -552,7 +641,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      {link.href && (
+                      {/* bedding 不渲染 "Shop All" 首项（2026-09 用户定：移除），
+                          /bedding/ 入口由下方 BEDDING 组标题链接承担（同桌面列标题可点） */}
+                      {link.href && link.cat !== 'bedding' && (
                         <a
                           href={v2url(link.href)}
                           onClick={() => setMobileOpen(false)}
@@ -561,16 +652,48 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                           Shop All {link.label} →
                         </a>
                       )}
-                      {subs.map((sub) => (
-                        <a
-                          key={sub.key}
-                          href={v2url(sub.href)}
-                          onClick={() => setMobileOpen(false)}
-                          className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
-                        >
-                          {sub.label}
-                        </a>
-                      ))}
+                      {/* bedding 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
+                          面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                          组标题 = 主层级缩进（mx-4）+ 下划线（同桌面列标题 border-b 样式），
+                          子类目 pl-8 缩进，层级一眼可辨（2026-09 用户反馈：原同缩进分不清） */}
+                      {link.cat === 'bedding'
+                        ? menuColumns('bedding', catStyles['bedding'] || []).map((col) => (
+                            <div key={col.title}>
+                              {col.href ? (
+                                <a
+                                  href={v2url(col.href)}
+                                  onClick={() => setMobileOpen(false)}
+                                  className="block text-[11px] font-bold tracking-[0.15em] uppercase text-[#999] mt-3 mb-1 mx-4 pb-2 border-b border-charcoal/10 hover:text-brand transition"
+                                >
+                                  {col.title} →
+                                </a>
+                              ) : (
+                                <p className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#999] mt-3 mb-1 mx-4 pb-2 border-b border-charcoal/10">
+                                  {col.title}
+                                </p>
+                              )}
+                              {col.links.map((l) => (
+                                <a
+                                  key={l.href + l.label}
+                                  href={v2url(l.href)}
+                                  onClick={() => setMobileOpen(false)}
+                                  className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                                >
+                                  {l.label}
+                                </a>
+                              ))}
+                            </div>
+                          ))
+                        : subs.map((sub) => (
+                            <a
+                              key={sub.key}
+                              href={v2url(sub.href)}
+                              onClick={() => setMobileOpen(false)}
+                              className="block text-sm text-charcoal-light py-2 pl-8 pr-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+                            >
+                              {sub.label}
+                            </a>
+                          ))}
                     </div>
                   </div>
                 </div>

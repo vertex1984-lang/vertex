@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { v2url } from '@/lib/v2paths';
+import NewsletterForm from '@/components/NewsletterForm';
 
 const footerLinkClass =
   "relative w-fit text-sm opacity-60 hover:opacity-100 transition py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-cream/70 after:transition-all after:duration-300 hover:after:w-full";
@@ -94,23 +95,8 @@ export default function V2Footer() {
             <p className="text-sm opacity-60 mb-4">
               Subscribe for new arrivals, styling tips and exclusive offers.
             </p>
-            {/* 订阅简报占位：后续接入真实订阅服务 */}
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email address"
-                disabled
-                className="flex-1 min-w-0 h-11 px-4 rounded-lg bg-cream/10 border border-cream/25 text-sm placeholder:text-cream/40 outline-none cursor-not-allowed"
-              />
-              <button
-                type="button"
-                disabled
-                className="h-11 px-5 rounded-lg bg-cream text-brand text-sm font-semibold opacity-50 cursor-not-allowed flex-shrink-0"
-              >
-                Subscribe
-              </button>
-            </form>
-            <p className="text-xs opacity-40 mt-3">Coming soon.</p>
+            {/* 真实订阅：Shopify customerCreate（NewsletterForm，2026-09 接通，替代原占位表单） */}
+            <NewsletterForm />
           </div>
         </div>
 

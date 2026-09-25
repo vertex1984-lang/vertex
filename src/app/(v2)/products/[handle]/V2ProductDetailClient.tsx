@@ -13,6 +13,7 @@ import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
+import { getProductReviews } from '@/data/product-reviews';
 
 interface V2ProductDetailClientProps {
   handle: string;
@@ -111,6 +112,8 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
 
   // 规格：重量（Shopify）+ 尺寸/材质（提取表，规格行无数据则不显示）
   const specs = getProductSpecs(product.asin);
+  // 真实评价是否存在（有则头部星级行可锚到 page 级评价区 V2ProductReviews）
+  const reviews = getProductReviews(product.asin);
   const weightStr = formatWeightDual(product.shopifyWeight, product.shopifyWeightUnit);
   const dimsStr = formatDimensionsDual(specs?.dimensionsCm);
 
@@ -238,9 +241,9 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 {product.title}
               </h1>
 
-              {/* Rating：仅在有真实评价数据时显示 */}
+              {/* Rating：仅在有真实评价数据时显示；有评价正文时可点击锚到评价区 */}
               {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
-                <div className="flex items-center gap-2 mb-4">
+                <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 mb-4 w-fit">
                   <div className="flex text-brand">
                     {[1,2,3,4,5].map(i => (
                       <svg key={i} width="18" height="18" viewBox="0 0 24 24"
@@ -254,7 +257,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                   <span className="text-sm text-charcoal-light">
                     {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
                   </span>
-                </div>
+                </a>
               )}
 
               {/* Price：划线价和 Save 徽章仅在有真实 compareAtPrice 且高于现价时显示 */}
