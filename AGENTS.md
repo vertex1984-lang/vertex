@@ -99,6 +99,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 ## Git
 
 - remote：`git@github.com:vertex1984-lang/vertex.git`，推送后 Vercel 自动部署。commit/push 必须用户明确要求后才执行。
+- **上线约定（2026-09-26 用户定）**：本机（owner）的改动在 localhost 经用户验收后，用户说"推送/上线"即合并进 `main` 直接上线；**协作方推到分支的内容，只有用户明确确认后才合并进 main——不默认自动合并任何分支**。生产站只部署 main，推 feat 分支只产生 Vercel 预览、不影响线上（2026-09-26 踩坑：推 feat 后线上未更新）。
 
 ## 协作开发
 
