@@ -83,6 +83,19 @@ export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [st
   });
 }
 
+/** bedding 材质分区标题下的一句话描述（小字，2026-09 用户定）；未收录的材质不显示描述行。
+ *  原定义在 (v2)/products/page.tsx，2026-09 挪入此表供 V2BeddingShop 材质分区复用 */
+export const BEDDING_MATERIAL_BLURBS: Record<string, string> = {
+  'Washed Cotton-Like': 'Soft washed feel with a relaxed, lived-in look — easy everyday care.',
+  'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
+  '100% Linen': 'Pure natural linen — breathable, durable, and softer with every wash.',
+  'Silk-Modal': 'Silky-smooth modal blend with a cool, gentle touch.',
+  Sateen: 'Smooth sateen weave with a subtle sheen and buttery feel.',
+  Microfiber: 'Brushed microfiber — soft, wrinkle-resistant & easy care.',
+  Bamboo: 'Bamboo-blend fabric — cool, breathable & moisture-wicking.',
+  Linen: 'Natural linen — breathable with a lived-in texture.',
+};
+
 export function getSubcategoryDef(key: string): SubcategoryDef | undefined {
   return SUBCATEGORIES.find((s) => s.key === key);
 }

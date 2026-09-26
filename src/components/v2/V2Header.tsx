@@ -118,9 +118,9 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
         links: [
           // Bed Sets 合并入口（2026-09 用户定：4P/3P 合并为一项，页内两分区展示）；
           // 单类型页 /bedding/4-piece-sets/、/bedding/3-piece-sets/ 保留兜底无入口；
+          // Comforter Sets 入口 2026-09-26 移除（唯一 comforter 家族 1688-916370884976 实为被套 3 件套，已归 three）；
           // Sheets/Duvet Covers 无产品仍指 Coming Soon 锚点
           { label: 'Bed Sets', desc: 'Duvet covers, sheets & pillowcases.', href: '/bedding/bed-sets/' },
-          { label: 'Comforter Sets', desc: 'Plush warmth, no layering.', href: '/bedding/comforter-sets/' },
           { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
           { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
           { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
@@ -152,9 +152,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   const [favCount, setFavCount] = useState(0);
   // Mega menu：当前展开的分类（'' = 收起）
   const [openMenu, setOpenMenu] = useState('');
-  // 移动抽屉顶端对齐到页头下缘（页头保持露出可点）；打开瞬间量一次页头高度
+  // 移动抽屉 2026-09 改为底部上弹（82dvh，页头保持露出可点），不再需要对齐页头下缘
   const headerRef = useRef<HTMLDivElement>(null);
-  const [drawerTop, setDrawerTop] = useState(96);
   // 抽屉里当前展开二级类目的一级类目（'' = 全部折叠）；抽屉关闭时复位
   const [expandedCat, setExpandedCat] = useState('');
   useEffect(() => {
@@ -308,8 +307,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           Free Shipping on Orders Over $49 | 30-Day Easy Returns
         </div>
 
+        {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），
+            让出首屏空间；桌面保持 py-4 + h-14 = 88px。图标按钮保持 44px 触控目标。
+            依赖头部高度的两处同步：页面顶部留白 pt-24（公告条 32 + 头 60 + 4px 余量）、
+            筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
         <header
-          className={`flex items-center justify-between px-6 lg:px-10 py-4 transition-all duration-300 ${textColor} ${
+          className={`flex items-center justify-between px-6 lg:px-10 py-2 lg:py-4 transition-all duration-300 ${textColor} ${
             solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
           }`}
         >
@@ -317,7 +320,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             <img
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
-              className="h-12 lg:h-14 w-auto object-contain transition-all duration-300"
+              className="h-9 lg:h-14 w-auto object-contain transition-all duration-300"
               style={solid ? undefined : { filter: 'brightness(0) invert(1)' }}
             />
           </a>
@@ -395,12 +398,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
             {/* 汉堡按钮 = 抽屉开关：打开时图标变 ×，再点一次关闭（页头始终露出在抽屉上方） */}
             <button
-              onClick={() => {
-                if (!mobileOpen) {
-                  setDrawerTop(headerRef.current?.offsetHeight ?? 96);
-                }
-                setMobileOpen((v) => !v);
-              }}
+              onClick={() => setMobileOpen((v) => !v)}
               className="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-1"
               aria-label={mobileOpen ? 'Close menu' : 'Menu'}
               aria-expanded={mobileOpen}
@@ -578,9 +576,10 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
         )}
       </div>
 
-      {/* Mobile Drawer：不再铺满全屏——z-40 低于页头（z-50），页头保持露出，
-          汉堡/× 按钮始终可点；抽屉从页头下缘开始，限高内部滚动，
-          其余区域盖半透明遮罩，点遮罩（抽屉外任意处）关闭 */}
+      {/* Mobile Drawer（2026-09 用户定改为底部上弹）：面板贴屏幕下缘、限高 82dvh，
+          顶部露出约 18% 原网页；z-40 低于页头（z-50），页头汉堡/× 按钮始终可点；
+          遮罩覆盖包括露出网页在内的全屏区域，点遮罩（抽屉外任意处）关闭；
+          顶部圆角 + 小横杠把手做 bottom sheet 视觉暗示（暂不加下滑手势，用户定） */}
       {mobileOpen && (
         <div
           className="fixed inset-0 z-40 bg-charcoal/40 lg:hidden"
@@ -593,15 +592,16 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           }}
         >
           <div
-            className="absolute left-0 right-0 bg-off-white text-charcoal px-8 pb-8 pt-4 overflow-y-auto shadow-[0_16px_40px_rgba(60,45,30,0.25)]"
+            className="absolute left-0 right-0 bottom-0 bg-off-white text-charcoal rounded-t-2xl px-8 pb-8 pt-2 overflow-y-auto shadow-[0_-16px_40px_rgba(60,45,30,0.25)]"
             style={{
-              top: drawerTop,
-              maxHeight: `calc(100vh - ${drawerTop}px)`,
-              animation: 'fadeIn 0.18s ease-out',
+              maxHeight: '82dvh',
+              animation: 'slideUp 0.25s ease-out',
             }}
             onClick={(e) => e.stopPropagation()}
             onTouchEnd={(e) => e.stopPropagation()}
           >
+          {/* drag handle：bottom sheet 视觉把手（纯装饰，不绑手势） */}
+          <div className="w-10 h-1 mx-auto mb-2 rounded-full bg-charcoal/15" aria-hidden="true" />
           <nav className="flex flex-col gap-1">
             <a
               href={v2url('/')}

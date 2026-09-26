@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Reveal from '@/components/Reveal';
+import DragScroll from '@/components/v2/DragScroll';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import type { SceneOption } from '@/data/home-sections';
@@ -103,11 +104,6 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
     setActiveScene(key);
   };
 
-  const switchScene = (step: 1 | -1) => {
-    const next = scenes[activeIndex + step];
-    if (next) selectScene(next.key);
-  };
-
   // 胶囊行右侧"还有更多"箭头：可继续右滑时显示，滚到底自动隐藏
   const pillRef = useRef<HTMLDivElement>(null);
   const [moreRight, setMoreRight] = useState(false);
@@ -132,29 +128,6 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
       ?.querySelector('[aria-pressed="true"]')
       ?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
   }, [activeScene]);
-
-  // 移动端卡片区左右滑手势切换场景：横向位移 >60px 且 |dx| > 1.5|dy| 才触发，不干扰页面上下滚动。
-  // 只挂在移动端平铺容器上：桌面横滑轨道自带触摸滚动，挂外层会让触屏笔记本滑产品轨时误触场景切换并丢失滚动位置
-  const swipeStart = useRef<{ x: number; y: number } | null>(null);
-  const onTouchStart = (e: React.TouchEvent) => {
-    swipeStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-  };
-  const onTouchEnd = (e: React.TouchEvent) => {
-    const s = swipeStart.current;
-    swipeStart.current = null;
-    if (!s) return;
-    const dx = e.changedTouches[0].clientX - s.x;
-    const dy = e.changedTouches[0].clientY - s.y;
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-      switchScene(dx < 0 ? 1 : -1);
-    }
-  };
-
-  // 移动端平铺列表：最多 3 行 × 2 列 = 6 款；奇数款去掉最后 1 款，避免末行单卡
-  const mobileProducts = useMemo(() => {
-    const list = (active?.products ?? []).slice(0, 6);
-    return list.length % 2 === 1 ? list.slice(0, -1) : list;
-  }, [active]);
 
   // 桌面端产品横滑轨道：触摸滑动 + 鼠标拖拽（同 Shop by Category / Shop by Color，无箭头）
   const trackRef = useRef<HTMLDivElement>(null);
@@ -289,16 +262,17 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
               </div>
             </div>
 
-            {/* 移动端平铺：2 列最多 3 行，奇数款已去掉末尾 1 款（桌面端隐藏）。
-                gap-2 与分类页移动端一致，卡更宽图更大；左右滑手势切换场景只挂在这个容器上 */}
-            <div
-              className="lg:hidden grid grid-cols-2 gap-2"
-              onTouchStart={onTouchStart}
-              onTouchEnd={onTouchEnd}
-            >
-              {mobileProducts.map((product) => (
-                <V2ProductCard key={product.id} product={product} />
-              ))}
+            {/* 移动端横轨（2026-09 用户定：替代原 2 列平铺，与 Best Sellers 移动端同款）。
+                原"左右滑手势切换场景"与横轨滚动手势冲突，已移除——场景切换走上方 chips。
+                支持鼠标拖拽滚动（DragScroll），卡片宽度与 Featured 移动端一致 */}
+            <div className="lg:hidden -mx-3 pl-3">
+              <DragScroll className="flex gap-3 overflow-x-auto pb-2 pr-3 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {active?.products.map((product) => (
+                  <div key={product.id} className="w-[56vw] sm:w-[42vw] flex-shrink-0 snap-start">
+                    <V2ProductCard product={product} />
+                  </div>
+                ))}
+              </DragScroll>
             </div>
           </div>
 

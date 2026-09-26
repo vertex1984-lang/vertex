@@ -7,7 +7,7 @@ export interface V2Crumb {
 }
 
 /**
- * V2 内页统一深色页头：bg-brand 块 + pt-32/lg:pt-36 衬住初始透明的 fixed V2Header
+ * V2 内页统一深色页头：bg-brand 块 + pt-24/lg:pt-36 衬住初始透明的 fixed V2Header
  * （announcement bar + header 实底后总高约 112-120px），与 /v2/products/ 页头一致
  */
 export default function V2PageHeader({
@@ -24,7 +24,7 @@ export default function V2PageHeader({
 }) {
   return (
     <section className="bg-brand">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-24 lg:pt-36 pb-10 lg:pb-14">
         <nav className="text-xs lg:text-sm text-cream/60 mb-3 lg:mb-4" aria-label="Breadcrumb">
           {crumbs.map((c, i) => (
             <span key={c.label}>

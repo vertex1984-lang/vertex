@@ -3,7 +3,7 @@
  * 选购视图共用同一分组口径。
  *
  * ASIN 规律：BEDSET4-{COLOR}-{SIZE}（4 件套）/ DUVSET-{COLOR}-{SIZE}、LINEN3-{COLOR}-{SIZE}（3 件套）/
- * 1688-916370884976-C*（Comforter 3 件套，纯尺寸家族）。
+ * 1688-916370884976-C*（纯尺寸家族，供应商误标 Comforter，实为被套 3 件套 → 归 three，2026-09-26 用户确认）。
  * 卡片/点击均以 Queen 为代表 SKU（PDP 内有尺寸变体导航）。
  */
 import { getProductSpecs } from '@/lib/specs';
@@ -23,13 +23,15 @@ const COLOR_LABELS: Record<string, string> = {
 export interface SetFamily {
   key: string;
   kind: SetKind;
-  /** 色系展示名（comforter 家族从 MATERIALS_MAP 原始标题尾括号解析，取不到为空串） */
+  /** 色系展示名（1688-916370884976 家族 ASIN 无颜色段，从 MATERIALS_MAP 原始标题尾括号解析，取不到为空串） */
   color: string;
   /** 代表 SKU（优先 Queen，其次按 Twin→King 顺序取首个） */
   rep: MakimooProduct;
   sizes: string[];
   /** 家族内最低售价（字符串，可能为空=无价） */
   fromPrice: string;
+  /** 家族内最高售价（字符串，可能为空=无价；供价格区间上限展示，2026-09 用户指出上限漏算变体最高价） */
+  toPrice: string;
   currency: string;
   /** 原始材质列表（不过 "100% " 归一化，与 PLP 材质筛选口径一致），供材质筛选 */
   materials: string[];
@@ -38,8 +40,9 @@ export interface SetFamily {
 export function classifySet(asin: string): SetKind | null {
   const a = asin.toLowerCase();
   if (a.startsWith('bedset4-')) return 'four';
-  if (a.startsWith('duvset-') || a.startsWith('linen3-')) return 'three';
-  if (a.startsWith('1688-916370884976')) return 'comforter';
+  // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
+  // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
+  if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
   return null;
 }
 
@@ -57,7 +60,7 @@ function colorOf(key: string): string {
 }
 
 /**
- * comforter 家族 ASIN 无颜色段，从产品标题尾括号取配色名（如 "(Light Blue & Cheese)"）。
+ * 1688-916370884976 家族 ASIN 无颜色段，从产品标题尾括号取配色名（如 "(Light Blue & Cheese)"）。
  * 注意：enrich 后 title 已被短标题覆盖（括号色名被裁掉），必须查 MATERIALS_MAP 原始标题。
  */
 function titleColorOf(asin: string, fallbackTitle: string): string {
@@ -91,10 +94,11 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
     return {
       key,
       kind: kindOf,
-      color: kindOf === 'comforter' ? titleColorOf(rep.asin, rep.title) : colorOf(key),
+      color: key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key),
       rep,
       sizes: SET_SIZE_ORDER.filter((s) => members.some((p) => p.asin.toUpperCase().endsWith(`-${s}`))),
       fromPrice: prices.length > 0 ? String(Math.min(...prices)) : '',
+      toPrice: prices.length > 0 ? String(Math.max(...prices)) : '',
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
       materials: getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [],
     };

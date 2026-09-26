@@ -41,13 +41,13 @@ interface TypeEntry {
 
 /** 分区展示全部家族卡（2026-09 起不再截断：/products?cat=bedding 大杂烩页全站无入口，
  *  View All 没有可去的二级类型页，落地页直接展示完整列表） */
-function SetSection({ kind, families }: { kind: SetKind; families: SetFamily[] }) {
+function SetSection({ kind, families, first = false }: { kind: SetKind; families: SetFamily[]; first?: boolean }) {
   if (families.length === 0) return null;
   const copy = SET_KIND_PAGE_COPY[kind];
   return (
     <section
       id={KIND_ANCHOR[kind]}
-      className="py-10 lg:py-16 border-t border-[#E8E2DA] first:border-t-0 first:pt-0 scroll-mt-32 lg:scroll-mt-36"
+      className={`py-10 lg:py-16 scroll-mt-32 lg:scroll-mt-36 ${first ? 'pt-0' : 'border-t border-[#E8E2DA]'}`}
     >
       <Reveal>
         <div className="mb-6 lg:mb-10">
@@ -56,7 +56,8 @@ function SetSection({ kind, families }: { kind: SetKind; families: SetFamily[] }
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-8">
           {families.map((f) => (
-            <BeddingSetCard key={f.key} family={f} />
+            /* 分区标题已表类型 → 卡片图上叠布料标签（2026-09 用户定统一规则） */
+            <BeddingSetCard key={f.key} family={f} badges={f.materials[0] ? [f.materials[0]] : []} />
           ))}
         </div>
       </Reveal>
@@ -98,7 +99,7 @@ export default function BeddingPage() {
   /* 版心（2026-09 用户定）：移动端 px-3 全宽；桌面端内容区占屏幕 80% 居中（超宽屏下控制行长与卡尺寸），
      无 1200px 死版心，随视口等比缩放 */
   return (
-    <div className="px-3 lg:px-0 lg:w-[80%] lg:mx-auto pt-32 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-0 lg:w-[80%] lg:mx-auto pt-28 lg:pt-36 pb-10 lg:pb-14">
       {/* ── 面包屑 ── */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -169,10 +170,11 @@ export default function BeddingPage() {
         </Reveal>
       </section>
 
-      {/* ── Bed Sets 产品区（锚点供 mega menu BEDDING 列深链）── */}
-      <SetSection kind="four" families={fourPiece} />
-      <SetSection kind="three" families={threePiece} />
-      <SetSection kind="comforter" families={comforter} />
+      {/* ── Bed Sets 产品区（锚点供 mega menu BEDDING 列深链；第一个非空分区不画上边线，
+          first:border-t-0 伪类不可靠——section 前面还有面包屑/hero 等兄弟节点）── */}
+      <SetSection kind="four" families={fourPiece} first />
+      <SetSection kind="three" families={threePiece} first={fourPiece.length === 0} />
+      <SetSection kind="comforter" families={comforter} first={fourPiece.length === 0 && threePiece.length === 0} />
 
       {/* ── Coming Soon：Sheets / Duvet Covers ── */}<section id="on-the-loom" className="py-10 lg:py-16 border-t border-[#E8E2DA] scroll-mt-32 lg:scroll-mt-36">
         <Reveal>

@@ -16,7 +16,7 @@ export default function StylesIndexPage() {
   const cards = styleCards();
 
   return (
-    <div className="px-3 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-10 pt-24 lg:pt-36 pb-10 lg:pb-14">
       {/* 页头（同 /products 类目页）：面包屑 + 左对齐标题 + 右侧风格数 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>

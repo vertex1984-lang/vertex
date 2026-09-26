@@ -8,22 +8,29 @@ import { sortByWeight } from '@/lib/weights';
  * "数量 + 价格区间 + 排序下拉"一行 2026-09 用户定已移除。
  * 分区模式且分区数 > 1 时，页头下渲染分区锚点 chips（开屏即知有几个分类）。
  * 无交互（chips 为纯锚点），是服务端组件。
+ * 卡片 badge（2026-09 用户定统一规则：叠「标题未表达的另一维度」）：类型页/Bed Sets 合并页
+ * 标题是类型（x-Piece Sets）、页内多布料混排 → 卡片图上叠布料标签（materials[0]）；
+ * 面料页整页同一布料（布料=页面标题、类型=分区标题，两维度都已表达）→ 不叠任何标签，
+ * 调用方传 noBadges。
  */
 
 const KIND_ORDER: SetKind[] = ['four', 'three', 'comforter'];
 
+/** 布料标签：家族主材质（materials[0]，如 "100% Linen"），取不到材质则不叠 */
+const fabricBadge = (f: SetFamily): string[] => (f.materials[0] ? [f.materials[0]] : []);
+
 export default function V2FabricShop({
   families,
   flat = false,
-  colorOnly = true,
+  noBadges = false,
 }: {
   families: SetFamily[];
-  /** flat = 类型二级 PLP 用：全页同一类型，不分区不出小标题，单一网格平铺（标题保留"材质 — 颜色"） */
+  /** flat = 类型二级 PLP 用：全页同一类型，不分区不出小标题，单一网格平铺 */
   flat?: boolean;
-  /** 分区模式卡片标题：true = 只留颜色（面料页，面料已是页面主题）；
-   *  false = "材质 — 颜色"（Bed Sets 合并页等非面料主题页） */
-  colorOnly?: boolean;
+  /** 面料页用：整页同一布料，卡片不叠任何标签（2026-09 用户定） */
+  noBadges?: boolean;
 }) {
+  const cardBadges = (f: SetFamily): string[] => (noBadges ? [] : fabricBadge(f));
   // 固定 Featured 序：按权重降序
   const reps = sortByWeight(families.map((f) => f.rep));
   const byRep = new Map(families.map((f) => [f.rep.id, f]));
@@ -60,15 +67,15 @@ export default function V2FabricShop({
       {flat ? (
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
           {sorted.map((f) => (
-            <BeddingSetCard key={f.key} family={f} />
+            <BeddingSetCard key={f.key} family={f} badges={cardBadges(f)} />
           ))}
         </div>
       ) : (
-        sections.map((s) => (
+        sections.map((s, i) => (
           <section
             key={s.kind}
             id={`sets-${s.kind}`}
-            className="py-8 lg:py-12 border-t border-[#E8E2DA] first:border-t-0 first:pt-0 scroll-mt-24 lg:scroll-mt-28"
+            className={`py-8 lg:py-12 scroll-mt-24 lg:scroll-mt-28 ${i === 0 ? 'pt-0' : 'border-t border-[#E8E2DA]'}`}
           >
             {/* 标题只写类型等属性：面料名 hero/面包屑已表达，不重复（2026-09 用户定） */}
             <h2 className="mb-5 lg:mb-8 text-lg lg:text-2xl font-extrabold text-charcoal">
@@ -76,7 +83,11 @@ export default function V2FabricShop({
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
               {s.list.map((f) => (
-                <BeddingSetCard key={f.key} family={f} colorOnly={colorOnly} />
+                <BeddingSetCard
+                  key={f.key}
+                  family={f}
+                  badges={cardBadges(f)}
+                />
               ))}
             </div>
           </section>

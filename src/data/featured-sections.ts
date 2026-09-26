@@ -17,21 +17,25 @@ import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 export const FEATURED_COUNT = 8;
 
 export function getFeaturedProducts(): MakimooProduct[] {
-  // 变体族同色去重后再算类目配额：同一颜色只占一个卡位，配额份额反映买家可见的真实款数（2026-09 用户定）
-  const pool = dedupeFamilyColors(
-    enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-      (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
-    )
+  // 变体族同色去重后再选品：同一颜色只占一个卡位（2026-09 用户定）。
+  // 但类目份额/配额按【去重前】的在售数计算（2026-09 用户定）：去重会改变各类目款数比例，
+  // 导致类目排位漂移（如 Bedding 掉到 Cushions 后）；按原始在售数算份额可保持类目排位稳定，
+  // 同时选品仍从去重池取，保证同族同色不重复占位。
+  const rawPool = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+    (p) => p.hasShopifyData && p.shopifyAvailable && !NO_TAG_TYPES.has(p.productType)
   );
+  const pool = dedupeFamilyColors(rawPool);
+  const rawCountByType: Record<string, number> = {};
+  for (const p of rawPool) rawCountByType[p.productType] = (rawCountByType[p.productType] || 0) + 1;
   const byType: Record<string, MakimooProduct[]> = {};
   for (const p of pool) (byType[p.productType] ||= []).push(p);
-  const total = pool.length || 1;
+  const total = rawPool.length || 1;
   const cats = Object.entries(byType).map(([type, products]) => {
-    const exact = (products.length / total) * FEATURED_COUNT;
+    const exact = ((rawCountByType[type] || 0) / total) * FEATURED_COUNT;
     return {
       type,
       products: sortByWeight(products),
-      share: products.length / total,
+      share: (rawCountByType[type] || 0) / total,
       exact,
       quota: Math.min(Math.round(exact), products.length),
     };

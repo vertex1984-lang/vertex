@@ -15,7 +15,7 @@ import { resolveUrl } from '@/lib/paths';
  * - 类型页 /bedding/4-piece-sets/ 等：**无 banner**（2026-09 用户定），H1 + 说明 → 单一网格平铺
  * - Bed Sets 合并页 /bedding/bed-sets/（2026-09 用户定：导航 4P/3P 合并入口）：
  *   无 banner，H1 + 说明 → 按 4-Piece/3-Piece 两个分区展示（卡片标题"材质 — 颜色"）
- * 三者共用：面料互导模块、Related Guides；卡片标题口径不同（面料页 colorOnly）。
+ * 三者共用：面料互导模块、Related Guides；卡片 badge（2026-09 用户定）：面料页不叠标签（布料=页面标题、类型=分区标题都已表达），类型页/Bed Sets 合并页叠布料标签。
  * 只给有产品的面料/类型生成静态页；Sheets / Duvet Covers 无产品不生成（导航指 /bedding/#on-the-loom）。
  */
 
@@ -84,10 +84,11 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
   const crumb = fb ? fb.material : isBedSets ? BED_SETS_PAGE_COPY.heading : SET_KIND_PAGE_COPY[kind!].heading;
   const pageCopy = isBedSets ? BED_SETS_PAGE_COPY : kind ? SET_KIND_PAGE_COPY[kind] : null;
 
-  /* 版心与 /bedding/ 落地页一致：移动端 px-3 全宽，桌面 80% 居中 */
+  /* 版心与 products 列表页一致（2026-09 用户定：子类目页宽度/卡片占屏比对齐
+     /products?cat=pillows&sub=* ）：移动端 px-3、桌面 px-10 全宽 */
   return (
-    <div className="pt-32 lg:pt-36 pb-10 lg:pb-14">
-      <div className="px-3 lg:px-0 lg:w-[80%] lg:mx-auto">
+    <div className="pt-28 lg:pt-36 pb-10 lg:pb-14">
+      <div className="px-3 lg:px-10">
         {/* ── 面包屑 ── */}
         <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
           <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -134,9 +135,10 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
           </div>
         )}
 
-        {/* ── 选购区：无筛选条，只有排序；面料页按类型分区（colorOnly），
-            Bed Sets 合并页按 4P/3P 分区（"材质 — 颜色"），类型页单一网格平铺 ── */}
-        <V2FabricShop families={families} flat={!fb && !isBedSets} colorOnly={!!fb} />
+        {/* ── 选购区：无筛选条，只有排序；面料页按类型分区，Bed Sets 合并页按 4P/3P 分区，
+            类型页单一网格平铺；卡片 badge 规则（2026-09 用户定）：面料页整页同一布料不叠标签，
+            类型页/合并页（多布料混排）叠布料标签 ── */}
+        <V2FabricShop families={families} flat={!fb && !isBedSets} noBadges={!!fb} />
 
         {/* ── 面料互导（含当前面料，全量展示）── */}
         <V2FabricCrossSell fabrics={fabricsWithCounts} currentSlug={fb?.slug} />

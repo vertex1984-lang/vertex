@@ -71,6 +71,12 @@ button {
   to { opacity: 1; }
 }
 
+/* 移动端导航抽屉：底部上弹（2026-09 用户定：从下方向上弹出，顶部露出网页可点关闭） */
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

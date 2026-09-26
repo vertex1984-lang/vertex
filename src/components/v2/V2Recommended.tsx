@@ -123,8 +123,10 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             {personalized ? 'Based on Your Browsing' : 'Customer Favorites'}
           </p>
+          {/* 2026-09 用户定：标题改 Recently Viewed；无浏览历史的新客显示的是 fallback 推荐，
+              不能叫 Recently Viewed，回退为 You May Also Like */}
           <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
-            You May Also Like
+            {personalized ? 'Recently Viewed' : 'You May Also Like'}
           </h2>
         </div>
 

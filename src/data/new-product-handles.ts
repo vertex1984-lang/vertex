@@ -6,7 +6,6 @@
 export const NEW_PRODUCT_HANDLES = new Set<string>([
   // 2026-09-24 ??-?? main/C2 ??????
   'korean-style-lace-trim-duvet-cover-soft-cotton-blend-cloud-1688-1051650740507',
-  'korean-style-double-lace-edge-duvet-cover-soft-cotton-like-1688-1051650740507-c2',
   // 2026-09-24 ????? 25 ??10 ???????/????/????/??/??/??/??/?? + ??? + ??C3?
   'luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572',
   'luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2',

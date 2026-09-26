@@ -32,9 +32,9 @@ const staticPages = [
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
-  // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap
+  // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；
+  // comforter-sets 2026-09-26 移除（唯一 comforter 家族实为被套 3 件套，已归 three，该类型页不再生成）
   { loc: '/bedding/bed-sets/', priority: '0.7', changefreq: 'weekly' },
-  { loc: '/bedding/comforter-sets/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },

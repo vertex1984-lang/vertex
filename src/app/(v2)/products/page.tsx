@@ -5,7 +5,7 @@ import ProductCard from '@/components/ProductCard';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { CATEGORY_DEFS, sortBeddingMaterials } from '@/data/subcategories';
+import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
 import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
@@ -48,17 +48,7 @@ function rawMaterialsOf(asin: string): string[] {
   return m ? m.split(', ') : [];
 }
 
-// bedding 分区视图：材质标题下的一句话描述（小字，2026-09 用户定）；未收录的材质不显示描述行
-const MATERIAL_BLURBS: Record<string, string> = {
-  'Washed Cotton-Like': 'Soft washed feel with a relaxed, lived-in look — easy everyday care.',
-  'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
-  '100% Linen': 'Pure natural linen — breathable, durable, and softer with every wash.',
-  'Silk-Modal': 'Silky-smooth modal blend with a cool, gentle touch.',
-  'Sateen': 'Smooth sateen weave with a subtle sheen and buttery feel.',
-  Microfiber: 'Brushed microfiber — soft, wrinkle-resistant & easy care.',
-  Bamboo: 'Bamboo-blend fabric — cool, breathable & moisture-wicking.',
-  Linen: 'Natural linen — breathable with a lived-in texture.',
-};
+// bedding 分区视图的材质一句话描述已挪到 @/data/subcategories 的 BEDDING_MATERIAL_BLURBS（2026-09）
 
 /** 在售优先，缺货沉底；组内保持原顺序 */
 function inStockFirst(list: MakimooProduct[]): MakimooProduct[] {
@@ -174,6 +164,17 @@ export default function V2ProductsPage() {
         p.tags.some((t) => t.toLowerCase().includes(activeCategory.toLowerCase()))
     );
   }, [allProducts, activeCategory]);
+
+  // bedding 选购视图专用：未做同色去重的原始列表（2026-09 修复尺寸带缺失）——
+  // buildSetFamilies 按家族前缀自行聚合多尺寸 SKU；上游若已 dedupe，家族内只剩代表 SKU，
+  // 卡片尺寸带会只剩一个尺寸（Twin），与 /bedding/bed-sets/ 的 Twin / Full / Queen / King 不一致
+  const beddingShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'bedding'
+      ),
+    []
+  );
 
   // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
   // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
@@ -365,8 +366,9 @@ export default function V2ProductsPage() {
   const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
-    /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度 */
-    <div className="px-3 lg:px-10 pt-32 lg:pt-36 pb-10 lg:pb-14">
+    /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度
+       （移动端 pt-28：公告条 32 + 页头 60 + 16px 余量，2026-09 用户定——pt-24 时内容离吸顶页头太近） */
+    <div className="px-3 lg:px-10 pt-28 lg:pt-36 pb-10 lg:pb-14">
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -482,8 +484,11 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : beddingMaterialMode && !isSearching ? (
-        /* bedding 选购视图（2026-09 重做，付费搜索落地页）：意图回显 + 粘性筛选条 + 家族卡网格 */
-        <V2BeddingShop products={categoryProducts} />
+        /* bedding 选购视图（2026-09 重做，付费搜索落地页）：意图回显 + 粘性筛选条 + 家族卡网格。
+           传未去重的原始 bedding 列表（2026-09 修复）：buildSetFamilies 需要看到全部尺寸 SKU
+           才能在家族卡拼出完整尺寸带（Twin / Full / Queen / King），与 /bedding/bed-sets/ 一致；
+           若传入 dedupeFamilyColors 后的列表，同族同色不同尺寸被合并，尺寸带只剩代表 SKU 的一个 */
+        <V2BeddingShop products={beddingShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -507,8 +512,8 @@ export default function V2ProductsPage() {
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
                   {/* bedding 材质分区：标题下一句话材质描述（小字灰）；风格分区无描述 */}
-                  {beddingMaterialMode && MATERIAL_BLURBS[def.label] && (
-                    <p className="mt-1 text-xs lg:text-sm text-[#999]">{MATERIAL_BLURBS[def.label]}</p>
+                  {beddingMaterialMode && BEDDING_MATERIAL_BLURBS[def.label] && (
+                    <p className="mt-1 text-xs lg:text-sm text-[#999]">{BEDDING_MATERIAL_BLURBS[def.label]}</p>
                   )}
                 </div>
                 {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}

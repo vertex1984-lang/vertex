@@ -616,7 +616,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Color',
     members: [
     { asin: '1688-1051650740507-C3', handle: 'korean-style-double-lace-duvet-cover-soft-cotton-like-cloud-1688-1051650740507-c3', color: 'Cherry Pink', size: '150 x 200 cm' },
-    { asin: '1688-1051650740507-C2', handle: 'korean-style-double-lace-edge-duvet-cover-soft-cotton-like-1688-1051650740507-c2', color: 'Cherry Pink', size: '180 x 220 cm' },
     { asin: '1688-1051650740507', handle: 'korean-style-lace-trim-duvet-cover-soft-cotton-blend-cloud-1688-1051650740507', color: 'Cherry Pink', size: '200 x 230 cm' },
     ],
   },
