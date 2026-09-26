@@ -25,6 +25,12 @@ export default function Reveal({ children, delay = 0, once = true, className }: 
     const el = ref.current;
     if (!el) return;
 
+    // 已在视口上方（页面刷新后浏览器恢复了滚动位置等情况）：直接显示，不再等滚动动画
+    if (el.getBoundingClientRect().bottom < 0) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
