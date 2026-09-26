@@ -105,7 +105,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 ## 协作开发
 
 - 仓库为 **Public**，协作者：**OnishiAguri**（Write 权限，2026-09 加入）。
-- **`main` 已启用服务端分支保护**（ruleset `protect-main`，2026-09 配置）：禁止 force push、禁止删除分支；**仓库所有者（vertex1984-lang）可直推 main**（2026-09 v2 上线实测直推成功，ruleset 对所有者不拦截）。协作者（OnishiAguri）如被拦截，走分支 → PR → 所有者 approve → Squash merge 流程。
+- **`main` 已启用服务端分支保护**（ruleset `protect-main`，2026-09 配置；2026-09-26 与用户共同核验）：禁止 force push、禁止删除分支；**Require a pull request before merging + Required approvals = 1 + Dismiss stale approvals（approve 后推新提交批准自动作废）**；**Bypass list 仅 Repository admin（Always allow）——即只有仓库所有者（vertex1984-lang）可直推 main**（2026-09 v2 上线实测直推成功）。协作者（OnishiAguri，Write 角色、不在 bypass 名单）**物理上无法直推 main，只能发 PR 等所有者 Approve**；Approve 后协作者可自行点 Merge（内容已过审，无妨）。
 - 推送/合并进 `main` 即触发 Vercel 自动上线，注意改动影响。
 - 动工前先 `git pull` 并基于最新 `main` 开分支，避免冲突。
 - `.env.local` 不进仓库：协作者需自行创建（Shopify 三个环境变量 + `SEEANY_API_KEY`，由用户线下私下传递）。
