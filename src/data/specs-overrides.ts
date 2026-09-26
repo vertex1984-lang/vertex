@@ -7,16 +7,17 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   // 示例：
   // "b0xxxxxxx": { dimensionsCm: [45, 45], material: "Polyester" },
   "1688-595229918569": { material: "Faux Rabbit Fur" },
-  // ── Wall Art：C15 尺寸修正（38 宽 × 48 高，竖版）──
-  "1688-730512046265-c15": { dimensionsCm: [38, 48] },
+  // ── Wall Art 重制批次 C15：横版 48 宽 × 38 高（老 C15 竖版修正已随重制上传作废）──
+  "1688-730512046265-c15": { dimensionsCm: [48, 38] },
   "1688-595229918569-c2": { material: "Faux Rabbit Fur" },
   "1688-595229918569-c3": { material: "Faux Rabbit Fur" },
-  "1688-1052742241013": { material: "Faux Cashmere" },
-  "1688-1052742241013-c2": { material: "Faux Cashmere" },
-  "1688-1052742241013-c3": { material: "Faux Cashmere" },
-  "1688-1052742241013-c4": { material: "Faux Cashmere" },
-  "1688-1052742241013-c5": { material: "Faux Cashmere" },
-  "1688-1052742241013-c6": { material: "Faux Cashmere" },
+  // ── 1052742241013 重制地毯 C7-C12（替代老 6 条，2026-09-26）──
+  "1688-1052742241013-c7": { material: "Faux Cashmere" },
+  "1688-1052742241013-c8": { material: "Faux Cashmere" },
+  "1688-1052742241013-c9": { material: "Faux Cashmere" },
+  "1688-1052742241013-c10": { material: "Faux Cashmere" },
+  "1688-1052742241013-c11": { material: "Faux Cashmere" },
+  "1688-1052742241013-c12": { material: "Faux Cashmere" },
   "1688-996768645117-c2": { material: "Polyester Shaggy" },
   "1688-996768645117-c3": { material: "Polyester Shaggy" },
   "1688-745181807454": { material: "Printed Polyester" },

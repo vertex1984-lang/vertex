@@ -87,13 +87,14 @@ export const COLOR_OVERRIDES: Record<string, string> = {
   '1688-1061371343572-c10': 'beige',
   '1688-1044064113195-c2': 'cream',
   '1688-745181807454': 'beige',
-  '1688-1052742241013-c4': 'red',
   '1688-745181807454-c4': 'white',
   '1688-745181807454-c6': 'blue',
   'linen3-oatmeal-twin': 'beige', // 燕麦色亚麻套件（看图定，浅燕麦归 Beige）
   'linen3-oatmeal-full': 'beige',
   'linen3-oatmeal-queen': 'beige',
   'linen3-oatmeal-king': 'beige',
+  // 2026-09-26 地毯重制批次：C9 标题色词为 Teal 无规则命中，与 C10 Teal Blue 同花色归 blue
+  '1688-1052742241013-c9': 'blue',
 };
 
 // 内置场景表（顺序即展示顺序）；生效合集见下方导出的 SCENE_RULES

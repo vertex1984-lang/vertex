@@ -32,7 +32,11 @@ const API_BASE = 'http://106.55.160.52:8080/api/public/materials';
 const GROUP_ID = 18; // makimoohome
 
 // 与 sync-materials.js 保持一致
-const HIDDEN_ASINS = new Set(['1688-1051650740507', '1688-1051650740507-c2', '1688-916370884976-c9']);
+const HIDDEN_ASINS = new Set([
+  '1688-916370884976-c9',
+  '1688-1052742241013', '1688-1052742241013-c2', '1688-1052742241013-c3', '1688-1052742241013-c4', '1688-1052742241013-c5', '1688-1052742241013-c6',
+  '1688-730512046265-c2', '1688-730512046265-c3', '1688-730512046265-c4', '1688-730512046265-c5', '1688-730512046265-c6',
+]);
 
 const { PRODUCTS_DATA } = require(path.join(ROOT, 'src/data/products.ts'));
 const { classifyProduct } = require(path.join(ROOT, 'src/data/subcategories.ts'));

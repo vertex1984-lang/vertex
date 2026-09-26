@@ -132,8 +132,8 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-1052742241013-c3",
-            category: "Faux Cashmere · 160 × 230 cm",
+            key: "1688-1052742241013-c7",
+            category: "Faux Cashmere · 180 × 250 cm",
             name: "Vintage Faux Cashmere Area Rug — Sage Green",
             desc: "Faux cashmere pile with a silicone non-slip backing — the durability-oriented end of the soft-rug spectrum.",
           },
