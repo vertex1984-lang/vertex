@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import ProductCard from '@/components/ProductCard';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
+import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
@@ -172,6 +173,18 @@ export default function V2ProductsPage() {
     () =>
       enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
         (p) => p.productType.toLowerCase() === 'bedding'
+      ),
+    []
+  );
+
+  // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式：意图回显 + 家族卡网格，
+  // 无筛选条/排序下拉/左侧栏/移动端抽屉入口/Need help deciding）：
+  // 同样传未去重的原始列表——buildBlanketFamilies 需要看到同色全部尺寸 SKU 才能拼尺寸带
+  const blanketsMode = activeCategory.toLowerCase() === 'blankets';
+  const blanketShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'blankets'
       ),
     []
   );
@@ -363,7 +376,7 @@ export default function V2ProductsPage() {
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度
@@ -391,8 +404,8 @@ export default function V2ProductsPage() {
         {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定）。
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
-            bedding 类目页不展示排序下拉（2026-09 用户定） */}
-        {mounted && !beddingMaterialMode && (
+            bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
+        {mounted && !beddingMaterialMode && !blanketsMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -489,6 +502,11 @@ export default function V2ProductsPage() {
            才能在家族卡拼出完整尺寸带（Twin / Full / Queen / King），与 /bedding/bed-sets/ 一致；
            若传入 dedupeFamilyColors 后的列表，同族同色不同尺寸被合并，尺寸带只剩代表 SKU 的一个 */
         <V2BeddingShop products={beddingShopProducts} />
+      ) : blanketsMode && !isSearching ? (
+        /* blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式）：意图回显 + 家族卡网格。
+           传未去重的原始 blankets 列表（同 bedding 口径）：buildBlanketFamilies 需要看到
+           同色全部尺寸 SKU 才能拼出完整尺寸带（120 x 200 / ... / 230 x 250 cm） */
+        <V2BlanketsShop products={blanketShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -628,8 +646,9 @@ export default function V2ProductsPage() {
       </div>
       </div>
 
-      {/* "Need help deciding?" 教育模块（优化手册 PLP 模块：网格下方链 3 篇指南；搜索视图不显示） */}
-      {mounted && activeCategory && !isSearching && (
+      {/* "Need help deciding?" 教育模块（优化手册 PLP 模块：网格下方链 3 篇指南；搜索视图不显示；
+          2026-09-27 用户定：bedding 一级类目页（/products?cat=bedding）与 blankets 类目页已移除本模块，其他类目保留） */}
+      {mounted && activeCategory && !['bedding', 'blankets'].includes(activeCategory.toLowerCase()) && !isSearching && (
         <V2RelatedGuides
           cat={activeCategory.toLowerCase()}
           eyebrow="Need Help Deciding?"

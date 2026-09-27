@@ -10,7 +10,7 @@ import { v2url } from '@/lib/v2paths';
  * poster 用视频首帧（brand-banner-poster.webp），视频加载前立即有画面；
  * preload="metadata" 避免阻塞首屏，muted+playsInline 保证 iOS/安卓可自动播放。
  * 促销文案叠加在左下角（小占比，参考 Parachute）：标题 + 副文案 + 胶囊按钮（与 hero 同款）。
- * 整图可点击跳转全部产品。
+ * 整图可点击跳转 Fabric Guide（2026-09-26 用户定：原 /better-texture/ 入口改为 /fabric-guide/）。
  */
 export default function V2BrandBanner() {
   const videoProps = {
@@ -28,7 +28,7 @@ export default function V2BrandBanner() {
       <Reveal>
         {/* 桌面端：1456/418 宽横幅 */}
         <a
-          href={v2url('/better-texture/')}
+          href={v2url('/fabric-guide/')}
           className="group relative hidden sm:block w-full aspect-[1456/459.8] max-h-[93vh] overflow-hidden"
         >
           <video {...videoProps}>
@@ -44,14 +44,14 @@ export default function V2BrandBanner() {
               Better Feeling.
             </p>
             <span className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
-              Discover More
+              Fabric Guide
             </span>
           </div>
         </a>
 
         {/* 移动端：同一路视频，4/3.97 比例（较 4/3 高 30%），object-cover 居中裁切两侧 */}
         <a
-          href={v2url('/better-texture/')}
+          href={v2url('/fabric-guide/')}
           className="group relative block sm:hidden w-full aspect-[4/3.97] overflow-hidden"
         >
           <video {...videoProps}>
@@ -66,7 +66,7 @@ export default function V2BrandBanner() {
               Better Feeling.
             </p>
             <span className="inline-block px-7 py-3 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
-              Discover More
+              Fabric Guide
             </span>
           </div>
         </a>

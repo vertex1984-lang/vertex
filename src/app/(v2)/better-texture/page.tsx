@@ -84,7 +84,7 @@ const TEXTURES: TextureItem[] = [
   },
 ];
 
-/** 面料特写横滑条：复用 fabric-guide 的实拍特写，仅取暖中性色系的 4 张（sateen 粉 / organic-cotton 橘红不入） */
+/** 面料特写横滑条：复用 fabric-guide 的实拍特写，仅取暖中性色系的 4 张（satin 粉 / organic-cotton 橘红不入） */
 const FABRIC_CLOSEUPS = [
   { src: '/images/fabric-guide/fabric-linen.webp', label: 'Linen' },
   { src: '/images/fabric-guide/fabric-linen-like.webp', label: 'Linen-Like' },

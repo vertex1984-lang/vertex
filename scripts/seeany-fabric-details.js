@@ -15,14 +15,15 @@ const API = 'https://api.seeany.com/api/ai/smarttask';
 const OUT = path.join(__dirname, 'seeany-edit-preview');
 fs.mkdirSync(OUT, { recursive: true });
 
-// 与横幅图六捆面料（左→右）同色系：燕麦亚麻 / 鼠尾草绿水洗棉 / 白色仿亚麻 / 暖棕有机棉 / 奶油丝滑莫代尔 / 腮红粉贡缎
+// 与横幅图六捆面料（左→右）同色系：燕麦亚麻 / 鼠尾草绿水洗棉 / 白色仿亚麻 / 暖棕有机棉 / 奶油丝滑莫代尔 / 腮红粉缎面
+// 2026-09-27：sateen 改名 satin，prompt 强调镜面高光泽+丝绸般丝滑垂坠（用户反馈原图不够丝滑光滑）
 const FABRICS = {
   'linen': '燕麦色纯亚麻面料特写',
   'washed-cotton-like': '鼠尾草绿色水洗棉面料特写',
   'linen-like': '白色轻盈仿亚麻面料特写',
   'organic-cotton': '暖棕赤陶色有机棉面料特写',
   'silk-modal': '奶油色丝滑莫代尔面料特写',
-  'sateen': '腮红粉色贡缎面料特写',
+  'satin': '腮红粉色缎面satin面料特写，镜面般高光泽，丝绸质感极致丝滑光滑，流畅垂坠的大波浪褶皱，光泽随褶皱流动渐变',
 };
 
 const key = process.argv[2];

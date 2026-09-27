@@ -203,6 +203,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const shortTitle = product.title;
   const longTitle = PRODUCTS_DATA.find((p) => p.handle === handle)?.title ?? product.title;
 
+  // 面包屑一级类目：链 /products/?cat=<小写 productType>（2026-09-27 用户定：PDP 面包屑不显示
+  // "Products" 中转层；/bedding/ 落地页已于同天下线，bedding 同样走 /products?cat=bedding）
+  const catSlug = (product.productType || '').toLowerCase();
+  const catLabel = product.productType || '';
+  const catHref = `/products/?cat=${encodeURIComponent(catSlug)}`;
+
   // 变体组（同款异色）
   const group = getVariantGroupOf(product.asin);
   const currentColor = group?.members.find((m) => m.handle === handle)?.color ?? null;
@@ -351,8 +357,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
-          <a href={v2url('/products/')} className="hover:text-brand">Products</a>
-          <span>/</span>
+          {catSlug ? (
+            <>
+              <a href={v2url(catHref)} className="hover:text-brand">{catLabel}</a>
+              <span>/</span>
+            </>
+          ) : null}
           <span className="text-charcoal truncate max-w-[180px] sm:max-w-md">{shortTitle}</span>
         </nav>
       </div>

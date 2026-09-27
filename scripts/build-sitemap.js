@@ -26,11 +26,12 @@ const staticPages = [
   { loc: '/products/', priority: '0.8', changefreq: 'daily' },
   { loc: '/blog/', priority: '0.6', changefreq: 'weekly' },
   { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
-  { loc: '/bedding/', priority: '0.7', changefreq: 'weekly' },
+  // /bedding/ 落地页已下线（2026-09-27 用户定，一级类目页 = /products?cat=bedding），不入 sitemap；
   // 面料二级 PLP（与 src/data/bedding-fabrics.ts 注册表手动同步）
   { loc: '/bedding/linen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/satin/', priority: '0.7', changefreq: 'weekly' },
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
   // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；
   // comforter-sets 2026-09-26 移除（唯一 comforter 家族实为被套 3 件套，已归 three，该类型页不再生成）

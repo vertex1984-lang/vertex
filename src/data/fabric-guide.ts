@@ -127,23 +127,25 @@ export const FABRIC_GUIDE: FabricGuideEntry[] = [
     ratings: { softness: 5, cooling: 5, warmth: 2, texture: 1, easyCare: 3 },
   },
   {
-    key: 'Sateen',
-    slug: 'sateen',
-    tags: ['Buttery', 'Smooth', 'Warm'],
+    // 2026-09-27 用户定：Sateen 改名 Satin（本站缎面为 ice silk 长丝缎纹：高光泽、
+    // 丝滑低摩擦、凉感；与棉质 sateen 的柔光暖感区分，参考 sewingtrip.com/sateen-vs-satin）
+    key: 'Satin',
+    slug: 'satin',
+    tags: ['Silky', 'Glossy', 'Cool'],
     intro:
-      'A smooth sateen weave with a subtle sheen and buttery hand — slightly warmer, endlessly cozy.',
+      'A high-sheen satin weave with a mirror-smooth face — cool and slick at first touch, with a fluid drape that glides over skin.',
     feel: [
-      'Buttery-smooth with a subtle luminous sheen',
-      'Slightly warmer — perfect for cool nights',
-      'Elegant drape with a hotel-like finish',
+      'Mirror-smooth, glossy surface with a silky glide',
+      'Cool at first touch — a favorite of hot sleepers',
+      'Low-friction weave, gentle on hair and skin',
     ],
     care: [
-      'Machine wash cool on a gentle cycle',
-      'Tumble dry low',
+      'Machine wash cold on a gentle cycle',
+      'Tumble dry low; keep away from rough surfaces to avoid snags',
     ],
-    bestFor: 'Sleepers who love a smooth, warm, hotel-luxe feel.',
-    image: '/images/fabric-guide/fabric-sateen.webp',
-    ratings: { softness: 5, cooling: 2, warmth: 4, texture: 1, easyCare: 3 },
+    bestFor: 'Hot sleepers who love a glossy, silky hotel-luxe feel.',
+    image: '/images/fabric-guide/fabric-satin.webp',
+    ratings: { softness: 5, cooling: 4, warmth: 2, texture: 1, easyCare: 4 },
   },
 ];
 
@@ -154,5 +156,5 @@ export const FABRIC_SHORTCUTS: { title: string; pick: string; slug: string; note
   { title: 'I love the linen look', pick: 'Linen-Like', slug: 'linen-like', note: 'Airy texture, zero upkeep.' },
   { title: 'I have sensitive skin', pick: 'Organic Cotton', slug: 'organic-cotton', note: 'Grown without synthetic chemicals.' },
   { title: 'I want silky luxury', pick: 'Silk-Modal', slug: 'silk-modal', note: 'Cool, fluid, weightless drape.' },
-  { title: 'I love smooth & cozy', pick: 'Sateen', slug: 'sateen', note: 'Buttery with a subtle sheen.' },
+  { title: 'I love a silky sheen', pick: 'Satin', slug: 'satin', note: 'Glossy, cool, mirror-smooth glide.' },
 ];
