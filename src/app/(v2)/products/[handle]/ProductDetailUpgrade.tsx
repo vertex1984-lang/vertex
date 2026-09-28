@@ -355,10 +355,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
       {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
           隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
-          移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、区块上边距收窄 */}
+          移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、区块上边距收窄、
+          图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外） */}
       <section className="px-6 lg:px-10 mt-4 lg:mt-10">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-          {/* 左：图集（大图 + 缩略图横排在下，全端一致）；移动端主图 5:4 降高，让标题+评分+价格进首屏 */}
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-14">
+          {/* 左：图集（大图 + 缩略图横排在下，全端一致）；移动端主图 5:4 降高 + 缩略图收小，让标题+评分+价格进首屏 */}
           <div className="min-w-0">
             <div
               className="aspect-[5/4] lg:aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white"
@@ -382,12 +383,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             </div>
             {productImages.length > 1 && (
-              <div className="flex gap-2.5 lg:gap-3 mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="flex gap-2.5 lg:gap-3 mt-3 lg:mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {productImages.map((img, i) => (
                   <button
                     key={i}
                     onClick={() => { setSelectedImage(i); setMainImageLoaded(false); }}
-                    className={`w-16 h-16 lg:w-20 lg:h-20 rounded-lg lg:rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
+                    className={`w-14 h-14 lg:w-20 lg:h-20 rounded-lg lg:rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
                       selectedImage === i ? 'border-brand' : 'border-warm-gray hover:border-brand/40'
                     }`}
                   >
@@ -404,7 +405,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
           {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
           <div className="lg:pt-2 min-w-0">
-            <div className="flex items-center justify-between gap-4 mb-4">
+            <div className="flex items-center justify-between gap-4 mb-3 lg:mb-4">
               <div className="flex items-center gap-2">
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
                   {product.productType}
@@ -453,7 +454,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             )}
 
             {isInStock ? (
-              <div className="flex items-baseline gap-3 mb-6">
+              <div className="flex items-baseline gap-3 mb-4 lg:mb-6">
                 <span className="text-2xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
                 {showCompareAt && (
                   <>
