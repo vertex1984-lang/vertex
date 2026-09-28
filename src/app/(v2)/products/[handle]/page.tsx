@@ -7,6 +7,7 @@ import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
+import { VARIANT_THUMB_CROPS } from '@/data/variant-thumb-crops';
 import { STORE_CURRENCY } from '@/lib/currency';
 
 const SITE_URL = 'https://www.makimoohome.com';
@@ -64,15 +65,16 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         const toVariant = (m: (typeof group.members)[number]) => {
           const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
           const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
-          // 色点缩略图：优先白底图（imageWhiteBg 与 shopifyImages 同源同序，见 products.ts applyMaterialsData）
+          // 色点缩略图：挂画家族优先用裁剪版（thumb-crop.webp，完整花型）；否则优先白底图（imageWhiteBg 与 shopifyImages 同源同序，见 products.ts applyMaterialsData）
           const wbIdx = ep?.imageWhiteBg?.indexOf(true) ?? -1;
           const wbThumb = wbIdx >= 0 ? ep?.shopifyImages?.[wbIdx] : undefined;
+          const cropThumb = VARIANT_THUMB_CROPS[m.asin.toLowerCase()];
           return {
             asin: m.asin,
             handle: m.handle,
             color: m.color,
             size: m.size,
-            thumb: wbThumb || ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
+            thumb: cropThumb || wbThumb || ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
             inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : (ep.availableForSale === true)) : false,
           };
         };
