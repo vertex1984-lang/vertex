@@ -8,7 +8,7 @@
  * 服务端组件，无交互。
  * 2026-09-28：四格图标信任卡方案被用户否决（侵入 Hero、移动端过大），恢复本窄带版式，
  * 仅按用户要求整体加大字号（品牌标 xs/sm、主副文案 sm/base、行高微增）。
- * 2026-09-28（二）：副文案按用户定改为 "500K+ items sold a year, and counting"，
+ * 2026-09-28（二）：副文案按用户定改为 "500K+ Items Sold A Year, and Counting"（标题式大小写），
  * 移动端 whitespace-nowrap 强制单行（文案够短，375px 宽度下不会溢出）。
  */
 export default function V2TrustBar() {
@@ -24,7 +24,7 @@ export default function V2TrustBar() {
         </p>
         <span aria-hidden="true" className="hidden sm:inline text-[#C9BBA8]">·</span>
         <p className="text-sm lg:text-base text-charcoal-light whitespace-nowrap">
-          500K+ items sold a year, and counting
+          500K+ Items Sold A Year, and Counting
         </p>
       </div>
     </section>
