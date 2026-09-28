@@ -44,14 +44,8 @@ const FORCE = process.argv.includes('--force');
 // 默认保持素材库原始顺序，不做展示优先级重排（素材库上已排好序）；需要旧的优先级重排时显式传 --reorder
 const KEEP_ORDER = !process.argv.includes('--reorder');
 
-// 首图置顶：含这些 URL 的产品把该"铺床场景图"排为第一展示图（用户指定样式，参照 1688-969627065032-C40），其余图顺位后移；文件编号不变
-const PIN_FIRST_URLS = new Set([
-  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787753115875-289349635.png', // 深灰族 C31-C35
-  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787755009676-389264703.png', // 蓝族 C21-C25
-  'https://img1.seeany.com/20260826/6c1a7df1-7b34-4860-b1d9-9e69202e75d8.png', // 银灰族 C36-C40
-  'https://amzphoto-1251810512.cos.ap-guangzhou.myqcloud.com/cxai/1787752452401-505148488.png', // 奶黄族 C26-C30
-  'https://img1.seeany.com/20260825/f4c9f0f2-06fb-4366-bfde-a89b41acd6aa.png', // 浅紫族 C41-C43
-]);
+// 首图置顶覆盖（PIN_FIRST_URLS，5 个老系列铺床场景图置顶）已于 2026-09-28 废除：
+// 2026-09-27 领导定稿全站统一图序（主图 = 无文字场景图1），所有产品一律按 TYPE_RANK 排序，不再有例外覆盖
 
 const password =
   process.env.MATERIALS_PASSWORD ||
@@ -290,8 +284,9 @@ async function mapLimit(items, limit, fn) {
   console.log(`图片处理完成: 下载 ${downloaded}, 跳过 ${skipped}, 失败 ${failed}`);
 
   // 4. 生成 materials-map.ts（覆盖全部素材 ASIN），并对每张图做白底检测
-  // 展示顺序（首图优先级）：场景展示图 > 无文字场景图1 > 白底主图 > 用户上传图（非白底在前、白底在后）> 卖点图 > 细节特写图 > 尺寸图 > 营销主图
-  const TYPE_RANK = { '场景展示图': 0, '无文字场景图1': 1, '白底主图': 2, '卖点图': 5, '细节特写图': 6, '尺寸图': 7, '营销主图': 8 };
+  // 展示顺序（2026-09-27 领导定稿，全站统一规范）：无文字场景图1（主图）> 场景展示图 > 细节特写图 > 无文字场景图2 > 白底主图 > 卖点图 > 尺寸图 > 营销主图
+  // 同类型多张按素材库原始相对顺序稳定排序；产品缺某类型时后续类型顺位前移
+  const TYPE_RANK = { '无文字场景图1': 0, '场景展示图': 1, '细节特写图': 2, '无文字场景图2': 3, '白底主图': 4, '卖点图': 5, '尺寸图': 6, '营销主图': 7 };
   const withImages = items.filter((i) => (productImages[i.asin] || []).length > 0);
   const mapRows = [];
   for (const i of withImages) {
@@ -311,12 +306,6 @@ async function mapLimit(items, limit, fn) {
     const order = KEEP_ORDER
       ? localPaths.map((_, idx) => idx)
       : localPaths.map((_, idx) => idx).sort((a, b) => rankOf(a) - rankOf(b) || a - b);
-    // 首图置顶：命中的铺床场景图排到最前，其余保持相对顺序
-    const pinIdx = order.find((idx) => PIN_FIRST_URLS.has(POOLS[i.asin][idx]));
-    if (pinIdx !== undefined && order[0] !== pinIdx) {
-      order.splice(order.indexOf(pinIdx), 1);
-      order.unshift(pinIdx);
-    }
     const finalImages = order.map((idx) => localPaths[idx]);
     const finalWhiteBg = order.map((idx) => whiteBg[idx]);
     productImages[i.asin] = finalImages;
