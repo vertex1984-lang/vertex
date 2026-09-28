@@ -1,8 +1,10 @@
 /**
  * PDP 购买区信任徽章行（2026-09-28 付费落地信任增强 A，两版 PDP 共用）：
  * 放在 Add to Cart 与 TrustPayRow 之间，把决策点最缺的三条真实承诺补齐——
- * 免邮门槛 / 30 天退货免运费 / 年销体量（安全支付由 TrustPayRow 卡组织图标承担，不重复）。
+ * 免邮门槛 / 30 天退货免运费 / 平台在售年销体量（安全支付由 TrustPayRow 卡组织图标承担，不重复）。
  * 全是真实可兑现信息，无虚构数据。服务端组件，无交互。
+ * 2026-09-28 去重：购买区下方原堆了徽章行+支付行+两条配送行+四徽章区+首访卡五层重复信息，
+ * 全部收敛为本组件 + TrustPayRow + EstimatedDelivery 单行；年销徽章并入主流零售平台背书（首访卡随之删除）。
  */
 
 const BADGES = [
@@ -27,7 +29,7 @@ const BADGES = [
     ),
   },
   {
-    label: '500K+ items sold a year',
+    label: '500K+ sold a year on major retail platforms',
     icon: (
       <>
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />

@@ -18,7 +18,6 @@ import { getCareCopy } from '@/lib/care-copy';
 import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
-import FirstVisitTrustCard from '@/components/v2/FirstVisitTrustCard';
 
 interface V2ProductDetailClientProps {
   handle: string;
@@ -401,18 +400,15 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 </div>
               )}
 
-              {/* 配送/退换说明：送达日期客户端动态计算（水合前显示免邮文案，静态 HTML 不含过期日期） */}
+              {/* 配送时效：送达日期客户端动态计算（水合前显示发货时效，静态 HTML 不含过期日期）；
+                  免邮/退货信息由下方 PdpTrustBadges 承担，不重复（2026-09-28 去重） */}
               <p className="text-xs text-charcoal-light mb-4">
-                {isInStock ? <EstimatedDelivery fallback="Free shipping on orders over $49" /> : 'Free shipping on orders over $49'}
-                {' · 30-day easy returns'}
+                {isInStock ? <EstimatedDelivery fallback="Ships within 1-2 business days" /> : 'Ships within 1-2 business days'}
               </p>
 
               {/* 支付方式信任行 + 信任徽章行：付费落地用户最关心的"能否安全付款/免邮/退货"一眼可答 */}
               <TrustPayRow className="mb-3" />
               <PdpTrustBadges className="mb-5" />
-
-              {/* 首次到访信任卡（localStorage 标记，老客不显示） */}
-              <FirstVisitTrustCard className="mb-5" />
 
               {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
               <div className="border-b border-warm-gray">

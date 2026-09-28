@@ -27,7 +27,6 @@ import { getProductReviews } from '@/data/product-reviews';
 import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
-import FirstVisitTrustCard from '@/components/v2/FirstVisitTrustCard';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -295,29 +294,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
   };
 
-  // 运保 + 信任徽章 + 手风琴（桌面在左栏图集下方，移动端在右栏底部）
+  // 手风琴（桌面在左栏图集下方，移动端在右栏底部）。
+  // 2026-09-28 去重（用户反馈购买区下方信息过度重复）：原配送文案行与四徽章行删除——
+  // 配送时效由购买区 EstimatedDelivery 单行承担，免邮/退货/安全支付由 PdpTrustBadges + TrustPayRow 承担，
+  // 此处只保留手风琴（展开看详情，不算重复）
   const accordionSections = [...ACCORDION_SECTIONS_BASE, { title: 'Care & Maintenance', body: careCopy.long }];
   // 锚点 Tab 列表：有评价正文时追加 Reviews 项（对应 reviewsSlot 的 pdp2-reviews 区）
   const anchorSections = hasReviewsData ? [...SECTIONS, REVIEWS_SECTION] : SECTIONS;
   const shippingCareBlock = (
     <>
-      <p className="text-sm text-charcoal-light mb-6">
-        {isInStock ? 'Ships within 1-2 business days · ' : ''}
-        <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
-      </p>
-      <div className="grid grid-cols-4 gap-2 py-5 border-t border-b border-warm-gray mb-2">
-        {[
-          { icon: 'truck', label: 'Free Shipping' },
-          { icon: 'return', label: '30-Day Returns' },
-          { icon: 'lock', label: 'Secure Payment' },
-          { icon: 'badge', label: 'Quality Checked' },
-        ].map((badge) => (
-          <div key={badge.label} className="flex flex-col items-center text-center gap-1.5">
-            <TrustIcon name={badge.icon} />
-            <span className="text-xs lg:text-sm text-charcoal-light leading-tight">{badge.label}</span>
-          </div>
-        ))}
-      </div>
       <div className="border-b border-warm-gray">
         {accordionSections.map((section, i) => (
           <div key={section.title} className="border-t border-warm-gray">
@@ -701,9 +686,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
             </p>
 
-            {/* 首次到访信任卡（localStorage 标记，老客不显示） */}
-            <FirstVisitTrustCard className="mb-6" />
-
             {/* 运保 + 信任徽章 + 手风琴（移动端位置） */}
             <div className="lg:hidden">
               {shippingCareBlock}
@@ -841,23 +823,6 @@ function QuickSpecIcon({ name }: { name: string }) {
       return <svg className={common} viewBox="0 0 24 24" {...stroke}><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>;
     case 'sparkle':
       return <svg className={common} viewBox="0 0 24 24" {...stroke}><path d="M12 3l1.9 5.8L20 10l-5.8 1.9L12 18l-2.2-6.1L4 10l6.1-1.2L12 3z"/><path d="M19 15l.9 2.6L22 18.5l-2.1.9L19 22l-.9-2.6-2.1-.9 2.1-.9L19 15z"/></svg>;
-    default:
-      return null;
-  }
-}
-
-function TrustIcon({ name }: { name: string }) {
-  const cls = 'w-[22px] h-[22px] text-brand';
-  const stroke = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
-  switch (name) {
-    case 'truck':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg>;
-    case 'return':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>;
-    case 'lock':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>;
-    case 'badge':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M12 2l2.4 2.4h3.4v3.4L20 10l-2.2 2.2v3.4h-3.4L12 18l-2.4-2.4H6.2v-3.4L4 10l2.2-2.2V4.4h3.4L12 2z"/><path d="M9 10l2 2 4-4"/></svg>;
     default:
       return null;
   }
