@@ -306,8 +306,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          {/* 移动端短文案单行不折行，桌面端保留全句（付费落地优化 P1） */}
-          <span className="lg:hidden whitespace-nowrap">Free shipping over $49</span>
+          {/* 移动端短文案单行不折行，桌面端保留全句（付费落地优化 P1）；
+              2026-09-28 用户要求移动端补回 30 天退货信息，合并为一行（45 字符内不溢出） */}
+          <span className="lg:hidden whitespace-nowrap">Free shipping over $49 · 30-day easy returns</span>
           <span className="hidden lg:inline">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
