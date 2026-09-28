@@ -161,7 +161,7 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
             src={resolveUrl(current.mainUrl)}
             alt={current.altText || ''}
             draggable={false}
-            className="max-w-full max-h-[70vh] lg:max-h-[76vh] object-contain select-none transition-transform duration-300"
+            className="max-w-full max-h-[70dvh] lg:max-h-[76vh] object-contain select-none transition-transform duration-300"
             style={zoomed ? { transform: 'scale(2.5)', transformOrigin: `${origin.x}% ${origin.y}%` } : undefined}
           />
         </div>
