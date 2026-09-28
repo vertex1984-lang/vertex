@@ -16,7 +16,7 @@ const PAY_METHODS = [
 ];
 
 const CHIP_CLS =
-  'h-7 px-2 rounded-md border border-warm-gray bg-white flex items-center justify-center';
+  'h-8 px-2.5 rounded-md border border-warm-gray bg-white flex items-center justify-center';
 
 export default function TrustPayRow({ className = '' }: { className?: string }) {
   return (
@@ -34,7 +34,7 @@ export default function TrustPayRow({ className = '' }: { className?: string }) 
             src={resolveUrl(`/icons/pay/${m.key}.svg`)}
             alt={m.alt}
             title={m.alt}
-            className="h-4 w-auto"
+            className="h-[21px] w-auto"
             draggable={false}
           />
         </span>
