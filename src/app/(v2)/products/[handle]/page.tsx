@@ -184,9 +184,12 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       ) : (
         <V2ProductDetailClient handle={params.handle} />
       )}
-      {/* 真实评价区（新旧 PDP 共用；product-reviews.ts 无数据时不渲染） */}
+      {/* 真实评价区（新旧 PDP 共用；product-reviews.ts 无数据时不渲染）。
+          id 供 buy box 星级行锚点跳转（pdp2-reviews），scroll-mt 避开吸顶导航 */}
       {product && (
-        <V2ProductReviews asin={product.asin} rating={product.rating} reviewCount={product.reviewCount} />
+        <div id="pdp2-reviews" className="scroll-mt-24">
+          <V2ProductReviews asin={product.asin} rating={product.rating} reviewCount={product.reviewCount} />
+        </div>
       )}
       {/* Related Guides 关联阅读（优化手册 PDP 模块；按类目挑 3 张指南卡） */}
       {product && <V2RelatedGuides cat={product.productType.toLowerCase()} />}

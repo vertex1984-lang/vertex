@@ -7,7 +7,7 @@
  * 美术：全部使用 V2 设计 token（brand/charcoal/warm-gray/off-white/cream）。
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getProductByHandle, PRODUCTS_DATA } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
@@ -21,6 +21,9 @@ import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
+import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
+import { getProductReviews } from '@/data/product-reviews';
+import TrustPayRow from '@/components/v2/TrustPayRow';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -39,7 +42,7 @@ const SECTIONS = [
 // 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
 const SIZE_PRESETS = ['140 x 200 cm', '160 x 200 cm', '160 x 230 cm', '180 x 250 cm', '100 x 200 cm', '100 x 160 cm'];
 
-// Shipping / Returns 两节为通用文案；Care 节由 getCareCopy 按分类生成（组件内拼接）
+// Shipping / Returns 两节为通用文案；Care 节由 getCareCopy 按分类生成（src/lib/care-copy.ts，与老版 PDP 共用）
 const ACCORDION_SECTIONS_BASE = [
   {
     title: 'Shipping & Delivery',
@@ -50,56 +53,6 @@ const ACCORDION_SECTIONS_BASE = [
     body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
   },
 ];
-
-// 护理文案映射（review #3：地毯专属护理文案串台到全部分类）。
-// spec = 规格表 Care 行短句；long = Care & Maintenance 手风琴长句。
-// 地毯按标题关键词特判（productType "Mats" 混合了地毯与门垫/厨房垫，不能只按分类）。
-// 文案口径调整只需改这一处映射。
-type CareCopy = { spec: string; long: string };
-
-const CARE_RUG: CareCopy = {
-  spec: 'Vacuum regularly; spot-clean spills promptly',
-  long: 'The low-pile surface stands up to daily foot traffic and is simple to vacuum. Spot-clean spills quickly to preserve the colors.',
-};
-
-const CARE_BY_TYPE: Record<string, CareCopy> = {
-  towels: {
-    spec: 'Machine wash warm with like colors; tumble dry low; do not bleach',
-    long: 'Machine wash warm with like colors and tumble dry low. Skip fabric softener to keep the fibers absorbent.',
-  },
-  bedding: {
-    spec: 'Machine wash cold on gentle; tumble dry low',
-    long: 'Machine wash cold on a gentle cycle and tumble dry low. Wash separately before first use.',
-  },
-  blankets: {
-    spec: 'Machine wash cold on gentle; lay flat or tumble dry low',
-    long: 'Machine wash cold on a gentle cycle, then lay flat or tumble dry low to keep it soft and plush.',
-  },
-  pillows: {
-    spec: 'Fluff regularly; spot-clean or hand wash cover',
-    long: 'Fluff regularly to keep the fill lofty. Spot-clean or hand-wash the cover and air dry fully.',
-  },
-  cushions: {
-    spec: 'Spot-clean cover; air dry; fluff to restore shape',
-    long: 'Spot-clean the cover with mild detergent and air dry. Fluff regularly to restore the shape.',
-  },
-  mats: {
-    spec: 'Machine wash cold; air dry flat',
-    long: 'Machine wash cold and air dry flat. Shake out loose dirt regularly.',
-  },
-};
-
-const CARE_DEFAULT: CareCopy = {
-  spec: 'Follow the care label on your product',
-  long: 'For best results, follow the care instructions on the product label. Questions? We are happy to help.',
-};
-
-const RUG_TITLE_RE = /\b(rugs?|carpets?)\b/i;
-
-function getCareCopy(productType: string, title: string): CareCopy {
-  if (RUG_TITLE_RE.test(title)) return CARE_RUG;
-  return CARE_BY_TYPE[(productType || '').toLowerCase()] ?? CARE_DEFAULT;
-}
 
 export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
@@ -158,6 +111,25 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     return () => window.removeEventListener('makimoo:favorites-updated', sync);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
+
+  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
+  // 不再盖住移动端吸底加购；桌面端 / 非该 PDP 页面变量为 0，横幅位置不变
+  const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = stickyBarRef.current;
+    if (!el) return;
+    const root = document.documentElement;
+    const sync = () => {
+      const h = window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
+      root.style.setProperty('--atc-h', `${h}px`);
+    };
+    sync();
+    window.addEventListener('resize', sync);
+    return () => {
+      window.removeEventListener('resize', sync);
+      root.style.setProperty('--atc-h', '0px');
+    };
+  }, []);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -227,6 +199,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 护理文案（按分类映射，地毯特判）+ 地毯判断（尺寸占位仅地毯显示）
   const careCopy = getCareCopy(product.productType, product.title);
   const isRug = RUG_TITLE_RE.test(product.title);
+  // 评价正文是否存在（决定星级行是否可点击锚到评价区）
+  const hasReviewBody = getProductReviews(product.asin).length > 0;
 
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
@@ -433,6 +407,26 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             <h1 className="text-xl lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
             {longTitle !== shortTitle && (
               <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
+            )}
+
+            {/* Rating：products.ts 有评分汇总数据才显示（与老版口径一致，无数据不占位）；
+                有评价正文时可点击锚到评价区（page.tsx 的 pdp2-reviews 包装层） */}
+            {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
+              hasReviewBody ? (
+                <a href="#pdp2-reviews" className="flex items-center gap-2 mb-4 w-fit">
+                  <RatingStars rating={product.rating} />
+                  <span className="text-sm text-charcoal-light">
+                    {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
+                  </span>
+                </a>
+              ) : (
+                <div className="flex items-center gap-2 mb-4">
+                  <RatingStars rating={product.rating} />
+                  <span className="text-sm text-charcoal-light">
+                    {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
+                  </span>
+                </div>
+              )
             )}
 
             {isInStock ? (
@@ -645,6 +639,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
+            {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
+            <TrustPayRow className="mb-3" />
             <p className="text-sm text-charcoal-light mb-6">
               {isInStock ? 'Ships within 1-2 business days · ' : ''}
               <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
@@ -725,6 +721,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       {/* 移动端吸底加购条 */}
       {isInStock && (
         <div
+          ref={stickyBarRef}
           className="fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3"
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
@@ -751,6 +748,25 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 }
 
 /* ---------- 小图标 ---------- */
+
+/** 评分星级行用五星（与老版 PDP 同款样式） */
+function RatingStars({ rating }: { rating: number }) {
+  return (
+    <div className="flex text-brand">
+      {[1, 2, 3, 4, 5].map((i) => (
+        <svg
+          key={i}
+          width="18" height="18" viewBox="0 0 24 24"
+          fill={i <= Math.round(rating) ? 'currentColor' : 'none'}
+          stroke="currentColor"
+          strokeWidth={i <= Math.round(rating) ? 0 : 1.5}
+        >
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
 
 function QuickSpecIcon({ name }: { name: string }) {
   const common = 'w-[18px] h-[18px] text-brand flex-shrink-0 mt-0.5';

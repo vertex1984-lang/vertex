@@ -26,9 +26,9 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md bottom-[calc(1rem+env(safe-area-inset-bottom))] z-[1800]">
-      <div className="bg-white rounded-2xl shadow-2xl border border-[#E8E2DA] p-5">
-        <p className="text-sm text-[#333] leading-relaxed mb-4">
+    <div className="fixed left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md bottom-[calc(1rem+env(safe-area-inset-bottom)+var(--atc-h,0px))] z-[1800]">
+      <div className="bg-white rounded-2xl shadow-2xl border border-[#E8E2DA] p-4">
+        <p className="text-sm text-[#333] leading-relaxed mb-3">
           We use cookies to analyze site traffic and improve your experience. See our{' '}
           <a href={resolveUrl('/privacy')} className="text-[#8B5A2B] underline hover:no-underline">
             Privacy Policy

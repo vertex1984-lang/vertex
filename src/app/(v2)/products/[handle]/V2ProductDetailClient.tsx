@@ -14,13 +14,17 @@ import BoughtTogether from '@/components/BoughtTogether';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
 import { getProductReviews } from '@/data/product-reviews';
+import { getCareCopy } from '@/lib/care-copy';
+import TrustPayRow from '@/components/v2/TrustPayRow';
 
 interface V2ProductDetailClientProps {
   handle: string;
 }
 
-// PDP 手风琴内容（hardcode 占位文案，与 shipping-returns 页面政策一致；后续可改成按产品配置）
-const ACCORDION_SECTIONS = [
+// PDP 手风琴通用两节（hardcode 占位文案，与 shipping-returns 页面政策一致）；
+// Materials & Care 节在组件内按 getCareCopy 按分类生成（src/lib/care-copy.ts，与新版 PDP 共用）——
+// 旧版此处曾硬编码户外布料文案，床品页显示错误内容（已修）
+const ACCORDION_SECTIONS_BASE = [
   {
     title: 'Shipping & Delivery',
     body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location.',
@@ -28,10 +32,6 @@ const ACCORDION_SECTIONS = [
   {
     title: 'Returns & Refunds',
     body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
-  },
-  {
-    title: 'Materials & Care',
-    body: 'Premium outdoor polyester fabric with UV-fade resistance and a water-repellent surface. Spot clean and air dry for hassle-free maintenance.',
   },
 ];
 
@@ -116,6 +116,11 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
   const reviews = getProductReviews(product.asin);
   const weightStr = formatWeightDual(product.shopifyWeight, product.shopifyWeightUnit);
   const dimsStr = formatDimensionsDual(specs?.dimensionsCm);
+  // 手风琴：通用两节 + 按产品分类生成的 Materials & Care 节
+  const accordionSections = [
+    ...ACCORDION_SECTIONS_BASE,
+    { title: 'Materials & Care', body: getCareCopy(product.productType, product.title).long },
+  ];
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
@@ -364,13 +369,16 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
               )}
 
               {/* 配送/退换说明 */}
-              <p className="text-xs text-charcoal-light mb-8">
+              <p className="text-xs text-charcoal-light mb-4">
                 Free shipping on orders over $49 · 30-day easy returns
               </p>
 
-              {/* 手风琴：Shipping / Returns / Materials（hardcode 占位文案） */}
+              {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
+              <TrustPayRow className="mb-5" />
+
+              {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
               <div className="border-b border-warm-gray">
-                {ACCORDION_SECTIONS.map((section, i) => (
+                {accordionSections.map((section, i) => (
                   <div key={section.title} className="border-t border-warm-gray">
                     <button
                       onClick={() => setOpenAccordion(openAccordion === i ? null : i)}
