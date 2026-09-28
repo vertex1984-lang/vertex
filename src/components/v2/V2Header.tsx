@@ -13,9 +13,9 @@ import { fabricByMaterial } from '@/data/bedding-fabrics';
 // Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
 // 两个精选页保留（首页 View More 等入口进入），原 /featured 汇总页保留但全站无入口
 const navLinks = [
-  // Bedding 一级入口 2026-09 改为 /bedding/ 落地页（按面料拆二级 PLP 后，
-  // /products?cat=bedding 大杂烩页全站无入口、仅保留兜底）
-  { label: 'Bedding', href: '/bedding/', cat: 'bedding' },
+  // Bedding 一级入口 2026-09-27 用户定改回 /products?cat=bedding（/bedding/ 落地页已删除，
+  // 老 URL 由页面本身兼容转跳）
+  { label: 'Bedding', href: '/products?cat=bedding', cat: 'bedding' },
   { label: 'Pillows', href: '/products?cat=pillows', cat: 'pillows' },
   { label: 'Cushions', href: '/products?cat=cushions', cat: 'cushions' },
   { label: 'Towels', href: '/products?cat=towels', cat: 'towels' },
@@ -81,6 +81,8 @@ interface MenuLink {
   /** 链接下一行小字描述（Parachute "Crisp. Cool." 式，可选） */
   desc?: string;
   href: string;
+  /** 无产品的占位项（如 Sheets/Duvet Covers）：置灰不可点，不再跳 #on-the-loom 锚点（2026-09-27 用户定） */
+  comingSoon?: boolean;
 }
 interface MenuColumn {
   title: string;
@@ -114,15 +116,15 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
       first,
       {
         title: 'Bedding',
-        href: '/bedding/',
+        href: '/products?cat=bedding',
         links: [
           // Bed Sets 合并入口（2026-09 用户定：4P/3P 合并为一项，页内两分区展示）；
           // 单类型页 /bedding/4-piece-sets/、/bedding/3-piece-sets/ 保留兜底无入口；
           // Comforter Sets 入口 2026-09-26 移除（唯一 comforter 家族 1688-916370884976 实为被套 3 件套，已归 three）；
-          // Sheets/Duvet Covers 无产品仍指 Coming Soon 锚点
+          // Sheets/Duvet Covers 无产品：置灰不可点（不再跳 /bedding/#on-the-loom，2026-09-27 用户反馈点击误导）
           { label: 'Bed Sets', desc: 'Duvet covers, sheets & pillowcases.', href: '/bedding/bed-sets/' },
-          { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
-          { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom' },
+          { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
+          { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
           { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
         ],
       },
@@ -522,6 +524,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                     )}
                     <div className="flex flex-col gap-3.5">
                       {col.links.map((l) => (
+                        l.comingSoon ? (
+                          <span key={l.href + l.label} className="cursor-default">
+                            <span className="block text-sm font-medium text-[#B5AFA7]">
+                              {l.label}
+                            </span>
+                            {l.desc && <span className="mt-0.5 block text-xs text-[#C9C3BB]">{l.desc}</span>}
+                          </span>
+                        ) : (
                         <a
                           key={l.href + l.label}
                           href={v2url(l.href)}
@@ -533,6 +543,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                           </span>
                           {l.desc && <span className="mt-0.5 block text-xs text-[#999]">{l.desc}</span>}
                         </a>
+                        )
                       ))}
                     </div>
                   </div>
@@ -675,6 +686,15 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                                 </p>
                               )}
                               {col.links.map((l) => (
+                                l.comingSoon ? (
+                                  <span
+                                    key={l.href + l.label}
+                                    className="block text-sm text-[#B5AFA7] py-2 pl-8 pr-4 cursor-default"
+                                  >
+                                    {l.label}
+                                    <span className="ml-2 text-xs text-[#C9C3BB]">{l.desc}</span>
+                                  </span>
+                                ) : (
                                 <a
                                   key={l.href + l.label}
                                   href={v2url(l.href)}
@@ -683,6 +703,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                                 >
                                   {l.label}
                                 </a>
+                                )
                               ))}
                             </div>
                           ))

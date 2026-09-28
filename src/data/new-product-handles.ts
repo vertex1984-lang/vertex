@@ -4,8 +4,7 @@
  * 原有商品详情页保持原样。领导批准全量后：删除此门控即可铺开。
  */
 export const NEW_PRODUCT_HANDLES = new Set<string>([
-  // 2026-09-24 ??-?? main/C2 ??????
-  'korean-style-lace-trim-duvet-cover-soft-cotton-blend-cloud-1688-1051650740507',
+  // 2026-09-26：1051650740507 花边家族（main/C2/C3）应 owner 要求全站下架，移出白名单
   // 2026-09-24 ????? 25 ??10 ???????/????/????/??/??/??/??/?? + ??? + ??C3?
   'luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572',
   'luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2',
@@ -29,7 +28,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'cooling-ice-silk-duvet-cover-breathable-silky-smooth-1688-1061371343572-c20',
   'cooling-ice-silk-duvet-cover-solid-color-silky-breathable-1688-1061371343572-c21',
   'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c22',
-  'korean-style-double-lace-duvet-cover-soft-cotton-like-cloud-1688-1051650740507-c3',
   'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416',
   'cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2',
   'minimalist-geometric-area-rug-for-living-room-bedroom-1688-744995685423-c2',

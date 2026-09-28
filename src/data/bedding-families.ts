@@ -8,9 +8,15 @@
  */
 import { getProductSpecs } from '@/lib/specs';
 import { MATERIALS_MAP } from '@/data/materials-map';
+import { getVariantGroupOf } from '@/data/variant-groups';
 import type { MakimooProduct } from '@/data/products';
 
-export type SetKind = 'four' | 'three' | 'comforter';
+export type SetKind = 'four' | 'three' | 'comforter' | 'duvet';
+
+// 被套单品家族（ice silk 缎面，2026-09-27 用户定：归 Satin 面料子类，原 "More Bedding" 兜底区清空）。
+// 颜色×尺寸二维家族：family = 同色组（key = 前缀::颜色），kind = duvet。
+// 类型筛选 chip/类型 PLP 暂不增 duvet 入口（范围外，用户未定）。
+const DUVET_PREFIXES = ['1688-1048207560416', '1688-1061371343572'];
 
 export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
 
@@ -43,11 +49,24 @@ export function classifySet(asin: string): SetKind | null {
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
   if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
+  if (DUVET_PREFIXES.some((p) => a.startsWith(p))) return 'duvet';
   return null;
 }
 
+/** duvet 家族（颜色×尺寸二维）的颜色：优先 variant group 成员色，兜底解析原始标题尾括号 */
+function duvetColorOf(asin: string): string {
+  const g = getVariantGroupOf(asin);
+  const m = g?.members.find((x) => x.asin.toLowerCase() === asin.toLowerCase());
+  if (m?.color) return m.color;
+  return titleColorOf(asin, '');
+}
+
 function familyKeyOf(asin: string): string {
-  if (asin.toLowerCase().startsWith('1688-916370884976')) return '1688-916370884976';
+  const a = asin.toLowerCase();
+  if (a.startsWith('1688-916370884976')) return '1688-916370884976';
+  // duvet 二维家族：同前缀同色归一个 family（key = 前缀::颜色）
+  const duvetPrefix = DUVET_PREFIXES.find((p) => a.startsWith(p));
+  if (duvetPrefix) return `${duvetPrefix}::${duvetColorOf(asin)}`;
   const parts = asin.split('-');
   const last = parts[parts.length - 1].toUpperCase();
   // BEDSET4-{COLOR}-{SIZE} → 去掉尺码尾段
@@ -67,6 +86,17 @@ function titleColorOf(asin: string, fallbackTitle: string): string {
   const title = MATERIALS_MAP[asin.toLowerCase()]?.title ?? fallbackTitle;
   const m = title.match(/\(([^()]+)\)\s*$/);
   return m ? m[1].trim() : '';
+}
+
+/** duvet 家族尺寸带：variant group 内同色成员的 cm 尺寸（按组内顺序去重），卡片尺寸行用 */
+function duvetSizesOf(asin: string, color: string): string[] {
+  const g = getVariantGroupOf(asin);
+  if (!g) return [];
+  const out: string[] = [];
+  for (const m of g.members) {
+    if (m.color === color && m.size && !out.includes(m.size)) out.push(m.size);
+  }
+  return out;
 }
 
 /** 从 enriched 产品列表构建套装家族（调用方负责 enrich + 筛 productType === 'Bedding'） */
@@ -91,12 +121,15 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       .map((p) => parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount))
       .filter((n) => !Number.isNaN(n) && n > 0);
     const kindOf = classifySet(rep.asin)!;
+    const duvetColor = key.includes('::') ? key.split('::')[1] : '';
     return {
       key,
       kind: kindOf,
-      color: key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key),
+      color: duvetColor || (key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key)),
       rep,
-      sizes: SET_SIZE_ORDER.filter((s) => members.some((p) => p.asin.toUpperCase().endsWith(`-${s}`))),
+      sizes: duvetColor
+        ? duvetSizesOf(rep.asin, duvetColor)
+        : SET_SIZE_ORDER.filter((s) => members.some((p) => p.asin.toUpperCase().endsWith(`-${s}`))),
       fromPrice: prices.length > 0 ? String(Math.min(...prices)) : '',
       toPrice: prices.length > 0 ? String(Math.max(...prices)) : '',
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
@@ -109,6 +142,7 @@ export const SET_KIND_LABEL: Record<SetKind, string> = {
   four: '4-Piece Set',
   three: '3-Piece Set',
   comforter: 'Comforter Set',
+  duvet: 'Duvet Cover',
 };
 
 /** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用） */
@@ -124,6 +158,10 @@ export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: strin
   comforter: {
     heading: 'Comforter Sets',
     blurb: 'A plush comforter with matching shams — warmth without the layering work.',
+  },
+  duvet: {
+    heading: 'Duvet Covers',
+    blurb: 'A silky standalone cover — slip it over your favorite insert.',
   },
 };
 

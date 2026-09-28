@@ -611,14 +611,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-1048207560416', handle: 'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416', color: 'Milkshake White', size: '180 x 220 cm' },
     ],
   },
-  {
-    id: '1688-1051650740507',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1051650740507-C3', handle: 'korean-style-double-lace-duvet-cover-soft-cotton-like-cloud-1688-1051650740507-c3', color: 'Cherry Pink', size: '150 x 200 cm' },
-    { asin: '1688-1051650740507', handle: 'korean-style-lace-trim-duvet-cover-soft-cotton-blend-cloud-1688-1051650740507', color: 'Cherry Pink', size: '200 x 230 cm' },
-    ],
-  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();

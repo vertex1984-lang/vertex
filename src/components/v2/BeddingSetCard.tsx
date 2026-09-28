@@ -3,6 +3,9 @@ import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 import type { SetFamily } from '@/data/bedding-families';
 
+/** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足 */
+export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'>;
+
 /**
  * Bedding 套装家族卡（2026-09 共享）：/bedding/ 落地页、/bedding/[slug]/ 二级页与
  * /products?cat=bedding 选购视图共用。
@@ -18,9 +21,12 @@ import type { SetFamily } from '@/data/bedding-families';
 export default function BeddingSetCard({
   family,
   badges = [],
+  sizesSuffix = '',
 }: {
-  family: SetFamily;
+  family: FamilyCardData;
   badges?: string[];
+  /** 尺寸行统一后缀（blankets 传 "cm"：sizes 不带单位，显示为 "120 x 200 / 150 x 200 cm"，避免每段重复单位过长） */
+  sizesSuffix?: string;
 }) {
   const img = spotlightImage(family.rep);
   const name = family.rep.title.replace(
@@ -58,8 +64,13 @@ export default function BeddingSetCard({
           {name}
         </h3>
         {family.sizes.length > 0 && (
-          <p className="mt-1 text-[11px] lg:text-xs text-[#999] whitespace-nowrap">
+          /* truncate + title：尺寸段多时在卡片边缘省略号截断（hover 显全），不再硬截数字中间（2026-09-27） */
+          <p
+            className="mt-1 text-[11px] lg:text-xs text-[#999] whitespace-nowrap truncate"
+            title={family.sizes.join(' / ') + (sizesSuffix ? ` ${sizesSuffix}` : '')}
+          >
             {family.sizes.map((s) => s.charAt(0) + s.slice(1).toLowerCase()).join(' / ')}
+            {sizesSuffix ? ` ${sizesSuffix}` : ''}
           </p>
         )}
         {family.fromPrice && (

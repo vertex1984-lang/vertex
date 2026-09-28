@@ -4,8 +4,8 @@ import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS, BED_SETS_SLUG, BED_SETS_KINDS, BED_SETS_PAGE_COPY } from '@/data/bedding-families';
 import { BEDDING_FABRICS, fabricBySlug } from '@/data/bedding-fabrics';
 import V2FabricShop from '@/components/v2/V2FabricShop';
+import V2BedSetsShop from '@/components/v2/V2BedSetsShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
-import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 
@@ -93,7 +93,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
         <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
           <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
           <span className="mx-1.5">/</span>
-          <a href={v2url('/bedding/')} className="hover:text-[#8B5A2B] transition-colors">Bedding</a>
+          <a href={v2url('/products/?cat=bedding')} className="hover:text-[#8B5A2B] transition-colors">Bedding</a>
           <span className="mx-1.5">/</span>
           <span className="text-[#555]">{crumb}</span>
         </nav>
@@ -135,19 +135,21 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
           </div>
         )}
 
-        {/* ── 选购区：无筛选条，只有排序；面料页按类型分区，Bed Sets 合并页按 4P/3P 分区，
-            类型页单一网格平铺；卡片 badge 规则（2026-09 用户定）：面料页整页同一布料不叠标签，
-            类型页/合并页（多布料混排）叠布料标签 ── */}
-        <V2FabricShop families={families} flat={!fb && !isBedSets} noBadges={!!fb} />
+        {/* ── 选购区：无筛选条，只有排序；面料页按类型分区，Bed Sets 合并页按 4P/3P 分区
+            （2026-09-27 用户定：合并页分区锚点 chips 改为 /products?cat=bedding 同款 Type 下拉，
+            专用客户端组件 V2BedSetsShop），类型页单一网格平铺；卡片 badge 规则（2026-09 用户定）：
+            面料页整页同一布料不叠标签，类型页/合并页（多布料混排）叠布料标签 ── */}
+        {isBedSets ? (
+          <V2BedSetsShop families={families} />
+        ) : (
+          <V2FabricShop families={families} flat={!fb} noBadges={!!fb} />
+        )}
 
         {/* ── 面料互导（含当前面料，全量展示）── */}
         <V2FabricCrossSell fabrics={fabricsWithCounts} currentSlug={fb?.slug} />
       </div>
 
-      {/* ── Related Guides（组件自带版心）── */}
-      <div className="mt-8 lg:mt-12">
-        <V2RelatedGuides cat="bedding" eyebrow="Need Help Deciding?" heading="Need help deciding?" sub="A few quick guides to help you choose the right one." />
-      </div>
+      {/* Related Guides 已从 bedding 二级类目页移除（2026-09-27 用户定）；PDP 仍保留 */}
     </div>
   );
 }

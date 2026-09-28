@@ -43,7 +43,7 @@ const stripCls =
 
 // Texture 材质目录：固定展示顺序，无产品的材质也出卡（2026-09 用户定：占位图 + Coming Soon）。
 // 目录外材质（历史遗留，如 Microfiber/Bamboo）由页面数据按数量追加在尾部
-export const BEDDING_TEXTURE_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Organic Cotton', 'Silk-Modal', 'Sateen'];
+export const BEDDING_TEXTURE_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Organic Cotton', 'Silk-Modal', 'Satin'];
 
 // 材质卡一句话描述（小字，2026-09 用户定 Texture 模块）；未收录的材质不显示描述行
 const TEXTURE_BLURBS: Record<string, string> = {
@@ -52,7 +52,7 @@ const TEXTURE_BLURBS: Record<string, string> = {
   'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
   'Organic Cotton': 'Grown without synthetic chemicals — soft, breathable, kind to skin.',
   'Silk-Modal': 'Silky-smooth with a cool, gentle touch.',
-  Sateen: 'A smooth sateen weave with a subtle, buttery sheen.',
+  Satin: 'A glossy satin weave — silky-smooth with a cool touch.',
 };
 
 // Fabric Guide 横幅图上六捆面料的热点 x 坐标（%，与 FABRIC_GUIDE 顺序一一对应；图为 21:9 六捆并列构图）
@@ -88,7 +88,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
                 <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Touch &amp; Feel</p>
                 <h2 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal">Shop by Fabric</h2>
                 <p className="mt-2 text-sm lg:text-base text-charcoal-light max-w-xl">
-                  From crisp natural linen to buttery-soft sateen — find the feel you want to sink into.
+                  From crisp natural linen to glossy-smooth satin — find the feel you want to sink into.
                 </p>
               </div>
               <div className="pl-3 lg:pl-10">

@@ -45,6 +45,15 @@ export const BEDDING_FABRICS: BeddingFabric[] = [
       'The relaxed look of linen, minus the upkeep. A softly textured weave that shrugs off wrinkles and stays smooth wash after wash — laid-back style, zero fuss.',
     heroImage: '/images/fabric-guide/fabric-linen-like.webp',
   },
+  {
+    // 2026-09-27 用户定：ice silk 缎面被套（原 More Bedding 兜底区）归 Satin 面料子类
+    slug: 'satin',
+    material: 'Satin',
+    desc: 'Silky. Lustrous.',
+    story:
+      'A glossy satin weave with a mirror-smooth face that glides over skin and catches the light. Cool to the first touch, fluid in drape — and fully machine washable.',
+    heroImage: '/images/fabric-guide/fabric-satin.webp',
+  },
 ];
 
 export function fabricBySlug(slug: string): BeddingFabric | undefined {
