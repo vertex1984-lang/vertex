@@ -55,6 +55,34 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
+  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
+  // 不再盖住移动端吸底加购；桌面端 / 吸底条未滑出时变量为 0，横幅位置不变。
+  // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
+  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入。
+  // 注意：hooks 必须在 `if (!product) return` 之前（rules-of-hooks，否则 next build  lint 报错）
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = stickyBarRef.current;
+    const root = document.documentElement;
+    const sync = () => {
+      const h = !el || !showStickyBar || window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
+      root.style.setProperty('--atc-h', `${h}px`);
+    };
+    sync();
+    window.addEventListener('resize', sync);
+    return () => {
+      window.removeEventListener('resize', sync);
+      root.style.setProperty('--atc-h', '0px');
+    };
+  }, [showStickyBar]);
+
   // GA4: view_item（产品详情页浏览）
   useEffect(() => {
     if (!product) return;
@@ -126,33 +154,6 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
     ...ACCORDION_SECTIONS_BASE,
     { title: 'Materials & Care', body: getCareCopy(product.productType, product.title).long },
   ];
-
-  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
-  // 不再盖住移动端吸底加购；桌面端 / 吸底条未滑出时变量为 0，横幅位置不变。
-  // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
-  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入
-  const [showStickyBar, setShowStickyBar] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-  const stickyBarRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const el = stickyBarRef.current;
-    const root = document.documentElement;
-    const sync = () => {
-      const h = !el || !showStickyBar || window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
-      root.style.setProperty('--atc-h', `${h}px`);
-    };
-    sync();
-    window.addEventListener('resize', sync);
-    return () => {
-      window.removeEventListener('resize', sync);
-      root.style.setProperty('--atc-h', '0px');
-    };
-  }, [showStickyBar]);
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
