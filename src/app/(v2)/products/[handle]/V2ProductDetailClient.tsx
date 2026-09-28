@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, type ReactNode } from 'react';
+import { useState, useEffect, useRef, type ReactNode } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -124,6 +124,26 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
     ...ACCORDION_SECTIONS_BASE,
     { title: 'Materials & Care', body: getCareCopy(product.productType, product.title).long },
   ];
+
+  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
+  // 不再盖住移动端吸底加购；桌面端 / 非该 PDP 页面变量为 0，横幅位置不变
+  //（2026-09-28 补齐：与新版 ProductDetailUpgrade 同款逻辑，此前老版漏接，cookie 横幅仍遮挡）
+  const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = stickyBarRef.current;
+    if (!el) return;
+    const root = document.documentElement;
+    const sync = () => {
+      const h = window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
+      root.style.setProperty('--atc-h', `${h}px`);
+    };
+    sync();
+    window.addEventListener('resize', sync);
+    return () => {
+      window.removeEventListener('resize', sync);
+      root.style.setProperty('--atc-h', '0px');
+    };
+  }, []);
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
@@ -504,6 +524,7 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
       {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏） */}
       {isInStock && (
         <div
+          ref={stickyBarRef}
           className="fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3"
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
