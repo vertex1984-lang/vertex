@@ -391,6 +391,18 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/>
                 </svg>
               </div>
+              {/* 心愿单（移动端）：悬浮主图右上角，原位置与智能导购气泡重叠故移此（2026-09-28 用户定） */}
+              <button
+                onClick={(e) => { e.stopPropagation(); handleToggleFavorite(); }}
+                className={`lg:hidden absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center transition active:scale-95 ${
+                  fav ? 'text-brand' : 'text-charcoal-light'
+                }`}
+                aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
+              >
+                <svg width="19" height="19" viewBox="0 0 24 24" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </button>
             </div>
             {productImages.length > 1 && (
               <div className="flex gap-2.5 lg:gap-3 mt-3 lg:mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -415,9 +427,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
           {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
           <div className="lg:pt-2 min-w-0">
-            <div className="flex items-center justify-between gap-4 mb-3 lg:mb-4">
+            {/* 移动端首屏压缩（2026-09-28 用户定：浏览器地址栏+工具栏显示时价格仍进不了首屏）：
+                类目徽章移动端隐藏、心愿单按钮移到主图右上角悬浮（原位置与智能导购气泡重叠）、
+                行间距收紧；桌面端保持原布局 */}
+            <div className="flex items-center justify-between gap-4 mb-2 lg:mb-4">
               <div className="flex items-center gap-2">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
+                <span className="hidden lg:inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
                   {product.productType}
                 </span>
                 <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${isInStock ? 'text-brand' : 'text-charcoal-light'}`}>
@@ -427,7 +442,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
               <button
                 onClick={handleToggleFavorite}
-                className={`w-11 h-11 rounded-full border flex items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
+                className={`hidden lg:flex w-11 h-11 rounded-full border items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
                   fav ? 'border-brand text-brand bg-brand/5' : 'border-warm-gray text-charcoal-light hover:text-brand hover:border-brand'
                 }`}
                 aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
@@ -440,7 +455,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             <h1 className="text-xl lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
             {longTitle !== shortTitle && (
-              <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
+              <p className="hidden lg:block text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
             )}
 
             {/* Rating：products.ts 有评分汇总数据才显示（与老版口径一致，无数据不占位）；
