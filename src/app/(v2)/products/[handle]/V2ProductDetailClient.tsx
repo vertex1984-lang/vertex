@@ -17,6 +17,8 @@ import { getProductReviews } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import FirstVisitTrustCard from '@/components/v2/FirstVisitTrustCard';
 
 interface V2ProductDetailClientProps {
   handle: string;
@@ -404,8 +406,12 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 {' · 30-day easy returns'}
               </p>
 
-              {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
-              <TrustPayRow className="mb-5" />
+              {/* 支付方式信任行 + 信任徽章行：付费落地用户最关心的"能否安全付款/免邮/退货"一眼可答 */}
+              <TrustPayRow className="mb-3" />
+              <PdpTrustBadges className="mb-5" />
+
+              {/* 首次到访信任卡（localStorage 标记，老客不显示） */}
+              <FirstVisitTrustCard className="mb-5" />
 
               {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
               <div className="border-b border-warm-gray">

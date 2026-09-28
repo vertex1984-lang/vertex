@@ -26,6 +26,8 @@ import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import { getProductReviews } from '@/data/product-reviews';
 import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import FirstVisitTrustCard from '@/components/v2/FirstVisitTrustCard';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -671,7 +673,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
-            {/* 支付方式信任行 + 预计送达：付费落地用户最关心的"能否安全付款/多久到"一眼可答 */}
+            {/* 信任徽章行 + 支付方式信任行 + 预计送达：付费落地用户最关心的"免邮/退货/能否安全付款/多久到"一眼可答 */}
+            <PdpTrustBadges className="mb-3" />
             <TrustPayRow className="mb-3" />
             <p className="text-sm text-charcoal-light mb-6">
               {isInStock && (
@@ -682,6 +685,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               )}
               <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
             </p>
+
+            {/* 首次到访信任卡（localStorage 标记，老客不显示） */}
+            <FirstVisitTrustCard className="mb-6" />
 
             {/* 运保 + 信任徽章 + 手风琴（移动端位置） */}
             <div className="lg:hidden">
