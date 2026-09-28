@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type ReactNode } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -20,6 +20,8 @@ import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 
 interface V2ProductDetailClientProps {
   handle: string;
+  /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、描述前（付费落地优化 P2） */
+  reviewsSlot?: ReactNode;
 }
 
 // PDP 手风琴通用两节（hardcode 占位文案，与 shipping-returns 页面政策一致）；
@@ -40,7 +42,7 @@ const ACCORDION_SECTIONS_BASE = [
 // 组件保留在 src/components/BoughtTogether.tsx，恢复展示时改为 true 即可。
 const SHOW_BOUGHT_TOGETHER = false;
 
-export default function V2ProductDetailClient({ handle }: V2ProductDetailClientProps) {
+export default function V2ProductDetailClient({ handle, reviewsSlot }: V2ProductDetailClientProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
   const [selectedImage, setSelectedImage] = useState(0);
@@ -408,6 +410,9 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
           </div>
         </div>
       </section>
+
+      {/* 评价区插槽：page.tsx 传入（有数据才实际渲染），紧跟购买区、描述前 */}
+      {reviewsSlot}
 
       {/* 下部：产品描述（限宽居中） */}
       <section className="bg-off-white">

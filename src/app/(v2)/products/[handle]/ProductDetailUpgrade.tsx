@@ -7,7 +7,8 @@
  * 美术：全部使用 V2 设计 token（brand/charcoal/warm-gray/off-white/cream）。
  */
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, type ReactNode } from 'react';
+import Link from 'next/link';
 import { getProductByHandle, PRODUCTS_DATA } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
@@ -32,12 +33,17 @@ interface ProductDetailUpgradeProps {
   colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
   /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选 */
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
+  /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、Description 前（付费落地优化 P2） */
+  reviewsSlot?: ReactNode;
 }
 
 const SECTIONS = [
   { id: 'pdp2-description', label: 'Description' },
   { id: 'pdp2-specs', label: 'Specifications' },
 ];
+
+// Reviews 锚点项：仅当该产品有评价正文数据时动态追加（评价区由 page.tsx 经 reviewsSlot 提供）
+const REVIEWS_SECTION = { id: 'pdp2-reviews', label: 'Reviews' };
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
 // 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
@@ -55,9 +61,11 @@ const ACCORDION_SECTIONS_BASE = [
   },
 ];
 
-export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [] }: ProductDetailUpgradeProps) {
+export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
+  // 评价正文是否存在（Reviews Tab 动态启用）——在 hooks 区求值，供 observer 依赖
+  const hasReviewsData = getProductReviews(product?.asin ?? '').length > 0;
   const [selectedImage, setSelectedImage] = useState(0);
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -85,7 +93,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 锚点滚动监听（Tab 高亮）
+  // 锚点滚动监听（Tab 高亮）；有评价数据时 pdp2-reviews 区也纳入观察
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -95,12 +103,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       },
       { rootMargin: '-25% 0px -65% 0px' }
     );
-    SECTIONS.forEach(({ id }) => {
+    const ids = hasReviewsData
+      ? [...SECTIONS.map((s) => s.id), REVIEWS_SECTION.id]
+      : SECTIONS.map((s) => s.id);
+    ids.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
     return () => observer.disconnect();
-  }, []);
+  }, [hasReviewsData]);
 
   // 收藏态同步 + 最近浏览
   useEffect(() => {
@@ -200,8 +211,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 护理文案（按分类映射，地毯特判）+ 地毯判断（尺寸占位仅地毯显示）
   const careCopy = getCareCopy(product.productType, product.title);
   const isRug = RUG_TITLE_RE.test(product.title);
-  // 评价正文是否存在（决定星级行是否可点击锚到评价区）
-  const hasReviewBody = getProductReviews(product.asin).length > 0;
 
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
@@ -272,6 +281,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   // 运保 + 信任徽章 + 手风琴（桌面在左栏图集下方，移动端在右栏底部）
   const accordionSections = [...ACCORDION_SECTIONS_BASE, { title: 'Care & Maintenance', body: careCopy.long }];
+  // 锚点 Tab 列表：有评价正文时追加 Reviews 项（对应 reviewsSlot 的 pdp2-reviews 区）
+  const anchorSections = hasReviewsData ? [...SECTIONS, REVIEWS_SECTION] : SECTIONS;
   const shippingCareBlock = (
     <>
       <p className="text-sm text-charcoal-light mb-6">
@@ -414,7 +425,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             {/* Rating：products.ts 有评分汇总数据才显示（与老版口径一致，无数据不占位）；
                 有评价正文时可点击锚到评价区（page.tsx 的 pdp2-reviews 包装层） */}
             {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
-              hasReviewBody ? (
+              hasReviewsData ? (
                 <a href="#pdp2-reviews" className="flex items-center gap-2 mb-4 w-fit">
                   <RatingStars rating={product.rating} />
                   <span className="text-sm text-charcoal-light">
@@ -478,7 +489,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                     {colorVariants.map((v) => {
                       const isCurrent = v.handle === handle;
                       return (
-                        <a
+                        <Link
                           key={v.asin}
                           href={v2url(`/products/${v.handle}/`)}
                           title={v.color}
@@ -493,7 +504,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                             loading="lazy"
                             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] object-cover"
                           />
-                        </a>
+                        </Link>
                       );
                     })}
                   </div>
@@ -541,9 +552,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                         {inner}
                       </button>
                     ) : (
-                      <a key={sv.size} href={v2url(`/products/${sv.handle}/`)} className={cls}>
+                      <Link key={sv.size} href={v2url(`/products/${sv.handle}/`)} className={cls}>
                         {inner}
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>
@@ -661,10 +672,13 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       </section>
 
+      {/* 评价区插槽：page.tsx 传入（V2ProductReviews，有数据才实际渲染），紧跟购买区、Description 之前 */}
+      {reviewsSlot}
+
       {/* ② 锚点 Tab 条（不吸顶：顶部导航已吸顶） */}
       <div className="mt-12 bg-white border-y border-warm-gray">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex gap-1 sm:gap-2 overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {SECTIONS.map((section) => (
+          {anchorSections.map((section) => (
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}

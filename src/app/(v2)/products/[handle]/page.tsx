@@ -171,6 +171,14 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       }
     : null;
 
+  // 评价区插槽：经 prop 传入两版 PDP，渲染在购买区后、描述前
+  //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
+  const reviewsSlot = product ? (
+    <div id="pdp2-reviews" className="scroll-mt-24">
+      <V2ProductReviews asin={product.asin} rating={product.rating} reviewCount={product.reviewCount} />
+    </div>
+  ) : null;
+
   return (
     <>
       {jsonLd && (
@@ -179,17 +187,18 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
+      {/* key=handle：花色/尺寸改走 next/link 客户端导航后，切色时强制重挂载 PDP 组件，
+          避免图集 selectedIndex 等客户端状态跨商品残留 */}
       {isNew ? (
-        <ProductDetailUpgrade handle={params.handle} colorVariants={colorVariants} sizeVariants={sizeVariants} />
+        <ProductDetailUpgrade
+          key={params.handle}
+          handle={params.handle}
+          colorVariants={colorVariants}
+          sizeVariants={sizeVariants}
+          reviewsSlot={reviewsSlot}
+        />
       ) : (
-        <V2ProductDetailClient handle={params.handle} />
-      )}
-      {/* 真实评价区（新旧 PDP 共用；product-reviews.ts 无数据时不渲染）。
-          id 供 buy box 星级行锚点跳转（pdp2-reviews），scroll-mt 避开吸顶导航 */}
-      {product && (
-        <div id="pdp2-reviews" className="scroll-mt-24">
-          <V2ProductReviews asin={product.asin} rating={product.rating} reviewCount={product.reviewCount} />
-        </div>
+        <V2ProductDetailClient key={params.handle} handle={params.handle} reviewsSlot={reviewsSlot} />
       )}
       {/* Related Guides 关联阅读（优化手册 PDP 模块；按类目挑 3 张指南卡） */}
       {product && <V2RelatedGuides cat={product.productType.toLowerCase()} />}
