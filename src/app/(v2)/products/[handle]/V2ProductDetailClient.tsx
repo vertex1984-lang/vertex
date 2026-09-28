@@ -126,15 +126,22 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
   ];
 
   // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
-  // 不再盖住移动端吸底加购；桌面端 / 非该 PDP 页面变量为 0，横幅位置不变
-  //（2026-09-28 补齐：与新版 ProductDetailUpgrade 同款逻辑，此前老版漏接，cookie 横幅仍遮挡）
+  // 不再盖住移动端吸底加购；桌面端 / 吸底条未滑出时变量为 0，横幅位置不变。
+  // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
+  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const el = stickyBarRef.current;
-    if (!el) return;
     const root = document.documentElement;
     const sync = () => {
-      const h = window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
+      const h = !el || !showStickyBar || window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
       root.style.setProperty('--atc-h', `${h}px`);
     };
     sync();
@@ -143,7 +150,7 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
       window.removeEventListener('resize', sync);
       root.style.setProperty('--atc-h', '0px');
     };
-  }, []);
+  }, [showStickyBar]);
 
   const handleAddToCart = async () => {
     setAddingToCart(true);
@@ -521,11 +528,13 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
         />
       )}
 
-      {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏） */}
+      {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏；首屏隐藏，滚动后滑入） */}
       {isInStock && (
         <div
           ref={stickyBarRef}
-          className="fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3"
+          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
+            showStickyBar ? 'translate-y-0' : 'translate-y-full'
+          }`}
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
           <img
