@@ -15,12 +15,12 @@ const ROOT = path.join(__dirname, '..', 'public', 'images', 'products');
 const OUT_TS = path.join(__dirname, '..', 'src', 'data', 'variant-thumb-crops.ts');
 
 const SOURCES = {
-  '1688-730512046265-c14': { cx: 0.515, cy: 0.307, s: 0.41 },  // Greek Warrior 方幅
-  '1688-730512046265-c15': { cx: 0.51, cy: 0.345, s: 0.52 },   // Basket Trio 竖幅 48x38
-  '1688-730512046265-c16': { cx: 0.515, cy: 0.29, s: 0.38 },   // Medallion Basket 方幅
-  '1688-730512046265-c17': { cx: 0.51, cy: 0.295, s: 0.53 },   // Greek Procession 竖幅 38x48
-  '1688-730512046265-c18': { cx: 0.56, cy: 0.32, s: 0.27 },    // Pottery & Plates 方幅（画偏右上）
-  '1688-730512046265-c19': { cx: 0.59, cy: 0.305, s: 0.27 },   // Basket Vases 方幅（画偏右上）
+  '1688-730512046265-c14': { cx: 0.515, cy: 0.307, s: 0.56 },  // Greek Warrior 方幅
+  '1688-730512046265-c15': { cx: 0.51, cy: 0.345, s: 0.64 },   // Basket Trio 竖幅 48x38
+  '1688-730512046265-c16': { cx: 0.515, cy: 0.29, s: 0.51 },   // Medallion Basket 方幅
+  '1688-730512046265-c17': { cx: 0.51, cy: 0.295, s: 0.66 },   // Greek Procession 竖幅 38x48
+  '1688-730512046265-c18': { cx: 0.56, cy: 0.32, s: 0.38 },    // Pottery & Plates 方幅（画偏右上）
+  '1688-730512046265-c19': { cx: 0.59, cy: 0.305, s: 0.37 },   // Basket Vases 方幅（画偏右上）
 };
 
 (async () => {
