@@ -129,7 +129,7 @@ export default function V2PrivacyPage() {
                   <ul className="space-y-1.5">
                     {[
                       { label: 'E-commerce Platform', desc: 'Shopify (to host our Site and process orders).' },
-                      { label: 'Payment Gateways', desc: 'Stripe, PayPal, etc. (to securely process payments).' },
+                      { label: 'Payment Gateways', desc: 'Stripe, etc. (to securely process payments).' },
                       { label: 'Shipping Carriers', desc: 'UPS, FedEx, USPS (to print labels and deliver your packages).' },
                       { label: 'Marketing & Analytics', desc: 'Google Analytics, email marketing platforms (to analyze traffic and send emails).' },
                     ].map((item, i) => (

@@ -11,8 +11,6 @@ const PAY_METHODS = [
   { key: 'visa', alt: 'Visa' },
   { key: 'mastercard', alt: 'Mastercard' },
   { key: 'amex', alt: 'American Express' },
-  { key: 'paypal', alt: 'PayPal' },
-  { key: 'applepay', alt: 'Apple Pay' },
 ];
 
 const CHIP_CLS =
