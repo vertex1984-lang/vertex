@@ -304,7 +304,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          Free Shipping on Orders Over $49 | 30-Day Easy Returns
+          {/* 移动端短文案单行不折行，桌面端保留全句（付费落地优化 P1） */}
+          <span className="lg:hidden whitespace-nowrap">Free shipping over $49</span>
+          <span className="hidden lg:inline">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
         {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），

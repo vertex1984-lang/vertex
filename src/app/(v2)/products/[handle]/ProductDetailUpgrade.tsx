@@ -24,6 +24,7 @@ import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/s
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import { getProductReviews } from '@/data/product-reviews';
 import TrustPayRow from '@/components/v2/TrustPayRow';
+import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -320,9 +321,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   return (
     <div className="bg-off-white pb-24 lg:pb-0">
-      {/* 面包屑（pt-24/40 避开 fixed 头部，与老版 PDP 避让高度一致） */}
+      {/* 面包屑（pt-24/40 避开 fixed 头部，与老版 PDP 避让高度一致；移动端隐藏省首屏空间） */}
       <div className="px-6 lg:px-10 pt-24 lg:pt-40">
-        <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-xs lg:text-sm text-charcoal-light">
+        <nav className="hidden lg:flex max-w-[1400px] mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
           <a href={v2url('/products/')} className="hover:text-brand">Products</a>
@@ -332,13 +333,14 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       </div>
 
       {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
-          隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑） */}
-      <section className="px-6 lg:px-10 mt-6 lg:mt-10">
+          隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
+          移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、区块上边距收窄 */}
+      <section className="px-6 lg:px-10 mt-4 lg:mt-10">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-          {/* 左：图集（大图 + 缩略图横排在下，全端一致） */}
+          {/* 左：图集（大图 + 缩略图横排在下，全端一致）；移动端主图 5:4 降高，让标题+评分+价格进首屏 */}
           <div className="min-w-0">
             <div
-              className="aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white"
+              className="aspect-[5/4] lg:aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white"
               onClick={() => setLightboxOpen(true)}
             >
               {!mainImageLoaded && <div className="absolute inset-0 animate-pulse bg-warm-gray" />}
@@ -639,10 +641,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
-            {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
+            {/* 支付方式信任行 + 预计送达：付费落地用户最关心的"能否安全付款/多久到"一眼可答 */}
             <TrustPayRow className="mb-3" />
             <p className="text-sm text-charcoal-light mb-6">
-              {isInStock ? 'Ships within 1-2 business days · ' : ''}
+              {isInStock && (
+                <>
+                  <EstimatedDelivery fallback="Ships within 1-2 business days" />
+                  {' · '}
+                </>
+              )}
               <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
             </p>
 

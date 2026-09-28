@@ -16,6 +16,7 @@ import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/s
 import { getProductReviews } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import TrustPayRow from '@/components/v2/TrustPayRow';
+import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 
 interface V2ProductDetailClientProps {
   handle: string;
@@ -368,9 +369,10 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 </div>
               )}
 
-              {/* 配送/退换说明 */}
+              {/* 配送/退换说明：送达日期客户端动态计算（水合前显示免邮文案，静态 HTML 不含过期日期） */}
               <p className="text-xs text-charcoal-light mb-4">
-                Free shipping on orders over $49 · 30-day easy returns
+                {isInStock ? <EstimatedDelivery fallback="Free shipping on orders over $49" /> : 'Free shipping on orders over $49'}
+                {' · 30-day easy returns'}
               </p>
 
               {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
