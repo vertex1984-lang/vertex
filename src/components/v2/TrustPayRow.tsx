@@ -1,11 +1,22 @@
 /**
  * 支付方式信任行（PDP buy box 用，两版详情页共用）。
- * 单色描边风格与 PDP 信任徽章一致；纯内联 SVG/text 芯片，无外部资源依赖。
+ * 图标为官方全彩品牌 SVG 原图（public/icons/pay/，Wikimedia Commons / simple-icons 来源），
+ * 展示"支持的支付方式"属标准指示性使用；芯片容器与站点 token 一致。
  * 放置于 Add to Cart 下方：付费落地用户最关心的"能不能安全付款"一眼可答。
  */
 
+import { resolveUrl } from '@/lib/paths';
+
+const PAY_METHODS = [
+  { key: 'visa', alt: 'Visa' },
+  { key: 'mastercard', alt: 'Mastercard' },
+  { key: 'amex', alt: 'American Express' },
+  { key: 'paypal', alt: 'PayPal' },
+  { key: 'applepay', alt: 'Apple Pay' },
+];
+
 const CHIP_CLS =
-  'h-7 px-2.5 rounded-md border border-warm-gray bg-white flex items-center justify-center text-[11px] font-extrabold tracking-tight text-charcoal-light select-none';
+  'h-7 px-2 rounded-md border border-warm-gray bg-white flex items-center justify-center';
 
 export default function TrustPayRow({ className = '' }: { className?: string }) {
   return (
@@ -17,20 +28,17 @@ export default function TrustPayRow({ className = '' }: { className?: string }) 
         </svg>
         Secure checkout
       </span>
-      <span className={CHIP_CLS}>
-        <span className="italic">VISA</span>
-      </span>
-      <span className={CHIP_CLS} aria-label="Mastercard">
-        <svg width="26" height="16" viewBox="0 0 26 16" fill="none">
-          <circle cx="10" cy="8" r="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="16" cy="8" r="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-        </svg>
-      </span>
-      <span className={CHIP_CLS}>AMEX</span>
-      <span className={CHIP_CLS}>
-        <span className="italic">PayPal</span>
-      </span>
-      <span className={CHIP_CLS}>Apple Pay</span>
+      {PAY_METHODS.map((m) => (
+        <span key={m.key} className={CHIP_CLS}>
+          <img
+            src={resolveUrl(`/icons/pay/${m.key}.svg`)}
+            alt={m.alt}
+            title={m.alt}
+            className="h-4 w-auto"
+            draggable={false}
+          />
+        </span>
+      ))}
     </div>
   );
 }
