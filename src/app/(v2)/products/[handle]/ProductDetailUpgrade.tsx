@@ -26,6 +26,7 @@ import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import { getProductReviews } from '@/data/product-reviews';
 import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -142,6 +143,17 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       root.style.setProperty('--atc-h', '0px');
     };
   }, []);
+
+  // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
+  const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
+  const swipeTo = (dir: 1 | -1) => {
+    setMainImageLoaded(false);
+    setSelectedImage((i) => (i + dir + imageCount) % Math.max(1, imageCount));
+  };
+  const { onTouchStart, onTouchEnd, wasSwiped } = useGallerySwipe(
+    () => swipeTo(-1),
+    () => swipeTo(1)
+  );
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -361,8 +373,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           {/* 左：图集（大图 + 缩略图横排在下，全端一致）；移动端主图 5:4 降高，让标题+评分+价格进首屏 */}
           <div className="min-w-0">
             <div
-              className="aspect-[5/4] lg:aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white"
-              onClick={() => setLightboxOpen(true)}
+              className="aspect-[5/4] lg:aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y"
+              onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
             >
               {!mainImageLoaded && <div className="absolute inset-0 animate-pulse bg-warm-gray" />}
               <img
@@ -380,6 +394,19 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/>
                 </svg>
               </div>
+              {/* 移动端圆点指示器：当前第几张，可点跳转 */}
+              {productImages.length > 1 && (
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden">
+                  {productImages.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={(e) => { e.stopPropagation(); if (wasSwiped()) return; setMainImageLoaded(false); setSelectedImage(i); }}
+                      aria-label={`View image ${i + 1}`}
+                      className={`h-2 rounded-full transition-all shadow-[0_1px_3px_rgba(0,0,0,0.4)] ${selectedImage === i ? 'w-4 bg-white' : 'w-2 bg-white/60'}`}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
             {productImages.length > 1 && (
               <div className="flex gap-2.5 lg:gap-3 mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
