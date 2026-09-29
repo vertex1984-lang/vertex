@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
-import CookieConsent from "@/components/CookieConsent";
 
 export default function ClassicLayout({
   children,
@@ -17,7 +16,7 @@ export default function ClassicLayout({
       <Footer />
       <BackToTop />
       <MiniCart />
-      <CookieConsent />
+      {/* CookieConsent 已移除（2026-09-28 用户定：美国市场无强制 Cookie 提示法规） */}
     </div>
   );
 }

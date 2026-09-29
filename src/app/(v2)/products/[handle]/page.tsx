@@ -4,13 +4,29 @@ import ProductDetailUpgrade from './ProductDetailUpgrade';
 import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
+import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { VARIANT_THUMB_CROPS } from '@/data/variant-thumb-crops';
+import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
+import { buildSetFamilies } from '@/data/bedding-families';
 import { STORE_CURRENCY } from '@/lib/currency';
 
 const SITE_URL = 'https://www.makimoohome.com';
+
+// bedding PDP 底部面料互导轮播数据（与 bedding/[slug] 同一口径：只保留有产品的面料）；
+// 模块级常量，构建期算一次即可
+const FABRICS_WITH_COUNTS = (() => {
+  const beddingProducts = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+    (p) => p.productType === 'Bedding'
+  );
+  const all = buildSetFamilies(beddingProducts);
+  return BEDDING_FABRICS.map((x) => ({
+    ...x,
+    count: all.filter((f) => f.materials.includes(x.material)).length,
+  })).filter((x) => x.count > 0);
+})();
 
 export function generateStaticParams() {
   return PRODUCTS_DATA.map((p) => ({ handle: p.handle }));
@@ -202,8 +218,14 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       ) : (
         <V2ProductDetailClient key={params.handle} handle={params.handle} reviewsSlot={reviewsSlot} />
       )}
-      {/* Related Guides 关联阅读（优化手册 PDP 模块；按类目挑 3 张指南卡） */}
-      {product && <V2RelatedGuides cat={product.productType.toLowerCase()} />}
+      {/* 面料互导轮播（仅 bedding PDP，2026-09-29 用户定："Other High Quality Materials" 横滑卡条，
+          与面料二级 PLP 底部同款；数量统计口径与 bedding/[slug] 一致） */}
+      {product && product.productType.toLowerCase() === 'bedding' && isNew && (
+        <V2FabricCrossSell fabrics={FABRICS_WITH_COUNTS} />
+      )}
+      {/* Related Guides 关联阅读（优化手册 PDP 模块；按类目挑 3 张指南卡）。
+          bedding 跳过（2026-09-29 用户定：唯一的 fabric-guide 卡已由 PDP 内全宽 Fabric Guide 横幅替代） */}
+      {product && product.productType.toLowerCase() !== 'bedding' && <V2RelatedGuides cat={product.productType.toLowerCase()} />}
       {/* "You May Also Like" 两版推荐区（新品 Complete the Look / 老品 More Comfort）
           2026-09 用户定已从 PDP 移除；QuickAddCard.tsx 组件文件保留磁盘备用 */}
       <V2RecentlyViewed currentHandle={params.handle} />

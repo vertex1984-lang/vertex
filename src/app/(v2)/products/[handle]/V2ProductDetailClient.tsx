@@ -15,7 +15,6 @@ import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
 import { getProductReviews } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
-import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 
@@ -54,8 +53,6 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
-  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
-  // 不再盖住移动端吸底加购；桌面端 / 吸底条未滑出时变量为 0，横幅位置不变。
   // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
   // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入。
   // 注意：hooks 必须在 `if (!product) return` 之前（rules-of-hooks，否则 next build  lint 报错）
@@ -67,20 +64,6 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const el = stickyBarRef.current;
-    const root = document.documentElement;
-    const sync = () => {
-      const h = !el || !showStickyBar || window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
-      root.style.setProperty('--atc-h', `${h}px`);
-    };
-    sync();
-    window.addEventListener('resize', sync);
-    return () => {
-      window.removeEventListener('resize', sync);
-      root.style.setProperty('--atc-h', '0px');
-    };
-  }, [showStickyBar]);
 
   // GA4: view_item（产品详情页浏览）
   useEffect(() => {
@@ -406,8 +389,7 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 {isInStock ? <EstimatedDelivery fallback="Ships within 1-2 business days" /> : 'Ships within 1-2 business days'}
               </p>
 
-              {/* 支付方式信任行 + 信任徽章行：付费落地用户最关心的"能否安全付款/免邮/退货"一眼可答 */}
-              <TrustPayRow className="mb-3" />
+              {/* 信任徽章区（免邮/退货/年销/安全支付+卡组织图标已并入，2026-09-29） */}
               <PdpTrustBadges className="mb-5" />
 
               {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
