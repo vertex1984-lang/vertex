@@ -11880,7 +11880,263 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
- {
+    {
+    "id": "makimoo-DUVSET-GRAY-DUVET",
+    "asin": "DUVSET-GRAY-DUVET",
+    "title": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+    "handle": "makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet",
+    "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and wood tones, fitting modern, minimalist, farmhouse and Scandinavian rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
+    "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and wood tones, fitting modern, minimalist, farmhouse and Scandinavian rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/1.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/2.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/3.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/4.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-GRAY-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+   {
+    "id": "makimoo-DUVSET-PINK-DUVET",
+    "asin": "DUVSET-PINK-DUVET",
+    "title": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+    "handle": "makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet",
+    "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. GENTLE BLUSH PINK STYLE: A soft, muted pink that adds quiet warmth, pairing well with white, cream, grey and gold accents, fitting cottage, shabby chic, boho and modern rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
+    "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>GENTLE BLUSH PINK STYLE: A soft, muted pink that adds quiet warmth, pairing well with white, cream, grey and gold accents, fitting cottage, shabby chic, boho and modern rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/1.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/2.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/3.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/4.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-PINK-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+   {
+    "id": "makimoo-DUVSET-BEIGE-DUVET",
+    "asin": "DUVSET-BEIGE-DUVET",
+    "title": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+    "handle": "makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet",
+    "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. WARM BEIGE STYLE: A cozy adaptable neutral that brightens the bed, pairing well with white, brown, terracotta and green, fitting farmhouse, rustic, boho and minimalist rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
+    "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>WARM BEIGE STYLE: A cozy adaptable neutral that brightens the bed, pairing well with white, brown, terracotta and green, fitting farmhouse, rustic, boho and minimalist rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/1.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/2.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/3.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/4.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEIGE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+   {
+    "id": "makimoo-DUVSET-WHITE-DUVET",
+    "asin": "DUVSET-WHITE-DUVET",
+    "title": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+    "handle": "makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet",
+    "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. CRISP PURE WHITE STYLE: A clean airy white that suits any space, pairing well with every color palette and bedding layer, fitting modern, classic, coastal and minimalist rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
+    "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CRISP PURE WHITE STYLE: A clean airy white that suits any space, pairing well with every color palette and bedding layer, fitting modern, classic, coastal and minimalist rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/1.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/2.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/3.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/4.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-WHITE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+{
     "id": "makimoo-LINEN3-SAGE-FULL",
     "asin": "LINEN3-SAGE-FULL",
     "title": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",

@@ -339,6 +339,11 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet',
   'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet',
   'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet',
+  // 2026-09-29 独立被套新品（创想AI 生成管线）：DUVSET-GRAY/PINK/BEIGE/WHITE
+  'makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

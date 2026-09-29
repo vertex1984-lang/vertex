@@ -310,4 +310,8 @@ export const SHORT_TITLES: Record<string, string> = {
   "linen3-dustyblue-duvet": "100% Linen Duvet Cover, Dusty Blue, 200 x 230cm",
   "linen3-ivory-duvet": "100% Linen Duvet Cover, Ivory, 200 x 230cm",
   "linen3-oatmeal-duvet": "100% Linen Duvet Cover, Oatmeal, 200 x 230cm",
+  "duvset-gray-duvet": "Washed Cotton-Like Duvet Cover, Grey, 200 x 230cm",
+  "duvset-pink-duvet": "Washed Cotton-Like Duvet Cover, Pink, 200 x 230cm",
+  "duvset-beige-duvet": "Washed Cotton-Like Duvet Cover, Beige, 200 x 230cm",
+  "duvset-white-duvet": "Washed Cotton-Like Duvet Cover, White, 200 x 230cm",
 };

@@ -2330,4 +2330,32 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Secure Fit: button closure and interior corner ties",
     "Easy Care: machine washable, softer with every wash",
   ],
+  "duvset-gray-duvet": [
+    "Washed Cotton-Like: garment-washed softness, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Calm Grey: versatile neutral that pairs with any decor",
+    "Secure Fit: zipper closure and interior corner ties",
+    "Easy Care: machine washable, wrinkle-resistant finish",
+  ],
+  "duvset-pink-duvet": [
+    "Washed Cotton-Like: garment-washed softness, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Gentle Blush Pink: soft warmth that pairs with any decor",
+    "Secure Fit: zipper closure and interior corner ties",
+    "Easy Care: machine washable, wrinkle-resistant finish",
+  ],
+  "duvset-beige-duvet": [
+    "Washed Cotton-Like: garment-washed softness, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Warm Beige: cozy neutral that pairs with any decor",
+    "Secure Fit: zipper closure and interior corner ties",
+    "Easy Care: machine washable, wrinkle-resistant finish",
+  ],
+  "duvset-white-duvet": [
+    "Washed Cotton-Like: garment-washed softness, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Crisp White: clean airy tone that pairs with any decor",
+    "Secure Fit: zipper closure and interior corner ties",
+    "Easy Care: machine washable, wrinkle-resistant finish",
+  ],
 };
