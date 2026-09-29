@@ -463,6 +463,18 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    // 2026-09-29 独立被套单品家族（创想AI 管线，5 色 × 200 x 230cm，纯颜色家族不填 size）
+    id: 'LINEN3-DUVET',
+    optionName: 'Color',
+    members: [
+    { asin: 'LINEN3-SAGE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet', color: 'Sage Green' },
+    { asin: 'LINEN3-CHARCOAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet', color: 'Charcoal Grey' },
+    { asin: 'LINEN3-DUSTYBLUE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet', color: 'Dusty Blue' },
+    { asin: 'LINEN3-IVORY-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet', color: 'Ivory' },
+    { asin: 'LINEN3-OATMEAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet', color: 'Oatmeal' },
+    ],
+  },
+  {
     id: '1688-807393887857',
     optionName: 'Color',
     members: [
