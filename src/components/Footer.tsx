@@ -83,19 +83,6 @@ export default function Footer() {
                 <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="bold" fill="#FFFFFF">AMEX</text>
               </svg>
             </span>
-            {/* PayPal */}
-            <span className="h-7 px-2.5 rounded bg-white/95 flex items-center" title="PayPal">
-              <svg width="42" height="12" viewBox="0 0 42 12" fill="none" aria-label="PayPal">
-                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="bold" fontStyle="italic" fill="#003087">Pay<tspan fill="#0079C1">Pal</tspan></text>
-              </svg>
-            </span>
-            {/* Apple Pay */}
-            <span className="h-7 px-2.5 rounded bg-black flex items-center" title="Apple Pay">
-              <svg width="36" height="12" viewBox="0 0 36 12" fill="none" aria-label="Apple Pay">
-                <text x="0" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="600" fill="#FFFFFF"> Pay</text>
-                <path d="M6.2 2.2c-.4.5-1 .8-1.6.8-.1-.6.2-1.2.6-1.6.4-.5 1.1-.8 1.6-.9 0 .7-.2 1.3-.6 1.7zm.6 1c-.9-.1-1.6.5-2.1.5-.4 0-1.1-.5-1.8-.5-1 0-1.9.6-2.4 1.5-1 1.8-.3 4.4.7 5.9.5.7 1 1.4 1.7 1.4.7 0 .9-.4 1.8-.4s1 .4 1.7.4c.7 0 1.2-.7 1.7-1.4.5-.8.7-1.5.7-1.5 0 0-1.4-.5-1.4-2.1 0-1.3 1.1-1.9 1.1-2-.6-.9-1.5-1-1.7-1z" fill="#FFFFFF" transform="translate(-0.5,0) scale(0.85)"/>
-              </svg>
-            </span>
           </div>
           <p className="text-xs opacity-50">Secure checkout. Your payment information is always protected.</p>
         </div>
