@@ -62,7 +62,9 @@ function CategoryCard({
 export default function V2CategoryGrid() {
   const [first, ...rest] = CATEGORIES.slice(0, BENTO_COUNT);
   return (
-    <section className="pt-10 lg:pt-24 pb-10 lg:pb-12">
+    // 顶部间距收窄（2026-09-30 用户定：配合 Hero 桌面 80vh，让 "Find Your Comfort"
+    // 标题在首屏露出一部分，提示下方还有内容）
+    <section className="pt-8 lg:pt-12 pb-10 lg:pb-12">
       {/* 标题区限宽居中。移动端标题区间距收窄（2026-09 用户定：Bento 平铺尽量一屏内看完） */}
       <Reveal>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center mb-6 lg:mb-14">
