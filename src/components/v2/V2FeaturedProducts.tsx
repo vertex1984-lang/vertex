@@ -49,10 +49,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
               ))}
             </DragScroll>
           </div>
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-y-0 right-0 w-16 lg:w-24 bg-gradient-to-l from-off-white via-off-white/70 to-transparent"
-          />
+          {/* 右缘渐隐遮罩已移除（2026-09-29 用户定：移动端看着像光晕，不干净） */}
         </div>
       </Reveal>
 

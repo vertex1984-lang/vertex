@@ -36,7 +36,7 @@ export default function PdpTrustBadges({ className = '' }: { className?: string 
       {BADGES.map((b) => (
         <span
           key={b.label}
-          className="inline-flex items-center gap-1.5 text-xs font-medium text-charcoal-light"
+          className="inline-flex items-center gap-1.5 text-xs font-medium whitespace-nowrap text-charcoal-light"
         >
           <svg
             width="15"

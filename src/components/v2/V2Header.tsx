@@ -300,20 +300,20 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
-        {/* Announcement Bar：仅桌面端展示（2026-09-28 用户要求移动端全站不展示，提高内容展示量）；
-            向下滚动超过阈值后收起，回到顶部附近再展开 */}
+        {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
+            移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开 */}
         <div
-          className={`hidden lg:block bg-brand text-cream text-center text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
+          className={`bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          <span>Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
+          <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
         {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），
             让出首屏空间；桌面保持 py-4 + h-14 = 88px。图标按钮保持 44px 触控目标。
-            依赖头部高度的两处同步：页面顶部留白（移动端 pt-20 = 头 60 + 4px 余量，
-            桌面端 pt-24 含公告条 32）、筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
+            依赖头部高度的两处同步：页面顶部留白（移动端 pt-24 = 公告条约 30 + 头 60 + 余量，
+            桌面端 pt-24 同理）、筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
         <header
           className={`flex items-center justify-between px-6 lg:px-10 py-2 lg:py-4 transition-all duration-300 ${textColor} ${
             solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'

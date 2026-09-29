@@ -27,6 +27,8 @@ import { getProductReviews } from '@/data/product-reviews';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import DragScroll from '@/components/v2/DragScroll';
+import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -36,6 +38,8 @@ interface ProductDetailUpgradeProps {
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
   /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、Description 前（付费落地优化 P2） */
   reviewsSlot?: ReactNode;
+  /** "You May Also Like" 关联推荐卡片（page.tsx 用 getPdpRelatedProducts 构建期算好），渲染在信任条下方 */
+  relatedProducts?: V2CardProduct[];
 }
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
@@ -60,12 +64,12 @@ const TRUST_MARQUEE_ITEMS = [
   'Free shipping over $49',
   '30-day easy returns',
   'Secure checkout',
-  '500K+ items sold a year',
-  'Ships within 1-2 business days',
+  'Trusted brand',
+  '500K+ items sold a year Worldwide',
   'Premium materials, honest prices',
 ];
 
-export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot }: ProductDetailUpgradeProps) {
+export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot, relatedProducts = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
   // 评价正文是否存在（有则评分行可点击锚到评价区）
@@ -274,7 +278,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           <div key={section.title} className="border-t border-warm-gray">
             <button
               onClick={() => setOpenAccordion(openAccordion === i ? null : i)}
-              className="w-full flex items-center justify-between py-4 text-left"
+              className={`w-full flex items-center justify-between pb-4 text-left ${i === 0 ? 'pt-7' : 'pt-4'}`}
               aria-expanded={openAccordion === i}
             >
               <span className="text-sm font-semibold text-charcoal">{section.title}</span>
@@ -314,9 +318,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   return (
     <div className="bg-off-white pb-24 lg:pb-0">
-      {/* 面包屑（移动端 pt-[60px] 正好贴合 60px fixed 头部，图片上方不留空隙（公告条移动端已不展示）；桌面 pt-40 含公告条；移动端隐藏面包屑本身省首屏空间） */}
-      <div className="px-6 lg:px-10 pt-[60px] lg:pt-40">
-        <nav className="hidden lg:flex max-w-[1400px] mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
+      {/* 面包屑（移动端 pt-24 = 公告条约 30px + 60px fixed 头部（公告条移动端已恢复展示），图片贴合导航下沿；桌面 pt-40；移动端隐藏面包屑本身省首屏空间） */}
+      <div className="px-6 lg:px-10 pt-24 lg:pt-40">
+        <nav className="hidden lg:flex max-w-[1520px] lg:w-[80%] lg:max-w-none mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
           {catSlug ? (
@@ -332,13 +336,33 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
           隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
           移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、移动端无区块上边距（图片贴合顶部导航）、
-          图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外） */}
+          图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外）。
+          桌面端（2026-09-29 用户定）：容器宽 80% 屏宽、图集:购买栏 = 7:6，提高首屏占屏比（原 1400px 居中两侧留白过多）；
+          页面下方品牌故事/面料板块同宽 80% 对齐 */}
       <section className="px-6 lg:px-10 lg:mt-10">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-14">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[7fr_6fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
           {/* 左：图集。移动端（2026-09-29 用户定）：主图 1:1.05 近方微竖通栏，方源图 object-cover 居中裁剪
               （仅左右各裁约 2.4%，几乎不损失画面；4:5 竖版左右裁 10% 与模糊背景方案均已弃用）；
-              缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端保持方图 cover + 缩略图横排 */}
-          <div className="min-w-0 max-lg:-mx-6">
+              缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定） */}
+          <div className={`min-w-0 max-lg:-mx-6${productImages.length > 1 ? ' lg:grid lg:grid-cols-[5rem_1fr] lg:gap-4' : ''}`}>
+            {/* 缩略图竖排（桌面端，主图左侧；2026-09-29 用户定：主图占比大，缩略图在下方时首屏看不到切换器）。
+                grid 行高由主图 aspect-square 决定，竖排列 min-h-0 + overflow-y-auto 超高时列内滚动；
+                移动端隐藏（用主图底部圆点指示器 + 滑动切换） */}
+            {productImages.length > 1 && (
+              <div className="hidden lg:flex lg:flex-col gap-3 lg:min-h-0 lg:overflow-y-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {productImages.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { setSelectedImage(i); setMainImageLoaded(false); }}
+                    className={`w-20 h-20 rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
+                      selectedImage === i ? 'border-brand' : 'border-warm-gray hover:border-brand/40'
+                    }`}
+                  >
+                    <img src={resolveUrl(img.thumbUrl)} alt={img.altText} loading="lazy" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
             <div
               className="aspect-[1/1.05] lg:aspect-square lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white"
               onClick={() => setLightboxOpen(true)}
@@ -396,26 +420,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 </div>
               )}
             </div>
-            {/* 缩略图横排：仅桌面端（移动端改为圆点指示器） */}
-            {productImages.length > 1 && (
-              <div className="hidden lg:flex gap-3 mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {productImages.map((img, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { setSelectedImage(i); setMainImageLoaded(false); }}
-                    className={`w-20 h-20 rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
-                      selectedImage === i ? 'border-brand' : 'border-warm-gray hover:border-brand/40'
-                    }`}
-                  >
-                    <img src={resolveUrl(img.thumbUrl)} alt={img.altText} loading="lazy" className="w-full h-full object-cover" />
-                  </button>
-                ))}
-              </div>
-            )}
-            {/* 运保 + 信任徽章 + 手风琴（桌面端位置：图集下方；移动端在右栏） */}
-            <div className="hidden lg:block mt-10">
-              {shippingCareBlock}
-            </div>
+            {/* 手风琴桌面端位置已移至右栏 Details/规格速览下方（2026-09-29 用户定），此处不再渲染 */}
           </div>
 
           {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
@@ -446,7 +451,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </button>
             </div>
 
-            <h1 className="text-lg lg:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
+            {/* 平板档（lg~xl，1024-1280px，如 iPad Pro 11/13 竖屏）用 text-2xl：右栏仅约 380px 宽，
+                text-4xl 会挤成 3-4 行（2026-09-29 用户实测排版异常）；≥xl 才用大标题 */}
+            <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
             {/* 副标题仅桌面端显示（2026-09-28 移动端首屏压缩移除）；
                 注意必须包一层 div 控显隐：line-clamp-2 自带 display:-webkit-box，
                 与 hidden 同挂一个元素时生产 CSS 层叠顺序不保证 hidden 生效（移动端实测仍显示） */}
@@ -504,7 +511,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2 lg:mb-3">
                     Color{current ? `: ${current.color}` : ''}
                   </p>
-                  <div className="flex flex-wrap gap-2.5 lg:gap-3">
+                  {/* 移动端 48px 色点：360px 窄屏一行放 5 个不折行（2026-09-29 用户实测 56px 会换行且右侧留大空隙） */}
+                  <div className="flex flex-wrap gap-2 lg:gap-3">
                     {colorVariants.map((v) => {
                       const isCurrent = v.handle === handle;
                       return (
@@ -513,7 +521,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                           href={v2url(`/products/${v.handle}/`)}
                           title={v.color}
                           aria-label={`${v.color}${isCurrent ? ' (current)' : ''}`}
-                          className={`relative w-14 h-14 lg:w-[88px] lg:h-[88px] rounded-full overflow-hidden border-2 transition hover:scale-105 ${
+                          className={`relative w-12 h-12 lg:w-16 lg:h-16 xl:w-[88px] xl:h-[88px] rounded-full overflow-hidden border-2 transition hover:scale-105 ${
                             isCurrent ? 'border-brand shadow-md' : 'border-warm-gray hover:border-brand/40'
                           }`}
                         >
@@ -640,7 +648,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <button
                     onClick={handleAddToCart}
                     disabled={addingToCart}
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
                   >
                     {addingToCart ? 'Adding...' : 'Add to Cart'}
                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -651,7 +659,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <a
                     href={product.amazonUrl}
                     target="_blank" rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark"
                   >
                     Shop on Amazon
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -702,7 +710,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </div>
             )}
 
-            {/* 运保 + 信任徽章 + 手风琴（移动端位置） */}
+            {/* 运保 + 信任徽章 + 手风琴：桌面端放右栏 Details/规格速览下方（2026-09-29 用户定，原图集下方位置弃用）；移动端在右栏底部 */}
+            <div className="hidden lg:block mb-8">
+              {shippingCareBlock}
+            </div>
             <div className="lg:hidden">
               {shippingCareBlock}
             </div>
@@ -714,11 +725,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       {reviewsSlot}
 
       {/* 滚动信任条（2026-09-29 用户定：购买区信任信息精简为免邮/退货两条，
-          年销/安全支付/发货时效等更多信任元素移到此处滚动展示；锚点 Tab 条与 Description/Specs 大区已删除） */}
+          年销/安全支付/发货时效等更多信任元素移到此处展示；锚点 Tab 条与 Description/Specs 大区已删除。
+          桌面端不滚动（用户定）：只渲染一排并居中；移动端双份拼接无缝横滚） */}
       <div className="mt-10 overflow-hidden border-y border-warm-gray bg-white py-3.5">
-        <div className="flex w-max animate-marquee">
+        <div className="flex w-max animate-marquee lg:w-full lg:justify-center lg:animate-none">
           {[...TRUST_MARQUEE_ITEMS, ...TRUST_MARQUEE_ITEMS].map((text, i) => (
-            <span key={i} className="inline-flex items-center gap-2.5 px-7 text-xs lg:text-sm font-medium text-charcoal whitespace-nowrap">
+            <span key={i} className={`inline-flex items-center gap-2.5 px-7 text-xs lg:text-sm font-medium text-charcoal whitespace-nowrap ${i >= TRUST_MARQUEE_ITEMS.length ? 'lg:hidden' : ''}`}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand flex-shrink-0" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
                 <polyline points="8.5 12 11 14.5 15.5 10" />
@@ -728,6 +740,27 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           ))}
         </div>
       </div>
+
+      {/* You May Also Like（2026-09-29 用户定：信任条下方、Brand Story 上方；宽度与上下模块一致 80%；
+          单行横滑——触屏原生滚动 + 桌面鼠标拖拽（DragScroll），无箭头、无 View All 按钮。
+          卡片宽度按"露出半张"设计（用户定：右缘露出下一张的一部分，暗示可滑）：
+          桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
+      {relatedProducts.length > 0 && (
+        <section className="mt-12 mb-12 lg:mt-16 lg:mb-20">
+          <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10">
+            <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-6 lg:mb-8">
+              You May Also Like
+            </h2>
+            <DragScroll className="flex gap-4 lg:gap-5 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+              {relatedProducts.map((p) => (
+                <div key={p.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
+                  <V2ProductCard product={p} />
+                </div>
+              ))}
+            </DragScroll>
+          </div>
+        </section>
+      )}
 
       {/* Brand Story（自动轮转两版：品牌公信力 / 布料工艺）+ Fabric Guide（仅 bedding），
           每屏一个板块，2026-09-29 用户定参照 Parachute 版式 */}

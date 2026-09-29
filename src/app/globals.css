@@ -25,6 +25,10 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  /* 禁止移动端浏览器自动调整字体大小（2026-09-29 用户实测 Galaxy Z Fold 等机型整体字体被缩小）；
+     100% = 不做任何缩放，字号完全由 CSS 决定 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* 禁用滚动锚定：吸顶导航收缩改变文档高度时，浏览器不再自动补偿 scrollY，
      避免「收缩→锚定补偿→触发展开→再补偿」的抖动循环 */
   overflow-anchor: none;
