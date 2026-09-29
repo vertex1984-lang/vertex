@@ -2295,4 +2295,11 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Hidden Zipper Closure: neat bottom opening, quilt slides in easily",
     "Easy Care & 150 x 200cm Fit: machine wash cold on gentle cycle, low dry",
   ],
+  "linen3-sage-duvet": [
+    "100% Pure Linen: natural flax weave, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Calm Sage Green: earthy tone that pairs with any decor",
+    "Secure Fit: button closure and interior corner ties",
+    "Easy Care: machine washable, softer with every wash",
+  ],
 };
