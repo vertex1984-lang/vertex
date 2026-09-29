@@ -334,6 +334,11 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0cxdzf2wq',
   // 2026-09-29 独立被套新品（创想AI 生成管线）：LINEN3-SAGE-DUVET
   'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet',
+  // 2026-09-29 独立被套新品（创想AI 生成管线）：LINEN3-CHARCOAL/DUSTYBLUE/IVORY/OATMEAL
+  'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet',
+  'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet',
+  'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet',
+  'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

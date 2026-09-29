@@ -2302,4 +2302,32 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Secure Fit: button closure and interior corner ties",
     "Easy Care: machine washable, softer with every wash",
   ],
+  "linen3-charcoal-duvet": [
+    "100% Pure Linen: natural flax weave, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Deep Charcoal Grey: moody neutral that pairs with any decor",
+    "Secure Fit: button closure and interior corner ties",
+    "Easy Care: machine washable, softer with every wash",
+  ],
+  "linen3-dustyblue-duvet": [
+    "100% Pure Linen: natural flax weave, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Soft Dusty Blue: calm airy tone that pairs with any decor",
+    "Secure Fit: button closure and interior corner ties",
+    "Easy Care: machine washable, softer with every wash",
+  ],
+  "linen3-ivory-duvet": [
+    "100% Pure Linen: natural flax weave, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Creamy Ivory: warm bright tone that pairs with any decor",
+    "Secure Fit: button closure and interior corner ties",
+    "Easy Care: machine washable, softer with every wash",
+  ],
+  "linen3-oatmeal-duvet": [
+    "100% Pure Linen: natural flax weave, breathable year-round",
+    "Standalone Cover: one duvet cover, comforter not included",
+    "Warm Oatmeal: cozy earthy tone that pairs with any decor",
+    "Secure Fit: button closure and interior corner ties",
+    "Easy Care: machine washable, softer with every wash",
+  ],
 };
