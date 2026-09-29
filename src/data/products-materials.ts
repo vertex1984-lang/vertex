@@ -11571,7 +11571,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "tags": [
       "Bedding"
     ],
-    "availableForSale": false,
+    "availableForSale": true,
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-DUVET/1.webp",
@@ -11606,7 +11606,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "priceRange": {
       "minVariantPrice": {
-        "amount": "0.00",
+        "amount": "69.99",
         "currencyCode": "USD"
       }
     },
@@ -11615,10 +11615,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "id": "variant-LINEN3-SAGE-DUVET",
         "title": "Default Title",
         "price": {
-          "amount": "0.00",
+          "amount": "69.99",
           "currencyCode": "USD"
         },
-        "availableForSale": false,
+        "availableForSale": true,
         "selectedOptions": []
       }
     ],
