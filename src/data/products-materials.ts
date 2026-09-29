@@ -11560,7 +11560,71 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+   {
+    "id": "makimoo-LINEN3-SAGE-DUVET",
+    "asin": "LINEN3-SAGE-DUVET",
+    "title": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+    "handle": "makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet",
+    "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+    "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/1.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/2.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/3.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/4.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/5.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-LINEN3-SAGE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+ {
     "id": "makimoo-LINEN3-SAGE-FULL",
     "asin": "LINEN3-SAGE-FULL",
     "title": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
