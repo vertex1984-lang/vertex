@@ -1,4 +1,3 @@
-import Reveal from '@/components/Reveal';
 import { resolveUrl } from '@/lib/paths';
 
 /**
@@ -23,7 +22,7 @@ const REVIEWS = [
 export default function V2TrustBanner() {
   return (
     <section className="px-3 lg:px-10 pt-8 lg:pt-0 pb-16 lg:pb-24">
-      <Reveal>
+      <div>
         {/* 桌面 3:2 左宽右窄，文案卡固定在左、评价卡在右（2026-09-22 用户定）；
             行高由左侧文案卡 16/9 定，右侧评价卡拉伸对齐 */}
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-3 lg:gap-5">
@@ -74,7 +73,7 @@ export default function V2TrustBanner() {
             </div>
           </div>
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }

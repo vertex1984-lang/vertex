@@ -1,4 +1,3 @@
-import Reveal from '@/components/Reveal';
 import DragScroll from '@/components/v2/DragScroll';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
@@ -22,7 +21,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
   return (
     <section className="pt-8 lg:pt-12 pb-16 lg:pb-24">
       {/* 标题行：标题 + 小字副标题（与 Shop by Color 同对齐：全宽 px-6 lg:px-10） */}
-      <Reveal>
+      <div>
         <div className="px-6 lg:px-10 mb-8 lg:mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
             Best Sellers
@@ -31,11 +30,11 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
             Our most popular pieces — tried, loved, and ready for your home.
           </p>
         </div>
-      </Reveal>
+      </div>
 
       {/* 横轨：外层 pl 制造左缘缝隙（padding 放滚动容器上会被 scroll-snap 吃掉），
           右缘渐隐遮罩 + 第 5 张露角提示可继续滑 */}
-      <Reveal>
+      <div>
         <div className="relative">
           <div className="pl-6 lg:pl-10">
             <DragScroll className="flex gap-5 lg:gap-6 overflow-x-auto pb-2 pr-6 lg:pr-10 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -51,10 +50,10 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
           </div>
           {/* 右缘渐隐遮罩已移除（2026-09-29 用户定：移动端看着像光晕，不干净） */}
         </div>
-      </Reveal>
+      </div>
 
       {/* 产品卡下方居中 VIEW MORE 描边按钮（与 Shop by Category 按钮同款） */}
-      <Reveal delay={200}>
+      <div>
         <div className="mt-10 lg:mt-12 text-center">
           <a
             href={v2url('/best-sellers/')}
@@ -63,7 +62,7 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
             View More
           </a>
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }
