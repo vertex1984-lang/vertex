@@ -38,7 +38,8 @@ export default function V2CategoriesPage() {
       />
 
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-14 lg:py-20">
+        {/* 2026-09-30 用户定：桌面端 80% 屏宽，与页头/其他内页一致 */}
+        <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 py-14 lg:py-20">
           <div className="grid md:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-12 lg:gap-y-16">
             {sections.map((cat, i) => (
               <Reveal key={cat.value} delay={(i % 2) * 80}>

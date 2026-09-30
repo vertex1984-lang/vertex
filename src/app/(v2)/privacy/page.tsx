@@ -32,7 +32,8 @@ export default function V2PrivacyPage() {
       />
 
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-12 lg:py-16">
+        {/* 2026-09-30 用户定：桌面端宽度与 shipping-returns 一致（80% 屏宽） */}
+        <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 py-12 lg:py-16">
           <PolicyLayout toc={TOC}>
             {/* Intro */}
             <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm mb-8">

@@ -27,7 +27,8 @@ export default function V2ShippingReturnPage() {
       />
 
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-12 lg:py-16">
+        {/* 2026-09-30 用户定：桌面端内容区扩到 80% 屏宽 */}
+        <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 py-12 lg:py-16">
           <PolicyLayout toc={toc}>
             {/* Shipping Policy */}
             <PolicySection
@@ -48,19 +49,19 @@ export default function V2ShippingReturnPage() {
                 </div>
 
                 <div className="space-y-3">
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
                     <span className="text-[#8B5A2B] font-bold shrink-0">Domestic Shipping:</span>
                     <span className="text-[#555]">Currently, Makimoo ships exclusively within the contiguous United States. We do not ship to Alaska, Hawaii, U.S. Territories, or APO/FPO addresses at this time.</span>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
                     <span className="text-[#8B5A2B] font-bold shrink-0">Processing Time:</span>
                     <span className="text-[#555]">Orders are typically processed and shipped within 1–3 business days.</span>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
                     <span className="text-[#8B5A2B] font-bold shrink-0">Standard Shipping:</span>
                     <span className="text-[#555]">5–7 business days.</span>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
                     <span className="text-[#8B5A2B] font-bold shrink-0">Oversized/Heavy Items:</span>
                     <span className="text-[#555]">For large furniture or heavy home goods, shipping times and carriers may vary. You will receive specific tracking details once the item leaves our warehouse.</span>
                   </div>

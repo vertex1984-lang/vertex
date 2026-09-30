@@ -73,7 +73,8 @@ export function PolicySection({
           ) : null}
           <h2 className="text-xl lg:text-2xl font-bold text-[#333]">{title}</h2>
         </div>
-        <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm">{children}</div>
+        {/* 2026-09-30 用户定：米色卡片+暖灰描边，不用大块白底 */}
+        <div className="bg-cream border border-warm-gray rounded-2xl p-5 sm:p-6 lg:p-8">{children}</div>
       </Reveal>
     </section>
   );
@@ -129,7 +130,8 @@ export function PolicyLayout({
     return <div className="max-w-3xl mx-auto">{children}</div>;
   }
   return (
-    <div className="max-w-6xl mx-auto">
+    <div>
+      {/* 2026-09-30 用户定：不再内设 max-w 居中，内容贴容器左缘，与页头标题对齐 */}
       {/* 移动端：横向滚动 chip 条 */}
       <nav className="lg:hidden mb-8 -mx-6 px-6 overflow-x-auto" aria-label="Table of contents">
         <div className="flex gap-2 w-max py-1">
@@ -137,7 +139,7 @@ export function PolicyLayout({
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="shrink-0 px-3.5 py-1.5 text-xs font-medium text-[#8B5A2B] bg-white border border-[#E8E2DA] rounded-full hover:bg-[#F8F5F0] transition-colors"
+              className="shrink-0 px-3.5 py-1.5 text-xs font-medium text-[#8B5A2B] bg-cream border border-[#E8E2DA] rounded-full hover:bg-[#F8F5F0] transition-colors"
             >
               {item.label}
             </a>
