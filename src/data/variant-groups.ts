@@ -456,6 +456,29 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    // 2026-09-29 独立被套单品家族（创想AI 管线，5 色 × 200 x 230cm，纯颜色家族不填 size）
+    id: 'LINEN3-DUVET',
+    optionName: 'Color',
+    members: [
+    { asin: 'LINEN3-SAGE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet', color: 'Sage Green' },
+    { asin: 'LINEN3-CHARCOAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet', color: 'Charcoal Grey' },
+    { asin: 'LINEN3-DUSTYBLUE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet', color: 'Dusty Blue' },
+    { asin: 'LINEN3-IVORY-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet', color: 'Ivory' },
+    { asin: 'LINEN3-OATMEAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet', color: 'Oatmeal' },
+    ],
+  },
+  {
+    // 2026-09-29 独立被套单品家族（创想AI 管线，4 色 × 200 x 230cm，纯颜色家族不填 size）
+    id: 'DUVSET-DUVET',
+    optionName: 'Color',
+    members: [
+    { asin: 'DUVSET-GRAY-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet', color: 'Grey' },
+    { asin: 'DUVSET-PINK-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet', color: 'Pink' },
+    { asin: 'DUVSET-BEIGE-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet', color: 'Beige' },
+    { asin: 'DUVSET-WHITE-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet', color: 'White' },
+    ],
+  },
+  {
     id: '1688-807393887857',
     optionName: 'Color',
     members: [

@@ -137,10 +137,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     () => swipeTo(1)
   );
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
   if (!product) {
     return (
       <div className="bg-off-white px-6 lg:px-10 pt-40 pb-24 text-center">

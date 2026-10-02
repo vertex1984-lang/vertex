@@ -49,6 +49,8 @@ const staticPages = [
   // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；
   // comforter-sets 2026-09-26 移除（唯一 comforter 家族实为被套 3 件套，已归 three，该类型页不再生成）
   { loc: '/bedding/bed-sets/', priority: '0.7', changefreq: 'weekly' },
+  // Duvet Covers 类型页 2026-10 上线（ice silk 缎面 + 9 款独立被套单件，导航入口已开）
+  { loc: '/bedding/duvet-covers/', priority: '0.7', changefreq: 'weekly' },
   // Pillows 二级 PLP（2026-09-30，与 src/data/pillows-taxonomy.ts 注册表手动同步；
   // down 无产品不生成页面，不入 sitemap；pillow-cases 同日移除——8 款枕套全站隐藏）
   { loc: '/pillows/bed-pillows/', priority: '0.7', changefreq: 'weekly' },

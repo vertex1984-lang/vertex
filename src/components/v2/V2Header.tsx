@@ -152,10 +152,11 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           // Bed Sets 合并入口（2026-09 用户定：4P/3P 合并为一项，页内两分区展示）；
           // 单类型页 /bedding/4-piece-sets/、/bedding/3-piece-sets/ 保留兜底无入口；
           // Comforter Sets 入口 2026-09-26 移除（唯一 comforter 家族 1688-916370884976 实为被套 3 件套，已归 three）；
-          // Sheets/Duvet Covers 无产品：置灰不可点（不再跳 /bedding/#on-the-loom，2026-09-27 用户反馈点击误导）
+          // Duvet Covers 2026-10 上线：ice silk 缎面 + 9 款独立被套单件（LINEN3-DUVET / DUVSET-DUVET）；
+          // Sheets 无产品：置灰不可点（不再跳 /bedding/#on-the-loom，2026-09-27 用户反馈点击误导）
           { label: 'Bed Sets', desc: 'Duvet covers, sheets & pillowcases.', href: '/bedding/bed-sets/' },
           { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
-          { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
+          { label: 'Duvet Covers', desc: 'Covers only — mix & match.', href: '/bedding/duvet-covers/' },
           { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
         ],
       },
