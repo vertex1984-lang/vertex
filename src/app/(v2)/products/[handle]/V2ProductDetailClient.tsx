@@ -17,6 +17,7 @@ import { getProductReviews } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface V2ProductDetailClientProps {
   handle: string;
@@ -64,6 +65,17 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
+
+  // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内（2026-10-02 采自 feat/pdp-v2-features）
+  const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
+  const swipeTo = (dir: 1 | -1) => {
+    setMainImageLoaded(false);
+    setSelectedImage((i) => (i + dir + imageCount) % Math.max(1, imageCount));
+  };
+  const { onTouchStart, onTouchEnd, wasSwiped } = useGallerySwipe(
+    () => swipeTo(-1),
+    () => swipeTo(1)
+  );
 
   // GA4: view_item（产品详情页浏览）
   useEffect(() => {
@@ -221,8 +233,10 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 </div>
               )}
               <div
-                className="flex-1 aspect-square rounded-xl overflow-hidden cursor-zoom-in relative group bg-white border border-warm-gray"
-                onClick={() => setLightboxOpen(true)}
+                className="flex-1 aspect-square rounded-xl overflow-hidden cursor-zoom-in relative group bg-white border border-warm-gray touch-pan-y"
+                onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
+                onTouchStart={onTouchStart}
+                onTouchEnd={onTouchEnd}
               >
                 {/* 主图加载前 pulse 骨架占位 */}
                 {!mainImageLoaded && <div className="absolute inset-0 animate-pulse bg-warm-gray" />}
@@ -241,6 +255,19 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                     mainImageLoaded ? 'opacity-100' : 'opacity-0'
                   }`}
                 />
+                {/* 移动端圆点指示器：当前第几张，可点跳转 */}
+                {productImages.length > 1 && (
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden">
+                    {productImages.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={(e) => { e.stopPropagation(); if (wasSwiped()) return; setMainImageLoaded(false); setSelectedImage(i); }}
+                        aria-label={`View image ${i + 1}`}
+                        className={`h-2 rounded-full transition-all shadow-[0_1px_3px_rgba(0,0,0,0.4)] ${selectedImage === i ? 'w-4 bg-white' : 'w-2 bg-white/60'}`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
 

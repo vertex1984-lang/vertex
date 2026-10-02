@@ -29,6 +29,7 @@ import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import DragScroll from '@/components/v2/DragScroll';
 import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
+import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface ProductDetailUpgradeProps {
   handle: string;
@@ -123,8 +124,22 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
-  // 移动端图集滑动切换的起点 X（0 = 未触摸）
-  const touchStartX = useRef(0);
+
+  // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
+  // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
+  const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
+  const swipeTo = (dir: 1 | -1) => {
+    setMainImageLoaded(false);
+    setSelectedImage((i) => (i + dir + imageCount) % Math.max(1, imageCount));
+  };
+  const { onTouchStart, onTouchEnd, wasSwiped } = useGallerySwipe(
+    () => swipeTo(-1),
+    () => swipeTo(1)
+  );
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   if (!product) {
     return (
@@ -364,19 +379,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
             <div
-              className="aspect-[1/1.05] lg:aspect-square lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white"
-              onClick={() => setLightboxOpen(true)}
-              onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
-              onTouchEnd={(e) => {
-                const dx = e.changedTouches[0].clientX - touchStartX.current;
-                if (Math.abs(dx) > 40 && productImages.length > 1) {
-                  const next = dx < 0
-                    ? Math.min(selectedImage + 1, productImages.length - 1)
-                    : Math.max(selectedImage - 1, 0);
-                  if (next !== selectedImage) { setSelectedImage(next); setMainImageLoaded(false); }
-                }
-                touchStartX.current = 0;
-              }}
+              className="aspect-[1/1.05] lg:aspect-square lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y"
+              onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
             >
               {!mainImageLoaded && <div className="absolute inset-0 animate-pulse bg-warm-gray" />}
               <img
@@ -406,15 +412,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                 </svg>
               </button>
-              {/* 圆点指示器（移动端，替代缩略图栏；叠在主图底部居中，点击切换） */}
+              {/* 移动端圆点指示器：当前第几张，可点跳转（2026-10-02 采自 feat/pdp-v2-features：胶囊造型 + 滑动后抑制误触） */}
               {productImages.length > 1 && (
-                <div className="lg:hidden absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden z-10">
                   {productImages.map((_, i) => (
                     <button
                       key={i}
-                      onClick={(e) => { e.stopPropagation(); setSelectedImage(i); setMainImageLoaded(false); }}
-                      aria-label={`Image ${i + 1}`}
-                      className={`w-2 h-2 rounded-full shadow transition ${selectedImage === i ? 'bg-white scale-110' : 'bg-white/50'}`}
+                      onClick={(e) => { e.stopPropagation(); if (wasSwiped()) return; setMainImageLoaded(false); setSelectedImage(i); }}
+                      aria-label={`View image ${i + 1}`}
+                      className={`h-2 rounded-full transition-all shadow-[0_1px_3px_rgba(0,0,0,0.4)] ${selectedImage === i ? 'w-4 bg-white' : 'w-2 bg-white/60'}`}
                     />
                   ))}
                 </div>

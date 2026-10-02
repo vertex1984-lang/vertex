@@ -18,10 +18,11 @@ interface ImageLightboxProps {
 
 /**
  * 全屏图片查看器：
- * - 左右箭头 / 键盘 ← → 切换（循环），Esc 关闭
+ * - 桌面端左右箭头 / 键盘 ← → 切换（循环），Esc 关闭；移动端无箭头，单指滑动切图
  * - 单击图片在 1x / 2.5x 间切换缩放，缩放时鼠标移动平移查看
  * - 底部缩略图条（可横向滚动，自动跟随当前图）
  * - 顶部计数 + 关闭按钮；点击空白区域（未缩放时）关闭
+ * - 移动端图片满幅（无左右留白、高度顶格）；桌面端版式不变（付费落地优化，用户定）
  */
 export default function ImageLightbox({ images, index, onIndexChange, onClose }: ImageLightboxProps) {
   const [zoomed, setZoomed] = useState(false);
@@ -109,7 +110,7 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
   };
 
   const arrowCls =
-    'absolute top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition backdrop-blur-sm border border-white/20 z-10';
+    'absolute top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white hidden lg:flex items-center justify-center transition backdrop-blur-sm border border-white/20 z-10';
 
   return (
     <div
@@ -132,8 +133,8 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
         </button>
       </div>
 
-      {/* 主图区 */}
-      <div className="relative flex-1 min-h-0 flex items-center justify-center px-14 lg:px-20">
+      {/* 主图区：移动端无左右留白让图片满幅；桌面保留留白给箭头呼吸位 */}
+      <div className="relative flex-1 min-h-0 flex items-center justify-center px-0 lg:px-20">
         {images.length > 1 && (
           <>
             <button onClick={(e) => { e.stopPropagation(); prev(); }} aria-label="Previous image" className={`${arrowCls} left-3 lg:left-6`}>
@@ -149,7 +150,7 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
           </>
         )}
         <div
-          className={`max-w-full max-h-full overflow-hidden rounded-lg ${zoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
+          className={`max-w-full max-h-full overflow-hidden rounded-none lg:rounded-lg ${zoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
           onClick={handleImageClick}
           onMouseMove={handleMouseMove}
           onTouchStart={handleTouchStart}
@@ -161,7 +162,7 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
             src={resolveUrl(current.mainUrl)}
             alt={current.altText || ''}
             draggable={false}
-            className="max-w-full max-h-[70dvh] lg:max-h-[76vh] object-contain select-none transition-transform duration-300"
+            className="max-w-full max-h-full lg:max-h-[76vh] object-contain select-none transition-transform duration-300"
             style={zoomed ? { transform: 'scale(2.5)', transformOrigin: `${origin.x}% ${origin.y}%` } : undefined}
           />
         </div>
