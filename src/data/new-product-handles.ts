@@ -298,7 +298,8 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'woven-rattan-basket-set-rectangular-serving-tray-with-1688-743606980882-c80',
   'woven-rattan-nesting-trays-with-green-clover-pattern-round-1688-899672152256-c85',
   'woven-rattan-serving-tray-rectangular-wicker-basket-with-1688-743606980882-c61',
-  'woven-rattan-serving-tray-with-shell-mosaic-green-checkered-1688-743606980882-c2',
+  // 2026-09-30：该产品素材库标题被改为中文导致 handle 重生成，旧 handle 已失效，同步为当前 handle
+  '37-24-4cm-37-24-4cm-1688-743606980882-c2',
   'woven-rattan-shell-mosaic-round-tray-basket-for-fruit-snack-1688-899672152256-c52',
   '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf',
   '2-piece-patio-chair-cushion-set-with-backrest-and-seat-pad-b0cw17pzyt',

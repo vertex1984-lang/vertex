@@ -5,6 +5,8 @@ import ProductCard from '@/components/ProductCard';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
+import V2PillowsShop from '@/components/v2/V2PillowsShop';
+import { isPillowProduct } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
@@ -186,6 +188,14 @@ export default function V2ProductsPage() {
       enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
         (p) => p.productType.toLowerCase() === 'blankets'
       ),
+    []
+  );
+
+  // pillows 选购视图（2026-09-30 用户定，照搬 bedding 结构：Type × Material 双下拉 +
+  // 按形态分区网格）：范围 = pillows 类目 + 跨挂的旅行颈枕（Others/travel，见 pillows-taxonomy）
+  const pillowsMode = activeCategory.toLowerCase() === 'pillows';
+  const pillowShopProducts = useMemo(
+    () => enrichProductsWithShopifyData(PRODUCTS_DATA).filter(isPillowProduct),
     []
   );
 
@@ -376,7 +386,7 @@ export default function V2ProductsPage() {
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度
@@ -405,7 +415,7 @@ export default function V2ProductsPage() {
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
             bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
-        {mounted && !beddingMaterialMode && !blanketsMode && (
+        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -507,6 +517,11 @@ export default function V2ProductsPage() {
            传未去重的原始 blankets 列表（同 bedding 口径）：buildBlanketFamilies 需要看到
            同色全部尺寸 SKU 才能拼出完整尺寸带（120 x 200 / ... / 230 x 250 cm） */
         <V2BlanketsShop products={blanketShopProducts} />
+      ) : pillowsMode && !isSearching ? (
+        /* pillows 选购视图（2026-09-30 用户定：展示方法与逻辑完全对齐 /bedding/bed-sets/）：
+           Type × Material 粘性双下拉 + 始终按形态分区网格 + 家族卡徽标规则。
+           传未去重原始列表，组件内部去重 */
+        <V2PillowsShop products={pillowShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */

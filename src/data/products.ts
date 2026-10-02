@@ -6001,9 +6001,30 @@ function normalizeCategory(t: string, title = ''): string {
   return CATEGORY_MERGE[t.toLowerCase()] || t;
 }
 
+/** 全站隐藏的产品（2026-09-30 用户定）：
+ *  - 4 款天鹅绒充气颈枕不再展示、不放入任何类目（前缀匹配）
+ *  - 8 款枕套全站隐藏（Pillow Cases 子类目整体移除；注意同变体族的 3 款 cushion covers
+ *    b0gjlsdz52/b0gjldmt57/b0gjlmjws1 是抱枕套、不在隐藏之列；duvset 标题含 pillowcases
+ *    但是床品套装，也不在隐藏之列） */
+const HIDDEN_HANDLE_PREFIXES = ['inflatable-travel-pillow-'];
+const HIDDEN_HANDLES = new Set([
+  'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
+  'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1',
+  'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g',
+  'makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2',
+  'makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4',
+  'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
+  'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
+  'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+]);
+
+export function isHiddenProduct(p: { handle: string }): boolean {
+  return HIDDEN_HANDLE_PREFIXES.some(pre => p.handle.startsWith(pre)) || HIDDEN_HANDLES.has(p.handle);
+}
+
 /** Merge local product data with Shopify data (prices, availability, variant IDs) and materials overrides (title, bullets, images) */
 export function enrichProductsWithShopifyData(products: MakimooProduct[]): MakimooProduct[] {
-  return products.map(rawProduct => {
+  return products.filter(p => !isHiddenProduct(p)).map(rawProduct => {
     const product = applyMaterialsData(rawProduct);
     const asinLower = product.asin.toLowerCase();
     // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖；无手工条目时自动精简

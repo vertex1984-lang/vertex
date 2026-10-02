@@ -8,6 +8,7 @@ import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { fabricByMaterial } from '@/data/bedding-fabrics';
+import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
 // Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
@@ -48,7 +49,8 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   pillows: [
     { image: '/images/collections/pillows.webp', caption: 'Plush fillings, premium covers.', linkLabel: 'Shop Pillows', href: '/products?cat=pillows' },
-    { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Pillow Inserts', href: '/products?cat=pillows&sub=basic' },
+    // 2026-09-30：原 sub=basic 链接与风格分组口径不一致（过滤为空），改指 decorative-pillows 二级页
+    { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Decorative Pillows', href: '/pillows/decorative-pillows/' },
   ],
   towels: [
     { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Towels', href: '/products?cat=towels' },
@@ -92,11 +94,40 @@ interface MenuColumn {
 }
 
 /** 组装某个类目的 mega menu 列：首列 = 类目子项（bedding 为面料列，描述取自 bedding-fabrics
- *  注册表，链接直达面料二级 PLP /bedding/[fabric]/），次列 = Featured 固定入口
+ *  注册表，链接直达面料二级 PLP /bedding/[fabric]/；pillows 为形态列 + Material 列，
+ *  直达 /pillows/[slug]/，2026-09-30 用户定），末列 = Featured 固定入口
  *  （bedding 例外，2026-09 用户定：次列改为 "Bedding" 产品类型列，标题链 /bedding/，
  *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 移至面料列末尾） */
 function menuColumns(cat: string, styles: { key: string; label: string }[]): MenuColumn[] {
   const current = navLinks.find((l) => l.cat === cat);
+  const featured: MenuLink[] = [
+    { label: 'Best Sellers', desc: 'Most loved.', href: '/best-sellers/' },
+    { label: 'New Arrivals', desc: 'Just landed.', href: '/new-arrivals/' },
+  ];
+  // Pillows 重构（2026-09-30 用户定，照搬 bedding 双列模型）：
+  // 首列 = 形态（Bed/Decorative/Cases/Neck → /pillows/[slug]/ 二级 PLP），
+  // 次列 = Material（Down 无产品置灰 coming soon）；不带 Featured 列（2026-09-30 用户定删除）
+  if (cat === 'pillows') {
+    return [
+      {
+        title: 'Pillows',
+        href: current?.href,
+        links: PILLOW_TYPES.map((t) => ({
+          label: t.label,
+          desc: t.menuDesc,
+          href: `/pillows/${t.slug}/`,
+        })),
+      },
+      {
+        title: 'Material',
+        links: PILLOW_MATERIALS.map((m) =>
+          m.key === 'down'
+            ? { label: m.label, desc: m.menuDesc, href: '/products?cat=pillows', comingSoon: true }
+            : { label: m.label, desc: m.menuDesc, href: `/pillows/${m.slug}/` }
+        ),
+      },
+    ];
+  }
   const first: MenuColumn = {
     title: cat === 'bedding' ? 'Shop by Fabric' : (current?.label || cat),
     // bedding 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）；其他类目链到类目页
@@ -130,13 +161,8 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
       },
     ];
   }
-  const featured: MenuLink[] = [
-    { label: 'Best Sellers', desc: 'Most loved.', href: '/best-sellers/' },
-    { label: 'New Arrivals', desc: 'Just landed.', href: '/new-arrivals/' },
-  ];
   return [first, { title: 'Featured', links: featured }];
 }
-
 interface V2HeaderProps {
   /** 各类目（小写 productType）在售产品的风格列表，服务端 stylesByCategory() 传入；
    *  导航下拉子项与 /products Collections、首页 Shop by Style 同步（2026-09 用户定） */
@@ -653,9 +679,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      {/* bedding 不渲染 "Shop All" 首项（2026-09 用户定：移除），
-                          /bedding/ 入口由下方 BEDDING 组标题链接承担（同桌面列标题可点） */}
-                      {link.href && link.cat !== 'bedding' && (
+                      {/* bedding/pillows 不渲染 "Shop All" 首项（2026-09 用户定）：
+                          汇总页入口由下方组标题链接承担（同桌面列标题可点） */}
+                      {link.href && link.cat !== 'bedding' && link.cat !== 'pillows' && (
                         <a
                           href={v2url(link.href)}
                           onClick={() => setMobileOpen(false)}
@@ -664,12 +690,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                           Shop All {link.label} →
                         </a>
                       )}
-                      {/* bedding 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
-                          面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                      {/* bedding/pillows 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
+                          bedding = 面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                          pillows = 形态组（PILLOWS）+ 材质组（MATERIAL）+ Featured；
                           组标题 = 主层级缩进（mx-4）+ 下划线（同桌面列标题 border-b 样式），
                           子类目 pl-8 缩进，层级一眼可辨（2026-09 用户反馈：原同缩进分不清） */}
-                      {link.cat === 'bedding'
-                        ? menuColumns('bedding', catStyles['bedding'] || []).map((col) => (
+                      {link.cat === 'bedding' || link.cat === 'pillows'
+                        ? menuColumns(link.cat, catStyles[link.cat] || []).map((col) => (
                             <div key={col.title}>
                               {col.href ? (
                                 <a

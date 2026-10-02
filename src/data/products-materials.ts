@@ -13401,25 +13401,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-743606980882-C2/1.webp",
-        "altText": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
+        "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-743606980882-C2/2.webp",
-        "altText": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
+        "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-743606980882-C2/3.webp",
-        "altText": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
+        "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-743606980882-C2/4.webp",
-        "altText": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
+        "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
         "width": 800,
         "height": 800
       }

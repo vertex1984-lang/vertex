@@ -5,7 +5,7 @@ import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
+import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
 import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { VARIANT_THUMB_CROPS } from '@/data/variant-thumb-crops';
@@ -30,7 +30,8 @@ const FABRICS_WITH_COUNTS = (() => {
 })();
 
 export function generateStaticParams() {
-  return PRODUCTS_DATA.map((p) => ({ handle: p.handle }));
+  // 2026-09-30 用户定：隐藏产品（天鹅绒充气颈枕）不生成 PDP
+  return PRODUCTS_DATA.filter((p) => !isHiddenProduct(p)).map((p) => ({ handle: p.handle }));
 }
 
 function getWords(text: string, count: number): string {

@@ -363,16 +363,9 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Color',
     members: [
     { asin: 'b0gjlsdz52', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52', color: 'White', size: '40 x 80 cm' },
-    { asin: 'b0gjlp59k1', handle: 'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1', color: 'White', size: '50 x 70 cm' },
-    { asin: 'b0gjlnmx2g', handle: 'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g', color: 'Light Grey', size: '40 x 70 cm' },
-    { asin: 'b0gjlp4pr2', handle: 'makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2', color: 'Pink', size: '40 x 70 cm' },
-    { asin: 'b0gjlmc6z4', handle: 'makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4', color: 'White', size: '30 x 50 cm' },
-    { asin: 'b0gjlgxtl4', handle: 'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4', color: 'Pink', size: '40 x 80 cm' },
-    { asin: 'b0gjlgm6xg', handle: 'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg', color: 'White', size: '40 x 80 cm' },
-    { asin: 'b0gjldwt6x', handle: 'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x', color: 'Sage Green', size: '30 x 50 cm' },
     { asin: 'b0gjldmt57', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57', color: 'Light Grey', size: '50 x 70 cm' },
     { asin: 'b0gjlmjws1', handle: 'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1', color: 'Pink', size: '50 x 70 cm' },
-    { asin: 'b0gjlvmht7', handle: 'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7', color: 'Pink', size: '30 x 50 cm' },
+    // 2026-09-30 用户定：8 款枕套（pillowcases/pillow covers/pillow cases）全站隐藏，已移出本组
     ],
   },
   {

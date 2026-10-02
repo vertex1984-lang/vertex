@@ -1,6 +1,8 @@
 // Auto-generated: shortened product titles (<=100 chars, no brand name)
 export const SHORT_TITLES: Record<string, string> = {
   "b098f1bkjq": "Wicker Bicycle Basket with Cup Holder, Vintage Handmade Rattan",
+  // 2026-09-30：素材库标题为中文（全站唯一），手工补英文短标题；素材库标题改回英文后此条可删
+  "1688-743606980882-c2": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
   "b0bbzsgdbq": "Outdoor Cushions, 110 x 55cm - Colorful Floral, Set of 4",
   "b0bbzw4lzr": "Outdoor Cushions, 110 x 55cm - Colorful Floral, Set of 2",
   "b0bcjqyyl1": "Outdoor Cushions, 110 x 55cm - Khaki Birds and Flowers",
