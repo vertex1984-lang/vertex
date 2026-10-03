@@ -7,8 +7,9 @@ export interface V2Crumb {
 }
 
 /**
- * V2 内页统一深色页头：bg-brand 块 + pt-24/lg:pt-36 衬住初始透明的 fixed V2Header
- * （announcement bar + header 实底后总高约 112-120px），与 /v2/products/ 页头一致
+ * V2 内页统一浅色页头：bg-cream 米色系 + pt-24/lg:pt-36 衬住初始透明的 fixed V2Header
+ * （announcement bar + header 实底后总高约 112-120px）
+ * 2026-09-30 用户定：不用大块棕色色块，与全站米色风格一致
  */
 export default function V2PageHeader({
   crumbs,
@@ -23,29 +24,30 @@ export default function V2PageHeader({
   meta?: string;
 }) {
   return (
-    <section className="bg-brand">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-24 lg:pt-36 pb-10 lg:pb-14">
-        <nav className="text-xs lg:text-sm text-cream/60 mb-3 lg:mb-4" aria-label="Breadcrumb">
+    <section className="bg-off-white border-b border-warm-gray">
+      {/* 2026-09-30 用户定：页头容器与下方内容同宽（桌面 80%），标题对齐内容区左缘（TOC 侧栏左侧） */}
+      <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 pt-24 lg:pt-36 pb-10 lg:pb-14">
+        <nav className="text-xs lg:text-sm text-charcoal-light/70 mb-3 lg:mb-4" aria-label="Breadcrumb">
           {crumbs.map((c, i) => (
             <span key={c.label}>
               {i > 0 && <span className="mx-1.5">/</span>}
               {c.href ? (
-                <a href={v2url(c.href)} className="hover:text-cream transition-colors">
+                <a href={v2url(c.href)} className="hover:text-brand transition-colors">
                   {c.label}
                 </a>
               ) : (
-                <span className="text-cream">{c.label}</span>
+                <span className="text-charcoal">{c.label}</span>
               )}
             </span>
           ))}
         </nav>
-        <h1 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-cream">{title}</h1>
+        <h1 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal">{title}</h1>
         {subtitle && (
-          <p className="mt-3 lg:mt-4 text-sm lg:text-base text-cream/75 max-w-2xl">{subtitle}</p>
+          <p className="mt-3 lg:mt-4 text-sm lg:text-base text-charcoal-light max-w-2xl">{subtitle}</p>
         )}
         {meta && (
           <p className="mt-5">
-            <span className="inline-block px-3 py-1 text-xs font-medium text-cream bg-cream/10 border border-cream/25 rounded-full">
+            <span className="inline-block px-3 py-1 text-xs font-medium text-brand bg-brand/10 border border-brand/20 rounded-full">
               {meta}
             </span>
           </p>

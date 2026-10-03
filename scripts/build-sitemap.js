@@ -13,7 +13,20 @@ const productsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products.t
 const baseHandles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 const materialsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products-materials.ts'), 'utf8');
 const materialHandles = [...materialsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
-const handles = [...new Set([...baseHandles, ...materialHandles])];
+// 2026-09-30 用户定：隐藏产品（4 款天鹅绒充气颈枕 + 8 款枕套）不入 sitemap
+// （与 src/data/products.ts 的 HIDDEN_HANDLE_PREFIXES / HIDDEN_HANDLES 同步）
+const HIDDEN_HANDLES = new Set([
+  'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
+  'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1',
+  'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g',
+  'makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2',
+  'makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4',
+  'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
+  'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
+  'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+]);
+const handles = [...new Set([...baseHandles, ...materialHandles])]
+  .filter((h) => !h.startsWith('inflatable-travel-pillow-') && !HIDDEN_HANDLES.has(h));
 
 // Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）
 const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');
@@ -36,6 +49,15 @@ const staticPages = [
   // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；
   // comforter-sets 2026-09-26 移除（唯一 comforter 家族实为被套 3 件套，已归 three，该类型页不再生成）
   { loc: '/bedding/bed-sets/', priority: '0.7', changefreq: 'weekly' },
+  // Duvet Covers 类型页 2026-10 上线（ice silk 缎面 + 9 款独立被套单件，导航入口已开）
+  { loc: '/bedding/duvet-covers/', priority: '0.7', changefreq: 'weekly' },
+  // Pillows 二级 PLP（2026-09-30，与 src/data/pillows-taxonomy.ts 注册表手动同步；
+  // down 无产品不生成页面，不入 sitemap；pillow-cases 同日移除——8 款枕套全站隐藏）
+  { loc: '/pillows/bed-pillows/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/pillows/decorative-pillows/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/pillows/neck-pillows/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/pillows/down-alternative/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/pillows/memory-foam/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },

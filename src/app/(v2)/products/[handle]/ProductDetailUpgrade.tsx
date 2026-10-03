@@ -24,8 +24,11 @@ import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import { getProductReviews } from '@/data/product-reviews';
-import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
+import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import DragScroll from '@/components/v2/DragScroll';
+import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface ProductDetailUpgradeProps {
@@ -36,15 +39,9 @@ interface ProductDetailUpgradeProps {
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
   /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、Description 前（付费落地优化 P2） */
   reviewsSlot?: ReactNode;
+  /** "You May Also Like" 关联推荐卡片（page.tsx 用 getPdpRelatedProducts 构建期算好），渲染在信任条下方 */
+  relatedProducts?: V2CardProduct[];
 }
-
-const SECTIONS = [
-  { id: 'pdp2-description', label: 'Description' },
-  { id: 'pdp2-specs', label: 'Specifications' },
-];
-
-// Reviews 锚点项：仅当该产品有评价正文数据时动态追加（评价区由 page.tsx 经 reviewsSlot 提供）
-const REVIEWS_SECTION = { id: 'pdp2-reviews', label: 'Reviews' };
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
 // 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
@@ -62,10 +59,21 @@ const ACCORDION_SECTIONS_BASE = [
   },
 ];
 
-export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot }: ProductDetailUpgradeProps) {
+// 滚动信任条文案（2026-09-29 用户定，购买区精简后更多信任元素在此滚动展示）；
+// 渲染时数组拼接两遍实现无缝循环（配合 globals.css 的 animate-marquee）
+const TRUST_MARQUEE_ITEMS = [
+  'Free shipping over $49',
+  '30-day easy returns',
+  'Secure checkout',
+  'Trusted brand',
+  '500K+ items sold a year Worldwide',
+  'Premium materials, honest prices',
+];
+
+export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot, relatedProducts = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
-  // 评价正文是否存在（Reviews Tab 动态启用）——在 hooks 区求值，供 observer 依赖
+  // 评价正文是否存在（有则评分行可点击锚到评价区）
   const hasReviewsData = getProductReviews(product?.asin ?? '').length > 0;
   const [selectedImage, setSelectedImage] = useState(0);
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
@@ -74,7 +82,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const [quantity, setQuantity] = useState(1);
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
-  const [activeSection, setActiveSection] = useState(SECTIONS[0].id);
+  const [sizeMenuOpen, setSizeMenuOpen] = useState(false);
+  const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
 
   // GA4: view_item
   useEffect(() => {
@@ -94,26 +103,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 锚点滚动监听（Tab 高亮）；有评价数据时 pdp2-reviews 区也纳入观察
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveSection(entry.target.id);
-        });
-      },
-      { rootMargin: '-25% 0px -65% 0px' }
-    );
-    const ids = hasReviewsData
-      ? [...SECTIONS.map((s) => s.id), REVIEWS_SECTION.id]
-      : SECTIONS.map((s) => s.id);
-    ids.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-    return () => observer.disconnect();
-  }, [hasReviewsData]);
-
   // 收藏态同步 + 最近浏览
   useEffect(() => {
     if (!product) return;
@@ -125,26 +114,19 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 吸底加购条高度 → CSS 变量 --atc-h：Cookie 横幅（CookieConsent.tsx）据此上移让位，
-  // 不再盖住移动端吸底加购；桌面端 / 非该 PDP 页面变量为 0，横幅位置不变
-  const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  // 吸底条不再首屏常驻（2026-09-28 用户定：首屏已有完整购买区，常驻吸底条白占高度），
+  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入
+  const [showStickyBar, setShowStickyBar] = useState(false);
   useEffect(() => {
-    const el = stickyBarRef.current;
-    if (!el) return;
-    const root = document.documentElement;
-    const sync = () => {
-      const h = window.innerWidth >= 1024 ? 0 : Math.ceil(el.getBoundingClientRect().height);
-      root.style.setProperty('--atc-h', `${h}px`);
-    };
-    sync();
-    window.addEventListener('resize', sync);
-    return () => {
-      window.removeEventListener('resize', sync);
-      root.style.setProperty('--atc-h', '0px');
-    };
+    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
+  const stickyBarRef = useRef<HTMLDivElement | null>(null);
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
+  // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
   const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
   const swipeTo = (dir: 1 | -1) => {
     setMainImageLoaded(false);
@@ -154,10 +136,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     () => swipeTo(-1),
     () => swipeTo(1)
   );
-
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
 
   if (!product) {
     return (
@@ -184,10 +162,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         altText: img.altText, whiteBg: product.imageWhiteBg?.[i] ?? false,
       }));
 
-  // 详情附图：素材条目配置了 detailImages 用之；无则复用套图兜底
-  const detailImages = (product.detailImages && product.detailImages.length > 0)
-    ? product.detailImages
-    : product.images.map((img) => img.url);
+  // 详情附图区已随 Description 模块删除（2026-09-29 用户定）
 
   const hasShopifyData = product.hasShopifyData;
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
@@ -229,6 +204,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 护理文案（按分类映射，地毯特判）+ 地毯判断（尺寸占位仅地毯显示）
   const careCopy = getCareCopy(product.productType, product.title);
   const isRug = RUG_TITLE_RE.test(product.title);
+  const isBedding = (product.productType || '').toLowerCase() === 'bedding';
 
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
@@ -297,35 +273,23 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
   };
 
-  // 运保 + 信任徽章 + 手风琴（桌面在左栏图集下方，移动端在右栏底部）
-  const accordionSections = [...ACCORDION_SECTIONS_BASE, { title: 'Care & Maintenance', body: careCopy.long }];
-  // 锚点 Tab 列表：有评价正文时追加 Reviews 项（对应 reviewsSlot 的 pdp2-reviews 区）
-  const anchorSections = hasReviewsData ? [...SECTIONS, REVIEWS_SECTION] : SECTIONS;
+  // 手风琴（桌面在左栏图集下方，移动端在右栏底部）。
+  // 2026-09-29 用户定：Description 图文区删除；Specifications 大表改为手风琴一节；
+  // 顺序 Care & Maintenance / Specifications 在前，Shipping / Returns 在后。
+  // specs 节渲染规格表（行多时 maxHeight 需要更大），其余节渲染纯文案
+  const accordionSections: { title: string; body?: string; specs?: boolean }[] = [
+    { title: 'Care & Maintenance', body: careCopy.long },
+    { title: 'Specifications', specs: true },
+    ...ACCORDION_SECTIONS_BASE,
+  ];
   const shippingCareBlock = (
     <>
-      <p className="text-sm text-charcoal-light mb-6">
-        {isInStock ? 'Ships within 1-2 business days · ' : ''}
-        <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
-      </p>
-      <div className="grid grid-cols-4 gap-2 py-5 border-t border-b border-warm-gray mb-2">
-        {[
-          { icon: 'truck', label: 'Free Shipping' },
-          { icon: 'return', label: '30-Day Returns' },
-          { icon: 'lock', label: 'Secure Payment' },
-          { icon: 'badge', label: 'Quality Checked' },
-        ].map((badge) => (
-          <div key={badge.label} className="flex flex-col items-center text-center gap-1.5">
-            <TrustIcon name={badge.icon} />
-            <span className="text-xs lg:text-sm text-charcoal-light leading-tight">{badge.label}</span>
-          </div>
-        ))}
-      </div>
       <div className="border-b border-warm-gray">
         {accordionSections.map((section, i) => (
           <div key={section.title} className="border-t border-warm-gray">
             <button
               onClick={() => setOpenAccordion(openAccordion === i ? null : i)}
-              className="w-full flex items-center justify-between py-4 text-left"
+              className={`w-full flex items-center justify-between pb-4 text-left ${i === 0 ? 'pt-7' : 'pt-4'}`}
               aria-expanded={openAccordion === i}
             >
               <span className="text-sm font-semibold text-charcoal">{section.title}</span>
@@ -338,9 +302,24 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </button>
             <div
               className="overflow-hidden transition-all duration-300"
-              style={{ maxHeight: openAccordion === i ? '200px' : '0' }}
+              style={{ maxHeight: openAccordion === i ? (section.specs ? '640px' : '200px') : '0' }}
             >
-              <p className="text-sm text-charcoal-light leading-relaxed pb-4">{section.body}</p>
+              {section.specs ? (
+                <table className="w-full mb-4">
+                  <tbody>
+                    {specRows.map((row, ri) => (
+                      <tr key={row.label} className={ri > 0 ? 'border-t border-warm-gray/60' : ''}>
+                        <td className="py-2.5 pr-3 text-xs text-charcoal-light w-2/5 align-top">{row.label}</td>
+                        <td className={`py-2.5 text-xs font-medium align-top ${row.muted ? 'text-red-500' : 'text-charcoal'}`}>
+                          {row.value}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <p className="text-sm text-charcoal-light leading-relaxed pb-4">{section.body}</p>
+              )}
             </div>
           </div>
         ))}
@@ -350,9 +329,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   return (
     <div className="bg-off-white pb-24 lg:pb-0">
-      {/* 面包屑（pt-24/40 避开 fixed 头部，与老版 PDP 避让高度一致；移动端隐藏省首屏空间） */}
+      {/* 面包屑（移动端 pt-24 = 公告条约 30px + 60px fixed 头部（公告条移动端已恢复展示），图片贴合导航下沿；桌面 pt-40；移动端隐藏面包屑本身省首屏空间） */}
       <div className="px-6 lg:px-10 pt-24 lg:pt-40">
-        <nav className="hidden lg:flex max-w-[1400px] mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
+        <nav className="hidden lg:flex max-w-[1520px] lg:w-[80%] lg:max-w-none mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>
           {catSlug ? (
@@ -367,13 +346,36 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
       {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
           隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
-          移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、区块上边距收窄 */}
-      <section className="px-6 lg:px-10 mt-4 lg:mt-10">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-          {/* 左：图集（大图 + 缩略图横排在下，全端一致）；移动端主图 5:4 降高，让标题+评分+价格进首屏 */}
-          <div className="min-w-0">
+          移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、移动端无区块上边距（图片贴合顶部导航）、
+          图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外）。
+          桌面端（2026-09-29 用户定）：容器宽 80% 屏宽、图集:购买栏 = 7:6，提高首屏占屏比（原 1400px 居中两侧留白过多）；
+          页面下方品牌故事/面料板块同宽 80% 对齐 */}
+      <section className="px-6 lg:px-10 lg:mt-10">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[7fr_6fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
+          {/* 左：图集。移动端（2026-09-29 用户定）：主图 1:1.05 近方微竖通栏，方源图 object-cover 居中裁剪
+              （仅左右各裁约 2.4%，几乎不损失画面；4:5 竖版左右裁 10% 与模糊背景方案均已弃用）；
+              缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定） */}
+          <div className={`min-w-0 max-lg:-mx-6${productImages.length > 1 ? ' lg:grid lg:grid-cols-[5rem_1fr] lg:gap-4' : ''}`}>
+            {/* 缩略图竖排（桌面端，主图左侧；2026-09-29 用户定：主图占比大，缩略图在下方时首屏看不到切换器）。
+                grid 行高由主图 aspect-square 决定，竖排列 min-h-0 + overflow-y-auto 超高时列内滚动；
+                移动端隐藏（用主图底部圆点指示器 + 滑动切换） */}
+            {productImages.length > 1 && (
+              <div className="hidden lg:flex lg:flex-col gap-3 lg:min-h-0 lg:overflow-y-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {productImages.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { setSelectedImage(i); setMainImageLoaded(false); }}
+                    className={`w-20 h-20 rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
+                      selectedImage === i ? 'border-brand' : 'border-warm-gray hover:border-brand/40'
+                    }`}
+                  >
+                    <img src={resolveUrl(img.thumbUrl)} alt={img.altText} loading="lazy" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
             <div
-              className="aspect-[5/4] lg:aspect-square rounded-2xl overflow-hidden border border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y"
+              className="aspect-[1/1.05] lg:aspect-square lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y"
               onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
               onTouchStart={onTouchStart}
               onTouchEnd={onTouchEnd}
@@ -394,9 +396,21 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/>
                 </svg>
               </div>
-              {/* 移动端圆点指示器：当前第几张，可点跳转 */}
+              {/* 心愿单（移动端）：悬浮主图右上角，原位置与智能导购气泡重叠故移此（2026-09-28 用户定） */}
+              <button
+                onClick={(e) => { e.stopPropagation(); handleToggleFavorite(); }}
+                className={`lg:hidden absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center transition active:scale-95 ${
+                  fav ? 'text-brand' : 'text-charcoal-light'
+                }`}
+                aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
+              >
+                <svg width="19" height="19" viewBox="0 0 24 24" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </button>
+              {/* 移动端圆点指示器：当前第几张，可点跳转（2026-10-02 采自 feat/pdp-v2-features：胶囊造型 + 滑动后抑制误触） */}
               {productImages.length > 1 && (
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden">
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden z-10">
                   {productImages.map((_, i) => (
                     <button
                       key={i}
@@ -408,32 +422,17 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 </div>
               )}
             </div>
-            {productImages.length > 1 && (
-              <div className="flex gap-2.5 lg:gap-3 mt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {productImages.map((img, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { setSelectedImage(i); setMainImageLoaded(false); }}
-                    className={`w-16 h-16 lg:w-20 lg:h-20 rounded-lg lg:rounded-xl overflow-hidden border-2 transition flex-shrink-0 bg-white ${
-                      selectedImage === i ? 'border-brand' : 'border-warm-gray hover:border-brand/40'
-                    }`}
-                  >
-                    <img src={resolveUrl(img.thumbUrl)} alt={img.altText} loading="lazy" className="w-full h-full object-cover" />
-                  </button>
-                ))}
-              </div>
-            )}
-            {/* 运保 + 信任徽章 + 手风琴（桌面端位置：图集下方；移动端在右栏） */}
-            <div className="hidden lg:block mt-10">
-              {shippingCareBlock}
-            </div>
+            {/* 手风琴桌面端位置已移至右栏 Details/规格速览下方（2026-09-29 用户定），此处不再渲染 */}
           </div>
 
           {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
           <div className="lg:pt-2 min-w-0">
-            <div className="flex items-center justify-between gap-4 mb-4">
+            {/* 移动端首屏压缩（2026-09-28 用户定：浏览器地址栏+工具栏显示时价格仍进不了首屏）：
+                类目徽章移动端隐藏、心愿单按钮移到主图右上角悬浮（原位置与智能导购气泡重叠）、
+                行间距收紧；桌面端保持原布局 */}
+            <div className="flex items-center justify-between gap-4 mb-2 lg:mb-4">
               <div className="flex items-center gap-2">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
+                <span className="hidden lg:inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
                   {product.productType}
                 </span>
                 <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${isInStock ? 'text-brand' : 'text-charcoal-light'}`}>
@@ -443,7 +442,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
               <button
                 onClick={handleToggleFavorite}
-                className={`w-11 h-11 rounded-full border flex items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
+                className={`hidden lg:flex w-11 h-11 rounded-full border items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
                   fav ? 'border-brand text-brand bg-brand/5' : 'border-warm-gray text-charcoal-light hover:text-brand hover:border-brand'
                 }`}
                 aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
@@ -454,9 +453,16 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </button>
             </div>
 
-            <h1 className="text-xl lg:text-4xl font-extrabold tracking-tight text-charcoal leading-tight mb-2">{shortTitle}</h1>
+            {/* 平板档（lg~xl，1024-1280px，如 iPad Pro 11/13 竖屏）用 text-2xl：右栏仅约 380px 宽，
+                text-4xl 会挤成 3-4 行（2026-09-29 用户实测排版异常）；≥xl 才用大标题 */}
+            <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
+            {/* 副标题仅桌面端显示（2026-09-28 移动端首屏压缩移除）；
+                注意必须包一层 div 控显隐：line-clamp-2 自带 display:-webkit-box，
+                与 hidden 同挂一个元素时生产 CSS 层叠顺序不保证 hidden 生效（移动端实测仍显示） */}
             {longTitle !== shortTitle && (
-              <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
+              <div className="hidden lg:block">
+                <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
+              </div>
             )}
 
             {/* Rating：products.ts 有评分汇总数据才显示（与老版口径一致，无数据不占位）；
@@ -480,8 +486,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             )}
 
             {isInStock ? (
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="text-2xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
+              <div className="flex items-baseline gap-3 mb-4 lg:mb-6">
+                <span className="text-xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
                 {showCompareAt && (
                   <>
                     <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
@@ -497,32 +503,18 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Details 五点卖点（紧凑单列；按领导要求置于花色上方，平衡上半部分；缺货/未发布也展示） */}
-            <div className="mb-7">
-              <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Details</p>
-              <ul className="space-y-2.5">
-                {(product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5).map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2.5">
-                    <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                    </span>
-                    <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/* Details 卖点与规格速览已下移至购买区信任信息之后（首屏聚焦图片+价格+CTA） */}
 
-            {/* 花色切换器（同款异色圆点，点击跳转对应花色页） */}
+            {/* 花色切换器（同款异色圆点，点击跳转对应花色页）；移动端 56px 紧凑版（2026-09-28 对标竞品压缩选择区） */}
             {colorVariants.length > 1 && (() => {
               const current = colorVariants.find((v) => v.handle === handle);
               return (
-                <div className="mb-7">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">
+                <div className="mb-5 lg:mb-7">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2 lg:mb-3">
                     Color{current ? `: ${current.color}` : ''}
                   </p>
-                  <div className="flex flex-wrap gap-3">
+                  {/* 移动端 48px 色点：360px 窄屏一行放 5 个不折行（2026-09-29 用户实测 56px 会换行且右侧留大空隙） */}
+                  <div className="flex flex-wrap gap-2 lg:gap-3">
                     {colorVariants.map((v) => {
                       const isCurrent = v.handle === handle;
                       return (
@@ -531,7 +523,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                           href={v2url(`/products/${v.handle}/`)}
                           title={v.color}
                           aria-label={`${v.color}${isCurrent ? ' (current)' : ''}`}
-                          className={`relative w-[88px] h-[88px] rounded-full overflow-hidden border-2 transition hover:scale-105 ${
+                          className={`relative w-12 h-12 lg:w-16 lg:h-16 xl:w-[88px] xl:h-[88px] rounded-full overflow-hidden border-2 transition hover:scale-105 ${
                             isCurrent ? 'border-brand shadow-md' : 'border-warm-gray hover:border-brand/40'
                           }`}
                         >
@@ -549,96 +541,86 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               );
             })()}
 
-            {/* 尺寸选择器：变体组带尺寸 → 功能型（同色跳尺寸页）；否则展示预设（灰色 Coming soon） */}
-            {sizeVariants.length > 0 ? (
-              <div className="mb-7">
-                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Size</p>
-                <div className="flex flex-wrap gap-3">
-                  {sizeVariants.map((sv) => {
-                    const active = sv.handle === handle;
-                    const unavailable = sv.handle === null;
-                    const inner = (
-                      <>
-                        {sv.size}
-                        {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
-                        {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
-                      </>
-                    );
-                    const cls = `px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition ${
-                      active
-                        ? 'border-brand bg-brand text-cream cursor-default'
-                        : unavailable
-                          ? 'border-warm-gray bg-white text-charcoal-light/50 cursor-not-allowed'
-                          : 'border-warm-gray bg-white text-charcoal hover:border-brand/40'
-                    }`;
-                    if (unavailable) {
-                      return (
-                        <button
-                          key={sv.size}
-                          type="button"
-                          disabled
-                          aria-label={`${sv.size} — not available in this pattern`}
-                          className={cls}
-                        >
-                          {inner}
-                        </button>
-                      );
-                    }
-                    return active ? (
-                      <button key={sv.size} aria-pressed="true" className={cls}>
-                        {inner}
-                      </button>
-                    ) : (
-                      <Link key={sv.size} href={v2url(`/products/${sv.handle}/`)} className={cls}>
-                        {inner}
-                      </Link>
-                    );
-                  })}
-                </div>
+            {/* 尺寸选择器（2026-09-28 对标竞品改下拉单行，替代原大胶囊按钮组）：
+                一行 "Size: 当前值 ▾"，点击展开选项面板；变体组带尺寸 → 跳转对应尺寸页（缺货/无此规格在面板内灰显）；
+                地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类右侧带 Size guide 弹层入口 */}
+            {(sizeVariants.length > 0 || (isRug && currentSizeStr)) && (
+            <div className="mb-5 lg:mb-7">
+              <div className="flex items-baseline justify-between">
+                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light">Size</p>
+                {isBedding && sizeVariants.length > 0 && (
+                  <button type="button" onClick={() => setSizeGuideOpen(true)} className="text-xs text-brand underline underline-offset-2 hover:no-underline">
+                    Size guide
+                  </button>
+                )}
               </div>
-            ) : (
-              isRug && currentSizeStr && (
-              <div className="mb-7">
-                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Size</p>
-                <div className="flex flex-wrap gap-3">
-                  {sizeOptions.map((size) => {
-                    const active = size === currentSizeStr;
-                    return (
-                      <button
-                        key={size}
-                        onClick={() => { if (!active) toast('This size is coming soon'); }}
-                        title={active ? size : 'Coming soon'}
-                        aria-pressed={active}
-                        aria-disabled={!active}
-                        className={`px-5 py-2.5 rounded-full text-sm font-semibold border-2 transition ${
-                          active
-                            ? 'border-brand bg-brand text-cream cursor-default'
-                            : 'border-warm-gray bg-white text-charcoal-light/70 cursor-not-allowed hover:border-brand/30'
-                        }`}
-                      >
-                        {size}
-                      </button>
-                    );
-                  })}
+              <button
+                type="button"
+                onClick={() => setSizeMenuOpen((v) => !v)}
+                aria-expanded={sizeMenuOpen}
+                className="w-full flex items-center justify-between py-3 border-b border-charcoal/25 text-sm font-semibold text-charcoal"
+              >
+                <span>{sizeVariants.length > 0
+                  ? (sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
+                  : currentSizeStr}</span>
+                <svg className={`w-4 h-4 text-charcoal-light transition-transform ${sizeMenuOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              {sizeMenuOpen && (
+                <div className="mt-2 rounded-xl border border-warm-gray bg-white shadow-lg overflow-hidden">
+                  {sizeVariants.length > 0
+                    ? sizeVariants.map((sv) => {
+                        const active = sv.handle === handle;
+                        const unavailable = sv.handle === null;
+                        const label = (
+                          <>
+                            {sv.size}
+                            {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
+                            {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
+                          </>
+                        );
+                        if (unavailable) {
+                          return (
+                            <div key={sv.size} aria-disabled="true" className="px-4 py-2.5 text-sm text-charcoal-light/50">
+                              {label}
+                            </div>
+                          );
+                        }
+                        return active ? (
+                          <div key={sv.size} aria-current="true" className="px-4 py-2.5 text-sm font-semibold text-brand bg-brand/5 flex items-center justify-between">
+                            {label}
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                          </div>
+                        ) : (
+                          <Link key={sv.size} href={v2url(`/products/${sv.handle}/`)} className="block px-4 py-2.5 text-sm text-charcoal hover:bg-off-white transition">
+                            {label}
+                          </Link>
+                        );
+                      })
+                    : sizeOptions.map((size) => {
+                        const active = size === currentSizeStr;
+                        return active ? (
+                          <div key={size} aria-current="true" className="px-4 py-2.5 text-sm font-semibold text-brand bg-brand/5 flex items-center justify-between">
+                            {size}
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                          </div>
+                        ) : (
+                          <button
+                            key={size}
+                            type="button"
+                            onClick={() => { setSizeMenuOpen(false); toast('This size is coming soon'); }}
+                            className="w-full text-left px-4 py-2.5 text-sm text-charcoal-light/60"
+                          >
+                            {size}
+                            <span className="ml-1.5 text-[11px] opacity-70">(Coming soon)</span>
+                          </button>
+                        );
+                      })}
                 </div>
-              </div>
-              )
-            )}
-
-            {/* 规格速览 chips（Material/Care 卡已按领导反馈移除，材料与护理信息保留在底部 Specifications 表） */}
-            {quickSpecs.length > 0 && (
-            <div className="grid grid-cols-2 gap-2.5 mb-7">
-              {quickSpecs.map((spec) => (
-                <div key={spec.label} className="flex items-start gap-2.5 rounded-xl bg-white border border-warm-gray px-3.5 py-3">
-                  <QuickSpecIcon name={spec.icon} />
-                  <div className="min-w-0">
-                    <p className="text-[11px] uppercase tracking-wide text-charcoal-light font-semibold">{spec.label}</p>
-                    <p className="text-sm font-medium text-charcoal truncate">{spec.value}</p>
-                  </div>
-                </div>
-              ))}
+              )}
             </div>
             )}
+
+            {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
             {/* 数量 + 加购 */}
             {isInStock && (
@@ -668,7 +650,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <button
                     onClick={handleAddToCart}
                     disabled={addingToCart}
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
                   >
                     {addingToCart ? 'Adding...' : 'Add to Cart'}
                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -679,7 +661,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <a
                     href={product.amazonUrl}
                     target="_blank" rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm lg:text-base font-bold text-cream bg-brand transition hover:bg-brand-dark"
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark"
                   >
                     Shop on Amazon
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -689,19 +671,51 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
-            {/* 支付方式信任行 + 预计送达：付费落地用户最关心的"能否安全付款/多久到"一眼可答 */}
-            <TrustPayRow className="mb-3" />
-            <p className="text-sm text-charcoal-light mb-6">
-              {isInStock && (
-                <>
-                  <EstimatedDelivery fallback="Ships within 1-2 business days" />
-                  {' · '}
-                </>
-              )}
-              <a href={v2url('/shipping-returns/')} className="text-brand hover:underline">Shipping &amp; returns policy</a>
-            </p>
+            {/* 信任徽章行（只留免邮/退货两条，2026-09-29 用户定：年销/安全支付/卡图标/政策链接全部移除，
+                更多信任元素由下方滚动信任条承担）+ 预计送达（送达日期单独加粗一行） */}
+            <PdpTrustBadges className="mb-4" />
+            {isInStock && (
+              <p className="text-sm font-semibold text-charcoal mb-6">
+                <EstimatedDelivery fallback="Ships within 1-2 business days" />
+              </p>
+            )}
 
-            {/* 运保 + 信任徽章 + 手风琴（移动端位置） */}
+            {/* Details 卖点（移动端只显示 4 条，行距放松，与上方信任区分割线区隔——对标精品站减压） */}
+            <div className="border-t border-warm-gray pt-6 mb-8">
+              <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Details</p>
+              <ul className="space-y-3">
+                {(product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5).map((feature, i) => (
+                  <li key={i} className={`flex items-start gap-2.5${i === 4 ? ' hidden lg:flex' : ''}`}>
+                    <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>
+                    <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* 规格速览 chips（材料与护理信息保留在底部 Specifications 表） */}
+            {quickSpecs.length > 0 && (
+            <div className="grid grid-cols-2 gap-2.5 mb-8">
+              {quickSpecs.map((spec) => (
+                <div key={spec.label} className="flex items-start gap-2.5 rounded-xl bg-white border border-warm-gray px-3.5 py-3">
+                  <QuickSpecIcon name={spec.icon} />
+                  <div className="min-w-0">
+                    <p className="text-[11px] uppercase tracking-wide text-charcoal-light font-semibold">{spec.label}</p>
+                    <p className="text-sm font-medium text-charcoal truncate">{spec.value}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            )}
+
+            {/* 运保 + 信任徽章 + 手风琴：桌面端放右栏 Details/规格速览下方（2026-09-29 用户定，原图集下方位置弃用）；移动端在右栏底部 */}
+            <div className="hidden lg:block mb-8">
+              {shippingCareBlock}
+            </div>
             <div className="lg:hidden">
               {shippingCareBlock}
             </div>
@@ -709,62 +723,50 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       </section>
 
-      {/* 评价区插槽：page.tsx 传入（V2ProductReviews，有数据才实际渲染），紧跟购买区、Description 之前 */}
+      {/* 评价区插槽：page.tsx 传入（V2ProductReviews，有数据才实际渲染），紧跟购买区之后 */}
       {reviewsSlot}
 
-      {/* ② 锚点 Tab 条（不吸顶：顶部导航已吸顶） */}
-      <div className="mt-12 bg-white border-y border-warm-gray">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex gap-1 sm:gap-2 overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {anchorSections.map((section) => (
-            <button
-              key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              className={`px-4 sm:px-6 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
-                activeSection === section.id
-                  ? 'text-brand border-brand'
-                  : 'text-charcoal-light border-transparent hover:text-charcoal'
-              }`}
-            >
-              {section.label}
-            </button>
+      {/* 滚动信任条（2026-09-29 用户定：购买区信任信息精简为免邮/退货两条，
+          年销/安全支付/发货时效等更多信任元素移到此处展示；锚点 Tab 条与 Description/Specs 大区已删除。
+          桌面端不滚动（用户定）：只渲染一排并居中；移动端双份拼接无缝横滚） */}
+      <div className="mt-10 overflow-hidden border-y border-warm-gray bg-white py-3.5">
+        <div className="flex w-max animate-marquee lg:w-full lg:justify-center lg:animate-none">
+          {[...TRUST_MARQUEE_ITEMS, ...TRUST_MARQUEE_ITEMS].map((text, i) => (
+            <span key={i} className={`inline-flex items-center gap-2.5 px-7 text-xs lg:text-sm font-medium text-charcoal whitespace-nowrap ${i >= TRUST_MARQUEE_ITEMS.length ? 'lg:hidden' : ''}`}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand flex-shrink-0" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <polyline points="8.5 12 11 14.5 15.5 10" />
+              </svg>
+              {text}
+            </span>
           ))}
         </div>
       </div>
 
-      {/* ③ Description：详情附图大图叙事（五点卖点已上移至购买区花色上方） */}
-      <section id="pdp2-description" className="px-6 lg:px-10 py-14 scroll-mt-28 lg:scroll-mt-36">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="space-y-6">
-            {detailImages.map((src, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden border border-warm-gray">
-                <img src={resolveUrl(src)} alt={`${product.title} - detail ${i + 1}`} loading="lazy" className="w-full" />
-              </div>
-            ))}
+      {/* You May Also Like（2026-09-29 用户定：信任条下方、Brand Story 上方；宽度与上下模块一致 80%；
+          单行横滑——触屏原生滚动 + 桌面鼠标拖拽（DragScroll），无箭头、无 View All 按钮。
+          卡片宽度按"露出半张"设计（用户定：右缘露出下一张的一部分，暗示可滑）：
+          桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
+      {relatedProducts.length > 0 && (
+        <section className="mt-12 mb-12 lg:mt-16 lg:mb-20">
+          <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10">
+            <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-6 lg:mb-8">
+              You May Also Like
+            </h2>
+            <DragScroll className="flex gap-4 lg:gap-5 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+              {relatedProducts.map((p) => (
+                <div key={p.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
+                  <V2ProductCard product={p} />
+                </div>
+              ))}
+            </DragScroll>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* ④ Specifications */}
-      <section id="pdp2-specs" className="px-6 lg:px-10 py-14 scroll-mt-28 lg:scroll-mt-36">
-        <div className="max-w-[1400px] mx-auto">
-          <p className="text-xs lg:text-sm font-semibold tracking-widest uppercase text-brand mb-2">Specifications</p>
-          <h2 className="text-xl lg:text-3xl font-extrabold text-charcoal mb-8">Product Details at a Glance</h2>
-          <div className="max-w-3xl bg-white rounded-2xl border border-warm-gray overflow-hidden">
-            <table className="w-full">
-              <tbody>
-                {specRows.map((row, i) => (
-                  <tr key={row.label} className={i > 0 ? 'border-t border-warm-gray' : ''}>
-                    <td className="py-3.5 pl-6 pr-4 text-sm text-charcoal-light w-2/5 align-top">{row.label}</td>
-                    <td className={`py-3.5 pr-6 text-sm font-medium align-top ${row.muted ? 'text-red-500' : 'text-charcoal'}`}>
-                      {row.value}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      {/* Brand Story（自动轮转两版：品牌公信力 / 布料工艺）+ Fabric Guide（仅 bedding），
+          每屏一个板块，2026-09-29 用户定参照 Parachute 版式 */}
+      <PdpStoryBlocks showFabricGuide={isBedding} />
 
       {/* 全屏图片查看器 */}
       {lightboxOpen && (
@@ -776,11 +778,69 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         />
       )}
 
-      {/* 移动端吸底加购条 */}
+      {/* Size Guide 弹层（bedding PDP，2026-09-28 用户要求）：尺寸 cm/英寸/适配床型对照表 */}
+      {sizeGuideOpen && (
+        <div
+          className="fixed inset-0 z-[1300] flex items-center justify-center bg-charcoal/50 px-4"
+          onClick={() => setSizeGuideOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Size guide"
+        >
+          <div
+            className="relative w-full max-w-md rounded-2xl bg-white shadow-xl px-6 py-6 max-h-[80vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSizeGuideOpen(false)}
+              aria-label="Close size guide"
+              className="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-off-white text-charcoal-light hover:text-charcoal transition flex items-center justify-center"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <p className="text-base font-bold text-charcoal mb-1">Size Guide</p>
+            <p className="text-xs text-charcoal-light mb-4">Duvet cover dimensions by size.</p>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-[11px] uppercase tracking-wide text-charcoal-light border-b border-warm-gray">
+                  <th className="py-2 pr-2 font-semibold">Size (cm)</th>
+                  <th className="py-2 pr-2 font-semibold">Inches</th>
+                  <th className="py-2 font-semibold">Fits</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sizeVariants.map((sv) => {
+                  const m = sv.size.match(/(\d+)\s*x\s*(\d+)/i);
+                  const a = m ? Number(m[1]) : null;
+                  const b = m ? Number(m[2]) : null;
+                  const inches = a && b ? `${Math.round(a / 2.54)} x ${Math.round(b / 2.54)} in` : '—';
+                  const width = a && b ? Math.min(a, b) : null;
+                  const fits = width === null ? '—' : width <= 180 ? 'Twin / Twin XL' : width <= 210 ? 'Full / Queen' : 'King / Cal King';
+                  return (
+                    <tr key={sv.size} className="border-b border-warm-gray/60 last:border-0">
+                      <td className="py-2.5 pr-2 font-medium text-charcoal">{sv.size}</td>
+                      <td className="py-2.5 pr-2 text-charcoal-light">{inches}</td>
+                      <td className="py-2.5 text-charcoal-light">{fits}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <p className="mt-4 text-[11px] leading-relaxed text-charcoal-light">
+              Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* 移动端吸底加购条：首屏隐藏（translate-y-full），滚动后滑入 */}
       {isInStock && (
         <div
           ref={stickyBarRef}
-          className="fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3"
+          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
+            showStickyBar ? 'translate-y-0' : 'translate-y-full'
+          }`}
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
           <img
@@ -836,23 +896,6 @@ function QuickSpecIcon({ name }: { name: string }) {
       return <svg className={common} viewBox="0 0 24 24" {...stroke}><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>;
     case 'sparkle':
       return <svg className={common} viewBox="0 0 24 24" {...stroke}><path d="M12 3l1.9 5.8L20 10l-5.8 1.9L12 18l-2.2-6.1L4 10l6.1-1.2L12 3z"/><path d="M19 15l.9 2.6L22 18.5l-2.1.9L19 22l-.9-2.6-2.1-.9 2.1-.9L19 15z"/></svg>;
-    default:
-      return null;
-  }
-}
-
-function TrustIcon({ name }: { name: string }) {
-  const cls = 'w-[22px] h-[22px] text-brand';
-  const stroke = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
-  switch (name) {
-    case 'truck':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg>;
-    case 'return':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>;
-    case 'lock':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>;
-    case 'badge':
-      return <svg className={cls} viewBox="0 0 24 24" {...stroke}><path d="M12 2l2.4 2.4h3.4v3.4L20 10l-2.2 2.2v3.4h-3.4L12 18l-2.4-2.4H6.2v-3.4L4 10l2.2-2.2V4.4h3.4L12 2z"/><path d="M9 10l2 2 4-4"/></svg>;
     default:
       return null;
   }

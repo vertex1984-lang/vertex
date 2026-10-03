@@ -99,4 +99,16 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "linen3-oatmeal-full": { material: "100% Linen" },
   "linen3-ivory-king": { material: "100% Linen" },
   "linen3-ivory-full": { material: "100% Linen" },
+
+  // ── 2026-10 协作方新品：独立被套单件 200×230cm（Duvet Covers 细分类目）──
+  // LINEN3-DUVET 五色 = 100% Linen；DUVSET-DUVET 四色 = Washed Cotton-Like
+  "linen3-sage-duvet": { material: "100% Linen", dimensionsCm: [230, 200] },
+  "linen3-charcoal-duvet": { material: "100% Linen", dimensionsCm: [230, 200] },
+  "linen3-dustyblue-duvet": { material: "100% Linen", dimensionsCm: [230, 200] },
+  "linen3-ivory-duvet": { material: "100% Linen", dimensionsCm: [230, 200] },
+  "linen3-oatmeal-duvet": { material: "100% Linen", dimensionsCm: [230, 200] },
+  "duvset-gray-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "duvset-pink-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "duvset-beige-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "duvset-white-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
 };

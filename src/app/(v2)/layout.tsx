@@ -2,7 +2,6 @@ import V2Header from "@/components/v2/V2Header";
 import V2Footer from "@/components/v2/V2Footer";
 import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
-import CookieConsent from "@/components/CookieConsent";
 import ChatWidget from "@/components/ChatWidget";
 import { stylesByCategory } from "@/data/style-tagged";
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from "@/data/products";
@@ -39,7 +38,7 @@ export default function V2Layout({
       <main>{children}</main>
       <V2Footer />
       <MiniCart />
-      <CookieConsent />
+      {/* CookieConsent 已移除（2026-09-28 用户定：美国市场无强制 Cookie 提示法规，弹窗干扰首访用户） */}
       <BackToTop />
       <ChatWidget />
     </div>

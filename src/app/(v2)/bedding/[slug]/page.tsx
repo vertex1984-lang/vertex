@@ -19,8 +19,10 @@ import { resolveUrl } from '@/lib/paths';
  * 只给有产品的面料/类型生成静态页；Sheets / Duvet Covers 无产品不生成（导航指 /bedding/#on-the-loom）。
  */
 
-// 静态导出：未列出的 slug 一律 404
-export const dynamicParams = false;
+// 静态导出：未列出的 slug 不会生成 HTML（等效 404）；页面内未命中也走 notFound()。
+// 注意：不要加 `export const dynamicParams = false`——dev 模式 output:export 下该导出会让
+// fallbackMode 变为 false，导致本页在 dev 下一律 500 "missing generateStaticParams"
+// （Next dev 的既有缺陷；移除后 dev 可正常预览，生产构建行为不变）。
 
 function beddingFamilies() {
   const products = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(

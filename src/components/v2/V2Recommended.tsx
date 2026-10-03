@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Reveal from '@/components/Reveal';
 import V2ProductCard, { V2CardProduct } from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { getRecentlyViewed } from '@/lib/recently-viewed';
@@ -118,7 +117,7 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
 
   return (
     <section className="pt-6 lg:pt-24 pb-16 lg:pb-24">
-      <Reveal>
+      <div>
         <div className="px-6 lg:px-10 mb-10 lg:mb-12">
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
             {personalized ? 'Based on Your Browsing' : 'Customer Favorites'}
@@ -164,7 +163,7 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
             View More
           </a>
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }

@@ -1,6 +1,18 @@
 // Auto-generated: shortened product titles (<=100 chars, no brand name)
 export const SHORT_TITLES: Record<string, string> = {
   "b098f1bkjq": "Wicker Bicycle Basket with Cup Holder, Vintage Handmade Rattan",
+  // 2026-09-30：素材库标题为中文（全站唯一），手工补英文短标题；素材库标题改回英文后此条可删
+  "1688-743606980882-c2": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
+  // 2026-09-29 独立被套新品短标题（采自 feat/pdp-v2-features）
+  "linen3-sage-duvet": "100% Linen Duvet Cover, Sage Green, 200 x 230cm",
+  "linen3-charcoal-duvet": "100% Linen Duvet Cover, Charcoal Grey, 200 x 230cm",
+  "linen3-dustyblue-duvet": "100% Linen Duvet Cover, Dusty Blue, 200 x 230cm",
+  "linen3-ivory-duvet": "100% Linen Duvet Cover, Ivory, 200 x 230cm",
+  "linen3-oatmeal-duvet": "100% Linen Duvet Cover, Oatmeal, 200 x 230cm",
+  "duvset-gray-duvet": "Washed Cotton-Like Duvet Cover, Grey, 200 x 230cm",
+  "duvset-pink-duvet": "Washed Cotton-Like Duvet Cover, Pink, 200 x 230cm",
+  "duvset-beige-duvet": "Washed Cotton-Like Duvet Cover, Beige, 200 x 230cm",
+  "duvset-white-duvet": "Washed Cotton-Like Duvet Cover, White, 200 x 230cm",
   "b0bbzsgdbq": "Outdoor Cushions, 110 x 55cm - Colorful Floral, Set of 4",
   "b0bbzw4lzr": "Outdoor Cushions, 110 x 55cm - Colorful Floral, Set of 2",
   "b0bcjqyyl1": "Outdoor Cushions, 110 x 55cm - Khaki Birds and Flowers",
@@ -305,13 +317,4 @@ export const SHORT_TITLES: Record<string, string> = {
   "1688-1051650740507": "Cotton Lace Trim Duvet Cover, Cherry Pink, 200 x 230cm",
   "1688-1051650740507-c2": "Cotton Lace Trim Duvet Cover, Cherry Pink, 180 x 220cm",
   "1688-1051650740507-c3": "Cotton Lace Trim Duvet Cover, Cherry Pink, 150 x 200cm",
-  "linen3-sage-duvet": "100% Linen Duvet Cover, Sage Green, 200 x 230cm",
-  "linen3-charcoal-duvet": "100% Linen Duvet Cover, Charcoal Grey, 200 x 230cm",
-  "linen3-dustyblue-duvet": "100% Linen Duvet Cover, Dusty Blue, 200 x 230cm",
-  "linen3-ivory-duvet": "100% Linen Duvet Cover, Ivory, 200 x 230cm",
-  "linen3-oatmeal-duvet": "100% Linen Duvet Cover, Oatmeal, 200 x 230cm",
-  "duvset-gray-duvet": "Washed Cotton-Like Duvet Cover, Grey, 200 x 230cm",
-  "duvset-pink-duvet": "Washed Cotton-Like Duvet Cover, Pink, 200 x 230cm",
-  "duvset-beige-duvet": "Washed Cotton-Like Duvet Cover, Beige, 200 x 230cm",
-  "duvset-white-duvet": "Washed Cotton-Like Duvet Cover, White, 200 x 230cm",
 };

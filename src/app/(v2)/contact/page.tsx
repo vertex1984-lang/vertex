@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: 'Have a question or need support? Reach out to the Makimoo team — we answer every email within 12 hours.',
 };
 
+// 2026-09-30 用户定：删除 Address 卡片，保留 Email 和 Response Time
 const CONTACT_INFO = [
   {
     title: 'Email',
@@ -24,23 +25,6 @@ const CONTACT_INFO = [
         </a>
         <p className="text-sm text-charcoal-light mt-1">We will answer your email within 12 hours.</p>
       </>
-    ),
-  },
-  {
-    title: 'Address',
-    icon: (
-      <>
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-        <circle cx="12" cy="10" r="3" />
-      </>
-    ),
-    content: (
-      <p className="text-sm text-charcoal-light leading-relaxed">
-        FLAT/RM C 13/F<br />
-        HARVARD COMMERCIAL BUILDING<br />
-        105-111 THOMSON ROAD<br />
-        WAN CHAI, HK
-      </p>
     ),
   },
   {
@@ -69,28 +53,31 @@ export default function V2ContactPage() {
       />
 
       <section className="bg-off-white">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10 py-14 lg:py-20">
-          <Reveal>
-            <V2ContactForm />
-          </Reveal>
+        {/* 2026-09-30 用户定：桌面端 80% 屏宽，表单左、信息卡右两栏排版 */}
+        <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 py-14 lg:py-20">
+          <div className="lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-start">
+            <Reveal>
+              <V2ContactForm />
+            </Reveal>
 
-          <Reveal delay={120}>
-            <div className="mt-8 space-y-4">
-              {CONTACT_INFO.map((item) => (
-                <div key={item.title} className="bg-white rounded-2xl border border-warm-gray p-6 flex gap-5">
-                  <div className="w-11 h-11 rounded-full bg-off-white flex items-center justify-center shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
-                      {item.icon}
-                    </svg>
+            <Reveal delay={120}>
+              <div className="mt-8 lg:mt-0 space-y-4">
+                {CONTACT_INFO.map((item) => (
+                  <div key={item.title} className="bg-cream rounded-2xl border border-warm-gray p-6 flex gap-5">
+                    <div className="w-11 h-11 rounded-full bg-off-white flex items-center justify-center shrink-0">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
+                        {item.icon}
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-bold text-charcoal mb-1">{item.title}</h3>
+                      {item.content}
+                    </div>
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-base font-bold text-charcoal mb-1">{item.title}</h3>
-                    {item.content}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
     </>

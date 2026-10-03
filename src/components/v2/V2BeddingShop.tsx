@@ -37,6 +37,7 @@ const TYPE_CHIPS: { key: '' | SetKind; label: string }[] = [
   { key: '', label: 'All' },
   { key: 'four', label: '4-Piece Sets' },
   { key: 'three', label: '3-Piece Sets' },
+  { key: 'duvet', label: 'Duvet Covers' },
   // Comforter Sets 选项 2026-09-26 移除：唯一 comforter 家族（1688-916370884976）实为被套 3 件套，已归 three
 ];
 
@@ -58,7 +59,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
   // 挂载后从 URL 恢复（本组件只在父页 mounted 后渲染，SSR 不涉及）
   useEffect(() => {
     const t = readParam('type');
-    setType(t === 'four' || t === 'three' || t === 'comforter' ? t : '');
+    setType(t === 'four' || t === 'three' || t === 'comforter' || t === 'duvet' ? t : '');
     setMaterial(readParam('sub'));
     const s = readParam('sort') as SortKey;
     setSort(SORT_KEYS.includes(s) ? s : 'featured');
@@ -78,7 +79,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
   useEffect(() => {
     const onPop = () => {
       const t = readParam('type');
-      setType(t === 'four' || t === 'three' || t === 'comforter' ? t : '');
+      setType(t === 'four' || t === 'three' || t === 'comforter' || t === 'duvet' ? t : '');
       setMaterial(readParam('sub'));
       const s = readParam('sort') as SortKey;
       setSort(SORT_KEYS.includes(s) ? s : 'featured');

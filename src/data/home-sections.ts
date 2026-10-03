@@ -18,6 +18,7 @@ import {
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { getBestSellerProducts } from '@/data/featured-sections';
+import { getVariantGroupOf } from '@/data/variant-groups';
 import type { V2CardProduct } from '@/components/v2/V2ProductCard';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
@@ -181,4 +182,63 @@ export function getRecommendedData(): RecommendedData {
     fallback: getBestSellerProducts().slice(0, MAX_RECOMMENDED).map(toCardProduct),
     candidates,
   };
+}
+
+/**
+ * PDP "You May Also Like" 关联推荐（2026-09-29 用户定：信任条下方、Brand Story 上方）。
+ * 相对当前商品打分（PDP 意图明确，不看浏览历史）：同类目 +3、同色系 +2、同场景 +1；
+ * 排除当前商品与当前变体组全体成员（同款异色/多尺寸已在购买区色点/尺寸选择器展示），
+ * 标题去重（同款只占一位）后按分数降序取前 10，同分按全站 Best Sellers 顺序；不足 10 用它补足。
+ */
+export function getPdpRelatedProducts(handle: string): V2CardProduct[] {
+  const tagged = taggedInStock();
+  const current = tagged.find((t) => t.product.handle === handle);
+  if (!current) return getBestSellerProducts().slice(0, MAX_RECOMMENDED).map(toCardProduct);
+
+  const excludeAsins = new Set<string>([current.product.asin.toLowerCase()]);
+  getVariantGroupOf(current.product.asin)?.members.forEach((m) =>
+    excludeAsins.add(m.asin.toLowerCase())
+  );
+
+  // 同分 tiebreak：全站 Best Sellers 顺序
+  const bestOrder = new Map(getBestSellerProducts().map((p, i) => [p.handle, i]));
+
+  const seen = new Set<string>();
+  const picks = tagged
+    .filter((t) => !excludeAsins.has(t.product.asin.toLowerCase()))
+    .map((t) => {
+      let score = 0;
+      if (t.product.productType === current.product.productType) score += 3;
+      if (t.color && t.color === current.color) score += 2;
+      if (t.scene && t.scene === current.scene) score += 1;
+      return { product: t.product, score };
+    })
+    .filter((s) => s.score > 0)
+    .filter((s) => {
+      const key = titleKey(s.product.title);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (bestOrder.get(a.product.handle) ?? 9999) - (bestOrder.get(b.product.handle) ?? 9999)
+    )
+    .slice(0, MAX_RECOMMENDED)
+    .map((s) => s.product);
+
+  // 不足 10 款时用全站 Best Sellers 补足（同口径排除与去重）
+  if (picks.length < MAX_RECOMMENDED) {
+    const pickedHandles = new Set(picks.map((p) => p.handle));
+    for (const p of getBestSellerProducts()) {
+      if (picks.length >= MAX_RECOMMENDED) break;
+      if (excludeAsins.has(p.asin.toLowerCase()) || pickedHandles.has(p.handle)) continue;
+      const key = titleKey(p.title);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      picks.push(p);
+    }
+  }
+  return picks.map(toCardProduct);
 }

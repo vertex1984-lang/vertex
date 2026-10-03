@@ -31,7 +31,7 @@ export default function V2ContactForm() {
     'w-full rounded-lg border border-warm-gray bg-white px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand placeholder:text-charcoal-light/60';
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-warm-gray p-6 sm:p-8 lg:p-10">
+    <form onSubmit={handleSubmit} className="bg-cream rounded-2xl border border-warm-gray p-6 sm:p-8 lg:p-10">
       <div className="grid sm:grid-cols-2 gap-4 mb-4">
         <div>
           <label htmlFor="v2-contact-name" className="block text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-1.5">

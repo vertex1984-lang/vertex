@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, type ReactNode } from 'react';
+import { useState, useEffect, useRef, type ReactNode } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -15,8 +15,8 @@ import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
 import { getProductReviews } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
-import TrustPayRow from '@/components/v2/TrustPayRow';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface V2ProductDetailClientProps {
@@ -54,7 +54,19 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
-  // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
+  // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
+  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入。
+  // 注意：hooks 必须在 `if (!product) return` 之前（rules-of-hooks，否则 next build  lint 报错）
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const stickyBarRef = useRef<HTMLDivElement | null>(null);
+
+  // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内（2026-10-02 采自 feat/pdp-v2-features）
   const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
   const swipeTo = (dir: 1 | -1) => {
     setMainImageLoaded(false);
@@ -398,14 +410,14 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 </div>
               )}
 
-              {/* 配送/退换说明：送达日期客户端动态计算（水合前显示免邮文案，静态 HTML 不含过期日期） */}
+              {/* 配送时效：送达日期客户端动态计算（水合前显示发货时效，静态 HTML 不含过期日期）；
+                  免邮/退货信息由下方 PdpTrustBadges 承担，不重复（2026-09-28 去重） */}
               <p className="text-xs text-charcoal-light mb-4">
-                {isInStock ? <EstimatedDelivery fallback="Free shipping on orders over $49" /> : 'Free shipping on orders over $49'}
-                {' · 30-day easy returns'}
+                {isInStock ? <EstimatedDelivery fallback="Ships within 1-2 business days" /> : 'Ships within 1-2 business days'}
               </p>
 
-              {/* 支付方式信任行：付费落地用户最关心的"能否安全付款"一眼可答 */}
-              <TrustPayRow className="mb-5" />
+              {/* 信任徽章区（免邮/退货/年销/安全支付+卡组织图标已并入，2026-09-29） */}
+              <PdpTrustBadges className="mb-5" />
 
               {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
               <div className="border-b border-warm-gray">
@@ -528,10 +540,13 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
         />
       )}
 
-      {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏） */}
+      {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏；首屏隐藏，滚动后滑入） */}
       {isInStock && (
         <div
-          className="fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3"
+          ref={stickyBarRef}
+          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
+            showStickyBar ? 'translate-y-0' : 'translate-y-full'
+          }`}
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
           <img

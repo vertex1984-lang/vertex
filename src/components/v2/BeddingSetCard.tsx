@@ -3,8 +3,11 @@ import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 import type { SetFamily } from '@/data/bedding-families';
 
-/** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足 */
-export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'>;
+/** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足；
+ *  colors = 卡面颜色变体行（2026-10-02 pillows 合并卡用，如 "Black / Grey / Pink"） */
+export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'> & {
+  colors?: string[];
+};
 
 /**
  * Bedding 套装家族卡（2026-09 共享）：/bedding/ 落地页、/bedding/[slug]/ 二级页与
@@ -22,11 +25,16 @@ export default function BeddingSetCard({
   family,
   badges = [],
   sizesSuffix = '',
+  paddedWhiteBg = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
   /** 尺寸行统一后缀（blankets 传 "cm"：sizes 不带单位，显示为 "120 x 200 / 150 x 200 cm"，避免每段重复单位过长） */
   sizesSuffix?: string;
+  /** 白底图模式（2026-09-30 用户定：pillows 白底产品图完整展示）：
+   *  object-contain + p-2 sm:p-7 留白边，容器白底（与 ProductCard 白底规则一致），
+   *  默认 false = object-cover 打满（场景图，bedding/blankets 不变） */
+  paddedWhiteBg?: boolean;
 }) {
   const img = spotlightImage(family.rep);
   const name = family.rep.title.replace(
@@ -38,12 +46,14 @@ export default function BeddingSetCard({
       href={v2url(`/products/${family.rep.handle}/`)}
       className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
     >
-      <div className="relative aspect-square overflow-hidden bg-warm-gray">
+      <div className={`relative aspect-square overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img
           src={resolveUrl(img.url)}
           alt={img.altText}
           loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className={`absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105 ${
+            paddedWhiteBg ? 'object-contain p-2 sm:p-7' : 'object-cover'
+          }`}
         />
         {badges.length > 0 && (
           <div className="absolute top-2.5 left-2.5 flex flex-col items-start gap-1.5">
@@ -71,6 +81,15 @@ export default function BeddingSetCard({
           >
             {family.sizes.map((s) => s.charAt(0) + s.slice(1).toLowerCase()).join(' / ')}
             {sizesSuffix ? ` ${sizesSuffix}` : ''}
+          </p>
+        )}
+        {family.colors && family.colors.length > 0 && (
+          /* 颜色变体行（2026-10-02 pillows 合并卡）：与尺寸行同款小字灰色，截断 hover 显全 */
+          <p
+            className="mt-1 text-[11px] lg:text-xs text-[#999] whitespace-nowrap truncate"
+            title={family.colors.join(' / ')}
+          >
+            {family.colors.join(' / ')}
           </p>
         )}
         {family.fromPrice && (

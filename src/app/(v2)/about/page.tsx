@@ -1,62 +1,64 @@
 import type { Metadata } from 'next';
 import Reveal from '@/components/Reveal';
 import StorySplit from '@/components/v2/StorySplit';
+import { FABRIC_GUIDE } from '@/data/fabric-guide';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
 export const metadata: Metadata = {
-  title: 'Our Story',
+  title: 'Brand Story',
   description: 'Born from a love of simple living and genuine comfort, Makimoo brings warmth to every corner of your home.',
 };
 
-const VALUES = [
-  {
-    title: 'Heart-Centered',
-    desc: 'We design every product as if it were for our own home.',
-    icon: (
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-    ),
-  },
-  {
-    title: 'Sustainably Made',
-    desc: 'Eco-friendly materials and responsible manufacturing.',
-    icon: (
-      <path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 8-10 5 2 8 6 8 10a7 7 0 0 1-7 7M4 21c4-2 8-6 10-11" />
-    ),
-  },
-  {
-    title: 'Quality First',
-    desc: 'Premium fabrics and durable construction that lasts.',
-    icon: (
-      <>
-        <circle cx="12" cy="8" r="6" />
-        <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.11" />
-      </>
-    ),
-  },
+// 公信力数据（2026-09-30 用户定：静态四格，不做滚动动画）；
+// 口径全部来自已定稿文案（PDP 故事板块 / V2TrustBar），无新编数据
+const STATS = [
+  { figure: '500K+', label: 'Items Sold Every Year' },
+  { figure: '10+', label: 'Years in Home Textiles' },
+  { figure: '20K+', label: 'Product Reviews on Amazon' },
+  { figure: 'Millions', label: 'Customers Worldwide' },
 ];
 
 export default function V2AboutPage() {
   return (
     <>
-      {/* 全宽大图页头：从视口顶开始，衬住初始透明的 fixed V2Header */}
+      {/* 全宽大图页头：从视口顶开始，衬住初始透明的 fixed V2Header。
+          文案口径与 PDP 品牌故事板块一致（2026-09-30 用户定）：眉题 Makimoo + 主标 */}
       <section className="relative h-[440px] sm:h-[520px] lg:h-[600px] overflow-hidden">
         <img
-          src={resolveUrl('/images/about/about-banner.webp')}
-          alt="Makimoo outdoor patio with floral cushions at golden hour"
+          src={resolveUrl('/images/brand/trust-living.webp')}
+          alt="A minimal Makimoo living room with a linen sofa and soft natural light"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-charcoal/50" />
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6 pt-16">
           <p className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-3">
-            Our Story
+            Makimoo
           </p>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-cream mb-4 drop-shadow-lg">
-            The Makimoo Story
+            A Trusted Name in Home Comfort
           </h1>
           <p className="text-base sm:text-lg text-cream/90 max-w-2xl">
             Born from a love of simple living and genuine comfort, Makimoo brings warmth to every corner of your home.
           </p>
+        </div>
+      </section>
+
+      {/* 公信力数据条（静态四格；桌面 80% 宽与 PDP 新模块同口径） */}
+      <section className="bg-off-white py-12 lg:py-16 border-b border-warm-gray">
+        <div className="max-w-[1400px] lg:w-[80%] lg:max-w-none mx-auto px-6 lg:px-10">
+          <Reveal>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 text-center">
+              {STATS.map((s) => (
+                <div key={s.label}>
+                  <p className="text-3xl lg:text-5xl font-extrabold tracking-tight text-brand mb-2">{s.figure}</p>
+                  <p className="text-[11px] lg:text-xs font-semibold uppercase tracking-[0.18em] text-charcoal-light">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -72,49 +74,75 @@ export default function V2AboutPage() {
         tone="cream"
       />
 
-      {/* What We Stand For：3 栏图标区 */}
+      {/* Our Materials：材质理念 + 六款面料平铺卡（2026-09-30 用户定：六张平铺，
+          移动端 2 列、桌面 3 列；文案与 PDP 面料板块同口径，卡片数据取自 fabric-guide.ts） */}
       <section className="bg-off-white py-16 lg:py-24">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+        <div className="max-w-[1400px] lg:w-[80%] lg:max-w-none mx-auto px-6 lg:px-10">
           <Reveal>
-            <div className="text-center mb-10 lg:mb-14">
+            <div className="text-center mb-10 lg:mb-14 max-w-2xl mx-auto">
               <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
-                Our Values
+                Our Materials
               </p>
-              <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal">
-                What We Stand For
+              <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-4">
+                Honest Fabrics, Careful Workmanship
               </h2>
+              <p className="text-sm lg:text-base text-charcoal-light leading-relaxed">
+                From long-staple cotton to washed linen, we pick fabrics for how they feel and how they last.
+              </p>
             </div>
           </Reveal>
-          <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {VALUES.map((item, i) => (
-              <Reveal key={item.title} delay={i * 80} className="h-full">
-                <div className="h-full text-center p-8 rounded-2xl bg-white border border-warm-gray">
-                  <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-off-white flex items-center justify-center">
-                    <svg className="w-7 h-7 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                      {item.icon}
-                    </svg>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-6">
+            {FABRIC_GUIDE.map((f, i) => (
+              <Reveal key={f.key} delay={i * 60} className="h-full">
+                <a
+                  href={v2url(`/fabric-guide/#${f.slug}`)}
+                  className="group block h-full rounded-2xl bg-white border border-warm-gray overflow-hidden transition hover:border-brand/40 hover:shadow-md"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={resolveUrl(f.image || '')}
+                      alt={`${f.key} fabric close-up`}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   </div>
-                  <h3 className="text-lg font-bold text-charcoal mb-2">{item.title}</h3>
-                  <p className="text-sm text-charcoal-light leading-relaxed">{item.desc}</p>
-                </div>
+                  <div className="p-4 lg:p-5">
+                    <h3 className="text-sm lg:text-base font-bold text-charcoal mb-1.5">{f.key}</h3>
+                    <p className="text-xs lg:text-sm text-charcoal-light leading-relaxed line-clamp-3">{f.intro}</p>
+                  </div>
+                </a>
               </Reveal>
             ))}
           </div>
+          <Reveal>
+            <div className="text-center mt-10 lg:mt-12">
+              <a href={v2url('/fabric-guide/')} className="inline-flex items-center gap-2 text-sm font-semibold text-brand group">
+                <span className="border-b border-brand/40 pb-0.5 transition-colors group-hover:border-brand">
+                  Explore Our Fabrics
+                </span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Quality Promise */}
+      {/* Quality Promise：并入 PDP 面料板块"逐件检验"做工文案（2026-09-30 用户定） */}
       <StorySplit
         eyebrow="Our Quality Promise"
         title="Built to Last, Made to Love"
-        body="High-density fill keeps its loft season after season, premium fabrics hold their color in the sun, and reinforced ties keep cushions in place — backed by a 30-day worry-free return policy."
+        body="Every weave, stitch and finish is checked piece by piece before it leaves our workshop. High-density fill keeps its loft season after season, premium fabrics hold their color in the sun, and reinforced ties keep cushions in place — backed by a 30-day worry-free return policy."
         ctaLabel="Shop Best Sellers"
         ctaHref="/products/"
-        image="/images/brand/makimoo-vi.webp"
-        imageAlt="Makimoo cushion fabrics and construction details"
+        image="/images/brand/trust-texture.webp"
+        imageAlt="Close-up of Makimoo knit throw and cushion fabrics in warm natural light"
         reverse
         tone="off-white"
       />
+
+      {/* What We Stand For 三栏价值观卡区已移除（2026-09-30 用户定） */}
 
       {/* Sustainability：首页 StorySplit 链接到 /v2/about#sustainability，锚点必须存在 */}
       <div id="sustainability" className="scroll-mt-32">
@@ -130,7 +158,7 @@ export default function V2AboutPage() {
         />
       </div>
 
-      {/* CTA */}
+      {/* CTA（2026-09-30：品类口径从靠垫改为家纺全品类） */}
       <section className="bg-off-white py-16 lg:py-24">
         <Reveal>
           <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
@@ -138,7 +166,7 @@ export default function V2AboutPage() {
               Ready to Find Your Comfort?
             </h2>
             <p className="text-charcoal-light max-w-xl mx-auto mb-8">
-              Explore our collection of cushions, pillows and comfort essentials — made for every corner of your home.
+              Explore our collection of bedding, rugs and home comfort essentials — made for every corner of your home.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a

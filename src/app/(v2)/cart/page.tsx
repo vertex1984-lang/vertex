@@ -183,7 +183,8 @@ export default function V2CartPage() {
       />
 
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-16">
+        {/* 2026-09-30 用户定：桌面端 80% 屏宽，与页头/其他内页一致 */}
+        <div className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-6 lg:px-10 py-10 lg:py-16">
           {loading ? (
             /* 加载骨架：行卡片 + 摘要卡同位占位 */
             <div className="max-w-5xl mx-auto animate-pulse lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-start">

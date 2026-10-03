@@ -31,5 +31,3 @@ export interface GaItem {
   quantity: number;
 }
 
-// Cookie 同意状态 localStorage key（'accepted' | 'declined'）
-export const COOKIE_CONSENT_KEY = 'makimoo-cookie-consent';

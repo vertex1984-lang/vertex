@@ -1,4 +1,3 @@
-import Reveal from '@/components/Reveal';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
@@ -62,35 +61,34 @@ function CategoryCard({
 export default function V2CategoryGrid() {
   const [first, ...rest] = CATEGORIES.slice(0, BENTO_COUNT);
   return (
-    <section className="pt-10 lg:pt-24 pb-10 lg:pb-12">
-      {/* 标题区限宽居中。移动端标题区间距收窄（2026-09 用户定：Bento 平铺尽量一屏内看完） */}
-      <Reveal>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center mb-6 lg:mb-14">
-          <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
-            Shop by Category
-          </p>
-          <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
-            Find Your Comfort
-          </h2>
-        </div>
-      </Reveal>
+    // 顶部间距收窄（2026-09-30 用户定：配合 Hero 桌面 80vh，让 "Find Your Comfort"
+    // 标题在首屏露出一部分，提示下方还有内容）
+    <section className="pt-8 lg:pt-12 pb-10 lg:pb-12">
+      {/* 标题区限宽居中。移动端标题区间距收窄（2026-09 用户定：Bento 平铺尽量一屏内看完）。
+          2026-09-30 用户定：本区去掉滚动渐入（Reveal），全端直接加载显示 */}
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center mb-6 lg:mb-14">
+        <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">
+          Shop by Category
+        </p>
+        <h2 className="text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+          Find Your Comfort
+        </h2>
+      </div>
       {/* 移动端：Bedding 通栏大卡（16/9）+ 2列×3行小卡；桌面端：左 2/5 大卡（高度跟随右侧两行
           小卡，lg:h-full 自动对应）+ 右 3列×2行小卡（2026-09 用户定方案 A；
           小卡 2026-09 用户定全端统一 1:1，此前 4/3、桌面 4/5 均弃用） */}
-      <Reveal>
-        <div className="px-3 lg:px-10 lg:max-w-[1800px] lg:mx-auto grid grid-cols-2 lg:grid-cols-[2fr_3fr] gap-2 lg:gap-5">
-          <CategoryCard
-            cat={first}
-            big
-            className="col-span-2 lg:col-span-1 aspect-[16/9] lg:aspect-auto lg:h-full"
-          />
-          <div className="contents lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-5">
-            {rest.map((cat) => (
-              <CategoryCard key={cat.name} cat={cat} className="aspect-square" />
-            ))}
-          </div>
+      <div className="px-3 lg:px-10 lg:max-w-[1800px] lg:mx-auto grid grid-cols-2 lg:grid-cols-[2fr_3fr] gap-2 lg:gap-5">
+        <CategoryCard
+          cat={first}
+          big
+          className="col-span-2 lg:col-span-1 aspect-[16/9] lg:aspect-auto lg:h-full"
+        />
+        <div className="contents lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-5">
+          {rest.map((cat) => (
+            <CategoryCard key={cat.name} cat={cat} className="aspect-square" />
+          ))}
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }

@@ -94,7 +94,7 @@ export default function QuickViewModal({ product, open, onClose, detailHref }: Q
       aria-label={`Quick view: ${product.title}`}
     >
       <div
-        className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90dvh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="grid sm:grid-cols-2 gap-6 p-6">

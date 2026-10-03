@@ -1,4 +1,3 @@
-import Reveal from '@/components/Reveal';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
@@ -25,7 +24,7 @@ export default function V2BrandBanner() {
 
   return (
     <section className="w-full">
-      <Reveal>
+      <div>
         {/* 桌面端：1456/418 宽横幅 */}
         <a
           href={v2url('/fabric-guide/')}
@@ -70,7 +69,7 @@ export default function V2BrandBanner() {
             </span>
           </div>
         </a>
-      </Reveal>
+      </div>
     </section>
   );
 }

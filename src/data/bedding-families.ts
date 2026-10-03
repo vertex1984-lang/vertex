@@ -13,9 +13,9 @@ import type { MakimooProduct } from '@/data/products';
 
 export type SetKind = 'four' | 'three' | 'comforter' | 'duvet';
 
-// 被套单品家族（ice silk 缎面，2026-09-27 用户定：归 Satin 面料子类，原 "More Bedding" 兜底区清空）。
-// 颜色×尺寸二维家族：family = 同色组（key = 前缀::颜色），kind = duvet。
-// 类型筛选 chip/类型 PLP 暂不增 duvet 入口（范围外，用户未定）。
+// 被套单品家族（ice silk 缎面归 Satin 面料子类；2026-10 协作方新品 LINEN3-*/DUVSET-*-DUVET
+// 独立被套单件也归 duvet，见 classifySet）。
+// ice silk 为颜色×尺寸二维家族：family = 同色组（key = 前缀::颜色）；新品独立被套一色一家族。
 const DUVET_PREFIXES = ['1688-1048207560416', '1688-1061371343572'];
 
 export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
@@ -45,6 +45,9 @@ export interface SetFamily {
 
 export function classifySet(asin: string): SetKind | null {
   const a = asin.toLowerCase();
+  // 独立被套单件（LINEN3-{COLOR}-DUVET / DUVSET-{COLOR}-DUVET，2026-10 协作方新品）归 Duvet Covers，
+  // 必须先于 duvset-/linen3- 前缀规则判断（否则会被吞进 three）
+  if (/-duvet$/.test(a)) return 'duvet';
   if (a.startsWith('bedset4-')) return 'four';
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
@@ -161,7 +164,7 @@ export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: strin
   },
   duvet: {
     heading: 'Duvet Covers',
-    blurb: 'A silky standalone cover — slip it over your favorite insert.',
+    blurb: 'Standalone covers in linen, washed cotton-like & satin — slip over your favorite insert.',
   },
 };
 
@@ -170,6 +173,7 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
   '4-piece-sets': 'four',
   '3-piece-sets': 'three',
   'comforter-sets': 'comforter',
+  'duvet-covers': 'duvet',
 };
 
 /** Bed Sets 合并页（2026-09 用户定：导航把 4-Piece/3-Piece 合并为一个入口，

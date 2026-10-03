@@ -298,7 +298,18 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'woven-rattan-basket-set-rectangular-serving-tray-with-1688-743606980882-c80',
   'woven-rattan-nesting-trays-with-green-clover-pattern-round-1688-899672152256-c85',
   'woven-rattan-serving-tray-rectangular-wicker-basket-with-1688-743606980882-c61',
-  'woven-rattan-serving-tray-with-shell-mosaic-green-checkered-1688-743606980882-c2',
+  // 2026-09-30：该产品素材库标题被改为中文导致 handle 重生成，旧 handle 已失效，同步为当前 handle
+  '37-24-4cm-37-24-4cm-1688-743606980882-c2',
+  // 2026-09-29 独立被套新品（创想AI 生成管线，采自 feat/pdp-v2-features）：LINEN3-DUVET 五色 + DUVSET-DUVET 四色
+  'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet',
+  'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet',
+  'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet',
+  'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet',
+  'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet',
   'woven-rattan-shell-mosaic-round-tray-basket-for-fruit-snack-1688-899672152256-c52',
   '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf',
   '2-piece-patio-chair-cushion-set-with-backrest-and-seat-pad-b0cw17pzyt',
@@ -332,18 +343,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33m24l3',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c6h5xzmz',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0cxdzf2wq',
-  // 2026-09-29 独立被套新品（创想AI 生成管线）：LINEN3-SAGE-DUVET
-  'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet',
-  // 2026-09-29 独立被套新品（创想AI 生成管线）：LINEN3-CHARCOAL/DUSTYBLUE/IVORY/OATMEAL
-  'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet',
-  'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet',
-  'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet',
-  'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet',
-  // 2026-09-29 独立被套新品（创想AI 生成管线）：DUVSET-GRAY/PINK/BEIGE/WHITE
-  'makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet',
-  'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet',
-  'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet',
-  'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

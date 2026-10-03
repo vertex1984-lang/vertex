@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Reveal from '@/components/Reveal';
 import DragScroll from '@/components/v2/DragScroll';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
@@ -174,7 +173,7 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
 
   return (
     <section className="bg-off-white pt-8 lg:pt-12 pb-8 lg:pb-24">
-      <Reveal>
+      <div>
         <div className="px-3 lg:px-10">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Scene
@@ -288,7 +287,7 @@ export default function V2ShopByScene({ scenes }: V2ShopBySceneProps) {
             </div>
           )}
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }

@@ -8,6 +8,7 @@ import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { fabricByMaterial } from '@/data/bedding-fabrics';
+import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
 // Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
@@ -48,7 +49,8 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   pillows: [
     { image: '/images/collections/pillows.webp', caption: 'Plush fillings, premium covers.', linkLabel: 'Shop Pillows', href: '/products?cat=pillows' },
-    { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Pillow Inserts', href: '/products?cat=pillows&sub=basic' },
+    // 2026-09-30：原 sub=basic 链接与风格分组口径不一致（过滤为空），改指 decorative-pillows 二级页
+    { image: '/images/featured/b0cqc5qjfj.webp', caption: 'Refresh any room.', linkLabel: 'Shop Decorative Pillows', href: '/pillows/decorative-pillows/' },
   ],
   towels: [
     { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Towels', href: '/products?cat=towels' },
@@ -92,11 +94,40 @@ interface MenuColumn {
 }
 
 /** 组装某个类目的 mega menu 列：首列 = 类目子项（bedding 为面料列，描述取自 bedding-fabrics
- *  注册表，链接直达面料二级 PLP /bedding/[fabric]/），次列 = Featured 固定入口
+ *  注册表，链接直达面料二级 PLP /bedding/[fabric]/；pillows 为形态列 + Material 列，
+ *  直达 /pillows/[slug]/，2026-09-30 用户定），末列 = Featured 固定入口
  *  （bedding 例外，2026-09 用户定：次列改为 "Bedding" 产品类型列，标题链 /bedding/，
  *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 移至面料列末尾） */
 function menuColumns(cat: string, styles: { key: string; label: string }[]): MenuColumn[] {
   const current = navLinks.find((l) => l.cat === cat);
+  const featured: MenuLink[] = [
+    { label: 'Best Sellers', desc: 'Most loved.', href: '/best-sellers/' },
+    { label: 'New Arrivals', desc: 'Just landed.', href: '/new-arrivals/' },
+  ];
+  // Pillows 重构（2026-09-30 用户定，照搬 bedding 双列模型）：
+  // 首列 = 形态（Bed/Decorative/Cases/Neck → /pillows/[slug]/ 二级 PLP），
+  // 次列 = Material（Down 无产品置灰 coming soon）；不带 Featured 列（2026-09-30 用户定删除）
+  if (cat === 'pillows') {
+    return [
+      {
+        title: 'Pillows',
+        href: current?.href,
+        links: PILLOW_TYPES.map((t) => ({
+          label: t.label,
+          desc: t.menuDesc,
+          href: `/pillows/${t.slug}/`,
+        })),
+      },
+      {
+        title: 'Material',
+        links: PILLOW_MATERIALS.map((m) =>
+          m.key === 'down'
+            ? { label: m.label, desc: m.menuDesc, href: '/products?cat=pillows', comingSoon: true }
+            : { label: m.label, desc: m.menuDesc, href: `/pillows/${m.slug}/` }
+        ),
+      },
+    ];
+  }
   const first: MenuColumn = {
     title: cat === 'bedding' ? 'Shop by Fabric' : (current?.label || cat),
     // bedding 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）；其他类目链到类目页
@@ -121,22 +152,18 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           // Bed Sets 合并入口（2026-09 用户定：4P/3P 合并为一项，页内两分区展示）；
           // 单类型页 /bedding/4-piece-sets/、/bedding/3-piece-sets/ 保留兜底无入口；
           // Comforter Sets 入口 2026-09-26 移除（唯一 comforter 家族 1688-916370884976 实为被套 3 件套，已归 three）；
-          // Sheets/Duvet Covers 无产品：置灰不可点（不再跳 /bedding/#on-the-loom，2026-09-27 用户反馈点击误导）
+          // Duvet Covers 2026-10 上线：ice silk 缎面 + 9 款独立被套单件（LINEN3-DUVET / DUVSET-DUVET）；
+          // Sheets 无产品：置灰不可点（不再跳 /bedding/#on-the-loom，2026-09-27 用户反馈点击误导）
           { label: 'Bed Sets', desc: 'Duvet covers, sheets & pillowcases.', href: '/bedding/bed-sets/' },
           { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
-          { label: 'Duvet Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
+          { label: 'Duvet Covers', desc: 'Covers only — mix & match.', href: '/bedding/duvet-covers/' },
           { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
         ],
       },
     ];
   }
-  const featured: MenuLink[] = [
-    { label: 'Best Sellers', desc: 'Most loved.', href: '/best-sellers/' },
-    { label: 'New Arrivals', desc: 'Just landed.', href: '/new-arrivals/' },
-  ];
   return [first, { title: 'Featured', links: featured }];
 }
-
 interface V2HeaderProps {
   /** 各类目（小写 productType）在售产品的风格列表，服务端 stylesByCategory() 传入；
    *  导航下拉子项与 /products Collections、首页 Shop by Style 同步（2026-09 用户定） */
@@ -300,21 +327,20 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
-        {/* Announcement Bar：向下滚动超过阈值后收起（桌面/移动一致），回到顶部附近再展开 */}
+        {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
+            移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开 */}
         <div
-          className={`bg-brand text-cream text-center text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
+          className={`bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          {/* 移动端短文案单行不折行，桌面端保留全句（付费落地优化 P1） */}
-          <span className="lg:hidden whitespace-nowrap">Free shipping over $49</span>
-          <span className="hidden lg:inline">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
+          <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
         {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），
             让出首屏空间；桌面保持 py-4 + h-14 = 88px。图标按钮保持 44px 触控目标。
-            依赖头部高度的两处同步：页面顶部留白 pt-24（公告条 32 + 头 60 + 4px 余量）、
-            筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
+            依赖头部高度的两处同步：页面顶部留白（移动端 pt-24 = 公告条约 30 + 头 60 + 余量，
+            桌面端 pt-24 同理）、筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
         <header
           className={`flex items-center justify-between px-6 lg:px-10 py-2 lg:py-4 transition-all duration-300 ${textColor} ${
             solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
@@ -654,9 +680,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      {/* bedding 不渲染 "Shop All" 首项（2026-09 用户定：移除），
-                          /bedding/ 入口由下方 BEDDING 组标题链接承担（同桌面列标题可点） */}
-                      {link.href && link.cat !== 'bedding' && (
+                      {/* bedding/pillows 不渲染 "Shop All" 首项（2026-09 用户定）：
+                          汇总页入口由下方组标题链接承担（同桌面列标题可点） */}
+                      {link.href && link.cat !== 'bedding' && link.cat !== 'pillows' && (
                         <a
                           href={v2url(link.href)}
                           onClick={() => setMobileOpen(false)}
@@ -665,12 +691,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                           Shop All {link.label} →
                         </a>
                       )}
-                      {/* bedding 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
-                          面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                      {/* bedding/pillows 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
+                          bedding = 面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                          pillows = 形态组（PILLOWS）+ 材质组（MATERIAL）+ Featured；
                           组标题 = 主层级缩进（mx-4）+ 下划线（同桌面列标题 border-b 样式），
                           子类目 pl-8 缩进，层级一眼可辨（2026-09 用户反馈：原同缩进分不清） */}
-                      {link.cat === 'bedding'
-                        ? menuColumns('bedding', catStyles['bedding'] || []).map((col) => (
+                      {link.cat === 'bedding' || link.cat === 'pillows'
+                        ? menuColumns(link.cat, catStyles[link.cat] || []).map((col) => (
                             <div key={col.title}>
                               {col.href ? (
                                 <a

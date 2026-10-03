@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Reveal from '@/components/Reveal';
 import V2ProductCard, { V2CardProduct } from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import type { ColorOption } from '@/data/home-sections';
@@ -87,7 +86,7 @@ export default function V2ShopByColor({ colors, productsByColor }: V2ShopByColor
 
   return (
     <section className="bg-white pt-16 lg:pt-24 pb-16 lg:pb-24">
-      <Reveal>
+      <div>
         <div className="px-6 lg:px-10">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight text-charcoal mb-8 lg:mb-10">
             Shop by Color
@@ -185,7 +184,7 @@ export default function V2ShopByColor({ colors, productsByColor }: V2ShopByColor
             </a>
           </div>
         )}
-      </Reveal>
+      </div>
     </section>
   );
 }

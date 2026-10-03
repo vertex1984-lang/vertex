@@ -54,7 +54,8 @@ export default function V2FavoritesPage() {
         }
       />
 
-      <section className="px-3 lg:px-10 py-10 lg:py-14">
+      {/* 2026-09-30 用户定：桌面端 80% 屏宽，与页头/其他内页一致 */}
+      <section className="max-w-[1400px] lg:max-w-none lg:w-[80%] mx-auto px-3 lg:px-10 py-10 lg:py-14">
         {products === null ? null : products.length === 0 ? (
           /* 空状态：心形线框 + 引导去逛产品 */
           <div className="py-16 lg:py-24 text-center">
