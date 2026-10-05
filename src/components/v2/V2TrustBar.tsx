@@ -9,7 +9,7 @@
  */
 
 const STATS = [
-  { figure: '1 Million+', label: 'Customers Served Worldwide' },
+  { figure: '2 Million+', label: 'Customers Served Worldwide' },
   // star：星标置于数字前作行首装饰，与数字行高等高（2026-10-02 用户定：全条唯一图形信任符号，要跳出来）
   { figure: '14,000+', label: 'Five-Star Reviews', star: true },
   { figure: '500K+', label: 'Sold Every Year' },

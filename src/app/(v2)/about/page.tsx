@@ -11,12 +11,14 @@ export const metadata: Metadata = {
 };
 
 // 公信力数据（2026-09-30 用户定：静态四格，不做滚动动画）；
-// 口径全部来自已定稿文案（PDP 故事板块 / V2TrustBar），无新编数据
+// 2026-10-02（用户定）：内容与首页信任条（V2TrustBar）对齐——
+// 2 Million+ 客户 / 14,000+ 五星（星标在标签前同字号）/ 500K+ 年销 / 10+ 年行业，
+// 竖线分隔 + 来源脚注；版式保留 about 页大字号（3xl/5xl）
 const STATS = [
-  { figure: '500K+', label: 'Items Sold Every Year' },
-  { figure: '10+', label: 'Years in Home Textiles' },
-  { figure: '20K+', label: 'Product Reviews on Amazon' },
-  { figure: 'Millions', label: 'Customers Worldwide' },
+  { figure: '2 Million+', label: 'Customers Served Worldwide' },
+  { figure: '14,000+', label: 'Five-Star Reviews', star: true },
+  { figure: '500K+', label: 'Sold Every Year' },
+  { figure: '10+ Years', label: 'In Home Textiles' },
 ];
 
 export default function V2AboutPage() {
@@ -44,20 +46,29 @@ export default function V2AboutPage() {
         </div>
       </section>
 
-      {/* 公信力数据条（静态四格；桌面 80% 宽与 PDP 新模块同口径） */}
-      <section className="bg-off-white py-12 lg:py-16 border-b border-warm-gray">
+      {/* 公信力数据条（静态四格；桌面 80% 宽与 PDP 新模块同口径；上下 padding 已收窄，2026-10-02 用户定） */}
+      <section className="bg-off-white pt-8 pb-5 lg:pt-10 lg:pb-7 border-b border-warm-gray">
         <div className="max-w-[1400px] lg:w-[80%] lg:max-w-none mx-auto px-6 lg:px-10">
           <Reveal>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 text-center">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 text-center lg:divide-x lg:divide-[#E8D9C8]">
               {STATS.map((s) => (
-                <div key={s.label}>
-                  <p className="text-3xl lg:text-5xl font-extrabold tracking-tight text-brand mb-2">{s.figure}</p>
+                <div key={s.label} className="lg:px-2">
+                  {/* 移动端收窄一档（text-2xl）：最长格 "2 Million+" 在半宽格内不溢出（2026-10-02） */}
+                  <p className="text-2xl lg:text-5xl font-extrabold tracking-tight text-brand mb-2 whitespace-nowrap">{s.figure}</p>
                   <p className="text-[11px] lg:text-xs font-semibold uppercase tracking-[0.18em] text-charcoal-light">
+                    {/* 星标在标签文字最前，与标签同字号、品牌棕色（与首页信任条一致，2026-10-02） */}
+                    {'star' in s && s.star && (
+                      <span aria-hidden="true" className="text-brand mr-0.5">★</span>
+                    )}
                     {s.label}
                   </p>
                 </div>
               ))}
             </div>
+            {/* 来源脚注（与首页信任条一致，2026-10-02 用户定） */}
+            <p className="mt-6 lg:mt-8 text-center text-[10px] lg:text-xs tracking-wide text-[#999]">
+              Sales &amp; review data from Amazon
+            </p>
           </Reveal>
         </div>
       </section>
