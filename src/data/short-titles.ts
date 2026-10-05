@@ -306,4 +306,10 @@ export const SHORT_TITLES: Record<string, string> = {
   "1688-1051650740507": "Cotton Lace Trim Duvet Cover, Cherry Pink, 200 x 230cm",
   "1688-1051650740507-c2": "Cotton Lace Trim Duvet Cover, Cherry Pink, 180 x 220cm",
   "1688-1051650740507-c3": "Cotton Lace Trim Duvet Cover, Cherry Pink, 150 x 200cm",
+  "1688-913882303732": "Memory Foam Travel Neck Pillow with Shell Case, Violet",
+  "1688-913882303732-c2": "Memory Foam Travel Neck Pillow with Egg Case, Violet",
+  "1688-913882303732-c3": "Memory Foam Travel Neck Pillow, Sage Green",
+  "1688-913882303732-c4": "Memory Foam Travel Neck Pillow, Spring Pink",
+  "1688-913882303732-c5": "Memory Foam Travel Neck Pillow, Obsidian Grey",
+  "1688-913882303732-c6": "Memory Foam Travel Neck Pillow, Ivory White",
 };

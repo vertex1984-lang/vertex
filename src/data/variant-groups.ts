@@ -466,6 +466,19 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    // 2026-10-03 旅行颈枕单品家族（创想AI 管线，6 色，纯颜色家族不填 size）
+    id: 'NECKPILLOW-EGGCASE',
+    optionName: 'Color',
+    members: [
+    { asin: '1688-913882303732', handle: 'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732', color: 'Violet' },
+    { asin: '1688-913882303732-c2', handle: 'makimoo-memory-foam-travel-neck-pillow-violet-egg-case-1688-913882303732-c2', color: 'Violet' },
+    { asin: '1688-913882303732-c3', handle: 'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3', color: 'Sage Green' },
+    { asin: '1688-913882303732-c4', handle: 'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4', color: 'Spring Pink' },
+    { asin: '1688-913882303732-c5', handle: 'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5', color: 'Obsidian Grey' },
+    { asin: '1688-913882303732-c6', handle: 'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6', color: 'Ivory White' },
+    ],
+  },
+  {
     // 2026-09-29 独立被套单品家族（创想AI 管线，4 色 × 200 x 230cm，纯颜色家族不填 size）
     id: 'DUVSET-DUVET',
     optionName: 'Color',
