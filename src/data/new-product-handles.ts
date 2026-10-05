@@ -343,6 +343,12 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33m24l3',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c6h5xzmz',
   'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0cxdzf2wq',
+  'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732',
+  'makimoo-memory-foam-travel-neck-pillow-violet-egg-case-1688-913882303732-c2',
+  'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3',
+  'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4',
+  'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5',
+  'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);
