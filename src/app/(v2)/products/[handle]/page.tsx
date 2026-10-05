@@ -196,9 +196,9 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
 
   // 评价区插槽：经 prop 传入两版 PDP，渲染在购买区后、描述前
   //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
-  const reviewsSlot = product ? (
+  const reviewsSlot = product && enriched ? (
     <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews asin={product.asin} rating={product.rating} reviewCount={product.reviewCount} />
+      <V2ProductReviews asin={enriched.asin} />
     </div>
   ) : null;
 
@@ -235,6 +235,8 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       {/* "You May Also Like" 两版推荐区（新品 Complete the Look / 老品 More Comfort）
           2026-09 用户定已从 PDP 移除；QuickAddCard.tsx 组件文件保留磁盘备用 */}
       <V2RecentlyViewed currentHandle={params.handle} />
+      {/* 手机端常驻吸底加购条的底部占位（2026-10-04），避免盖住页面尾部内容 */}
+      {product && <div className="h-20 lg:hidden" aria-hidden="true" />}
     </>
   );
 }

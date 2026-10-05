@@ -114,16 +114,21 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 吸底条不再首屏常驻（2026-09-28 用户定：首屏已有完整购买区，常驻吸底条白占高度），
-  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入
-  const [showStickyBar, setShowStickyBar] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // 悬浮加购条滚动联动（2026-10-04 用户定）：主购买区 CTA 在视口内 → 悬浮条隐藏；
+  // CTA 滚出视野 → 滑入。IntersectionObserver 监听主 CTA 行（mainCtaRef）
+  const [mainCtaVisible, setMainCtaVisible] = useState(true);
+  const mainCtaRef = useRef<HTMLDivElement | null>(null);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = mainCtaRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const obs = new IntersectionObserver(
+      (entries) => setMainCtaVisible(entries[0]?.isIntersecting ?? true),
+      { threshold: 0 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
   // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
@@ -465,43 +470,83 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Rating：products.ts 有评分汇总数据才显示（与老版口径一致，无数据不占位）；
-                有评价正文时可点击锚到评价区（page.tsx 的 pdp2-reviews 包装层） */}
-            {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
-              hasReviewsData ? (
-                <a href="#pdp2-reviews" className="flex items-center gap-2 mb-4 w-fit">
-                  <RatingStars rating={product.rating} />
-                  <span className="text-sm text-charcoal-light">
-                    {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
-                  </span>
-                </a>
-              ) : (
-                <div className="flex items-center gap-2 mb-4">
-                  <RatingStars rating={product.rating} />
-                  <span className="text-sm text-charcoal-light">
-                    {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
-                  </span>
-                </div>
-              )
-            )}
-
-            {isInStock ? (
-              <div className="flex items-baseline gap-3 mb-4 lg:mb-6">
-                <span className="text-xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
-                {showCompareAt && (
-                  <>
-                    <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
-                    <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
-                      Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice!)) * 100)}%
+            {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定）：
+                分布卡（≥5 条才渲染，列表现算）在 xl+ 于价格右侧（购买区红框位），
+                lg 以下通栏插在星级行与价格之间；无分布卡时保持原堆叠布局（无评价产品零变化）。
+                "Based on N customer reviews" 为合规文案唯一出处（评价区不重复） */}
+            {(() => {
+              const reviews = hasReviewsData ? getProductReviews(product.asin) : [];
+              const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
+              const showDist = hasRating && reviews.length >= 4;
+              const ratingRow = hasRating ? (
+                hasReviewsData ? (
+                  <a href="#pdp2-reviews" className="flex items-center gap-2 w-fit">
+                    <RatingStars rating={product.rating!} />
+                    <span className="text-sm text-charcoal-light">
+                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
                     </span>
-                  </>
-                )}
-              </div>
-            ) : (
-              <div className="mb-6">
+                  </a>
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <RatingStars rating={product.rating!} />
+                    <span className="text-sm text-charcoal-light">
+                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                    </span>
+                  </div>
+                )
+              ) : null;
+              const priceBlock = isInStock ? (
+                <div className="flex items-baseline gap-3">
+                  <span className="text-xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
+                  {showCompareAt && (
+                    <>
+                      <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
+                      <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
+                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice!)) * 100)}%
+                      </span>
+                    </>
+                  )}
+                </div>
+              ) : (
                 <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
-              </div>
-            )}
+              );
+              if (!showDist) {
+                return (
+                  <>
+                    {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                    <div className="mb-4 lg:mb-6">{priceBlock}</div>
+                  </>
+                );
+              }
+              const buckets = [5, 4, 3, 2, 1].map((star) => ({
+                star,
+                pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
+              }));
+              return (
+                <div className="grid grid-cols-1 gap-y-4 mb-4 lg:mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
+                  <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
+                  <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
+                    {/* 全端统一原版五行条 + Based on 文案（2026-10-04 用户定：分布图复原不缩窄，
+                        手机端首屏问题由常驻吸底加购条解决） */}
+                    <div className="space-y-1">
+                      {buckets.map(({ star, pct }) => (
+                        <div key={star} className="flex items-center gap-2">
+                          <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
+                          <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
+                            <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
+                          </div>
+                          <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="mt-2.5 text-xs text-charcoal-light">
+                      Based on {product.reviewCount!.toLocaleString()} customer reviews
+                    </p>
+                  </div>
+                  <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
+                </div>
+              );
+            })()}
 
             {/* Details 卖点与规格速览已下移至购买区信任信息之后（首屏聚焦图片+价格+CTA） */}
 
@@ -622,9 +667,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
-            {/* 数量 + 加购 */}
+            {/* 数量 + 加购（mainCtaRef：悬浮加购条滚动联动的观测目标） */}
             {isInStock && (
-              <div className="flex flex-col sm:flex-row gap-3.5 mb-3">
+              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-3">
                 <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white self-start">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -834,12 +879,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       )}
 
-      {/* 移动端吸底加购条：首屏隐藏（translate-y-full），滚动后滑入 */}
+      {/* 移动端悬浮加购条：主购买区 CTA 在视口内 → 隐藏；CTA 滚出视野 → 滑入（滚动联动，2026-10-04 用户定） */}
       {isInStock && (
         <div
           ref={stickyBarRef}
           className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
-            showStickyBar ? 'translate-y-0' : 'translate-y-full'
+            mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
           }`}
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >

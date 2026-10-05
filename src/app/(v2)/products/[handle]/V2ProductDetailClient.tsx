@@ -54,17 +54,21 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
-  // 吸底条不再首屏常驻（2026-09-28 用户定，与新版 PDP 一致）：
-  // 滚动超过 60% 屏高后主购买区离开视野，吸底条才从底部滑入。
-  // 注意：hooks 必须在 `if (!product) return` 之前（rules-of-hooks，否则 next build  lint 报错）
-  const [showStickyBar, setShowStickyBar] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setShowStickyBar(window.scrollY > window.innerHeight * 0.6);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // 悬浮加购条滚动联动（2026-10-04 用户定，与新版 PDP 同口径）：主购买区 CTA 在视口内 →
+  // 悬浮条隐藏；CTA 滚出视野 → 滑入。IntersectionObserver 监听主 CTA 行（mainCtaRef）
+  const [mainCtaVisible, setMainCtaVisible] = useState(true);
+  const mainCtaRef = useRef<HTMLDivElement | null>(null);
   const stickyBarRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = mainCtaRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const obs = new IntersectionObserver(
+      (entries) => setMainCtaVisible(entries[0]?.isIntersecting ?? true),
+      { threshold: 0 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内（2026-10-02 采自 feat/pdp-v2-features）
   const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
@@ -288,43 +292,79 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 {product.title}
               </h1>
 
-              {/* Rating：仅在有真实评价数据时显示；有评价正文时可点击锚到评价区 */}
-              {product.rating != null && product.reviewCount != null && product.reviewCount > 0 && (
-                <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 mb-4 w-fit">
-                  <div className="flex text-brand">
-                    {[1,2,3,4,5].map(i => (
-                      <svg key={i} width="18" height="18" viewBox="0 0 24 24"
-                        fill={i <= Math.round(product.rating!) ? 'currentColor' : 'none'}
-                        stroke="currentColor" strokeWidth={i <= Math.round(product.rating!) ? 0 : 1.5}
-                      >
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    ))}
+              {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定，与新版 PDP 同口径）：
+                  分布卡（≥5 条才渲染，列表现算）xl+ 在价格右侧，lg 以下通栏；无分布卡时保持原布局 */}
+              {(() => {
+                const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
+                const showDist = hasRating && reviews.length >= 4;
+                const ratingRow = hasRating ? (
+                  <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 w-fit">
+                    <div className="flex text-brand">
+                      {[1,2,3,4,5].map(i => (
+                        <svg key={i} width="18" height="18" viewBox="0 0 24 24"
+                          fill={i <= Math.round(product.rating!) ? 'currentColor' : 'none'}
+                          stroke="currentColor" strokeWidth={i <= Math.round(product.rating!) ? 0 : 1.5}
+                        >
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="text-sm text-charcoal-light">
+                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                    </span>
+                  </a>
+                ) : null;
+                const priceBlock = isInStock ? (
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl lg:text-3xl font-bold text-charcoal">{formatPrice(displayPrice, displayCurrency)}</span>
+                    {product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice) && (
+                      <>
+                        <span className="text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice, displayCurrency)}</span>
+                        <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
+                          Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice)) * 100)}%
+                        </span>
+                      </>
+                    )}
                   </div>
-                  <span className="text-sm text-charcoal-light">
-                    {product.rating.toFixed(1)} ({product.reviewCount.toLocaleString()} reviews)
-                  </span>
-                </a>
-              )}
-
-              {/* Price：划线价和 Save 徽章仅在有真实 compareAtPrice 且高于现价时显示 */}
-              {isInStock ? (
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="text-2xl lg:text-3xl font-bold text-charcoal">{formatPrice(displayPrice, displayCurrency)}</span>
-                  {product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice) && (
-                    <>
-                      <span className="text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice, displayCurrency)}</span>
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
-                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice)) * 100)}%
-                      </span>
-                    </>
-                  )}
-                </div>
-              ) : (
-                <div className="mb-6">
+                ) : (
                   <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
-                </div>
-              )}
+                );
+                if (!showDist) {
+                  return (
+                    <>
+                      {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                      <div className="mb-6">{priceBlock}</div>
+                    </>
+                  );
+                }
+                const buckets = [5, 4, 3, 2, 1].map((star) => ({
+                  star,
+                  pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
+                }));
+                return (
+                  <div className="grid grid-cols-1 gap-y-4 mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
+                    <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
+                    <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
+                      {/* 全端统一原版五行条 + Based on 文案（与新版 PDP 同口径） */}
+                      <div className="space-y-1">
+                        {buckets.map(({ star, pct }) => (
+                          <div key={star} className="flex items-center gap-2">
+                            <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
+                            <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
+                              <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
+                            </div>
+                            <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="mt-2.5 text-xs text-charcoal-light">
+                        Based on {product.reviewCount!.toLocaleString()} customer reviews
+                      </p>
+                    </div>
+                    <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
+                  </div>
+                );
+              })()}
 
               {/* 规格摘要：尺寸 / 材质（有数据才显示） */}
               {(dimsStr || specs?.material) && (
@@ -342,9 +382,9 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 </div>
               )}
 
-              {/* Actions：数量 + Add to Cart 全宽 + 收藏 */}
+              {/* Actions：数量 + Add to Cart 全宽 + 收藏（mainCtaRef：悬浮加购条滚动联动的观测目标） */}
               {isInStock ? (
-                <div className="flex gap-3 mb-3">
+                <div ref={mainCtaRef} className="flex gap-3 mb-3">
                   <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white flex-shrink-0">
                     <button
                       onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -540,12 +580,12 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
         />
       )}
 
-      {/* 移动端吸底加购条（桌面端隐藏；safe-area 适配刘海屏；首屏隐藏，滚动后滑入） */}
+      {/* 移动端悬浮加购条：主购买区 CTA 在视口内 → 隐藏；CTA 滚出视野 → 滑入（滚动联动，与新版 PDP 同口径） */}
       {isInStock && (
         <div
           ref={stickyBarRef}
           className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
-            showStickyBar ? 'translate-y-0' : 'translate-y-full'
+            mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
           }`}
           style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
