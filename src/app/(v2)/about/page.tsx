@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 // 2 Million+ 客户 / 14,000+ 五星（星标在标签前同字号）/ 500K+ 年销 / 10+ 年行业，
 // 竖线分隔 + 来源脚注；版式保留 about 页大字号（3xl/5xl）
 const STATS = [
-  { figure: '2 Million+', label: 'Customers Served Worldwide' },
+  { figure: '2 Million+', label: 'Customers Worldwide' },
   { figure: '14,000+', label: 'Five-Star Reviews', star: true },
   { figure: '500K+', label: 'Sold Every Year' },
   { figure: '10+ Years', label: 'In Home Textiles' },

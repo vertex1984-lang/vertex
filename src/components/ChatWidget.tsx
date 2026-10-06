@@ -132,6 +132,16 @@ export default function ChatWidget() {
   const [topicsOpen, setTopicsOpen] = useState(false);
   const pathname = usePathname();
   const isPDP = pathname?.startsWith("/products/") ?? false;
+  // 首屏隐藏、向下滚动超过 300px 后显示（2026-10-07 用户定）：首页信任条紧贴 hero 下方，
+  // 首屏时正处于右下角悬浮按钮区域，常显会压住信任条文字；滚动后信任条已上移离开视口底部，
+  // 任何设备都不会再被挡。聊天面板打开时不隐藏（open 兜底）。
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   /** AI 导购模式：开启后 24/7 由 LLM 接待，服务时间仅作为"人工跟进时段"文案 */
   const aiMode = CONTACT_CONFIG.llm.enabled;
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -249,7 +259,9 @@ export default function ChatWidget() {
 
   return (
     <div
-      className={`fixed right-4 z-50 flex flex-col items-end ${isPDP ? "bottom-[calc(7rem+env(safe-area-inset-bottom))] md:bottom-6" : "bottom-6"}`}
+      className={`fixed right-4 z-50 flex flex-col items-end transition-all duration-300 ${
+        visible || open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+      } ${isPDP ? "bottom-[calc(7rem+env(safe-area-inset-bottom))] md:bottom-6" : "bottom-6"}`}
     >
       {open && (
         <div
