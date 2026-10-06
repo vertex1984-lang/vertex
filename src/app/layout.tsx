@@ -31,11 +31,13 @@ export const metadata: Metadata = {
   },
 };
 
-// viewport-fit=cover：配合 fixed 元素的 env(safe-area-inset-bottom) 适配刘海屏
+// 刘海屏适配（2026-10-07 用户反馈 iPhone 刘海两侧透出公告条橙色且滚动后不消失）：
+// 不使用 viewport-fit=cover —— 页面收进安全区，刘海/底部 home 指示条区域由系统
+// 以 body 背景色（米白 #F8F5F0）填充，公告条橙色不再侵入；底部吸底元素由系统自动避让，
+// 各 fixed 元素的 env(safe-area-inset-bottom) 在此模式下取 0（无害）。
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  viewportFit: 'cover',
 };
 
 // WebSite + SearchAction JSON-LD（站点级结构化数据）
