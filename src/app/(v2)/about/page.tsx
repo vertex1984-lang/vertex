@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const STATS = [
   { figure: '2 Million+', label: 'Customers Worldwide' },
   { figure: '14,000+', label: 'Five-Star Reviews', star: true },
-  { figure: '500K+', label: 'Sold Every Year' },
+  { figure: '500K+', label: 'Items Sold Every Year' },
   { figure: '10+ Years', label: 'In Home Textiles' },
 ];
 

@@ -12,7 +12,7 @@ const STATS = [
   { figure: '2 Million+', label: 'Customers Worldwide' },
   // star：星标置于数字前作行首装饰，与数字行高等高（2026-10-02 用户定：全条唯一图形信任符号，要跳出来）
   { figure: '14,000+', label: 'Five-Star Reviews', star: true },
-  { figure: '500K+', label: 'Sold Every Year' },
+  { figure: '500K+', label: 'Items Sold Every Year' },
   // label 的 \n 仅移动端折行；桌面端 whitespace-normal 一行展示（2026-10-02 用户定）
   { figure: '10+ Years', label: 'In Home\nTextiles' },
 ];
@@ -27,8 +27,9 @@ export default function V2TrustBar() {
         <div className="grid grid-cols-4 gap-2 lg:gap-6 text-center mx-auto lg:max-w-[900px] divide-x divide-[#E8D9C8]">
           {STATS.map((s) => (
             <div key={s.label} className="px-1 lg:px-2">
-              {/* 移动端数字收窄到 base（2026-10-02 用户定：20,000+/14,000+ 等长数字 lg 太挤） */}
-              <p className="text-base lg:text-3xl font-extrabold tracking-tight text-brand mb-1 whitespace-nowrap">
+              {/* 移动端数字收窄到 sm（2026-10-07 用户反馈：16px 时 "2 Million+" 比 1/4 格还宽，
+                  nowrap 溢出挤压相邻格、视觉不居中；14px 后最长数字也能完整落入格内） */}
+              <p className="text-sm lg:text-3xl font-extrabold tracking-tight text-brand mb-1 whitespace-nowrap">
                 {s.figure}
               </p>
               {/* 标签区固定行高、垂直居中（2026-10-02 用户定）：移动端最长标签折 3 行
