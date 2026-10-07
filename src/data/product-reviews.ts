@@ -2342,7 +2342,7 @@ const BEDSET4_SETS: ProductReview[] = [
   {
     author: 'Tanya Rebello',
     rating: 5,
-    title: 'The whole bed in one box',
+    title: 'Great matching set',
     text: 'Ordered the sage one with the little white flowers and it is even softer than the listing suggests. Duvet cover, fitted sheet, two cases, done. The bed instantly looks put together.',
     date: 'September 2026',
   },
@@ -2361,7 +2361,7 @@ const BEDSET4_SETS: ProductReview[] = [
   {
     author: 'Derek Osei',
     rating: 5,
-    title: 'Guest room sorted',
+    title: 'Crisp white set',
     text: 'The white set went into the spare room; it photographs like a hotel. Making the bed takes two minutes because everything matches.',
     date: 'August 2026',
   },
@@ -2494,7 +2494,7 @@ const LINEN3_SETS: ProductReview[] = [
   {
     author: 'Eli Thackeray',
     rating: 5,
-    title: 'Cabin approved',
+    title: 'Great for the cabin',
     text: 'The naturally wrinkled drape is exactly the vibe for our cabin. Guests keep asking where the bedding is from, which I take as the highest compliment.',
     date: 'September 2026',
   },
@@ -2678,7 +2678,7 @@ const FUR_THROW_BLANKET: ProductReview[] = [
   {
     author: 'Ottilie Carlson',
     rating: 5,
-    title: 'Plush beyond expectation',
+    title: 'Even softer in person',
     text: 'Draped it over my reading chair and it pools like a much pricier throw. The blue is deep and rich, and the pile is denser than the price tag promises.',
     date: 'September 2026',
   },
@@ -2744,7 +2744,7 @@ const COTTON_BATH_MATS: ProductReview[] = [
   {
     author: 'Margot Ellison',
     rating: 5,
-    title: 'Hotel bathroom at home',
+    title: 'Soft and thick',
     text: 'Thick cotton terry underfoot and the little footprint pattern keeps it from looking plain. Our bathroom finally feels finished.',
     date: 'September 2026',
   },
@@ -2810,7 +2810,7 @@ const SISAL_DOOR_MATS: ProductReview[] = [
   {
     author: 'Priscilla Adeyemi',
     rating: 5,
-    title: 'Cut to fit like fabric',
+    title: 'Easy to trim',
     text: 'Trimmed it to fit our odd hallway alcove with ordinary scissors and the edge stayed clean. Looks like it was made for the spot.',
     date: 'September 2026',
   },
@@ -2876,7 +2876,7 @@ const DE_OVAL_BATH_MAT: ProductReview[] = [
   {
     author: 'Tessa Grunwald',
     rating: 5,
-    title: 'No more wet sock moments',
+    title: 'Really absorbs',
     text: 'Step out of the shower and the water is simply gone. The surface never turns into a swamp the way our old fabric mat did.',
     date: 'September 2026',
   },
@@ -2942,7 +2942,7 @@ const DE_KITCHEN_RUNNER: ProductReview[] = [
   {
     author: 'Paloma Reyes',
     rating: 5,
-    title: 'Sink duty upgrade',
+    title: 'Easier on my legs',
     text: 'I stand at the sink for an hour most evenings and my legs notice the cushioning. Water splashes vanish into it.',
     date: 'September 2026',
   },
@@ -3008,7 +3008,7 @@ const BIKE_BASKET: ProductReview[] = [
   {
     author: 'Birdie Callahan',
     rating: 5,
-    title: 'Farmers market ready',
+    title: 'Perfect for market runs',
     text: 'Tomatoes, a baguette, and a bunch of basil ride home in style. The cup holder carried my iced coffee the whole way.',
     date: 'September 2026',
   },
@@ -3140,7 +3140,7 @@ const OIL_PAINTING_CUSHIONS: ProductReview[] = [
   {
     author: 'Antonella Riva',
     rating: 5,
-    title: 'Like sitting on a painting',
+    title: 'Gorgeous print',
     text: 'The print genuinely reads like impressionist artwork, warm reds and soft greens blended together. My plain dining chairs look curated now.',
     date: 'September 2026',
   },
