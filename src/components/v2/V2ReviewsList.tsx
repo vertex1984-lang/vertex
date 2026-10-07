@@ -6,12 +6,48 @@ import type { ProductReview } from '@/data/product-reviews';
 /** 预览条数：超过则折叠，"Show more reviews" 展开（2026-10-04 用户定：预览 3 条，手机端横滑约可见 1.7 张） */
 const COLLAPSED_COUNT = 3;
 
-/** 预览置顶（2026-10-05 用户定）：带图且星级 >3 的评价在折叠预览中置顶（保持数据序、不设上限）；
- *  展开态保持原始数据顺序（方案 A）；无图家族不受影响。 */
-function pinnedPreview(rs: ProductReview[]): ProductReview[] {
-  const has = rs.filter((r) => r.image && r.rating > 3);
-  if (has.length === 0) return rs;
-  return [...has, ...rs.filter((r) => !has.includes(r))];
+/** 星级穿插展示（2026-10-06 用户定）：预览不要求全 5 星（家族有 4★ 时必入预览前 3），
+ *  展开态按亚马逊式"有用票"观感穿插，绝不呈现按评分排序的形态。确定性算法（按家族首作者名
+ *  哈希在变体中选型），跨构建稳定；带图且 >3★ 置顶规则保留（2026-10-05 用户定）。
+ *  算法：非 5★ 组成少数派序列（首条必为 4★[若有]，其余按变体轮转 4/3），均匀散布进 5★ 之间，
+ *  首个少数派槽位固定在 index 1-2（保证进预览）。 */
+function starMix(rs: ProductReview[]): ProductReview[] {
+  const pinned = rs.filter((r) => r.image && r.rating > 3);
+  const rest = rs.filter((r) => !pinned.includes(r));
+  if (rest.length <= COLLAPSED_COUNT) return [...pinned, ...rest];
+  const seed = (rs[0]?.author || 'x').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  const variant = seed % 3;
+  const fives = rest.filter((r) => r.rating >= 5);
+  const fours = rest.filter((r) => r.rating === 4);
+  const lows = rest.filter((r) => r.rating <= 3);
+  // 少数派序列（'4'/'3' 标记）：首条 4★，之后按变体决定起始侧交替取用，余量补尾
+  const seq: number[] = [];
+  let r4 = fours.length, r3 = lows.length;
+  if (r4 > 0) { seq.push(4); r4--; }
+  let side = variant % 2 === 0 ? 3 : 4;
+  while (r4 > 0 || r3 > 0) {
+    if (side === 4 && r4 > 0) { seq.push(4); r4--; }
+    else if (r3 > 0) { seq.push(3); r3--; }
+    else { seq.push(4); r4--; }
+    side = side === 4 ? 3 : 4;
+  }
+  // 散布槽位：首槽 1 或 2，其余向尾端等距；碰撞向后走
+  const m = seq.length;
+  const total = rest.length;
+  const slots: number[] = [];
+  for (let k = 0; k < m; k++) {
+    let p = k === 0 ? 1 + (variant % 2) : Math.round(1 + (variant % 2) + (k * (total - 1 - (variant % 2))) / m);
+    if (p >= total) p = total - 1;
+    while (slots.includes(p)) p = (p + 1) % total;
+    slots.push(p);
+  }
+  const out: ProductReview[] = [];
+  let mi = 0;
+  for (let i = 0; i < total; i++) {
+    if (mi < m && slots[mi] === i) out.push(seq[mi++] === 4 ? fours.splice(0, 1)[0] : lows.splice(0, 1)[0]);
+    else out.push(fives.splice(0, 1)[0]);
+  }
+  return [...pinned, ...out];
 }
 
 function Star({ fill }: { fill: boolean }) {
@@ -111,7 +147,7 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
   const [expanded, setExpanded] = useState(false);
   const collapsed = reviews.length > COLLAPSED_COUNT;
   const carousel = collapsed && !expanded;
-  const visible = carousel ? pinnedPreview(reviews).slice(0, COLLAPSED_COUNT) : reviews;
+  const visible = carousel ? starMix(reviews).slice(0, COLLAPSED_COUNT) : starMix(reviews);
   return (
     <>
       <div
