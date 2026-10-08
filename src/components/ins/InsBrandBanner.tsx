@@ -3,7 +3,7 @@ import { v2url } from '@/lib/v2paths';
 
 /**
  * V2 首页全宽 Brand Banner（品牌意境视频 brand-banner.mp4，自动播放/静音/循环）
- * 桌面：按 1456/418（约 3.5:1）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
+ * 桌面：按 1456/560（约 2.6:1，2026-10-08 用户定加高，原 1456/459.8）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
  *       极宽屏高度超 93vh 时进一步从上下裁切。
  * 移动：同一路视频按 4/3.97 展示（接近方形，不压扁成细条），object-cover 居中裁切两侧。
  * poster 用视频首帧（brand-banner-poster.webp），视频加载前立即有画面；
@@ -25,10 +25,10 @@ export default function InsBrandBanner() {
   return (
     <section className="w-full">
       <div>
-        {/* 桌面端：1456/418 宽横幅 */}
+        {/* 桌面端：1456/560 宽横幅 */}
         <a
           href={v2url('/fabric-guide/')}
-          className="group relative hidden sm:block w-full aspect-[1456/459.8] max-h-[93vh] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/560] max-h-[93vh] overflow-hidden"
         >
           <video {...videoProps}>
             <source src={resolveUrl('/videos/brand-banner.mp4')} type="video/mp4" />
