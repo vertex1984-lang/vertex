@@ -307,11 +307,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     window.location.href = v2url(`/products/?q=${encodeURIComponent(q)}`);
   };
 
-  // 只有首页（/）和 About（/about/）有大图页头，保持「透明 → 滚动实底」；
+  // 只有首页（/）、About（/about/）和 ins 测试页（/ins/）有大图页头，保持「透明 → 滚动实底」；
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about';
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || normalizedPath === '/ins';
   // mega menu 展开时强制实底，保证导航文字在面板上可读
   const solid = scrolled || !transparentStart || openMenu !== '';
 
