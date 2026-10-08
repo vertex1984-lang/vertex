@@ -36,10 +36,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'hb-medium', parent: 'cushions', label: 'High-Back Medium', shortLabel: 'High-Back Medium', blurb: 'One-piece high-back comfort for normal sized chairs.' },
   { key: 'hb-large', parent: 'cushions', label: 'High-Back Large', shortLabel: 'High-Back Large', blurb: 'One-piece high-back cushions for larger chairs.' },
   { key: 'seat-pad', parent: 'cushions', label: 'Seat Pads', shortLabel: 'Seat Pads', blurb: 'Simple tufted pads for dining & desk chairs.' },
-  // Pillows
-  { key: 'basic', parent: 'pillows', label: 'Basic', shortLabel: 'Basic', blurb: 'Everyday plush pillows for bed & sofa.' },
-  { key: 'quilted', parent: 'pillows', label: 'Quilted', shortLabel: 'Quilted', blurb: 'Quilted texture with extra loft and support.' },
-  { key: 'embossed', parent: 'pillows', label: 'Embossed & Covers', shortLabel: 'Embossed & Covers', blurb: 'Embossed designs and covers to refresh any room.' },
+  // Pillows（2026-10-08 用户定：改为 枕芯 / 枕套 / 颈枕 三类）
+  { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
+  { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
+  { key: 'neck-pillow', parent: 'pillows', label: 'Neck Pillows', shortLabel: 'Neck Pillow', blurb: 'Memory foam support for travel, office & home.' },
   // Towels
   { key: 'bath-towels', parent: 'towels', label: 'Bath Towels', shortLabel: 'Bath Towels', blurb: 'Soft, absorbent cotton for daily baths.' },
   { key: 'beach', parent: 'towels', label: 'Beach Towels', shortLabel: 'Beach Towels', blurb: 'Oversized and quick-drying for pool & beach.' },
@@ -147,9 +147,10 @@ function classifyCushion(title: string, asin: string): string {
 }
 
 function classifyPillow(title: string): string {
-  if (/quilted/i.test(title)) return 'quilted';
-  if (/embossed|pillow ?case|cushion cover|pillow cover/i.test(title)) return 'embossed';
-  return 'basic';
+  // 2026-10-08 用户定：Pillows 拆为 颈枕 / 枕套 / 枕芯 三类（颈枕由 Others/Travel 归正到 Pillows）
+  if (/neck pillow/i.test(title)) return 'neck-pillow';
+  if (/pillow ?case|cushion cover|pillow cover|pillowcase/i.test(title)) return 'pillow-cases';
+  return 'pillow-inserts';
 }
 
 function classifyTowel(title: string, asin: string): string {

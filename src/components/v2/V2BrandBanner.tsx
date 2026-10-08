@@ -3,13 +3,13 @@ import { v2url } from '@/lib/v2paths';
 
 /**
  * V2 首页全宽 Brand Banner（品牌意境视频 brand-banner.mp4，自动播放/静音/循环）
- * 桌面：按 1456/418（约 3.5:1）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
+ * 桌面：按 1456/560（约 2.6:1，2026-10-08 用户定加高，原 1456/459.8）锁定比例全宽展示，object-cover 从上下裁切（object-position 保持 center）；
  *       极宽屏高度超 93vh 时进一步从上下裁切。
  * 移动：同一路视频按 4/3.97 展示（接近方形，不压扁成细条），object-cover 居中裁切两侧。
  * poster 用视频首帧（brand-banner-poster.webp），视频加载前立即有画面；
  * preload="metadata" 避免阻塞首屏，muted+playsInline 保证 iOS/安卓可自动播放。
- * 促销文案叠加在左下角（小占比，参考 Parachute）：标题 + 副文案 + 胶囊按钮（与 hero 同款）。
- * 整图可点击跳转 Fabric Guide（2026-09-26 用户定：原 /better-texture/ 入口改为 /fabric-guide/）。
+ * ins 版（2026-10-08 测试副本）：曾去掉文案，用户验收后恢复左下角
+ * "Better Texture, / Better Feeling." + Fabric Guide 按钮；整图仍可点进 Fabric Guide。
  */
 export default function V2BrandBanner() {
   const videoProps = {
@@ -25,15 +25,15 @@ export default function V2BrandBanner() {
   return (
     <section className="w-full">
       <div>
-        {/* 桌面端：1456/418 宽横幅 */}
+        {/* 桌面端：1456/560 宽横幅 */}
         <a
           href={v2url('/fabric-guide/')}
-          className="group relative hidden sm:block w-full aspect-[1456/459.8] max-h-[93vh] overflow-hidden"
+          className="group relative hidden sm:block w-full aspect-[1456/560] max-h-[93vh] overflow-hidden"
         >
           <video {...videoProps}>
             <source src={resolveUrl('/videos/brand-banner.mp4')} type="video/mp4" />
           </video>
-          {/* 左下角促销文案（小占比，参考竞品样式） */}
+          {/* 左下角促销文案（小占比，参考竞品样式；2026-10-08 ins 版恢复） */}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-11 lg:p-16 max-w-xl">
             <h3 className="text-2xl sm:text-[33px] lg:text-[40px] font-extrabold text-cream tracking-tight leading-tight mb-3">
@@ -42,7 +42,7 @@ export default function V2BrandBanner() {
             <p className="text-sm sm:text-[17px] lg:text-[20px] text-cream/85 mb-7">
               Better Feeling.
             </p>
-            <span className="inline-block px-9 py-4 rounded-full bg-cream text-brand text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
+            <span className="inline-block px-9 py-4 rounded-full bg-transparent border-2 border-cream text-cream text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-cream group-hover:text-brand">
               Fabric Guide
             </span>
           </div>
@@ -64,7 +64,7 @@ export default function V2BrandBanner() {
             <p className="text-base text-cream/85 mb-5">
               Better Feeling.
             </p>
-            <span className="inline-block px-7 py-3 rounded-full bg-cream text-brand text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-brand group-hover:text-cream">
+            <span className="inline-block px-7 py-3 rounded-full bg-transparent border-2 border-cream text-cream text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-cream group-hover:text-brand">
               Fabric Guide
             </span>
           </div>

@@ -5,6 +5,7 @@
  * 移动端数字 lg、桌面 3xl（about 页是 3xl/5xl），上下 padding 约是 about 页的一半。
  * 2026-10-02（用户定）：文案替换为用户指定四条（含 Five-Star 星标），
  * 不再与 about 页 STATS 保持同口径（about 页维持原样）。
+ * 2026-10-08（ins 版测试副本）：曾压缩为一行小字，用户验收后要求恢复原四格版式。
  * 服务端组件，无交互。
  */
 
@@ -19,7 +20,11 @@ const STATS = [
 
 export default function V2TrustBar() {
   return (
-    <section className="bg-[#F5F0E9] border-y border-[#E8E2DA]">
+    // ins 版（2026-10-08 用户定）：背景与页面底色一致（off-white）；
+    // 分隔线不贯穿屏幕（用户定）——上下各一条居中的短发丝线
+    // （移动端左右各缩 48px，桌面端 60% 宽；2026-10-08 用户要求再短一些）
+    <section className="bg-off-white">
+      <div aria-hidden="true" className="mx-12 lg:mx-auto lg:w-3/5 lg:max-w-[1200px] border-t border-[#EDE6DC]" />
       {/* 上 padding 原值、下 padding 减半（2026-10-02 用户定：与 hero 衔接保持原间距，底部压占屏比） */}
       <div className="max-w-[1400px] lg:w-[80%] lg:max-w-none mx-auto px-6 pt-4 pb-2 lg:pt-6 lg:pb-3">
         {/* 桌面端限宽向中间集中（2026-09-30 用户定：四格在 80% 宽容器里分得太散）；
@@ -50,6 +55,7 @@ export default function V2TrustBar() {
           Sales &amp; review data from Amazon
         </p>
       </div>
+      <div aria-hidden="true" className="mx-12 lg:mx-auto lg:w-3/5 lg:max-w-[1200px] border-b border-[#EDE6DC]" />
     </section>
   );
 }

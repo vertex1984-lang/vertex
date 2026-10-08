@@ -32,22 +32,16 @@ export default function V2Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/25 to-charcoal/10" />
       </div>
 
-      {/* Text content：移动端贴中下部（2026-10-07 用户反馈裁图后 hero 下半太空），
-          桌面端垂直居中偏下（为 fixed Header 留出顶部视觉空间） */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-end pb-[10svh] lg:justify-center lg:pb-0 lg:pt-[12vh] lg:translate-y-[4.6vh]">
-        <p
-          className="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-cream/80 mb-4 lg:mb-5 animate-fade-in-up"
-          style={{ animationDelay: '0ms' }}
-        >
-          Makimoo Home
-        </p>
+      {/* Text content：ins 版只留一行品牌标语 + Shop Beddings 按钮（2026-10-08 用户定恢复按钮）；
+          移动端文字位置 pb-[17svh]（10svh 太贴底、26svh 太靠上，2026-10-08 两次用户反馈取中），
+          桌面端垂直居中偏下不变 */}
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-end pb-[17svh] lg:justify-center lg:pb-0 lg:pt-[12vh] lg:translate-y-[4.6vh]">
         <h1
-          className="text-3xl sm:text-4xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-9 animate-fade-in-up"
-          style={{ animationDelay: '150ms' }}
+          className="text-3xl sm:text-4xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
         >
           Comfort, Woven Into Every Day
         </h1>
-        <div className="animate-fade-in-up" style={{ animationDelay: '450ms' }}>
+        <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
           <a
             href={v2url('/products/?cat=bedding')}
             className="inline-block px-6 py-2.5 lg:px-7 lg:py-3 rounded-full bg-transparent border-2 border-cream text-cream text-xs lg:text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-cream hover:text-brand hover:shadow-xl"
