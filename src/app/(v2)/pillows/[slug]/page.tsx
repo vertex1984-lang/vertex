@@ -20,7 +20,7 @@ import {
 
 /**
  * Pillows 二级类目 PLP（2026-09-30 用户定：展示方法与逻辑完全对齐 /bedding/bed-sets/）：
- * - 形态页 /pillows/bed-pillows/ 等 + 材质页 /pillows/down-alternative/、/pillows/memory-foam/
+ * - 形态页 /pillows/pillow-inserts/ 等 + 材质页 /pillows/down-alternative/、/pillows/memory-foam/
  * - 无 banner（同 bedding 类型页）：面包屑 + H1 + 一句话简介 → 另一维度下拉 + 分区网格
  *   （形态页按材质分区、材质页按形态分区；卡片不叠 badge——页标题+分区标题已表达两维度）
  * - 底部互导：图片卡横滑条（照搬 bedding 的 V2FabricCrossSell 样式），当前页排除自身

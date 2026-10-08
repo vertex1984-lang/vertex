@@ -64,8 +64,8 @@ const GET_ALL_PRODUCTS = `
   }
 `;
 
-// 产品标识：亚马逊 ASIN（B0xxxxxxxx）或 1688 供应商标识（1688-xxxx(-Cx)）
-const ASIN_RE = /^(B0[A-Z0-9]{8}|1688-[0-9]+(-C[0-9]+)?)$/i;
+// 产品标识：亚马逊 ASIN（B0xxxxxxxx）、1688 供应商标识（1688-xxxx(-Cx)）、自有品牌标识（MK-xxx，2026-10-08 起，如 MK-PC-CORD-OLIVE）
+const ASIN_RE = /^(B0[A-Z0-9]{8}|1688-[0-9]+(-C[0-9]+)?|MK-[A-Z0-9-]+)$/i;
 
 // 已从站点剔除的 ASIN（早期错误数据），不再接入映射
 const EXCLUDED_ASINS = new Set(['b0f1ycxtrx']);

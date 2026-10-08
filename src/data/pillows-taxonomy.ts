@@ -1,12 +1,11 @@
 /**
  * Pillows 类目二级分类口径（2026-09-30 用户定，照搬 Bedding 的 Type × Fabric 双维度模型）：
  *
- * Type（形态）：
- * - bed-pillows        Bed Pillows        睡眠枕（标题含 "Bed Pillows"）
- * - decorative-pillows Decorative Pillows 装饰枕芯（标题含 Pillow Inserts / Throw Pillow）
- * - neck-pillows       Neck Pillows       旅行颈枕（Travel 类目产品，标题含 Neck Pillow）
- * （2026-09-30 用户定：Pillow Cases 子类目整体移除，8 款枕套产品全站隐藏，
- *   见 products.ts HIDDEN_HANDLES；pillowTypeOf 的 pillowcase 规则保留兜底但已无产品命中）
+ * Type（形态，2026-10-08 用户定：改为 Inserts / Cases / Neck 三类）：
+ * - pillow-inserts  Pillow Inserts  枕芯 + 床枕（标题含 Pillow Inserts / Throw Pillow / Bed Pillow / Stuffer）
+ * - pillow-cases    Pillow Cases    枕套/抱枕套（标题含 Pillowcase / Cushion Cover；8 款老枕套仍全站隐藏，
+ *                                   见 products.ts HIDDEN_HANDLES，此类目只含 3 款压花抱枕套）
+ * - neck-pillows    Neck Pillows    旅行颈枕（Travel 类目产品，标题含 Neck Pillow）
  *
  * Material（填充材质，取自 getProductSpecs(asin).material）：
  * - down-alternative   Down Alternative   Microfiber / Hollowfibre（2026-09-30 用户定：microfiber 枕头归入此类）
@@ -24,7 +23,7 @@ import { getProductSpecs } from '@/lib/specs';
 import { getVariantGroupOf, VARIANT_GROUPS } from '@/data/variant-groups';
 
 export interface PillowTaxon {
-  /** URL/筛选 key，如 'bed-pillows' */
+  /** URL/筛选 key，如 'pillow-inserts' */
   key: string;
   /** 展示名，如 'Bed Pillows' */
   label: string;
@@ -38,18 +37,18 @@ export interface PillowTaxon {
 
 export const PILLOW_TYPES: PillowTaxon[] = [
   {
-    key: 'bed-pillows',
-    label: 'Bed Pillows',
-    slug: 'bed-pillows',
-    menuDesc: 'For every sleep position.',
-    blurb: 'Plush, supportive pillows sized for the way you sleep.',
+    key: 'pillow-inserts',
+    label: 'Pillow Inserts',
+    slug: 'pillow-inserts',
+    menuDesc: 'Plump, supportive fill.',
+    blurb: 'Soft, full inserts and bed pillows — plush support for sofa and sleep.',
   },
   {
-    key: 'decorative-pillows',
-    label: 'Decorative Pillows',
-    slug: 'decorative-pillows',
-    menuDesc: 'Inserts for your favorite covers.',
-    blurb: 'Soft, full inserts that plump up any decorative cover.',
+    key: 'pillow-cases',
+    label: 'Decorative Pillow Cases',
+    slug: 'pillow-cases',
+    menuDesc: 'A fresh look, instantly.',
+    blurb: 'Decorative covers in soft, muted tones — an instant refresh for any cushion.',
   },
   {
     key: 'neck-pillows',
@@ -84,13 +83,12 @@ export const PILLOW_MATERIALS: PillowTaxon[] = [
   },
 ];
 
-/** 产品 → 形态 key；不在四种形态内返回 ''（仅出现在未筛选的 All 视图） */
+/** 产品 → 形态 key；不在三种形态内返回 ''（仅出现在未筛选的 All 视图） */
 export function pillowTypeOf(p: Pick<MakimooProduct, 'title' | 'subcategory'>): string {
   const t = p.title;
   if (p.subcategory === 'travel' || /neck pillow/i.test(t)) return 'neck-pillows';
-  if (/pillow ?case/i.test(t)) return 'pillow-cases';
-  if (/bed pillow/i.test(t)) return 'bed-pillows';
-  if (/insert|stuffer|throw pillow/i.test(t)) return 'decorative-pillows';
+  if (/pillow ?case|pillowcase|cushion cover|pillow cover/i.test(t)) return 'pillow-cases';
+  if (/bed pillow|insert|stuffer|throw pillow/i.test(t)) return 'pillow-inserts';
   return '';
 }
 

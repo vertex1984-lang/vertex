@@ -548,40 +548,28 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQC6H9MZ/1.webp",
+        "url": "/images/products/B0CQC6H9MZ/studio-main.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/2.webp",
+        "url": "/images/products/B0CQC6H9MZ/scene.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/3.webp",
+        "url": "/images/products/B0CQC6H9MZ/studio-side.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQC6H9MZ/4.webp",
+        "url": "/images/products/B0CQC6H9MZ/studio-filling.webp",
         "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQC6H9MZ/5.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQC6H9MZ/6.webp",
-        "altText": "Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       }
     ],
     "priceRange": {
@@ -4006,130 +3994,28 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0CQBZM49V/1.webp",
+        "url": "/images/products/B0CQBZM49V/studio-main.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQBZM49V/2.webp",
+        "url": "/images/products/B0CQBZM49V/scene.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQBZM49V/3.webp",
+        "url": "/images/products/B0CQBZM49V/studio-side.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0CQBZM49V/4.webp",
+        "url": "/images/products/B0CQBZM49V/studio-filling.webp",
         "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/5.webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/6.webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_g03oq9g03oq9g03o (1).webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_s8z5dts8z5dts8z5 (1).webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/Gemini_Generated_Image_w6eqdiw6eqdiw6eq.webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-1780-Hyperrealistic warm minimalist product p....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-2079-Hyperrealistic warm minimalist product p....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-3805-Photorealistic 8K lifestyle product shot....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-4110-Hyperrealistic warm minimalist product p....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-5430-Photorealistic warm minimalist living ro....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7313-Photorealistic 8K lifestyle product shot....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-7573-Hyperrealistic warm minimalist product p....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-8337-Photorealistic 8K lifestyle product shot....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-08-9243-Photorealistic 8K lifestyle product shot....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/jimeng-2026-04-09-7321-Hyper-realistic commercial lifestyle pho....webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775546845583.webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CQBZM49V/nano-banana-pro-1775558573205.webp",
-        "altText": "Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       }
     ],
     "priceRange": {
@@ -5426,34 +5312,28 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "availableForSale": true,
     "images": [
       {
-        "url": "/images/products/B0F62XRB55/1.webp",
+        "url": "/images/products/B0F62XRB55/studio-main.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0F62XRB55/2.webp",
+        "url": "/images/products/B0F62XRB55/scene.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0F62XRB55/4.webp",
+        "url": "/images/products/B0F62XRB55/studio-side.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       },
       {
-        "url": "/images/products/B0F62XRB55/5.webp",
+        "url": "/images/products/B0F62XRB55/studio-filling.webp",
         "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0F62XRB55/6.webp",
-        "altText": "Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
-        "width": 800,
-        "height": 800
+        "width": 1200,
+        "height": 1200
       }
     ],
     "priceRange": {
@@ -5925,6 +5805,1209 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0G6MPTVFD"
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-CARAMEL",
+    "asin": "MK-PC-CORD-CARAMEL",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Caramel)",
+    "handle": "corduroy-pillow-covers-caramel-40x40-mk-pc-cord-caramel",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Caramel, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Caramel tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Caramel, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Caramel tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-CARAMEL",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-CARAMEL-45",
+    "asin": "MK-PC-CORD-CARAMEL-45",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Caramel)",
+    "handle": "corduroy-pillow-covers-caramel-45x45-mk-pc-cord-caramel-45",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Caramel, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Caramel tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Caramel, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Caramel tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL-45/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL-45/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CARAMEL-45/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Caramel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-CARAMEL-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-DUSTYROSE",
+    "asin": "MK-PC-CORD-DUSTYROSE",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+    "handle": "corduroy-pillow-covers-dustyrose-40x40-mk-pc-cord-dustyrose",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-DUSTYROSE",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-DUSTYROSE-45",
+    "asin": "MK-PC-CORD-DUSTYROSE-45",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+    "handle": "corduroy-pillow-covers-dustyrose-45x45-mk-pc-cord-dustyrose-45",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE-45/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE-45/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYROSE-45/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-DUSTYROSE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-OLIVE",
+    "asin": "MK-PC-CORD-OLIVE",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Olive)",
+    "handle": "corduroy-pillow-covers-olive-40x40-mk-pc-cord-olive",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Olive, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Olive tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Olive, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Olive tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-OLIVE",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-OLIVE-45",
+    "asin": "MK-PC-CORD-OLIVE-45",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Olive)",
+    "handle": "corduroy-pillow-covers-olive-45x45-mk-pc-cord-olive-45",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Olive, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Olive tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Olive, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Olive tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE-45/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE-45/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-OLIVE-45/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-OLIVE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-DUSTYBLUE",
+    "asin": "MK-PC-CORD-DUSTYBLUE",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+    "handle": "corduroy-pillow-covers-dustyblue-40x40-mk-pc-cord-dustyblue",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-DUSTYBLUE",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-DUSTYBLUE-45",
+    "asin": "MK-PC-CORD-DUSTYBLUE-45",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+    "handle": "corduroy-pillow-covers-dustyblue-45x45-mk-pc-cord-dustyblue-45",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE-45/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE-45/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-DUSTYBLUE-45/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-DUSTYBLUE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-CHARCOAL",
+    "asin": "MK-PC-CORD-CHARCOAL",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Charcoal)",
+    "handle": "corduroy-pillow-covers-charcoal-40x40-mk-pc-cord-charcoal",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Charcoal, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Charcoal tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 40 x 40 cm throw pillow covers in Charcoal, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Charcoal tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-CHARCOAL",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CORD-CHARCOAL-45",
+    "asin": "MK-PC-CORD-CHARCOAL-45",
+    "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Charcoal)",
+    "handle": "corduroy-pillow-covers-charcoal-45x45-mk-pc-cord-charcoal-45",
+    "description": "Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Charcoal, ready to refresh your sofa, couch or bed. Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space. Muted Ins-Style Color: A low-saturation Charcoal tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Corduroy Covers: You receive two matching 45 x 45 cm throw pillow covers in Charcoal, ready to refresh your sofa, couch or bed.</p><p>Soft Ribbed Corduroy: The fine-wale corduroy fabric has a velvety matte texture with subtle vertical stripes, adding cozy depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Charcoal tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL-45/1.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL-45/2.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CORD-CHARCOAL-45/3.webp",
+        "altText": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Charcoal)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CORD-CHARCOAL-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-SAGE",
+    "asin": "MK-PC-CTN-SAGE",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+    "handle": "cotton-like-pillow-covers-sage-40x40-mk-pc-ctn-sage",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-SAGE",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-SAGE-45",
+    "asin": "MK-PC-CTN-SAGE-45",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+    "handle": "cotton-like-pillow-covers-sage-45x45-mk-pc-ctn-sage-45",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE-45/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE-45/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-SAGE-45/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-SAGE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-CREAM",
+    "asin": "MK-PC-CTN-CREAM",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Cream)",
+    "handle": "cotton-like-pillow-covers-cream-40x40-mk-pc-ctn-cream",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Cream, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Cream tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Cream, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-CREAM",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-CREAM-45",
+    "asin": "MK-PC-CTN-CREAM-45",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Cream)",
+    "handle": "cotton-like-pillow-covers-cream-45x45-mk-pc-ctn-cream-45",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Cream, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Cream tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Cream, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM-45/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM-45/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-CREAM-45/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-CREAM-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-BLUSH",
+    "asin": "MK-PC-CTN-BLUSH",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Blush)",
+    "handle": "cotton-like-pillow-covers-blush-40x40-mk-pc-ctn-blush",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Blush, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Blush tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Blush, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Blush tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-BLUSH",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-BLUSH-45",
+    "asin": "MK-PC-CTN-BLUSH-45",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Blush)",
+    "handle": "cotton-like-pillow-covers-blush-45x45-mk-pc-ctn-blush-45",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Blush, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Blush tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Blush, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Blush tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH-45/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH-45/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-BLUSH-45/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Blush)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-BLUSH-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-DUSTYBLUE",
+    "asin": "MK-PC-CTN-DUSTYBLUE",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+    "handle": "cotton-like-pillow-covers-dustyblue-40x40-mk-pc-ctn-dustyblue",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-DUSTYBLUE",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-DUSTYBLUE-45",
+    "asin": "MK-PC-CTN-DUSTYBLUE-45",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+    "handle": "cotton-like-pillow-covers-dustyblue-45x45-mk-pc-ctn-dustyblue-45",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Blue, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE-45/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE-45/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-DUSTYBLUE-45/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-DUSTYBLUE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-LIGHTGREY",
+    "asin": "MK-PC-CTN-LIGHTGREY",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Light Grey)",
+    "handle": "cotton-like-pillow-covers-lightgrey-40x40-mk-pc-ctn-lightgrey",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Light Grey, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Light Grey tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 40 x 40 cm throw pillow covers in Light Grey, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-LIGHTGREY",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-CTN-LIGHTGREY-45",
+    "asin": "MK-PC-CTN-LIGHTGREY-45",
+    "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Light Grey)",
+    "handle": "cotton-like-pillow-covers-lightgrey-45x45-mk-pc-ctn-lightgrey-45",
+    "description": "Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Light Grey, ready to refresh your sofa, couch or bed. Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin. Muted Ins-Style Color: A low-saturation Light Grey tone that layers beautifully with neutrals like sage, cream and soft grey. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Cotton-Like Covers: You receive two matching 45 x 45 cm throw pillow covers in Light Grey, ready to refresh your sofa, couch or bed.</p><p>Soft Washed Cotton-Like Fabric: A finely woven matte cotton-feel fabric with a relaxed, slightly textured finish that is gentle on skin.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers beautifully with neutrals like sage, cream and soft grey.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the breathable fabric stays soft wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY-45/1.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY-45/2.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-CTN-LIGHTGREY-45/3.webp",
+        "altText": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-CTN-LIGHTGREY-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-BP-INSERT-1PC",
+    "asin": "MK-BP-INSERT-1PC",
+    "title": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
+    "handle": "long-body-pillow-insert-54x20-mk-bp-insert-1pc",
+    "description": "Full-Body Support: The extra-long 137 x 51 cm (54 x 20 in) pillow cradles your body for side sleeping, lounging, reading or pregnancy support. Soft Breathable Fill: Generously filled with plush polyester fiber that balances softness and support and fluffs back easily. Smooth Brushed Shell: A soft brushed microfiber shell in clean white that fits any body pillow cover. Versatile Comfort: Ideal for beds, daybeds and sofas — use it as a hug pillow, backrest or leg support. Easy Care: Machine washable on a gentle cycle; tumble dry low to restore loft.",
+    "descriptionHtml": "<p>Full-Body Support: The extra-long 137 x 51 cm (54 x 20 in) pillow cradles your body for side sleeping, lounging, reading or pregnancy support.</p><p>Soft Breathable Fill: Generously filled with plush polyester fiber that balances softness and support and fluffs back easily.</p><p>Smooth Brushed Shell: A soft brushed microfiber shell in clean white that fits any body pillow cover.</p><p>Versatile Comfort: Ideal for beds, daybeds and sofas — use it as a hug pillow, backrest or leg support.</p><p>Easy Care: Machine washable on a gentle cycle; tumble dry low to restore loft.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-BP-INSERT-1PC/1.webp",
+        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-BP-INSERT-1PC/2.webp",
+        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-BP-INSERT-1PC/3.webp",
+        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-BP-INSERT-1PC/4.webp",
+        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "35.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-BP-INSERT-1PC",
+        "title": "Default Title",
+        "price": {
+          "amount": "35.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
   }
 ];
 
@@ -5998,16 +7081,24 @@ function normalizeCategory(t: string, title = ''): string {
   if (t.toLowerCase() === 'pillows' && /chair cushion/i.test(title)) return 'Cushions';
   // 枕套/枕芯类按全站规则（classify: pillowcase/insert → Pillows）从 Others 归正（如 B0F62QGV32 / B0GJLVMHT7）
   if (t.toLowerCase() === 'others' && /pillow ?case|(pillow|cushion) insert|pillow stuffer/i.test(title)) return 'Pillows';
+  // 颈枕归正到 Pillows（2026-10-08 用户定：Pillows 新增 Neck Pillows 子类目，颈枕从 Others/Travel 移入）
+  if ((t.toLowerCase() === 'travel' || t.toLowerCase() === 'others') && /neck pillow/i.test(title)) return 'Pillows';
   return CATEGORY_MERGE[t.toLowerCase()] || t;
 }
 
 /** 全站隐藏的产品（2026-09-30 用户定）：
  *  - 4 款天鹅绒充气颈枕不再展示、不放入任何类目（前缀匹配）
  *  - 8 款枕套全站隐藏（Pillow Cases 子类目整体移除；注意同变体族的 3 款 cushion covers
- *    b0gjlsdz52/b0gjldmt57/b0gjlmjws1 是抱枕套、不在隐藏之列；duvset 标题含 pillowcases
- *    但是床品套装，也不在隐藏之列） */
+ *    b0gjlsdz52/b0gjldmt57/b0gjlmjws1 三款抱枕套 2026-10-08 起也已隐藏；duvset 标题含 pillowcases
+ *    但是床品套装，不在隐藏之列） */
 const HIDDEN_HANDLE_PREFIXES = ['inflatable-travel-pillow-'];
 const HIDDEN_HANDLES = new Set([
+  // 2026-10-08 用户定：B0H4V662HL（45×45 枕芯）与 B0CQC6H9MZ 重复，全站移除
+  'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl',
+  // 2026-10-08 用户定：3 款压花枕套全站移除（Pillow Cases 类目将改为 Decorative Pillow Cases 装饰枕套）
+  'makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52',
+  'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57',
+  'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1',
   'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
   'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1',
   'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g',

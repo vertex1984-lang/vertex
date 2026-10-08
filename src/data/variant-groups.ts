@@ -284,9 +284,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0f62y3xt9', handle: 'premium-square-throw-pillow-inserts-60-x-60-cm-set-of-2-b0f62y3xt9', color: 'White', size: '60 x 60 cm' },
     { asin: 'b0f62zy8zn', handle: 'square-throw-pillow-inserts-50-x-50-cm-set-of-2-cushion-b0f62zy8zn', color: 'White', size: '50 x 50 cm' },
-    { asin: 'b0h4v662hl', handle: 'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl', color: 'White', size: '45 x 45 cm' },
     { asin: 'b0f62qgv32', handle: 'makimoo-square-cushion-inserts-30-x-30-cm-set-of-2-soft-b0f62qgv32', color: 'White', size: '30 x 30 cm' },
-    { asin: 'b0g6mptvfd', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6mptvfd', color: 'White', size: '45 x 45 cm' },
     { asin: 'b0cqc6h9mz', handle: 'throw-pillow-inserts-45cm-x-45cm-18-x-18-cushion-inserts-hol-b0cqc6h9mz', color: 'White', size: '45 x 45 cm' },
     { asin: 'b0cqc5qjfj', handle: 'throw-pillow-inserts-40cm-x-40cm-16-x-16-cushion-inserts-hol-b0cqc5qjfj', color: 'White', size: '40 x 40 cm' },
     { asin: 'b0f62xrb55', handle: 'throw-pillow-inserts-35-x-35cm-14-x-14-cushion-inserts-hollo-b0f62xrb55', color: 'White', size: '35 x 35 cm' },
@@ -299,7 +297,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
     { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
     { asin: 'b0cqbzm49v', handle: 'throw-pillow-inserts-30-x-50cm-12-x-20-cushion-inserts-hollo-b0cqbzm49v', color: 'White', size: '30 x 50 cm' },
-    { asin: 'b0g6m3f7cy', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6m3f7cy', color: 'White', size: '30 x 50 cm' },
     ],
   },
   {
@@ -308,6 +305,14 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0gxwm4n7j', handle: 'makimoo-quilted-square-cushion-inserts-set-of-2-decorative-b0gxwm4n7j', color: 'White', size: '40 x 40 cm' },
     { asin: 'b0g6lxsf4t', handle: 'makimoo-quilted-throw-pillow-inserts-40-x-40-cm-pack-of-2-b0g6lxsf4t', color: 'White', size: '40 x 40 cm' },
+    { asin: 'b0g6mptvfd', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6mptvfd', color: 'White', size: '45 x 45 cm' },
+    ],
+  },
+  {
+    id: 'b0-inserts-quilted-rect',
+    optionName: 'Size',
+    members: [
+    { asin: 'b0g6m3f7cy', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6m3f7cy', color: 'White', size: '30 x 50 cm' },
     { asin: 'b0grj8m3tm', handle: 'makimoo-quilted-pillow-inserts-2-pack-decorative-cushion-b0grj8m3tm', color: 'White', size: '40 x 80 cm' },
     ],
   },
@@ -625,6 +630,40 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: '1688-1048207560416-C2', handle: 'cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2', color: 'Milkshake White', size: '150 x 200 cm' },
     { asin: '1688-1048207560416', handle: 'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416', color: 'Milkshake White', size: '180 x 220 cm' },
+    ],
+  },
+  // 2026-10-08：Corduroy 装饰枕套（5 色 × 2 尺寸，MK- 自有产品）
+  {
+    id: 'mk-pc-cord',
+    optionName: 'Color',
+    members: [
+    { asin: 'mk-pc-cord-caramel', handle: 'corduroy-pillow-covers-caramel-40x40-mk-pc-cord-caramel', color: 'Caramel', size: '40 x 40 cm' },
+    { asin: 'mk-pc-cord-caramel-45', handle: 'corduroy-pillow-covers-caramel-45x45-mk-pc-cord-caramel-45', color: 'Caramel', size: '45 x 45 cm' },
+    { asin: 'mk-pc-cord-dustyrose', handle: 'corduroy-pillow-covers-dustyrose-40x40-mk-pc-cord-dustyrose', color: 'Dusty Rose', size: '40 x 40 cm' },
+    { asin: 'mk-pc-cord-dustyrose-45', handle: 'corduroy-pillow-covers-dustyrose-45x45-mk-pc-cord-dustyrose-45', color: 'Dusty Rose', size: '45 x 45 cm' },
+    { asin: 'mk-pc-cord-olive', handle: 'corduroy-pillow-covers-olive-40x40-mk-pc-cord-olive', color: 'Olive', size: '40 x 40 cm' },
+    { asin: 'mk-pc-cord-olive-45', handle: 'corduroy-pillow-covers-olive-45x45-mk-pc-cord-olive-45', color: 'Olive', size: '45 x 45 cm' },
+    { asin: 'mk-pc-cord-dustyblue', handle: 'corduroy-pillow-covers-dustyblue-40x40-mk-pc-cord-dustyblue', color: 'Dusty Blue', size: '40 x 40 cm' },
+    { asin: 'mk-pc-cord-dustyblue-45', handle: 'corduroy-pillow-covers-dustyblue-45x45-mk-pc-cord-dustyblue-45', color: 'Dusty Blue', size: '45 x 45 cm' },
+    { asin: 'mk-pc-cord-charcoal', handle: 'corduroy-pillow-covers-charcoal-40x40-mk-pc-cord-charcoal', color: 'Charcoal', size: '40 x 40 cm' },
+    { asin: 'mk-pc-cord-charcoal-45', handle: 'corduroy-pillow-covers-charcoal-45x45-mk-pc-cord-charcoal-45', color: 'Charcoal', size: '45 x 45 cm' },
+    ],
+  },
+  // 2026-10-08：Cotton-Like 装饰枕套（5 色 × 2 尺寸，MK- 自有产品）
+  {
+    id: 'mk-pc-ctn',
+    optionName: 'Color',
+    members: [
+    { asin: 'mk-pc-ctn-sage', handle: 'cotton-like-pillow-covers-sage-40x40-mk-pc-ctn-sage', color: 'Sage', size: '40 x 40 cm' },
+    { asin: 'mk-pc-ctn-sage-45', handle: 'cotton-like-pillow-covers-sage-45x45-mk-pc-ctn-sage-45', color: 'Sage', size: '45 x 45 cm' },
+    { asin: 'mk-pc-ctn-cream', handle: 'cotton-like-pillow-covers-cream-40x40-mk-pc-ctn-cream', color: 'Cream', size: '40 x 40 cm' },
+    { asin: 'mk-pc-ctn-cream-45', handle: 'cotton-like-pillow-covers-cream-45x45-mk-pc-ctn-cream-45', color: 'Cream', size: '45 x 45 cm' },
+    { asin: 'mk-pc-ctn-blush', handle: 'cotton-like-pillow-covers-blush-40x40-mk-pc-ctn-blush', color: 'Blush', size: '40 x 40 cm' },
+    { asin: 'mk-pc-ctn-blush-45', handle: 'cotton-like-pillow-covers-blush-45x45-mk-pc-ctn-blush-45', color: 'Blush', size: '45 x 45 cm' },
+    { asin: 'mk-pc-ctn-dustyblue', handle: 'cotton-like-pillow-covers-dustyblue-40x40-mk-pc-ctn-dustyblue', color: 'Dusty Blue', size: '40 x 40 cm' },
+    { asin: 'mk-pc-ctn-dustyblue-45', handle: 'cotton-like-pillow-covers-dustyblue-45x45-mk-pc-ctn-dustyblue-45', color: 'Dusty Blue', size: '45 x 45 cm' },
+    { asin: 'mk-pc-ctn-lightgrey', handle: 'cotton-like-pillow-covers-lightgrey-40x40-mk-pc-ctn-lightgrey', color: 'Light Grey', size: '40 x 40 cm' },
+    { asin: 'mk-pc-ctn-lightgrey-45', handle: 'cotton-like-pillow-covers-lightgrey-45x45-mk-pc-ctn-lightgrey-45', color: 'Light Grey', size: '45 x 45 cm' },
     ],
   },
 ];

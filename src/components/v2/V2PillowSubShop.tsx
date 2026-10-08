@@ -14,7 +14,7 @@ import {
 
 /**
  * Pillows 二级类目页选购区（2026-09-30 用户定：展示方法与逻辑完全对齐 /bedding/bed-sets/）：
- * - 形态页（/pillows/bed-pillows/ 等）：按材质分区，筛选项 = Material 下拉
+ * - 形态页（/pillows/pillow-inserts/ 等）：按材质分区，筛选项 = Material 下拉
  * - 材质页（/pillows/down-alternative/ 等）：按形态分区，筛选项 = Type 下拉
  * - 选中 = 只渲染该分区；零结果给友好提示 + Clear Filters（不留死路）
  * - 不叠 badge：页标题（形态/材质）+ 分区标题（另一维度）已把两个维度都表达
@@ -122,6 +122,19 @@ export default function V2PillowSubShop({
       )}
 
       {sections.length === 0 ? (
+        filtered.length > 0 ? (
+          /* 2026-10-08：产品存在但不命中任何分区 taxon（如枕套无填充材质）时，
+             直接平铺网格，不再误报 "No pillows match this filter." */
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
+            {filtered.map((p) => (
+              <BeddingSetCard
+                key={p.id}
+                family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
+                paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+              />
+            ))}
+          </div>
+        ) : (
         <div className="py-14 lg:py-20 text-center">
           <p className="text-base lg:text-lg font-semibold text-charcoal">No pillows match this filter.</p>
           <button
@@ -132,6 +145,7 @@ export default function V2PillowSubShop({
             Clear Filters
           </button>
         </div>
+        )
       ) : (
         sections.map((s, i) => (
           <section
