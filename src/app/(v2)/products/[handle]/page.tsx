@@ -8,7 +8,6 @@ import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
 import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
-import { VARIANT_THUMB_CROPS } from '@/data/variant-thumb-crops';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
 import { buildSetFamilies } from '@/data/bedding-families';
 import { getPdpRelatedProducts } from '@/data/home-sections';
@@ -83,16 +82,13 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         const toVariant = (m: (typeof group.members)[number]) => {
           const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
           const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
-          // 色点缩略图：挂画家族优先用裁剪版（thumb-crop.webp，完整花型）；否则优先白底图（imageWhiteBg 与 shopifyImages 同源同序，见 products.ts applyMaterialsData）
-          const wbIdx = ep?.imageWhiteBg?.indexOf(true) ?? -1;
-          const wbThumb = wbIdx >= 0 ? ep?.shopifyImages?.[wbIdx] : undefined;
-          const cropThumb = VARIANT_THUMB_CROPS[m.asin.toLowerCase()];
+          // 色点缩略图：一律用产品首图（shopifyImages[0]，与 PDP 图集首图同源，随主图更新自动同步）
           return {
             asin: m.asin,
             handle: m.handle,
             color: m.color,
             size: m.size,
-            thumb: cropThumb || wbThumb || ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
+            thumb: ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
             inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : (ep.availableForSale === true)) : false,
           };
         };

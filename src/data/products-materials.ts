@@ -309,64 +309,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0GD84D8VC"
   },
   {
-    "id": "makimoo-B0GD93XKHR",
-    "asin": "B0GD93XKHR",
-    "title": "Makimoo Set of 2 Thick Comfortable Tufted Colorful Floral Chair Cushions Square Seat Pads with Ties for Indoor Outdoor Dining Patio Kitchen Office 43 x 43 cm (Multicolor)",
-    "handle": "makimoo-set-of-2-thick-comfortable-tufted-colorful-floral-b0gd93xkhr",
-    "description": "Vibrant Floral Design: Brighten your dining, patio, kitchen, or office seating with a cheerful multicolor flower pattern that adds a lively touch to any decor style. Comfortable Seating Support: Each cushion is generously padded with soft, resilient fill to help ease pressure and provide a cozy seat for meals, work, or outdoor relaxation. Secure Tie Straps: Matching fabric ties on each cushion fasten easily to chair frames, keeping the pad steady and in place when you sit down or stand up. Versatile Indoor and Outdoor Use: Sized at 43 x 43cm, these square seat pads work beautifully on dining chairs, patio sets, kitchen stools, and desk chairs. Easy Care Construction: The quality fabric cover and tufted stitching help the cushions hold their shape over time; simply spot clean to maintain a fresh, colorful look.",
-    "descriptionHtml": "<p>Vibrant Floral Design: Brighten your dining, patio, kitchen, or office seating with a cheerful multicolor flower pattern that adds a lively touch to any decor style.</p><p>Comfortable Seating Support: Each cushion is generously padded with soft, resilient fill to help ease pressure and provide a cozy seat for meals, work, or outdoor relaxation.</p><p>Secure Tie Straps: Matching fabric ties on each cushion fasten easily to chair frames, keeping the pad steady and in place when you sit down or stand up.</p><p>Versatile Indoor and Outdoor Use: Sized at 43 x 43cm, these square seat pads work beautifully on dining chairs, patio sets, kitchen stools, and desk chairs.</p><p>Easy Care Construction: The quality fabric cover and tufted stitching help the cushions hold their shape over time; simply spot clean to maintain a fresh, colorful look.</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/B0GD93XKHR/1.webp",
-        "altText": "Makimoo Set of 2 Thick Comfortable Tufted Colorful Floral Chair Cushions Square Seat Pads with Ties for Indoor Outdoor Dining Patio Kitchen Office 43 x 43 cm (Multicolor)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD93XKHR/2.webp",
-        "altText": "Makimoo Set of 2 Thick Comfortable Tufted Colorful Floral Chair Cushions Square Seat Pads with Ties for Indoor Outdoor Dining Patio Kitchen Office 43 x 43 cm (Multicolor)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD93XKHR/3.webp",
-        "altText": "Makimoo Set of 2 Thick Comfortable Tufted Colorful Floral Chair Cushions Square Seat Pads with Ties for Indoor Outdoor Dining Patio Kitchen Office 43 x 43 cm (Multicolor)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD93XKHR/4.webp",
-        "altText": "Makimoo Set of 2 Thick Comfortable Tufted Colorful Floral Chair Cushions Square Seat Pads with Ties for Indoor Outdoor Dining Patio Kitchen Office 43 x 43 cm (Multicolor)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0GD93XKHR",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0GD93XKHR"
-  },
-  {
     "id": "makimoo-B0GJLPXB6F",
     "asin": "B0GJLPXB6F",
     "title": "Makimoo Water-Resistant Tufted Round Seat Cushions Set of 2 Thick Soft Velvet Solid Color Chair Pads for Indoor Outdoor Patio Dining Kitchen Floor Seating 47 x 8 cm (Angora Red)",
@@ -931,64 +873,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0DSGCLBVW"
   },
   {
-    "id": "makimoo-B0GD7RR5PH",
-    "asin": "B0GD7RR5PH",
-    "title": "Makimoo Outdoor Chair Cushions 2 Pack, Thick Tufted Square Seat Pads with Ties for Patio Dining and Garden Chairs, Water-Resistant Fabric, 43 x 43 cm (Black Purple Floral)",
-    "handle": "makimoo-outdoor-chair-cushions-2-pack-thick-tufted-square-b0gd7rr5ph",
-    "description": "Vibrant Floral Style: A bold black-purple botanical print instantly brightens patios, decks, porches and garden dining spaces with a fresh, decorative look. Plush Everyday Comfort: Each generously padded 43 x 43cm cushion offers soft, supportive seating for long outdoor meals, morning coffee and relaxed entertaining. Secure Tie-On Fit: Sturdy attached fabric straps keep each pad neatly in place on standard patio chairs, helping prevent slipping or shifting as you sit and stand. Outdoor-Ready Fabric: The water-resistant cover is made to handle daily sun exposure and light moisture, making it a practical choice for open-air seating areas. Easy-Care Two-Pack: Sold as a matching set of two cushions, these seat pads fit most dining and occasional chairs and wipe clean for simple, low-maintenance upkeep.",
-    "descriptionHtml": "<p>Vibrant Floral Style: A bold black-purple botanical print instantly brightens patios, decks, porches and garden dining spaces with a fresh, decorative look.</p><p>Plush Everyday Comfort: Each generously padded 43 x 43cm cushion offers soft, supportive seating for long outdoor meals, morning coffee and relaxed entertaining.</p><p>Secure Tie-On Fit: Sturdy attached fabric straps keep each pad neatly in place on standard patio chairs, helping prevent slipping or shifting as you sit and stand.</p><p>Outdoor-Ready Fabric: The water-resistant cover is made to handle daily sun exposure and light moisture, making it a practical choice for open-air seating areas.</p><p>Easy-Care Two-Pack: Sold as a matching set of two cushions, these seat pads fit most dining and occasional chairs and wipe clean for simple, low-maintenance upkeep.</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/B0GD7RR5PH/1.webp",
-        "altText": "Makimoo Outdoor Chair Cushions 2 Pack, Thick Tufted Square Seat Pads with Ties for Patio Dining and Garden Chairs, Water-Resistant Fabric, 43 x 43 cm (Black Purple Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD7RR5PH/2.webp",
-        "altText": "Makimoo Outdoor Chair Cushions 2 Pack, Thick Tufted Square Seat Pads with Ties for Patio Dining and Garden Chairs, Water-Resistant Fabric, 43 x 43 cm (Black Purple Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD7RR5PH/3.webp",
-        "altText": "Makimoo Outdoor Chair Cushions 2 Pack, Thick Tufted Square Seat Pads with Ties for Patio Dining and Garden Chairs, Water-Resistant Fabric, 43 x 43 cm (Black Purple Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0GD7RR5PH/4.webp",
-        "altText": "Makimoo Outdoor Chair Cushions 2 Pack, Thick Tufted Square Seat Pads with Ties for Patio Dining and Garden Chairs, Water-Resistant Fabric, 43 x 43 cm (Black Purple Floral)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0GD7RR5PH",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0GD7RR5PH"
-  },
-  {
     "id": "makimoo-B0F62QGV32",
     "asin": "B0F62QGV32",
     "title": "Makimoo Square Cushion Inserts 30 x 30 cm Set of 2 Soft Plush Pillow Stuffer for Sofa Couch Bed Versatile Decorative Throw Pillow Filling Fluffy Supportive Inner Pads (White)",
@@ -1103,144 +987,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0DSGCKWXW"
-  },
-  {
-    "id": "makimoo-B0CW1TBZV3",
-    "asin": "B0CW1TBZV3",
-    "title": "Makimoo 2 Pack Chair Cushions with Backrest and Seat, Tufted Padded Patio Dining Chair Pads with Ties for Indoor Outdoor Furniture, Ornate Medallion, 95 x 45 cm (Green Lantern)",
-    "handle": "makimoo-2-pack-chair-cushions-with-backrest-and-seat-tufted-b0cw1tbzv3",
-    "description": "Set of 2 Chair Cushions: Each package includes two matching seat-and-back cushions designed to add comfort and style to dining chairs, patio chairs, or kitchen seating. Ergonomic Seat-and-Back Support: The generously padded cushion measures 95 x 45cm and supports both the seat and lower back, helping you relax during long meals or conversations. Secure Corner Ties: Four attached fabric ties make it easy to fasten each cushion to chair rails or spindles, keeping the pad neatly in place when you sit down or stand up. Elegant Green Lantern Pattern: The ornate medallion print in rich green and white brings a decorative, timeless look to indoor and outdoor spaces while complementing a variety of furniture finishes. Durable, Easy-Care Construction: Tufted stitching helps the filling stay evenly distributed, and the smooth cover wipes clean with a damp cloth for everyday maintenance.",
-    "descriptionHtml": "<p>Set of 2 Chair Cushions: Each package includes two matching seat-and-back cushions designed to add comfort and style to dining chairs, patio chairs, or kitchen seating.</p><p>Ergonomic Seat-and-Back Support: The generously padded cushion measures 95 x 45cm and supports both the seat and lower back, helping you relax during long meals or conversations.</p><p>Secure Corner Ties: Four attached fabric ties make it easy to fasten each cushion to chair rails or spindles, keeping the pad neatly in place when you sit down or stand up.</p><p>Elegant Green Lantern Pattern: The ornate medallion print in rich green and white brings a decorative, timeless look to indoor and outdoor spaces while complementing a variety of furniture finishes.</p><p>Durable, Easy-Care Construction: Tufted stitching helps the filling stay evenly distributed, and the smooth cover wipes clean with a damp cloth for everyday maintenance.</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/B0CW1TBZV3/1.webp",
-        "altText": "Makimoo 2 Pack Chair Cushions with Backrest and Seat, Tufted Padded Patio Dining Chair Pads with Ties for Indoor Outdoor Furniture, Ornate Medallion, 95 x 45 cm (Green Lantern)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW1TBZV3",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW1TBZV3"
-  },
-  {
-    "id": "makimoo-B0CW1LDN6L",
-    "asin": "B0CW1LDN6L",
-    "title": "Outdoor Chair Cushions 2 Pack, Tufted Patio Seat Pads with Ties, 95 x 45 cm, Fade Resistant Garden Furniture Cushions for Dining Chairs and Patio Seating (Green Floral)",
-    "handle": "outdoor-chair-cushions-2-pack-tufted-patio-seat-pads-with-b0cw1ldn6l",
-    "description": "Plush Comfort for Extended Relaxing: Generously filled with supportive padding, these tufted chair cushions measure 95 x 45cm to deliver a soft, inviting seat for patio dining, garden lounging, and everyday outdoor seating. Stays Securely in Place: Each cushion features durable fabric ties at the corners, allowing you to fasten them firmly to chair frames so they remain positioned and resist slipping during use. Vibrant Floral Style: The green base showcases an elegant botanical pattern with warm orange and yellow blooms, adding a fresh, decorative accent to your patio, deck, balcony, or backyard furniture. Built for Outdoor Living: Crafted from resilient, fade-resistant fabric, these cushions are designed to maintain their color and shape through sunny afternoons, light rain, and regular seasonal use. Convenient Two-Pack Value: Receive two matching cushions in one set, making it simple to coordinate seating for a bistro set, dining chairs, or additional outdoor seating arrangements.",
-    "descriptionHtml": "<p>Plush Comfort for Extended Relaxing: Generously filled with supportive padding, these tufted chair cushions measure 95 x 45cm to deliver a soft, inviting seat for patio dining, garden lounging, and everyday outdoor seating.</p><p>Stays Securely in Place: Each cushion features durable fabric ties at the corners, allowing you to fasten them firmly to chair frames so they remain positioned and resist slipping during use.</p><p>Vibrant Floral Style: The green base showcases an elegant botanical pattern with warm orange and yellow blooms, adding a fresh, decorative accent to your patio, deck, balcony, or backyard furniture.</p><p>Built for Outdoor Living: Crafted from resilient, fade-resistant fabric, these cushions are designed to maintain their color and shape through sunny afternoons, light rain, and regular seasonal use.</p><p>Convenient Two-Pack Value: Receive two matching cushions in one set, making it simple to coordinate seating for a bistro set, dining chairs, or additional outdoor seating arrangements.</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/B0CW1LDN6L/1.webp",
-        "altText": "Outdoor Chair Cushions 2 Pack, Tufted Patio Seat Pads with Ties, 95 x 45 cm, Fade Resistant Garden Furniture Cushions for Dining Chairs and Patio Seating (Green Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1LDN6L/2.webp",
-        "altText": "Outdoor Chair Cushions 2 Pack, Tufted Patio Seat Pads with Ties, 95 x 45 cm, Fade Resistant Garden Furniture Cushions for Dining Chairs and Patio Seating (Green Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1LDN6L/3.webp",
-        "altText": "Outdoor Chair Cushions 2 Pack, Tufted Patio Seat Pads with Ties, 95 x 45 cm, Fade Resistant Garden Furniture Cushions for Dining Chairs and Patio Seating (Green Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1LDN6L/4.webp",
-        "altText": "Outdoor Chair Cushions 2 Pack, Tufted Patio Seat Pads with Ties, 95 x 45 cm, Fade Resistant Garden Furniture Cushions for Dining Chairs and Patio Seating (Green Floral)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW1LDN6L",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW1LDN6L"
-  },
-  {
-    "id": "makimoo-B0CW17PZYT",
-    "asin": "B0CW17PZYT",
-    "title": "2-Piece Patio Chair Cushion Set with Backrest and Seat Pad, Thick Tufted Outdoor Dining Seat Cushions with Secure Ties for Garden Balcony Deck, 95 x 45 cm (Multicolor)",
-    "handle": "2-piece-patio-chair-cushion-set-with-backrest-and-seat-pad-b0cw17pzyt",
-    "description": "Complete Two-Piece Design: This set includes a matching backrest cushion and a contoured seat cushion that work together to support your back and bottom through long lunches, family dinners, or relaxed morning coffee on the patio. Stays Securely in Place: Both pieces feature strong corner ties that loop easily around chair frames and rails, helping keep the cushions from sliding or shifting when you sit down or stand up. Cheerful Floral Style: The bright multicolor flower print brings a lively, garden-inspired feel to patio dining sets, balconies, decks, sunrooms, and breakfast nooks, making it easy to refresh your decor. Plush Tufted Comfort: Thick padded filling and deep tufting create a soft yet resilient seat that invites you to linger comfortably both outdoors and indoors. Sized for Standard Chairs: Measuring 95 x 45cm, these cushions are designed to fit many standard patio dining and bistro chairs, offering an easy way to add coordinated color and cushioning to your seating.",
-    "descriptionHtml": "<p>Complete Two-Piece Design: This set includes a matching backrest cushion and a contoured seat cushion that work together to support your back and bottom through long lunches, family dinners, or relaxed morning coffee on the patio.</p><p>Stays Securely in Place: Both pieces feature strong corner ties that loop easily around chair frames and rails, helping keep the cushions from sliding or shifting when you sit down or stand up.</p><p>Cheerful Floral Style: The bright multicolor flower print brings a lively, garden-inspired feel to patio dining sets, balconies, decks, sunrooms, and breakfast nooks, making it easy to refresh your decor.</p><p>Plush Tufted Comfort: Thick padded filling and deep tufting create a soft yet resilient seat that invites you to linger comfortably both outdoors and indoors.</p><p>Sized for Standard Chairs: Measuring 95 x 45cm, these cushions are designed to fit many standard patio dining and bistro chairs, offering an easy way to add coordinated color and cushioning to your seating.</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/B0CW17PZYT/1.webp",
-        "altText": "2-Piece Patio Chair Cushion Set with Backrest and Seat Pad, Thick Tufted Outdoor Dining Seat Cushions with Secure Ties for Garden Balcony Deck, 95 x 45 cm (Multicolor)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW17PZYT",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW17PZYT"
   },
   {
     "id": "makimoo-B0CJHL4LZP",
@@ -2416,6 +2162,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Outdoor Chair Cushions Set of 4 Thick Padded All-Weather Patio High Back Seat Pads with Ties 110 x 55 cm Garden Furniture Cushion Durable Floral Bird Pattern (Beige)",
         "width": 800,
         "height": 800
+      },
+      {
+        "url": "/images/products/B0BCJW18SP/6.webp",
+        "altText": "Makimoo Outdoor Chair Cushions Set of 4 Thick Padded All-Weather Patio High Back Seat Pads with Ties 110 x 55 cm Garden Furniture Cushion Durable Floral Bird Pattern (Beige)",
+        "width": 800,
+        "height": 800
       }
     ],
     "priceRange": {
@@ -2477,6 +2229,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/B0BCJRTF3X/5.webp",
+        "altText": "Makimoo Outdoor Chair Cushions Set of 4 Water-Resistant Thick Tufted High Back Patio Seat Pads 110 x 55 cm with Ties for Garden Lawn Dining Chairs (Tropical Green Leaf)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/B0BCJRTF3X/6.webp",
         "altText": "Makimoo Outdoor Chair Cushions Set of 4 Water-Resistant Thick Tufted High Back Patio Seat Pads 110 x 55 cm with Ties for Garden Lawn Dining Chairs (Tropical Green Leaf)",
         "width": 800,
         "height": 800

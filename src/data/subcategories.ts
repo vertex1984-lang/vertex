@@ -1,6 +1,7 @@
 // 二级分类注册表（key 用于 URL ?sub= 参数；parent 为顶级分类小写值）
 // 判定规则见 classifyProduct：标题关键词 + 尺寸带（数据来自 product-specs / specs-overrides）
 import { getProductSpecs } from '@/lib/specs';
+import { getVariantGroupOf } from '@/data/variant-groups';
 
 export interface CategoryDef {
   label: string;
@@ -31,11 +32,11 @@ export interface SubcategoryDef {
 }
 
 export const SUBCATEGORIES: SubcategoryDef[] = [
-  // Cushions（按形态/尺寸分组）
-  { key: 'rocking', parent: 'cushions', label: 'Rocking Chair', shortLabel: 'Rocking Chair', blurb: 'Two-piece tufted sets sized for classic rocking chairs.' },
-  { key: 'hb-medium', parent: 'cushions', label: 'High-Back Medium', shortLabel: 'High-Back Medium', blurb: 'One-piece high-back comfort for normal sized chairs.' },
-  { key: 'hb-large', parent: 'cushions', label: 'High-Back Large', shortLabel: 'High-Back Large', blurb: 'One-piece high-back cushions for larger chairs.' },
-  { key: 'seat-pad', parent: 'cushions', label: 'Seat Pads', shortLabel: 'Seat Pads', blurb: 'Simple tufted pads for dining & desk chairs.' },
+  // Cushions（2026-10-09 用户定：按风格分 3 类，按变体组归位不拆组，见 classifyCushion；
+  //  展示顺序用户定：Corduroy 置顶，Solids 其次，Prints 最后）
+  { key: 'corduroy', parent: 'cushions', label: 'Corduroy Classics', shortLabel: 'Corduroy', blurb: 'Ribbed corduroy comfort.' },
+  { key: 'solids', parent: 'cushions', label: 'Soft Solids', shortLabel: 'Solids', blurb: 'Quiet tones for any space.' },
+  { key: 'prints', parent: 'cushions', label: 'Floral & Prints', shortLabel: 'Prints', blurb: 'Prints to brighten every seat.' },
   // Pillows（2026-10-08 用户定：改为 枕芯 / 枕套 / 颈枕 三类）
   { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
   { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
@@ -111,39 +112,28 @@ export function productCategoryTag(p: { productType: string; subcategory?: strin
   return sub?.shortLabel || p.productType || 'Product';
 }
 
-/** 尺寸带：110 = 110×55 高背连体；95 = 95×45（含 90×45）；43 = 43×43 方形坐垫；twin = 50×43 摇椅两件套 */
-type CushionBand = '110' | '95' | '43' | 'twin' | null;
-
-function cushionBand(asin: string, title: string): CushionBand {
-  const dims = getProductSpecs(asin)?.dimensionsCm;
-  if (dims && dims.length >= 2) {
-    const longest = Math.max(...dims);
-    const second = [...dims].sort((a, b) => b - a)[1];
-    if (longest >= 105 && longest <= 115) return '110';
-    if (longest >= 88 && longest <= 100) return '95';
-    // 50×43 上下两件套（摇椅垫，标题标注 95×45）
-    if (longest >= 48 && longest <= 52 && second >= 40 && second <= 46) return 'twin';
-    // 43×43 方形坐垫（47×8 圆形坐垫也归 Seat Pads）
-    if (longest >= 40 && longest <= 48) return '43';
-    return null;
-  }
-  // 无尺寸数据时按标题兜底（如 18.5-Inch 坐垫）
-  if (/seat (cushion )?pad|1[78](\.\d)?[ -]?inch|1[78](\.\d)?"/i.test(title)) return '43';
-  if (/110\s*x\s*5[35]/i.test(title)) return '110';
-  if (/9[05]\s*x\s*4[56]/i.test(title)) return '95';
-  if (/43\s*x\s*43/i.test(title)) return '43';
-  return null;
-}
+/** 2026-10-09 用户定：cushions 二级分类改为按风格 3 类（prints / solids / corduroy），
+ *  按变体组归位（组 = 风格单元，不拆组）；无变体组的新品按标题关键词兜底 */
+const CUSHION_GROUP_SUB: Record<string, string> = {
+  'b0-seat-cushions': 'prints',
+  'outdoor-95x45': 'prints',
+  'outdoor-110x55': 'prints',
+  'b0-highback-4pk': 'prints',
+  'b0-round-cushions': 'solids',
+  'b0-highback-2pk': 'solids',
+  'outdoor-110x53': 'solids',
+  'b0-seat-cushions-wr': 'solids',
+  'b0-rocking-95x45': 'corduroy',
+};
 
 function classifyCushion(title: string, asin: string): string {
-  if (/rocking/i.test(title)) return 'rocking';
-  const band = cushionBand(asin, title);
-  if (band === 'twin') return 'rocking';
-  if (band === '95') return 'hb-medium';
-  if (band === '110') return 'hb-large';
-  if (band === '43') return 'seat-pad';
-  // 无尺寸且标题无法判定的兜底：高背关键词进 Medium，其余进 Seat Pads
-  return /high[- ]?back/i.test(title) ? 'hb-medium' : 'seat-pad';
+  const g = getVariantGroupOf(asin);
+  const sub = g ? CUSHION_GROUP_SUB[g.id] : undefined;
+  if (sub) return sub;
+  if (/corduroy|rocking/i.test(title)) return 'corduroy';
+  if (/floral|flower|paisley|botanical|leaf|leaves|bird|butterfly|tulip|jungle|print|stripe|plaid|check|geometric|lattice|houndstooth|batik|watercolor|monet|oil painting/i.test(title))
+    return 'prints';
+  return 'solids';
 }
 
 function classifyPillow(title: string): string {
@@ -205,11 +195,8 @@ function classifyBedding(asin: string): string | undefined {
  * 计算产品的二级分类 key；不属于五大类目时返回 undefined。
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
  */
-// 手工指定二级分类（用户确认）：三个连体靠背垫归 Rocking Chair
+// 手工指定二级分类（用户确认时在此加 asin → sub key 条目）
 const SUB_OVERRIDES: Record<string, string> = {
-  b0cw1tbzv3: 'rocking',
-  b0cw17pzyt: 'rocking',
-  b0cw1ldn6l: 'rocking',
 };
 
 export function classifyProduct(productType: string, title: string, asin: string): string | undefined {

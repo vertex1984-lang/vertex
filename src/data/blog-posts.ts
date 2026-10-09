@@ -470,12 +470,6 @@ export const BLOG_POSTS: BlogPost[] = [
             name: "Tufted Houndstooth Seat Pads with Ties, Set of 2 — Navy Blue",
             desc: "The standard dining-chair size: a 43 × 43 cm tufted pad with ties to anchor it in place.",
           },
-          {
-            key: "b0cw19gmpq",
-            category: "High-Back Set · 95 × 45 cm",
-            name: "Chair Cushion Set with Backrest and Seat Pads — Navy Houndstooth",
-            desc: "The two-piece dining-chair format: square back pad plus contoured seat pad, both with corner ties.",
-          },
         ],
       },
       { type: "h2", text: "Three fit mistakes to avoid" },

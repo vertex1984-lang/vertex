@@ -105,248 +105,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B098F1BKJQ"
   },
   {
-    "id": "makimoo-B0BBZSGDBQ",
-    "asin": "B0BBZSGDBQ",
-    "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-    "handle": "set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0bbzsgdbq",
-    "description": "Outdoor/patio cushion made of durable 100% polyester canvas with ties for attaching to garden/patio furniture. Effortlessly enhancing the looks of your home/garden, our cushions for outdoor furniture come in a range of simple yet vibrant colors. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 44 x21x4.50 inch ( (LxWxH); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester canvas with ties for attaching to garden/patio furniture</p><p>Effortlessly enhancing the looks of your home/garden, our cushions for outdoor furniture come in a range of simple yet vibrant colors</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 44 x21x4.50 inch ( (LxWxH); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0BBZSGDBQ/1.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/2.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/3.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/4.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/5.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/6.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/7.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_h0y52fh0y52fh0y5.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776244917658.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZSGDBQ/nano-banana-pro-1776265366343.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blooming Fiesta",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0BBZSGDBQ",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BBZSGDBQ"
-  },
-  {
-    "id": "makimoo-B0BBZW4LZR",
-    "asin": "B0BBZW4LZR",
-    "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-    "handle": "set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0bbzw4lzr",
-    "description": "Outdoor/patio cushion made of durable 100% polyester canvas with ties for attaching. Specially treated fabric: water repellent, oil repellent, UV resistant. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 44 x21x4.50 inch ( (LxWxH); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester canvas with ties for attaching</p><p>Specially treated fabric: water repellent, oil repellent, UV resistant</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 44 x21x4.50 inch ( (LxWxH); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0BBZW4LZR/1.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/2.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/3.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/4.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_6hxq0i6hxq0i6hxq_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_7hl1fk7hl1fk7hl1 (1)_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_8wha3f8wha3f8wha_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_dx4yrtdx4yrtdx4y_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_n8ubjfn8ubjfn8ub_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_sqk513sqk513sqk5_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/Gemini_Generated_Image_yhsvzxyhsvzxyhsv_no_watermark.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776244917658.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BBZW4LZR/nano-banana-pro-1776246681536.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Red",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0BBZW4LZR",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BBZW4LZR"
-  },
-  {
     "id": "makimoo-B0BCJQYYL1",
     "asin": "B0BCJQYYL1",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
@@ -996,12 +754,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
         "width": 800,
         "height": 800
-      },
-      {
-        "url": "/images/products/B0C33LFHN1/7.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
-        "width": 800,
-        "height": 800
       }
     ],
     "priceRange": {
@@ -1079,7 +831,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 800,
         "height": 800
       },
-      {
+{
         "url": "/images/products/B0C33LPY5G/Seeany.com_万能改图_520044.webp",
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
         "width": 800,
@@ -1427,6 +1179,12 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/B0C39ZMK7H/7.webp",
+        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/B0C39ZMK7H/8.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
         "width": 800,
         "height": 800
@@ -2982,12 +2740,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
         "width": 800,
         "height": 800
-      },
-      {
-        "url": "/images/products/B0C6H5XZMZ/7.webp",
-        "altText": "Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
-        "width": 800,
-        "height": 800
       }
     ],
     "priceRange": {
@@ -4173,262 +3925,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": "https://www.amazon.com/dp/B0BY8LY757"
   },
   {
-    "id": "makimoo-B0CW182MCY",
-    "asin": "B0CW182MCY",
-    "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-    "handle": "outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw182mcy",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. Durable, easy to care: Strength and durability and built into every inch. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>Durable, easy to care: Strength and durability and built into every inch</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CW182MCY/1.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW182MCY/2.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW182MCY/3.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW182MCY/4.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW182MCY/5.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW182MCY",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW182MCY"
-  },
-  {
-    "id": "makimoo-B0CW193N7M",
-    "asin": "B0CW193N7M",
-    "title": "Makimoo Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
-    "handle": "patio-cushion-rocking-chair-cushion-tufted-pads-set-of-upper-b0cw193n7m",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. Durable, easy to care: Strength and durability and built into every inch. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure：Back 19\"×16.5\", Seat 16.5\"×16.5; Allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>Durable, easy to care: Strength and durability and built into every inch</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure：Back 19\"×16.5\", Seat 16.5\"×16.5; Allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CW193N7M/1.webp",
-        "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW193N7M/2.webp",
-        "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW193N7M/6.webp",
-        "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW193N7M/7.webp",
-        "altText": "Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 19\"×16.5\", Seat 16.5\"×16.5\" (Black Purple Flowers)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW193N7M",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW193N7M"
-  },
-  {
-    "id": "makimoo-B0CW19GMPQ",
-    "asin": "B0CW19GMPQ",
-    "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-    "handle": "outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw19gmpq",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. Durable, easy to care: Strength and durability and built into every inch. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>Durable, easy to care: Strength and durability and built into every inch</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CW19GMPQ/1.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW19GMPQ/2.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW19GMPQ/3.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW19GMPQ/4.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW19GMPQ/5.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW19GMPQ",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW19GMPQ"
-  },
-  {
-    "id": "makimoo-B0CW1H96Y5",
-    "asin": "B0CW1H96Y5",
-    "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-    "handle": "outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw1h96y5",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. Durable, easy to care: Strength and durability and built into every inch. Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>Durable, easy to care: Strength and durability and built into every inch</p><p>Overstuffed for extra comfort and longevity; filling material uses 100% outdoor polyester fabric</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure：Back 20\"×17\", Seat 17\"×17\" ; Allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Cushions",
-    "tags": [
-      "Cushions"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CW1H96Y5/1.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1H96Y5/2.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1H96Y5/3.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1H96Y5/4.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1H96Y5/5.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CW1H96Y5/6.webp",
-        "altText": "Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CW1H96Y5",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CW1H96Y5"
-  },
-  {
     "id": "makimoo-B0CXDZF2WQ",
     "asin": "B0CXDZF2WQ",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
@@ -4681,12 +4177,6 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/B0D5DNWX8J/6.webp",
-        "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0D5DNWX8J/7.webp",
         "altText": "Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
         "width": 800,
         "height": 800
@@ -7017,6 +6507,7 @@ import { MATERIALS_SHORT_BULLETS } from './materials-short-bullets';
 import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
 import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
+import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
 import { classifyProduct } from './subcategories';
 
 /** 站点基础产品 + 素材库新增产品 */
@@ -7137,9 +6628,12 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
     const finalProduct = categorized;
     const shopifyEntry = SHOPIFY_MAP[asinLower];
     const materialsImages = MATERIALS_MAP[asinLower]?.images;
+    // 老产品（无素材库条目）的本地重拍/AI 主图覆盖，优先于 Shopify CDN 图
+    const galleryOverride = GALLERY_IMAGES_OVERRIDES[asinLower];
+    const galleryImages = materialsImages || galleryOverride;
     if (!shopifyEntry) {
-      return materialsImages
-        ? { ...finalProduct, hasShopifyData: false, shopifyImages: materialsImages }
+      return galleryImages
+        ? { ...finalProduct, hasShopifyData: false, shopifyImages: galleryImages }
         : { ...finalProduct, hasShopifyData: false };
     }
     return {
@@ -7151,7 +6645,7 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       shopifyPrice: shopifyEntry.priceNeedsFix ? finalProduct.priceRange.minVariantPrice.amount : shopifyEntry.price,
       shopifyCurrencyCode: shopifyEntry.currencyCode,
       // 素材库图片优先于 Shopify CDN 图（shopifyImages 是全站图片显示的第一通道）
-      shopifyImages: materialsImages || shopifyEntry.images,
+      shopifyImages: galleryImages || shopifyEntry.images,
       shopifyWeight: shopifyEntry.weight,
       shopifyWeightUnit: shopifyEntry.weightUnit,
     };

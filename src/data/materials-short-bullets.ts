@@ -762,13 +762,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Secure Ties: cushion stays put on the chair",
     "Six Styles: solid tones & statement prints",
   ],
-  "b0cw1tbzv3": [
-    "Seat + Backrest in One: full-length support",
-    "Weatherproof Build: patio-ready construction",
-    "Thick Tufted Padding: comfortable for hours",
-    "Secure Ties: cushion stays put on the chair",
-    "Six Styles: solid tones & statement prints",
-  ],
   "b0dsgfxldv": [
     "Seat + Backrest in One: full-length support",
     "Weatherproof Build: patio-ready construction",
@@ -805,20 +798,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Four Prints: teal floral, batik, botanical art & more",
   ],
   "b0gd84d8vc": [
-    "Square Tufted Seat Pads: set of 2 with ties",
-    "Water-Resistant Outdoor Fabric: patio ready",
-    "Thick Comfortable Fill: soft yet supportive",
-    "Secure Corner Ties: no sliding around",
-    "Four Prints: teal floral, batik, botanical art & more",
-  ],
-  "b0gd93xkhr": [
-    "Square Tufted Seat Pads: set of 2 with ties",
-    "Water-Resistant Outdoor Fabric: patio ready",
-    "Thick Comfortable Fill: soft yet supportive",
-    "Secure Corner Ties: no sliding around",
-    "Four Prints: teal floral, batik, botanical art & more",
-  ],
-  "b0gd7rr5ph": [
     "Square Tufted Seat Pads: set of 2 with ties",
     "Water-Resistant Outdoor Fabric: patio ready",
     "Thick Comfortable Fill: soft yet supportive",
@@ -1001,34 +980,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Easy Care: fluffs back, simple spot cleaning",
   ],
   "b0cbt7rfk2": [
-    "Full-Length 95 x 45cm: backrest + seat in one pad",
-    "Tufted with Ties: plush comfort, secure fit",
-    "Fade-Resistant Fabric: made for daily use",
-    "Corduroy, Houndstooth & Floral: 7 styles",
-    "Easy Care: fluffs back, simple spot cleaning",
-  ],
-  "b0cw182mcy": [
-    "Full-Length 95 x 45cm: backrest + seat in one pad",
-    "Tufted with Ties: plush comfort, secure fit",
-    "Fade-Resistant Fabric: made for daily use",
-    "Corduroy, Houndstooth & Floral: 7 styles",
-    "Easy Care: fluffs back, simple spot cleaning",
-  ],
-  "b0cw19gmpq": [
-    "Full-Length 95 x 45cm: backrest + seat in one pad",
-    "Tufted with Ties: plush comfort, secure fit",
-    "Fade-Resistant Fabric: made for daily use",
-    "Corduroy, Houndstooth & Floral: 7 styles",
-    "Easy Care: fluffs back, simple spot cleaning",
-  ],
-  "b0cw1h96y5": [
-    "Full-Length 95 x 45cm: backrest + seat in one pad",
-    "Tufted with Ties: plush comfort, secure fit",
-    "Fade-Resistant Fabric: made for daily use",
-    "Corduroy, Houndstooth & Floral: 7 styles",
-    "Easy Care: fluffs back, simple spot cleaning",
-  ],
-  "b0cw193n7m": [
     "Full-Length 95 x 45cm: backrest + seat in one pad",
     "Tufted with Ties: plush comfort, secure fit",
     "Fade-Resistant Fabric: made for daily use",
@@ -1889,13 +1840,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Vivid Print: colorfast pattern resists sun fading",
   "Easy Care: spot clean and air dry",
   ],
-  "b0cw17pzyt": [
-  "Outdoor-Ready: water-resistant fabric built for patios",
-  "Secure Fit: stays planted through everyday use",
-  "Plush Seating: thick fill stays comfortable for hours",
-  "Vivid Print: colorfast pattern resists sun fading",
-  "Easy Care: spot clean and air dry",
-  ],
   "b0dsgclbvw": [
   "Outdoor-Ready: water-resistant fabric built for patios",
   "Secure Fit: stays planted through everyday use",
@@ -1916,13 +1860,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Vivid Print: colorfast pattern resists sun fading",
   "Universal Fit: suits most high-back dining chairs",
   "Set of 2: dress a pair of chairs",
-  ],
-  "b0cw1ldn6l": [
-  "Outdoor-Ready: water-resistant fabric built for patios",
-  "Secure Fit: stays planted through everyday use",
-  "Plush Seating: thick fill stays comfortable for hours",
-  "Vivid Print: colorfast pattern resists sun fading",
-  "Easy Care: spot clean and air dry",
   ],
   "b0f1xfwzvy": [
   "Tufted High-Back: classic tufting keeps fill evenly placed",
@@ -1951,13 +1888,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Outdoor-Ready: durable fabric made for covered porches",
   "Set of 2: dress a pair of high-back chairs",
   "Easy Care: spot clean and air dry",
-  ],
-  "b0bbzw4lzr": [
-  "High-Back Comfort: full back panel with integrated seat pad",
-  "Outdoor-Ready: water-resistant fabric built for patios",
-  "Vivid Print: colorfast pattern resists sun fading",
-  "Universal Fit: suits most high-back dining chairs",
-  "Set of 2: dress a pair of chairs",
   ],
   "b0bcjqyyl1": [
   "High-Back Comfort: full back panel with integrated seat pad",
@@ -2049,13 +1979,6 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Plush Seating: thick fill stays comfortable for hours",
   "Vivid Print: colorfast pattern resists sun fading",
   "Easy Care: spot clean and air dry",
-  ],
-  "b0bbzsgdbq": [
-  "High-Back Comfort: full back panel with integrated seat pad",
-  "Outdoor-Ready: water-resistant fabric built for patios",
-  "Vivid Print: colorfast pattern resists sun fading",
-  "Universal Fit: suits most high-back dining chairs",
-  "Set of 4: furnish a full dining set",
   ],
   "b0c33lfhn1": [
   "High-Back Comfort: full back panel with integrated seat pad",

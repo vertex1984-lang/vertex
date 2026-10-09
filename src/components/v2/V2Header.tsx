@@ -9,6 +9,7 @@ import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { fabricByMaterial, fabricDisplayName } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
+import { getSubcategoriesOf } from '@/data/subcategories';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
 // Featured 导航项已移除（2026-09 用户要求）；/best-sellers、/new-arrivals
@@ -45,7 +46,7 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   cushions: [
     { image: '/images/collections/cushions.webp', caption: 'Comfort for every seat.', linkLabel: 'Shop Cushions', href: '/products?cat=cushions' },
-    { image: '/images/products/B0CBT7R7NN/1.webp', caption: 'A best seller for a reason.', linkLabel: 'Shop Rocking Chair', href: '/products?cat=cushions&sub=rocking' },
+    { image: '/images/products/B0CBT7R7NN/1.webp', caption: 'A best seller for a reason.', linkLabel: 'Shop Corduroy Classics', href: '/products?cat=cushions&sub=corduroy' },
   ],
   pillows: [
     { image: '/images/collections/pillows.webp', caption: 'Plush fillings, premium covers.', linkLabel: 'Shop Pillows', href: '/products?cat=pillows' },
@@ -127,6 +128,23 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
             : { label: m.label, desc: m.menuDesc, href: `/pillows/${m.slug}/` }
         ),
       },
+    ];
+  }
+  // Cushions 重构（2026-10-09 用户定）：首列 = 风格 3 类（Corduroy Classics / Soft Solids /
+  // Floral & Prints，取自 subcategories 注册表，与 /products?cat=cushions 分区、筛选同源），
+  // 深链 /products?cat=cushions&sub=<key>；Featured 列保持不变
+  if (cat === 'cushions') {
+    return [
+      {
+        title: 'Cushions',
+        href: current?.href,
+        links: getSubcategoriesOf('cushions').map((s) => ({
+          label: s.label,
+          desc: s.blurb,
+          href: `/products?cat=cushions&sub=${encodeURIComponent(s.key)}`,
+        })),
+      },
+      { title: 'Featured', links: featured },
     ];
   }
   const first: MenuColumn = {
@@ -683,9 +701,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      {/* bedding/pillows 不渲染 "Shop All" 首项（2026-09 用户定）：
+                      {/* bedding/pillows/cushions 不渲染 "Shop All" 首项（2026-09 用户定）：
                           汇总页入口由下方组标题链接承担（同桌面列标题可点） */}
-                      {link.href && link.cat !== 'bedding' && link.cat !== 'pillows' && (
+                      {link.href && link.cat !== 'bedding' && link.cat !== 'pillows' && link.cat !== 'cushions' && (
                         <a
                           href={v2url(link.href)}
                           onClick={() => setMobileOpen(false)}
@@ -694,13 +712,17 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                           Shop All {link.label} →
                         </a>
                       )}
-                      {/* bedding/pillows 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
+                      {/* bedding/pillows/cushions 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
                           bedding = 面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
-                          pillows = 形态组（PILLOWS）+ 材质组（MATERIAL）+ Featured；
+                          pillows = 形态组（PILLOWS）+ 材质组（MATERIAL）；
+                          cushions = 风格 3 类（Corduroy / Solids / Prints，2026-10-09 用户定）；
+                          Featured 列不进移动端抽屉（与 bedding/pillows 一致）；
                           组标题 = 主层级缩进（mx-4）+ 下划线（同桌面列标题 border-b 样式），
                           子类目 pl-8 缩进，层级一眼可辨（2026-09 用户反馈：原同缩进分不清） */}
-                      {link.cat === 'bedding' || link.cat === 'pillows'
-                        ? menuColumns(link.cat, catStyles[link.cat] || []).map((col) => (
+                      {link.cat === 'bedding' || link.cat === 'pillows' || link.cat === 'cushions'
+                        ? menuColumns(link.cat, catStyles[link.cat] || [])
+                            .filter((col) => col.title !== 'Featured')
+                            .map((col) => (
                             <div key={col.title}>
                               {col.href ? (
                                 <a

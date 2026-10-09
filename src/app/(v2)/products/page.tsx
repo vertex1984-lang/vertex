@@ -536,9 +536,9 @@ export default function V2ProductsPage() {
            传未去重原始列表，组件内部去重 */
         <V2PillowsShop products={pillowShopProducts} />
       ) : cushionsMode && !isSearching ? (
-        /* cushions 选购视图（2026-10-09 用户定，按 pillows/bedding 家族卡结构改造）：
-           意图回显 + 家族卡网格，无筛选条（单产品线 7 色，同 blankets 口径） */
-        <V2CushionsShop products={cushionShopProducts} />
+        /* cushions 选购视图（2026-10-09 用户定）：意图回显 + 粘性 Style 筛选 + 按风格 3 分区
+           （prints / solids / corduroy，sub= 参数深链到对应风格，如 Header "Shop Corduroy"） */
+        <V2CushionsShop key={activeSub} products={cushionShopProducts} initialStyle={activeSub} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
