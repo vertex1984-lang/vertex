@@ -2,54 +2,20 @@
 
 import { useMemo, useState } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { buildBlanketFamilies, BlanketFamily } from '@/data/blanket-families';
+import { BlanketFamily } from '@/data/blanket-families';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
-import { sortByWeight } from '@/lib/weights';
 import { getSubcategoriesOf } from '@/data/subcategories';
-import { getVariantGroupOf, CUSHION_LISTING_HIDDEN_ASINS } from '@/data/variant-groups';
-
-/** cm → in，去小数点（四舍五入取整）：43cm→17、47cm→19、95cm→37 */
-const cmToIn = (cm: number) => Math.round(cm / 2.54);
-
-/** 卡片标题规则（2026-10-09 用户定）："Cushions Set of {x}, {W} x {H} in"
- *  （不带颜色；尺寸换算成英寸、去小数点后一位）。
- *  尺寸来源：优先解析代表品短标题（"95 x 45cm" / "95x45cm" / "47cm Round"，短标题是策划过的
- *  产品实际尺寸）；解析不到才用变体组尺寸带（cm，buildBlanketFamilies 已去单位）。
- *  套装数来源：短标题或尺寸带（110x55 家族 size 字段存的是 "Set of N" 套件数，非尺寸）
- *  的 "Set of N"，或 handle "set-of-N"/"N-pack"，缺省 2（当前全线 2 件装）。 */
-function cushionCardTitle(f: BlanketFamily): string {
-  const sizeBand = f.sizes[0] || '';
-  const countMatch =
-    f.rep.title.match(/set of (\d+)/i) ||
-    sizeBand.match(/set of (\d+)/i) ||
-    f.rep.handle.match(/set-of-(\d+)/i) ||
-    f.rep.handle.match(/(\d)-pack/i);
-  const count = countMatch ? countMatch[1] : '2';
-
-  const sizeSeg = (() => {
-    const t = f.rep.title;
-    const round = t.match(/(\d+(?:\.\d+)?)\s*cm\s*round/i);
-    if (round) return `${cmToIn(parseFloat(round[1]))} in Round`;
-    const wh = t.match(/(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*cm/i);
-    if (wh) return `${cmToIn(parseFloat(wh[1]))} x ${cmToIn(parseFloat(wh[2]))} in`;
-    // 尺寸带首段是数字才是尺寸（"110×55"）；"Set of 4" 这类套件数段跳过
-    return /^\d/.test(sizeBand) ? sizeBand : '';
-  })();
-  const sizeIn = sizeSeg.includes('in')
-    ? sizeSeg
-    : sizeSeg
-        .split('×')
-        .map((s) => cmToIn(parseFloat(s)))
-        .filter((n) => !Number.isNaN(n))
-        .join(' x ') + (sizeSeg ? ' in' : '');
-
-  return `Cushions Set of ${count}${sizeIn ? `, ${sizeIn}` : ''}`;
-}
+import {
+  cushionCardTitle,
+  visibleCushionFamilies,
+  sortCushionFamilies,
+} from '@/data/cushion-families';
 
 /**
  * /products?cat=cushions 选购视图：
  * - 2026-10-09 用户定：按 pillows/bedding 的家族卡结构改造（复用 buildBlanketFamilies 按颜色成族）；
- *   卡片标题规则见 cushionCardTitle；compactText 与 pillows/bedding 卡片字体一致
+ *   卡片标题/Set of 4 隐藏/变体聚拢排序逻辑抽在 @/data/cushion-families（与 /cushions/[slug]/ 二级页共用）；
+ *   compactText 与 pillows/bedding 卡片字体一致
  * - 2026-10-09 用户定：按风格分 3 区展示 + 粘性 Style 筛选下拉（prints / solids / corduroy，
  *   注册表见 subcategories.ts，归位逻辑见 classifyCushion；选中某风格 = 只渲染该分区）
  * - 意图回显行（N styles from $X）保留在筛选条上方
@@ -60,42 +26,14 @@ export default function V2CushionsShop({
   initialStyle = '',
 }: {
   products: MakimooProduct[];
-  /** URL ?sub= 深链（如 Header mega 菜单 "Shop Corduroy" → sub=corduroy） */
+  /** URL ?sub= 深链（旧链接兼容，如 sub=corduroy）；新导航走 /cushions/[slug]/ 二级页 */
   initialStyle?: string;
 }) {
   const [style, setStyle] = useState(initialStyle);
 
-  // 同花色有 Set of 2 的 Set of 4 卡片不在列表展示（2026-10-09 用户定，名单见 variant-groups.ts）
-  const families = useMemo(
-    () => buildBlanketFamilies(products).filter((f) => !CUSHION_LISTING_HIDDEN_ASINS.has(f.rep.asin.toLowerCase())),
-    [products]
-  );
+  const families = useMemo(() => visibleCushionFamilies(products), [products]);
 
-  // 排序（2026-10-09 用户定）：同一变体组的卡片排在一起，排完一组再排下一组；
-  // 组间顺序 = 组内卡片的最高权重位次（Featured 权重序），组内顺序 = 变体组注册顺序（与 PDP 色点一致）
-  const sorted = useMemo(() => {
-    const reps = sortByWeight(families.map((f) => f.rep));
-    const rank = new Map(reps.map((r, i) => [r.id, i]));
-    // family.key = "组id::颜色"（有变体组）或 asin（单品成族）
-    const groupOf = (f: BlanketFamily) => (f.key.includes('::') ? f.key.split('::')[0] : f.key);
-    const groupRank = new Map<string, number>();
-    for (const f of families) {
-      const g = groupOf(f);
-      const r = rank.get(f.rep.id) ?? 9999;
-      groupRank.set(g, Math.min(groupRank.get(g) ?? 9999, r));
-    }
-    const orderInGroup = (f: BlanketFamily) => {
-      const g = getVariantGroupOf(f.rep.asin);
-      const idx = g ? g.members.findIndex((m) => m.asin.toLowerCase() === f.rep.asin.toLowerCase()) : -1;
-      return idx < 0 ? 999 : idx;
-    };
-    return [...families].sort((a, b) => {
-      const ga = groupOf(a);
-      const gb = groupOf(b);
-      if (ga !== gb) return (groupRank.get(ga) ?? 9999) - (groupRank.get(gb) ?? 9999);
-      return orderInGroup(a) - orderInGroup(b);
-    });
-  }, [families]);
+  const sorted = useMemo(() => sortCushionFamilies(families), [families]);
 
   // 家族风格 = 代表品的二级分类（enrich 时 classifyCushion 已按变体组归位）
   const styleOf = (f: BlanketFamily) => f.rep.subcategory || '';
