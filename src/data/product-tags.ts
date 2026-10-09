@@ -69,16 +69,12 @@ export const BASE_COLOR_RULES: ColorRule[] = [
  */
 export const COLOR_OVERRIDES: Record<string, string> = {
   b0d9lh1y55: 'yellow', // 黄铜研磨器，金色（看图定）
-  b0bbzsgdbq: 'red',
-  b0bbzw4lzr: 'red',
   b0c33lfhn1: 'pink',
   b0c3b265xj: 'pink',
   b0cc5vnqy3: 'red',
   b0cc5y77dc: 'blue',
-  b0gd93xkhr: 'pink',
   b0dsgfxldv: 'blue',
   b0dsgckwxw: 'red',
-  b0cw17pzyt: 'white',
   b0cjhl4lzp: 'yellow',
   '1688-1046667161713': 'brown',
   // 2026-09-24 冰丝四件套中古奶茶家族（标题无内置色词，按图定为奶茶米色，与 C2 自动打标一致）

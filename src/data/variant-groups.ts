@@ -331,6 +331,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0gjlpxb6f', handle: 'makimoo-water-resistant-tufted-round-seat-cushions-set-of-2-b0gjlpxb6f', color: 'Burgundy' },
     { asin: 'b0f1ydrdtx', handle: 'set-of-2-plush-round-tufted-seat-cushions-water-resistant-b0f1ydrdtx', color: 'Navy Blue' },
+    { asin: 'b0f1y91hpr', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y91hpr', color: 'Dark Green', size: '47 x 47 cm' },
     ],
   },
   {
@@ -340,9 +341,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0gjlrgvdj', handle: '2-pack-all-weather-outdoor-chair-cushions-waterproof-solid-b0gjlrgvdj', color: 'Brown', size: '45 x 10 cm' },
     { asin: 'b0gjsttgy5', handle: 'makimoo-outdoor-chair-cushions-2-pack-waterproof-tufted-b0gjsttgy5', color: 'Forest Green', size: '45 x 10 cm' },
     { asin: 'b0f1v8vmp4', handle: 'makimoo-2-pack-outdoor-chair-cushions-water-resistant-solid-b0f1v8vmp4', color: 'Navy Blue', size: '45 x 10 cm' },
-    { asin: 'b0cw1tbzv3', handle: 'makimoo-2-pack-chair-cushions-with-backrest-and-seat-tufted-b0cw1tbzv3', color: 'Green Damask', size: '95 x 45 cm' },
-    { asin: 'b0dsgfxldv', handle: 'makimoo-2-pack-patio-chair-cushions-with-ties-one-piece-b0dsgfxldv', color: 'Painted Petals', size: '95 x 45 cm' },
-    { asin: 'b0dsgckwxw', handle: 'set-of-2-thick-outdoor-chair-cushions-with-ties-1-piece-b0dsgckwxw', color: 'Red Floral', size: '95 x 45 cm' },
     ],
   },
   {
@@ -351,16 +349,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0bcjw18sp', handle: 'makimoo-outdoor-chair-cushions-set-of-4-thick-padded-all-b0bcjw18sp', color: 'Hummingbird Garden', size: '110 x 55 cm' },
     { asin: 'b0bcjrtf3x', handle: 'makimoo-outdoor-chair-cushions-set-of-4-water-resistant-b0bcjrtf3x', color: 'Teal Palm Leaf', size: '110 x 55 cm' },
-    ],
-  },
-  {
-    id: 'b0-square-pads',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0gd81wt1b', handle: 'indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b', color: 'Teal Floral', size: '43 x 43 cm' },
-    { asin: 'b0gd84d8vc', handle: 'set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc', color: 'Green Batik', size: '43 x 43 cm' },
-    { asin: 'b0gd93xkhr', handle: 'makimoo-set-of-2-thick-comfortable-tufted-colorful-floral-b0gd93xkhr', color: 'Colorful Floral', size: '43 x 43 cm' },
-    { asin: 'b0gd7rr5ph', handle: 'makimoo-outdoor-chair-cushions-2-pack-thick-tufted-square-b0gd7rr5ph', color: 'Botanical Art', size: '43 x 43 cm' },
     ],
   },
   {
@@ -374,6 +362,14 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    id: 'b0-seat-cushions-wr',
+    optionName: 'Color',
+    members: [
+    { asin: 'b0fnqrrv78', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0fnqrrv78', color: 'Navy Blue Red Color Block', size: '43 x 43 cm' },
+    { asin: 'b0f1y4j48t', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y4j48t', color: 'Green Brown', size: '43 x 43 cm' },
+    ],
+  },
+  {
     id: 'b0-seat-cushions',
     optionName: 'Color',
     members: [
@@ -384,11 +380,11 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0c4bd7q5x', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bd7q5x', color: 'Blue Red Floral', size: '43 x 43 cm' },
     { asin: 'b0c4bdllfk', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bdllfk', color: 'Orange Red Striped', size: '43 x 43 cm' },
     { asin: 'b0cjhx7xkl', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhx7xkl', color: 'Navy Blue Houndstooth', size: '43 x 43 cm' },
-    { asin: 'b0fnqrrv78', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0fnqrrv78', color: 'Navy Blue Red Color Block', size: '43 x 43 cm' },
     { asin: 'b0cj8tjl56', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cj8tjl56', color: 'Green Houndstooth', size: '43 x 43 cm' },
     { asin: 'b0cjhslcz5', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhslcz5', color: 'Red Houndstooth', size: '43 x 43 cm' },
-    { asin: 'b0f1y4j48t', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y4j48t', color: 'Green Brown', size: '43 x 43 cm' },
-    { asin: 'b0f1y91hpr', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-water-re-b0f1y91hpr', color: 'Dark Green', size: '47 x 47 cm' },
+    { asin: 'b0gd81wt1b', handle: 'indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b', color: 'Teal Floral', size: '43 x 43 cm' },
+    { asin: 'b0gd84d8vc', handle: 'set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc', color: 'Green Batik', size: '43 x 43 cm' },
+    { asin: 'b0cjhl4lzp', handle: 'makimoo-chair-cushions-set-of-2-oil-painting-floral-seat-b0cjhl4lzp', color: 'Oil Painting Floral', size: '43 x 43 cm' },
     ],
   },
   {
@@ -398,10 +394,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0cbt7b1ty', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty', color: 'Corduroy Blue' },
     { asin: 'b0cbt7r7nn', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7r7nn', color: 'Corduroy Grey' },
     { asin: 'b0cbt7rfk2', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7rfk2', color: 'Corduroy Coffee' },
-    { asin: 'b0cw182mcy', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw182mcy', color: 'Houndstooth Red' },
-    { asin: 'b0cw19gmpq', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw19gmpq', color: 'Houndstooth Navy Blue' },
-    { asin: 'b0cw1h96y5', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cw1h96y5', color: 'Houndstooth Green' },
-    { asin: 'b0cw193n7m', handle: 'patio-cushion-rocking-chair-cushion-tufted-pads-set-of-upper-b0cw193n7m', color: 'Floral Black Purple' },
+    { asin: 'b0cbt8fzwf', handle: '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf', color: 'Khaki' },
     ],
   },
   {
@@ -550,15 +543,14 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     id: 'outdoor-95x45',
     optionName: 'Color',
     members: [
-    { asin: 'b0cbt8fzwf', handle: '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf', color: 'Khaki' },
-    { asin: 'b0cw17pzyt', handle: '2-piece-patio-chair-cushion-set-with-backrest-and-seat-pad-b0cw17pzyt', color: 'Multicolor Floral' },
     { asin: 'b0dsgclbvw', handle: 'makimoo-2-pack-outdoor-chair-cushions-with-ties-watercolor-b0dsgclbvw', color: 'Blue Green Leaves' },
-    { asin: 'b0cw1ldn6l', handle: 'outdoor-chair-cushions-2-pack-tufted-patio-seat-pads-with-b0cw1ldn6l', color: 'Green Floral' },
     { asin: 'b0cc5rgrps', handle: 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5rgrps', color: 'Blue Monet Garden' },
     { asin: 'b0cc5tlwfs', handle: 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5tlwfs', color: 'Red Green Geometric' },
     { asin: 'b0cc5vnqy3', handle: 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5vnqy3', color: 'Tulip' },
     { asin: 'b0cc5wn6jj', handle: 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5wn6jj', color: 'Black White Jungle' },
     { asin: 'b0cc5y77dc', handle: 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5y77dc', color: 'Multicolor Butterfly Garden' },
+    { asin: 'b0dsgfxldv', handle: 'makimoo-2-pack-patio-chair-cushions-with-ties-one-piece-b0dsgfxldv', color: 'Painted Petals', size: '95 x 45 cm' },
+    { asin: 'b0dsgckwxw', handle: 'set-of-2-thick-outdoor-chair-cushions-with-ties-1-piece-b0dsgckwxw', color: 'Red Floral', size: '95 x 45 cm' },
     ],
   },
   {
@@ -567,7 +559,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0bcjt2gfw', handle: 'makimoo-outdoor-chair-cushions-set-of-2-patio-high-back-b0bcjt2gfw', color: 'Orange Yellow Floral Bird', size: 'Set of 2' },
     { asin: 'b0bcjv24jr', handle: 'makimoo-outdoor-chair-cushions-set-of-2-tropical-palm-leaf-b0bcjv24jr', color: 'Green Palm Leaf', size: 'Set of 2' },
-    { asin: 'b0bbzw4lzr', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0bbzw4lzr', color: 'Colorful Floral', size: 'Set of 2' },
     { asin: 'b0bcjqyyl1', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0bcjqyyl1', color: 'Khaki Birds and Flowers', size: 'Set of 2' },
     { asin: 'b0c39zmk7h', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c39zmk7h', color: 'Blue Red Leaves', size: 'Set of 2' },
     { asin: 'b0c39zsd3q', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c39zsd3q', color: 'Khaki Floral Paisley', size: 'Set of 2' },
@@ -576,7 +567,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0c3b16l6r', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c3b16l6r', color: 'Green Plaid', size: 'Set of 2' },
     { asin: 'b0c3b265xj', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c3b265xj', color: 'Watercolor Floral', size: 'Set of 2' },
     { asin: 'b0d5dnwx8j', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0d5dnwx8j', color: 'Blue Red Floral', size: 'Set of 2' },
-    { asin: 'b0bbzsgdbq', handle: 'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0bbzsgdbq', color: 'Colorful Floral', size: 'Set of 4' },
     { asin: 'b0c33lfhn1', handle: 'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33lfhn1', color: 'Multicolor Watercolor Floral', size: 'Set of 4' },
     { asin: 'b0c33lpy5g', handle: 'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33lpy5g', color: 'Beige Red Navy Blue Floral', size: 'Set of 4' },
     { asin: 'b0c33lxrvk', handle: 'set-of-4-outdoor-dining-chair-cushions-comfort-patio-seating-b0c33lxrvk', color: 'Khaki Floral', size: 'Set of 4' },
@@ -676,3 +666,18 @@ for (const g of VARIANT_GROUPS) {
 export function getVariantGroupOf(asin: string): VariantGroup | undefined {
   return groupsByAsin.get(asin.toLowerCase());
 }
+
+/** cushions 列表页隐藏（2026-10-09 用户定）：同一花色同时有 Set of 2 / Set of 4 时，
+ *  商品列表只展示 Set of 2；Set of 4 不下架，PDP 与变体组保留，可经直接链接购买。
+ *  配对依据：同名花色（Orange Yellow Floral Bird / Orange Red Stripe / Blue Paisley），
+ *  或用户指定的同主图配对（Green Lattice↔Green Plaid、Beige Red Navy Blue Floral↔Blue Red Leaves、
+ *  Multicolor Watercolor Floral↔Watercolor Floral）。
+ *  b0c33lxrvk（Khaki Floral, Set of 4）无 Set of 2 同款，保留展示。 */
+export const CUSHION_LISTING_HIDDEN_ASINS = new Set([
+  'b0cxdzf2wq', // Orange Yellow Floral Bird ↔ b0bcjt2gfw
+  'b0c33lz5pw', // Orange Red Stripe ↔ b0c3b12dl7
+  'b0c33m24l3', // Blue Paisley ↔ b0c3b13n8z
+  'b0c6h5xzmz', // Green Lattice ↔ b0c3b16l6r
+  'b0c33lpy5g', // Beige Red Navy Blue Floral ↔ b0c39zmk7h
+  'b0c33lfhn1', // Multicolor Watercolor Floral ↔ b0c3b265xj
+]);

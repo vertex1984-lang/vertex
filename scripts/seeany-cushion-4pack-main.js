@@ -18,15 +18,15 @@ const API = 'https://api.seeany.com/api/ai/smarttask';
 const OUT = path.join(__dirname, '..', 'public', 'images', 'staging', 'B0CXDZF2WQ');
 fs.mkdirSync(OUT, { recursive: true });
 
-const REF = 'https://www.makimoohome.com/images/products/B0CXDZF2WQ/1.webp';
+const REF = 'https://www.makimoohome.com/images/products/B0CXDZF2WQ/3.webp';
 const PROMPT =
   '以参考图中的橙黄色花鸟印花户外椅垫为准：暖橙黄底色、花卉枝叶与小鸟印花、靠背与坐垫一体成型呈 L 形、' +
   '边缘有滚边（piped edge）、靠背顶部两角和坐垫两侧各有一条绑带，保持完全一致的面料质感、印花图案、配色与工艺。' +
   '**不要任何织标/标签/logo/水印文字**，布面完全纯净。浅灰色纯色摄影棚背景（light gray seamless studio background），' +
   '柔和均匀的棚拍光线，底部自然柔和的浅阴影，写实摄影，画面干净高级。' +
-  '构图：展示 4 件套（Set of 4）——一只椅垫以使用形态立于画面中央偏右（靠背自然竖直、坐垫水平前伸，呈自然挺括的 L 形，' +
-  '四分之三侧面视角），左侧三只椅垫平放整齐叠放成一摞（展示厚度与数量），整体居中构图，占画面约 80%，四周留白均匀，' +
-  '绑带自然下垂不外扬。';
+  '构图：**只展示一只椅垫**（画面中仅此一只，不要叠放、不要多只）——以使用形态立于画面中央' +
+  '（靠背自然竖直、坐垫水平前伸，呈自然挺括的 L 形，四分之三侧面视角，与参考图姿态一致），' +
+  '整体居中构图，占画面约 80%，四周留白均匀，绑带自然下垂不外扬。';
 
 async function createTask() {
   const res = await fetch(API, {
