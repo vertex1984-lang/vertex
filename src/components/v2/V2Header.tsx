@@ -7,7 +7,7 @@ import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
-import { fabricByMaterial } from '@/data/bedding-fabrics';
+import { fabricByMaterial, fabricDisplayName } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 
 // V2 导航：cat 非空的项带 mega menu（该类目在售风格 + 示例图卡）
@@ -96,8 +96,9 @@ interface MenuColumn {
 /** 组装某个类目的 mega menu 列：首列 = 类目子项（bedding 为面料列，描述取自 bedding-fabrics
  *  注册表，链接直达面料二级 PLP /bedding/[fabric]/；pillows 为形态列 + Material 列，
  *  直达 /pillows/[slug]/，2026-09-30 用户定），末列 = Featured 固定入口
- *  （bedding 例外，2026-09 用户定：次列改为 "Bedding" 产品类型列，标题链 /bedding/，
- *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 移至面料列末尾） */
+ *  （bedding 例外，2026-09 用户定：增加 "Bedding" 产品类型列，标题链 /bedding/，
+ *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 在面料列末尾；
+ *    2026-10-09 用户定：Bedding 类型列与 Shop by Fabric 面料列调换位置——类型列在前、面料列在后） */
 function menuColumns(cat: string, styles: { key: string; label: string }[]): MenuColumn[] {
   const current = navLinks.find((l) => l.cat === cat);
   const featured: MenuLink[] = [
@@ -135,7 +136,8 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
     links: styles.map((s) => {
       const fb = cat === 'bedding' ? fabricByMaterial(s.key) : undefined;
       return {
-        label: s.label,
+        // bedding 面料列展示名统一走 fabricDisplayName（2026-10-09：Washed Cotton-Like 显为 Brushed Cotton）
+        label: cat === 'bedding' ? fabricDisplayName(s.label) : s.label,
         desc: fb?.desc,
         href: fb ? `/bedding/${fb.slug}/` : `/products?cat=${cat}&sub=${encodeURIComponent(s.key)}`,
       };
@@ -143,8 +145,8 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
   };
   if (cat === 'bedding') {
     first.links.push({ label: 'Fabric Guide', desc: 'Find your feel.', href: '/fabric-guide/' });
+    // 2026-10-09 用户定：Bedding 类型列与 Shop by Fabric 面料列调换位置（类型列在前）
     return [
-      first,
       {
         title: 'Bedding',
         href: '/products?cat=bedding',
@@ -160,6 +162,7 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           { label: 'Blankets', desc: 'Plush throws & layers.', href: '/products?cat=blankets' },
         ],
       },
+      first,
     ];
   }
   return [first, { title: 'Featured', links: featured }];

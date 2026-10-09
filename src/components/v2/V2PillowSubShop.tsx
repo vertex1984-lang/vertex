@@ -9,6 +9,7 @@ import {
   pillowTypeOf,
   pillowMaterialOf,
   pillowSizesOf,
+  pillowCardTitle,
   applyPillowCardMerges,
 } from '@/data/pillows-taxonomy';
 
@@ -22,7 +23,9 @@ import {
  */
 
 /** MakimooProduct → BeddingSetCard 最小数据形状（尺寸带取变体族全尺寸；From 价 = 卡片展示价；
- *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）） */
+ *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）；
+ *  titleOverride = 卡片标题规则（2026-10-09，pillowCardTitle：ins "Pillow Inserts Set of 2" /
+ *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"，颈枕返回 '' 不覆盖）） */
 function toFamilyCard(
   p: MakimooProduct,
   colors?: string[],
@@ -38,6 +41,7 @@ function toFamilyCard(
       p.priceRange?.minVariantPrice?.currencyCode ||
       'USD',
     colors,
+    titleOverride: pillowCardTitle(p) || undefined,
   };
 }
 
@@ -71,8 +75,9 @@ export default function V2PillowSubShop({
     .map((t) => ({ taxon: t, list: filtered.filter((p) => keyOf(p) === t.key) }))
     .filter((s) => s.list.length > 0);
 
-  const dimLabel = sectionBy === 'type' ? 'Type:' : 'Material:';
-  const allLabel = sectionBy === 'type' ? 'All' : 'All Materials';
+  // 2026-10-09 用户定：材质维度对外文案改 Filling（填充物口径，比 Material 更贴合枕芯）
+  const dimLabel = sectionBy === 'type' ? 'Type:' : 'Filling:';
+  const allLabel = sectionBy === 'type' ? 'All' : 'All Fillings';
 
   return (
     <div>
@@ -91,7 +96,7 @@ export default function V2PillowSubShop({
                     ? 'border-brand text-brand'
                     : 'border-warm-gray text-charcoal-light hover:border-brand'
                 }`}
-                aria-label={sectionBy === 'type' ? 'Filter by type' : 'Filter by material'}
+                aria-label={sectionBy === 'type' ? 'Filter by type' : 'Filter by filling'}
               >
                 <option value="">{allLabel}</option>
                 {options.map((t) => (
@@ -131,6 +136,7 @@ export default function V2PillowSubShop({
                 key={p.id}
                 family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
                 paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+                compactText
               />
             ))}
           </div>
@@ -161,6 +167,7 @@ export default function V2PillowSubShop({
                   key={p.id}
                   family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
                   paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+                  compactText
                 />
               ))}
             </div>

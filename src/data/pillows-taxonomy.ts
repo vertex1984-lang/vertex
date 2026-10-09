@@ -3,12 +3,15 @@
  *
  * Type（形态，2026-10-08 用户定：改为 Inserts / Cases / Neck 三类）：
  * - pillow-inserts  Pillow Inserts  枕芯 + 床枕（标题含 Pillow Inserts / Throw Pillow / Bed Pillow / Stuffer）
- * - pillow-cases    Pillow Cases    枕套/抱枕套（标题含 Pillowcase / Cushion Cover；8 款老枕套仍全站隐藏，
- *                                   见 products.ts HIDDEN_HANDLES，此类目只含 3 款压花抱枕套）
+ * - pillow-cases    Throw Pillow Cases  枕套/抱枕套（标题含 Pillowcase / Cushion Cover；8 款老枕套仍全站隐藏，
+ *                                   见 products.ts HIDDEN_HANDLES；类目名 2026-10-09 用户定由
+ *                                   Decorative Pillow Cases 改为 Throw Pillow Cases）
  * - neck-pillows    Neck Pillows    旅行颈枕（Travel 类目产品，标题含 Neck Pillow）
  *
  * Material（填充材质，取自 getProductSpecs(asin).material）：
- * - down-alternative   Down Alternative   Microfiber / Hollowfibre（2026-09-30 用户定：microfiber 枕头归入此类）
+ * - down-alternative   Down Alternative   Microfiber / Hollowfibre（2026-09-30 用户定：microfiber 枕头归入此类；
+ *                                   2026-10-09：Polyester 纤维填充同属化纤替代绒，归入此类——
+ *                                   否则长抱枕芯（material=Polyester）在 /pillows/pillow-inserts/ 按材质分区时落空不显示）
  * - down               Down               暂无产品（导航置灰 coming soon）
  * - memory-foam        Memory Foam        记忆棉（8 款记忆棉颈枕）
  *
@@ -45,7 +48,7 @@ export const PILLOW_TYPES: PillowTaxon[] = [
   },
   {
     key: 'pillow-cases',
-    label: 'Decorative Pillow Cases',
+    label: 'Throw Pillow Cases',
     slug: 'pillow-cases',
     menuDesc: 'A fresh look, instantly.',
     blurb: 'Decorative covers in soft, muted tones — an instant refresh for any cushion.',
@@ -96,7 +99,7 @@ export function pillowTypeOf(p: Pick<MakimooProduct, 'title' | 'subcategory'>): 
 export function pillowMaterialOf(p: Pick<MakimooProduct, 'asin'>): string {
   const m = getProductSpecs(p.asin.toLowerCase())?.material || '';
   if (/memory foam/i.test(m)) return 'memory-foam';
-  if (/microfiber|hollowfibre|hollow ?fibre|down alternative/i.test(m)) return 'down-alternative';
+  if (/microfiber|hollowfibre|hollow ?fibre|down alternative|polyester/i.test(m)) return 'down-alternative';
   if (/^down$/i.test(m)) return 'down';
   return '';
 }
@@ -124,6 +127,19 @@ export function pillowSizesOf(p: Pick<MakimooProduct, 'asin'>): string[] {
   const group = getVariantGroupOf(p.asin);
   if (!group) return [];
   return Array.from(new Set(group.members.map((m) => m.size).filter((s): s is string => !!s)));
+}
+
+/** 卡片展示标题规则（2026-10-09 用户定，仅影响 Pillows 列表卡标题，PDP 详情页标题不变）：
+ *  - pillow-inserts → "Pillow Inserts Set of 2"；长抱枕芯（1 个装）→ "Body Pillow Insert"
+ *  - pillow-cases   → "Pillow Covers Set of 2"
+ *  - neck-pillows / 未分类 → ''（卡片沿用产品原标题） */
+export function pillowCardTitle(p: Pick<MakimooProduct, 'title' | 'subcategory'>): string {
+  const type = pillowTypeOf(p);
+  if (type === 'pillow-inserts') {
+    return /body pillow/i.test(p.title) ? 'Body Pillow Insert' : 'Pillow Inserts Set of 2';
+  }
+  if (type === 'pillow-cases') return 'Pillow Covers Set of 2';
+  return '';
 }
 
 /**

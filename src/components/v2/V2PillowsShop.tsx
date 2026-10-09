@@ -11,13 +11,14 @@ import {
   pillowTypeOf,
   pillowMaterialOf,
   pillowSizesOf,
+  pillowCardTitle,
   applyPillowCardMerges,
 } from '@/data/pillows-taxonomy';
 
 /**
  * Pillows 一级选购视图（2026-09-30 用户定：展示方法与逻辑完全对齐 /bedding/bed-sets/）：
- * - 无意图回显行、无 hero；粘性筛选条 = "Type:" + "Material:" 两个下拉（默认 All / All Materials，
- *   选中高亮），两组为交集关系
+ * - 无意图回显行、无 hero；粘性筛选条 = "Type:" + "Filling:" 两个下拉（默认 All / All Fillings，
+ *   选中高亮），两组为交集关系（材质维度对外文案 2026-10-09 用户定由 Material 改为 Filling）
  * - 始终按 Type 分区展示（分区标题仅 H2，无 blurb）；选中 Type = 只渲染该分区
  * - 卡片 = BeddingSetCard 同款家族卡（方图 + 徽标 + 标题 + 尺寸带 + From 价）；
  *   badge 遵循全站统一规则：未选材质 → 叠材质标签；选了材质 → 叠 type 标签；两个维度都选定 → 不叠
@@ -26,7 +27,9 @@ import {
  */
 
 /** MakimooProduct → BeddingSetCard 最小数据形状（尺寸带取变体族全尺寸；From 价 = 卡片展示价；
- *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）） */
+ *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）；
+ *  titleOverride = 卡片标题规则（2026-10-09，pillowCardTitle：ins "Pillow Inserts Set of 2" /
+ *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"，颈枕返回 '' 不覆盖）） */
 function toFamilyCard(
   p: MakimooProduct,
   colors?: string[],
@@ -42,6 +45,7 @@ function toFamilyCard(
       p.priceRange?.minVariantPrice?.currencyCode ||
       'USD',
     colors,
+    titleOverride: pillowCardTitle(p) || undefined,
   };
 }
 
@@ -133,14 +137,14 @@ export default function V2PillowsShop({ products }: { products: MakimooProduct[]
             <>
               <span className="hidden lg:block w-px h-6 bg-warm-gray flex-shrink-0" aria-hidden="true" />
               <label className="flex items-center gap-2 flex-shrink-0">
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#999]">Material:</span>
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#999]">Filling:</span>
                 <select
                   value={material}
                   onChange={(e) => setMaterial(e.target.value)}
                   className={selectCls(!!material)}
-                  aria-label="Filter by material"
+                  aria-label="Filter by filling"
                 >
-                  <option value="">All Materials</option>
+                  <option value="">All Fillings</option>
                   {materialOptions.map((m) => (
                     <option key={m.key} value={m.key}>
                       {m.label}
@@ -205,6 +209,7 @@ export default function V2PillowsShop({ products }: { products: MakimooProduct[]
                   family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
                   badges={cardBadges(p)}
                   paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+                  compactText
                 />
               ))}
             </div>

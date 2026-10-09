@@ -41,6 +41,22 @@ export interface SetFamily {
   currency: string;
   /** 原始材质列表（不过 "100% " 归一化，与 PLP 材质筛选口径一致），供材质筛选 */
   materials: string[];
+  /** 卡片展示标题覆盖（2026-10-09 用户定，beddingCardTitle；仅卡面标题，PDP 原标题不变） */
+  titleOverride?: string;
+}
+
+/** 卡片展示标题规则（2026-10-09 用户定，仅影响列表卡标题）：
+ *  - 100% Linen         → 套装 "Linen Duvet Cover Set of 3/4"；独立被套（duvet）"Linen Duvet Cover"
+ *  - Washed Cotton-Like → "Brushed Cotton Duvet Cover"（对外展示名 Brushed Cotton，不带 Set of x）
+ *  - Linen-Like         → 套装 "Linen-Like Duvet Cover Set of 3/4"；独立被套 "Linen-Like Duvet Cover"
+ *  - 其他材质（Satin / Microfiber 等）→ ''（卡片沿用原标题） */
+export function beddingCardTitle(kind: SetKind, materials: string[]): string {
+  const m = materials[0] || '';
+  const setSuffix = kind === 'four' ? ' Set of 4' : kind === 'three' ? ' Set of 3' : '';
+  if (m === '100% Linen') return `Linen Duvet Cover${setSuffix}`;
+  if (m === 'Washed Cotton-Like') return 'Brushed Cotton Duvet Cover';
+  if (m === 'Linen-Like') return `Linen-Like Duvet Cover${setSuffix}`;
+  return '';
 }
 
 export function classifySet(asin: string): SetKind | null {
@@ -125,6 +141,7 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       .filter((n) => !Number.isNaN(n) && n > 0);
     const kindOf = classifySet(rep.asin)!;
     const duvetColor = key.includes('::') ? key.split('::')[1] : '';
+    const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
     return {
       key,
       kind: kindOf,
@@ -136,7 +153,8 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       fromPrice: prices.length > 0 ? String(Math.min(...prices)) : '',
       toPrice: prices.length > 0 ? String(Math.max(...prices)) : '',
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
-      materials: getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [],
+      materials,
+      titleOverride: beddingCardTitle(kindOf, materials) || undefined,
     };
   });
 }

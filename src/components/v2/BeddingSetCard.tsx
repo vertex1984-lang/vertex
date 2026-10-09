@@ -4,9 +4,12 @@ import { resolveUrl } from '@/lib/paths';
 import type { SetFamily } from '@/data/bedding-families';
 
 /** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足；
- *  colors = 卡面颜色变体行（2026-10-02 pillows 合并卡用，如 "Black / Grey / Pink"） */
+ *  colors = 卡面颜色变体行（2026-10-02 pillows 合并卡用，如 "Black / Grey / Pink"）；
+ *  titleOverride = 卡片展示标题覆盖（2026-10-09 pillows 卡片标题规则用，pillowCardTitle），
+ *  仅影响卡面标题，href/PDP 仍用产品原标题 */
 export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'> & {
   colors?: string[];
+  titleOverride?: string;
 };
 
 /**
@@ -21,11 +24,22 @@ export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'cu
  * 标题是布料/材质时叠 type 标签（SET_KIND_LABEL，如 "3-Piece Set"；/products?cat=bedding 材质分区）；
  * 面料页（/bedding/linen/ 等）整页同一布料，两维度都已表达 → 不叠任何标签。
  */
+
+/** 2026-10-08 用户定：全站产品卡标签（badge）暂不展示。规则保留——上面的展示规则注释与
+ *  各 Shop 组件的 cardBadges 计算逻辑均未删，后续可能再启用：把开关改回 true 即可恢复。 */
+const SHOW_CARD_BADGES = false;
+
+/** 2026-10-08 用户定：全站产品卡不再展示变体信息行（尺寸带 sizes / 颜色变体行 colors）。
+ *  数据口径保留（pillowSizesOf、buildSetFamilies 尺寸带、合并卡 colors 等均未动），
+ *  恢复时把开关改回 true 即可。 */
+const SHOW_CARD_VARIANT_INFO = false;
+
 export default function BeddingSetCard({
   family,
   badges = [],
   sizesSuffix = '',
   paddedWhiteBg = false,
+  compactText = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
@@ -35,9 +49,11 @@ export default function BeddingSetCard({
    *  object-contain + p-2 sm:p-7 留白边，容器白底（与 ProductCard 白底规则一致），
    *  默认 false = object-cover 打满（场景图，bedding/blankets 不变） */
   paddedWhiteBg?: boolean;
+  /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档（其他类目后续逐一统一，暂不动） */
+  compactText?: boolean;
 }) {
   const img = spotlightImage(family.rep);
-  const name = family.rep.title.replace(
+  const name = (family.titleOverride || family.rep.title).replace(
     /,\s*(Twin|Full|Queen|King|\d+\s*x\s*\d+\s*cm)$/i,
     ''
   );
@@ -55,7 +71,7 @@ export default function BeddingSetCard({
             paddedWhiteBg ? 'object-contain p-2 sm:p-7' : 'object-cover'
           }`}
         />
-        {badges.length > 0 && (
+        {SHOW_CARD_BADGES && badges.length > 0 && (
           <div className="absolute top-2.5 left-2.5 flex flex-col items-start gap-1.5">
             {badges.map((b) => (
               <span
@@ -68,12 +84,16 @@ export default function BeddingSetCard({
           </div>
         )}
       </div>
-      {/* 白色信息区：标题/价格小号字 + 紧凑内边距（2026-09 用户定：除尺寸行外文字缩小、白色区压缩） */}
+      {/* 白色信息区：标题/价格小号字 + 紧凑内边距（2026-09 用户定：除尺寸行外文字缩小、白色区压缩）；
+          compactText（2026-10-08 用户定）= Pillows / Bedding 类目卡片标题与价格再缩小一档，其他类目不变 */}
       <div className="p-3 lg:p-4">
-        <h3 className="text-xs lg:text-sm font-semibold text-charcoal truncate" title={name}>
+        <h3
+          className={`${compactText ? 'text-[11px] lg:text-xs' : 'text-xs lg:text-sm'} font-semibold text-charcoal truncate`}
+          title={name}
+        >
           {name}
         </h3>
-        {family.sizes.length > 0 && (
+        {SHOW_CARD_VARIANT_INFO && family.sizes.length > 0 && (
           /* truncate + title：尺寸段多时在卡片边缘省略号截断（hover 显全），不再硬截数字中间（2026-09-27） */
           <p
             className="mt-1 text-[11px] lg:text-xs text-[#999] whitespace-nowrap truncate"
@@ -83,7 +103,7 @@ export default function BeddingSetCard({
             {sizesSuffix ? ` ${sizesSuffix}` : ''}
           </p>
         )}
-        {family.colors && family.colors.length > 0 && (
+        {SHOW_CARD_VARIANT_INFO && family.colors && family.colors.length > 0 && (
           /* 颜色变体行（2026-10-02 pillows 合并卡）：与尺寸行同款小字灰色，截断 hover 显全 */
           <p
             className="mt-1 text-[11px] lg:text-xs text-[#999] whitespace-nowrap truncate"
@@ -93,7 +113,9 @@ export default function BeddingSetCard({
           </p>
         )}
         {family.fromPrice && (
-          <p className="mt-1.5 text-sm lg:text-base font-semibold text-brand">
+          <p
+            className={`mt-1.5 ${compactText ? 'text-xs lg:text-sm' : 'text-sm lg:text-base'} font-semibold text-brand`}
+          >
             From {formatPrice(family.fromPrice, family.currency)}
           </p>
         )}

@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
 import { buildSetFamilies, classifySet, SET_KIND_LABEL, SetFamily, SetKind } from '@/data/bedding-families';
 import { BEDDING_MATERIAL_ORDER, BEDDING_MATERIAL_BLURBS, sortBeddingMaterials } from '@/data/subcategories';
+import { fabricDisplayName } from '@/data/bedding-fabrics';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import ProductCard from '@/components/ProductCard';
 import { sortByWeight } from '@/lib/weights';
@@ -159,7 +160,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
   // 平铺模式卡片 badge（2026-09 用户定统一规则：叠「页面未表达的另一维度」）：
   // 选了 Type → 类型已由筛选条/摘要行表达，卡片叠布料标签；否则叠 type 标签
   const cardBadges = (f: SetFamily): string[] =>
-    type ? (f.materials[0] ? [f.materials[0]] : []) : [SET_KIND_LABEL[f.kind]];
+    type ? (f.materials[0] ? [fabricDisplayName(f.materials[0])] : []) : [SET_KIND_LABEL[f.kind]];
 
   const showUnclassified = !type && !material && unclassified.length > 0;
   const hasResults = sortedFamilies.length > 0 || showUnclassified;
@@ -240,7 +241,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                 <option value="">All Fabrics</option>
                 {materialChips.map((m) => (
                   <option key={m} value={m}>
-                    {m}
+                    {fabricDisplayName(m)}
                   </option>
                 ))}
               </select>
@@ -253,7 +254,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
             <span>
               {[
                 ...(type ? [TYPE_CHIPS.find((c) => c.key === type)!.label] : []),
-                ...(material ? [material] : []),
+                ...(material ? [fabricDisplayName(material)] : []),
               ].join(' × ')}
               <span className="text-[#999]">
                 {' '}· {sortedFamilies.length} style{sortedFamilies.length === 1 ? '' : 's'}
@@ -285,7 +286,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                   className={`py-8 lg:py-12 scroll-mt-40 ${i === 0 ? 'pt-0' : 'border-t border-[#E8E2DA]'}`}
                 >
                   <div className="mb-5 lg:mb-8">
-                    <h2 className="text-lg lg:text-2xl font-extrabold text-charcoal">{s.material}</h2>
+                    <h2 className="text-lg lg:text-2xl font-extrabold text-charcoal">{fabricDisplayName(s.material)}</h2>
                     {BEDDING_MATERIAL_BLURBS[s.material] && (
                       <p className="mt-1 text-xs lg:text-sm text-[#999]">
                         {BEDDING_MATERIAL_BLURBS[s.material]}
@@ -299,6 +300,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                         key={f.key}
                         family={f}
                         badges={[SET_KIND_LABEL[f.kind]]}
+                        compactText
                       />
                     ))}
                   </div>
@@ -312,6 +314,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                   key={f.key}
                   family={f}
                   badges={cardBadges(f)}
+                  compactText
                 />
               ))}
             </div>
@@ -345,6 +348,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                   key={f.key}
                   family={f}
                   badges={cardBadges(f)}
+                  compactText
                 />
               ))}
             </div>
