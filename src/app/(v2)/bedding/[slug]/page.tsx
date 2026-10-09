@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS, BED_SETS_SLUG, BED_SETS_KINDS, BED_SETS_PAGE_COPY } from '@/data/bedding-families';
-import { BEDDING_FABRICS, fabricBySlug } from '@/data/bedding-fabrics';
+import { BEDDING_FABRICS, fabricBySlug, fabricDisplayName } from '@/data/bedding-fabrics';
 import V2FabricShop from '@/components/v2/V2FabricShop';
 import V2BedSetsShop from '@/components/v2/V2BedSetsShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
@@ -49,7 +49,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const fb = fabricBySlug(params.slug);
   if (fb) {
     return {
-      title: `${fb.material} Bedding — Bed Sets`,
+      title: `${fabricDisplayName(fb.material)} Bedding — Bed Sets`,
       description: `${fb.desc} ${fb.story}`,
     };
   }
@@ -83,7 +83,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
       : all.filter((f) => f.kind === kind);
   if (families.length === 0) notFound();
 
-  const crumb = fb ? fb.material : isBedSets ? BED_SETS_PAGE_COPY.heading : SET_KIND_PAGE_COPY[kind!].heading;
+  const crumb = fb ? fabricDisplayName(fb.material) : isBedSets ? BED_SETS_PAGE_COPY.heading : SET_KIND_PAGE_COPY[kind!].heading;
   const pageCopy = isBedSets ? BED_SETS_PAGE_COPY : kind ? SET_KIND_PAGE_COPY[kind] : null;
 
   /* 版心与 products 列表页一致（2026-09 用户定：子类目页宽度/卡片占屏比对齐
@@ -106,7 +106,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
           <div className="relative overflow-hidden rounded-xl aspect-[16/10] sm:aspect-[16/7] lg:aspect-[47/10] mb-8 lg:mb-16">
             <img
               src={resolveUrl(fb.heroImage)}
-              alt={`${fb.material} fabric close-up`}
+              alt={`${fabricDisplayName(fb.material)} fabric close-up`}
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
@@ -116,7 +116,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
                   Makimoo Bedding
                 </p>
                 <h1 className="mt-1 lg:mt-2 text-2xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-cream">
-                  {fb.material}
+                  {fabricDisplayName(fb.material)}
                 </h1>
                 <p className="mt-1 lg:mt-2 text-sm lg:text-lg font-semibold text-cream/90">{fb.desc}</p>
                 <p className="mt-1.5 lg:mt-3 text-xs lg:text-base text-cream/85 leading-relaxed">

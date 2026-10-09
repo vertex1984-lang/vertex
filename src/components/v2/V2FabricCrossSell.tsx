@@ -2,6 +2,7 @@ import Reveal from '@/components/Reveal';
 import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 import type { BeddingFabric } from '@/data/bedding-fabrics';
+import { fabricDisplayName } from '@/data/bedding-fabrics';
 
 /**
  * 面料互导模块（2026-09 新增，仿 Parachute "Only the highest-quality materials, period."）：
@@ -42,14 +43,14 @@ export default function V2FabricCrossSell({
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-warm-gray">
                 <img
                   src={resolveUrl(f.heroImage)}
-                  alt={`${f.material} fabric close-up`}
+                  alt={`${fabricDisplayName(f.material)} fabric close-up`}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-3 lg:p-4">
                   <p className="text-base lg:text-lg font-extrabold text-cream drop-shadow">
-                    {f.material}
+                    {fabricDisplayName(f.material)}
                   </p>
                   <p className="mt-0.5 text-[11px] lg:text-xs text-cream/85">{f.desc}</p>
                   <span className="mt-1.5 inline-flex items-center gap-1.5 text-[11px] lg:text-xs font-semibold text-cream">

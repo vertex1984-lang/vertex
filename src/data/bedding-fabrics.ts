@@ -63,3 +63,10 @@ export function fabricBySlug(slug: string): BeddingFabric | undefined {
 export function fabricByMaterial(material: string): BeddingFabric | undefined {
   return BEDDING_FABRICS.find((f) => f.material === material);
 }
+
+/** 面料对外展示名（2026-10-09 用户定：Washed Cotton-Like 全站展示为 Brushed Cotton）。
+ *  仅展示层替换；匹配/筛选/URL ?sub= 口径仍用原 material 原子词（'Washed Cotton-Like'）。
+ *  PDP 规格表 Material 行、/fabric-guide/ 与 /better-texture/ 营销页暂未替换（数据源口径）。 */
+export function fabricDisplayName(material: string): string {
+  return material === 'Washed Cotton-Like' ? 'Brushed Cotton' : material;
+}

@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { SET_KIND_LABEL, SetFamily, SetKind } from '@/data/bedding-families';
 import { BEDDING_MATERIAL_ORDER, sortBeddingMaterials } from '@/data/subcategories';
+import { fabricDisplayName } from '@/data/bedding-fabrics';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import { sortByWeight } from '@/lib/weights';
 
@@ -17,8 +18,8 @@ import { sortByWeight } from '@/lib/weights';
 
 const KIND_ORDER: SetKind[] = ['four', 'three', 'comforter', 'duvet'];
 
-/** 布料标签：家族主材质（materials[0]），与 V2FabricShop 同口径 */
-const fabricBadge = (f: SetFamily): string[] => (f.materials[0] ? [f.materials[0]] : []);
+/** 布料标签：家族主材质（materials[0]），与 V2FabricShop 同口径；展示名经 fabricDisplayName（2026-10-09） */
+const fabricBadge = (f: SetFamily): string[] => (f.materials[0] ? [fabricDisplayName(f.materials[0])] : []);
 
 export default function V2BedSetsShop({ families }: { families: SetFamily[] }) {
   const [type, setType] = useState<'' | SetKind>('');
@@ -110,7 +111,7 @@ export default function V2BedSetsShop({ families }: { families: SetFamily[] }) {
                 <option value="">All Fabrics</option>
                 {materialOptions.map((m) => (
                   <option key={m} value={m}>
-                    {m}
+                    {fabricDisplayName(m)}
                   </option>
                 ))}
               </select>
@@ -125,7 +126,7 @@ export default function V2BedSetsShop({ families }: { families: SetFamily[] }) {
             <span>
               {[
                 ...(type ? [`${SET_KIND_LABEL[type]}s`] : []),
-                ...(material ? [material] : []),
+                ...(material ? [fabricDisplayName(material)] : []),
               ].join(' × ')}
               <span className="text-[#999]">
                 {' '}· {filtered.length} style{filtered.length === 1 ? '' : 's'}
@@ -171,7 +172,7 @@ export default function V2BedSetsShop({ families }: { families: SetFamily[] }) {
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
               {s.list.map((f) => (
-                <BeddingSetCard key={f.key} family={f} badges={cardBadges(f)} />
+                <BeddingSetCard key={f.key} family={f} badges={cardBadges(f)} compactText />
               ))}
             </div>
           </section>
