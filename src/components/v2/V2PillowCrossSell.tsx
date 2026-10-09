@@ -17,9 +17,16 @@ export interface PillowCrossSellItem {
 export default function V2PillowCrossSell({
   items,
   currentSlug,
+  basePath = '/pillows',
+  eyebrow = 'Makimoo Pillows',
+  heading = 'More Ways to Shop Pillows',
 }: {
   items: PillowCrossSellItem[];
   currentSlug?: string;
+  /** 链接前缀（2026-10-09 泛化：cushions 二级页复用本组件，传 '/cushions'） */
+  basePath?: string;
+  eyebrow?: string;
+  heading?: string;
 }) {
   const list = items.filter((f) => f.slug !== currentSlug);
   if (list.length === 0) return null;
@@ -28,17 +35,17 @@ export default function V2PillowCrossSell({
       <Reveal>
         <div className="text-center mb-6 lg:mb-8">
           <p className="text-[10px] lg:text-xs font-semibold tracking-[0.2em] uppercase text-brand">
-            Makimoo Pillows
+            {eyebrow}
           </p>
           <h2 className="mt-2 text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal">
-            More Ways to Shop Pillows
+            {heading}
           </h2>
         </div>
         <div className="flex gap-3 lg:gap-4 overflow-x-auto pb-2 [justify-content:safe_center] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {list.map((f) => (
             <a
               key={f.slug}
-              href={v2url(`/pillows/${f.slug}/`)}
+              href={v2url(`${basePath}/${f.slug}/`)}
               className="group block flex-shrink-0 w-[67vw] sm:w-[276px] lg:w-[322px]"
             >
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-warm-gray">

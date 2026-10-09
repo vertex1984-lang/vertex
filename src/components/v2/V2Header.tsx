@@ -132,7 +132,7 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
   }
   // Cushions 重构（2026-10-09 用户定）：首列 = 风格 3 类（Corduroy Classics / Soft Solids /
   // Floral & Prints，取自 subcategories 注册表，与 /products?cat=cushions 分区、筛选同源），
-  // 深链 /products?cat=cushions&sub=<key>；Featured 列保持不变
+  // 直达 /cushions/[slug]/ 二级 PLP（与 pillows/bedding 细分类目同构）；Featured 列保持不变
   if (cat === 'cushions') {
     return [
       {
@@ -141,7 +141,7 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
         links: getSubcategoriesOf('cushions').map((s) => ({
           label: s.label,
           desc: s.blurb,
-          href: `/products?cat=cushions&sub=${encodeURIComponent(s.key)}`,
+          href: `/cushions/${encodeURIComponent(s.key)}/`,
         })),
       },
       { title: 'Featured', links: featured },

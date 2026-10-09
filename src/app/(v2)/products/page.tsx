@@ -537,7 +537,8 @@ export default function V2ProductsPage() {
         <V2PillowsShop products={pillowShopProducts} />
       ) : cushionsMode && !isSearching ? (
         /* cushions 选购视图（2026-10-09 用户定）：意图回显 + 粘性 Style 筛选 + 按风格 3 分区
-           （prints / solids / corduroy，sub= 参数深链到对应风格，如 Header "Shop Corduroy"） */
+           （prints / solids / corduroy，sub= 参数深链保留兼容旧链接；
+           导航入口已改为 /cushions/[slug]/ 二级页，与 pillows/bedding 同构） */
         <V2CushionsShop key={activeSub} products={cushionShopProducts} initialStyle={activeSub} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
