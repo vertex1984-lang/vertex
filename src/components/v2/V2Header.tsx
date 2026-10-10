@@ -366,18 +366,17 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
-      {/* iOS 26 Safari 刘海染色对策 v4（2026-10-10，依 1ar.io/vibing.inc 实测规则）：
-          采样器只读 fixed/sticky 元素【自身】的 background-color/backdrop-filter，
-          容器自身带背景会触发它向子元素找颜色（采到公告条橙）。
-          故 fixed 容器必须完全透明——视觉米色由子元素承担（安全条 bg-off-white、
-          header 实底 bg-off-white/95），观感不变；采样器找不到可采的 fixed 元素，
-          回落到 html/body 米色（与 parachutehome 同原理）。 */}
+      {/* iOS 26 Safari 刘海染色对策 v6（2026-10-10）：主方案改为去掉 viewport-fit=cover
+          （见 layout.tsx）。容器透明 + 米色 spacer 保留作双保险：无 cover 时 spacer 高度
+          归零不占布局；若日后恢复 cover 它仍能涂满刘海区。 */}
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
         <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
-            移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开 */}
+            移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开。
+            2026-10-10 v6：刘海染色改走「去掉 viewport-fit=cover」路线（parachutehome 同构），
+            公告条保持橙底不变（米底方案用户已否，spacer 米底线方案实证无效） */}
         <div
           className={`bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'

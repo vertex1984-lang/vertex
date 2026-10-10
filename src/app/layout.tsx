@@ -31,16 +31,15 @@ export const metadata: Metadata = {
   },
 };
 
-// 刘海屏适配 v3（2026-10-10，用户实测 theme-color 方案无效后改为完全自控方案）：
-// viewport-fit=cover 让页面延伸进刘海/Home 指示条区域，刘海区颜色由 CSS 显式控制：
-// V2Header 固定头部最顶部垫一条 bg-off-white 的 env(safe-area-inset-top) 高度安全条，
-// 任何刘海 iOS 设备上刘海区都显示网站底色；各页顶部留白/吸顶偏移统一 +env(safe-area-inset-top)，
-// 底部吸底元素的 env(safe-area-inset-bottom) 在此模式下生效（原本就是为 cover 写的）。
-// themeColor 保留作部分浏览器的补充提示。
+// 刘海屏适配 v6（2026-10-10）：去掉 viewport-fit=cover。
+// 真机实证：iOS 26 Safari 在 cover 模式下会用「页面顶部可见条颜色」涂刘海染色层，
+// 透明容器/米色 spacer/theme-color 均拦不住（采到公告条橙）；parachutehome 无 cover
+// 则刘海区由 Safari 按 body 底色自行填充、不采页面顶条——黑公告条也不染色。
+// 去掉 cover 后 env(safe-area-inset-top) 全站回落为 0，各页 calc(原值+env) 自动还原，
+// spacer 高度归零，布局不受影响；公告条保持橙色。若真机仍染色则回滚此提交。
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  viewportFit: 'cover',
   themeColor: '#F8F5F0',
 };
 
