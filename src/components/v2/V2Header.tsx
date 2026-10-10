@@ -330,8 +330,10 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     mq.addEventListener('change', update);
     return () => mq.removeEventListener('change', update);
   }, []);
-  // mega menu 展开时强制实底，保证导航文字在面板上可读
-  const solid = scrolled || !transparentStart || openMenu !== '' || isMobile;
+  // mega menu 展开时强制实底，保证导航文字在面板上可读；
+  // 搜索面板展开时同样强制实底（2026-10-10 用户反馈：桌面端搜索面板是实底米色，
+  // 透明头部叠在大图上与面板不协调）
+  const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen || isMobile;
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
   const textColor = solid ? 'text-charcoal' : 'text-cream';
@@ -455,10 +457,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             </button>
           </div>
 
-          {/* Search Panel：导航下方的下拉面板，不遮全屏、不锁滚动，点外部/Esc 关闭 */}
+          {/* Search Panel：导航下方的下拉面板，不遮全屏、不锁滚动，点外部/Esc 关闭；
+              背景与实底头部同规格（bg-off-white/95 + backdrop-blur，2026-10-10 用户反馈两者色差不协调） */}
           {searchOpen && (
             <div
-              className="absolute top-full left-0 right-0 bg-off-white border-y border-warm-gray shadow-[0_12px_32px_rgba(60,45,30,0.12)] text-charcoal"
+              className="absolute top-full left-0 right-0 bg-off-white/95 backdrop-blur border-y border-warm-gray shadow-[0_12px_32px_rgba(60,45,30,0.12)] text-charcoal"
               style={{ animation: 'fadeIn 0.18s ease-out' }}
             >
               <div className="max-w-2xl mx-auto px-6 py-5">
