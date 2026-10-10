@@ -132,13 +132,18 @@ export function pillowSizesOf(p: Pick<MakimooProduct, 'asin'>): string[] {
 /** 卡片展示标题规则（2026-10-09 用户定，仅影响 Pillows 列表卡标题，PDP 详情页标题不变）：
  *  - pillow-inserts → "Pillow Inserts Set of 2"；长抱枕芯（1 个装）→ "Body Pillow Insert"
  *  - pillow-cases   → "Pillow Covers Set of 2"
- *  - neck-pillows / 未分类 → ''（卡片沿用产品原标题） */
+ *  - neck-pillows   → "Neck Pillow, 颜色"（颜色取短标题最后一个逗号后的部分；无颜色 → "Neck Pillow"）
+ *  - 未分类 → ''（卡片沿用产品原标题） */
 export function pillowCardTitle(p: Pick<MakimooProduct, 'title' | 'subcategory'>): string {
   const type = pillowTypeOf(p);
   if (type === 'pillow-inserts') {
     return /body pillow/i.test(p.title) ? 'Body Pillow Insert' : 'Pillow Inserts Set of 2';
   }
   if (type === 'pillow-cases') return 'Pillow Covers Set of 2';
+  if (type === 'neck-pillows') {
+    const m = p.title.match(/,\s*([^,]+)\s*$/);
+    return m ? `Neck Pillow, ${m[1]}` : 'Neck Pillow';
+  }
   return '';
 }
 
