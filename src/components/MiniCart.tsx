@@ -157,14 +157,15 @@ export default function MiniCart() {
 
   return (
     <>
-      {/* Overlay */}
-      <div
-        className={`fixed inset-0 bg-black/40 z-[1600] transition-opacity duration-300 ${
-          open ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={() => setOpen(false)}
-        aria-hidden="true"
-      />
+      {/* Overlay — 条件渲染而非 opacity-0：iOS 26 Safari 刘海采样器会读取
+          opacity:0 的 fixed 元素背景色，display:none 才除外 */}
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/40 z-[1600]"
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Drawer */}
       <div
