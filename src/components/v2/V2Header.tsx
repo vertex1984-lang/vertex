@@ -377,9 +377,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
             移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开。
             2026-10-10 v7：橙色背景移到 absolute 子层——iOS 26 Safari 刘海采样器不读取 fixed
-            容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明 */}
+            容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明。
+            v8 诊断（2026-10-10 用户定）：移动端主页不渲染公告条（hidden lg:block），
+            验证刘海染色源是否为公告条橙色 */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
+            normalizedPath === '' ? 'hidden lg:block ' : ''
+          }${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
