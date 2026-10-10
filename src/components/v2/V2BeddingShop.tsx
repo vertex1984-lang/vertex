@@ -200,7 +200,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
       {/* 粘性筛选条：类型 + 材质 + 排序；滚动时吸顶，随时一键收窄（不离开浏览流）
           背景必须不透明（bg-off-white 实底）：/95 + blur 会让下方滚动文字透上来，看起来像叠字
           z-30：必须低于移动端导航抽屉遮罩（z-40），否则抽屉打开时筛选条浮在抽屉之上 */}
-      <div className="sticky top-[calc(60px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
+      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
         <div className="flex flex-wrap lg:flex-nowrap items-center gap-2 lg:gap-2.5">
           <div className="flex items-center gap-2 lg:gap-2.5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {/* Type 下拉（2026-09 用户定：chips 改下拉，默认 All；选中后高亮，与 Fabric 同款） */}
