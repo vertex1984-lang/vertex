@@ -31,15 +31,14 @@ export const metadata: Metadata = {
   },
 };
 
-// 刘海屏适配 v6（2026-10-10）：去掉 viewport-fit=cover。
-// 真机实证：iOS 26 Safari 在 cover 模式下会用「页面顶部可见条颜色」涂刘海染色层，
-// 透明容器/米色 spacer/theme-color 均拦不住（采到公告条橙）；parachutehome 无 cover
-// 则刘海区由 Safari 按 body 底色自行填充、不采页面顶条——黑公告条也不染色。
-// 去掉 cover 后 env(safe-area-inset-top) 全站回落为 0，各页 calc(原值+env) 自动还原，
-// spacer 高度归零，布局不受影响；公告条保持橙色。若真机仍染色则回滚此提交。
+// 刘海屏适配 v7（2026-10-10，按 1ar.io Safari 26 采样规则文档）：保留 viewport-fit=cover
+// ——它是 env(safe-area-inset-*) 生效的前提，对染色本身不起决定作用（v6 去掉 cover 证伪）。
+// 染色根治在 V2Header：公告条/导航行的背景移到 absolute 子层（Safari 26 不采样 fixed
+// 元素内部的 absolute 子元素），html/body 米色作采样回退。themeColor 仅作旧版补充提示。
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  viewportFit: 'cover',
   themeColor: '#F8F5F0',
 };
 
