@@ -11,8 +11,8 @@ import { getVariantGroupOf, CUSHION_LISTING_HIDDEN_ASINS } from '@/data/variant-
 /** cm → in，去小数点（四舍五入取整）：43cm→17、47cm→19、95cm→37 */
 const cmToIn = (cm: number) => Math.round(cm / 2.54);
 
-/** 卡片标题规则（2026-10-09 用户定）："Cushions Set of {x}, {W} x {H} in"
- *  （不带颜色；尺寸换算成英寸、去小数点后一位）。
+/** 卡片标题规则（2026-10-09 用户定，v2）："Cushions {x} pack, {W}x{H}\""
+ *  （不带颜色；尺寸换算成英寸、去小数点、无空格、双引号表英寸）。
  *  尺寸来源：优先解析代表品短标题（"95 x 45cm" / "95x45cm" / "47cm Round"，短标题是策划过的
  *  产品实际尺寸）；解析不到才用变体组尺寸带（cm，buildBlanketFamilies 已去单位）。
  *  套装数来源：短标题或尺寸带（110x55 家族 size 字段存的是 "Set of N" 套件数，非尺寸）
@@ -29,21 +29,19 @@ export function cushionCardTitle(f: BlanketFamily): string {
   const sizeSeg = (() => {
     const t = f.rep.title;
     const round = t.match(/(\d+(?:\.\d+)?)\s*cm\s*round/i);
-    if (round) return `${cmToIn(parseFloat(round[1]))} in Round`;
+    if (round) return `${cmToIn(parseFloat(round[1]))}" Round`;
     const wh = t.match(/(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*cm/i);
-    if (wh) return `${cmToIn(parseFloat(wh[1]))} x ${cmToIn(parseFloat(wh[2]))} in`;
+    if (wh) return `${cmToIn(parseFloat(wh[1]))}x${cmToIn(parseFloat(wh[2]))}"`;
     // 尺寸带首段是数字才是尺寸（"110×55"）；"Set of 4" 这类套件数段跳过
-    return /^\d/.test(sizeBand) ? sizeBand : '';
+    if (!/^\d/.test(sizeBand)) return '';
+    const parts = sizeBand
+      .split('×')
+      .map((s) => cmToIn(parseFloat(s)))
+      .filter((n) => !Number.isNaN(n));
+    return parts.length > 0 ? parts.join('x') + '"' : '';
   })();
-  const sizeIn = sizeSeg.includes('in')
-    ? sizeSeg
-    : sizeSeg
-        .split('×')
-        .map((s) => cmToIn(parseFloat(s)))
-        .filter((n) => !Number.isNaN(n))
-        .join(' x ') + (sizeSeg ? ' in' : '');
 
-  return `Cushions Set of ${count}${sizeIn ? `, ${sizeIn}` : ''}`;
+  return `Cushions ${count} pack${sizeSeg ? `, ${sizeSeg}` : ''}`;
 }
 
 /** 建家族 + 隐藏同花色有 Set of 2 的 Set of 4 卡片（名单见 variant-groups.ts） */
