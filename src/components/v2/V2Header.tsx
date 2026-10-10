@@ -347,6 +347,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
+      {/* iOS 26 Safari 刘海染色对策（2026-10-10 实测）：Safari 26 自行在刘海/状态栏区涂一层
+          染色，颜色取自贴近屏幕顶缘的 fixed/sticky 元素的背景色——透明元素被跳过，
+          会一路找到公告条的橙色（theme-color 已被 Safari 26 忽略）。
+          故在顶缘放一个独立的、不透明米色的 fixed 安全条（z 最高），让采样器首先读到米色。
+          视觉上与下面头部内的安全条完全重叠，无差异；无刘海设备高度为 0。 */}
+      <div aria-hidden="true" className="fixed top-0 inset-x-0 z-[60] bg-off-white pointer-events-none" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
