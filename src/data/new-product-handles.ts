@@ -345,6 +345,10 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'corduroy-pillow-covers-charcoal-40x40-mk-pc-cord-charcoal',
   'corduroy-pillow-covers-charcoal-45x45-mk-pc-cord-charcoal-45',
   'cotton-like-pillow-covers-sage-40x40-mk-pc-ctn-sage',
+  'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream',
+  'corduroy-chair-cushions-dusty-rose-95x45-mk-cushion-cord-dustyrose',
+  'corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive',
+  'corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue',
   'cotton-like-pillow-covers-sage-45x45-mk-pc-ctn-sage-45',
   'cotton-like-pillow-covers-cream-40x40-mk-pc-ctn-cream',
   'cotton-like-pillow-covers-cream-45x45-mk-pc-ctn-cream-45',
@@ -357,7 +361,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'long-body-pillow-insert-54x20-mk-bp-insert-1pc',
   // 2026-10-09 颈枕新品（采自 feat/pdp-v2-features f617a9e）：NECKPILLOW-EGGCASE 家族 6 色
   'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732',
-  'makimoo-memory-foam-travel-neck-pillow-violet-egg-case-1688-913882303732-c2',
   'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3',
   'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4',
   'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5',

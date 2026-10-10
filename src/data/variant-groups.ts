@@ -395,6 +395,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0cbt7r7nn', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7r7nn', color: 'Corduroy Grey' },
     { asin: 'b0cbt7rfk2', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7rfk2', color: 'Corduroy Coffee' },
     { asin: 'b0cbt8fzwf', handle: '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf', color: 'Khaki' },
+    { asin: 'mk-cushion-cord-cream', handle: 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream', color: 'Cream', size: '95 x 45 cm' },
+    { asin: 'mk-cushion-cord-dustyrose', handle: 'corduroy-chair-cushions-dusty-rose-95x45-mk-cushion-cord-dustyrose', color: 'Dusty Rose', size: '95 x 45 cm' },
+    { asin: 'mk-cushion-cord-olive', handle: 'corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive', color: 'Olive', size: '95 x 45 cm' },
+    { asin: 'mk-cushion-cord-dustyblue', handle: 'corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue', color: 'Dusty Blue', size: '95 x 45 cm' },
     ],
   },
   {
@@ -471,7 +475,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Color',
     members: [
     { asin: '1688-913882303732', handle: 'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732', color: 'Violet' },
-    { asin: '1688-913882303732-c2', handle: 'makimoo-memory-foam-travel-neck-pillow-violet-egg-case-1688-913882303732-c2', color: 'Violet' },
     { asin: '1688-913882303732-c3', handle: 'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3', color: 'Sage Green' },
     { asin: '1688-913882303732-c4', handle: 'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4', color: 'Spring Pink' },
     { asin: '1688-913882303732-c5', handle: 'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5', color: 'Obsidian Grey' },

@@ -143,20 +143,16 @@ export function pillowCardTitle(p: Pick<MakimooProduct, 'title' | 'subcategory'>
 }
 
 /**
- * 列表卡合并/折叠（2026-10-02 用户定）：两款记忆棉旅行颈枕各折叠为一张卡
+ * 列表卡合并/折叠（2026-10-02 用户定）：360° 环绕款记忆棉旅行颈枕折叠为一张卡
  * （一族 = 一款产品 = 一张卡，颜色变体行展示族内全部颜色，From 价取族内最低价）：
  * - 360° 环绕款 b0-travel-memory（代表 = 灰色 b0c2z9pffk）
- * - 可调节按扣款 b0-travel-adjustable（代表 = 灰色 b0bzcmdzns）
  * 仅影响列表展示；PDP 仍是每色独立产品。
+ * 2026-10-10 用户改：b0-travel-adjustable（按扣款）取消合并，Black/Grey 每色独立成卡。
  */
 const PILLOW_CARD_MERGES: { families: string[]; repHandle: string }[] = [
   {
     families: ['b0-travel-memory'],
     repHandle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk',
-  },
-  {
-    families: ['b0-travel-adjustable'],
-    repHandle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcmdzns',
   },
 ];
 

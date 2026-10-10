@@ -17353,41 +17353,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
-    "id": "makimoo-1688-913882303732-c2",
-    "asin": "1688-913882303732-c2",
-    "title": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)",
-    "handle": "makimoo-memory-foam-travel-neck-pillow-violet-egg-case-1688-913882303732-c2",
-    "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-    "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      { "url": "/images/products/1688-913882303732-c2/1.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }, { "url": "/images/products/1688-913882303732-c2/2.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }, { "url": "/images/products/1688-913882303732-c2/3.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }, { "url": "/images/products/1688-913882303732-c2/4.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }, { "url": "/images/products/1688-913882303732-c2/5.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }, { "url": "/images/products/1688-913882303732-c2/6.webp", "altText": "Makimoo Memory Foam U-Shaped Neck Pillow Portable Travel Pillow For Airplane Nap Adjustable Cervical Support Washable Cover Lightweight Compact With Storage Case 23 x 23 x 12 cm (Violet)", "width": 1254, "height": 1254 }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-1688-913882303732-c2",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
     "id": "makimoo-1688-913882303732-c3",
     "asin": "1688-913882303732-c3",
     "title": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
