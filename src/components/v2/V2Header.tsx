@@ -366,11 +366,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
-      {/* iOS 26 Safari 刘海染色对策（2026-10-10 实测两轮）：Safari 26 自行在刘海/状态栏区涂染色层，
-          颜色采样自贴近顶缘的 fixed/sticky 元素自身的背景色，透明容器会被穿过、采到公告条橙色
-          （独立 z-60 安全条、theme-color 均已被实测无效）。故移动端容器自身给不透明米色底
-          （bg-off-white），桌面 lg 保持透明不影响大图页头；配套移动端头部恒实底（见 solid 逻辑）。 */}
-      <div ref={headerRef} className="fixed top-0 z-50 w-full bg-off-white lg:bg-transparent">
+      {/* iOS 26 Safari 刘海染色对策 v4（2026-10-10，依 1ar.io/vibing.inc 实测规则）：
+          采样器只读 fixed/sticky 元素【自身】的 background-color/backdrop-filter，
+          容器自身带背景会触发它向子元素找颜色（采到公告条橙）。
+          故 fixed 容器必须完全透明——视觉米色由子元素承担（安全条 bg-off-white、
+          header 实底 bg-off-white/95），观感不变；采样器找不到可采的 fixed 元素，
+          回落到 html/body 米色（与 parachutehome 同原理）。 */}
+      <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
         <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
