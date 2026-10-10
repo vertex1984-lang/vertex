@@ -366,23 +366,25 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
-      {/* iOS 26 Safari 刘海染色对策 v6（2026-10-10）：主方案改为去掉 viewport-fit=cover
-          （见 layout.tsx）。容器透明 + 米色 spacer 保留作双保险：无 cover 时 spacer 高度
-          归零不占布局；若日后恢复 cover 它仍能涂满刘海区。 */}
+      {/* iOS 26 Safari 刘海染色对策 v7（2026-10-10，1ar.io 采样规则）：采样器扫距视口顶
+          ≤4px 的 fixed/sticky 元素【自身】背景，但不读其内部的 absolute 子元素——故容器、
+          公告条、导航行本身全部透明，颜色由 absolute inset-0 子层承担；采样落空后回退
+          html/body 米色。spacer 保留涂满刘海区（static 子元素，若被采到也是米色）。 */}
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
         <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
             移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开。
-            2026-10-10 v6：刘海染色改走「去掉 viewport-fit=cover」路线（parachutehome 同构），
-            公告条保持橙底不变（米底方案用户已否，spacer 米底线方案实证无效） */}
+            2026-10-10 v7：橙色背景移到 absolute 子层——iOS 26 Safari 刘海采样器不读取 fixed
+            容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明 */}
         <div
-          className={`bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
+          className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
+          <div aria-hidden="true" className="absolute inset-0 bg-brand" />
+          <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
         {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定再压至 py-1=52px，
@@ -391,11 +393,17 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]）——
             2026-10-10 起统一以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
-          className={`flex items-center justify-between px-6 lg:px-10 py-1 lg:py-4 transition-all duration-300 ${textColor} ${
-            solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
-          }`}
+          className={`relative flex items-center justify-between px-6 lg:px-10 py-1 lg:py-4 transition-all duration-300 ${textColor}`}
         >
-          <a href={v2url('/')} className="flex items-center gap-2">
+          {/* 实底背景移到 absolute 子层（v7 刘海对策，同公告条）：header 元素本身透明，
+              Safari 26 采样器不读 fixed 容器内的 absolute 子元素；视觉观感不变 */}
+          <div
+            aria-hidden="true"
+            className={`absolute inset-0 transition-all duration-300 ${
+              solid ? 'bg-off-white/95 backdrop-blur shadow-md' : ''
+            }`}
+          />
+          <a href={v2url('/')} className="relative flex items-center gap-2">
             <img
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
@@ -404,7 +412,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             />
           </a>
 
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium">
+          <nav className="relative hidden lg:flex items-center gap-7 text-sm font-medium">
             {navLinks.map((link) => {
               const navCls = 'relative py-1 text-base hover:text-brand transition-colors group';
               const underline = (
@@ -433,7 +441,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             })}
           </nav>
 
-          <div className="flex items-center gap-1 sm:gap-2">
+          <div className="relative flex items-center gap-1 sm:gap-2">
             <button
               onClick={() => setSearchOpen(true)}
               className={`w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
