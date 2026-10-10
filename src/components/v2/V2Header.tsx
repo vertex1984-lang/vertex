@@ -408,10 +408,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             }`}
           />
           <a href={v2url('/')} className="relative flex items-center gap-2">
+            {/* 移动端（2026-10-10 用户定）：恢复完整 logo（带 makimoo 字样），
+                尺寸在原 h-9 基础上 +10% ≈ h-10；桌面端保持 h-14 不变（+10% 试后取消） */}
             <img
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
-              className="h-9 lg:h-14 w-auto object-contain transition-all duration-300"
+              className="h-10 lg:h-14 w-auto object-contain transition-all duration-300"
               style={solid ? undefined : { filter: 'brightness(0) invert(1)' }}
             />
           </a>
@@ -445,10 +447,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             })}
           </nav>
 
-          <div className="relative flex items-center gap-1 sm:gap-2">
+          {/* 移动端按钮组（2026-10-10 用户定）：44px→36px 更小更紧凑，-mr-2 更靠右；
+              桌面端保持 w-11 h-11 不变 */}
+          <div className="relative flex items-center gap-0 sm:gap-1 lg:gap-2 -mr-2 lg:mr-0">
             <button
               onClick={() => setSearchOpen(true)}
-              className={`w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
+              className={`w-9 h-9 lg:w-11 lg:h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
               aria-label="Search"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
@@ -458,7 +462,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
             <button
               onClick={openMiniCart}
-              className={`relative w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
+              className={`relative w-9 h-9 lg:w-11 lg:h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
               aria-label={cartCount > 0 ? `Cart, ${cartCount} items` : 'Cart'}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -474,7 +478,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             {/* 汉堡按钮 = 抽屉开关：打开时图标变 ×，再点一次关闭（页头始终露出在抽屉上方） */}
             <button
               onClick={() => setMobileOpen((v) => !v)}
-              className="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-1"
+              className="lg:hidden w-9 h-9 flex flex-col items-center justify-center gap-1"
               aria-label={mobileOpen ? 'Close menu' : 'Menu'}
               aria-expanded={mobileOpen}
             >
