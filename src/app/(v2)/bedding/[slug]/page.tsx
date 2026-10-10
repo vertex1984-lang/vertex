@@ -89,7 +89,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
   /* 版心与 products 列表页一致（2026-09 用户定：子类目页宽度/卡片占屏比对齐
      /products?cat=pillows&sub=* ）：移动端 px-3、桌面 px-10 全宽 */
   return (
-    <div className="pt-28 lg:pt-36 pb-10 lg:pb-14">
+    <div className="pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       <div className="px-3 lg:px-10">
         {/* ── 面包屑 ── */}
         <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">

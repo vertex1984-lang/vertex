@@ -330,7 +330,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   return (
     <div className="bg-off-white pb-24 lg:pb-0">
       {/* 面包屑（移动端 pt-24 = 公告条约 30px + 60px fixed 头部（公告条移动端已恢复展示），图片贴合导航下沿；桌面 pt-40；移动端隐藏面包屑本身省首屏空间） */}
-      <div className="px-6 lg:px-10 pt-24 lg:pt-40">
+      <div className="px-6 lg:px-10 pt-[calc(6rem+env(safe-area-inset-top,0px))] lg:pt-[calc(10rem+env(safe-area-inset-top,0px))]">
         <nav className="hidden lg:flex max-w-[1520px] lg:w-[80%] lg:max-w-none mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
           <a href={v2url('/')} className="hover:text-brand">Home</a>
           <span>/</span>

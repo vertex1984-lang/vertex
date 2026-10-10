@@ -171,7 +171,7 @@ export default function MiniCart() {
         className={`fixed top-0 right-0 bottom-0 w-full max-w-md z-[1700] flex flex-col transition-transform duration-300 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
-        style={{ backgroundColor: '#F8F5F0', boxShadow: '-4px 0 20px rgba(0,0,0,0.15)' }}
+        style={{ backgroundColor: '#F8F5F0', boxShadow: '-4px 0 20px rgba(0,0,0,0.15)', paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
         role="dialog"
         aria-label="Shopping cart"
       >

@@ -81,7 +81,7 @@ export default function V2CushionsShop({
 
       {/* 粘性筛选条：Style 下拉（与 pillows 页同款吸顶格式）。
           背景必须不透明（bg-off-white 实底），z-30 必须低于移动端导航抽屉遮罩 z-40 */}
-      <div className="sticky top-[60px] lg:top-[88px] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
+      <div className="sticky top-[calc(60px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
         <div className="flex items-center gap-2 lg:gap-2.5">
           {styleOptions.length > 1 && (
             <label className="flex items-center gap-2 flex-shrink-0">

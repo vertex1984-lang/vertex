@@ -9,7 +9,7 @@ import { v2url } from '@/lib/v2paths';
  */
 export default function FeaturedProductsPage() {
   return (
-    <div className="px-6 pt-36 lg:pt-44 pb-24 lg:pb-32 text-center">
+    <div className="px-6 pt-[calc(9rem+env(safe-area-inset-top,0px))] lg:pt-[calc(11rem+env(safe-area-inset-top,0px))] pb-24 lg:pb-32 text-center">
       <h1 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-charcoal mb-4">
         This page has moved
       </h1>

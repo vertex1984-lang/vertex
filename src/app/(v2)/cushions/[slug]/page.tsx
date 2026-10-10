@@ -69,7 +69,7 @@ export default function CushionSubPage({ params }: { params: { slug: string } })
 
   /* 版心与 bedding/pillows 二级页一致：移动端 px-3、桌面 px-10 全宽 */
   return (
-    <div className="pt-28 lg:pt-36 pb-10 lg:pb-14">
+    <div className="pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       <div className="px-3 lg:px-10">
         {/* ── 面包屑 ── */}
         <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">

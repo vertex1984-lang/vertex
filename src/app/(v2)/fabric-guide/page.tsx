@@ -63,7 +63,7 @@ const eyebrowCls = 'text-[10px] lg:text-xs font-semibold tracking-[0.2em] upperc
  */
 export default function FabricGuidePage() {
   return (
-    <div className="px-3 lg:px-0 pt-32 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-0 pt-[calc(8rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       <div className="lg:w-[80%] lg:mx-auto">
         {/* ── 页头 ── */}
         <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
