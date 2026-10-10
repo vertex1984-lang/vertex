@@ -333,8 +333,19 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
   const transparentStart = normalizedPath === '' || normalizedPath === '/about';
+  // 移动端（<lg）恒实底（2026-10-10 iOS 26 Safari 刘海染色对策的配套）：固定头部容器在移动端
+  // 必须是不透明米色底（否则 Safari 染色采样器穿过透明容器采到公告条橙色，刘海区被染色），
+  // 米色底上 cream 白字/反转白 logo 会隐形，故移动端首页/About 不再使用透明态
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 1023px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
   // mega menu 展开时强制实底，保证导航文字在面板上可读
-  const solid = scrolled || !transparentStart || openMenu !== '';
+  const solid = scrolled || !transparentStart || openMenu !== '' || isMobile;
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
   const textColor = solid ? 'text-charcoal' : 'text-cream';
@@ -347,13 +358,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
-      {/* iOS 26 Safari 刘海染色对策（2026-10-10 实测）：Safari 26 自行在刘海/状态栏区涂一层
-          染色，颜色取自贴近屏幕顶缘的 fixed/sticky 元素的背景色——透明元素被跳过，
-          会一路找到公告条的橙色（theme-color 已被 Safari 26 忽略）。
-          故在顶缘放一个独立的、不透明米色的 fixed 安全条（z 最高），让采样器首先读到米色。
-          视觉上与下面头部内的安全条完全重叠，无差异；无刘海设备高度为 0。 */}
-      <div aria-hidden="true" className="fixed top-0 inset-x-0 z-[60] bg-off-white pointer-events-none" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
-      <div ref={headerRef} className="fixed top-0 z-50 w-full">
+      {/* iOS 26 Safari 刘海染色对策（2026-10-10 实测两轮）：Safari 26 自行在刘海/状态栏区涂染色层，
+          颜色采样自贴近顶缘的 fixed/sticky 元素自身的背景色，透明容器会被穿过、采到公告条橙色
+          （独立 z-60 安全条、theme-color 均已被实测无效）。故移动端容器自身给不透明米色底
+          （bg-off-white），桌面 lg 保持透明不影响大图页头；配套移动端头部恒实底（见 solid 逻辑）。 */}
+      <div ref={headerRef} className="fixed top-0 z-50 w-full bg-off-white lg:bg-transparent">
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
         <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
