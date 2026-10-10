@@ -6498,6 +6498,186 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-CUSHION-CORD-CREAM",
+    "asin": "MK-CUSHION-CORD-CREAM",
+    "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Cream)",
+    "handle": "corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream",
+    "description": "Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers. Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time. Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place. Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons. Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.",
+    "descriptionHtml": "<p>Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers.</p><p>Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time.</p><p>Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place.</p><p>Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons.</p><p>Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.</p>",
+    "productType": "Cushions",
+    "tags": [
+      "Cushions"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-CUSHION-CORD-CREAM/1.webp",
+        "altText": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Cream)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "39.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-CUSHION-CORD-CREAM",
+        "title": "Default Title",
+        "price": {
+          "amount": "39.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-CUSHION-CORD-DUSTYROSE",
+    "asin": "MK-CUSHION-CORD-DUSTYROSE",
+    "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Rose)",
+    "handle": "corduroy-chair-cushions-dusty-rose-95x45-mk-cushion-cord-dustyrose",
+    "description": "Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers. Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time. Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place. Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons. Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.",
+    "descriptionHtml": "<p>Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers.</p><p>Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time.</p><p>Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place.</p><p>Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons.</p><p>Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.</p>",
+    "productType": "Cushions",
+    "tags": [
+      "Cushions"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-CUSHION-CORD-DUSTYROSE/1.webp",
+        "altText": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "39.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-CUSHION-CORD-DUSTYROSE",
+        "title": "Default Title",
+        "price": {
+          "amount": "39.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-CUSHION-CORD-OLIVE",
+    "asin": "MK-CUSHION-CORD-OLIVE",
+    "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Olive)",
+    "handle": "corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive",
+    "description": "Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers. Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time. Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place. Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons. Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.",
+    "descriptionHtml": "<p>Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers.</p><p>Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time.</p><p>Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place.</p><p>Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons.</p><p>Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.</p>",
+    "productType": "Cushions",
+    "tags": [
+      "Cushions"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-CUSHION-CORD-OLIVE/1.webp",
+        "altText": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Olive)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "39.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-CUSHION-CORD-OLIVE",
+        "title": "Default Title",
+        "price": {
+          "amount": "39.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-CUSHION-CORD-DUSTYBLUE",
+    "asin": "MK-CUSHION-CORD-DUSTYBLUE",
+    "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Blue)",
+    "handle": "corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue",
+    "description": "Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers. Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time. Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place. Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons. Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.",
+    "descriptionHtml": "<p>Set of 2 High-Back Corduroy Cushions: Two matching chair pads combine a tall backrest with a generously padded seat, offering consistent comfort for dining chairs, patio seating, or garden loungers.</p><p>Thick, Tufted Corduroy Cover: The ribbed corduroy fabric adds subtle texture and a soft hand-feel, while the deep button tufting helps the fill stay evenly distributed across the back and seat over time.</p><p>Secure Ties for a Neat Fit: Four attached fabric ties let you fasten the cushion to the chair frame at the top and sides, helping keep the pad in place.</p><p>Plush Support for Back and Seat: Filled with resilient polyester padding, the cushion cradles your lower back, spine, and hips to reduce pressure during long meals or relaxing afternoons.</p><p>Versatile 95 x 45cm Size: Works well with rattan, wood, and metal high-back chairs; allow up to 72 hours for the cushion to fully expand.</p>",
+    "productType": "Cushions",
+    "tags": [
+      "Cushions"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-CUSHION-CORD-DUSTYBLUE/1.webp",
+        "altText": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "39.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-CUSHION-CORD-DUSTYBLUE",
+        "title": "Default Title",
+        "price": {
+          "amount": "39.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
   }
 ];
 

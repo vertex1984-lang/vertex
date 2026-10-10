@@ -88,5 +88,7 @@ export interface GroupBoostRule {
 
 export const GROUP_BOOSTS: GroupBoostRule[] = [
   // 2026-09-14 用户要求：旧分组加权规则全部清零，人工权重只保留管理工具的单品打分（weight-boosts.json）
+  // 2026-10-10 用户要求：蛋壳收纳盒颈枕系列（5 色）排在颈枕类目最前边
+  { match: { asinIncludes: ['1688-913882303732'] }, boost: 30, note: '蛋壳颈枕系列置顶颈枕类目（用户指定）' },
 ];
 

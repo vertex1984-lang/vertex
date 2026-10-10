@@ -13,7 +13,6 @@ export interface ProductSpecs {
 export const PRODUCT_SPECS: Record<string, ProductSpecs> = {
   "b098f1bkjq": { material: "Rattan, Wicker, Leather" },
   "1688-913882303732": { material: "Memory Foam" },
-  "1688-913882303732-c2": { material: "Memory Foam" },
   "1688-913882303732-c3": { material: "Memory Foam" },
   "1688-913882303732-c4": { material: "Memory Foam" },
   "1688-913882303732-c5": { material: "Memory Foam" },
