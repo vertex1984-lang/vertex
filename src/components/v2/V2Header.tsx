@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
-import { getFavorites } from '@/lib/favorites';
 import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { fabricByMaterial, fabricDisplayName } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
@@ -199,7 +198,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<MakimooProduct[]>([]);
   const [cartCount, setCartCount] = useState(0);
-  const [favCount, setFavCount] = useState(0);
   // Mega menu：当前展开的分类（'' = 收起）
   const [openMenu, setOpenMenu] = useState('');
   // 移动抽屉 2026-09 改为底部上弹（82dvh，页头保持露出可点），不再需要对齐页头下缘
@@ -296,18 +294,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     };
   }, []);
 
-  // 收藏角标
-  useEffect(() => {
-    const refresh = () => setFavCount(getFavorites().length);
-    refresh();
-    window.addEventListener('makimoo:favorites-updated', refresh);
-    window.addEventListener('storage', refresh);
-    return () => {
-      window.removeEventListener('makimoo:favorites-updated', refresh);
-      window.removeEventListener('storage', refresh);
-    };
-  }, []);
-
   // 搜索建议：300ms 防抖，本地即时过滤
   useEffect(() => {
     const q = searchQuery.trim();
@@ -376,12 +362,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
-        {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），
-            让出首屏空间；桌面保持 py-4 + h-14 = 88px。图标按钮保持 44px 触控目标。
-            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶——2026-10-10 起统一以
-            calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
+        {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定再压至 py-1=52px，
+            让出高度给 hero 图片区）：图标按钮保持 w-11 h-11 = 44px 触控目标。
+            桌面保持 py-4 + h-14 = 88px。
+            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]）——
+            2026-10-10 起统一以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
-          className={`flex items-center justify-between px-6 lg:px-10 py-2 lg:py-4 transition-all duration-300 ${textColor} ${
+          className={`flex items-center justify-between px-6 lg:px-10 py-1 lg:py-4 transition-all duration-300 ${textColor} ${
             solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
           }`}
         >
@@ -433,22 +420,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16" y2="16"/>
               </svg>
             </button>
-
-            {/* 收藏入口（带数量角标；暂无独立收藏页，点击进商品汇总页） */}
-            <a
-              href={v2url('/favorites/')}
-              className={`relative w-11 h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
-              aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-              </svg>
-              {favCount > 0 && (
-                <span className="absolute top-0.5 right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-brand text-cream text-[10px] font-bold flex items-center justify-center">
-                  {favCount > 99 ? '99+' : favCount}
-                </span>
-              )}
-            </a>
 
             <button
               onClick={openMiniCart}
