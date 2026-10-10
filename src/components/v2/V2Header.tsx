@@ -208,6 +208,26 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     if (!mobileOpen) setExpandedCat('');
   }, [mobileOpen]);
 
+  // iOS 26 Safari 首屏染色对策（2026-10-10 用户实测：刚打开时刘海区橙色，
+  // 滚动过一次后/回顶后均正常）——Safari 26 在"页面从未滚动过"时不把页面内容
+  // 合成到刘海/状态栏区，而是用采样色（公告条橙）涂染色层；只要滚动过一次就
+  // 永久切换为合成实际内容（米色安全条）。故加载后做一次无感知的 1px instant
+  // 滚动触发该状态切换（即社区实测的 "scroll runway" 方案）。多时机补刀：
+  // 挂载时 / window load / 300ms 后各试一次，仅 scrollY===0 时才动，不干扰
+  // 浏览器刷新后的滚动位置恢复。1px 低于实底阈值（30/60px），不会触发头部状态变化。
+  useEffect(() => {
+    const nudge = () => {
+      if (window.scrollY === 0) window.scrollTo({ top: 1, behavior: 'instant' as ScrollBehavior });
+    };
+    nudge();
+    window.addEventListener('load', nudge);
+    const t = setTimeout(nudge, 300);
+    return () => {
+      window.removeEventListener('load', nudge);
+      clearTimeout(t);
+    };
+  }, []);
+
   useEffect(() => {
     // 滞回阈值：滚动超过 60px 变实底，回到 30px 以下才恢复透明，
     // 避免在阈值附近来回抖动
