@@ -22,7 +22,7 @@ export default function BestSellersPage() {
   return (
     <>
       {/* 页头：客厅场景背景图 + 深色渐变罩层保证文字可读（pt 补偿 fixed 导航，高度比原设计高约 10%） */}
-      <section className="relative text-cream pt-36 lg:pt-44 pb-16 lg:pb-24 overflow-hidden">
+      <section className="relative text-cream pt-[calc(9rem+env(safe-area-inset-top,0px))] lg:pt-[calc(11rem+env(safe-area-inset-top,0px))] pb-16 lg:pb-24 overflow-hidden">
         <img
           src={resolveUrl('/images/brand/hero-bg-2.webp')}
           alt=""

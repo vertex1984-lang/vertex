@@ -404,7 +404,7 @@ export default function V2ProductsPage() {
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度
        （移动端 pt-28：公告条 32 + 页头 60 + 16px 余量，2026-09 用户定——pt-24 时内容离吸顶页头太近） */
-    <div className="px-3 lg:px-10 pt-28 lg:pt-36 pb-10 lg:pb-14">
+    <div className="px-3 lg:px-10 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -698,6 +698,7 @@ export default function V2ProductsPage() {
         className={`fixed top-0 right-0 bottom-0 w-[85%] max-w-sm z-[1700] bg-white flex flex-col transition-transform duration-300 ease-out lg:hidden ${
           filterOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
         role="dialog"
         aria-label="Filters"
         aria-hidden={!filterOpen}

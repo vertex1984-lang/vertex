@@ -209,7 +209,7 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
     <>
       {/* 主区：左图库（约 58%）+ 右购买区（sticky）；pt-24/40 让内容避开 fixed 导航 */}
       <section className="bg-off-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-24 lg:pt-40 pb-8 lg:pb-14">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-[calc(6rem+env(safe-area-inset-top,0px))] lg:pt-[calc(10rem+env(safe-area-inset-top,0px))] pb-8 lg:pb-14">
           {/* 移动端必须显式 grid-cols-1 + 子项 min-w-0：隐式 auto 列会被图库内容
               （缩略图横排/带 width 属性的主图）撑到内容宽度，导致整页横向溢出、
               标题和主图右缘被裁掉 */}

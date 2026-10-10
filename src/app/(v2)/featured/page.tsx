@@ -30,7 +30,7 @@ const FEATURED_SECTION_IDS = {
 export default function V2FeaturedPage() {
   return (
     <>
-      <div id={FEATURED_SECTION_IDS.featured} className="scroll-mt-32 pt-28 lg:pt-36">
+      <div id={FEATURED_SECTION_IDS.featured} className="scroll-mt-32 pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))]">
         <V2FeaturedProducts products={getFeaturedProducts()} />
       </div>
       <div id={FEATURED_SECTION_IDS.bestSellers} className="scroll-mt-32">

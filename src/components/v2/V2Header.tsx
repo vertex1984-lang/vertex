@@ -348,6 +348,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
+        {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
+            高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
+        <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
             移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开 */}
         <div
@@ -360,8 +363,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
         {/* 移动端头部压缩（2026-09 用户定）：py-2 + logo h-9 = 60px 高（原 80px），
             让出首屏空间；桌面保持 py-4 + h-14 = 88px。图标按钮保持 44px 触控目标。
-            依赖头部高度的两处同步：页面顶部留白（移动端 pt-24 = 公告条约 30 + 头 60 + 余量，
-            桌面端 pt-24 同理）、筛选条吸顶 top-[60px]（抽屉已改底部上弹，不再依赖页头高度） */}
+            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶——2026-10-10 起统一以
+            calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
           className={`flex items-center justify-between px-6 lg:px-10 py-2 lg:py-4 transition-all duration-300 ${textColor} ${
             solid ? 'bg-off-white/95 backdrop-blur shadow-md' : 'bg-transparent'
@@ -656,6 +659,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             style={{
               maxHeight: '82dvh',
               animation: 'slideUp 0.25s ease-out',
+              // viewport-fit=cover：底部内容避开 Home 指示条
+              paddingBottom: 'calc(2rem + env(safe-area-inset-bottom, 0px))',
             }}
             onClick={(e) => e.stopPropagation()}
             onTouchEnd={(e) => e.stopPropagation()}
