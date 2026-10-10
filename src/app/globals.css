@@ -25,6 +25,9 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  /* html 同底色兜底：配合 layout.tsx 的 theme-color，避免 iOS Safari 采样顶部公告条
+     颜色染到刘海/状态栏区域（2026-10-10） */
+  background-color: var(--off-white);
   /* 禁止移动端浏览器自动调整字体大小（2026-09-29 用户实测 Galaxy Z Fold 等机型整体字体被缩小）；
      100% = 不做任何缩放，字号完全由 CSS 决定 */
   -webkit-text-size-adjust: 100%;
