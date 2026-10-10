@@ -13,7 +13,7 @@ export default function V2Hero() {
     // 移动端高度用 svh（small viewport height，按浏览器地址栏/工具栏"显示"时的最小可视高计算）：
     // 移动浏览器（Edge/Chrome/Safari）首屏会显示地址栏+工具栏挤压可视高度，滚动后才收起；
     // 用 vh 会按最大可视高计算，首屏内容被挤出屏外。svh 保证两种状态下 Hero 都不溢出（2026-09-28 用户反馈 Edge 实测）。
-    <section className="relative h-[83svh] min-h-[440px] lg:h-[87vh] lg:min-h-[560px] overflow-hidden">
+    <section className="relative h-[90svh] min-h-[440px] lg:h-[87vh] lg:min-h-[560px] overflow-hidden">
       {/* Background（ken-burns 缓慢缩放，静态单图）：移动端 9:16、桌面端 16:9 两层按断点切换 */}
       <div className="absolute inset-0 overflow-hidden">
         <div
