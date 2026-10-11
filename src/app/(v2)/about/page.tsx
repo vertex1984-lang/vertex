@@ -24,9 +24,10 @@ const STATS = [
 export default function V2AboutPage() {
   return (
     <>
-      {/* 全宽大图页头：从视口顶开始，衬住初始透明的 fixed V2Header。
+      {/* 全宽大图页头：负 margin 上滑到 sticky 导航下方（移动 52px/桌面 88px，
+          2026-10-11 sticky 全站推广），衬住初始透明的 V2Header。
           文案口径与 PDP 品牌故事板块一致（2026-09-30 用户定）：眉题 Makimoo + 主标 */}
-      <section className="relative h-[440px] sm:h-[520px] lg:h-[600px] overflow-hidden">
+      <section className="relative h-[440px] sm:h-[520px] lg:h-[600px] overflow-hidden -mt-[52px] lg:-mt-[88px]">
         <img
           src={resolveUrl('/images/brand/trust-living.webp')}
           alt="A minimal Makimoo living room with a linen sofa and soft natural light"

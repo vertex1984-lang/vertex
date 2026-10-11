@@ -31,8 +31,9 @@ export default function V2Layout({
   // bedding 例外：按材质分组（与该类目页 Collections 一致）
   const catStyles = { ...stylesByCategory(), bedding: beddingMaterialSubs() };
   return (
-    /* overflow-x-clip：防横向溢出且不创建滚动容器；V2 全宽布局，无 1400px 盒子。
-       V2Header 是 fixed 定位，main 不加 padding-top——页面第一屏（hero）从视口顶开始 */
+    /* overflow-x-clip：防横向溢出且不创建滚动容器（sticky 头部不受影响）；V2 全宽布局，无 1400px 盒子。
+       V2Header 是 sticky 文档流定位（2026-10-11 全站推广），main 不加 padding-top——
+       大图页由各自页面用负 margin 衬到导航下方，内页在页面级保留小额呼吸留白 */
     <div className="w-full overflow-x-clip bg-off-white">
       <V2Header catStyles={catStyles} />
       <main>{children}</main>
