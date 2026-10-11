@@ -338,10 +338,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about';
+  // /test/ 测试版首页（2026-10-10 刘海染色采样源诊断，用户定）：恢复移动端公告条
+  //（鲜绿示踪色）+ 恢复移动端默认透明头部（SSR 首帧即终态，头部先于 hero 完成渲染）
+  const isTest = normalizedPath === '/test';
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
   // 移动端（<lg）恒实底（2026-10-10 iOS 26 Safari 刘海染色对策的配套）：固定头部容器在移动端
   // 必须是不透明米色底（否则 Safari 染色采样器穿过透明容器采到公告条橙色，刘海区被染色），
   // 米色底上 cream 白字/反转白 logo 会隐形，故移动端首页/About 不再使用透明态
+  //（/test/ 诊断页除外：isTest 时跳过该强制，恢复透明态以定位采样源）
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia('(max-width: 1023px)');
@@ -353,7 +357,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // mega menu 展开时强制实底，保证导航文字在面板上可读；
   // 搜索面板展开时同样强制实底（2026-10-10 用户反馈：桌面端搜索面板是实底米色，
   // 透明头部叠在大图上与面板不协调）
-  const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen || isMobile;
+  const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen || (isMobile && !isTest);
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
   const textColor = solid ? 'text-charcoal' : 'text-cream';
@@ -379,7 +383,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             2026-10-10 v7：橙色背景移到 absolute 子层——iOS 26 Safari 刘海采样器不读取 fixed
             容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明。
             v8 诊断（2026-10-10 用户定）：移动端主页不渲染公告条（hidden lg:block），
-            验证刘海染色源是否为公告条橙色 */}
+            验证刘海染色源是否为公告条橙色。
+            /test/ 诊断页恢复显示，且背景换鲜绿示踪色 #16a34a：刘海变绿=采到公告条
+            （absolute 子层规则失效），暖棕=采到 hero 照片，米色=spacer/body 回落 */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             normalizedPath === '' ? 'hidden lg:block ' : ''
@@ -387,7 +393,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          <div aria-hidden="true" className="absolute inset-0 bg-brand" />
+          <div aria-hidden="true" className={`absolute inset-0 ${isTest ? 'bg-[#16a34a]' : 'bg-brand'}`} />
           <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
