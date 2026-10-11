@@ -1,15 +1,23 @@
 'use client';
 
 /**
- * 全屏搜索层（2026-10 P2，Parachute 式，移动/桌面统一全屏）
- * - 空态：Search Suggestions 热词胶囊（search-config.ts）+ Recommended Products 网格
- *   （基础分 = 评分×ln(1+评论数)，在售优先、同族去重、类目多样性 ≤2/类目、
- *    个性化 affinity 加成上限 +50%，见 user-profile.ts；manualHandles 人工单置顶）
- * - 输入态：统一引擎联想（searchAll，家族去重 top6）+ 品类直达行（matchCategories）
- * - Enter → /products/?q=；Esc/× 关闭；开层锁滚动、自动聚焦
- * - 埋点：search_open / search_suggest_click / recommended_click；
- *   提交与点击联想记录搜索词（user-profile.recordSearchTerm）
- * 替代原 V2Header 内的下拉搜索面板（2026-10 P2 移除）。
+ * 全屏搜索层（2026-10 P2 建，P2.1 三区块重构，Parachute/淘宝混合式，移动优先）
+ *
+ * 空态四区块（自上而下）：
+ * ① Search History 历史搜索——文字胶囊点击即搜、🗑 清空全部、▽ 折叠（持久化）；无历史隐藏
+ * ② Search Suggestions 热词行——类目快捷入口（search-config.ts），长期保留
+ * ③ Picked for You 个性推荐——画像气泡（左端 36px 小主图 + 短标题）、🔄 换一批（批次循环）、
+ *    ▽ 收起（持久化）；数据源 getPersonalizedPool（纯画像驱动、排除最近浏览、同族去重），
+ *    无画像（首访）整块隐藏；点击气泡进 PDP
+ * ④ Recommended Products 系统推荐——大图网格，纯系统排序（评分×ln(1+评论数)+在售优先+
+ *    家族去重+类目多样性，去个性化）+ 穿插 RECOMMENDED.recentInsert 个最近浏览产品
+ *    （约第 3/7 位让客户再看看）；网格底部 Hide pill 收起、标题行眼睛图标展开（持久化）；
+ *    manualHandles 人工置顶单生效于此（运营口，绕过类目多样性）
+ *
+ * 输入态：统一引擎联想（searchAll 家族去重 top6）+ 品类直达行（matchCategories）+
+ * Enter/View all → /products/?q=。提交与点击联想记录搜索词（user-profile）。
+ * 埋点：search_open / search_suggest_click / search_history_click / personalized_click /
+ * personalized_refresh / recommended_click。
  */
 import { useState, useEffect, useRef } from 'react';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
@@ -17,13 +25,41 @@ import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import type { MakimooProduct } from '@/data/products';
-import { searchAll, matchCategories, familyKeyOf, productTagsOf, type CategoryHit } from '@/lib/search-engine';
-import { HOT_SEARCHES, RECOMMENDED } from '@/data/search-config';
-import { getAffinity, recordSearchTerm } from '@/lib/user-profile';
+import { searchAll, matchCategories, familyKeyOf, type CategoryHit } from '@/lib/search-engine';
+import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED } from '@/data/search-config';
+import {
+  getSearchHistory,
+  clearSearchHistory,
+  recordSearchTerm,
+  getPersonalizedPool,
+} from '@/lib/user-profile';
+import { getRecentlyViewed } from '@/lib/recently-viewed';
 
 interface V2SearchOverlayProps {
   open: boolean;
   onClose: () => void;
+}
+
+// 折叠/隐藏偏好（持久化；'1' = 开启，删除键 = 关闭）
+const FLAG_HISTORY_COLLAPSED = 'makimoo-search-history-collapsed';
+const FLAG_PERSONALIZED_COLLAPSED = 'makimoo-personalized-collapsed';
+const FLAG_SYSTEM_HIDDEN = 'makimoo-system-recommended-hidden';
+
+function readFlag(key: string): boolean {
+  try {
+    return localStorage.getItem(key) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function writeFlag(key: string, on: boolean): void {
+  try {
+    if (on) localStorage.setItem(key, '1');
+    else localStorage.removeItem(key);
+  } catch {
+    /* 静默失败 */
+  }
 }
 
 function formatPrice(amount: string, currency: string): string {
@@ -45,52 +81,63 @@ function priceOf(p: MakimooProduct): string {
   return formatPrice(amount, currency);
 }
 
-/** 推荐网格选品：评分基础分 × 类目多样性 × 个性化加成；人工单置顶；同族去重 */
-function computeRecommended(): MakimooProduct[] {
+/**
+ * 系统推荐选品（全站统一，非个性化）：评分×ln(1+评论数) 基础分 + 在售优先 + 家族去重 +
+ * 类目多样性 ≤ maxPerCategory + manualHandles 人工置顶；最后把最近浏览的
+ * recentInsert 个产品穿插到第 3/7 位（让客户再看看，2026-10 用户定）。
+ */
+function computeSystemPicks(): MakimooProduct[] {
   const all = enrichProductsWithShopifyData(PRODUCTS_DATA);
-  const aff = getAffinity();
-  const scored = all.map((p) => {
-    const rating = p.rating ?? 0;
-    const reviews = p.reviewCount ?? 0;
-    // 基础分：评分×ln(1+评论数)；无评分产品给基线兜底（避免新目录完全排不上）
-    let score = rating > 0 && reviews > 0 ? rating * Math.log(1 + reviews) : 0.4;
-    const t = productTagsOf(p);
-    const affinity = [t.category, t.subcategory, ...t.materials, ...t.colors, ...t.scene].reduce(
-      (s, tag) => s + (aff[tag] || 0),
-      0
-    );
-    // 个性化加成上限 +50%（画像分 0.1 → +1%）
-    score *= 1 + Math.min(0.5, affinity * 0.1);
-    return { p, score, cat: t.category, inStock: p.shopifyAvailable ?? p.availableForSale };
-  });
-  scored.sort((x, y) => (x.inStock === y.inStock ? y.score - x.score : x.inStock ? -1 : 1));
-  // source === 'sales'（销量优先）分支位：Shopify 订单数据回流后在此切换排序依据（search-config.ts 开关）
+  const scored = all
+    .map((p) => {
+      const rating = p.rating ?? 0;
+      const reviews = p.reviewCount ?? 0;
+      // 基础分；无评分产品给基线兜底（新目录不至于完全排不上）
+      const score = rating > 0 && reviews > 0 ? rating * Math.log(1 + reviews) : 0.4;
+      return { p, score, cat: (p.productType || '').toLowerCase(), inStock: p.shopifyAvailable ?? p.availableForSale };
+    })
+    .sort((x, y) => (x.inStock === y.inStock ? y.score - x.score : x.inStock ? -1 : 1));
+  // source === 'sales'（销量优先）分支位：Shopify 订单数据回流后在此切换排序依据
 
   const out: MakimooProduct[] = [];
   const seenFamily = new Set<string>();
   const catCount: Record<string, number> = {};
+  const seen = (p: MakimooProduct) => seenFamily.has(familyKeyOf(p));
+  const mark = (p: MakimooProduct) => seenFamily.add(familyKeyOf(p));
   const pushAuto = (p: MakimooProduct) => {
-    if (out.length >= RECOMMENDED.count) return;
-    const key = familyKeyOf(p);
-    if (seenFamily.has(key)) return;
+    if (out.length >= RECOMMENDED.count || seen(p)) return;
     const c = (p.productType || '').toLowerCase();
     if ((catCount[c] || 0) >= RECOMMENDED.maxPerCategory) return;
-    seenFamily.add(key);
     catCount[c] = (catCount[c] || 0) + 1;
+    mark(p);
     out.push(p);
   };
-  // 人工置顶单：绕过类目多样性限制（运营意图优先），仍做家族去重与数量上限
+  // 人工置顶单：绕过类目多样性（运营意图优先），仍做家族去重与数量上限
   for (const handle of RECOMMENDED.manualHandles) {
     const p = all.find((x) => x.handle === handle);
-    if (p && out.length < RECOMMENDED.count) {
-      const key = familyKeyOf(p);
-      if (!seenFamily.has(key)) {
-        seenFamily.add(key);
-        out.push(p);
-      }
+    if (p && out.length < RECOMMENDED.count && !seen(p)) {
+      mark(p);
+      out.push(p);
     }
   }
   for (const s of scored) pushAuto(s.p);
+
+  // 穿插最近浏览（第 3、7 位）：回味位不计类目多样性、不受家族排重限制——
+  // 客户要看的就是他看过的那一件（同族兄弟已在网格也要原样再现），总数不变；
+  // 仅按精确 handle 去重防重复展示
+  if (RECOMMENDED.recentInsert > 0) {
+    const recent = getRecentlyViewed()
+      .slice(0, RECOMMENDED.recentInsert)
+      .map((h) => all.find((p) => p.handle === h))
+      .filter((p): p is MakimooProduct => !!p && !out.some((x) => x.handle === p.handle));
+    const positions = [2, 6];
+    recent.forEach((p, i) => {
+      const pos = Math.min(positions[i] ?? out.length, out.length);
+      mark(p);
+      out.splice(pos, 0, p);
+      if (out.length > RECOMMENDED.count) out.pop();
+    });
+  }
   return out;
 }
 
@@ -99,10 +146,19 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
   const [debounced, setDebounced] = useState('');
   const [suggestions, setSuggestions] = useState<MakimooProduct[]>([]);
   const [categories, setCategories] = useState<CategoryHit[]>([]);
+  // ① 历史搜索
+  const [history, setHistory] = useState<string[]>([]);
+  const [historyCollapsed, setHistoryCollapsed] = useState(false);
+  // ③ 个性推荐
+  const [persPool, setPersPool] = useState<MakimooProduct[]>([]);
+  const [persStart, setPersStart] = useState(0);
+  const [personalizedCollapsed, setPersonalizedCollapsed] = useState(false);
+  // ④ 系统推荐
   const [recommended, setRecommended] = useState<MakimooProduct[]>([]);
+  const [systemHidden, setSystemHidden] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // 开层：锁滚动、自动聚焦、埋点、推荐选品（一次性）；关层复位
+  // 开层：读画像/历史/持久化偏好、锁滚动、自动聚焦、埋点；关层复位
   useEffect(() => {
     if (!open) {
       setQuery('');
@@ -112,7 +168,13 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       return;
     }
     trackEvent('search_open');
-    setRecommended(computeRecommended());
+    setHistory(getSearchHistory());
+    setHistoryCollapsed(readFlag(FLAG_HISTORY_COLLAPSED));
+    setPersonalizedCollapsed(readFlag(FLAG_PERSONALIZED_COLLAPSED));
+    setSystemHidden(readFlag(FLAG_SYSTEM_HIDDEN));
+    setPersPool(getPersonalizedPool());
+    setPersStart(0);
+    setRecommended(computeSystemPicks());
     document.body.style.overflow = 'hidden';
     const focusTimer = setTimeout(() => inputRef.current?.focus(), 60);
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -144,12 +206,26 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
   if (!open) return null;
   const searching = debounced.length >= 2;
 
+  const jumpSearch = (term: string) => {
+    window.location.href = v2url(`/products/?q=${encodeURIComponent(term)}`);
+  };
+
   const doSubmit = () => {
     const q = query.trim();
     if (!q) return;
     recordSearchTerm(q);
     trackEvent('search', { search_term: q });
-    window.location.href = v2url(`/products/?q=${encodeURIComponent(q)}`);
+    jumpSearch(q);
+  };
+
+  // ③ 换一批：批次步进循环整个画像池
+  const persBatch = persPool.slice(persStart, persStart + PERSONALIZED.batchSize);
+  const refreshPersonalized = () => {
+    trackEvent('personalized_refresh');
+    setPersStart((s) => {
+      const next = s + PERSONALIZED.batchSize;
+      return next >= persPool.length ? 0 : next;
+    });
   };
 
   return (
@@ -188,7 +264,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       </div>
 
       <div className="flex-1 overflow-y-auto overscroll-contain">
-          <div className="max-w-5xl mx-auto px-4 lg:px-10 py-6">
+        <div className="max-w-5xl mx-auto px-4 lg:px-10 py-6">
           {searching ? (
             <>
               {/* 品类直达行 */}
@@ -243,7 +319,6 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   No matches for &ldquo;{debounced}&rdquo; — try one of the suggestions below.
                 </p>
               )}
-              {/* View all 完整结果 */}
               <div className="mt-4 text-center">
                 <button
                   onClick={doSubmit}
@@ -255,8 +330,65 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
             </>
           ) : (
             <>
-              {/* 空态：热词胶囊（Parachute 式 Search Suggestions） */}
-              <section className="mb-8">
+              {/* ── ① 历史搜索：文字胶囊 / 🗑 清空 / ▽ 折叠 ── */}
+              {history.length > 0 && (
+                <section className="mb-7">
+                  <div className="flex items-center justify-between mb-3">
+                    <h2 className="text-lg font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      Search History
+                    </h2>
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={() => {
+                          clearSearchHistory();
+                          setHistory([]);
+                          trackEvent('search_history_clear');
+                        }}
+                        aria-label="Clear search history"
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-charcoal-light hover:bg-brand/10 hover:text-brand transition"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M3 6h18"/><path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => {
+                          const next = !historyCollapsed;
+                          setHistoryCollapsed(next);
+                          writeFlag(FLAG_HISTORY_COLLAPSED, next);
+                        }}
+                        aria-label={historyCollapsed ? 'Expand search history' : 'Collapse search history'}
+                        aria-expanded={!historyCollapsed}
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-charcoal-light hover:bg-brand/10 hover:text-brand transition"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"
+                          className={`transition-transform duration-200 ${historyCollapsed ? '' : 'rotate-180'}`}>
+                          <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  {!historyCollapsed && (
+                    <div className="flex flex-wrap gap-2">
+                      {history.slice(0, HISTORY_SHOW_MAX).map((term) => (
+                        <button
+                          key={term}
+                          onClick={() => {
+                            trackEvent('search_history_click', { search_term: term });
+                            jumpSearch(term);
+                          }}
+                          className="px-4 py-2 rounded-full bg-white border border-warm-gray text-sm text-charcoal-light hover:border-brand hover:text-brand transition"
+                        >
+                          {term}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              )}
+
+              {/* ── ② 热词行（类目快捷入口，长期保留） ── */}
+              <section className="mb-7">
                 <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                   Search Suggestions
                 </h2>
@@ -274,38 +406,136 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                 </div>
               </section>
 
-              {/* 空态：Recommended Products 网格（移动 2 列 / 桌面 4 列） */}
-              {recommended.length > 0 && (
-                <section>
-                  <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    Recommended Products
-                  </h2>
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
-                    {recommended.map((p, i) => {
-                      const img = cardImage(p);
-                      return (
-                        <a
-                          key={p.id}
-                          href={v2url(`/products/${p.handle}/`)}
-                          onClick={() => trackEvent('recommended_click', { position: i + 1 })}
-                          className="group block"
-                        >
-                          <div className="aspect-square rounded-lg overflow-hidden bg-warm-gray">
-                            {img && (
+              {/* ── ③ Picked for You 个性推荐：画像气泡（左端小主图）/ 🔄 换一批 / ▽ 折叠 ── */}
+              {persPool.length > 0 && (
+                <section className="mb-7">
+                  <div className="flex items-center justify-between mb-3">
+                    <h2 className="text-lg font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      Picked for You
+                    </h2>
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={refreshPersonalized}
+                        aria-label="Show next picks"
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-charcoal-light hover:bg-brand/10 hover:text-brand transition"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => {
+                          const next = !personalizedCollapsed;
+                          setPersonalizedCollapsed(next);
+                          writeFlag(FLAG_PERSONALIZED_COLLAPSED, next);
+                        }}
+                        aria-label={personalizedCollapsed ? 'Expand personalized picks' : 'Collapse personalized picks'}
+                        aria-expanded={!personalizedCollapsed}
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-charcoal-light hover:bg-brand/10 hover:text-brand transition"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"
+                          className={`transition-transform duration-200 ${personalizedCollapsed ? '' : 'rotate-180'}`}>
+                          <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  {!personalizedCollapsed && (
+                    <div className="flex flex-wrap gap-2.5">
+                      {persBatch.map((p, i) => {
+                        const img = cardImage(p);
+                        return (
+                          <a
+                            key={p.id}
+                            href={v2url(`/products/${p.handle}/`)}
+                            onClick={() => trackEvent('personalized_click', { position: persStart + i + 1 })}
+                            className="flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0"
+                          >
+                            {img ? (
                               <img
                                 src={resolveUrl(img.url)}
                                 alt={img.alt}
                                 loading="lazy"
-                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                className="w-9 h-9 rounded-full object-cover flex-shrink-0 bg-warm-gray"
                               />
+                            ) : (
+                              <span className="w-9 h-9 rounded-full flex-shrink-0 bg-warm-gray" />
                             )}
-                          </div>
-                          <h3 className="mt-2.5 text-xs font-medium text-[#333] leading-snug line-clamp-2">{p.title}</h3>
-                          <p className="mt-1 text-sm font-semibold text-[#8B5A2B]">{priceOf(p)}</p>
-                        </a>
-                      );
-                    })}
+                            <span className="text-xs text-charcoal truncate max-w-[200px]">{p.title}</span>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
+                </section>
+              )}
+
+              {/* ── ④ Recommended Products 系统推荐：大图网格 / 底部 Hide 收起 / 标题行眼睛展开 ── */}
+              {recommended.length > 0 && (
+                <section className="mb-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <h2 className="text-lg font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      Recommended Products
+                    </h2>
+                    {systemHidden && (
+                      <button
+                        onClick={() => {
+                          setSystemHidden(false);
+                          writeFlag(FLAG_SYSTEM_HIDDEN, false);
+                        }}
+                        aria-label="Show recommendations"
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-charcoal-light hover:bg-brand/10 hover:text-brand transition"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+                        </svg>
+                      </button>
+                    )}
                   </div>
+                  {!systemHidden && (
+                    <>
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
+                        {recommended.map((p, i) => {
+                          const img = cardImage(p);
+                          return (
+                            <a
+                              key={p.id}
+                              href={v2url(`/products/${p.handle}/`)}
+                              onClick={() => trackEvent('recommended_click', { position: i + 1 })}
+                              className="group block"
+                            >
+                              <div className="aspect-square rounded-lg overflow-hidden bg-warm-gray">
+                                {img && (
+                                  <img
+                                    src={resolveUrl(img.url)}
+                                    alt={img.alt}
+                                    loading="lazy"
+                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                  />
+                                )}
+                              </div>
+                              <h3 className="mt-2.5 text-xs font-medium text-[#333] leading-snug line-clamp-2">{p.title}</h3>
+                              <p className="mt-1 text-sm font-semibold text-[#8B5A2B]">{priceOf(p)}</p>
+                            </a>
+                          );
+                        })}
+                      </div>
+                      <div className="mt-5">
+                        <button
+                          onClick={() => {
+                            setSystemHidden(true);
+                            writeFlag(FLAG_SYSTEM_HIDDEN, true);
+                          }}
+                          className="inline-flex items-center gap-2 h-10 px-5 rounded-full border border-warm-gray bg-white text-xs text-charcoal-light hover:border-brand hover:text-brand transition"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>
+                          </svg>
+                          Hide Recommendations
+                        </button>
+                      </div>
+                    </>
+                  )}
                 </section>
               )}
             </>
