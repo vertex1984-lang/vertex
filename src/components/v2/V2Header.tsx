@@ -381,10 +381,30 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           ≤4px 的 fixed/sticky 元素【自身】背景，但不读其内部的 absolute 子元素——故容器、
           公告条、导航行本身全部透明，颜色由 absolute inset-0 子层承担；采样落空后回退
           html/body 米色。spacer 保留涂满刘海区（static 子元素，若被采到也是米色）。 */}
-      <div ref={headerRef} className="fixed top-0 z-50 w-full">
+      {/* /test/ 第七轮（2026-10-10，parachutehome 同构实证路线）：parachute 黑公告条不染色
+          的原因 = 公告条是 static（滚动即滚走，不在采样范围）且 sticky 导航在首屏位于公告条
+          下方、不在采样点。故 test 页：公告条改 static 放文档流顶部（前垫 static 米色 spacer
+          涂满刘海区），导航容器改 sticky 且 top=env(safe-area-inset-top)（首屏在公告条下方、
+          吸顶后贴刘海下缘——永远不在 ≤4px 采样点；被吸顶时公告条已滚走，容器内只有导航行） */}
+      {isTest && (
+        <>
+          <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
+          <div className="bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2">
+            <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
+          </div>
+        </>
+      )}
+      <div
+        ref={headerRef}
+        className={`${isTest ? 'sticky' : 'fixed top-0'} z-50 w-full`}
+        style={isTest ? { top: 'env(safe-area-inset-top, 0px)' } : undefined}
+      >
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
-            高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
-        <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
+            高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度；
+            isTest 时由文档流 static spacer 承担，此处不重复 */}
+        {!isTest && (
+          <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
+        )}
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
             移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开。
             2026-10-10 v7：橙色背景移到 absolute 子层——iOS 26 Safari 刘海采样器不读取 fixed
@@ -395,10 +415,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             实际绘制的彩条颜色，DOM 层规避（absolute 子层/spacer/theme-color）全部无效。
             故大图页头页面（首页/About）移动端隐藏公告条，采样回落 spacer/body 米色；
             其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题）。
-            /test/ 第六轮：置顶 + 立即显示（测 meta 主动控制，与时序无关） */}
+            /test/ 第七轮：公告条移出容器改 static（见上），容器内不再渲染 */}
+        {!isTest && (
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
-            transparentStart && !isTest ? 'hidden lg:block ' : ''
+            transparentStart ? 'hidden lg:block ' : ''
           }${
             announceGone ? 'hidden ' : ''
           }${
@@ -408,6 +429,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           <div aria-hidden="true" className="absolute inset-0 bg-brand" />
           <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
+        )}
 
         {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定压至 py-1=48px，
             同日反馈图标离顶部太近 → py-1.5=52px）：logo h-10=40px 为最高项。
