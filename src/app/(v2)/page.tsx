@@ -29,7 +29,11 @@ const recommended = getRecommendedData();
 export default function V2HomePage() {
   return (
     <>
-      <V2Hero />
+      {/* hero 上滑到 sticky 导航下方（导航行高：移动 52px=py-1.5+logo h-10，
+          桌面 88px=py-4+h-14），保持透明头部压大图的视觉（2026-10-11 sticky 全站推广） */}
+      <div className="-mt-[52px] lg:-mt-[88px]">
+        <V2Hero />
+      </div>
       <V2TrustBar />
       <V2MoodFeed />
       <V2BrandBanner />

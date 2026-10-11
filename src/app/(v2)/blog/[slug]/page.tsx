@@ -37,8 +37,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="bl-scope">
-      {/* 避让 V2Header 固定定位（公告条 + 导航条） */}
-      <div aria-hidden="true" style={{ height: 128 }} />
+      {/* 页首呼吸留白（V2Header 已 sticky 文档流化，2026-10-11） */}
+      <div aria-hidden="true" style={{ height: 16 }} />
 
       {jsonLdBlocks.map((jsonLd, i) => (
         <script

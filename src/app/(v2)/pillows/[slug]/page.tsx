@@ -89,7 +89,7 @@ export default function PillowSubPage({ params }: { params: { slug: string } }) 
 
   /* 版心与 bedding 二级页一致（2026-09 用户定）：移动端 px-3、桌面 px-10 全宽 */
   return (
-    <div className="pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
+    <div className="pt-7 lg:pt-6 pb-10 lg:pb-14">
       <div className="px-3 lg:px-10">
         {/* 面包屑已整块移除（2026-10-10 用户定：页面顶端有同名 H1 标题，信息重复，两端都不显示） */}
 

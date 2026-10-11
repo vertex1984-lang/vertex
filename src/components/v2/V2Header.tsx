@@ -338,29 +338,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  // /test/ 第六轮诊断（2026-10-10 用户定）：公告条置顶+立即显示（撤掉第五轮 3s 延迟），
-  // 改测 meta 主动控制——test 页 head 加 apple-mobile-web-app-capable +
-  // apple-mobile-web-app-status-bar-style=black-translucent（见 test/page.tsx）；
-  // 第五轮实证：Safari 26 动态重采样（公告条 3s 后出现瞬间刘海米色→橘色跳变）
-  const isTest = normalizedPath === '/test';
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
+  // /test/ 与首页同构（2026-10-11：第七轮真机验证通过后，sticky 结构全站推广，test 页同享透明页头）
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || normalizedPath === '/test';
   // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
-  // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
-  // 见下文），iOS 26 Safari 刘海采样即回落 spacer/body 米色，透明头部可安全恢复
-  //（白 logo/白图标压大图的原设计）；且首帧即终态，不再有 matchMedia 水合后的样式跳变。
-  // 公告条收起后彻底移出渲染（2026-10-10 真机实证：iOS 26 Safari 对 opacity:0 的
-  // 顶部元素照样采样，公告条 max-h-0+opacity-0 收起后刘海仍是橘色——与 MiniCart 遮罩
-  // 同因）。收起动画 300ms 结束后 display:none（采样器唯一豁免形式），回顶立即恢复。
-  const [announceGone, setAnnounceGone] = useState(false);
-  useEffect(() => {
-    if (!scrolled) {
-      setAnnounceGone(false);
-      return;
-    }
-    const t = setTimeout(() => setAnnounceGone(true), 320);
-    return () => clearTimeout(t);
-  }, [scrolled]);
-
+  // /test/ 真机诊断证实——移动端大图页头在 sticky 终版结构下刘海采样恒回落米色，
+  // 透明头部可安全保留（白 logo/白图标压大图的原设计）；且首帧即终态，
+  // 不再有 matchMedia 水合后的样式跳变。
   // mega menu 展开时强制实底，保证导航文字在面板上可读；
   // 搜索面板展开时同样强制实底（2026-10-10 用户反馈：桌面端搜索面板是实底米色，
   // 透明头部叠在大图上与面板不协调）
@@ -377,70 +360,39 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
-      {/* iOS 26 Safari 刘海染色对策 v7（2026-10-10，1ar.io 采样规则）：采样器扫距视口顶
-          ≤4px 的 fixed/sticky 元素【自身】背景，但不读其内部的 absolute 子元素——故容器、
-          公告条、导航行本身全部透明，颜色由 absolute inset-0 子层承担；采样落空后回退
-          html/body 米色。spacer 保留涂满刘海区（static 子元素，若被采到也是米色）。 */}
-      {/* /test/ 第七轮（2026-10-10，parachutehome 同构实证路线）：parachute 黑公告条不染色
-          的原因 = 公告条是 static（滚动即滚走，不在采样范围）且 sticky 导航在首屏位于公告条
-          下方、不在采样点。故 test 页：公告条改 static 放文档流顶部（前垫 static 米色 spacer
-          涂满刘海区），导航容器改 sticky 且 top=env(safe-area-inset-top)（首屏在公告条下方、
-          吸顶后贴刘海下缘——永远不在 ≤4px 采样点；被吸顶时公告条已滚走，容器内只有导航行） */}
-      {isTest && (
-        <>
-          <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
-          <div className="bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2">
-            <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
-          </div>
-        </>
-      )}
+      {/* iOS 26 Safari 刘海对策·终版（2026-10-11 全站推广，/test/ 第七轮真机验证通过）：
+          parachutehome 同构——刘海安全条 spacer + 公告条均为 static 文档流置顶（滚动即滚走，
+          不在采样范围）；导航容器 sticky 且 top=env(safe-area-inset-top)（首屏位于公告条
+          下方、吸顶后贴刘海下缘——永远不在视口顶 ≤4px 采样点）。Safari 26 采样落空后回落
+          body 米色，刘海恒米色（含内页）。
+          诊断历程（2026-10-10/11 七轮真机实证）：theme-color、apple status-bar meta、
+          absolute 子层、opacity:0、延迟/时序加载全部无效——采样器只认"视口顶部实际绘制的
+          彩条颜色"且动态重采样，唯一解是让彩条可滚走。原 fixed 容器 + 滚动收起动画 +
+          v8 移动端首页隐藏公告条等过渡措施随本结构一并废弃。 */}
+      {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
+          高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
+      <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
+      {/* Announcement Bar：全端展示同一文案（移动端字号略缩 + nowrap 保证单行不折行）；
+          static 文档流置顶，滚动随页面自然滚走（parachute 同构） */}
+      <div className="bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2">
+        <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
+      </div>
       <div
         ref={headerRef}
-        className={`${isTest ? 'sticky' : 'fixed top-0'} z-50 w-full`}
-        style={isTest ? { top: 'env(safe-area-inset-top, 0px)' } : undefined}
+        className="sticky z-50 w-full"
+        style={{ top: 'env(safe-area-inset-top, 0px)' }}
       >
-        {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
-            高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度；
-            isTest 时由文档流 static spacer 承担，此处不重复 */}
-        {!isTest && (
-          <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
-        )}
-        {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
-            移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开。
-            2026-10-10 v7：橙色背景移到 absolute 子层——iOS 26 Safari 刘海采样器不读取 fixed
-            容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明。
-            v8 诊断（2026-10-10 用户定）：移动端主页不渲染公告条（hidden lg:block），
-            验证刘海染色源是否为公告条橙色。
-            2026-10-10 诊断结论（/test/ 两轮真机实证）：iOS 26 Safari 刘海色 = 视口顶部
-            实际绘制的彩条颜色，DOM 层规避（absolute 子层/spacer/theme-color）全部无效。
-            故大图页头页面（首页/About）移动端隐藏公告条，采样回落 spacer/body 米色；
-            其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题）。
-            /test/ 第七轮：公告条移出容器改 static（见上），容器内不再渲染 */}
-        {!isTest && (
-        <div
-          className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
-            transparentStart ? 'hidden lg:block ' : ''
-          }${
-            announceGone ? 'hidden ' : ''
-          }${
-            scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
-          }`}
-        >
-          <div aria-hidden="true" className="absolute inset-0 bg-brand" />
-          <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
-        </div>
-        )}
-
         {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定压至 py-1=48px，
             同日反馈图标离顶部太近 → py-1.5=52px）：logo h-10=40px 为最高项。
             桌面保持 py-4 + h-14 = 88px。
-            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]，
-            5 个 Shop 组件统一）——以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
+            依赖头部高度的同步：筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]，
+            5 个 Shop 组件统一——sticky 导航吸顶后高度仍 52/88px，不变）；
+            页面顶部留白已于 2026-10-11 sticky 化后缩减（头部在文档流内自占高度） */}
         <header
           className={`relative flex items-center justify-between px-6 lg:px-10 py-1.5 lg:py-4 transition-all duration-300 ${textColor}`}
         >
-          {/* 实底背景移到 absolute 子层（v7 刘海对策，同公告条）：header 元素本身透明，
-              Safari 26 采样器不读 fixed 容器内的 absolute 子元素；视觉观感不变 */}
+          {/* 实底背景放 absolute 子层：保留 transparent→solid 的过渡动画
+              （原为 v7 刘海采样规避，sticky 终版后仅为视觉过渡服务） */}
           <div
             aria-hidden="true"
             className={`absolute inset-0 transition-all duration-300 ${
