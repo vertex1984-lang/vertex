@@ -6,7 +6,8 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
-import { searchProducts, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
+import type { MakimooProduct } from '@/data/products';
+import { searchAll } from '@/lib/search-engine';
 import { fabricByMaterial } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 
@@ -295,7 +296,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       return;
     }
     const timer = setTimeout(() => {
-      setSuggestions(enrichProductsWithShopifyData(searchProducts(q)).slice(0, 6));
+      // 统一搜索引擎（2026-10 P1）：分词/同义词/字段加权 + 变体族去重
+      setSuggestions(searchAll(q, 6));
     }, 300);
     return () => clearTimeout(timer);
   }, [searchQuery]);
