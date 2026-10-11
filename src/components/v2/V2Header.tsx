@@ -338,7 +338,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about';
+  // /test/ 第三轮诊断（2026-10-10）：透明头部 + 公告条挪到导航行下方（见容器 flex 重排）
+  const isTest = normalizedPath === '/test';
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
   // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
   // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
   // 见下文），iOS 26 Safari 刘海采样即回落 spacer/body 米色，透明头部可安全恢复
@@ -363,7 +365,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           ≤4px 的 fixed/sticky 元素【自身】背景，但不读其内部的 absolute 子元素——故容器、
           公告条、导航行本身全部透明，颜色由 absolute inset-0 子层承担；采样落空后回退
           html/body 米色。spacer 保留涂满刘海区（static 子元素，若被采到也是米色）。 */}
-      <div ref={headerRef} className="fixed top-0 z-50 w-full">
+      <div ref={headerRef} className={`fixed top-0 z-50 w-full ${isTest ? 'flex flex-col' : ''}`}>
         {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
             高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
         <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
@@ -376,11 +378,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             2026-10-10 诊断结论（/test/ 两轮真机实证）：iOS 26 Safari 刘海色 = 视口顶部
             实际绘制的彩条颜色，DOM 层规避（absolute 子层/spacer/theme-color）全部无效。
             故大图页头页面（首页/About）移动端隐藏公告条，采样回落 spacer/body 米色；
-            其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题） */}
+            其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题）。
+            /test/ 第三轮：isTest 时不隐藏，且 order-3 挪到导航行（order-2）下方，
+            桌面端维持原顺序（lg:order-2 / 导航行 lg:order-3） */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
-            transparentStart ? 'hidden lg:block ' : ''
-          }${
+            transparentStart && !isTest ? 'hidden lg:block ' : ''
+          }${isTest ? 'order-3 lg:order-2 ' : ''}${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
@@ -394,7 +398,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]，
             5 个 Shop 组件统一）——以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
-          className={`relative flex items-center justify-between px-6 lg:px-10 py-1.5 lg:py-4 transition-all duration-300 ${textColor}`}
+          className={`relative flex items-center justify-between px-6 lg:px-10 py-1.5 lg:py-4 transition-all duration-300 ${textColor} ${isTest ? 'order-2 lg:order-3' : ''}`}
         >
           {/* 实底背景移到 absolute 子层（v7 刘海对策，同公告条）：header 元素本身透明，
               Safari 26 采样器不读 fixed 容器内的 absolute 子元素；视觉观感不变 */}
