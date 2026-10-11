@@ -10,7 +10,6 @@ import {
   visibleCushionFamilies,
   sortCushionFamilies,
 } from '@/data/cushion-families';
-import { v2url } from '@/lib/v2paths';
 
 /**
  * Cushions 二级类目 PLP（2026-10-09 用户定：与 pillows/bedding 一致，细分类目直接链接，
@@ -71,14 +70,7 @@ export default function CushionSubPage({ params }: { params: { slug: string } })
   return (
     <div className="pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       <div className="px-3 lg:px-10">
-        {/* ── 面包屑 ── */}
-        <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
-          <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
-          <span className="mx-1.5">/</span>
-          <a href={v2url('/products/?cat=cushions')} className="hover:text-[#8B5A2B] transition-colors">Cushions</a>
-          <span className="mx-1.5">/</span>
-          <span className="text-[#555]">{def.label}</span>
-        </nav>
+        {/* 面包屑已整块移除（2026-10-10 用户定：页面顶端有同名 H1 标题，信息重复，两端都不显示） */}
 
         {/* ── 页头：无 banner，H1 + 一句话简介（同 bedding/pillows 二级页）── */}
         <div className="mb-6 lg:mb-10">

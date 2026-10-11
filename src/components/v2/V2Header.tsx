@@ -391,11 +391,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
-        {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定再压至 py-1=52px，
-            让出高度给 hero 图片区）：图标按钮保持 w-11 h-11 = 44px 触控目标。
+        {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定再压至 py-1，
+            让出高度给 hero 图片区）：按钮后缩至 36px、logo h-10=40px 为最高项 → 实高 48px。
             桌面保持 py-4 + h-14 = 88px。
-            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]）——
-            2026-10-10 起统一以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
+            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(48px+env(safe-area-inset-top))]，
+            5 个 Shop 组件统一）——以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
           className={`relative flex items-center justify-between px-6 lg:px-10 py-1 lg:py-4 transition-all duration-300 ${textColor}`}
         >

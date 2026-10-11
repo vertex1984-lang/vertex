@@ -176,31 +176,16 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
       : [];
     return [...byType, ...byMaterial].slice(0, 8);
   }, [families, type, material, hasResults]);
-  // 价格锚点（意图回显行用）：全部家族的最低 From 价 / 最高变体价（上限取 toPrice，
-  // 否则区间上限漏掉家族内大尺码的高价，如 linen3 King $129.99）
-  const [minPrice, maxPrice] = useMemo(() => {
-    const mins = families.map((f) => parseFloat(f.fromPrice)).filter((n) => !Number.isNaN(n) && n > 0);
-    const maxs = families.map((f) => parseFloat(f.toPrice)).filter((n) => !Number.isNaN(n) && n > 0);
-    return mins.length > 0 && maxs.length > 0 ? [Math.min(...mins), Math.max(...maxs)] : [null, null];
-  }, [families]);
 
   return (
     <div>
-      {/* 意图回显行：数量 + 价格区间（运费/退货承诺顶部公告条已有，不重复）。
-          右侧"筛选结果数 + 排序下拉"2026-09 用户定移除（排序固定 Featured/权重序） */}
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-4 lg:mb-5">
-        <p className="text-sm lg:text-base text-charcoal-light">
-          {families.length} styles
-          {minPrice !== null && maxPrice !== null
-            ? ` from $${minPrice.toFixed(2)} to $${maxPrice.toFixed(2)}`
-            : ''}
-        </p>
-      </div>
+      {/* 「N styles from $X to $Y」意图回显行：2026-10-10 用户定删除 */}
 
       {/* 粘性筛选条：类型 + 材质 + 排序；滚动时吸顶，随时一键收窄（不离开浏览流）
           背景必须不透明（bg-off-white 实底）：/95 + blur 会让下方滚动文字透上来，看起来像叠字
-          z-30：必须低于移动端导航抽屉遮罩（z-40），否则抽屉打开时筛选条浮在抽屉之上 */}
-      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
+          z-30：必须低于移动端导航抽屉遮罩（z-40），否则抽屉打开时筛选条浮在抽屉之上
+          top 偏移 = 移动端头部实高 48px（py-1 8px + logo h-10 40px，2026-10-10 修正缝隙） */}
+      <div className="sticky top-[calc(48px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
         <div className="flex flex-wrap lg:flex-nowrap items-center gap-2 lg:gap-2.5">
           <div className="flex items-center gap-2 lg:gap-2.5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {/* Type 下拉（2026-09 用户定：chips 改下拉，默认 All；选中后高亮，与 Fabric 同款） */}
