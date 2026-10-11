@@ -338,17 +338,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  // /test/ 第五轮诊断（2026-10-10 用户定）：公告条保持置顶，但固定延迟 3 秒才显示
-  //（display:none → 直接出现，无动画；第四轮 hero onload 触发间隔太短不易观察）。
-  // 验证 Safari 26 在公告条晚到时是否重新采样刘海色（若会，刘海米色→橘色跳变）
+  // /test/ 第六轮诊断（2026-10-10 用户定）：公告条置顶+立即显示（撤掉第五轮 3s 延迟），
+  // 改测 meta 主动控制——test 页 head 加 apple-mobile-web-app-capable +
+  // apple-mobile-web-app-status-bar-style=black-translucent（见 test/page.tsx）；
+  // 第五轮实证：Safari 26 动态重采样（公告条 3s 后出现瞬间刘海米色→橘色跳变）
   const isTest = normalizedPath === '/test';
   const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
-  const [heroLoaded, setHeroLoaded] = useState(false);
-  useEffect(() => {
-    if (!isTest) return;
-    const t = setTimeout(() => setHeroLoaded(true), 3000);
-    return () => clearTimeout(t);
-  }, [isTest]);
   // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
   // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
   // 见下文），iOS 26 Safari 刘海采样即回落 spacer/body 米色，透明头部可安全恢复
@@ -400,12 +395,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             实际绘制的彩条颜色，DOM 层规避（absolute 子层/spacer/theme-color）全部无效。
             故大图页头页面（首页/About）移动端隐藏公告条，采样回落 spacer/body 米色；
             其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题）。
-            /test/ 第四轮：置顶但 hero 加载完成前 display:none（无动画直接显示），
-            验证晚到的公告条是否会触发 Safari 重新采样刘海色 */}
+            /test/ 第六轮：置顶 + 立即显示（测 meta 主动控制，与时序无关） */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             transparentStart && !isTest ? 'hidden lg:block ' : ''
-          }${isTest && !heroLoaded ? 'hidden ' : ''}${
+          }${
             announceGone ? 'hidden ' : ''
           }${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
