@@ -5,7 +5,7 @@
  *
  * 空态四区块（自上而下）：
  * ① Search History 历史搜索——文字胶囊点击即搜、🗑 清空全部、▽ 折叠（持久化）；无历史隐藏
- * ② Search Suggestions 热词行——类目快捷入口（search-config.ts），长期保留
+ * ② Search Suggestions 热词行——仅无搜索历史时显示（有历史后由历史区取代，清空后回归）
  * ③ Picked for You 个性推荐——画像气泡（左端 36px 小主图 + 短标题）、🔄 换一批（批次循环）、
  *    ▽ 收起（持久化）；数据源 getPersonalizedPool（纯画像驱动、排除最近浏览、同族去重），
  *    无画像（首访）整块隐藏；点击气泡进 PDP
@@ -387,24 +387,27 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                 </section>
               )}
 
-              {/* ── ② 热词行（类目快捷入口，长期保留） ── */}
-              <section className="mb-7">
-                <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  Search Suggestions
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {HOT_SEARCHES.map((hot) => (
-                    <a
-                      key={hot.label}
-                      href={v2url(hot.href)}
-                      onClick={() => recordSearchTerm(hot.label)}
-                      className="px-4 py-2 rounded-full bg-white border border-warm-gray text-sm text-charcoal-light hover:border-brand hover:text-brand transition"
-                    >
-                      {hot.label}
-                    </a>
-                  ))}
-                </div>
-              </section>
+              {/* ── ② 热词行：仅无搜索历史时显示（2026-10 P2.2 用户定——有历史后由
+                  Search History 取代，避免整体过长；清空历史后回归兜底导购） ── */}
+              {history.length === 0 && (
+                <section className="mb-7">
+                  <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    Search Suggestions
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {HOT_SEARCHES.map((hot) => (
+                      <a
+                        key={hot.label}
+                        href={v2url(hot.href)}
+                        onClick={() => recordSearchTerm(hot.label)}
+                        className="px-4 py-2 rounded-full bg-white border border-warm-gray text-sm text-charcoal-light hover:border-brand hover:text-brand transition"
+                      >
+                        {hot.label}
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )}
 
               {/* ── ③ Picked for You 个性推荐：画像气泡（左端小主图）/ 🔄 换一批 / ▽ 折叠 ── */}
               {persPool.length > 0 && (
