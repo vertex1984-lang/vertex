@@ -345,6 +345,19 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
   // 见下文），iOS 26 Safari 刘海采样即回落 spacer/body 米色，透明头部可安全恢复
   //（白 logo/白图标压大图的原设计）；且首帧即终态，不再有 matchMedia 水合后的样式跳变。
+  // 公告条收起后彻底移出渲染（2026-10-10 真机实证：iOS 26 Safari 对 opacity:0 的
+  // 顶部元素照样采样，公告条 max-h-0+opacity-0 收起后刘海仍是橘色——与 MiniCart 遮罩
+  // 同因）。收起动画 300ms 结束后 display:none（采样器唯一豁免形式），回顶立即恢复。
+  const [announceGone, setAnnounceGone] = useState(false);
+  useEffect(() => {
+    if (!scrolled) {
+      setAnnounceGone(false);
+      return;
+    }
+    const t = setTimeout(() => setAnnounceGone(true), 320);
+    return () => clearTimeout(t);
+  }, [scrolled]);
+
   // mega menu 展开时强制实底，保证导航文字在面板上可读；
   // 搜索面板展开时同样强制实底（2026-10-10 用户反馈：桌面端搜索面板是实底米色，
   // 透明头部叠在大图上与面板不协调）
@@ -385,6 +398,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
             transparentStart && !isTest ? 'hidden lg:block ' : ''
           }${isTest ? 'order-3 lg:order-2 ' : ''}${
+            announceGone ? 'hidden ' : ''
+          }${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
