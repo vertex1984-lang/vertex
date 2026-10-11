@@ -470,7 +470,9 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                     </div>
                   </div>
                   {!personalizedCollapsed && (
-                    <div className="flex flex-wrap gap-2.5">
+                    /* 移动端两列网格（一行两个、8 个=4 行，2026-10 用户定）；
+                       桌面端保持流式气泡（内容自适应宽度） */
+                    <div className="grid grid-cols-2 gap-2 lg:flex lg:flex-wrap lg:gap-2.5">
                       {persBatch.map((p, i) => {
                         const img = cardImage(p);
                         return (
@@ -478,7 +480,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                             key={p.id}
                             href={v2url(`/products/${p.handle}/`)}
                             onClick={() => trackEvent('personalized_click', { position: persStart + i + 1 })}
-                            className="flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0"
+                            className="flex items-center gap-2 pl-1.5 pr-3 py-1.5 lg:gap-2.5 lg:pr-4 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0"
                           >
                             {img ? (
                               <img
@@ -490,7 +492,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                             ) : (
                               <span className="w-9 h-9 rounded-full flex-shrink-0 bg-warm-gray" />
                             )}
-                            <span className="text-xs text-charcoal truncate max-w-[200px]">{p.title}</span>
+                            <span className="text-xs text-charcoal truncate min-w-0 lg:max-w-[200px]">{p.title}</span>
                           </a>
                         );
                       })}
