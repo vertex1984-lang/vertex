@@ -384,11 +384,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明。
             v8 诊断（2026-10-10 用户定）：移动端主页不渲染公告条（hidden lg:block），
             验证刘海染色源是否为公告条橙色。
-            /test/ 诊断页恢复显示，且背景换鲜绿示踪色 #16a34a：刘海变绿=采到公告条
-            （absolute 子层规则失效），暖棕=采到 hero 照片，米色=spacer/body 回落 */}
+            /test/ 诊断页第一轮：恢复显示 + 鲜绿示踪色——结果：刘海变绿，证实 Safari 26
+            采样器穿透 absolute 子层采到公告条（1ar.io 规则在本机不成立）。
+            /test/ 第二轮（2026-10-10 用户定）：与正式首页一样移动端隐藏公告条，
+            但头部保持透明（isTest 跳过移动端恒实底）——验证「无公告条+透明头部」时
+            刘海是否采到 hero 照片色 */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
-            normalizedPath === '' ? 'hidden lg:block ' : ''
+            normalizedPath === '' || isTest ? 'hidden lg:block ' : ''
           }${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
