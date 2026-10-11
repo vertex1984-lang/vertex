@@ -338,26 +338,15 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  // /test/ 测试版首页（2026-10-10 刘海染色采样源诊断，用户定）：恢复移动端公告条
-  //（鲜绿示踪色）+ 恢复移动端默认透明头部（SSR 首帧即终态，头部先于 hero 完成渲染）
-  const isTest = normalizedPath === '/test';
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
-  // 移动端（<lg）恒实底（2026-10-10 iOS 26 Safari 刘海染色对策的配套）：固定头部容器在移动端
-  // 必须是不透明米色底（否则 Safari 染色采样器穿过透明容器采到公告条橙色，刘海区被染色），
-  // 米色底上 cream 白字/反转白 logo 会隐形，故移动端首页/About 不再使用透明态
-  //（/test/ 诊断页除外：isTest 时跳过该强制，恢复透明态以定位采样源）
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 1023px)');
-    const update = () => setIsMobile(mq.matches);
-    update();
-    mq.addEventListener('change', update);
-    return () => mq.removeEventListener('change', update);
-  }, []);
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about';
+  // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
+  // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
+  // 见下文），iOS 26 Safari 刘海采样即回落 spacer/body 米色，透明头部可安全恢复
+  //（白 logo/白图标压大图的原设计）；且首帧即终态，不再有 matchMedia 水合后的样式跳变。
   // mega menu 展开时强制实底，保证导航文字在面板上可读；
   // 搜索面板展开时同样强制实底（2026-10-10 用户反馈：桌面端搜索面板是实底米色，
   // 透明头部叠在大图上与面板不协调）
-  const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen || (isMobile && !isTest);
+  const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen;
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
   const textColor = solid ? 'text-charcoal' : 'text-cream';
@@ -384,29 +373,28 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             容器内部的 absolute 子元素（1ar.io 实测规则），元素本身保持透明。
             v8 诊断（2026-10-10 用户定）：移动端主页不渲染公告条（hidden lg:block），
             验证刘海染色源是否为公告条橙色。
-            /test/ 诊断页第一轮：恢复显示 + 鲜绿示踪色——结果：刘海变绿，证实 Safari 26
-            采样器穿透 absolute 子层采到公告条（1ar.io 规则在本机不成立）。
-            /test/ 第二轮（2026-10-10 用户定）：与正式首页一样移动端隐藏公告条，
-            但头部保持透明（isTest 跳过移动端恒实底）——验证「无公告条+透明头部」时
-            刘海是否采到 hero 照片色 */}
+            2026-10-10 诊断结论（/test/ 两轮真机实证）：iOS 26 Safari 刘海色 = 视口顶部
+            实际绘制的彩条颜色，DOM 层规避（absolute 子层/spacer/theme-color）全部无效。
+            故大图页头页面（首页/About）移动端隐藏公告条，采样回落 spacer/body 米色；
+            其余页面正常显示（浅实底页头上橙条位于实底之上，不存在白字隐形问题） */}
         <div
           className={`relative text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 overflow-hidden transition-all duration-300 ${
-            normalizedPath === '' || isTest ? 'hidden lg:block ' : ''
+            transparentStart ? 'hidden lg:block ' : ''
           }${
             scrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-10 py-2 opacity-100'
           }`}
         >
-          <div aria-hidden="true" className={`absolute inset-0 ${isTest ? 'bg-[#16a34a]' : 'bg-brand'}`} />
+          <div aria-hidden="true" className="absolute inset-0 bg-brand" />
           <span className="relative whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
         </div>
 
-        {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定再压至 py-1，
-            让出高度给 hero 图片区）：按钮后缩至 36px、logo h-10=40px 为最高项 → 实高 48px。
+        {/* 移动端头部压缩（2026-09 用户定 py-2=60px；2026-10-10 用户定压至 py-1=48px，
+            同日反馈图标离顶部太近 → py-1.5=52px）：logo h-10=40px 为最高项。
             桌面保持 py-4 + h-14 = 88px。
-            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(48px+env(safe-area-inset-top))]，
+            依赖头部高度的两处同步：页面顶部留白、筛选条吸顶（top-[calc(52px+env(safe-area-inset-top))]，
             5 个 Shop 组件统一）——以 calc(原值+env(safe-area-inset-top)) 表达（viewport-fit=cover 刘海适配） */}
         <header
-          className={`relative flex items-center justify-between px-6 lg:px-10 py-1 lg:py-4 transition-all duration-300 ${textColor}`}
+          className={`relative flex items-center justify-between px-6 lg:px-10 py-1.5 lg:py-4 transition-all duration-300 ${textColor}`}
         >
           {/* 实底背景移到 absolute 子层（v7 刘海对策，同公告条）：header 元素本身透明，
               Safari 26 采样器不读 fixed 容器内的 absolute 子元素；视觉观感不变 */}
