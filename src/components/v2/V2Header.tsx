@@ -338,20 +338,16 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
-  // /test/ 第四轮诊断（2026-10-10 用户定）：公告条保持置顶，但【最后加载】——
-  // 初始 display:none，等 hero 移动端背景图加载完成后直接显示（无动画）；
-  // 验证 Safari 26 在公告条晚到时是否重新采样刘海色（第三轮下移方案用户已否）
+  // /test/ 第五轮诊断（2026-10-10 用户定）：公告条保持置顶，但固定延迟 3 秒才显示
+  //（display:none → 直接出现，无动画；第四轮 hero onload 触发间隔太短不易观察）。
+  // 验证 Safari 26 在公告条晚到时是否重新采样刘海色（若会，刘海米色→橘色跳变）
   const isTest = normalizedPath === '/test';
   const transparentStart = normalizedPath === '' || normalizedPath === '/about' || isTest;
   const [heroLoaded, setHeroLoaded] = useState(false);
   useEffect(() => {
     if (!isTest) return;
-    const img = new Image();
-    const done = () => setHeroLoaded(true);
-    img.onload = done;
-    img.onerror = done; // 兜底：hero 加载失败公告条也要显示
-    img.src = resolveUrl('/images/brand/hero-autumn-mobile.webp');
-    if (img.complete) done();
+    const t = setTimeout(() => setHeroLoaded(true), 3000);
+    return () => clearTimeout(t);
   }, [isTest]);
   // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
   // /test/ 两轮真机诊断证实——移动端大图页头只要顶部没有彩色公告条（首页/About 已隐藏，
