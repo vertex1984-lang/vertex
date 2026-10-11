@@ -18,7 +18,7 @@ import {
  *   compactText 与 pillows/bedding 卡片字体一致
  * - 2026-10-09 用户定：按风格分 3 区展示 + 粘性 Style 筛选下拉（prints / solids / corduroy，
  *   注册表见 subcategories.ts，归位逻辑见 classifyCushion；选中某风格 = 只渲染该分区）
- * - 意图回显行（N styles from $X）保留在筛选条上方
+ * - 「N styles from $X」意图回显行 2026-10-10 用户定删除
  * - 排序固定 Featured（权重序）；无筛选交集维度，故无零结果兜底
  */
 export default function V2CushionsShop({
@@ -56,32 +56,15 @@ export default function V2CushionsShop({
     .map((s) => ({ def: s, list: filtered.filter((f) => styleOf(f) === s.key) }))
     .filter((s) => s.list.length > 0);
 
-  // 价格锚点：全部家族的最低 From 价 / 最高变体价（同 bedding/blankets 口径）
-  const [minPrice, maxPrice] = useMemo(() => {
-    const mins = families.map((f) => parseFloat(f.fromPrice)).filter((n) => !Number.isNaN(n) && n > 0);
-    const maxs = families.map((f) => parseFloat(f.toPrice)).filter((n) => !Number.isNaN(n) && n > 0);
-    return mins.length > 0 && maxs.length > 0 ? [Math.min(...mins), Math.max(...maxs)] : [null, null];
-  }, [families]);
-
   const styleLabel = (k: string) => styleOptions.find((s) => s.key === k)?.label || k;
 
   return (
     <div>
-      {/* 意图回显行：数量 + 价格区间（同 bedding/blankets 页） */}
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-4 lg:mb-5">
-        <p className="text-sm lg:text-base text-charcoal-light">
-          {filtered.length} styles
-          {minPrice !== null && maxPrice !== null
-            ? minPrice === maxPrice
-              ? ` from $${minPrice.toFixed(2)}`
-              : ` from $${minPrice.toFixed(2)} to $${maxPrice.toFixed(2)}`
-            : ''}
-        </p>
-      </div>
+      {/* 「N styles from $X to $Y」意图回显行：2026-10-10 用户定删除（与 bedding 页一致） */}
 
       {/* 粘性筛选条：Style 下拉（与 pillows 页同款吸顶格式）。
           背景必须不透明（bg-off-white 实底），z-30 必须低于移动端导航抽屉遮罩 z-40 */}
-      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
+      <div className="sticky top-[calc(48px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
         <div className="flex items-center gap-2 lg:gap-2.5">
           {styleOptions.length > 1 && (
             <label className="flex items-center gap-2 flex-shrink-0">

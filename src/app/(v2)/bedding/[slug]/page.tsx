@@ -6,7 +6,6 @@ import { BEDDING_FABRICS, fabricBySlug, fabricDisplayName } from '@/data/bedding
 import V2FabricShop from '@/components/v2/V2FabricShop';
 import V2BedSetsShop from '@/components/v2/V2BedSetsShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
-import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 
 /**
@@ -83,7 +82,6 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
       : all.filter((f) => f.kind === kind);
   if (families.length === 0) notFound();
 
-  const crumb = fb ? fabricDisplayName(fb.material) : isBedSets ? BED_SETS_PAGE_COPY.heading : SET_KIND_PAGE_COPY[kind!].heading;
   const pageCopy = isBedSets ? BED_SETS_PAGE_COPY : kind ? SET_KIND_PAGE_COPY[kind] : null;
 
   /* 版心与 products 列表页一致（2026-09 用户定：子类目页宽度/卡片占屏比对齐
@@ -91,14 +89,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
   return (
     <div className="pt-[calc(7rem+env(safe-area-inset-top,0px))] lg:pt-[calc(9rem+env(safe-area-inset-top,0px))] pb-10 lg:pb-14">
       <div className="px-3 lg:px-10">
-        {/* ── 面包屑 ── */}
-        <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
-          <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
-          <span className="mx-1.5">/</span>
-          <a href={v2url('/products/?cat=bedding')} className="hover:text-[#8B5A2B] transition-colors">Bedding</a>
-          <span className="mx-1.5">/</span>
-          <span className="text-[#555]">{crumb}</span>
-        </nav>
+        {/* 面包屑已整块移除（2026-10-10 用户定：页面顶端有同名 H1 标题，信息重复，两端都不显示） */}
 
         {fb ? (
           /* ── 面料 Hero：面料特写图 + 名字/质感短句/面料故事（仿 Parachute Percale 页头）
