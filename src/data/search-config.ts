@@ -43,3 +43,17 @@ export const RECOMMENDED = {
   maxPerCategory: 2,
   recentInsert: 2,
 };
+
+/**
+ * 系统推荐网格的排名角标（图左上角，"#N Rated"）。
+ * - 口径：本推荐榜单内评分排名（rating×ln(1+评论数)），淘宝热榜式——全站名次会被
+ *   同家族垄断导致凑不齐（2026-10 实测改定）；榜单内评分排序真实可支撑，合规安全。
+ *   mode 'sales'（销量口径）等 Shopify 订单数据回流后切换。
+ * - 回味位（穿插的最近浏览）永不发标；manualHandles 置顶不虚假加冕（榜单内评分
+ *   没进前 N 就没有标）。
+ */
+export const RANK_BADGES = {
+  enabled: true,
+  topN: 3,
+  mode: 'rating' as 'rating' | 'sales',
+};

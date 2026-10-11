@@ -26,7 +26,7 @@ import { trackEvent } from '@/lib/gtag';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import type { MakimooProduct } from '@/data/products';
 import { searchAll, matchCategories, familyKeyOf, type CategoryHit } from '@/lib/search-engine';
-import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED } from '@/data/search-config';
+import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED, RANK_BADGES } from '@/data/search-config';
 import {
   getSearchHistory,
   clearSearchHistory,
@@ -85,8 +85,18 @@ function priceOf(p: MakimooProduct): string {
  * 系统推荐选品（全站统一，非个性化）：评分×ln(1+评论数) 基础分 + 在售优先 + 家族去重 +
  * 类目多样性 ≤ maxPerCategory + manualHandles 人工置顶；最后把最近浏览的
  * recentInsert 个产品穿插到第 3/7 位（让客户再看看，2026-10 用户定）。
+ * 排名角标（RANK_BADGES）：按评分分取真实前 N 名，与展示位解耦——角标代表
+ * "全站评分第 N"，出现在网格任何位置都为真；回味位/置顶不虚假加冕。
  */
-function computeSystemPicks(): MakimooProduct[] {
+interface SystemPick {
+  p: MakimooProduct;
+  /** 排名角标序号（1 = 本推荐榜评分第一）；回味位无 */
+  rank?: number;
+  /** 回味位标记（穿插的最近浏览产品）：不参与榜单排名、永不发标 */
+  recent?: boolean;
+}
+
+function computeSystemPicks(): SystemPick[] {
   const all = enrichProductsWithShopifyData(PRODUCTS_DATA);
   const scored = all
     .map((p) => {
@@ -98,8 +108,10 @@ function computeSystemPicks(): MakimooProduct[] {
     })
     .sort((x, y) => (x.inStock === y.inStock ? y.score - x.score : x.inStock ? -1 : 1));
   // source === 'sales'（销量优先）分支位：Shopify 订单数据回流后在此切换排序依据
+  const scoreOf = new Map<string, number>();
+  for (const s of scored) scoreOf.set(s.p.handle, s.score);
 
-  const out: MakimooProduct[] = [];
+  const out: SystemPick[] = [];
   const seenFamily = new Set<string>();
   const catCount: Record<string, number> = {};
   const seen = (p: MakimooProduct) => seenFamily.has(familyKeyOf(p));
@@ -110,33 +122,47 @@ function computeSystemPicks(): MakimooProduct[] {
     if ((catCount[c] || 0) >= RECOMMENDED.maxPerCategory) return;
     catCount[c] = (catCount[c] || 0) + 1;
     mark(p);
-    out.push(p);
+    out.push({ p });
   };
-  // 人工置顶单：绕过类目多样性（运营意图优先），仍做家族去重与数量上限
+  // 人工置顶单：绕过类目多样性（运营意图优先），仍做家族去重与数量上限；
+  // 角标只认榜单内评分排名，置顶本身不加冕
   for (const handle of RECOMMENDED.manualHandles) {
     const p = all.find((x) => x.handle === handle);
     if (p && out.length < RECOMMENDED.count && !seen(p)) {
       mark(p);
-      out.push(p);
+      out.push({ p });
     }
   }
   for (const s of scored) pushAuto(s.p);
 
   // 穿插最近浏览（第 3、7 位）：回味位不计类目多样性、不受家族排重限制——
   // 客户要看的就是他看过的那一件（同族兄弟已在网格也要原样再现），总数不变；
-  // 仅按精确 handle 去重防重复展示
+  // 仅按精确 handle 去重防重复展示；回味位带 recent 标记，永不发排名角标
   if (RECOMMENDED.recentInsert > 0) {
     const recent = getRecentlyViewed()
       .slice(0, RECOMMENDED.recentInsert)
       .map((h) => all.find((p) => p.handle === h))
-      .filter((p): p is MakimooProduct => !!p && !out.some((x) => x.handle === p.handle));
+      .filter((p): p is MakimooProduct => !!p && !out.some((x) => x.p.handle === p.handle));
     const positions = [2, 6];
     recent.forEach((p, i) => {
       const pos = Math.min(positions[i] ?? out.length, out.length);
       mark(p);
-      out.splice(pos, 0, p);
+      out.splice(pos, 0, { p, recent: true });
       if (out.length > RECOMMENDED.count) out.pop();
     });
+  }
+
+  // 排名角标：最终网格内（排除回味位）按评分分取前 N——榜单内名次口径
+  //（淘宝热榜式；全站名次会被同家族垄断导致凑不齐，2026-10 实测后改定）。
+  // 声明仍真实：榜单内评分排序可支撑
+  if (RANK_BADGES.enabled) {
+    const eligible = out.filter((x) => !x.recent);
+    eligible
+      .sort((a, b) => (scoreOf.get(b.p.handle) || 0) - (scoreOf.get(a.p.handle) || 0))
+      .slice(0, RANK_BADGES.topN)
+      .forEach((x, i) => {
+        x.rank = i + 1;
+      });
   }
   return out;
 }
@@ -154,7 +180,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
   const [persStart, setPersStart] = useState(0);
   const [personalizedCollapsed, setPersonalizedCollapsed] = useState(false);
   // ④ 系统推荐
-  const [recommended, setRecommended] = useState<MakimooProduct[]>([]);
+  const [recommended, setRecommended] = useState<SystemPick[]>([]);
   const [systemHidden, setSystemHidden] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -498,7 +524,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   {!systemHidden && (
                     <>
                       <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
-                        {recommended.map((p, i) => {
+                        {recommended.map((item, i) => {
+                          const p = item.p;
                           const img = cardImage(p);
                           return (
                             <a
@@ -507,7 +534,13 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                               onClick={() => trackEvent('recommended_click', { position: i + 1 })}
                               className="group block"
                             >
-                              <div className="aspect-square rounded-lg overflow-hidden bg-warm-gray">
+                              <div className="relative aspect-square rounded-lg overflow-hidden bg-warm-gray">
+                                {/* 排名角标：真实评分前 N 名（分数排名，与展示位无关；回味位无标） */}
+                                {item.rank != null && (
+                                  <span className="absolute top-2 left-2 z-10 rounded-md bg-[#C8860D] px-2 py-1 text-[10px] font-bold leading-none text-white shadow-sm tracking-wide">
+                                    #{item.rank} Rated
+                                  </span>
+                                )}
                                 {img && (
                                   <img
                                     src={resolveUrl(img.url)}
