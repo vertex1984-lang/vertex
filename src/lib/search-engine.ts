@@ -111,7 +111,7 @@ const COLOR_BY_ASIN: Map<string, string> = (() => {
 })();
 
 /** 变体族 key：同族成员归并去重用（无族产品退化为自身 asin） */
-function familyKeyOf(p: MakimooProduct): string {
+export function familyKeyOf(p: MakimooProduct): string {
   const id = p.asin.toLowerCase();
   const group = VARIANT_GROUPS.find((g) => g.members.some((m) => m.asin.toLowerCase() === id));
   return group ? group.id : id;
@@ -128,13 +128,32 @@ function tagEntry(asinLower: string): TagEntry {
   return TAGS[familyId] || {};
 }
 
-function buildDoc(p: MakimooProduct): SearchDoc {
+export interface ProductSearchTags {
+  category: string;
+  subcategory: string;
+  materials: string[];
+  colors: string[];
+  scene: string[];
+}
+
+/** 产品的可搜索标签（buildDoc 与个性化画像/推荐加成共用同一口径） */
+export function productTagsOf(p: MakimooProduct): ProductSearchTags {
   const id = p.asin.toLowerCase();
   const materialRaw = PRODUCT_SPECS[id]?.material || '';
-  const memberColor = COLOR_BY_ASIN.get(id);
   const tags = tagEntry(id);
-  const colorRaw = memberColor || tags.color || '';
+  const colorRaw = COLOR_BY_ASIN.get(id) || tags.color || '';
   const sceneRaw = tags.scene || '';
+  return {
+    category: (p.productType || '').toLowerCase(),
+    subcategory: p.subcategory || '',
+    materials: materialRaw.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean),
+    colors: tokenize(colorRaw),
+    scene: tokenize(sceneRaw.replace(/-/g, ' ')),
+  };
+}
+
+function buildDoc(p: MakimooProduct): SearchDoc {
+  const tags = productTagsOf(p);
   const rating = p.rating ?? 0;
   const reviewCount = p.reviewCount ?? 0;
   return {
@@ -142,11 +161,11 @@ function buildDoc(p: MakimooProduct): SearchDoc {
     titleLower: p.title.toLowerCase(),
     titleTok: tokenize(p.title),
     descTok: tokenize(p.description),
-    subTok: tokenize(p.subcategory || ''),
-    catTok: tokenize(p.productType || ''),
-    materialTok: tokenize(materialRaw.split(',').join(' ')),
-    colorTok: tokenize(colorRaw),
-    sceneTok: tokenize(sceneRaw.replace(/-/g, ' ')),
+    subTok: tokenize(tags.subcategory),
+    catTok: tokenize(tags.category),
+    materialTok: tokenize(tags.materials.join(' ')),
+    colorTok: tags.colors,
+    sceneTok: tags.scene,
     inStock: p.shopifyAvailable ?? p.availableForSale,
     quality: rating * Math.log(1 + reviewCount),
   };

@@ -18,6 +18,7 @@ import { trackEvent } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { searchDocs } from '@/lib/search-engine';
+import { recordSearchTerm } from '@/lib/user-profile';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -128,10 +129,11 @@ export default function V2ProductsPage() {
     setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
     setMaterialSel(readUrlList('material'));
     setMounted(true);
-    // GA4: search（URL 带 ?q= 参数进入时触发一次）
+    // GA4: search（URL 带 ?q= 参数进入时触发一次）；同时记录搜索词供站内个性化画像（user-profile）
     const q = new URLSearchParams(window.location.search).get('q');
     if (q && q.trim()) {
       trackEvent('search', { search_term: q.trim() });
+      recordSearchTerm(q.trim());
     }
   }, []);
 

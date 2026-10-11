@@ -1,13 +1,12 @@
 'use client';
 
-import { useState, useEffect, useRef, FormEvent } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import { getFavorites } from '@/lib/favorites';
-import type { MakimooProduct } from '@/data/products';
-import { searchAll } from '@/lib/search-engine';
+import V2SearchOverlay from './V2SearchOverlay';
 import { fabricByMaterial } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 
@@ -75,8 +74,7 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
 };
 
-// 热门搜索关键词（hardcode 占位，可后续按真实搜索数据替换）
-const HOT_SEARCHES = ['Cushions', 'Pillows', 'Towels', 'Mats', 'Neck Pillow'];
+// 热门搜索关键词已迁至 src/data/search-config.ts（2026-10 P2 搜索层），随全屏搜索层一起展示
 
 // ── Mega menu 多列布局（2026-09 升级，对标 Parachute）──
 interface MenuLink {
@@ -176,8 +174,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [suggestions, setSuggestions] = useState<MakimooProduct[]>([]);
   const [cartCount, setCartCount] = useState(0);
   const [favCount, setFavCount] = useState(0);
   // Mega menu：当前展开的分类（'' = 收起）
@@ -223,8 +219,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   }, []);
 
   useEffect(() => {
-    // 只有移动端菜单锁定滚动；搜索面板不锁定（原页面保持可交互）
-    if (mobileOpen) {
+    // 移动端菜单与全屏搜索层都锁定背景滚动（2026-10 P2：搜索层改全屏后需要锁，
+    // 原下拉面板时代不锁；此 effect 与 V2SearchOverlay 内部的锁双保险，子组件先跑父组件兜底）
+    if (mobileOpen || searchOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
@@ -288,26 +285,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     };
   }, []);
 
-  // 搜索建议：300ms 防抖，本地即时过滤
-  useEffect(() => {
-    const q = searchQuery.trim();
-    if (q.length < 2) {
-      setSuggestions([]);
-      return;
-    }
-    const timer = setTimeout(() => {
-      // 统一搜索引擎（2026-10 P1）：分词/同义词/字段加权 + 变体族去重
-      setSuggestions(searchAll(q, 6));
-    }, 300);
-    return () => clearTimeout(timer);
-  }, [searchQuery]);
-
-  const handleSearchSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    const q = searchQuery.trim();
-    if (!q) return;
-    window.location.href = v2url(`/products/?q=${encodeURIComponent(q)}`);
-  };
+  // 搜索联想与提交逻辑已迁至 V2SearchOverlay（2026-10 P2 全屏搜索层）
 
   // 只有首页（/）和 About（/about/）有大图页头，保持「透明 → 滚动实底」；
   // 其余页面是浅色页头，从首屏起即为实底样式，避免 cream 文字看不清。
@@ -328,6 +306,8 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 滚动哨兵：absolute 定位在文档顶下 60px（与 scroll 滞回阈值同位），
           滚过即离开视口 → IntersectionObserver 驱动 solid（scroll 事件之外的第二通道） */}
       <div ref={sentinelRef} aria-hidden="true" className="absolute left-0 w-px h-px pointer-events-none" style={{ top: 60 }} />
+      {/* 全屏搜索层（2026-10 P2）：放大镜开关，独立于 header 的 fixed 堆叠上下文（z-60 > z-50） */}
+      <V2SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
       <div ref={headerRef} className="fixed top-0 z-50 w-full">
         {/* Announcement Bar：全端展示同一文案（2026-09-29 用户定：移动端恢复，与桌面端一致）；
             移动端字号略缩 + nowrap 保证单行不折行；向下滚动超过阈值后收起，回到顶部附近再展开 */}
@@ -446,81 +426,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
               )}
             </button>
           </div>
-
-          {/* Search Panel：导航下方的下拉面板，不遮全屏、不锁滚动，点外部/Esc 关闭 */}
-          {searchOpen && (
-            <div
-              className="absolute top-full left-0 right-0 bg-off-white border-y border-warm-gray shadow-[0_12px_32px_rgba(60,45,30,0.12)] text-charcoal"
-              style={{ animation: 'fadeIn 0.18s ease-out' }}
-            >
-              <div className="max-w-2xl mx-auto px-6 py-5">
-                <form onSubmit={handleSearchSubmit} className="flex items-center gap-3">
-                  <div className="relative flex-1">
-                    <input
-                      type="text"
-                      placeholder="Search products..."
-                      autoFocus
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full h-11 px-4 rounded-lg text-sm border-2 border-warm-gray focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none bg-white"
-                      style={{ fontFamily: 'Montserrat, sans-serif' }}
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="h-11 px-5 rounded-lg text-sm font-semibold text-cream bg-brand transition hover:bg-brand-dark flex-shrink-0"
-                    aria-label="Submit search"
-                  >
-                    Search
-                  </button>
-                </form>
-
-                {/* 即时建议（300ms 防抖，client-side 过滤） */}
-                {suggestions.length > 0 && (
-                  <div className="mt-3 bg-white rounded-xl border border-warm-gray overflow-hidden max-h-80 overflow-y-auto">
-                    {suggestions.map((p) => (
-                      <a
-                        key={p.id}
-                        href={v2url(`/products/${p.handle}/`)}
-                        className="flex items-center gap-3 px-4 py-2.5 hover:bg-off-white transition"
-                      >
-                        {p.images?.[0] && (
-                          <img
-                            src={resolveUrl(p.images[0].url)}
-                            alt={p.images[0].altText || p.title}
-                            className="w-12 h-12 rounded-lg object-cover flex-shrink-0 bg-off-white border border-warm-gray"
-                            loading="lazy"
-                          />
-                        )}
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-brand w-16 flex-shrink-0 truncate">
-                          {p.productType}
-                        </span>
-                        <span className="text-sm text-charcoal line-clamp-2">{p.title}</span>
-                      </a>
-                    ))}
-                  </div>
-                )}
-
-                {/* 热门搜索 chips */}
-                {suggestions.length === 0 && (
-                  <div className="mt-4">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-2.5">Popular Searches</p>
-                    <div className="flex flex-wrap gap-2">
-                      {HOT_SEARCHES.map((term) => (
-                        <button
-                          key={term}
-                          onClick={() => setSearchQuery(term)}
-                          className="px-4 py-2 rounded-full bg-white border border-warm-gray text-sm text-charcoal-light hover:border-brand hover:text-brand transition"
-                        >
-                          {term}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
         </header>
 
         {/* Mega Menu（桌面端）：点击分类导航展开/收起，左侧二级类目 + 右侧示例图卡（Parachute 风格）；Esc / 点外部 / 路由变化关闭 */}
