@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ProductCard from '@/components/ProductCard';
+import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
@@ -25,7 +25,7 @@ const newArrivals = dedupeFamilyColors(
 ).slice(0, 20);
 
 /**
- * New Arrivals 独立页：浅色面包屑页头 + 白底 ProductCard 平铺网格（样式同 /products 类目页），
+ * New Arrivals 独立页：浅色面包屑页头 + V2ProductCard 平铺网格（2026-10-12 起与类目页新卡一致），
  * 展示最新上架的 20 款产品，不区分类目、按上架时间倒序。
  *（原画报式页面 2026-09 下线：分屏 hero / 批次 feed / 类目卡 / Newsletter / Featured teaser 移除）
  */
@@ -45,7 +45,7 @@ export default function NewArrivalsPage() {
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
         {newArrivals.map((p) => (
-          <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
+          <V2ProductCard key={p.id} product={p} />
         ))}
       </div>
     </div>

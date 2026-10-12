@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo, useRef } from 'react';
-import ProductCard from '@/components/ProductCard';
+import V2ProductCard from '@/components/v2/V2ProductCard';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
@@ -399,9 +399,6 @@ export default function V2ProductsPage() {
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Shop All';
 
-  // 产品卡详情链接：v2 页面内保持 /v2 前缀
-  const cardHref = (p: MakimooProduct) => v2url(`/products/${p.handle}/`);
-
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
   const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
@@ -575,19 +572,19 @@ export default function V2ProductsPage() {
                 {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
                   {products.slice(0, SECTION_LIMITS.mobile).map((p) => (
-                    <ProductCard key={p.id} product={p} href={cardHref(p)} />
+                    <V2ProductCard key={p.id} product={p} />
                   ))}
                 </div>
                 {/* 桌面 lg：3 列 × 3 行 */}
                 <div className="hidden lg:grid xl:hidden grid-cols-3 gap-6">
                   {products.slice(0, SECTION_LIMITS.lg).map((p) => (
-                    <ProductCard key={p.id} product={p} href={cardHref(p)} />
+                    <V2ProductCard key={p.id} product={p} />
                   ))}
                 </div>
                 {/* 桌面 xl：4 列 × 3 行 */}
                 <div className="hidden xl:grid grid-cols-4 gap-6">
                   {products.slice(0, SECTION_LIMITS.xl).map((p) => (
-                    <ProductCard key={p.id} product={p} href={cardHref(p)} />
+                    <V2ProductCard key={p.id} product={p} />
                   ))}
                 </div>
                 {/* View More：只在当前断点确实有截断时显示（7-9 款仅移动端截断，10-12 款仅 lg 截断） */}
@@ -656,7 +653,7 @@ export default function V2ProductsPage() {
             <>
               <div className={gridCls}>
                 {sortedFiltered.slice(0, visibleCount).map((product) => (
-                  <ProductCard key={product.id} product={product} href={cardHref(product)} />
+                  <V2ProductCard key={product.id} product={product} />
                 ))}
               </div>
               {/* 无限滚动哨兵：进入视口自动加载下一批；不显示产品数量，仅提示加载中（2026-09 用户定） */}

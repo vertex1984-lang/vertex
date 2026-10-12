@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Reveal from '@/components/Reveal';
-import ProductCard from '@/components/ProductCard';
+import V2ProductCard from '@/components/v2/V2ProductCard';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getBestSellersByCategory } from '@/data/featured-sections';
@@ -70,7 +70,7 @@ export default function BestSellersPage() {
             </Reveal>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
               {sec.products.map((p) => (
-                <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
+                <V2ProductCard key={p.id} product={p} />
               ))}
             </div>
             <a

@@ -281,14 +281,14 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   // 手风琴（桌面在右栏 Details 下方，移动端在右栏底部）。
   // 2026-09-29 用户定：Description 图文区删除；Specifications 大表改为手风琴一节；
-  // 顺序 Care & Maintenance / Product Details 在前，Shipping / Returns 在后。
+  // 顺序 Product Details / Care & Maintenance 在前，Shipping / Returns 在后。
   // 2026-10-12 用户定：Specifications 更名 Product Details，原 DETAILS 卖点列表并入该节
-  // （卖点在上、规格表在下），购买区不再单独显示 Details 块。
+  // （卖点在上、规格表在下），购买区不再单独显示 Details 块；Product Details 提到最前。
   // specs 节渲染卖点+规格表（行多时 maxHeight 需要更大），其余节渲染纯文案
   const detailBullets = (product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5);
   const accordionSections: { title: string; body?: string; specs?: boolean }[] = [
-    { title: 'Care & Maintenance', body: careCopy.long },
     { title: 'Product Details', specs: true },
+    { title: 'Care & Maintenance', body: careCopy.long },
     ...ACCORDION_SECTIONS_BASE,
   ];
   const shippingCareBlock = (

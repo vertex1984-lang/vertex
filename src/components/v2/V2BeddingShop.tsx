@@ -6,11 +6,10 @@ import { buildSetFamilies, classifySet, SET_KIND_LABEL, SetFamily, SetKind } fro
 import { BEDDING_MATERIAL_ORDER, BEDDING_MATERIAL_BLURBS, sortBeddingMaterials } from '@/data/subcategories';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
-import ProductCard from '@/components/ProductCard';
+import V2ProductCard from '@/components/v2/V2ProductCard';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
-import { v2url } from '@/lib/v2paths';
 
 /**
  * Bedding 类目页选购视图（2026-09 重做，替代 V2BeddingLanding 聚合页）：
@@ -309,7 +308,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
               <h2 className="mt-10 lg:mt-14 mb-4 text-lg lg:text-2xl font-extrabold text-[#333]">More Bedding</h2>
               <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
                 {unclassified.map((p) => (
-                  <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
+                  <V2ProductCard key={p.id} product={p} />
                 ))}
               </div>
             </>
