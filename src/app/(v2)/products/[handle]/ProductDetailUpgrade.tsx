@@ -566,30 +566,33 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               );
             })()}
 
-            {/* 尺寸选择器（2026-09-28 对标竞品改下拉单行，替代原大胶囊按钮组）：
-                一行 "Size: 当前值 ▾"，点击展开选项面板；变体组带尺寸 → 跳转对应尺寸页（缺货/无此规格在面板内灰显）；
-                地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类右侧带 Size guide 弹层入口 */}
+            {/* 尺寸选择器（2026-10-12 用户定：标题与选择器合并为一行——一个圆角框内左 "Size" 标签、
+                右当前值 ▾，字体样式不变；原标题行+下划线选择器两段式弃用）：
+                点击展开选项面板；变体组带尺寸 → 跳转对应尺寸页（缺货/无此规格在面板内灰显）；
+                地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类 Size guide 入口移到框下方右侧 */}
             {(sizeVariants.length > 0 || (isRug && currentSizeStr)) && (
             <div className="mb-5 lg:mb-7">
-              <div className="flex items-baseline justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light">Size</p>
-                {isBedding && sizeVariants.length > 0 && (
-                  <button type="button" onClick={() => setSizeGuideOpen(true)} className="text-xs text-brand underline underline-offset-2 hover:no-underline">
-                    Size guide
-                  </button>
-                )}
-              </div>
               <button
                 type="button"
                 onClick={() => setSizeMenuOpen((v) => !v)}
                 aria-expanded={sizeMenuOpen}
-                className="w-full flex items-center justify-between py-3 border-b border-charcoal/25 text-sm font-semibold text-charcoal"
+                className="w-full flex items-center justify-between px-4 py-3 rounded-xl border border-charcoal/25 bg-white"
               >
-                <span>{sizeVariants.length > 0
-                  ? (sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
-                  : currentSizeStr}</span>
-                <svg className={`w-4 h-4 text-charcoal-light transition-transform ${sizeMenuOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-light">Size</span>
+                <span className="flex items-center gap-1.5 text-sm font-semibold text-charcoal">
+                  {sizeVariants.length > 0
+                    ? (sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
+                    : currentSizeStr}
+                  <svg className={`w-4 h-4 text-charcoal-light transition-transform ${sizeMenuOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </span>
               </button>
+              {isBedding && sizeVariants.length > 0 && (
+                <div className="mt-1.5 text-right">
+                  <button type="button" onClick={() => setSizeGuideOpen(true)} className="text-xs text-brand underline underline-offset-2 hover:no-underline">
+                    Size guide
+                  </button>
+                </div>
+              )}
               {sizeMenuOpen && (
                 <div className="mt-2 rounded-xl border border-warm-gray bg-white shadow-lg overflow-hidden">
                   {sizeVariants.length > 0
