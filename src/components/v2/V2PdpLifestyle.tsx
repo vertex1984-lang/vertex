@@ -10,6 +10,8 @@ import { resolveUrl } from '@/lib/paths';
  *    Sunday Morning 竖图在右（5/12），顶端对齐，两图高度基本齐平
  *  - cushions：两张竖图各半（3:4 × 2）
  *  - cushions/solids 系列：两张竖图各半（3:4 × 2），门廊绿垫 + 海滨藏青垫场景
+ *  - cushions/prints（Floral & Prints，2026-10-12 用户供图替换原通用 café/花店图）：
+ *    天台黄昏几何垫 + 海滨蓝绿植物垫场景
  */
 interface LifestyleCard {
   image: string;
@@ -19,7 +21,7 @@ interface LifestyleCard {
   className: string;
 }
 
-const SETS: Record<'pillows' | 'cushions' | 'solids', { gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints', { gridClass: string; cards: LifestyleCard[] }> = {
   pillows: {
     gridClass: 'lg:grid-cols-12 lg:items-start',
     cards: [
@@ -77,9 +79,28 @@ const SETS: Record<'pillows' | 'cushions' | 'solids', { gridClass: string; cards
       },
     ],
   },
+  prints: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/cushion-prints-rooftop.webp',
+        caption: 'Rooftop Dusk',
+        desc: 'City lights, front-row seats',
+        alt: 'Colorful geometric patio chair cushion on a rooftop terrace with string lights and city skyline at dusk',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/cushion-prints-coastal.webp',
+        caption: 'Ocean Air',
+        desc: 'Salt breeze and slow mornings',
+        alt: 'Blue-green leaf print chair cushion on a rattan chair on a sunny ocean-view balcony',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' }) {
+export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' }) {
   const set = SETS[cat];
   return (
     <section className="mt-8 lg:mt-12">
