@@ -28,7 +28,6 @@ import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import V2RatingPopover from '@/components/v2/V2RatingPopover';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
-import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
@@ -113,21 +112,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 悬浮加购条滚动联动（2026-10-04 用户定）：主购买区 CTA 在视口内 → 悬浮条隐藏；
-  // CTA 滚出视野 → 滑入。IntersectionObserver 监听主 CTA 行（mainCtaRef）
-  const [mainCtaVisible, setMainCtaVisible] = useState(true);
-  const mainCtaRef = useRef<HTMLDivElement | null>(null);
-  const stickyBarRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const el = mainCtaRef.current;
-    if (!el || typeof IntersectionObserver === 'undefined') return;
-    const obs = new IntersectionObserver(
-      (entries) => setMainCtaVisible(entries[0]?.isIntersecting ?? true),
-      { threshold: 0 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
+  // 移动端悬浮加购条已于 2026-10-12 移除（用户定），原 IntersectionObserver 联动逻辑一并删除
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
   // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
@@ -652,9 +637,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
-            {/* 数量 + 加购（mainCtaRef：悬浮加购条滚动联动的观测目标） */}
+            {/* 数量 + 加购 */}
             {isInStock && (
-              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-3">
+              <div className="flex flex-col sm:flex-row gap-3.5 mb-3">
                 <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white self-start">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -701,9 +686,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
-            {/* 信任徽章行（只留免邮/退货两条，2026-09-29 用户定：年销/安全支付/卡图标/政策链接全部移除，
-                更多信任元素由下方滚动信任条承担）+ 预计送达（送达日期单独加粗一行） */}
-            <PdpTrustBadges className="mb-4" />
+            {/* 免邮/退货信任徽章行已于 2026-10-12 移除（用户定：Add to Cart 下方不再显示这两个字段，
+                信任信息由下方滚动信任条承担）；预计送达保留（送达日期单独加粗一行） */}
             {isInStock && (
               <p className="text-sm font-semibold text-charcoal mb-6">
                 <EstimatedDelivery fallback="Ships within 1-2 business days" />
@@ -862,34 +846,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.
             </p>
           </div>
-        </div>
-      )}
-
-      {/* 移动端悬浮加购条：主购买区 CTA 在视口内 → 隐藏；CTA 滚出视野 → 滑入（滚动联动，2026-10-04 用户定） */}
-      {isInStock && (
-        <div
-          ref={stickyBarRef}
-          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
-            mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
-          }`}
-          style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
-        >
-          <img
-            src={resolveUrl(productImages[0]?.thumbUrl || '')}
-            alt={product.title}
-            className="w-11 h-11 rounded-lg object-cover flex-shrink-0"
-          />
-          <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-brand leading-tight">{formatPrice(displayPrice, displayCurrency)}</p>
-            <p className="text-[11px] text-charcoal-light truncate">{shortTitle}</p>
-          </div>
-          <button
-            onClick={handleAddToCart}
-            disabled={addingToCart}
-            className="h-11 px-6 rounded-full text-sm font-semibold text-cream transition active:scale-95 disabled:opacity-60 flex-shrink-0 bg-brand"
-          >
-            {addingToCart ? 'Adding...' : 'Add to Cart'}
-          </button>
         </div>
       )}
     </div>

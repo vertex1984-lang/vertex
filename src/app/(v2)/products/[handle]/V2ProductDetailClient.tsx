@@ -18,7 +18,6 @@ import { getCareCopy } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import V2RatingPopover from '@/components/v2/V2RatingPopover';
 import StarDisplay from '@/components/v2/StarDisplay';
-import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface V2ProductDetailClientProps {
@@ -51,21 +50,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
   const [addingToCart, setAddingToCart] = useState(false);
   const [fav, setFav] = useState(false);
 
-  // 悬浮加购条滚动联动（2026-10-04 用户定，与新版 PDP 同口径）：主购买区 CTA 在视口内 →
-  // 悬浮条隐藏；CTA 滚出视野 → 滑入。IntersectionObserver 监听主 CTA 行（mainCtaRef）
-  const [mainCtaVisible, setMainCtaVisible] = useState(true);
-  const mainCtaRef = useRef<HTMLDivElement | null>(null);
-  const stickyBarRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const el = mainCtaRef.current;
-    if (!el || typeof IntersectionObserver === 'undefined') return;
-    const obs = new IntersectionObserver(
-      (entries) => setMainCtaVisible(entries[0]?.isIntersecting ?? true),
-      { threshold: 0 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
+  // 移动端悬浮加购条已于 2026-10-12 移除（用户定，与新版 PDP 同步），原 IntersectionObserver 联动逻辑一并删除
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内（2026-10-02 采自 feat/pdp-v2-features）
   const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
@@ -350,9 +335,9 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 </div>
               )}
 
-              {/* Actions：数量 + Add to Cart 全宽 + 收藏（mainCtaRef：悬浮加购条滚动联动的观测目标） */}
+              {/* Actions：数量 + Add to Cart 全宽 + 收藏 */}
               {isInStock ? (
-                <div ref={mainCtaRef} className="flex gap-3 mb-3">
+                <div className="flex gap-3 mb-3">
                   <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white flex-shrink-0">
                     <button
                       onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -418,16 +403,13 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 </div>
               )}
 
-              {/* 配送时效：送达日期客户端动态计算（水合前显示发货时效，静态 HTML 不含过期日期）；
-                  免邮/退货信息由下方 PdpTrustBadges 承担，不重复（2026-09-28 去重） */}
+              {/* 配送时效：送达日期客户端动态计算（水合前显示发货时效，静态 HTML 不含过期日期）。
+                  免邮/退货信任徽章已于 2026-10-12 移除（用户定，与新版 PDP 同步） */}
               <p className="text-xs text-charcoal-light mb-4">
                 {isInStock ? <EstimatedDelivery fallback="Ships within 1-2 business days" /> : 'Ships within 1-2 business days'}
               </p>
 
-              {/* 信任徽章区（免邮/退货/年销/安全支付+卡组织图标已并入，2026-09-29） */}
-              <PdpTrustBadges className="mb-5" />
-
-              {/* 手风琴：Shipping / Returns / Materials & Care（Care 文案按分类生成） */}
+              {/* 手风琴：Shipping & Return / Materials & Care（Care 文案按分类生成） */}
               <div className="border-b border-warm-gray">
                 {accordionSections.map((section, i) => (
                   <div key={section.title} className="border-t border-warm-gray">
@@ -545,33 +527,6 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
           onIndexChange={(i) => { setSelectedImage(i); setMainImageLoaded(false); }}
           onClose={() => setLightboxOpen(false)}
         />
-      )}
-
-      {/* 移动端悬浮加购条：主购买区 CTA 在视口内 → 隐藏；CTA 滚出视野 → 滑入（滚动联动，与新版 PDP 同口径） */}
-      {isInStock && (
-        <div
-          ref={stickyBarRef}
-          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-off-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
-            mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
-          }`}
-          style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
-        >
-          <img
-            src={resolveUrl(productImages[0]?.thumbUrl || '')}
-            alt={product.title}
-            className="w-11 h-11 rounded-lg object-cover flex-shrink-0"
-          />
-          <span className="text-base font-bold text-brand flex-shrink-0">
-            {formatPrice(displayPrice, displayCurrency)}
-          </span>
-          <button
-            onClick={handleAddToCart}
-            disabled={addingToCart}
-            className="flex-1 h-11 rounded-full bg-brand text-cream text-sm font-semibold transition active:scale-95 disabled:opacity-60"
-          >
-            {addingToCart ? 'Adding...' : 'Add to Cart'}
-          </button>
-        </div>
       )}
     </>
   );
