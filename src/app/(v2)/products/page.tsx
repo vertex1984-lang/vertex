@@ -18,6 +18,8 @@ import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
+import { searchDocs } from '@/lib/search-engine';
+import { recordSearchTerm } from '@/lib/user-profile';
 
 // 每批加载数量与 (classic) 产品列表页一致
 const PAGE_SIZE = 24;
@@ -128,10 +130,11 @@ export default function V2ProductsPage() {
     setSortBy(SORT_KEYS.includes(s) ? s : 'featured');
     setMaterialSel(readUrlList('material'));
     setMounted(true);
-    // GA4: search（URL 带 ?q= 参数进入时触发一次）
+    // GA4: search（URL 带 ?q= 参数进入时触发一次）；同时记录搜索词供站内个性化画像（user-profile）
     const q = new URLSearchParams(window.location.search).get('q');
     if (q && q.trim()) {
       trackEvent('search', { search_term: q.trim() });
+      recordSearchTerm(q.trim());
     }
   }, []);
 
@@ -326,10 +329,8 @@ export default function V2ProductsPage() {
   const filtered = useMemo(() => {
     let result = scopeProducts;
     if (isSearching) {
-      const q = searchQuery.trim().toLowerCase();
-      result = result.filter(
-        (p) => p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
-      );
+      // 统一搜索引擎（2026-10 P1）：分词/同义词/字段加权，与 header 联想同源
+      result = searchDocs(result, searchQuery.trim());
     } else if (materialSel.length > 0) {
       if (beddingMaterialMode) {
         result = result.filter((p) => materialSel.includes(styleKeyOf(p)));
@@ -343,7 +344,11 @@ export default function V2ProductsPage() {
     return result;
   }, [scopeProducts, searchQuery, isSearching, materialSel, beddingMaterialMode, styleKeyOf]);
 
-  const sortedFiltered = useMemo(() => applySort(filtered, sortBy), [filtered, sortBy]);
+  // 搜索时保留引擎相关性序（featured 的权重/家族聚拢排序会破坏相关性，仅显式切换排序时才走 applySort）
+  const sortedFiltered = useMemo(
+    () => (isSearching && sortBy === 'featured' ? filtered : applySort(filtered, sortBy)),
+    [filtered, sortBy, isSearching]
+  );
 
   // 无限滚动：哨兵进入视口即加载下一批（2026-09 用户定：子分类页下拉自动显示更多，替代 Load More 按钮）。
   // rootMargin 提前 600px 触发，滚到底之前内容已就位；视口过大时哨兵持续可见会连续触发，直到填满或加载完
