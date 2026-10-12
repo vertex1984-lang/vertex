@@ -67,6 +67,11 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
     // 优先级：同尺寸 token > 价格在当前产品 ±50% 以内 > 默认顺序
     const currentPrice = getPrice(product);
     const curSizes = sizeTokens(product.title);
+    // 枕套↔枕芯必须尺寸严格匹配（2026-10-12 用户反馈：30×50 枕芯配到了 40/45 枕套）：
+    // 当前产品有尺寸 token 时只保留同尺寸候选，没有同尺寸就不渲染（宁缺毋滥）
+    if ((sub === 'pillow-cases' || sub === 'pillow-inserts') && curSizes.length > 0) {
+      pool = pool.filter((p) => sizeTokens(p.title).some((s) => curSizes.includes(s)));
+    }
     const scored = pool.map((p, idx) => {
       const price = getPrice(p);
       const sameSize = curSizes.some((s) => sizeTokens(p.title).includes(s));
@@ -74,7 +79,17 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
       return { p, score: (sameSize ? 2 : 0) + (priceClose ? 1 : 0), idx };
     });
     scored.sort((a, b) => b.score - a.score || a.idx - b.idx);
-    return scored.slice(0, 2).map((s) => s.p);
+    // 按变体族去重挑选（2026-10-12 用户反馈：同族两个尺寸兄弟被同时推出，视觉上是同一产品显示两次）
+    const usedGroups = new Set<string>();
+    const picked: MakimooProduct[] = [];
+    for (const s of scored) {
+      if (picked.length >= 2) break;
+      const gid = getVariantGroupOf(s.p.asin.toLowerCase())?.id || s.p.handle;
+      if (usedGroups.has(gid)) continue;
+      usedGroups.add(gid);
+      picked.push(s.p);
+    }
+    return picked;
   }, [product, enriched]);
 
   if (companions.length === 0) return null;
