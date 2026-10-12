@@ -6,6 +6,7 @@ import V2BrandBanner from '@/components/v2/V2BrandBanner';
 import V2SloganBanner from '@/components/v2/V2SloganBanner';
 import V2Recommended from '@/components/v2/V2Recommended';
 import { getRecommendedData } from '@/data/home-sections';
+import { resolveUrl } from '@/lib/paths';
 
 export const metadata: Metadata = {
   title: 'Makimoo — Comfort, Woven Into Every Day',
@@ -29,6 +30,11 @@ const recommended = getRecommendedData();
 export default function V2HomePage() {
   return (
     <>
+      {/* hero 大图预加载（2026-10-12 用户反馈加载中公告条与 hero 间有瞬态缝隙）：
+          HTML 解析即发起 fetch，不必等 CSS 渲染后才加载背景图，缩短垫层暴露时间；
+          移动端/桌面端按 media 各只预载对应的一张（rel=preload 为 body-ok link，放此处合法） */}
+      <link rel="preload" as="image" href={resolveUrl('/images/brand/hero-autumn-mobile.webp')} media="(max-width: 1023px)" />
+      <link rel="preload" as="image" href={resolveUrl('/images/brand/hero-autumn-desktop.webp')} media="(min-width: 1024px)" />
       {/* hero 上滑到 sticky 导航下方（导航行高：移动 52px=py-1.5+logo h-10，
           桌面 88px=py-4+h-14），保持透明头部压大图的视觉（2026-10-11 sticky 全站推广） */}
       <div className="-mt-[52px] lg:-mt-[88px]">
