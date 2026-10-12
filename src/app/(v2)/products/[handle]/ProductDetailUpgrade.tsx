@@ -29,6 +29,7 @@ import V2RatingPopover from '@/components/v2/V2RatingPopover';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
+import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
 import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
@@ -705,6 +706,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 <EstimatedDelivery fallback="Ships within 1-2 business days" />
               </p>
             )}
+
+            {/* Pairs Well With 搭配购（2026-10-12 用户定）：购买区内、预计送达之下、
+                规格速览/手风琴之上；纯规则配对（枕套↔同尺寸枕芯、床品→睡眠枕芯、
+                坐垫→同系列），无销售数据故不用 "Frequently Bought Together" 命名 */}
+            <BoughtTogether product={product} />
 
             {/* 规格速览 chips（材料与护理信息保留在底部 Product Details 表） */}
             {quickSpecs.length > 0 && (
