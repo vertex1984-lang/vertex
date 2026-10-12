@@ -374,10 +374,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
           移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、移动端无区块上边距（图片贴合顶部导航）、
           图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外）。
-          桌面端（2026-09-29 用户定）：容器宽 80% 屏宽、图集:购买栏 = 7:6，提高首屏占屏比（原 1400px 居中两侧留白过多）；
+          桌面端（2026-09-29 用户定）：容器宽 80% 屏宽，提高首屏占屏比（原 1400px 居中两侧留白过多）；
+          图集:购买栏 = 8:5（2026-10-12 用户定：商品图长宽再增约 15%，购买区宽度对应减少；原 7:6）；
           页面下方品牌故事/面料板块同宽 80% 对齐 */}
       <section className="px-6 lg:px-10 lg:mt-10">
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[7fr_6fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[8fr_5fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
           {/* 左：图集。移动端（2026-09-29 用户定）：主图 1:1.05 近方微竖通栏，方源图 object-cover 居中裁剪
               （仅左右各裁约 2.4%，几乎不损失画面；4:5 竖版左右裁 10% 与模糊背景方案均已弃用）；
               缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定） */}
@@ -707,11 +708,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </p>
             )}
 
-            {/* Pairs Well With 搭配购（2026-10-12 用户定）：购买区内、预计送达之下、
-                规格速览/手风琴之上；纯规则配对（枕套↔同尺寸枕芯、床品→睡眠枕芯、
-                坐垫→同系列），无销售数据故不用 "Frequently Bought Together" 命名 */}
-            <BoughtTogether product={product} />
-
             {/* 规格速览 chips（材料与护理信息保留在底部 Product Details 表） */}
             {quickSpecs.length > 0 && (
             <div className="grid grid-cols-2 gap-2.5 mb-8">
@@ -734,6 +730,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             <div className="lg:hidden">
               {shippingCareBlock}
             </div>
+
+            {/* Pairs Well With 搭配购（2026-10-12 用户定）：手风琴（Product Details 等）下方；
+                纯规则配对（枕套↔同尺寸枕芯、床品→睡眠枕芯、坐垫→同系列），
+                无销售数据故不用 "Frequently Bought Together" 命名 */}
+            <BoughtTogether product={product} />
           </div>
         </div>
       </section>
