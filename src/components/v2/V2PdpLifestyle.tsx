@@ -8,7 +8,9 @@ import { v2url } from '@/lib/v2paths';
  * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端并排同高，直角无圆角。
  *  - pillows：横图 2/3 + 竖图 1/3（3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）
  *  - cushions：两张竖图各半（3:4 × 2）
- * 点击分别链 Decorative Pillow Cases / cushions 类目页。
+ *  - cushions/solids 系列（2026-10-12 用户定）：两张竖图各半（3:4 × 2），
+ *    门廊绿垫 + 海滨藏青垫场景，链 /cushions/solids/
+ * 点击分别链 Decorative Pillow Cases / cushions 类目页 / solids 类目页。
  */
 interface LifestyleCard {
   image: string;
@@ -18,7 +20,7 @@ interface LifestyleCard {
   className: string;
 }
 
-const SETS: Record<'pillows' | 'cushions', { href: string; gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'cushions' | 'solids', { href: string; gridClass: string; cards: LifestyleCard[] }> = {
   pillows: {
     href: '/pillows/pillow-cases/',
     gridClass: 'lg:grid-cols-3',
@@ -59,9 +61,29 @@ const SETS: Record<'pillows' | 'cushions', { href: string; gridClass: string; ca
       },
     ],
   },
+  solids: {
+    href: '/cushions/solids/',
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/cushion-solids-porch.webp',
+        caption: 'Porch Season',
+        desc: 'Sweet tea and slow evenings',
+        alt: 'Deep green tufted cushion on a wicker chair on a lush shaded porch at dusk',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/cushion-solids-coastal.webp',
+        caption: 'Harbor Mornings',
+        desc: 'Sea air at the breakfast table',
+        alt: 'Navy blue tufted chair cushion on a wooden chair in a bright coastal breakfast nook',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' }) {
+export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' }) {
   const set = SETS[cat];
   return (
     <section className="mt-8 lg:mt-12">
