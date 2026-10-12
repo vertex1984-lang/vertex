@@ -117,11 +117,8 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
             onClick={() => handleClick(p)}
             className="flex items-center gap-3.5 rounded-xl bg-[#F8F5F0] p-3 transition hover:bg-[#F1EBE2]"
           >
-            <span
-              className={`relative w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 ${
-                p.imageWhiteBg?.[0] ? 'bg-white' : 'bg-[#ECE6DD]'
-              }`}
-            >
+            {/* 缩略图统一白色底色块（2026-10-12 用户定：每个推荐产品一个白底色块） */}
+            <span className="relative w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 bg-white">
               <img
                 src={resolveUrl(getThumb(p))}
                 alt={p.title}
