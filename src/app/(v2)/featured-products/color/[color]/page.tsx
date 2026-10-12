@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import ProductCard from '@/components/ProductCard';
+import V2ProductCard from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { COLOR_RULES } from '@/data/product-tags';
 import { ALL, colorKeysWithProducts } from '../../tagged';
@@ -51,7 +51,7 @@ export default function ColorCategoryPage({ params }: { params: { color: string 
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
         {products.map((p) => (
-          <ProductCard key={p.id} product={p} href={v2url(`/products/${p.handle}/`)} />
+          <V2ProductCard key={p.id} product={p} />
         ))}
       </div>
     </div>
