@@ -6,8 +6,8 @@ import { resolveUrl } from '@/lib/paths';
  * 仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭）。
  * 纯展示，无点击跳转（2026-10-12 用户定：去掉所有链接）。
  * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端并排，直角无圆角。
- *  - pillows（2026-10-12 用户定）：Sunday Morning 竖图在左且加宽（7/12），
- *    Rainy Day 横图在右（5/12），顶端对齐，高度允许不一致（竖图高于横图）
+ *  - pillows（2026-10-12 用户定）：Sunday Morning 竖图在左（5/12），
+ *    Rainy Day 横图在右（7/12，裁为 4:3），顶端对齐，竖图略高
  *  - cushions：两张竖图各半（3:4 × 2）
  *  - cushions/solids 系列：两张竖图各半（3:4 × 2），门廊绿垫 + 海滨藏青垫场景
  */
@@ -28,14 +28,14 @@ const SETS: Record<'pillows' | 'cushions' | 'solids', { gridClass: string; cards
         caption: 'Sunday Morning',
         desc: 'Sunlight through sheer curtains',
         alt: 'Sunlit bedroom with soft pillows on white bedding in morning light',
-        className: 'aspect-[3/4] lg:col-span-7',
+        className: 'aspect-[3/4] lg:col-span-5',
       },
       {
         image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
         caption: 'Rainy Day In',
         desc: 'A warm lamp, a good book, nowhere to be',
         alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
-        className: 'aspect-[3/2] lg:col-span-5',
+        className: 'aspect-[3/2] lg:aspect-[4/3] lg:col-span-7',
       },
     ],
   },
