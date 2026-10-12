@@ -23,8 +23,10 @@ import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
-import { getProductReviews } from '@/data/product-reviews';
+import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import V2RatingPopover from '@/components/v2/V2RatingPopover';
+import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import DragScroll from '@/components/v2/DragScroll';
@@ -469,22 +471,24 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Rating + 价格（2026-10-12 用户定：评价分布条与 "Based on N customer reviews"
-                下移至页尾评价区（V2ProductReviews 摘要带），购买区只保留星级行——
-                点击锚跳 #pdp2-reviews；无评价产品零变化） */}
+            {/* Rating + 价格（2026-10-12 合并定稿）：评价分布条与 "Based on N customer reviews"
+                在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方，用户定）；
+                购买区只保留一行评分，收进评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布，
+                2026-10-07 领导定，对齐亚马逊同款）；无评价产品零变化 */}
             {(() => {
+              const reviews = hasReviewsData ? getProductReviews(product.asin) : [];
               const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
               const ratingRow = hasRating ? (
-                hasReviewsData ? (
-                  <a href="#pdp2-reviews" className="flex items-center gap-2 w-fit">
-                    <RatingStars rating={product.rating!} />
-                    <span className="text-sm text-charcoal-light">
-                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                    </span>
-                  </a>
+                hasReviewsData && reviews.length > 0 ? (
+                  <V2RatingPopover
+                    rating={product.rating!}
+                    reviewCount={product.reviewCount!}
+                    reviews={reviews}
+                    buckets={getVariantReviewStats(product.asin)?.buckets}
+                  />
                 ) : (
                   <div className="flex items-center gap-2">
-                    <RatingStars rating={product.rating!} />
+                    <StarDisplay rating={product.rating!} size={18} />
                     <span className="text-sm text-charcoal-light">
                       {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
                     </span>
@@ -876,25 +880,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 }
 
 /* ---------- 小图标 ---------- */
-
-/** 评分星级行用五星（与老版 PDP 同款样式） */
-function RatingStars({ rating }: { rating: number }) {
-  return (
-    <div className="flex text-brand">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <svg
-          key={i}
-          width="18" height="18" viewBox="0 0 24 24"
-          fill={i <= Math.round(rating) ? 'currentColor' : 'none'}
-          stroke="currentColor"
-          strokeWidth={i <= Math.round(rating) ? 0 : 1.5}
-        >
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
 
 function QuickSpecIcon({ name }: { name: string }) {
   const common = 'w-[18px] h-[18px] text-brand flex-shrink-0 mt-0.5';

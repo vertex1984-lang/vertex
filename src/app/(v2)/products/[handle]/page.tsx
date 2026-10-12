@@ -190,15 +190,11 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
     : null;
 
   // 评价区：渲染在页尾 Recently Viewed 正上方（2026-10-12 用户定，由购买区后下移至此）；
-  // 摘要带（均分+分布条）所需 rating/reviewCount 由 enriched 传入。
+  // 摘要带数据（均分/分布/总数）由 V2ProductReviews 内部走 getVariantReviewStats 变体评价计划。
   //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
   const reviewsBlock = product && enriched ? (
     <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews
-        asin={enriched.asin}
-        rating={enriched.rating ?? undefined}
-        reviewCount={enriched.reviewCount ?? undefined}
-      />
+      <V2ProductReviews asin={enriched.asin} productTitle={product.title} />
     </div>
   ) : null;
 
