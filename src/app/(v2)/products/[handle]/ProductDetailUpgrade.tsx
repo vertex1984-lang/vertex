@@ -279,13 +279,16 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
   };
 
-  // 手风琴（桌面在左栏图集下方，移动端在右栏底部）。
+  // 手风琴（桌面在右栏 Details 下方，移动端在右栏底部）。
   // 2026-09-29 用户定：Description 图文区删除；Specifications 大表改为手风琴一节；
-  // 顺序 Care & Maintenance / Specifications 在前，Shipping / Returns 在后。
-  // specs 节渲染规格表（行多时 maxHeight 需要更大），其余节渲染纯文案
+  // 顺序 Care & Maintenance / Product Details 在前，Shipping / Returns 在后。
+  // 2026-10-12 用户定：Specifications 更名 Product Details，原 DETAILS 卖点列表并入该节
+  // （卖点在上、规格表在下），购买区不再单独显示 Details 块。
+  // specs 节渲染卖点+规格表（行多时 maxHeight 需要更大），其余节渲染纯文案
+  const detailBullets = (product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5);
   const accordionSections: { title: string; body?: string; specs?: boolean }[] = [
     { title: 'Care & Maintenance', body: careCopy.long },
-    { title: 'Specifications', specs: true },
+    { title: 'Product Details', specs: true },
     ...ACCORDION_SECTIONS_BASE,
   ];
   const shippingCareBlock = (
@@ -308,21 +311,36 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </button>
             <div
               className="overflow-hidden transition-all duration-300"
-              style={{ maxHeight: openAccordion === i ? (section.specs ? '640px' : '200px') : '0' }}
+              style={{ maxHeight: openAccordion === i ? (section.specs ? '1100px' : '200px') : '0' }}
             >
               {section.specs ? (
-                <table className="w-full mb-4">
-                  <tbody>
-                    {specRows.map((row, ri) => (
-                      <tr key={row.label} className={ri > 0 ? 'border-t border-warm-gray/60' : ''}>
-                        <td className="py-2.5 pr-3 text-xs text-charcoal-light w-2/5 align-top">{row.label}</td>
-                        <td className={`py-2.5 text-xs font-medium align-top ${row.muted ? 'text-red-500' : 'text-charcoal'}`}>
-                          {row.value}
-                        </td>
-                      </tr>
+                <>
+                  {/* 卖点列表（原购买区 Details 块并入，2026-10-12 用户定） */}
+                  <ul className="space-y-3 pt-1 pb-4">
+                    {detailBullets.map((feature, bi) => (
+                      <li key={bi} className="flex items-start gap-2.5">
+                        <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                          </svg>
+                        </span>
+                        <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
+                      </li>
                     ))}
-                  </tbody>
-                </table>
+                  </ul>
+                  <table className="w-full mb-4 border-t border-warm-gray">
+                    <tbody>
+                      {specRows.map((row, ri) => (
+                        <tr key={row.label} className={ri > 0 ? 'border-t border-warm-gray/60' : ''}>
+                          <td className="py-2.5 pr-3 text-xs text-charcoal-light w-2/5 align-top">{row.label}</td>
+                          <td className={`py-2.5 text-xs font-medium align-top ${row.muted ? 'text-red-500' : 'text-charcoal'}`}>
+                            {row.value}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </>
               ) : (
                 <p className="text-sm text-charcoal-light leading-relaxed pb-4">{section.body}</p>
               )}
@@ -688,24 +706,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </p>
             )}
 
-            {/* Details 卖点（移动端只显示 4 条，行距放松，与上方信任区分割线区隔——对标精品站减压） */}
-            <div className="border-t border-warm-gray pt-6 mb-8">
-              <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-light mb-3">Details</p>
-              <ul className="space-y-3">
-                {(product.featureBullets ?? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10)).slice(0, 5).map((feature, i) => (
-                  <li key={i} className={`flex items-start gap-2.5${i === 4 ? ' hidden lg:flex' : ''}`}>
-                    <span className="w-5 h-5 rounded-full bg-brand/10 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                    </span>
-                    <span className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed">{feature.trim()}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* 规格速览 chips（材料与护理信息保留在底部 Specifications 表） */}
+            {/* 规格速览 chips（材料与护理信息保留在底部 Product Details 表） */}
             {quickSpecs.length > 0 && (
             <div className="grid grid-cols-2 gap-2.5 mb-8">
               {quickSpecs.map((spec) => (
