@@ -140,8 +140,9 @@ function ReviewCard({ review }: { review: ProductReview }) {
 }
 
 /**
- * 评价卡列表（client）：折叠态 = 前 3 条（手机端横滑轮播露右缘提示可滑，lg+ 纵向堆叠），
- * "Show more reviews" 展开后转全量纵向列表（两端一致）。
+ * 评价卡列表（client）：折叠态 = 前 3 条（手机端横滑轮播露右缘提示可滑，lg+ 两列网格纵向排列），
+ * "Show more reviews" 展开后转全量列表（两端一致，lg+ 同为两列网格）。
+ * 2026-10-12 用户定：评价区与页面主区域同宽，lg+ 卡片两列排布以填满宽度。
  */
 export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] }) {
   const [expanded, setExpanded] = useState(false);
@@ -153,8 +154,8 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
       <div
         className={
           carousel
-            ? 'flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden lg:flex-col lg:overflow-x-visible lg:pb-0'
-            : 'flex flex-col gap-4'
+            ? 'flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-2 lg:overflow-x-visible lg:pb-0'
+            : 'grid grid-cols-1 gap-4 lg:grid-cols-2'
         }
       >
         {visible.map((r, i) => (

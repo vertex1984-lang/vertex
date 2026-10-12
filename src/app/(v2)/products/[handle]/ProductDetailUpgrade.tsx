@@ -7,7 +7,7 @@
  * 美术：全部使用 V2 设计 token（brand/charcoal/warm-gray/off-white/cream）。
  */
 
-import { useState, useEffect, useRef, type ReactNode } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { getProductByHandle, PRODUCTS_DATA } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
@@ -37,8 +37,6 @@ interface ProductDetailUpgradeProps {
   colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
   /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选 */
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
-  /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、Description 前（付费落地优化 P2） */
-  reviewsSlot?: ReactNode;
   /** "You May Also Like" 关联推荐卡片（page.tsx 用 getPdpRelatedProducts 构建期算好），渲染在信任条下方 */
   relatedProducts?: V2CardProduct[];
 }
@@ -70,7 +68,7 @@ const TRUST_MARQUEE_ITEMS = [
   'Premium materials, honest prices',
 ];
 
-export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], reviewsSlot, relatedProducts = [] }: ProductDetailUpgradeProps) {
+export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], relatedProducts = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
   // 评价正文是否存在（有则评分行可点击锚到评价区）
@@ -471,14 +469,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定）：
-                分布卡（≥5 条才渲染，列表现算）在 xl+ 于价格右侧（购买区红框位），
-                lg 以下通栏插在星级行与价格之间；无分布卡时保持原堆叠布局（无评价产品零变化）。
-                "Based on N customer reviews" 为合规文案唯一出处（评价区不重复） */}
+            {/* Rating + 价格（2026-10-12 用户定：评价分布条与 "Based on N customer reviews"
+                下移至页尾评价区（V2ProductReviews 摘要带），购买区只保留星级行——
+                点击锚跳 #pdp2-reviews；无评价产品零变化） */}
             {(() => {
-              const reviews = hasReviewsData ? getProductReviews(product.asin) : [];
               const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
-              const showDist = hasRating && reviews.length >= 4;
               const ratingRow = hasRating ? (
                 hasReviewsData ? (
                   <a href="#pdp2-reviews" className="flex items-center gap-2 w-fit">
@@ -511,41 +506,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               ) : (
                 <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
               );
-              if (!showDist) {
-                return (
-                  <>
-                    {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
-                    <div className="mb-4 lg:mb-6">{priceBlock}</div>
-                  </>
-                );
-              }
-              const buckets = [5, 4, 3, 2, 1].map((star) => ({
-                star,
-                pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
-              }));
               return (
-                <div className="grid grid-cols-1 gap-y-4 mb-4 lg:mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
-                  <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
-                  <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
-                    {/* 全端统一原版五行条 + Based on 文案（2026-10-04 用户定：分布图复原不缩窄，
-                        手机端首屏问题由常驻吸底加购条解决） */}
-                    <div className="space-y-1">
-                      {buckets.map(({ star, pct }) => (
-                        <div key={star} className="flex items-center gap-2">
-                          <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
-                          <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
-                            <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
-                          </div>
-                          <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="mt-2.5 text-xs text-charcoal-light">
-                      Based on {product.reviewCount!.toLocaleString()} customer reviews
-                    </p>
-                  </div>
-                  <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
-                </div>
+                <>
+                  {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                  <div className="mb-4 lg:mb-6">{priceBlock}</div>
+                </>
               );
             })()}
 
@@ -769,8 +734,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       </section>
 
-      {/* 评价区插槽：page.tsx 传入（V2ProductReviews，有数据才实际渲染），紧跟购买区之后 */}
-      {reviewsSlot}
+      {/* 评价区已于 2026-10-12 移至 page.tsx（Recently Viewed 正上方，用户定） */}
 
       {/* 滚动信任条（2026-09-29 用户定：购买区信任信息精简为免邮/退货两条，
           年销/安全支付/发货时效等更多信任元素移到此处展示；锚点 Tab 条与 Description/Specs 大区已删除。

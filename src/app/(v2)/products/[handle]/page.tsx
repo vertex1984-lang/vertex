@@ -3,7 +3,6 @@ import V2ProductDetailClient from './V2ProductDetailClient';
 import ProductDetailUpgrade from './ProductDetailUpgrade';
 import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
-import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
 import { isNewProductHandle } from '@/data/new-product-handles';
@@ -190,11 +189,16 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       }
     : null;
 
-  // 评价区插槽：经 prop 传入两版 PDP，渲染在购买区后、描述前
+  // 评价区：渲染在页尾 Recently Viewed 正上方（2026-10-12 用户定，由购买区后下移至此）；
+  // 摘要带（均分+分布条）所需 rating/reviewCount 由 enriched 传入。
   //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
-  const reviewsSlot = product && enriched ? (
+  const reviewsBlock = product && enriched ? (
     <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews asin={enriched.asin} />
+      <V2ProductReviews
+        asin={enriched.asin}
+        rating={enriched.rating ?? undefined}
+        reviewCount={enriched.reviewCount ?? undefined}
+      />
     </div>
   ) : null;
 
@@ -214,22 +218,21 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           handle={params.handle}
           colorVariants={colorVariants}
           sizeVariants={sizeVariants}
-          reviewsSlot={reviewsSlot}
           relatedProducts={relatedProducts}
         />
       ) : (
-        <V2ProductDetailClient key={params.handle} handle={params.handle} reviewsSlot={reviewsSlot} />
+        <V2ProductDetailClient key={params.handle} handle={params.handle} />
       )}
       {/* 面料互导轮播（仅 bedding PDP，2026-09-29 用户定："Other High Quality Materials" 横滑卡条，
           与面料二级 PLP 底部同款；数量统计口径与 bedding/[slug] 一致） */}
       {product && product.productType.toLowerCase() === 'bedding' && isNew && (
         <V2FabricCrossSell fabrics={FABRICS_WITH_COUNTS} />
       )}
-      {/* Related Guides 关联阅读（优化手册 PDP 模块；按类目挑 3 张指南卡）。
-          bedding 跳过（2026-09-29 用户定：唯一的 fabric-guide 卡已由 PDP 内全宽 Fabric Guide 横幅替代） */}
-      {product && product.productType.toLowerCase() !== 'bedding' && <V2RelatedGuides cat={product.productType.toLowerCase()} />}
+      {/* Related Guides 关联阅读：2026-10-12 用户定已从 PDP 移除（PLP 底部仍保留） */}
       {/* "You May Also Like" 两版推荐区（新品 Complete the Look / 老品 More Comfort）
           2026-09 用户定已从 PDP 移除；QuickAddCard.tsx 组件文件保留磁盘备用 */}
+      {/* 评价区（含摘要带）：Recently Viewed 正上方（2026-10-12 用户定） */}
+      {reviewsBlock}
       <V2RecentlyViewed currentHandle={params.handle} />
       {/* 手机端常驻吸底加购条的底部占位（2026-10-04），避免盖住页面尾部内容 */}
       {product && <div className="h-20 lg:hidden" aria-hidden="true" />}

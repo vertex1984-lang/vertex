@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, type ReactNode } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getProductByHandle } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -21,8 +21,6 @@ import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface V2ProductDetailClientProps {
   handle: string;
-  /** 评价区插槽（page.tsx 传入 V2ProductReviews），渲染在购买区后、描述前（付费落地优化 P2） */
-  reviewsSlot?: ReactNode;
 }
 
 // PDP 手风琴通用两节（hardcode 占位文案，与 shipping-returns 页面政策一致）；
@@ -43,7 +41,7 @@ const ACCORDION_SECTIONS_BASE = [
 // 组件保留在 src/components/BoughtTogether.tsx，恢复展示时改为 true 即可。
 const SHOW_BOUGHT_TOGETHER = false;
 
-export default function V2ProductDetailClient({ handle, reviewsSlot }: V2ProductDetailClientProps) {
+export default function V2ProductDetailClient({ handle }: V2ProductDetailClientProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
   const [selectedImage, setSelectedImage] = useState(0);
@@ -292,11 +290,10 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 {product.title}
               </h1>
 
-              {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定，与新版 PDP 同口径）：
-                  分布卡（≥5 条才渲染，列表现算）xl+ 在价格右侧，lg 以下通栏；无分布卡时保持原布局 */}
+              {/* Rating + 价格（2026-10-12 用户定：评价分布条与 "Based on N" 下移至页尾
+                  评价区（V2ProductReviews 摘要带），购买区只保留星级行，与新版 PDP 同口径） */}
               {(() => {
                 const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
-                const showDist = hasRating && reviews.length >= 4;
                 const ratingRow = hasRating ? (
                   <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 w-fit">
                     <div className="flex text-brand">
@@ -329,40 +326,11 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 ) : (
                   <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
                 );
-                if (!showDist) {
-                  return (
-                    <>
-                      {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
-                      <div className="mb-6">{priceBlock}</div>
-                    </>
-                  );
-                }
-                const buckets = [5, 4, 3, 2, 1].map((star) => ({
-                  star,
-                  pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
-                }));
                 return (
-                  <div className="grid grid-cols-1 gap-y-4 mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
-                    <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
-                    <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
-                      {/* 全端统一原版五行条 + Based on 文案（与新版 PDP 同口径） */}
-                      <div className="space-y-1">
-                        {buckets.map(({ star, pct }) => (
-                          <div key={star} className="flex items-center gap-2">
-                            <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
-                            <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
-                              <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
-                            </div>
-                            <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
-                          </div>
-                        ))}
-                      </div>
-                      <p className="mt-2.5 text-xs text-charcoal-light">
-                        Based on {product.reviewCount!.toLocaleString()} customer reviews
-                      </p>
-                    </div>
-                    <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
-                  </div>
+                  <>
+                    {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                    <div className="mb-6">{priceBlock}</div>
+                  </>
                 );
               })()}
 
@@ -490,8 +458,7 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
         </div>
       </section>
 
-      {/* 评价区插槽：page.tsx 传入（有数据才实际渲染），紧跟购买区、描述前 */}
-      {reviewsSlot}
+      {/* 评价区已于 2026-10-12 移至 page.tsx（Recently Viewed 正上方，用户定） */}
 
       {/* 下部：产品描述（限宽居中） */}
       <section className="bg-off-white">
