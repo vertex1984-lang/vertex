@@ -391,11 +391,13 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           className={`relative flex items-center justify-between px-6 lg:px-10 py-1.5 lg:py-4 transition-all duration-300 ${textColor}`}
         >
           {/* 实底背景放 absolute 子层：保留 transparent→solid 的过渡动画
-              （原为 v7 刘海采样规避，sticky 终版后仅为视觉过渡服务） */}
+              （原为 v7 刘海采样规避，sticky 终版后仅为视觉过渡服务）。
+              2026-10-12 用户定：去掉 shadow-md——分类/筛选/搜索页导航下方不要有阴影，
+              与主页/PDP 实底态保持一致（全站实底均无阴影） */}
           <div
             aria-hidden="true"
             className={`absolute inset-0 transition-all duration-300 ${
-              solid ? 'bg-off-white/95 backdrop-blur shadow-md' : ''
+              solid ? 'bg-off-white/95 backdrop-blur' : ''
             }`}
           />
           <a href={v2url('/')} className="relative flex items-center gap-2">
