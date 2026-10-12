@@ -350,7 +350,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   );
 
   return (
-    <div className="bg-off-white pb-24 lg:pb-0">
+    // pb-24 移动端底 padding 已移除（2026-10-12 用户定：评价区下移页尾后，该 padding 在
+    // Brand Story 与评价摘要之间形成 ~96px 大空隙；吸底加购条占位由 page.tsx 尾部 h-20  spacer 承担）
+    <div className="bg-off-white">
       {/* 面包屑（移动端 pt-0：图片贴合 sticky 导航下沿（原设计意图，2026-10-11 用户确认缝隙去除）；
           桌面 pt-10；移动端隐藏面包屑本身省首屏空间） */}
       <div className="px-6 lg:px-10 pt-0 lg:pt-10">
