@@ -13,9 +13,11 @@ import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
-import { getProductReviews } from '@/data/product-reviews';
+import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import V2RatingPopover from '@/components/v2/V2RatingPopover';
+import StarDisplay from '@/components/v2/StarDisplay';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
@@ -290,26 +292,27 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 {product.title}
               </h1>
 
-              {/* Rating + 价格（2026-10-12 用户定：评价分布条与 "Based on N" 下移至页尾
-                  评价区（V2ProductReviews 摘要带），购买区只保留星级行，与新版 PDP 同口径） */}
+              {/* Rating + 价格（2026-10-12 合并定稿，与新版 PDP 同口径）：评价分布条与 "Based on N"
+                  在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方，用户定）；
+                  购买区只保留一行评分，收进评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布） */}
               {(() => {
                 const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
                 const ratingRow = hasRating ? (
-                  <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 w-fit">
-                    <div className="flex text-brand">
-                      {[1,2,3,4,5].map(i => (
-                        <svg key={i} width="18" height="18" viewBox="0 0 24 24"
-                          fill={i <= Math.round(product.rating!) ? 'currentColor' : 'none'}
-                          stroke="currentColor" strokeWidth={i <= Math.round(product.rating!) ? 0 : 1.5}
-                        >
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                      ))}
+                  reviews.length ? (
+                    <V2RatingPopover
+                      rating={product.rating!}
+                      reviewCount={product.reviewCount!}
+                      reviews={reviews}
+                      buckets={getVariantReviewStats(product.asin)?.buckets}
+                    />
+                  ) : (
+                    <div className="flex items-center gap-2 w-fit">
+                      <StarDisplay rating={product.rating!} size={18} />
+                      <span className="text-sm text-charcoal-light">
+                        {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                      </span>
                     </div>
-                    <span className="text-sm text-charcoal-light">
-                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                    </span>
-                  </a>
+                  )
                 ) : null;
                 const priceBlock = isInStock ? (
                   <div className="flex items-center gap-3">

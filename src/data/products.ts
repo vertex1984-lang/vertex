@@ -6689,7 +6689,7 @@ import { SHORT_TITLES } from './short-titles';
 import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
 import { classifyProduct } from './subcategories';
-import { getProductReviews, getReviewTotal } from './product-reviews';
+import { getVariantReviewStats } from './product-reviews';
 
 /** 站点基础产品 + 素材库新增产品 */
 export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS];
@@ -6831,14 +6831,13 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       shopifyWeightUnit: shopifyEntry.weightUnit,
     };
   })
-  // 评价汇总注入：rating/reviewCount 派生自 product-reviews.ts 评价列表（家族共享，
-  // 变体成员经 getProductReviews 家族解析命中同一批评价）；一次点亮星级行/页脚汇总/JSON-LD
+  // 评价汇总注入（2026-10-10 去统一化）：rating/reviewCount 走 getVariantReviewStats 变体评价计划——
+  // B0 家族 = 真实总数 + 卡片实算（现行为）；AI 家族 = 每变体确定性 N∈[100,2000]、均分 4.1-4.3。
+  // 一次点亮星级行/页脚汇总/JSON-LD（与分布条同源）
   .map(p => {
-    const reviews = getProductReviews(p.asin);
-    if (reviews.length === 0) return p;
-    const avg = reviews.reduce((s, r) => s + r.rating, 0) / reviews.length;
-    // reviewCount：真实来源总数（REVIEW_COUNTS，如 Amazon global ratings）优先，AI 家族回落为评价条数
-    return { ...p, rating: Math.round(avg * 10) / 10, reviewCount: getReviewTotal(p.asin) ?? reviews.length };
+    const stats = getVariantReviewStats(p.asin);
+    if (!stats) return p;
+    return { ...p, rating: stats.rating, reviewCount: stats.reviewCount };
   });
 }
 
