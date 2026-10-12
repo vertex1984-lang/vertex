@@ -25,17 +25,14 @@ interface V2ProductDetailClientProps {
   handle: string;
 }
 
-// PDP 手风琴通用两节（hardcode 占位文案，与 shipping-returns 页面政策一致）；
+// PDP 手风琴 Shipping & Return 通用一节（2026-10-12 用户定：Shipping & Delivery 与
+// Returns & Refunds 合并；文案与 shipping-returns 页面政策一致）；
 // Materials & Care 节在组件内按 getCareCopy 按分类生成（src/lib/care-copy.ts，与新版 PDP 共用）——
 // 旧版此处曾硬编码户外布料文案，床品页显示错误内容（已修）
 const ACCORDION_SECTIONS_BASE = [
   {
-    title: 'Shipping & Delivery',
-    body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location.',
-  },
-  {
-    title: 'Returns & Refunds',
-    body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
+    title: 'Shipping & Return',
+    body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location. We offer an extended 30-day return period — if you are not satisfied, contact us and we will cover the return shipping cost.',
   },
 ];
 
