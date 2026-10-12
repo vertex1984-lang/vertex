@@ -2,40 +2,74 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
 /**
- * V2PdpLifestyle —— PDP 种草双图区（2026-10-12 用户定 v2）：新版 PDP 信任条下方、
- * You May Also Like 上方。横图（雨天阅读角，近景特写多色抱枕）+ 竖图（晨光卧室远景），
- * 图片为现成素材（微信导入，横图已裁 3:2）；卡面文字只写场景意境，不提产品。
- * 仅 pillows 类 PDP 渲染（图片内容为抱枕场景，跨类目展示不搭）；
- * 两张卡都链 Decorative Pillow Cases 二级类目页（/pillows/pillow-cases/）。
- * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端横图 2/3 + 竖图 1/3 并排同高
- * （3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）。卡片直角无圆角（2026-10-12 用户定）。
+ * V2PdpLifestyle —— PDP 种草双图区（2026-10-12 用户定）：新版 PDP 信任条下方、
+ * You May Also Like 上方。图片为现成素材（微信导入），卡面文字只写场景意境，不提产品。
+ * 仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭）。
+ * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端并排同高，直角无圆角。
+ *  - pillows：横图 2/3 + 竖图 1/3（3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）
+ *  - cushions：两张竖图各半（3:4 × 2）
+ * 点击分别链 Decorative Pillow Cases / cushions 类目页。
  */
-const CARDS = [
-  {
-    image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
-    caption: 'Rainy Day In',
-    desc: 'A warm lamp, a good book, nowhere to be',
-    alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
-    className: 'aspect-[3/2] lg:col-span-2',
-  },
-  {
-    image: '/images/pdp-lifestyle/pillow-lifestyle-tall.webp',
-    caption: 'Sunday Morning',
-    desc: 'Sunlight through sheer curtains',
-    alt: 'Sunlit bedroom with soft pillows on white bedding in morning light',
-    className: 'aspect-[3/4]',
-  },
-];
-const HREF = '/pillows/pillow-cases/';
+interface LifestyleCard {
+  image: string;
+  caption: string;
+  desc: string;
+  alt: string;
+  className: string;
+}
 
-export default function V2PdpLifestyle() {
+const SETS: Record<'pillows' | 'cushions', { href: string; gridClass: string; cards: LifestyleCard[] }> = {
+  pillows: {
+    href: '/pillows/pillow-cases/',
+    gridClass: 'lg:grid-cols-3',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
+        caption: 'Rainy Day In',
+        desc: 'A warm lamp, a good book, nowhere to be',
+        alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
+        className: 'aspect-[3/2] lg:col-span-2',
+      },
+      {
+        image: '/images/pdp-lifestyle/pillow-lifestyle-tall.webp',
+        caption: 'Sunday Morning',
+        desc: 'Sunlight through sheer curtains',
+        alt: 'Sunlit bedroom with soft pillows on white bedding in morning light',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  cushions: {
+    href: '/products/?cat=cushions',
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/cushion-lifestyle-cafe.webp',
+        caption: 'Café Hours',
+        desc: 'Sunlit seats and slow sips',
+        alt: 'Tufted caramel chair cushion on a bentwood chair in a sunlit café corner',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/cushion-lifestyle-florist.webp',
+        caption: 'Morning Blooms',
+        desc: 'Fresh flowers, quiet streets',
+        alt: 'Cream tufted chair cushion on a wooden chair inside a flower shop',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+};
+
+export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' }) {
+  const set = SETS[cat];
   return (
     <section className="mt-8 lg:mt-12">
-      <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-5 lg:px-10">
-        {CARDS.map((card) => (
+      <div className={`mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none grid grid-cols-1 ${set.gridClass} gap-2 lg:gap-5 lg:px-10`}>
+        {set.cards.map((card) => (
           <a
             key={card.image}
-            href={v2url(HREF)}
+            href={v2url(set.href)}
             className={`group relative block overflow-hidden ${card.className}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}

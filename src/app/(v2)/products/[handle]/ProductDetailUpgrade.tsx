@@ -755,8 +755,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           卡片宽度按"露出半张"设计（用户定：右缘露出下一张的一部分，暗示可滑）：
           桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
       {/* 种草双图区（2026-10-12 用户定）：信任条下方、You May Also Like 上方，
-          仅 pillows 类 PDP 渲染（枕套场景图跨类目不搭） */}
-      {product.productType.toLowerCase() === 'pillows' && <V2PdpLifestyle />}
+          仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭） */}
+      {(() => {
+        const cat = product.productType.toLowerCase();
+        return cat === 'pillows' || cat === 'cushions' ? <V2PdpLifestyle cat={cat} /> : null;
+      })()}
 
       {relatedProducts.length > 0 && (
         <section className="mt-12 mb-12 lg:mt-16 lg:mb-20">
