@@ -1,16 +1,15 @@
 import { resolveUrl } from '@/lib/paths';
-import { v2url } from '@/lib/v2paths';
 
 /**
  * V2PdpLifestyle —— PDP 种草双图区（2026-10-12 用户定）：新版 PDP 信任条下方、
  * You May Also Like 上方。图片为现成素材（微信导入），卡面文字只写场景意境，不提产品。
  * 仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭）。
- * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端并排同高，直角无圆角。
- *  - pillows：横图 2/3 + 竖图 1/3（3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）
+ * 纯展示，无点击跳转（2026-10-12 用户定：去掉所有链接）。
+ * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端并排，直角无圆角。
+ *  - pillows（2026-10-12 用户定）：Sunday Morning 竖图在左且加宽（7/12），
+ *    Rainy Day 横图在右（5/12），顶端对齐，高度允许不一致（竖图高于横图）
  *  - cushions：两张竖图各半（3:4 × 2）
- *  - cushions/solids 系列（2026-10-12 用户定）：两张竖图各半（3:4 × 2），
- *    门廊绿垫 + 海滨藏青垫场景，链 /cushions/solids/
- * 点击分别链 Decorative Pillow Cases / cushions 类目页 / solids 类目页。
+ *  - cushions/solids 系列：两张竖图各半（3:4 × 2），门廊绿垫 + 海滨藏青垫场景
  */
 interface LifestyleCard {
   image: string;
@@ -20,29 +19,27 @@ interface LifestyleCard {
   className: string;
 }
 
-const SETS: Record<'pillows' | 'cushions' | 'solids', { href: string; gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'cushions' | 'solids', { gridClass: string; cards: LifestyleCard[] }> = {
   pillows: {
-    href: '/pillows/pillow-cases/',
-    gridClass: 'lg:grid-cols-3',
+    gridClass: 'lg:grid-cols-12 lg:items-start',
     cards: [
-      {
-        image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
-        caption: 'Rainy Day In',
-        desc: 'A warm lamp, a good book, nowhere to be',
-        alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
-        className: 'aspect-[3/2] lg:col-span-2',
-      },
       {
         image: '/images/pdp-lifestyle/pillow-lifestyle-tall.webp',
         caption: 'Sunday Morning',
         desc: 'Sunlight through sheer curtains',
         alt: 'Sunlit bedroom with soft pillows on white bedding in morning light',
-        className: 'aspect-[3/4]',
+        className: 'aspect-[3/4] lg:col-span-7',
+      },
+      {
+        image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
+        caption: 'Rainy Day In',
+        desc: 'A warm lamp, a good book, nowhere to be',
+        alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
+        className: 'aspect-[3/2] lg:col-span-5',
       },
     ],
   },
   cushions: {
-    href: '/products/?cat=cushions',
     gridClass: 'lg:grid-cols-2',
     cards: [
       {
@@ -62,7 +59,6 @@ const SETS: Record<'pillows' | 'cushions' | 'solids', { href: string; gridClass:
     ],
   },
   solids: {
-    href: '/cushions/solids/',
     gridClass: 'lg:grid-cols-2',
     cards: [
       {
@@ -89,10 +85,9 @@ export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 
     <section className="mt-8 lg:mt-12">
       <div className={`mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none grid grid-cols-1 ${set.gridClass} gap-2 lg:gap-5 lg:px-10`}>
         {set.cards.map((card) => (
-          <a
+          <div
             key={card.image}
-            href={v2url(set.href)}
-            className={`group relative block overflow-hidden ${card.className}`}
+            className={`relative overflow-hidden ${card.className}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -100,7 +95,7 @@ export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 
               alt={card.alt}
               loading="lazy"
               draggable={false}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent" />
             <div className="absolute bottom-3 left-4 lg:bottom-5 lg:left-6">
@@ -111,7 +106,7 @@ export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 
                 {card.desc}
               </p>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>
