@@ -1,18 +1,18 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { resolveUrl } from '@/lib/paths';
-import { addToShopifyCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
-import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
-import { useToast } from '@/components/Toast';
+import { trackEvent, GaItem } from '@/lib/gtag';
 
 // 搭配规则（2026-10-12 用户定：纯规则推荐、无销售数据，命名 Pairs Well With 避免暗示共购数据）：
 //  枕套 ↔ 同尺寸枕芯（枕套卖点即 "inserts not included"，最强搭配）；
 //  床品 → 睡眠枕芯（Bed Pillows）；坐垫 → 同风格系列其他坐垫（排除本变体族）；
 //  其余类目不推荐（宁缺毋滥，凑不够 2 个不渲染）
+// 展示形式（2026-10-12 用户定，对标 Parachute "You'll love it with..."）：
+//  纯推荐跳转卡（图+标题/价格+箭头），无勾选/合计/捆绑加购；点击跳对应 PDP（GA4 select_item）
 // 标题中的尺寸 token（如 40 x 40 / 45x45），用于同尺寸精确匹配
 const SIZE_TOKEN_RE = /\d+\s*x\s*\d+/gi;
 
@@ -26,10 +26,6 @@ const getThumb = (p: MakimooProduct) =>
   p.shopifyImages?.[0] || p.images[0]?.url || '';
 
 export default function BoughtTogether({ product }: { product: MakimooProduct }) {
-  const { toast } = useToast();
-  const [unchecked, setUnchecked] = useState<Record<string, boolean>>({});
-  const [adding, setAdding] = useState(false);
-
   // 全量产品 enrich 一次，用于挑选搭配候选
   const enriched = useMemo(() => enrichProductsWithShopifyData(PRODUCTS_DATA), []);
 
@@ -94,125 +90,58 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
 
   if (companions.length === 0) return null;
 
-  const selected = companions.filter(c => !unchecked[c.handle]);
-  const items = [product, ...selected];
-  const totalPrice = items.reduce((sum, p) => sum + getPrice(p), 0);
-  const displayCurrency =
-    product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-
-  const handleAddSelected = async () => {
-    setAdding(true);
-    try {
-      let failed = false;
-      // 依次把当前产品（quantity=1）+ 勾选候选加入 Shopify 购物车
-      for (const item of items) {
-        const ok = await addToShopifyCart(item.shopifyVariantId!, 1);
-        if (!ok) failed = true;
-      }
-      notifyCartUpdated();
-      if (failed) {
-        toast('Some items failed to add. Please try again.', 'error');
-      } else {
-        // GA4：搭配购打包加购
-        trackEvent('add_to_cart', {
-          currency: GA_CURRENCY,
-          value: totalPrice,
-          items: items.map(p => ({
-            item_id: p.handle,
-            item_name: p.title,
-            item_category: p.productType,
-            price: getPrice(p),
-            quantity: 1,
-          } satisfies GaItem)),
-        });
-        openMiniCart();
-        toast('Added to cart!');
-      }
-    } catch {
-      toast('Something went wrong. Please try again.', 'error');
-    } finally {
-      setAdding(false);
-    }
+  const handleClick = (p: MakimooProduct) => {
+    // GA4：搭配推荐点击跳转
+    trackEvent('select_item', {
+      item_list_name: 'Pairs Well With',
+      items: [{
+        item_id: p.handle,
+        item_name: p.title,
+        item_category: p.productType,
+        price: getPrice(p),
+        quantity: 1,
+      } satisfies GaItem],
+    });
   };
 
-  const renderItem = (p: MakimooProduct, fixed: boolean) => (
-    // 竖排条目（2026-10-12 适配新版 PDP 窄购买栏）：勾选框 + 缩略图 + 标题/价格
-    <div className="flex items-center gap-3">
-      {fixed ? (
-        // 当前产品固定勾选，不可取消
-        <span className="w-4 h-4 rounded-sm bg-[#8B5A2B] flex items-center justify-center flex-shrink-0">
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
-            <path d="M20 6L9 17l-5-5" />
-          </svg>
-        </span>
-      ) : (
-        <button
-          type="button"
-          onClick={() => setUnchecked(prev => ({ ...prev, [p.handle]: !prev[p.handle] }))}
-          aria-pressed={!unchecked[p.handle]}
-          aria-label={`Include ${p.title}`}
-          className={`w-4 h-4 rounded-sm flex items-center justify-center border flex-shrink-0 ${
-            unchecked[p.handle] ? 'bg-white border-[#C9C2B8]' : 'bg-[#8B5A2B] border-[#8B5A2B]'
-          }`}
-        >
-          {!unchecked[p.handle] && (
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
-              <path d="M20 6L9 17l-5-5" />
-            </svg>
-          )}
-        </button>
-      )}
-      <a
-        href={resolveUrl(`/products/${p.handle}/`)}
-        className={`relative w-14 h-14 rounded-lg overflow-hidden border border-[#E8E2DA] flex-shrink-0 ${
-          p.imageWhiteBg?.[0] ? 'bg-white' : 'bg-[#F8F5F0]'
-        }`}
-      >
-        <img
-          src={resolveUrl(getThumb(p))}
-          alt={p.title}
-          loading="lazy"
-          className={`w-full h-full object-contain ${p.imageWhiteBg?.[0] ? 'p-1' : ''}`}
-        />
-      </a>
-      <div className="min-w-0 flex-1">
-        <p className="text-xs text-[#555] leading-snug line-clamp-2">
-          {fixed && <span className="font-semibold text-[#8B5A2B]">This item: </span>}
-          {p.title}
-        </p>
-        <p className="text-xs font-semibold text-[#8B5A2B] mt-0.5">
-          {formatPrice(getPrice(p), p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode)}
-        </p>
-      </div>
-    </div>
-  );
-
   return (
-    <div className="bg-white rounded-xl border border-[#E8E2DA] p-4 sm:p-5 mb-8">
+    <div className="mb-8">
       <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-3">
         Pairs Well With
       </p>
-      <div className="space-y-3">
-        {renderItem(product, true)}
-        {companions.map((c) => (
-          <div key={c.handle}>{renderItem(c, false)}</div>
+      <div className="space-y-2.5">
+        {companions.map((p) => (
+          <a
+            key={p.handle}
+            href={resolveUrl(`/products/${p.handle}/`)}
+            onClick={() => handleClick(p)}
+            className="flex items-center gap-3.5 rounded-xl bg-[#F8F5F0] p-3 transition hover:bg-[#F1EBE2]"
+          >
+            <span
+              className={`relative w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 ${
+                p.imageWhiteBg?.[0] ? 'bg-white' : 'bg-[#ECE6DD]'
+              }`}
+            >
+              <img
+                src={resolveUrl(getThumb(p))}
+                alt={p.title}
+                loading="lazy"
+                className={`w-full h-full object-contain ${p.imageWhiteBg?.[0] ? 'p-1' : ''}`}
+              />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block text-sm text-charcoal leading-snug line-clamp-2">{p.title}</span>
+              <span className="block text-sm font-semibold text-[#8B5A2B] mt-1">
+                {formatPrice(getPrice(p), p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode)}
+              </span>
+            </span>
+            <span className="w-8 h-8 rounded-lg bg-[#8B5A2B] text-white flex items-center justify-center flex-shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </a>
         ))}
-      </div>
-      <div className="mt-4 pt-4 border-t border-[#E8E2DA]">
-        <p className="text-sm text-[#555] mb-3">
-          Total for {items.length} item{items.length > 1 ? 's' : ''}:{' '}
-          <span className="text-lg font-bold text-[#8B5A2B]">
-            {formatPrice(totalPrice, displayCurrency)}
-          </span>
-        </p>
-        <button
-          onClick={handleAddSelected}
-          disabled={adding}
-          className="w-full px-6 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg active:scale-95 disabled:opacity-60 disabled:hover:translate-y-0"
-          style={{ backgroundColor: '#8B5A2B' }}
-        >
-          {adding ? 'Adding...' : `Add ${items.length} Item${items.length > 1 ? 's' : ''} to Cart`}
-        </button>
       </div>
     </div>
   );
