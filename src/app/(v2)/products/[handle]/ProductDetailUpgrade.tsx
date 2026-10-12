@@ -112,7 +112,28 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 移动端悬浮加购条已于 2026-10-12 移除（用户定），原 IntersectionObserver 联动逻辑一并删除
+  // 移动端悬浮加购条显示逻辑（2026-10-12 用户定）：加载 PDP 后不显示；
+  // 向下滚动至主 Add to Cart 按键滚出视口（顶出屏幕上方）后才滑入；向上回滚、
+  // 主 CTA 重新可见（直到页面顶端）都不再显示。IntersectionObserver 监听主 CTA 行
+  // （mainCtaRef），初始 mainCtaVisible=true（首帧即隐藏，无闪现）；CTA 仍在视口
+  // 下方（尚未滚动到，boundingClientRect.bottom > 0）同样视为隐藏，避免移动端
+  // 首屏 CTA 未入视口时吸底条误显示
+  const [mainCtaVisible, setMainCtaVisible] = useState(true);
+  const mainCtaRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = mainCtaRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        const e = entries[0];
+        // CTA 可见、或还在视口下方（未滚动到）→ 隐藏；只有 CTA 整体滚出视口上方 → 显示
+        setMainCtaVisible(e ? (e.isIntersecting || e.boundingClientRect.bottom > 0) : true);
+      },
+      { threshold: 0 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
   // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
@@ -637,9 +658,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
-            {/* 数量 + 加购 */}
+            {/* 数量 + 加购（mainCtaRef：悬浮加购条显隐联动的观测目标） */}
             {isInStock && (
-              <div className="flex flex-col sm:flex-row gap-3.5 mb-3">
+              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-3">
                 <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white self-start">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -846,6 +867,34 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.
             </p>
           </div>
+        </div>
+      )}
+
+      {/* 移动端悬浮加购条（2026-10-12 用户定显隐逻辑）：加载不显示；主 CTA 滚出视口 → 滑入；
+          回滚至主 CTA 可见 → 收起，直到页面顶端都不再显示 */}
+      {isInStock && (
+        <div
+          className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
+            mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
+          }`}
+          style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
+        >
+          <img
+            src={resolveUrl(productImages[0]?.thumbUrl || '')}
+            alt={product.title}
+            className="w-11 h-11 rounded-lg object-cover flex-shrink-0"
+          />
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-semibold text-brand leading-tight">{formatPrice(displayPrice, displayCurrency)}</p>
+            <p className="text-[11px] text-charcoal-light truncate">{shortTitle}</p>
+          </div>
+          <button
+            onClick={handleAddToCart}
+            disabled={addingToCart}
+            className="h-11 px-6 rounded-full text-sm font-semibold text-cream transition active:scale-95 disabled:opacity-60 flex-shrink-0 bg-brand"
+          >
+            {addingToCart ? 'Adding...' : 'Add to Cart'}
+          </button>
         </div>
       )}
     </div>
