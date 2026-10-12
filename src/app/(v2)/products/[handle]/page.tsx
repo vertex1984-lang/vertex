@@ -230,7 +230,8 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       {/* 评价区（含摘要带）：Recently Viewed 正上方（2026-10-12 用户定） */}
       {reviewsBlock}
       <V2RecentlyViewed currentHandle={params.handle} />
-      {/* 吸底加购条已于 2026-10-12 移除（用户定），原 h-20 底部占位一并删除 */}
+      {/* 手机端常驻吸底加购条的底部占位（2026-10-04），避免盖住页面尾部内容 */}
+      {product && <div className="h-20 lg:hidden" aria-hidden="true" />}
     </>
   );
 }
