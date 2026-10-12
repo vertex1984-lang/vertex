@@ -404,9 +404,10 @@ export default function V2ProductsPage() {
   const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
-    /* 全宽容器：无 max-w 盒子、无页面边框；V2Header 是 fixed，顶部留出页头高度
-       （移动端 pt-28：公告条 32 + 页头 60 + 16px 余量，2026-09 用户定——pt-24 时内容离吸顶页头太近） */
-    <div className="px-3 lg:px-10 pt-7 lg:pt-6 pb-10 lg:pb-14">
+    /* 全宽容器：无 max-w 盒子、无页面边框。
+       2026-10-12 用户定：面包屑区高度缩减——pt-7/lg:pt-6 → pt-3/lg:pt-4
+       （sticky 头部在文档流内自占高度，原 pt-7 残留固定头部时代的余量） */
+    <div className="px-3 lg:px-10 pt-3 lg:pt-4 pb-10 lg:pb-14">
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
@@ -421,7 +422,8 @@ export default function V2ProductsPage() {
           <span className="text-[#555]">{pageTitle}</span>
         )}
       </nav>
-      <div className="flex items-end justify-between flex-wrap gap-4 mb-4 lg:mb-10">
+      {/* 移动端 h1 隐藏时该容器只剩 margin：mb-4 → mb-2 收紧面包屑与筛选条间距（2026-10-12 用户定） */}
+      <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
         <div>
           {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
           <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
