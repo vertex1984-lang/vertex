@@ -51,7 +51,9 @@ export default function V2ProductReviews({ asin, productTitle }: { asin: string;
                 </div>
               ))}
             </div>
-            <div className="w-full lg:w-auto lg:ml-auto">
+            {/* CTA：桌面端紧随分布条靠左对齐（不吸附右端，2026-10-12 用户定）；
+                移动端自然堆叠并与上方评分拉开间距（mt-4） */}
+            <div className="w-full mt-4 lg:mt-0 lg:w-auto">
               <ReviewCta wide productTitle={productTitle} />
             </div>
           </div>
