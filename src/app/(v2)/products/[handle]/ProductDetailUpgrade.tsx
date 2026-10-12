@@ -770,7 +770,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       {(() => {
         const cat = product.productType.toLowerCase();
         if (cat === 'pillows') return <V2PdpLifestyle cat="pillows" />;
-        if (cat === 'cushions') return <V2PdpLifestyle cat={product.subcategory === 'solids' ? 'solids' : 'cushions'} />;
+        if (cat === 'cushions') {
+          // solids / prints（Floral & Prints，2026-10-12 用户供图）各有专属场景图
+          const sub = product.subcategory;
+          return <V2PdpLifestyle cat={sub === 'solids' ? 'solids' : sub === 'prints' ? 'prints' : 'cushions'} />;
+        }
         return null;
       })()}
 
