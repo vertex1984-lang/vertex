@@ -49,15 +49,12 @@ interface ProductDetailUpgradeProps {
 // 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
 const SIZE_PRESETS = ['140 x 200 cm', '160 x 200 cm', '160 x 230 cm', '180 x 250 cm', '100 x 200 cm', '100 x 160 cm'];
 
-// Shipping / Returns 两节为通用文案；Care 节由 getCareCopy 按分类生成（src/lib/care-copy.ts，与老版 PDP 共用）
+// Shipping & Return 为通用文案（2026-10-12 用户定：Shipping & Delivery 与 Returns & Refunds 合并为一节）；
+// Care 节由 getCareCopy 按分类生成（src/lib/care-copy.ts，与老版 PDP 共用）
 const ACCORDION_SECTIONS_BASE = [
   {
-    title: 'Shipping & Delivery',
-    body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location.',
-  },
-  {
-    title: 'Returns & Refunds',
-    body: 'We offer an extended 30-day return period. If you are not satisfied, contact us and we will cover the return shipping cost.',
+    title: 'Shipping & Return',
+    body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location. We offer an extended 30-day return period — if you are not satisfied, contact us and we will cover the return shipping cost.',
   },
 ];
 
