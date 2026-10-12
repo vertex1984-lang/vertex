@@ -8,7 +8,7 @@ import { v2url } from '@/lib/v2paths';
  * 仅 pillows 类 PDP 渲染（图片内容为抱枕场景，跨类目展示不搭）；
  * 两张卡都链 Decorative Pillow Cases 二级类目页（/pillows/pillow-cases/）。
  * 布局：移动端全出血上下堆叠（打满屏宽，用户定）；桌面端横图 2/3 + 竖图 1/3 并排同高
- * （3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）。
+ * （3:2 横图跨两列 + 3:4 竖图一列，高度数学上相等）。卡片直角无圆角（2026-10-12 用户定）。
  */
 const CARDS = [
   {
@@ -36,7 +36,7 @@ export default function V2PdpLifestyle() {
           <a
             key={card.image}
             href={v2url(HREF)}
-            className={`group relative block overflow-hidden lg:rounded-xl ${card.className}`}
+            className={`group relative block overflow-hidden ${card.className}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
