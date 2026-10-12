@@ -2,26 +2,22 @@
 
 import { useMemo, useState } from 'react';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
+import { getVariantGroupOf } from '@/data/variant-groups';
 import { resolveUrl } from '@/lib/paths';
 import { addToShopifyCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 
-// 搭配类目映射（纯规则推荐，无销售数据）
-const CATEGORY_COMPANIONS: Record<string, string[]> = {
-  Pillows: ['Pillows', 'Cushions'],
-  Cushions: ['Mats', 'Cushions'],
-  Towels: ['Mats'],
-  Mats: ['Towels', 'Cushions'],
-  Others: ['Others'],
-  Decor: ['Decor'],
-  Dining: ['Dining'],
-  Holiday: [],
-};
+// 搭配规则（2026-10-12 用户定：纯规则推荐、无销售数据，命名 Pairs Well With 避免暗示共购数据）：
+//  枕套 ↔ 同尺寸枕芯（枕套卖点即 "inserts not included"，最强搭配）；
+//  床品 → 睡眠枕芯（Bed Pillows）；坐垫 → 同风格系列其他坐垫（排除本变体族）；
+//  其余类目不推荐（宁缺毋滥，凑不够 2 个不渲染）
+// 标题中的尺寸 token（如 40 x 40 / 45x45），用于同尺寸精确匹配
+const SIZE_TOKEN_RE = /\d+\s*x\s*\d+/gi;
 
-// 标题中的尺寸 token（如 18 x 18 / 24x24），用于优先匹配同尺寸候选
-const SIZE_TOKEN_RE = /\d+\s*x\s*\d+/i;
+const sizeTokens = (t: string) =>
+  (t.match(SIZE_TOKEN_RE) || []).map((s) => s.replace(/\s+/g, '').toLowerCase());
 
 const getPrice = (p: MakimooProduct) =>
   parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount);
@@ -40,26 +36,45 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
   const companions = useMemo(() => {
     // 当前产品无可加购的 Shopify variant 或不在售时不渲染
     if (!product.hasShopifyData || !product.shopifyAvailable || !product.shopifyVariantId) return [];
-    const targets = CATEGORY_COMPANIONS[product.productType] ?? [];
-    if (targets.length === 0) return [];
 
     const inStock = (p: MakimooProduct) =>
       p.hasShopifyData && p.shopifyAvailable && !!p.shopifyVariantId && p.handle !== product.handle;
-    const pool = targets.flatMap(cat => enriched.filter(p => inStock(p) && p.productType === cat));
+    // 排除当前产品所属变体族（不推同款异色/异尺寸）
+    const myGroup = getVariantGroupOf(product.asin.toLowerCase());
+    const myFamily = new Set(myGroup ? myGroup.members.map((m) => m.handle) : []);
+
+    const sub = product.subcategory || '';
+    const cat = product.productType.toLowerCase();
+    let pool: MakimooProduct[] = [];
+    if (sub === 'pillow-cases') {
+      // 枕套 → 同尺寸枕芯
+      pool = enriched.filter((p) => inStock(p) && p.subcategory === 'pillow-inserts' && !myFamily.has(p.handle));
+    } else if (sub === 'pillow-inserts') {
+      // 枕芯 → 同尺寸枕套
+      pool = enriched.filter((p) => inStock(p) && p.subcategory === 'pillow-cases' && !myFamily.has(p.handle));
+    } else if (cat === 'bedding') {
+      // 床品 → 睡眠枕芯
+      pool = enriched.filter((p) => inStock(p) && p.subcategory === 'pillow-inserts' && /bed pillow/i.test(p.title));
+    } else if (cat === 'cushions') {
+      // 坐垫 → 同风格系列其他坐垫
+      pool = enriched.filter(
+        (p) => inStock(p) && p.productType.toLowerCase() === 'cushions' && p.subcategory === sub && !myFamily.has(p.handle)
+      );
+    } else {
+      return [];
+    }
 
     // 优先级：同尺寸 token > 价格在当前产品 ±50% 以内 > 默认顺序
     const currentPrice = getPrice(product);
-    const sizeToken = product.title.match(SIZE_TOKEN_RE)?.[0].replace(/\s+/g, '').toLowerCase();
+    const curSizes = sizeTokens(product.title);
     const scored = pool.map((p, idx) => {
       const price = getPrice(p);
-      const sameSize = sizeToken
-        ? p.title.replace(/\s+/g, '').toLowerCase().includes(sizeToken)
-        : false;
+      const sameSize = curSizes.some((s) => sizeTokens(p.title).includes(s));
       const priceClose = price >= currentPrice * 0.5 && price <= currentPrice * 1.5;
       return { p, score: (sameSize ? 2 : 0) + (priceClose ? 1 : 0), idx };
     });
     scored.sort((a, b) => b.score - a.score || a.idx - b.idx);
-    return scored.slice(0, 2).map(s => s.p);
+    return scored.slice(0, 2).map((s) => s.p);
   }, [product, enriched]);
 
   if (companions.length === 0) return null;
@@ -106,10 +121,35 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
   };
 
   const renderItem = (p: MakimooProduct, fixed: boolean) => (
-    // 横版条目：左图（勾选框叠加在图左上角）+ 右侧标题/价格
+    // 竖排条目（2026-10-12 适配新版 PDP 窄购买栏）：勾选框 + 缩略图 + 标题/价格
     <div className="flex items-center gap-3">
-      <div
-        className={`relative w-16 h-16 rounded-lg overflow-hidden border border-[#E8E2DA] flex-shrink-0 ${
+      {fixed ? (
+        // 当前产品固定勾选，不可取消
+        <span className="w-4 h-4 rounded-sm bg-[#8B5A2B] flex items-center justify-center flex-shrink-0">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </span>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setUnchecked(prev => ({ ...prev, [p.handle]: !prev[p.handle] }))}
+          aria-pressed={!unchecked[p.handle]}
+          aria-label={`Include ${p.title}`}
+          className={`w-4 h-4 rounded-sm flex items-center justify-center border flex-shrink-0 ${
+            unchecked[p.handle] ? 'bg-white border-[#C9C2B8]' : 'bg-[#8B5A2B] border-[#8B5A2B]'
+          }`}
+        >
+          {!unchecked[p.handle] && (
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+          )}
+        </button>
+      )}
+      <a
+        href={resolveUrl(`/products/${p.handle}/`)}
+        className={`relative w-14 h-14 rounded-lg overflow-hidden border border-[#E8E2DA] flex-shrink-0 ${
           p.imageWhiteBg?.[0] ? 'bg-white' : 'bg-[#F8F5F0]'
         }`}
       >
@@ -119,34 +159,13 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
           loading="lazy"
           className={`w-full h-full object-contain ${p.imageWhiteBg?.[0] ? 'p-1' : ''}`}
         />
-        {fixed ? (
-          // 当前产品固定勾选，不可取消
-          <span className="absolute top-1 left-1 w-4 h-4 rounded-sm bg-[#8B5A2B] flex items-center justify-center">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
-              <path d="M20 6L9 17l-5-5" />
-            </svg>
-          </span>
-        ) : (
-          <button
-            type="button"
-            onClick={() => setUnchecked(prev => ({ ...prev, [p.handle]: !prev[p.handle] }))}
-            aria-pressed={!unchecked[p.handle]}
-            aria-label={`Include ${p.title}`}
-            className={`absolute top-1 left-1 w-4 h-4 rounded-sm flex items-center justify-center border ${
-              unchecked[p.handle] ? 'bg-white border-[#C9C2B8]' : 'bg-[#8B5A2B] border-[#8B5A2B]'
-            }`}
-          >
-            {!unchecked[p.handle] && (
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3">
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            )}
-          </button>
-        )}
-      </div>
-      <div className="w-32 sm:w-36 min-w-0">
-        <p className="text-xs text-[#555] leading-snug line-clamp-2">{p.title}</p>
-        <p className="text-xs font-semibold text-[#8B5A2B] mt-1">
+      </a>
+      <div className="min-w-0 flex-1">
+        <p className="text-xs text-[#555] leading-snug line-clamp-2">
+          {fixed && <span className="font-semibold text-[#8B5A2B]">This item: </span>}
+          {p.title}
+        </p>
+        <p className="text-xs font-semibold text-[#8B5A2B] mt-0.5">
           {formatPrice(getPrice(p), p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode)}
         </p>
       </div>
@@ -154,37 +173,31 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
   );
 
   return (
-    <div className="bg-white rounded-xl border border-[#E8E2DA] p-4 sm:p-5">
+    <div className="bg-white rounded-xl border border-[#E8E2DA] p-4 sm:p-5 mb-8">
       <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-3">
-        Frequently Bought Together
+        Pairs Well With
       </p>
-      <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
-        {/* 桌面端一行放下（nowrap），窄屏才允许换行 */}
-        <div className="flex flex-wrap lg:flex-nowrap items-center gap-x-3 gap-y-3 min-w-0">
-          {renderItem(product, true)}
-          {companions.map((c) => (
-            <div key={c.handle} className="flex items-center gap-2 sm:gap-3">
-              <span className="text-lg text-[#999]">+</span>
-              {renderItem(c, false)}
-            </div>
-          ))}
-        </div>
-        <div className="lg:ml-auto flex items-center gap-4 flex-shrink-0">
-          <p className="text-sm text-[#555] whitespace-nowrap">
-            Total price:{' '}
-            <span className="text-lg font-bold text-[#8B5A2B]">
-              {formatPrice(totalPrice, displayCurrency)}
-            </span>
-          </p>
-          <button
-            onClick={handleAddSelected}
-            disabled={adding}
-            className="px-6 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg active:scale-95 disabled:opacity-60 disabled:hover:translate-y-0"
-            style={{ backgroundColor: '#8B5A2B' }}
-          >
-            {adding ? 'Adding...' : 'Add Selected to Cart'}
-          </button>
-        </div>
+      <div className="space-y-3">
+        {renderItem(product, true)}
+        {companions.map((c) => (
+          <div key={c.handle}>{renderItem(c, false)}</div>
+        ))}
+      </div>
+      <div className="mt-4 pt-4 border-t border-[#E8E2DA]">
+        <p className="text-sm text-[#555] mb-3">
+          Total for {items.length} item{items.length > 1 ? 's' : ''}:{' '}
+          <span className="text-lg font-bold text-[#8B5A2B]">
+            {formatPrice(totalPrice, displayCurrency)}
+          </span>
+        </p>
+        <button
+          onClick={handleAddSelected}
+          disabled={adding}
+          className="w-full px-6 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg active:scale-95 disabled:opacity-60 disabled:hover:translate-y-0"
+          style={{ backgroundColor: '#8B5A2B' }}
+        >
+          {adding ? 'Adding...' : `Add ${items.length} Item${items.length > 1 ? 's' : ''} to Cart`}
+        </button>
       </div>
     </div>
   );
