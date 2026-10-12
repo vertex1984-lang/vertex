@@ -727,7 +727,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             <div className="hidden lg:block mb-8">
               {shippingCareBlock}
             </div>
-            <div className="lg:hidden">
+            <div className="lg:hidden mb-8">
               {shippingCareBlock}
             </div>
 
