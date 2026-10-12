@@ -115,7 +115,7 @@ export default function BoughtTogether({ product }: { product: MakimooProduct })
             key={p.handle}
             href={resolveUrl(`/products/${p.handle}/`)}
             onClick={() => handleClick(p)}
-            className="flex items-center gap-3.5 rounded-xl bg-[#F8F5F0] p-3 transition hover:bg-[#F1EBE2]"
+            className="flex items-center gap-3.5 rounded-xl bg-[#F1EBE2] p-3 transition hover:bg-[#EAE2D6]"
           >
             <span
               className={`relative w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 ${
