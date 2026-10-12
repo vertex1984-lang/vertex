@@ -23,9 +23,11 @@ export default function V2ProductReviews({ asin, productTitle }: { asin: string;
 
   return (
     <section id="reviews" className="bg-off-white scroll-mt-28">
-      <div className="max-w-[1520px] lg:w-[80%] mx-auto px-6 lg:px-10 py-14 lg:py-20">
+      {/* 移动端顶部间距收紧（2026-10-12 用户定：评分摘要与上方品牌区间空隙过大），桌面端保持 py-20 */}
+      {/* 移动端顶部间距收紧（2026-10-12 用户定：评分摘要与上方品牌区间空隙过大），桌面端保持 py-20 */}
+      <div className="max-w-[1520px] lg:w-[80%] mx-auto px-6 lg:px-10 pt-4 pb-14 lg:py-20">
         {/* 摘要带（2026-10-12 用户定）：分数块 + 分布条 + 写评价入口合并同一区域——
-            桌面端三栏同排（CTA 靠右端 ml-auto），移动端自然换行堆叠在分布条下方；
+            桌面端三栏同排（CTA 紧随分布条靠左），移动端自然换行堆叠在分布条下方；
             不再用分隔线把 Write a Review 与评分拆成两个区域 */}
         <div className="pb-10 lg:pb-14 mb-10 lg:mb-14 border-b border-warm-gray/60">
           <div className="flex flex-wrap items-center gap-6 lg:gap-14">
