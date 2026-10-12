@@ -9,7 +9,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { getProductByHandle, PRODUCTS_DATA } from '@/data/products';
+import { getProductByHandle } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
@@ -30,6 +30,7 @@ import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import DragScroll from '@/components/v2/DragScroll';
+import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
 import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
@@ -175,9 +176,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
   const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);
 
-  // 标题：enrich 短标题（新标题公式已写入 short-titles）+ 原始长标题副行
+  // 标题：enrich 短标题（新标题公式已写入 short-titles）；
+  // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）
   const shortTitle = product.title;
-  const longTitle = PRODUCTS_DATA.find((p) => p.handle === handle)?.title ?? product.title;
 
   // 面包屑一级类目：链 /products/?cat=<小写 productType>（2026-09-27 用户定：PDP 面包屑不显示
   // "Products" 中转层；/bedding/ 落地页已于同天下线，bedding 同样走 /products?cat=bedding）
@@ -462,14 +463,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             {/* 平板档（lg~xl，1024-1280px，如 iPad Pro 11/13 竖屏）用 text-2xl：右栏仅约 380px 宽，
                 text-4xl 会挤成 3-4 行（2026-09-29 用户实测排版异常）；≥xl 才用大标题 */}
             <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
-            {/* 副标题仅桌面端显示（2026-09-28 移动端首屏压缩移除）；
-                注意必须包一层 div 控显隐：line-clamp-2 自带 display:-webkit-box，
-                与 hidden 同挂一个元素时生产 CSS 层叠顺序不保证 hidden 生效（移动端实测仍显示） */}
-            {longTitle !== shortTitle && (
-              <div className="hidden lg:block">
-                <p className="text-[13px] lg:text-sm text-charcoal-light leading-relaxed mb-4 line-clamp-2">{longTitle}</p>
-              </div>
-            )}
 
             {/* Rating + 价格（2026-10-12 合并定稿）：评价分布条与 "Based on N customer reviews"
                 在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方，用户定）；
@@ -761,6 +754,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           单行横滑——触屏原生滚动 + 桌面鼠标拖拽（DragScroll），无箭头、无 View All 按钮。
           卡片宽度按"露出半张"设计（用户定：右缘露出下一张的一部分，暗示可滑）：
           桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
+      {/* 种草双图区（2026-10-12 用户定）：信任条下方、You May Also Like 上方，
+          仅 pillows 类 PDP 渲染（枕套场景图跨类目不搭） */}
+      {product.productType.toLowerCase() === 'pillows' && <V2PdpLifestyle />}
+
       {relatedProducts.length > 0 && (
         <section className="mt-12 mb-12 lg:mt-16 lg:mb-20">
           <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10">
