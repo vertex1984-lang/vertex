@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { ProductReview } from '@/data/product-reviews';
 
 /** 预览条数：超过则折叠，"Show more reviews" 展开（2026-10-04 用户定：预览 3 条，手机端横滑约可见 1.7 张） */
@@ -142,12 +142,40 @@ function ReviewCard({ review }: { review: ProductReview }) {
 /**
  * 评价卡列表（client）：折叠态 = 前 3 条（手机端横滑轮播露右缘提示可滑，lg+ 纵向堆叠），
  * "Show more reviews" 展开后转全量纵向列表（两端一致）。
+ * 2026-10-10 领导定（悬浮胶囊 B 案）：展开态收起控制 = 视口底部居中悬浮胶囊
+ * （移动端抬高避开吸底加购条），滚到列表末尾时自动隐藏（末尾保留常规 Show less 按钮收尾）；
+ * 点击胶囊收起列表并平滑滚回评价区顶部。中途不再插按钮（2026-10-10 复审：夹在卡片中间怪）。
  */
 export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] }) {
   const [expanded, setExpanded] = useState(false);
+  const tailRef = useRef<HTMLDivElement>(null);
+  const [pillVisible, setPillVisible] = useState(false);
   const collapsed = reviews.length > COLLAPSED_COUNT;
   const carousel = collapsed && !expanded;
-  const visible = carousel ? starMix(reviews).slice(0, COLLAPSED_COUNT) : starMix(reviews);
+  const mixed = starMix(reviews);
+  const visible = carousel ? mixed.slice(0, COLLAPSED_COUNT) : mixed;
+  const showLess = !carousel && collapsed;
+
+  useEffect(() => {
+    if (!showLess) {
+      setPillVisible(false);
+      return;
+    }
+    const el = tailRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      setPillVisible(true);
+      return;
+    }
+    const io = new IntersectionObserver(([entry]) => setPillVisible(!entry.isIntersecting));
+    io.observe(el);
+    return () => io.disconnect();
+  }, [showLess]);
+
+  const collapseAndScroll = () => {
+    setExpanded(false);
+    document.getElementById('pdp2-reviews')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <>
       <div
@@ -177,14 +205,29 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
           </button>
         </div>
       )}
-      {!carousel && collapsed && (
-        <div className="mt-6 text-center">
+      {showLess && (
+        <div ref={tailRef} className="mt-6 text-center">
           <button
             type="button"
             onClick={() => setExpanded(false)}
             className="px-6 py-3 rounded-full border border-brand text-brand text-sm font-semibold hover:bg-brand/5 transition"
           >
             Show less
+          </button>
+        </div>
+      )}
+      {showLess && pillVisible && (
+        <div className="fixed left-1/2 -translate-x-1/2 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] lg:bottom-6 z-[1150]">
+          <button
+            type="button"
+            onClick={collapseAndScroll}
+            aria-label="Collapse reviews and return to top of section"
+            className="flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-white border border-brand text-brand text-sm font-semibold shadow-lg hover:bg-brand/5 transition"
+          >
+            Show less
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
           </button>
         </div>
       )}

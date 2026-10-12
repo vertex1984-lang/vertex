@@ -23,8 +23,10 @@ import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
-import { getProductReviews } from '@/data/product-reviews';
+import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import V2RatingPopover from '@/components/v2/V2RatingPopover';
+import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import DragScroll from '@/components/v2/DragScroll';
@@ -470,25 +472,24 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
 
-            {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定）：
-                分布卡（≥5 条才渲染，列表现算）在 xl+ 于价格右侧（购买区红框位），
-                lg 以下通栏插在星级行与价格之间；无分布卡时保持原堆叠布局（无评价产品零变化）。
-                "Based on N customer reviews" 为合规文案唯一出处（评价区不重复） */}
+            {/* Rating + 价格（2026-10-07 领导定）：分布卡撤出购买区（原 lg 以下通栏 / xl 右侧两种形态删除），
+                顶部分数收进一行式评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布，见亚马逊同款），
+                分布条移至底部评价区（V2ProductReviews）顶部。
+                "Based on N customer reviews" 唯一出处随迁移至底部评价区 */}
             {(() => {
               const reviews = hasReviewsData ? getProductReviews(product.asin) : [];
               const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
-              const showDist = hasRating && reviews.length >= 4;
               const ratingRow = hasRating ? (
-                hasReviewsData ? (
-                  <a href="#pdp2-reviews" className="flex items-center gap-2 w-fit">
-                    <RatingStars rating={product.rating!} />
-                    <span className="text-sm text-charcoal-light">
-                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                    </span>
-                  </a>
+                hasReviewsData && reviews.length > 0 ? (
+                  <V2RatingPopover
+                    rating={product.rating!}
+                    reviewCount={product.reviewCount!}
+                    reviews={reviews}
+                    buckets={getVariantReviewStats(product.asin)?.buckets}
+                  />
                 ) : (
                   <div className="flex items-center gap-2">
-                    <RatingStars rating={product.rating!} />
+                    <StarDisplay rating={product.rating!} size={18} />
                     <span className="text-sm text-charcoal-light">
                       {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
                     </span>
@@ -510,41 +511,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               ) : (
                 <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
               );
-              if (!showDist) {
-                return (
-                  <>
-                    {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
-                    <div className="mb-4 lg:mb-6">{priceBlock}</div>
-                  </>
-                );
-              }
-              const buckets = [5, 4, 3, 2, 1].map((star) => ({
-                star,
-                pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
-              }));
               return (
-                <div className="grid grid-cols-1 gap-y-4 mb-4 lg:mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
-                  <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
-                  <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
-                    {/* 全端统一原版五行条 + Based on 文案（2026-10-04 用户定：分布图复原不缩窄，
-                        手机端首屏问题由常驻吸底加购条解决） */}
-                    <div className="space-y-1">
-                      {buckets.map(({ star, pct }) => (
-                        <div key={star} className="flex items-center gap-2">
-                          <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
-                          <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
-                            <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
-                          </div>
-                          <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="mt-2.5 text-xs text-charcoal-light">
-                      Based on {product.reviewCount!.toLocaleString()} customer reviews
-                    </p>
-                  </div>
-                  <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
-                </div>
+                <>
+                  {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                  <div className="mb-4 lg:mb-6">{priceBlock}</div>
+                </>
               );
             })()}
 
@@ -768,9 +739,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       </section>
 
-      {/* 评价区插槽：page.tsx 传入（V2ProductReviews，有数据才实际渲染），紧跟购买区之后 */}
-      {reviewsSlot}
-
       {/* 滚动信任条（2026-09-29 用户定：购买区信任信息精简为免邮/退货两条，
           年销/安全支付/发货时效等更多信任元素移到此处展示；锚点 Tab 条与 Description/Specs 大区已删除。
           桌面端不滚动（用户定）：只渲染一排并居中；移动端双份拼接无缝横滚） */}
@@ -787,6 +755,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           ))}
         </div>
       </div>
+
+      {/* 评价区插槽（2026-10-07 领导定，对齐亚马逊）：下移至信任条之后、相关商品之前——
+          分布条已入评价区顶部（V2ProductReviews），购买区仅留评级气泡触发行；
+          头部锚点 #pdp2-reviews 点击直达此处。page.tsx 传入，有数据才实际渲染 */}
+      {reviewsSlot}
 
       {/* You May Also Like（2026-09-29 用户定：信任条下方、Brand Story 上方；宽度与上下模块一致 80%；
           单行横滑——触屏原生滚动 + 桌面鼠标拖拽（DragScroll），无箭头、无 View All 按钮。
@@ -911,25 +884,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 }
 
 /* ---------- 小图标 ---------- */
-
-/** 评分星级行用五星（与老版 PDP 同款样式） */
-function RatingStars({ rating }: { rating: number }) {
-  return (
-    <div className="flex text-brand">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <svg
-          key={i}
-          width="18" height="18" viewBox="0 0 24 24"
-          fill={i <= Math.round(rating) ? 'currentColor' : 'none'}
-          stroke="currentColor"
-          strokeWidth={i <= Math.round(rating) ? 0 : 1.5}
-        >
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
 
 function QuickSpecIcon({ name }: { name: string }) {
   const common = 'w-[18px] h-[18px] text-brand flex-shrink-0 mt-0.5';

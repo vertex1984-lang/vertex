@@ -13,9 +13,11 @@ import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
-import { getProductReviews } from '@/data/product-reviews';
+import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import V2RatingPopover from '@/components/v2/V2RatingPopover';
+import StarDisplay from '@/components/v2/StarDisplay';
 import PdpTrustBadges from '@/components/v2/PdpTrustBadges';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
@@ -292,27 +294,27 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 {product.title}
               </h1>
 
-              {/* Rating + 价格 + 评价分布卡（2026-10-04 用户定，与新版 PDP 同口径）：
-                  分布卡（≥5 条才渲染，列表现算）xl+ 在价格右侧，lg 以下通栏；无分布卡时保持原布局 */}
+              {/* Rating + 价格（2026-10-07 领导定，与新版 PDP 同口径）：分布卡撤出购买区，
+                  分数收进一行式评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布）；
+                  分布条在底部评价区（V2ProductReviews）顶部，"Based on" 唯一出处随迁 */}
               {(() => {
                 const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
-                const showDist = hasRating && reviews.length >= 4;
                 const ratingRow = hasRating ? (
-                  <a href={reviews.length ? '#reviews' : undefined} className="flex items-center gap-2 w-fit">
-                    <div className="flex text-brand">
-                      {[1,2,3,4,5].map(i => (
-                        <svg key={i} width="18" height="18" viewBox="0 0 24 24"
-                          fill={i <= Math.round(product.rating!) ? 'currentColor' : 'none'}
-                          stroke="currentColor" strokeWidth={i <= Math.round(product.rating!) ? 0 : 1.5}
-                        >
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                      ))}
+                  reviews.length ? (
+                    <V2RatingPopover
+                      rating={product.rating!}
+                      reviewCount={product.reviewCount!}
+                      reviews={reviews}
+                      buckets={getVariantReviewStats(product.asin)?.buckets}
+                    />
+                  ) : (
+                    <div className="flex items-center gap-2 w-fit">
+                      <StarDisplay rating={product.rating!} size={18} />
+                      <span className="text-sm text-charcoal-light">
+                        {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                      </span>
                     </div>
-                    <span className="text-sm text-charcoal-light">
-                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                    </span>
-                  </a>
+                  )
                 ) : null;
                 const priceBlock = isInStock ? (
                   <div className="flex items-center gap-3">
@@ -329,40 +331,11 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
                 ) : (
                   <span className="text-xl font-semibold text-charcoal-light">Out of Stock</span>
                 );
-                if (!showDist) {
-                  return (
-                    <>
-                      {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
-                      <div className="mb-6">{priceBlock}</div>
-                    </>
-                  );
-                }
-                const buckets = [5, 4, 3, 2, 1].map((star) => ({
-                  star,
-                  pct: (reviews.filter((r) => r.rating === star).length / reviews.length) * 100,
-                }));
                 return (
-                  <div className="grid grid-cols-1 gap-y-4 mb-6 xl:grid-cols-[minmax(0,1fr)_240px] xl:gap-x-10">
-                    <div className="min-w-0 xl:row-start-1 xl:col-start-1">{ratingRow}</div>
-                    <div className="xl:row-start-1 xl:row-span-2 xl:col-start-2">
-                      {/* 全端统一原版五行条 + Based on 文案（与新版 PDP 同口径） */}
-                      <div className="space-y-1">
-                        {buckets.map(({ star, pct }) => (
-                          <div key={star} className="flex items-center gap-2">
-                            <span className="w-5 text-right text-[11px] text-charcoal-light">{star}★</span>
-                            <div className="flex-1 h-1 rounded-full bg-warm-gray overflow-hidden">
-                              <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
-                            </div>
-                            <span className="w-8 text-[11px] text-charcoal-light">{Math.round(pct)}%</span>
-                          </div>
-                        ))}
-                      </div>
-                      <p className="mt-2.5 text-xs text-charcoal-light">
-                        Based on {product.reviewCount!.toLocaleString()} customer reviews
-                      </p>
-                    </div>
-                    <div className="xl:row-start-2 xl:col-start-1">{priceBlock}</div>
-                  </div>
+                  <>
+                    {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                    <div className="mb-6">{priceBlock}</div>
+                  </>
                 );
               })()}
 
@@ -490,9 +463,6 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
         </div>
       </section>
 
-      {/* 评价区插槽：page.tsx 传入（有数据才实际渲染），紧跟购买区、描述前 */}
-      {reviewsSlot}
-
       {/* 下部：产品描述（限宽居中） */}
       <section className="bg-off-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 py-14 lg:py-20">
@@ -559,6 +529,10 @@ export default function V2ProductDetailClient({ handle, reviewsSlot }: V2Product
           </div>
         </div>
       </section>
+
+      {/* 评价区插槽（2026-10-07 领导定）：下移至 Details（描述+规格）之后、页尾模块之前
+          （本变体无相关商品区，对齐亚马逊 description → reviews 顺序）。有数据才实际渲染 */}
+      {reviewsSlot}
 
       {/* Frequently Bought Together（搭配购，全宽横版；当前产品不在售时内部不渲染）。
           由 SHOW_BOUGHT_TOGETHER 控制，暂时隐藏 */}

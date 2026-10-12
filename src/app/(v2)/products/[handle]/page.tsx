@@ -194,11 +194,13 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       }
     : null;
 
-  // 评价区插槽：经 prop 传入两版 PDP，渲染在购买区后、描述前
+  // 评价区插槽：经 prop 传入两版 PDP（ReactNode，可跨 RSC 边界；函数不可）。
+  // wide 由本页变体判定：新品变体 = 亚马逊式宽版分栏（与上下模块同宽 80%/1520px）；
+  // 老品变体 = max-w-3xl 窄版（与相邻 Details 同宽）。
   //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
   const reviewsSlot = product && enriched ? (
     <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews asin={enriched.asin} />
+      <V2ProductReviews asin={enriched.asin} wide={isNew} productTitle={product.title} />
     </div>
   ) : null;
 

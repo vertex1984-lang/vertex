@@ -3375,11 +3375,125 @@ export function getProductReviews(asin: string): ProductReview[] {
   return [];
 }
 
-/** 展示总数解析（供 products.ts 注入 reviewCount：顶部星级行 / 分布卡 / JSON-LD 同源） */
+/** 展示总数解析（供 products.ts 注入 reviewCount：顶部星级行 / 页脚汇总 / JSON-LD 同源） */
 export function getReviewTotal(asin: string): number | undefined {
   for (const key of reviewLookupKeys(asin)) {
     const total = REVIEW_COUNTS[key];
     if (total != null) return total;
   }
   return undefined;
+}
+
+/** ===== 变体评价计划（2026-10-10 领导定，去统一化，纯展示层） =====
+ * AI 家族每变体确定性生成（seed=hash(asin)，SSG 可复现、无随机数）：
+ *  - 展示总数 N ∈ [100, 2000]（对数均匀，每变体不同；仅作展示数字，不背书内容）
+ *  - 均分 ∈ {4.1, 4.2, 4.3}（整数百分比分布反解，与分布条数学自洽）
+ *  - 分布：约 1/3 AI 家族（家族级种子）含 1★/2★ 段（p1+p2 ≈ 5-10%）；1-2 星不生成卡片，
+ *    只体现在分布条——卡片区仍用现有脱敏池文本（5/4/3★），每变体种子定顺序与 8-10 条子集
+ * B0 家族不动：N 用 REVIEW_COUNTS 真实总数，均分/分布用卡片实算（真实改写池，现行为）。
+ * 消费方：products.ts enrich 注入（rating/reviewCount → JSON-LD）、V2ProductReviews
+ *（分布条/Based on/大评分）、V2RatingPopover（气泡分布）、两套 PDP 触发行。
+ */
+export interface VariantReviewStats {
+  reviewCount: number;
+  rating: number;
+  buckets: { star: number; pct: number }[];
+  /** 展示卡片（种子定顺序与子集；B0 = 池原样） */
+  reviews: ProductReview[];
+  isB0: boolean;
+}
+
+function hash32(s: string): number {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed: number): () => number {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function resolveFamilyKey(asin: string): string | null {
+  for (const key of reviewLookupKeys(asin)) {
+    const hit = PRODUCT_REVIEWS[key];
+    if (hit && hit.length > 0) return key;
+  }
+  return null;
+}
+
+export function getVariantReviewStats(asin: string): VariantReviewStats | null {
+  const familyKey = resolveFamilyKey(asin);
+  if (!familyKey) return null;
+  const pool = PRODUCT_REVIEWS[familyKey];
+  const b0Total = REVIEW_COUNTS[familyKey];
+  if (b0Total != null) {
+    // B0 家族：现行为（真实总数 + 卡片实算），不改
+    const avg = pool.reduce((s, r) => s + r.rating, 0) / pool.length;
+    const buckets = [5, 4, 3, 2, 1].map((star) => ({
+      star,
+      pct: (pool.filter((r) => r.rating === star).length / pool.length) * 100,
+    }));
+    return { reviewCount: b0Total, rating: Math.round(avg * 10) / 10, buckets, reviews: pool, isB0: true };
+  }
+  // AI 家族：种子计划
+  const rnd = mulberry32(hash32(asin.toLowerCase()));
+  const target = [4.1, 4.2, 4.3][Math.floor(rnd() * 3)];
+  const lowStar = mulberry32(hash32(familyKey))() < 0.34;
+  let p1 = 0;
+  let p2 = 0;
+  let p3 = lowStar ? 9 + Math.floor(rnd() * 5) : 8 + Math.floor(rnd() * 6);
+  if (lowStar) {
+    p1 = 2 + Math.floor(rnd() * 4);
+    p2 = 3 + Math.floor(rnd() * 4);
+  }
+  // 反解 p5/p4（整数百分比；p5 = 100T-400+3p1+2p2+p3，p4 = S-p5），
+  // 收敛方向：p5<p4 时 p3+1（拉开高低占比差），p4<8 时 p3-1（压低星）
+  let p5 = 0;
+  let p4 = 0;
+  for (let t = 0; t < 24; t++) {
+    const S = 100 - p1 - p2 - p3;
+    p5 = Math.round(100 * target - 400 + 3 * p1 + 2 * p2 + p3);
+    p4 = S - p5;
+    if (p4 < 8 && p3 > 3) {
+      p3 -= 1;
+      continue;
+    }
+    if (p5 < p4 && p3 < 24) {
+      p3 += 1;
+      continue;
+    }
+    break;
+  }
+  p5 += 100 - (p1 + p2 + p3 + p4 + p5); // 百分比和=100 校准（漂移归 p5）
+  const rating = Math.round(5 * p5 + 4 * p4 + 3 * p3 + 2 * p2 + p1) / 100;
+  const u = rnd();
+  const reviewCount = Math.round(Math.exp(Math.log(100) + u * (Math.log(2000) - Math.log(100))));
+  // 卡片：种子洗牌 + 8-10 条子集（内容零改动）
+  const cr = mulberry32((hash32(asin.toLowerCase()) ^ 0x9e3779b9) >>> 0);
+  const arr = [...pool];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(cr() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  const cards = arr.slice(0, Math.min(arr.length, 8 + Math.floor(cr() * 3)));
+  return {
+    reviewCount,
+    rating,
+    buckets: [5, 4, 3, 2, 1].map((star) => ({
+      star,
+      pct: star === 5 ? p5 : star === 4 ? p4 : star === 3 ? p3 : star === 2 ? p2 : p1,
+    })),
+    reviews: cards,
+    isB0: false,
+  };
 }
