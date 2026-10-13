@@ -364,7 +364,11 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3',
   'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4',
   'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5',
-  'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6',
+  'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6',  // 2026-10-13：MK- 自有产品（Bouclé 泰迪绒枕套 4 色 × 45cm）
+  'boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45',
+  'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45',
+  'boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45',
+  'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

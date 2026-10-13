@@ -672,6 +672,17 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'mk-pc-ctn-lightgrey-45', handle: 'cotton-like-pillow-covers-lightgrey-45x45-mk-pc-ctn-lightgrey-45', color: 'Light Grey', size: '45 x 45 cm' },
     ],
   },
+  // 2026-10-13：Bouclé 泰迪绒装饰枕套（4 色 × 45cm，MK- 自有产品；40cm 待 Shopify 补建）
+  {
+    id: 'mk-pc-boucle',
+    optionName: 'Color',
+    members: [
+    { asin: 'mk-pc-boucle-white-45', handle: 'boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45', color: 'White', size: '45 x 45 cm' },
+    { asin: 'mk-pc-boucle-oatmeal-45', handle: 'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45', color: 'Oatmeal', size: '45 x 45 cm' },
+    { asin: 'mk-pc-boucle-dustyrose-45', handle: 'boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45', color: 'Dusty Rose', size: '45 x 45 cm' },
+    { asin: 'mk-pc-boucle-sage-45', handle: 'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45', color: 'Sage', size: '45 x 45 cm' },
+    ],
+  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();
