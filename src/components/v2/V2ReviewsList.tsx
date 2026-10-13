@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from 'react';
 import type { ProductReview } from '@/data/product-reviews';
 
-/** 预览条数：超过则折叠，"Show more reviews" 展开（2026-10-04 用户定：预览 3 条，手机端横滑约可见 1.7 张） */
+/** 预览条数（2026-10-13 用户定 v3.5.3）：折叠触发阈值仍为 3（>3 即折叠）；
+ * 预览实际渲染 4 条——桌面两列网格 2×2 满排；第 4 条加 hidden lg:block，手机端横滑仍只见 3 条 */
 const COLLAPSED_COUNT = 3;
+const PREVIEW_COUNT = 4;
 
 /** 星级穿插展示（2026-10-06 用户定）：预览不要求全 5 星（家族有 4★ 时必入预览前 3），
  *  展开态按亚马逊式"有用票"观感穿插，绝不呈现按评分排序的形态。确定性算法（按家族首作者名
@@ -47,7 +49,18 @@ function starMix(rs: ProductReview[]): ProductReview[] {
     if (mi < m && slots[mi] === i) out.push(seq[mi++] === 4 ? fours.splice(0, 1)[0] : lows.splice(0, 1)[0]);
     else out.push(fives.splice(0, 1)[0]);
   }
-  return [...pinned, ...out];
+  const mixed = [...pinned, ...out];
+  // 低星卡保底（2026-10-13 用户定 v3.5.3）：≤2★ 卡不得进入折叠预览——少数派槽位均匀
+  // 散布含前部槽位，2★ 卡可能落进前 4（第 4 卡仅 lg 以下隐藏、桌面仍可见）→ 逐张移到
+  // index 4 之后（折叠预览只渲染前 4：桌面 4 条 2×2 / 手机 3 条 + 第 4 卡隐藏）；
+  // 展开列表不受影响，分布条低星段不变。
+  for (let guard = 0; guard < 8; guard++) {
+    const idx = mixed.findIndex((r) => r.rating <= 2);
+    if (idx < 0 || idx >= 4) break;
+    const [lowCard] = mixed.splice(idx, 1);
+    mixed.splice(4, 0, lowCard);
+  }
+  return mixed;
 }
 
 function Star({ fill }: { fill: boolean }) {
@@ -154,7 +167,8 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
   const collapsed = reviews.length > COLLAPSED_COUNT;
   const carousel = collapsed && !expanded;
   const mixed = starMix(reviews);
-  const visible = carousel ? mixed.slice(0, COLLAPSED_COUNT) : mixed;
+  // 预览渲染 4 条（桌面 2×2；第 4 条 lg 以下隐藏——手机端恒见 3 条）
+  const visible = carousel ? mixed.slice(0, PREVIEW_COUNT) : mixed;
   const showLess = !carousel && collapsed;
 
   useEffect(() => {
@@ -189,7 +203,12 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
         {visible.map((r, i) => (
           <div
             key={i}
-            className={carousel ? 'w-[58vw] max-w-[300px] flex-shrink-0 snap-start lg:w-auto lg:max-w-none' : undefined}
+            className={
+              carousel
+                ? 'w-[58vw] max-w-[300px] flex-shrink-0 snap-start lg:w-auto lg:max-w-none' +
+                  (i === PREVIEW_COUNT - 1 ? ' hidden lg:block' : '')
+                : undefined
+            }
           >
             <ReviewCard review={r} />
           </div>
