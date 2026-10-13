@@ -7,7 +7,6 @@ import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
-import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
@@ -48,7 +47,6 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
   const [quantity, setQuantity] = useState(1);
   const [addingToCart, setAddingToCart] = useState(false);
-  const [fav, setFav] = useState(false);
 
   // 移动端悬浮加购条显示逻辑（2026-10-12 用户定，与新版 PDP 同口径）：加载不显示；
   // 主 Add to Cart 滚出视口（顶出屏幕上方）→ 滑入；回滚至主 CTA 可见（直到页面顶端）→
@@ -100,14 +98,10 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 记录最近浏览 + 同步收藏态
+  // 记录最近浏览（心愿单功能已于 2026-10-12 移除，用户定）
   useEffect(() => {
     if (!product) return;
     addRecentlyViewed(product.handle);
-    const sync = () => setFav(isFavorite(product.id));
-    sync();
-    window.addEventListener('makimoo:favorites-updated', sync);
-    return () => window.removeEventListener('makimoo:favorites-updated', sync);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
@@ -203,11 +197,6 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
     } finally {
       setAddingToCart(false);
     }
-  };
-
-  const handleToggleFavorite = () => {
-    const nowFav = toggleFavorite(product.id);
-    toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
   };
 
   return (
@@ -403,18 +392,6 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                       </svg>
                     </a>
                   )}
-                  {/* 收藏按钮 */}
-                  <button
-                    onClick={handleToggleFavorite}
-                    className={`w-12 h-12 rounded-full border flex items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
-                      fav ? 'border-brand text-brand bg-brand/5' : 'border-warm-gray text-charcoal-light hover:text-brand hover:border-brand'
-                    }`}
-                    aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
-                  >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                  </button>
                 </div>
               ) : (
                 <div className="mb-3 text-center py-3.5 px-6 rounded-full bg-warm-gray text-charcoal-light font-semibold text-sm">

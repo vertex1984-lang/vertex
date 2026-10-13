@@ -259,7 +259,7 @@ export default function ChatWidget() {
 
   return (
     <div
-      className={`fixed right-4 z-50 flex flex-col items-end transition-all duration-300 ${
+      className={`fixed right-4 z-50 hidden lg:flex flex-col items-end transition-all duration-300 ${
         visible || open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       } ${isPDP ? "bottom-[calc(7rem+env(safe-area-inset-bottom))] md:bottom-6" : "bottom-6"}`}
     >
