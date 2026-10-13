@@ -6678,6 +6678,186 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-BOUCLE-WHITE-45",
+    "asin": "MK-PC-BOUCLE-WHITE-45",
+    "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (White)",
+    "handle": "boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45",
+    "description": "Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in White, ready to refresh your sofa, couch or bed. Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space. Muted Ins-Style Color: A low-saturation White tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in White, ready to refresh your sofa, couch or bed.</p><p>Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space.</p><p>Muted Ins-Style Color: A low-saturation White tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-BOUCLE-WHITE-45/1.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-BOUCLE-WHITE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-BOUCLE-OATMEAL-45",
+    "asin": "MK-PC-BOUCLE-OATMEAL-45",
+    "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Oatmeal)",
+    "handle": "boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45",
+    "description": "Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Oatmeal, ready to refresh your sofa, couch or bed. Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space. Muted Ins-Style Color: A low-saturation Oatmeal tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Oatmeal, ready to refresh your sofa, couch or bed.</p><p>Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Oatmeal tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-BOUCLE-OATMEAL-45/1.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-BOUCLE-OATMEAL-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-BOUCLE-DUSTYROSE-45",
+    "asin": "MK-PC-BOUCLE-DUSTYROSE-45",
+    "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+    "handle": "boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45",
+    "description": "Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed. Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Dusty Rose, ready to refresh your sofa, couch or bed.</p><p>Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-BOUCLE-DUSTYROSE-45/1.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-BOUCLE-DUSTYROSE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-PC-BOUCLE-SAGE-45",
+    "asin": "MK-PC-BOUCLE-SAGE-45",
+    "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+    "handle": "boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45",
+    "description": "Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed. Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space. Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like cream, beige and warm brown. Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing. Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.",
+    "descriptionHtml": "<p>Set of 2 Boucle Covers: You receive two matching 45 x 45 cm throw pillow covers in Sage, ready to refresh your sofa, couch or bed.</p><p>Soft Teddy Boucle Fabric: A plush boucle (teddy fleece) fabric with a cozy curled texture that adds warmth and depth to any space.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers beautifully with neutrals like cream, beige and warm brown.</p><p>Hidden Zipper Closure: A smooth concealed zipper keeps the look clean and makes the covers easy to remove for washing.</p><p>Easy Care: Machine washable on a gentle cycle; the durable fabric keeps its texture and color wash after wash. Inserts not included.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-PC-BOUCLE-SAGE-45/1.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-PC-BOUCLE-SAGE-45",
+        "title": "Default Title",
+        "price": {
+          "amount": "19.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
   }
 ];
 
