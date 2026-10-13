@@ -368,7 +368,11 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45',
   'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45',
   'boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45',
-  'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45',
+  'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45',  // 2026-10-13：MK- 自有产品（Bouclé 泰迪绒枕套 4 色 × 45cm）
+  'boucle-pillow-covers-white-40x40-mk-pc-boucle-white',
+  'boucle-pillow-covers-oatmeal-40x40-mk-pc-boucle-oatmeal',
+  'boucle-pillow-covers-dustyrose-40x40-mk-pc-boucle-dustyrose',
+  'boucle-pillow-covers-sage-40x40-mk-pc-boucle-sage',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

@@ -140,4 +140,8 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "mk-pc-boucle-oatmeal-45": { material: "Boucle", dimensionsCm: [45, 45] },
   "mk-pc-boucle-dustyrose-45": { material: "Boucle", dimensionsCm: [45, 45] },
   "mk-pc-boucle-sage-45": { material: "Boucle", dimensionsCm: [45, 45] },
+  "mk-pc-boucle-white": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-oatmeal": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-dustyrose": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-sage": { material: "Boucle", dimensionsCm: [40, 40] },
 };
