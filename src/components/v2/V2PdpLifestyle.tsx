@@ -12,6 +12,9 @@ import { resolveUrl } from '@/lib/paths';
  *  - cushions/solids 系列：两张竖图各半（3:4 × 2），门廊绿垫 + 海滨藏青垫场景
  *  - cushions/prints（Floral & Prints，2026-10-12 用户供图替换原通用 café/花店图）：
  *    天台黄昏几何垫 + 海滨蓝绿植物垫场景
+ *  - pillows/boucle 系列（2026-10-13 用户定，AI 生成混色场景，Pinterest 级）：
+ *    两张 2:3 竖图各半——奶白+鼠尾草绿客厅 / 燕麦+灰粉卧室，移动端裁 3:4
+ *  - travel 颈枕（2026-10-14 用户供图）：居家沙发阅读 + 游轮甲板旅行场景，两张 3:4 各半
  */
 interface LifestyleCard {
   image: string;
@@ -21,7 +24,45 @@ interface LifestyleCard {
   className: string;
 }
 
-const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints', { gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck', { gridClass: string; cards: LifestyleCard[] }> = {
+  neck: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/neck-home.webp',
+        caption: 'Stay In',
+        desc: 'Neck-deep in a good book',
+        alt: 'Woman wearing a memory foam neck pillow while reading on a sofa at home',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/neck-travel.webp',
+        caption: 'Away We Go',
+        desc: 'Sea breeze and window seats',
+        alt: 'Cream neck pillow on a wooden deck lounger of a cruise ship at sunset',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  boucle: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/pillow-boucle-wide.webp',
+        caption: 'Golden Hour',
+        desc: 'Lamplight, linen, and slow evenings',
+        alt: 'Cozy living room at dusk with oatmeal and dusty rose boucle pillows on a white sofa',
+        className: 'aspect-[3/4] lg:aspect-[2/3]',
+      },
+      {
+        image: '/images/pdp-lifestyle/pillow-boucle-bench.webp',
+        caption: 'Come On In',
+        desc: 'A soft landing, right at the door',
+        alt: 'Oatmeal and sage boucle pillows on a wooden entryway bench with a knit throw',
+        className: 'aspect-[3/4] lg:aspect-[2/3]',
+      },
+    ],
+  },
   pillows: {
     gridClass: 'lg:grid-cols-12 lg:items-start',
     cards: [
@@ -100,7 +141,7 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints', { gridClass: st
   },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' }) {
+export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' }) {
   const set = SETS[cat];
   return (
     <section className="mt-8 lg:mt-12">
