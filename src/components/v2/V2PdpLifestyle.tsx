@@ -50,15 +50,15 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'ne
       {
         image: '/images/pdp-lifestyle/pillow-boucle-wide.webp',
         caption: 'Golden Hour',
-        desc: 'Lamplight, linen, and slow evenings',
-        alt: 'Cozy living room at dusk with oatmeal and dusty rose boucle pillows on a white sofa',
+        desc: 'Vinyl, dusk light, and a worn-in chair',
+        alt: 'Dusty rose boucle pillow on a brown leather armchair beside a record player at dusk',
         className: 'aspect-[3/4] lg:aspect-[2/3]',
       },
       {
         image: '/images/pdp-lifestyle/pillow-boucle-bench.webp',
         caption: 'Come On In',
         desc: 'A soft landing, right at the door',
-        alt: 'Oatmeal and sage boucle pillows on a wooden entryway bench with a knit throw',
+        alt: 'White boucle pillow on a dark wooden entryway bench in soft daylight',
         className: 'aspect-[3/4] lg:aspect-[2/3]',
       },
     ],
