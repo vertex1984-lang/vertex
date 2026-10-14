@@ -379,11 +379,16 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           {/* 实底背景放 absolute 子层：保留 transparent→solid 的过渡动画
               （原为 v7 刘海采样规避，sticky 终版后仅为视觉过渡服务）。
               2026-10-12 用户定：去掉 shadow-md（分类/筛选/搜索页导航下方不要有阴影），
-              改用 border-b border-warm-gray 细分隔线标示导航边界（阴影全去掉后与页面同色无分界） */}
+              改用 border-b 细分隔线标示导航边界（阴影全去掉后与页面同色无分界）。
+              2026-10-14 用户反馈：向上滚动导航变透明前瞬间会闪一条白线——
+              border-b 常驻、只过渡 border-color（透明↔warm-gray）；
+              且变透明时 duration-0 立即完成（渐变过程线仍可见），变实底保留 300ms 淡入 */}
           <div
             aria-hidden="true"
-            className={`absolute inset-0 transition-all duration-300 ${
-              solid ? 'bg-off-white/95 backdrop-blur border-b border-warm-gray' : ''
+            className={`absolute inset-0 border-b ${
+              solid
+                ? 'transition-all duration-300 bg-off-white/95 backdrop-blur border-warm-gray'
+                : 'border-transparent'
             }`}
           />
           <a href={v2url('/')} className="relative flex items-center gap-2">
