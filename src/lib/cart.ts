@@ -109,6 +109,33 @@ export async function addToShopifyCart(merchandiseId: string, quantity: number =
   }
 }
 
+// 批量加购（Shop the Look 场景页"一键组合加购"用）：一次请求写入多条 cart lines，
+// 逻辑与 addToShopifyCart 相同——无 cart 直接以全部 lines 创建，已有 cart 失效则清 id 重建重试
+export async function addMultipleToShopifyCart(
+  lines: { merchandiseId: string; quantity: number }[]
+) {
+  if (lines.length === 0) return null;
+  const cartId = getCartId();
+  if (!cartId) {
+    return createShopifyCart(lines);
+  }
+
+  try {
+    const { data, errors } = await shopifyClient.request(ADD_TO_CART, {
+      variables: { cartId, lines },
+    });
+    if (errors || !data?.cartLinesAdd?.cart) {
+      console.warn('Batch add to existing cart failed, retrying with a new cart:', errors || data?.cartLinesAdd?.userErrors);
+      clearCartId();
+      return createShopifyCart(lines);
+    }
+    return data.cartLinesAdd.cart;
+  } catch (e) {
+    console.error('Batch add to cart failed:', e);
+    return null;
+  }
+}
+
 async function createShopifyCart(lines: { merchandiseId: string; quantity: number }[]) {
   try {
     const { data, errors } = await shopifyClient.request(CREATE_CART, {
