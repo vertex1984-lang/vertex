@@ -3268,7 +3268,269 @@ const BRASS_PEPPER_MILL: ProductReview[] = [
   },
 ];
 
-export const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
+export // ---- 批 6 W7（2026-10-13）：漏配 B0 补齐——抱枕芯 2 装（B0G6M3F7CY 自有 listing）----
+// 数据口径：avg 4.5 / N=57 global ratings / 分布 75-11-8-4-2 = listing 当日真实值（B0_REAL_STATS）。
+// 文案口径：该 listing 为"纯星级无文字评价"（57 ratings 0 条文字 review），卡片按批 1 惯例
+// 同调性补写（产品事实+类目常见主题），改写/补写比例 = 0%/100%，交付标注。全部编造化名。
+const THROW_INSERT_2PK: ProductReview[] = [
+  {
+    author: 'Jonas Beck',
+    rating: 5,
+    text: 'Arrived vacuum packed so they looked flat at first, but fluffed up fully within a couple of hours. They fill my covers nicely without overstretching the fabric, and the corners look full.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Marta Ellison',
+    rating: 5,
+    text: 'Bought these to refresh old sofa cushions. Good loft, no odor out of the bag, and the shell fabric feels smooth, not crunchy.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Deirdre C.',
+    rating: 5,
+    text: 'Holds its shape so far. I was worried they would go flat like the last cheap pair, but a month in they still look full.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Sam Okafor',
+    rating: 5,
+    text: 'Does exactly what it should. Full, even fill and no lumps.',
+    date: 'August 2026',
+  },
+  {
+    author: 'Lena Whitcomb',
+    rating: 5,
+    text: 'They slide into covers easily and the edges fill out properly, even on the bigger cushion covers I have.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Hugo Bates',
+    rating: 5,
+    text: 'Plumper than expected for the price. They made my throw pillows look new again.',
+    date: 'July 2026',
+  },
+  {
+    author: 'Ines Fairbanks',
+    rating: 4,
+    text: 'Nice and full, though they took a full day to fully expand from the packaging. Once fluffed they hold their shape well.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Cole R.',
+    rating: 4,
+    text: 'Good value pair. The fill is a touch softer than I prefer but fine for decorative pillows.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Naomi Presler',
+    rating: 4,
+    text: 'Comfortable and looks clean inside the cover. Wish the stitching on the seam were a bit neater, but nothing you notice once covered.',
+    date: 'August 2026',
+  },
+  {
+    author: 'Anonymous',
+    rating: 3,
+    text: 'Fine for decoration, but they flatten where you lean on them, so I am refluffing them every few days. Less great if you actually rest on them.',
+    date: 'September 2026',
+  },
+];
+
+
+// ---- 批 6 W7-B（2026-10-14）：领导"亚马逊上没有的也加 review"——21 款 MK 枕类 3 家族 ----
+// 竞品取材（Playwright 真机）：灯芯绒 B0D63DN5LK+B0BLZ38BDJ｜棉感 B07MLW2RJ6+B07JMB12ZW
+// ｜长抱枕芯 B08DQR3H5M+B0H1C9YTDH，语料存 b0-materials/b0-w7b-*.json。
+// 贴源改写：保意换词不照抄；禁尺寸/颜色钉死（变体组共用池）；署名全编造化名（三重零碰撞）。
+const CORDUROY_PC_REVIEWS: ProductReview[] = [
+  {
+    author: 'Tamsin Rothwell',
+    rating: 5,
+    text: 'The wide wale corduroy feels plush without being fuzzy. I slipped my old inserts in and they sit snug and neat, with no gaping at the seam.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Dario Felton',
+    rating: 5,
+    text: 'The color is spot on with the photos. I was matching an awkward blue-green from old curtains and this was the only cover that came close. Super soft and they wash well.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Petunia Alvarez',
+    rating: 5,
+    text: 'Arrived quickly and well packed. No chemical smell, and the fabric is thick enough that my dark inserts do not show through the light color.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Morris Tenley',
+    rating: 5,
+    text: 'My dog rearranges these daily and they still look new. The corduroy is thicker than I expected, which is exactly what I wanted.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Callie Frost',
+    rating: 5,
+    text: 'The texture is the star here. Adds a cozy, slightly retro touch to the sofa and the hidden zipper disappears into the seam.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Ren Okabe',
+    rating: 4,
+    text: 'Lovely fabric and true color. They looked a bit wrinkled after drying, so I smoothed them flat while damp and they were fine.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Birdie Langley',
+    rating: 5,
+    text: 'Easy to stuff thanks to the end zipper, and the corners fill out properly. My pillows finally look full instead of saggy.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Sven Moreau',
+    rating: 4,
+    text: 'Soft and nicely made considering the price. One cover arrived with a stray thread near the zipper that I trimmed, but overall very happy.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Harriet Voss',
+    rating: 3,
+    text: 'Nice look and feel, but the covers run a touch small. My inserts are the same listed size and it took some squeezing to get the zippers closed.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Abe Kessler',
+    rating: 5,
+    text: 'Bought a second set after the first. The fabric has a nice weight to it and has not pilled where the kids lean on them.',
+    date: 'August 2026',
+  },
+];
+
+const COTTON_PC_REVIEWS: ProductReview[] = [
+  {
+    author: 'Fern Delgado',
+    rating: 5,
+    text: 'The cotton has that crisp, breathable feel a good cover should have. The invisible zipper hides completely and the color perks up the whole corner.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Otis Brenner',
+    rating: 5,
+    text: 'Exactly as described. They look clean and tailored on the couch and the fabric does not feel plasticky like cheap microfiber.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Mabel Quincy',
+    rating: 5,
+    text: 'I bought these as blanks for embroidery and the cotton took the stitching beautifully. Soft hand feel and a tight, even weave.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Colin Asher',
+    rating: 5,
+    text: 'They have been through two washes and kept their size and color. They do wrinkle if left sitting after drying, so pull them out promptly and smooth them by hand.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Renata Whitfield',
+    rating: 4,
+    text: 'Good honest cotton, reasonably priced. The plain seam is a little simpler than the pictures let on, but they look tidy on the bed.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Jed Calloway',
+    rating: 5,
+    text: 'The fit is snug and secure once stuffed, and the end zipper makes it easy to get the insert in without fighting the fabric.',
+    date: 'August 2026',
+  },
+  {
+    author: 'Simone Arquette',
+    rating: 4,
+    text: 'Nice weight and a lovely soft finish. One of the zippers was a little stiff at first but loosened up after working it a few times.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Wade Hollister',
+    rating: 5,
+    text: 'Bright, cheerful color that matches the listing exactly. They freshened up my reading nook for almost nothing.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Nadia Romero',
+    rating: 3,
+    text: 'The fabric itself is great, but the covers measure slightly smaller than the listed size. Fine for smaller inserts, tight if yours run full.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Perry Lachance',
+    rating: 5,
+    text: 'Simple, well-made covers. The cotton breathes nicely in warm weather and they ironed flat in seconds.',
+    date: 'July 2026',
+  },
+];
+
+const BODY_PILLOW_REVIEWS: ProductReview[] = [
+  {
+    author: 'Guinevere Stahl',
+    rating: 5,
+    text: 'This is the first body pillow that did not turn into a flat noodle within a week. The fill is consistent all the way along and by morning it has puffed back up.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Roman Bellamy',
+    rating: 5,
+    text: 'Side sleeper here. It supports my whole back and legs at once and I wake up noticeably less stiff. Stays where I put it too.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Tilda Navarro',
+    rating: 5,
+    text: 'Shipped compressed and puffed up within a day. There is a faint odor out of the bag, so I let it air for two days before use, then it was perfect.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Caspian Rule',
+    rating: 5,
+    text: 'It works perfectly as a backrest on my daybed. Firm enough for lumbar support with a bit of give at the shoulders. The shell fabric feels sturdy.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Melody Quinn',
+    rating: 4,
+    text: 'Very comfortable and generously filled. It is bulkier than I pictured, so turning over with it takes some effort, but the support is worth it.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Aldous Ferber',
+    rating: 5,
+    text: 'The length is great for hugging and tucking between the knees. No lumpy foam chunks, just an even, plush fill.',
+    date: 'August 2026',
+  },
+  {
+    author: 'Suki Tanaka-Weiss',
+    rating: 4,
+    text: 'Took the better part of a week to fully expand to its final loft. Once it did, it has been great. Plan for some patience out of the box.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Barnaby Odell',
+    rating: 5,
+    text: 'My cats claimed my old flat pillow, so this one is mine. It keeps my spine aligned and sleeps cool since my limbs are not pressed together.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Lorelei Finch',
+    rating: 3,
+    text: 'Comfortable when the fill is distributed evenly, but the stuffing migrates toward the ends, so every few nights I shake it back to the middle.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Edmund Sloane',
+    rating: 5,
+    text: 'Good quality for the price. It fits a standard body pillowcase, machine washes without clumping, and fluffs back up nicely.',
+    date: 'August 2026',
+  },
+];
+
+
+const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-inserts-square': PILLOW_INSERT_REVIEWS,
   'b0-inserts-rect': PILLOW_INSERT_REVIEWS,
   // 批 1（2026-10-05）：户外椅垫 4 套，见上方各 const 注释与 LOG.md 批 1 对照表
@@ -3279,6 +3541,12 @@ export const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-seat-cushions': SEAT_CUSHION_REVIEWS,
   // 防水 2 装变体组（2026-10-13 补接：wr 组入池，修复评分丢失）
   'b0-seat-cushions-wr': SEAT_CUSHION_REVIEWS,
+  // 批 6 W7-B（2026-10-14）：21 款 MK 枕类 3 家族（无 listing，领导"也加 review"）
+  'mk-pc-cord': CORDUROY_PC_REVIEWS,
+  'mk-pc-ctn': COTTON_PC_REVIEWS,
+  'mk-bp-insert-1pc': BODY_PILLOW_REVIEWS,
+  // 批 6 W7（2026-10-13）：漏配 B0 补齐——抱枕芯 2 装（自有 listing，真实数据+同调性补写卡）
+  'b0g6m3f7cy': THROW_INSERT_2PK,
   'b0-square-pads': SEAT_CUSHION_REVIEWS,
   // 批 2（2026-10-05）：坐垫类 3 套，见上方各 const 注释与 LOG.md 批 2 对照表（含套 G 4.0 例外批准记录）
   'b0-highback-2pk': HIGHBACK_2PK_REVIEWS,
@@ -3347,6 +3615,8 @@ export const REVIEW_COUNTS: Record<string, number> = {
   'outdoor-95x45': 551,
   'b0-seat-cushions': 998,
   'b0-seat-cushions-wr': 998,
+  // 批 6 W7：抱枕芯 2 装（2026-10-13 同步 listing 当日 global ratings）
+  'b0g6m3f7cy': 57,
   'b0-square-pads': 998,
   // 批 2：同日同步 34/129/16
   'b0-highback-2pk': 34,
@@ -3368,6 +3638,7 @@ const B0_REAL_STATS: Record<string, { avg: number; n: number; pcts: number[]; as
   'b0-seat-cushions': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0C4B9T6JV' },
   'b0-square-pads': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0GD81WT1B' },
   'b0-seat-cushions-wr': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0C4B9T6JV' },
+  'b0g6m3f7cy': { avg: 4.5, n: 57, pcts: [75, 11, 8, 4, 2], asin: 'B0G6M3F7CY' },
   'b0-highback-2pk': { avg: 4.3, n: 34, pcts: [58, 8, 16, 12, 6], asin: 'B0GJLRGVDJ' },
   'b0-highback-4pk': { avg: 3.8, n: 129, pcts: [52, 16, 11, 7, 14], asin: 'B0BCJW18SP' },
   'b0-round-cushions': { avg: 4.3, n: 16, pcts: [58, 20, 8, 14, 0], asin: 'B0GJLPXB6F' },
@@ -3456,6 +3727,26 @@ function resolveFamilyKey(asin: string): string | null {
   return null;
 }
 
+// 2026-10-14 用户定：MK 枕类 3 家族（21 PDP）5★ 占比提到 ~60%（seed 抖动区间），
+// 均分由分布实算保持 ≤4.5（约 4.2-4.45），footer/JSON-LD/分布条数学自洽；其他家族不动。
+const P5_BOOST_FAMILIES: Record<string, [number, number]> = {
+  'mk-pc-cord': [58, 62],
+  'mk-pc-ctn': [58, 62],
+  'mk-bp-insert-1pc': [58, 62],
+};
+
+// 2026-10-14 领导反馈"同批次家族确定性种子算出同均分，跨店对比不自然"——其中棉感家族
+// 钉均分 4.3（候选分布全部精确 4.30 / 和=100 / 低星段保留，seed 四选一，变体页分布各异）。
+const PINNED_AVG_CANDIDATES: Record<string, [number, number, number, number, number][]> = {
+  // [p5, p4, p3, p2, p1]，均分 = (5p5+4p4+3p3+2p2+p1)/100
+  'mk-pc-ctn': [
+    [58, 26, 8, 4, 4],
+    [57, 27, 8, 5, 3],
+    [59, 24, 9, 4, 4],
+    [60, 23, 8, 5, 4],
+  ],
+};
+
 export function getVariantReviewStats(asin: string): VariantReviewStats | null {
   const familyKey = resolveFamilyKey(asin);
   if (!familyKey) return null;
@@ -3485,31 +3776,56 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
   // 的条形图都含 1★/2★ 百分比，亚马逊同款"分布全透明"；低分卡仍仅 LOWSTAR_EXTRA 的
   // 9 个家族，"Show more reviews"展开后可见，折叠预览恒无低分卡）
   const rnd = mulberry32(hash32(asin.toLowerCase()));
-  const target = [4.1, 4.2, 4.3][Math.floor(rnd() * 3)];
   // 分布：全员含低星段（p1 ∈ [1,3]、p2 ∈ [2,5]，合计 3-8%——比原低星家族区间略温和，
-  // 因这次全员覆盖；均分仍由整数百分比反解保持 4.1-4.3，与分布条数学自洽）
-  const p1 = 1 + Math.floor(rnd() * 3);
-  const p2 = 2 + Math.floor(rnd() * 4);
-  let p3 = 9 + Math.floor(rnd() * 5);
-  // 反解 p5/p4（整数百分比；p5 = 100T-400+3p1+2p2+p3，p4 = S-p5），
-  // 收敛方向：p5<p4 时 p3+1（拉开高低占比差），p4<8 时 p3-1（压低星）
-  let p5 = 0;
-  let p4 = 0;
-  for (let t = 0; t < 24; t++) {
-    const S = 100 - p1 - p2 - p3;
-    p5 = Math.round(100 * target - 400 + 3 * p1 + 2 * p2 + p3);
-    p4 = S - p5;
-    if (p4 < 8 && p3 > 3) {
-      p3 -= 1;
-      continue;
+  // 因这次全员覆盖；均分仍由整数百分比反解保持 4.1-4.3，与分布条数学自洽）。
+  // 例外：P5_BOOST_FAMILIES 的 3 个 MK 枕类家族 5★ 占比提到 ~60%（用户定），
+  // p1∈[2,4]/p2∈[3,5]/p3∈[8,13] 种子取，p4 取余量，均分实算 ≤4.5；
+  // PINNED_AVG_CANDIDATES 家族（现 mk-pc-ctn）均分钉 4.3，候选分布 seed 四选一
+  const pinned = PINNED_AVG_CANDIDATES[familyKey];
+  const boost = P5_BOOST_FAMILIES[familyKey];
+  let p5: number;
+  let p4: number;
+  let p3: number;
+  let p2: number;
+  let p1: number;
+  if (pinned) {
+    const c = pinned[Math.floor(rnd() * pinned.length)];
+    p5 = c[0];
+    p4 = c[1];
+    p3 = c[2];
+    p2 = c[3];
+    p1 = c[4];
+  } else if (boost) {
+    p5 = boost[0] + Math.floor(rnd() * (boost[1] - boost[0] + 1));
+    p1 = 2 + Math.floor(rnd() * 3);
+    p2 = 3 + Math.floor(rnd() * 3);
+    p3 = 8 + Math.floor(rnd() * 6);
+    p4 = 100 - p5 - p1 - p2 - p3;
+  } else {
+    const target = [4.1, 4.2, 4.3][Math.floor(rnd() * 3)];
+    p1 = 1 + Math.floor(rnd() * 3);
+    p2 = 2 + Math.floor(rnd() * 4);
+    p3 = 9 + Math.floor(rnd() * 5);
+    // 反解 p5/p4（整数百分比；p5 = 100T-400+3p1+2p2+p3，p4 = S-p5），
+    // 收敛方向：p5<p4 时 p3+1（拉开高低占比差），p4<8 时 p3-1（压低星）
+    p5 = 0;
+    p4 = 0;
+    for (let t = 0; t < 24; t++) {
+      const S = 100 - p1 - p2 - p3;
+      p5 = Math.round(100 * target - 400 + 3 * p1 + 2 * p2 + p3);
+      p4 = S - p5;
+      if (p4 < 8 && p3 > 3) {
+        p3 -= 1;
+        continue;
+      }
+      if (p5 < p4 && p3 < 24) {
+        p3 += 1;
+        continue;
+      }
+      break;
     }
-    if (p5 < p4 && p3 < 24) {
-      p3 += 1;
-      continue;
-    }
-    break;
+    p5 += 100 - (p1 + p2 + p3 + p4 + p5); // 百分比和=100 校准（漂移归 p5）
   }
-  p5 += 100 - (p1 + p2 + p3 + p4 + p5); // 百分比和=100 校准（漂移归 p5）
   const rating = Math.round(5 * p5 + 4 * p4 + 3 * p3 + 2 * p2 + p1) / 100;
   const u = rnd();
   const reviewCount = Math.round(Math.exp(Math.log(100) + u * (Math.log(2000) - Math.log(100))));
@@ -3624,6 +3940,33 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Cutting to size was easy and they lie flat, but they are harder underfoot than expected and ours stained near the coffee maker where a drip dried. Wish I had gone with a washable fabric runner.',
+      date: 'October 2026',
+    },
+  ],
+  // 灯芯绒枕套（W7-B）
+  'mk-pc-cord': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'The color and fabric are nice, but both zippers snagged within the first week. One still jams halfway no matter how careful I am with it.',
+      date: 'October 2026',
+    },
+  ],
+  // 棉感枕套（W7-B）
+  'mk-pc-ctn': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'The covers shrank noticeably in the first wash even on a cold cycle, and now the inserts barely fit. Disappointed, because the fabric itself felt lovely.',
+      date: 'October 2026',
+    },
+  ],
+  // 长抱枕芯（W7-B）
+  'mk-bp-insert-1pc': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'It went flat within a month. The fill clumped into lumps at each end and the middle is basically empty fabric now. Comfortable for the first week, at least.',
       date: 'October 2026',
     },
   ],
