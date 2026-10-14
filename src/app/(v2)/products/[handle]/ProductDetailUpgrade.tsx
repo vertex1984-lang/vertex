@@ -22,9 +22,7 @@ import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
-import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
-import V2RatingPopover from '@/components/v2/V2RatingPopover';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import BoughtTogether from '@/components/BoughtTogether';
@@ -70,8 +68,6 @@ const TRUST_MARQUEE_ITEMS = [
 export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeVariants = [], relatedProducts = [] }: ProductDetailUpgradeProps) {
   const { toast } = useToast();
   const product = getProductByHandle(handle);
-  // 评价正文是否存在（有则评分行可点击锚到评价区）
-  const hasReviewsData = getProductReviews(product?.asin ?? '').length > 0;
   const [selectedImage, setSelectedImage] = useState(0);
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -455,29 +451,38 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 text-4xl 会挤成 3-4 行（2026-09-29 用户实测排版异常）；≥xl 才用大标题 */}
             <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
 
-            {/* Rating + 价格（2026-10-12 合并定稿）：评价分布条与 "Based on N customer reviews"
-                在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方，用户定）；
-                购买区只保留一行评分，收进评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布，
-                2026-10-07 领导定，对齐亚马逊同款）；无评价产品零变化 */}
+            {/* Rating + 价格：评价分布条与 "Based on N customer reviews"
+                在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方）；
+                购买区只保留一行评分（2026-10-13 领导定）：点击星或评论数不再弹评分详情，
+                直接平滑转跳到页尾评价区（#pdp2-reviews）；无评价产品零变化 */}
             {(() => {
-              const reviews = hasReviewsData ? getProductReviews(product.asin) : [];
               const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
               const ratingRow = hasRating ? (
-                hasReviewsData && reviews.length > 0 ? (
-                  <V2RatingPopover
-                    rating={product.rating!}
-                    reviewCount={product.reviewCount!}
-                    reviews={reviews}
-                    buckets={getVariantReviewStats(product.asin)?.buckets}
-                  />
-                ) : (
-                  <div className="flex items-center gap-2">
-                    <StarDisplay rating={product.rating!} size={18} />
-                    <span className="text-sm text-charcoal-light">
-                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                    </span>
-                  </div>
-                )
+                <button
+                  type="button"
+                  onClick={() => document.getElementById('pdp2-reviews')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  aria-label="Jump to customer reviews"
+                  className="flex items-center gap-2 group cursor-pointer"
+                >
+                  <StarDisplay rating={product.rating!} size={18} />
+                  <span className="text-sm text-charcoal-light group-hover:text-brand transition">
+                    {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                  </span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="text-charcoal-light group-hover:text-brand group-hover:translate-x-0.5 transition"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </button>
               ) : null;
               const priceBlock = isInStock ? (
                 <div className="flex items-baseline gap-3">

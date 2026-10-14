@@ -7,7 +7,7 @@
  * - 收藏   makimoo-favorites（product id）            固定 0.8
  * - 购物车 makimoo-cart（LocalCartItem.handle）       1.0（最强意图）
  * - 搜索词 makimoo-search-history（本 lib 维护）      类目 2 + top5 命中产品标签 0.5，
- *                                                     按天衰减 30 天 → 0.3
+ *                                                     按天衰减 30 天 → 0.3（90 天硬过期）
  *
  * 标签贡献：类目 3 / 子类 2 / 材质 2 / 颜色 2 / 场景 1（与首页 V2Recommended 同权重思路），
  * 口径统一走搜索引擎 productTagsOf。
@@ -22,6 +22,9 @@ import { getLocalCart } from '@/lib/cart';
 
 const SEARCH_HISTORY_KEY = 'makimoo-search-history';
 const MAX_SEARCH_HISTORY = 20;
+/** 搜索词硬过期：超过 90 天的条目不再参与画像（0.3 衰减下限只在 90 天窗口内生效），
+ *  避免陈年搜索词永久拖偏个性化（2026-10-12 评审项 4a） */
+const HISTORY_MAX_AGE_DAYS = 90;
 
 interface HistoryEntry {
   t: string;
@@ -113,9 +116,11 @@ export function getAffinity(): Record<string, number> {
     if (p) addProductTags(aff, p, 1);
   });
 
-  // 搜索词：类目（粗，2）+ 产品级标签（细，0.5），按天衰减
+  // 搜索词：类目（粗，2）+ 产品级标签（细，0.5），按天衰减；90 天硬过期（评审项 4a）
   const now = Date.now();
-  for (const entry of readHistory()) {
+  const maxAgeMs = HISTORY_MAX_AGE_DAYS * 86400000;
+  const liveHistory = readHistory().filter((x) => now - x.ts <= maxAgeMs);
+  for (const entry of liveHistory) {
     const ageDays = (now - entry.ts) / 86400000;
     const decay = Math.max(0.3, 1 - ageDays / 30);
     for (const hit of matchCategories(entry.t, 2)) {
