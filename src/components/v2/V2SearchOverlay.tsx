@@ -540,10 +540,11 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                               className="group block"
                             >
                               <div className="relative aspect-square rounded-lg overflow-hidden bg-warm-gray">
-                                {/* 排名角标：真实评分前 N 名（分数排名，与展示位无关；回味位无标） */}
+                                {/* 排名角标：榜单内评分前 N 名，统一文案 "Top Rated"（2026-10-12 用户定 B 案——
+                                    避免被读成"全站第 N"；回味位无标） */}
                                 {item.rank != null && (
                                   <span className="absolute top-2 left-2 z-10 rounded-md bg-[#C8860D] px-2 py-1 text-[10px] font-bold leading-none text-white shadow-sm tracking-wide">
-                                    #{item.rank} Rated
+                                    Top Rated
                                   </span>
                                 )}
                                 {img && (

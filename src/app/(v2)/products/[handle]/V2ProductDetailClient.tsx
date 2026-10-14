@@ -12,10 +12,8 @@ import { useToast } from '@/components/Toast';
 import BoughtTogether from '@/components/BoughtTogether';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatWeightDual, formatDimensionsDual } from '@/lib/specs';
-import { getProductReviews, getVariantReviewStats } from '@/data/product-reviews';
 import { getCareCopy } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
-import V2RatingPopover from '@/components/v2/V2RatingPopover';
 import StarDisplay from '@/components/v2/StarDisplay';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
@@ -138,8 +136,6 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
 
   // 规格：重量（Shopify）+ 尺寸/材质（提取表，规格行无数据则不显示）
   const specs = getProductSpecs(product.asin);
-  // 真实评价是否存在（有则头部星级行可锚到 page 级评价区 V2ProductReviews）
-  const reviews = getProductReviews(product.asin);
   const weightStr = formatWeightDual(product.shopifyWeight, product.shopifyWeightUnit);
   const dimsStr = formatDimensionsDual(specs?.dimensionsCm);
   // 手风琴：通用两节 + 按产品分类生成的 Materials & Care 节
@@ -282,27 +278,38 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
                 {product.title}
               </h1>
 
-              {/* Rating + 价格（2026-10-12 合并定稿，与新版 PDP 同口径）：评价分布条与 "Based on N"
-                  在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方，用户定）；
-                  购买区只保留一行评分，收进评级气泡（V2RatingPopover：桌面悬停 / 手机点按展开分布） */}
+              {/* Rating + 价格（与新版 PDP 同口径）：评价分布条与 "Based on N"
+                  在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方）；
+                  购买区只保留一行评分（2026-10-13 领导定）：点击星或评论数不再弹评分详情，
+                  直接平滑转跳到页尾评价区（#pdp2-reviews） */}
               {(() => {
                 const hasRating = product.rating != null && product.reviewCount != null && product.reviewCount > 0;
                 const ratingRow = hasRating ? (
-                  reviews.length ? (
-                    <V2RatingPopover
-                      rating={product.rating!}
-                      reviewCount={product.reviewCount!}
-                      reviews={reviews}
-                      buckets={getVariantReviewStats(product.asin)?.buckets}
-                    />
-                  ) : (
-                    <div className="flex items-center gap-2 w-fit">
-                      <StarDisplay rating={product.rating!} size={18} />
-                      <span className="text-sm text-charcoal-light">
-                        {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
-                      </span>
-                    </div>
-                  )
+                  <button
+                    type="button"
+                    onClick={() => document.getElementById('pdp2-reviews')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                    aria-label="Jump to customer reviews"
+                    className="flex items-center gap-2 group cursor-pointer w-fit"
+                  >
+                    <StarDisplay rating={product.rating!} size={18} />
+                    <span className="text-sm text-charcoal-light group-hover:text-brand transition">
+                      {product.rating!.toFixed(1)} ({product.reviewCount!.toLocaleString()} reviews)
+                    </span>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                      className="text-charcoal-light group-hover:text-brand group-hover:translate-x-0.5 transition"
+                    >
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </button>
                 ) : null;
                 const priceBlock = isInStock ? (
                   <div className="flex items-center gap-3">

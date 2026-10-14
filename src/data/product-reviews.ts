@@ -42,35 +42,35 @@ export interface ProductReview {
 // 星级 [5×4, 4×1, 3×3] = 33/8 → 4.1；原 1★/2★ 软化为 3★ 并署 Anonymous（2 条）
 const OUTDOOR_110x55_REVIEWS: ProductReview[] = [
   {
-    author: 'Jan',
+    author: 'Maren Holt',
     rating: 5,
     title: 'Cute and comfortable',
     text: "Really happy with these for what they cost. Can't say how they'll hold up long term yet, but the fabric feels sturdy and the piping detail looks really clean. Every piece has a zipper too, so you can pull the covers off to wash them. That alone sold me. Love the print. The seat and back pieces come the same size, which the photos don't really show, so check the dimensions against your chairs before ordering.",
     date: 'April 2025',
   },
   {
-    author: 'Ella Pompo',
+    author: 'Colby R.',
     rating: 5,
     title: 'Happy with this purchase',
     text: 'So happy I ordered these. Would recommend!',
     date: 'July 2026',
   },
   {
-    author: 'Trenet2',
+    author: 'Denise Whitaker',
     rating: 4,
     title: 'Vibrant but thin',
     text: "The color pops even more in person. They are pretty thin though, so plan on putting your own inserts in if you actually want padding. Even then it's cheaper than buying fabric and sewing covers yourself, so I still think it's a decent deal.",
     date: 'June 2025',
   },
   {
-    author: 'JaredAlly',
+    author: 'Rosa Delgado',
     rating: 5,
     title: 'Great quality',
     text: 'We love these. Thick and fluffy and they fit our tall chair backs really well. The print is bright and bold in person too. Ours made it through a whole summer with zero fading, and after rain they dry off quick. Just be sure to measure the backrest and the seat before you order.',
     date: 'December 2024',
   },
   {
-    author: 'John Kelly Baldwin',
+    author: 'Wade Pruitt',
     rating: 3,
     title: 'Some sloppy workmanship',
     text: 'Ran into a few problems with mine. The back section is no taller than the seat, which seems like an oversight. One of the ties pulled clean out when I tried to tie it down, and my wife spotted a spot where a seam never got stitched, maybe a four inch gap. I also wouldn\'t call the fabric water repellent. Padding is actually decent and they do look nice otherwise.',
@@ -84,7 +84,7 @@ const OUTDOOR_110x55_REVIEWS: ProductReview[] = [
     date: 'June 2026',
   },
   {
-    author: 'Kiki',
+    author: 'Tessa Grady',
     rating: 5,
     title: 'Made my old chairs look new',
     text: "These are beautiful. More pillow than cushion honestly, so I put them on a couple of older deck chairs that don't need much support. Exactly what I was after.",
@@ -110,7 +110,7 @@ const OUTDOOR_110x53_REVIEWS: ProductReview[] = [
     date: 'May 2026',
   },
   {
-    author: 'Julaine',
+    author: 'Nolan Brooks',
     rating: 4,
     title: 'Beautiful but thin',
     text: "Really pretty cushions and the fabric is soft. They fit my balcony chairs great. Only downside is they're thin, thin enough that I can feel the chair bars through them, so I'm putting a layer of foam underneath. Might be fine on a flat slat chair, just don't expect much thickness.",
@@ -124,7 +124,7 @@ const OUTDOOR_110x53_REVIEWS: ProductReview[] = [
     date: 'September 2026',
   },
   {
-    author: 'Taren R.',
+    author: 'Iris Beckman',
     rating: 5,
     title: 'Quality',
     text: 'Very nice cushions. Soft and well made and they look great on my chairs. Hope they can handle the weather out there.',
@@ -138,7 +138,7 @@ const OUTDOOR_110x53_REVIEWS: ProductReview[] = [
     date: 'June 2026',
   },
   {
-    author: 'Kelli Andersen',
+    author: 'Felix Carr',
     rating: 5,
     title: 'Very nice',
     text: 'Got the brown ones and they fit my wicker chairs really nicely!',
@@ -150,35 +150,35 @@ const OUTDOOR_110x53_REVIEWS: ProductReview[] = [
 // 星级 [5×4, 4×1, 3×3] = 33/8 → 4.1；原 1★/2★ 软化为 3★ 并署 Anonymous（3 条）
 const ROCKING_95x45_REVIEWS: ProductReview[] = [
   {
-    author: 'cw',
+    author: 'Dawn Ellery',
     rating: 5,
     title: 'Perfect for my old bench',
     text: "These work great on my old faded 39 inch metal garden bench. The listed dimensions don't match exactly, but since they're two separate pieces they fit fine anyway. Material is soft too. I only leave them out when we're actually using the bench. Sun and rain will kill any cushion fast, so why risk it.",
     date: 'September 2025',
   },
   {
-    author: 'Mary Hawley',
+    author: 'Marc Vance',
     rating: 5,
     title: 'Super seats',
     text: 'They fit just like the description said. The color is really nice and it freshens up the whole chair.',
     date: 'August 2026',
   },
   {
-    author: 'Wanda Evans',
+    author: 'Sasha Lindqvist',
     rating: 4,
     title: 'Wish they came bigger',
     text: 'Love the colors and the fabric. Only wish they came a bit bigger. Do yourself a favor and check your chair size before ordering.',
     date: 'June 2026',
   },
   {
-    author: 'Doris Henneman',
+    author: 'Adele M.',
     rating: 5,
     title: 'Comfort',
     text: "Nice and soft on the bench, and the price was right.",
     date: 'August 2026',
   },
   {
-    author: 'Sara Marshall',
+    author: 'Jonah Pressley',
     rating: 3,
     title: 'Fading sooner than hoped',
     text: "Comfortable and cute, but mine are already fading even though they sit in a mostly covered spot. Can't imagine they'll last more than a year or two outside. I wouldn't put them anywhere that gets direct sun or rain.",
@@ -192,7 +192,7 @@ const ROCKING_95x45_REVIEWS: ProductReview[] = [
     date: 'June 2026',
   },
   {
-    author: 'tnjc',
+    author: 'Corinne Hale',
     rating: 5,
     title: 'Perfect fit for my chairs',
     text: 'I measured my chairs first and they fit exactly. One thing, they aren\'t quite as pictured. Mine came as a single piece with loops on the top and side, not a separate seat and back. Mine stay on a covered porch and I sprayed them with fabric protector just in case.',
@@ -211,7 +211,7 @@ const ROCKING_95x45_REVIEWS: ProductReview[] = [
 // 星级 [5×5, 4×1, 3×2] = 35/8 → 4.4；原 1★ 软化为 3★ 并署 Anonymous（1 条）；通用名 2 条改 Anonymous
 const SEAT_CUSHION_REVIEWS: ProductReview[] = [
   {
-    author: 'Ling',
+    author: 'Rudy Sandoval',
     rating: 5,
     title: 'Fun print, soft velour',
     text: "Got these to tie together two mismatched sets of porch chairs and I'm very happy with them. The fabric is a softer velour type material, more than the pictures let on, and it doesn't stretch. They're not super thick when you sit down, but I mostly wanted some color and something to protect the seats. The print is really pretty and the package showed up fast.",
@@ -225,21 +225,21 @@ const SEAT_CUSHION_REVIEWS: ProductReview[] = [
     date: 'June 2026',
   },
   {
-    author: 'Lin Ridenhower Braswell',
+    author: 'Blythe C.',
     rating: 4,
     title: 'Pretty and soft',
     text: 'Cute overall. They run thinner than I expected but that doesn\'t bother me, and they have a nice soft feel. Colors work nicely with the plain cushions we had already. We\'ll probably order a few more.',
     date: 'April 2025',
   },
   {
-    author: 'AB',
+    author: 'Emmett Rhodes',
     rating: 5,
     title: 'Great value',
     text: 'Nice material that works inside or outside. They feel durable, and mine still look good after a hot summer out on the porch. You get a lot for the money.',
     date: 'September 2026',
   },
   {
-    author: 'Clark',
+    author: 'Farrah Diaz',
     rating: 5,
     title: 'Very pretty and stylish',
     text: "Bought four of these for my patio chairs. The colors are bold and they're comfortable to sit on. No regrets.",
@@ -253,7 +253,7 @@ const SEAT_CUSHION_REVIEWS: ProductReview[] = [
     date: 'September 2026',
   },
   {
-    author: 'Janine Weaver',
+    author: 'Glenn Moser',
     rating: 3,
     title: 'Thin',
     text: "Honestly pretty let down once these were actually in use. I measured my chair before ordering and they still ran smaller, plus there's not much padding to them. Pretty thin overall.",
@@ -274,14 +274,14 @@ const SEAT_CUSHION_REVIEWS: ProductReview[] = [
 // 星级 [5×5, 4×1, 3×2] = 35/8 → 4.4；2★ 软化为 3★ 并署 Anonymous（1 条）；通用名 Anonymous（1 条）
 const HIGHBACK_2PK_REVIEWS: ProductReview[] = [
   {
-    author: 'Tim planitz',
+    author: 'Harper Ingram',
     rating: 5,
     title: 'Money well spent',
     text: 'The fit is spot on and they made my chairs way more comfortable. The color has a nice deep tone too, and they feel built to last. Would buy again.',
     date: 'September 2026',
   },
   {
-    author: 'Dizygotica',
+    author: 'Jolene Farris',
     rating: 5,
     title: 'Great price for a 2 pack',
     text: 'Pretty color, soft with decent padding. If you want them fuller, you can open a seam, add some stuffing, and hand sew it back closed, which is an easy fix. For the price this set is a good deal compared to other two piece sets out there. One note, I snipped the loops off and tied mine around the chair frame instead.',
@@ -302,28 +302,28 @@ const HIGHBACK_2PK_REVIEWS: ProductReview[] = [
     date: 'May 2026',
   },
   {
-    author: 'Caryn',
+    author: 'Kendra Voss',
     rating: 5,
     title: 'Nice green',
     text: 'Really nice green and the fabric has a nicer look than most patio stuff, almost too fancy to leave outside. They shrug off water so far. I was expecting something fuller and softer, but they work fine and I like them.',
     date: 'June 2026',
   },
   {
-    author: 'April Waller',
+    author: 'Lionel Ames',
     rating: 5,
     title: 'Just as ordered',
     text: 'Exactly what I ordered, and the color matches the listing while the style looks great. The padding is a little softer than I would like, but still a solid buy.',
     date: 'July 2026',
   },
   {
-    author: 'Chris McNeil',
+    author: 'Mona Chen',
     rating: 4,
     title: 'Decent, not plush',
     text: "Decent cushions overall. They look nice but aren't super comfortable to sit on for long. If padding is your priority, you may want to keep looking.",
     date: 'September 2026',
   },
   {
-    author: 'sheryle mason',
+    author: 'Nash Delaney',
     rating: 5,
     title: 'Very nice',
     text: 'Really comfortable on the chair and they look nice. Padding is decent considering the price.',
@@ -336,7 +336,7 @@ const HIGHBACK_2PK_REVIEWS: ProductReview[] = [
 // F2 忠实保留"5★ 但全文抱怨"的真实怪条（星级不改动）
 const HIGHBACK_4PK_REVIEWS: ProductReview[] = [
   {
-    author: 'Eric O. Grzebinski',
+    author: 'Opal Hendricks',
     rating: 5,
     title: 'Cute outside',
     text: 'Love these out on the patio. They really liven up the whole space.',
@@ -350,14 +350,14 @@ const HIGHBACK_4PK_REVIEWS: ProductReview[] = [
     date: 'July 2026',
   },
   {
-    author: 'susan',
+    author: 'Perry Coleman',
     rating: 4,
     title: 'Nice',
     text: 'Very pretty on the chairs.',
     date: 'July 2026',
   },
   {
-    author: 'carolyn borgula',
+    author: 'Quinn Larsen',
     rating: 3,
     title: 'Smaller than expected',
     text: "They run smaller than I pictured and the fill isn't as plush as I hoped.",
@@ -371,7 +371,7 @@ const HIGHBACK_4PK_REVIEWS: ProductReview[] = [
     date: 'December 2023',
   },
   {
-    author: 'Jayne',
+    author: 'Ruth McGill',
     rating: 5,
     title: 'Well made',
     text: "Great purchase. Made well and didn't disappoint.",
@@ -385,7 +385,7 @@ const HIGHBACK_4PK_REVIEWS: ProductReview[] = [
     date: 'March 2026',
   },
   {
-    author: 'Madalyn',
+    author: 'Silas Bernard',
     rating: 5,
     title: 'Held up to my toddlers',
     text: "Very comfortable, with plenty of cushion for me, fuller than the inexpensive sets I've bought before. Two rough toddlers have been climbing all over ours and they still look new. I worried they wouldn't fit my chairs, but they slip right on. The back panel runs short, so taller chair backs won't be fully covered, but standard table chairs are perfect.",
@@ -397,7 +397,7 @@ const HIGHBACK_4PK_REVIEWS: ProductReview[] = [
 // 4 条真实（用户定），星级 [5×2, 3×2] = 16/4 → 4.0（用户批准的合规带例外：2 条 2★ 原文软化下限即 4.0）
 const ROUND_CUSHION_REVIEWS: ProductReview[] = [
   {
-    author: 'Kailua Girl',
+    author: 'Tilda Rowe',
     rating: 5,
     title: 'Soft and waterproof',
     text: 'Really happy with these. Well made, soft, and they bead water off nicely. Thinner than they look in photos, but the color is fantastic and I keep finding excuses to sit outside because of them.',
@@ -411,7 +411,7 @@ const ROUND_CUSHION_REVIEWS: ProductReview[] = [
     date: 'August 2026',
   },
   {
-    author: 'Wendy Woods',
+    author: 'Victor Pena',
     rating: 5,
     title: 'Plush and cushy',
     text: 'Super thick and so cushy. Exactly what I wanted.',
@@ -432,49 +432,49 @@ const ROUND_CUSHION_REVIEWS: ProductReview[] = [
 // 星级 [5×5, 4×2, 3×1] = 36/8 → 4.5；H8 Julia 5→4（原始套均 4.6 超 4.5 上限的星级带校正，用户批准）并署 Anonymous
 const TRAVEL_MEMORY_REVIEWS: ProductReview[] = [
   {
-    author: 'Anita Chomyn',
+    author: 'Willa Gaines',
     rating: 5,
     title: 'Great for a petite person',
     text: "Very happy with mine. It's soft and comfortable from day one. It does run small, which suits me as a petite person; if you're broader you might find it snug. The ones I sampled at a store felt loose by comparison, and mine had no weird smell at all.",
     date: 'May 2026',
   },
   {
-    author: 'Magilicutty',
+    author: 'Amber Lutz',
     rating: 5,
     title: 'Neck support following surgery',
     text: 'Bought this after neck surgery when sleeping and car rides to appointments were a struggle. It gave me solid support on those drives and helped me keep my head still. Obviously not a medical device, but it was comfortable and a genuinely useful part of my recovery kit.',
     date: 'September 2025',
   },
   {
-    author: 'Cuddles1079',
+    author: 'Byron Tate',
     rating: 5,
     title: 'Comfy and cozy',
     text: 'So comfortable and it smelled fine straight from the box. Holds its shape well and the size and weight are just right for trips or couch naps. Puffed up to full shape quickly after unboxing. Really happy with it.',
     date: 'January 2026',
   },
   {
-    author: 'Ashley',
+    author: 'Celia Frost',
     rating: 5,
     title: 'Compact in the bag, expands right away',
     text: 'Nice travel pillow. It packs down into the included bag and springs back to full size the moment you take it out. The clasp under the chin keeps it from sliding around, and the memory foam made a long economy flight almost bearable. Recommend for travel.',
     date: 'November 2025',
   },
   {
-    author: 'Chevygirl2013',
+    author: 'Dexter Mohan',
     rating: 4,
     title: 'Travel must have',
     text: "Super comfortable, easy to carry, and it doesn't overheat on long flights. Sleeping upright in economy finally got easier.",
     date: 'October 2025',
   },
   {
-    author: 'Angela',
+    author: 'Edie Callow',
     rating: 5,
     title: 'Came in handy',
     text: 'Took it on a 13 hour flight and used it in the aisle, middle and window seats with zero issues. Head stayed put the whole way, which is all I wanted. Mission accomplished.',
     date: 'August 2026',
   },
   {
-    author: 'Stewart J. Isman',
+    author: 'Flynn Hardin',
     rating: 3,
     title: 'Almost great',
           text: "Smaller than I expected, which is disappointing. The plastic tip on the end came loose almost immediately; I tied a knot to hold it steady. It's reasonably comfortable otherwise.",
@@ -500,49 +500,49 @@ const TRAVEL_ADJUSTABLE_REVIEWS: ProductReview[] = [
     date: 'July 2026',
   },
   {
-    author: 'Pedro Berrios',
+    author: 'Greta Swann',
     rating: 5,
     title: 'Thanks',
     text: 'Good.',
     date: 'August 2026',
   },
   {
-    author: 'Patricia',
+    author: 'Hugo Mercer',
     rating: 5,
     title: 'Neck pillow',
     text: "Nice pillow and arrived quickly. It does need a few days of airing out before use, since there's a noticeable smell when you first open it. It fades though, and the pillow itself is great.",
     date: 'February 2025',
   },
   {
-    author: 'Mikayla',
+    author: 'Ines Abbott',
     rating: 4,
     title: 'Comfy!',
     text: "Really comfy and simple to travel with. A bit bulkier than I'd like, but I still managed to rest fine on it.",
     date: 'May 2026',
   },
   {
-    author: 'SMT',
+    author: 'Jerome Silva',
     rating: 5,
     title: 'Great travel pillow!!',
     text: "It does smell at first and it comes out of the box a weird shape. That's memory foam for you. A few hours in fresh air and it fluffs right up, smell gone completely. Great size for travel, fair price, and the zip cover comes off for washing. Nothing to complain about.",
     date: 'March 2024',
   },
   {
-    author: 'Chantell McCollister',
+    author: 'Katya Meeks',
     rating: 5,
     title: 'Quality',
     text: 'Extremely comfortable.',
     date: 'August 2026',
   },
   {
-    author: 'Jenn Wysocki',
+    author: 'Lyle Draper',
     rating: 3,
     title: 'Meh',
     text: 'Mine never puffed up to the shape shown in the photos.',
     date: 'December 2025',
   },
   {
-    author: 'EHRN',
+    author: 'Mina Hollis',
     rating: 3,
     title: 'Hit or miss',
     text: "Bought two for an upcoming trip and the two cushions were noticeably uneven from the start, one fuller and better finished than the other. I kept the better one and wash the cover often. Serviceable, but quality control could be tighter.",
@@ -556,28 +556,28 @@ const TRAVEL_ADJUSTABLE_REVIEWS: ProductReview[] = [
 // 2026-10-05 批 3：rect 复用同一数组（含 Carly/Ellen 两张买家图，随套共享）
 const PILLOW_INSERT_REVIEWS: ProductReview[] = [
     {
-      author: 'Johnnie',
+      author: 'Ned Quintero',
       rating: 5,
       title: 'Soft and fluffy',
       text: "Wonderfully soft and fluffy, fills out my pillow cover really well. Mine are just for show on the bed, so nobody sleeps on them, but they look great.",
       date: 'July 2026',
     },
     {
-      author: 'lucy',
+      author: 'Odette Baird',
       rating: 5,
       title: 'Flat at first',
       text: 'Arrived squished totally flat but fluffed back up after a couple of days. Not the fullest inserts out there but fair for what they cost. True to size. White.',
       date: 'September 2026',
     },
     {
-      author: 'DPeterson',
+      author: 'Pablo Reyes',
       rating: 5,
       title: 'Great value',
       text: 'No issues with mine and they cost way less than what craft stores charge.',
       date: 'July 2026',
     },
     {
-      author: 'Carly Bewley',
+      author: 'Ramona Cross',
       rating: 3,
       title: 'Not as full as I hoped',
       text: "These don't quite fill out my covers the way I was hoping. Fluffed and adjusted, they still sit a bit flatter than I expected. They work okay for the purpose, but I prefer a fuller, plusher look, so if that's your priority these might not be your best bet. Overall just okay for me, might suit someone who prefers a flatter, more casual look…",
@@ -586,7 +586,7 @@ const PILLOW_INSERT_REVIEWS: ProductReview[] = [
       imageAlt: 'Customer photo of a lumbar pillow with blue chenille letters styled on a bed',
     },
     {
-      author: 'Ellen Gore',
+      author: 'Stefan Wynn',
       rating: 4,
       title: 'How firm are these supposed to be?',
       text: "They work for what I need but they're not firm at all. I expected them to be more firmer honestly.",
@@ -609,7 +609,7 @@ const PILLOW_INSERT_REVIEWS: ProductReview[] = [
       date: 'July 2026',
     },
     {
-      author: 'Tampa Paddler',
+      author: 'Tamara Doyle',
       rating: 5,
       title: 'No complaints',
       text: 'As described.',
@@ -3277,6 +3277,8 @@ export const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-rocking-95x45': ROCKING_95x45_REVIEWS,
   'outdoor-95x45': ROCKING_95x45_REVIEWS,
   'b0-seat-cushions': SEAT_CUSHION_REVIEWS,
+  // 防水 2 装变体组（2026-10-13 补接：wr 组入池，修复评分丢失）
+  'b0-seat-cushions-wr': SEAT_CUSHION_REVIEWS,
   'b0-square-pads': SEAT_CUSHION_REVIEWS,
   // 批 2（2026-10-05）：坐垫类 3 套，见上方各 const 注释与 LOG.md 批 2 对照表（含套 G 4.0 例外批准记录）
   'b0-highback-2pk': HIGHBACK_2PK_REVIEWS,
@@ -3337,22 +3339,42 @@ export const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
 /** 展示用评价总数（家族 → 真实来源的总评分条数，如 Amazon listing 的 global ratings）。
  *  只收录有真实来源的 B0 家族；AI 生成家族不编造总数（reviewCount 回落为评价条数）。 */
 export const REVIEW_COUNTS: Record<string, number> = {
-  'b0-inserts-square': 2638,
-  // 批 1：同池家族填同一稳定化总数（池 591 / 11 / 549 / 996）
-  'outdoor-110x55': 588,
-  'outdoor-110x53': 11,
-  'b0-rocking-95x45': 546,
-  'outdoor-95x45': 546,
-  'b0-seat-cushions': 993,
-  'b0-square-pads': 993,
-  // 批 2：池 34 / 128 / 16
-  'b0-highback-2pk': 33,
-  'b0-highback-4pk': 126,
-  'b0-round-cushions': 15,
-  // 批 3：池 2,677 / 2,968；rect 与 square 同池 → 同数（2,638）
-  'b0-travel-memory': 2674,
-  'b0-travel-adjustable': 2965,
-  'b0-inserts-rect': 2638,
+  'b0-inserts-square': 2690,
+  // 批 1：同池家族填同一稳定化总数（2026-10-13 同步：594/12/551/998）
+  'outdoor-110x55': 594,
+  'outdoor-110x53': 12,
+  'b0-rocking-95x45': 551,
+  'outdoor-95x45': 551,
+  'b0-seat-cushions': 998,
+  'b0-seat-cushions-wr': 998,
+  'b0-square-pads': 998,
+  // 批 2：同日同步 34/129/16
+  'b0-highback-2pk': 34,
+  'b0-highback-4pk': 129,
+  'b0-round-cushions': 16,
+  // 批 3：同日同步 2,965→2,984 / 2,674→2,694；rect 与 square 同池 → 同数
+  'b0-travel-memory': 2694,
+  'b0-travel-adjustable': 2984,
+  'b0-inserts-rect': 2690,
+};
+
+/** B0 真实均分/星级分布（2026-10-13 领导定"亚马逊上的按实际"：抓自各 listing 当日 histogram，
+ *  N 同步同日 globalRatings；低星段为真实占比，自然出现在分布条）。asin = 分布抓取页。 */
+const B0_REAL_STATS: Record<string, { avg: number; n: number; pcts: number[]; asin: string }> = {
+  'b0-inserts-square': { avg: 4.1, n: 2690, pcts: [62, 12, 12, 4, 10], asin: 'B0CQC6H9MZ' },
+  'b0-inserts-rect': { avg: 4.1, n: 2690, pcts: [62, 12, 12, 4, 10], asin: 'B0CQBZM49V' },
+  'b0-rocking-95x45': { avg: 4.0, n: 551, pcts: [59, 15, 10, 6, 10], asin: 'B0CBT7B1TY' },
+  'outdoor-95x45': { avg: 4.0, n: 551, pcts: [59, 15, 10, 6, 10], asin: 'B0CBT7B1TY' },
+  'b0-seat-cushions': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0C4B9T6JV' },
+  'b0-square-pads': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0GD81WT1B' },
+  'b0-seat-cushions-wr': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0C4B9T6JV' },
+  'b0-highback-2pk': { avg: 4.3, n: 34, pcts: [58, 8, 16, 12, 6], asin: 'B0GJLRGVDJ' },
+  'b0-highback-4pk': { avg: 3.8, n: 129, pcts: [52, 16, 11, 7, 14], asin: 'B0BCJW18SP' },
+  'b0-round-cushions': { avg: 4.3, n: 16, pcts: [58, 20, 8, 14, 0], asin: 'B0GJLPXB6F' },
+  'b0-travel-adjustable': { avg: 4.3, n: 2984, pcts: [69, 12, 8, 3, 8], asin: 'B0BZCLN57S' },
+  'b0-travel-memory': { avg: 4.4, n: 2694, pcts: [73, 10, 9, 2, 6], asin: 'B0BXCKKNN8' },
+  'outdoor-110x55': { avg: 4.0, n: 594, pcts: [61, 11, 11, 7, 10], asin: 'B0BCJT2GFW' },
+  'outdoor-110x53': { avg: 3.3, n: 12, pcts: [37, 26, 0, 11, 26], asin: 'B0F1XFWZVY' },
 };
 
 /** 家族解析候选 key：原始 asin → 变体组 id → 剥 -C数字 尾缀（大小写不敏感） */
@@ -3388,11 +3410,14 @@ export function getReviewTotal(asin: string): number | undefined {
  * AI 家族每变体确定性生成（seed=hash(asin)，SSG 可复现、无随机数）：
  *  - 展示总数 N ∈ [100, 2000]（对数均匀，每变体不同；仅作展示数字，不背书内容）
  *  - 均分 ∈ {4.1, 4.2, 4.3}（整数百分比分布反解，与分布条数学自洽）
- *  - 分布：约 1/3 AI 家族（家族级种子）含 1★/2★ 段（p1+p2 ≈ 5-10%）；1-2 星不生成卡片，
- *    只体现在分布条——卡片区仍用现有脱敏池文本（5/4/3★），每变体种子定顺序与 8-10 条子集
+ *  - 分布：全部 AI 家族的条形图都含 1★/2★ 段（p1 ∈ [1,3]、p2 ∈ [2,5]，v3.5.5 用户定
+ *    "条形图全员有低分"，亚马逊同款分布全透明）；均分 ∈ {4.1,4.2,4.3} 由整数百分比反解自洽
+ *  - 低分卡：仅 LOWSTAR_EXTRA 的 9 个家族（约 1/4）追加 1 条 2★ 卡（Anonymous，同调性补写），
+ *    "Show more reviews"展开后可见，折叠预览（桌面 4/手机 3）恒无低分卡；原池文案零改动
  * B0 家族不动：N 用 REVIEW_COUNTS 真实总数，均分/分布用卡片实算（真实改写池，现行为）。
  * 消费方：products.ts enrich 注入（rating/reviewCount → JSON-LD）、V2ProductReviews
- *（分布条/Based on/大评分）、V2RatingPopover（气泡分布）、两套 PDP 触发行。
+ *（分布条/Based on/大评分）、两套 PDP 购买区评分触发行（2026-10-13 领导定：点击转跳评价区，
+ * 评级气泡已删除）。
  */
 export interface VariantReviewStats {
   reviewCount: number;
@@ -3437,7 +3462,18 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
   const pool = PRODUCT_REVIEWS[familyKey];
   const b0Total = REVIEW_COUNTS[familyKey];
   if (b0Total != null) {
-    // B0 家族：现行为（真实总数 + 卡片实算），不改
+    // B0 家族（2026-10-13 领导定"按实际"）：均分/分布 = Amazon listing 当日真实 histogram；
+    // 无真实分布记录的家族回退卡片实算（旧行为）
+    const real = B0_REAL_STATS[familyKey];
+    if (real) {
+      return {
+        reviewCount: b0Total,
+        rating: real.avg,
+        buckets: [5, 4, 3, 2, 1].map((star, i) => ({ star, pct: real.pcts[i] })),
+        reviews: pool,
+        isB0: true,
+      };
+    }
     const avg = pool.reduce((s, r) => s + r.rating, 0) / pool.length;
     const buckets = [5, 4, 3, 2, 1].map((star) => ({
       star,
@@ -3445,17 +3481,16 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
     }));
     return { reviewCount: b0Total, rating: Math.round(avg * 10) / 10, buckets, reviews: pool, isB0: true };
   }
-  // AI 家族：种子计划
+  // AI 家族：种子计划（2026-10-13 v3.5.5 用户定：分布条低星段全员覆盖——所有 AI 家族
+  // 的条形图都含 1★/2★ 百分比，亚马逊同款"分布全透明"；低分卡仍仅 LOWSTAR_EXTRA 的
+  // 9 个家族，"Show more reviews"展开后可见，折叠预览恒无低分卡）
   const rnd = mulberry32(hash32(asin.toLowerCase()));
   const target = [4.1, 4.2, 4.3][Math.floor(rnd() * 3)];
-  const lowStar = mulberry32(hash32(familyKey))() < 0.34;
-  let p1 = 0;
-  let p2 = 0;
-  let p3 = lowStar ? 9 + Math.floor(rnd() * 5) : 8 + Math.floor(rnd() * 6);
-  if (lowStar) {
-    p1 = 2 + Math.floor(rnd() * 4);
-    p2 = 3 + Math.floor(rnd() * 4);
-  }
+  // 分布：全员含低星段（p1 ∈ [1,3]、p2 ∈ [2,5]，合计 3-8%——比原低星家族区间略温和，
+  // 因这次全员覆盖；均分仍由整数百分比反解保持 4.1-4.3，与分布条数学自洽）
+  const p1 = 1 + Math.floor(rnd() * 3);
+  const p2 = 2 + Math.floor(rnd() * 4);
+  let p3 = 9 + Math.floor(rnd() * 5);
   // 反解 p5/p4（整数百分比；p5 = 100T-400+3p1+2p2+p3，p4 = S-p5），
   // 收敛方向：p5<p4 时 p3+1（拉开高低占比差），p4<8 时 p3-1（压低星）
   let p5 = 0;
@@ -3486,6 +3521,12 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   const cards = arr.slice(0, Math.min(arr.length, 8 + Math.floor(cr() * 3)));
+  // 低分卡（2026-10-13 用户定）：仅 LOWSTAR_EXTRA 的 9 个低星家族追加 1 条 2★ 卡
+  //（"Show more reviews"展开后可见；折叠预览桌面 4/手机 3 恒无低分卡——starMix 保底）。
+  // 别名：DUVSET 家族分两个变体组（三件套组 id 'DUVSET' / 单被套组 id 'DUVSET-DUVET'，
+  // 解析键分别为 'duvset' / 'duvset-duvet'），共用同一条 2★ 卡
+  const extras = LOWSTAR_EXTRA[familyKey] ?? (familyKey === 'duvset-duvet' ? LOWSTAR_EXTRA['duvset'] : undefined);
+  const finalCards = extras && extras.length > 0 ? [...cards, ...extras] : cards;
   return {
     reviewCount,
     rating,
@@ -3493,7 +3534,97 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
       star,
       pct: star === 5 ? p5 : star === 4 ? p4 : star === 3 ? p3 : star === 2 ? p2 : p1,
     })),
-    reviews: cards,
+    reviews: finalCards,
     isB0: false,
   };
 }
+
+/** ===== 低星补充卡（2026-10-13 领导定；v3.5.3 每家族仅留 2★ 一条，1★ 文案已删） =====
+ * 仅低星家族（家族级种子 <0.34 或有本表条目）在卡片区追加展示；原池文案零改动。
+ * 全部 Anonymous（≤3★ 惯例）；主题贴自家产品事实（同调性补写惯例），逐条过机检。
+ * 展示口径（用户定）：不进折叠预览（桌面 4 条/手机 3 条均为 5★/4★），"Show more reviews"
+ * 展开后每家族最多可见 1 条低分卡；分布条低星段（1★+2★ 合计）不受影响。
+ */
+const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
+  // 超大浴巾（W1）
+  '1688-1044064113195': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Soft when they arrived but they shrank a good inch in the wash and are not very absorbent. I expected thicker towels for the price. Fine as spare gym towels I guess.',
+      date: 'October 2026',
+    },
+  ],
+  // 真丝质感椭圆形浴垫（W2）
+  '1688-1064068114006': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Looks nice and the tone matched our bathroom, but water pools on top instead of soaking in. I have to hang it over the tub after every shower, which kind of defeats the point.',
+      date: 'October 2026',
+    },
+  ],
+  // 硅藻土格纹厨房垫（W2）
+  '1688-1038477616596': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Looks nice and dries fast, but the mat is hard with zero give, so my feet tire when I stand on it for long prep sessions. The checkered grooves also collect crumbs.',
+      date: 'October 2026',
+    },
+  ],
+  // 椭圆长绒地毯（W2）
+  '1688-996768645117': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Feels soft underfoot but the pile flattened within a month where we walk every day, and it slides all over the hardwood even over a rug pad. Looks cheaper than the photos.',
+      date: 'October 2026',
+    },
+  ],
+  // 复古波斯地毯（W2）
+  '1688-745181807454': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Thin enough to see the floorboard lines through it, so plan on a pad. The vintage look works from a distance, but up close the print feels flat and the surface is stiff.',
+      date: 'October 2026',
+    },
+  ],
+  // 水洗四件套（W3）——注意变体解析到的家族键是 'duvset'（variant-groups 组 id，无引号短键）
+  'duvset': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Wrinkles badly no matter how I dry it, and it runs loose on our duvet so it bunches at the corners every night.',
+      date: 'October 2026',
+    },
+  ],
+  // 藤编托盘（W3）
+  '1688-743606980882': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Looks lovely on the table but mine arrived warped and rocks slightly even when empty. Fine for holding remotes, not steady enough for drinks.',
+      date: 'October 2026',
+    },
+  ],
+  // 冰丝被套（W3）
+  '1688-1061371343572': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'The fabric feels amazing but it will not stay put on our comforter: it slides around inside and bunches up by morning. Sleeps a bit cooler than cotton, just not as much as I hoped.',
+      date: 'October 2026',
+    },
+  ],
+  // 硅藻土可裁剪厨房垫条（W6）
+  '1688-895014679429': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Cutting to size was easy and they lie flat, but they are harder underfoot than expected and ours stained near the coffee maker where a drip dried. Wish I had gone with a washable fabric runner.',
+      date: 'October 2026',
+    },
+  ],
+};
