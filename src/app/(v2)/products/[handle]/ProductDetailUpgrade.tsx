@@ -737,10 +737,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
       {/* 种草双图区（2026-10-12 用户定）：信任条下方、You May Also Like 上方，
           仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭）；
-          cushions 中 solids 系列出专属场景图（门廊+海滨，用户定） */}
+          cushions 中 solids 系列出专属场景图（门廊+海滨，用户定）；
+          pillows 中 boucle 系列出专属混色场景图（2026-10-13 用户定，AI 生成 2:3 竖图） */}
       {(() => {
         const cat = product.productType.toLowerCase();
-        if (cat === 'pillows') return <V2PdpLifestyle cat="pillows" />;
+        if (cat === 'pillows') {
+          // 颈枕（Neck Pillows 子类目，源数据 Travel 归一化为 Pillows/subcategory=neck-pillow）出专属场景图（2026-10-14 用户供图）
+          if (product.subcategory === 'neck-pillow') return <V2PdpLifestyle cat="neck" />;
+          return <V2PdpLifestyle cat={handle.includes('boucle') ? 'boucle' : 'pillows'} />;
+        }
         if (cat === 'cushions') {
           // solids / prints（Floral & Prints，2026-10-12 用户供图）各有专属场景图
           const sub = product.subcategory;
