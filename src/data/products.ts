@@ -8363,6 +8363,17 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
   'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
   'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+  // 2026-10-16 用户定：旧 Amazon 浴巾/手巾全站移除——毛巾类目只留 MK 长绒棉 mk-towel-lsc 族 + 沙滩巾
+  'premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034',
+  '2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4',
+  'premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4',
+  'plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6',
+  'premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7',
+  '2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195',
+  '2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2',
+  '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3',
+  '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2',
+  '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172',
 ]);
 
 export function isHiddenProduct(p: { handle: string }): boolean {
