@@ -60,7 +60,7 @@ export default function BeddingSetCard({
   return (
     <a
       href={v2url(`/products/${family.rep.handle}/`)}
-      className="group block bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+      className="group block overflow-hidden"
     >
       <div className={`relative aspect-square overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img

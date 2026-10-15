@@ -70,11 +70,11 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
     <>
       <a
         href={detailHref}
-        className="group h-full flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+        className="group h-full flex flex-col"
       >
         <div className={variant === 'featured'
           ? 'relative h-40 sm:h-52 lg:h-64 overflow-hidden bg-gradient-to-br from-[#F8F5F0] to-[#E8E2DA]'
-          : 'relative aspect-square overflow-hidden bg-white border-b border-[#E8E2DA]'
+          : 'relative aspect-square overflow-hidden bg-white'
         }>
           {image && (
             <img
