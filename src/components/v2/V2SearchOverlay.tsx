@@ -539,7 +539,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                               onClick={() => trackEvent('recommended_click', { position: i + 1 })}
                               className="group block"
                             >
-                              <div className="relative aspect-square rounded-lg overflow-hidden bg-warm-gray">
+                              <div className="relative aspect-square overflow-hidden bg-warm-gray">
                                 {/* 排名角标：榜单内评分前 N 名，统一文案 "Top Rated"（2026-10-12 用户定 B 案——
                                     避免被读成"全站第 N"；回味位无标） */}
                                 {item.rank != null && (

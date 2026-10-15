@@ -59,7 +59,7 @@ export default function V2NewArrivalsSpotlight({ products }: V2NewArrivalsSpotli
           <Reveal className="lg:h-full">
             <a
               href={v2url(`/products/${spotlight.handle}/`)}
-              className="group relative block w-full h-full aspect-[4/5] lg:aspect-auto overflow-hidden rounded-lg bg-warm-gray"
+              className="group relative block w-full h-full aspect-[4/5] lg:aspect-auto overflow-hidden bg-warm-gray"
             >
               {image && (
                 <img
@@ -106,9 +106,9 @@ export default function V2NewArrivalsSpotlight({ products }: V2NewArrivalsSpotli
                 <Reveal key={product.id} delay={(i + 1) * 100} className="lg:flex-1">
                   <a
                     href={v2url(`/products/${product.handle}/`)}
-                    className="group flex items-center gap-4 lg:gap-6 h-full bg-white rounded-lg border border-warm-gray/60 p-3 lg:p-4 transition hover:border-brand/40 hover:shadow-md"
+                    className="group flex items-center gap-4 lg:gap-6 h-full bg-white border border-warm-gray/60 p-3 lg:p-4 transition hover:border-brand/40 hover:shadow-md"
                   >
-                    <div className="w-24 lg:w-32 aspect-square flex-shrink-0 overflow-hidden rounded-md bg-warm-gray">
+                    <div className="w-24 lg:w-32 aspect-square flex-shrink-0 overflow-hidden bg-warm-gray">
                       {thumb && (
                         <img
                           src={resolveUrl(thumb.url)}

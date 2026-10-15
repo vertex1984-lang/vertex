@@ -24,15 +24,12 @@ export default function V2FabricShop({
   families,
   flat = false,
   noBadges = false,
-  sharpCorners = false,
 }: {
   families: SetFamily[];
   /** flat = 类型二级 PLP 用：全页同一类型，不分区不出小标题，单一网格平铺 */
   flat?: boolean;
   /** 面料页用：整页同一布料，卡片不叠任何标签（2026-09 用户定） */
   noBadges?: boolean;
-  /** 直角卡片（2026-10-15 用户定，duvet-covers 页）：透传给 BeddingSetCard */
-  sharpCorners?: boolean;
 }) {
   const cardBadges = (f: SetFamily): string[] => (noBadges ? [] : fabricBadge(f));
   // 固定 Featured 序：按权重降序
@@ -71,7 +68,7 @@ export default function V2FabricShop({
       {flat ? (
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
           {sorted.map((f) => (
-            <BeddingSetCard key={f.key} family={f} badges={cardBadges(f)} compactText sharpCorners={sharpCorners} />
+            <BeddingSetCard key={f.key} family={f} badges={cardBadges(f)} compactText />
           ))}
         </div>
       ) : (
@@ -92,7 +89,6 @@ export default function V2FabricShop({
                   family={f}
                   badges={cardBadges(f)}
                   compactText
-                  sharpCorners={sharpCorners}
                 />
               ))}
             </div>

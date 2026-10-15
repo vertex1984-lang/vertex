@@ -71,7 +71,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
 
   return (
     <a href={v2url(`/products/${product.handle}/`)} className="group block h-full">
-      <div className="relative aspect-square overflow-hidden rounded-lg bg-warm-gray">
+      <div className="relative aspect-square overflow-hidden bg-warm-gray">
         {/* 双图叠放：hover 时第二张淡入；整体保留缓慢放大 */}
         <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
           {image && (

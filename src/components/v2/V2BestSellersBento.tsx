@@ -27,7 +27,7 @@ function OverlayCard({
   return (
     <a
       href={v2url(`/products/${product.handle}/`)}
-      className={`group relative block w-full overflow-hidden rounded-lg bg-warm-gray ${className}`}
+      className={`group relative block w-full overflow-hidden bg-warm-gray ${className}`}
     >
       {image && (
         <img

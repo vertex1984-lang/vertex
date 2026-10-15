@@ -512,7 +512,7 @@ export default function V2ProductsPage() {
         /* JS 加载前的占位：骨架屏与卡片同比例，避免布局跳动 */
         <div className={gridCls}>
           {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm animate-pulse">
+            <div key={i} className="bg-white overflow-hidden shadow-sm animate-pulse">
               <div className="aspect-square bg-[#E8E2DA]" />
               <div className="p-3 sm:p-4">
                 <div className="h-3 bg-[#E8E2DA] rounded w-16 mb-2" />
