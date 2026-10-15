@@ -20,6 +20,10 @@ interface ProductCardProps {
 /** Bedding 卡片的展示标题：去掉材质词（Microfiber / 100% Linen 等，材质已有 Collections/Material 筛选承载）。
  *  只去开头的材质词和 "100% X" 短语，印花/图案名（如 Slate Bamboo、Cotton 字样在非开头）不受影响 */
 function displayTitle(p: MakimooProduct): string {
+  // Towels（mk-towel-lsc 短标题带 "30\" x 56\" - Cream" 尾段）：卡标题不写尺寸和颜色（2026-10-16 用户定）
+  if (p.productType.toLowerCase() === 'towels') {
+    return p.title.replace(/,\s*\d+(?:\.\d+)?"\s*x\s*\d+(?:\.\d+)?"\s*-\s*.+$/, '');
+  }
   if (p.productType.toLowerCase() !== 'bedding') return p.title;
   return p.title
     .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')

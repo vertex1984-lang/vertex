@@ -7,6 +7,7 @@ import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
 import V2PillowsShop from '@/components/v2/V2PillowsShop';
 import V2CushionsShop from '@/components/v2/V2CushionsShop';
+import V2TowelsShop from '@/components/v2/V2TowelsShop';
 import { isPillowProduct } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS } from '@/data/subcategories';
@@ -215,6 +216,18 @@ export default function V2ProductsPage() {
     []
   );
 
+  // towels 选购视图（2026-10-15 用户定，按 pillows/cushions 家族卡结构重建）：
+  // 粘性 Type 筛选 + 按类型 3 分区（bath-towels / beach / hand-face）+ 家族卡网格。
+  // 传未去重原始列表，组件内部按颜色成族
+  const towelsMode = activeCategory.toLowerCase() === 'towels';
+  const towelShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'towels'
+      ),
+    []
+  );
+
   // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
   // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
   const collectionOptions = useMemo(() => {
@@ -401,7 +414,7 @@ export default function V2ProductsPage() {
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框。
@@ -432,7 +445,7 @@ export default function V2ProductsPage() {
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
             bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
-        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (
+        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -544,6 +557,11 @@ export default function V2ProductsPage() {
            （prints / solids / corduroy，sub= 参数深链保留兼容旧链接；
            导航入口已改为 /cushions/[slug]/ 二级页，与 pillows/bedding 同构） */
         <V2CushionsShop key={activeSub} products={cushionShopProducts} initialStyle={activeSub} />
+      ) : towelsMode && !isSearching ? (
+        /* towels 选购视图（2026-10-15 用户定，按 pillows/cushions 结构重建）：
+           粘性 Type 筛选 + 按类型分区网格（bath-towels / beach / hand-face），
+           sub= 参数深链保留兼容；传未去重原始列表，组件内部按颜色成族 */
+        <V2TowelsShop key={activeSub} products={towelShopProducts} initialType={activeSub} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */

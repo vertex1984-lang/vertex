@@ -37,6 +37,11 @@ function shortTitle(title: string, productType?: string): string {
       .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
       .replace(/\b100%\s+(microfiber|linen|cotton|polyester|bamboo)\s*/gi, '');
   }
+  // Towels（mk-towel-lsc 短标题 "Long-Staple Cotton Towel, 30\" x 56\" - Cream"）：
+  // 卡标题不写尺寸和颜色（2026-10-16 用户定：尺寸/颜色只在 PDP 内展示）
+  if (productType?.toLowerCase() === 'towels') {
+    t = t.replace(/,\s*\d+(?:\.\d+)?"\s*x\s*\d+(?:\.\d+)?"\s*-\s*.+$/, '');
+  }
   return t.replace(/\s+/g, ' ').trim();
 }
 

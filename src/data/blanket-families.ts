@@ -24,8 +24,13 @@ export interface BlanketFamily {
   currency: string;
 }
 
-/** 从 enriched 产品列表构建毯子家族（调用方负责 enrich + 筛 productType === 'Blankets'） */
-export function buildBlanketFamilies(products: MakimooProduct[]): BlanketFamily[] {
+/** 从 enriched 产品列表构建毯子家族（调用方负责 enrich + 筛 productType === 'Blankets'）。
+ *  extraKey（可选）：族 key 追加段——towels 选购页按二级分类拆族（同色跨 Bath/Hand&Face 的
+ *  变体组拆成两张卡，各落各的分区）；blankets 不传，行为不变 */
+export function buildBlanketFamilies(
+  products: MakimooProduct[],
+  extraKey?: (p: MakimooProduct) => string
+): BlanketFamily[] {
   const byAsin = new Map(products.map((p) => [p.asin.toLowerCase(), p]));
   const groups = new Map<string, { color: string; members: { p: MakimooProduct; size: string }[] }>();
   const seen = new Set<string>();
@@ -42,7 +47,7 @@ export function buildBlanketFamilies(products: MakimooProduct[]): BlanketFamily[
       const mp = byAsin.get(m.asin.toLowerCase());
       if (!mp || seen.has(m.asin.toLowerCase())) continue;
       seen.add(m.asin.toLowerCase());
-      const key = `${g.id}::${m.color}`;
+      const key = `${g.id}::${m.color}${extraKey ? `::${extraKey(mp)}` : ''}`;
       let e = groups.get(key);
       if (!e) {
         e = { color: m.color, members: [] };

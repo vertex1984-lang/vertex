@@ -146,6 +146,13 @@ function classifyPillow(title: string): string {
 function classifyTowel(title: string, asin: string): string {
   if (/beach/i.test(title)) return 'beach';
   if (/hand towel|face towel/i.test(title)) return 'hand-face';
+  // 2026-10-16：MK 自有长绒棉毛巾族（mk-towel-lsc）标题按用户规则不带 Bath/Hand 类型词，
+  // 按规格表尺寸归位——washcloth/hand towel（最长边 ≤85cm）→ hand-face；bath towel/bath sheet → bath-towels
+  const towelGroup = getVariantGroupOf(asin);
+  if (towelGroup?.id === 'mk-towel-lsc') {
+    const d = getProductSpecs(asin)?.dimensionsCm;
+    if (d) return Math.max(...d) <= 85 ? 'hand-face' : 'bath-towels';
+  }
   // 40×80 四件装按手巾/面巾归类
   const dims = getProductSpecs(asin)?.dimensionsCm;
   if (dims && Math.max(...dims) <= 85 && /4 pack|set of 4/i.test(title)) return 'hand-face';

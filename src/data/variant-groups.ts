@@ -687,6 +687,37 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'mk-pc-boucle-sage-45', handle: 'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45', color: 'Sage', size: '45 x 45 cm' },
     ],
   },
+  // 2026-10-16：长绒棉毛巾（6 色 × 4 尺寸，MK- 自有产品，尺寸段为英寸字符串）
+  {
+    id: 'mk-towel-lsc',
+    optionName: 'Color',
+    members: [
+    { asin: 'mk-towel-lsc-cream-12x12', handle: 'long-staple-cotton-towel-cream-12x12-mk-towel-lsc-cream-12x12', color: 'Cream', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-cream-20x30', handle: 'long-staple-cotton-towel-cream-20x30-mk-towel-lsc-cream-20x30', color: 'Cream', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-cream-30x56', handle: 'long-staple-cotton-towel-cream-30x56-mk-towel-lsc-cream-30x56', color: 'Cream', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-cream-40x70', handle: 'long-staple-cotton-towel-cream-40x70-mk-towel-lsc-cream-40x70', color: 'Cream', size: '40" x 70"' },
+    { asin: 'mk-towel-lsc-oatmeal-12x12', handle: 'long-staple-cotton-towel-oatmeal-12x12-mk-towel-lsc-oatmeal-12x12', color: 'Oatmeal', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-oatmeal-20x30', handle: 'long-staple-cotton-towel-oatmeal-20x30-mk-towel-lsc-oatmeal-20x30', color: 'Oatmeal', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-oatmeal-30x56', handle: 'long-staple-cotton-towel-oatmeal-30x56-mk-towel-lsc-oatmeal-30x56', color: 'Oatmeal', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-oatmeal-40x70', handle: 'long-staple-cotton-towel-oatmeal-40x70-mk-towel-lsc-oatmeal-40x70', color: 'Oatmeal', size: '40" x 70"' },
+    { asin: 'mk-towel-lsc-sage-12x12', handle: 'long-staple-cotton-towel-sage-12x12-mk-towel-lsc-sage-12x12', color: 'Sage', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-sage-20x30', handle: 'long-staple-cotton-towel-sage-20x30-mk-towel-lsc-sage-20x30', color: 'Sage', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-sage-30x56', handle: 'long-staple-cotton-towel-sage-30x56-mk-towel-lsc-sage-30x56', color: 'Sage', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-sage-40x70', handle: 'long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70', color: 'Sage', size: '40" x 70"' },
+    { asin: 'mk-towel-lsc-dustyrose-12x12', handle: 'long-staple-cotton-towel-dustyrose-12x12-mk-towel-lsc-dustyrose-12x12', color: 'Dusty Rose', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-dustyrose-20x30', handle: 'long-staple-cotton-towel-dustyrose-20x30-mk-towel-lsc-dustyrose-20x30', color: 'Dusty Rose', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-dustyrose-30x56', handle: 'long-staple-cotton-towel-dustyrose-30x56-mk-towel-lsc-dustyrose-30x56', color: 'Dusty Rose', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-dustyrose-40x70', handle: 'long-staple-cotton-towel-dustyrose-40x70-mk-towel-lsc-dustyrose-40x70', color: 'Dusty Rose', size: '40" x 70"' },
+    { asin: 'mk-towel-lsc-lightgrey-12x12', handle: 'long-staple-cotton-towel-lightgrey-12x12-mk-towel-lsc-lightgrey-12x12', color: 'Light Grey', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-lightgrey-20x30', handle: 'long-staple-cotton-towel-lightgrey-20x30-mk-towel-lsc-lightgrey-20x30', color: 'Light Grey', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-lightgrey-30x56', handle: 'long-staple-cotton-towel-lightgrey-30x56-mk-towel-lsc-lightgrey-30x56', color: 'Light Grey', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-lightgrey-40x70', handle: 'long-staple-cotton-towel-lightgrey-40x70-mk-towel-lsc-lightgrey-40x70', color: 'Light Grey', size: '40" x 70"' },
+    { asin: 'mk-towel-lsc-dustyblue-12x12', handle: 'long-staple-cotton-towel-dustyblue-12x12-mk-towel-lsc-dustyblue-12x12', color: 'Dusty Blue', size: '12" x 12"' },
+    { asin: 'mk-towel-lsc-dustyblue-20x30', handle: 'long-staple-cotton-towel-dustyblue-20x30-mk-towel-lsc-dustyblue-20x30', color: 'Dusty Blue', size: '20" x 30"' },
+    { asin: 'mk-towel-lsc-dustyblue-30x56', handle: 'long-staple-cotton-towel-dustyblue-30x56-mk-towel-lsc-dustyblue-30x56', color: 'Dusty Blue', size: '30" x 56"' },
+    { asin: 'mk-towel-lsc-dustyblue-40x70', handle: 'long-staple-cotton-towel-dustyblue-40x70-mk-towel-lsc-dustyblue-40x70', color: 'Dusty Blue', size: '40" x 70"' },
+    ],
+  },
 ];
 
 const groupsByAsin = new Map<string, VariantGroup>();
