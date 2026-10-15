@@ -455,6 +455,8 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'LINEN3-OATMEAL-FULL', handle: 'makimoo-100-linen-duvet-cover-set-full-size-3-piece-linen3-oatmeal-full', color: 'Oatmeal', size: '200 x 220 cm' },
     { asin: 'LINEN3-IVORY-KING', handle: 'makimoo-100-linen-duvet-cover-set-king-3-piece-bedding-with-linen3-ivory-king', color: 'Ivory', size: '260 x 220 cm' },
     { asin: 'LINEN3-IVORY-FULL', handle: 'makimoo-100-percent-linen-duvet-cover-set-full-size-3-piece-linen3-ivory-full', color: 'Ivory', size: '200 x 220 cm' },
+    // 2026-10-16 用户定：LINEN3 新增 Caramel 色（Queen），颜色取自灯芯绒枕套 MK-PC-CORD-CARAMEL
+    { asin: 'LINEN3-CARAMEL-QUEEN', handle: 'makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-caramel-queen', color: 'Caramel', size: '220 x 220 cm' },
     ],
   },
   {

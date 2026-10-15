@@ -99,6 +99,7 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "linen3-oatmeal-full": { material: "100% Linen" },
   "linen3-ivory-king": { material: "100% Linen" },
   "linen3-ivory-full": { material: "100% Linen" },
+  "linen3-caramel-queen": { material: "100% Linen" },
 
   // ── 2026-10 协作方新品：独立被套单件 200×230cm（Duvet Covers 细分类目）──
   // LINEN3-DUVET 五色 = 100% Linen；DUVSET-DUVET 四色 = Washed Cotton-Like
