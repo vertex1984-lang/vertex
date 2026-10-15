@@ -225,6 +225,7 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-100-linen-duvet-cover-set-full-size-3-piece-linen3-oatmeal-full',
   'makimoo-100-linen-duvet-cover-set-king-3-piece-bedding-with-linen3-ivory-king',
   'makimoo-100-percent-linen-duvet-cover-set-full-size-3-piece-linen3-ivory-full',
+  'makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-caramel-queen',
   'makimoo-3-piece-duvet-cover-set-full-size-lightweight-soft-duvset-gray-full',
   'makimoo-4-piece-bedding-set-duvet-cover-fitted-sheet-and-2-bedset4-slate-twin',
   'makimoo-4-piece-bedding-set-full-size-patchwork-block-print-bedset4-coffee-full',

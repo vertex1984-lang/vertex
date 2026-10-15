@@ -8262,6 +8262,51 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-LINEN3-CARAMEL-QUEEN",
+    "asin": "LINEN3-CARAMEL-QUEEN",
+    "title": "Makimoo 100% Linen Duvet Cover Set 3 Pieces Queen Size with 1 Duvet Cover and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Caramel)",
+    "handle": "makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-caramel-queen",
+    "description": "100% Linen Fabric: Woven from 100% natural linen, this duvet cover set offers a soft, breathable, skin-friendly feel with a naturally slubbed texture that gets softer with every wash. Complete 3-Piece Set: Duvet Cover x 1 (90 x 90 in) + Pillowcases x 2 (20 x 30 in) — a coordinated set that makes refreshing a Queen bed effortless. Warm Caramel Tone: A rich caramel hue that brings earthy warmth to the bedroom; pairs beautifully with cream, beige, walnut wood and neutral decor for a cozy, inviting look. Breathable & Temperature Regulating: Linen naturally wicks moisture and circulates air, keeping you cool in summer and comfortably warm in winter. Easy Care: Machine washable. The fabric resists pilling with proper care, and the characterful linen texture only improves with age.",
+    "descriptionHtml": "<p>100% Linen Fabric: Woven from 100% natural linen, this duvet cover set offers a soft, breathable, skin-friendly feel with a naturally slubbed texture that gets softer with every wash.</p><p>Complete 3-Piece Set: Duvet Cover x 1 (90 x 90 in) + Pillowcases x 2 (20 x 30 in) — a coordinated set that makes refreshing a Queen bed effortless.</p><p>Warm Caramel Tone: A rich caramel hue that brings earthy warmth to the bedroom; pairs beautifully with cream, beige, walnut wood and neutral decor for a cozy, inviting look.</p><p>Breathable &amp; Temperature Regulating: Linen naturally wicks moisture and circulates air, keeping you cool in summer and comfortably warm in winter.</p><p>Easy Care: Machine washable. The fabric resists pilling with proper care, and the characterful linen texture only improves with age.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/LINEN3-CARAMEL-QUEEN/1.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Pieces Queen Size with 1 Duvet Cover and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Caramel)",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "129.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-LINEN3-CARAMEL-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "129.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
   }
 ];
 

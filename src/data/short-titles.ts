@@ -188,6 +188,7 @@ export const SHORT_TITLES: Record<string, string> = {
   "linen3-oatmeal-twin": "100% Linen Duvet Cover Set, 3 Piece, Oatmeal, Twin",
   "linen3-oatmeal-full": "100% Linen Duvet Cover Set, 3 Piece, Oatmeal, Full",
   "linen3-oatmeal-queen": "100% Linen Duvet Cover Set, 3 Piece, Oatmeal, Queen",
+  "linen3-caramel-queen": "100% Linen Duvet Cover Set, 3 Piece, Caramel, Queen",
   "linen3-oatmeal-king": "100% Linen Duvet Cover Set, 3 Piece, Oatmeal, King",
   "bedset4-beige-twin": "Cotton-Like 4-Piece Bedding Set, Beige, Twin",
   "bedset4-beige-full": "Cotton-Like 4-Piece Bedding Set, Beige, Full",
