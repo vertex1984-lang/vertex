@@ -8,7 +8,8 @@ import { v2url } from '@/lib/v2paths';
  * 图片与文案等宽对齐、整版高度约 70vh——原"通栏 21:9 横幅 + 居中窄文字"上下宽度不匹配。
  * 两板块图片左右交替，视觉有节奏。
  * 文案要点：
- * - 品牌故事：品牌公信力（年销体量 / Amazon 评价 / 行业年限），"Brand Story" 链接 → /about/
+ * - 品牌故事：品牌公信力（年销体量 / Amazon 评价 / 行业年限）；2026-10-14 用户定：移除 "Brand Story"
+ *   跳转链接（防止用户跳出到非商品页），正文改为短引导句 + 三个要点分行排版，更易读
  * - Materials & Craft（仅 bedding）：布料、工艺与做工，"Explore Our Fabrics" → /fabric-guide/
  */
 
@@ -18,15 +19,18 @@ interface StoryBlockProps {
   eyebrow?: string;
   title: string;
   body: string;
-  ctaLabel: string;
-  ctaHref: string;
+  /** 公信力要点（可选，分行列出，代替长段落） */
+  points?: string[];
+  /** CTA 可选——不传则不渲染链接 */
+  ctaLabel?: string;
+  ctaHref?: string;
   /** 文案区底色 */
   tone: 'cream' | 'off-white';
   /** true = 图片在右（桌面端交替用） */
   reverse?: boolean;
 }
 
-function StoryBlock({ image, imageAlt, eyebrow, title, body, ctaLabel, ctaHref, tone, reverse = false }: StoryBlockProps) {
+function StoryBlock({ image, imageAlt, eyebrow, title, body, points, ctaLabel, ctaHref, tone, reverse = false }: StoryBlockProps) {
   const bg = tone === 'cream' ? 'bg-cream' : 'bg-off-white';
   return (
     /* 桌面端与 PDP 首屏同宽（80% 屏宽，2026-09-29 用户定：上下板块宽度对齐） */
@@ -54,6 +58,17 @@ function StoryBlock({ image, imageAlt, eyebrow, title, body, ctaLabel, ctaHref, 
           <p className="text-sm lg:text-base text-charcoal-light leading-relaxed">
             {body}
           </p>
+          {points && (
+            <ul className="mt-4 lg:mt-5 space-y-2.5 lg:space-y-3">
+              {points.map((point) => (
+                <li key={point} className="flex items-center gap-3 text-sm lg:text-base text-charcoal font-medium">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand flex-shrink-0" />
+                  {point}
+                </li>
+              ))}
+            </ul>
+          )}
+          {ctaLabel && ctaHref && (
           <a href={v2url(ctaHref)} className="inline-flex items-center gap-2 text-sm font-semibold text-brand group mt-5 lg:mt-7">
             <span className="border-b border-brand/40 pb-0.5 transition-colors group-hover:border-brand">
               {ctaLabel}
@@ -62,6 +77,7 @@ function StoryBlock({ image, imageAlt, eyebrow, title, body, ctaLabel, ctaHref, 
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
           </a>
+          )}
         </div>
       </div>
     </section>
@@ -78,9 +94,12 @@ export default function PdpStoryBlocks({ showFabricGuide = false }: { showFabric
         imageAlt="A cozy Makimoo living room styled with soft home textiles"
         eyebrow="Makimoo"
         title="A Trusted Name in Home Comfort"
-        body="Millions of customers worldwide choose Makimoo — with 500K+ items sold every year, tens of thousands of reviews on Amazon, and over 10 years of experience in home textiles."
-        ctaLabel="Brand Story"
-        ctaHref="/about/"
+        body="Millions of customers worldwide choose Makimoo for everyday comfort."
+        points={[
+          '500K+ items sold every year',
+          'Tens of thousands of Amazon reviews',
+          '10+ years of home textile experience',
+        ]}
         tone="cream"
       />
 

@@ -12,6 +12,18 @@ import { resolveUrl } from '@/lib/paths';
  *  - cushions/solids 系列：两张竖图各半（3:4 × 2），门廊绿垫 + 海滨藏青垫场景
  *  - cushions/prints（Floral & Prints，2026-10-12 用户供图替换原通用 café/花店图）：
  *    天台黄昏几何垫 + 海滨蓝绿植物垫场景
+ *  - pillows/boucle 系列（2026-10-13 用户定，AI 生成混色场景，Pinterest 级）：
+ *    两张 2:3 竖图各半——奶白+鼠尾草绿客厅 / 燕麦+灰粉卧室，移动端裁 3:4
+ *  - travel 颈枕（2026-10-14 用户供图）：居家沙发阅读 + 游轮甲板旅行场景，两张 3:4 各半
+ *  - bedding/linenlike（2026-10-14/15）：紫粉碎花蕾丝 farmhouse（AI 生成种草图，替换原摩洛哥供图）
+ *    + 乡村木屋淡紫印花（用户供图）卧室场景，两张 3:4 各半；仅材质为 Linen-Like 的 bedding PDP 渲染
+ *  - bedding/brushedcotton（2026-10-15 AI 生成种草图，用户定）：米色磨毛棉清晨现代卧室
+ *    （DUVSET-BEIGE-QUEEN 锚定）+ 灰色磨毛棉傍晚现代卧室（DUVSET-GRAY-QUEEN 锚定），
+ *    两张 3:4 各半；仅材质为 Washed Cotton-Like（展示名 Brushed Cotton）的 bedding PDP 渲染
+ *  - bedding/linen（2026-10-15）：farmhouse 燕麦亚麻（AI 生成种草图）+ 城市夜景炭灰亚麻
+ *    （用户供图，方形裁 3:4）；仅材质为 100% Linen 的 bedding PDP 渲染
+ *  - bedding/satin（2026-10-15 用户供图）：法式轻奢香槟灰双色缎面 + 明亮现代香槟缎面
+ *    卧室场景，两张 3:4 各半；仅材质为 Satin 的 bedding PDP 渲染
  */
 interface LifestyleCard {
   image: string;
@@ -21,7 +33,121 @@ interface LifestyleCard {
   className: string;
 }
 
-const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints', { gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin', { gridClass: string; cards: LifestyleCard[] }> = {
+  satin: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/bedding-satin-french.webp',
+        caption: 'Parisian Chic',
+        desc: 'Satin sheen and gilded light',
+        alt: 'Champagne and grey two-tone satin bedding on an ornate French-style bed in an elegant bedroom',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/bedding-satin-champagne.webp',
+        caption: 'Soft Glow',
+        desc: 'Morning light on champagne satin',
+        alt: 'Champagne satin bedding on an upholstered bed in a bright modern bedroom with morning sunlight',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  linen: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/bedding-linen-farmhouse.webp',
+        caption: 'Farmhouse Mornings',
+        desc: 'Coffee steam and wrinkled linen',
+        alt: 'Oatmeal 100% linen bedding with natural wrinkles on a distressed white wooden bed in a farmhouse bedroom',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/bedding-linen-city.webp',
+        caption: 'City Dusk',
+        desc: 'Skyline views and charcoal linen',
+        alt: 'Charcoal linen bedding on a wooden bed in a modern apartment bedroom with city skyline view at dusk',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  brushedcotton: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/bedding-brushed-gray.webp',
+        caption: 'Evening In',
+        desc: 'Warm lamps and city lights',
+        alt: 'Soft gray brushed cotton duvet cover set on a dark walnut bed in a modern bedroom at dusk',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/bedding-brushed-beige.webp',
+        caption: 'Slow Mornings',
+        desc: 'Sunlight, coffee, and nowhere to rush',
+        alt: 'Warm beige brushed cotton duvet cover set on a grey upholstered bed in a modern sunlit bedroom',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  linenlike: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/bedding-linenlike-farmhouse.webp',
+        caption: 'Shabby Chic',
+        desc: 'Lace trim and wildflower mornings',
+        alt: 'Purple pink floral print bedding with white lace trim on a white iron bed in a farmhouse bedroom',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/bedding-linenlike-cottage.webp',
+        caption: 'Country Air',
+        desc: 'A quiet room in the countryside',
+        alt: 'Lavender floral print bedding in a rustic wood cabin bedroom',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  neck: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/neck-home.webp',
+        caption: 'Stay In',
+        desc: 'Neck-deep in a good book',
+        alt: 'Woman wearing a memory foam neck pillow while reading on a sofa at home',
+        className: 'aspect-[3/4]',
+      },
+      {
+        image: '/images/pdp-lifestyle/neck-travel.webp',
+        caption: 'Away We Go',
+        desc: 'Sea breeze and window seats',
+        alt: 'Cream neck pillow on a wooden deck lounger of a cruise ship at sunset',
+        className: 'aspect-[3/4]',
+      },
+    ],
+  },
+  boucle: {
+    gridClass: 'lg:grid-cols-2',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/pillow-boucle-wide.webp',
+        caption: 'Golden Hour',
+        desc: 'Vinyl, dusk light, and a worn-in chair',
+        alt: 'Dusty rose boucle pillow on a brown leather armchair beside a record player at dusk',
+        className: 'aspect-[3/4] lg:aspect-[2/3]',
+      },
+      {
+        image: '/images/pdp-lifestyle/pillow-boucle-bench.webp',
+        caption: 'Come On In',
+        desc: 'A soft landing, right at the door',
+        alt: 'White boucle pillow on a dark wooden entryway bench in soft daylight',
+        className: 'aspect-[3/4] lg:aspect-[2/3]',
+      },
+    ],
+  },
   pillows: {
     gridClass: 'lg:grid-cols-12 lg:items-start',
     cards: [
@@ -100,7 +226,7 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints', { gridClass: st
   },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' }) {
+export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin' }) {
   const set = SETS[cat];
   return (
     <section className="mt-8 lg:mt-12">
