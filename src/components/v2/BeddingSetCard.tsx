@@ -40,6 +40,7 @@ export default function BeddingSetCard({
   sizesSuffix = '',
   paddedWhiteBg = false,
   compactText = false,
+  sharpCorners = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
@@ -51,6 +52,8 @@ export default function BeddingSetCard({
   paddedWhiteBg?: boolean;
   /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档（其他类目后续逐一统一，暂不动） */
   compactText?: boolean;
+  /** 直角长方形卡片（2026-10-15 用户定，duvet-covers 分类页）：去掉圆角 */
+  sharpCorners?: boolean;
 }) {
   const img = spotlightImage(family.rep);
   const name = (family.titleOverride || family.rep.title).replace(
@@ -60,7 +63,7 @@ export default function BeddingSetCard({
   return (
     <a
       href={v2url(`/products/${family.rep.handle}/`)}
-      className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+      className={`group block bg-white ${sharpCorners ? 'rounded-none' : 'rounded-xl'} overflow-hidden shadow-sm hover:shadow-md transition-shadow`}
     >
       <div className={`relative aspect-square overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img
