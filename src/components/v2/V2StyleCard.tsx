@@ -17,7 +17,7 @@ export default function V2StyleCard({
   return (
     <a
       href={v2url(`/featured-products/style/${card.key}/`)}
-      className={`group relative block overflow-hidden rounded-xl bg-warm-gray ${
+      className={`group relative block overflow-hidden bg-warm-gray ${
         big
           ? 'col-span-2 row-span-2 lg:col-span-2 lg:row-span-2 aspect-[2/1] lg:aspect-auto'
           : 'aspect-square'

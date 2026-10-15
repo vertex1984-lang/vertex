@@ -145,7 +145,7 @@ export default function BetterTexturePage() {
                   <div className="lg:w-1/2 mb-6 lg:mb-0">
                     <a
                       href={v2url(`/products/${t.handle}/`)}
-                      className="group block relative overflow-hidden rounded-xl bg-warm-gray aspect-square lg:aspect-[4/3]"
+                      className="group block relative overflow-hidden bg-warm-gray aspect-square lg:aspect-[4/3]"
                     >
                       <img
                         src={resolveUrl(t.image)}
@@ -180,7 +180,7 @@ export default function BetterTexturePage() {
             <DragScroll className="flex gap-3 lg:gap-5 overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
               {FABRIC_CLOSEUPS.map((f) => (
                 <div key={f.label} className="flex-shrink-0 w-[56vw] sm:w-[38vw] lg:w-[255px]">
-                  <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-warm-gray">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-warm-gray">
                     <img
                       src={resolveUrl(f.src)}
                       alt={`${f.label} fabric close-up`}

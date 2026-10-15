@@ -47,7 +47,7 @@ export default function V2CategoriesPage() {
                   {/* 分类大卡：与首页 V2CategoryGrid 呼应的 hover 放大 + 底部渐变 */}
                   <a
                     href={v2url(`/products/?cat=${cat.value}`)}
-                    className="group relative block aspect-[4/3] overflow-hidden rounded-lg"
+                    className="group relative block aspect-[4/3] overflow-hidden"
                   >
                     <img
                       src={resolveUrl(`/images/collections/${cat.value}.webp`)}
