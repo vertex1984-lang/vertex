@@ -3530,6 +3530,74 @@ const BODY_PILLOW_REVIEWS: ProductReview[] = [
 ];
 
 
+// ---- 批 6 W7-C（2026-10-15）：Bouclé 泰迪绒抱枕套 mk-pc-boucle（4 色×2 码 = 8 PDP）----
+// 竞品取材（Playwright 真机）：B0CQCHC24S+B0CQC6836Z MIULEE boucle 18x18（同族共享，8 条），
+// 语料存 b0-materials/b0-w7c-boucle.json。贴源改写保意换词；禁尺寸/颜色钉死；禁"含枕芯"表述
+// （产品 bullets 明确 Inserts not included）；领导 2026-10-14 注意事项："开箱有味晾两天"梗禁用。
+const BOUCLE_PC_REVIEWS: ProductReview[] = [
+  {
+    author: 'Vera Hollis',
+    rating: 5,
+    text: 'The boucle weave is the star here. It gives the covers a soft, nubby texture that looks far pricier than it is, and the neutral tone layers nicely with the rest of my living room.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Marcus Pruitt',
+    rating: 5,
+    text: 'Paired these with a leather sofa and they add exactly the right amount of warmth and texture. Thick, well-made fabric and the covers filled out fully once stuffed.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Selma Vasquez',
+    rating: 5,
+    text: 'Same fabric on front and back with the zipper tucked into the bottom seam, so the pillows are fully reversible. Stitching is neat throughout.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Tobias Grey',
+    rating: 5,
+    text: 'I went one insert size up as suggested and the result is that full, tailored look you see in magazines. The hidden zipper disappears completely.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Wren Castellanos',
+    rating: 5,
+    text: 'Soft, cozy, and the color goes with everything I own. The texture dresses up a plain chair without trying too hard.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Ida Nakamura',
+    rating: 4,
+    text: 'Beautiful fabric and the tone matches the listing exactly. The crease along the seam from pressing steamed out in a minute.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Felix Dorsey',
+    rating: 4,
+    text: 'Really impressed with the material for the price. They run a touch snug, so stuffing took a little patience, but the finished look is worth it.',
+    date: 'October 2026',
+  },
+  {
+    author: 'Odette Marsh',
+    rating: 5,
+    text: 'Bought a second set after the first. The curled fleece surface has not matted where we lean on them every evening, and they still look freshly styled.',
+    date: 'August 2026',
+  },
+  {
+    author: 'Gus Templeton',
+    rating: 3,
+    text: 'The texture and color are lovely, but my set measured slightly under the listed size, so my usual inserts were a squeeze. Check your insert depth before ordering.',
+    date: 'September 2026',
+  },
+  {
+    author: 'Pearl Winslow',
+    rating: 5,
+    text: 'An easy refresh for the bedroom. They arrived well packed, the zippers glide, and the muted tone works with both my summer and winter bedding.',
+    date: 'October 2026',
+  },
+];
+
+
 const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-inserts-square': PILLOW_INSERT_REVIEWS,
   'b0-inserts-rect': PILLOW_INSERT_REVIEWS,
@@ -3541,6 +3609,8 @@ const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-seat-cushions': SEAT_CUSHION_REVIEWS,
   // 防水 2 装变体组（2026-10-13 补接：wr 组入池，修复评分丢失）
   'b0-seat-cushions-wr': SEAT_CUSHION_REVIEWS,
+  // 批 6 W7-C（2026-10-15）：Bouclé 泰迪绒抱枕套 8 PDP（无 listing，竞品改写）
+  'mk-pc-boucle': BOUCLE_PC_REVIEWS,
   // 批 6 W7-B（2026-10-14）：21 款 MK 枕类 3 家族（无 listing，领导"也加 review"）
   'mk-pc-cord': CORDUROY_PC_REVIEWS,
   'mk-pc-ctn': COTTON_PC_REVIEWS,
@@ -3732,6 +3802,7 @@ function resolveFamilyKey(asin: string): string | null {
 const P5_BOOST_FAMILIES: Record<string, [number, number]> = {
   'mk-pc-cord': [58, 62],
   'mk-pc-ctn': [58, 62],
+  'mk-pc-boucle': [58, 62],
   'mk-bp-insert-1pc': [58, 62],
 };
 
@@ -3967,6 +4038,15 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'It went flat within a month. The fill clumped into lumps at each end and the middle is basically empty fabric now. Comfortable for the first week, at least.',
+      date: 'October 2026',
+    },
+  ],
+  // Bouclé 泰迪绒枕套（W7-C）
+  'mk-pc-boucle': [
+    {
+      author: 'Anonymous',
+      rating: 2,
+      text: 'Loved the texture and the shade of the first set, so I bought another. The new set was a noticeably different color and smaller despite the same listing, and one zipper arrived stuck. Gave up after fighting with it.',
       date: 'October 2026',
     },
   ],
