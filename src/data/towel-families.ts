@@ -8,17 +8,11 @@ import { buildBlanketFamilies, BlanketFamily } from '@/data/blanket-families';
 import { sortByWeight } from '@/lib/weights';
 import { getVariantGroupOf } from '@/data/variant-groups';
 
-/** cm → in，去小数点（四舍五入取整）：80cm→31、140cm→55 */
-const cmToIn = (cm: number) => Math.round(cm / 2.54);
-
-/** 卡片标题规则（2026-10-15 用户定，仿 cushions 卡）："{类型} {N} Pack, {W}x{L}\""
- *  （不带颜色；尺寸换算成英寸、去小数点、无空格、双引号表英寸）。
- *  类型取二级分类注册表 label（Bath Towels / Beach Towels / Hand & Face Towels）；
- *  尺寸来源：优先短标题 "80 x 140 cm"，其次 handle "75-x-180"，再次变体组尺寸带；
+/** 卡片标题规则："{类型} {N} Pack"（不带尺寸和颜色——2026-10-16 用户定：尺寸/颜色只在 PDP 内展示）。
+ *  类型取二级分类注册表 label（2026-10-16 起：Towels / Beach Towels）；
  *  件数来源：标题 "2-Pack"/"2 Pack"/"Set of N"，缺省 2。 */
 export function towelCardTitle(f: BlanketFamily, typeLabel: string): string {
-  // 2026-10-16：MK 自有长绒棉毛巾（mk-towel-lsc）单件装、标题不含件数/类型词；
-  // 卡标题不写尺寸和颜色（用户定：尺寸/颜色只在 PDP 内展示），统一显示系列名
+  // MK 自有长绒棉毛巾（mk-towel-lsc）单件装、标题不含件数/类型词，统一显示系列名
   if (getVariantGroupOf(f.rep.asin)?.id === 'mk-towel-lsc') {
     return 'Long-Staple Cotton Towel';
   }
@@ -28,29 +22,12 @@ export function towelCardTitle(f: BlanketFamily, typeLabel: string): string {
     f.rep.title.match(/set of (\d+)/i);
   const count = countMatch ? countMatch[1] : '2';
 
-  const sizeSeg = (() => {
-    const t = f.rep.title;
-    const wh = t.match(/(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*cm/i);
-    if (wh) return `${cmToIn(parseFloat(wh[1]))}x${cmToIn(parseFloat(wh[2]))}"`;
-    // handle 兜底："75-x-180" / "40-x-80"
-    const h = f.rep.handle.match(/(\d+)-x-(\d+)/i);
-    if (h) return `${cmToIn(parseFloat(h[1]))}x${cmToIn(parseFloat(h[2]))}"`;
-    // 尺寸带首段是数字才是尺寸
-    const sizeBand = f.sizes[0] || '';
-    if (!/^\d/.test(sizeBand)) return '';
-    const parts = sizeBand
-      .split('×')
-      .map((s) => cmToIn(parseFloat(s)))
-      .filter((n) => !Number.isNaN(n));
-    return parts.length > 0 ? parts.join('x') + '"' : '';
-  })();
-
-  return `${typeLabel} ${count} Pack${sizeSeg ? `, ${sizeSeg}` : ''}`;
+  return `${typeLabel} ${count} Pack`;
 }
 
 /** 建家族：towels 全部产品已在 variant-groups.ts 注册颜色组，按颜色成族；
- *  extraKey = 二级分类——同色跨分区的变体组（mk-towel-lsc：bath towel/bath sheet 与
- *  washcloth/hand towel 同族）拆成两张卡，各落 Bath Towels / Hand & Face 分区（2026-10-16） */
+ *  extraKey = 二级分类（2026-10-16 合并后：mk-towel-lsc 全尺寸同落 towels 区，
+ *  每色一张卡；沙滩巾落 beach 区） */
 export function visibleTowelFamilies(products: MakimooProduct[]): BlanketFamily[] {
   return buildBlanketFamilies(products, (p) => p.subcategory || '');
 }

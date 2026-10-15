@@ -217,7 +217,7 @@ export default function V2ProductsPage() {
   );
 
   // towels 选购视图（2026-10-15 用户定，按 pillows/cushions 家族卡结构重建）：
-  // 粘性 Type 筛选 + 按类型 3 分区（bath-towels / beach / hand-face）+ 家族卡网格。
+  // 粘性 Type 筛选 + 按类型分区（2026-10-16 起合并为 towels / beach 两区）+ 家族卡网格。
   // 传未去重原始列表，组件内部按颜色成族
   const towelsMode = activeCategory.toLowerCase() === 'towels';
   const towelShopProducts = useMemo(
@@ -559,7 +559,7 @@ export default function V2ProductsPage() {
         <V2CushionsShop key={activeSub} products={cushionShopProducts} initialStyle={activeSub} />
       ) : towelsMode && !isSearching ? (
         /* towels 选购视图（2026-10-15 用户定，按 pillows/cushions 结构重建）：
-           粘性 Type 筛选 + 按类型分区网格（bath-towels / beach / hand-face），
+           粘性 Type 筛选 + 按类型分区网格（2026-10-16 起 towels / beach 两区），
            sub= 参数深链保留兼容；传未去重原始列表，组件内部按颜色成族 */
         <V2TowelsShop key={activeSub} products={towelShopProducts} initialType={activeSub} />
       ) : sections.length > 0 ? (

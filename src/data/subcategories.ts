@@ -41,10 +41,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
   { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
   { key: 'neck-pillow', parent: 'pillows', label: 'Neck Pillows', shortLabel: 'Neck Pillow', blurb: 'Memory foam support for travel, office & home.' },
-  // Towels
-  { key: 'bath-towels', parent: 'towels', label: 'Bath Towels', shortLabel: 'Bath Towels', blurb: 'Soft, absorbent cotton for daily baths.' },
+  // Towels（2026-10-16 用户定：二级分类合并为 Towels + Beach Towels 两类，
+  // 原 bath-towels / hand-face 合并为 towels——浴巾/手巾/面巾不再细分）
+  { key: 'towels', parent: 'towels', label: 'Towels', shortLabel: 'Towels', blurb: 'Long-staple cotton for bath, hand & face.' },
   { key: 'beach', parent: 'towels', label: 'Beach Towels', shortLabel: 'Beach Towels', blurb: 'Oversized and quick-drying for pool & beach.' },
-  { key: 'hand-face', parent: 'towels', label: 'Hand & Face Towels', shortLabel: 'Hand & Face', blurb: 'Small essentials for hands & face.' },
   // Mats
   { key: 'kitchen', parent: 'mats', label: 'Kitchen Mats', shortLabel: 'Kitchen Mats', blurb: 'Anti-fatigue comfort where you stand most.' },
   { key: 'bath-mats', parent: 'mats', label: 'Bath Mats', shortLabel: 'Bath Mats', blurb: 'Step onto soft, quick-dry comfort.' },
@@ -143,20 +143,11 @@ function classifyPillow(title: string): string {
   return 'pillow-inserts';
 }
 
-function classifyTowel(title: string, asin: string): string {
+function classifyTowel(title: string): string {
   if (/beach/i.test(title)) return 'beach';
-  if (/hand towel|face towel/i.test(title)) return 'hand-face';
-  // 2026-10-16：MK 自有长绒棉毛巾族（mk-towel-lsc）标题按用户规则不带 Bath/Hand 类型词，
-  // 按规格表尺寸归位——washcloth/hand towel（最长边 ≤85cm）→ hand-face；bath towel/bath sheet → bath-towels
-  const towelGroup = getVariantGroupOf(asin);
-  if (towelGroup?.id === 'mk-towel-lsc') {
-    const d = getProductSpecs(asin)?.dimensionsCm;
-    if (d) return Math.max(...d) <= 85 ? 'hand-face' : 'bath-towels';
-  }
-  // 40×80 四件装按手巾/面巾归类
-  const dims = getProductSpecs(asin)?.dimensionsCm;
-  if (dims && Math.max(...dims) <= 85 && /4 pack|set of 4/i.test(title)) return 'hand-face';
-  return 'bath-towels';
+  // 2026-10-16 用户定：浴巾/手巾/面巾不再细分，统一归 towels（原 bath-towels / hand-face 合并，
+  // 不再按标题关键词或规格尺寸拆 hand-face / bath-towels）
+  return 'towels';
 }
 
 function classifyMat(title: string): string {
@@ -215,7 +206,7 @@ export function classifyProduct(productType: string, title: string, asin: string
     case 'pillows':
       return classifyPillow(title);
     case 'towels':
-      return classifyTowel(title, asin);
+      return classifyTowel(title);
     case 'mats':
       return classifyMat(title);
     case 'bedding':

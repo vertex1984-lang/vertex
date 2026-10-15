@@ -14,7 +14,7 @@ import {
 /**
  * /products?cat=towels 选购视图（2026-10-15 用户定：按 pillows/cushions 家族卡结构重建）：
  * - 复用 buildBlanketFamilies 按颜色成族；卡片标题/排序逻辑在 @/data/towel-families
- * - 按类型分 3 区展示 + 粘性 Type 筛选下拉（bath-towels / beach / hand-face，
+ * - 按类型分区展示 + 粘性 Type 筛选下拉（2026-10-16 起合并为 towels / beach 两区，
  *   注册表见 subcategories.ts，归位逻辑见 classifyTowel；选中某类型 = 只渲染该分区）
  * - 无意图回显行（与 cushions 页一致）；排序固定 Featured（权重序），无零结果兜底
  */
@@ -35,7 +35,7 @@ export default function V2TowelsShop({
   // 家族类型 = 代表品的二级分类（enrich 时 classifyTowel 已归位）
   const typeOf = (f: BlanketFamily) => f.rep.subcategory || '';
 
-  // 有产品的类型才进下拉（顺序按注册表：bath-towels → beach → hand-face）
+  // 有产品的类型才进下拉（顺序按注册表：towels → beach）
   const typeOptions = useMemo(
     () => getSubcategoriesOf('towels').filter((s) => sorted.some((f) => typeOf(f) === s.key)),
     [sorted]

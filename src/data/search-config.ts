@@ -10,7 +10,7 @@ export interface HotSearch {
 
 export const HOT_SEARCHES: HotSearch[] = [
   { label: 'Linen Bedding', href: '/bedding/linen/' },
-  { label: 'Cotton Bath Towels', href: '/products?cat=towels&sub=bath-towels' },
+  { label: 'Cotton Towels', href: '/products?cat=towels&sub=towels' },
   { label: 'Area Rugs', href: '/products?cat=mats&sub=area-rugs' },
   { label: 'Pillow Covers', href: '/pillows/decorative-pillows/' },
   { label: 'Blankets & Throws', href: '/products?cat=blankets' },
