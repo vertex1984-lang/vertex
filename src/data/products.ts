@@ -7057,7 +7057,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7102,7 +7108,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7147,7 +7159,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7192,7 +7210,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7237,7 +7261,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7282,7 +7312,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7327,7 +7363,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7372,7 +7414,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7417,7 +7465,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7462,7 +7516,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7507,7 +7567,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7552,7 +7618,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7597,7 +7669,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7642,7 +7720,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7687,7 +7771,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7732,7 +7822,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7777,7 +7873,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7822,7 +7924,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7867,7 +7975,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7912,7 +8026,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -7957,7 +8077,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -8002,7 +8128,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -8047,7 +8179,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
@@ -8092,7 +8230,13 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
         "width": 1200,
         "height": 1200
-      }
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
     ],
     "priceRange": {
       "minVariantPrice": {
