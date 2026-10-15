@@ -93,8 +93,9 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
 
         {fb ? (
           /* ── 面料 Hero：面料特写图 + 名字/质感短句/面料故事（仿 Parachute Percale 页头）
-             移动端 16/10 矮幅（2026-09 用户定：原 3/4 太高，首屏只有图见不到商品）── */
-          <div className="relative overflow-hidden aspect-[16/10] sm:aspect-[16/7] lg:aspect-[47/10] mb-8 lg:mb-16">
+             移动端 16/10 矮幅（2026-09 用户定：原 3/4 太高，首屏只有图见不到商品）；
+             移动端 -mx-3 打满屏宽（2026-10-15 用户定），桌面端仍随版心 ── */
+          <div className="relative overflow-hidden aspect-[16/10] sm:aspect-[16/7] lg:aspect-[47/10] mb-8 lg:mb-16 -mx-3 lg:mx-0">
             <img
               src={resolveUrl(fb.heroImage)}
               alt={`${fabricDisplayName(fb.material)} fabric close-up`}
