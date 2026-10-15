@@ -756,6 +756,16 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           const sub = product.subcategory;
           return <V2PdpLifestyle cat={sub === 'solids' ? 'solids' : sub === 'prints' ? 'prints' : 'cushions'} />;
         }
+        if (cat === 'bedding') {
+          // 100% Linen / Linen-Like / Washed Cotton-Like（展示名 Brushed Cotton）/ Satin 各出专属场景图
+          // （2026-10-14/15 用户供图 + AI 种草图）；材质口径与面料 PLP 一致（material 原子词精确匹配）
+          const mats = specs?.material?.split(', ') ?? [];
+          if (mats.includes('100% Linen')) return <V2PdpLifestyle cat="linen" />;
+          if (mats.includes('Linen-Like')) return <V2PdpLifestyle cat="linenlike" />;
+          if (mats.includes('Washed Cotton-Like')) return <V2PdpLifestyle cat="brushedcotton" />;
+          if (mats.includes('Satin')) return <V2PdpLifestyle cat="satin" />;
+          return null;
+        }
         return null;
       })()}
 
