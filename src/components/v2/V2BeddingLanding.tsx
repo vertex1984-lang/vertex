@@ -141,7 +141,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
             <div className="pt-8 lg:pt-12">
               <Reveal>
                 {/* 与页面边框留与其他模块一致的空隙（px-3 lg:px-10 + 圆角）；白字 + 左侧暗渐变，与 /fabric-guide/ 页头一致（2026-09 用户定） */}
-                <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-[21/9]">
+                <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[21/9]">
                   <img
                     src={resolveUrl('/images/fabric-guide/fabric-banner.webp')}
                     alt="Six bedding fabrics side by side"

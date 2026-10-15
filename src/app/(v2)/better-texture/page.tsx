@@ -104,7 +104,7 @@ export default function BetterTexturePage() {
         </nav>
 
         {/* ── Hero 横幅（复用 fabric-guide 横幅 + 图上文案样式）── */}
-        <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-[21/9] mb-12 lg:mb-20">
+        <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[21/9] mb-12 lg:mb-20">
           <img
             src={resolveUrl('/images/fabric-guide/fabric-banner.webp')}
             alt="Folded fabric swatches in warm neutral tones"

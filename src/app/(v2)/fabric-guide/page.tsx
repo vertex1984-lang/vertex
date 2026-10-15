@@ -74,7 +74,7 @@ export default function FabricGuidePage() {
           <span className="text-charcoal-light">Fabric Guide</span>
         </nav>
         {/* ── 页头：横幅图 + 图上文案 ── */}
-        <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-[21/8] mb-10 lg:mb-16">
+        <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[21/8] mb-10 lg:mb-16">
           <img
             src={resolveUrl('/images/fabric-guide/fabric-banner.webp')}
             alt="Six bedding fabrics side by side"
