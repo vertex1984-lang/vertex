@@ -90,7 +90,7 @@ for (const c of COLORS) {
       imgUrl, '1', readableTitle, imgUrl, // Images
       'FALSE', // Gift card
       readableTitle, seoDesc, // SEO
-      c.name.toLowerCase(), // Color metafield
+      '', // Color metafield 留空（该列是 metaobject 引用，纯文本会校验失败 "select a metaobject"）
       '', '', '', '', '', '', 'New', 'FALSE', // Google Shopping
       '', '', '', '', '', // Custom labels
       '', '', '', '', // Packed dims
@@ -98,7 +98,7 @@ for (const c of COLORS) {
   }
 }
 
-const out = 'C:/Users/12021/Desktop/towel/makimoo-towels-24.csv';
+const out = process.env.OUT || 'C:/Users/12021/Desktop/towel/makimoo-towels-24.csv';
 try {
   fs.writeFileSync(out, '\ufeff' + HEADER.map(q).join(',') + '\r\n' + rows.join('\r\n') + '\r\n', 'utf8');
   console.log(`已生成 ${out}（${rows.length} 行）`);
@@ -123,7 +123,7 @@ for (const c of COLORS) {
       s.price, '', '', 'TRUE', '', '', '', '', '',
       'shopify', '100', 'DENY', String(s.grams), 'g', 'TRUE', 'manual',
       '', '', '', '', // 不带图片
-      'FALSE', readableTitle, seoDesc, c.name.toLowerCase(),
+      'FALSE', readableTitle, seoDesc, '', // Color metafield 留空（同上）
       '', '', '', '', '', '', 'New', 'FALSE', '', '', '', '', '', '', '', '', '',
     ].map(q).join(','));
   }
