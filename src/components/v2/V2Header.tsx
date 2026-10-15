@@ -543,7 +543,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 {(MEGA_CARDS[openMenu] || []).map((card) => (
                   <div key={card.image} className="w-[230px]">
                     <a href={v2url(card.href)} onClick={() => setOpenMenu('')} className="group/card block">
-                      <div className="aspect-[4/5] overflow-hidden rounded-lg bg-warm-gray">
+                      <div className="aspect-[4/5] overflow-hidden bg-warm-gray">
                         <img
                           src={resolveUrl(card.image)}
                           alt={card.caption}
