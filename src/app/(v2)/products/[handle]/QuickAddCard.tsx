@@ -82,7 +82,7 @@ export default function QuickAddCard({ card }: { card: QuickAddCardData }) {
     <div className="flex flex-col group">
       <a
         href={productUrl}
-        className="block aspect-square rounded-xl overflow-hidden border border-warm-gray bg-white mb-3"
+        className="block aspect-square overflow-hidden border border-warm-gray bg-white mb-3"
         aria-label={card.title}
       >
         <img

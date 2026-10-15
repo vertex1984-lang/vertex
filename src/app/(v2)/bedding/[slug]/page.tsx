@@ -135,7 +135,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
         {isBedSets ? (
           <V2BedSetsShop families={families} />
         ) : (
-          <V2FabricShop families={families} flat={!fb} noBadges={!!fb} sharpCorners={params.slug === 'duvet-covers'} />
+          <V2FabricShop families={families} flat={!fb} noBadges={!!fb} />
         )}
 
         {/* ── 面料互导（含当前面料，全量展示）── */}
