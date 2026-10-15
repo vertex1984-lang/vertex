@@ -117,12 +117,8 @@ async function pollTask(uuid) {
       }
     }
     const dest = path.join(OUT, `${job.slug}-duvet-folded.webp`);
-    let img = sharp(buf).resize({ ...dims, fit: 'cover', position: 'attention' });
-    // 1:1 输出直接做"产品上移"裁剪（与 LINEN3 已定稿参数一致：裁 1060 中央偏上再放大回 1200）
-    if (dims.width === 1200 && dims.height === 1200) {
-      img = img.extract({ left: 140, top: 140, width: 1060, height: 1060 }).resize(1200, 1200);
-    }
-    await img.webp({ quality: 84 }).toFile(dest);
+    // 2026-10-15 用户定：不做裁剪，保留原图构图，靠 PDP 排版打满边框
+    await sharp(buf).resize({ ...dims, fit: 'cover', position: 'attention' }).webp({ quality: 84 }).toFile(dest);
     console.log(`  已保存 ${dest}`);
   }
   console.log('全部完成');
