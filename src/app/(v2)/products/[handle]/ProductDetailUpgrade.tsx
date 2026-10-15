@@ -766,6 +766,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           if (mats.includes('Satin')) return <V2PdpLifestyle cat="satin" />;
           return null;
         }
+        if (cat === 'towels') {
+          // 长绒棉毛巾（mk-towel-lsc，2026-10-16 用户定）：种草图按当前颜色出对应挂杆场景单图
+          if (group?.id !== 'mk-towel-lsc') return null;
+          const slug = { Cream: 'cream', Oatmeal: 'oatmeal', Sage: 'sage', 'Dusty Rose': 'dustyrose', 'Light Grey': 'lightgrey', 'Dusty Blue': 'dustyblue' }[currentColor || ''] || 'sage';
+          return <V2PdpLifestyle cat="towels" towelColor={slug} />;
+        }
         return null;
       })()}
 

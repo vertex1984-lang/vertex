@@ -52,8 +52,8 @@ for (const c of COLORS) {
       bullets: TOWEL_BULLETS(c.name, s),
       sku: `lsc-towel-${c.slug}-${s.key}`,
       price: s.price,
-      images: [`/images/products/${asin}/1.webp`],
-      whiteBg: [false], // 灰底棚拍图打满图框，不做白底内边距处理
+      images: [`/images/products/${asin}/1.webp`, `/images/products/${asin}/2.webp`], // 1=灰底主图 2=挂杆种草图（2026-10-16 用户定：种草图放第二张）
+      whiteBg: [false, false], // 灰底棚拍图/种草场景图都打满图框，不做白底内边距处理
       color: c.name,
       size: s.inch,
       dims: s.dims,

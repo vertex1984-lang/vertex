@@ -33,6 +33,18 @@ interface LifestyleCard {
   className: string;
 }
 
+/** towels（mk-towel-lsc 长绒棉毛巾，2026-10-16 AI 生成种草图，用户定）：
+ *  挂杆场景按 PDP 当前颜色出对应图（6 色各一张 1:1），单卡布局——移动端全出血方形，
+ *  桌面端限宽居中保持 1:1 构图（挂钩在画面顶部，宽幅裁剪会切掉，故不做横向裁切） */
+const TOWEL_HOOKS: Record<string, { caption: string; desc: string; alt: string }> = {
+  cream: { caption: 'Slow Mornings', desc: 'Sunlight, steam, and soft terry', alt: 'Cream long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+  oatmeal: { caption: 'Golden Hour', desc: 'Warm light on quiet walls', alt: 'Oatmeal long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+  sage: { caption: 'Fresh Start', desc: 'Sunlit terry on wooden hooks', alt: 'Sage green long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+  dustyrose: { caption: 'Soft Hours', desc: 'A warm bath, nowhere to be', alt: 'Dusty rose long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+  lightgrey: { caption: 'Calm & Clear', desc: 'Morning light, nothing to rush', alt: 'Light grey long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+  dustyblue: { caption: 'Blue Hour', desc: 'Cool air and warm water', alt: 'Dusty blue long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
+};
+
 const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin', { gridClass: string; cards: LifestyleCard[] }> = {
   satin: {
     gridClass: 'lg:grid-cols-2',
@@ -226,8 +238,44 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'ne
   },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows' }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin' }) {
-  const set = SETS[cat];
+export default function V2PdpLifestyle({ cat = 'pillows', towelColor }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin' | 'towels'; towelColor?: string }) {
+  // towels：按当前 PDP 颜色动态出单卡（缺色兜底 sage）
+  if (cat === 'towels') {
+    const t = TOWEL_HOOKS[towelColor || 'sage'] || TOWEL_HOOKS.sage;
+    const card: LifestyleCard = {
+      image: `/images/pdp-lifestyle/towel-hooks-${towelColor || 'sage'}.webp`,
+      caption: t.caption,
+      desc: t.desc,
+      alt: t.alt,
+      className: 'aspect-square lg:w-[55%] lg:mx-auto',
+    };
+    return (
+      <section className="mt-8 lg:mt-12">
+        <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none grid grid-cols-1 gap-2 lg:gap-5 lg:px-10">
+          <div className={`relative overflow-hidden ${card.className}`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={resolveUrl(card.image)}
+              alt={card.alt}
+              loading="lazy"
+              draggable={false}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4 lg:bottom-5 lg:left-6">
+              <p className="text-cream text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase">
+                {card.caption}
+              </p>
+              <p className="mt-0.5 text-cream/80 text-[11px] lg:text-xs tracking-wide">
+                {card.desc}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+  const set = SETS[cat as keyof typeof SETS];
   return (
     <section className="mt-8 lg:mt-12">
       <div className={`mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none grid grid-cols-1 ${set.gridClass} gap-2 lg:gap-5 lg:px-10`}>
