@@ -136,4 +136,12 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "mk-pc-ctn-lightgrey": { material: "Cotton-Like", dimensionsCm: [40, 40] },
   "mk-pc-ctn-lightgrey-45": { material: "Cotton-Like", dimensionsCm: [45, 45] },
   "mk-bp-insert-1pc": { material: "Polyester", dimensionsCm: [137, 51] },
+  "mk-pc-boucle-white-45": { material: "Boucle", dimensionsCm: [45, 45] },
+  "mk-pc-boucle-oatmeal-45": { material: "Boucle", dimensionsCm: [45, 45] },
+  "mk-pc-boucle-dustyrose-45": { material: "Boucle", dimensionsCm: [45, 45] },
+  "mk-pc-boucle-sage-45": { material: "Boucle", dimensionsCm: [45, 45] },
+  "mk-pc-boucle-white": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-oatmeal": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-dustyrose": { material: "Boucle", dimensionsCm: [40, 40] },
+  "mk-pc-boucle-sage": { material: "Boucle", dimensionsCm: [40, 40] },
 };

@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
-import { getFavorites } from '@/lib/favorites';
 import V2SearchOverlay from './V2SearchOverlay';
 import { fabricByMaterial, fabricDisplayName } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
@@ -197,7 +196,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
-  const [favCount, setFavCount] = useState(0);
   // Mega menu：当前展开的分类（'' = 收起）
   const [openMenu, setOpenMenu] = useState('');
   // 移动抽屉 2026-09 改为底部上弹（82dvh，页头保持露出可点），不再需要对齐页头下缘
@@ -315,18 +313,6 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     };
   }, []);
 
-  // 收藏角标：localStorage 心愿单数量（2026-10-12 用户定：V2Header 增加收藏入口）
-  useEffect(() => {
-    const refresh = () => setFavCount(getFavorites().length);
-    refresh();
-    window.addEventListener('makimoo:favorites-updated', refresh);
-    window.addEventListener('storage', refresh);
-    return () => {
-      window.removeEventListener('makimoo:favorites-updated', refresh);
-      window.removeEventListener('storage', refresh);
-    };
-  }, []);
-
   // 搜索联想与提交逻辑已迁至 V2SearchOverlay（2026-10 合并 P2 全屏搜索层）
 
   // 只有首页（/）和 About（/about/）有大图页头，保持「透明 → 滚动实底」；
@@ -393,11 +379,16 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
           {/* 实底背景放 absolute 子层：保留 transparent→solid 的过渡动画
               （原为 v7 刘海采样规避，sticky 终版后仅为视觉过渡服务）。
               2026-10-12 用户定：去掉 shadow-md（分类/筛选/搜索页导航下方不要有阴影），
-              改用 border-b border-warm-gray 细分隔线标示导航边界（阴影全去掉后与页面同色无分界） */}
+              改用 border-b 细分隔线标示导航边界（阴影全去掉后与页面同色无分界）。
+              2026-10-14 用户反馈：向上滚动导航变透明前瞬间会闪一条白线——
+              border-b 常驻、只过渡 border-color（透明↔warm-gray）；
+              且变透明时 duration-0 立即完成（渐变过程线仍可见），变实底保留 300ms 淡入 */}
           <div
             aria-hidden="true"
-            className={`absolute inset-0 transition-all duration-300 ${
-              solid ? 'bg-off-white/95 backdrop-blur border-b border-warm-gray' : ''
+            className={`absolute inset-0 border-b ${
+              solid
+                ? 'transition-all duration-300 bg-off-white/95 backdrop-blur border-warm-gray'
+                : 'border-transparent'
             }`}
           />
           <a href={v2url('/')} className="relative flex items-center gap-2">
@@ -413,9 +404,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
           <nav className="relative hidden lg:flex items-center gap-7 text-sm font-medium">
             {navLinks.map((link) => {
-              const navCls = 'relative py-1 text-base hover:text-brand transition-colors group';
+              // 2026-10-12 用户定：透明态（首屏大图）悬停保持 cream 不变棕——
+              // brand 棕压在大图上看不清；下划线同理，实底后才用品牌棕
+              const navCls = `relative py-1 text-base transition-colors group ${solid ? 'hover:text-brand' : 'hover:text-cream'}`;
               const underline = (
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-brand transition-all ${
+                <span className={`absolute bottom-0 left-0 h-0.5 ${solid ? 'bg-brand' : 'bg-cream'} transition-all ${
                   openMenu && openMenu === link.cat ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
               );
@@ -453,21 +446,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
               </svg>
             </button>
 
-            {/* 收藏入口（2026-10-12 用户定）：爱心 + 数量角标，链 /favorites/ */}
-            <a
-              href={v2url('/favorites/')}
-              className={`relative w-9 h-9 lg:w-11 lg:h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
-              aria-label={favCount > 0 ? `Favorites, ${favCount} items` : 'Favorites'}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-              </svg>
-              {favCount > 0 && (
-                <span className="absolute top-0.5 right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-brand text-cream text-[10px] font-bold flex items-center justify-center">
-                  {favCount > 99 ? '99+' : favCount}
-                </span>
-              )}
-            </a>
+            {/* 收藏入口已于 2026-10-12 移除（用户定：导航栏不再有心愿单入口）；/favorites/ 页面与 lib/favorites 保留磁盘备用 */}
 
             <button
               onClick={openMiniCart}

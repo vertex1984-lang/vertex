@@ -13,9 +13,9 @@ import type { MakimooProduct } from '@/data/products';
 
 export type SetKind = 'four' | 'three' | 'comforter' | 'duvet';
 
-// 被套单品家族（ice silk 缎面归 Satin 面料子类；2026-10 协作方新品 LINEN3-*/DUVSET-*-DUVET
-// 独立被套单件也归 duvet，见 classifySet）。
-// ice silk 为颜色×尺寸二维家族：family = 同色组（key = 前缀::颜色）；新品独立被套一色一家族。
+// 被套单品家族（LINEN3-*/DUVSET-*-DUVET 独立被套单件归 duvet，见 classifySet）。
+// ice silk 缎面为三件套家族（2026-10-15 用户确认），颜色×尺寸二维：family = 同色组（key = 前缀::颜色）；
+// 新品独立被套一色一家族。
 const DUVET_PREFIXES = ['1688-1048207560416', '1688-1061371343572'];
 
 export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
@@ -68,7 +68,9 @@ export function classifySet(asin: string): SetKind | null {
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
   if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
-  if (DUVET_PREFIXES.some((p) => a.startsWith(p))) return 'duvet';
+  // ice silk 缎面（Satin）两个前缀家族实为被套+2枕套三件套（2026-10-15 用户确认），归 three；
+  // 家族 key 仍按前缀::颜色（见 familyKeyOf）
+  if (DUVET_PREFIXES.some((p) => a.startsWith(p))) return 'three';
   return null;
 }
 
@@ -182,7 +184,7 @@ export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: strin
   },
   duvet: {
     heading: 'Duvet Covers',
-    blurb: 'Standalone covers in linen, washed cotton-like & satin — slip over your favorite insert.',
+    blurb: 'Standalone covers in linen & washed cotton-like — slip over your favorite insert.',
   },
 };
 

@@ -31,7 +31,7 @@ export default function V2RecentlyViewed({ currentHandle }: V2RecentlyViewedProp
 
   return (
     <section className="bg-off-white">
-      <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10 pb-14 lg:pb-20">
+      <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10 pt-14 pb-14 lg:pt-20 lg:pb-20">
         <div className="mb-6 lg:mb-8">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2">Your Browsing</p>
           <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal">Recently Viewed</h2>

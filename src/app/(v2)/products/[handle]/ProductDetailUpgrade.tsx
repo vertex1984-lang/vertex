@@ -17,7 +17,6 @@ import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
-import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -75,7 +74,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [addingToCart, setAddingToCart] = useState(false);
-  const [fav, setFav] = useState(false);
   const [sizeMenuOpen, setSizeMenuOpen] = useState(false);
   const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
 
@@ -97,14 +95,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
-  // 收藏态同步 + 最近浏览
+  // 记录最近浏览（心愿单功能已于 2026-10-12 移除，用户定）
   useEffect(() => {
     if (!product) return;
     addRecentlyViewed(product.handle);
-    const sync = () => setFav(isFavorite(product.id));
-    sync();
-    window.addEventListener('makimoo:favorites-updated', sync);
-    return () => window.removeEventListener('makimoo:favorites-updated', sync);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
 
@@ -274,11 +268,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     }
   };
 
-  const handleToggleFavorite = () => {
-    const nowFav = toggleFavorite(product.id);
-    toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
-  };
-
   // 手风琴（桌面在右栏 Details 下方，移动端在右栏底部）。
   // 2026-09-29 用户定：Description 图文区删除；Specifications 大表改为手风琴一节；
   // 顺序 Product Details / Care & Maintenance 在前，Shipping / Returns 在后。
@@ -424,18 +413,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/>
                 </svg>
               </div>
-              {/* 心愿单（移动端）：悬浮主图右上角，原位置与智能导购气泡重叠故移此（2026-09-28 用户定） */}
-              <button
-                onClick={(e) => { e.stopPropagation(); handleToggleFavorite(); }}
-                className={`lg:hidden absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center transition active:scale-95 ${
-                  fav ? 'text-brand' : 'text-charcoal-light'
-                }`}
-                aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
-              >
-                <svg width="19" height="19" viewBox="0 0 24 24" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-              </button>
               {/* 移动端圆点指示器：当前第几张，可点跳转（2026-10-02 采自 feat/pdp-v2-features：胶囊造型 + 滑动后抑制误触） */}
               {productImages.length > 1 && (
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 lg:hidden z-10">
@@ -456,8 +433,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           {/* 右：购买信息栏（min-w-0 防 grid 隐式列被内容撑宽） */}
           <div className="lg:pt-2 min-w-0">
             {/* 移动端首屏压缩（2026-09-28 用户定：浏览器地址栏+工具栏显示时价格仍进不了首屏）：
-                类目徽章移动端隐藏、心愿单按钮移到主图右上角悬浮（原位置与智能导购气泡重叠）、
-                行间距收紧；桌面端保持原布局 */}
+                类目徽章移动端隐藏、行间距收紧；桌面端保持原布局。
+                心愿单按钮（桌面购买区 + 移动端主图悬浮）已于 2026-10-12 移除（用户定） */}
             <div className="flex items-center justify-between gap-4 mb-2 lg:mb-4">
               <div className="flex items-center gap-2">
                 <span className="hidden lg:inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
@@ -468,17 +445,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   {isInStock ? 'In Stock' : 'Out of Stock'}
                 </span>
               </div>
-              <button
-                onClick={handleToggleFavorite}
-                className={`hidden lg:flex w-11 h-11 rounded-full border items-center justify-center transition hover:scale-105 active:scale-95 flex-shrink-0 ${
-                  fav ? 'border-brand text-brand bg-brand/5' : 'border-warm-gray text-charcoal-light hover:text-brand hover:border-brand'
-                }`}
-                aria-label={fav ? 'Remove from favorites' : 'Add to favorites'}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-              </button>
             </div>
 
             {/* 平板档（lg~xl，1024-1280px，如 iPad Pro 11/13 竖屏）用 text-2xl：右栏仅约 380px 宽，
@@ -776,14 +742,29 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           桌面可见约 4.5 张（卡宽 = (100% - 4×gap)/4.5）；移动端 w-[38vw] 可见 2 张 + 约 30px 缝隙） */}
       {/* 种草双图区（2026-10-12 用户定）：信任条下方、You May Also Like 上方，
           仅 pillows / cushions 类 PDP 渲染（按类目出对应场景图，跨类目展示不搭）；
-          cushions 中 solids 系列出专属场景图（门廊+海滨，用户定） */}
+          cushions 中 solids 系列出专属场景图（门廊+海滨，用户定）；
+          pillows 中 boucle 系列出专属混色场景图（2026-10-13 用户定，AI 生成 2:3 竖图） */}
       {(() => {
         const cat = product.productType.toLowerCase();
-        if (cat === 'pillows') return <V2PdpLifestyle cat="pillows" />;
+        if (cat === 'pillows') {
+          // 颈枕（Neck Pillows 子类目，源数据 Travel 归一化为 Pillows/subcategory=neck-pillow）出专属场景图（2026-10-14 用户供图）
+          if (product.subcategory === 'neck-pillow') return <V2PdpLifestyle cat="neck" />;
+          return <V2PdpLifestyle cat={handle.includes('boucle') ? 'boucle' : 'pillows'} />;
+        }
         if (cat === 'cushions') {
           // solids / prints（Floral & Prints，2026-10-12 用户供图）各有专属场景图
           const sub = product.subcategory;
           return <V2PdpLifestyle cat={sub === 'solids' ? 'solids' : sub === 'prints' ? 'prints' : 'cushions'} />;
+        }
+        if (cat === 'bedding') {
+          // 100% Linen / Linen-Like / Washed Cotton-Like（展示名 Brushed Cotton）/ Satin 各出专属场景图
+          // （2026-10-14/15 用户供图 + AI 种草图）；材质口径与面料 PLP 一致（material 原子词精确匹配）
+          const mats = specs?.material?.split(', ') ?? [];
+          if (mats.includes('100% Linen')) return <V2PdpLifestyle cat="linen" />;
+          if (mats.includes('Linen-Like')) return <V2PdpLifestyle cat="linenlike" />;
+          if (mats.includes('Washed Cotton-Like')) return <V2PdpLifestyle cat="brushedcotton" />;
+          if (mats.includes('Satin')) return <V2PdpLifestyle cat="satin" />;
+          return null;
         }
         return null;
       })()}
