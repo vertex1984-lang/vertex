@@ -99,5 +99,35 @@ for (const c of COLORS) {
 }
 
 const out = 'C:/Users/12021/Desktop/towel/makimoo-towels-24.csv';
-fs.writeFileSync(out, '﻿' + HEADER.map(q).join(',') + '\r\n' + rows.join('\r\n') + '\r\n', 'utf8');
-console.log(`已生成 ${out}（${rows.length} 行）`);
+try {
+  fs.writeFileSync(out, '\ufeff' + HEADER.map(q).join(',') + '\r\n' + rows.join('\r\n') + '\r\n', 'utf8');
+  console.log(`已生成 ${out}（${rows.length} 行）`);
+} catch (e) {
+  // 文件被 Excel 占用（EBUSY）时跳过主文件，继续生成 plan B
+  console.warn(`跳过 ${out}：${e.code || e.message}（如在 Excel 中打开请先关闭）`);
+}
+
+// Plan B（排查导入静默失败）：无 BOM、不带图片列，文件名 -noimg
+const rowsB = [];
+for (const c of COLORS) {
+  for (const s of SIZES) {
+    const sku = `lsc-towel-${c.slug}-${s.key}`;
+    const readableTitle = `Makimoo Long-Staple Cotton Towel ${s.inch} (${c.name})`;
+    const descHtml = bullets(c.name, s).map((p) => `<p>${p}</p>`).join('');
+    const seoDesc = `One ${s.inch} ${s.type} in ${c.name}. Long-staple cotton terry, 400 g/m², soft and absorbent. Machine washable.`;
+    rowsB.push([
+      sku, sku, descHtml, 'Makimoo',
+      'Home & Garden > Linens & Bedding > Towels', 'Towels',
+      `Towels, Long-Staple Cotton, ${c.name}`, 'TRUE', 'Active', sku, '',
+      'Title', 'Default Title', '', '', '', '', '', '', '',
+      s.price, '', '', 'TRUE', '', '', '', '', '',
+      'shopify', '100', 'DENY', String(s.grams), 'g', 'TRUE', 'manual',
+      '', '', '', '', // 不带图片
+      'FALSE', readableTitle, seoDesc, c.name.toLowerCase(),
+      '', '', '', '', '', '', 'New', 'FALSE', '', '', '', '', '', '', '', '', '',
+    ].map(q).join(','));
+  }
+}
+const outB = 'C:/Users/12021/Desktop/towel/makimoo-towels-24-noimg.csv';
+fs.writeFileSync(outB, HEADER.map(q).join(',') + '\r\n' + rowsB.join('\r\n') + '\r\n', 'utf8');
+console.log(`已生成 ${outB}（${rowsB.length} 行，无 BOM 无图片）`);
