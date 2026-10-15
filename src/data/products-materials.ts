@@ -16782,6 +16782,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
         "width": 1024,
         "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-SAGE-DUVET/6.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "priceRange": {
@@ -16843,6 +16849,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/LINEN3-CHARCOAL-DUVET/5.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-CHARCOAL-DUVET/6.webp",
         "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
         "width": 1024,
         "height": 1024
@@ -16910,6 +16922,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
         "width": 1024,
         "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/6.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "priceRange": {
@@ -16971,6 +16989,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/LINEN3-IVORY-DUVET/5.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-IVORY-DUVET/6.webp",
         "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
         "width": 1024,
         "height": 1024
@@ -17038,6 +17062,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
         "width": 1024,
         "height": 1024
+      },
+      {
+        "url": "/images/products/LINEN3-OATMEAL-DUVET/6.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "priceRange": {
@@ -17099,6 +17129,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/DUVSET-GRAY-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-GRAY-DUVET/6.webp",
         "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
         "width": 1024,
         "height": 1024
@@ -17166,6 +17202,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
         "width": 1024,
         "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-PINK-DUVET/6.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "priceRange": {
@@ -17230,6 +17272,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
         "width": 1024,
         "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-BEIGE-DUVET/6.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "priceRange": {
@@ -17291,6 +17339,12 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/DUVSET-WHITE-DUVET/5.webp",
+        "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "/images/products/DUVSET-WHITE-DUVET/6.webp",
         "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
         "width": 1024,
         "height": 1024
