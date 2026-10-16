@@ -247,12 +247,12 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
     jumpSearch(q);
   };
 
-  // ③ 换一批：批次步进循环整个画像池
-  const persBatch = persPool.slice(persStart, persStart + PERSONALIZED.batchSize);
+  // ③ 换一批：批次步进循环整个画像池（步长=桌面批 15；手机每屏取批内前 8 个）
+  const persBatch = persPool.slice(persStart, persStart + PERSONALIZED.desktopBatchSize);
   const refreshPersonalized = () => {
     trackEvent('personalized_refresh');
     setPersStart((s) => {
-      const next = s + PERSONALIZED.batchSize;
+      const next = s + PERSONALIZED.desktopBatchSize;
       return next >= persPool.length ? 0 : next;
     });
   };
@@ -479,9 +479,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                     </div>
                   </div>
                   {!personalizedCollapsed && (
-                    /* 移动端两列网格（一行两个、8 个=4 行，2026-10 用户定）；
-                       桌面端保持流式气泡（内容自适应宽度） */
-                    <div className="grid grid-cols-2 gap-2 lg:flex lg:flex-wrap lg:gap-2.5">
+                    /* 移动端两列网格（8 个 = 4 行，2026-10 用户定维持）；
+                       桌面端 5 列锁 3 行（lg:grid-rows-3，2026-10-16 用户定）——
+                       第 9 个起手机端隐藏，桌面凑满 3 行；池不足 15 按实际数展示 */
+                    <div className="grid grid-cols-2 gap-2 lg:grid-cols-5 lg:grid-rows-3 lg:gap-2.5">
                       {persBatch.map((p, i) => {
                         const img = cardImage(p);
                         return (
@@ -489,7 +490,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                             key={p.id}
                             href={v2url(`/products/${p.handle}/`)}
                             onClick={() => trackEvent('personalized_click', { position: persStart + i + 1 })}
-                            className="flex items-center gap-2 pl-1.5 pr-3 py-1.5 lg:gap-2.5 lg:pr-4 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0"
+                            className={`flex items-center gap-2 pl-1.5 pr-3 py-1.5 lg:gap-2.5 lg:pr-4 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0 ${i >= PERSONALIZED.batchSize ? 'hidden lg:flex' : ''}`}
                           >
                             {img ? (
                               <img
