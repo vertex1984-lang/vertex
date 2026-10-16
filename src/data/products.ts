@@ -6698,7 +6698,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-WHITE-45/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-WHITE-45/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (White)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6743,7 +6755,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-OATMEAL-45/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-OATMEAL-45/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6788,7 +6812,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-DUSTYROSE-45/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-DUSTYROSE-45/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6833,7 +6869,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-SAGE-45/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-SAGE-45/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6878,7 +6926,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-WHITE/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-WHITE/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (White)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6923,7 +6983,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-OATMEAL/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-OATMEAL/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -6968,7 +7040,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-DUSTYROSE/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-DUSTYROSE/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
@@ -7013,7 +7097,19 @@ const BASE_PRODUCTS: MakimooProduct[] = [
         "width": 1200,
         "height": 1200
       }
-    ],
+    ,
+      {
+        "url": "/images/products/MK-PC-BOUCLE-SAGE/2.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MK-PC-BOUCLE-SAGE/3.webp",
+        "altText": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
+        "width": 1200,
+        "height": 1200
+      }],
     "priceRange": {
       "minVariantPrice": {
         "amount": "19.99",
