@@ -115,24 +115,17 @@ export default function V2PillowsCatHero({
             alt="Boucle throw pillows on a sunlit sofa"
             className="w-full h-[400px] xl:h-[460px] object-cover object-[center_28%]"
           />
-          {/* 原色显示（2026-10-16 用户定：去掉白色渐变）；标题区轻微压暗 + 白色字保底可读性 */}
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent"
-            aria-hidden="true"
-          />
+          {/* 原图原色、无任何遮罩（2026-10-16 用户定）；标题/副标题深色字放在图上左上
+              浅色留白区（花瓶/铃兰区），该区亮度足够黑色字完整可读 */}
           <div className="absolute inset-0 flex flex-col justify-start pt-10 xl:pt-14 px-10">
-            <h1 className="text-6xl font-extrabold tracking-tight text-white">
+            <h1 className="text-6xl font-extrabold tracking-tight text-charcoal">
               Pillows
-              <sup className="ml-2 align-super text-base font-semibold text-white/70">
+              <sup className="ml-2 align-super text-base font-semibold text-[#999]">
                 {styleCount}
               </sup>
             </h1>
             {intro && (
-              /* 副标题黑字（2026-10-16 用户定：白色小字在亮图上看不清）；
-                 压暗渐变下黑字需亮底 → 半透明白底 chip 保底可读性 */
-              <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal bg-white/75 backdrop-blur-sm rounded-md px-3 py-2 -ml-3">
-                {intro}
-              </p>
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal">{intro}</p>
             )}
           </div>
         </div>
