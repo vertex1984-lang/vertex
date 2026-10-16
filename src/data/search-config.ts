@@ -23,13 +23,13 @@ export const HISTORY_SHOW_MAX = 10;
 /**
  * Picked for You 个性推荐（画像驱动，每个用户不同）。
  * - batchSize：手机端单批数（两列 → 8 个 = 4 行，2026-10-16 用户定维持不变）
- * - desktopBatchSize：桌面端单批数（lg 栅格锁 3 行，5 列 × 3 行 = 15，2026-10-16 用户定；
- *   画像池不足 15 时按实际数量展示，永远不超过 3 行）
+ * - desktopBatchSize：桌面端单批数（lg 栅格锁 2 行，5 列 × 2 行 = 10，2026-10-16 用户定；
+ *   画像池不足 10 时按实际数量展示，永远不超过 2 行）
  * - 换一批按 desktopBatchSize 步进循环画像池
  */
 export const PERSONALIZED = {
   batchSize: 8,
-  desktopBatchSize: 15,
+  desktopBatchSize: 10,
 };
 
 /**
