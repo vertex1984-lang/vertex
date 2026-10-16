@@ -87,8 +87,10 @@ export default function BeddingSetCard({
       {/* 白色信息区：标题/价格小号字 + 紧凑内边距（2026-09 用户定：除尺寸行外文字缩小、白色区压缩）；
           compactText（2026-10-08 用户定）= Pillows / Bedding 类目卡片标题与价格再缩小一档，其他类目不变 */}
       <div className="p-3 lg:p-4">
+        {/* 标题最多两行（2026-10-16 用户定：移动端单行截断大量标题显示不全，改两行 clamp，
+            超出两行才省略号；不定最小行高——一行/两行标题与价格的间距保持一致，同日用户定） */}
         <h3
-          className={`${compactText ? 'text-[11px] lg:text-xs' : 'text-xs lg:text-sm'} font-semibold text-charcoal truncate`}
+          className={`${compactText ? 'text-[11px] lg:text-xs' : 'text-xs lg:text-sm'} font-semibold text-charcoal leading-snug line-clamp-2`}
           title={name}
         >
           {name}

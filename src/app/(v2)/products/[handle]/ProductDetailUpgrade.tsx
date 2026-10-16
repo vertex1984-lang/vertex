@@ -76,6 +76,20 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const [addingToCart, setAddingToCart] = useState(false);
   const [sizeMenuOpen, setSizeMenuOpen] = useState(false);
   const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
+  const sizeMenuRef = useRef<HTMLDivElement | null>(null);
+
+  // 尺寸下拉：点击下拉框外部任意位置即关闭（2026-10-16 用户定，全站 PDP 共用此组件）；
+  // 点选项/点下拉框本身关闭的行为不变。pointerdown 早于 click，不影响面板内 Link 跳转
+  useEffect(() => {
+    if (!sizeMenuOpen) return;
+    const onPointerDown = (e: PointerEvent) => {
+      if (sizeMenuRef.current && !sizeMenuRef.current.contains(e.target as Node)) {
+        setSizeMenuOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    return () => document.removeEventListener('pointerdown', onPointerDown);
+  }, [sizeMenuOpen]);
 
   // GA4: view_item
   useEffect(() => {
@@ -550,7 +564,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 点击展开选项面板；变体组带尺寸 → 跳转对应尺寸页（缺货/无此规格在面板内灰显）；
                 地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类 Size guide 入口移到框下方右侧 */}
             {(sizeVariants.length > 0 || (isRug && currentSizeStr)) && (
-            <div className="mb-5 lg:mb-7">
+            <div ref={sizeMenuRef} className="mb-5 lg:mb-7">
               <button
                 type="button"
                 onClick={() => setSizeMenuOpen((v) => !v)}

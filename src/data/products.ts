@@ -8392,7 +8392,11 @@ function normalizeCategory(t: string, title = ''): string {
  *  - 8 款枕套全站隐藏（Pillow Cases 子类目整体移除；注意同变体族的 3 款 cushion covers
  *    b0gjlsdz52/b0gjldmt57/b0gjlmjws1 三款抱枕套 2026-10-08 起也已隐藏；duvset 标题含 pillowcases
  *    但是床品套装，不在隐藏之列） */
-const HIDDEN_HANDLE_PREFIXES = ['inflatable-travel-pillow-'];
+const HIDDEN_HANDLE_PREFIXES = [
+  'inflatable-travel-pillow-',
+  // 2026-10-16 用户定：1688-916370884976 水洗棉撞色三件套全家族移除（C5–C9 全尺寸）
+  'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976',
+];
 const HIDDEN_HANDLES = new Set([
   // 2026-10-08 用户定：B0H4V662HL（45×45 枕芯）与 B0CQC6H9MZ 重复，全站移除
   'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl',

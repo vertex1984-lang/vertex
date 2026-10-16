@@ -104,10 +104,12 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
         <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
           {product.tagLabel || productCategoryTag(product)}
         </p>
-        {/* 标题全端单行截断（truncate + 省略号），字号全端统一 text-xs */}
-        <h3 className="relative text-xs font-medium text-[#333] leading-snug truncate">
+        {/* 标题最多两行（2026-10-16 用户定：移动端单行截断大量标题显示不全，改两行 clamp，
+            超出两行才省略号；不定最小行高——一行/两行标题与价格的间距保持一致，同日用户定），
+            字号全端统一 text-xs */}
+        <h3 className="relative text-xs font-medium text-[#333] leading-snug line-clamp-2">
           {shortTitle(product.title, product.productType)}
-          {/* 标题下划线 hover 渐入（v1 同款） */}
+          {/* 标题下划线 hover 渐入（v1 同款；两行标题下划线跟随最后一行宽度即可） */}
           <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
         </h3>
         <p className="mt-1 text-base sm:text-lg font-semibold text-[#8B5A2B]">

@@ -912,7 +912,7 @@ const TOWEL_BEACH_2PK: ProductReview[] = [
   {
     author: 'Yusuf Kane',
     rating: 5,
-    text: 'Got the red and white stripe. Colors came out bright and have stayed that way through several beach trips and washes.',
+    text: 'Got the pink and white stripe. Colors came out bright and have stayed that way through several beach trips and washes.',
     date: 'July 2026',
   },
   {
