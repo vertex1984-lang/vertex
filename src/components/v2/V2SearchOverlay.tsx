@@ -266,8 +266,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       style={{ animation: 'fadeIn 0.18s ease-out' }}
     >
       {/* 顶部搜索条：大输入框 + 关闭（触控目标 44px） */}
-      <div className="border-b border-warm-gray bg-off-white px-4 lg:px-10 pt-3 pb-3">
-        <div className="max-w-3xl mx-auto flex items-center gap-2">
+        <div className="border-b border-warm-gray bg-off-white px-4 lg:px-10 pt-3 pb-3">
+        <div className="max-w-3xl mx-auto flex items-center gap-2 lg:max-w-none">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="text-charcoal-light flex-shrink-0">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16" y2="16"/>
           </svg>
@@ -293,9 +293,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       </div>
 
       <div className="flex-1 overflow-y-auto overscroll-contain">
-        <div className="max-w-5xl mx-auto px-4 lg:px-10 py-6">
+        {/* 桌面端全宽（Parachute 式，2026-10 用户定）；移动端保持 px-4 流式 */}
+        <div className="px-4 lg:px-10 py-6">
           {searching ? (
-            <>
+            <div className="lg:max-w-5xl">
               {/* 品类直达行 */}
               {categories.length > 0 && (
                 <div className="mb-5 flex flex-wrap gap-2">
@@ -356,9 +357,11 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   View all results for &ldquo;{debounced}&rdquo;
                 </button>
               </div>
-            </>
+          </div>
           ) : (
-            <>
+            <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-10">
+              {/* 桌面左栏：历史 + 热词竖排胶囊（Parachute 式）；移动端仍是纵向堆叠流 */}
+              <aside>
               {/* ── ① 历史搜索：文字胶囊 / 🗑 清空 / ▽ 折叠 ── */}
               {history.length > 0 && (
                 <section className="mb-7">
@@ -398,7 +401,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                     </div>
                   </div>
                   {!historyCollapsed && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 lg:flex-col lg:items-start">
                       {history.slice(0, HISTORY_SHOW_MAX).map((term) => (
                         <button
                           key={term}
@@ -423,7 +426,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     Search Suggestions
                   </h2>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 lg:flex-col lg:items-start">
                     {HOT_SEARCHES.map((hot) => (
                       <a
                         key={hot.label}
@@ -437,7 +440,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   </div>
                 </section>
               )}
+              </aside>
 
+              {/* 桌面右主区：个性推荐横条 + 系统推荐大图网格；移动端继续纵向流 */}
+              <div className="min-w-0">
               {/* ── ③ Picked for You 个性推荐：画像气泡（左端小主图）/ 🔄 换一批 / ▽ 折叠 ── */}
               {persPool.length > 0 && (
                 <section className="mb-7">
@@ -580,7 +586,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   )}
                 </section>
               )}
-            </>
+              </div>
+            </div>
           )}
         </div>
       </div>
