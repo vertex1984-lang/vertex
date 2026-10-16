@@ -2856,36 +2856,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
         "width": 800,
         "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/3.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/4.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/5.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/6.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/7.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
       }
     ],
     "priceRange": {
@@ -2929,36 +2899,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/1688-952595759182-C2/2.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/3.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/4.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/5.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/6.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/7.webp",
         "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
         "width": 800,
         "height": 800
@@ -3008,36 +2948,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
         "width": 800,
         "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/3.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/4.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/5.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/6.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/7.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
       }
     ],
     "priceRange": {
@@ -3081,36 +2991,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       },
       {
         "url": "/images/products/1688-952595759182-C4/2.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/3.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/4.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/5.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/6.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/7.webp",
         "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
         "width": 800,
         "height": 800
