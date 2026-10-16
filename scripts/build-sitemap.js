@@ -14,6 +14,7 @@ const baseHandles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) 
 const materialsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products-materials.ts'), 'utf8');
 const materialHandles = [...materialsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 // 2026-09-30 用户定：隐藏产品（4 款天鹅绒充气颈枕 + 8 款枕套）不入 sitemap
+// 2026-10-16 用户定：1688-916370884976 水洗棉撞色三件套全家族（C5–C9）也不入
 // （与 src/data/products.ts 的 HIDDEN_HANDLE_PREFIXES / HIDDEN_HANDLES 同步）
 const HIDDEN_HANDLES = new Set([
   'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
@@ -26,7 +27,12 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
 ]);
 const handles = [...new Set([...baseHandles, ...materialHandles])]
-  .filter((h) => !h.startsWith('inflatable-travel-pillow-') && !HIDDEN_HANDLES.has(h));
+  .filter(
+    (h) =>
+      !h.startsWith('inflatable-travel-pillow-') &&
+      !h.startsWith('comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976') &&
+      !HIDDEN_HANDLES.has(h)
+  );
 
 // Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）
 const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');

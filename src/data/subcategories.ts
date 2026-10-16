@@ -41,9 +41,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
   { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
   { key: 'neck-pillow', parent: 'pillows', label: 'Neck Pillows', shortLabel: 'Neck Pillow', blurb: 'Memory foam support for travel, office & home.' },
-  // Towels（2026-10-16 用户定：二级分类合并为 Towels + Beach Towels 两类，
-  // 原 bath-towels / hand-face 合并为 towels——浴巾/手巾/面巾不再细分）
-  { key: 'towels', parent: 'towels', label: 'Towels', shortLabel: 'Towels', blurb: 'Long-staple cotton for bath, hand & face.' },
+  // Towels（2026-10-16 用户定：二级分类合并为 Bath Towels + Beach Towels 两类，
+  // 原 bath-towels / hand-face 合并为 towels（key 不变，label 改 Bath Towels）——浴巾/手巾/面巾不再细分；
+  // 另有 Fabric 维度（Long-Staple Cotton / Classic Cotton）在 V2TowelsShop 按 asin 前缀判定，不入此注册表）
+  { key: 'towels', parent: 'towels', label: 'Bath Towels', shortLabel: 'Bath Towels', blurb: 'Long-staple cotton for bath, hand & face.' },
   { key: 'beach', parent: 'towels', label: 'Beach Towels', shortLabel: 'Beach Towels', blurb: 'Oversized and quick-drying for pool & beach.' },
   // Mats
   { key: 'kitchen', parent: 'mats', label: 'Kitchen Mats', shortLabel: 'Kitchen Mats', blurb: 'Anti-fatigue comfort where you stand most.' },

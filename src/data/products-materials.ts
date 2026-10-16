@@ -2835,10 +2835,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182",
     "asin": "1688-952595759182",
-    "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+    "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
     "handle": "2-pack-soft-thick-cotton-beach-towels-oversized-striped-1688-952595759182",
-    "description": "Generous 2-Pack Value: Receive two oversized red-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag. Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing. Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool. Quick-Drying & Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use. Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.",
-    "descriptionHtml": "<p>Generous 2-Pack Value: Receive two oversized red-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag.</p><p>Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing.</p><p>Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool.</p><p>Quick-Drying &amp; Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use.</p><p>Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.</p>",
+    "description": "Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag. Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing. Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool. Quick-Drying & Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use. Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.",
+    "descriptionHtml": "<p>Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag.</p><p>Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing.</p><p>Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool.</p><p>Quick-Drying &amp; Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use.</p><p>Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2847,13 +2847,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182/1.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182/2.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
         "width": 800,
         "height": 800
       }
@@ -2881,10 +2881,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C2",
     "asin": "1688-952595759182-C2",
-    "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+    "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
     "handle": "2-pack-thick-oversized-cotton-beach-towels-for-adults-soft-1688-952595759182-c2",
-    "description": "Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket. Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising. Classic Cabana Stripes: The bold grey and white stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom. Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest. Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.",
-    "descriptionHtml": "<p>Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket.</p><p>Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising.</p><p>Classic Cabana Stripes: The bold grey and white stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom.</p><p>Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest.</p><p>Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.</p>",
+    "description": "Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket. Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising. Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom. Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest. Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.",
+    "descriptionHtml": "<p>Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket.</p><p>Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising.</p><p>Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom.</p><p>Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest.</p><p>Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2893,13 +2893,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C2/1.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C2/2.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
         "width": 800,
         "height": 800
       }
@@ -2927,10 +2927,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C3",
     "asin": "1688-952595759182-C3",
-    "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+    "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
     "handle": "2-pack-oversized-cotton-beach-towels-75-x-180-cm-extra-1688-952595759182-c3",
-    "description": "Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand. Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin. Bright Cabana Stripe Design: The bold yellow and white stripes create a cheerful, classic beach look that stands out on crowded shores and adds style to poolside afternoons. Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym. Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.",
-    "descriptionHtml": "<p>Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand.</p><p>Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin.</p><p>Bright Cabana Stripe Design: The bold yellow and white stripes create a cheerful, classic beach look that stands out on crowded shores and adds style to poolside afternoons.</p><p>Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym.</p><p>Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.</p>",
+    "description": "Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand. Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin. Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons. Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym. Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.",
+    "descriptionHtml": "<p>Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand.</p><p>Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin.</p><p>Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons.</p><p>Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym.</p><p>Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2939,13 +2939,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C3/1.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C3/2.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
         "width": 800,
         "height": 800
       }
@@ -2973,10 +2973,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C4",
     "asin": "1688-952595759182-C4",
-    "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+    "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
     "handle": "2-pack-oversized-plush-soft-cotton-beach-towels-extra-large-1688-952595759182-c4",
-    "description": "Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel. Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use. Classic Cabana Stripe Design: Bold blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families. Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack. Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.",
-    "descriptionHtml": "<p>Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel.</p><p>Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use.</p><p>Classic Cabana Stripe Design: Bold blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families.</p><p>Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack.</p><p>Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.</p>",
+    "description": "Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel. Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use. Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families. Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack. Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.",
+    "descriptionHtml": "<p>Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel.</p><p>Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use.</p><p>Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families.</p><p>Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack.</p><p>Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2985,13 +2985,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C4/1.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C4/2.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
         "width": 800,
         "height": 800
       }

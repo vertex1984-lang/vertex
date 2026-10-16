@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { MakimooProduct } from '@/data/products';
 import { BlanketFamily } from '@/data/blanket-families';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import V2FilterSheet, { FilterSheetGroup } from '@/components/v2/V2FilterSheet';
 import { getSubcategoriesOf } from '@/data/subcategories';
 import {
   cushionCardTitle,
@@ -30,6 +31,8 @@ export default function V2CushionsShop({
   initialStyle?: string;
 }) {
   const [style, setStyle] = useState(initialStyle);
+  // 2026-10-16 用户定：移动端筛选改 Filter 按钮 + 底部弹层，桌面端下拉不变
+  const [filterOpen, setFilterOpen] = useState(false);
 
   const families = useMemo(() => visibleCushionFamilies(products), [products]);
 
@@ -58,13 +61,57 @@ export default function V2CushionsShop({
 
   const styleLabel = (k: string) => styleOptions.find((s) => s.key === k)?.label || k;
 
+  // 移动端底部弹层的筛选组（2026-10-16 用户定）：单组 Style，与桌面端下拉同口径（>1 个可选项才纳入）；
+  // values 绑定 activeStyle（与下拉一致，防御旧链接的非法值按未选显示）
+  const filterGroups: FilterSheetGroup[] =
+    styleOptions.length > 1
+      ? [
+          {
+            key: 'style',
+            title: 'Style',
+            allLabel: 'All',
+            options: styleOptions.map((s) => ({ value: s.key, label: s.label })),
+          },
+        ]
+      : [];
+
   return (
     <div>
       {/* 「N styles from $X to $Y」意图回显行：2026-10-10 用户定删除（与 bedding 页一致） */}
 
       {/* 粘性筛选条：Style 下拉（与 pillows 页同款吸顶格式）。
           背景必须不透明（bg-off-white 实底），z-30 必须低于移动端导航抽屉遮罩 z-40 */}
-      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
+      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-2 lg:py-3 mb-5 lg:mb-7">
+        {/* 移动端行（2026-10-16 用户定：移动端筛选改 Filter 按钮 + 底部弹层，桌面端下拉不变）；
+            沿用桌面端 Style 下拉的显示条件（styleOptions.length > 1） */}
+        {styleOptions.length > 1 && (
+          <div className="flex lg:hidden items-center justify-between py-0">
+            <button
+              onClick={() => setFilterOpen(true)}
+              className={`flex items-center gap-1.5 h-8 px-3.5 rounded-full border text-xs font-medium ${
+                activeStyle
+                  ? 'border-brand text-brand'
+                  : 'border-warm-gray text-charcoal-light'
+              }`}
+              aria-label="Open filters"
+            >
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M3 4h18l-7 8v6l-4 2v-8L3 4z" />
+              </svg>
+              Filter{activeStyle ? ' · 1' : ''}
+            </button>
+            {activeStyle && (
+              <button
+                onClick={() => setStyle('')}
+                className="text-xs font-semibold text-brand underline underline-offset-2"
+              >
+                Clear
+              </button>
+            )}
+          </div>
+        )}
+        {/* 桌面端下拉筛选条（原样保留，仅移动端隐藏） */}
+        <div className="hidden lg:block">
         <div className="flex items-center gap-2 lg:gap-2.5">
           {styleOptions.length > 1 && (
             <label className="flex items-center gap-2 flex-shrink-0">
@@ -106,7 +153,21 @@ export default function V2CushionsShop({
             </button>
           </div>
         )}
+        </div>
       </div>
+
+      {/* 移动端筛选底部弹层（2026-10-16 用户定） */}
+      {filterGroups.length > 0 && (
+        <V2FilterSheet
+          open={filterOpen}
+          onClose={() => setFilterOpen(false)}
+          groups={filterGroups}
+          values={{ style: activeStyle }}
+          onChange={(_k, v) => setStyle(v)}
+          onClearAll={() => setStyle('')}
+          resultCount={filtered.length}
+        />
+      )}
 
       {sections.map((s, i) => (
         <section
