@@ -3344,7 +3344,7 @@ const CORDUROY_PC_REVIEWS: ProductReview[] = [
   {
     author: 'Tamsin Rothwell',
     rating: 5,
-    text: 'The wide wale corduroy feels plush without being fuzzy. I slipped my old inserts in and they sit snug and neat, with no gaping at the seam.',
+    text: 'The fine wale corduroy feels plush without being fuzzy. I slipped my old inserts in and they sit snug and neat, with no gaping at the seam.',
     date: 'April 2025',
   },
   {
