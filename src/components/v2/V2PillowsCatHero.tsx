@@ -115,17 +115,21 @@ export default function V2PillowsCatHero({
             alt="Boucle throw pillows on a sunlit sofa"
             className="w-full h-[400px] xl:h-[460px] object-cover object-[center_28%]"
           />
-          {/* 原图原色、无任何遮罩（2026-10-16 用户定）；标题/副标题深色字放在图上左上
-              浅色留白区（花瓶/铃兰区），该区亮度足够黑色字完整可读 */}
+          {/* 深色罩 + 白色字（2026-10-16 用户定，回到该方案：位置/颜色还原初始，
+              左侧黑渐变保底文字可读性；图其余区域保持原色） */}
+          <div
+            className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent"
+            aria-hidden="true"
+          />
           <div className="absolute inset-0 flex flex-col justify-start pt-10 xl:pt-14 px-10">
-            <h1 className="text-6xl font-extrabold tracking-tight text-charcoal">
+            <h1 className="text-6xl font-extrabold tracking-tight text-white">
               Pillows
-              <sup className="ml-2 align-super text-base font-semibold text-[#999]">
+              <sup className="ml-2 align-super text-base font-semibold text-white/70">
                 {styleCount}
               </sup>
             </h1>
             {intro && (
-              <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal">{intro}</p>
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/85">{intro}</p>
             )}
           </div>
         </div>
