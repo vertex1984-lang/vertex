@@ -8,6 +8,7 @@ import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors } from '@/lib/listing-dedupe';
+import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
 
 /**
  * Bedding 类目页选购视图（2026-09 重做，替代 V2BeddingLanding 聚合页）：
@@ -37,12 +38,20 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
     [products]
   );
 
-  // 排序固定 Featured（权重序，2026-09 用户定）+ 同变体族色卡聚拢相邻（2026-10-16 用户定）
+  // 排序：先按面料固定位次（BEDDING_MATERIAL_ORDER，2026-10-17 用户定：Percale→Linen→Brushed
+  // Cotton→Linen-Like→Satin），同面料内按 Featured 权重序，最后同变体族色卡聚拢相邻（2026-10-16 用户定）
   const sortFamilies = useMemo(
     () => (list: SetFamily[]): SetFamily[] => {
+      const rankOf = (f: SetFamily) => {
+        const i = BEDDING_MATERIAL_ORDER.indexOf(f.materials[0] || '');
+        return i === -1 ? 999 : i;
+      };
       const reps = sortByWeight(list.map((f) => f.rep));
       const byRep = new Map(list.map((f) => [f.rep.id, f]));
-      return clusterSetFamilies(reps.map((r) => byRep.get(r.id)!).filter(Boolean));
+      const ordered = reps.map((r) => byRep.get(r.id)!).filter(Boolean);
+      // Array.prototype.sort 稳定：同面料位次内保持权重序
+      ordered.sort((a, b) => rankOf(a) - rankOf(b));
+      return clusterSetFamilies(ordered);
     },
     []
   );

@@ -73,7 +73,7 @@ export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {
 
 /** Bedding 材质分组的展示顺序（2026-09 用户定）：类目页分区/Filter/顶部导航 mega menu 三处统一。
  *  未收录的材质排在后面（按产品数降序兜底） */
-export const BEDDING_MATERIAL_ORDER = ['100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Satin', 'Organic Cotton'];
+export const BEDDING_MATERIAL_ORDER = ['Cotton Percale', '100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Satin', 'Organic Cotton'];
 
 /** 材质分组排序：先按 BEDDING_MATERIAL_ORDER 固定位次，未收录的按数量降序排在尾部 */
 export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [string, T]) => number): [string, T][] {
@@ -88,6 +88,7 @@ export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [st
 /** bedding 材质分区标题下的一句话描述（小字，2026-09 用户定）；未收录的材质不显示描述行。
  *  原定义在 (v2)/products/page.tsx，2026-09 挪入此表供 V2BeddingShop 材质分区复用 */
 export const BEDDING_MATERIAL_BLURBS: Record<string, string> = {
+  'Cotton Percale': 'Crisp, cool & breathable plain weave — that fresh hotel feel, softer with every wash.',
   'Washed Cotton-Like': 'Soft washed feel with a relaxed, lived-in look — easy everyday care.',
   'Linen-Like': 'Airy linen-style texture with a naturally relaxed drape.',
   '100% Linen': 'Pure natural linen — breathable, durable, and softer with every wash.',
