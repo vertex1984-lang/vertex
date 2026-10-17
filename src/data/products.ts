@@ -8423,6 +8423,15 @@ const HIDDEN_HANDLES = new Set([
   '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3',
   '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2',
   '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172',
+  // 2026-10-17 用户定：DUVSET 三件套 Butter Yellow / Dill Green 两色下架（数据与图片文件保留）
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king',
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
 ]);
 
 export function isHiddenProduct(p: { handle: string }): boolean {

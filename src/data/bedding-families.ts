@@ -25,6 +25,18 @@ export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
 const COLOR_LABELS: Record<string, string> = {
   DUSTYBLUE: 'Dusty Blue',
   OFFWHITE: 'Off White',
+  // 2026-10-17：DUVSET 四新色（slug 多词，回退 Title Case 会粘连成 "Beanred"）
+  BEANRED: 'Bean Red',
+  BUTTER: 'Butter Yellow',
+  DILL: 'Dill Green',
+  OAT: 'Alpine Oat',
+  // 2026-10-17：Percale 六色（slug 多词防粘连）
+  SKY: 'Sky Blue',
+  MIST: 'Mist Grey',
+  COCONUT: 'Coconut Milk',
+  NUDE: 'Nude Pink',
+  EUCA: 'Eucalyptus',
+  LAVENDER: 'Lavender Fog',
 };
 
 export interface SetFamily {
@@ -73,6 +85,8 @@ export function classifySet(asin: string): SetKind | null {
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
   if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
+  // 2026-10-17 用户定：Cotton Percale 三件套新面料线（6 色 × 4 尺寸），归 three
+  if (a.startsWith('percale-')) return 'three';
   // ice silk 缎面（Satin）两个前缀家族实为被套+2枕套三件套（2026-10-15 用户确认），归 three；
   // 家族 key 仍按前缀::颜色（见 familyKeyOf）
   if (DUVET_PREFIXES.some((p) => a.startsWith(p))) return 'three';

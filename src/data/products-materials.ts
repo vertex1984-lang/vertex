@@ -17425,4 +17425,1604 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
-  },];
+  },  {
+    "id": "makimoo-DUVSET-BEANRED-TWIN",
+    "asin": "DUVSET-BEANRED-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Bean Red)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-FULL",
+    "asin": "DUVSET-BEANRED-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Bean Red)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-QUEEN",
+    "asin": "DUVSET-BEANRED-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Bean Red)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-KING",
+    "asin": "DUVSET-BEANRED-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Bean Red)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-TWIN",
+    "asin": "DUVSET-BUTTER-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-FULL",
+    "asin": "DUVSET-BUTTER-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-QUEEN",
+    "asin": "DUVSET-BUTTER-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-KING",
+    "asin": "DUVSET-BUTTER-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-TWIN",
+    "asin": "DUVSET-DILL-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-FULL",
+    "asin": "DUVSET-DILL-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-QUEEN",
+    "asin": "DUVSET-DILL-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-KING",
+    "asin": "DUVSET-DILL-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-TWIN",
+    "asin": "DUVSET-OAT-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-FULL",
+    "asin": "DUVSET-OAT-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-QUEEN",
+    "asin": "DUVSET-OAT-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-KING",
+    "asin": "DUVSET-OAT-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-TWIN",
+    "asin": "PERCALE-SKY-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Sky Blue)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-sky-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-FULL",
+    "asin": "PERCALE-SKY-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Sky Blue)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-sky-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-QUEEN",
+    "asin": "PERCALE-SKY-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Sky Blue)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-sky-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-KING",
+    "asin": "PERCALE-SKY-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Sky Blue)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-sky-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-TWIN",
+    "asin": "PERCALE-MIST-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Mist Grey)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-mist-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-FULL",
+    "asin": "PERCALE-MIST-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Mist Grey)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-mist-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-QUEEN",
+    "asin": "PERCALE-MIST-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Mist Grey)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-mist-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-KING",
+    "asin": "PERCALE-MIST-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Mist Grey)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-mist-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-TWIN",
+    "asin": "PERCALE-COCONUT-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Coconut Milk)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-coconut-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-FULL",
+    "asin": "PERCALE-COCONUT-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Coconut Milk)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-coconut-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-QUEEN",
+    "asin": "PERCALE-COCONUT-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Coconut Milk)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-coconut-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-KING",
+    "asin": "PERCALE-COCONUT-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Coconut Milk)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-coconut-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-TWIN",
+    "asin": "PERCALE-NUDE-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Nude Pink)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-nude-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-FULL",
+    "asin": "PERCALE-NUDE-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Nude Pink)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-nude-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-QUEEN",
+    "asin": "PERCALE-NUDE-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Nude Pink)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-nude-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-KING",
+    "asin": "PERCALE-NUDE-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Nude Pink)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-nude-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-TWIN",
+    "asin": "PERCALE-EUCA-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Eucalyptus)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-euca-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-FULL",
+    "asin": "PERCALE-EUCA-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Eucalyptus)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-euca-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-QUEEN",
+    "asin": "PERCALE-EUCA-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Eucalyptus)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-euca-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-KING",
+    "asin": "PERCALE-EUCA-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Eucalyptus)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-euca-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-TWIN",
+    "asin": "PERCALE-LAVENDER-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Lavender Fog)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-lavender-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-FULL",
+    "asin": "PERCALE-LAVENDER-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Lavender Fog)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-lavender-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-QUEEN",
+    "asin": "PERCALE-LAVENDER-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Lavender Fog)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-lavender-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-KING",
+    "asin": "PERCALE-LAVENDER-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Lavender Fog)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-lavender-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+];
