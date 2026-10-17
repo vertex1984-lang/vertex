@@ -46,6 +46,13 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 ### 隐藏名单
 
 - **4 款天鹅绒充气颈枕 + 8 款枕套全站隐藏**（2026-09-30 用户定）：`HIDDEN_HANDLE_PREFIXES = ['inflatable-travel-pillow-']` + `HIDDEN_HANDLES`（8 个枕套 handle，`src/data/products.ts`，`isHiddenProduct()`），在全站唯一出口 `enrichProductsWithShopifyData` 入口过滤（列表/搜索/推荐/类目一次性隐藏）；PDP `generateStaticParams` 与 `scripts/build-sitemap.js` 同步排除。枕套同时从变体族 `b0-embossed-cases`（variant-groups.ts）移除（同族 3 款 cushion covers 是抱枕套，保留）；Pillow Cases 二级子类目同日整体移除（pillows-taxonomy.ts 注册表删除，/pillows/pillow-cases/ 不再生成）。隐藏后 neck-pillows 类目只剩记忆棉颈枕。
+- **DUVSET 三件套 Butter Yellow / Dill Green 两色下架**（2026-10-17 用户定，文件保留可恢复）：8 个 handle 入 `HIDDEN_HANDLES` + 从 DUVSET 变体族移除成员 + build-sitemap.js 同步排除；`add-duvset-4colors.js` 的 COLORS 已删这两色防复活。恢复 = 还原这三处。
+
+### Cotton Percale 面料线（2026-10-17 上线）
+
+- 24 SKU = 6 色（Sky Blue/Mist Grey/Coconut Milk/Nude Pink/Eucalyptus/Lavender Fog）× 4 尺寸，ASIN `PERCALE-<COLOR>-<SIZE>`，SKU/handle 口径同 duvset；接入脚本 `scripts/add-percale-6colors.js`（幂等，sync-materials 全量同步后需重跑），主图由 `scripts/seeany-percale-6colors.js` 生成（sky 文生图定基调，其余 5 色 img2img 换色；质感取用户确认的软质自然版）。
+- **面料排序固定位次**（2026-10-17 用户定）：`BEDDING_MATERIAL_ORDER` = Cotton Percale → 100% Linen → Washed Cotton-Like → Linen-Like → Satin，驱动 mega menu 面料列、类目 Collections；PLP 家族卡排序 = 面料位次优先 + 同面料内 Featured 权重 + 变体族聚拢（`V2BeddingShop.sortFamilies`）。
+- mega menu 面料列末尾的 Fabric Guide 入口已移除（2026-10-17 用户定；/fabric-guide/ 页面保留）。
 
 ### 自定义分类层（taxonomy，仅本地）
 

@@ -97,7 +97,7 @@ interface MenuColumn {
  *  注册表，链接直达面料二级 PLP /bedding/[fabric]/；pillows 为形态列 + Material 列，
  *  直达 /pillows/[slug]/，2026-09-30 用户定），末列 = Featured 固定入口
  *  （bedding 例外，2026-09 用户定：增加 "Bedding" 产品类型列，标题链 /bedding/，
- *    各类型深链到 /bedding/ 页对应锚点；Fabric Guide 在面料列末尾；
+ *    各类型深链到 /bedding/ 页对应锚点；面料列末尾的 Fabric Guide 入口 2026-10-17 用户定移除；
  *    2026-10-09 用户定：Bedding 类型列与 Shop by Fabric 面料列调换位置——类型列在前、面料列在后） */
 function menuColumns(cat: string, styles: { key: string; label: string }[]): MenuColumn[] {
   const current = navLinks.find((l) => l.cat === cat);
@@ -161,7 +161,7 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
     }),
   };
   if (cat === 'bedding') {
-    first.links.push({ label: 'Fabric Guide', desc: 'Find your feel.', href: '/fabric-guide/' });
+    // 2026-10-17 用户定：面料列末尾的 Fabric Guide 入口移除（/fabric-guide/ 页面本身保留）
     // 2026-10-09 用户定：Bedding 类型列与 Shop by Fabric 面料列调换位置（类型列在前）
     return [
       {

@@ -22,6 +22,15 @@ export interface BeddingFabric {
 
 export const BEDDING_FABRICS: BeddingFabric[] = [
   {
+    // 2026-10-17 用户定：Cotton Percale 新面料线（6 色 × 4 尺寸三件套），面料列排第一位
+    slug: 'percale',
+    material: 'Cotton Percale',
+    desc: 'Crisp. Cool.',
+    story:
+      'A tight plain weave with that fresh, hotel-crisp hand — matte, cool to the touch, and lightly structured. Percale breathes all night and softens beautifully with every wash.',
+    heroImage: '/images/fabric-guide/fabric-percale.webp',
+  },
+  {
     slug: 'linen',
     material: '100% Linen',
     desc: 'Airy. Relaxed.',

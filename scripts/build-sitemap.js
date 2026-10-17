@@ -56,6 +56,7 @@ const staticPages = [
   { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
   // /bedding/ 落地页已下线（2026-09-27 用户定，一级类目页 = /products?cat=bedding），不入 sitemap；
   // 面料二级 PLP（与 src/data/bedding-fabrics.ts 注册表手动同步）
+  { loc: '/bedding/percale/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
