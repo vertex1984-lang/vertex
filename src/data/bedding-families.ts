@@ -47,21 +47,19 @@ export interface SetFamily {
 }
 
 /** 卡片展示标题规则（2026-10-16 用户定，仅影响列表卡标题，PDP 原标题不变）：
- *  "{布料} {品类词} Set of x"，不带颜色（同日用户定：删除 bedding 所有产品卡上的颜色段；
- *  三/四件套标题尾部加 Set of x——three 原标题以 "Set" 结尾，合并为 "Set of 3" 避免叠字）；
- *  卡面布料名把 "100% Linen" 简化为 "Linen"（仅卡片标题，导航/hero 等仍用 "100% Linen"）——
- *  - 三件套（three）    → "Linen Duvet Cover Set of 3"
- *  - 四件套（four）     → "Brushed Cotton Sheet Duvet Cover Set of 4"
+ *  几件套："{布料} Set, {颜色}"（同日用户定：套装卡标题恢复颜色段、去掉品类词和 Set of x；
+ *  Linen 系列卡面保留全名 "100% Linen"，不再简化）——
+ *  - 三件套（three）    → "100% Linen Set, Gray"
+ *  - 四件套（four）     → "Brushed Cotton Set, Beige"
  *  - comforter          → "{布料} Set"
- *  - 独立被套（duvet）  → "Linen Duvet Cover"
+ *  - 独立被套（duvet）  → "100% Linen Duvet Cover"
  *  - Sheets / Pillow Covers（未上线）上线后同规则
  *  布料展示名先经 fabricDisplayName（Washed Cotton-Like → Brushed Cotton）；
  *  材质取不到返回 ''（卡片沿用原标题） */
-export function beddingCardTitle(kind: SetKind, materials: string[]): string {
-  const fabric = materials[0] ? fabricDisplayName(materials[0]).replace(/^100% /, '') : '';
+export function beddingCardTitle(kind: SetKind, materials: string[], color = ''): string {
+  const fabric = materials[0] ? fabricDisplayName(materials[0]) : '';
   if (!fabric) return '';
-  if (kind === 'three') return `${fabric} Duvet Cover Set of 3`;
-  if (kind === 'four') return `${fabric} Sheet Duvet Cover Set of 4`;
+  if (kind === 'three' || kind === 'four') return color ? `${fabric} Set, ${color}` : `${fabric} Set`;
   if (kind === 'duvet') return `${fabric} Duvet Cover`;
   return `${fabric} Set`;
 }
@@ -165,7 +163,7 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       toPrice: prices.length > 0 ? String(Math.max(...prices)) : '',
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
       materials,
-      titleOverride: beddingCardTitle(kindOf, materials) || undefined,
+      titleOverride: beddingCardTitle(kindOf, materials, color) || undefined,
     };
   });
 }
@@ -212,23 +210,24 @@ export const SET_KIND_LABEL: Record<SetKind, string> = {
   duvet: 'Duvet Cover',
 };
 
-/** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用） */
+/** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用）；
+ *  副标题只保留组件清单，"—" 及之后描述已删（2026-10-16 用户定：文字太多） */
 export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: string }> = {
   four: {
     heading: 'Sheets & Duvet Sets',
-    blurb: 'Duvet cover, fitted sheet & two pillowcases — the whole bed in one box.',
+    blurb: 'Duvet cover, fitted sheet & two pillowcases',
   },
   three: {
     heading: 'Duvet Cover Sets',
-    blurb: 'Duvet cover & two pillowcases — pair with your favorite sheets.',
+    blurb: 'Duvet cover & two pillowcases',
   },
   comforter: {
     heading: 'Comforter Sets',
-    blurb: 'A plush comforter with matching shams — warmth without the layering work.',
+    blurb: 'A plush comforter with matching shams',
   },
   duvet: {
     heading: 'Duvet Covers',
-    blurb: 'Standalone covers in linen & washed cotton-like — slip over your favorite insert.',
+    blurb: 'Standalone covers in linen & washed cotton-like',
   },
 };
 

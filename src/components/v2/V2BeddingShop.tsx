@@ -2,8 +2,7 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { buildSetFamilies, classifySet, clusterSetFamilies, SET_KIND_LABEL, SetFamily } from '@/data/bedding-families';
-import { BEDDING_MATERIAL_BLURBS, sortBeddingMaterials } from '@/data/subcategories';
+import { buildSetFamilies, classifySet, clusterSetFamilies, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import V2ProductCard from '@/components/v2/V2ProductCard';
@@ -16,18 +15,17 @@ import { dedupeFamilyColors } from '@/lib/listing-dedupe';
  * - 2026-10-16 用户定：页头改 Parachute 式 hero（见 V2BeddingCatHero，类型/面料二级页快链
  *   承担导航），本组件的 Type/Fabric 筛选条（含移动端 Filter 弹层）整体移除；
  *   旧 ?type=/?sub= 深链失效后降级为完整分区视图
- * - 视图固定为【按材质分区】展示全部家族（2026-09 用户定，参照 /bedding/bed-sets/ 子页结构）：
- *   材质标题 + 一句话描述 + BeddingSetCard 网格（卡片图上叠 type 标签——分区标题已表材质，
- *   2026-09 用户定统一规则：卡片只叠「标题未表达的另一维度」）；排序固定 Featured/权重序
+ * - 视图固定为【按类型分区】展示全部家族（2026-10-16 用户定：取代原按材质分区，
+ *   分区与 hero 快链五项同口径）：Duvet Cover Sets（3 件套）→ Sheets & Duvet Sets（4 件套）
+ *   → Duvet Covers →（Sheets / Pillow Covers 无产品不出分区；Comforter 有产品时排最后）；
+ *   分区标题 + 套装内容副标题（SET_KIND_PAGE_COPY）+ BeddingSetCard 网格；排序固定 Featured/权重序
  * - 卡片按色系家族聚合（23 款而非 92 SKU，减少选择瘫痪）
  * - From 最低价 + 尺码带直接上卡，价格透明度前置
  * 旧聚合页 V2BeddingLanding 组件保留在磁盘上备用（全站已无入口）。
  */
 
-/** 材质名 → 分区锚点 id（"100% Linen" → fabric-100-linen） */
-function fabricAnchor(material: string): string {
-  return `fabric-${material.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-}
+/** 分区顺序（2026-10-16 用户定，与 hero 快链一致）；comforter 不在五项里，有产品时兜底排最后 */
+const SECTION_KIND_ORDER: SetKind[] = ['three', 'four', 'duvet', 'comforter'];
 
 export default function V2BeddingShop({ products }: { products: MakimooProduct[] }) {
   // 家族聚合 + 未匹配家族规则的兜底产品（新增 bedding 产品若不符合 ASIN 前缀规律也不会消失）。
@@ -49,44 +47,38 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
     []
   );
 
-  // 材质分区：每家族只归一个材质区（materials[0]），
-  // 分区顺序按 BEDDING_MATERIAL_ORDER、未收录材质按家族数降序兜底
-  const materialSections = useMemo(() => {
-    const map = new Map<string, SetFamily[]>();
-    for (const f of families) {
-      const m = f.materials[0] || 'Other';
-      if (!map.has(m)) map.set(m, []);
-      map.get(m)!.push(f);
-    }
-    return sortBeddingMaterials(Array.from(map.entries()), (e) => e[1].length).map(
-      ([m, list]) => ({ material: m, anchor: fabricAnchor(m), list: sortFamilies(list) })
-    );
-  }, [families, sortFamilies]);
+  // 按类型分区（无产品的类型不出分区）
+  const kindSections = useMemo(
+    () =>
+      SECTION_KIND_ORDER.map((kind) => ({
+        kind,
+        copy: SET_KIND_PAGE_COPY[kind],
+        list: sortFamilies(families.filter((f) => f.kind === kind)),
+      })).filter((s) => s.list.length > 0),
+    [families, sortFamilies]
+  );
 
   return (
     <div>
-      {/* 家族卡网格：与全站 PLP 同列数节奏；按材质分区（2026-09 用户定） */}
-      {materialSections.map((s, i) => (
+      {/* 家族卡网格：与全站 PLP 同列数节奏；按类型分区（2026-10-16 用户定） */}
+      {kindSections.map((s, i) => (
         <section
-          key={s.material}
-          id={s.anchor}
+          key={s.kind}
+          id={`sets-${s.kind}`}
           className={`py-8 lg:py-12 ${i === 0 ? 'pt-0' : 'border-t border-[#E8E2DA]'}`}
         >
           <div className="mb-5 lg:mb-8">
-            <h2 className="text-lg lg:text-2xl font-extrabold text-charcoal">{fabricDisplayName(s.material)}</h2>
-            {BEDDING_MATERIAL_BLURBS[s.material] && (
-              <p className="mt-1 text-xs lg:text-sm text-[#999]">
-                {BEDDING_MATERIAL_BLURBS[s.material]}
-              </p>
-            )}
+            <h2 className="text-lg lg:text-2xl font-extrabold text-charcoal">{s.copy.heading}</h2>
+            <p className="mt-1 text-xs lg:text-sm text-[#999]">{s.copy.blurb}</p>
           </div>
-          {/* 材质分区标题已表材质；卡片图上叠 type 标签（2026-09 用户定规则） */}
+          {/* 类型分区标题已表类型；卡片图上叠布料标签（2026-09 用户定规则：
+              卡片只叠「标题未表达的另一维度」；badge 开关全站关闭中，见 BeddingSetCard） */}
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
             {s.list.map((f) => (
               <BeddingSetCard
                 key={f.key}
                 family={f}
-                badges={[SET_KIND_LABEL[f.kind]]}
+                badges={f.materials[0] ? [fabricDisplayName(f.materials[0])] : []}
                 compactText
               />
             ))}
