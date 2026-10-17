@@ -66,14 +66,14 @@ export default function V2PillowsCatHero({
             alt="Sunlit bedroom with pillows arranged on a wooden bed"
             className="w-full aspect-[4/3] object-cover object-[center_26%]"
           />
-          {/* 图上部白墙留白区叠深色字 + 顶部轻微渐变保底可读性（字号/位置同 bedding 移动端） */}
-          <div className="absolute inset-x-0 top-0 px-4 pt-10 pb-4 bg-gradient-to-b from-white/60 via-white/15 to-transparent">
-            <h1 className="text-3xl font-extrabold tracking-tight text-charcoal">
+          {/* 图上部加深渐变罩 + 白色字保底可读性（2026-10-16 用户定：移动端图加深、文字改白色；字号/位置不变） */}
+          <div className="absolute inset-x-0 top-0 px-4 pt-10 pb-4 bg-gradient-to-b from-black/50 via-black/20 to-transparent">
+            <h1 className="text-3xl font-extrabold tracking-tight text-white">
               Pillows
               {countSup}
             </h1>
             {intro && (
-              <p className="mt-1.5 text-xs leading-relaxed text-charcoal-light max-w-[85%]">
+              <p className="mt-1.5 text-xs leading-relaxed text-white/85 max-w-[85%]">
                 {intro}
               </p>
             )}
