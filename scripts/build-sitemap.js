@@ -25,6 +25,15 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
   'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
   'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+  // 2026-10-17 用户定：DUVSET Butter Yellow / Dill Green 两色下架，不入 sitemap
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king',
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
 ]);
 const handles = [...new Set([...baseHandles, ...materialHandles])]
   .filter(
