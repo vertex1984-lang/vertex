@@ -143,6 +143,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - **mode（模型）**：默认用 `gpt-image-2.5-sunburst`（GPT image-2.5 高质，1K/2K/4K = ¥0.30/¥0.40/¥0.50；2026-09 用户定，替代原 nano-banana-pro）。其他可选：`gpt-image-2.5`（=快速 flare，¥0.20/¥0.30/¥0.40）、`gpt-image-2`、`nano-banana-pro`、`nano-banana-2`、`seeany4`（中文增强，仅 2K/4K）、`nano-banana`（不支持 size）。完整文档第 9 节（模型/比例/分辨率）
 - **响应**：`{"code":0,"data":{"task_uuid":"wtask_...","wait_time":40}}` —— 全异步架构，拿 task_uuid 后轮询取结果（支持 Webhook）
 - **轮询**：查询任务状态/结果的具体端点以文档为准（生成后从任务接口取图 URL，下载转 WebP 进 `public/images/`）
+- **批量出图必须并行提交（2026-10-18 用户定）**：多张图 = 先把所有任务全部 create 完（不等待），再统一轮询。SeeAny 侧是并行执行的，并行提交 N 张 ≈ 单张的耗时；串行 for 循环（建一张等一张）会慢 N 倍，禁止。脚本模板见 `scripts/seeany-sateen-4pcs.js`（createAll → pollAll 两段式）
 - **能力**：文生图、参考图生图、白底图（一键抠图换底）、AI 图片编辑（抠图/扩图/消除/变清晰）、AI 视频
 - 风格约定：全站米色 #F8F5F0 + 暖棕 #8B5A2B 家居调性，prompt 里注明色调；品牌 Logo/吉祥物不要让 AI 画（易变形）
 - **种草图规则**：用户说"种草图"时，一律按 `docs/lifestyle-image-rules.md` 的六段式指令标准出图（2026-10-13 用户定），不得降级为一句话场景描述

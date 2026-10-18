@@ -60,6 +60,7 @@ const staticPages = [
   { loc: '/bedding/linen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/sateen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/satin/', priority: '0.7', changefreq: 'weekly' },
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
   // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；

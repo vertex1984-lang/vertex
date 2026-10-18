@@ -45,7 +45,7 @@ const TOWEL_HOOKS: Record<string, { caption: string; desc: string; alt: string }
   dustyblue: { caption: 'Blue Hour', desc: 'Cool air and warm water', alt: 'Dusty blue long-staple cotton towels hanging on wooden wall hooks in a sunlit modern bathroom' },
 };
 
-const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin', { gridClass: string; cards: LifestyleCard[] }> = {
+const SETS: Record<'pillows' | 'bedpillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin', { gridClass: string; cards: LifestyleCard[] }> = {
   satin: {
     gridClass: 'lg:grid-cols-2',
     cards: [
@@ -179,6 +179,27 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'ne
       },
     ],
   },
+  // 床枕三系列（DOWN-PILLOW / DOWN-FEATHER-PILLOW / MICROFIBER-PILLOW，2026-10-19 用户定）：
+  // 左图沿用 Rainy Day 横图，右图换成明亮晨间猫图（AI 生成种草图，staging/pillow-seed-bright-morning.png）
+  bedpillows: {
+    gridClass: 'lg:grid-cols-12 lg:items-start',
+    cards: [
+      {
+        image: '/images/pdp-lifestyle/pillow-lifestyle-wide.webp',
+        caption: 'Rainy Day In',
+        desc: 'A warm lamp, a good book, nowhere to be',
+        alt: 'Cozy reading nook with textured throw pillows, warm lamplight and rain on the window',
+        className: 'aspect-[3/2] lg:aspect-[4/3] lg:col-span-7',
+      },
+      {
+        image: '/images/pdp-lifestyle/pillow-bright-morning.webp',
+        caption: 'Sunday Morning',
+        desc: 'Sunlight through sheer curtains',
+        alt: 'Sunlit bedroom with white bed pillows on the bed and a cream cat stretching in morning light',
+        className: 'aspect-[3/4] lg:col-span-5',
+      },
+    ],
+  },
   cushions: {
     gridClass: 'lg:grid-cols-2',
     cards: [
@@ -238,7 +259,7 @@ const SETS: Record<'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'ne
   },
 };
 
-export default function V2PdpLifestyle({ cat = 'pillows', towelColor }: { cat?: 'pillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin' | 'towels'; towelColor?: string }) {
+export default function V2PdpLifestyle({ cat = 'pillows', towelColor }: { cat?: 'pillows' | 'bedpillows' | 'cushions' | 'solids' | 'prints' | 'boucle' | 'neck' | 'linenlike' | 'brushedcotton' | 'linen' | 'satin' | 'towels'; towelColor?: string }) {
   // towels：按当前 PDP 颜色动态出单卡（缺色兜底 sage）
   if (cat === 'towels') {
     const t = TOWEL_HOOKS[towelColor || 'sage'] || TOWEL_HOOKS.sage;

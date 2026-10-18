@@ -6,10 +6,12 @@ import type { SetFamily } from '@/data/bedding-families';
 /** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足；
  *  colors = 卡面颜色变体行（2026-10-02 pillows 合并卡用，如 "Black / Grey / Pink"）；
  *  titleOverride = 卡片展示标题覆盖（2026-10-09 pillows 卡片标题规则用，pillowCardTitle），
- *  仅影响卡面标题，href/PDP 仍用产品原标题 */
+ *  仅影响卡面标题，href/PDP 仍用产品原标题；
+ *  colorLine = 标题下浅色颜色行（2026-10-18 用户定，bedding/pillows 卡用，其他类目不传不显示） */
 export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'> & {
   colors?: string[];
   titleOverride?: string;
+  colorLine?: string;
 };
 
 /**
@@ -95,6 +97,12 @@ export default function BeddingSetCard({
         >
           {name}
         </h3>
+        {/* 颜色行（2026-10-18 用户定：bedding/pillows 卡标题 = 布料+Set，颜色另起一行浅灰小字） */}
+        {family.colorLine && (
+          <p className="mt-0.5 text-[11px] lg:text-xs font-normal text-[#999] leading-snug">
+            {family.colorLine}
+          </p>
+        )}
         {SHOW_CARD_VARIANT_INFO && family.sizes.length > 0 && (
           /* truncate + title：尺寸段多时在卡片边缘省略号截断（hover 显全），不再硬截数字中间（2026-09-27） */
           <p

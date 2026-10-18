@@ -37,6 +37,13 @@ const COLOR_LABELS: Record<string, string> = {
   NUDE: 'Nude Pink',
   EUCA: 'Eucalyptus',
   LAVENDER: 'Lavender Fog',
+  // 2026-10-18：Cotton Sateen 六色（slug 多词防粘连）
+  CREAM: 'Cream White',
+  BEIGE: 'Soft Beige',
+  MUSTARD: 'Mustard Yellow',
+  TAUPE: 'Taupe',
+  TERRACOTTA: 'Terracotta',
+  OLIVE: 'Olive Green',
 };
 
 export interface SetFamily {
@@ -56,22 +63,23 @@ export interface SetFamily {
   materials: string[];
   /** 卡片展示标题覆盖（beddingCardTitle；仅卡面标题，PDP 原标题不变） */
   titleOverride?: string;
+  /** 卡面标题下的浅色颜色行（2026-10-18 用户定：颜色从标题拆出，另起一行浅灰小字展示） */
+  colorLine?: string;
 }
 
-/** 卡片展示标题规则（2026-10-16 用户定，仅影响列表卡标题，PDP 原标题不变）：
- *  几件套："{布料} Set, {颜色}"（同日用户定：套装卡标题恢复颜色段、去掉品类词和 Set of x；
- *  Linen 系列卡面保留全名 "100% Linen"，不再简化）——
- *  - 三件套（three）    → "100% Linen Set, Gray"
- *  - 四件套（four）     → "Brushed Cotton Set, Beige"
+/** 卡片展示标题规则（仅影响列表卡标题，PDP 原标题不变）：
+ *  2026-10-18 用户定：颜色段从标题移除（改由卡面浅色颜色行 colorLine 展示），标题 = 布料 + 品类：
+ *  - 三件套（three）    → "100% Linen Set"
+ *  - 四件套（four）     → "Brushed Cotton Set"
  *  - comforter          → "{布料} Set"
  *  - 独立被套（duvet）  → "100% Linen Duvet Cover"
  *  - Sheets / Pillow Covers（未上线）上线后同规则
  *  布料展示名先经 fabricDisplayName（Washed Cotton-Like → Brushed Cotton）；
  *  材质取不到返回 ''（卡片沿用原标题） */
-export function beddingCardTitle(kind: SetKind, materials: string[], color = ''): string {
+export function beddingCardTitle(kind: SetKind, materials: string[]): string {
   const fabric = materials[0] ? fabricDisplayName(materials[0]) : '';
   if (!fabric) return '';
-  if (kind === 'three' || kind === 'four') return color ? `${fabric} Set, ${color}` : `${fabric} Set`;
+  if (kind === 'three' || kind === 'four') return `${fabric} Set`;
   if (kind === 'duvet') return `${fabric} Duvet Cover`;
   return `${fabric} Set`;
 }
@@ -82,6 +90,8 @@ export function classifySet(asin: string): SetKind | null {
   // 必须先于 duvset-/linen3- 前缀规则判断（否则会被吞进 three）
   if (/-duvet$/.test(a)) return 'duvet';
   if (a.startsWith('bedset4-')) return 'four';
+  // 2026-10-18 用户定：Cotton Sateen（贡缎棉）四件套新面料线（6 色 × 4 尺寸），归 four
+  if (a.startsWith('sateen4-')) return 'four';
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
   if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
@@ -177,7 +187,8 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       toPrice: prices.length > 0 ? String(Math.max(...prices)) : '',
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
       materials,
-      titleOverride: beddingCardTitle(kindOf, materials, color) || undefined,
+      titleOverride: beddingCardTitle(kindOf, materials) || undefined,
+      colorLine: color || undefined,
     };
   });
 }

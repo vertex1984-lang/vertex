@@ -8432,6 +8432,9 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
   'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
   'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
+  // 2026-10-18 用户定：microfiber 新线（MICROFIBER-PILLOW 族）替代，旧 b0-inserts-rect 两款全站移除
+  'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw',
+  'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf',
 ]);
 
 export function isHiddenProduct(p: { handle: string }): boolean {
