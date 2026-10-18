@@ -11,6 +11,7 @@ import {
   pillowMaterialOf,
   pillowSizesOf,
   pillowCardTitle,
+  pillowCardColor,
   applyPillowCardMerges,
 } from '@/data/pillows-taxonomy';
 
@@ -26,7 +27,8 @@ import {
 /** MakimooProduct → BeddingSetCard 最小数据形状（尺寸带取变体族全尺寸；From 价 = 卡片展示价；
  *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）；
  *  titleOverride = 卡片标题规则（2026-10-09，pillowCardTitle：ins "Pillow Inserts Set of 2" /
- *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"，颈枕返回 '' 不覆盖）） */
+ *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"）；
+ *  colorLine = 标题下浅色颜色行（2026-10-18 用户定；合并卡显示全部颜色 "A / B" 拼接） */
 function toFamilyCard(
   p: MakimooProduct,
   colors?: string[],
@@ -43,6 +45,7 @@ function toFamilyCard(
       'USD',
     colors,
     titleOverride: pillowCardTitle(p) || undefined,
+    colorLine: colors?.length ? colors.join(' / ') : pillowCardColor(p) || undefined,
   };
 }
 

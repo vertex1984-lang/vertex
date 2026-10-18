@@ -763,6 +763,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         if (cat === 'pillows') {
           // 颈枕（Neck Pillows 子类目，源数据 Travel 归一化为 Pillows/subcategory=neck-pillow）出专属场景图（2026-10-14 用户供图）
           if (product.subcategory === 'neck-pillow') return <V2PdpLifestyle cat="neck" />;
+          // 床枕三系列（down / down-feather / microfiber，2026-10-19 用户定）：右图换明亮晨间猫图
+          if (group && ['DOWN-PILLOW', 'DOWN-FEATHER-PILLOW', 'MICROFIBER-PILLOW'].includes(group.id))
+            return <V2PdpLifestyle cat="bedpillows" />;
           return <V2PdpLifestyle cat={handle.includes('boucle') ? 'boucle' : 'pillows'} />;
         }
         if (cat === 'cushions') {

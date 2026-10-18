@@ -55,6 +55,15 @@ export const BEDDING_FABRICS: BeddingFabric[] = [
     heroImage: '/images/fabric-guide/fabric-linen-like.webp',
   },
   {
+    // 2026-10-18 用户定：Cotton Sateen（贡缎棉）四件套新面料线（6 色 × 4 尺寸）
+    slug: 'sateen',
+    material: 'Cotton Sateen',
+    desc: 'Silky. Lustrous.',
+    story:
+      'A fine sateen weave with a smooth, lustrous face and a subtle sheen that catches the light softly. Buttery against the skin with an elegant drape — and it only gets softer with every wash.',
+    heroImage: '/images/fabric-guide/fabric-cotton-sateen.webp',
+  },
+  {
     // 2026-09-27 用户定：ice silk 缎面被套（原 More Bedding 兜底区）归 Satin 面料子类
     slug: 'satin',
     material: 'Satin',

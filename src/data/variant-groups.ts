@@ -314,7 +314,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
     { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
-    { asin: 'b0cqbzm49v', handle: 'throw-pillow-inserts-30-x-50cm-12-x-20-cushion-inserts-hollo-b0cqbzm49v', color: 'White', size: '30 x 50 cm' },
+    // 2026-10-18 用户定：b0cqbzm49v（30 x 50 cm）从本族拆出，成为独立链接/独立卡位
     ],
   },
   {
@@ -769,7 +769,37 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'percale-lavender-king', handle: 'makimoo-king-duvet-cover-set-3-piece-cotton-percale-lavender-king', color: 'Lavender Fog', size: '260 x 220 cm' },
     ],
   },
-];
+  {
+    id: 'DOWN-PILLOW',
+    optionName: 'Size',
+    // Down 床枕 Set of 2（3 尺寸，2026-10-18 用户定）
+    members: [
+    { asin: 'down-pillow-standard', handle: 'makimoo-down-bed-pillows-set-of-2-standard', color: 'White', size: 'Standard' },
+    { asin: 'down-pillow-queen', handle: 'makimoo-down-bed-pillows-set-of-2-queen', color: 'White', size: 'Queen' },
+    { asin: 'down-pillow-king', handle: 'makimoo-down-bed-pillows-set-of-2-king', color: 'White', size: 'King' },
+    ],
+  },
+  {
+    id: 'DOWN-FEATHER-PILLOW',
+    optionName: 'Size',
+    // Down & Feather 床枕 Set of 2（3 尺寸，2026-10-18 用户定）
+    members: [
+    { asin: 'down-feather-pillow-standard', handle: 'makimoo-down-feather-bed-pillows-set-of-2-standard', color: 'White', size: 'Standard' },
+    { asin: 'down-feather-pillow-queen', handle: 'makimoo-down-feather-bed-pillows-set-of-2-queen', color: 'White', size: 'Queen' },
+    { asin: 'down-feather-pillow-king', handle: 'makimoo-down-feather-bed-pillows-set-of-2-king', color: 'White', size: 'King' },
+    ],
+  },
+  {
+    id: 'MICROFIBER-PILLOW',
+    optionName: 'Size',
+    // Microfiber 床枕 Set of 2（3 尺寸，2026-10-18 用户定；替代 b0-inserts-rect 旧族）
+    members: [
+    { asin: 'microfiber-pillow-standard', handle: 'makimoo-microfiber-bed-pillows-set-of-2-standard', color: 'White', size: 'Standard' },
+    { asin: 'microfiber-pillow-queen', handle: 'makimoo-microfiber-bed-pillows-set-of-2-queen', color: 'White', size: 'Queen' },
+    { asin: 'microfiber-pillow-king', handle: 'makimoo-microfiber-bed-pillows-set-of-2-king', color: 'White', size: 'King' },
+    ],
+  },
+  {    id: 'SATEEN4',    optionName: 'Size',    // Cotton Sateen 四件套（6 色 × 4 尺寸，2026-10-18 用户定）    members: [    { asin: 'sateen4-cream-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-cream-twin', color: 'Cream White', size: '170 x 220 cm' },    { asin: 'sateen4-cream-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-cream-full', color: 'Cream White', size: '200 x 220 cm' },    { asin: 'sateen4-cream-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen', color: 'Cream White', size: '220 x 220 cm' },    { asin: 'sateen4-cream-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-cream-king', color: 'Cream White', size: '260 x 220 cm' },    { asin: 'sateen4-beige-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-beige-twin', color: 'Soft Beige', size: '170 x 220 cm' },    { asin: 'sateen4-beige-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-beige-full', color: 'Soft Beige', size: '200 x 220 cm' },    { asin: 'sateen4-beige-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-beige-queen', color: 'Soft Beige', size: '220 x 220 cm' },    { asin: 'sateen4-beige-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-beige-king', color: 'Soft Beige', size: '260 x 220 cm' },    { asin: 'sateen4-mustard-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-mustard-twin', color: 'Mustard Yellow', size: '170 x 220 cm' },    { asin: 'sateen4-mustard-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-mustard-full', color: 'Mustard Yellow', size: '200 x 220 cm' },    { asin: 'sateen4-mustard-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-mustard-queen', color: 'Mustard Yellow', size: '220 x 220 cm' },    { asin: 'sateen4-mustard-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-mustard-king', color: 'Mustard Yellow', size: '260 x 220 cm' },    { asin: 'sateen4-taupe-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-taupe-twin', color: 'Taupe', size: '170 x 220 cm' },    { asin: 'sateen4-taupe-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-taupe-full', color: 'Taupe', size: '200 x 220 cm' },    { asin: 'sateen4-taupe-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-taupe-queen', color: 'Taupe', size: '220 x 220 cm' },    { asin: 'sateen4-taupe-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-taupe-king', color: 'Taupe', size: '260 x 220 cm' },    { asin: 'sateen4-terracotta-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-terracotta-twin', color: 'Terracotta', size: '170 x 220 cm' },    { asin: 'sateen4-terracotta-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-terracotta-full', color: 'Terracotta', size: '200 x 220 cm' },    { asin: 'sateen4-terracotta-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-terracotta-queen', color: 'Terracotta', size: '220 x 220 cm' },    { asin: 'sateen4-terracotta-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-terracotta-king', color: 'Terracotta', size: '260 x 220 cm' },    { asin: 'sateen4-olive-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-olive-twin', color: 'Olive Green', size: '170 x 220 cm' },    { asin: 'sateen4-olive-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-olive-full', color: 'Olive Green', size: '200 x 220 cm' },    { asin: 'sateen4-olive-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-olive-queen', color: 'Olive Green', size: '220 x 220 cm' },    { asin: 'sateen4-olive-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-olive-king', color: 'Olive Green', size: '260 x 220 cm' },    ],  },  {    id: 'KNIT-THROW',    optionName: 'Color',    // 北欧镂空针织毯（4 色 × 单尺寸 127x180cm 含流苏，2026-10-19 用户定，blanket/2）    members: [    { asin: 'knitthrow-cream', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-cream', color: 'Cream White', size: '127 x 180 cm' },    { asin: 'knitthrow-grey', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey', color: 'Light Grey', size: '127 x 180 cm' },    { asin: 'knitthrow-khaki', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-khaki', color: 'Khaki', size: '127 x 180 cm' },    { asin: 'knitthrow-pink', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-pink', color: 'Dusty Pink', size: '127 x 180 cm' },    ],  },];
 
 const groupsByAsin = new Map<string, VariantGroup>();
 for (const g of VARIANT_GROUPS) {
