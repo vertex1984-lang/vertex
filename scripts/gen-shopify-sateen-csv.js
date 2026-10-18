@@ -2,7 +2,7 @@
  * gen-shopify-sateen-csv.js — 生成 Cotton Sateen（贡缎棉）四件套 Shopify 批量导入 CSV（2026-10-18）
  * 24 个独立产品（6 色 × 4 尺寸），与 add-sateen-4pcs.js 的 ASIN/SKU 口径一致：
  *   SKU = sateen-<color>-<size>（Shopify 侧靠 SKU 与本地 materials-map 兜底关联）
- * 定价为占位 $39.99 全尺寸——导入前必须等用户给实价再改；
+ * 定价为用户定 $59.99 全尺寸——导入前必须等用户给实价再改；
  * 重量按四件套估算：twin 1.3 / full 1.5 / queen 1.65 / king 1.85 kg（比 percale 三件套多一床笠）。
  * 图片引用线上 URL：https://www.makimoohome.com/images/products/SATEEN4-<COLOR>-<SIZE>/1.webp
  *   ——注意：图片需先部署到线上 Shopify 才能拉到，先推送网站再导入（或先用 -noimg 版建品）
@@ -20,10 +20,10 @@ const COLORS = [
   { slug: 'olive', name: 'Olive Green' },
 ];
 const SIZES = [
-  { key: 'twin', name: 'Twin', duvet: '68" x 88"', sheet: '39" x 75"', pc: '20" x 26"', price: '39.99', grams: 1300 },
-  { key: 'full', name: 'Full', duvet: '80" x 88"', sheet: '54" x 75"', pc: '20" x 26"', price: '39.99', grams: 1500 },
-  { key: 'queen', name: 'Queen', duvet: '88" x 88"', sheet: '60" x 80"', pc: '20" x 30"', price: '39.99', grams: 1650 },
-  { key: 'king', name: 'King', duvet: '104" x 90"', sheet: '78" x 80"', pc: '20" x 36"', price: '39.99', grams: 1850 },
+  { key: 'twin', name: 'Twin', duvet: '68" x 88"', sheet: '39" x 75"', pc: '20" x 26"', price: '59.99', grams: 1300 },
+  { key: 'full', name: 'Full', duvet: '80" x 88"', sheet: '54" x 75"', pc: '20" x 26"', price: '59.99', grams: 1500 },
+  { key: 'queen', name: 'Queen', duvet: '88" x 88"', sheet: '60" x 80"', pc: '20" x 30"', price: '59.99', grams: 1650 },
+  { key: 'king', name: 'King', duvet: '104" x 90"', sheet: '78" x 80"', pc: '20" x 36"', price: '59.99', grams: 1850 },
 ];
 
 const bullets = (colorName, s) => [
