@@ -66,8 +66,11 @@ const JOBS = {
   'fur-blue':        { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C22/1.webp', color: '灰蓝色（dusty blue）', texture: FUR_TEXTURE, tassels: false },
   'fur-creamyellow': { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C27/1.webp', color: '奶黄色（cream yellow）', texture: FUR_TEXTURE, tassels: false },
   'fur-darkgray':    { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C33/1.webp', color: '深灰色（dark charcoal gray）', texture: FUR_TEXTURE, tassels: false },
-  'fur-silvergray':  { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C36/1.webp', color: '银灰色（silver light gray）', texture: FUR_TEXTURE, tassels: false },
-  'fur-purple':      { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C41/1.webp', color: '灰紫色（muted purple）', texture: FUR_TEXTURE, tassels: false },
+  'fur-silvergray':  { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C36/1.webp', color: '银灰色（silver light gray）', texture: FUR_TEXTURE, tassels: false,
+    scaleNote: '占比强调：毯子在画面中要足够大——宽度约为画面的62%-66%、高度约占画面的78%，与系列其他颜色产品图的占比完全一致，四周留白均匀但不空旷' },
+  'fur-purple':      { dir: path.join(__dirname, '..', 'public', 'images', 'products'), src: '1688-969627065032-C41/1.webp', color: '灰紫色（muted purple）', texture: FUR_TEXTURE, tassels: false,
+    // 2026-10-19 用户定：紫色条纹太细密，用黄色定稿图做结构参考（条纹宽度/占比对齐黄色）
+    structRef: path.join(__dirname, '..', 'public', 'images', 'staging', 'throw-graybg-fur-creamyellow-3x4.png') },
 };
 
 const COMPOSE_FLAT = (job) =>
@@ -79,12 +82,17 @@ const COMPOSE_FOLDED = (job) =>
   (job.tassels ? '底边露出一排整齐垂顺的手工流苏；' : '底边为干净利落的针织包边，无流苏；') +
   '毯面平整自然，仅有轻微自然起伏';
 const promptOf = (job, style) => [
-  `布料锚定：严格1:1复刻参考图毯子的${job.texture}、颜色（${job.color}）、纱线质感与流苏/包边样式，颜色与参考图1:1对应，零改动`,
-  style === 'flat' ? COMPOSE_FLAT(job) : COMPOSE_FOLDED(job),
+  job.structRef
+    ? `结构锚定：严格1:1复刻参考图1的构图、毯子在画面中的大小占比、折叠方式、绒条宽度与密度——宽竖条绒肋纹的条纹宽度、条间沟槽宽度与参考图1完全一致，绝不更细更密；毯面纹理（绒肋内的人字压花细节）也与参考图1一致`
+    : `布料锚定：严格1:1复刻参考图毯子的${job.texture}、颜色（${job.color}）、纱线质感与流苏/包边样式，颜色与参考图1:1对应，零改动`,
+  job.structRef
+    ? `颜色锚定：毯子颜色替换为参考图2的颜色（${job.color}），仿兔毛长毛绒的绒毛细密蓬松质感与自然柔和光泽与参考图2一致，零改动`
+    : null,
+  (style === 'flat' ? COMPOSE_FLAT(job) : COMPOSE_FOLDED(job)) + (job.scaleNote ? '；' + job.scaleNote : ''),
   '背景光线：浅灰色无缝影棚背景（light gray seamless studio background，色值约 #e5e5e5），背景均匀干净，柔和均匀的棚拍柔光，毯子边缘与流苏下方有细腻自然的接触阴影',
   '镜头画质：专业电商产品摄影，8K超高清，超写实真实物理材质，针织纹理与镂空孔眼清晰，白平衡准确，无畸变',
   '负向规避：规避塑料CGI质感、光滑假表面、平涂死黑阴影、高饱和色彩、卡通插画画风、任何文字水印logo，不要床、不要沙发、不要人、不要任何场景道具，画面中只有毯子和灰色背景',
-].join('。');
+].filter(Boolean).join('。');
 
 async function localRefDataUri(file) {
   const sharp = require('sharp');
@@ -140,7 +148,10 @@ async function pollTask(uuid) {
   for (const [key, job] of entries) {
     const srcPath = path.join(job.dir, job.src);
     if (!fs.existsSync(srcPath)) { console.error(`跳过 ${key}：找不到 ${srcPath}`); continue; }
-    const uuid = await createTask(promptOf(job, style), [await localRefDataUri(srcPath)]);
+    const inputImgs = job.structRef
+      ? [await localRefDataUri(job.structRef), await localRefDataUri(srcPath)]
+      : [await localRefDataUri(srcPath)];
+    const uuid = await createTask(promptOf(job, style), inputImgs);
     console.log(`创建任务: ${key} [${style}] task_uuid=${uuid}`);
     pending.push({ key, uuid });
   }
