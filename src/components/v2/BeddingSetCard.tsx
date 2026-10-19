@@ -42,6 +42,12 @@ export default function BeddingSetCard({
   sizesSuffix = '',
   paddedWhiteBg = false,
   compactText = false,
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启 */
+  tallImage = true,
+  anchorRight = false,
+  anchorLeft = false,
+  paddedGrayBg = false,
+  cropBiasRight = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
@@ -53,6 +59,18 @@ export default function BeddingSetCard({
   paddedWhiteBg?: boolean;
   /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档（其他类目后续逐一统一，暂不动） */
   compactText?: boolean;
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启；传 false 回退 1:1 方图 */
+  tallImage?: boolean;
+  /** 2026-10-19 用户定：sateen/linen/percale 卡图裁剪锚定右侧（截左边、保留右边；已随 4:5 回滚停用，保留备用） */
+  anchorRight?: boolean;
+  /** 2026-10-19 用户定：个别家族卡图只裁右边、左边完整保留（object-left；当前 = 全部 duvset-* 家族） */
+  anchorLeft?: boolean;
+  /** 2026-10-19 用户定：cushions 卡 4:5 灰底留白模式——1:1 原图 object-contain 居中，
+   *  上下灰边（bg-warm-gray），不裁剪画面；需配合 tallImage 使用 */
+  paddedGrayBg?: boolean;
+  /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%，
+   *  左侧裁掉 2/3 溢出、右侧裁 1/3，画面整体偏右保留） */
+  cropBiasRight?: boolean;
 }) {
   const img = spotlightImage(family.rep);
   const name = (family.titleOverride || family.rep.title).replace(
@@ -64,13 +82,13 @@ export default function BeddingSetCard({
       href={v2url(`/products/${family.rep.handle}/`)}
       className="group block overflow-hidden"
     >
-      <div className={`relative aspect-square overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
+      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img
           src={resolveUrl(img.url)}
           alt={img.altText}
           loading="lazy"
           className={`absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-            paddedWhiteBg ? 'object-contain p-2 sm:p-7' : 'object-cover'
+            paddedGrayBg ? 'object-contain' : paddedWhiteBg ? 'object-contain p-2 sm:p-7' : `object-cover${anchorRight ? ' object-right' : ''}${anchorLeft ? ' object-left' : ''}${cropBiasRight ? ' object-[66.67%_50%]' : ''}`
           }`}
         />
         {SHOW_CARD_BADGES && badges.length > 0 && (

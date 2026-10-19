@@ -24,6 +24,10 @@ export type V2CardProduct = Pick<
 
 interface V2ProductCardProps {
   product: V2CardProduct;
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启；传 false 回退 1:1 方图 */
+  tallImage?: boolean;
+  /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%） */
+  cropBiasRight?: boolean;
 }
 
 /** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明；
@@ -53,7 +57,7 @@ function formatPrice(amount: string, currency: string): string {
 }
 
 // Parachute 风格：大图 aspect-square + 分类 eyebrow + 产品名 + 价格，无卡片边框阴影
-export default function V2ProductCard({ product }: V2ProductCardProps) {
+export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false }: V2ProductCardProps) {
   // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title }
@@ -76,7 +80,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
 
   return (
     <a href={v2url(`/products/${product.handle}/`)} className="group block h-full">
-      <div className="relative aspect-square overflow-hidden bg-warm-gray">
+      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden bg-warm-gray`}>
         {/* 双图叠放：hover 时第二张淡入；整体保留缓慢放大 */}
         <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
           {image && (
@@ -84,7 +88,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
               src={resolveUrl(image.url)}
               alt={image.altText || product.title}
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
+              className={`absolute inset-0 w-full h-full object-cover${cropBiasRight ? ' object-[66.67%_50%]' : ''}`}
             />
           )}
           {hoverImage && (
@@ -93,7 +97,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
               alt=""
               aria-hidden="true"
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              className={`absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100${cropBiasRight ? ' object-[66.67%_50%]' : ''}`}
             />
           )}
         </div>
