@@ -69,7 +69,8 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
 
   return (
     <div>
-      {/* 家族卡网格：与全站 PLP 同列数节奏；按类型分区（2026-10-16 用户定） */}
+      {/* 家族卡网格：与全站 PLP 同列数节奏；按类型分区（2026-10-16 用户定）；
+          2026-10-19 用户定：本页全部卡片改 3:4 竖图（object-cover 裁两侧，随 PDP 3:4 统一） */}
       {kindSections.map((s, i) => (
         <section
           key={s.kind}
@@ -89,6 +90,9 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                 family={f}
                 badges={f.materials[0] ? [fabricDisplayName(f.materials[0])] : []}
                 compactText
+                tallImage
+                cropBiasRight={!f.key.toLowerCase().startsWith('duvset')}
+                anchorLeft={f.key.toLowerCase().startsWith('duvset')}
               />
             ))}
           </div>
@@ -99,7 +103,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
           <h2 className="mt-10 lg:mt-14 mb-4 text-lg lg:text-2xl font-extrabold text-[#333]">More Bedding</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
             {unclassified.map((p) => (
-              <V2ProductCard key={p.id} product={p} />
+              <V2ProductCard key={p.id} product={p} tallImage cropBiasRight />
             ))}
           </div>
         </>

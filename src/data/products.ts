@@ -26,6 +26,8 @@ export interface MakimooProduct {
   featuredImage?: string;
   // 与素材图对齐的白底标记（true = 白底图，展示时加内边距缩小产品占比）
   imageWhiteBg?: boolean[];
+  // PDP 图集区宽高比覆盖（可选；如 '3/4'，见 image-aspect-overrides.ts，无则默认 1:1.05/方图）
+  imageAspect?: string;
   // 详情页附图（可选；来自素材条目 detailImages，有才渲染，无则不显示）
   detailImages?: string[];
   // 五点卖点缩写（素材库 short-bullets；详情页卖点列表优先使用，无则回退描述切分）
@@ -8317,6 +8319,7 @@ import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
 import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
+import { IMAGE_ASPECT_OVERRIDES } from './image-aspect-overrides';
 import { classifyProduct } from './subcategories';
 import { getVariantReviewStats } from './product-reviews';
 
@@ -8341,6 +8344,8 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
       : product.descriptionHtml,
     images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
     imageWhiteBg: entry.whiteBg,
+    // PDP 图集区宽高比覆盖（可选；独立文件不受 materials-map 再生成影响，2026-10-19 用户定）
+    ...(IMAGE_ASPECT_OVERRIDES[product.asin.toLowerCase()] ? { imageAspect: IMAGE_ASPECT_OVERRIDES[product.asin.toLowerCase()] } : {}),
     // 五点卖点缩写（详情页卖点列表优先使用）
     featureBullets: MATERIALS_SHORT_BULLETS[product.asin.toLowerCase()],
     // 详情附图（可选；覆盖表优先——独立文件不受 materials-map 再生成影响）

@@ -12,6 +12,7 @@ import Link from 'next/link';
 import { getProductByHandle } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
+import { PDP_MAIN_34_ASINS } from '@/data/pdp-main-34-asins';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
@@ -162,17 +163,25 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     );
   }
 
+  // 2026-10-19 用户定：PDP 图集第一张用 3:4 竖版新图（1-3x4.webp，见 pdp-main-34-asins.ts），
+  // PLP 卡片/OG 等其他位置仍用 1:1 主图（1.webp），互不影响
+  const pdpMain34 = PDP_MAIN_34_ASINS.has(product.asin.toLowerCase())
+    ? `/images/products/${product.asin}/1-3x4.webp`
+    : null;
   const productImages = (product.shopifyImages && product.shopifyImages.length > 0)
     ? product.shopifyImages.map((url, i) => ({
-        url,
-        mainUrl: shopifyImageUrl(url, 1200),
-        lightboxUrl: shopifyImageUrl(url, 2048),
-        thumbUrl: shopifyImageUrl(url, 200),
+        url: pdpMain34 && i === 0 ? pdpMain34 : url,
+        mainUrl: pdpMain34 && i === 0 ? pdpMain34 : shopifyImageUrl(url, 1200),
+        lightboxUrl: pdpMain34 && i === 0 ? pdpMain34 : shopifyImageUrl(url, 2048),
+        thumbUrl: pdpMain34 && i === 0 ? pdpMain34 : shopifyImageUrl(url, 200),
         altText: product.title,
         whiteBg: product.imageWhiteBg?.[i] ?? false,
       }))
     : product.images.map((img, i) => ({
-        url: img.url, mainUrl: img.url, lightboxUrl: img.url, thumbUrl: img.url,
+        url: pdpMain34 && i === 0 ? pdpMain34 : img.url,
+        mainUrl: pdpMain34 && i === 0 ? pdpMain34 : img.url,
+        lightboxUrl: pdpMain34 && i === 0 ? pdpMain34 : img.url,
+        thumbUrl: pdpMain34 && i === 0 ? pdpMain34 : img.url,
         altText: img.altText, whiteBg: product.imageWhiteBg?.[i] ?? false,
       }));
 
@@ -188,11 +197,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）
   const shortTitle = product.title;
 
-  // 面包屑一级类目：链 /products/?cat=<小写 productType>（2026-09-27 用户定：PDP 面包屑不显示
-  // "Products" 中转层；/bedding/ 落地页已于同天下线，bedding 同样走 /products?cat=bedding）
-  const catSlug = (product.productType || '').toLowerCase();
-  const catLabel = product.productType || '';
-  const catHref = `/products/?cat=${encodeURIComponent(catSlug)}`;
+  // 面包屑已于 2026-10-19 全站移除（用户定），原面包屑类目变量（catSlug/catLabel/catHref）一并删除
 
   // 变体组（同款异色）
   const group = getVariantGroupOf(product.asin);
@@ -358,34 +363,24 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // pb-24 移动端底 padding 已移除（2026-10-12 用户定：评价区下移页尾后，该 padding 在
     // Brand Story 与评价摘要之间形成 ~96px 大空隙；吸底加购条占位由 page.tsx 尾部 h-20  spacer 承担）
     <div className="bg-off-white">
-      {/* 面包屑（移动端 pt-0：图片贴合 sticky 导航下沿（原设计意图，2026-10-11 用户确认缝隙去除）；
-          桌面 pt-10；移动端隐藏面包屑本身省首屏空间） */}
-      <div className="px-6 lg:px-10 pt-0 lg:pt-10">
-        <nav className="hidden lg:flex max-w-[1520px] lg:w-[80%] lg:max-w-none mx-auto items-center gap-2 text-xs lg:text-sm text-charcoal-light">
-          <a href={v2url('/')} className="hover:text-brand">Home</a>
-          <span>/</span>
-          {catSlug ? (
-            <>
-              <a href={v2url(catHref)} className="hover:text-brand">{catLabel}</a>
-              <span>/</span>
-            </>
-          ) : null}
-          <span className="text-charcoal truncate max-w-[180px] sm:max-w-md">{shortTitle}</span>
-        </nav>
-      </div>
+      {/* 面包屑已全站移除（2026-10-19 用户定：PDP 顶部 Home / Category / Title 区块删除；
+          原桌面端 pt-10 由下方图集 section 的 lg:mt-10 承接，顶部间距不变） */}
 
       {/* ① 顶部：左图集 + 右购买信息；移动端必须显式 grid-cols-1 + 子项 min-w-0：
           隐式 auto 列会被缩略图横排撑到内容宽度，导致整页横向溢出、右侧被裁（与老版 PDP 同坑）。
           移动端首屏压缩（付费落地优化 P1）：面包屑移动端隐藏、移动端无区块上边距（图片贴合顶部导航）、
           图集与购买栏间距 gap-5（原 gap-10 在移动端留出大段空白，2026-09-28 手机实测标题仍被切在屏外）。
           桌面端（2026-09-29 用户定）：容器宽 80% 屏宽，提高首屏占屏比（原 1400px 居中两侧留白过多）；
-          图集:购买栏 = 8:5（2026-10-12 用户定：商品图长宽再增约 15%，购买区宽度对应减少；原 7:6）；
+          图集:购买栏 = 10:9（2026-10-19 用户定：购买栏在 8:6 基础上再加宽 20%（6fr→7.2fr，等比化简 10:9），
+          图集对应收窄；历史：8:5 → 8:6 → 10:9）；
           页面下方品牌故事/面料板块同宽 80% 对齐 */}
       <section className="px-6 lg:px-10 lg:mt-10">
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[8fr_5fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[10fr_9fr] gap-5 lg:gap-12 max-w-[1520px] lg:w-[80%] lg:max-w-none">
           {/* 左：图集。移动端（2026-09-29 用户定）：主图 1:1.05 近方微竖通栏，方源图 object-cover 居中裁剪
               （仅左右各裁约 2.4%，几乎不损失画面；4:5 竖版左右裁 10% 与模糊背景方案均已弃用）；
-              缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定） */}
+              缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定）。
+              2026-10-19 用户定：bedding 类目 PDP 图集区默认 3:4（产品带 imageAspect 覆盖时优先生效，
+              见 image-aspect-overrides.ts）；非 bedding 产品保持 1:1.05/方图 */}
           <div className={`min-w-0 max-lg:-mx-6${productImages.length > 1 ? ' lg:grid lg:grid-cols-[5rem_1fr] lg:gap-4' : ''}`}>
             {/* 缩略图竖排（桌面端，主图左侧；2026-09-29 用户定：主图占比大，缩略图在下方时首屏看不到切换器）。
                 grid 行高由主图 aspect-square 决定，竖排列 min-h-0 + overflow-y-auto 超高时列内滚动；
@@ -406,7 +401,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
             <div
-              className="aspect-[1/1.05] lg:aspect-square lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y"
+              className={`${product.imageAspect === '3/4' || isBedding ? 'aspect-[3/4]' : 'aspect-[1/1.05] lg:aspect-square'} lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y`}
               onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
               onTouchStart={onTouchStart}
               onTouchEnd={onTouchEnd}
@@ -451,9 +446,13 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 心愿单按钮（桌面购买区 + 移动端主图悬浮）已于 2026-10-12 移除（用户定） */}
             <div className="flex items-center justify-between gap-4 mb-2 lg:mb-4">
               <div className="flex items-center gap-2">
-                <span className="hidden lg:inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream">
+                {/* 类目徽章可点击回对应大类目页（2026-10-19 用户定） */}
+                <a
+                  href={v2url(`/products/?cat=${encodeURIComponent((product.productType || '').toLowerCase())}`)}
+                  className="hidden lg:inline-block px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-brand text-cream hover:opacity-85 transition"
+                >
                   {product.productType}
-                </span>
+                </a>
                 <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${isInStock ? 'text-brand' : 'text-charcoal-light'}`}>
                   <span className={`w-1.5 h-1.5 rounded-full ${isInStock ? 'bg-brand' : 'bg-charcoal-light'}`} />
                   {isInStock ? 'In Stock' : 'Out of Stock'}
