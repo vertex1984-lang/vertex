@@ -20613,4 +20613,1292 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
+  {
+    "id": "makimoo-BOHOTHROW-SUNSET-127",
+    "asin": "BOHOTHROW-SUNSET-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-sunset",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-SUNSET-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-SUNSET-130",
+    "asin": "BOHOTHROW-SUNSET-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-sunset",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-SUNSET-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-OLIVE-127",
+    "asin": "BOHOTHROW-OLIVE-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-olive",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-OLIVE-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-OLIVE-130",
+    "asin": "BOHOTHROW-OLIVE-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-olive",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-OLIVE-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-TEAL-127",
+    "asin": "BOHOTHROW-TEAL-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-TEAL-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-TEAL-130",
+    "asin": "BOHOTHROW-TEAL-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-teal",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-TEAL-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-BURGUNDY-127",
+    "asin": "BOHOTHROW-BURGUNDY-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-burgundy",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-BURGUNDY-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-BURGUNDY-130",
+    "asin": "BOHOTHROW-BURGUNDY-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-burgundy",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-BURGUNDY-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-130X180",
+    "asin": "JACTHROW-HB-BLACK-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-150X200",
+    "asin": "JACTHROW-HB-BLACK-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-130X190",
+    "asin": "JACTHROW-HB-BLACK-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-130X180",
+    "asin": "JACTHROW-HB-KHAKI-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-150X200",
+    "asin": "JACTHROW-HB-KHAKI-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-130X190",
+    "asin": "JACTHROW-HB-KHAKI-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X180",
+    "asin": "JACTHROW-PAISLEY-BEIGE-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-150X200",
+    "asin": "JACTHROW-PAISLEY-BEIGE-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X190",
+    "asin": "JACTHROW-PAISLEY-BEIGE-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X180",
+    "asin": "JACTHROW-PAISLEY-BLUE-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-150X200",
+    "asin": "JACTHROW-PAISLEY-BLUE-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X190",
+    "asin": "JACTHROW-PAISLEY-BLUE-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-ORANGE-127",
+    "asin": "CHUNKYTHROW-ORANGE-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-orange",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-ORANGE-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-ORANGE-130",
+    "asin": "CHUNKYTHROW-ORANGE-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-orange",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-ORANGE-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-OAT-127",
+    "asin": "CHUNKYTHROW-OAT-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-oat",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-OAT-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-OAT-130",
+    "asin": "CHUNKYTHROW-OAT-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-oat",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-OAT-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-CREAM-127",
+    "asin": "CHUNKYTHROW-CREAM-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-CREAM-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-CREAM-130",
+    "asin": "CHUNKYTHROW-CREAM-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-cream",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-CREAM-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-GREY-127",
+    "asin": "CHUNKYTHROW-GREY-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-GREY-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-GREY-130",
+    "asin": "CHUNKYTHROW-GREY-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-GREY-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
 ];
