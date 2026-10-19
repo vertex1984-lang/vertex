@@ -11,7 +11,9 @@ import V2BeddingCatHero, { BeddingHeroLink } from '@/components/v2/V2BeddingCatH
 import V2PillowsCatHero, { PillowsHeroLink } from '@/components/v2/V2PillowsCatHero';
 import V2CushionsCatHero, { CushionsHeroLink } from '@/components/v2/V2CushionsCatHero';
 import V2TowelsCatHero, { TowelsHeroLink } from '@/components/v2/V2TowelsCatHero';
+import V2BlanketsCatHero, { BlanketsHeroLink } from '@/components/v2/V2BlanketsCatHero';
 import { buildSetFamilies } from '@/data/bedding-families';
+import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
 import { BEDDING_FABRICS, fabricDisplayName } from '@/data/bedding-fabrics';
 import { isPillowProduct, PILLOW_TYPES, PILLOW_MATERIALS, pillowTypeOf, pillowMaterialOf } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
@@ -218,7 +220,8 @@ export default function V2ProductsPage() {
     return { styleCount: beddingShopProducts.length, typeLinks, fabricLinks };
   }, [beddingMaterialMode, isSearching, activeSub, beddingShopProducts]);
 
-  // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式：意图回显 + 家族卡网格，
+  // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式；2026-10-19 按 bedding/towels 标准重构：
+  // Parachute 式 hero（V2BlanketsCatHero，快链=系列分区锚点）+ 按系列分区的家族卡网格（V2BlanketsShop），
   // 无筛选条/排序下拉/左侧栏/移动端抽屉入口/Need help deciding）：
   // 同样传未去重的原始列表——buildBlanketFamilies 需要看到同色全部尺寸 SKU 才能拼尺寸带
   const blanketsMode = activeCategory.toLowerCase() === 'blankets';
@@ -229,6 +232,18 @@ export default function V2ProductsPage() {
       ),
     []
   );
+
+  // blankets 类目页头数据（2026-10-19 用户定：按 bedding/towels 页标准重建，见 V2BlanketsCatHero）：
+  // 快链 = 有产品的系列分区（页内锚点 #<BLANKET_SECTIONS.key>；blankets 无二级页，同 towels），
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，同 bedding/pillows/cushions/towels 口径）
+  const blanketHero = useMemo(() => {
+    if (!blanketsMode || isSearching || activeSub) return null;
+    const fams = buildBlanketFamilies(blanketShopProducts);
+    const typeLinks: BlanketsHeroLink[] = BLANKET_SECTIONS.filter((s) =>
+      fams.some((f) => blanketSectionOf(f) === s.key)
+    ).map((s) => ({ label: s.label, href: `#${s.key}` }));
+    return { styleCount: blanketShopProducts.length, typeLinks };
+  }, [blanketsMode, isSearching, activeSub, blanketShopProducts]);
 
   // pillows 选购视图（2026-09-30 用户定，照搬 bedding 结构：Type × Material 双下拉 +
   // 按形态分区网格）：范围 = pillows 类目 + 跨挂的旅行颈枕（Others/travel，见 pillows-taxonomy）
@@ -501,7 +516,7 @@ export default function V2ProductsPage() {
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序。
           bedding/pillows/cushions/towels 类目页面包屑整块移除（2026-10-16 用户定：Parachute 式 hero 已承担导航，
           "Home / Bedding" 与 hero 标题信息重复，双端都不显示；cushions/towels 2026-10-18 加入） */}
-      {!beddingHero && !pillowHero && !cushionHero && !towelHero && (
+      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && (
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
         <span className="mx-1.5">/</span>
@@ -544,6 +559,12 @@ export default function V2ProductsPage() {
           styleCount={towelHero.styleCount}
           intro={categoryDef?.intro || ''}
           typeLinks={towelHero.typeLinks}
+        />
+      ) : blanketHero ? (
+        <V2BlanketsCatHero
+          styleCount={blanketHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={blanketHero.typeLinks}
         />
       ) : (
       <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
@@ -656,7 +677,9 @@ export default function V2ProductsPage() {
            若传入 dedupeFamilyColors 后的列表，同族同色不同尺寸被合并，尺寸带只剩代表 SKU 的一个 */
         <V2BeddingShop products={beddingShopProducts} />
       ) : blanketsMode && !isSearching ? (
-        /* blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式）：意图回显 + 家族卡网格。
+        /* blankets 选购视图（2026-10-19 用户定：按 bedding/towels 页标准重构——
+           页头 Parachute 式 hero（V2BlanketsCatHero，系列分区锚点快链承担导航），
+           网格按系列分区（V2BlanketsShop，BLANKET_SECTIONS 注册表同口径）。
            传未去重的原始 blankets 列表（同 bedding 口径）：buildBlanketFamilies 需要看到
            同色全部尺寸 SKU 才能拼出完整尺寸带（120 x 200 / ... / 230 x 250 cm） */
         <V2BlanketsShop products={blanketShopProducts} />
