@@ -1,4 +1,5 @@
 import { resolveUrl } from '@/lib/paths';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 
 /**
  * /products?cat=blankets 类目页头（2026-10-19 用户定：按 bedding/towels 类目页结构重建，
@@ -123,15 +124,16 @@ export default function V2BlanketsCatHero({
             )}
           </div>
         </div>
-        {/* 导航排：系列分区（页内锚点 → 各 Throws 分区） */}
-        <nav
-          className="mt-5 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-          aria-label="Blanket categories"
+        {/* 导航排：系列分区（页内锚点 → 各 Throws 分区；
+            2026-10-20 用户定：屏宽不足不换行，单行可拖拽滚动，见 V2DragScrollRow） */}
+        <V2DragScrollRow
+          className="mt-5 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
+          ariaLabel="Blanket categories"
         >
           {typeLinks.map((l) => (
             <HeroLink key={l.label} {...l} />
           ))}
-        </nav>
+        </V2DragScrollRow>
       </section>
     </>
   );
