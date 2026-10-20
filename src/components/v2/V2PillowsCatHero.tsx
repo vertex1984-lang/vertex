@@ -1,4 +1,5 @@
 import { resolveUrl } from '@/lib/paths';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 
 /**
  * /products?cat=pillows 类目页头（2026-10-16 用户定：按 bedding 类目页结构重建）：
@@ -133,10 +134,11 @@ export default function V2PillowsCatHero({
             )}
           </div>
         </div>
-        {/* 导航排：形态组 + 竖分隔线 + 填充材质组 */}
-        <nav
-          className="mt-5 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-          aria-label="Pillow categories"
+        {/* 导航排：形态组 + 竖分隔线 + 填充材质组（2026-10-20 用户定：屏宽不足不换行，
+            单行可拖拽滚动，见 V2DragScrollRow） */}
+        <V2DragScrollRow
+          className="mt-5 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
+          ariaLabel="Pillow categories"
         >
           {typeLinks.map((l) => (
             <HeroLink key={l.label} {...l} />
@@ -147,7 +149,7 @@ export default function V2PillowsCatHero({
           {fillingLinks.map((l) => (
             <HeroLink key={l.label} {...l} />
           ))}
-        </nav>
+        </V2DragScrollRow>
       </section>
     </>
   );

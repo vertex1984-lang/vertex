@@ -5,6 +5,7 @@ import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS } from '@/data/bed
 import { BEDDING_FABRICS, fabricBySlug, fabricDisplayName } from '@/data/bedding-fabrics';
 import V2FabricShop from '@/components/v2/V2FabricShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
@@ -139,9 +140,10 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
                 Fabric Guide
               </a>
             </nav>
-            <nav
-              className="hidden lg:flex mt-5 mb-10 flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-              aria-label="Bedding fabrics"
+            {/* 2026-10-20 用户定：屏宽不足不换行，单行可拖拽滚动（V2DragScrollRow） */}
+            <V2DragScrollRow
+              className="hidden lg:flex flex-nowrap mt-5 mb-10 items-center gap-x-7 gap-y-2 text-sm"
+              ariaLabel="Bedding fabrics"
             >
               {fabricsWithCounts.map((x) => (
                 <a
@@ -163,7 +165,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
                 Fabric Guide
                 <span className="transition-transform group-hover:translate-x-0.5">›</span>
               </a>
-            </nav>
+            </V2DragScrollRow>
           </>
         ) : (
           /* ── 类型页页头：按 bedding 类目页标准（2026-10-16 用户定）——

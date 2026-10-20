@@ -25,6 +25,7 @@ import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { getStyleTagWithOverride } from '@/data/product-tags';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { resolveUrl } from '@/lib/paths';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 import { v2url } from '@/lib/v2paths';
 import { sortByWeight, weightOf } from '@/lib/weights';
 
@@ -223,9 +224,10 @@ export default function V2CategoriesPage() {
               </a>
             ))}
           </nav>
-          <nav
-            className="hidden lg:flex sticky top-[88px] z-30 bg-off-white -mx-10 px-10 py-3 mb-4 flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-            aria-label="Categories"
+          {/* 桌面端同上（2026-10-20 用户定：屏宽不足不换行，单行可拖拽滚动，见 V2DragScrollRow） */}
+          <V2DragScrollRow
+            className="hidden lg:flex flex-nowrap sticky top-[88px] z-30 bg-off-white -mx-10 px-10 py-3 mb-4 items-center gap-x-7 gap-y-2 text-sm"
+            ariaLabel="Categories"
           >
             {sections.map((cat) => (
               <a
@@ -237,7 +239,7 @@ export default function V2CategoriesPage() {
                 <span className="transition-transform group-hover:translate-x-0.5">›</span>
               </a>
             ))}
-          </nav>
+          </V2DragScrollRow>
 
           {/* 类目分区：仿 bedding 页格局——分区标题（带 styles 角标）+ 简介 + 家族卡网格，
               分区间细分隔线；scroll-mt 避让 fixed 页头供锚点跳转。

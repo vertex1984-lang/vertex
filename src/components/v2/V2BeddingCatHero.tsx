@@ -1,4 +1,5 @@
 import { resolveUrl } from '@/lib/paths';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 
 /**
  * /products?cat=bedding 类目页头（2026-10-16 用户定：参照 Parachute Sheets 页头；当日二轮调整）：
@@ -125,10 +126,11 @@ export default function V2BeddingCatHero({
             )}
           </div>
         </div>
-        {/* 导航排：类型组 + 竖分隔线 + 面料组（2026-10-16 用户定：只放同级类目 + 面料） */}
-        <nav
-          className="mt-5 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-          aria-label="Bedding categories"
+        {/* 导航排：类型组 + 竖分隔线 + 面料组（2026-10-16 用户定：只放同级类目 + 面料；
+            2026-10-20 用户定：屏宽不足不换行，单行可拖拽滚动，见 V2DragScrollRow） */}
+        <V2DragScrollRow
+          className="mt-5 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
+          ariaLabel="Bedding categories"
         >
           {typeLinks.map((l) => (
             <HeroLink key={l.label} {...l} />
@@ -139,7 +141,7 @@ export default function V2BeddingCatHero({
           {fabricLinks.map((l) => (
             <HeroLink key={l.href} {...l} />
           ))}
-        </nav>
+        </V2DragScrollRow>
       </section>
     </>
   );
