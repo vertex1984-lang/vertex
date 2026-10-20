@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const scene = SCENES.find((s) => s.slug === params.slug);
   if (!scene) return {};
   return {
-    title: `${scene.title} — Shop the Look | Makimoo`,
+    title: `${scene.title} – Shop the Look`,
     description: scene.tagline,
   };
 }

@@ -5,7 +5,10 @@ import type { MakimooProduct } from '@/data/products';
 
 /** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle。
  *  tagLabel 为可选附加字段：设置后类目标签位显示该值（Shop by Color 传场景名、Shop by Scene 传一级类目），
- *  否则回退到 productCategoryTag（Bedding 显示材质；其他类目二级 shortLabel 优先于 productType） */
+ *  否则回退到 productCategoryTag（Bedding 显示材质；其他类目二级 shortLabel 优先于 productType）。
+ *  familyKey / familyColor（2026-10-20 用户定：全站产品卡统一为家族卡——同族合并一张卡，From 最低价）：
+ *  家族合并 key（familyKeyOf 口径：变体组 `${组id}::${颜色}`，无组 = asin 小写）与家族颜色（colorLine 用）；
+ *  可选——仅家族卡推荐位（V2Recommended 等，经 toCardProduct 构造）填充，直接传 MakimooProduct 的老调用点不带 */
 export type V2CardProduct = Pick<
   MakimooProduct,
   | 'id'
@@ -20,7 +23,7 @@ export type V2CardProduct = Pick<
   | 'shopifyCurrencyCode'
   | 'images'
   | 'priceRange'
-> & { tagLabel?: string };
+> & { tagLabel?: string; familyKey?: string; familyColor?: string };
 
 interface V2ProductCardProps {
   product: V2CardProduct;

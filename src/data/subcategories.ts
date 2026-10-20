@@ -17,10 +17,11 @@ export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Mats', value: 'mats', intro: 'Absorbent mats & durable rugs for every room.' },
   { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
   { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
-  { label: 'Decor', value: 'decor', intro: 'Framed canvas wall art to finish every room.' },
+  { label: 'Decor', value: 'decor', intro: 'Wall art & handcrafted accents to finish every room.' },
   { label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
-  { label: 'Others', value: 'others', intro: 'Travel, kitchen & extras for daily living.' },
+  // Others 已全站下线（2026-10-20 用户定：数据保留、网站不展示、页面与 sitemap 移除）——
+  // 颈枕已归 Pillows，4 个散件经 products.ts 的 CATEGORY_OVERRIDES 归 Dining/Decor；恢复时把条目加回即可
 ];
 
 export interface SubcategoryDef {
@@ -195,13 +196,21 @@ function classifyBedding(asin: string): string | undefined {
  * 计算产品的二级分类 key；不属于五大类目时返回 undefined。
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
  */
-// 手工指定二级分类（用户确认时在此加 asin → sub key 条目）
+// 手工指定二级分类（用户确认时在此加 asin → sub key 条目；'' = 不属于任何二级分类——
+// 2026-10-20 改类目的 3 个散件：胡椒研磨器归 Dining 但不是 trays/placemats，
+// 香薰炉/自行车篮归 Decor 但不是 wall-art）
 const SUB_OVERRIDES: Record<string, string> = {
+  'b0d9lh1y55': '',
+  'b0by8ly757': '',
+  'b098f1bkjq': '',
 };
 
 export function classifyProduct(productType: string, title: string, asin: string): string | undefined {
-  const override = SUB_OVERRIDES[asin.toLowerCase()];
-  if (override) return override;
+  const asinLower = asin.toLowerCase();
+  // hasOwnProperty 判断：'' 也是有效覆盖（= 无二级分类）
+  if (Object.prototype.hasOwnProperty.call(SUB_OVERRIDES, asinLower)) {
+    return SUB_OVERRIDES[asinLower] || undefined;
+  }
   switch (productType.toLowerCase()) {
     case 'cushions':
       return classifyCushion(title, asin);

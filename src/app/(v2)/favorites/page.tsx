@@ -78,7 +78,7 @@ export default function V2FavoritesPage() {
               Tap the heart on any product to save it here for later.
             </p>
             <a
-              href={v2url('/products/')}
+              href={v2url('/categories/')}
               className="inline-block px-9 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
             >
               Discover Products

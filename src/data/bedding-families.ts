@@ -128,6 +128,9 @@ function colorOf(key: string): string {
   return COLOR_LABELS[code.toUpperCase()] || code.charAt(0).toUpperCase() + code.slice(1).toLowerCase();
 }
 
+// 2026-10-20：导出给 /categories 页把 BlanketFamily 映射回套装家族，对齐 /products?cat=bedding 排序
+export { familyKeyOf as setFamilyKeyOf };
+
 /**
  * 1688-916370884976 家族 ASIN 无颜色段，从产品标题尾括号取配色名（如 "(Light Blue & Cheese)"）。
  * 注意：enrich 后 title 已被短标题覆盖（括号色名被裁掉），必须查 MATERIALS_MAP 原始标题。

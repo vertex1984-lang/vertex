@@ -51,7 +51,7 @@ const blogSlugs = [...blogSrc.matchAll(/^ {4}slug:\s*"([^"]+)"/gm)].map((m) => m
 const staticPages = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/categories/', priority: '0.9', changefreq: 'daily' },
-  { loc: '/products/', priority: '0.8', changefreq: 'daily' },
+  // 裸 /products/ 2026-10-20 起客户端跳转 /categories/（用户定：浏览入口统一到类目页），不入 sitemap
   { loc: '/blog/', priority: '0.6', changefreq: 'weekly' },
   { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
   // /bedding/ 落地页已下线（2026-09-27 用户定，一级类目页 = /products?cat=bedding），不入 sitemap；

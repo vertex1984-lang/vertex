@@ -8372,6 +8372,15 @@ const CATEGORY_MERGE: Record<string, string> = {
   'home fragrance': 'Others',
   travel: 'Others',
 };
+/** 产品级一级类目覆盖（2026-10-20 用户定，key = 小写 asin；优先于 normalizeCategory 的标题规则）：
+ *  藤编贝壳篮 C2（中文标题，DINING_TRAY_RE 匹配不到）与希腊胡椒研磨器 → Dining；
+ *  挂式香薰炉、藤编自行车篮 → Decor。同日 Others 类目全站下线（CATEGORY_DEFS 移除条目，数据保留） */
+const CATEGORY_OVERRIDES: Record<string, string> = {
+  '1688-743606980882-c2': 'Dining',
+  'b0d9lh1y55': 'Dining',
+  'b0by8ly757': 'Decor',
+  'b098f1bkjq': 'Decor',
+};
 const DINING_TRAY_RE = /tray|serving basket|fruit (plate|basket|bowl)|snack (plate|bowl|tray)|platter|bread basket|placemat|coaster/i;
 const MATS_RE = /bath ?mats?|bath rug|kitchen (mat|rug)|door mat|entryway|floor mat|area rug|diatom/i;
 const TOWELS_RE = /towel/i;
@@ -8454,14 +8463,16 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
     // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖；无手工条目时自动精简
     const shortTitle = SHORT_TITLES[asinLower] || autoShortenTitle(product.title);
     const titled = shortTitle !== product.title ? { ...product, title: shortTitle } : product;
-    // 分类归一化（productType + tags）
+    // 分类归一化（productType + tags）；产品级覆盖（CATEGORY_OVERRIDES）优先于标题规则（2026-10-20 用户定）
+    const catOverride = CATEGORY_OVERRIDES[asinLower];
+    const normalizedCat = catOverride || normalizeCategory(titled.productType, titled.title);
     const categorized = {
       ...titled,
-      productType: normalizeCategory(titled.productType, titled.title),
-      tags: titled.tags.map(t => normalizeCategory(t, titled.title)),
+      productType: normalizedCat,
+      tags: catOverride ? [normalizedCat] : titled.tags.map(t => normalizeCategory(t, titled.title)),
       // 二级分类：用完整标题（精简前）判定，避免关键词被截断
       subcategory: classifyProduct(
-        normalizeCategory(titled.productType, titled.title),
+        normalizedCat,
         product.title,
         asinLower
       ),

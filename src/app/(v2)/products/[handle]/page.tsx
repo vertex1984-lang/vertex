@@ -9,7 +9,7 @@ import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
 import { buildSetFamilies } from '@/data/bedding-families';
-import { getPdpRelatedProducts } from '@/data/home-sections';
+import { getPdpRelatedFamilies } from '@/data/home-sections';
 import { STORE_CURRENCY } from '@/lib/currency';
 
 const SITE_URL = 'https://www.makimoohome.com';
@@ -156,8 +156,8 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
     : { colorVariants: [], sizeVariants: [] };
   const { colorVariants, sizeVariants } = variantData;
 
-  // "You May Also Like" 关联推荐（仅新版 PDP；server 端构建期算好，逻辑见 home-sections.ts）
-  const relatedProducts = isNew ? getPdpRelatedProducts(params.handle) : [];
+  // "You May Also Like" 关联推荐家族卡（仅新版 PDP；server 端构建期算好，逻辑见 home-sections.ts）
+  const relatedProducts = isNew ? getPdpRelatedFamilies(params.handle) : [];
 
   // JSON-LD Product 结构化数据（有真实评价数据时才输出 aggregateRating）
   const jsonLd = enriched

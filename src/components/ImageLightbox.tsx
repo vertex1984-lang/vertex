@@ -21,7 +21,7 @@ interface ImageLightboxProps {
  * - 桌面端左右箭头 / 键盘 ← → 切换（循环），Esc 关闭；移动端无箭头，单指滑动切图
  * - 单击图片在 1x / 2.5x 间切换缩放，缩放时鼠标移动平移查看
  * - 底部缩略图条（可横向滚动，自动跟随当前图）
- * - 顶部计数 + 关闭按钮；点击空白区域（未缩放时）关闭
+ * - 顶部计数 + 关闭按钮；点击任何非图片区域（含顶栏、缩略图条背景，未缩放时）关闭；缩略图按钮与左右箭头仍可切图不关闭
  * - 移动端图片满幅（无左右留白、高度顶格）；桌面端版式不变（付费落地优化，用户定）
  */
 export default function ImageLightbox({ images, index, onIndexChange, onClose }: ImageLightboxProps) {
@@ -117,8 +117,8 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
       className="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-sm flex flex-col animate-[fadeIn_0.2s_ease-out]"
       onClick={() => { if (!zoomed) onClose(); }}
     >
-      {/* 顶栏：计数 + 关闭 */}
-      <div className="flex items-center justify-between px-5 py-4 flex-shrink-0" onClick={(e) => e.stopPropagation()}>
+      {/* 顶栏：计数 + 关闭（ bar 背景点击不拦截，冒泡到根关闭） */}
+      <div className="flex items-center justify-between px-5 py-4 flex-shrink-0">
         <span className="text-white/70 text-sm font-medium tracking-wide">
           {index + 1} / {images.length}
         </span>
@@ -172,14 +172,14 @@ export default function ImageLightbox({ images, index, onIndexChange, onClose }:
         </p>
       </div>
 
-      {/* 缩略图条 */}
+      {/* 缩略图条（条背景点击不拦截，冒泡到根关闭；缩略图按钮自身拦截仍可切图） */}
       {images.length > 1 && (
-        <div className="flex-shrink-0 px-5 py-4" onClick={(e) => e.stopPropagation()}>
+        <div className="flex-shrink-0 px-5 py-4">
           <div ref={thumbsRef} className="flex gap-2.5 justify-start lg:justify-center overflow-x-auto max-w-3xl mx-auto pb-1">
             {images.map((img, i) => (
               <button
                 key={i}
-                onClick={() => { setZoomed(false); onIndexChange(i); }}
+                onClick={(e) => { e.stopPropagation(); setZoomed(false); onIndexChange(i); }}
                 aria-label={`View image ${i + 1}`}
                 className={`w-14 h-14 rounded-lg overflow-hidden flex-shrink-0 border-2 transition ${
                   i === index ? 'border-white opacity-100' : 'border-transparent opacity-50 hover:opacity-80'

@@ -182,7 +182,7 @@ export default function V2AboutPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href={v2url('/products/')}
+                href={v2url('/categories/')}
                 className="inline-block px-8 py-3.5 bg-brand text-cream text-sm font-semibold rounded-full transition hover:bg-brand-dark"
               >
                 Shop All Products

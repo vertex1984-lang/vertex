@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import { v2url } from '@/lib/v2paths';
 import { STYLE_RULES } from '@/data/product-tags';
+import { collapseToFamilies, toFamilyCard } from '@/lib/family-cards';
 import { ALL_STYLED, STYLE_BLURBS, styleKeysWithProducts } from '@/data/style-tagged';
 
 // 静态导出：只为 generateStaticParams 返回的风格生成页面，其余 404
@@ -18,10 +19,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { style: string } }): Metadata {
   const rule = STYLE_RULES.find((s) => s.key === params.style);
   if (!rule) return {};
-  const count = ALL_STYLED.filter((p) => p.styleTag.key === rule.key).length;
+  // 家族卡口径（2026-10-20 用户定）：计数 = 该风格家族数（同色同族一张卡，无组产品单品成族）
+  const count = collapseToFamilies(ALL_STYLED.filter((p) => p.styleTag.key === rule.key)).length;
   // 注意：本站 generateMetadata 的 title 不吃根 layout 的 "%s | Makimoo" 模板，后缀需手写
   return {
-    title: `${rule.label} Style — Shop by Style | Makimoo`,
+    title: `${rule.label} Style – Shop by Style | Makimoo`,
     description: `Shop Makimoo ${rule.label} pieces — ${STYLE_BLURBS[rule.key] || ''} ${count} pieces, shop by style.`,
   };
 }
@@ -32,6 +34,10 @@ export default function StyleCategoryPage({ params }: { params: { style: string 
   const rule = STYLE_RULES.find((s) => s.key === params.style);
   const products = ALL_STYLED.filter((p) => p.styleTag.key === params.style);
   if (!rule || products.length === 0) notFound();
+  // 家族卡（2026-10-20 用户定：全站产品卡统一为家族卡）：先按标签过滤再成族——
+  // 同族成员共享同一风格标签，过滤后成族仍含全部尺寸 SKU（From 价正确）；
+  // Decor/Dining/Others 等无变体组产品自动单品成族，无需特判
+  const families = collapseToFamilies(products);
 
   return (
     <div className="px-3 lg:px-10 pt-3 lg:pt-6 pb-10 lg:pb-14">
@@ -50,12 +56,12 @@ export default function StyleCategoryPage({ params }: { params: { style: string 
             <p className="text-sm text-[#777] mt-2">{STYLE_BLURBS[rule.key]}</p>
           )}
         </div>
-        <p className="text-sm text-[#777]">{products.length} result{products.length === 1 ? '' : 's'}</p>
+        <p className="text-sm text-[#777]">{families.length} result{families.length === 1 ? '' : 's'}</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-        {products.map((p) => (
-          <V2ProductCard key={p.id} product={p} />
+        {families.map((f) => (
+          <BeddingSetCard key={f.key} family={toFamilyCard(f)} compactText />
         ))}
       </div>
     </div>
