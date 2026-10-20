@@ -88,6 +88,8 @@ export default function CushionSubPage({ params }: { params: { slug: string } })
               family={{
                 ...f,
                 titleOverride: cushionCardTitle(f),
+                // 2026-10-18 用户定：cushions 卡也加标题下浅色颜色行（同 bedding/pillows）
+                colorLine: f.color || undefined,
               }}
               compactText
             />

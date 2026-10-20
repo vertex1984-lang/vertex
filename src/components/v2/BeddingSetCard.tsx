@@ -6,10 +6,12 @@ import type { SetFamily } from '@/data/bedding-families';
 /** 家族卡最小数据形状：SetFamily（bedding）与 BlanketFamily（blankets）均满足；
  *  colors = 卡面颜色变体行（2026-10-02 pillows 合并卡用，如 "Black / Grey / Pink"）；
  *  titleOverride = 卡片展示标题覆盖（2026-10-09 pillows 卡片标题规则用，pillowCardTitle），
- *  仅影响卡面标题，href/PDP 仍用产品原标题 */
+ *  仅影响卡面标题，href/PDP 仍用产品原标题；
+ *  colorLine = 标题下浅色颜色行（2026-10-18 用户定，bedding/pillows 卡用，其他类目不传不显示） */
 export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'currency'> & {
   colors?: string[];
   titleOverride?: string;
+  colorLine?: string;
 };
 
 /**
@@ -40,6 +42,12 @@ export default function BeddingSetCard({
   sizesSuffix = '',
   paddedWhiteBg = false,
   compactText = false,
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启 */
+  tallImage = true,
+  anchorRight = false,
+  anchorLeft = false,
+  paddedGrayBg = false,
+  cropBiasRight = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
@@ -51,6 +59,18 @@ export default function BeddingSetCard({
   paddedWhiteBg?: boolean;
   /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档（其他类目后续逐一统一，暂不动） */
   compactText?: boolean;
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启；传 false 回退 1:1 方图 */
+  tallImage?: boolean;
+  /** 2026-10-19 用户定：sateen/linen/percale 卡图裁剪锚定右侧（截左边、保留右边；已随 4:5 回滚停用，保留备用） */
+  anchorRight?: boolean;
+  /** 2026-10-19 用户定：个别家族卡图只裁右边、左边完整保留（object-left；当前 = 全部 duvset-* 家族） */
+  anchorLeft?: boolean;
+  /** 2026-10-19 用户定：cushions 卡 4:5 灰底留白模式——1:1 原图 object-contain 居中，
+   *  上下灰边（bg-warm-gray），不裁剪画面；需配合 tallImage 使用 */
+  paddedGrayBg?: boolean;
+  /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%，
+   *  左侧裁掉 2/3 溢出、右侧裁 1/3，画面整体偏右保留） */
+  cropBiasRight?: boolean;
 }) {
   const img = spotlightImage(family.rep);
   const name = (family.titleOverride || family.rep.title).replace(
@@ -60,15 +80,15 @@ export default function BeddingSetCard({
   return (
     <a
       href={v2url(`/products/${family.rep.handle}/`)}
-      className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+      className="group block overflow-hidden"
     >
-      <div className={`relative aspect-square overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
+      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img
           src={resolveUrl(img.url)}
           alt={img.altText}
           loading="lazy"
           className={`absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-            paddedWhiteBg ? 'object-contain p-2 sm:p-7' : 'object-cover'
+            paddedGrayBg ? 'object-contain' : paddedWhiteBg ? 'object-contain p-2 sm:p-7' : `object-cover${anchorRight ? ' object-right' : ''}${anchorLeft ? ' object-left' : ''}${cropBiasRight ? ' object-[66.67%_50%]' : ''}`
           }`}
         />
         {SHOW_CARD_BADGES && badges.length > 0 && (
@@ -87,12 +107,20 @@ export default function BeddingSetCard({
       {/* 白色信息区：标题/价格小号字 + 紧凑内边距（2026-09 用户定：除尺寸行外文字缩小、白色区压缩）；
           compactText（2026-10-08 用户定）= Pillows / Bedding 类目卡片标题与价格再缩小一档，其他类目不变 */}
       <div className="p-3 lg:p-4">
+        {/* 标题最多两行（2026-10-16 用户定：移动端单行截断大量标题显示不全，改两行 clamp，
+            超出两行才省略号；不定最小行高——一行/两行标题与价格的间距保持一致，同日用户定） */}
         <h3
-          className={`${compactText ? 'text-[11px] lg:text-xs' : 'text-xs lg:text-sm'} font-semibold text-charcoal truncate`}
+          className={`${compactText ? 'text-[11px] lg:text-xs' : 'text-xs lg:text-sm'} font-semibold text-charcoal leading-snug line-clamp-2`}
           title={name}
         >
           {name}
         </h3>
+        {/* 颜色行（2026-10-18 用户定：bedding/pillows 卡标题 = 布料+Set，颜色另起一行浅灰小字） */}
+        {family.colorLine && (
+          <p className="mt-0.5 text-[11px] lg:text-xs font-normal text-[#999] leading-snug">
+            {family.colorLine}
+          </p>
+        )}
         {SHOW_CARD_VARIANT_INFO && family.sizes.length > 0 && (
           /* truncate + title：尺寸段多时在卡片边缘省略号截断（hover 显全），不再硬截数字中间（2026-09-27） */
           <p

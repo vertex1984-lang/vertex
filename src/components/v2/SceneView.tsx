@@ -276,7 +276,7 @@ export default function SceneView({
               <a
                 key={s.slug}
                 href={v2url(`/scenes/${s.slug}/`)}
-                className="group relative block overflow-hidden rounded-xl aspect-[4/3]"
+                className="group relative block overflow-hidden aspect-[4/3]"
               >
                 <img
                   src={resolveUrl(s.heroImage)}

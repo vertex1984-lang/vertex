@@ -12,7 +12,7 @@
  * - down-alternative   Down Alternative   Microfiber / Hollowfibre（2026-09-30 用户定：microfiber 枕头归入此类；
  *                                   2026-10-09：Polyester 纤维填充同属化纤替代绒，归入此类——
  *                                   否则长抱枕芯（material=Polyester）在 /pillows/pillow-inserts/ 按材质分区时落空不显示）
- * - down               Down               暂无产品（导航置灰 coming soon）
+ * - down               Down               羽绒类（2026-10-18 起有产品：80/20 Down 与 50/50 Down & Feather 床枕）
  * - memory-foam        Memory Foam        记忆棉（8 款记忆棉颈枕）
  *
  * 注意：旅行颈枕源数据 productType = Travel，enrich 后归一化为 Others（subcategory = travel）。
@@ -74,8 +74,8 @@ export const PILLOW_MATERIALS: PillowTaxon[] = [
     key: 'down',
     label: 'Down',
     slug: 'down',
-    menuDesc: 'Coming soon.',
-    blurb: 'Real down fill — coming soon.',
+    menuDesc: 'Airy. Cloud-soft.',
+    blurb: 'Real down and down-feather fills — airy loft with a soft, sink-in feel.',
   },
   {
     key: 'memory-foam',
@@ -100,7 +100,8 @@ export function pillowMaterialOf(p: Pick<MakimooProduct, 'asin'>): string {
   const m = getProductSpecs(p.asin.toLowerCase())?.material || '';
   if (/memory foam/i.test(m)) return 'memory-foam';
   if (/microfiber|hollowfibre|hollow ?fibre|down alternative|polyester/i.test(m)) return 'down-alternative';
-  if (/^down$/i.test(m)) return 'down';
+  // 2026-10-18：/^down/ 同时命中 "Down" 与 "Down & Feather"（down-alternative 已在上方先行归位，无冲突）
+  if (/^down/i.test(m)) return 'down';
   return '';
 }
 
@@ -132,7 +133,7 @@ export function pillowSizesOf(p: Pick<MakimooProduct, 'asin'>): string[] {
 /** 卡片展示标题规则（2026-10-09 用户定，仅影响 Pillows 列表卡标题，PDP 详情页标题不变）：
  *  - pillow-inserts → "Pillow Inserts Set of 2"；长抱枕芯（1 个装）→ "Body Pillow Insert"
  *  - pillow-cases   → "Pillow Covers Set of 2"
- *  - neck-pillows   → "Neck Pillow, 颜色"（颜色取短标题最后一个逗号后的部分；无颜色 → "Neck Pillow"）
+ *  - neck-pillows   → "Neck Pillow"（2026-10-18 用户定：颜色从标题拆出，改由卡面浅色颜色行展示）
  *  - 未分类 → ''（卡片沿用产品原标题） */
 export function pillowCardTitle(p: Pick<MakimooProduct, 'title' | 'subcategory'>): string {
   const type = pillowTypeOf(p);
@@ -140,11 +141,20 @@ export function pillowCardTitle(p: Pick<MakimooProduct, 'title' | 'subcategory'>
     return /body pillow/i.test(p.title) ? 'Body Pillow Insert' : 'Pillow Inserts Set of 2';
   }
   if (type === 'pillow-cases') return 'Pillow Covers Set of 2';
-  if (type === 'neck-pillows') {
-    const m = p.title.match(/,\s*([^,]+)\s*$/);
-    return m ? `Neck Pillow, ${m[1]}` : 'Neck Pillow';
-  }
+  if (type === 'neck-pillows') return 'Neck Pillow';
   return '';
+}
+
+/** 卡面颜色行取值（2026-10-18 用户定，配合 pillowCardTitle 使用）：
+ *  颈枕 = 短标题最后一个逗号后的颜色段；其余 = 变体族内该 SKU 的颜色名；都取不到返回 '' */
+export function pillowCardColor(p: Pick<MakimooProduct, 'asin' | 'title' | 'subcategory'>): string {
+  if (pillowTypeOf(p) === 'neck-pillows') {
+    const m = p.title.match(/,\s*([^,]+)\s*$/);
+    return m ? m[1] : '';
+  }
+  const g = getVariantGroupOf(p.asin);
+  const member = g?.members.find((x) => x.asin.toLowerCase() === p.asin.toLowerCase());
+  return member?.color || '';
 }
 
 /**

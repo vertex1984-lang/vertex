@@ -24,6 +24,10 @@ export type V2CardProduct = Pick<
 
 interface V2ProductCardProps {
   product: V2CardProduct;
+  /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启；传 false 回退 1:1 方图 */
+  tallImage?: boolean;
+  /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%） */
+  cropBiasRight?: boolean;
 }
 
 /** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明；
@@ -37,6 +41,11 @@ function shortTitle(title: string, productType?: string): string {
       .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
       .replace(/\b100%\s+(microfiber|linen|cotton|polyester|bamboo)\s*/gi, '');
   }
+  // Towels（mk-towel-lsc 短标题 "Long-Staple Cotton Towel, 30\" x 56\" - Cream"）：
+  // 卡标题不写尺寸和颜色（2026-10-16 用户定：尺寸/颜色只在 PDP 内展示）
+  if (productType?.toLowerCase() === 'towels') {
+    t = t.replace(/,\s*\d+(?:\.\d+)?"\s*x\s*\d+(?:\.\d+)?"\s*-\s*.+$/, '');
+  }
   return t.replace(/\s+/g, ' ').trim();
 }
 
@@ -48,7 +57,7 @@ function formatPrice(amount: string, currency: string): string {
 }
 
 // Parachute 风格：大图 aspect-square + 分类 eyebrow + 产品名 + 价格，无卡片边框阴影
-export default function V2ProductCard({ product }: V2ProductCardProps) {
+export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false }: V2ProductCardProps) {
   // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title }
@@ -71,7 +80,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
 
   return (
     <a href={v2url(`/products/${product.handle}/`)} className="group block h-full">
-      <div className="relative aspect-square overflow-hidden rounded-lg bg-warm-gray">
+      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden bg-warm-gray`}>
         {/* 双图叠放：hover 时第二张淡入；整体保留缓慢放大 */}
         <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
           {image && (
@@ -79,7 +88,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
               src={resolveUrl(image.url)}
               alt={image.altText || product.title}
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
+              className={`absolute inset-0 w-full h-full object-cover${cropBiasRight ? ' object-[66.67%_50%]' : ''}`}
             />
           )}
           {hoverImage && (
@@ -88,7 +97,7 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
               alt=""
               aria-hidden="true"
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              className={`absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100${cropBiasRight ? ' object-[66.67%_50%]' : ''}`}
             />
           )}
         </div>
@@ -99,10 +108,12 @@ export default function V2ProductCard({ product }: V2ProductCardProps) {
         <p className="text-xs font-semibold uppercase tracking-wider text-[#8B5A2B] mb-1">
           {product.tagLabel || productCategoryTag(product)}
         </p>
-        {/* 标题全端单行截断（truncate + 省略号），字号全端统一 text-xs */}
-        <h3 className="relative text-xs font-medium text-[#333] leading-snug truncate">
+        {/* 标题最多两行（2026-10-16 用户定：移动端单行截断大量标题显示不全，改两行 clamp，
+            超出两行才省略号；不定最小行高——一行/两行标题与价格的间距保持一致，同日用户定），
+            字号全端统一 text-xs */}
+        <h3 className="relative text-xs font-medium text-[#333] leading-snug line-clamp-2">
           {shortTitle(product.title, product.productType)}
-          {/* 标题下划线 hover 渐入（v1 同款） */}
+          {/* 标题下划线 hover 渐入（v1 同款；两行标题下划线跟随最后一行宽度即可） */}
           <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
         </h3>
         <p className="mt-1 text-base sm:text-lg font-semibold text-[#8B5A2B]">

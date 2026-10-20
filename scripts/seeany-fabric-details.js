@@ -24,6 +24,10 @@ const FABRICS = {
   'organic-cotton': '暖棕赤陶色有机棉面料特写',
   'silk-modal': '奶油色丝滑莫代尔面料特写',
   'satin': '腮红粉色缎面satin面料特写，镜面般高光泽，丝绸质感极致丝滑光滑，流畅垂坠的大波浪褶皱，光泽随褶皱流动渐变',
+  // 2026-10-17：Cotton Percale 新面料线（/bedding/percale/ hero + 互导卡）
+  'percale': '天空蓝色纯棉percale平纹密织面料特写，哑光质感，细密平纹织纹清晰可见，挺括有骨感的清爽折痕褶皱，酒店级靠爽手感',
+  // 2026-10-18：Cotton Sateen（贡缎棉）四件套面料线（/bedding/sateen/ hero + 互导卡）
+  'sateen': '米白色纯棉贡缎sateen面料特写，细腻缎纹织法，柔和雅致的珍珠光泽随褶皱缓缓流动，丝滑垂坠，柔软亲肤的高级质感',
 };
 
 const key = process.argv[2];

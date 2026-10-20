@@ -118,7 +118,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
                       </>
                     );
                     const cardCls =
-                      'relative block w-[68vw] sm:w-[40vw] lg:w-[min(28vw,420px)] flex-shrink-0 overflow-hidden rounded-xl bg-warm-gray aspect-[3/4]';
+                      'relative block w-[68vw] sm:w-[40vw] lg:w-[min(28vw,420px)] flex-shrink-0 overflow-hidden bg-warm-gray aspect-[3/4]';
                     return empty ? (
                       <div key={t.key} className={cardCls}>{inner}</div>
                     ) : (
@@ -141,7 +141,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
             <div className="pt-8 lg:pt-12">
               <Reveal>
                 {/* 与页面边框留与其他模块一致的空隙（px-3 lg:px-10 + 圆角）；白字 + 左侧暗渐变，与 /fabric-guide/ 页头一致（2026-09 用户定） */}
-                <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-[21/9]">
+                <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[21/9]">
                   <img
                     src={resolveUrl('/images/fabric-guide/fabric-banner.webp')}
                     alt="Six bedding fabrics side by side"
@@ -201,7 +201,7 @@ export default function V2BeddingLanding({ categoryKey, textures, colorGroups, s
                     <a
                       key={card.key}
                       href={v2url(`/products/?cat=${categoryKey}&material=${card.key}`)}
-                      className={`group relative block overflow-hidden rounded-xl bg-warm-gray ${
+                      className={`group relative block overflow-hidden bg-warm-gray ${
                         // 辅卡方卡 1:1，宽卡 2:1 与方卡行高一致；主卡两行撑高
                         big ? 'col-span-2 row-span-2 aspect-[2/1] lg:aspect-auto' : wideLast ? 'col-span-2 aspect-[2/1]' : 'aspect-square'
                       }`}

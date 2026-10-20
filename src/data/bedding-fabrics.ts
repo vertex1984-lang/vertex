@@ -22,6 +22,15 @@ export interface BeddingFabric {
 
 export const BEDDING_FABRICS: BeddingFabric[] = [
   {
+    // 2026-10-17 用户定：Cotton Percale 新面料线（6 色 × 4 尺寸三件套），面料列排第一位
+    slug: 'percale',
+    material: 'Cotton Percale',
+    desc: 'Crisp. Cool.',
+    story:
+      'A tight plain weave with that fresh, hotel-crisp hand — matte, cool to the touch, and lightly structured. Percale breathes all night and softens beautifully with every wash.',
+    heroImage: '/images/fabric-guide/fabric-percale.webp',
+  },
+  {
     slug: 'linen',
     material: '100% Linen',
     desc: 'Airy. Relaxed.',
@@ -44,6 +53,15 @@ export const BEDDING_FABRICS: BeddingFabric[] = [
     story:
       'The relaxed look of linen, minus the upkeep. A softly textured weave that shrugs off wrinkles and stays smooth wash after wash — laid-back style, zero fuss.',
     heroImage: '/images/fabric-guide/fabric-linen-like.webp',
+  },
+  {
+    // 2026-10-18 用户定：Cotton Sateen（贡缎棉）四件套新面料线（6 色 × 4 尺寸）
+    slug: 'sateen',
+    material: 'Cotton Sateen',
+    desc: 'Silky. Lustrous.',
+    story:
+      'A fine sateen weave with a smooth, lustrous face and a subtle sheen that catches the light softly. Buttery against the skin with an elegant drape — and it only gets softer with every wash.',
+    heroImage: '/images/fabric-guide/fabric-cotton-sateen.webp',
   },
   {
     // 2026-09-27 用户定：ice silk 缎面被套（原 More Bedding 兜底区）归 Satin 面料子类

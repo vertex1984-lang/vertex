@@ -47,7 +47,7 @@ export default function MaterialGuide() {
           {PILLARS.map((p, i) => (
             <Reveal key={p.name} delay={i * 80}>
               <div>
-                <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-4 lg:mb-5">
+                <div className="relative aspect-[4/3] overflow-hidden mb-4 lg:mb-5">
                   <img
                     src={resolveUrl(p.image)}
                     alt={p.name}

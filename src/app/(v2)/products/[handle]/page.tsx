@@ -69,7 +69,9 @@ const PRODUCTS_BY_ASIN = new Map(PRODUCTS_DATA.map((p) => [p.asin.toLowerCase(),
 export default function V2ProductDetailPage({ params }: { params: { handle: string } }) {
   const product = PRODUCTS_DATA.find((p) => p.handle === params.handle);
   const enriched = product ? enrichProductsWithShopifyData([product])[0] : null;
-  const isNew = isNewProductHandle(params.handle);
+  // 2026-10-19 用户定：bedding 类目全部 PDP 按新版格式（ProductDetailUpgrade）重构，
+  // 不再限白名单；其他类目仍走 isNewProductHandle 门控
+  const isNew = isNewProductHandle(params.handle) || (enriched?.productType || '').toLowerCase() === 'bedding';
 
   // 花色/尺寸切换数据（仅白名单新品）：
   // - 纯颜色家族（地毯）：色圆点 = 全部成员
