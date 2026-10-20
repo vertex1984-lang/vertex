@@ -107,7 +107,7 @@ export default function V2ProductDetailClient({ handle }: V2ProductDetailClientP
     return (
       <div className="bg-off-white px-6 lg:px-10 pt-40 pb-24 text-center">
         <p className="text-lg text-charcoal-light">Product not found.</p>
-        <a href={v2url('/products/')} className="mt-4 inline-block text-brand underline underline-offset-4">
+        <a href={v2url('/categories/')} className="mt-4 inline-block text-brand underline underline-offset-4">
           Browse all products
         </a>
       </div>

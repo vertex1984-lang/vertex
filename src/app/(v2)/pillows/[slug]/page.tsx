@@ -75,7 +75,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const hit = taxonOf(params.slug);
   if (!hit) return {};
   return {
-    title: `${hit.taxon.label} — Pillows`,
+    title: `${hit.taxon.label} – Pillows`,
     description: hit.taxon.blurb,
   };
 }

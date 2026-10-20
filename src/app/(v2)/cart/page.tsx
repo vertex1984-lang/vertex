@@ -215,7 +215,7 @@ export default function V2CartPage() {
                 Browse our collections and find something comfortable.
               </p>
               <a
-                href={v2url('/products/')}
+                href={v2url('/categories/')}
                 className="inline-block px-8 py-3.5 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark"
               >
                 Continue Shopping
@@ -352,7 +352,7 @@ export default function V2CartPage() {
                 )}
 
                 <a
-                  href={v2url('/products/')}
+                  href={v2url('/categories/')}
                   className="mt-4 block text-center text-sm font-semibold text-brand hover:underline underline-offset-4"
                 >
                   Continue Shopping

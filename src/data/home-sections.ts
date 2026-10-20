@@ -19,7 +19,10 @@ import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { getBestSellerProducts } from '@/data/featured-sections';
 import { getVariantGroupOf } from '@/data/variant-groups';
+import { buildBlanketFamilies } from '@/data/blanket-families';
+import { familyKeyOf, familyColorOf } from '@/lib/family-cards';
 import type { V2CardProduct } from '@/components/v2/V2ProductCard';
+import type { FamilyCardData } from '@/components/v2/BeddingSetCard';
 import PRODUCT_TAGS from '@/data/product-tags.json';
 
 type PersistedTag = { color: string | null; scene: string | null; pieces: number | null };
@@ -35,7 +38,9 @@ const MAX_RECOMMENDED = 10;
 const titleKey = (title: string) =>
   title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
 
-/** 只保留 V2ProductCard 渲染所需字段，减小传给 client 的体积 */
+/** 只保留 V2ProductCard 渲染所需字段，减小传给 client 的体积。
+ *  familyKey / familyColor（2026-10-20 用户定：全站产品卡统一为家族卡）：
+ *  client 端按 familyKey 合并同族 SKU 为一张家族卡，familyColor 作卡片 colorLine */
 export function toCardProduct(p: MakimooProduct): V2CardProduct {
   return {
     id: p.id,
@@ -50,6 +55,8 @@ export function toCardProduct(p: MakimooProduct): V2CardProduct {
     shopifyCurrencyCode: p.shopifyCurrencyCode,
     images: p.images,
     priceRange: p.priceRange,
+    familyKey: familyKeyOf(p),
+    familyColor: familyColorOf(p),
   };
 }
 
@@ -188,12 +195,35 @@ export function getRecommendedData(): RecommendedData {
  * PDP "You May Also Like" 关联推荐（2026-09-29 用户定：信任条下方、Brand Story 上方）。
  * 相对当前商品打分（PDP 意图明确，不看浏览历史）：同类目 +3、同色系 +2、同场景 +1；
  * 排除当前商品与当前变体组全体成员（同款异色/多尺寸已在购买区色点/尺寸选择器展示），
- * 标题去重（同款只占一位）后按分数降序取前 10，同分按全站 Best Sellers 顺序；不足 10 用它补足。
+ * 标题去重（同款只占一位）后按分数降序，同分按全站 Best Sellers 顺序；不足 10 用它补足。
+ * 家族卡（2026-10-20 用户定：全站产品卡统一为家族卡——同族合并一张卡，From 最低价）：
+ * 打分排序后按 familyKey 合并（同族只留最高分成员作 rep），From 价取同族在售成员最低价，取前 10 个家族。
  */
-export function getPdpRelatedProducts(handle: string): V2CardProduct[] {
+export function getPdpRelatedFamilies(handle: string): FamilyCardData[] {
   const tagged = taggedInStock();
+  // 同族（familyKey）在售成员最低价表：rep 自身价不一定是最低（rep 取中位尺寸），卡片统一显示 From 最低价
+  const familyMinPrice = new Map<string, string>();
+  const familyCurrency = new Map<string, string>();
+  for (const f of buildBlanketFamilies(tagged.map((t) => t.product))) {
+    familyMinPrice.set(f.key, f.fromPrice);
+    familyCurrency.set(f.key, f.currency);
+  }
+  const toFamilyCardData = (p: MakimooProduct): FamilyCardData => {
+    const key = familyKeyOf(p);
+    return {
+      rep: p,
+      sizes: [],
+      fromPrice: familyMinPrice.get(key) ?? '',
+      currency:
+        familyCurrency.get(key) ??
+        (p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode),
+      colorLine: familyColorOf(p) || undefined,
+    };
+  };
+
   const current = tagged.find((t) => t.product.handle === handle);
-  if (!current) return getBestSellerProducts().slice(0, MAX_RECOMMENDED).map(toCardProduct);
+  if (!current)
+    return getBestSellerProducts().slice(0, MAX_RECOMMENDED).map(toFamilyCardData);
 
   const excludeAsins = new Set<string>([current.product.asin.toLowerCase()]);
   getVariantGroupOf(current.product.asin)?.members.forEach((m) =>
@@ -204,7 +234,7 @@ export function getPdpRelatedProducts(handle: string): V2CardProduct[] {
   const bestOrder = new Map(getBestSellerProducts().map((p, i) => [p.handle, i]));
 
   const seen = new Set<string>();
-  const picks = tagged
+  const scored = tagged
     .filter((t) => !excludeAsins.has(t.product.asin.toLowerCase()))
     .map((t) => {
       let score = 0;
@@ -224,21 +254,33 @@ export function getPdpRelatedProducts(handle: string): V2CardProduct[] {
       (a, b) =>
         b.score - a.score ||
         (bestOrder.get(a.product.handle) ?? 9999) - (bestOrder.get(b.product.handle) ?? 9999)
-    )
-    .slice(0, MAX_RECOMMENDED)
-    .map((s) => s.product);
+    );
 
-  // 不足 10 款时用全站 Best Sellers 补足（同口径排除与去重）
+  // 家族合并：按 familyKey 折叠（分数降序遍历，同族首个 = 最高分成员作 rep），取前 10 个家族
+  const picks: MakimooProduct[] = [];
+  const pickedFamilies = new Set<string>();
+  for (const s of scored) {
+    if (picks.length >= MAX_RECOMMENDED) break;
+    const key = familyKeyOf(s.product);
+    if (pickedFamilies.has(key)) continue;
+    pickedFamilies.add(key);
+    picks.push(s.product);
+  }
+
+  // 不足 10 个家族时用全站 Best Sellers 补足（同口径排除与去重）
   if (picks.length < MAX_RECOMMENDED) {
     const pickedHandles = new Set(picks.map((p) => p.handle));
     for (const p of getBestSellerProducts()) {
       if (picks.length >= MAX_RECOMMENDED) break;
       if (excludeAsins.has(p.asin.toLowerCase()) || pickedHandles.has(p.handle)) continue;
+      const familyKey = familyKeyOf(p);
+      if (pickedFamilies.has(familyKey)) continue;
       const key = titleKey(p.title);
       if (seen.has(key)) continue;
       seen.add(key);
+      pickedFamilies.add(familyKey);
       picks.push(p);
     }
   }
-  return picks.map(toCardProduct);
+  return picks.map(toFamilyCardData);
 }

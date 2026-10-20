@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import { v2url } from '@/lib/v2paths';
 import { SCENE_RULES } from '@/data/product-tags';
+import { collapseToFamilies, toFamilyCard } from '@/lib/family-cards';
 import { ALL, SCENE_BLURBS, sceneKeysWithProducts } from '../../tagged';
 
 // 静态导出：只为 generateStaticParams 返回的分类生成页面，其余 404
@@ -18,11 +19,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { scene: string } }): Metadata {
   const rule = SCENE_RULES.find((s) => s.key === params.scene);
   if (!rule) return {};
-  const count = ALL.filter((p) => p.sceneTag.key === rule.key).length;
+  // 家族卡口径（2026-10-20 用户定）：计数 = 该场景家族数（同色同族一张卡）
+  const count = collapseToFamilies(ALL.filter((p) => p.sceneTag.key === rule.key)).length;
   // 注意：本站 generateMetadata 的 title 不吃根 layout 的 "%s | Makimoo" 模板
   // （与 /products/[handle] 表现一致），后缀需手写
   return {
-    title: `${rule.label} — Complete the Look | Makimoo`,
+    title: `${rule.label} – Complete the Look | Makimoo`,
     description: `Shop Makimoo ${rule.label} pieces — ${SCENE_BLURBS[rule.key] || ''} ${count} pieces, shop by color.`,
   };
 }
@@ -33,6 +35,9 @@ export default function SceneCategoryPage({ params }: { params: { scene: string 
   const rule = SCENE_RULES.find((s) => s.key === params.scene);
   const products = ALL.filter((p) => p.sceneTag.key === params.scene);
   if (!rule || products.length === 0) notFound();
+  // 家族卡（2026-10-20 用户定：全站产品卡统一为家族卡）：先按标签过滤再成族——
+  // 同族成员共享同一场景标签，过滤后成族仍含全部尺寸 SKU（From 价正确）
+  const families = collapseToFamilies(products);
 
   return (
     <div className="px-3 lg:px-10 pt-3 lg:pt-6 pb-10 lg:pb-14">
@@ -46,12 +51,12 @@ export default function SceneCategoryPage({ params }: { params: { scene: string 
       </nav>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6 lg:mb-10">
         <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{rule.label}</h1>
-        <p className="text-sm text-[#777]">{products.length} result{products.length === 1 ? '' : 's'}</p>
+        <p className="text-sm text-[#777]">{families.length} result{families.length === 1 ? '' : 's'}</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-        {products.map((p) => (
-          <V2ProductCard key={p.id} product={p} />
+        {families.map((f) => (
+          <BeddingSetCard key={f.key} family={toFamilyCard(f)} compactText />
         ))}
       </div>
     </div>

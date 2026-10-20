@@ -57,7 +57,8 @@ export default function BeddingSetCard({
    *  object-contain + p-2 sm:p-7 留白边，容器白底（与 ProductCard 白底规则一致），
    *  默认 false = object-cover 打满（场景图，bedding/blankets 不变） */
   paddedWhiteBg?: boolean;
-  /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档（其他类目后续逐一统一，暂不动） */
+  /** 2026-10-08 用户定：Pillows / Bedding 类目卡片标题与价格再缩小一档；
+   *  2026-10-20 用户定：/categories、best-sellers、new-arrivals、color/scene/style 子页同步启用 */
   compactText?: boolean;
   /** 2026-10-19 用户定：全站产品卡统一 3:4 竖图（object-cover 裁两侧），默认开启；传 false 回退 1:1 方图 */
   tallImage?: boolean;

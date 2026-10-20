@@ -131,6 +131,20 @@ export default function V2ProductsPage() {
 
   // 首次挂载后从 URL 恢复筛选状态，再标记为已挂载（此时首屏水合已完成，不会与服务端 HTML 冲突）
   useEffect(() => {
+    // 无法识别的类目（含已下线的 others）兼容跳转到 /categories（2026-10-20 用户定）：
+    // 无效类目会落进"Shop All 标题 + No products found"空状态，且 Clear Filters 不清 cat 参数
+    // （点不动），空状态的 Filter & Sort 抽屉也没有筛选项——直接不留这个页面状态
+    const catParam = readUrlParam('cat').toLowerCase();
+    // 裸 /products（无 cat 无 q）跳 /categories/（2026-10-20 用户定：全站浏览入口统一到类目页；
+    // 带 q 的搜索视图保留在本页）
+    if (!catParam && !readUrlParam('q').trim()) {
+      window.location.replace(v2url('/categories/'));
+      return;
+    }
+    if (catParam && !CATEGORY_DEFS.some((c) => c.value === catParam)) {
+      window.location.replace(v2url('/categories/'));
+      return;
+    }
     setActiveCategory(readUrlParam('cat'));
     setActiveSub(readUrlParam('sub'));
     setSearchQuery(readUrlParam('q'));
@@ -504,6 +518,14 @@ export default function V2ProductsPage() {
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Shop All';
 
+  // 浏览器 tab 标题按当前视图动态设置（2026-10-20 用户提：/products 是静态导出单页，
+  // 构建期只能写死 "Shop All Products"，类目/细分在客户端才确定，需挂载后改 document.title）
+  useEffect(() => {
+    if (!mounted) return;
+    const t = subDef && categoryDef ? `${subDef.label} – ${categoryDef.label}` : pageTitle;
+    document.title = `${t} | Makimoo`;
+  }, [mounted, pageTitle, subDef, categoryDef]);
+
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
   const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
@@ -569,8 +591,10 @@ export default function V2ProductsPage() {
       ) : (
       <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
         <div>
-          {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
-          <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>
+          {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定）。
+              未挂载不渲染（2026-10-20 修复）：静态 HTML 按默认态预渲染，标题是 "Shop All"，
+              点 ?cat=bedding 会先闪一下"全产品页"才切类目视图；网格区本就有骨架屏门控，标题同样门控 */}
+          {mounted && <h1 className="hidden lg:block text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#333]">{pageTitle}</h1>}
         </div>
         {/* 桌面端：排序（移动端排序在筛选抽屉里）；不显示产品数量（2026-09 用户定）。
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；

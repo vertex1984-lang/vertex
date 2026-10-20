@@ -10,7 +10,8 @@ import { sortBeddingMaterials } from "@/data/subcategories";
 
 // bedding 顶部导航下拉子项：与 /products?cat=bedding 的 Collections 同一口径——
 // 按材质分组（原始材质字符串，只显示有产品的，顺序按 BEDDING_MATERIAL_ORDER；2026-09 用户定）
-function beddingMaterialSubs(): { key: string; label: string }[] {
+// （导出供根 not-found.tsx 复用——全局 404 不走 (v2) 布局，需手动套 V2 壳）
+export function beddingMaterialSubs(): { key: string; label: string }[] {
   const counts = new Map<string, number>();
   for (const p of enrichProductsWithShopifyData(PRODUCTS_DATA)) {
     if (p.productType !== "Bedding") continue;

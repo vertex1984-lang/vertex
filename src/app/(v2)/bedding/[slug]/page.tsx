@@ -53,7 +53,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const kind = SET_KIND_SLUGS[params.slug];
   if (kind) {
     const copy = SET_KIND_PAGE_COPY[kind];
-    return { title: `${copy.heading} — Bedding`, description: copy.blurb };
+    return { title: `${copy.heading} – Bedding`, description: copy.blurb };
   }
   return {};
 }

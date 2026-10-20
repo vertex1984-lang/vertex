@@ -9,7 +9,11 @@ import { getRecommendedData } from '@/data/home-sections';
 import { resolveUrl } from '@/lib/paths';
 
 export const metadata: Metadata = {
-  title: 'Makimoo — Comfort, Woven Into Every Day',
+  // absolute：跳过根布局 "%s | Makimoo" 模板，避免品牌名重复（2026-10-20 用户提）
+  // 2026-10-20 用户定：标题格式对齐 Parachute（slogan + 品类描述），
+  // Chrome tab 悬停卡片显示完整标题，slogan + 描述一眼看全；
+  // tab slogan 用完整版 "Comfort, Woven Into Every Day"（2026-10-20 用户定：与首页 hero 一致）
+  title: { absolute: 'Makimoo – Comfort, Woven Into Every Day. Bedding, pillows, cushions, decor and more.' },
   description:
     'Cushions, pillows, towels and soft home essentials crafted from honest materials. Free shipping over $49 and 30-day easy returns.',
 };

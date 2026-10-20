@@ -52,7 +52,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const def = getSubcategoryDef(params.slug);
   if (!def || def.parent !== 'cushions') return {};
   return {
-    title: `${def.label} — Cushions`,
+    title: `${def.label} – Cushions`,
     description: def.blurb,
   };
 }

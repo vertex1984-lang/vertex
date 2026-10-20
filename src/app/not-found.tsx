@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
-import { resolveUrl } from '@/lib/paths';
+import V2Header from '@/components/v2/V2Header';
+import V2Footer from '@/components/v2/V2Footer';
+import MiniCart from '@/components/MiniCart';
+import V2NotFound from '@/components/v2/V2NotFound';
+import { stylesByCategory } from '@/data/style-tagged';
+import { beddingMaterialSubs } from '@/app/(v2)/layout';
 
 export const metadata: Metadata = {
   title: 'Page Not Found',
@@ -7,21 +12,18 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+// 全局死链兜底：不走 (v2) 布局，手动套 V2 Header/Footer 壳（2026-10-20 用户定：404 与全站风格统一）。
+// (v2)/not-found.tsx 渲染同一个 V2NotFound 组件，Header/Footer 由 (v2) 布局提供。
 export default function NotFound() {
+  const catStyles = { ...stylesByCategory(), bedding: beddingMaterialSubs() };
   return (
-    <div className="px-6 lg:px-10 py-24 text-center">
-      <p className="text-sm font-semibold tracking-widest uppercase text-brand mb-3">404</p>
-      <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-charcoal mb-4">Page Not Found</h1>
-      <p className="text-base text-charcoal-light max-w-md mx-auto mb-8">
-        Looks like this page wandered off. Let&apos;s get you back to comfort.
-      </p>
-      <a
-        href={resolveUrl('/')}
-        className="inline-block px-7 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-        style={{ backgroundColor: '#8B5A2B' }}
-      >
-        Back to Home
-      </a>
+    <div className="w-full overflow-x-clip bg-off-white">
+      <V2Header catStyles={catStyles} />
+      <main>
+        <V2NotFound />
+      </main>
+      <V2Footer />
+      <MiniCart />
     </div>
   );
 }

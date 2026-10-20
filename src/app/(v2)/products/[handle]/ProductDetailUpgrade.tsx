@@ -29,7 +29,7 @@ import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
-import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
+import BeddingSetCard, { type FamilyCardData } from '@/components/v2/BeddingSetCard';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface ProductDetailUpgradeProps {
@@ -38,8 +38,9 @@ interface ProductDetailUpgradeProps {
   colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
   /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选 */
   sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
-  /** "You May Also Like" 关联推荐卡片（page.tsx 用 getPdpRelatedProducts 构建期算好），渲染在信任条下方 */
-  relatedProducts?: V2CardProduct[];
+  /** "You May Also Like" 关联推荐家族卡（page.tsx 用 getPdpRelatedFamilies 构建期算好），渲染在信任条下方。
+   *  2026-10-20 用户定：全站产品卡统一为家族卡——同族合并一张卡，From 最低价 */
+  relatedProducts?: FamilyCardData[];
 }
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
@@ -156,7 +157,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     return (
       <div className="bg-off-white px-6 lg:px-10 pt-40 pb-24 text-center">
         <p className="text-lg text-charcoal-light">Product not found.</p>
-        <a href={v2url('/products/')} className="mt-4 inline-block text-brand underline underline-offset-4">
+        <a href={v2url('/categories/')} className="mt-4 inline-block text-brand underline underline-offset-4">
           Browse all products
         </a>
       </div>
@@ -798,9 +799,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               You May Also Like
             </h2>
             <DragScroll className="flex gap-4 lg:gap-5 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-              {relatedProducts.map((p) => (
-                <div key={p.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
-                  <V2ProductCard product={p} />
+              {relatedProducts.map((family) => (
+                <div key={family.rep.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
+                  <BeddingSetCard family={family} />
                 </div>
               ))}
             </DragScroll>

@@ -3,7 +3,7 @@ import SceneModule from '@/components/v2/SceneModule';
 import { getAllSceneViewData } from '@/data/scenes';
 
 export const metadata: Metadata = {
-  title: 'Shop the Look — Curated Cozy Corners | Makimoo',
+  title: 'Shop the Look – Curated Cozy Corners',
   description:
     'Step into styled corners and shop everything in the picture — pillows, throws and soft layers, all in one tap.',
 };
