@@ -912,7 +912,7 @@ const TOWEL_BEACH_2PK: ProductReview[] = [
   {
     author: 'Yusuf Kane',
     rating: 5,
-    text: 'Got the red and white stripe. Colors came out bright and have stayed that way through several beach trips and washes.',
+    text: 'Got the pink and white stripe. Colors came out bright and have stayed that way through several beach trips and washes.',
     date: 'December 2024',
   },
   {
@@ -3601,6 +3601,8 @@ const BOUCLE_PC_REVIEWS: ProductReview[] = [
 const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-inserts-square': PILLOW_INSERT_REVIEWS,
   'b0-inserts-rect': PILLOW_INSERT_REVIEWS,
+  // b0cqbzm49v 2026-10-18 拆为独立链接：评价沿用 rect 同池 + 本 listing 真实分布
+  'b0cqbzm49v': PILLOW_INSERT_REVIEWS,
   // 批 1（2026-10-05）：户外椅垫 4 套，见上方各 const 注释与 LOG.md 批 1 对照表
   'outdoor-110x55': OUTDOOR_110x55_REVIEWS,
   'outdoor-110x53': OUTDOOR_110x53_REVIEWS,
@@ -3696,6 +3698,7 @@ export const REVIEW_COUNTS: Record<string, number> = {
   'b0-travel-memory': 2694,
   'b0-travel-adjustable': 2984,
   'b0-inserts-rect': 2690,
+  'b0cqbzm49v': 2690,
 };
 
 /** B0 真实均分/星级分布（2026-10-13 领导定"亚马逊上的按实际"：抓自各 listing 当日 histogram，
@@ -3703,6 +3706,7 @@ export const REVIEW_COUNTS: Record<string, number> = {
 const B0_REAL_STATS: Record<string, { avg: number; n: number; pcts: number[]; asin: string }> = {
   'b0-inserts-square': { avg: 4.1, n: 2690, pcts: [62, 12, 12, 4, 10], asin: 'B0CQC6H9MZ' },
   'b0-inserts-rect': { avg: 4.1, n: 2690, pcts: [62, 12, 12, 4, 10], asin: 'B0CQBZM49V' },
+  'b0cqbzm49v': { avg: 4.1, n: 2690, pcts: [62, 12, 12, 4, 10], asin: 'B0CQBZM49V' },
   'b0-rocking-95x45': { avg: 4.0, n: 551, pcts: [59, 15, 10, 6, 10], asin: 'B0CBT7B1TY' },
   'outdoor-95x45': { avg: 4.0, n: 551, pcts: [59, 15, 10, 6, 10], asin: 'B0CBT7B1TY' },
   'b0-seat-cushions': { avg: 4.2, n: 998, pcts: [64, 14, 8, 6, 8], asin: 'B0C4B9T6JV' },

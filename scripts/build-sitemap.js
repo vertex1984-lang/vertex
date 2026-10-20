@@ -14,6 +14,7 @@ const baseHandles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) 
 const materialsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products-materials.ts'), 'utf8');
 const materialHandles = [...materialsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 // 2026-09-30 用户定：隐藏产品（4 款天鹅绒充气颈枕 + 8 款枕套）不入 sitemap
+// 2026-10-16 用户定：1688-916370884976 水洗棉撞色三件套全家族（C5–C9）也不入
 // （与 src/data/products.ts 的 HIDDEN_HANDLE_PREFIXES / HIDDEN_HANDLES 同步）
 const HIDDEN_HANDLES = new Set([
   'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
@@ -24,9 +25,23 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
   'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
   'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+  // 2026-10-17 用户定：DUVSET Butter Yellow / Dill Green 两色下架，不入 sitemap
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king',
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
 ]);
 const handles = [...new Set([...baseHandles, ...materialHandles])]
-  .filter((h) => !h.startsWith('inflatable-travel-pillow-') && !HIDDEN_HANDLES.has(h));
+  .filter(
+    (h) =>
+      !h.startsWith('inflatable-travel-pillow-') &&
+      !h.startsWith('comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976') &&
+      !HIDDEN_HANDLES.has(h)
+  );
 
 // Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）
 const blogSrc = fs.readFileSync(path.join(__dirname, '../src/data/blog-posts.ts'), 'utf8');
@@ -41,9 +56,11 @@ const staticPages = [
   { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
   // /bedding/ 落地页已下线（2026-09-27 用户定，一级类目页 = /products?cat=bedding），不入 sitemap；
   // 面料二级 PLP（与 src/data/bedding-fabrics.ts 注册表手动同步）
+  { loc: '/bedding/percale/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/sateen/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/satin/', priority: '0.7', changefreq: 'weekly' },
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
   // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；

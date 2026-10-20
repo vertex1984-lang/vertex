@@ -77,7 +77,7 @@ export default function V2RelatedGuides({
         <div className="mt-6 lg:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
           {cards.map((c) => (
             <a key={c.href} href={v2url(c.href)} className="group block">
-              <div className="relative overflow-hidden rounded-xl bg-warm-gray aspect-[16/10]">
+              <div className="relative overflow-hidden bg-warm-gray aspect-[16/10]">
                 <img
                   src={resolveUrl(c.image)}
                   alt={c.title}

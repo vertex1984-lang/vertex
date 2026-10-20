@@ -1,21 +1,22 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS, BED_SETS_SLUG, BED_SETS_KINDS, BED_SETS_PAGE_COPY } from '@/data/bedding-families';
+import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS } from '@/data/bedding-families';
 import { BEDDING_FABRICS, fabricBySlug, fabricDisplayName } from '@/data/bedding-fabrics';
 import V2FabricShop from '@/components/v2/V2FabricShop';
-import V2BedSetsShop from '@/components/v2/V2BedSetsShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import { resolveUrl } from '@/lib/paths';
+import { v2url } from '@/lib/v2paths';
 
 /**
- * Bedding 二级类目 PLP（2026-09，仿 Parachute fabric-led 模型），一个路由三种页型：
- * - 面料页 /bedding/linen/ 等：面料 hero（名字 + 质感短句 + 故事）→ 按类型分区网格（无筛选条）
- * - 类型页 /bedding/4-piece-sets/ 等：**无 banner**（2026-09 用户定），H1 + 说明 → 单一网格平铺
- * - Bed Sets 合并页 /bedding/bed-sets/（2026-09 用户定：导航 4P/3P 合并入口）：
- *   无 banner，H1 + 说明 → 按 4-Piece/3-Piece 两个分区展示（卡片标题"材质 — 颜色"）
- * 三者共用：面料互导模块、Related Guides；卡片 badge（2026-09 用户定）：面料页不叠标签（布料=页面标题、类型=分区标题都已表达），类型页/Bed Sets 合并页叠布料标签。
- * 只给有产品的面料/类型生成静态页；Sheets / Duvet Covers 无产品不生成（导航指 /bedding/#on-the-loom）。
+ * Bedding 二级类目 PLP（2026-09，仿 Parachute fabric-led 模型），一个路由两种页型：
+ * - 面料页 /bedding/linen/ 等：面料 hero 按 bedding 类目页格式（2026-10-16 用户定：通栏贴顶特写图
+ *   + 叠标题/质感短句/故事 + 图下面料导航排）→ 按类型分区网格（无筛选条）
+ * - 类型页 /bedding/4-piece-sets/ 等：**无 banner**（2026-09 用户定）；页头按 bedding 类目页标准
+ *   （2026-10-16 用户定：无图 hero 只保留标题 + 副标题，大标题带上标家族数）
+ * 两者共用：面料互导模块；卡片 badge（2026-09 用户定）：面料页不叠标签（布料=页面标题、类型=分区标题都已表达），类型页叠布料标签。
+ * 只给有产品的面料/类型生成静态页；Sheets / Pillow Covers 无产品不生成（导航置灰 Coming soon）。
+ * 原 Bed Sets 合并页 /bedding/bed-sets/ 已删除（2026-10-16 用户定：导航改五个独立子分类入口后合并页无存在必要，该 URL 404）。
  */
 
 // 静态导出：未列出的 slug 不会生成 HTML（等效 404）；页面内未命中也走 notFound()。
@@ -38,17 +39,14 @@ export function generateStaticParams() {
   const typeParams = Object.entries(SET_KIND_SLUGS)
     .filter(([, kind]) => families.some((f) => f.kind === kind))
     .map(([slug]) => ({ slug }));
-  const bedSetsParams = families.some((f) => BED_SETS_KINDS.includes(f.kind))
-    ? [{ slug: BED_SETS_SLUG }]
-    : [];
-  return [...fabricParams, ...typeParams, ...bedSetsParams];
+  return [...fabricParams, ...typeParams];
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const fb = fabricBySlug(params.slug);
   if (fb) {
     return {
-      title: `${fabricDisplayName(fb.material)} Bedding — Bed Sets`,
+      title: `${fabricDisplayName(fb.material)} Bedding`,
       description: `${fb.desc} ${fb.story}`,
     };
   }
@@ -56,9 +54,6 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (kind) {
     const copy = SET_KIND_PAGE_COPY[kind];
     return { title: `${copy.heading} — Bedding`, description: copy.blurb };
-  }
-  if (params.slug === BED_SETS_SLUG) {
-    return { title: `${BED_SETS_PAGE_COPY.heading} — Bedding`, description: BED_SETS_PAGE_COPY.blurb };
   }
   return {};
 }
@@ -72,17 +67,19 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
 
   const fb = fabricBySlug(params.slug);
   const kind = SET_KIND_SLUGS[params.slug];
-  const isBedSets = params.slug === BED_SETS_SLUG;
-  if (!fb && !kind && !isBedSets) notFound();
+  if (!fb && !kind) notFound();
 
   const families = fb
     ? all.filter((f) => f.materials.includes(fb.material))
-    : isBedSets
-      ? all.filter((f) => BED_SETS_KINDS.includes(f.kind))
-      : all.filter((f) => f.kind === kind);
+    : all.filter((f) => f.kind === kind);
   if (families.length === 0) notFound();
 
-  const pageCopy = isBedSets ? BED_SETS_PAGE_COPY : kind ? SET_KIND_PAGE_COPY[kind] : null;
+  const pageCopy = kind ? SET_KIND_PAGE_COPY[kind] : null;
+
+  // duvet-covers 页按面料分区展示（2026-10-16 用户定）
+  const byFabric = !fb && kind === 'duvet';
+
+  /* 类型页页头快链导航排已移除（2026-10-16 用户定：移除筛选栏，只保留标题 + 副标题 + 分区网格） */
 
   /* 版心与 products 列表页一致（2026-09 用户定：子类目页宽度/卡片占屏比对齐
      /products?cat=pillows&sub=* ）：移动端 px-3、桌面 px-10 全宽 */
@@ -92,51 +89,103 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
         {/* 面包屑已整块移除（2026-10-10 用户定：页面顶端有同名 H1 标题，信息重复，两端都不显示） */}
 
         {fb ? (
-          /* ── 面料 Hero：面料特写图 + 名字/质感短句/面料故事（仿 Parachute Percale 页头）
-             移动端 16/10 矮幅（2026-09 用户定：原 3/4 太高，首屏只有图见不到商品）── */
-          <div className="relative overflow-hidden rounded-xl aspect-[16/10] sm:aspect-[16/7] lg:aspect-[47/10] mb-8 lg:mb-16">
-            <img
-              src={resolveUrl(fb.heroImage)}
-              alt={`${fabricDisplayName(fb.material)} fabric close-up`}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
-            <div className="absolute inset-0 flex items-center">
-              <div className="px-5 lg:px-14 max-w-xl lg:max-w-2xl">
-                <p className="text-[10px] lg:text-xs font-semibold tracking-[0.2em] uppercase text-cream/90">
-                  Makimoo Bedding
-                </p>
-                <h1 className="mt-1 lg:mt-2 text-2xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-cream">
+          /* ── 面料页头（2026-10-16 用户定：按 bedding 类目页格式重建）：通栏紧贴导航的面料特写图
+             + 左叠大标题（上标风格数）+ 质感短句 + 面料故事；图下导航排 = 面料快链（当前面料高亮）
+             + Fabric Guide，移动端为横滚胶囊，样式同 V2BeddingCatHero ── */
+          <>
+            <div className="relative -mx-3 -mt-7 lg:-mx-10 lg:-mt-6">
+              <img
+                src={resolveUrl(fb.heroImage)}
+                alt={`${fabricDisplayName(fb.material)} fabric close-up`}
+                className="w-full aspect-[4/3] lg:aspect-auto lg:h-[400px] xl:h-[460px] object-cover"
+              />
+              {/* 面料特写图深浅不一：渐变遮罩保底浅色字可读性（移动端自顶、桌面端自左） */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/15 to-transparent lg:bg-gradient-to-r lg:from-black/55 lg:via-black/25 lg:to-transparent" />
+              <div className="absolute inset-x-0 top-0 px-4 pt-10 lg:inset-0 lg:flex lg:flex-col lg:justify-start lg:pt-14 lg:px-10">
+                <h1 className="text-3xl lg:text-6xl font-extrabold tracking-tight text-cream">
                   {fabricDisplayName(fb.material)}
+                  <sup className="ml-1 lg:ml-2 align-super text-xs lg:text-base font-semibold text-cream/70">
+                    {families.length}
+                  </sup>
                 </h1>
-                <p className="mt-1 lg:mt-2 text-sm lg:text-lg font-semibold text-cream/90">{fb.desc}</p>
-                <p className="mt-1.5 lg:mt-3 text-xs lg:text-base text-cream/85 leading-relaxed">
+                <p className="mt-1.5 lg:mt-3 text-xs lg:text-lg font-semibold text-cream/90">{fb.desc}</p>
+                <p className="mt-1 lg:mt-2 max-w-[85%] lg:max-w-xl text-[11px] lg:text-base leading-relaxed text-cream/85">
                   {fb.story}
                 </p>
               </div>
             </div>
-          </div>
+            {/* 图下导航排：面料快链（当前面料高亮）+ Fabric Guide；移动端横滚胶囊（同 bedding hero） */}
+            <nav
+              className="lg:hidden mt-3 mb-5 flex gap-2 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+              aria-label="Bedding fabrics"
+            >
+              {fabricsWithCounts.map((x) => (
+                <a
+                  key={x.slug}
+                  href={v2url(`/bedding/${x.slug}/`)}
+                  className={`flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full border text-xs transition-colors ${
+                    x.slug === fb.slug
+                      ? 'border-brand text-brand'
+                      : 'border-warm-gray text-charcoal hover:border-brand hover:text-brand'
+                  }`}
+                >
+                  {fabricDisplayName(x.material)}
+                </a>
+              ))}
+              <a
+                href={v2url('/fabric-guide/')}
+                className="flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full border border-warm-gray text-xs text-charcoal hover:border-brand hover:text-brand transition-colors"
+              >
+                Fabric Guide
+              </a>
+            </nav>
+            <nav
+              className="hidden lg:flex mt-5 mb-10 flex-wrap items-center gap-x-7 gap-y-2 text-sm"
+              aria-label="Bedding fabrics"
+            >
+              {fabricsWithCounts.map((x) => (
+                <a
+                  key={x.slug}
+                  href={v2url(`/bedding/${x.slug}/`)}
+                  className={`group inline-flex items-center gap-1 transition-colors ${
+                    x.slug === fb.slug ? 'text-brand' : 'text-charcoal hover:text-brand'
+                  }`}
+                >
+                  {fabricDisplayName(x.material)}
+                  <span className="transition-transform group-hover:translate-x-0.5">›</span>
+                </a>
+              ))}
+              <span className="h-4 w-px bg-warm-gray" aria-hidden="true" />
+              <a
+                href={v2url('/fabric-guide/')}
+                className="group inline-flex items-center gap-1 text-charcoal hover:text-brand transition-colors"
+              >
+                Fabric Guide
+                <span className="transition-transform group-hover:translate-x-0.5">›</span>
+              </a>
+            </nav>
+          </>
         ) : (
-          /* ── 类型页/Bed Sets 合并页页头：无 banner（2026-09 用户定），H1 + 一句话说明 ── */
-          <div className="mb-6 lg:mb-10">
-            <h1 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-charcoal">
+          /* ── 类型页页头：按 bedding 类目页标准（2026-10-16 用户定）——
+             无图 hero 只保留标题 + 副标题：大标题（带上标家族数，同 V2BeddingCatHero 排版）+ 一句话说明 ── */
+          <div className="mb-8 lg:mb-12">
+            <h1 className="text-3xl lg:text-6xl font-extrabold tracking-tight text-charcoal">
               {pageCopy!.heading}
+              <sup className="ml-1 lg:ml-2 align-super text-xs lg:text-base font-semibold text-[#999]">
+                {families.length}
+              </sup>
             </h1>
-            <p className="mt-1.5 lg:mt-2 text-sm lg:text-base text-charcoal-light">
+            <p className="mt-2 lg:mt-3 max-w-xl text-sm lg:text-base leading-relaxed text-charcoal-light">
               {pageCopy!.blurb}
             </p>
           </div>
         )}
 
-        {/* ── 选购区：无筛选条，只有排序；面料页按类型分区，Bed Sets 合并页按 4P/3P 分区
-            （2026-09-27 用户定：合并页分区锚点 chips 改为 /products?cat=bedding 同款 Type 下拉，
-            专用客户端组件 V2BedSetsShop），类型页单一网格平铺；卡片 badge 规则（2026-09 用户定）：
-            面料页整页同一布料不叠标签，类型页/合并页（多布料混排）叠布料标签 ── */}
-        {isBedSets ? (
-          <V2BedSetsShop families={families} />
-        ) : (
-          <V2FabricShop families={families} flat={!fb} noBadges={!!fb} />
-        )}
+        {/* ── 选购区：无筛选条（2026-10-16 用户定，与 /products?cat=bedding 同标准）；
+            面料页按类型分区，duvet-covers 按面料分区（2026-10-16 用户定），其余类型页单一网格平铺；
+            卡片 badge 规则（2026-09 用户定）：面料页整页同一布料不叠标签，类型页（多布料混排）
+            叠布料标签；duvet-covers 分区标题=面料、页标题=类型，两维度都已表达 → 不叠标签 ── */}
+        <V2FabricShop families={families} flat={!fb && !byFabric} noBadges={!!fb || byFabric} byFabric={byFabric} />
 
         {/* ── 面料互导（含当前面料，全量展示）── */}
         <V2FabricCrossSell fabrics={fabricsWithCounts} currentSlug={fb?.slug} />

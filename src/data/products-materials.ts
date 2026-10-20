@@ -2835,10 +2835,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182",
     "asin": "1688-952595759182",
-    "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+    "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
     "handle": "2-pack-soft-thick-cotton-beach-towels-oversized-striped-1688-952595759182",
-    "description": "Generous 2-Pack Value: Receive two oversized red-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag. Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing. Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool. Quick-Drying & Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use. Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.",
-    "descriptionHtml": "<p>Generous 2-Pack Value: Receive two oversized red-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag.</p><p>Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing.</p><p>Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool.</p><p>Quick-Drying &amp; Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use.</p><p>Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.</p>",
+    "description": "Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag. Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing. Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool. Quick-Drying & Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use. Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.",
+    "descriptionHtml": "<p>Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag.</p><p>Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing.</p><p>Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool.</p><p>Quick-Drying &amp; Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use.</p><p>Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2847,43 +2847,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182/1.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182/2.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/3.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/4.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/5.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/6.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182/7.webp",
-        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Red and White)",
+        "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
         "width": 800,
         "height": 800
       }
@@ -2911,10 +2881,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C2",
     "asin": "1688-952595759182-C2",
-    "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+    "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
     "handle": "2-pack-thick-oversized-cotton-beach-towels-for-adults-soft-1688-952595759182-c2",
-    "description": "Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket. Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising. Classic Cabana Stripes: The bold grey and white stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom. Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest. Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.",
-    "descriptionHtml": "<p>Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket.</p><p>Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising.</p><p>Classic Cabana Stripes: The bold grey and white stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom.</p><p>Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest.</p><p>Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.</p>",
+    "description": "Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket. Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising. Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom. Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest. Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.",
+    "descriptionHtml": "<p>Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket.</p><p>Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising.</p><p>Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom.</p><p>Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest.</p><p>Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2923,43 +2893,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C2/1.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C2/2.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/3.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/4.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/5.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/6.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C2/7.webp",
-        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and White)",
+        "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
         "width": 800,
         "height": 800
       }
@@ -2987,10 +2927,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C3",
     "asin": "1688-952595759182-C3",
-    "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+    "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
     "handle": "2-pack-oversized-cotton-beach-towels-75-x-180-cm-extra-1688-952595759182-c3",
-    "description": "Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand. Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin. Bright Cabana Stripe Design: The bold yellow and white stripes create a cheerful, classic beach look that stands out on crowded shores and adds style to poolside afternoons. Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym. Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.",
-    "descriptionHtml": "<p>Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand.</p><p>Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin.</p><p>Bright Cabana Stripe Design: The bold yellow and white stripes create a cheerful, classic beach look that stands out on crowded shores and adds style to poolside afternoons.</p><p>Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym.</p><p>Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.</p>",
+    "description": "Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand. Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin. Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons. Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym. Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.",
+    "descriptionHtml": "<p>Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand.</p><p>Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin.</p><p>Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons.</p><p>Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym.</p><p>Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -2999,43 +2939,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C3/1.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C3/2.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/3.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/4.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/5.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/6.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C3/7.webp",
-        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Yellow White Striped)",
+        "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
         "width": 800,
         "height": 800
       }
@@ -3063,10 +2973,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-952595759182-C4",
     "asin": "1688-952595759182-C4",
-    "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+    "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
     "handle": "2-pack-oversized-plush-soft-cotton-beach-towels-extra-large-1688-952595759182-c4",
-    "description": "Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel. Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use. Classic Cabana Stripe Design: Bold blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families. Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack. Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.",
-    "descriptionHtml": "<p>Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel.</p><p>Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use.</p><p>Classic Cabana Stripe Design: Bold blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families.</p><p>Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack.</p><p>Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.</p>",
+    "description": "Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel. Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use. Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families. Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack. Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.",
+    "descriptionHtml": "<p>Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel.</p><p>Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use.</p><p>Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families.</p><p>Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack.</p><p>Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.</p>",
     "productType": "Towels",
     "tags": [
       "Towels"
@@ -3075,43 +2985,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-952595759182-C4/1.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-952595759182-C4/2.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/3.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/4.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/5.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/6.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/1688-952595759182-C4/7.webp",
-        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Blue White Stripes)",
+        "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
         "width": 800,
         "height": 800
       }
@@ -17545,4 +17425,4480 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
-  },];
+  },  {
+    "id": "makimoo-DUVSET-BEANRED-TWIN",
+    "asin": "DUVSET-BEANRED-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Bean Red)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-FULL",
+    "asin": "DUVSET-BEANRED-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Bean Red)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-QUEEN",
+    "asin": "DUVSET-BEANRED-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Bean Red)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BEANRED-KING",
+    "asin": "DUVSET-BEANRED-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Bean Red)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Bean Red shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BEANRED-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Bean Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BEANRED-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-TWIN",
+    "asin": "DUVSET-BUTTER-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-FULL",
+    "asin": "DUVSET-BUTTER-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-QUEEN",
+    "asin": "DUVSET-BUTTER-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-BUTTER-KING",
+    "asin": "DUVSET-BUTTER-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-BUTTER-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-BUTTER-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-TWIN",
+    "asin": "DUVSET-DILL-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-FULL",
+    "asin": "DUVSET-DILL-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-QUEEN",
+    "asin": "DUVSET-DILL-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-DILL-KING",
+    "asin": "DUVSET-DILL-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-DILL-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-DILL-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-TWIN",
+    "asin": "DUVSET-OAT-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-FULL",
+    "asin": "DUVSET-OAT-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-QUEEN",
+    "asin": "DUVSET-OAT-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-OAT-KING",
+    "asin": "DUVSET-OAT-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king",
+    "description": "Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium brushed cotton-like fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DUVSET-OAT-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Brushed Cotton-Like Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-OAT-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-TWIN",
+    "asin": "PERCALE-COCONUT-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Coconut Milk)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-coconut-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-FULL",
+    "asin": "PERCALE-COCONUT-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Coconut Milk)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-coconut-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-QUEEN",
+    "asin": "PERCALE-COCONUT-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Coconut Milk)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-coconut-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-KING",
+    "asin": "PERCALE-COCONUT-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Coconut Milk)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-coconut-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Coconut Milk)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-TWIN",
+    "asin": "PERCALE-MIST-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Mist Grey)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-mist-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-FULL",
+    "asin": "PERCALE-MIST-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Mist Grey)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-mist-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-QUEEN",
+    "asin": "PERCALE-MIST-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Mist Grey)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-mist-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-KING",
+    "asin": "PERCALE-MIST-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Mist Grey)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-mist-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Mist Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-TWIN",
+    "asin": "PERCALE-SKY-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Sky Blue)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-sky-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-FULL",
+    "asin": "PERCALE-SKY-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Sky Blue)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-sky-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-QUEEN",
+    "asin": "PERCALE-SKY-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Sky Blue)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-sky-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-SKY-KING",
+    "asin": "PERCALE-SKY-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Sky Blue)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-sky-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Sky Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-TWIN",
+    "asin": "PERCALE-NUDE-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Nude Pink)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-nude-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-FULL",
+    "asin": "PERCALE-NUDE-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Nude Pink)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-nude-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-QUEEN",
+    "asin": "PERCALE-NUDE-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Nude Pink)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-nude-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-KING",
+    "asin": "PERCALE-NUDE-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Nude Pink)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-nude-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Nude Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-TWIN",
+    "asin": "PERCALE-EUCA-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Eucalyptus)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-euca-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-FULL",
+    "asin": "PERCALE-EUCA-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Eucalyptus)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-euca-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-QUEEN",
+    "asin": "PERCALE-EUCA-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Eucalyptus)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-euca-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-EUCA-KING",
+    "asin": "PERCALE-EUCA-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Eucalyptus)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-euca-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Eucalyptus shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-EUCA-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Eucalyptus)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-EUCA-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-TWIN",
+    "asin": "PERCALE-LAVENDER-TWIN",
+    "title": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Lavender Fog)",
+    "handle": "makimoo-twin-duvet-cover-set-3-piece-cotton-percale-lavender-twin",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 3-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-TWIN/1.webp",
+        "altText": "Makimoo Twin Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-FULL",
+    "asin": "PERCALE-LAVENDER-FULL",
+    "title": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Lavender Fog)",
+    "handle": "makimoo-full-duvet-cover-set-3-piece-cotton-percale-lavender-full",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 3-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in) and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-FULL/1.webp",
+        "altText": "Makimoo Full Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-QUEEN",
+    "asin": "PERCALE-LAVENDER-QUEEN",
+    "title": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Lavender Fog)",
+    "handle": "makimoo-queen-duvet-cover-set-3-piece-cotton-percale-lavender-queen",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 3-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in) and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-QUEEN/1.webp",
+        "altText": "Makimoo Queen Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-LAVENDER-KING",
+    "asin": "PERCALE-LAVENDER-KING",
+    "title": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Lavender Fog)",
+    "handle": "makimoo-king-duvet-cover-set-3-piece-cotton-percale-lavender-king",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover set has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 3-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in) and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Lavender Fog shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-LAVENDER-KING/1.webp",
+        "altText": "Makimoo King Duvet Cover Set 3 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Lavender Fog)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-LAVENDER-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-PILLOW-STANDARD",
+    "asin": "DOWN-PILLOW-STANDARD",
+    "title": "Makimoo Down Bed Pillows Set of 2 Standard Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 26 in (White)",
+    "handle": "makimoo-down-bed-pillows-set-of-2-standard",
+    "description": "80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury. Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.",
+    "descriptionHtml": "<p>80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury.</p><p>Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-PILLOW-STANDARD/1.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 Standard Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-STANDARD/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-STANDARD/3.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 Standard Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-PILLOW-STANDARD",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-PILLOW-QUEEN",
+    "asin": "DOWN-PILLOW-QUEEN",
+    "title": "Makimoo Down Bed Pillows Set of 2 Queen Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 30 in (White)",
+    "handle": "makimoo-down-bed-pillows-set-of-2-queen",
+    "description": "80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury. Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.",
+    "descriptionHtml": "<p>80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury.</p><p>Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-PILLOW-QUEEN/1.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 Queen Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-QUEEN/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-QUEEN/3.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 Queen Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-PILLOW-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-PILLOW-KING",
+    "asin": "DOWN-PILLOW-KING",
+    "title": "Makimoo Down Bed Pillows Set of 2 King Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 36 in (White)",
+    "handle": "makimoo-down-bed-pillows-set-of-2-king",
+    "description": "80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury. Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.",
+    "descriptionHtml": "<p>80% Premium Down Fill: Generously filled with 80% fluffy white down and 20% feather and fiber, these pillows deliver cloud-like softness with airy, high-loft fullness that gently cradles your head and neck.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with hotel-inspired luxury.</p><p>Soft, Sink-In Comfort: The down-rich fill compresses softly under weight and springs back with a daily fluff, suiting side, back, and stomach sleepers who love a plush, moldable pillow.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and fluffy for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-PILLOW-KING/1.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 King Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-KING/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-PILLOW-KING/3.webp",
+        "altText": "Makimoo Down Bed Pillows Set of 2 King Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-PILLOW-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-FEATHER-PILLOW-STANDARD",
+    "asin": "DOWN-FEATHER-PILLOW-STANDARD",
+    "title": "Makimoo Down and Feather Bed Pillows Set of 2 Standard Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 26 in (White)",
+    "handle": "makimoo-down-feather-bed-pillows-set-of-2-standard",
+    "description": "50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort. Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.",
+    "descriptionHtml": "<p>50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort.</p><p>Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-STANDARD/1.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 Standard Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-STANDARD/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-STANDARD/3.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 Standard Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-FEATHER-PILLOW-STANDARD",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-FEATHER-PILLOW-QUEEN",
+    "asin": "DOWN-FEATHER-PILLOW-QUEEN",
+    "title": "Makimoo Down and Feather Bed Pillows Set of 2 Queen Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 30 in (White)",
+    "handle": "makimoo-down-feather-bed-pillows-set-of-2-queen",
+    "description": "50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort. Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.",
+    "descriptionHtml": "<p>50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort.</p><p>Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-QUEEN/1.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 Queen Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-QUEEN/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-QUEEN/3.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 Queen Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-FEATHER-PILLOW-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DOWN-FEATHER-PILLOW-KING",
+    "asin": "DOWN-FEATHER-PILLOW-KING",
+    "title": "Makimoo Down and Feather Bed Pillows Set of 2 King Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 36 in (White)",
+    "handle": "makimoo-down-feather-bed-pillows-set-of-2-king",
+    "description": "50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel. 100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort. Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort. Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers. Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.",
+    "descriptionHtml": "<p>50% Down 50% Feather Fill: A balanced blend of 50% white down and 50% feather and fiber pairs the airy softness of down with the gentle structure of feathers for a medium, resilient feel.</p><p>100% Cotton Cover: A smooth, breathable cotton shell keeps the fill evenly distributed while feeling cool and gentle against the skin—no crinkly texture, just quiet comfort.</p><p>Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with hotel-inspired comfort.</p><p>Medium Support That Holds Shape: The feather blend keeps its loft longer through the night and offers a touch more support than pure down—ideal for back and side sleepers.</p><p>Easy Care: Fluff daily to maintain loft. Machine wash cold on a gentle cycle and tumble dry low with dryer balls to restore fullness—made to stay fresh and supportive for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-KING/1.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 King Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-KING/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/DOWN-FEATHER-PILLOW-KING/3.webp",
+        "altText": "Makimoo Down and Feather Bed Pillows Set of 2 King Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DOWN-FEATHER-PILLOW-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MICROFIBER-PILLOW-STANDARD",
+    "asin": "MICROFIBER-PILLOW-STANDARD",
+    "title": "Makimoo Microfiber Bed Pillows Set of 2 Standard Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 26 in (White)",
+    "handle": "makimoo-microfiber-bed-pillows-set-of-2-standard",
+    "description": "Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with. Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing. Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort. Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers. Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.",
+    "descriptionHtml": "<p>Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with.</p><p>Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing.</p><p>Set of 2, Standard Size: Each pillow measures 20 x 26 in (51 x 66 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort.</p><p>Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers.</p><p>Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-STANDARD/1.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 Standard Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-STANDARD/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-STANDARD/3.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 Standard Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 26 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MICROFIBER-PILLOW-STANDARD",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MICROFIBER-PILLOW-QUEEN",
+    "asin": "MICROFIBER-PILLOW-QUEEN",
+    "title": "Makimoo Microfiber Bed Pillows Set of 2 Queen Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 30 in (White)",
+    "handle": "makimoo-microfiber-bed-pillows-set-of-2-queen",
+    "description": "Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with. Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing. Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort. Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers. Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.",
+    "descriptionHtml": "<p>Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with.</p><p>Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing.</p><p>Set of 2, Queen Size: Each pillow measures 20 x 30 in (51 x 76 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort.</p><p>Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers.</p><p>Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-QUEEN/1.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 Queen Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-QUEEN/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-QUEEN/3.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 Queen Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 30 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MICROFIBER-PILLOW-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MICROFIBER-PILLOW-KING",
+    "asin": "MICROFIBER-PILLOW-KING",
+    "title": "Makimoo Microfiber Bed Pillows Set of 2 King Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 36 in (White)",
+    "handle": "makimoo-microfiber-bed-pillows-set-of-2-king",
+    "description": "Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with. Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing. Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort. Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers. Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.",
+    "descriptionHtml": "<p>Plush Microfiber Fill: Generously filled with silky microfiber clusters, these pillows deliver a soft, fluffy loft that mimics the feel of down—hypoallergenic and easy to live with.</p><p>Smooth Polyester Cover: A soft, brushed-smooth polyester shell keeps the fill evenly distributed and stands up to everyday use and frequent washing.</p><p>Set of 2, King Size: Each pillow measures 20 x 36 in (51 x 91 cm), a ready-to-pair set that outfits your bed with plush, hotel-inspired comfort.</p><p>Medium-Firm Support: The resilient fiber fill holds its shape through the night and offers steady support for back and side sleepers.</p><p>Easy Machine Care: Machine wash cold on a gentle cycle and tumble dry low—the fill fluffs back up nicely, staying clean, fresh, and ready for everyday use.</p>",
+    "productType": "Pillows",
+    "tags": [
+      "Pillows"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-KING/1.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 King Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-KING/2.webp",
+        "altText": "Makimoo bed pillows styled on a relaxed, unmade bed in warm neutral tones",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "url": "/images/products/MICROFIBER-PILLOW-KING/3.webp",
+        "altText": "Makimoo Microfiber Bed Pillows Set of 2 King Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 36 in (White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MICROFIBER-PILLOW-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-CREAM-TWIN",
+    "asin": "SATEEN4-CREAM-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Cream White)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-cream-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-CREAM-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Cream White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-CREAM-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-CREAM-FULL",
+    "asin": "SATEEN4-CREAM-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Cream White)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-cream-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-CREAM-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Cream White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-CREAM-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-CREAM-QUEEN",
+    "asin": "SATEEN4-CREAM-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Cream White)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-CREAM-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Cream White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-CREAM-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-CREAM-KING",
+    "asin": "SATEEN4-CREAM-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Cream White)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-cream-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-CREAM-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Cream White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-CREAM-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-BEIGE-TWIN",
+    "asin": "SATEEN4-BEIGE-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Soft Beige)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-beige-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-BEIGE-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Soft Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-BEIGE-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-BEIGE-FULL",
+    "asin": "SATEEN4-BEIGE-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Soft Beige)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-beige-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-BEIGE-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Soft Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-BEIGE-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-BEIGE-QUEEN",
+    "asin": "SATEEN4-BEIGE-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Soft Beige)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-beige-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-BEIGE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Soft Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-BEIGE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-BEIGE-KING",
+    "asin": "SATEEN4-BEIGE-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Soft Beige)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-beige-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Soft Beige shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-BEIGE-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Soft Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-BEIGE-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-MUSTARD-TWIN",
+    "asin": "SATEEN4-MUSTARD-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Mustard Yellow)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-mustard-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-MUSTARD-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Mustard Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-MUSTARD-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-MUSTARD-FULL",
+    "asin": "SATEEN4-MUSTARD-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Mustard Yellow)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-mustard-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-MUSTARD-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Mustard Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-MUSTARD-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-MUSTARD-QUEEN",
+    "asin": "SATEEN4-MUSTARD-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Mustard Yellow)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-mustard-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-MUSTARD-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Mustard Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-MUSTARD-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-MUSTARD-KING",
+    "asin": "SATEEN4-MUSTARD-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Mustard Yellow)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-mustard-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Mustard Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-MUSTARD-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Mustard Yellow)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-MUSTARD-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TAUPE-TWIN",
+    "asin": "SATEEN4-TAUPE-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Taupe)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-taupe-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TAUPE-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Taupe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TAUPE-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TAUPE-FULL",
+    "asin": "SATEEN4-TAUPE-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Taupe)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-taupe-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TAUPE-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Taupe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TAUPE-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TAUPE-QUEEN",
+    "asin": "SATEEN4-TAUPE-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Taupe)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-taupe-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TAUPE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Taupe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TAUPE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TAUPE-KING",
+    "asin": "SATEEN4-TAUPE-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Taupe)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-taupe-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Taupe shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TAUPE-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Taupe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TAUPE-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TERRACOTTA-TWIN",
+    "asin": "SATEEN4-TERRACOTTA-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Terracotta)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-terracotta-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TERRACOTTA-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Terracotta)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TERRACOTTA-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TERRACOTTA-FULL",
+    "asin": "SATEEN4-TERRACOTTA-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Terracotta)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-terracotta-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TERRACOTTA-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Terracotta)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TERRACOTTA-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TERRACOTTA-QUEEN",
+    "asin": "SATEEN4-TERRACOTTA-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Terracotta)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-terracotta-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TERRACOTTA-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Terracotta)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TERRACOTTA-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-TERRACOTTA-KING",
+    "asin": "SATEEN4-TERRACOTTA-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Terracotta)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-terracotta-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Terracotta shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-TERRACOTTA-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Terracotta)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-TERRACOTTA-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-OLIVE-TWIN",
+    "asin": "SATEEN4-OLIVE-TWIN",
+    "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Olive Green)",
+    "handle": "makimoo-twin-bedding-set-4-piece-cotton-sateen-olive-twin",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-OLIVE-TWIN/1.webp",
+        "altText": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Olive Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-OLIVE-TWIN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-OLIVE-FULL",
+    "asin": "SATEEN4-OLIVE-FULL",
+    "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Olive Green)",
+    "handle": "makimoo-full-bedding-set-4-piece-cotton-sateen-olive-full",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-OLIVE-FULL/1.webp",
+        "altText": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Olive Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-OLIVE-FULL",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-OLIVE-QUEEN",
+    "asin": "SATEEN4-OLIVE-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Olive Green)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-olive-queen",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-OLIVE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Olive Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-OLIVE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-OLIVE-KING",
+    "asin": "SATEEN4-OLIVE-KING",
+    "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Olive Green)",
+    "handle": "makimoo-king-bedding-set-4-piece-cotton-sateen-olive-king",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-OLIVE-KING/1.webp",
+        "altText": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Olive Green)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-OLIVE-KING",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-KNITTHROW-CREAM",
+    "asin": "KNITTHROW-CREAM",
+    "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Cream White)",
+    "handle": "makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-cream",
+    "description": "Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use. Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Nordic Accent: The quiet Cream White tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use.</p><p>Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Nordic Accent: The quiet Cream White tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/KNITTHROW-CREAM/1.webp",
+        "altText": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Cream White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-KNITTHROW-CREAM",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-KNITTHROW-GREY",
+    "asin": "KNITTHROW-GREY",
+    "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Light Grey)",
+    "handle": "makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey",
+    "description": "Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use. Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Nordic Accent: The quiet Light Grey tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use.</p><p>Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Nordic Accent: The quiet Light Grey tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/KNITTHROW-GREY/1.webp",
+        "altText": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-KNITTHROW-GREY",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-KNITTHROW-KHAKI",
+    "asin": "KNITTHROW-KHAKI",
+    "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Khaki)",
+    "handle": "makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-khaki",
+    "description": "Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use. Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Nordic Accent: The quiet Khaki tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use.</p><p>Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Nordic Accent: The quiet Khaki tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/KNITTHROW-KHAKI/1.webp",
+        "altText": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Khaki)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-KNITTHROW-KHAKI",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-KNITTHROW-PINK",
+    "asin": "KNITTHROW-PINK",
+    "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Dusty Pink)",
+    "handle": "makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-pink",
+    "description": "Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use. Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Nordic Accent: The quiet Dusty Pink tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Openwork Knit Design: Alternating slim ribbed bands and wide herringbone openwork stripes give this throw its airy, handcrafted look—delicate to the eye, yet knitted to hold its shape through everyday use.</p><p>Soft & Lightweight Acrylic: Woven from soft acrylic yarn (500-799g), this blanket feels gentle and cozy without weighing you down—comfortable across all four seasons, from summer naps to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Nordic Accent: The quiet Dusty Pink tone and textured stripes blend effortlessly with modern, farmhouse, or neutral décor—use it as a couch throw, bed-end runner, nap blanket, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its texture and color wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/KNITTHROW-PINK/1.webp",
+        "altText": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Dusty Pink)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-KNITTHROW-PINK",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-SUNSET-127",
+    "asin": "BOHOTHROW-SUNSET-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-sunset",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-SUNSET-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-SUNSET-130",
+    "asin": "BOHOTHROW-SUNSET-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-sunset",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Sunset palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-SUNSET-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-SUNSET-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-OLIVE-127",
+    "asin": "BOHOTHROW-OLIVE-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-olive",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-OLIVE-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-OLIVE-130",
+    "asin": "BOHOTHROW-OLIVE-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-olive",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Khaki Olive palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-OLIVE-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-OLIVE-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-TEAL-127",
+    "asin": "BOHOTHROW-TEAL-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-TEAL-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-TEAL-130",
+    "asin": "BOHOTHROW-TEAL-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-teal",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-TEAL-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-TEAL-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-BURGUNDY-127",
+    "asin": "BOHOTHROW-BURGUNDY-127",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-burgundy",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-127/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-127/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-BURGUNDY-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-BOHOTHROW-BURGUNDY-130",
+    "asin": "BOHOTHROW-BURGUNDY-130",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+    "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-burgundy",
+    "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Burgundy palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-130/1.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/BOHOTHROW-BURGUNDY-130/2.webp",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-BOHOTHROW-BURGUNDY-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-130X180",
+    "asin": "JACTHROW-HB-BLACK-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-150X200",
+    "asin": "JACTHROW-HB-BLACK-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-BLACK-130X190",
+    "asin": "JACTHROW-HB-BLACK-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-black",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in black and white is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Black White tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-BLACK-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-BLACK-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-130X180",
+    "asin": "JACTHROW-HB-KHAKI-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-150X200",
+    "asin": "JACTHROW-HB-KHAKI-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-HB-KHAKI-130X190",
+    "asin": "JACTHROW-HB-KHAKI-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-khaki",
+    "description": "Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The classic herringbone pattern in warm camel tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Herringbone Camel tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-HB-KHAKI-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-HB-KHAKI-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X180",
+    "asin": "JACTHROW-PAISLEY-BEIGE-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-150X200",
+    "asin": "JACTHROW-PAISLEY-BEIGE-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X190",
+    "asin": "JACTHROW-PAISLEY-BEIGE-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-beige",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in soft khaki tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Khaki tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BEIGE-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BEIGE-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X180",
+    "asin": "JACTHROW-PAISLEY-BLUE-130X180",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (850g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 180 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X180/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X180/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-130X180",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-150X200",
+    "asin": "JACTHROW-PAISLEY-BLUE-150X200",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (1050g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 150 x 200 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-150X200/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-150X200/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-150X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X190",
+    "asin": "JACTHROW-PAISLEY-BLUE-130X190",
+    "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+    "handle": "makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-blue",
+    "description": "Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish. Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute. Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed. Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips. Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.",
+    "descriptionHtml": "<p>Nordic Jacquard Pattern: The elegant paisley motif in dusty blue tones is woven directly into the knit—not printed—so the design stays crisp wash after wash, framed by a clean knitted edge with no tassels for a sleek, modern finish.</p><p>Lightweight Acrylic Jacquard Knit: Woven from soft acrylic yarn (700g), this blanket is light enough to carry from couch to office yet warm enough for an afternoon nap or a chilly commute.</p><p>Practical Throw Size: Measuring 130 x 190 cm, it covers your shoulders and legs comfortably—ideal as a sofa throw, travel blanket, office nap blanket, or an extra layer at the foot of the bed.</p><p>Quiet Nordic Accent: The Paisley Dusty Blue tones blend effortlessly with modern, Scandinavian, or minimalist décor—drape it over an armchair, fold it across the bed end, or keep it in the car for road trips.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the jacquard knit holds its pattern and shape wash after wash—no fringe to tangle, no fuss.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X190/1.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/JACTHROW-PAISLEY-BLUE-130X190/2.webp",
+        "altText": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-JACTHROW-PAISLEY-BLUE-130X190",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-ORANGE-127",
+    "asin": "CHUNKYTHROW-ORANGE-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-orange",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-ORANGE-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-ORANGE-130",
+    "asin": "CHUNKYTHROW-ORANGE-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-orange",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Burnt Orange tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-ORANGE-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-ORANGE-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-OAT-127",
+    "asin": "CHUNKYTHROW-OAT-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-oat",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-OAT-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-OAT-130",
+    "asin": "CHUNKYTHROW-OAT-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-oat",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Khaki Oat tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-OAT-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-OAT-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-CREAM-127",
+    "asin": "CHUNKYTHROW-CREAM-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-CREAM-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-CREAM-130",
+    "asin": "CHUNKYTHROW-CREAM-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-cream",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Cream White tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-CREAM-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-CREAM-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-GREY-127",
+    "asin": "CHUNKYTHROW-GREY-127",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 50 x 68 in (127 x 172 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-127/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-127/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-GREY-127",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-CHUNKYTHROW-GREY-130",
+    "asin": "CHUNKYTHROW-GREY-130",
+    "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+    "handle": "makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey",
+    "description": "Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look. Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa. Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion. Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.",
+    "descriptionHtml": "<p>Chunky Bobble Knit Texture: Plump, popcorn-style bobble stitches give this throw its rich, touchable texture, finished with long hand-tied tassels on both ends for a cozy, handcrafted look.</p><p>Soft Chunky Acrylic Knit: Knitted from thick yet soft acrylic yarn, the blanket feels plush and warm without heavy weight—perfect for snuggling on the couch through every season.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the long tassel fringe, it layers beautifully across the foot of a bed or over the back of a sofa.</p><p>Versatile Cozy Accent: The Light Grey tone and chunky texture pair effortlessly with modern, farmhouse, or Scandinavian décor—use it as a couch throw, bed-end runner, or reading companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle and dry flat; the chunky knit keeps its loft and the tassels stay neat with a quick reshape while damp.</p>",
+    "productType": "Blankets",
+    "tags": [
+      "Blankets"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-130/1.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/CHUNKYTHROW-GREY-130/2.webp",
+        "altText": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-CHUNKYTHROW-GREY-130",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+];

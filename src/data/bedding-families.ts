@@ -9,6 +9,7 @@
 import { getProductSpecs } from '@/lib/specs';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
+import { fabricDisplayName } from '@/data/bedding-fabrics';
 import type { MakimooProduct } from '@/data/products';
 
 export type SetKind = 'four' | 'three' | 'comforter' | 'duvet';
@@ -24,6 +25,25 @@ export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
 const COLOR_LABELS: Record<string, string> = {
   DUSTYBLUE: 'Dusty Blue',
   OFFWHITE: 'Off White',
+  // 2026-10-17：DUVSET 四新色（slug 多词，回退 Title Case 会粘连成 "Beanred"）
+  BEANRED: 'Bean Red',
+  BUTTER: 'Butter Yellow',
+  DILL: 'Dill Green',
+  OAT: 'Alpine Oat',
+  // 2026-10-17：Percale 六色（slug 多词防粘连）
+  SKY: 'Sky Blue',
+  MIST: 'Mist Grey',
+  COCONUT: 'Coconut Milk',
+  NUDE: 'Nude Pink',
+  EUCA: 'Eucalyptus',
+  LAVENDER: 'Lavender Fog',
+  // 2026-10-18：Cotton Sateen 六色（slug 多词防粘连）
+  CREAM: 'Cream White',
+  BEIGE: 'Soft Beige',
+  MUSTARD: 'Mustard Yellow',
+  TAUPE: 'Taupe',
+  TERRACOTTA: 'Terracotta',
+  OLIVE: 'Olive Green',
 };
 
 export interface SetFamily {
@@ -41,22 +61,27 @@ export interface SetFamily {
   currency: string;
   /** 原始材质列表（不过 "100% " 归一化，与 PLP 材质筛选口径一致），供材质筛选 */
   materials: string[];
-  /** 卡片展示标题覆盖（2026-10-09 用户定，beddingCardTitle；仅卡面标题，PDP 原标题不变） */
+  /** 卡片展示标题覆盖（beddingCardTitle；仅卡面标题，PDP 原标题不变） */
   titleOverride?: string;
+  /** 卡面标题下的浅色颜色行（2026-10-18 用户定：颜色从标题拆出，另起一行浅灰小字展示） */
+  colorLine?: string;
 }
 
-/** 卡片展示标题规则（2026-10-09 用户定，仅影响列表卡标题）：
- *  - 100% Linen         → 套装 "Linen Duvet Cover Set of 3/4"；独立被套（duvet）"Linen Duvet Cover"
- *  - Washed Cotton-Like → "Brushed Cotton Duvet Cover"（对外展示名 Brushed Cotton，不带 Set of x）
- *  - Linen-Like         → 套装 "Linen-Like Duvet Cover Set of 3/4"；独立被套 "Linen-Like Duvet Cover"
- *  - 其他材质（Satin / Microfiber 等）→ ''（卡片沿用原标题） */
+/** 卡片展示标题规则（仅影响列表卡标题，PDP 原标题不变）：
+ *  2026-10-18 用户定：颜色段从标题移除（改由卡面浅色颜色行 colorLine 展示），标题 = 布料 + 品类：
+ *  - 三件套（three）    → "100% Linen Set"
+ *  - 四件套（four）     → "Brushed Cotton Set"
+ *  - comforter          → "{布料} Set"
+ *  - 独立被套（duvet）  → "100% Linen Duvet Cover"
+ *  - Sheets / Pillow Covers（未上线）上线后同规则
+ *  布料展示名先经 fabricDisplayName（Washed Cotton-Like → Brushed Cotton）；
+ *  材质取不到返回 ''（卡片沿用原标题） */
 export function beddingCardTitle(kind: SetKind, materials: string[]): string {
-  const m = materials[0] || '';
-  const setSuffix = kind === 'four' ? ' Set of 4' : kind === 'three' ? ' Set of 3' : '';
-  if (m === '100% Linen') return `Linen Duvet Cover${setSuffix}`;
-  if (m === 'Washed Cotton-Like') return 'Brushed Cotton Duvet Cover';
-  if (m === 'Linen-Like') return `Linen-Like Duvet Cover${setSuffix}`;
-  return '';
+  const fabric = materials[0] ? fabricDisplayName(materials[0]) : '';
+  if (!fabric) return '';
+  if (kind === 'three' || kind === 'four') return `${fabric} Set`;
+  if (kind === 'duvet') return `${fabric} Duvet Cover`;
+  return `${fabric} Set`;
 }
 
 export function classifySet(asin: string): SetKind | null {
@@ -65,9 +90,13 @@ export function classifySet(asin: string): SetKind | null {
   // 必须先于 duvset-/linen3- 前缀规则判断（否则会被吞进 three）
   if (/-duvet$/.test(a)) return 'duvet';
   if (a.startsWith('bedset4-')) return 'four';
+  // 2026-10-18 用户定：Cotton Sateen（贡缎棉）四件套新面料线（6 色 × 4 尺寸），归 four
+  if (a.startsWith('sateen4-')) return 'four';
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套的
   // 3 件套（2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致），按 three 分类
   if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'three';
+  // 2026-10-17 用户定：Cotton Percale 三件套新面料线（6 色 × 4 尺寸），归 three
+  if (a.startsWith('percale-')) return 'three';
   // ice silk 缎面（Satin）两个前缀家族实为被套+2枕套三件套（2026-10-15 用户确认），归 three；
   // 家族 key 仍按前缀::颜色（见 familyKeyOf）
   if (DUVET_PREFIXES.some((p) => a.startsWith(p))) return 'three';
@@ -144,10 +173,12 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
     const kindOf = classifySet(rep.asin)!;
     const duvetColor = key.includes('::') ? key.split('::')[1] : '';
     const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
+    const color =
+      duvetColor || (key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
     return {
       key,
       kind: kindOf,
-      color: duvetColor || (key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key)),
+      color,
       rep,
       sizes: duvetColor
         ? duvetSizesOf(rep.asin, duvetColor)
@@ -157,34 +188,71 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
       materials,
       titleOverride: beddingCardTitle(kindOf, materials) || undefined,
+      colorLine: color || undefined,
     };
   });
 }
 
+/**
+ * 家族卡聚拢排序（2026-10-16 用户定：排完一个变体族的全部颜色，才到下一个族，不穿插）：
+ * 族根 = 变体族 id（如 BEDSET4 / BEDSET4-BC / DUVSET），无变体族时用家族 key 前缀兜底。
+ * 在调用方完成权重排序之后调用：族块位置由族内最靠前的家族决定，族内保持排序后相对顺序。
+ */
+export function clusterSetFamilies(families: SetFamily[]): SetFamily[] {
+  // 族根优先取变体族 id（纯色 BEDSET4-BC 与印花 BEDSET4 是两个族，不并块）；
+  // 无变体族的兜底用 key 前缀：'duvset-gray' → 'duvset'；二维家族 '1688-xxx::颜色' → '1688-xxx'；
+  // 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块
+  const rootOf = (f: SetFamily) => {
+    const g = getVariantGroupOf(f.rep.asin);
+    if (g) return g.id.toLowerCase();
+    const base = f.key.split('::')[0];
+    const parts = base.split('-');
+    return parts[0] === '1688' ? parts.slice(0, 2).join('-') : parts[0];
+  };
+  const seen = new Set<string>();
+  const out: SetFamily[] = [];
+  for (const f of families) {
+    if (seen.has(f.key)) continue;
+    seen.add(f.key);
+    out.push(f);
+    const root = rootOf(f);
+    for (const g of families) {
+      if (!seen.has(g.key) && rootOf(g) === root) {
+        seen.add(g.key);
+        out.push(g);
+      }
+    }
+  }
+  return out;
+}
+
 export const SET_KIND_LABEL: Record<SetKind, string> = {
-  four: '4-Piece Set',
-  three: '3-Piece Set',
+  // 2026-10-16 用户定：对外类目名不再用 x-Piece 叫法——
+  // four = "Sheets & Duvet Set(s)"（4 件套），three = "Duvet Cover Set(s)"（3 件套）；URL slug 不变
+  four: 'Sheets & Duvet Set',
+  three: 'Duvet Cover Set',
   comforter: 'Comforter Set',
   duvet: 'Duvet Cover',
 };
 
-/** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用） */
+/** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用）；
+ *  副标题只保留组件清单，"—" 及之后描述已删（2026-10-16 用户定：文字太多） */
 export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: string }> = {
   four: {
-    heading: '4-Piece Bed Sets',
-    blurb: 'Duvet cover, fitted sheet & two pillowcases — the whole bed in one box.',
+    heading: 'Sheets & Duvet Sets',
+    blurb: 'Duvet cover, fitted sheet & two pillowcases',
   },
   three: {
-    heading: '3-Piece Bed Sets',
-    blurb: 'Duvet cover & two pillowcases — pair with your favorite sheets.',
+    heading: 'Duvet Cover Sets',
+    blurb: 'Duvet cover & two pillowcases',
   },
   comforter: {
     heading: 'Comforter Sets',
-    blurb: 'A plush comforter with matching shams — warmth without the layering work.',
+    blurb: 'A plush comforter with matching shams',
   },
   duvet: {
     heading: 'Duvet Covers',
-    blurb: 'Standalone covers in linen & washed cotton-like — slip over your favorite insert.',
+    blurb: 'Standalone covers in linen & washed cotton-like',
   },
 };
 
@@ -194,13 +262,4 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
   '3-piece-sets': 'three',
   'comforter-sets': 'comforter',
   'duvet-covers': 'duvet',
-};
-
-/** Bed Sets 合并页（2026-09 用户定：导航把 4-Piece/3-Piece 合并为一个入口，
- *  页内按 4 件/3 件两个分区展示，不含 Comforter；原单类型页保留兜底） */
-export const BED_SETS_SLUG = 'bed-sets';
-export const BED_SETS_KINDS: SetKind[] = ['four', 'three'];
-export const BED_SETS_PAGE_COPY = {
-  heading: 'Bed Sets',
-  blurb: 'Duvet covers, sheets & pillowcases — coordinated sets for the whole bed.',
 };

@@ -2,14 +2,22 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import V2ProductCard from '@/components/v2/V2ProductCard';
-import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
 import V2PillowsShop from '@/components/v2/V2PillowsShop';
 import V2CushionsShop from '@/components/v2/V2CushionsShop';
-import { isPillowProduct } from '@/data/pillows-taxonomy';
+import V2TowelsShop from '@/components/v2/V2TowelsShop';
+import V2BeddingCatHero, { BeddingHeroLink } from '@/components/v2/V2BeddingCatHero';
+import V2PillowsCatHero, { PillowsHeroLink } from '@/components/v2/V2PillowsCatHero';
+import V2CushionsCatHero, { CushionsHeroLink } from '@/components/v2/V2CushionsCatHero';
+import V2TowelsCatHero, { TowelsHeroLink } from '@/components/v2/V2TowelsCatHero';
+import V2BlanketsCatHero, { BlanketsHeroLink } from '@/components/v2/V2BlanketsCatHero';
+import { buildSetFamilies } from '@/data/bedding-families';
+import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
+import { BEDDING_FABRICS, fabricDisplayName } from '@/data/bedding-fabrics';
+import { isPillowProduct, PILLOW_TYPES, PILLOW_MATERIALS, pillowTypeOf, pillowMaterialOf } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
-import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS } from '@/data/subcategories';
+import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS, getSubcategoriesOf } from '@/data/subcategories';
 import { STYLE_RULES, getStyleTagWithOverride } from '@/data/product-tags';
 import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
@@ -177,13 +185,43 @@ export default function V2ProductsPage() {
   // 卡片尺寸带会只剩一个尺寸（Twin），与 /bedding/bed-sets/ 的 Twin / Full / Queen / King 不一致
   const beddingShopProducts = useMemo(
     () =>
-      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
-        (p) => p.productType.toLowerCase() === 'bedding'
-      ),
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter((p) => {
+        if (p.productType.toLowerCase() !== 'bedding') return false;
+        const a = p.asin.toLowerCase();
+        // 2026-10-19 用户定：bedding 页移除 Satin（ice silk 两个 1688 家族）
+        if (a.startsWith('1688-1048207560416') || a.startsWith('1688-1061371343572')) return false;
+        // 2026-10-19 用户定：bedding 页移除 BEDSET4-BC 纯色四件套系列（Beige/Grey/Pink/White，
+        // 即用户点名的 bedset4-gray-queen 所在变体组）；BEDSET4 印花组保留
+        if (/^bedset4-(beige|gray|pink|white)-/.test(a)) return false;
+        return true;
+      }),
     []
   );
 
-  // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式：意图回显 + 家族卡网格，
+  // Parachute 式页头数据（2026-10-16 用户定，见 V2BeddingCatHero）：
+  // 快链 = 用户定的新五项子分类（URL slug 不变）：Duvet Cover Sets（原 3-piece）/
+  // Sheets & Duvet Sets（原 4-piece）/ Duvet Covers / Sheets（未上线）/ Pillow Covers（未上线），
+  // 再加有产品的面料页；上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
+  const beddingHero = useMemo(() => {
+    if (!beddingMaterialMode || isSearching || activeSub) return null;
+    const fams = buildSetFamilies(beddingShopProducts);
+    const typeLinks: BeddingHeroLink[] = [];
+    if (fams.some((f) => f.kind === 'three'))
+      typeLinks.push({ label: 'Duvet Cover Sets', href: v2url('/bedding/3-piece-sets/') });
+    if (fams.some((f) => f.kind === 'four'))
+      typeLinks.push({ label: 'Sheets & Duvet Sets', href: v2url('/bedding/4-piece-sets/') });
+    if (fams.some((f) => f.kind === 'duvet'))
+      typeLinks.push({ label: 'Duvet Covers', href: v2url('/bedding/duvet-covers/') });
+    typeLinks.push({ label: 'Sheets', href: '', soon: true });
+    typeLinks.push({ label: 'Pillow Covers', href: '', soon: true });
+    const fabricLinks: BeddingHeroLink[] = BEDDING_FABRICS.filter((fb) =>
+      fams.some((f) => f.materials.includes(fb.material))
+    ).map((fb) => ({ label: fabricDisplayName(fb.material), href: v2url(`/bedding/${fb.slug}/`) }));
+    return { styleCount: beddingShopProducts.length, typeLinks, fabricLinks };
+  }, [beddingMaterialMode, isSearching, activeSub, beddingShopProducts]);
+
+  // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式；2026-10-19 按 bedding/towels 标准重构：
+  // Parachute 式 hero（V2BlanketsCatHero，快链=系列分区锚点）+ 按系列分区的家族卡网格（V2BlanketsShop），
   // 无筛选条/排序下拉/左侧栏/移动端抽屉入口/Need help deciding）：
   // 同样传未去重的原始列表——buildBlanketFamilies 需要看到同色全部尺寸 SKU 才能拼尺寸带
   const blanketsMode = activeCategory.toLowerCase() === 'blankets';
@@ -195,6 +233,18 @@ export default function V2ProductsPage() {
     []
   );
 
+  // blankets 类目页头数据（2026-10-19 用户定：按 bedding/towels 页标准重建，见 V2BlanketsCatHero）：
+  // 快链 = 有产品的系列分区（页内锚点 #<BLANKET_SECTIONS.key>；blankets 无二级页，同 towels），
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，同 bedding/pillows/cushions/towels 口径）
+  const blanketHero = useMemo(() => {
+    if (!blanketsMode || isSearching || activeSub) return null;
+    const fams = buildBlanketFamilies(blanketShopProducts);
+    const typeLinks: BlanketsHeroLink[] = BLANKET_SECTIONS.filter((s) =>
+      fams.some((f) => blanketSectionOf(f) === s.key)
+    ).map((s) => ({ label: s.label, href: `#${s.key}` }));
+    return { styleCount: blanketShopProducts.length, typeLinks };
+  }, [blanketsMode, isSearching, activeSub, blanketShopProducts]);
+
   // pillows 选购视图（2026-09-30 用户定，照搬 bedding 结构：Type × Material 双下拉 +
   // 按形态分区网格）：范围 = pillows 类目 + 跨挂的旅行颈枕（Others/travel，见 pillows-taxonomy）
   const pillowsMode = activeCategory.toLowerCase() === 'pillows';
@@ -202,6 +252,26 @@ export default function V2ProductsPage() {
     () => enrichProductsWithShopifyData(PRODUCTS_DATA).filter(isPillowProduct),
     []
   );
+
+  // pillows 类目页头数据（2026-10-16 用户定：按 bedding 页标准重建，见 V2PillowsCatHero）：
+  // 快链 = 有产品的形态页 + 填充材质页（无产品的填充如 Down 标 Coming Soon），
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
+  const pillowHero = useMemo(() => {
+    if (!pillowsMode || isSearching || activeSub) return null;
+    const typeLinks: PillowsHeroLink[] = PILLOW_TYPES.filter((t) =>
+      pillowShopProducts.some((p) => pillowTypeOf(p) === t.key)
+    ).map((t) => ({ label: t.label, href: v2url(`/pillows/${t.slug}/`) }));
+    const fillingLinks: PillowsHeroLink[] = PILLOW_MATERIALS.map((m) =>
+      pillowShopProducts.some((p) => pillowMaterialOf(p) === m.key)
+        ? { label: m.label, href: v2url(`/pillows/${m.slug}/`) }
+        : { label: m.label, href: '', soon: true }
+    );
+    return {
+      styleCount: pillowShopProducts.length,
+      typeLinks,
+      fillingLinks,
+    };
+  }, [pillowsMode, isSearching, activeSub, pillowShopProducts]);
 
   // cushions 选购视图（2026-10-09 用户定，按 pillows/bedding 家族卡结构改造）：
   // 意图回显行 + 家族卡网格，无筛选条（全类目仅一条产品线 7 色，同 blankets 口径）。
@@ -214,6 +284,41 @@ export default function V2ProductsPage() {
       ),
     []
   );
+
+  // cushions 类目页头数据（2026-10-18 用户定：按 bedding 页标准重建，见 V2CushionsCatHero）：
+  // 快链 = 有产品的风格页（/cushions/[slug]/，注册表顺序 corduroy→solids→prints），
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，同 bedding/pillows 口径）
+  const cushionHero = useMemo(() => {
+    if (!cushionsMode || isSearching || activeSub) return null;
+    const typeLinks: CushionsHeroLink[] = getSubcategoriesOf('cushions')
+      .filter((s) => cushionShopProducts.some((p) => p.subcategory === s.key))
+      .map((s) => ({ label: s.label, href: v2url(`/cushions/${s.key}/`) }));
+    return { styleCount: cushionShopProducts.length, typeLinks };
+  }, [cushionsMode, isSearching, activeSub, cushionShopProducts]);
+
+  // towels 选购视图（2026-10-15 用户定，按 pillows/cushions 家族卡结构重建；
+  // 2026-10-18 用户定：按 bedding 页结构重构——hero 快链 + 分区网格，筛选 UI 移除，见 V2TowelsShop）。
+  // 传未去重原始列表，组件内部按颜色成族
+  const towelsMode = activeCategory.toLowerCase() === 'towels';
+  const towelShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'towels'
+      ),
+    []
+  );
+
+  // towels 类目页头数据（2026-10-18 用户定：按 bedding 页标准重建，见 V2TowelsCatHero）：
+  // 快链 = 有产品的类型分区（页内锚点 #bath-towels / #beach-towels；towels 无二级页，与 cushions 不同），
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，同 bedding/pillows/cushions 口径）
+  const towelHero = useMemo(() => {
+    if (!towelsMode || isSearching || activeSub) return null;
+    const anchorOf = (key: string) => (key === 'towels' ? 'bath-towels' : `${key}-towels`);
+    const typeLinks: TowelsHeroLink[] = getSubcategoriesOf('towels')
+      .filter((s) => towelShopProducts.some((p) => p.subcategory === s.key))
+      .map((s) => ({ label: s.label, href: `#${anchorOf(s.key)}` }));
+    return { styleCount: towelShopProducts.length, typeLinks };
+  }, [towelsMode, isSearching, activeSub, towelShopProducts]);
 
   // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
   // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
@@ -401,14 +506,17 @@ export default function V2ProductsPage() {
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框。
        2026-10-12 用户定：面包屑区高度缩减——pt-7/lg:pt-6 → pt-3/lg:pt-4
        （sticky 头部在文档流内自占高度，原 pt-7 残留固定头部时代的余量） */
     <div className="px-3 lg:px-10 pt-3 lg:pt-4 pb-10 lg:pb-14">
-      {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序 */}
+      {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序。
+          bedding/pillows/cushions/towels 类目页面包屑整块移除（2026-10-16 用户定：Parachute 式 hero 已承担导航，
+          "Home / Bedding" 与 hero 标题信息重复，双端都不显示；cushions/towels 2026-10-18 加入） */}
+      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && (
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
         <span className="mx-1.5">/</span>
@@ -422,7 +530,43 @@ export default function V2ProductsPage() {
           <span className="text-[#555]">{pageTitle}</span>
         )}
       </nav>
-      {/* 移动端 h1 隐藏时该容器只剩 margin：mb-4 → mb-2 收紧面包屑与筛选条间距（2026-10-12 用户定） */}
+      )}
+      {/* 移动端 h1 隐藏时该容器只剩 margin：mb-4 → mb-2 收紧面包屑与筛选条间距（2026-10-12 用户定）。
+          bedding/pillows/cushions 类目页改 Parachute 式 hero（2026-10-16 用户定，cushions 2026-10-18 加入，
+          见 V2BeddingCatHero / V2PillowsCatHero / V2CushionsCatHero / V2TowelsCatHero，双端渲染） */}
+      {beddingHero ? (
+        <V2BeddingCatHero
+          styleCount={beddingHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={beddingHero.typeLinks}
+          fabricLinks={beddingHero.fabricLinks}
+        />
+      ) : pillowHero ? (
+        <V2PillowsCatHero
+          styleCount={pillowHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={pillowHero.typeLinks}
+          fillingLinks={pillowHero.fillingLinks}
+        />
+      ) : cushionHero ? (
+        <V2CushionsCatHero
+          styleCount={cushionHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={cushionHero.typeLinks}
+        />
+      ) : towelHero ? (
+        <V2TowelsCatHero
+          styleCount={towelHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={towelHero.typeLinks}
+        />
+      ) : blanketHero ? (
+        <V2BlanketsCatHero
+          styleCount={blanketHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={blanketHero.typeLinks}
+        />
+      ) : (
       <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
         <div>
           {/* 移动端隐藏类目标题（面包屑已有指引）；桌面端保留（2026-09 用户定） */}
@@ -432,7 +576,7 @@ export default function V2ProductsPage() {
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
             bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
-        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && (
+        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -447,6 +591,7 @@ export default function V2ProductsPage() {
           </div>
         )}
       </div>
+      )}
 
       <div className="lg:flex lg:gap-10">
       {/* 桌面端左侧筛选栏：Collections 单选 + Material/Style 多选（bedding 为 Style），吸顶跟随 */}
@@ -512,7 +657,7 @@ export default function V2ProductsPage() {
         /* JS 加载前的占位：骨架屏与卡片同比例，避免布局跳动 */
         <div className={gridCls}>
           {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm animate-pulse">
+            <div key={i} className="animate-pulse">
               <div className="aspect-square bg-[#E8E2DA]" />
               <div className="p-3 sm:p-4">
                 <div className="h-3 bg-[#E8E2DA] rounded w-16 mb-2" />
@@ -524,26 +669,33 @@ export default function V2ProductsPage() {
           ))}
         </div>
       ) : beddingMaterialMode && !isSearching ? (
-        /* bedding 选购视图（2026-09 重做，付费搜索落地页）：意图回显 + 粘性筛选条 + 家族卡网格。
+        /* bedding 选购视图（2026-09 重做，付费搜索落地页）：家族卡网格按材质分区；
+           2026-10-16 用户定：页头改 Parachute 式 hero（V2BeddingCatHero，二级页快链承担导航），
+           原 Type/Fabric 粘性筛选条（含移动端弹层）整体移除。
            传未去重的原始 bedding 列表（2026-09 修复）：buildSetFamilies 需要看到全部尺寸 SKU
            才能在家族卡拼出完整尺寸带（Twin / Full / Queen / King），与 /bedding/bed-sets/ 一致；
            若传入 dedupeFamilyColors 后的列表，同族同色不同尺寸被合并，尺寸带只剩代表 SKU 的一个 */
         <V2BeddingShop products={beddingShopProducts} />
       ) : blanketsMode && !isSearching ? (
-        /* blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式）：意图回显 + 家族卡网格。
+        /* blankets 选购视图（2026-10-19 用户定：按 bedding/towels 页标准重构——
+           页头 Parachute 式 hero（V2BlanketsCatHero，系列分区锚点快链承担导航），
+           网格按系列分区（V2BlanketsShop，BLANKET_SECTIONS 注册表同口径）。
            传未去重的原始 blankets 列表（同 bedding 口径）：buildBlanketFamilies 需要看到
            同色全部尺寸 SKU 才能拼出完整尺寸带（120 x 200 / ... / 230 x 250 cm） */
         <V2BlanketsShop products={blanketShopProducts} />
       ) : pillowsMode && !isSearching ? (
-        /* pillows 选购视图（2026-09-30 用户定：展示方法与逻辑完全对齐 /bedding/bed-sets/）：
-           Type × Material 粘性双下拉 + 始终按形态分区网格 + 家族卡徽标规则。
+        /* pillows 选购视图（2026-10-16 用户定：按 bedding 页结构重建）：
+           筛选条/弹层已移除，固定按形态分区网格 + 家族卡徽标（叠填充材质）。
            传未去重原始列表，组件内部去重 */
         <V2PillowsShop products={pillowShopProducts} />
       ) : cushionsMode && !isSearching ? (
-        /* cushions 选购视图（2026-10-09 用户定）：意图回显 + 粘性 Style 筛选 + 按风格 3 分区
-           （prints / solids / corduroy，sub= 参数深链保留兼容旧链接；
-           导航入口已改为 /cushions/[slug]/ 二级页，与 pillows/bedding 同构） */
-        <V2CushionsShop key={activeSub} products={cushionShopProducts} initialStyle={activeSub} />
+        /* cushions 选购视图（2026-10-09 用户定；2026-10-18 移除筛选，按风格 3 分区网格，
+           导航由类目 hero 快链承担 → /cushions/[slug]/ 二级页） */
+        <V2CushionsShop products={cushionShopProducts} />
+      ) : towelsMode && !isSearching ? (
+        /* towels 选购视图（2026-10-15 用户定，按 pillows/cushions 结构重建；
+           2026-10-18 按 bedding 页结构重构：移除筛选，hero 快链 → 页内锚点分区） */
+        <V2TowelsShop products={towelShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -683,16 +835,8 @@ export default function V2ProductsPage() {
       </div>
       </div>
 
-      {/* "Need help deciding?" 教育模块（优化手册 PLP 模块：网格下方链 3 篇指南；搜索视图不显示；
-          2026-09-27 用户定：bedding 一级类目页（/products?cat=bedding）与 blankets 类目页已移除本模块，其他类目保留） */}
-      {mounted && activeCategory && !['bedding', 'blankets'].includes(activeCategory.toLowerCase()) && !isSearching && (
-        <V2RelatedGuides
-          cat={activeCategory.toLowerCase()}
-          eyebrow="Need Help Deciding?"
-          heading="Need help deciding?"
-          sub="A few quick guides to help you choose the right one."
-        />
-      )}
+      {/* "Need help deciding?" 教育模块：2026-10-18 用户定全站类目页整块移除
+         （此前 bedding/blankets 已移除，本次 pillows/cushions/towels 及其余类目页一并移除） */}
 
       {/* 移动端筛选抽屉（右侧滑出）：Sort + Collections（单选）+ Material/Style（多选，bedding 为 Style），底部 Show Products（不显示数量，2026-09 用户定） */}
       {filterOpen && (

@@ -28,7 +28,7 @@ export default function V2TrustBanner() {
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-3 lg:gap-5">
           {/* 左卡（宽）：卧室场景图（最初的 trust-reviews.webp，2026-09-23 用户定恢复）+ 品牌信任文案（白字 + 左侧暗渐变）；主标题 <br> 手动控两行（用户定：不要三行）；
               桌面 16/9 定行高，手机端 8/9（2026-09-23 用户定：在原 4/5 基础上高度减少 10%） */}
-          <div className="relative overflow-hidden rounded-xl aspect-[8/9] sm:aspect-[4/3] lg:aspect-[16/9]">
+          <div className="relative overflow-hidden aspect-[8/9] sm:aspect-[4/3] lg:aspect-[16/9]">
             <img
               src={resolveUrl('/images/brand/trust-reviews.webp')}
               alt="Makimoo customer bedroom"
@@ -52,7 +52,7 @@ export default function V2TrustBanner() {
           </div>
 
           {/* 右卡（窄）：水洗棉面料图 + 短评价（底部暗渐变压白字）；手机端 4/3 横一些（2026-09-22 用户定：高度降低，图由 object-cover 裁切） */}
-          <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-auto">
+          <div className="relative overflow-hidden aspect-[4/3] lg:aspect-auto">
             <img
               src={resolveUrl('/images/fabric-guide/fabric-washed-cotton-like.webp')}
               alt="Makimoo washed cotton fabric"

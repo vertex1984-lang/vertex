@@ -14,7 +14,7 @@ interface CollectionCardProps {
 export default function CollectionCard({ category, title, description, image, href, comingSoon }: CollectionCardProps) {
   const inner = (
     <>
-      <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl">
+      <div className="relative w-full aspect-[4/3] overflow-hidden">
         <img
           src={resolveUrl(image)}
           alt={title}

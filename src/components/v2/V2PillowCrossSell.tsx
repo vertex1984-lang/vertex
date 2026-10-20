@@ -48,7 +48,7 @@ export default function V2PillowCrossSell({
               href={v2url(`${basePath}/${f.slug}/`)}
               className="group block flex-shrink-0 w-[67vw] sm:w-[276px] lg:w-[322px]"
             >
-              <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-warm-gray">
+              <div className="relative overflow-hidden aspect-[4/5] bg-warm-gray">
                 <img
                   src={resolveUrl(f.image)}
                   alt={f.label}

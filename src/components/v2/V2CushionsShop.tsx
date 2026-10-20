@@ -1,8 +1,7 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { BlanketFamily } from '@/data/blanket-families';
 import BeddingSetCard from '@/components/v2/BeddingSetCard';
 import { getSubcategoriesOf } from '@/data/subcategories';
 import {
@@ -16,98 +15,26 @@ import {
  * - 2026-10-09 用户定：按 pillows/bedding 的家族卡结构改造（复用 buildBlanketFamilies 按颜色成族）；
  *   卡片标题/Set of 4 隐藏/变体聚拢排序逻辑抽在 @/data/cushion-families（与 /cushions/[slug]/ 二级页共用）；
  *   compactText 与 pillows/bedding 卡片字体一致
- * - 2026-10-09 用户定：按风格分 3 区展示 + 粘性 Style 筛选下拉（prints / solids / corduroy，
- *   注册表见 subcategories.ts，归位逻辑见 classifyCushion；选中某风格 = 只渲染该分区）
- * - 「N styles from $X」意图回显行 2026-10-10 用户定删除
- * - 排序固定 Featured（权重序）；无筛选交集维度，故无零结果兜底
+ * - 按风格分 3 区展示（corduroy / solids / prints，注册表见 subcategories.ts，归位逻辑见 classifyCushion）
+ * - 2026-10-18 用户定：筛选 UI 整块移除（粘性 Style 下拉 / 移动端 Filter 按钮 + 底部弹层 / URL sub 过滤）——
+ *   风格导航由类目 hero 快链承担（见 V2CushionsCatHero → /cushions/[slug]/ 二级页）
+ * - 排序固定 Featured（权重序）
  */
-export default function V2CushionsShop({
-  products,
-  initialStyle = '',
-}: {
-  products: MakimooProduct[];
-  /** URL ?sub= 深链（旧链接兼容，如 sub=corduroy）；新导航走 /cushions/[slug]/ 二级页 */
-  initialStyle?: string;
-}) {
-  const [style, setStyle] = useState(initialStyle);
-
+export default function V2CushionsShop({ products }: { products: MakimooProduct[] }) {
   const families = useMemo(() => visibleCushionFamilies(products), [products]);
 
   const sorted = useMemo(() => sortCushionFamilies(families), [families]);
 
   // 家族风格 = 代表品的二级分类（enrich 时 classifyCushion 已按变体组归位）
-  const styleOf = (f: BlanketFamily) => f.rep.subcategory || '';
+  const styleOf = (f: (typeof sorted)[number]) => f.rep.subcategory || '';
 
-  // 有产品的风格才进下拉（顺序按注册表：prints → solids → corduroy）
-  const styleOptions = useMemo(
-    () => getSubcategoriesOf('cushions').filter((s) => sorted.some((f) => styleOf(f) === s.key)),
-    [sorted]
-  );
-
-  // 防御旧链接（如 sub=rocking）：不在注册表里的风格按未选处理
-  const activeStyle = styleOptions.some((s) => s.key === style) ? style : '';
-
-  const filtered = useMemo(
-    () => (activeStyle ? sorted.filter((f) => styleOf(f) === activeStyle) : sorted),
-    [sorted, activeStyle]
-  );
-
-  const sections = styleOptions
-    .map((s) => ({ def: s, list: filtered.filter((f) => styleOf(f) === s.key) }))
+  // 有产品的风格才出分区（顺序按注册表：corduroy → solids → prints）
+  const sections = getSubcategoriesOf('cushions')
+    .map((s) => ({ def: s, list: sorted.filter((f) => styleOf(f) === s.key) }))
     .filter((s) => s.list.length > 0);
-
-  const styleLabel = (k: string) => styleOptions.find((s) => s.key === k)?.label || k;
 
   return (
     <div>
-      {/* 「N styles from $X to $Y」意图回显行：2026-10-10 用户定删除（与 bedding 页一致） */}
-
-      {/* 粘性筛选条：Style 下拉（与 pillows 页同款吸顶格式）。
-          背景必须不透明（bg-off-white 实底），z-30 必须低于移动端导航抽屉遮罩 z-40 */}
-      <div className="sticky top-[calc(52px+env(safe-area-inset-top,0px))] lg:top-[calc(88px+env(safe-area-inset-top,0px))] z-30 -mx-3 lg:-mx-10 px-3 lg:px-10 bg-off-white border-y border-[#E8E2DA] py-3 mb-5 lg:mb-7">
-        <div className="flex items-center gap-2 lg:gap-2.5">
-          {styleOptions.length > 1 && (
-            <label className="flex items-center gap-2 flex-shrink-0">
-              <span className="text-[11px] font-semibold uppercase tracking-wider text-[#999]">Style:</span>
-              <select
-                value={activeStyle}
-                onChange={(e) => setStyle(e.target.value)}
-                className={`h-9 lg:h-10 px-3 lg:px-4 rounded-full border text-xs lg:text-sm font-medium bg-white outline-none transition ${
-                  activeStyle
-                    ? 'border-brand text-brand'
-                    : 'border-warm-gray text-charcoal-light hover:border-brand'
-                }`}
-                aria-label="Filter by style"
-              >
-                <option value="">All</option>
-                {styleOptions.map((s) => (
-                  <option key={s.key} value={s.key}>
-                    {s.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-          )}
-        </div>
-        {/* 已选摘要：结果数 + 一键清空（同 pillows 页） */}
-        {activeStyle && (
-          <div className="mt-2 pt-2 border-t border-[#E8E2DA] flex items-center gap-x-2 gap-y-1 flex-wrap text-xs lg:text-sm text-charcoal-light">
-            <span>
-              {styleLabel(activeStyle)}
-              <span className="text-[#999]">
-                {' '}· {filtered.length} style{filtered.length === 1 ? '' : 's'}
-              </span>
-            </span>
-            <button
-              onClick={() => setStyle('')}
-              className="font-semibold text-brand underline underline-offset-2 hover:text-brand-dark"
-            >
-              Clear all
-            </button>
-          </div>
-        )}
-      </div>
-
       {sections.map((s, i) => (
         <section
           key={s.def.key}
@@ -123,6 +50,8 @@ export default function V2CushionsShop({
                 family={{
                   ...f,
                   titleOverride: cushionCardTitle(f),
+                  // 2026-10-18 用户定：cushions 卡也加标题下浅色颜色行（同 bedding/pillows）
+                  colorLine: f.color || undefined,
                 }}
                 compactText
               />

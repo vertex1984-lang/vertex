@@ -43,6 +43,10 @@ const BASE_WEIGHT_OVERRIDES: Record<string, WeightOverride> = {
   // 'linen3-oatmeal-queen': { pin: 3, note: '新品主推，置顶到第 3 位', until: '2026-10-31' },
   // 'b0f1y91hpr': { bury: true, note: '转化差，沉底观察' },
   'b0cjhl4lzp': { boost: 2.1, note: '43x43 油画花卉单品（用户指定不入组），排序紧邻 Outdoor 椅垫家族簇' },
+  // 2026-10-18 用户定：三条新枕头线置顶 Pillows 类目（pin 各自族的代表卡；dedupe 取族内权重最高者为卡）
+  'down-pillow-standard': { pin: 1, note: '新品 Down 床枕置顶第 1 位（用户指定）' },
+  'down-feather-pillow-standard': { pin: 2, note: '新品 Down & Feather 床枕置顶第 2 位（用户指定）' },
+  'microfiber-pillow-standard': { pin: 3, note: '新品 Microfiber 床枕置顶第 3 位（用户指定）' },
 };
 
 /** 生效人工赋权表 = TS 原有条目 + weight-boosts.json 打分（同 asin 时 JSON 优先） */

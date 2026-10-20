@@ -74,7 +74,7 @@ export default function FabricGuidePage() {
           <span className="text-charcoal-light">Fabric Guide</span>
         </nav>
         {/* ── 页头：横幅图 + 图上文案 ── */}
-        <div className="relative overflow-hidden rounded-xl aspect-[4/3] lg:aspect-[21/8] mb-10 lg:mb-16">
+        <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[21/8] mb-10 lg:mb-16">
           <img
             src={resolveUrl('/images/fabric-guide/fabric-banner.webp')}
             alt="Six bedding fabrics side by side"
@@ -105,7 +105,7 @@ export default function FabricGuidePage() {
                   <a
                     key={s.slug}
                     href={`#${s.slug}`}
-                    className="group block flex-shrink-0 w-[56vw] sm:w-[38vw] bg-white rounded-xl border border-warm-gray overflow-hidden transition hover:border-brand hover:-translate-y-0.5 hover:shadow-md"
+                    className="group block flex-shrink-0 w-[56vw] sm:w-[38vw] bg-white border border-warm-gray overflow-hidden transition hover:border-brand hover:-translate-y-0.5 hover:shadow-md"
                   >
                     <div className="relative aspect-[16/9] bg-warm-gray overflow-hidden">
                       <img
@@ -132,7 +132,7 @@ export default function FabricGuidePage() {
                   <a
                     key={s.slug}
                     href={`#${s.slug}`}
-                    className="group block bg-white rounded-xl border border-warm-gray overflow-hidden transition hover:border-brand hover:-translate-y-0.5 hover:shadow-md"
+                    className="group block bg-white border border-warm-gray overflow-hidden transition hover:border-brand hover:-translate-y-0.5 hover:shadow-md"
                   >
                     <div className="relative aspect-[16/9] bg-warm-gray overflow-hidden">
                       <img
@@ -232,7 +232,7 @@ export default function FabricGuidePage() {
                 <Reveal>
                   <div className={`lg:flex lg:items-start lg:gap-14 ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                     <div className="lg:w-1/2 mb-6 lg:mb-0">
-                      <div className="relative overflow-hidden rounded-xl bg-warm-gray aspect-square lg:aspect-[4/3]">
+                      <div className="relative overflow-hidden bg-warm-gray aspect-square lg:aspect-[4/3]">
                         <img
                           src={resolveUrl(f.image || meta.image)}
                           alt={f.key}

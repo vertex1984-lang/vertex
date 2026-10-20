@@ -1322,6 +1322,13 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Temperature Regulating: cool in summer, cozy in winter",
   "Easy Care: machine washable; the characterful texture only improves with age",
   ],
+  "linen3-caramel-queen": [
+  "100% Linen: breathable natural flax, softer with every wash",
+  "Complete 3-Piece Set: duvet cover + 2 pillowcases",
+  "Warm Caramel: rich earthy tone for a cozy, inviting bed",
+  "Temperature Regulating: cool in summer, cozy in winter",
+  "Easy Care: machine washable; the characterful texture only improves with age",
+  ],
   "linen3-ivory-queen": [
   "100% Linen: breathable natural flax, softer with every wash",
   "Complete 3-Piece Set: duvet cover + 2 pillowcases",

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { sortByWeight } from '@/lib/weights';
-import { dedupeFamilyColors } from '@/lib/listing-dedupe';
+import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { spotlightImage } from '@/components/v2/card-utils';
 import V2PillowSubShop from '@/components/v2/V2PillowSubShop';
 import V2PillowCrossSell, { PillowCrossSellItem } from '@/components/v2/V2PillowCrossSell';
@@ -33,7 +33,8 @@ import {
 
 function pillowCards() {
   const enriched = enrichProductsWithShopifyData(PRODUCTS_DATA).filter(isPillowProduct);
-  return sortByWeight(dedupeFamilyColors(enriched));
+  // 同家族色卡聚拢相邻（2026-10-16 用户定：排完一个变体族才到下一个，不穿插）
+  return clusterFamilies(sortByWeight(dedupeFamilyColors(enriched)));
 }
 
 function taxonOf(slug: string): { taxon: PillowTaxon; kind: 'type' | 'material' } | null {
@@ -101,7 +102,7 @@ export default function PillowSubPage({ params }: { params: { slug: string } }) 
           <p className="mt-1.5 lg:mt-2 text-sm lg:text-base text-charcoal-light">{taxon.blurb}</p>
         </div>
 
-        {/* ── 选购区：另一维度下拉 + 分区网格（同 /bedding/bed-sets/ 逻辑）── */}
+        {/* ── 选购区：另一维度下拉 + 分区网格（同 /bedding/ 类型页逻辑）── */}
         <V2PillowSubShop products={products} sectionBy={kind === 'type' ? 'material' : 'type'} />
 
         {/* ── 互导：其他形态/材质图片卡横滑条（含当前类目之外的全部有产品类目）── */}

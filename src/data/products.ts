@@ -26,6 +26,8 @@ export interface MakimooProduct {
   featuredImage?: string;
   // 与素材图对齐的白底标记（true = 白底图，展示时加内边距缩小产品占比）
   imageWhiteBg?: boolean[];
+  // PDP 图集区宽高比覆盖（可选；如 '3/4'，见 image-aspect-overrides.ts，无则默认 1:1.05/方图）
+  imageAspect?: string;
   // 详情页附图（可选；来自素材条目 detailImages，有才渲染，无则不显示）
   detailImages?: string[];
   // 五点卖点缩写（素材库 short-bullets；详情页卖点列表优先使用，无则回退描述切分）
@@ -7326,6 +7328,1275 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-CREAM-12X12",
+    "asin": "MK-TOWEL-LSC-CREAM-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
+    "handle": "long-staple-cotton-towel-cream-12x12-mk-towel-lsc-cream-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Cream — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Cream — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-CREAM-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-CREAM-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-CREAM-20X30",
+    "asin": "MK-TOWEL-LSC-CREAM-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
+    "handle": "long-staple-cotton-towel-cream-20x30-mk-towel-lsc-cream-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Cream — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Cream — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-CREAM-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-CREAM-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-CREAM-30X56",
+    "asin": "MK-TOWEL-LSC-CREAM-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
+    "handle": "long-staple-cotton-towel-cream-30x56-mk-towel-lsc-cream-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Cream — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Cream — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-CREAM-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-CREAM-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-CREAM-40X70",
+    "asin": "MK-TOWEL-LSC-CREAM-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
+    "handle": "long-staple-cotton-towel-cream-40x70-mk-towel-lsc-cream-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Cream — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Cream — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Cream tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-CREAM-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-CREAM-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-CREAM-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-OATMEAL-12X12",
+    "asin": "MK-TOWEL-LSC-OATMEAL-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
+    "handle": "long-staple-cotton-towel-oatmeal-12x12-mk-towel-lsc-oatmeal-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Oatmeal — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Oatmeal — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-OATMEAL-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-OATMEAL-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-OATMEAL-20X30",
+    "asin": "MK-TOWEL-LSC-OATMEAL-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
+    "handle": "long-staple-cotton-towel-oatmeal-20x30-mk-towel-lsc-oatmeal-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Oatmeal — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Oatmeal — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-OATMEAL-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-OATMEAL-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-OATMEAL-30X56",
+    "asin": "MK-TOWEL-LSC-OATMEAL-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
+    "handle": "long-staple-cotton-towel-oatmeal-30x56-mk-towel-lsc-oatmeal-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Oatmeal — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Oatmeal — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-OATMEAL-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-OATMEAL-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-OATMEAL-40X70",
+    "asin": "MK-TOWEL-LSC-OATMEAL-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
+    "handle": "long-staple-cotton-towel-oatmeal-40x70-mk-towel-lsc-oatmeal-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Oatmeal — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Oatmeal — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Oatmeal tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-OATMEAL-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-OATMEAL-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-OATMEAL-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-SAGE-12X12",
+    "asin": "MK-TOWEL-LSC-SAGE-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
+    "handle": "long-staple-cotton-towel-sage-12x12-mk-towel-lsc-sage-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Sage — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Sage — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-SAGE-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-SAGE-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-SAGE-20X30",
+    "asin": "MK-TOWEL-LSC-SAGE-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
+    "handle": "long-staple-cotton-towel-sage-20x30-mk-towel-lsc-sage-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Sage — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Sage — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-SAGE-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-SAGE-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-SAGE-30X56",
+    "asin": "MK-TOWEL-LSC-SAGE-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
+    "handle": "long-staple-cotton-towel-sage-30x56-mk-towel-lsc-sage-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Sage — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Sage — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-SAGE-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-SAGE-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-SAGE-40X70",
+    "asin": "MK-TOWEL-LSC-SAGE-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
+    "handle": "long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Sage — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Sage — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Sage tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-SAGE-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-SAGE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-SAGE-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-12X12",
+    "asin": "MK-TOWEL-LSC-DUSTYROSE-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
+    "handle": "long-staple-cotton-towel-dustyrose-12x12-mk-towel-lsc-dustyrose-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Dusty Rose — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Dusty Rose — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYROSE-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-20X30",
+    "asin": "MK-TOWEL-LSC-DUSTYROSE-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
+    "handle": "long-staple-cotton-towel-dustyrose-20x30-mk-towel-lsc-dustyrose-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Dusty Rose — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Dusty Rose — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYROSE-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-30X56",
+    "asin": "MK-TOWEL-LSC-DUSTYROSE-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
+    "handle": "long-staple-cotton-towel-dustyrose-30x56-mk-towel-lsc-dustyrose-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Dusty Rose — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Dusty Rose — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYROSE-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-40X70",
+    "asin": "MK-TOWEL-LSC-DUSTYROSE-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
+    "handle": "long-staple-cotton-towel-dustyrose-40x70-mk-towel-lsc-dustyrose-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Dusty Rose — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Dusty Rose — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Rose tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYROSE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYROSE-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-12X12",
+    "asin": "MK-TOWEL-LSC-LIGHTGREY-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
+    "handle": "long-staple-cotton-towel-lightgrey-12x12-mk-towel-lsc-lightgrey-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Light Grey — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Light Grey — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-LIGHTGREY-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-20X30",
+    "asin": "MK-TOWEL-LSC-LIGHTGREY-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
+    "handle": "long-staple-cotton-towel-lightgrey-20x30-mk-towel-lsc-lightgrey-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Light Grey — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Light Grey — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-LIGHTGREY-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-30X56",
+    "asin": "MK-TOWEL-LSC-LIGHTGREY-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
+    "handle": "long-staple-cotton-towel-lightgrey-30x56-mk-towel-lsc-lightgrey-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Light Grey — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Light Grey — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-LIGHTGREY-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-40X70",
+    "asin": "MK-TOWEL-LSC-LIGHTGREY-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
+    "handle": "long-staple-cotton-towel-lightgrey-40x70-mk-towel-lsc-lightgrey-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Light Grey — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Light Grey — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Light Grey tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-LIGHTGREY-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-LIGHTGREY-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-12X12",
+    "asin": "MK-TOWEL-LSC-DUSTYBLUE-12X12",
+    "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
+    "handle": "long-staple-cotton-towel-dustyblue-12x12-mk-towel-lsc-dustyblue-12x12",
+    "description": "One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Dusty Blue — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Washcloth Per Pack: This listing includes one 12\" x 12\" washcloth in Dusty Blue — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-12X12/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-12X12/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "12.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYBLUE-12X12",
+        "title": "Default Title",
+        "price": {
+          "amount": "12.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-20X30",
+    "asin": "MK-TOWEL-LSC-DUSTYBLUE-20X30",
+    "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
+    "handle": "long-staple-cotton-towel-dustyblue-20x30-mk-towel-lsc-dustyblue-20x30",
+    "description": "One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Dusty Blue — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Hand towel Per Pack: This listing includes one 20\" x 30\" hand towel in Dusty Blue — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-20X30/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-20X30/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "26.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYBLUE-20X30",
+        "title": "Default Title",
+        "price": {
+          "amount": "26.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-30X56",
+    "asin": "MK-TOWEL-LSC-DUSTYBLUE-30X56",
+    "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
+    "handle": "long-staple-cotton-towel-dustyblue-30x56-mk-towel-lsc-dustyblue-30x56",
+    "description": "One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Dusty Blue — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath towel Per Pack: This listing includes one 30\" x 56\" bath towel in Dusty Blue — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-30X56/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-30X56/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "44.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYBLUE-30X56",
+        "title": "Default Title",
+        "price": {
+          "amount": "44.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-40X70",
+    "asin": "MK-TOWEL-LSC-DUSTYBLUE-40X70",
+    "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
+    "handle": "long-staple-cotton-towel-dustyblue-40x70-mk-towel-lsc-dustyblue-40x70",
+    "description": "One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Dusty Blue — a single towel, not a multi-piece set. Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly. Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel. Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor. Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.",
+    "descriptionHtml": "<p>One Bath sheet Per Pack: This listing includes one 40\" x 70\" bath sheet in Dusty Blue — a single towel, not a multi-piece set.</p><p>Long-Staple Cotton Terry: Woven from long-staple cotton, the plush looped terry feels soft against the skin and soaks up water quickly.</p><p>Substantial 400 g/m² Weave: The dense 400 grams-per-square-meter terry gives the towel a plush, hotel-like hand feel.</p><p>Muted Ins-Style Color: A low-saturation Dusty Blue tone that layers easily with white, cream and natural bathroom decor.</p><p>Easy Care: Machine washable and tumble dry low; the terry gets softer with every wash. Wash before first use.</p>",
+    "productType": "Towels",
+    "tags": [
+      "Towels"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-40X70/1.webp",
+        "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+        {
+          "url": "/images/products/MK-TOWEL-LSC-DUSTYBLUE-40X70/2.webp",
+          "altText": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
+          "width": 1200,
+          "height": 1200
+        }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "69.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-MK-TOWEL-LSC-DUSTYBLUE-40X70",
+        "title": "Default Title",
+        "price": {
+          "amount": "69.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-LINEN3-CARAMEL-QUEEN",
+    "asin": "LINEN3-CARAMEL-QUEEN",
+    "title": "Makimoo 100% Linen Duvet Cover Set 3 Pieces Queen Size with 1 Duvet Cover and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Caramel)",
+    "handle": "makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-caramel-queen",
+    "description": "100% Linen Fabric: Woven from 100% natural linen, this duvet cover set offers a soft, breathable, skin-friendly feel with a naturally slubbed texture that gets softer with every wash. Complete 3-Piece Set: Duvet Cover x 1 (90 x 90 in) + Pillowcases x 2 (20 x 30 in) — a coordinated set that makes refreshing a Queen bed effortless. Warm Caramel Tone: A rich caramel hue that brings earthy warmth to the bedroom; pairs beautifully with cream, beige, walnut wood and neutral decor for a cozy, inviting look. Breathable & Temperature Regulating: Linen naturally wicks moisture and circulates air, keeping you cool in summer and comfortably warm in winter. Easy Care: Machine washable. The fabric resists pilling with proper care, and the characterful linen texture only improves with age.",
+    "descriptionHtml": "<p>100% Linen Fabric: Woven from 100% natural linen, this duvet cover set offers a soft, breathable, skin-friendly feel with a naturally slubbed texture that gets softer with every wash.</p><p>Complete 3-Piece Set: Duvet Cover x 1 (90 x 90 in) + Pillowcases x 2 (20 x 30 in) — a coordinated set that makes refreshing a Queen bed effortless.</p><p>Warm Caramel Tone: A rich caramel hue that brings earthy warmth to the bedroom; pairs beautifully with cream, beige, walnut wood and neutral decor for a cozy, inviting look.</p><p>Breathable &amp; Temperature Regulating: Linen naturally wicks moisture and circulates air, keeping you cool in summer and comfortably warm in winter.</p><p>Easy Care: Machine washable. The fabric resists pilling with proper care, and the characterful linen texture only improves with age.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/LINEN3-CARAMEL-QUEEN/1.webp",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Pieces Queen Size with 1 Duvet Cover and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Caramel)",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "129.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-LINEN3-CARAMEL-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "129.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": [
+          {
+            "name": "Title",
+            "value": "Default Title"
+          }
+        ]
+      }
+    ],
+    "amazonUrl": ""
   }
 ];
 
@@ -7336,6 +8607,7 @@ import { MATERIALS_PRODUCTS } from './products-materials';
 import { SHORT_TITLES } from './short-titles';
 import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
+import { IMAGE_ASPECT_OVERRIDES } from './image-aspect-overrides';
 import { classifyProduct } from './subcategories';
 import { getVariantReviewStats } from './product-reviews';
 
@@ -7360,6 +8632,8 @@ function applyMaterialsData(product: MakimooProduct): MakimooProduct {
       : product.descriptionHtml,
     images: entry.images.map((url) => ({ url, altText: entry.title || product.title, width: 800, height: 800 })),
     imageWhiteBg: entry.whiteBg,
+    // PDP 图集区宽高比覆盖（可选；独立文件不受 materials-map 再生成影响，2026-10-19 用户定）
+    ...(IMAGE_ASPECT_OVERRIDES[product.asin.toLowerCase()] ? { imageAspect: IMAGE_ASPECT_OVERRIDES[product.asin.toLowerCase()] } : {}),
     // 五点卖点缩写（详情页卖点列表优先使用）
     featureBullets: MATERIALS_SHORT_BULLETS[product.asin.toLowerCase()],
     // 详情附图（可选；覆盖表优先——独立文件不受 materials-map 再生成影响）
@@ -7411,7 +8685,11 @@ function normalizeCategory(t: string, title = ''): string {
  *  - 8 款枕套全站隐藏（Pillow Cases 子类目整体移除；注意同变体族的 3 款 cushion covers
  *    b0gjlsdz52/b0gjldmt57/b0gjlmjws1 三款抱枕套 2026-10-08 起也已隐藏；duvset 标题含 pillowcases
  *    但是床品套装，不在隐藏之列） */
-const HIDDEN_HANDLE_PREFIXES = ['inflatable-travel-pillow-'];
+const HIDDEN_HANDLE_PREFIXES = [
+  'inflatable-travel-pillow-',
+  // 2026-10-16 用户定：1688-916370884976 水洗棉撞色三件套全家族移除（C5–C9 全尺寸）
+  'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976',
+];
 const HIDDEN_HANDLES = new Set([
   // 2026-10-08 用户定：B0H4V662HL（45×45 枕芯）与 B0CQC6H9MZ 重复，全站移除
   'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl',
@@ -7427,6 +8705,29 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
   'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
   'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
+  // 2026-10-16 用户定：旧 Amazon 浴巾/手巾全站移除——毛巾类目只留 MK 长绒棉 mk-towel-lsc 族 + 沙滩巾
+  'premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034',
+  '2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4',
+  'premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4',
+  'plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6',
+  'premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7',
+  '2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195',
+  '2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2',
+  '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3',
+  '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2',
+  '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172',
+  // 2026-10-17 用户定：DUVSET 三件套 Butter Yellow / Dill Green 两色下架（数据与图片文件保留）
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king',
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
+  // 2026-10-18 用户定：microfiber 新线（MICROFIBER-PILLOW 族）替代，旧 b0-inserts-rect 两款全站移除
+  'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw',
+  'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf',
 ]);
 
 export function isHiddenProduct(p: { handle: string }): boolean {

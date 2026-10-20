@@ -3,10 +3,15 @@
  * 口径仿 bedding-families 的 duvet 二维家族（颜色×尺寸）——family = 同色组，
  * 尺寸带取变体组内同色成员的 cm 尺寸（卡片层统一补 "cm" 后缀，不在此处重复单位）。
  *
- * 目前全类目仅一条产品线（仿兔毛毯 1688-969627065032，5 色 × 5 尺寸 = 23 SKU，
- * 颜色/尺寸均在 variant-groups.ts 注册）；以后新增毯子产品：
+ * 目前全类目 5 条产品线（仿兔毛绒毯 1688-969627065032、镂空针织 KNIT-THROW、
+ * 波西米亚锯齿 BOHO-THROW、提花 JAC-THROW、豆豆粒 CHUNKY-THROW，2026-10-19 扩）；
+ * 以后新增毯子产品：
  *  - 有变体组（variant-groups.ts 注册 color+size）→ 自动按颜色成族，无需改本文件；
  *  - 无变体组 → 单品成族（sizes 为空，卡片不显示尺寸行）。
+ *
+ * 2026-10-19 用户定：类目页按 bedding/towels 标准重构（Parachute hero + 按系列分区），
+ * 分区注册表 BLANKET_SECTIONS + 归位函数 blanketSectionOf 在本文件末尾，
+ * 页头快链（page.tsx blanketHero）与分区网格（V2BlanketsShop）共用同一口径。
  */
 import { getVariantGroupOf } from '@/data/variant-groups';
 import type { MakimooProduct } from '@/data/products';
@@ -24,8 +29,13 @@ export interface BlanketFamily {
   currency: string;
 }
 
-/** 从 enriched 产品列表构建毯子家族（调用方负责 enrich + 筛 productType === 'Blankets'） */
-export function buildBlanketFamilies(products: MakimooProduct[]): BlanketFamily[] {
+/** 从 enriched 产品列表构建毯子家族（调用方负责 enrich + 筛 productType === 'Blankets'）。
+ *  extraKey（可选）：族 key 追加段——towels 选购页按二级分类拆族（同色跨 Bath/Hand&Face 的
+ *  变体组拆成两张卡，各落各的分区）；blankets 不传，行为不变 */
+export function buildBlanketFamilies(
+  products: MakimooProduct[],
+  extraKey?: (p: MakimooProduct) => string
+): BlanketFamily[] {
   const byAsin = new Map(products.map((p) => [p.asin.toLowerCase(), p]));
   const groups = new Map<string, { color: string; members: { p: MakimooProduct; size: string }[] }>();
   const seen = new Set<string>();
@@ -42,7 +52,7 @@ export function buildBlanketFamilies(products: MakimooProduct[]): BlanketFamily[
       const mp = byAsin.get(m.asin.toLowerCase());
       if (!mp || seen.has(m.asin.toLowerCase())) continue;
       seen.add(m.asin.toLowerCase());
-      const key = `${g.id}::${m.color}`;
+      const key = `${g.id}::${m.color}${extraKey ? `::${extraKey(mp)}` : ''}`;
       let e = groups.get(key);
       if (!e) {
         e = { color: m.color, members: [] };
@@ -74,4 +84,67 @@ export function buildBlanketFamilies(products: MakimooProduct[]): BlanketFamily[
       currency: rep.shopifyCurrencyCode || rep.priceRange.minVariantPrice.currencyCode,
     };
   });
+}
+
+
+// ─── 类目页分区注册表（2026-10-19 用户定） ─────────────────────────────────
+// /products?cat=blankets 按系列分区：分区顺序 = 数组顺序；页头 hero 快链锚点 = section.key；
+// 无产品的分区不出（page.tsx blanketHero 与 V2BlanketsShop 各自按同一归位函数过滤）。
+// groupIds = variant-groups.ts 的组 id；more-blankets 为兜底区（无变体组或未注册组的产品），
+// 其 groupIds 为空——blanketSectionOf 把无法归位的家族都落到它。
+export interface BlanketSection {
+  key: string;
+  label: string;
+  /** 分区标题下副标题（同 bedding 的 SET_KIND_PAGE_COPY.blurb） */
+  blurb: string;
+  groupIds: string[];
+}
+
+export const BLANKET_SECTIONS: BlanketSection[] = [
+  {
+    key: 'knit-throws',
+    label: 'Knit Throws',
+    blurb: 'Airy openwork knit with hand-tied tassels, 50 x 71 in.',
+    groupIds: ['KNIT-THROW'],
+  },
+  {
+    key: 'boho-chevron-throws',
+    label: 'Boho Chevron Throws',
+    blurb: 'Zigzag chevron stripes with tassels, in two sizes.',
+    groupIds: ['BOHO-THROW'],
+  },
+  {
+    key: 'jacquard-throws',
+    label: 'Jacquard Throws',
+    blurb: 'Lightweight Nordic woven patterns, clean edge, no fringe.',
+    groupIds: ['JAC-THROW'],
+  },
+  {
+    key: 'chunky-knit-throws',
+    label: 'Chunky Knit Throws',
+    blurb: 'Plump bobble-knit texture with long tassels, in two sizes.',
+    groupIds: ['CHUNKY-THROW'],
+  },
+  {
+    key: 'faux-fur-throws',
+    label: 'Faux Fur Throws',
+    blurb: 'Cloud-soft faux rabbit fur with carved channel stripes.',
+    groupIds: ['1688-969627065032'],
+  },
+  {
+    key: 'more-blankets',
+    label: 'More Blankets',
+    blurb: '',
+    groupIds: [],
+  },
+];
+
+/** 家族归位：按代表 SKU 的变体组 id 查注册表；查不到（无组/未注册组）→ more-blankets 兜底 */
+export function blanketSectionOf(f: BlanketFamily): string {
+  const g = getVariantGroupOf(f.rep.asin);
+  if (g) {
+    const s = BLANKET_SECTIONS.find((sec) => sec.groupIds.includes(g.id));
+    if (s) return s.key;
+  }
+  return 'more-blankets';
 }
