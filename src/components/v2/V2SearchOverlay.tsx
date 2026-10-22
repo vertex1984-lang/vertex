@@ -12,9 +12,7 @@
  * ④ Recommended Products 系统推荐——大图网格，纯系统排序（评分×ln(1+评论数)+在售优先+
  *    家族去重+类目多样性，去个性化）+ 穿插 RECOMMENDED.recentInsert 个最近浏览产品
  *    （约第 3/7 位让客户再看看）；网格底部 Hide pill 收起、标题行眼睛图标展开（持久化）；
- *    manualHandles 人工置顶单生效于此（运营口，绕过类目多样性）。
- *    卡片图区套图轮播（2026-10-21 任务3，参照 Zara Home，V2CardImageCarousel）：
- *    桌面 hover 箭头点击切图 / 移动横向滑动切图，首尾不循环，无圆点（用户定）。
+ *    manualHandles 人工置顶单生效于此（运营口，绕过类目多样性）
  *
  * 输入态：统一引擎联想（searchAll 家族去重 top6）+ 品类直达行（matchCategories）+
  * Enter/View all → /products/?q=。提交与点击联想记录搜索词（user-profile）。
@@ -26,7 +24,6 @@ import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import type { MakimooProduct } from '@/data/products';
-import V2CardImageCarousel from '@/components/v2/V2CardImageCarousel';
 import { searchAll, matchCategories, familyKeyOf, type CategoryHit } from '@/lib/search-engine';
 import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED, RANK_BADGES } from '@/data/search-config';
 import {
@@ -76,21 +73,6 @@ function cardImage(p: MakimooProduct): { url: string; alt: string } | undefined 
     return { url: shopifyImageUrl(p.shopifyImages[0], 600), alt: p.title };
   }
   return p.images[0] ? { url: p.images[0].url, alt: p.images[0].altText || p.title } : undefined;
-}
-
-/** 产品套图 URL 列表（任务3 轮播图源，2026-10-21）：Shopify CDN 全量 → 本地 images 兜底；按解析后 URL 去重 */
-function carouselUrlsOf(p: MakimooProduct): string[] {
-  const raw =
-    p.shopifyImages && p.shopifyImages.length > 0
-      ? p.shopifyImages.map((u) => shopifyImageUrl(u, 600))
-      : p.images.map((im) => im.url);
-  const seen = new Set<string>();
-  return raw.filter((u) => {
-    const k = resolveUrl(u);
-    if (seen.has(k)) return false;
-    seen.add(k);
-    return true;
-  });
 }
 
 function priceOf(p: MakimooProduct): string {
@@ -556,7 +538,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                       <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
                         {recommended.map((item, i) => {
                           const p = item.p;
-                          const urls = carouselUrlsOf(p);
+                          const img = cardImage(p);
                           return (
                             <a
                               key={p.id}
@@ -572,8 +554,14 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                                     Top Rated
                                   </span>
                                 )}
-                                {/* 套图轮播（2026-10-21 任务3，参照 Zara Home）：桌面 hover 箭头 / 移动滑动，首尾不循环 */}
-                                <V2CardImageCarousel urls={urls} alt={p.title} />
+                                {img && (
+                                  <img
+                                    src={resolveUrl(img.url)}
+                                    alt={img.alt}
+                                    loading="lazy"
+                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                  />
+                                )}
                               </div>
                               <h3 className="mt-2.5 text-xs font-medium text-[#333] leading-snug line-clamp-2">{p.title}</h3>
                               <p className="mt-1 text-sm font-semibold text-[#8B5A2B]">{priceOf(p)}</p>
