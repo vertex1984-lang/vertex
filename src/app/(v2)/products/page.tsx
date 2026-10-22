@@ -1,19 +1,24 @@
 'use client';
 
 import { useState, useEffect, useMemo, useRef } from 'react';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { collapseProductsToGroupCards } from '@/lib/group-cards';
 import V2BeddingShop from '@/components/v2/V2BeddingShop';
 import V2BlanketsShop from '@/components/v2/V2BlanketsShop';
 import V2PillowsShop from '@/components/v2/V2PillowsShop';
 import V2CushionsShop from '@/components/v2/V2CushionsShop';
 import V2TowelsShop from '@/components/v2/V2TowelsShop';
+import V2DecorShop from '@/components/v2/V2DecorShop';
 import V2BeddingCatHero, { BeddingHeroLink } from '@/components/v2/V2BeddingCatHero';
 import V2PillowsCatHero, { PillowsHeroLink } from '@/components/v2/V2PillowsCatHero';
 import V2CushionsCatHero, { CushionsHeroLink } from '@/components/v2/V2CushionsCatHero';
 import V2TowelsCatHero, { TowelsHeroLink } from '@/components/v2/V2TowelsCatHero';
 import V2BlanketsCatHero, { BlanketsHeroLink } from '@/components/v2/V2BlanketsCatHero';
+import V2DecorCatHero, { DecorHeroLink } from '@/components/v2/V2DecorCatHero';
+import V2NotFound from '@/components/v2/V2NotFound';
 import { buildSetFamilies } from '@/data/bedding-families';
 import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
+import { DECOR_SECTIONS, decorSectionOf } from '@/data/decor-families';
 import { BEDDING_FABRICS, fabricDisplayName } from '@/data/bedding-fabrics';
 import { isPillowProduct, PILLOW_TYPES, PILLOW_MATERIALS, pillowTypeOf, pillowMaterialOf } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
@@ -119,6 +124,8 @@ export default function V2ProductsPage() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   // 移动端筛选抽屉
   const [filterOpen, setFilterOpen] = useState(false);
+  // Dining 类目已全站下线（2026-10-21 用户定）：?cat=dining 渲染站内 404 页（同 /aaa 等死链）
+  const [goneCat, setGoneCat] = useState(false);
 
   // 抽屉打开时锁定背景滚动 + Esc 关闭
   useEffect(() => {
@@ -135,6 +142,19 @@ export default function V2ProductsPage() {
     // 无效类目会落进"Shop All 标题 + No products found"空状态，且 Clear Filters 不清 cat 参数
     // （点不动），空状态的 Filter & Sort 抽屉也没有筛选项——直接不留这个页面状态
     const catParam = readUrlParam('cat').toLowerCase();
+    // Dining 类目已全站下线（2026-10-21 用户定）：?cat=dining（含 sub 视图）渲染站内 404 页
+    // （同 /aaa 等死链的 V2NotFound），并注入 robots noindex 防搜索引擎收录该 URL；
+    // 其他无效类目仍走下方 /categories 兼容跳转
+    if (catParam === 'dining') {
+      const meta = document.createElement('meta');
+      meta.name = 'robots';
+      meta.content = 'noindex, nofollow';
+      document.head.appendChild(meta);
+      document.title = 'Page Not Found | Makimoo';
+      setGoneCat(true);
+      setMounted(true);
+      return;
+    }
     // 裸 /products（无 cat 无 q）跳 /categories/（2026-10-20 用户定：全站浏览入口统一到类目页；
     // 带 q 的搜索视图保留在本页）
     if (!catParam && !readUrlParam('q').trim()) {
@@ -213,15 +233,14 @@ export default function V2ProductsPage() {
   );
 
   // Parachute 式页头数据（2026-10-16 用户定，见 V2BeddingCatHero）：
-  // 快链 = 用户定的新五项子分类（URL slug 不变）：Duvet Cover Sets（原 3-piece）/
-  // Sheets & Duvet Sets（原 4-piece）/ Duvet Covers / Sheets（未上线）/ Pillow Covers（未上线），
+  // 快链 = 类型子分类：Sheets & Duvet Sets（4 件套，2026-10-22 起含原三件套家族——
+  // Duvet Cover Sets（3-piece）类型已下线，/bedding/3-piece-sets/ 不再生成、访问 404）/
+  // Duvet Covers / Sheets（未上线）/ Pillow Covers（未上线），
   // 再加有产品的面料页；上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
   const beddingHero = useMemo(() => {
     if (!beddingMaterialMode || isSearching || activeSub) return null;
     const fams = buildSetFamilies(beddingShopProducts);
     const typeLinks: BeddingHeroLink[] = [];
-    if (fams.some((f) => f.kind === 'three'))
-      typeLinks.push({ label: 'Duvet Cover Sets', href: v2url('/bedding/3-piece-sets/') });
     if (fams.some((f) => f.kind === 'four'))
       typeLinks.push({ label: 'Sheets & Duvet Sets', href: v2url('/bedding/4-piece-sets/') });
     if (fams.some((f) => f.kind === 'duvet'))
@@ -333,6 +352,29 @@ export default function V2ProductsPage() {
       .map((s) => ({ label: s.label, href: `#${anchorOf(s.key)}` }));
     return { styleCount: towelShopProducts.length, typeLinks };
   }, [towelsMode, isSearching, activeSub, towelShopProducts]);
+
+  // decor 选购视图（2026-10-21 用户定：按 bedding 类目页结构重构——Parachute 式 hero
+  // （V2DecorCatHero，分区锚点快链）+ 分区家族卡网格（V2DecorShop，DECOR_SECTIONS 注册表同口径），
+  // 无筛选条/排序下拉/左侧栏；分区 = Wall Art / Trays & Tabletop（原 Dining 并入产品）/ More Decor。
+  // 传未去重原始列表，collapseToFamilies 需要看到全部尺寸 SKU（同 blankets 口径）
+  const decorMode = activeCategory.toLowerCase() === 'decor';
+  const decorShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'decor'
+      ),
+    []
+  );
+
+  // decor 类目页头数据：快链 = 有产品的分区（页内锚点 #<DECOR_SECTIONS.key>；decor 无二级页，
+  // 同 towels/blankets），上标数 = 全部 SKU 数（全类目共通口径）
+  const decorHero = useMemo(() => {
+    if (!decorMode || isSearching || activeSub) return null;
+    const typeLinks: DecorHeroLink[] = DECOR_SECTIONS.filter((s) =>
+      decorShopProducts.some((p) => decorSectionOf(p) === s.key)
+    ).map((s) => ({ label: s.label, href: `#${s.key}` }));
+    return { styleCount: decorShopProducts.length, typeLinks };
+  }, [decorMode, isSearching, activeSub, decorShopProducts]);
 
   // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
   // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
@@ -469,9 +511,13 @@ export default function V2ProductsPage() {
     [filtered, sortBy, isSearching]
   );
 
+  // 一组一卡（2026-10-22 用户定）：类目/搜索网格按变体组折叠为组卡（色卡展示全部颜色），
+  // 分批加载按组计数
+  const groupCards = useMemo(() => collapseProductsToGroupCards(sortedFiltered), [sortedFiltered]);
+
   // 无限滚动：哨兵进入视口即加载下一批（2026-09 用户定：子分类页下拉自动显示更多，替代 Load More 按钮）。
   // rootMargin 提前 600px 触发，滚到底之前内容已就位；视口过大时哨兵持续可见会连续触发，直到填满或加载完
-  const hasMore = visibleCount < sortedFiltered.length;
+  const hasMore = visibleCount < groupCards.length;
   const sentinelRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = sentinelRef.current;
@@ -503,7 +549,10 @@ export default function V2ProductsPage() {
           products: clusterFamilies(sortByWeight(categoryProducts.filter((p) => styleKeyOf(p) === rule.key))),
         })).filter((s) => s.products.length > 0);
     const total = grouped.reduce((n, s) => n + s.products.length, 0);
-    return grouped.length >= 2 && total >= 4 ? grouped : [];
+    // 一组一卡（2026-10-22 用户定）：分区内按变体组折叠为组卡（色卡展示全部颜色）
+    return grouped.length >= 2 && total >= 4
+      ? grouped.map((s) => ({ ...s, cards: collapseProductsToGroupCards(s.products) }))
+      : [];
   }, [activeCategory, isSearching, activeSub, materialSel, sortBy, categoryProducts, beddingMaterialMode, collectionOptions, styleKeyOf]);
 
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
@@ -521,14 +570,18 @@ export default function V2ProductsPage() {
   // 浏览器 tab 标题按当前视图动态设置（2026-10-20 用户提：/products 是静态导出单页，
   // 构建期只能写死 "Shop All Products"，类目/细分在客户端才确定，需挂载后改 document.title）
   useEffect(() => {
-    if (!mounted) return;
+    if (!mounted || goneCat) return; // goneCat（?cat=dining 404 视图）的标题已在挂载分支写死
     const t = subDef && categoryDef ? `${subDef.label} – ${categoryDef.label}` : pageTitle;
     document.title = `${t} | Makimoo`;
-  }, [mounted, pageTitle, subDef, categoryDef]);
+  }, [mounted, goneCat, pageTitle, subDef, categoryDef]);
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+
+  // ?cat=dining（已下线类目）：渲染站内 404 页（V2NotFound，同 /aaa 等死链），
+  // Header/Footer 由 (v2) 布局提供（2026-10-21 用户定）
+  if (goneCat) return <V2NotFound />;
 
   return (
     /* 全宽容器：无 max-w 盒子、无页面边框。
@@ -538,7 +591,7 @@ export default function V2ProductsPage() {
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序。
           bedding/pillows/cushions/towels 类目页面包屑整块移除（2026-10-16 用户定：Parachute 式 hero 已承担导航，
           "Home / Bedding" 与 hero 标题信息重复，双端都不显示；cushions/towels 2026-10-18 加入） */}
-      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && (
+      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && !decorHero && (
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
         <span className="mx-1.5">/</span>
@@ -588,6 +641,12 @@ export default function V2ProductsPage() {
           intro={categoryDef?.intro || ''}
           typeLinks={blanketHero.typeLinks}
         />
+      ) : decorHero ? (
+        <V2DecorCatHero
+          styleCount={decorHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={decorHero.typeLinks}
+        />
       ) : (
       <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
         <div>
@@ -600,7 +659,7 @@ export default function V2ProductsPage() {
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
             bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
-        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && (
+        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -720,6 +779,11 @@ export default function V2ProductsPage() {
         /* towels 选购视图（2026-10-15 用户定，按 pillows/cushions 结构重建；
            2026-10-18 按 bedding 页结构重构：移除筛选，hero 快链 → 页内锚点分区） */
         <V2TowelsShop products={towelShopProducts} />
+      ) : decorMode && !isSearching ? (
+        /* decor 选购视图（2026-10-21 用户定：按 bedding 页结构重构——
+           Parachute 式 hero（V2DecorCatHero，分区锚点快链）+ 分区家族卡网格（V2DecorShop）。
+           传未去重原始列表（同 blankets 口径）：collapseToFamilies 需看到全部尺寸 SKU */
+        <V2DecorShop products={decorShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */
@@ -738,7 +802,7 @@ export default function V2ProductsPage() {
             </button>
           </div>
           <div className="space-y-10 lg:space-y-16">
-            {sections.map(({ def, products }) => (
+            {sections.map(({ def, cards }) => (
               <section key={def.key}>
                 <div className="mb-4 lg:mb-5">
                   <h2 className="text-lg lg:text-2xl font-extrabold text-[#333]">{def.label}</h2>
@@ -747,29 +811,30 @@ export default function V2ProductsPage() {
                     <p className="mt-1 text-xs lg:text-sm text-[#999]">{BEDDING_MATERIAL_BLURBS[def.label]}</p>
                   )}
                 </div>
-                {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格） */}
+                {/* 移动端：2 列 × 3 行（gap-2 与全站移动端产品网格一致；2026-09 由横滑条统一改为网格）；
+                    2026-10-22 一组一卡：渲染组卡（cards），截断/View More 口径同步按组计数 */}
                 <div className="lg:hidden grid grid-cols-2 gap-2">
-                  {products.slice(0, SECTION_LIMITS.mobile).map((p) => (
-                    <V2ProductCard key={p.id} product={p} />
+                  {cards.slice(0, SECTION_LIMITS.mobile).map((c) => (
+                    <GroupProductCard key={c.key} card={c} />
                   ))}
                 </div>
                 {/* 桌面 lg：3 列 × 3 行 */}
                 <div className="hidden lg:grid xl:hidden grid-cols-3 gap-6">
-                  {products.slice(0, SECTION_LIMITS.lg).map((p) => (
-                    <V2ProductCard key={p.id} product={p} />
+                  {cards.slice(0, SECTION_LIMITS.lg).map((c) => (
+                    <GroupProductCard key={c.key} card={c} />
                   ))}
                 </div>
                 {/* 桌面 xl：4 列 × 3 行 */}
                 <div className="hidden xl:grid grid-cols-4 gap-6">
-                  {products.slice(0, SECTION_LIMITS.xl).map((p) => (
-                    <V2ProductCard key={p.id} product={p} />
+                  {cards.slice(0, SECTION_LIMITS.xl).map((c) => (
+                    <GroupProductCard key={c.key} card={c} />
                   ))}
                 </div>
                 {/* View More：只在当前断点确实有截断时显示（7-9 款仅移动端截断，10-12 款仅 lg 截断） */}
-                {products.length > SECTION_LIMITS.mobile && (
+                {cards.length > SECTION_LIMITS.mobile && (
                   <div
                     className={`mt-5 lg:mt-8 text-center ${
-                      products.length <= SECTION_LIMITS.lg ? 'lg:hidden' : products.length <= SECTION_LIMITS.xl ? 'xl:hidden' : ''
+                      cards.length <= SECTION_LIMITS.lg ? 'lg:hidden' : cards.length <= SECTION_LIMITS.xl ? 'xl:hidden' : ''
                     }`}
                   >
                     <button
@@ -827,11 +892,11 @@ export default function V2ProductsPage() {
           </div>
           )}
 
-          {sortedFiltered.length > 0 ? (
+          {groupCards.length > 0 ? (
             <>
               <div className={gridCls}>
-                {sortedFiltered.slice(0, visibleCount).map((product) => (
-                  <V2ProductCard key={product.id} product={product} />
+                {groupCards.slice(0, visibleCount).map((card) => (
+                  <GroupProductCard key={card.key} card={card} />
                 ))}
               </div>
               {/* 无限滚动哨兵：进入视口自动加载下一批；不显示产品数量，仅提示加载中（2026-09 用户定） */}

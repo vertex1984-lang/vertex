@@ -34,8 +34,9 @@ export default function ToastProvider({ children }: { children: ReactNode }) {
   return (
     <ToastContext.Provider value={{ toast }}>
       {children}
-      {/* Toast 容器：右上角堆叠 */}
-      <div className="fixed top-4 right-4 z-[3000] flex flex-col gap-2 pointer-events-none">
+      {/* Toast 容器：顶部居中堆叠（2026-10-21 用户定：原右上角位置会挡住迷你购物车抽屉里
+          首条商品的移除 X 键——抽屉右侧锚定，改为顶部居中后手机/桌面均不与抽屉重叠） */}
+      <div className="fixed top-4 left-1/2 -translate-x-1/2 z-[3000] flex flex-col items-center gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div
             key={t.id}

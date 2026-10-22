@@ -23,6 +23,8 @@ export type V2CardProduct = Pick<
   | 'shopifyCurrencyCode'
   | 'images'
   | 'priceRange'
+  | 'rating'
+  | 'reviewCount'
 > & { tagLabel?: string; familyKey?: string; familyColor?: string };
 
 interface V2ProductCardProps {

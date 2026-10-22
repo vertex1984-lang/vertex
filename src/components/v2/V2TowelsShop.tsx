@@ -2,10 +2,10 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards } from '@/lib/group-cards';
 import { getSubcategoriesOf } from '@/data/subcategories';
 import {
-  towelCardTitle,
   visibleTowelFamilies,
   sortTowelFamilies,
 } from '@/data/towel-families';
@@ -50,17 +50,11 @@ export default function V2TowelsShop({ products }: { products: MakimooProduct[] 
             {s.def.label}
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {s.list.map((f) => (
-              <BeddingSetCard
-                key={f.key}
-                family={{
-                  ...f,
-                  titleOverride: towelCardTitle(f, s.def.label),
-                  // 2026-10-18 用户定：towels 卡也加标题下浅色颜色行（同 bedding/pillows/cushions）
-                  colorLine: f.color || undefined,
-                }}
-                compactText
-              />
+            {/* 2026-10-22 一组一卡：同组同色并卡 + 色卡行（取代颜色文字行）；
+                按二级分类拆卡的策略保留（家族 key 带 ::二级分类 后缀，组 key 同口径拆分）；
+                卡面标题走 familyCardDisplay（towels = towelCardTitle，同口径） */}
+            {buildGroupCards(s.list).map((c) => (
+              <GroupProductCard key={c.key} card={c} compactText />
             ))}
           </div>
         </section>

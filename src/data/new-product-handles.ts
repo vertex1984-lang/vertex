@@ -502,7 +502,43 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream',
   'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-cream',
   'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey',
-  'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey',
+  'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey',  // 2026-10-21：Embossed Velvet 绒球四件套（7 色 × 4 尺寸）
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-vine-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-vine-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-vine-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-vine-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-blush-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-blush-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-blush-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-blush-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-ink-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-ink-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-ink-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-ink-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-king',
+  'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-damask-twin',
+  'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-damask-full',
+  'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-damask-queen',
+  'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-damask-king',  // 2026-10-22：Cotton Percale 提花四件套（4 色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-haze-queen',
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-rose-queen',
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-grey-queen',
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-oatbeige-queen',  // 2026-10-22：Cotton Percale 细条纹提花四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-stripe-petal-queen',  // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-patchwork-stone-queen',  // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-washed-cotton-stripe-sage-queen',  // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-washed-cotton-jacquard-cream-queen',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

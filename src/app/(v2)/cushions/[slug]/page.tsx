@@ -3,10 +3,10 @@ import { notFound } from 'next/navigation';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { getSubcategoriesOf, getSubcategoryDef } from '@/data/subcategories';
 import { spotlightImage } from '@/components/v2/card-utils';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards } from '@/lib/group-cards';
 import V2PillowCrossSell, { PillowCrossSellItem } from '@/components/v2/V2PillowCrossSell';
 import {
-  cushionCardTitle,
   visibleCushionFamilies,
   sortCushionFamilies,
 } from '@/data/cushion-families';
@@ -80,17 +80,13 @@ export default function CushionSubPage({ params }: { params: { slug: string } })
           <p className="mt-1.5 lg:mt-2 text-sm lg:text-base text-charcoal-light">{def.blurb}</p>
         </div>
 
-        {/* ── 家族卡网格（同列表页分区网格样式）── */}
+        {/* ── 组卡网格（同列表页分区网格样式；2026-10-22 一组一卡：同组各色并卡 + 色卡行，
+            卡面标题走 familyCardDisplay 的 cushionCardTitle 同口径）── */}
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-          {families.map((f) => (
-            <BeddingSetCard
-              key={f.key}
-              family={{
-                ...f,
-                titleOverride: cushionCardTitle(f),
-                // 2026-10-18 用户定：cushions 卡也加标题下浅色颜色行（同 bedding/pillows）
-                colorLine: f.color || undefined,
-              }}
+          {buildGroupCards(families).map((c) => (
+            <GroupProductCard
+              key={c.key}
+              card={c}
               compactText
             />
           ))}

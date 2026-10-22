@@ -2,10 +2,10 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards } from '@/lib/group-cards';
 import { getSubcategoriesOf } from '@/data/subcategories';
 import {
-  cushionCardTitle,
   visibleCushionFamilies,
   sortCushionFamilies,
 } from '@/data/cushion-families';
@@ -44,17 +44,10 @@ export default function V2CushionsShop({ products }: { products: MakimooProduct[
             {s.def.label}
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {s.list.map((f) => (
-              <BeddingSetCard
-                key={f.key}
-                family={{
-                  ...f,
-                  titleOverride: cushionCardTitle(f),
-                  // 2026-10-18 用户定：cushions 卡也加标题下浅色颜色行（同 bedding/pillows）
-                  colorLine: f.color || undefined,
-                }}
-                compactText
-              />
+            {/* 2026-10-22 一组一卡：同组各色并卡 + 色卡行；Set of 4 隐藏策略保留
+                （visibleCushionFamilies 上游剔除）；卡面标题走 familyCardDisplay（cushionCardTitle 同口径） */}
+            {buildGroupCards(s.list).map((c) => (
+              <GroupProductCard key={c.key} card={c} compactText />
             ))}
           </div>
         </section>

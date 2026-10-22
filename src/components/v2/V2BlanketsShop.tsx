@@ -2,8 +2,9 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS, BlanketFamily } from '@/data/blanket-families';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards } from '@/lib/group-cards';
 import { sortByWeight } from '@/lib/weights';
 
 /**
@@ -13,15 +14,8 @@ import { sortByWeight } from '@/lib/weights';
  *   与页头 hero 快链同口径，见 V2BlanketsShop 的分区锚点 = section.key），
  *   卡面加标题下浅色颜色行（同 bedding/pillows/cushions/towels）；排序固定 Featured（权重序）
  * 无筛选条/排序下拉（blanketsMode 在 page.tsx 已豁免）；卡片不叠 badge（全站开关关闭中）。
+ * blanketCardTitle 2026-10-21 抽入 @/data/blanket-families（familyCardDisplay 全站分派复用同一份）。
  */
-/** 卡面标题 = 代表品短标题去掉尾部「, 尺寸」和「, 颜色」段（颜色移到标题下 colorLine，
- *  尺寸由尺寸带表达；同 towels 的 towelCardTitle 思路） */
-function blanketCardTitle(f: BlanketFamily): string {
-  const esc = f.color.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return (f.rep.title || '')
-    .replace(/,\s*\d+\s*x\s*\d+\s*(cm|in)$/i, '')
-    .replace(new RegExp(`,\\s*${esc}$`, 'i'), '');
-}
 
 export default function V2BlanketsShop({ products }: { products: MakimooProduct[] }) {
   const families = useMemo(() => buildBlanketFamilies(products), [products]);
@@ -53,18 +47,10 @@ export default function V2BlanketsShop({ products }: { products: MakimooProduct[
             {s.def.blurb && <p className="mt-1 text-xs lg:text-sm text-[#999]">{s.def.blurb}</p>}
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {s.list.map((f) => (
-              <BeddingSetCard
-                key={f.key}
-                family={{
-                  ...f,
-                  titleOverride: blanketCardTitle(f),
-                  // 2026-10-19 用户定：blankets 卡也加标题下浅色颜色行（同 bedding/pillows/cushions/towels）
-                  colorLine: f.color || undefined,
-                }}
-                sizesSuffix="cm"
-                compactText
-              />
+            {/* 2026-10-22 一组一卡：同组各色并卡，色卡展示全部颜色；
+                卡面标题走 familyCardDisplay（blankets = blanketCardTitle，同口径） */}
+            {buildGroupCards(s.list).map((c) => (
+              <GroupProductCard key={c.key} card={c} compactText />
             ))}
           </div>
         </section>

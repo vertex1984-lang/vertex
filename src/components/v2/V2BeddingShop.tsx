@@ -4,8 +4,8 @@ import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
 import { buildSetFamilies, classifySet, clusterSetFamilies, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards, collapseProductsToGroupCards } from '@/lib/group-cards';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors } from '@/lib/listing-dedupe';
 import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
@@ -16,8 +16,8 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
  * - 2026-10-16 用户定：页头改 Parachute 式 hero（见 V2BeddingCatHero，类型/面料二级页快链
  *   承担导航），本组件的 Type/Fabric 筛选条（含移动端 Filter 弹层）整体移除；
  *   旧 ?type=/?sub= 深链失效后降级为完整分区视图
- * - 视图固定为【按类型分区】展示全部家族（2026-10-16 用户定：取代原按材质分区，
- *   分区与 hero 快链五项同口径）：Duvet Cover Sets（3 件套）→ Sheets & Duvet Sets（4 件套）
+ * - 视图固定为【按类型分区】展示全部家族（2026-10-16 用户定：取代原按材质分区；
+ *   分区与 hero 快链同口径）：Sheets & Duvet Sets（4 件套，2026-10-22 起含原三件套家族）
  *   → Duvet Covers →（Sheets / Pillow Covers 无产品不出分区；Comforter 有产品时排最后）；
  *   分区标题 + 套装内容副标题（SET_KIND_PAGE_COPY）+ BeddingSetCard 网格；排序固定 Featured/权重序
  * - 卡片按色系家族聚合（23 款而非 92 SKU，减少选择瘫痪）
@@ -25,8 +25,8 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
  * 旧聚合页 V2BeddingLanding 组件保留在磁盘上备用（全站已无入口）。
  */
 
-/** 分区顺序（2026-10-16 用户定，与 hero 快链一致）；comforter 不在五项里，有产品时兜底排最后 */
-const SECTION_KIND_ORDER: SetKind[] = ['three', 'four', 'duvet', 'comforter'];
+/** 分区顺序（2026-10-16 用户定，与 hero 快链一致；2026-10-22 three 下线并入 four）；comforter 不在类型快链里，有产品时兜底排最后 */
+const SECTION_KIND_ORDER: SetKind[] = ['four', 'duvet', 'comforter'];
 
 export default function V2BeddingShop({ products }: { products: MakimooProduct[] }) {
   // 家族聚合 + 未匹配家族规则的兜底产品（新增 bedding 产品若不符合 ASIN 前缀规律也不会消失）。
@@ -82,17 +82,19 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
             <p className="mt-1 text-xs lg:text-sm text-[#999]">{s.copy.blurb}</p>
           </div>
           {/* 类型分区标题已表类型；卡片图上叠布料标签（2026-09 用户定规则：
-              卡片只叠「标题未表达的另一维度」；badge 开关全站关闭中，见 BeddingSetCard） */}
+              卡片只叠「标题未表达的另一维度」；badge 开关全站关闭中，见 GroupProductCard）。
+              2026-10-22 一组一卡：分区内 SetFamily 按变体组并卡（buildGroupCards），色卡展示全部颜色；
+              缎面 1688 组 / BEDSET4-BC 纯色组的剔除在上游 page.tsx 产品过滤，不受影响 */}
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {s.list.map((f) => (
-              <BeddingSetCard
-                key={f.key}
-                family={f}
-                badges={f.materials[0] ? [fabricDisplayName(f.materials[0])] : []}
+            {buildGroupCards(s.list).map((c) => (
+              <GroupProductCard
+                key={c.key}
+                card={c}
+                badges={c.materials?.[0] ? [fabricDisplayName(c.materials[0])] : []}
                 compactText
                 tallImage
-                cropBiasRight={!f.key.toLowerCase().startsWith('duvset')}
-                anchorLeft={f.key.toLowerCase().startsWith('duvset')}
+                cropBiasRight={!c.key.toLowerCase().startsWith('duvset')}
+                anchorLeft={c.key.toLowerCase().startsWith('duvset')}
               />
             ))}
           </div>
@@ -102,8 +104,8 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
         <>
           <h2 className="mt-10 lg:mt-14 mb-4 text-lg lg:text-2xl font-extrabold text-[#333]">More Bedding</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {unclassified.map((p) => (
-              <V2ProductCard key={p.id} product={p} tallImage cropBiasRight />
+            {collapseProductsToGroupCards(unclassified).map((c) => (
+              <GroupProductCard key={c.key} card={c} tallImage cropBiasRight />
             ))}
           </div>
         </>

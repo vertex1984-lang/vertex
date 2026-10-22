@@ -8,8 +8,13 @@ import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
  * - 移动端：场景图（4:3 裁剪偏上取墙面 + 枕头区）上叠标题 + 描述，图下横滚标签快链
  * 快链 = 有产品的形态页（/pillows/pillow-inserts/ 等）+ 填充材质页；Down 无产品标 Coming Soon。
  * 链接清单由 products/page.tsx 按在售产品动态算出后传入。
- * hero 图：移动端 = pdp-lifestyle/pillow-lifestyle-tall.webp（竖版床景）；
- * 桌面端 = pdp-lifestyle/pillow-boucle-sofa.webp（2026-10-16 用户定：猫图宽切不好看，换沙发场景）。
+ * hero 图（2026-10-21 用户定，三轮终版）：双端同用 pdp-lifestyle/pillow-hero-warm.webp——
+ * 以二轮灰调床景为参考重绘：床与床上白色枕芯/被芯的颜色、材质、褶皱细节不变，
+ * 房间换成本站暖色系（暖米白墙 + 暖灰褐床头），小红书式种草图氛围（SeeAny 生成，
+ * scripts/seeany-pillows-hero-black.js，4:3 横板）；移动端容器即 4:3，整图完整显示不裁切；
+ * 桌面端 object-cover 裁上下取床品主体横带。
+ * 一轮黑底版 pillow-hero-black.webp、二轮灰调版 pillow-hero-gray.webp 与更早的
+ * pillow-lifestyle-tall.webp / pillow-boucle-sofa.webp 均保留磁盘备用。
  */
 
 export interface PillowsHeroLink {
@@ -62,10 +67,12 @@ export default function V2PillowsCatHero({
       {/* 移动端：场景图上叠标题/描述 + 图下横滚标签；-mt-3 紧贴顶部导航（同 bedding，2026-10-16 用户定） */}
       <section className="lg:hidden mb-5" aria-label="Pillows overview">
         <div className="relative -mx-3 -mt-3">
+          {/* 移动端：4:3 容器 = 原图比例，整图完整显示不裁切（2026-10-21 用户定）；
+              暖调图上部叠白字 + 黑渐变保底可读性 */}
           <img
-            src={resolveUrl('/images/pdp-lifestyle/pillow-lifestyle-tall.webp')}
-            alt="Sunlit bedroom with pillows arranged on a wooden bed"
-            className="w-full aspect-[4/3] object-cover object-[center_26%]"
+            src={resolveUrl('/images/pdp-lifestyle/pillow-hero-warm.webp')}
+            alt="White pillow inserts and a white duvet insert arranged on a bed in a warm cream bedroom"
+            className="w-full aspect-[4/3] object-cover object-center"
           />
           {/* 图上部加深渐变罩 + 白色字保底可读性（2026-10-16 用户定：移动端图加深、文字改白色；字号/位置不变） */}
           <div className="absolute inset-x-0 top-0 px-4 pt-10 pb-4 bg-gradient-to-b from-black/50 via-black/20 to-transparent">
@@ -109,12 +116,12 @@ export default function V2PillowsCatHero({
       {/* 桌面端：通栏横版 hero（-mx-10 打满屏宽、-mt-4 紧贴顶部导航）+ 图下导航排（同 bedding） */}
       <section className="hidden lg:block mb-10" aria-label="Pillows overview">
         <div className="relative -mx-10 -mt-4">
-          {/* 桌面端 hero 图 = pillow-boucle-sofa.webp（2026-10-16 用户定：原猫图宽幅裁剪不好看，
-              换明亮的沙发抱枕场景；取抱枕 + 墙面区横切） */}
+          {/* 桌面端 hero 图 = pillow-hero-warm.webp（2026-10-21 用户定：本站暖色系种草图，
+              白色枕芯+被芯不变；横带裁剪取床品主体区，左侧黑渐变罩保底白字可读性） */}
           <img
-            src={resolveUrl('/images/pdp-lifestyle/pillow-boucle-sofa.webp')}
-            alt="Boucle throw pillows on a sunlit sofa"
-            className="w-full h-[400px] xl:h-[460px] object-cover object-[center_28%]"
+            src={resolveUrl('/images/pdp-lifestyle/pillow-hero-warm.webp')}
+            alt="White pillow inserts and a white duvet insert arranged on a bed in a warm cream bedroom"
+            className="w-full h-[400px] xl:h-[460px] object-cover object-[center_55%]"
           />
           {/* 深色罩 + 白色字（2026-10-16 用户定，回到该方案：位置/颜色还原初始，
               左侧黑渐变保底文字可读性；图其余区域保持原色） */}
