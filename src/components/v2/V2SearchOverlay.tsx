@@ -12,7 +12,9 @@
  * ④ Recommended Products 系统推荐——大图网格，纯系统排序（评分×ln(1+评论数)+在售优先+
  *    家族去重+类目多样性，去个性化）+ 穿插 RECOMMENDED.recentInsert 个最近浏览产品
  *    （约第 3/7 位让客户再看看）；网格底部 Hide pill 收起、标题行眼睛图标展开（持久化）；
- *    manualHandles 人工置顶单生效于此（运营口，绕过类目多样性）
+ *    manualHandles 人工置顶单生效于此（运营口，绕过类目多样性）。
+ *    卡片图区套图轮播（2026-10-21 任务3，参照 Zara Home，V2CardImageCarousel）：
+ *    桌面 hover 箭头点击切图 / 移动横向滑动切图，首尾不循环，无圆点（用户定）。
  *
  * 输入态：统一引擎联想（searchAll 家族去重 top6）+ 品类直达行（matchCategories）+
  * Enter/View all → /products/?q=。提交与点击联想记录搜索词（user-profile）。
@@ -24,6 +26,7 @@ import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import type { MakimooProduct } from '@/data/products';
+import V2CardImageCarousel from '@/components/v2/V2CardImageCarousel';
 import { searchAll, matchCategories, familyKeyOf, type CategoryHit } from '@/lib/search-engine';
 import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED, RANK_BADGES } from '@/data/search-config';
 import {
@@ -73,6 +76,21 @@ function cardImage(p: MakimooProduct): { url: string; alt: string } | undefined 
     return { url: shopifyImageUrl(p.shopifyImages[0], 600), alt: p.title };
   }
   return p.images[0] ? { url: p.images[0].url, alt: p.images[0].altText || p.title } : undefined;
+}
+
+/** 产品套图 URL 列表（任务3 轮播图源，2026-10-21）：Shopify CDN 全量 → 本地 images 兜底；按解析后 URL 去重 */
+function carouselUrlsOf(p: MakimooProduct): string[] {
+  const raw =
+    p.shopifyImages && p.shopifyImages.length > 0
+      ? p.shopifyImages.map((u) => shopifyImageUrl(u, 600))
+      : p.images.map((im) => im.url);
+  const seen = new Set<string>();
+  return raw.filter((u) => {
+    const k = resolveUrl(u);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
 }
 
 function priceOf(p: MakimooProduct): string {
@@ -247,12 +265,12 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
     jumpSearch(q);
   };
 
-  // ③ 换一批：批次步进循环整个画像池
-  const persBatch = persPool.slice(persStart, persStart + PERSONALIZED.batchSize);
+  // ③ 换一批：批次步进循环整个画像池（步长=桌面批 10；手机每屏取批内前 8 个）
+  const persBatch = persPool.slice(persStart, persStart + PERSONALIZED.desktopBatchSize);
   const refreshPersonalized = () => {
     trackEvent('personalized_refresh');
     setPersStart((s) => {
-      const next = s + PERSONALIZED.batchSize;
+      const next = s + PERSONALIZED.desktopBatchSize;
       return next >= persPool.length ? 0 : next;
     });
   };
@@ -266,8 +284,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       style={{ animation: 'fadeIn 0.18s ease-out' }}
     >
       {/* 顶部搜索条：大输入框 + 关闭（触控目标 44px） */}
-      <div className="border-b border-warm-gray bg-off-white px-4 lg:px-10 pt-3 pb-3">
-        <div className="max-w-3xl mx-auto flex items-center gap-2">
+        <div className="border-b border-warm-gray bg-off-white px-4 lg:px-10 pt-3 pb-3">
+        <div className="max-w-3xl mx-auto flex items-center gap-2 lg:max-w-none">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="text-charcoal-light flex-shrink-0">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16" y2="16"/>
           </svg>
@@ -293,9 +311,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
       </div>
 
       <div className="flex-1 overflow-y-auto overscroll-contain">
-        <div className="max-w-5xl mx-auto px-4 lg:px-10 py-6">
+        {/* 桌面端全宽（Parachute 式，2026-10 用户定）；移动端保持 px-4 流式 */}
+        <div className="px-4 lg:px-10 py-6">
           {searching ? (
-            <>
+            <div className="lg:max-w-5xl">
               {/* 品类直达行 */}
               {categories.length > 0 && (
                 <div className="mb-5 flex flex-wrap gap-2">
@@ -356,9 +375,11 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   View all results for &ldquo;{debounced}&rdquo;
                 </button>
               </div>
-            </>
+          </div>
           ) : (
-            <>
+            <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-10">
+              {/* 桌面左栏：历史 + 热词竖排胶囊（Parachute 式）；移动端仍是纵向堆叠流 */}
+              <aside>
               {/* ── ① 历史搜索：文字胶囊 / 🗑 清空 / ▽ 折叠 ── */}
               {history.length > 0 && (
                 <section className="mb-7">
@@ -398,7 +419,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                     </div>
                   </div>
                   {!historyCollapsed && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 lg:flex-col lg:items-start">
                       {history.slice(0, HISTORY_SHOW_MAX).map((term) => (
                         <button
                           key={term}
@@ -423,7 +444,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   <h2 className="text-lg font-semibold mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     Search Suggestions
                   </h2>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 lg:flex-col lg:items-start">
                     {HOT_SEARCHES.map((hot) => (
                       <a
                         key={hot.label}
@@ -437,7 +458,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   </div>
                 </section>
               )}
+              </aside>
 
+              {/* 桌面右主区：个性推荐横条 + 系统推荐大图网格；移动端继续纵向流 */}
+              <div className="min-w-0">
               {/* ── ③ Picked for You 个性推荐：画像气泡（左端小主图）/ 🔄 换一批 / ▽ 折叠 ── */}
               {persPool.length > 0 && (
                 <section className="mb-7">
@@ -473,9 +497,10 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                     </div>
                   </div>
                   {!personalizedCollapsed && (
-                    /* 移动端两列网格（一行两个、8 个=4 行，2026-10 用户定）；
-                       桌面端保持流式气泡（内容自适应宽度） */
-                    <div className="grid grid-cols-2 gap-2 lg:flex lg:flex-wrap lg:gap-2.5">
+                    /* 移动端两列网格（8 个 = 4 行，2026-10 用户定维持）；
+                       桌面端 5 列锁 2 行（lg:grid-rows-2，2026-10-16 用户定 2×5）——
+                       第 9 个起手机端隐藏，桌面凑满 2 行；池不足 10 按实际数展示 */
+                    <div className="grid grid-cols-2 gap-2 lg:grid-cols-5 lg:grid-rows-2 lg:gap-2.5">
                       {persBatch.map((p, i) => {
                         const img = cardImage(p);
                         return (
@@ -483,7 +508,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                             key={p.id}
                             href={v2url(`/products/${p.handle}/`)}
                             onClick={() => trackEvent('personalized_click', { position: persStart + i + 1 })}
-                            className="flex items-center gap-2 pl-1.5 pr-3 py-1.5 lg:gap-2.5 lg:pr-4 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0"
+                            className={`flex items-center gap-2 pl-1.5 pr-3 py-1.5 lg:gap-2.5 lg:pr-4 rounded-full bg-white border border-warm-gray hover:border-brand transition min-w-0 ${i >= PERSONALIZED.batchSize ? 'hidden lg:flex' : ''}`}
                           >
                             {img ? (
                               <img
@@ -531,7 +556,7 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                       <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
                         {recommended.map((item, i) => {
                           const p = item.p;
-                          const img = cardImage(p);
+                          const urls = carouselUrlsOf(p);
                           return (
                             <a
                               key={p.id}
@@ -547,14 +572,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                                     Top Rated
                                   </span>
                                 )}
-                                {img && (
-                                  <img
-                                    src={resolveUrl(img.url)}
-                                    alt={img.alt}
-                                    loading="lazy"
-                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                                  />
-                                )}
+                                {/* 套图轮播（2026-10-21 任务3，参照 Zara Home）：桌面 hover 箭头 / 移动滑动，首尾不循环 */}
+                                <V2CardImageCarousel urls={urls} alt={p.title} />
                               </div>
                               <h3 className="mt-2.5 text-xs font-medium text-[#333] leading-snug line-clamp-2">{p.title}</h3>
                               <p className="mt-1 text-sm font-semibold text-[#8B5A2B]">{priceOf(p)}</p>
@@ -580,7 +599,8 @@ export default function V2SearchOverlay({ open, onClose }: V2SearchOverlayProps)
                   )}
                 </section>
               )}
-            </>
+              </div>
+            </div>
           )}
         </div>
       </div>
