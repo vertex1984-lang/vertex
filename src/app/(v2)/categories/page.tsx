@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import V2RelatedGuides from '@/components/v2/V2RelatedGuides';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { CATEGORY_DEFS, BEDDING_MATERIAL_ORDER, getSubcategoriesOf } from '@/data/subcategories';
 import { buildBlanketFamilies, BLANKET_SECTIONS, blanketSectionOf } from '@/data/blanket-families';
@@ -12,6 +12,7 @@ import {
   type SetKind,
 } from '@/data/bedding-families';
 import { familyKeyOf } from '@/lib/family-cards';
+import { buildGroupCards } from '@/lib/group-cards';
 import { clusterFamilies, dedupeFamilyColors } from '@/lib/listing-dedupe';
 import { sortTowelFamilies, visibleTowelFamilies } from '@/data/towel-families';
 import { sortCushionFamilies, visibleCushionFamilies } from '@/data/cushion-families';
@@ -52,7 +53,7 @@ const VIEW_MORE_CLASSES = (total: number) =>
 type FamilyList = ReturnType<typeof buildBlanketFamilies>;
 
 /** bedding 一级页（V2BeddingShop）的分区顺序——与 SECTION_KIND_ORDER 保持一致 */
-const SET_SECTION_ORDER: SetKind[] = ['three', 'four', 'duvet', 'comforter'];
+const SET_SECTION_ORDER: SetKind[] = ['four', 'duvet', 'comforter'];
 
 /**
  * 复刻 V2BeddingShop 的家族排序管道（面料位次 → Queen 代表权重 → 同族聚拢），
@@ -84,7 +85,7 @@ function beddingPlpOrder(inCat: MakimooProduct[]): Map<string, number> {
  * towels   = V2TowelsShop：sortTowelFamilies → 二级分类注册表分区（家族构建见下方 visibleTowelFamilies）；
  * cushions = V2CushionsShop：sortCushionFamilies → 风格注册表分区；
  * blankets = V2BlanketsShop：系列分区（BLANKET_SECTIONS）→ 代表权重；
- * 其余类目（mats/decor/dining）= /products 默认视图：≥2 风格组且 ≥4 款时按 STYLE_DISPLAY_RULES
+ * 其余类目（mats/decor）= /products 默认视图：≥2 风格组且 ≥4 款时按 STYLE_DISPLAY_RULES
  * 分区（分区内 = 同色去重 → 权重 → 家族聚拢），否则整表同口径平铺。
  */
 function orderLikeCategoryPage(catValue: string, inCat: MakimooProduct[], families: FamilyList): FamilyList {
@@ -155,13 +156,13 @@ export default function V2CategoriesPage() {
         : p.productType.toLowerCase() === cat.value ||
           p.tags.some((t) => t.toLowerCase().includes(cat.value));
 
-    // 家族卡（2026-10-19 用户定：全站产品卡统一为家族卡——同色同族一张卡，From 最低价）：
+    // 组卡（2026-10-22 用户定：一组一卡 + 色卡——同变体组只出一张卡，色卡展示全部颜色）：
     // 用未去重的全量列表成族（buildBlanketFamilies 需看到全部尺寸 SKU 才有正确 From 价）；
     // 权重 excluded 的产品先剔除（2026-10-20：sortByWeight 会排除它们，一级页不出现，
     // categories 对齐一级页口径不同步展示）；
     // towels/cushions 复用一级页的成族口径（towels 按二级分类分族；cushions 剔除隐藏款）；
     // 卡片顺序 2026-10-20 用户定：对齐各一级类目页的排列顺序（见 orderLikeCategoryPage），
-    // 每类最多取 12 个家族（xl 3 排，小屏按上表再裁）
+    // 并卡后每类最多取 12 个组（xl 3 排，小屏按上表再裁）
     const inCat = enriched.filter(match).filter((p) => !weightOf(p.asin)?.excluded);
     const baseFamilies =
       cat.value === 'towels'
@@ -170,9 +171,10 @@ export default function V2CategoriesPage() {
           ? visibleCushionFamilies(inCat)
           : buildBlanketFamilies(inCat);
     const allFamilies = orderLikeCategoryPage(cat.value, inCat, baseFamilies);
-    const families = allFamilies.slice(0, 12);
+    const allCards = buildGroupCards(allFamilies);
+    const families = allCards.slice(0, 12);
 
-    return { ...cat, families, totalFamilies: allFamilies.length };
+    return { ...cat, families, totalFamilies: allCards.length };
   }).filter((s) => s.families.length > 0);
 
   const totalStyles = sections.reduce((sum, s) => sum + s.totalFamilies, 0);
@@ -265,12 +267,12 @@ export default function V2CategoriesPage() {
                     <p className="mt-1 text-xs lg:text-sm text-[#999]">{cat.intro}</p>
                   </div>
 
-                  {/* 家族卡网格（图 / 标题 / 颜色行 / From 价）；最多 3 排，超出见底部 View More */}
+                  {/* 组卡网格（图 / 标题 / 色卡行 / From 价）；最多 3 排，超出见底部 View More */}
                   <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-                    {cat.families.map((f, fi) => (
-                      <div key={f.key} className={`min-w-0 ${ROW_LIMIT_CLASSES(fi)}`}>
-                        <BeddingSetCard
-                          family={{ ...f, colorLine: f.color || undefined }}
+                    {cat.families.map((c, fi) => (
+                      <div key={c.key} className={`min-w-0 ${ROW_LIMIT_CLASSES(fi)}`}>
+                        <GroupProductCard
+                          card={c}
                           compactText
                         />
                       </div>

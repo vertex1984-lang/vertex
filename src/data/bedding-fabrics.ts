@@ -22,7 +22,7 @@ export interface BeddingFabric {
 
 export const BEDDING_FABRICS: BeddingFabric[] = [
   {
-    // 2026-10-17 用户定：Cotton Percale 新面料线（6 色 × 4 尺寸三件套），面料列排第一位
+    // 2026-10-17 用户定：Cotton Percale 新面料线（6 色 × 4 尺寸，原三件套、2026-10-22 起四件套口径），面料列排第一位
     slug: 'percale',
     material: 'Cotton Percale',
     desc: 'Crisp. Cool.',
@@ -82,9 +82,9 @@ export function fabricByMaterial(material: string): BeddingFabric | undefined {
   return BEDDING_FABRICS.find((f) => f.material === material);
 }
 
-/** 面料对外展示名（2026-10-09 用户定：Washed Cotton-Like 全站展示为 Brushed Cotton）。
+/** 面料对外展示名（2026-10-09 用户定 Washed Cotton-Like 显为 Brushed Cotton；2026-10-22 用户改定：全站展示为 Washed Cotton）。
  *  仅展示层替换；匹配/筛选/URL ?sub= 口径仍用原 material 原子词（'Washed Cotton-Like'）。
  *  PDP 规格表 Material 行、/fabric-guide/ 与 /better-texture/ 营销页暂未替换（数据源口径）。 */
 export function fabricDisplayName(material: string): string {
-  return material === 'Washed Cotton-Like' ? 'Brushed Cotton' : material;
+  return material === 'Washed Cotton-Like' ? 'Washed Cotton' : material;
 }

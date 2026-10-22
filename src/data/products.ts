@@ -8367,17 +8367,17 @@ function autoShortenTitle(t: string): string {
 }
 
 /** 分类归并：Home Fragrance / Travel → Others，Bath 按标题拆为 Towels / Mats；
- * Dining 按标题拆分（2026-09 起 Dining 为正式类目）：托盘/餐具类 → Dining，餐椅垫类 → Cushions */
+ * Dining 按标题拆分：托盘/餐具类 → Decor（2026-10-21 用户定：Dining 类目全站下线，产品并入 Decor），餐椅垫类 → Cushions */
 const CATEGORY_MERGE: Record<string, string> = {
   'home fragrance': 'Others',
   travel: 'Others',
 };
 /** 产品级一级类目覆盖（2026-10-20 用户定，key = 小写 asin；优先于 normalizeCategory 的标题规则）：
- *  藤编贝壳篮 C2（中文标题，DINING_TRAY_RE 匹配不到）与希腊胡椒研磨器 → Dining；
+ *  藤编贝壳篮 C2（中文标题，DINING_TRAY_RE 匹配不到）与希腊胡椒研磨器 → Decor（Dining 类目 2026-10-21 全站下线）；
  *  挂式香薰炉、藤编自行车篮 → Decor。同日 Others 类目全站下线（CATEGORY_DEFS 移除条目，数据保留） */
 const CATEGORY_OVERRIDES: Record<string, string> = {
-  '1688-743606980882-c2': 'Dining',
-  'b0d9lh1y55': 'Dining',
+  '1688-743606980882-c2': 'Decor',
+  'b0d9lh1y55': 'Decor',
   'b0by8ly757': 'Decor',
   'b098f1bkjq': 'Decor',
 };
@@ -8390,8 +8390,8 @@ function normalizeCategory(t: string, title = ''): string {
     if (TOWELS_RE.test(title)) return 'Towels';
     return 'Mats';
   }
-  // Dining：托盘/餐具类归 Dining，餐椅垫等其余归 Cushions
-  if (t.toLowerCase() === 'dining') return DINING_TRAY_RE.test(title) ? 'Dining' : 'Cushions';
+  // Dining：托盘/餐具类归 Decor（Dining 类目已下线，2026-10-21 用户定），餐椅垫等其余归 Cushions
+  if (t.toLowerCase() === 'dining') return DINING_TRAY_RE.test(title) ? 'Decor' : 'Cushions';
   // 个别椅垫在源数据中被错标为 Pillows，按标题归正（如 B0DSGCLBVW / B0DSGCKWXW）
   if (t.toLowerCase() === 'pillows' && /chair cushion/i.test(title)) return 'Cushions';
   // 枕套/枕芯类按全站规则（classify: pillowcase/insert → Pillows）从 Others 归正（如 B0F62QGV32 / B0GJLVMHT7）

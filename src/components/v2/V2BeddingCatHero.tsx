@@ -7,8 +7,8 @@ import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
  *   图下方一排快链导航（类型组 + 竖分隔线 + 面料组）
  * - 移动端：竖版场景图上部叠标题 + 描述（浅色墙面区用深色字 + 顶部轻微渐变保底可读性），
  *   图下横滚标签快链（类型 + 面料一排横滑）
- * 快链 = 五个类型子分类（Duvet Cover Sets / Sheets & Duvet Sets / Duvet Covers / Sheets / Pillow Covers，
- * 后两个 Coming Soon 灰化）+ 有产品的面料页（2026-10-16 用户定）。
+ * 快链 = 类型子分类（Sheets & Duvet Sets / Duvet Covers / Sheets / Pillow Covers，后两个
+ * Coming Soon 灰化；Duvet Cover Sets（3 件套）2026-10-22 下线）+ 有产品的面料页（2026-10-16 用户定）。
  * 链接清单由 products/page.tsx 按家族数据动态算出后传入。
  */
 

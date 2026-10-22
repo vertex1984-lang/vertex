@@ -1,38 +1,41 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import BeddingSetCard, { type FamilyCardData } from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
 import DragScroll from '@/components/v2/DragScroll';
 import { getRecentlyViewed } from '@/lib/recently-viewed';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
-import { buildBlanketFamilies, type BlanketFamily } from '@/data/blanket-families';
-import { familyKeyOf, familyColorOf } from '@/lib/family-cards';
+import { buildBlanketFamilies } from '@/data/blanket-families';
+import { familyColorOf } from '@/lib/family-cards';
+import { buildGroupCards, groupKeyOfProduct, type GroupCard } from '@/lib/group-cards';
 
 interface V2RecentlyViewedProps {
   /** 当前产品 handle，展示时排除自身 */
   currentHandle?: string;
 }
 
-// 全量 enriched 产品的 familyKey → 家族表（模块级缓存只算一次）：
-// From 价取同族成员最低价（buildBlanketFamilies 需看到未去重全量列表才有正确 From 价）
-let familyIndex: Map<string, BlanketFamily> | null = null;
-function getFamilyIndex(): Map<string, BlanketFamily> {
-  if (!familyIndex) {
-    familyIndex = new Map(
-      buildBlanketFamilies(enrichProductsWithShopifyData(PRODUCTS_DATA)).map((f) => [f.key, f])
+// 全量 enriched 产品的组 key → 组卡表（模块级缓存只算一次）：
+// 色卡变体 = 组内全部颜色（buildBlanketFamilies 需看到未去重全量列表才有正确 From 价/全色卡）
+let groupIndex: Map<string, GroupCard> | null = null;
+function getGroupIndex(): Map<string, GroupCard> {
+  if (!groupIndex) {
+    groupIndex = new Map(
+      buildGroupCards(buildBlanketFamilies(enrichProductsWithShopifyData(PRODUCTS_DATA))).map(
+        (c) => [c.key, c]
+      )
     );
   }
-  return familyIndex;
+  return groupIndex;
 }
 
-// RecentlyViewed 的 V2 包装版：localStorage 读取 + 排除自身 + 取前 8 个家族，
-// 卡片为家族卡 BeddingSetCard（2026-10-20 用户定：全站产品卡统一为家族卡——同族合并一张卡，From 最低价；
-// 同族多个已浏览 handle 合并为一张卡，保留最先出现 = 最近浏览的成员作 rep）。
+// RecentlyViewed 的 V2 包装版：localStorage 读取 + 排除自身 + 取前 8 个组，
+// 卡片为组卡 GroupProductCard（2026-10-22 用户定：一组一卡 + 色卡——同组多个已浏览 handle
+// 合并为一张卡，首屏选中色 = 最近浏览成员的颜色，色卡展示组内全部颜色）。
 // 版式（2026-09-29 用户定）：与 PDP "You May Also Like" 完全同款——80% 宽容器、同字号标题、
 // DragScroll 拖拽横滑、卡片同宽（桌面约 4.5 张可见，右缘露半张暗示可滑）
 export default function V2RecentlyViewed({ currentHandle }: V2RecentlyViewedProps) {
   // localStorage 仅客户端可读，mount 后再取，避免 SSR 水合不一致
-  const [families, setFamilies] = useState<FamilyCardData[]>([]);
+  const [cards, setCards] = useState<GroupCard[]>([]);
 
   useEffect(() => {
     const handles = getRecentlyViewed().filter((h) => h !== currentHandle);
@@ -40,30 +43,25 @@ export default function V2RecentlyViewed({ currentHandle }: V2RecentlyViewedProp
       .map((h) => PRODUCTS_DATA.find((p) => p.handle === h))
       .filter(Boolean) as MakimooProduct[];
     const enriched = enrichProductsWithShopifyData(found);
-    const index = getFamilyIndex();
-    // 按 familyKey 折叠（已按浏览时间倒序，首个 = 最近浏览），取前 8 个家族
+    const index = getGroupIndex();
+    // 按组 key 折叠（已按浏览时间倒序，首个 = 最近浏览），取前 8 个组
     const seen = new Set<string>();
-    const out: FamilyCardData[] = [];
+    const out: GroupCard[] = [];
     for (const p of enriched) {
       if (out.length >= 8) break;
-      const key = familyKeyOf(p);
+      const key = groupKeyOfProduct(p);
       if (seen.has(key)) continue;
       seen.add(key);
-      const fam = index.get(key);
-      out.push({
-        rep: p,
-        sizes: [],
-        fromPrice:
-          fam?.fromPrice ?? (p.shopifyPrice || p.priceRange.minVariantPrice.amount),
-        currency:
-          fam?.currency ?? (p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode),
-        colorLine: familyColorOf(p) || undefined,
-      });
+      const card = index.get(key);
+      if (!card) continue;
+      // 首屏选中色 = 最近浏览成员的颜色（卡面主图/价格/评分随它）
+      const color = familyColorOf(p);
+      out.push(color ? { ...card, initialColor: color } : card);
     }
-    setFamilies(out);
+    setCards(out);
   }, [currentHandle]);
 
-  if (families.length === 0) return null;
+  if (cards.length === 0) return null;
 
   return (
     <section className="bg-off-white">
@@ -74,9 +72,9 @@ export default function V2RecentlyViewed({ currentHandle }: V2RecentlyViewedProp
         </div>
         {/* 横滑：触摸原生滚动 + 桌面鼠标拖拽（与 You May Also Like 同款），snap 吸附、隐藏滚动条 */}
         <DragScroll className="flex gap-4 lg:gap-5 overflow-x-auto snap-x snap-mandatory pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-          {families.map((family) => (
-            <div key={family.rep.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
-              <BeddingSetCard family={family} />
+          {cards.map((card) => (
+            <div key={card.key} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
+              <GroupProductCard card={card} />
             </div>
           ))}
         </DragScroll>

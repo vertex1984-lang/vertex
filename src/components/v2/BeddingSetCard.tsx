@@ -23,7 +23,7 @@ export type FamilyCardData = Pick<SetFamily, 'rep' | 'sizes' | 'fromPrice' | 'cu
  * badges = 图片左上角叠层小标。展示规则（2026-09 用户定，写进 AGENTS.md）：
  * 卡片只叠「页面/分区标题未表达的另一维度」——标题是类型（x-Piece Sets）且页内多布料混排时
  * 叠布料标签（materials[0]，如 "100% Linen"；类型页/Bed Sets 合并页/落地页分区）；
- * 标题是布料/材质时叠 type 标签（SET_KIND_LABEL，如 "3-Piece Set"；/products?cat=bedding 材质分区）；
+ * 标题是布料/材质时叠 type 标签（SET_KIND_LABEL，如 "Sheets & Duvet Set"；/products?cat=bedding 材质分区）；
  * 面料页（/bedding/linen/ 等）整页同一布料，两维度都已表达 → 不叠任何标签。
  */
 
@@ -48,6 +48,7 @@ export default function BeddingSetCard({
   anchorLeft = false,
   paddedGrayBg = false,
   cropBiasRight = false,
+  reserveColorLine = false,
 }: {
   family: FamilyCardData;
   badges?: string[];
@@ -72,6 +73,9 @@ export default function BeddingSetCard({
   /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%，
    *  左侧裁掉 2/3 溢出、右侧裁 1/3，画面整体偏右保留） */
   cropBiasRight?: boolean;
+  /** 2026-10-21 用户定：best-sellers 混类网格卡片信息区对齐——无颜色的家族也渲染颜色行
+   *  占位（nbsp），全网格卡片同高；仅 best-sellers 传入 */
+  reserveColorLine?: boolean;
 }) {
   const img = spotlightImage(family.rep);
   const name = (family.titleOverride || family.rep.title).replace(
@@ -116,10 +120,11 @@ export default function BeddingSetCard({
         >
           {name}
         </h3>
-        {/* 颜色行（2026-10-18 用户定：bedding/pillows 卡标题 = 布料+Set，颜色另起一行浅灰小字） */}
-        {family.colorLine && (
+        {/* 颜色行（2026-10-18 用户定：bedding/pillows 卡标题 = 布料+Set，颜色另起一行浅灰小字；
+            2026-10-21 reserveColorLine：无颜色也出占位行，混类网格卡片对齐） */}
+        {(family.colorLine || reserveColorLine) && (
           <p className="mt-0.5 text-[11px] lg:text-xs font-normal text-[#999] leading-snug">
-            {family.colorLine}
+            {family.colorLine || ' '}
           </p>
         )}
         {SHOW_CARD_VARIANT_INFO && family.sizes.length > 0 && (

@@ -9,7 +9,8 @@ export interface CategoryDef {
   intro: string;
 }
 
-/** 顶级分类（全站统一 10 类；Holiday 暂无产品不展示） */
+/** 顶级分类（8 类注册、7 类在售展示；Holiday 暂无产品不展示；
+ *  Others 2026-10-20 下线、Dining 2026-10-21 下线——条目见数组末尾注释） */
 export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Cushions', value: 'cushions', intro: 'Tufted, water-resistant comfort for every seat — indoors and out.' },
   { label: 'Pillows', value: 'pillows', intro: 'Premium inserts and covers with plush fillings for bed & sofa.' },
@@ -18,10 +19,12 @@ export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
   { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
   { label: 'Decor', value: 'decor', intro: 'Wall art & handcrafted accents to finish every room.' },
-  { label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
   // Others 已全站下线（2026-10-20 用户定：数据保留、网站不展示、页面与 sitemap 移除）——
-  // 颈枕已归 Pillows，4 个散件经 products.ts 的 CATEGORY_OVERRIDES 归 Dining/Decor；恢复时把条目加回即可
+  // 颈枕已归 Pillows，4 个散件经 products.ts 的 CATEGORY_OVERRIDES 归 Decor；恢复时把条目加回即可
+  // Dining 已全站下线（2026-10-21 用户定：数据保留、网站不展示、?cat=dining 渲染 404 页 + noindex）——
+  // 原 Dining 产品（藤编托盘/果盘 22 款 + 胡椒研磨器）全部并入 Decor（见 products.ts 归一化与下方 SUB_OVERRIDES）；
+  // 恢复时加回：{ label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
 ];
 
 export interface SubcategoryDef {
@@ -59,9 +62,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'cotton', parent: 'bedding', label: 'Cotton', shortLabel: 'Cotton', blurb: 'Washed cotton for crisp, airy comfort.' },
   // Decor
   { key: 'wall-art', parent: 'decor', label: 'Wall Art', shortLabel: 'Wall Art', blurb: 'Framed canvas prints, boho & tribal styles.' },
-  // Dining
-  { key: 'trays', parent: 'dining', label: 'Trays', shortLabel: 'Trays', blurb: 'Handwoven rattan trays for serving & display.' },
-  { key: 'placemats', parent: 'dining', label: 'Placemats', shortLabel: 'Placemats', blurb: 'Table pads & placemats for everyday dining.' },
+  // Dining（2026-10-21 用户定：Dining 类目全站下线，trays/placemats 二级分类一并停用、数据保留——
+  // 原 Dining 产品并入 Decor 且无二级分类（SUB_OVERRIDES 置 ''）；恢复 Dining 时把下面两条加回即可）
+  // { key: 'trays', parent: 'dining', label: 'Trays', shortLabel: 'Trays', blurb: 'Handwoven rattan trays for serving & display.' },
+  // { key: 'placemats', parent: 'dining', label: 'Placemats', shortLabel: 'Placemats', blurb: 'Table pads & placemats for everyday dining.' },
   // Others
   { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel', blurb: 'Neck pillows & essentials for the road.' },
   { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools', blurb: 'Handy tools for everyday cooking.' },
@@ -197,12 +201,38 @@ function classifyBedding(asin: string): string | undefined {
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
  */
 // 手工指定二级分类（用户确认时在此加 asin → sub key 条目；'' = 不属于任何二级分类——
-// 2026-10-20 改类目的 3 个散件：胡椒研磨器归 Dining 但不是 trays/placemats，
-// 香薰炉/自行车篮归 Decor 但不是 wall-art）
+// 2026-10-20 改类目的 3 个散件：香薰炉/自行车篮归 Decor 但不是 wall-art；
+// 2026-10-21 Dining 类目下线：原 Dining 的 22 款藤编托盘/果盘 + 胡椒研磨器并入 Decor，
+// 同样不是 wall-art，全部置 ''——classifyProduct 的 decor 分支是无条件归 wall-art，不加会误归）
 const SUB_OVERRIDES: Record<string, string> = {
-  'b0d9lh1y55': '',
+  'b0d9lh1y55': '', // 希腊胡椒研磨器
   'b0by8ly757': '',
   'b098f1bkjq': '',
+  // 原 Dining → Decor（2026-10-21）：1688-743606980882 长方托盘家族
+  '1688-743606980882-c2': '',
+  '1688-743606980882-c10': '',
+  '1688-743606980882-c20': '',
+  '1688-743606980882-c32': '',
+  '1688-743606980882-c41': '',
+  '1688-743606980882-c52': '',
+  '1688-743606980882-c61': '',
+  '1688-743606980882-c71': '',
+  '1688-743606980882-c80': '',
+  '1688-743606980882-c89': '',
+  // 原 Dining → Decor（2026-10-21）：1688-899672152256 圆托盘家族
+  '1688-899672152256-c2': '',
+  '1688-899672152256-c13': '',
+  '1688-899672152256-c22': '',
+  '1688-899672152256-c33': '',
+  '1688-899672152256-c42': '',
+  '1688-899672152256-c52': '',
+  '1688-899672152256-c61': '',
+  '1688-899672152256-c70': '',
+  '1688-899672152256-c78': '',
+  '1688-899672152256-c85': '',
+  // 原 Dining → Decor（2026-10-21）：1688-663341114084 藤编陶瓷椭圆盘
+  '1688-663341114084-c2': '',
+  '1688-663341114084-c3': '',
 };
 
 export function classifyProduct(productType: string, title: string, asin: string): string | undefined {
@@ -224,6 +254,8 @@ export function classifyProduct(productType: string, title: string, asin: string
       return classifyBedding(asin);
     case 'decor':
       return 'wall-art';
+    // Dining 类目已下线（2026-10-21）：原 Dining 产品经 products.ts 归一化并入 Decor，
+    // 该分支理论上不再命中；保留仅作数据存档（恢复 Dining 时连同上方 trays/placemats 一起加回）
     case 'dining':
       return /placemat|coaster|table (pad|mat)/i.test(title) ? 'placemats' : 'trays';
     case 'others':

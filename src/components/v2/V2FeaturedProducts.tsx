@@ -1,5 +1,6 @@
 import DragScroll from '@/components/v2/DragScroll';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCardsFromCards } from '@/lib/group-cards';
 import { v2url } from '@/lib/v2paths';
 import type { MakimooProduct } from '@/data/products';
 
@@ -38,12 +39,13 @@ export default function V2FeaturedProducts({ products }: V2FeaturedProductsProps
         <div className="relative">
           <div className="pl-6 lg:pl-10">
             <DragScroll className="flex gap-5 lg:gap-6 overflow-x-auto pb-2 pr-6 lg:pr-10 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              {products.slice(0, 8).map((product) => (
+              {/* 一组一卡（2026-10-22 用户定）：先按组折叠再取 8 个卡位；色卡变体 = 导轨内在场颜色 */}
+              {buildGroupCardsFromCards(products).slice(0, 8).map((card) => (
                 <div
-                  key={product.id}
+                  key={card.key}
                   className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
                 >
-                  <V2ProductCard product={product} />
+                  <GroupProductCard card={card} />
                 </div>
               ))}
             </DragScroll>

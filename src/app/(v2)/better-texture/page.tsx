@@ -40,7 +40,7 @@ const TEXTURES: TextureItem[] = [
   {
     index: '02',
     texture: 'Washed Cotton-Like',
-    title: 'Duvet Cover Set, 3 Piece, Beige',
+    title: 'Duvet Cover Set, 4 Piece, Beige',
     copy: 'Garment-washed for a lived-in matte finish, the brushed surface feels like your favorite old tee from the very first night. No stiffness, no break-in period — just instant, quiet softness.',
     image: '/images/products/DUVSET-BEIGE-QUEEN/1.webp',
     alt: 'Beige washed cotton-like duvet cover set in soft daylight',

@@ -178,13 +178,26 @@ export default function MiniCart() {
       >
         <div className="flex items-center justify-between px-6 py-5 border-b border-[#E8E2DA]">
           <h2 className="text-lg font-bold text-[#333]">Your Cart</h2>
-          <button
-            onClick={() => setOpen(false)}
-            className="w-9 h-9 rounded-full border border-[#E8E2DA] flex items-center justify-center text-xl text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
-            aria-label="Close cart"
-          >
-            &times;
-          </button>
+          <div className="flex items-center gap-2">
+            {/* 2026-10-21 用户定：购物车抽屉头部加首页图标链接 */}
+            <a
+              href={resolveUrl('/')}
+              className="w-9 h-9 rounded-full border border-[#E8E2DA] flex items-center justify-center text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
+              aria-label="Go to homepage"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 10.5 12 3l9 7.5" />
+                <path d="M5 9.5V21h14V9.5" />
+              </svg>
+            </a>
+            <button
+              onClick={() => setOpen(false)}
+              className="w-9 h-9 rounded-full border border-[#E8E2DA] flex items-center justify-center text-xl text-[#333] hover:bg-[#E8E2DA] hover:text-[#8B5A2B] transition"
+              aria-label="Close cart"
+            >
+              &times;
+            </button>
+          </div>
         </div>
 
         {!hasItems ? (

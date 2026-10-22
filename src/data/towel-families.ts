@@ -11,7 +11,10 @@ import { getVariantGroupOf } from '@/data/variant-groups';
 /** 卡片标题规则："{类型} {N} Pack"（不带尺寸和颜色——2026-10-16 用户定：尺寸/颜色只在 PDP 内展示）。
  *  类型取二级分类注册表 label（2026-10-16 起：Towels / Beach Towels）；
  *  件数来源：标题 "2-Pack"/"2 Pack"/"Set of N"，缺省 2。 */
-export function towelCardTitle(f: BlanketFamily, typeLabel: string): string {
+export function towelCardTitle(
+  f: { rep: Pick<BlanketFamily['rep'], 'asin' | 'title'> },
+  typeLabel: string
+): string {
   // MK 自有长绒棉毛巾（mk-towel-lsc）单件装、标题不含件数/类型词，统一显示系列名
   if (getVariantGroupOf(f.rep.asin)?.id === 'mk-towel-lsc') {
     return 'Long-Staple Cotton Towel';

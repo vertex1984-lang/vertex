@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import BeddingSetCard from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
 import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
 import { buildBlanketFamilies } from '@/data/blanket-families';
-import { familyKeyOf, toFamilyCard } from '@/lib/family-cards';
+import { buildGroupCards, groupKeyOfFamily, type GroupCard } from '@/lib/group-cards';
 
 export const metadata: Metadata = {
   title: 'New Arrivals',
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     'Just landed at Makimoo — the 20 newest pieces added to the collection.',
 };
 
-// 最新上架（家族卡，2026-10-20 用户定：全站产品卡统一为家族卡）：
-// 未去重的在售列表按 Shopify 创建时间倒序，用 familyKeyOf 保留每族首次出现
-// （族序 = 族内最新上架者的时间），再映射回成族结果取前 20；
+// 最新上架（组卡，2026-10-22 用户定：一组一卡 + 色卡）：
+// 未去重的在售列表按 Shopify 创建时间倒序，按组 key 保留每组首次出现
+// （组序 = 组内最新上架者的时间；首屏默认选中色 = 该最新成员的家族颜色），取前 20 个组；
 // 成族用未去重列表（buildBlanketFamilies 需看到全部尺寸 SKU 才有正确 From 价）
 const inStockByRecency = enrichProductsWithShopifyData(PRODUCTS_DATA)
   .filter((p) => p.hasShopifyData && p.shopifyAvailable)
@@ -23,22 +23,26 @@ const inStockByRecency = enrichProductsWithShopifyData(PRODUCTS_DATA)
     const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
     return tb.localeCompare(ta);
   });
-const familyRecencyOrder: string[] = [];
+const familiesByRecency = buildBlanketFamilies(inStockByRecency);
+// 组序 = 组内最新上架家族的位次；组首屏选中色 = 最新上架家族的颜色
+const groupRecencyOrder: string[] = [];
+const groupInitialColor = new Map<string, string>();
 {
   const seen = new Set<string>();
-  for (const p of inStockByRecency) {
-    const k = familyKeyOf(p);
+  for (const f of familiesByRecency) {
+    const k = groupKeyOfFamily(f);
     if (!seen.has(k)) {
       seen.add(k);
-      familyRecencyOrder.push(k);
+      groupRecencyOrder.push(k);
+      groupInitialColor.set(k, f.color);
     }
   }
 }
-const familyByKey = new Map(buildBlanketFamilies(inStockByRecency).map((f) => [f.key, f]));
-const newArrivals = familyRecencyOrder
+const groupCardByKey = new Map(buildGroupCards(familiesByRecency).map((c) => [c.key, c]));
+const newArrivals: GroupCard[] = groupRecencyOrder
   .flatMap((k) => {
-    const f = familyByKey.get(k);
-    return f ? [f] : [];
+    const c = groupCardByKey.get(k);
+    return c ? [{ ...c, initialColor: groupInitialColor.get(k) }] : [];
   })
   .slice(0, 20);
 
@@ -62,8 +66,8 @@ export default function NewArrivalsPage() {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-        {newArrivals.map((f) => (
-          <BeddingSetCard key={f.key} family={toFamilyCard(f)} compactText />
+        {newArrivals.map((c) => (
+          <GroupProductCard key={c.key} card={c} compactText />
         ))}
       </div>
     </div>

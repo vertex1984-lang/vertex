@@ -159,31 +159,46 @@ function ReviewCard({ review }: { review: ProductReview }) {
  * 2026-10-10 领导定（悬浮胶囊 B 案）：展开态收起控制 = 视口底部居中悬浮胶囊
  * （移动端抬高避开吸底加购条），滚到列表末尾时自动隐藏（末尾保留常规 Show less 按钮收尾）；
  * 点击胶囊收起列表并平滑滚回评价区顶部。中途不再插按钮（2026-10-10 复审：夹在卡片中间怪）。
+ * 2026-10-22 用户反馈修复：胶囊只在评价列表位于视口内时出现——原来只观察列表末尾，
+ * 用户滚动离开评价区后（末尾在视口上方不相交）胶囊仍一直跟随；现同时观察列表容器，
+ * 容器滚出视口即隐藏。
  */
 export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] }) {
   const [expanded, setExpanded] = useState(false);
   const tailRef = useRef<HTMLDivElement>(null);
-  const [pillVisible, setPillVisible] = useState(false);
+  const listRef = useRef<HTMLDivElement>(null);
+  const [tailVisible, setTailVisible] = useState(false);
+  const [listInView, setListInView] = useState(false);
   const collapsed = reviews.length > COLLAPSED_COUNT;
   const carousel = collapsed && !expanded;
   const mixed = starMix(reviews);
   // 预览渲染 4 条（桌面 2×2；第 4 条 lg 以下隐藏——手机端恒见 3 条）
   const visible = carousel ? mixed.slice(0, PREVIEW_COUNT) : mixed;
   const showLess = !carousel && collapsed;
+  // 胶囊可见 = 展开态 + 评价列表在视口内 + 列表末尾未进入视口（2026-10-22 修复跟随问题）
+  const pillVisible = showLess && listInView && !tailVisible;
 
   useEffect(() => {
-    if (!showLess) {
-      setPillVisible(false);
+    if (!showLess || typeof IntersectionObserver === 'undefined') {
+      setTailVisible(false);
+      setListInView(false);
       return;
     }
-    const el = tailRef.current;
-    if (!el || typeof IntersectionObserver === 'undefined') {
-      setPillVisible(true);
-      return;
+    const tail = tailRef.current;
+    const list = listRef.current;
+    const ioTail = tail ? new IntersectionObserver(([e]) => setTailVisible(e.isIntersecting)) : null;
+    const ioList = list ? new IntersectionObserver(([e]) => setListInView(e.isIntersecting)) : null;
+    if (tail && ioTail) ioTail.observe(tail);
+    if (list && ioList) ioList.observe(list);
+    if (!tail || !list) {
+      // 元素缺失时回退旧行为：常显（交由末尾常规按钮兜底）
+      setTailVisible(false);
+      setListInView(true);
     }
-    const io = new IntersectionObserver(([entry]) => setPillVisible(!entry.isIntersecting));
-    io.observe(el);
-    return () => io.disconnect();
+    return () => {
+      ioTail?.disconnect();
+      ioList?.disconnect();
+    };
   }, [showLess]);
 
   const collapseAndScroll = () => {
@@ -194,6 +209,7 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
   return (
     <>
       <div
+        ref={listRef}
         className={
           carousel
             ? 'flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-2 lg:overflow-x-visible lg:pb-0'

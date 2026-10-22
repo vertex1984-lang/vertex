@@ -17,7 +17,10 @@ const cmToIn = (cm: number) => Math.round(cm / 2.54);
  *  产品实际尺寸）；解析不到才用变体组尺寸带（cm，buildBlanketFamilies 已去单位）。
  *  套装数来源：短标题或尺寸带（110x55 家族 size 字段存的是 "Set of N" 套件数，非尺寸）
  *  的 "Set of N"，或 handle "set-of-N"/"N-pack"，缺省 2（当前全线 2 件装）。 */
-export function cushionCardTitle(f: BlanketFamily): string {
+export function cushionCardTitle(f: {
+  rep: Pick<BlanketFamily['rep'], 'title' | 'handle'>;
+  sizes: string[];
+}): string {
   const sizeBand = f.sizes[0] || '';
   const countMatch =
     f.rep.title.match(/set of (\d+)/i) ||
