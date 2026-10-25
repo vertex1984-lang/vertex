@@ -29795,7 +29795,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BEDSET4-SAGE-TWIN",
     "asin": "BEDSET4-SAGE-TWIN",
-    "title": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+    "title": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
     "handle": "floral-bedding-set-with-duvet-cover-fitted-sheet-and-2-bedset4-sage-twin",
     "description": "Complete 4-Piece Bedding Set: This set includes 1 duvet cover measuring 68 x 88 in, 1 fitted sheet measuring 39 x 75 in, and 2 pillowcases measuring 20 x 26 in. The coordinated pieces provide a cohesive foundation for a Twin size bed and simplify making the bed. Soft Cozy Fabric: The bedding set features a soft, smooth feel that helps create a comfortable sleep space. Lightweight and gentle against the skin, it is designed for cozy nights and relaxed mornings. Botanical Floral Design: A delicate small floral print in a calming sage green tone adds a natural, garden-inspired touch. The subtle pattern pairs well with wood furniture, neutral walls, and a variety of bedroom styles. Secure Fitted Sheet and Duvet Cover Protection: The fitted sheet includes elastic edges for a snug fit around the mattress, while the duvet cover helps keep your comforter clean and protected. Pillowcases complete the matching look. Easy Care and Versatile Use: Machine washable for convenient upkeep. The set works well in bedrooms, guest rooms, dorms, and rental spaces, bringing a fresh floral accent without overwhelming the room.",
     "descriptionHtml": "<p>Complete 4-Piece Bedding Set: This set includes 1 duvet cover measuring 68 x 88 in, 1 fitted sheet measuring 39 x 75 in, and 2 pillowcases measuring 20 x 26 in. The coordinated pieces provide a cohesive foundation for a Twin size bed and simplify making the bed.</p><p>Soft Cozy Fabric: The bedding set features a soft, smooth feel that helps create a comfortable sleep space. Lightweight and gentle against the skin, it is designed for cozy nights and relaxed mornings.</p><p>Botanical Floral Design: A delicate small floral print in a calming sage green tone adds a natural, garden-inspired touch. The subtle pattern pairs well with wood furniture, neutral walls, and a variety of bedroom styles.</p><p>Secure Fitted Sheet and Duvet Cover Protection: The fitted sheet includes elastic edges for a snug fit around the mattress, while the duvet cover helps keep your comforter clean and protected. Pillowcases complete the matching look.</p><p>Easy Care and Versatile Use: Machine washable for convenient upkeep. The set works well in bedrooms, guest rooms, dorms, and rental spaces, bringing a fresh floral accent without overwhelming the room.</p>",
@@ -29807,31 +29807,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BEDSET4-SAGE-TWIN/1.webp",
-        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-TWIN/2.webp",
-        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-TWIN/3.webp",
-        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-TWIN/4.webp",
-        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-TWIN/5.webp",
-        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
+        "altText": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -29923,7 +29923,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BEDSET4-SAGE-QUEEN",
     "asin": "BEDSET4-SAGE-QUEEN",
-    "title": "4 Piece Floral Bedding Set Queen Size Soft Linen-Like Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+    "title": "4 Piece Floral Bedding Set Queen Size Soft Linen-Like Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
     "handle": "4-piece-floral-bedding-set-queen-size-soft-microfiber-duvet-bedset4-sage-queen",
     "description": "4 PIECE BEDDING SET INCLUDES: 1 duvet cover 88 x 88 in, 1 fitted sheet 60 x 80 in, and 2 pillowcases 20 x 30 in; the coordinated pieces create a complete bedding layer for a queen size bed. DELICATE FLORAL BOTANICAL PRINT: A soft sage green ground is accented with small white blossoms, giving the bedding a gentle garden inspired look that blends with farmhouse, cottage, or modern bedroom decor. SOFT BREATHABLE COMFORT: The smooth fabric feels gentle against the skin and offers breathable comfort for nightly rest; it is lightweight enough for layering and cozy enough for relaxing. THOUGHTFUL BEDROOM REFRESH: With its muted green tone and dainty floral pattern, this set adds a fresh, calming touch to a primary bedroom, guest room, or dorm room; the neutral friendly palette pairs easily with wood furniture and soft textiles. EASY CARE AND EVERYDAY USE: Designed for simple maintenance and regular use, this set helps keep your bed looking neat and inviting without adding extra effort to your routine.",
     "descriptionHtml": "<p>4 PIECE BEDDING SET INCLUDES: 1 duvet cover 88 x 88 in, 1 fitted sheet 60 x 80 in, and 2 pillowcases 20 x 30 in; the coordinated pieces create a complete bedding layer for a queen size bed.</p><p>DELICATE FLORAL BOTANICAL PRINT: A soft sage green ground is accented with small white blossoms, giving the bedding a gentle garden inspired look that blends with farmhouse, cottage, or modern bedroom decor.</p><p>SOFT BREATHABLE COMFORT: The smooth fabric feels gentle against the skin and offers breathable comfort for nightly rest; it is lightweight enough for layering and cozy enough for relaxing.</p><p>THOUGHTFUL BEDROOM REFRESH: With its muted green tone and dainty floral pattern, this set adds a fresh, calming touch to a primary bedroom, guest room, or dorm room; the neutral friendly palette pairs easily with wood furniture and soft textiles.</p><p>EASY CARE AND EVERYDAY USE: Designed for simple maintenance and regular use, this set helps keep your bed looking neat and inviting without adding extra effort to your routine.</p>",
@@ -29935,31 +29935,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BEDSET4-SAGE-QUEEN/1.webp",
-        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-QUEEN/2.webp",
-        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-QUEEN/3.webp",
-        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-QUEEN/4.webp",
-        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-SAGE-QUEEN/5.webp",
-        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
+        "altText": "4 Piece Floral Bedding Set Queen Size Soft Microfiber Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -30307,7 +30307,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BEDSET4-MOSS-TWIN",
     "asin": "BEDSET4-MOSS-TWIN",
-    "title": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+    "title": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
     "handle": "floral-print-4-piece-duvet-cover-set-with-fitted-sheet-and-bedset4-moss-twin",
     "description": "4 PIECE TWIN BEDDING SET: Each set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in). The coordinated pieces provide a complete bedding foundation for a twin size bed and make bed making simple. FLORAL PRINT WITH LACE TRIM: A soft sage green background features a delicate white floral pattern, while white scalloped lace edges detail the duvet cover and pillowcases. This romantic combination brings a gentle cottage, vintage, or farmhouse touch to the room. COMFORTABLE EVERYDAY FABRIC: The smooth fabric feels gentle against the skin and offers a light, cozy layer for sleeping or relaxing. It pairs easily with a comforter, quilt, or blanket for added warmth. FITTED SHEET AND PILLOWCASE PAIRING: The fitted sheet measures 39 x 75 in for a twin size mattress, while the two 20 x 26 in pillowcases match the duvet cover for a tidy, coordinated look. VERSATILE BEDROOM STYLE: The muted sage green and white lace accents coordinate with modern, boho, farmhouse, or shabby chic decor. This set makes a thoughtful choice for a guest room, dorm room, or bedroom refresh.",
     "descriptionHtml": "<p>4 PIECE TWIN BEDDING SET: Each set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in). The coordinated pieces provide a complete bedding foundation for a twin size bed and make bed making simple.</p><p>FLORAL PRINT WITH LACE TRIM: A soft sage green background features a delicate white floral pattern, while white scalloped lace edges detail the duvet cover and pillowcases. This romantic combination brings a gentle cottage, vintage, or farmhouse touch to the room.</p><p>COMFORTABLE EVERYDAY FABRIC: The smooth fabric feels gentle against the skin and offers a light, cozy layer for sleeping or relaxing. It pairs easily with a comforter, quilt, or blanket for added warmth.</p><p>FITTED SHEET AND PILLOWCASE PAIRING: The fitted sheet measures 39 x 75 in for a twin size mattress, while the two 20 x 26 in pillowcases match the duvet cover for a tidy, coordinated look.</p><p>VERSATILE BEDROOM STYLE: The muted sage green and white lace accents coordinate with modern, boho, farmhouse, or shabby chic decor. This set makes a thoughtful choice for a guest room, dorm room, or bedroom refresh.</p>",
@@ -30319,31 +30319,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BEDSET4-MOSS-TWIN/1.webp",
-        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-TWIN/2.webp",
-        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-TWIN/3.webp",
-        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-TWIN/4.webp",
-        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-TWIN/5.webp",
-        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
+        "altText": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -30499,7 +30499,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BEDSET4-MOSS-KING",
     "asin": "BEDSET4-MOSS-KING",
-    "title": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+    "title": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
     "handle": "botanical-floral-duvet-cover-set-with-lace-trim-4-piece-bedset4-moss-king",
     "description": "4 PIECE BEDDING SET: This coordinated set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in). The complete combination helps you refresh a King size bed with matching pieces and a cohesive look. BOTANICAL FLORAL DESIGN: The duvet cover and pillowcases feature a delicate white floral pattern over a soft sage green ground, bringing a calm garden-inspired style to the bedroom. The repeating motif works well with farmhouse, cottage, and vintage decor themes. LACE TRIM DETAIL: Scalloped lace edging runs along the duvet cover and pillowcase borders, adding a gentle romantic accent. The light trim frames the floral print and creates a soft, layered look without overwhelming the room. SOFT AND COMFORTABLE: The smooth fabric feels gentle against the skin and offers a cozy surface for lounging, reading, or sleeping. It layers easily with blankets or quilts when extra warmth is desired. EASY BEDROOM REFRESH: The fitted sheet has an elastic edge for a secure fit, while the matching duvet cover and pillowcases create a polished, pulled-together bed. Ideal for master bedrooms, guest rooms, and everyday bedroom updates.",
     "descriptionHtml": "<p>4 PIECE BEDDING SET: This coordinated set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in). The complete combination helps you refresh a King size bed with matching pieces and a cohesive look.</p><p>BOTANICAL FLORAL DESIGN: The duvet cover and pillowcases feature a delicate white floral pattern over a soft sage green ground, bringing a calm garden-inspired style to the bedroom. The repeating motif works well with farmhouse, cottage, and vintage decor themes.</p><p>LACE TRIM DETAIL: Scalloped lace edging runs along the duvet cover and pillowcase borders, adding a gentle romantic accent. The light trim frames the floral print and creates a soft, layered look without overwhelming the room.</p><p>SOFT AND COMFORTABLE: The smooth fabric feels gentle against the skin and offers a cozy surface for lounging, reading, or sleeping. It layers easily with blankets or quilts when extra warmth is desired.</p><p>EASY BEDROOM REFRESH: The fitted sheet has an elastic edge for a secure fit, while the matching duvet cover and pillowcases create a polished, pulled-together bed. Ideal for master bedrooms, guest rooms, and everyday bedroom updates.</p>",
@@ -30511,31 +30511,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BEDSET4-MOSS-KING/1.webp",
-        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-KING/2.webp",
-        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-KING/3.webp",
-        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-KING/4.webp",
-        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/BEDSET4-MOSS-KING/5.webp",
-        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
+        "altText": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -31331,7 +31331,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-LINEN3-SAGE-TWIN",
     "asin": "LINEN3-SAGE-TWIN",
-    "title": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+    "title": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
     "handle": "makimoo-100-linen-duvet-cover-set-3-piece-twin-bedding-with-linen3-sage-twin",
     "description": "COMPLETE 3-PIECE SET: This Makimoo duvet cover set includes 1 Duvet Cover (68 x 88 in) and 2 Pillowcases (20 x 26 in). The coordinated pieces create a cohesive bedding base and make it easy to refresh your bedroom in one simple update. 100% Linen FABRIC: Made from 100% Linen, this duvet cover set features a naturally textured surface that feels soft while remaining breathable. The linen weave helps promote airflow for comfortable year-round use. CALM SAGE GREEN STYLE: The sage green color brings a relaxed, earthy tone to your bedroom and pairs well with farmhouse, rustic, boho, and minimalist decor. The subtle fabric texture adds visual depth without overwhelming your existing bedding. BREATHABLE ALL-SEASON COMFORT: The linen construction helps air circulate through the night, making this set suitable for warm and cool seasons. The fabric drapes smoothly over your duvet for a soft, inviting bed. VERSATILE BEDROOM UPDATE: Use this set in a master bedroom, guest room, or dorm space, and layer it with quilts or throw blankets for a cozy look. The sage green tone and linen texture create a calm foundation that works with many interior styles.",
     "descriptionHtml": "<p>COMPLETE 3-PIECE SET: This Makimoo duvet cover set includes 1 Duvet Cover (68 x 88 in) and 2 Pillowcases (20 x 26 in). The coordinated pieces create a cohesive bedding base and make it easy to refresh your bedroom in one simple update.</p><p>100% Linen FABRIC: Made from 100% Linen, this duvet cover set features a naturally textured surface that feels soft while remaining breathable. The linen weave helps promote airflow for comfortable year-round use.</p><p>CALM SAGE GREEN STYLE: The sage green color brings a relaxed, earthy tone to your bedroom and pairs well with farmhouse, rustic, boho, and minimalist decor. The subtle fabric texture adds visual depth without overwhelming your existing bedding.</p><p>BREATHABLE ALL-SEASON COMFORT: The linen construction helps air circulate through the night, making this set suitable for warm and cool seasons. The fabric drapes smoothly over your duvet for a soft, inviting bed.</p><p>VERSATILE BEDROOM UPDATE: Use this set in a master bedroom, guest room, or dorm space, and layer it with quilts or throw blankets for a cozy look. The sage green tone and linen texture create a calm foundation that works with many interior styles.</p>",
@@ -31343,31 +31343,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-TWIN/1.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-TWIN/2.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-TWIN/3.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-TWIN/4.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-TWIN/5.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set 3 Piece Twin Bedding With 1 Duvet Cover And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -31395,7 +31395,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-LINEN3-SAGE-FULL",
     "asin": "LINEN3-SAGE-FULL",
-    "title": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+    "title": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
     "handle": "100-linen-duvet-cover-set-3-piece-full-size-soft-breathable-linen3-sage-full",
     "description": "COMPLETE 3 PIECE SET: This bedding set includes 1 duvet cover measuring 80 x 90 in and 2 pillowcases measuring 20 x 26 in, giving you a coordinated Full size bedding update with matching pieces for a clean and inviting bed. SOFT LINEN FEEL: The 100% Linen fabric offers a naturally textured surface that is soft, breathable, and comfortable, adding a relaxed layer to your bedroom while keeping the look light and airy. CALM SAGE GREEN TONE: The sage green color brings a soothing, earthy look to your space, making it easy to pair with neutral sheets, wooden accents, and a range of bedroom decor styles. BREATHABLE EVERYDAY COMFORT: Designed for daily use, the linen material helps support airflow and a comfortable sleep environment, so your bed feels fresh and welcoming. EASY CARE AND MATCHING LOOK: The duvet cover helps protect your comforter while the matching pillowcases complete the set, and it is machine washable for convenient upkeep and simple bedroom refresh.",
     "descriptionHtml": "<p>COMPLETE 3 PIECE SET: This bedding set includes 1 duvet cover measuring 80 x 90 in and 2 pillowcases measuring 20 x 26 in, giving you a coordinated Full size bedding update with matching pieces for a clean and inviting bed.</p><p>SOFT LINEN FEEL: The 100% Linen fabric offers a naturally textured surface that is soft, breathable, and comfortable, adding a relaxed layer to your bedroom while keeping the look light and airy.</p><p>CALM SAGE GREEN TONE: The sage green color brings a soothing, earthy look to your space, making it easy to pair with neutral sheets, wooden accents, and a range of bedroom decor styles.</p><p>BREATHABLE EVERYDAY COMFORT: Designed for daily use, the linen material helps support airflow and a comfortable sleep environment, so your bed feels fresh and welcoming.</p><p>EASY CARE AND MATCHING LOOK: The duvet cover helps protect your comforter while the matching pillowcases complete the set, and it is machine washable for convenient upkeep and simple bedroom refresh.</p>",
@@ -31407,31 +31407,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-FULL/1.webp",
-        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-FULL/2.webp",
-        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-FULL/3.webp",
-        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-FULL/4.webp",
-        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-FULL/5.webp",
-        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (Sage Green)",
+        "altText": "100% Linen Duvet Cover Set 3 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in and 2 Pillowcases 20 x 26 in (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -31459,7 +31459,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-LINEN3-SAGE-QUEEN",
     "asin": "LINEN3-SAGE-QUEEN",
-    "title": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+    "title": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
     "handle": "makimoo-100-linen-duvet-cover-set-3-piece-bedding-set-with-linen3-sage-queen",
     "description": "SOFT LINEN FABRIC: This duvet cover set uses linen fabric that feels gentle against the skin and adds a natural, textured look to your bed. The material is designed to keep your sleep space comfortable and inviting. COMPLETE 3 PIECE SET: This set includes Duvet Cover x 1: 90 x 90 in and Pillowcase x 2: 20 x 30 in. The coordinated pieces give you a finished bedding foundation for a Queen size bed. BREATHABLE AND COZY: The linen weave allows air to circulate, which helps reduce a stuffy feeling and keeps your bed feeling fresh. It layers easily with quilts, blankets, or throws for added warmth. DURABLE AND EASY CARE: Quality stitching and a sturdy weave help this duvet cover set handle everyday use. Machine wash cold with like colors and tumble dry low for simple upkeep. SAGE GREEN BOHO STYLE: The calm sage green shade brings an earthy, relaxed touch to your bedroom. It pairs well with wood tones, white sheets, and woven accents for a modern farmhouse or boho look.",
     "descriptionHtml": "<p>SOFT LINEN FABRIC: This duvet cover set uses linen fabric that feels gentle against the skin and adds a natural, textured look to your bed. The material is designed to keep your sleep space comfortable and inviting.</p><p>COMPLETE 3 PIECE SET: This set includes Duvet Cover x 1: 90 x 90 in and Pillowcase x 2: 20 x 30 in. The coordinated pieces give you a finished bedding foundation for a Queen size bed.</p><p>BREATHABLE AND COZY: The linen weave allows air to circulate, which helps reduce a stuffy feeling and keeps your bed feeling fresh. It layers easily with quilts, blankets, or throws for added warmth.</p><p>DURABLE AND EASY CARE: Quality stitching and a sturdy weave help this duvet cover set handle everyday use. Machine wash cold with like colors and tumble dry low for simple upkeep.</p><p>SAGE GREEN BOHO STYLE: The calm sage green shade brings an earthy, relaxed touch to your bedroom. It pairs well with wood tones, white sheets, and woven accents for a modern farmhouse or boho look.</p>",
@@ -31471,31 +31471,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/1.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/2.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/3.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/4.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/5.webp",
-        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
+        "altText": "Makimoo 100% Linen Duvet Cover Set, 3 Piece Bedding Set with 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -31523,7 +31523,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-LINEN3-SAGE-KING",
     "asin": "LINEN3-SAGE-KING",
-    "title": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+    "title": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
     "handle": "100-percent-linen-duvet-cover-set-3-piece-king-size-bedding-linen3-sage-king",
     "description": "PREMIUM LINEN FABRIC: This duvet cover set is crafted from 100 Percent Linen fabric, offering a naturally textured surface, a soft hand feel, and lasting durability for everyday use. The breathable material helps create a cozy and comfortable sleep environment. COMPLETE 3 PIECE SET: This set includes 1 Duvet Cover: 104 x 90 in, and 2 Pillow Shams: 20 x 36 in. Each piece is designed to coordinate beautifully, giving you a polished and cohesive bedding look right out of the package. BREATHABLE AND SKIN FRIENDLY: The linen construction promotes airflow and helps wick moisture away, keeping you comfortable while you rest. Its gentle, skin friendly surface makes it a thoughtful choice for bedrooms, guest rooms, and everyday relaxation. THOUGHTFUL CONSTRUCTION: The duvet cover is designed for easy use, with a smooth closure and interior corner ties that help keep your duvet insert neatly in place. The pillow shams feature a clean envelope style opening for a tidy and secure fit. EASY CARE AND VERSATILE COLOR: Machine wash in cold water on a gentle cycle and tumble dry low for simple maintenance. The sage green tone adds a calm, natural touch that blends easily with modern, farmhouse, and minimalist bedroom decor.",
     "descriptionHtml": "<p>PREMIUM LINEN FABRIC: This duvet cover set is crafted from 100 Percent Linen fabric, offering a naturally textured surface, a soft hand feel, and lasting durability for everyday use. The breathable material helps create a cozy and comfortable sleep environment.</p><p>COMPLETE 3 PIECE SET: This set includes 1 Duvet Cover: 104 x 90 in, and 2 Pillow Shams: 20 x 36 in. Each piece is designed to coordinate beautifully, giving you a polished and cohesive bedding look right out of the package.</p><p>BREATHABLE AND SKIN FRIENDLY: The linen construction promotes airflow and helps wick moisture away, keeping you comfortable while you rest. Its gentle, skin friendly surface makes it a thoughtful choice for bedrooms, guest rooms, and everyday relaxation.</p><p>THOUGHTFUL CONSTRUCTION: The duvet cover is designed for easy use, with a smooth closure and interior corner ties that help keep your duvet insert neatly in place. The pillow shams feature a clean envelope style opening for a tidy and secure fit.</p><p>EASY CARE AND VERSATILE COLOR: Machine wash in cold water on a gentle cycle and tumble dry low for simple maintenance. The sage green tone adds a calm, natural touch that blends easily with modern, farmhouse, and minimalist bedroom decor.</p>",
@@ -31535,31 +31535,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-KING/1.webp",
-        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-KING/2.webp",
-        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-KING/3.webp",
-        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-KING/4.webp",
-        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/LINEN3-SAGE-KING/5.webp",
-        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
+        "altText": "100 Percent Linen Duvet Cover Set 3 Piece King Size Bedding Set With 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -34297,7 +34297,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C12",
     "asin": "1688-1052742241013-C12",
-    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
     "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1688-1052742241013-c12",
     "description": "SOFT FAUX CASHMERE FEEL: This area rug features a faux cashmere surface that feels soft and cozy underfoot, adding warmth and comfort to your living room, bedroom, or seating area. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
     "descriptionHtml": "<p>SOFT FAUX CASHMERE FEEL: This area rug features a faux cashmere surface that feels soft and cozy underfoot, adding warmth and comfort to your living room, bedroom, or seating area.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
@@ -34309,37 +34309,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C12/1.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C12/2.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C12/3.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C12/4.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C12/5.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C12/6.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (BS-15)",
         "width": 800,
         "height": 800
       }
@@ -34367,7 +34367,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C11",
     "asin": "1688-1052742241013-C11",
-    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
     "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-1688-1052742241013-c11",
     "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. The intricate border and central motifs add artistic charm to your home decor. SOFT FAUX CASHMERE COMFORT: Crafted from faux cashmere material, this rug offers a plush, cozy surface that feels gentle underfoot. The soft texture makes it ideal for relaxing, playing, or walking barefoot, enhancing comfort in any indoor space. NON SLIP SILICONE BACKING: The silicone backing helps keep the rug securely in place on various floor types, reducing slips and shifts. This non slip design is suitable for high traffic areas and homes with children or pets, providing added stability. VERSATILE SIZE FOR MULTIPLE ROOMS: Measuring 140 x 200cm, this rectangular rug fits well in living rooms, bedrooms, beside the sofa, or at the bedside. Its generous size provides ample coverage while complementing different furniture arrangements and interior styles. EASY CARE AND LONG LASTING: The low pile construction resists dirt and is easy to maintain. Simply vacuum regularly and spot clean with a mild detergent when needed. The durable materials help the rug retain its shape and color over time.",
     "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. The intricate border and central motifs add artistic charm to your home decor.</p><p>SOFT FAUX CASHMERE COMFORT: Crafted from faux cashmere material, this rug offers a plush, cozy surface that feels gentle underfoot. The soft texture makes it ideal for relaxing, playing, or walking barefoot, enhancing comfort in any indoor space.</p><p>NON SLIP SILICONE BACKING: The silicone backing helps keep the rug securely in place on various floor types, reducing slips and shifts. This non slip design is suitable for high traffic areas and homes with children or pets, providing added stability.</p><p>VERSATILE SIZE FOR MULTIPLE ROOMS: Measuring 140 x 200cm, this rectangular rug fits well in living rooms, bedrooms, beside the sofa, or at the bedside. Its generous size provides ample coverage while complementing different furniture arrangements and interior styles.</p><p>EASY CARE AND LONG LASTING: The low pile construction resists dirt and is easy to maintain. Simply vacuum regularly and spot clean with a mild detergent when needed. The durable materials help the rug retain its shape and color over time.</p>",
@@ -34379,37 +34379,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C11/1.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C11/2.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C11/3.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C11/4.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C11/5.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C11/6.webp",
-        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (BS-15)",
         "width": 800,
         "height": 800
       }
@@ -34437,7 +34437,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C10",
     "asin": "1688-1052742241013-C10",
-    "title": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+    "title": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
     "handle": "vintage-bohemian-persian-boho-chic-area-rug-soft-faux-1688-1052742241013-c10",
     "description": "VINTAGE BOHO DESIGN: This area rug features a Persian inspired medallion with floral motifs and a gently distressed look, adding warm character to living rooms, bedrooms, dining spaces, and entryways. The teal blue, navy, beige, and blush palette pairs well with bohemian, farmhouse, and modern decor. SOFT FAUX CASHMERE COMFORT: The faux cashmere surface offers a cozy, soft feel underfoot, making this 140 x 200cm rug a comfortable choice for sofa areas, bedside placement, and relaxed floor seating. Its low 0.5cm profile fits easily under furniture and around doorways. NON SLIP SILICONE BACKING: A silicone backing helps keep the rug stable on hard floors and low pile carpets, reducing sliding and bunching during everyday use. This makes it a practical option for busy living rooms, hallways, and under coffee tables. VERSATILE ROOM ACCENT: Designed for flexible placement, this 140 x 200cm carpet works as a living room anchor, bedroom accent, sofa companion, or bedside mat. The vintage pattern complements both classic and contemporary home styles. EASY CARE AND LONG LASTING LOOK: Vacuum regularly and spot clean with a mild detergent to maintain the rug's soft texture and printed pattern. Finished edges and a durable faux cashmere surface help it handle daily foot traffic in family spaces.",
     "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a Persian inspired medallion with floral motifs and a gently distressed look, adding warm character to living rooms, bedrooms, dining spaces, and entryways. The teal blue, navy, beige, and blush palette pairs well with bohemian, farmhouse, and modern decor.</p><p>SOFT FAUX CASHMERE COMFORT: The faux cashmere surface offers a cozy, soft feel underfoot, making this 140 x 200cm rug a comfortable choice for sofa areas, bedside placement, and relaxed floor seating. Its low 0.5cm profile fits easily under furniture and around doorways.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps keep the rug stable on hard floors and low pile carpets, reducing sliding and bunching during everyday use. This makes it a practical option for busy living rooms, hallways, and under coffee tables.</p><p>VERSATILE ROOM ACCENT: Designed for flexible placement, this 140 x 200cm carpet works as a living room anchor, bedroom accent, sofa companion, or bedside mat. The vintage pattern complements both classic and contemporary home styles.</p><p>EASY CARE AND LONG LASTING LOOK: Vacuum regularly and spot clean with a mild detergent to maintain the rug's soft texture and printed pattern. Finished edges and a durable faux cashmere surface help it handle daily foot traffic in family spaces.</p>",
@@ -34449,37 +34449,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C10/1.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C10/2.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C10/3.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C10/4.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C10/5.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C10/6.webp",
-        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
+        "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (BS-14)",
         "width": 800,
         "height": 800
       }
@@ -34507,7 +34507,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C9",
     "asin": "1688-1052742241013-C9",
-    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
     "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-1688-1052742241013-c9",
     "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. The vintage distressed look adds warmth and character to living rooms, bedrooms, and cozy seating areas. SOFT FAUX CASHMERE SURFACE: The plush faux cashmere top offers a gentle, velvety feel underfoot. It creates a comfortable spot for bare feet, pets, and children while bringing a soft textured layer to your home decor. ANTI SLIP SILICONE BACKING: Designed with a silicone backing, this rug helps stay securely in place on hard floors and low pile carpets. The anti slip construction reduces shifting and curling for safer everyday use in busy rooms. VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rectangular rug fits well under coffee tables, at the foot of a bed, beside a sofa, or in a dining area. The low profile height of 0.5cm allows doors to open smoothly and works with many furniture layouts. EASY CARE & LOW MAINTENANCE: The non shedding surface is simple to maintain with regular vacuuming and spot cleaning. For long lasting beauty, rotate the rug occasionally and avoid prolonged direct sunlight.",
     "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. The vintage distressed look adds warmth and character to living rooms, bedrooms, and cozy seating areas.</p><p>SOFT FAUX CASHMERE SURFACE: The plush faux cashmere top offers a gentle, velvety feel underfoot. It creates a comfortable spot for bare feet, pets, and children while bringing a soft textured layer to your home decor.</p><p>ANTI SLIP SILICONE BACKING: Designed with a silicone backing, this rug helps stay securely in place on hard floors and low pile carpets. The anti slip construction reduces shifting and curling for safer everyday use in busy rooms.</p><p>VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rectangular rug fits well under coffee tables, at the foot of a bed, beside a sofa, or in a dining area. The low profile height of 0.5cm allows doors to open smoothly and works with many furniture layouts.</p><p>EASY CARE &amp; LOW MAINTENANCE: The non shedding surface is simple to maintain with regular vacuuming and spot cleaning. For long lasting beauty, rotate the rug occasionally and avoid prolonged direct sunlight.</p>",
@@ -34519,37 +34519,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C9/1.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C9/2.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C9/3.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C9/4.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C9/5.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C9/6.webp",
-        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (BS-14)",
         "width": 800,
         "height": 800
       }
@@ -34577,7 +34577,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C8",
     "asin": "1688-1052742241013-C8",
-    "title": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+    "title": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
     "handle": "vintage-persian-area-rug-faux-cashmere-boho-non-slip-1688-1052742241013-c8",
     "description": "VINTAGE PERSIAN INSPIRED DESIGN: This area rug features a traditional medallion center, floral border, and soft sage green tones with beige and rust accents, bringing a warm bohemian look to living rooms, bedrooms, sofa areas, and bedside spaces. SOFT FAUX CASHMERE FEEL: The faux cashmere surface provides a gentle, cozy touch underfoot while keeping a low profile that fits everyday indoor areas. Its soft texture makes the rug a comfortable choice for relaxing, reading, or walking barefoot. NON SLIP SILICONE BACKING: The silicone backing helps hold the rug in place on hard floors and can reduce shifting when you walk, sit, or place light furniture on it. This design supports stable placement in busy living rooms, bedrooms, and bedside areas. VERSATILE 140 x 200cm SIZE: Measuring 140 x 200cm with a 0.5cm height, this area rug fits living room seating areas, under a coffee table, beside a bed, or in a bedroom as a soft decorative layer. The rectangular shape works with many furniture layouts. EASY DAILY CARE: Low pile construction allows simple upkeep for indoor spaces. Vacuum regularly on a low setting, spot clean gently with mild soap and a damp cloth, and roll or fold the rug for storage when needed.",
     "descriptionHtml": "<p>VINTAGE PERSIAN INSPIRED DESIGN: This area rug features a traditional medallion center, floral border, and soft sage green tones with beige and rust accents, bringing a warm bohemian look to living rooms, bedrooms, sofa areas, and bedside spaces.</p><p>SOFT FAUX CASHMERE FEEL: The faux cashmere surface provides a gentle, cozy touch underfoot while keeping a low profile that fits everyday indoor areas. Its soft texture makes the rug a comfortable choice for relaxing, reading, or walking barefoot.</p><p>NON SLIP SILICONE BACKING: The silicone backing helps hold the rug in place on hard floors and can reduce shifting when you walk, sit, or place light furniture on it. This design supports stable placement in busy living rooms, bedrooms, and bedside areas.</p><p>VERSATILE 140 x 200cm SIZE: Measuring 140 x 200cm with a 0.5cm height, this area rug fits living room seating areas, under a coffee table, beside a bed, or in a bedroom as a soft decorative layer. The rectangular shape works with many furniture layouts.</p><p>EASY DAILY CARE: Low pile construction allows simple upkeep for indoor spaces. Vacuum regularly on a low setting, spot clean gently with mild soap and a damp cloth, and roll or fold the rug for storage when needed.</p>",
@@ -34589,37 +34589,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C8/1.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C8/2.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C8/3.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C8/4.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C8/5.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C8/6.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -34647,7 +34647,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-1052742241013-C7",
     "asin": "1688-1052742241013-C7",
-    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
     "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-1688-1052742241013-c7",
     "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. The soft texture helps create a warm, inviting spot for relaxing, reading, or spending time with family. NON SLIP SILICONE BACKING: The silicone backing is designed to help keep the rug stable on hard floors, reducing shifting during daily use. This feature makes it a practical choice for busy homes with kids or pets, and it works well under sofas, beds, and coffee tables. VINTAGE PERSIAN BOHEMIAN MOTIF: The rug showcases a traditional Persian-inspired medallion pattern with Bohemian details in a sage green palette and muted red accents. Its faded vintage look brings character to modern, farmhouse, or eclectic interiors without overpowering the room. VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rug offers generous coverage for living room seating areas, bedroom floors, and bedside spaces. The low 0.5cm profile allows it to sit neatly under furniture and makes it easy to place in entryways or dining areas. EASY CARE AND LONG LASTING USE: Regular vacuuming and spot cleaning with a mild detergent help maintain the rug's appearance. The durable construction and non slip backing support everyday use in high traffic areas, making it a low maintenance addition to your home.",
     "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. The soft texture helps create a warm, inviting spot for relaxing, reading, or spending time with family.</p><p>NON SLIP SILICONE BACKING: The silicone backing is designed to help keep the rug stable on hard floors, reducing shifting during daily use. This feature makes it a practical choice for busy homes with kids or pets, and it works well under sofas, beds, and coffee tables.</p><p>VINTAGE PERSIAN BOHEMIAN MOTIF: The rug showcases a traditional Persian-inspired medallion pattern with Bohemian details in a sage green palette and muted red accents. Its faded vintage look brings character to modern, farmhouse, or eclectic interiors without overpowering the room.</p><p>VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rug offers generous coverage for living room seating areas, bedroom floors, and bedside spaces. The low 0.5cm profile allows it to sit neatly under furniture and makes it easy to place in entryways or dining areas.</p><p>EASY CARE AND LONG LASTING USE: Regular vacuuming and spot cleaning with a mild detergent help maintain the rug's appearance. The durable construction and non slip backing support everyday use in high traffic areas, making it a low maintenance addition to your home.</p>",
@@ -34659,37 +34659,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/1688-1052742241013-C7/1.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C7/2.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C7/3.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C7/4.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C7/5.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       },
       {
         "url": "/images/products/1688-1052742241013-C7/6.webp",
-        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-13)",
         "width": 800,
         "height": 800
       }
@@ -34709,6 +34709,5412 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "currencyCode": "USD"
         },
         "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-40X60",
+    "asin": "1688-1052742241013-C7-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-40-x-60-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-50X80",
+    "asin": "1688-1052742241013-C7-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-50-x-80-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-60X90",
+    "asin": "1688-1052742241013-C7-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-60-x-90-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-80X120",
+    "asin": "1688-1052742241013-C7-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-80-x-120-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-80X160",
+    "asin": "1688-1052742241013-C7-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-80-x-160-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-100X160",
+    "asin": "1688-1052742241013-C7-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-100-x-160-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-120X160",
+    "asin": "1688-1052742241013-C7-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-120-x-160-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-160X230",
+    "asin": "1688-1052742241013-C7-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-160-x-230-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C7-200X300",
+    "asin": "1688-1052742241013-C7-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-13)",
+    "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-200-x-300-cm-1688-1052742241013-c7",
+    "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C7/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-13)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C7-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-40X60",
+    "asin": "1688-1052742241013-C9-40X60",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 40 x 60 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-40-x-60-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 40 x 60 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-50X80",
+    "asin": "1688-1052742241013-C9-50X80",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 50 x 80 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-50-x-80-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 50 x 80 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-60X90",
+    "asin": "1688-1052742241013-C9-60X90",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 60 x 90 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-60-x-90-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 60 x 90 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-80X120",
+    "asin": "1688-1052742241013-C9-80X120",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 80 x 120 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-80-x-120-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 80 x 120 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-80X160",
+    "asin": "1688-1052742241013-C9-80X160",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 80 x 160 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-80-x-160-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 80 x 160 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-100X160",
+    "asin": "1688-1052742241013-C9-100X160",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 100 x 160 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-100-x-160-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 100 x 160 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-120X160",
+    "asin": "1688-1052742241013-C9-120X160",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 120 x 160 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-120-x-160-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 120 x 160 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-160X230",
+    "asin": "1688-1052742241013-C9-160X230",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 160 x 230 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-160-x-230-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 160 x 230 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C9-200X300",
+    "asin": "1688-1052742241013-C9-200X300",
+    "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 200 x 300 cm (BS-14)",
+    "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-200-x-300-cm-1688-1052742241013-c9",
+    "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C9/1.webp",
+        "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 200 x 300 cm (BS-14)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C9-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-40X60",
+    "asin": "1688-1052742241013-C11-40X60",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 40 x 60 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-40-x-60-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 40 x 60 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-50X80",
+    "asin": "1688-1052742241013-C11-50X80",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 50 x 80 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-50-x-80-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 50 x 80 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-60X90",
+    "asin": "1688-1052742241013-C11-60X90",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 60 x 90 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-60-x-90-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 60 x 90 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-80X120",
+    "asin": "1688-1052742241013-C11-80X120",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 80 x 120 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-80-x-120-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 80 x 120 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-80X160",
+    "asin": "1688-1052742241013-C11-80X160",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 80 x 160 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-80-x-160-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 80 x 160 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-100X160",
+    "asin": "1688-1052742241013-C11-100X160",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 100 x 160 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-100-x-160-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 100 x 160 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-120X160",
+    "asin": "1688-1052742241013-C11-120X160",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 120 x 160 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-120-x-160-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 120 x 160 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-160X230",
+    "asin": "1688-1052742241013-C11-160X230",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 160 x 230 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-160-x-230-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 160 x 230 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C11-200X300",
+    "asin": "1688-1052742241013-C11-200X300",
+    "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 200 x 300 cm (BS-15)",
+    "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-200-x-300-cm-1688-1052742241013-c11",
+    "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C11/1.webp",
+        "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 200 x 300 cm (BS-15)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C11-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-40X60",
+    "asin": "1688-1052742241013-C13-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-40-x-60-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-50X80",
+    "asin": "1688-1052742241013-C13-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-50-x-80-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-60X90",
+    "asin": "1688-1052742241013-C13-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-60-x-90-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-80X120",
+    "asin": "1688-1052742241013-C13-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-80-x-120-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-80X160",
+    "asin": "1688-1052742241013-C13-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-80-x-160-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-100X160",
+    "asin": "1688-1052742241013-C13-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-100-x-160-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-120X160",
+    "asin": "1688-1052742241013-C13-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-120-x-160-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-140X200",
+    "asin": "1688-1052742241013-C13-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-140-x-200-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-160X230",
+    "asin": "1688-1052742241013-C13-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-160-x-230-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13",
+    "asin": "1688-1052742241013-C13",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C13-200X300",
+    "asin": "1688-1052742241013-C13-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-1)",
+    "handle": "vintage-persian-area-rug-bs-1-200-x-300-cm-1688-1052742241013-c13",
+    "description": "Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-1 Persian Design: Showcases a distressed oriental medallion layout in red and cream medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C13/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-1)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C13-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-40X60",
+    "asin": "1688-1052742241013-C14-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-40-x-60-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-50X80",
+    "asin": "1688-1052742241013-C14-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-50-x-80-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-60X90",
+    "asin": "1688-1052742241013-C14-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-60-x-90-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-80X120",
+    "asin": "1688-1052742241013-C14-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-80-x-120-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-80X160",
+    "asin": "1688-1052742241013-C14-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-80-x-160-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-100X160",
+    "asin": "1688-1052742241013-C14-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-100-x-160-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-120X160",
+    "asin": "1688-1052742241013-C14-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-120-x-160-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-140X200",
+    "asin": "1688-1052742241013-C14-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-140-x-200-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-160X230",
+    "asin": "1688-1052742241013-C14-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-160-x-230-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14",
+    "asin": "1688-1052742241013-C14",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C14-200X300",
+    "asin": "1688-1052742241013-C14-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-2)",
+    "handle": "vintage-persian-area-rug-bs-2-200-x-300-cm-1688-1052742241013-c14",
+    "description": "Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-2 Persian Design: Showcases a distressed oriental medallion layout in pastel blue diamond tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C14/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-2)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C14-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-40X60",
+    "asin": "1688-1052742241013-C15-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-40-x-60-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-50X80",
+    "asin": "1688-1052742241013-C15-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-50-x-80-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-60X90",
+    "asin": "1688-1052742241013-C15-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-60-x-90-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-80X120",
+    "asin": "1688-1052742241013-C15-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-80-x-120-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-80X160",
+    "asin": "1688-1052742241013-C15-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-80-x-160-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-100X160",
+    "asin": "1688-1052742241013-C15-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-100-x-160-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-120X160",
+    "asin": "1688-1052742241013-C15-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-120-x-160-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-140X200",
+    "asin": "1688-1052742241013-C15-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-140-x-200-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-160X230",
+    "asin": "1688-1052742241013-C15-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-160-x-230-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15",
+    "asin": "1688-1052742241013-C15",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C15-200X300",
+    "asin": "1688-1052742241013-C15-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-3)",
+    "handle": "vintage-persian-area-rug-bs-3-200-x-300-cm-1688-1052742241013-c15",
+    "description": "Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-3 Persian Design: Showcases a distressed oriental medallion layout in golden beige floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C15/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-3)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C15-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-40X60",
+    "asin": "1688-1052742241013-C16-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-40-x-60-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-50X80",
+    "asin": "1688-1052742241013-C16-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-50-x-80-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-60X90",
+    "asin": "1688-1052742241013-C16-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-60-x-90-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-80X120",
+    "asin": "1688-1052742241013-C16-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-80-x-120-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-80X160",
+    "asin": "1688-1052742241013-C16-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-80-x-160-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-100X160",
+    "asin": "1688-1052742241013-C16-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-100-x-160-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-120X160",
+    "asin": "1688-1052742241013-C16-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-120-x-160-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-140X200",
+    "asin": "1688-1052742241013-C16-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-140-x-200-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-160X230",
+    "asin": "1688-1052742241013-C16-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-160-x-230-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16",
+    "asin": "1688-1052742241013-C16",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C16-200X300",
+    "asin": "1688-1052742241013-C16-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-4)",
+    "handle": "vintage-persian-area-rug-bs-4-200-x-300-cm-1688-1052742241013-c16",
+    "description": "Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-4 Persian Design: Showcases a distressed oriental medallion layout in soft light blue tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C16/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-4)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C16-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-40X60",
+    "asin": "1688-1052742241013-C17-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-40-x-60-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-50X80",
+    "asin": "1688-1052742241013-C17-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-50-x-80-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-60X90",
+    "asin": "1688-1052742241013-C17-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-60-x-90-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-80X120",
+    "asin": "1688-1052742241013-C17-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-80-x-120-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-80X160",
+    "asin": "1688-1052742241013-C17-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-80-x-160-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-100X160",
+    "asin": "1688-1052742241013-C17-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-100-x-160-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-120X160",
+    "asin": "1688-1052742241013-C17-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-120-x-160-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-140X200",
+    "asin": "1688-1052742241013-C17-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-140-x-200-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-160X230",
+    "asin": "1688-1052742241013-C17-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-160-x-230-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17",
+    "asin": "1688-1052742241013-C17",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C17-200X300",
+    "asin": "1688-1052742241013-C17-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-5)",
+    "handle": "vintage-persian-area-rug-bs-5-200-x-300-cm-1688-1052742241013-c17",
+    "description": "Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-5 Persian Design: Showcases a distressed oriental medallion layout in sage green medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C17/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-5)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C17-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-40X60",
+    "asin": "1688-1052742241013-C18-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-40-x-60-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-50X80",
+    "asin": "1688-1052742241013-C18-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-50-x-80-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-60X90",
+    "asin": "1688-1052742241013-C18-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-60-x-90-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-80X120",
+    "asin": "1688-1052742241013-C18-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-80-x-120-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-80X160",
+    "asin": "1688-1052742241013-C18-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-80-x-160-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-100X160",
+    "asin": "1688-1052742241013-C18-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-100-x-160-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-120X160",
+    "asin": "1688-1052742241013-C18-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-120-x-160-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-140X200",
+    "asin": "1688-1052742241013-C18-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-140-x-200-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-160X230",
+    "asin": "1688-1052742241013-C18-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-160-x-230-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18",
+    "asin": "1688-1052742241013-C18",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C18-200X300",
+    "asin": "1688-1052742241013-C18-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-6)",
+    "handle": "vintage-persian-area-rug-bs-6-200-x-300-cm-1688-1052742241013-c18",
+    "description": "Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-6 Persian Design: Showcases a distressed oriental medallion layout in cream gold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C18/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-6)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C18-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-40X60",
+    "asin": "1688-1052742241013-C19-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-40-x-60-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-50X80",
+    "asin": "1688-1052742241013-C19-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-50-x-80-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-60X90",
+    "asin": "1688-1052742241013-C19-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-60-x-90-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-80X120",
+    "asin": "1688-1052742241013-C19-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-80-x-120-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-80X160",
+    "asin": "1688-1052742241013-C19-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-80-x-160-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-100X160",
+    "asin": "1688-1052742241013-C19-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-100-x-160-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-120X160",
+    "asin": "1688-1052742241013-C19-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-120-x-160-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-140X200",
+    "asin": "1688-1052742241013-C19-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-140-x-200-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-160X230",
+    "asin": "1688-1052742241013-C19-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-160-x-230-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19",
+    "asin": "1688-1052742241013-C19",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C19-200X300",
+    "asin": "1688-1052742241013-C19-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-7)",
+    "handle": "vintage-persian-area-rug-bs-7-200-x-300-cm-1688-1052742241013-c19",
+    "description": "Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-7 Persian Design: Showcases a distressed oriental medallion layout in red and navy medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C19/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-7)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C19-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-40X60",
+    "asin": "1688-1052742241013-C20-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-40-x-60-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-50X80",
+    "asin": "1688-1052742241013-C20-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-50-x-80-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-60X90",
+    "asin": "1688-1052742241013-C20-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-60-x-90-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-80X120",
+    "asin": "1688-1052742241013-C20-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-80-x-120-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-80X160",
+    "asin": "1688-1052742241013-C20-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-80-x-160-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-100X160",
+    "asin": "1688-1052742241013-C20-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-100-x-160-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-120X160",
+    "asin": "1688-1052742241013-C20-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-120-x-160-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-140X200",
+    "asin": "1688-1052742241013-C20-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-140-x-200-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-160X230",
+    "asin": "1688-1052742241013-C20-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-160-x-230-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20",
+    "asin": "1688-1052742241013-C20",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C20-200X300",
+    "asin": "1688-1052742241013-C20-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-8)",
+    "handle": "vintage-persian-area-rug-bs-8-200-x-300-cm-1688-1052742241013-c20",
+    "description": "Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-8 Persian Design: Showcases a distressed oriental medallion layout in blue and white bold medallion tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C20/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-8)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C20-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-40X60",
+    "asin": "1688-1052742241013-C21-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-40-x-60-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-50X80",
+    "asin": "1688-1052742241013-C21-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-50-x-80-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-60X90",
+    "asin": "1688-1052742241013-C21-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-60-x-90-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-80X120",
+    "asin": "1688-1052742241013-C21-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-80-x-120-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-80X160",
+    "asin": "1688-1052742241013-C21-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-80-x-160-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-100X160",
+    "asin": "1688-1052742241013-C21-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-100-x-160-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-120X160",
+    "asin": "1688-1052742241013-C21-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-120-x-160-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-140X200",
+    "asin": "1688-1052742241013-C21-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-140-x-200-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-160X230",
+    "asin": "1688-1052742241013-C21-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-160-x-230-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21",
+    "asin": "1688-1052742241013-C21",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C21-200X300",
+    "asin": "1688-1052742241013-C21-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-9)",
+    "handle": "vintage-persian-area-rug-bs-9-200-x-300-cm-1688-1052742241013-c21",
+    "description": "Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-9 Persian Design: Showcases a distressed oriental medallion layout in soft blue grey tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C21/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-9)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C21-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-40X60",
+    "asin": "1688-1052742241013-C22-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-40-x-60-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-50X80",
+    "asin": "1688-1052742241013-C22-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-50-x-80-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-60X90",
+    "asin": "1688-1052742241013-C22-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-60-x-90-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-80X120",
+    "asin": "1688-1052742241013-C22-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-80-x-120-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-80X160",
+    "asin": "1688-1052742241013-C22-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-80-x-160-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-100X160",
+    "asin": "1688-1052742241013-C22-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-100-x-160-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-120X160",
+    "asin": "1688-1052742241013-C22-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-120-x-160-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-140X200",
+    "asin": "1688-1052742241013-C22-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-140-x-200-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-160X230",
+    "asin": "1688-1052742241013-C22-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-160-x-230-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22",
+    "asin": "1688-1052742241013-C22",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C22-200X300",
+    "asin": "1688-1052742241013-C22-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-10)",
+    "handle": "vintage-persian-area-rug-bs-10-200-x-300-cm-1688-1052742241013-c22",
+    "description": "Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-10 Persian Design: Showcases a distressed oriental medallion layout in muted grey beige tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C22/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-10)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C22-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-40X60",
+    "asin": "1688-1052742241013-C23-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-40-x-60-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-50X80",
+    "asin": "1688-1052742241013-C23-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-50-x-80-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-60X90",
+    "asin": "1688-1052742241013-C23-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-60-x-90-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-80X120",
+    "asin": "1688-1052742241013-C23-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-80-x-120-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-80X160",
+    "asin": "1688-1052742241013-C23-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-80-x-160-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-100X160",
+    "asin": "1688-1052742241013-C23-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-100-x-160-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-120X160",
+    "asin": "1688-1052742241013-C23-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-120-x-160-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-140X200",
+    "asin": "1688-1052742241013-C23-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-140-x-200-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-160X230",
+    "asin": "1688-1052742241013-C23-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-160-x-230-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23",
+    "asin": "1688-1052742241013-C23",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C23-200X300",
+    "asin": "1688-1052742241013-C23-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-11)",
+    "handle": "vintage-persian-area-rug-bs-11-200-x-300-cm-1688-1052742241013-c23",
+    "description": "Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-11 Persian Design: Showcases a distressed oriental medallion layout in burgundy floral tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C23/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-11)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C23-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-40X60",
+    "asin": "1688-1052742241013-C24-40X60",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-40-x-60-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 40 x 60cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 40 x 60 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-40X60",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-50X80",
+    "asin": "1688-1052742241013-C24-50X80",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-50-x-80-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 50 x 80cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 50 x 80 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-50X80",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-60X90",
+    "asin": "1688-1052742241013-C24-60X90",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-60-x-90-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 60 x 90cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 60 x 90 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-60X90",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-80X120",
+    "asin": "1688-1052742241013-C24-80X120",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-80-x-120-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 120cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 120 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-80X160",
+    "asin": "1688-1052742241013-C24-80X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-80-x-160-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 80 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 80 x 160 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-100X160",
+    "asin": "1688-1052742241013-C24-100X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-100-x-160-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 100 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 100 x 160 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-120X160",
+    "asin": "1688-1052742241013-C24-120X160",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-120-x-160-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 120 x 160cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 120 x 160 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-140X200",
+    "asin": "1688-1052742241013-C24-140X200",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-140-x-200-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 140 x 200cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 140 x 200 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-160X230",
+    "asin": "1688-1052742241013-C24-160X230",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-160-x-230-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 160 x 230cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 160 x 230 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24",
+    "asin": "1688-1052742241013-C24",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-1052742241013-C24-200X300",
+    "asin": "1688-1052742241013-C24-200X300",
+    "title": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-12)",
+    "handle": "vintage-persian-area-rug-bs-12-200-x-300-cm-1688-1052742241013-c24",
+    "description": "Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
+    "descriptionHtml": "<p>Vintage BS-12 Persian Design: Showcases a distressed oriental medallion layout in ivory subtle tones, bringing timeless character to living rooms, bedrooms, and dining spaces.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 200 x 300cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-1052742241013-C24/1.webp",
+        "altText": "Vintage Persian Area Rug Faux Cashmere Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 200 x 300 cm (BS-12)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-1052742241013-C24-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
         "selectedOptions": []
       }
     ],
@@ -40994,7 +46400,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BOHOTHROW-TEAL-127",
     "asin": "BOHOTHROW-TEAL-127",
-    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (BS-14)",
     "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal",
     "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
     "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 50 x 71 in (127 x 180 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
@@ -41006,13 +46412,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BOHOTHROW-TEAL-127/1.webp",
-        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (BS-14)",
         "width": 1200,
         "height": 1600
       },
       {
         "url": "/images/products/BOHOTHROW-TEAL-127/2.webp",
-        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (BS-14)",
         "width": 1200,
         "height": 1600
       }
@@ -41040,7 +46446,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-BOHOTHROW-TEAL-130",
     "asin": "BOHOTHROW-TEAL-130",
-    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+    "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (BS-14)",
     "handle": "makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-teal",
     "description": "Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch. Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering. Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening. Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion. Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.",
     "descriptionHtml": "<p>Bohemian Chevron Design: Bold zigzag chevron stripes in warm, earthy tones give this throw its free-spirited boho character, finished with hand-knotted tassels on both ends for an artisan touch.</p><p>Soft Acrylic Knit: Knitted from soft, lightweight acrylic yarn, the blanket feels gentle and cozy without bulk—comfortable across all four seasons, from cool summer evenings to winter layering.</p><p>Generous Size with Tassels: Measuring 51 x 91 in (130 x 230 cm) including the tassel fringe, it drapes beautifully over a sofa arm, across the foot of a bed, or around your shoulders on a cool evening.</p><p>Versatile Boho Accent: The Teal Blue palette pairs effortlessly with bohemian, farmhouse, or eclectic décor—use it as a couch throw, bed-end blanket, reading-nook wrap, or picnic companion.</p><p>Easy Everyday Care: Machine washable on a gentle cycle; the knit keeps its color and texture wash after wash, and the tassels stay neat with a quick reshape while damp.</p>",
@@ -41052,13 +46458,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "images": [
       {
         "url": "/images/products/BOHOTHROW-TEAL-130/1.webp",
-        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (BS-14)",
         "width": 1200,
         "height": 1600
       },
       {
         "url": "/images/products/BOHOTHROW-TEAL-130/2.webp",
-        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
+        "altText": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (BS-14)",
         "width": 1200,
         "height": 1600
       }
