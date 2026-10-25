@@ -27,7 +27,7 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
 
 /** 分区顺序（2026-10-16 用户定，与 hero 快链一致；2026-10-22 three 下线并入 four；
  *  2026-10-25 新增 sheet（Fitted Sheets）分区，排在 duvet 之后）；comforter 不在类型快链里，有产品时兜底排最后 */
-const SECTION_KIND_ORDER: SetKind[] = ['four', 'duvet', 'sheet', 'comforter'];
+const SECTION_KIND_ORDER: SetKind[] = ['four', 'duvet', 'sheet', 'pillowcase', 'comforter'];
 
 /**
  * four 分区族块位次对调（2026-10-24 用户定）：DUVSET（灰）换到第 2 位、WASHSTRIPE（sage）第 3 位、

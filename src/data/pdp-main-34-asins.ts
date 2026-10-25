@@ -4,10 +4,6 @@
  * 由 scripts/bedding-34-split-images.js 生成；sateen6+percale-lavender 充值补图后需重新生成此文件
  */
 export const PDP_MAIN_34_ASINS = new Set<string>([
-  '1688-916370884976-c5',
-  '1688-916370884976-c6',
-  '1688-916370884976-c7',
-  '1688-916370884976-c8',
   'bedset4-blue-full',
   'bedset4-blue-king',
   'bedset4-blue-queen',
@@ -48,34 +44,19 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'duvset-beanred-king',
   'duvset-beanred-queen',
   'duvset-beanred-twin',
-  'duvset-beige-duvet',
   'duvset-beige-full',
   'duvset-beige-king',
   'duvset-beige-queen',
   'duvset-beige-twin',
-  'duvset-butter-full',
-  'duvset-butter-king',
-  'duvset-butter-queen',
-  'duvset-butter-twin',
-  'duvset-dill-full',
-  'duvset-dill-king',
-  'duvset-dill-queen',
-  'duvset-dill-twin',
   'duvset-gray-duvet',
   'duvset-gray-full',
   'duvset-gray-king',
   'duvset-gray-queen',
   'duvset-gray-twin',
-  'duvset-oat-full',
-  'duvset-oat-king',
-  'duvset-oat-queen',
-  'duvset-oat-twin',
-  'duvset-pink-duvet',
   'duvset-pink-full',
   'duvset-pink-king',
   'duvset-pink-queen',
   'duvset-pink-twin',
-  'duvset-white-duvet',
   'duvset-white-full',
   'duvset-white-king',
   'duvset-white-queen',
@@ -170,16 +151,12 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'pompom4-vine-duvet',
   'washjac-cream-duvet',
   'veljac-ivory-duvet',
-  'percale-coconut-duvet',
-  'sateen4-olive-duvet',
   'sateen4-cream-queen',
   'sateen4-sage-sheet',
   'percale-white-sheet',
   'duvset-gray-sheet',
   'pompom4-olive-sheet',
   'percalejac-haze-duvet',
-  'percalejac-oatbeige-duvet',
-  'washstripe-sage-duvet',
   'percale-coconut-queen-duvet',
   'percale-mist-duvet',
   'percale-mist-twin-duvet',
@@ -201,3 +178,14 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'velstripe-denim-queen',
   'velstripe-charcoal-queen',
 ]);
+
+/**
+ * 2026-10-26 用户定：个别产品的"产品卡主图"前置为 PDP 图集第一张（其余图依次后移，
+ * 含 1-3x4.webp 主图位）。key = asin 小写，value = 卡片图源（与 PLP 卡面一致）。
+ */
+export const PDP_MAIN_PREPEND_IMAGES: Record<string, string> = {
+  // Sky Blue 独立被套：卡面 = featuredImage（card-lifestyle-3x4.webp）
+  'percale-sky-duvet': '/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp',
+  // Blush Pink 细条纹提花独立被套：卡面 = images[0]（1.webp）
+  'percalestripe-petal-duvet': '/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp',
+};

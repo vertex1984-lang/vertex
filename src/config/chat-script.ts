@@ -67,7 +67,7 @@ const RUGS: Rug[] = [
     colors: ["grey", "beige", "neutral"],
     tier: "budget",
   },
-  {
+{
     title: "Minimalist Geometric Area Rug — Black & White",
     price: "$34.90",
     image: "/images/products/1688-744995685423-C2/1.webp",
@@ -79,7 +79,7 @@ const RUGS: Rug[] = [
     colors: ["black", "white", "grey", "neutral"],
     tier: "budget",
   },
-  {
+{
     title: "Ultra-Soft Faux Rabbit Fur Rug — Off White",
     price: "$199.00",
     image: "/images/products/1688-595229918569/1.webp",
@@ -91,7 +91,7 @@ const RUGS: Rug[] = [
     colors: ["white", "cream", "neutral"],
     tier: "premium",
   },
-  {
+{
     title: "Plush Faux Rabbit Fur Rug — Light Camel",
     price: "$199.00",
     image: "/images/products/1688-595229918569-C2/1.webp",
@@ -103,7 +103,7 @@ const RUGS: Rug[] = [
     colors: ["camel", "beige", "tan", "neutral"],
     tier: "premium",
   },
-  {
+{
     title: "Distressed Vintage Persian Rug — Amber & Teal",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C3/1.webp",
@@ -115,7 +115,7 @@ const RUGS: Rug[] = [
     colors: ["amber", "orange", "teal", "blue", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Turkish Persian Diamond Rug — Navy & Ivory",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C2/1.webp",
@@ -127,7 +127,7 @@ const RUGS: Rug[] = [
     colors: ["navy", "blue", "purple", "ivory", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Faux Cashmere Vintage Rug — Sage",
     price: "$99.00",
     image: "/images/products/1688-1052742241013-C3/1.webp",
@@ -139,7 +139,7 @@ const RUGS: Rug[] = [
     colors: ["sage", "green", "grey", "muted"],
     tier: "mid",
   },
-  {
+{
     title: "Bohemian Medallion Rug — Navy",
     price: "$99.00",
     image: "/images/products/1688-1052742241013-C2/1.webp",
@@ -151,7 +151,7 @@ const RUGS: Rug[] = [
     colors: ["navy", "blue"],
     tier: "mid",
   },
-  {
+{
     title: "Oval Shaggy Rug — Warm Khaki",
     price: "$39.00",
     image: "/images/products/1688-996768645117/1.webp",
@@ -163,7 +163,7 @@ const RUGS: Rug[] = [
     colors: ["khaki", "beige", "neutral"],
     tier: "budget",
   },
-  {
+{
     title: "Colorful Anatolian Striped Rug",
     price: "$199.00",
     image: "/images/products/1688-745181807454/1.webp",
@@ -175,7 +175,7 @@ const RUGS: Rug[] = [
     colors: ["colorful", "red", "rainbow"],
     tier: "premium",
   },
-  {
+{
     title: "Bohemian Medallion Rug — Red & Blue",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C4/1.webp",
@@ -187,7 +187,7 @@ const RUGS: Rug[] = [
     colors: ["red", "blue", "green", "ivory", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Faded Medallion Rug — Cream & Teal",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C5/1.webp",
@@ -199,7 +199,7 @@ const RUGS: Rug[] = [
     colors: ["navy", "orange", "pink", "teal", "cream", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Vintage Medallion Rug — Multicolor",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C6/1.webp",
@@ -211,7 +211,7 @@ const RUGS: Rug[] = [
     colors: ["blue", "red", "beige", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Tribal Striped Rug — Red & Gold",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C7/1.webp",
@@ -223,7 +223,7 @@ const RUGS: Rug[] = [
     colors: ["red", "blue", "green", "gold", "colorful"],
     tier: "premium",
   },
-  {
+{
     title: "Oriental Medallion Rug — Black & Gold",
     price: "$199.00",
     image: "/images/products/1688-745181807454-C8/1.webp",
@@ -235,7 +235,7 @@ const RUGS: Rug[] = [
     colors: ["black", "gold", "neutral"],
     tier: "premium",
   },
-  {
+{
     title: "Vintage Persian Rug — Rust & Teal",
     price: "$99.00",
     image: "/images/products/1688-1052742241013/1.webp",
@@ -248,7 +248,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "rug",
   },
-  {
+{
     title: "Distressed Persian Medallion Rug — Multicolor",
     price: "$199.00",
     image: "/images/products/1688-1052742241013-C4/1.webp",
@@ -261,7 +261,7 @@ const RUGS: Rug[] = [
     tier: "premium",
     kind: "rug",
   },
-  {
+{
     title: "Persian Medallion Rug — Teal Blue",
     price: "$199.00",
     image: "/images/products/1688-1052742241013-C5/1.webp",
@@ -274,7 +274,7 @@ const RUGS: Rug[] = [
     tier: "premium",
     kind: "rug",
   },
-  {
+{
     title: "Vintage Persian Rug — Rust Orange",
     price: "$199.00",
     image: "/images/products/1688-1052742241013-C6/1.webp",
@@ -287,7 +287,7 @@ const RUGS: Rug[] = [
     tier: "premium",
     kind: "rug",
   },
-  {
+{
     title: "Oval Tie-Dye Shaggy Rug — Light Grey",
     price: "$25.99",
     image: "/images/products/1688-996768645117-C2/1.webp",
@@ -300,7 +300,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "rug",
   },
-  {
+{
     title: "Nordic Oval Shaggy Rug — Snow White",
     price: "$25.99",
     image: "/images/products/1688-996768645117-C3/1.webp",
@@ -313,7 +313,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "rug",
   },
-  {
+{
     title: "Faux Rabbit Fur Shaggy Rug — Silver Grey",
     price: "$99.99",
     image: "/images/products/1688-595229918569-C3/1.webp",
@@ -326,7 +326,7 @@ const RUGS: Rug[] = [
     tier: "premium",
     kind: "rug",
   },
-  {
+{
     title: "Plush Non-Slip Cotton Bath Mats — Set of 2 (50 x 80cm)",
     price: "$19.99",
     image: "/images/products/1688-828008656438/1.webp",
@@ -339,7 +339,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "mat",
   },
-  {
+{
     title: "Quick-Dry Cotton Bath Mats 2-Pack — 50 x 80cm",
     price: "$19.99",
     image: "/images/products/1688-828008656438-C2/1.webp",
@@ -352,7 +352,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "mat",
   },
-  {
+{
     title: "Jacquard Cotton Bath Mat Set — 50 x 80cm",
     price: "$19.99",
     image: "/images/products/1688-828008656438-C3/1.webp",
@@ -365,7 +365,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "mat",
   },
-  {
+{
     title: "Throw Pillow Inserts 45 x 45cm — Set of 2",
     price: "$12.99",
     image: "/images/products/B0CQC6H9MZ/1.webp",
@@ -378,7 +378,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "pillow",
   },
-  {
+{
     title: "Pillow Inserts 50 x 50cm — Set of 2",
     price: "$10.00",
     image: "/images/products/B0F62ZY8ZN/2.webp",
@@ -391,20 +391,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "pillow",
   },
-  {
-    title: "Pillow Inserts 50 x 70cm — Set of 2",
-    price: "$15.99",
-    image: "/images/products/B0F62Y59CW/2.webp",
-    url: "/products/makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw",
-    size: "50 x 70cm",
-    material: "Fluffy hollow fibre",
-    rooms: ["living", "bedroom"],
-    vibe: "plush",
-    colors: ["white", "neutral"],
-    tier: "budget",
-    kind: "pillow",
-  },
-  {
+{
     title: "Pillow Inserts 60 x 60cm — Set of 2",
     price: "$16.99",
     image: "/images/products/B0F62Y3XT9/2.webp",
@@ -417,33 +404,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "pillow",
   },
-  {
-    title: "Embossed Cushion Covers 50 x 70cm — Set of 2",
-    price: "$13.55",
-    image: "/images/products/B0GJLDMT57/2.webp",
-    url: "/products/makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57",
-    size: "50 x 70cm",
-    material: "Breathable microfibre",
-    rooms: ["living", "bedroom"],
-    vibe: "easy-clean",
-    colors: ["white", "neutral"],
-    tier: "budget",
-    kind: "cover",
-  },
-  {
-    title: "Tufted Outdoor Chair Cushions — 43 x 43cm (2-Pack)",
-    price: "$20.99",
-    image: "/images/products/B0GD84D8VC/4.webp",
-    url: "/products/set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc",
-    size: "43 x 43cm",
-    material: "Tufted, with ties",
-    rooms: ["living", "dining"],
-    vibe: "plush",
-    colors: ["neutral"],
-    tier: "mid",
-    kind: "cushion",
-  },
-  {
+{
     title: "Waterproof Outdoor Bench Cushion — 90 x 45cm (2-Pack)",
     price: "$27.99",
     image: "/images/products/B0GJSTTGY5/10.webp",
@@ -456,7 +417,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "cushion",
   },
-  {
+{
     title: "Long-Staple Cotton Towel — 30 x 56\"",
     price: "$44.99",
     image: "/images/products/MK-TOWEL-LSC-CREAM-30X56/1.webp",
@@ -469,7 +430,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "towel",
   },
-  {
+{
     title: "Striped Beach Towels — 75 x 180cm (2-Pack)",
     price: "$32.99",
     image: "/images/products/1688-952595759182/2.webp",
@@ -482,7 +443,7 @@ const RUGS: Rug[] = [
     tier: "mid",
     kind: "towel",
   },
-  {
+{
     title: "Checkered Diatomaceous Kitchen Mat — 50 x 80cm",
     price: "$19.99",
     image: "/images/products/1688-1038477616596/2.webp",
@@ -495,7 +456,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "mat",
   },
-  {
+{
     title: "Oval Diatomaceous Bath Mats — 50 x 80cm (2-Pack)",
     price: "$19.99",
     image: "/images/products/1688-985677811504/7.webp",
@@ -508,7 +469,7 @@ const RUGS: Rug[] = [
     tier: "budget",
     kind: "mat",
   },
-  {
+{
     title: "Handmade Wicker Bike Basket",
     price: "$39.99",
     image: "/images/products/B098F1BKJQ/1.webp",
@@ -520,8 +481,7 @@ const RUGS: Rug[] = [
     colors: ["brown", "neutral"],
     tier: "mid",
     kind: "basket",
-  },
-];
+  }];
 
 // ---------- 信号提取与打分 ----------
 

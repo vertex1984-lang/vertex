@@ -73,16 +73,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-996768645117-C3', handle: 'nordic-oval-plush-area-rug-tie-dyed-silky-faux-fur-shag-1688-996768645117-c3', color: 'Snow White' },
     ],
   },
-  {
-    id: '1688-916370884976',
-    optionName: 'Size',
-    members: [
-    { asin: '1688-916370884976-C8', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c8', color: 'Light Blue & Cheese', size: '200 x 150 cm' },
-    { asin: '1688-916370884976-C6', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c6', color: 'Light Blue & Cheese', size: '220 x 180 cm' },
-    { asin: '1688-916370884976-C5', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c5', color: 'Light Blue & Cheese', size: '230 x 200 cm' },
-    { asin: '1688-916370884976-C7', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c7', color: 'Light Blue & Cheese', size: '240 x 220 cm' },
-    ],
-  },
+  
   {
     id: '1688-969627065032',
     optionName: 'Color',
@@ -161,21 +152,21 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     // 2026-10-16 用户定：从 BEDSET4 印花组拆出独立成组；3 件套组 = 下方 DUVSET
     members: [
     { asin: 'BEDSET4-BEIGE-TWIN', handle: 'soft-cozy-all-season-4-piece-bedding-set-with-duvet-cover-bedset4-beige-twin', color: 'Beige', size: '170 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-TWIN', handle: 'makimoo-twin-bedding-set-4-piece-duvet-cover-set-with-bedset4-gray-twin', color: 'Grey', size: '170 x 220 cm' },
+    
     { asin: 'BEDSET4-PINK-TWIN', handle: 'makimoo-4-piece-twin-bedding-set-includes-duvet-cover-bedset4-pink-twin', color: 'Pink', size: '170 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-TWIN', handle: 'makimoo-twin-bedding-set-4-piece-duvet-cover-fitted-sheet-bedset4-white-twin', color: 'White', size: '170 x 220 cm' },
+    
     { asin: 'BEDSET4-BEIGE-KING', handle: 'luxury-brushed-microfiber-4-piece-bedding-set-king-size-bedset4-beige-king', color: 'Beige', size: '260 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-KING', handle: 'makimoo-king-size-bedding-set-4-piece-duvet-cover-with-bedset4-gray-king', color: 'Grey', size: '260 x 220 cm' },
+    
     { asin: 'BEDSET4-PINK-KING', handle: 'premium-ultra-soft-brushed-microfiber-4-piece-bedding-set-bedset4-pink-king', color: 'Pink', size: '260 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-KING', handle: 'king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king', color: 'White', size: '260 x 220 cm' },
+    
     { asin: 'BEDSET4-BEIGE-QUEEN', handle: 'makimoo-queen-size-4-piece-bedding-set-duvet-cover-fitted-bedset4-beige-queen', color: 'Beige', size: '220 x 220 cm' },
     { asin: 'BEDSET4-BEIGE-FULL', handle: 'makimoo-bedding-set-4-pieces-full-size-duvet-cover-with-bedset4-beige-full', color: 'Beige', size: '200 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-QUEEN', handle: 'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-gray-queen', color: 'Grey', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-FULL', handle: 'makimoo-full-duvet-cover-set-4-pieces-with-fitted-sheet-and-bedset4-gray-full', color: 'Grey', size: '200 x 220 cm' },
+    
+    
     { asin: 'BEDSET4-PINK-FULL', handle: '4-piece-duvet-cover-bedding-set-with-fitted-sheet-and-2-bedset4-pink-full', color: 'Pink', size: '200 x 220 cm' },
     { asin: 'BEDSET4-PINK-QUEEN', handle: 'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-pink-queen', color: 'Pink', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-QUEEN', handle: 'makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen', color: 'White', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-FULL', handle: 'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full', color: 'White', size: '200 x 220 cm' },
+    
+    
     ],
   },
   {
@@ -204,10 +195,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'duvset-beanred-king', handle: 'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-king', color: 'Bean Red', size: '260 x 220 cm' },
     // 2026-10-17 用户定：Butter Yellow / Dill Green 两色（各 4 尺寸）从变体下架，
     // 产品数据与图片文件保留（products-materials.ts 等不动），全站隐藏见 products.ts HIDDEN_HANDLES
-    { asin: 'duvset-oat-twin', handle: 'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin', color: 'Alpine Oat', size: '170 x 220 cm' },
-    { asin: 'duvset-oat-full', handle: 'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full', color: 'Alpine Oat', size: '200 x 220 cm' },
-    { asin: 'duvset-oat-queen', handle: 'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen', color: 'Alpine Oat', size: '220 x 220 cm' },
-    { asin: 'duvset-oat-king', handle: 'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king', color: 'Alpine Oat', size: '260 x 220 cm' },
+    
+    
+    
+    
     ],
   },
 
@@ -230,40 +221,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-828008656438-c3', handle: '2-pack-luxury-hotel-style-cotton-bath-mat-set-extra-thick-1688-828008656438-c3', color: 'White Jacquard Weave' },
     ],
   },
-  {
-    id: '1688-1044064113195',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1044064113195', handle: '2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195', color: 'White & Grey Trim' },
-    { asin: '1688-1044064113195-c2', handle: '2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2', color: 'White & Taupe Trim' },
-    { asin: '1688-1044064113195-c3', handle: '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3', color: 'White & Slate Trim' },
-    ],
-  },
-  {
-    id: '1688-743666513356',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-743666513356-c4', handle: 'premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4', color: 'Cream' },
-    { asin: '1688-743666513356-c6', handle: 'plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6', color: 'Light Grey' },
-    { asin: '1688-743666513356-c7', handle: 'premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7', color: 'Navy Blue' },
-    ],
-  },
-  {
-    id: '1688-856468238034',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-856468238034', handle: 'premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034', color: 'Orange' },
-    { asin: '1688-856468238034-c4', handle: '2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4', color: 'Black' },
-    ],
-  },
-  {
-    id: '1688-1056325209172',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1056325209172', handle: '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172', color: 'White & Tan Stripe' },
-    { asin: '1688-1056325209172-c2', handle: '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2', color: 'White & Grey Stripe' },
-    ],
-  },
+  
+  
+  
+  
   {
     id: '1688-1064068114006',
     optionName: 'Color',
@@ -308,15 +269,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f62xrb55', handle: 'throw-pillow-inserts-35-x-35cm-14-x-14-cushion-inserts-hollo-b0f62xrb55', color: 'White', size: '35 x 35 cm' },
     ],
   },
-  {
-    id: 'b0-inserts-rect',
-    optionName: 'Size',
-    members: [
-    { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
-    { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
-    // 2026-10-18 用户定：b0cqbzm49v（30 x 50 cm）从本族拆出，成为独立链接/独立卡位
-    ],
-  },
+  
   {
     id: 'b0-inserts-quilted',
     optionName: 'Size',
@@ -360,16 +313,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f1v8vmp4', handle: 'makimoo-2-pack-outdoor-chair-cushions-water-resistant-solid-b0f1v8vmp4', color: 'Navy Blue', size: '45 x 10 cm' },
     ],
   },
-  {
-    id: 'b0-embossed-cases',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0gjlsdz52', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52', color: 'White', size: '40 x 80 cm' },
-    { asin: 'b0gjldmt57', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57', color: 'Light Grey', size: '50 x 70 cm' },
-    { asin: 'b0gjlmjws1', handle: 'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1', color: 'Pink', size: '50 x 70 cm' },
-    // 2026-09-30 用户定：8 款枕套（pillowcases/pillow covers/pillow cases）全站隐藏，已移出本组
-    ],
-  },
+  
   {
     id: 'b0-seat-cushions-wr',
     optionName: 'Color',
@@ -391,16 +335,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'mk-cushion-cord-dustyblue', handle: 'corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue', color: 'Dusty Blue', size: '95 x 45 cm' },
     ],
   },
-  {
-    id: 'b0-travel-inflatable',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0c69qnsb3', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69qnsb3', color: 'Grey' },
-    { asin: 'b0c69rjvvt', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rjvvt', color: 'Black' },
-    { asin: 'b0c69rr6gf', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rr6gf', color: 'Navy Blue' },
-    { asin: 'b0c69rryxm', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rryxm', color: 'Pink' },
-    ],
-  },
+  
   {
     id: 'LINEN3',
     optionName: 'Color',
@@ -442,13 +377,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
 
     ],
   },
-  {
-    // 2026-10-24 用户定：旧 DUVSET 独立被套 4 款下架，成员清空，产品数据保留
-    id: 'DUVSET-DUVET',
-    optionName: 'Color',
-    members: [
-    ],
-  },
+  
   {
     id: '1688-807393887857',
     optionName: 'Color',

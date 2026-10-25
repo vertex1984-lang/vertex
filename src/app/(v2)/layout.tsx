@@ -3,6 +3,8 @@ import V2Footer from "@/components/v2/V2Footer";
 import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
 import ChatWidget from "@/components/ChatWidget";
+import ScrollRestoration from "@/components/v2/ScrollRestoration";
+import { Suspense } from "react";
 import { stylesByCategory } from "@/data/style-tagged";
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from "@/data/products";
 import { getProductSpecs } from "@/lib/specs";
@@ -43,6 +45,10 @@ export default function V2Layout({
       {/* CookieConsent 已移除（2026-09-28 用户定：美国市场无强制 Cookie 提示法规，弹窗干扰首访用户） */}
       <BackToTop />
       <ChatWidget />
+      {/* 后退/前进恢复滚动位置（useSearchParams 需 Suspense 包裹以满足静态导出） */}
+      <Suspense fallback={null}>
+        <ScrollRestoration />
+      </Suspense>
     </div>
   );
 }

@@ -40,7 +40,8 @@ interface MenuCard {
 const MEGA_CARDS: Record<string, MenuCard[]> = {
   bedding: [
     { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/bedding/linen/' },
-    { image: '/images/products/1688-916370884976-C5/1.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/bedding/washed-cotton/' },
+    // 2026-10-26：原 1688-916370884976 水洗棉撞色三件套全家族已彻底移除（数据归档 archive/removed-products），图卡改用在售水洗棉产品图
+    { image: '/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1-3x4.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/bedding/washed-cotton/' },
   ],
   blankets: [
     { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
@@ -65,7 +66,7 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   others: [
     { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
-    { image: '/images/featured/b0bzcln57s.webp', caption: 'Comfort on the road.', linkLabel: 'Shop Travel', href: '/products?cat=others&sub=travel' },
+    // 2026-10-26：'Shop Travel' 图卡移除——旅行颈枕全线下架后 travel 子类目已无在售产品（图 b0bzcln57s.webp 已归档）
   ],
   decor: [
     // 2026-10-21：decor PLP 按 bedding 结构重构后无 sub 筛选视图，快链改页内分区锚点（同 towels/blankets）
@@ -232,7 +233,8 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           { label: 'Duvet Covers', desc: 'Covers only — mix & match.', href: '/bedding/duvet-covers/' },
           // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类
           { label: 'Fitted Sheets', desc: 'Deep pocket, all-around elastic.', href: '/bedding/fitted-sheets/' },
-          { label: 'Pillow Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
+          // 2026-10-26 用户定：Pillow Covers 占位上线为正式分类
+          { label: 'Pillow Covers', desc: 'Two matching pillowcases.', href: '/bedding/pillow-covers/' },
         ],
       },
       first,
