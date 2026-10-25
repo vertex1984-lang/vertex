@@ -106,7 +106,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B098F1BKJQ"
   },
-  {
+{
     "id": "makimoo-B0BCJQYYL1",
     "asin": "B0BCJQYYL1",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral Essence",
@@ -224,77 +224,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0BCJQYYL1"
   },
-  {
-    "id": "makimoo-B0BXCKKNN8",
-    "asin": "B0BXCKKNN8",
-    "title": "Makimoo Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-    "handle": "memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0bxckknn8",
-    "description": "【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.. 【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.. 【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.. 【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.. 【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.",
-    "descriptionHtml": "<p>【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.</p><p>【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.</p><p>【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.</p><p>【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.</p><p>【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0BXCKKNN8/1.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BXCKKNN8/2.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BXCKKNN8/3.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BXCKKNN8/4.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BXCKKNN8/5.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BXCKKNN8/6.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Black)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0BXCKKNN8",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BXCKKNN8"
-  },
-  {
+{
     "id": "makimoo-B0CQC6H9MZ",
     "asin": "B0CQC6H9MZ",
     "title": "Makimoo Throw Pillow Inserts 45cm x 45cm (18\" x 18\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
@@ -352,363 +282,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CQC6H9MZ"
   },
-  {
-    "id": "makimoo-B0BZCLN57S",
-    "asin": "B0BZCLN57S",
-    "title": "Makimoo Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-    "handle": "travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcln57s",
-    "description": "【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.. 【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.. 【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.. 【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.. 【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.",
-    "descriptionHtml": "<p>【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.</p><p>【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.</p><p>【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.</p><p>【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.</p><p>【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0BZCLN57S/1.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/2.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/3.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/4.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/5.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/6.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCLN57S/7.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Black)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0BZCLN57S",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BZCLN57S"
-  },
-  {
-    "id": "makimoo-B0BZCMDZNS",
-    "asin": "B0BZCMDZNS",
-    "title": "Makimoo Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-    "handle": "travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcmdzns",
-    "description": "【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.. 【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.. 【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.. 【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.. 【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.",
-    "descriptionHtml": "<p>【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.</p><p>【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.</p><p>【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.</p><p>【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.</p><p>【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0BZCMDZNS/1.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCMDZNS/2.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCMDZNS/3.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCMDZNS/4.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCMDZNS/5.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0BZCMDZNS/6.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Grey)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0BZCMDZNS",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0BZCMDZNS"
-  },
-  {
-    "id": "makimoo-B0C2Z9JRDM",
-    "asin": "B0C2Z9JRDM",
-    "title": "Makimoo Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-    "handle": "memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9jrdm",
-    "description": "【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.. 【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.. 【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.. 【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.. 【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.",
-    "descriptionHtml": "<p>【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.</p><p>【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.</p><p>【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.</p><p>【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.</p><p>【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C2Z9JRDM/1.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/2.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/3.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/4.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/5.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/6.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9JRDM/7.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C2Z9JRDM",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C2Z9JRDM"
-  },
-  {
-    "id": "makimoo-B0C2Z9PFFK",
-    "asin": "B0C2Z9PFFK",
-    "title": "Makimoo Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-    "handle": "memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk",
-    "description": "【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.. 【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.. 【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.. 【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.. 【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.",
-    "descriptionHtml": "<p>【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.</p><p>【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.</p><p>【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.</p><p>【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.</p><p>【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C2Z9PFFK/1.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9PFFK/2.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9PFFK/3.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9PFFK/4.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2Z9PFFK/5.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Grey)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C2Z9PFFK",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C2Z9PFFK"
-  },
-  {
-    "id": "makimoo-B0C2ZCXVX7",
-    "asin": "B0C2ZCXVX7",
-    "title": "Makimoo Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-    "handle": "memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2zcxvx7",
-    "description": "【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.. 【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.. 【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.. 【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.. 【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.",
-    "descriptionHtml": "<p>【Enhanced Sweat-Resistant Fabric】This U-shaped travel pillow boasts a super soft magnetic therapy cloth filled with premium microbeads and is covered with an upgraded sweat-resistant fabric. It's breathable, comfortable, non-pilling, and colorfast, providing a luxurious feel and gentle care for your skin during travels.</p><p>【Superior Memory Foam Quality】With advanced 5-second rebound technology, the memory foam filler offers excellent neck support, cushions your body, and relieves pressure points for ultimate relaxation, ensuring maximum comfort on your trip.</p><p>【Ergonomically Designed Support】The Umerci airplane pillow, designed for 360° head support, naturally fits your neck with perfect curves and prevents head side-slipping. The extra two support points enhance support and relieve neck fatigue. You can adjust the angle and size using the rope lock for added comfort.</p><p>【Portable and Lightweight】Designed for comfort and portability. With a storage bag, the pillow can be compressed to half its size and easily attached to your carry-on luggage, saving space.</p><p>【Ideal for Travel】Our memory foam travel pillow offers superb support, protecting your head and neck from pain on long road trips, train rides, or flights.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C2ZCXVX7/1.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2ZCXVX7/2.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2ZCXVX7/3.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2ZCXVX7/4.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2ZCXVX7/5.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C2ZCXVX7/6.webp",
-        "altText": "Memory Foam Travel Pillow, Neck Pillow with 360-Degree Head Support, Comfortable and Lightweight, Ideal for Sleeping on Airplane, Car, Train, Bus and Home Use, Comes with Storage Bag (Blue)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C2ZCXVX7",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C2ZCXVX7"
-  },
-  {
+{
     "id": "makimoo-B0C33LFHN1",
     "asin": "B0C33LFHN1",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
@@ -778,7 +352,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C33LFHN1"
   },
-  {
+{
     "id": "makimoo-B0C33LPY5G",
     "asin": "B0C33LPY5G",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Blue and Red Leaves)",
@@ -860,7 +434,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C33LPY5G"
   },
-  {
+{
     "id": "makimoo-B0C33LXRVK",
     "asin": "B0C33LXRVK",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
@@ -936,7 +510,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C33LXRVK"
   },
-  {
+{
     "id": "makimoo-B0C33LZ5PW",
     "asin": "B0C33LZ5PW",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (Orange and Red Stripes, 4)",
@@ -1012,7 +586,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C33LZ5PW"
   },
-  {
+{
     "id": "makimoo-B0C33M24L3",
     "asin": "B0C33M24L3",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
@@ -1130,7 +704,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C33M24L3"
   },
-  {
+{
     "id": "makimoo-B0C39ZMK7H",
     "asin": "B0C39ZMK7H",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue and Red Leaves",
@@ -1212,7 +786,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C39ZMK7H"
   },
-  {
+{
     "id": "makimoo-B0C39ZSD3Q",
     "asin": "B0C39ZSD3Q",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Khaki Floral",
@@ -1288,7 +862,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C39ZSD3Q"
   },
-  {
+{
     "id": "makimoo-B0C3B12DL7",
     "asin": "B0C3B12DL7",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Orange and Red Stripes",
@@ -1412,7 +986,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C3B12DL7"
   },
-  {
+{
     "id": "makimoo-B0C3B13N8Z",
     "asin": "B0C3B13N8Z",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Blue Trumpet Flowers",
@@ -1536,7 +1110,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C3B13N8Z"
   },
-  {
+{
     "id": "makimoo-B0C3B16L6R",
     "asin": "B0C3B16L6R",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Green Plaid",
@@ -1648,7 +1222,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C3B16L6R"
   },
-  {
+{
     "id": "makimoo-B0C3B265XJ",
     "asin": "B0C3B265XJ",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, Watercolor Flowers",
@@ -1766,935 +1340,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C3B265XJ"
   },
-  {
-    "id": "makimoo-B0C4B9T6JV",
-    "asin": "B0C4B9T6JV",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4b9t6jv",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4B9T6JV/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/5.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/6.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/7.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_AI图片编辑器_529817.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529860.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529863.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529872.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529880.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529884.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529930.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4B9T6JV/Seeany.com_万能改图_529935.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Plaid)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4B9T6JV",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4B9T6JV"
-  },
-  {
-    "id": "makimoo-B0C4BBVS53",
-    "asin": "B0C4BBVS53",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bbvs53",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4BBVS53/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/5.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/6.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BBVS53/7.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Trumpet Flowers)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4BBVS53",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4BBVS53"
-  },
-  {
-    "id": "makimoo-B0C4BC7Q4S",
-    "asin": "B0C4BC7Q4S",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bc7q4s",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4BC7Q4S/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/5.gif",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_g03oq9g03oq9g03o (1).webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_k2s1iok2s1iok2s1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/Gemini_Generated_Image_wjvhhiwjvhhiwjvh (1).webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775544337846.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775545639578.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BC7Q4S/nano-banana-pro-upscaled-2x-1775546296442.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Khaki Floral)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4BC7Q4S",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4BC7Q4S"
-  },
-  {
-    "id": "makimoo-B0C4BCD4DY",
-    "asin": "B0C4BCD4DY",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bcd4dy",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4BCD4DY/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/5.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/6.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/7.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_AI图片编辑器_529422.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529469.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529473.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529517.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529572.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529618.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BCD4DY/Seeany.com_万能改图_529632.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Watercolor Flowers)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4BCD4DY",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4BCD4DY"
-  },
-  {
-    "id": "makimoo-B0C4BD7Q5X",
-    "asin": "B0C4BD7Q5X",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bd7q5x",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4BD7Q5X/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/5.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/6.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/7.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529103.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑_529161.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529334.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_AI图片编辑器_529342.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_万能改图_529499.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520063.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520066.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_智能创作_520067.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BD7Q5X/Seeany.com_电商套图_529253.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue and Red Leaves)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4BD7Q5X",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4BD7Q5X"
-  },
-  {
-    "id": "makimoo-B0C4BDLLFK",
-    "asin": "B0C4BDLLFK",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bdllfk",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C4BDLLFK/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/5.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/6.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C4BDLLFK/7.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Orange and Red Stripes)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C4BDLLFK",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C4BDLLFK"
-  },
-  {
-    "id": "makimoo-B0C69QNSB3",
-    "asin": "B0C69QNSB3",
-    "title": "Makimoo Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-    "handle": "inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69qnsb3",
-    "description": "【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.. 【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.. 【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.. 【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.. 【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!",
-    "descriptionHtml": "<p>【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.</p><p>【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.</p><p>【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.</p><p>【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.</p><p>【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C69QNSB3/1.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/2.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/3.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/4.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/5.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/6.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69QNSB3/7.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Grey)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C69QNSB3",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C69QNSB3"
-  },
-  {
-    "id": "makimoo-B0C69RJVVT",
-    "asin": "B0C69RJVVT",
-    "title": "Makimoo Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-    "handle": "inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rjvvt",
-    "description": "【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.. 【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.. 【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.. 【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.. 【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!",
-    "descriptionHtml": "<p>【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.</p><p>【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.</p><p>【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.</p><p>【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.</p><p>【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C69RJVVT/1.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/2.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/3.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/4.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/5.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/6.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RJVVT/7.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Black)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C69RJVVT",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C69RJVVT"
-  },
-  {
-    "id": "makimoo-B0C69RR6GF",
-    "asin": "B0C69RR6GF",
-    "title": "Makimoo Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-    "handle": "inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rr6gf",
-    "description": "【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.. 【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.. 【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.. 【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.. 【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!",
-    "descriptionHtml": "<p>【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.</p><p>【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.</p><p>【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.</p><p>【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.</p><p>【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C69RR6GF/1.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/2.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/3.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/4.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/5.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/6.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RR6GF/7.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Blue)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C69RR6GF",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C69RR6GF"
-  },
-  {
-    "id": "makimoo-B0C69RRYXM",
-    "asin": "B0C69RRYXM",
-    "title": "Makimoo Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-    "handle": "inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rryxm",
-    "description": "【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.. 【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.. 【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.. 【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.. 【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!",
-    "descriptionHtml": "<p>【Neck Tilt Prevention】The neck pillows adhere to human engineering mechanics principles, with top humps that support your head and prevent neck tilting. Enjoy several hours of sleep on a flight without falling or experiencing hand or neck pain, making your journey more comfortable.</p><p>【100% Soft Velvet Cover】This travel neck pillow features a non-irritating, odor-free soft velvet fabric. Its comfortable, sweat-resistant cover keeps your face fresh, making it an excellent alternative to inflatable horseshoe-shaped or memory foam pillows. Use it as a floating pillow for the bathtub (with the soft cover removed) for exceptional comfort.</p><p>【Adjustable Firmness】Inflatable neck pillow showcases inflation technology with easy-to-use valves (inflate with just 3 breaths/blows). Adjust neck support and comfort by adding or releasing air, a feature unavailable in solid pillows. It also serves as excellent lower back support for kids or adults reading in airline seats.</p><p>【Compact Size】Tired of memory foam pillows being too bulky for backpacks? Our neck pillow compresses to a size slightly larger than a soda can, fitting in your briefcase or hanging from your bag. No need to carry cumbersome neck supports during your travels.</p><p>【Pain Relief Neck Pillows】If you've dismissed neck pillows as a gimmick, think again. When sitting in front of a computer for 12+ hours or enduring a 9+ hour flight, this cooling travel pillow can alleviate neck stiffness and fatigue. Ideal for airplanes, cars, offices, or recliners, it provides superior support and comfort compared to conventional squishy pillows. Treat your entire family to this thoughtful gift!</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C69RRYXM/1.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/2.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/3.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/4.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/5.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/6.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C69RRYXM/7.webp",
-        "altText": "Inflatable Travel Pillow, Neck Pillow Support for Traveling, Airplanes, Cars, and Offices with Compact Carrying Bag, Soft Velvet Washable Cover, Ideal for Adult Sleepers (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C69RRYXM",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C69RRYXM"
-  },
-  {
+{
     "id": "makimoo-B0C6H5XZMZ",
     "asin": "B0C6H5XZMZ",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper,",
@@ -2764,147 +1410,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0C6H5XZMZ"
   },
-  {
-    "id": "makimoo-B0C8J237V3",
-    "asin": "B0C8J237V3",
-    "title": "Makimoo Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-    "handle": "travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j237v3",
-    "description": "【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.. 【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.. 【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.. 【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.. 【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.",
-    "descriptionHtml": "<p>【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.</p><p>【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.</p><p>【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.</p><p>【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.</p><p>【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C8J237V3/1.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J237V3/2.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J237V3/3.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J237V3/4.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J237V3/5.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J237V3/6.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Blue)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C8J237V3",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C8J237V3"
-  },
-  {
-    "id": "makimoo-B0C8J292WF",
-    "asin": "B0C8J292WF",
-    "title": "Makimoo Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-    "handle": "travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j292wf",
-    "description": "【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.. 【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.. 【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.. 【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.. 【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.",
-    "descriptionHtml": "<p>【DUAL COMFORT IN ONE PILLOW WITH TWO MATERIALS】Experience the versatility of having two pillows in one with our Travel Plane Neck Pillow. It features super soft, cozy silver fox plush on one side and cooling, relaxing ice silk on the other. This adaptable pillow meets all your comfort needs during travel.</p><p>【5 SNAP BUTTONS FOR CUSTOMIZABLE NECK, HEAD, AND CHIN SUPPORT】This pillow provides FULL SUPPORT for your neck, head, and chin. The 5 adjustable snap buttons allow for a customizable fit, making it suitable for people with neck sizes from 8 inches to 18 inches.</p><p>【LIGHTWEIGHT AND COMPACT WITH A CONVENIENT SNAP-ON LOOP】The 100% Pure Memory Foam Neck Pillow can be easily compressed into a compact bag, saving space in your carry-on. The sturdy snap-on loop lets you attach the pillow to backpacks, luggage, or nearly any item you carry.</p><p>【REMOVABLE AND MACHINE-WASHABLE PILLOW COVER】Hygiene and comfort go hand-in-hand. Our pillow comes with a detachable cover that can be easily removed and machine washed after every trip.</p><p>【PURCHASE WITH CONFIDENCE, GUARANTEED】We stand by our products with a 100% satisfaction guarantee. If you're not pleased with our neck pillows or our service for any reason, please let us know. We'll either refund your money or send you a new plane neck pillow.</p>",
-    "productType": "Travel",
-    "tags": [
-      "Travel"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0C8J292WF/1.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J292WF/2.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J292WF/3.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J292WF/4.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J292WF/5.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0C8J292WF/6.webp",
-        "altText": "Travel Neck Pillow, Top Memory Foam Pillow for Head Support, Ideal for Airplanes, Cars, and Home Recliners, Adjustable and Soft (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0C8J292WF",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0C8J292WF"
-  },
-  {
+{
     "id": "makimoo-B0CBT7B1TY",
     "asin": "B0CBT7B1TY",
     "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Blue)",
@@ -2968,7 +1474,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CBT7B1TY"
   },
-  {
+{
     "id": "makimoo-B0CBT7R7NN",
     "asin": "B0CBT7R7NN",
     "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Grey)",
@@ -3038,7 +1544,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CBT7R7NN"
   },
-  {
+{
     "id": "makimoo-B0CBT7RFK2",
     "asin": "B0CBT7RFK2",
     "title": "Makimoo Outdoor Patio Cushion, Rocking Chair Cushion, Tufted Pads, Set of Upper and Lower with Ties Pack of 2 (2 Sets) - Back 20\"×17\", Seat 17\"×17\" (Brown)",
@@ -3102,7 +1608,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CBT7RFK2"
   },
-  {
+{
     "id": "makimoo-B0CC5RGRPS",
     "asin": "B0CC5RGRPS",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Blue Monet Garden)",
@@ -3172,7 +1678,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CC5RGRPS"
   },
-  {
+{
     "id": "makimoo-B0CC5TLWFS",
     "asin": "B0CC5TLWFS",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Red-Green Geometry)",
@@ -3236,7 +1742,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CC5TLWFS"
   },
-  {
+{
     "id": "makimoo-B0CC5VNQY3",
     "asin": "B0CC5VNQY3",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Tulip)",
@@ -3300,7 +1806,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CC5VNQY3"
   },
-  {
+{
     "id": "makimoo-B0CC5WN6JJ",
     "asin": "B0CC5WN6JJ",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Jungle Leopard)",
@@ -3508,7 +2014,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CC5WN6JJ"
   },
-  {
+{
     "id": "makimoo-B0CC5Y77DC",
     "asin": "B0CC5Y77DC",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Patio Seating Cushions, 38x18x4.5 inch, for Garden Patio Furniture (Butterfly)",
@@ -3566,175 +2072,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CC5Y77DC"
   },
-  {
-    "id": "makimoo-B0CJ8TJL56",
-    "asin": "B0CJ8TJL56",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cj8tjl56",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CJ8TJL56/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJ8TJL56/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJ8TJL56/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJ8TJL56/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Green Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CJ8TJL56",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CJ8TJL56"
-  },
-  {
-    "id": "makimoo-B0CJHSLCZ5",
-    "asin": "B0CJHSLCZ5",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhslcz5",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CJHSLCZ5/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJHSLCZ5/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJHSLCZ5/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Red Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CJHSLCZ5",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CJHSLCZ5"
-  },
-  {
-    "id": "makimoo-B0CJHX7XKL",
-    "asin": "B0CJHX7XKL",
-    "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
-    "handle": "2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhx7xkl",
-    "description": "Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture. High quality fabric: Soft, smooth and washable. Provide extra comfort and longevity; filling material uses 100% polyester. Suitable for indoor or outdoor use; spot clean only; choice of color/pattern. Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand",
-    "descriptionHtml": "<p>Outdoor/patio cushion made of durable 100% polyester with ties for attaching to garden/patio furniture</p><p>High quality fabric: Soft, smooth and washable</p><p>Provide extra comfort and longevity; filling material uses 100% polyester</p><p>Suitable for indoor or outdoor use; spot clean only; choice of color/pattern</p><p>Measure 17 x17 ( (LxW); allow up to 72 hours for cushion to fully expand</p>",
-    "productType": "Dining",
-    "tags": [
-      "Dining"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/B0CJHX7XKL/1.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJHX7XKL/2.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJHX7XKL/3.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/B0CJHX7XKL/4.webp",
-        "altText": "2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad with Ties - Dining Chair Cushion, 17\" x 17\" (Blue Houndstooth)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "49.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-B0CJHX7XKL",
-        "title": "Default Title",
-        "price": {
-          "amount": "49.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": "https://www.amazon.com/dp/B0CJHX7XKL"
-  },
-  {
+{
     "id": "makimoo-B0CQBZM49V",
     "asin": "B0CQBZM49V",
     "title": "Makimoo Throw Pillow Inserts 30 x 50cm (12\" x 20\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
@@ -3792,7 +2130,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CQBZM49V"
   },
-  {
+{
     "id": "makimoo-B0CQC5QJFJ",
     "asin": "B0CQC5QJFJ",
     "title": "Makimoo Throw Pillow Inserts 40cm x 40cm (16\" x 16\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
@@ -3862,7 +2200,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CQC5QJFJ"
   },
-  {
+{
     "id": "makimoo-B0BY8LY757",
     "asin": "B0BY8LY757",
     "title": "Makimoo Hanging Pagan Cauldron Oil Burner, Black Wax Warmer Aroma Diffuser, with Handle, for Essential Fragrance Wax Melts, Enchanting Witches' Home Decor Element.",
@@ -3926,7 +2264,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0BY8LY757"
   },
-  {
+{
     "id": "makimoo-B0CXDZF2WQ",
     "asin": "B0CXDZF2WQ",
     "title": "Makimoo Set of 4 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper, (4, Orange)",
@@ -4134,7 +2472,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0CXDZF2WQ"
   },
-  {
+{
     "id": "makimoo-B0D5DNWX8J",
     "asin": "B0D5DNWX8J",
     "title": "Makimoo Set of 2 Outdoor Dining Chair Cushions, Comfort Patio Seating Cushions, 44 x21x4.5 inch, Single Welt and Zipper (Blue and Red Leaves)",
@@ -4204,7 +2542,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0D5DNWX8J"
   },
-  {
+{
     "id": "makimoo-B0D9LH1Y55",
     "asin": "B0D9LH1Y55",
     "title": "Makimoo Original Greek Pepper Mill, European Style Salt and Pepper Grinder, 9-Inch (Brass)",
@@ -4280,7 +2618,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0D9LH1Y55"
   },
-  {
+{
     "id": "makimoo-B0F1XFWZVY",
     "asin": "B0F1XFWZVY",
     "title": "Makimoo Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Navy Blue)",
@@ -4380,7 +2718,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1XFWZVY"
   },
-  {
+{
     "id": "makimoo-B0F1XMTYNC",
     "asin": "B0F1XMTYNC",
     "title": "Makimoo Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Dark Green)",
@@ -4510,7 +2848,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1XMTYNC"
   },
-  {
+{
     "id": "makimoo-B0F1XS27XS",
     "asin": "B0F1XS27XS",
     "title": "Makimoo Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Angola Red)",
@@ -4598,7 +2936,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1XS27XS"
   },
-  {
+{
     "id": "makimoo-B0F1XS7VKY",
     "asin": "B0F1XS7VKY",
     "title": "Makimoo Set of 2 High Back Tufted Outdoor Chair Cushion, 44 x 21 Inch, Water Repellent, Outdoor Dining Chair Cushions with Ties, Patio Seating Cushions for Garden Patio Furniture (Coffee Brown)",
@@ -4662,7 +3000,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1XS7VKY"
   },
-  {
+{
     "id": "makimoo-B0F1Y4J48T",
     "asin": "B0F1Y4J48T",
     "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Green & Brown)",
@@ -4720,7 +3058,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1Y4J48T"
   },
-  {
+{
     "id": "makimoo-B0F1Y91HPR",
     "asin": "B0F1Y91HPR",
     "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, 18.5-Inch, Dining Chair Cushion, Set of 2 (Dark Green)",
@@ -4790,7 +3128,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F1Y91HPR"
   },
-  {
+{
     "id": "makimoo-B0F62XRB55",
     "asin": "B0F62XRB55",
     "title": "Makimoo Throw Pillow Inserts 35 x 35cm (14\" x 14\"), Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (Pack of 2)",
@@ -4848,7 +3186,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0F62XRB55"
   },
-  {
+{
     "id": "makimoo-B0FNQRRV78",
     "asin": "B0FNQRRV78",
     "title": "Makimoo 2-Pack Outdoor/Indoor Wicker Patio Seat Cushion Pad, Water Repellent, Dining Chair Cushion, with Ties 17 x 17, Set of 2 (Blue & Red)",
@@ -4930,7 +3268,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0FNQRRV78"
   },
-  {
+{
     "id": "makimoo-B0G6M3F7CY",
     "asin": "B0G6M3F7CY",
     "title": "Makimoo Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (12x20 Inch)",
@@ -4976,7 +3314,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0G6M3F7CY"
   },
-  {
+{
     "id": "makimoo-B0G6MPTVFD",
     "asin": "B0G6MPTVFD",
     "title": "Makimoo Throw Pillow Inserts Pack of 2, Cushion Inserts, Hollowfibre Filling for Sofa, Bedding Cushion Pads (18x18 Inch)",
@@ -5298,7 +3636,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": "https://www.amazon.com/dp/B0G6MPTVFD"
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-CARAMEL",
     "asin": "MK-PC-CORD-CARAMEL",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Caramel)",
@@ -5355,7 +3693,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-CARAMEL-45",
     "asin": "MK-PC-CORD-CARAMEL-45",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Caramel)",
@@ -5412,7 +3750,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-DUSTYROSE",
     "asin": "MK-PC-CORD-DUSTYROSE",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
@@ -5469,7 +3807,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-DUSTYROSE-45",
     "asin": "MK-PC-CORD-DUSTYROSE-45",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
@@ -5526,7 +3864,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-OLIVE",
     "asin": "MK-PC-CORD-OLIVE",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Olive)",
@@ -5583,7 +3921,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-OLIVE-45",
     "asin": "MK-PC-CORD-OLIVE-45",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Olive)",
@@ -5640,7 +3978,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-DUSTYBLUE",
     "asin": "MK-PC-CORD-DUSTYBLUE",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
@@ -5697,7 +4035,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-DUSTYBLUE-45",
     "asin": "MK-PC-CORD-DUSTYBLUE-45",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
@@ -5754,7 +4092,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-CHARCOAL",
     "asin": "MK-PC-CORD-CHARCOAL",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Charcoal)",
@@ -5811,7 +4149,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CORD-CHARCOAL-45",
     "asin": "MK-PC-CORD-CHARCOAL-45",
     "title": "Makimoo Corduroy Throw Pillow Covers Set of 2, Soft Ribbed Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Charcoal)",
@@ -5868,7 +4206,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-SAGE",
     "asin": "MK-PC-CTN-SAGE",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
@@ -5925,7 +4263,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-SAGE-45",
     "asin": "MK-PC-CTN-SAGE-45",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
@@ -5982,7 +4320,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-CREAM",
     "asin": "MK-PC-CTN-CREAM",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Cream)",
@@ -6039,7 +4377,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-CREAM-45",
     "asin": "MK-PC-CTN-CREAM-45",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Cream)",
@@ -6096,7 +4434,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-BLUSH",
     "asin": "MK-PC-CTN-BLUSH",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Blush)",
@@ -6153,7 +4491,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-BLUSH-45",
     "asin": "MK-PC-CTN-BLUSH-45",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Blush)",
@@ -6210,7 +4548,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-DUSTYBLUE",
     "asin": "MK-PC-CTN-DUSTYBLUE",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Blue)",
@@ -6267,7 +4605,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-DUSTYBLUE-45",
     "asin": "MK-PC-CTN-DUSTYBLUE-45",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Blue)",
@@ -6324,7 +4662,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-LIGHTGREY",
     "asin": "MK-PC-CTN-LIGHTGREY",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Light Grey)",
@@ -6381,7 +4719,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-CTN-LIGHTGREY-45",
     "asin": "MK-PC-CTN-LIGHTGREY-45",
     "title": "Makimoo Cotton-Like Throw Pillow Covers Set of 2, Soft Textured Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Light Grey)",
@@ -6438,70 +4776,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
-    "id": "makimoo-MK-BP-INSERT-1PC",
-    "asin": "MK-BP-INSERT-1PC",
-    "title": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
-    "handle": "long-body-pillow-insert-54x20-mk-bp-insert-1pc",
-    "description": "Full-Body Support: The extra-long 137 x 51 cm (54 x 20 in) pillow cradles your body for side sleeping, lounging, reading or pregnancy support. Soft Breathable Fill: Generously filled with plush polyester fiber that balances softness and support and fluffs back easily. Smooth Brushed Shell: A soft brushed microfiber shell in clean white that fits any body pillow cover. Versatile Comfort: Ideal for beds, daybeds and sofas — use it as a hug pillow, backrest or leg support. Easy Care: Machine washable on a gentle cycle; tumble dry low to restore loft.",
-    "descriptionHtml": "<p>Full-Body Support: The extra-long 137 x 51 cm (54 x 20 in) pillow cradles your body for side sleeping, lounging, reading or pregnancy support.</p><p>Soft Breathable Fill: Generously filled with plush polyester fiber that balances softness and support and fluffs back easily.</p><p>Smooth Brushed Shell: A soft brushed microfiber shell in clean white that fits any body pillow cover.</p><p>Versatile Comfort: Ideal for beds, daybeds and sofas — use it as a hug pillow, backrest or leg support.</p><p>Easy Care: Machine washable on a gentle cycle; tumble dry low to restore loft.</p>",
-    "productType": "Pillows",
-    "tags": [
-      "Pillows"
-    ],
-    "availableForSale": true,
-    "images": [
-      {
-        "url": "/images/products/MK-BP-INSERT-1PC/1.webp",
-        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/MK-BP-INSERT-1PC/2.webp",
-        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/MK-BP-INSERT-1PC/3.webp",
-        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/MK-BP-INSERT-1PC/4.webp",
-        "altText": "Makimoo Long Body Pillow Insert, Soft Breathable Polyester Fiber Fill Rectangular Cushion for Bed Sofa Couch, 137 x 51 cm (White)",
-        "width": 1200,
-        "height": 1200
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "35.99",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-MK-BP-INSERT-1PC",
-        "title": "Default Title",
-        "price": {
-          "amount": "35.99",
-          "currencyCode": "USD"
-        },
-        "availableForSale": true,
-        "selectedOptions": [
-          {
-            "name": "Title",
-            "value": "Default Title"
-          }
-        ]
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
+{
     "id": "makimoo-MK-CUSHION-CORD-CREAM",
     "asin": "MK-CUSHION-CORD-CREAM",
     "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Cream)",
@@ -6546,7 +4821,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-CUSHION-CORD-DUSTYROSE",
     "asin": "MK-CUSHION-CORD-DUSTYROSE",
     "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Rose)",
@@ -6591,7 +4866,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-CUSHION-CORD-OLIVE",
     "asin": "MK-CUSHION-CORD-OLIVE",
     "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Olive)",
@@ -6636,7 +4911,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-CUSHION-CORD-DUSTYBLUE",
     "asin": "MK-CUSHION-CORD-DUSTYBLUE",
     "title": "Makimoo 2 Pack Chair Cushions With Backrest And Seat, Soft Tufted Corduroy High Back Dining Chair Pads With Ties For Indoor Outdoor Patio Garden Use, 95 x 45 cm (Dusty Blue)",
@@ -6681,7 +4956,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-WHITE-45",
     "asin": "MK-PC-BOUCLE-WHITE-45",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (White)",
@@ -6762,7 +5037,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-OATMEAL-45",
     "asin": "MK-PC-BOUCLE-OATMEAL-45",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Oatmeal)",
@@ -6843,7 +5118,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-DUSTYROSE-45",
     "asin": "MK-PC-BOUCLE-DUSTYROSE-45",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Dusty Rose)",
@@ -6924,7 +5199,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-SAGE-45",
     "asin": "MK-PC-BOUCLE-SAGE-45",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 45 x 45 cm (Sage)",
@@ -7005,7 +5280,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-WHITE",
     "asin": "MK-PC-BOUCLE-WHITE",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (White)",
@@ -7086,7 +5361,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-OATMEAL",
     "asin": "MK-PC-BOUCLE-OATMEAL",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Oatmeal)",
@@ -7167,7 +5442,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-DUSTYROSE",
     "asin": "MK-PC-BOUCLE-DUSTYROSE",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Dusty Rose)",
@@ -7248,7 +5523,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-PC-BOUCLE-SAGE",
     "asin": "MK-PC-BOUCLE-SAGE",
     "title": "Makimoo Boucle Throw Pillow Covers Set of 2, Soft Teddy Fleece Square Cushion Cases for Sofa Couch Bed, 40 x 40 cm (Sage)",
@@ -7329,7 +5604,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-CREAM-12X12",
     "asin": "MK-TOWEL-LSC-CREAM-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Cream)",
@@ -7380,7 +5655,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-CREAM-20X30",
     "asin": "MK-TOWEL-LSC-CREAM-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Cream)",
@@ -7431,7 +5706,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-CREAM-30X56",
     "asin": "MK-TOWEL-LSC-CREAM-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Cream)",
@@ -7482,7 +5757,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-CREAM-40X70",
     "asin": "MK-TOWEL-LSC-CREAM-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Cream)",
@@ -7533,7 +5808,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-OATMEAL-12X12",
     "asin": "MK-TOWEL-LSC-OATMEAL-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Oatmeal)",
@@ -7584,7 +5859,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-OATMEAL-20X30",
     "asin": "MK-TOWEL-LSC-OATMEAL-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Oatmeal)",
@@ -7635,7 +5910,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-OATMEAL-30X56",
     "asin": "MK-TOWEL-LSC-OATMEAL-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Oatmeal)",
@@ -7686,7 +5961,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-OATMEAL-40X70",
     "asin": "MK-TOWEL-LSC-OATMEAL-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Oatmeal)",
@@ -7737,7 +6012,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-SAGE-12X12",
     "asin": "MK-TOWEL-LSC-SAGE-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Sage)",
@@ -7788,7 +6063,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-SAGE-20X30",
     "asin": "MK-TOWEL-LSC-SAGE-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Sage)",
@@ -7839,7 +6114,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-SAGE-30X56",
     "asin": "MK-TOWEL-LSC-SAGE-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Sage)",
@@ -7890,7 +6165,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-SAGE-40X70",
     "asin": "MK-TOWEL-LSC-SAGE-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Sage)",
@@ -7941,7 +6216,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-12X12",
     "asin": "MK-TOWEL-LSC-DUSTYROSE-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Rose)",
@@ -7992,7 +6267,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-20X30",
     "asin": "MK-TOWEL-LSC-DUSTYROSE-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Rose)",
@@ -8043,7 +6318,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-30X56",
     "asin": "MK-TOWEL-LSC-DUSTYROSE-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Rose)",
@@ -8094,7 +6369,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYROSE-40X70",
     "asin": "MK-TOWEL-LSC-DUSTYROSE-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Rose)",
@@ -8145,7 +6420,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-12X12",
     "asin": "MK-TOWEL-LSC-LIGHTGREY-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Light Grey)",
@@ -8196,7 +6471,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-20X30",
     "asin": "MK-TOWEL-LSC-LIGHTGREY-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Light Grey)",
@@ -8247,7 +6522,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-30X56",
     "asin": "MK-TOWEL-LSC-LIGHTGREY-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Light Grey)",
@@ -8298,7 +6573,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-LIGHTGREY-40X70",
     "asin": "MK-TOWEL-LSC-LIGHTGREY-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Light Grey)",
@@ -8349,7 +6624,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-12X12",
     "asin": "MK-TOWEL-LSC-DUSTYBLUE-12X12",
     "title": "Makimoo Long-Staple Cotton Towel 12\" x 12\" (Dusty Blue)",
@@ -8400,7 +6675,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-20X30",
     "asin": "MK-TOWEL-LSC-DUSTYBLUE-20X30",
     "title": "Makimoo Long-Staple Cotton Towel 20\" x 30\" (Dusty Blue)",
@@ -8451,7 +6726,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-30X56",
     "asin": "MK-TOWEL-LSC-DUSTYBLUE-30X56",
     "title": "Makimoo Long-Staple Cotton Towel 30\" x 56\" (Dusty Blue)",
@@ -8502,7 +6777,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-MK-TOWEL-LSC-DUSTYBLUE-40X70",
     "asin": "MK-TOWEL-LSC-DUSTYBLUE-40X70",
     "title": "Makimoo Long-Staple Cotton Towel 40\" x 70\" (Dusty Blue)",
@@ -8553,7 +6828,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-LINEN3-CARAMEL-QUEEN",
     "asin": "LINEN3-CARAMEL-QUEEN",
     "title": "Makimoo 100% Linen Duvet Cover Set 3 Pieces Queen Size with 1 Duvet Cover and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Caramel)",
@@ -8597,8 +6872,7 @@ const BASE_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
-  }
-];
+  }];
 
 import { SHOPIFY_MAP } from './shopify-map';
 import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
@@ -8705,6 +6979,16 @@ const HIDDEN_HANDLES = new Set([
   'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full',
   'makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen',
   'king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king',
+  // 2026-10-26 用户定：DUVSET Alpine Oat 全家族移除（4 尺寸；同 Butter/Dill 口径整色下架，数据保留）
+  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin',
+  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full',
+  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen',
+  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king',
+  // 2026-10-26 用户定：BEDSET4-GRAY 灰色四件套全家族移除（4 尺寸）
+  'makimoo-twin-bedding-set-4-piece-duvet-cover-set-with-bedset4-gray-twin',
+  'makimoo-full-duvet-cover-set-4-pieces-with-fitted-sheet-and-bedset4-gray-full',
+  'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-gray-queen',
+  'makimoo-king-size-bedding-set-4-piece-duvet-cover-with-bedset4-gray-king',
   // 2026-10-08 用户定：B0H4V662HL（45×45 枕芯）与 B0CQC6H9MZ 重复，全站移除
   'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl',
   // 2026-10-08 用户定：3 款压花枕套全站移除（Pillow Cases 类目将改为 Decorative Pillow Cases 装饰枕套）

@@ -248,7 +248,9 @@ export default function V2ProductsPage() {
     // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类（/bedding/fitted-sheets/）
     if (fams.some((f) => f.kind === 'sheet'))
       typeLinks.push({ label: 'Fitted Sheets', href: v2url('/bedding/fitted-sheets/') });
-    typeLinks.push({ label: 'Pillow Covers', href: '', soon: true });
+    // 2026-10-26 用户定：Pillow Covers 占位上线（/bedding/pillow-covers/），无产品时不出快链
+    if (fams.some((f) => f.kind === 'pillowcase'))
+      typeLinks.push({ label: 'Pillow Covers', href: v2url('/bedding/pillow-covers/') });
     const fabricLinks: BeddingHeroLink[] = BEDDING_FABRICS.filter((fb) =>
       fams.some((f) => f.materials.includes(fb.material))
     ).map((fb) => ({ label: fabricDisplayName(fb.material), href: v2url(`/bedding/${fb.slug}/`) }));

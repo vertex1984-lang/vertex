@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { getProductByHandle } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
-import { PDP_MAIN_34_ASINS } from '@/data/pdp-main-34-asins';
+import { PDP_MAIN_34_ASINS, PDP_MAIN_PREPEND_IMAGES } from '@/data/pdp-main-34-asins';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
@@ -146,7 +146,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
   // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
-  const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
+  const imageCount = product
+    ? (product.shopifyImages?.length || product.images?.length || 0) +
+      (PDP_MAIN_PREPEND_IMAGES[product.asin.toLowerCase()] ? 1 : 0)
+    : 0;
   const swipeTo = (dir: 1 | -1) => {
     setMainImageLoaded(false);
     setSelectedImage((i) => (i + dir + imageCount) % Math.max(1, imageCount));
@@ -188,6 +191,20 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         thumbUrl: pdpMain34 && i === 0 ? pdpMain34 : img.url,
         altText: img.altText, whiteBg: product.imageWhiteBg?.[i] ?? false,
       }));
+
+  // 2026-10-26 用户定：个别产品把"产品卡主图"前置为 PDP 图集第一张（其余图依次后移，
+  // 见 pdp-main-34-asins.ts 的 PDP_MAIN_PREPEND_IMAGES）
+  const pdpPrepend = PDP_MAIN_PREPEND_IMAGES[product.asin.toLowerCase()];
+  if (pdpPrepend) {
+    productImages.unshift({
+      url: pdpPrepend,
+      mainUrl: pdpPrepend,
+      lightboxUrl: pdpPrepend,
+      thumbUrl: pdpPrepend,
+      altText: product.title,
+      whiteBg: false,
+    });
+  }
 
   // 详情附图区已随 Description 模块删除（2026-09-29 用户定）
 

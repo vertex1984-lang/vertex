@@ -44,7 +44,6 @@ const CORD_CARAMEL = 'corduroy-pillow-covers-caramel-45x45-mk-pc-cord-caramel-45
 const CORD_BLUE = 'corduroy-pillow-covers-dustyblue-45x45-mk-pc-cord-dustyblue-45';
 const COTTON_CREAM = 'cotton-like-pillow-covers-cream-40x40-mk-pc-ctn-cream';
 const OUTDOOR_CUSHION = 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty';
-const NECK_PILLOW = 'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732';
 
 export const SCENES: SceneDef[] = [
   {
@@ -114,17 +113,6 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    slug: 'quiet-sofa-reading',
-    title: 'A Quiet Sofa Read',
-    style: 'Soft Minimal',
-    tagline: 'Neck support that disappears into the chapter.',
-    heroImage: '/images/pdp-lifestyle/neck-home.webp',
-    heroAlt: 'Woman reading on a grey sofa wearing a memory foam neck pillow, tea on the table',
-    hotspots: [
-      { handle: NECK_PILLOW, x: 60, y: 37, label: 'Around her neck' },
-    ],
-  },
-  {
     slug: 'golden-hour-corner',
     title: 'The Golden Hour Corner',
     style: 'Retro Mix',
@@ -158,18 +146,6 @@ export const SCENES: SceneDef[] = [
       'Tropical porch with a wicker chair with a deep green tufted cushion, iced tea on a side table',
     hotspots: [
       { handle: OUTDOOR_CUSHION, x: 55, y: 64, label: 'On the wicker chair' },
-    ],
-  },
-  {
-    slug: 'deck-chair-sunrise',
-    title: 'Deck Chair Sunrise',
-    style: 'Coastal Slow',
-    tagline: 'Sea breeze, cold brew, and neck support that travels.',
-    heroImage: '/images/pdp-lifestyle/neck-travel.webp',
-    heroAlt:
-      'Cruise deck chair with a cream memory foam neck pillow, iced coffee and a magazine at sunrise',
-    hotspots: [
-      { handle: NECK_PILLOW, x: 85, y: 46, label: 'On the deck chair' },
     ],
   },
   {

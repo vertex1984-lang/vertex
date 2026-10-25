@@ -63,71 +63,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.de/dp/B0F62Y3XT9"
     },
-    {
-        "id": "makimoo-B0F62Y59CW",
-        "asin": "B0F62Y59CW",
-        "title": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-        "handle": "makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw",
-        "description": "Soft and Fluffy Hollow Fiber Fill: Filled with lightweight, resilient hollow fiber, these 50 x 70cm pillow inserts offer a plush, cloud-like feel that adds inviting comfort to decorative cushions on sofas, beds, and couches. Breathable Fabric for Lasting Comfort: Each cushion insert is wrapped in a soft, breathable cover that promotes airflow, helping the pillows stay fresh and comfortable through everyday use. Resilient Shape Retention: The carefully lofted fiber filling bounces back after compression, helping the inserts maintain a full, supportive shape so your cushion covers look tidy and welcoming. Easy Machine Care: Designed for convenient cleaning, these pillow inserts are machine washable, allowing you to keep your living room, bedroom, or guest space clean with minimal effort. Versatile 2-Pack for Any Space: This set includes two white 50 x 70cm cushion inserts that fit standard pillow covers and work beautifully on sofas, beds, armchairs, car seats, and window seats.",
-        "descriptionHtml": "<p>Soft and Fluffy Hollow Fiber Fill: Filled with lightweight, resilient hollow fiber, these 50 x 70cm pillow inserts offer a plush, cloud-like feel that adds inviting comfort to decorative cushions on sofas, beds, and couches.</p><p>Breathable Fabric for Lasting Comfort: Each cushion insert is wrapped in a soft, breathable cover that promotes airflow, helping the pillows stay fresh and comfortable through everyday use.</p><p>Resilient Shape Retention: The carefully lofted fiber filling bounces back after compression, helping the inserts maintain a full, supportive shape so your cushion covers look tidy and welcoming.</p><p>Easy Machine Care: Designed for convenient cleaning, these pillow inserts are machine washable, allowing you to keep your living room, bedroom, or guest space clean with minimal effort.</p><p>Versatile 2-Pack for Any Space: This set includes two white 50 x 70cm cushion inserts that fit standard pillow covers and work beautifully on sofas, beds, armchairs, car seats, and window seats.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0F62Y59CW/1.webp",
-                "altText": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0F62Y59CW/2.webp",
-                "altText": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0F62Y59CW/3.webp",
-                "altText": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0F62Y59CW/4.webp",
-                "altText": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0F62Y59CW/5.webp",
-                "altText": "Makimoo Pillow Inserts 50 x 70 cm Set of 2 Soft Fluffy Hollow Fiber Cushion Fillings for Sofa Bed Couch Decorative Pillow Inserts with Plush Support for Bedroom Living Room (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0F62Y59CW",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.de/dp/B0F62Y59CW"
-    },
-    {
+{
         "id": "makimoo-B0F62ZY8ZN",
         "asin": "B0F62ZY8ZN",
         "title": "Square Throw Pillow Inserts 50 x 50 cm Set of 2 Cushion Pads Lightweight Soft Fluffy Hollowfibre Fill for Sofa Bed Couch and Home All Season Decorative Pillow Stuffers (White)",
@@ -185,129 +121,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.co.uk/dp/B0F62ZY8ZN"
     },
-    {
-        "id": "makimoo-B0GD81WT1B",
-        "asin": "B0GD81WT1B",
-        "title": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-        "handle": "indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b",
-        "description": "Plush Tufted Comfort: Thick, resilient filling and a classic tufted design provide a soft, supportive seat for dining, lounging, or entertaining on the patio. Bright Floral Style: A teal base with orange, coral, and cream blossoms brings a fresh, garden-ready look to kitchens, dining rooms, balconies, and porches. Stay-in-Place Ties: Two attached fabric ties loop around chair backs or frames to help keep the cushion from sliding while you sit. Indoor and Outdoor Versatility: The durable cover makes these cushions a practical choice for everyday seating inside or in covered outdoor areas. Convenient Two-Pack: Each set includes two 43 x 43cm square chair pads, making it easy to refresh a pair of dining chairs or patio seats with coordinated comfort.",
-        "descriptionHtml": "<p>Plush Tufted Comfort: Thick, resilient filling and a classic tufted design provide a soft, supportive seat for dining, lounging, or entertaining on the patio.</p><p>Bright Floral Style: A teal base with orange, coral, and cream blossoms brings a fresh, garden-ready look to kitchens, dining rooms, balconies, and porches.</p><p>Stay-in-Place Ties: Two attached fabric ties loop around chair backs or frames to help keep the cushion from sliding while you sit.</p><p>Indoor and Outdoor Versatility: The durable cover makes these cushions a practical choice for everyday seating inside or in covered outdoor areas.</p><p>Convenient Two-Pack: Each set includes two 43 x 43cm square chair pads, making it easy to refresh a pair of dining chairs or patio seats with coordinated comfort.</p>",
-        "productType": "Cushions",
-        "tags": [
-            "Cushions"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GD81WT1B/1.webp",
-                "altText": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD81WT1B/2.webp",
-                "altText": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD81WT1B/3.webp",
-                "altText": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD81WT1B/4.webp",
-                "altText": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD81WT1B/5.webp",
-                "altText": "Indoor Outdoor Square Tufted Seat Cushions Set of 2 with Ties Patio Chair Pads Thick Padded Floral Dining Kitchen Garden Furniture Cushion 43 x 43 cm (Teal Blue Floral)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GD81WT1B",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.com/dp/B0GD81WT1B"
-    },
-    {
-        "id": "makimoo-B0GD84D8VC",
-        "asin": "B0GD84D8VC",
-        "title": "Set of 2 Tufted Outdoor Chair Cushions With Ties, Square Patio Seat Pads for Garden Dining Kitchen Chairs, Soft Supportive Fiber Filled Indoor Outdoor Pads 43 x 43 cm (Green Lantern)",
-        "handle": "set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc",
-        "description": "Set of 2 Tufted Seat Cushions: Each cushion measures 43 x 43cm and features a classic tufted construction with a decorative green lantern pattern, adding comfort and style to dining chairs, patio sets, and kitchen seating. Secure Corner Ties: Attached fabric ties on each cushion help keep the pad firmly in place on chairs, preventing slipping or shifting during everyday meals, work sessions, and outdoor gatherings. Plush Fiber Fill: Filled with soft polyester fiber for a supportive yet comfortable seat, these cushions help reduce pressure while you sit and relax on metal, wood, wicker, or resin chairs. Versatile Indoor and Outdoor Use: The square shape and fresh print work beautifully on patios, balconies, decks, and in dining rooms, making these pads a practical choice for multiple living spaces. Easy to Coordinate: The green lantern print brings a fresh decorative accent that complements a variety of furniture finishes and seasonal decor themes.",
-        "descriptionHtml": "<p>Set of 2 Tufted Seat Cushions: Each cushion measures 43 x 43cm and features a classic tufted construction with a decorative green lantern pattern, adding comfort and style to dining chairs, patio sets, and kitchen seating.</p><p>Secure Corner Ties: Attached fabric ties on each cushion help keep the pad firmly in place on chairs, preventing slipping or shifting during everyday meals, work sessions, and outdoor gatherings.</p><p>Plush Fiber Fill: Filled with soft polyester fiber for a supportive yet comfortable seat, these cushions help reduce pressure while you sit and relax on metal, wood, wicker, or resin chairs.</p><p>Versatile Indoor and Outdoor Use: The square shape and fresh print work beautifully on patios, balconies, decks, and in dining rooms, making these pads a practical choice for multiple living spaces.</p><p>Easy to Coordinate: The green lantern print brings a fresh decorative accent that complements a variety of furniture finishes and seasonal decor themes.</p>",
-        "productType": "Cushions",
-        "tags": [
-            "Cushions"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GD84D8VC/1.webp",
-                "altText": "Set of 2 Tufted Outdoor Chair Cushions With Ties, Square Patio Seat Pads for Garden Dining Kitchen Chairs, Soft Supportive Fiber Filled Indoor Outdoor Pads 43 x 43 cm (Green Lantern)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD84D8VC/2.webp",
-                "altText": "Set of 2 Tufted Outdoor Chair Cushions With Ties, Square Patio Seat Pads for Garden Dining Kitchen Chairs, Soft Supportive Fiber Filled Indoor Outdoor Pads 43 x 43 cm (Green Lantern)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD84D8VC/3.webp",
-                "altText": "Set of 2 Tufted Outdoor Chair Cushions With Ties, Square Patio Seat Pads for Garden Dining Kitchen Chairs, Soft Supportive Fiber Filled Indoor Outdoor Pads 43 x 43 cm (Green Lantern)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD84D8VC/4.webp",
-                "altText": "Set of 2 Tufted Outdoor Chair Cushions With Ties, Square Patio Seat Pads for Garden Dining Kitchen Chairs, Soft Supportive Fiber Filled Indoor Outdoor Pads 43 x 43 cm (Green Lantern)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GD84D8VC",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.com/dp/B0GD84D8VC"
-    },
-    {
+{
         "id": "makimoo-B0GJLPXB6F",
         "asin": "B0GJLPXB6F",
         "title": "Makimoo Water-Resistant Tufted Round Seat Cushions Set of 2 Thick Soft Velvet Solid Color Chair Pads for Indoor Outdoor Patio Dining Kitchen Floor Seating 47 x 8 cm (Angora Red)",
@@ -377,7 +191,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0GJLPXB6F"
     },
-    {
+{
         "id": "makimoo-B0GJLRGVDJ",
         "asin": "B0GJLRGVDJ",
         "title": "2-Pack All-Weather Outdoor Chair Cushions Waterproof Solid Tufted Seat and Back Cushion Set with Ties Non-Slip One-Piece Patio Dining Chair Pads 90 x 45 x 10 cm (Coffee)",
@@ -435,7 +249,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0GJLRGVDJ"
     },
-    {
+{
         "id": "makimoo-B0GJSTTGY5",
         "asin": "B0GJSTTGY5",
         "title": "Makimoo Outdoor Chair Cushions 2-Pack Waterproof Tufted Garden Patio Seat And Back Cushion With Ties Thick Padding Solid Color 90 x 45 x 10 cm (Dark Green)",
@@ -499,129 +313,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0GJSTTGY5"
     },
-    {
-        "id": "makimoo-B0GRJ9SDTF",
-        "asin": "B0GRJ9SDTF",
-        "title": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-        "handle": "premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf",
-        "description": "Plush Hollow Fiber Fill: Each insert is generously filled with airy hollow fiber for a soft, cloud-like feel that holds its shape while offering gentle support for lounging, sleeping, or decorative styling. Perfect 40 x 80cm Size: The rectangular shape fits standard cushion covers and pillowcases, making these inserts a practical choice for sofas, beds, couches, armchairs, cars, and window seats. Breathable And Comfortable: The lightweight fiber construction allows heat and moisture to escape, helping you stay cool and relaxed whether you are napping, reading, or watching television. Durable, Resilient Construction: Tightly stitched seams and evenly distributed filling resist clumping and sagging; simply fluff the inserts regularly to restore loft and maintain a neat, tailored look. Versatile Two-Pack Value: Receive two matching pillow inserts ready to refresh your living room, bedroom, guest room, or any cozy corner with clean, inviting comfort.",
-        "descriptionHtml": "<p>Plush Hollow Fiber Fill: Each insert is generously filled with airy hollow fiber for a soft, cloud-like feel that holds its shape while offering gentle support for lounging, sleeping, or decorative styling.</p><p>Perfect 40 x 80cm Size: The rectangular shape fits standard cushion covers and pillowcases, making these inserts a practical choice for sofas, beds, couches, armchairs, cars, and window seats.</p><p>Breathable And Comfortable: The lightweight fiber construction allows heat and moisture to escape, helping you stay cool and relaxed whether you are napping, reading, or watching television.</p><p>Durable, Resilient Construction: Tightly stitched seams and evenly distributed filling resist clumping and sagging; simply fluff the inserts regularly to restore loft and maintain a neat, tailored look.</p><p>Versatile Two-Pack Value: Receive two matching pillow inserts ready to refresh your living room, bedroom, guest room, or any cozy corner with clean, inviting comfort.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GRJ9SDTF/1.webp",
-                "altText": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ9SDTF/2.webp",
-                "altText": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ9SDTF/3.webp",
-                "altText": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ9SDTF/4.webp",
-                "altText": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ9SDTF/5.webp",
-                "altText": "Premium Rectangular Pillow Inserts Set Of 2 For Sofa Bed Couch Decorative Cushion Fillings Soft Fluffy Hollow Fiber Filling Supportive Breathable Home Decor 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GRJ9SDTF",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.de/dp/B0GRJ9SDTF"
-    },
-    {
-        "id": "makimoo-B0H4V662HL",
-        "asin": "B0H4V662HL",
-        "title": "Premium Pillow Inserts 45 x 45 cm Set of 2 Decorative Square Cushion Fillers Soft Fluffy Polyester Throw Pillows for Sofa Bed Couch Chair Bedroom Living Room Home Decor (White)",
-        "handle": "premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl",
-        "description": "Fits Standard Covers: Each insert measures 45 x 45 cm and is designed to fit square cushion covers and decorative pillowcases, giving your living space a neat and polished look. Soft and Fluffy Filling: Made with premium polyester fiberfill that stays plump and supportive, these inserts provide cloud-like comfort for lounging, napping, or adding extra back support. Reinforced Double-Stitched Seams: Expertly crafted with reinforced edges to help prevent tearing and fiber leakage, ensuring long-lasting shape retention through everyday use. Two-Pack Set: Includes two high-quality pillow inserts in one set, ideal for refreshing multiple rooms, seasonal decor swaps, or coordinating cushions across your home. Versatile Home Decor Accent: Suitable for sofas, beds, couches, chairs, bedrooms, and living rooms, these white cushion fillers complement any interior style with clean, classic appeal.",
-        "descriptionHtml": "<p>Fits Standard Covers: Each insert measures 45 x 45 cm and is designed to fit square cushion covers and decorative pillowcases, giving your living space a neat and polished look.</p><p>Soft and Fluffy Filling: Made with premium polyester fiberfill that stays plump and supportive, these inserts provide cloud-like comfort for lounging, napping, or adding extra back support.</p><p>Reinforced Double-Stitched Seams: Expertly crafted with reinforced edges to help prevent tearing and fiber leakage, ensuring long-lasting shape retention through everyday use.</p><p>Two-Pack Set: Includes two high-quality pillow inserts in one set, ideal for refreshing multiple rooms, seasonal decor swaps, or coordinating cushions across your home.</p><p>Versatile Home Decor Accent: Suitable for sofas, beds, couches, chairs, bedrooms, and living rooms, these white cushion fillers complement any interior style with clean, classic appeal.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0H4V662HL/1.webp",
-                "altText": "Premium Pillow Inserts 45 x 45 cm Set of 2 Decorative Square Cushion Fillers Soft Fluffy Polyester Throw Pillows for Sofa Bed Couch Chair Bedroom Living Room Home Decor (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0H4V662HL/2.webp",
-                "altText": "Premium Pillow Inserts 45 x 45 cm Set of 2 Decorative Square Cushion Fillers Soft Fluffy Polyester Throw Pillows for Sofa Bed Couch Chair Bedroom Living Room Home Decor (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0H4V662HL/3.webp",
-                "altText": "Premium Pillow Inserts 45 x 45 cm Set of 2 Decorative Square Cushion Fillers Soft Fluffy Polyester Throw Pillows for Sofa Bed Couch Chair Bedroom Living Room Home Decor (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0H4V662HL/4.webp",
-                "altText": "Premium Pillow Inserts 45 x 45 cm Set of 2 Decorative Square Cushion Fillers Soft Fluffy Polyester Throw Pillows for Sofa Bed Couch Chair Bedroom Living Room Home Decor (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0H4V662HL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.de/dp/B0H4V662HL"
-    },
-    {
+{
         "id": "makimoo-B0F1YDRDTX",
         "asin": "B0F1YDRDTX",
         "title": "Set of 2 Plush Round Tufted Seat Cushions Water-Resistant Thick Soft Comfortable Solid Color Chair Pads For Indoor Outdoor Patio Garden Dining Kitchen Office Home 47 x 8 cm (Navy Blue)",
@@ -679,7 +371,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0F1YDRDTX"
     },
-    {
+{
         "id": "makimoo-B0F1V8VMP4",
         "asin": "B0F1V8VMP4",
         "title": "Makimoo 2 Pack Outdoor Chair Cushions Water-Resistant Solid Color Tufted High Back Seat and Back Pads with Ties for Patio Garden Dining Chairs 90 x 45 x 10 cm (Navy Blue)",
@@ -743,7 +435,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0F1V8VMP4"
     },
-    {
+{
         "id": "makimoo-B0DSGFXLDV",
         "asin": "B0DSGFXLDV",
         "title": "Makimoo 2-Pack Patio Chair Cushions with Ties, One-Piece Seat and Backrest Pads for Outdoor Garden, Lawn and Deck Furniture 95 x 45 cm (Vibrant Multicolor Butterfly Floral)",
@@ -807,7 +499,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0DSGFXLDV"
     },
-    {
+{
         "id": "makimoo-B0DSGCLBVW",
         "asin": "B0DSGCLBVW",
         "title": "Makimoo 2 Pack Outdoor Chair Cushions With Ties Watercolor Wave Leaf Pattern One-Piece Seat And Back Cushion Pads For Patio Garden Furniture 95 x 45 cm (Blue Green Leaves)",
@@ -871,7 +563,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0DSGCLBVW"
     },
-    {
+{
         "id": "makimoo-B0F62QGV32",
         "asin": "B0F62QGV32",
         "title": "Makimoo Square Cushion Inserts 30 x 30 cm Set of 2 Soft Plush Pillow Stuffer for Sofa Couch Bed Versatile Decorative Throw Pillow Filling Fluffy Supportive Inner Pads (White)",
@@ -929,7 +621,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0F62QGV32"
     },
-    {
+{
         "id": "makimoo-B0DSGCKWXW",
         "asin": "B0DSGCKWXW",
         "title": "Set of 2 Thick Outdoor Chair Cushions with Ties, 1 Piece High Back Patio Seat Cushion Pad, All Weather Garden Lounge Pillow for Porch Deck, 95 x 45 cm (Multicolor Floral)",
@@ -987,71 +679,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0DSGCKWXW"
     },
-    {
-        "id": "makimoo-B0CJHL4LZP",
-        "asin": "B0CJHL4LZP",
-        "title": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-        "handle": "makimoo-chair-cushions-set-of-2-oil-painting-floral-seat-b0cjhl4lzp",
-        "description": "Artistic Oil Painting Design: Inspired by impressionist floral artwork, the vibrant print adds a painterly touch to dining chairs, kitchen seating, and office chairs. Thick Tufted Comfort: Plush padded construction offers a soft, supportive seat that helps reduce pressure during long meals or work sessions. Stay-in-Place Ties: Each cushion includes two matching fabric ties to secure the pad to chair rungs and keep it from sliding out of place. Ideal 43 x 43cm Size: The square shape provides generous coverage for a variety of standard chairs, stools, and accent seating. Set of 2 for Coordinated Style: Includes two matching seat pads that create a unified look across your dining room, breakfast nook, or workspace.",
-        "descriptionHtml": "<p>Artistic Oil Painting Design: Inspired by impressionist floral artwork, the vibrant print adds a painterly touch to dining chairs, kitchen seating, and office chairs.</p><p>Thick Tufted Comfort: Plush padded construction offers a soft, supportive seat that helps reduce pressure during long meals or work sessions.</p><p>Stay-in-Place Ties: Each cushion includes two matching fabric ties to secure the pad to chair rungs and keep it from sliding out of place.</p><p>Ideal 43 x 43cm Size: The square shape provides generous coverage for a variety of standard chairs, stools, and accent seating.</p><p>Set of 2 for Coordinated Style: Includes two matching seat pads that create a unified look across your dining room, breakfast nook, or workspace.</p>",
-        "productType": "Cushions",
-        "tags": [
-            "Cushions"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0CJHL4LZP/1.webp",
-                "altText": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0CJHL4LZP/2.webp",
-                "altText": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0CJHL4LZP/3.webp",
-                "altText": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0CJHL4LZP/4.webp",
-                "altText": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0CJHL4LZP/5.webp",
-                "altText": "Makimoo Chair Cushions Set of 2 Oil Painting Floral Seat Pads with Ties Thick Tufted Soft Square Kitchen Dining Room Bedroom Home Office Chair Pads 43 x 43 cm (Multicolor)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0CJHL4LZP",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.com/dp/B0CJHL4LZP"
-    },
-    {
+{
         "id": "makimoo-B0CBT8FZWF",
         "asin": "B0CBT8FZWF",
         "title": "2 Pack Ribbed Corduroy Chair Cushions with Ties for Indoor Outdoor Patio Dining Chairs, Thick Tufted One-Piece Seat and Back Design with 4 Corner Strings 95 x 45 cm (Khaki)",
@@ -1109,7 +737,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0CBT8FZWF"
     },
-    {
+{
         "id": "makimoo-B0GXWM4N7J",
         "asin": "B0GXWM4N7J",
         "title": "Makimoo Quilted Square Cushion Inserts Set of 2 Decorative Throw Pillow Stuffer Forms with Soft Fluffy Polyester Filling for Sofa Bed Couch 35 x 35 cm (White)",
@@ -1167,675 +795,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.de/dp/B0GXWM4N7J"
     },
-    {
-        "id": "makimoo-B0GJLVMHT7",
-        "asin": "B0GJLVMHT7",
-        "title": "Textured Geometric Embossed Pillowcases Set of 2 Soft Brushed Microfiber Easy Care Pillow Covers for Kids Bedroom Decorative Travel Cushion Sham 30 x 50 cm (Pink)",
-        "handle": "textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7",
-        "description": "Elegant Textured Finish: Subtle geometric embossing adds a refined, hotel-style touch to beds, sofas, and travel pillows while remaining gentle against the skin. Cozy Brushed Microfiber: Woven from finely brushed microfiber for a smooth, breathable feel that helps create a comfortable resting environment night after night. Perfectly Sized 2-Pack: Each set includes two 30 x 50cm pillow covers designed to fit small standard pillows, childrens pillows, and decorative cushion inserts. Versatile Styling Options: The soft blush pink tone and understated pattern complement nursery, bedroom, dorm, and living room decor with ease. Easy Everyday Care: Machine washable fabric holds its shape and color through repeated washing for long-lasting freshness and convenience.",
-        "descriptionHtml": "<p>Elegant Textured Finish: Subtle geometric embossing adds a refined, hotel-style touch to beds, sofas, and travel pillows while remaining gentle against the skin.</p><p>Cozy Brushed Microfiber: Woven from finely brushed microfiber for a smooth, breathable feel that helps create a comfortable resting environment night after night.</p><p>Perfectly Sized 2-Pack: Each set includes two 30 x 50cm pillow covers designed to fit small standard pillows, childrens pillows, and decorative cushion inserts.</p><p>Versatile Styling Options: The soft blush pink tone and understated pattern complement nursery, bedroom, dorm, and living room decor with ease.</p><p>Easy Everyday Care: Machine washable fabric holds its shape and color through repeated washing for long-lasting freshness and convenience.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLVMHT7/1.webp",
-                "altText": "Textured Geometric Embossed Pillowcases Set of 2 Soft Brushed Microfiber Easy Care Pillow Covers for Kids Bedroom Decorative Travel Cushion Sham 30 x 50 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLVMHT7/2.webp",
-                "altText": "Textured Geometric Embossed Pillowcases Set of 2 Soft Brushed Microfiber Easy Care Pillow Covers for Kids Bedroom Decorative Travel Cushion Sham 30 x 50 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLVMHT7/3.webp",
-                "altText": "Textured Geometric Embossed Pillowcases Set of 2 Soft Brushed Microfiber Easy Care Pillow Covers for Kids Bedroom Decorative Travel Cushion Sham 30 x 50 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLVMHT7/4.webp",
-                "altText": "Textured Geometric Embossed Pillowcases Set of 2 Soft Brushed Microfiber Easy Care Pillow Covers for Kids Bedroom Decorative Travel Cushion Sham 30 x 50 cm (Pink)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLVMHT7",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLVMHT7"
-    },
-    {
-        "id": "makimoo-B0GJLSDZ52",
-        "asin": "B0GJLSDZ52",
-        "title": "Makimoo Embossed Cushion Covers Set of 2 Soft Microfibre Pillowcases with Envelope Closure Breathable Lightweight for Bed Sofa Bedroom Living Room 40 x 80 cm (Light Grey)",
-        "handle": "makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52",
-        "description": "Luxuriously Soft Microfibre: Crafted from 100% microfibre, these cushion covers offer a silky-smooth feel against the skin and create a cozy surface for sleeping, lounging, and relaxing. Elegant Embossed Texture: The subtle woven-style embossing adds a refined decorative touch that complements bedding, sofas, chairs, and living spaces with a calm, modern look. Secure Envelope Closure: Each cover features a hidden envelope opening that keeps the insert neatly tucked inside while allowing quick and effortless insertion and removal. Easy Care & Long-Lasting: Machine washable, tumble dry friendly, and quick to dry, the fabric retains its shape and soft texture through regular use and repeated washing. Perfect Fit for 40 x 80cm Cushions: Tailored to fit standard 40 x 80cm pillows snugly, this two-pack set provides versatile styling options for bedrooms, guest rooms, and lounges.",
-        "descriptionHtml": "<p>Luxuriously Soft Microfibre: Crafted from 100% microfibre, these cushion covers offer a silky-smooth feel against the skin and create a cozy surface for sleeping, lounging, and relaxing.</p><p>Elegant Embossed Texture: The subtle woven-style embossing adds a refined decorative touch that complements bedding, sofas, chairs, and living spaces with a calm, modern look.</p><p>Secure Envelope Closure: Each cover features a hidden envelope opening that keeps the insert neatly tucked inside while allowing quick and effortless insertion and removal.</p><p>Easy Care &amp; Long-Lasting: Machine washable, tumble dry friendly, and quick to dry, the fabric retains its shape and soft texture through regular use and repeated washing.</p><p>Perfect Fit for 40 x 80cm Cushions: Tailored to fit standard 40 x 80cm pillows snugly, this two-pack set provides versatile styling options for bedrooms, guest rooms, and lounges.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLSDZ52/1.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Microfibre Pillowcases with Envelope Closure Breathable Lightweight for Bed Sofa Bedroom Living Room 40 x 80 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLSDZ52/2.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Microfibre Pillowcases with Envelope Closure Breathable Lightweight for Bed Sofa Bedroom Living Room 40 x 80 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLSDZ52/3.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Microfibre Pillowcases with Envelope Closure Breathable Lightweight for Bed Sofa Bedroom Living Room 40 x 80 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLSDZ52/4.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Microfibre Pillowcases with Envelope Closure Breathable Lightweight for Bed Sofa Bedroom Living Room 40 x 80 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLSDZ52",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLSDZ52"
-    },
-    {
-        "id": "makimoo-B0GJLP59K1",
-        "asin": "B0GJLP59K1",
-        "title": "Makimoo Embossed Microfiber Pillow Covers 50 x 70 cm Set Of 2 Soft Breathable Skin Friendly Durable Envelope Closure Cushion Covers For Bedroom Sofa Living Room (White)",
-        "handle": "makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1",
-        "description": "Luxuriously Soft Microfiber: These cushion covers are made entirely from high-quality microfiber with an embossed texture, creating a gentle, cloud-like surface that feels cozy against the skin. Perfect Fit with Envelope Closure: Each cover measures 50 x 70cm and features a neat envelope closure that keeps your pillow insert securely tucked inside while making removal quick and easy. Easy Care and Long-Lasting Color: Machine washable and tumble dry friendly, these covers are designed to maintain their bright white shade and smooth shape through repeated washes without needing ironing. Durable, Well-Made Construction: Neatly stitched seams and quality microfiber help resist loose threads and everyday wear, making these covers a reliable choice for daily use on beds and sofas. Versatile Style for Any Space: The clean white embossed finish complements bedroom, guest room, or living room decor, adding a fresh and inviting touch to your pillows.",
-        "descriptionHtml": "<p>Luxuriously Soft Microfiber: These cushion covers are made entirely from high-quality microfiber with an embossed texture, creating a gentle, cloud-like surface that feels cozy against the skin.</p><p>Perfect Fit with Envelope Closure: Each cover measures 50 x 70cm and features a neat envelope closure that keeps your pillow insert securely tucked inside while making removal quick and easy.</p><p>Easy Care and Long-Lasting Color: Machine washable and tumble dry friendly, these covers are designed to maintain their bright white shade and smooth shape through repeated washes without needing ironing.</p><p>Durable, Well-Made Construction: Neatly stitched seams and quality microfiber help resist loose threads and everyday wear, making these covers a reliable choice for daily use on beds and sofas.</p><p>Versatile Style for Any Space: The clean white embossed finish complements bedroom, guest room, or living room decor, adding a fresh and inviting touch to your pillows.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLP59K1/1.webp",
-                "altText": "Makimoo Embossed Microfiber Pillow Covers 50 x 70 cm Set Of 2 Soft Breathable Skin Friendly Durable Envelope Closure Cushion Covers For Bedroom Sofa Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP59K1/2.webp",
-                "altText": "Makimoo Embossed Microfiber Pillow Covers 50 x 70 cm Set Of 2 Soft Breathable Skin Friendly Durable Envelope Closure Cushion Covers For Bedroom Sofa Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP59K1/3.webp",
-                "altText": "Makimoo Embossed Microfiber Pillow Covers 50 x 70 cm Set Of 2 Soft Breathable Skin Friendly Durable Envelope Closure Cushion Covers For Bedroom Sofa Living Room (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP59K1/4.webp",
-                "altText": "Makimoo Embossed Microfiber Pillow Covers 50 x 70 cm Set Of 2 Soft Breathable Skin Friendly Durable Envelope Closure Cushion Covers For Bedroom Sofa Living Room (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLP59K1",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLP59K1"
-    },
-    {
-        "id": "makimoo-B0GJLNMX2G",
-        "asin": "B0GJLNMX2G",
-        "title": "Makimoo Embossed Pillowcases Set of 2 Ultra Soft Breathable 100% Microfiber Decorative Cushion Covers with Hidden Envelope Closure for Bed Sofa 40 x 70 cm (Light Grey)",
-        "handle": "makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g",
-        "description": "Luxuriously Soft Microfibre: Crafted from 100% microfibre, these 40 x 70cm cushion covers feel exceptionally smooth and gentle against skin, offering a cloud-like touch for restful sleep and relaxation. Elegant Textured Pattern: The subtle embossed weave adds a refined, decorative finish that complements modern bedrooms, living rooms, and guest rooms while enhancing the overall look of your bedding. Convenient Envelope Closure: Each cover features a neat envelope closure that keeps pillows securely tucked inside, prevents slipping, and creates a clean, seamless appearance on both sides. Durable and Easy to Maintain: The tightly woven microfibre resists fading, pilling, and shrinking. Simply machine wash, tumble dry, and enjoy non-iron convenience for everyday use. Versatile Two-Pack Set: Includes two standard-size pillow covers in a versatile light grey shade, perfect for refreshing your bed, sofa, couch, or armchair with coordinated comfort and style.",
-        "descriptionHtml": "<p>Luxuriously Soft Microfibre: Crafted from 100% microfibre, these 40 x 70cm cushion covers feel exceptionally smooth and gentle against skin, offering a cloud-like touch for restful sleep and relaxation.</p><p>Elegant Textured Pattern: The subtle embossed weave adds a refined, decorative finish that complements modern bedrooms, living rooms, and guest rooms while enhancing the overall look of your bedding.</p><p>Convenient Envelope Closure: Each cover features a neat envelope closure that keeps pillows securely tucked inside, prevents slipping, and creates a clean, seamless appearance on both sides.</p><p>Durable and Easy to Maintain: The tightly woven microfibre resists fading, pilling, and shrinking. Simply machine wash, tumble dry, and enjoy non-iron convenience for everyday use.</p><p>Versatile Two-Pack Set: Includes two standard-size pillow covers in a versatile light grey shade, perfect for refreshing your bed, sofa, couch, or armchair with coordinated comfort and style.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLNMX2G/1.webp",
-                "altText": "Makimoo Embossed Pillowcases Set of 2 Ultra Soft Breathable 100% Microfiber Decorative Cushion Covers with Hidden Envelope Closure for Bed Sofa 40 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLNMX2G/2.webp",
-                "altText": "Makimoo Embossed Pillowcases Set of 2 Ultra Soft Breathable 100% Microfiber Decorative Cushion Covers with Hidden Envelope Closure for Bed Sofa 40 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLNMX2G/3.webp",
-                "altText": "Makimoo Embossed Pillowcases Set of 2 Ultra Soft Breathable 100% Microfiber Decorative Cushion Covers with Hidden Envelope Closure for Bed Sofa 40 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLNMX2G/4.webp",
-                "altText": "Makimoo Embossed Pillowcases Set of 2 Ultra Soft Breathable 100% Microfiber Decorative Cushion Covers with Hidden Envelope Closure for Bed Sofa 40 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLNMX2G",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLNMX2G"
-    },
-    {
-        "id": "makimoo-B0GJLP4PR2",
-        "asin": "B0GJLP4PR2",
-        "title": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-        "handle": "makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2",
-        "description": "Luxuriously Soft Microfiber: Crafted from finely brushed microfiber, these pillowcases offer a silky smooth, cloud-like touch. The elegant embossed pattern adds subtle texture and a refined finish to your bedding or living space. Envelope Closure for a Secure Fit: Each cover features a neat envelope closure that keeps pillows tucked in place while maintaining a clean, seamless look on both sides. No zippers means no snagging on fabric or hair. Breathable and Skin Friendly: Lightweight microfiber allows air to pass through easily, helping you stay comfortable in any season. The gentle surface feels soft against sensitive skin for a more restful sleep. Easy Care and Long Lasting Quality: Machine washable and tumble dry friendly, these covers resist fading, shrinking and wrinkling. They retain their shape and soft feel wash after wash, saving you time on ironing. Set of Two Versatile Covers: This package includes two coordinating pink cushion covers sized 40 x 70cm, ideal for refreshing pillows in the bedroom, guest room, living room sofa or travel setup.",
-        "descriptionHtml": "<p>Luxuriously Soft Microfiber: Crafted from finely brushed microfiber, these pillowcases offer a silky smooth, cloud-like touch. The elegant embossed pattern adds subtle texture and a refined finish to your bedding or living space.</p><p>Envelope Closure for a Secure Fit: Each cover features a neat envelope closure that keeps pillows tucked in place while maintaining a clean, seamless look on both sides. No zippers means no snagging on fabric or hair.</p><p>Breathable and Skin Friendly: Lightweight microfiber allows air to pass through easily, helping you stay comfortable in any season. The gentle surface feels soft against sensitive skin for a more restful sleep.</p><p>Easy Care and Long Lasting Quality: Machine washable and tumble dry friendly, these covers resist fading, shrinking and wrinkling. They retain their shape and soft feel wash after wash, saving you time on ironing.</p><p>Set of Two Versatile Covers: This package includes two coordinating pink cushion covers sized 40 x 70cm, ideal for refreshing pillows in the bedroom, guest room, living room sofa or travel setup.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLP4PR2/1.webp",
-                "altText": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP4PR2/2.webp",
-                "altText": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP4PR2/3.webp",
-                "altText": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP4PR2/4.webp",
-                "altText": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLP4PR2/5.webp",
-                "altText": "Makimoo Embossed Microfiber Pillowcases Set of 2 Soft Durable Rectangular Cushion Covers with Envelope Closure Breathable All Season Skin Friendly Pillow Cases 40 x 70 cm (Pink)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLP4PR2",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLP4PR2"
-    },
-    {
-        "id": "makimoo-B0GJLMC6Z4",
-        "asin": "B0GJLMC6Z4",
-        "title": "Makimoo Embossed Pillowcases 2 Pack Soft Textured Pillow Covers with Elegant Geometric Pattern for Bed Couch Sofa Decorative Throw Pillowcases 30 x 50 cm (White)",
-        "handle": "makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4",
-        "description": "Elegant Embossed Texture: Each pillowcase features a refined geometric embossed pattern that adds subtle depth and a hotel-inspired look to your bedroom, living room, or guest space without overwhelming your existing decor. Perfectly Sized 2-Pack: Designed to fit 30 x 50cm pillows, this set includes two matching pillowcases, making it easy to refresh your bed, sofa, or decorative cushion arrangement. Soft and Breathable Fabric: Crafted from lightweight, breathable material that feels gentle against the skin and helps promote a comfortable sleeping environment throughout the year. Crisp White Versatility: The clean white tone complements a wide range of bedding styles and color schemes, offering a fresh, timeless backdrop for both modern and classic interiors. Easy Care and Durable Construction: Machine washable for everyday convenience; the embossed texture retains its shape and the fabric stays smooth wash after wash.",
-        "descriptionHtml": "<p>Elegant Embossed Texture: Each pillowcase features a refined geometric embossed pattern that adds subtle depth and a hotel-inspired look to your bedroom, living room, or guest space without overwhelming your existing decor.</p><p>Perfectly Sized 2-Pack: Designed to fit 30 x 50cm pillows, this set includes two matching pillowcases, making it easy to refresh your bed, sofa, or decorative cushion arrangement.</p><p>Soft and Breathable Fabric: Crafted from lightweight, breathable material that feels gentle against the skin and helps promote a comfortable sleeping environment throughout the year.</p><p>Crisp White Versatility: The clean white tone complements a wide range of bedding styles and color schemes, offering a fresh, timeless backdrop for both modern and classic interiors.</p><p>Easy Care and Durable Construction: Machine washable for everyday convenience; the embossed texture retains its shape and the fabric stays smooth wash after wash.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLMC6Z4/1.webp",
-                "altText": "Makimoo Embossed Pillowcases 2 Pack Soft Textured Pillow Covers with Elegant Geometric Pattern for Bed Couch Sofa Decorative Throw Pillowcases 30 x 50 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMC6Z4/2.webp",
-                "altText": "Makimoo Embossed Pillowcases 2 Pack Soft Textured Pillow Covers with Elegant Geometric Pattern for Bed Couch Sofa Decorative Throw Pillowcases 30 x 50 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMC6Z4/3.webp",
-                "altText": "Makimoo Embossed Pillowcases 2 Pack Soft Textured Pillow Covers with Elegant Geometric Pattern for Bed Couch Sofa Decorative Throw Pillowcases 30 x 50 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMC6Z4/4.webp",
-                "altText": "Makimoo Embossed Pillowcases 2 Pack Soft Textured Pillow Covers with Elegant Geometric Pattern for Bed Couch Sofa Decorative Throw Pillowcases 30 x 50 cm (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLMC6Z4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLMC6Z4"
-    },
-    {
-        "id": "makimoo-B0GJLGXTL4",
-        "asin": "B0GJLGXTL4",
-        "title": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-        "handle": "makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4",
-        "description": "SUPER SOFT & SKIN-FRIENDLY: Made from 100% microfibre, these 40 x 80cm pillowcases feel smooth and gentle against skin, creating a cosy surface for relaxing sleep every night. ELEGANT EMBOSSED TEXTURE: The refined embossed finish adds subtle depth and style, making these covers a versatile match for bedroom, guest room or living room decor. ENVELOPE CLOSURE FOR EASY USE: A practical envelope closure tucks your pillow neatly inside without exposed zippers or buttons, keeping the cover secure and giving your bed or sofa a clean, tidy look. EASY CARE & LONG-LASTING: Machine washable, tumble dry and no ironing required, these covers keep their shape and colour through regular washing, saving time on everyday upkeep. WELL-MADE SET OF 2: Each pack includes two 40 x 80cm cushion covers with neatly processed seams, offering a reliable fit and a durable addition to your bedding collection.",
-        "descriptionHtml": "<p>SUPER SOFT &amp; SKIN-FRIENDLY: Made from 100% microfibre, these 40 x 80cm pillowcases feel smooth and gentle against skin, creating a cosy surface for relaxing sleep every night.</p><p>ELEGANT EMBOSSED TEXTURE: The refined embossed finish adds subtle depth and style, making these covers a versatile match for bedroom, guest room or living room decor.</p><p>ENVELOPE CLOSURE FOR EASY USE: A practical envelope closure tucks your pillow neatly inside without exposed zippers or buttons, keeping the cover secure and giving your bed or sofa a clean, tidy look.</p><p>EASY CARE &amp; LONG-LASTING: Machine washable, tumble dry and no ironing required, these covers keep their shape and colour through regular washing, saving time on everyday upkeep.</p><p>WELL-MADE SET OF 2: Each pack includes two 40 x 80cm cushion covers with neatly processed seams, offering a reliable fit and a durable addition to your bedding collection.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLGXTL4/1.webp",
-                "altText": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGXTL4/2.webp",
-                "altText": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGXTL4/3.webp",
-                "altText": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGXTL4/4.webp",
-                "altText": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGXTL4/5.webp",
-                "altText": "Makimoo Embossed Microfibre Pillowcases 40 x 80 cm Set of 2 with Envelope Closure Soft Durable Skin Friendly Breathable Lightweight Bed Pillow Covers for Bedroom Sofa (Pink)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLGXTL4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLGXTL4"
-    },
-    {
-        "id": "makimoo-B0GJLGM6XG",
-        "asin": "B0GJLGM6XG",
-        "title": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-        "handle": "set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg",
-        "description": "Very soft and pleasant: Heavenly soft microfiber for a sleep like on clouds. The breathable material prevents sweating and significantly increases your sleeping comfort.    Available in several colors and sizes: With numerous colors and sizes, the covers fit perfectly into any room concept and provide stylish accents.    Easy care: Tumble dryer safe and no ironing required: The covers are easy to care for, retain their shape and dry particularly quickly.    Well processed: Neatly processed seams without loose threads ensure a perfect fit. Our customer service is always happy to help you with any questions.    Timeless colors: Suitable for any furnishing style. Available in many elegant solid colors – ideal for bedrooms, guest rooms and living rooms. As a pillowcase on the sofa, it becomes a real eye-catcher.",
-        "descriptionHtml": "<p>Very soft and pleasant: Heavenly soft microfiber for a sleep like on clouds. The breathable material prevents sweating and significantly increases your sleeping comfort.    Available in several colors and sizes: With numerous colors and sizes, the covers fit perfectly into any room concept and provide stylish accents.    Easy care: Tumble dryer safe and no ironing required: The covers are easy to care for, retain their shape and dry particularly quickly.    Well processed: Neatly processed seams without loose threads ensure a perfect fit. Our customer service is always happy to help you with any questions.    Timeless colors: Suitable for any furnishing style. Available in many elegant solid colors – ideal for bedrooms, guest rooms and living rooms. As a pillowcase on the sofa, it becomes a real eye-catcher.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLGM6XG/1.webp",
-                "altText": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGM6XG/2.webp",
-                "altText": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGM6XG/3.webp",
-                "altText": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGM6XG/4.webp",
-                "altText": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLGM6XG/5.webp",
-                "altText": "Set of 2 Pillowcases 40 x 80 cm, Soft Durable & Skin-friendly, 100% Microfiber Pillowcases (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLGM6XG",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLGM6XG"
-    },
-    {
-        "id": "makimoo-B0GJLDWT6X",
-        "asin": "B0GJLDWT6X",
-        "title": "Makimoo Embossed Pillow Cases Set of 2 Luxury Soft Brushed Microfiber Pillowcases with Hidden Envelope Closure Wrinkle and Fade Resistant Easy Care Breathable 30 x 50 cm (Grey)",
-        "handle": "makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x",
-        "description": "Elegant Embossed Texture: Each pillowcase features a refined geometric embossed pattern that adds subtle texture and visual interest to your bedding for a polished, finished look. Premium Brushed Microfiber: Crafted from soft brushed microfiber fabric that feels gentle against skin while offering durable performance for daily use. Hidden Envelope Closure: Designed with a concealed envelope closure that keeps your pillow neatly tucked inside and prevents it from slipping out during the night. Easy Care Fabric: Wrinkle and fade resistant material holds its shape and color through regular washing, saving time on ironing and maintenance. Tailored 30 x 50cm Fit: This two-piece set is designed to fit 30 x 50cm pillows with a smooth, secure fit, making it ideal for guest rooms, travel pillows, or decorative accent pillows.",
-        "descriptionHtml": "<p>Elegant Embossed Texture: Each pillowcase features a refined geometric embossed pattern that adds subtle texture and visual interest to your bedding for a polished, finished look.</p><p>Premium Brushed Microfiber: Crafted from soft brushed microfiber fabric that feels gentle against skin while offering durable performance for daily use.</p><p>Hidden Envelope Closure: Designed with a concealed envelope closure that keeps your pillow neatly tucked inside and prevents it from slipping out during the night.</p><p>Easy Care Fabric: Wrinkle and fade resistant material holds its shape and color through regular washing, saving time on ironing and maintenance.</p><p>Tailored 30 x 50cm Fit: This two-piece set is designed to fit 30 x 50cm pillows with a smooth, secure fit, making it ideal for guest rooms, travel pillows, or decorative accent pillows.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLDWT6X/1.webp",
-                "altText": "Makimoo Embossed Pillow Cases Set of 2 Luxury Soft Brushed Microfiber Pillowcases with Hidden Envelope Closure Wrinkle and Fade Resistant Easy Care Breathable 30 x 50 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDWT6X/2.webp",
-                "altText": "Makimoo Embossed Pillow Cases Set of 2 Luxury Soft Brushed Microfiber Pillowcases with Hidden Envelope Closure Wrinkle and Fade Resistant Easy Care Breathable 30 x 50 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDWT6X/3.webp",
-                "altText": "Makimoo Embossed Pillow Cases Set of 2 Luxury Soft Brushed Microfiber Pillowcases with Hidden Envelope Closure Wrinkle and Fade Resistant Easy Care Breathable 30 x 50 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDWT6X/4.webp",
-                "altText": "Makimoo Embossed Pillow Cases Set of 2 Luxury Soft Brushed Microfiber Pillowcases with Hidden Envelope Closure Wrinkle and Fade Resistant Easy Care Breathable 30 x 50 cm (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLDWT6X",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLDWT6X"
-    },
-    {
-        "id": "makimoo-B0GJLDMT57",
-        "asin": "B0GJLDMT57",
-        "title": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-        "handle": "makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57",
-        "description": "Soft and Skin Friendly Fabric: Made from 100 percent microfiber, these cushion covers offer a smooth, gentle feel against the skin. The embossed surface adds subtle texture and a refined look while staying breathable for everyday comfort. Envelope Closure for a Clean Look: Each cover features a hidden envelope closure that keeps the insert securely tucked inside and makes changing or removing fillings quick and easy, with no exposed zippers to snag or scratch. Two Covers in a Versatile Size: The set includes two cushion covers measuring 50 x 70cm, fitting standard pillows and shams on sofas, beds, armchairs and lounge seating to refresh your space in minutes. Easy Care and Lasting Color: Machine washable and tumble dry friendly, these covers keep their shape, dry quickly and require no ironing. The light grey color resists fading for a neat appearance wash after wash. Simple Style for Any Room: The neutral light grey tone and understated embossed pattern blend effortlessly with modern, minimalist and classic d\xe9cor, making these covers a practical choice for living rooms, bedrooms and guest spaces.",
-        "descriptionHtml": "<p>Soft and Skin Friendly Fabric: Made from 100 percent microfiber, these cushion covers offer a smooth, gentle feel against the skin. The embossed surface adds subtle texture and a refined look while staying breathable for everyday comfort.</p><p>Envelope Closure for a Clean Look: Each cover features a hidden envelope closure that keeps the insert securely tucked inside and makes changing or removing fillings quick and easy, with no exposed zippers to snag or scratch.</p><p>Two Covers in a Versatile Size: The set includes two cushion covers measuring 50 x 70cm, fitting standard pillows and shams on sofas, beds, armchairs and lounge seating to refresh your space in minutes.</p><p>Easy Care and Lasting Color: Machine washable and tumble dry friendly, these covers keep their shape, dry quickly and require no ironing. The light grey color resists fading for a neat appearance wash after wash.</p><p>Simple Style for Any Room: The neutral light grey tone and understated embossed pattern blend effortlessly with modern, minimalist and classic d\xe9cor, making these covers a practical choice for living rooms, bedrooms and guest spaces.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLDMT57/1.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDMT57/2.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDMT57/3.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDMT57/4.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLDMT57/5.webp",
-                "altText": "Makimoo Embossed Cushion Covers Set of 2 Soft Breathable 100 Percent Microfiber Pillow Cases with Envelope Closure for Sofa Bedroom Living Room Decor 50 x 70 cm (Light Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLDMT57",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLDMT57"
-    },
-    {
-        "id": "makimoo-B0GJLMJWS1",
-        "asin": "B0GJLMJWS1",
-        "title": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-        "handle": "set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1",
-        "description": "Luxuriously Soft Microfiber: Woven from 100% microfiber, these cushion covers feel smooth, lightweight, and gentle against skin, providing a cozy layer for pillows on beds, sofas, and couches. Elegant Embossed Texture: The subtle geometric embossed pattern adds a refined, decorative touch to bedrooms and living rooms while maintaining a smooth surface. Envelope Closure for Easy Use: Each 50 x 70cm cover features a neat envelope closure that keeps pillow inserts securely tucked away without zippers or buttons, so dressing and removing them takes seconds. Easy Care & Fade Resistant: Machine washable and tumble dry friendly, the durable microfiber fabric holds its shape, color, and embossed detail through regular washing. Breathable & Well Made: Airy microfiber and tidy, reinforced seams help the covers stay comfortable and neat, making them a practical choice for everyday relaxation.",
-        "descriptionHtml": "<p>Luxuriously Soft Microfiber: Woven from 100% microfiber, these cushion covers feel smooth, lightweight, and gentle against skin, providing a cozy layer for pillows on beds, sofas, and couches.</p><p>Elegant Embossed Texture: The subtle geometric embossed pattern adds a refined, decorative touch to bedrooms and living rooms while maintaining a smooth surface.</p><p>Envelope Closure for Easy Use: Each 50 x 70cm cover features a neat envelope closure that keeps pillow inserts securely tucked away without zippers or buttons, so dressing and removing them takes seconds.</p><p>Easy Care &amp; Fade Resistant: Machine washable and tumble dry friendly, the durable microfiber fabric holds its shape, color, and embossed detail through regular washing.</p><p>Breathable &amp; Well Made: Airy microfiber and tidy, reinforced seams help the covers stay comfortable and neat, making them a practical choice for everyday relaxation.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GJLMJWS1/1.webp",
-                "altText": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMJWS1/2.webp",
-                "altText": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMJWS1/3.webp",
-                "altText": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMJWS1/4.webp",
-                "altText": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GJLMJWS1/5.webp",
-                "altText": "Set of 2 Embossed Geometric Microfiber Cushion Covers 50 x 70 cm, Soft Breathable Durable Pillowcases with Envelope Closure for Sofa Couch Bedroom Living Room Home Decor (Pink)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GJLMJWS1",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.co.uk/dp/B0GJLMJWS1"
-    },
-    {
+{
         "id": "makimoo-B0GD87ZBN9",
         "asin": "B0GD87ZBN9",
         "title": "Premium Embossed Microfiber Bed Pillows 2 Pack Soft Fluffy Breathable Supportive Cushions for Sleeping Back Side Stomach Sleepers Durable Home Hotel Use 50 x 70 cm (White)",
@@ -1893,7 +853,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.de/dp/B0GD87ZBN9"
     },
-    {
+{
         "id": "makimoo-B0G6LXSF4T",
         "asin": "B0G6LXSF4T",
         "title": "Makimoo Quilted Throw Pillow Inserts 40 x 40 cm Pack of 2 White Cushion Pads with Soft Hollowfibre Filling Breathable Decorative Pillow Forms for Sofa Bed Couch (White)",
@@ -1957,59 +917,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.co.uk/dp/B0G6LXSF4T"
     },
-    {
-        "id": "makimoo-B0GD843WMN",
-        "asin": "B0GD843WMN",
-        "title": "Set of 2 Embossed Microfibre Bed Pillows for Sleeping Soft Fluffy Hotel Style Supportive Pillow Cushions Breathable Skin Friendly Machine Washable Easy Care 40 x 80 cm (White)",
-        "handle": "set-of-2-embossed-microfibre-bed-pillows-for-sleeping-soft-b0gd843wmn",
-        "description": "Cloud-Like Softness: Filled with plush microfibre, these pillows offer a gentle, cushioned feel that helps you relax and unwind at bedtime. Skin-Friendly Fabric: The embossed microfibre cover is soft to the touch and breathable, creating a comfortable sleeping environment night after night. Easy Care Design: Machine washable and tumble dry safe, these pillows maintain their shape and fresh look with no ironing required. Well-Made Details: Neatly finished seams and quality stitching give the cushions a clean, tailored appearance that fits standard pillowcases neatly. Versatile Two-Piece Set: Each pillow measures 40 x 80cm, making this pair a practical choice for bedrooms, guest rooms, and living room cushions.",
-        "descriptionHtml": "<p>Cloud-Like Softness: Filled with plush microfibre, these pillows offer a gentle, cushioned feel that helps you relax and unwind at bedtime.</p><p>Skin-Friendly Fabric: The embossed microfibre cover is soft to the touch and breathable, creating a comfortable sleeping environment night after night.</p><p>Easy Care Design: Machine washable and tumble dry safe, these pillows maintain their shape and fresh look with no ironing required.</p><p>Well-Made Details: Neatly finished seams and quality stitching give the cushions a clean, tailored appearance that fits standard pillowcases neatly.</p><p>Versatile Two-Piece Set: Each pillow measures 40 x 80cm, making this pair a practical choice for bedrooms, guest rooms, and living room cushions.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GD843WMN/1.webp",
-                "altText": "Set of 2 Embossed Microfibre Bed Pillows for Sleeping Soft Fluffy Hotel Style Supportive Pillow Cushions Breathable Skin Friendly Machine Washable Easy Care 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD843WMN/2.webp",
-                "altText": "Set of 2 Embossed Microfibre Bed Pillows for Sleeping Soft Fluffy Hotel Style Supportive Pillow Cushions Breathable Skin Friendly Machine Washable Easy Care 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GD843WMN/3.webp",
-                "altText": "Set of 2 Embossed Microfibre Bed Pillows for Sleeping Soft Fluffy Hotel Style Supportive Pillow Cushions Breathable Skin Friendly Machine Washable Easy Care 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GD843WMN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.de/dp/B0GD843WMN"
-    },
-    {
+{
         "id": "makimoo-B0GD846FS2",
         "asin": "B0GD846FS2",
         "title": "Set of 2 Soft Embossed Microfiber Bed Pillows 40 x 70 cm Fluffy Down Alternative Sleeping Cushions Supportive Breathable All Season for Home Hotel Guest Bedroom (White)",
@@ -2055,71 +963,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.de/dp/B0GD846FS2"
     },
-    {
-        "id": "makimoo-B0GRJ8M3TM",
-        "asin": "B0GRJ8M3TM",
-        "title": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-        "handle": "makimoo-quilted-pillow-inserts-2-pack-decorative-cushion-b0grj8m3tm",
-        "description": "Quilted Diamond Pattern: Each pillow insert features a sophisticated diamond-quilted design that keeps the filling evenly distributed, preventing clumping and maintaining a smooth, plump appearance on your sofa, bed, or couch. 2-Pack Value Set: This set includes two rectangular pillow inserts in a clean white finish, offering a coordinated look for your living room, bedroom, guest room, or any seating area that needs a fresh update. Soft and Supportive Fill: Filled with premium hollow fiber for a plush, cloud-like feel with reliable head and neck support, these inserts strike a comfortable balance between softness and structure for relaxing or sleeping. Versatile 40 x 80cm Size: Measuring 40 x 80cm, these cushion fillers fit standard pillow covers and sham sizes, making them ideal as decorative accent pillows, lumbar supports, or bed pillows in modern and classic home settings. Durable and Easy to Maintain: Crafted with quality stitching and a smooth microfiber cover, the inserts resist sagging and hold their shape over time; simply spot clean or machine wash on a gentle cycle for lasting freshness.",
-        "descriptionHtml": "<p>Quilted Diamond Pattern: Each pillow insert features a sophisticated diamond-quilted design that keeps the filling evenly distributed, preventing clumping and maintaining a smooth, plump appearance on your sofa, bed, or couch.</p><p>2-Pack Value Set: This set includes two rectangular pillow inserts in a clean white finish, offering a coordinated look for your living room, bedroom, guest room, or any seating area that needs a fresh update.</p><p>Soft and Supportive Fill: Filled with premium hollow fiber for a plush, cloud-like feel with reliable head and neck support, these inserts strike a comfortable balance between softness and structure for relaxing or sleeping.</p><p>Versatile 40 x 80cm Size: Measuring 40 x 80cm, these cushion fillers fit standard pillow covers and sham sizes, making them ideal as decorative accent pillows, lumbar supports, or bed pillows in modern and classic home settings.</p><p>Durable and Easy to Maintain: Crafted with quality stitching and a smooth microfiber cover, the inserts resist sagging and hold their shape over time; simply spot clean or machine wash on a gentle cycle for lasting freshness.</p>",
-        "productType": "Pillows",
-        "tags": [
-            "Pillows"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/B0GRJ8M3TM/1.webp",
-                "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 1440,
-                "height": 1920
-            },
-            {
-                "url": "/images/products/B0GRJ8M3TM/2.webp",
-                "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ8M3TM/3.webp",
-                "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ8M3TM/4.webp",
-                "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/B0GRJ8M3TM/5.webp",
-                "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-B0GRJ8M3TM",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": "https://www.amazon.de/dp/B0GRJ8M3TM"
-    },
-    {
+{
         "id": "makimoo-B0BCJW18SP",
         "asin": "B0BCJW18SP",
         "title": "Makimoo Outdoor Chair Cushions Set of 4 Thick Padded All-Weather Patio High Back Seat Pads with Ties 110 x 55 cm Garden Furniture Cushion Durable Floral Bird Pattern (Beige)",
@@ -2189,7 +1033,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0BCJW18SP"
     },
-    {
+{
         "id": "makimoo-B0BCJRTF3X",
         "asin": "B0BCJRTF3X",
         "title": "Makimoo Outdoor Chair Cushions Set of 4 Water-Resistant Thick Tufted High Back Patio Seat Pads 110 x 55 cm with Ties for Garden Lawn Dining Chairs (Tropical Green Leaf)",
@@ -2259,7 +1103,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0BCJRTF3X"
     },
-    {
+{
         "id": "makimoo-B0BCJV24JR",
         "asin": "B0BCJV24JR",
         "title": "Makimoo Outdoor Chair Cushions Set of 2 Tropical Palm Leaf Water Resistant Thick Padded High Back Patio Deep Seat Cushions with Ties for Garden Deck 110 x 55 cm (Green)",
@@ -2317,7 +1161,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0BCJV24JR"
     },
-    {
+{
         "id": "makimoo-B0BCJT2GFW",
         "asin": "B0BCJT2GFW",
         "title": "Makimoo Outdoor Chair Cushions Set of 2 Patio High Back Seat Cushions with Ties Floral Bird Printed Garden Furniture Pads 110 x 55 cm (Orange Yellow)",
@@ -2375,7 +1219,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": "https://www.amazon.com/dp/B0BCJT2GFW"
     },
-    {
+{
         "id": "makimoo-1688-828008656438-C3",
         "asin": "1688-828008656438-C3",
         "title": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
@@ -2451,7 +1295,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-828008656438-C2",
         "asin": "1688-828008656438-C2",
         "title": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
@@ -2527,311 +1371,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-1688-856468238034",
-        "asin": "1688-856468238034",
-        "title": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-        "handle": "premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034",
-        "description": "Premium Cotton Construction: Woven from pure cotton with 21-ply yarn, these towels offer a plush, soft feel against the skin. The dense terry loops create a comfortable texture that holds up through daily use. Excellent Absorbency: Thick cotton fibers quickly wick away moisture after showers, workouts, swimming, or spa visits. The generous pile soaks up water efficiently to leave skin feeling dry and refreshed. Generous Full Size: Each towel measures 140 x 80cm, providing ample coverage for adults. The large surface wraps comfortably around the body and works well as a bath towel or travel companion. Versatile for Any Occasion: Ideal for home bathrooms, hotel suites, gyms, yoga studios, beaches, and camping trips. The solid color design complements a wide range of decor styles. Built to Last: Reinforced edges and quality stitching help prevent fraying over time. Machine washable for easy care, these towels maintain their softness and absorbency through repeated washes.",
-        "descriptionHtml": "<p>Premium Cotton Construction: Woven from pure cotton with 21-ply yarn, these towels offer a plush, soft feel against the skin. The dense terry loops create a comfortable texture that holds up through daily use.</p><p>Excellent Absorbency: Thick cotton fibers quickly wick away moisture after showers, workouts, swimming, or spa visits. The generous pile soaks up water efficiently to leave skin feeling dry and refreshed.</p><p>Generous Full Size: Each towel measures 140 x 80cm, providing ample coverage for adults. The large surface wraps comfortably around the body and works well as a bath towel or travel companion.</p><p>Versatile for Any Occasion: Ideal for home bathrooms, hotel suites, gyms, yoga studios, beaches, and camping trips. The solid color design complements a wide range of decor styles.</p><p>Built to Last: Reinforced edges and quality stitching help prevent fraying over time. Machine washable for easy care, these towels maintain their softness and absorbency through repeated washes.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-856468238034/1.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/2.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/3.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/4.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/5.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/6.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034/7.webp",
-                "altText": "Premium 2-Pack Cotton Bath Towels Extra Soft Highly Absorbent 21-Ply Ringspun Cotton Yarn Hotel Spa Quality Large Towels for Bathroom Gym Sports and Travel 140 x 80 cm (Orange)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-856468238034",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-743666513356-C7",
-        "asin": "1688-743666513356-C7",
-        "title": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-        "handle": "premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7",
-        "description": "Luxurious Long-Staple Cotton: Woven from quality long-staple cotton fibers, these towels feel exceptionally soft against skin and provide a cozy, spa-like wrap after every bath or shower. Generous 80 x 140cm Coverage: Each towel is sized to drape comfortably around adults, offering ample surface area for quick, effective drying at home, the gym, or while traveling. Dense 32-Ply Absorbency: The thick cotton construction quickly pulls moisture away from your body and hair, helping you stay comfortably dry without excessive rubbing. Built to Last: Reinforced double-stitched hems resist fraying and help the towels maintain their shape, color, and plush feel through regular washing and daily use. Matching 2-Piece Set in Classic Blue: This set includes two coordinated bath towels in a versatile blue tone that blends easily with modern, traditional, or hotel-style bathroom d\xe9cor.",
-        "descriptionHtml": "<p>Luxurious Long-Staple Cotton: Woven from quality long-staple cotton fibers, these towels feel exceptionally soft against skin and provide a cozy, spa-like wrap after every bath or shower.</p><p>Generous 80 x 140cm Coverage: Each towel is sized to drape comfortably around adults, offering ample surface area for quick, effective drying at home, the gym, or while traveling.</p><p>Dense 32-Ply Absorbency: The thick cotton construction quickly pulls moisture away from your body and hair, helping you stay comfortably dry without excessive rubbing.</p><p>Built to Last: Reinforced double-stitched hems resist fraying and help the towels maintain their shape, color, and plush feel through regular washing and daily use.</p><p>Matching 2-Piece Set in Classic Blue: This set includes two coordinated bath towels in a versatile blue tone that blends easily with modern, traditional, or hotel-style bathroom d\xe9cor.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-743666513356-C7/1.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/2.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/3.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/4.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/5.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/6.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C7/7.webp",
-                "altText": "Premium 2 Pack Cotton Bath Towels Large 80 x 140 cm Hotel Inspired Plush Soft Highly Absorbent Durable Long Staple Cotton Towel Set for Bathroom Shower Travel Dorm (Blue)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-743666513356-C7",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-743666513356-C6",
-        "asin": "1688-743666513356-C6",
-        "title": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-        "handle": "plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6",
-        "description": "Generous Full-Body Coverage: Each bath towel measures 80 x 140cm, giving adults plenty of wrap-around coverage after showers, baths, swims, or gym visits. Soft Ring-Spun Cotton: Crafted from ring-spun cotton for a plush, gentle touch against skin while quickly wicking away moisture. Quick-Drying & Breathable: The breathable weave allows air to flow through the fabric, helping towels dry faster between uses and stay fresh. Built to Last: Reinforced edges and dense stitching reduce fraying and shedding, keeping the towels soft and intact wash after wash. Versatile 2-Pack Set: Includes two matching grey towels that suit home bathrooms, guest rooms, spas, hotels, fitness centers, and travel bags.",
-        "descriptionHtml": "<p>Generous Full-Body Coverage: Each bath towel measures 80 x 140cm, giving adults plenty of wrap-around coverage after showers, baths, swims, or gym visits.</p><p>Soft Ring-Spun Cotton: Crafted from ring-spun cotton for a plush, gentle touch against skin while quickly wicking away moisture.</p><p>Quick-Drying &amp; Breathable: The breathable weave allows air to flow through the fabric, helping towels dry faster between uses and stay fresh.</p><p>Built to Last: Reinforced edges and dense stitching reduce fraying and shedding, keeping the towels soft and intact wash after wash.</p><p>Versatile 2-Pack Set: Includes two matching grey towels that suit home bathrooms, guest rooms, spas, hotels, fitness centers, and travel bags.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-743666513356-C6/1.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/2.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/3.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/4.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/5.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/6.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C6/7.webp",
-                "altText": "Plush Ring Spun Cotton Bath Towels 2 Pack Quick Dry Highly Absorbent Soft Oversized Hotel Inspired Bath Sheets for Bathroom Gym Spa Travel Daily Use 80 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-743666513356-C6",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-856468238034-C4",
-        "asin": "1688-856468238034-C4",
-        "title": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-        "handle": "2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4",
-        "description": "Premium Cotton Construction: Woven from pure cotton 21-count yarn, these towels offer a naturally soft and breathable touch that feels gentle against skin after every bath or workout. Highly Absorbent and Quick-Drying: The thick terry loop surface quickly wicks away moisture, helping you dry off faster while keeping the fabric fresh and ready for daily use. Generous Full-Size Coverage: Each towel measures 80 x 140cm, providing ample wrap-around coverage for adults and making it suitable for home bathrooms, gyms, hotels, and travel. Strong and Long-Lasting: Reinforced edges and a dense 21-count yarn weave resist fraying and help the towels maintain their shape and texture through regular washing. Versatile 2-Pack Value: This set includes two classic black towels that work equally well as bath towels, fitness towels, or reliable travel companions for active lifestyles.",
-        "descriptionHtml": "<p>Premium Cotton Construction: Woven from pure cotton 21-count yarn, these towels offer a naturally soft and breathable touch that feels gentle against skin after every bath or workout.</p><p>Highly Absorbent and Quick-Drying: The thick terry loop surface quickly wicks away moisture, helping you dry off faster while keeping the fabric fresh and ready for daily use.</p><p>Generous Full-Size Coverage: Each towel measures 80 x 140cm, providing ample wrap-around coverage for adults and making it suitable for home bathrooms, gyms, hotels, and travel.</p><p>Strong and Long-Lasting: Reinforced edges and a dense 21-count yarn weave resist fraying and help the towels maintain their shape and texture through regular washing.</p><p>Versatile 2-Pack Value: This set includes two classic black towels that work equally well as bath towels, fitness towels, or reliable travel companions for active lifestyles.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-856468238034-C4/1.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/2.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/3.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/4.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/5.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/6.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-856468238034-C4/7.webp",
-                "altText": "2 Pack Premium Black Bath Towels Made of Pure Cotton 21S Yarn Soft Highly Absorbent Quick Dry Large Bathroom Towel for Gym Sports Travel Home Hotel 80 x 140 cm (Black)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-856468238034-C4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-1688-952595759182",
         "asin": "1688-952595759182",
         "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
@@ -2877,7 +1417,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-952595759182-C2",
         "asin": "1688-952595759182-C2",
         "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
@@ -2923,7 +1463,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-952595759182-C3",
         "asin": "1688-952595759182-C3",
         "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
@@ -2969,7 +1509,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-952595759182-C4",
         "asin": "1688-952595759182-C4",
         "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
@@ -3015,83 +1555,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-1688-743666513356-C4",
-        "asin": "1688-743666513356-C4",
-        "title": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-        "handle": "premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4",
-        "description": "100% Natural Cotton Construction: Crafted from pure cotton fibers, these bath towels offer a naturally soft and gentle touch against skin. The breathable material quickly wicks away moisture after bathing, swimming, or workouts. Generous Full-Body Coverage: Each towel measures 70 x 140cm, providing ample wrap-around coverage for adults. The large rectangular design makes drying off comfortable and efficient from head to toe. Thick Plush 380G Weight: Woven with a substantial 380-gram construction, the towels feel thick and cozy while remaining absorbent. The textured surface brings a spa-like experience to your daily routine. Classic American Style Design: Featuring a clean, timeless look with refined border detailing, these towels complement modern bathrooms, guest rooms, hotels, and spas. The neutral beige tone blends easily with existing decor. Practical 2-Pack Value Set: Includes two matching towels ideal for everyday home use, travel, gym sessions, or hospitality settings. Machine washable for simple care and long-lasting softness with proper maintenance.",
-        "descriptionHtml": "<p>100% Natural Cotton Construction: Crafted from pure cotton fibers, these bath towels offer a naturally soft and gentle touch against skin. The breathable material quickly wicks away moisture after bathing, swimming, or workouts.</p><p>Generous Full-Body Coverage: Each towel measures 70 x 140cm, providing ample wrap-around coverage for adults. The large rectangular design makes drying off comfortable and efficient from head to toe.</p><p>Thick Plush 380G Weight: Woven with a substantial 380-gram construction, the towels feel thick and cozy while remaining absorbent. The textured surface brings a spa-like experience to your daily routine.</p><p>Classic American Style Design: Featuring a clean, timeless look with refined border detailing, these towels complement modern bathrooms, guest rooms, hotels, and spas. The neutral beige tone blends easily with existing decor.</p><p>Practical 2-Pack Value Set: Includes two matching towels ideal for everyday home use, travel, gym sessions, or hospitality settings. Machine washable for simple care and long-lasting softness with proper maintenance.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-743666513356-C4/1.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/2.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/3.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/4.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/5.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/6.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-743666513356-C4/7.webp",
-                "altText": "Premium 2 Pack American Style Cotton Bath Towels Extra Thick Highly Absorbent Soft Plush Towel Set for Bathroom Home Hotel Spa Gym Travel Daily Use 70 x 140 cm (Beige)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-743666513356-C4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-1688-828008656438",
         "asin": "1688-828008656438",
         "title": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
@@ -3167,7 +1631,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1038477616596",
         "asin": "1688-1038477616596",
         "title": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
@@ -3243,7 +1707,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-985677811504",
         "asin": "1688-985677811504",
         "title": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
@@ -3319,7 +1783,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1016436401519",
         "asin": "1688-1016436401519",
         "title": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
@@ -3389,7 +1853,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1038477616596-C2",
         "asin": "1688-1038477616596-C2",
         "title": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
@@ -3459,7 +1923,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-895014679429",
         "asin": "1688-895014679429",
         "title": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
@@ -3535,7 +1999,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1046667161713",
         "asin": "1688-1046667161713",
         "title": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
@@ -3611,7 +2075,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1064068114006",
         "asin": "1688-1064068114006",
         "title": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
@@ -3687,7 +2151,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1064068114006-C2",
         "asin": "1688-1064068114006-C2",
         "title": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
@@ -3763,7 +2227,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052755373494",
         "asin": "1688-1052755373494",
         "title": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
@@ -3833,7 +2297,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052755373494-C2",
         "asin": "1688-1052755373494-C2",
         "title": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
@@ -3909,7 +2373,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1046667161713-C2",
         "asin": "1688-1046667161713-C2",
         "title": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
@@ -3985,357 +2449,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-1688-1044064113195-C3",
-        "asin": "1688-1044064113195-C3",
-        "title": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-        "handle": "2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3",
-        "description": "Premium 100% Cotton Build: Made from pure natural cotton with dense terry loops, these towels feel plush against skin and hold up beautifully through daily use. Oversized 70 x 140cm Coverage: Each towel in this 2-pack offers generous full-body wrap-around coverage for adults after bathing, swimming, or a relaxing spa session. Highly Absorbent 600g Terry: Thick cotton terry quickly draws moisture away from skin while staying breathable and easy to dry between uses. Elegant Hotel-Inspired Style: Classic white body with refined grey striped borders adds a clean, sophisticated touch to home bathrooms, guest rooms, and vacation rentals. Stays Soft Wash After Wash: Combed cotton fibers resist roughness and shedding, maintaining a smooth, comfortable feel even with frequent laundering.",
-        "descriptionHtml": "<p>Premium 100% Cotton Build: Made from pure natural cotton with dense terry loops, these towels feel plush against skin and hold up beautifully through daily use.</p><p>Oversized 70 x 140cm Coverage: Each towel in this 2-pack offers generous full-body wrap-around coverage for adults after bathing, swimming, or a relaxing spa session.</p><p>Highly Absorbent 600g Terry: Thick cotton terry quickly draws moisture away from skin while staying breathable and easy to dry between uses.</p><p>Elegant Hotel-Inspired Style: Classic white body with refined grey striped borders adds a clean, sophisticated touch to home bathrooms, guest rooms, and vacation rentals.</p><p>Stays Soft Wash After Wash: Combed cotton fibers resist roughness and shedding, maintaining a smooth, comfortable feel even with frequent laundering.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1044064113195-C3/1.webp",
-                "altText": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C3/2.webp",
-                "altText": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C3/3.webp",
-                "altText": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C3/4.webp",
-                "altText": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C3/5.webp",
-                "altText": "2 Pack Luxury Bath Towels 100% Cotton Hotel Spa Towel Set Extra Large Highly Absorbent Thick Plush Terry Soft Fast Drying Oversized Body Towels for Adults 70 x 140 cm (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1044064113195-C3",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1056325209172-C2",
-        "asin": "1688-1056325209172-C2",
-        "title": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-        "handle": "4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2",
-        "description": "Premium Cotton Construction: Made from 100% natural cotton, these 40 x 80cm towels offer a soft, plush feel against skin. The long-staple cotton fibers create a smooth surface that remains gentle for daily face and hand drying. Thick, Absorbent Terry Weave: Designed with dense, extended loop piles, each 180g towel quickly draws moisture away from skin. The thickened terry construction helps you dry off efficiently after washing or bathing. Quick-Drying and Breathable: The lightweight yet substantial cotton fabric allows air to circulate, helping towels dry faster between uses. Ideal for bathrooms, gyms, travel bags, and guest suites. Elegant Hotel-Inspired Design: Crisp white body with refined grey accent stripes adds a clean, modern touch to any bathroom decor. The classic border detail offers a polished look that complements home, hotel, or spa settings. Set of Four for Everyday Use: This pack includes four matching face towels, providing enough coverage for family members, visitors, or rotation. Each towel is machine washable and retains its shape and softness through regular laundering.",
-        "descriptionHtml": "<p>Premium Cotton Construction: Made from 100% natural cotton, these 40 x 80cm towels offer a soft, plush feel against skin. The long-staple cotton fibers create a smooth surface that remains gentle for daily face and hand drying.</p><p>Thick, Absorbent Terry Weave: Designed with dense, extended loop piles, each 180g towel quickly draws moisture away from skin. The thickened terry construction helps you dry off efficiently after washing or bathing.</p><p>Quick-Drying and Breathable: The lightweight yet substantial cotton fabric allows air to circulate, helping towels dry faster between uses. Ideal for bathrooms, gyms, travel bags, and guest suites.</p><p>Elegant Hotel-Inspired Design: Crisp white body with refined grey accent stripes adds a clean, modern touch to any bathroom decor. The classic border detail offers a polished look that complements home, hotel, or spa settings.</p><p>Set of Four for Everyday Use: This pack includes four matching face towels, providing enough coverage for family members, visitors, or rotation. Each towel is machine washable and retains its shape and softness through regular laundering.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1056325209172-C2/1.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/2.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/3.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/4.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/5.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/6.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172-C2/7.webp",
-                "altText": "4 Pack 100 Percent Cotton Hand Towels Hotel Spa Style 40 x 80 cm Thick Terry Highly Absorbent Quick Dry Face Towels Soft Washcloths for Bathroom Kitchen Gym Travel (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1056325209172-C2",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1056325209172",
-        "asin": "1688-1056325209172",
-        "title": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-        "handle": "4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172",
-        "description": "Luxury Hotel Comfort at Home: Enjoy spa-like softness with this 4-piece cotton towel set. The thick, plush terry fabric feels gentle on skin and adds an elegant hotel touch to any bathroom. Highly Absorbent Cotton: Long-staple cotton loops draw moisture away from your face, hands, and hair quickly, keeping you dry and comfortable after every wash. Thick Yet Fast-Drying: Each towel weighs 180g for a substantial, cozy feel while remaining breathable enough to dry quickly between daily uses. Versatile Everyday Size: At 40 x 80cm, these towels offer ample coverage for face washing, gym workouts, travel, guest rooms, and more. Built to Last: Reinforced edges help prevent fraying and maintain shape through regular machine washing. The classic white body with platinum-toned trim suits any d\xe9cor.",
-        "descriptionHtml": "<p>Luxury Hotel Comfort at Home: Enjoy spa-like softness with this 4-piece cotton towel set. The thick, plush terry fabric feels gentle on skin and adds an elegant hotel touch to any bathroom.</p><p>Highly Absorbent Cotton: Long-staple cotton loops draw moisture away from your face, hands, and hair quickly, keeping you dry and comfortable after every wash.</p><p>Thick Yet Fast-Drying: Each towel weighs 180g for a substantial, cozy feel while remaining breathable enough to dry quickly between daily uses.</p><p>Versatile Everyday Size: At 40 x 80cm, these towels offer ample coverage for face washing, gym workouts, travel, guest rooms, and more.</p><p>Built to Last: Reinforced edges help prevent fraying and maintain shape through regular machine washing. The classic white body with platinum-toned trim suits any d\xe9cor.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1056325209172/1.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/2.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/3.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/4.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/5.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/6.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1056325209172/7.webp",
-                "altText": "4 Pack Luxury Hotel Collection 100 Percent Cotton Face Towels Thick Absorbent Terry Towel Set with Platinum Stripe Quick Dry Soft Washcloths for Bathroom Spa Gym 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1056325209172",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1044064113195-C2",
-        "asin": "1688-1044064113195-C2",
-        "title": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-        "handle": "2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2",
-        "description": "Hotel-Inspired Cotton Comfort: Made from pure natural cotton terry, these oversized bath towels offer a plush, resort-style feel that wraps you in softness after every shower or bath. Generous Full-Body Coverage: Each towel measures 80 x 160cm, providing ample coverage for adults and making drying quick and comfortable at home, the gym, the spa, or while traveling. Highly Absorbent & Fast Drying: The thick, dense looped weave quickly wicks moisture away from skin and dries efficiently between uses, so you always reach for a fresh, ready towel. Soft, Low-Lint & Gentle on Skin: Combed cotton fibers help reduce shedding and pilling, creating a smooth, skin-friendly surface that stays soft and inviting wash after wash. Elegant Style & Practical Value: A crisp white body with refined champagne gold border stripes adds a clean, sophisticated touch to any bathroom, while the 2-pack set gives you a coordinated pair for daily use or guests.",
-        "descriptionHtml": "<p>Hotel-Inspired Cotton Comfort: Made from pure natural cotton terry, these oversized bath towels offer a plush, resort-style feel that wraps you in softness after every shower or bath.</p><p>Generous Full-Body Coverage: Each towel measures 80 x 160cm, providing ample coverage for adults and making drying quick and comfortable at home, the gym, the spa, or while traveling.</p><p>Highly Absorbent &amp; Fast Drying: The thick, dense looped weave quickly wicks moisture away from skin and dries efficiently between uses, so you always reach for a fresh, ready towel.</p><p>Soft, Low-Lint &amp; Gentle on Skin: Combed cotton fibers help reduce shedding and pilling, creating a smooth, skin-friendly surface that stays soft and inviting wash after wash.</p><p>Elegant Style &amp; Practical Value: A crisp white body with refined champagne gold border stripes adds a clean, sophisticated touch to any bathroom, while the 2-pack set gives you a coordinated pair for daily use or guests.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1044064113195-C2/1.webp",
-                "altText": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C2/2.webp",
-                "altText": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C2/3.webp",
-                "altText": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C2/4.webp",
-                "altText": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195-C2/5.webp",
-                "altText": "2 Pack Pure Cotton Bath Towels Oversized Extra Thick Highly Absorbent Quick Dry Soft Plush Terry Towel Set for Bathroom Hotel Spa for Daily Use 80 x 160 cm (Champagne Gold)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1044064113195-C2",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1044064113195",
-        "asin": "1688-1044064113195",
-        "title": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-        "handle": "2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195",
-        "description": "Premium Long-Staple Cotton: Woven from 100% natural cotton with dense, twisted loops, these towels deliver a thick and plush touch that feels gentle on skin. The breathable fibers hold up well through daily use and frequent laundering. High Absorbency: The heavyweight, high-pile construction quickly pulls moisture away from your body; simply press the towel against skin after bathing or swimming to feel comfortably dry. Oversized 80 x 160cm Design: Each towel provides generous full-body coverage for adults, making it ideal for home bathrooms, hotel suites, spas, gyms, pools, and beach trips. Durable Hotel-Inspired Finish: A clean white base with an elegant grey border gives a refined look, while reinforced edges and tight stitching help prevent fraying and maintain softness over time. Easy-Care Two-Towel Set: Includes two generously sized towels that are machine washable and dryer friendly, offering a practical upgrade for family homes, guest rooms, vacation rentals, and fitness centers.",
-        "descriptionHtml": "<p>Premium Long-Staple Cotton: Woven from 100% natural cotton with dense, twisted loops, these towels deliver a thick and plush touch that feels gentle on skin. The breathable fibers hold up well through daily use and frequent laundering.</p><p>High Absorbency: The heavyweight, high-pile construction quickly pulls moisture away from your body; simply press the towel against skin after bathing or swimming to feel comfortably dry.</p><p>Oversized 80 x 160cm Design: Each towel provides generous full-body coverage for adults, making it ideal for home bathrooms, hotel suites, spas, gyms, pools, and beach trips.</p><p>Durable Hotel-Inspired Finish: A clean white base with an elegant grey border gives a refined look, while reinforced edges and tight stitching help prevent fraying and maintain softness over time.</p><p>Easy-Care Two-Towel Set: Includes two generously sized towels that are machine washable and dryer friendly, offering a practical upgrade for family homes, guest rooms, vacation rentals, and fitness centers.</p>",
-        "productType": "Towels",
-        "tags": [
-            "Towels"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1044064113195/1.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195/2.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195/3.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195/4.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195/5.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1044064113195/6.webp",
-                "altText": "2 Pack Oversized Bath Towels 100% Cotton Hotel Style Highly Absorbent Thick Plush Ring Spun Soft Extra Large Towel for Bathroom Spa Gym Pool Quick Dry 80 x 160 cm (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1044064113195",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-1688-969627065032-C33",
         "asin": "1688-969627065032-C33",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
@@ -4399,7 +2513,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-744995685423-C2",
         "asin": "1688-744995685423-C2",
         "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
@@ -4457,7 +2571,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-595229918569-C2",
         "asin": "1688-595229918569-C2",
         "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
@@ -4515,7 +2629,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-744995685423",
         "asin": "1688-744995685423",
         "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
@@ -4573,7 +2687,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-595229918569",
         "asin": "1688-595229918569",
         "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
@@ -4631,7 +2745,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C3",
         "asin": "1688-745181807454-C3",
         "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
@@ -4689,7 +2803,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C2",
         "asin": "1688-745181807454-C2",
         "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
@@ -4747,7 +2861,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-996768645117",
         "asin": "1688-996768645117",
         "title": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
@@ -4805,7 +2919,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454",
         "asin": "1688-745181807454",
         "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
@@ -4863,7 +2977,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-996768645117-C2",
         "asin": "1688-996768645117-C2",
         "title": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
@@ -4933,7 +3047,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-996768645117-C3",
         "asin": "1688-996768645117-C3",
         "title": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
@@ -5003,7 +3117,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-595229918569-C3",
         "asin": "1688-595229918569-C3",
         "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
@@ -5073,7 +3187,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C4",
         "asin": "1688-745181807454-C4",
         "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
@@ -5143,7 +3257,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C6",
         "asin": "1688-745181807454-C6",
         "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
@@ -5213,7 +3327,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C5",
         "asin": "1688-745181807454-C5",
         "title": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
@@ -5283,7 +3397,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C7",
         "asin": "1688-745181807454-C7",
         "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
@@ -5353,7 +3467,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-745181807454-C8",
         "asin": "1688-745181807454-C8",
         "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
@@ -5423,263 +3537,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-1688-916370884976-C5",
-        "asin": "1688-916370884976-C5",
-        "title": "Bedding Set 4 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-        "handle": "comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c5",
-        "description": "Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night. Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms. Complete 4-Piece Set: Includes 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed. Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living. Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.",
-        "descriptionHtml": "<p>Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night.</p><p>Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms.</p><p>Complete 4-Piece Set: Includes 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed.</p><p>Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living.</p><p>Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-916370884976-C5/1.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C5/2.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C5/3.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C5/4.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C5/5.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 230 x 200 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-916370884976-C5",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-916370884976-C6",
-        "asin": "1688-916370884976-C6",
-        "title": "Bedding Set 4 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-        "handle": "comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c6",
-        "description": "Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night. Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms. Complete 4-Piece Set: Includes 1 duvet cover measuring 220 x 180cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed. Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living. Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.",
-        "descriptionHtml": "<p>Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night.</p><p>Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms.</p><p>Complete 4-Piece Set: Includes 1 duvet cover measuring 220 x 180cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed.</p><p>Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living.</p><p>Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-916370884976-C6/1.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C6/2.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C6/3.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C6/4.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C6/5.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 220 x 180 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-916370884976-C6",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-916370884976-C7",
-        "asin": "1688-916370884976-C7",
-        "title": "Bedding Set 4 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-        "handle": "comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c7",
-        "description": "Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night. Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms. Complete 4-Piece Set: Includes 1 duvet cover measuring 240 x 220cm, 1 fitted sheet measuring 198 x 203 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed. Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living. Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.",
-        "descriptionHtml": "<p>Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night.</p><p>Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms.</p><p>Complete 4-Piece Set: Includes 1 duvet cover measuring 240 x 220cm, 1 fitted sheet measuring 198 x 203 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed.</p><p>Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living.</p><p>Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-916370884976-C7/1.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C7/2.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C7/3.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C7/4.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C7/5.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 240 x 220 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-916370884976-C7",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-916370884976-C8",
-        "asin": "1688-916370884976-C8",
-        "title": "Bedding Set 4 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-        "handle": "comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c8",
-        "description": "Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night. Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms. Complete 4-Piece Set: Includes 1 duvet cover measuring 200 x 150cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed. Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living. Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.",
-        "descriptionHtml": "<p>Soft Washed Cotton Fabric: Crafted from washed cotton for a naturally soft, breathable, and skin-friendly feel that helps you relax and unwind night after night.</p><p>Reversible Two-Tone Style: Features a clean solid light blue front with a cheese-yellow reverse, giving you two fresh looks in one set to complement modern bedrooms, dorms, and guest rooms.</p><p>Complete 4-Piece Set: Includes 1 duvet cover measuring 200 x 150cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases measuring 74 x 48cm, providing a coordinated foundation for a tidy, pulled-together bed.</p><p>Easy Everyday Care: Machine washable and designed to keep its smooth texture and color wash after wash, making it a practical choice for busy households, students, and apartment living.</p><p>Versatile Bedroom Essential: Lightweight and easy to pair with existing decor, this set works beautifully in master bedrooms, guest rooms, dormitories, and vacation rentals.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-916370884976-C8/1.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C8/2.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C8/3.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C8/4.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-916370884976-C8/5.webp",
-                "altText": "Comforter Set 3 Pcs Washed Cotton Soft Breathable Skin Friendly Reversible Two-Tone, With Zipper Closure 200 x 150 cm (Light Blue & Cheese)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-916370884976-C8",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-1688-969627065032-C24",
         "asin": "1688-969627065032-C24",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
@@ -5743,7 +3601,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C23",
         "asin": "1688-969627065032-C23",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
@@ -5807,7 +3665,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C22",
         "asin": "1688-969627065032-C22",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
@@ -5871,7 +3729,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C21",
         "asin": "1688-969627065032-C21",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
@@ -5935,7 +3793,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C25",
         "asin": "1688-969627065032-C25",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
@@ -5999,7 +3857,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C40",
         "asin": "1688-969627065032-C40",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
@@ -6057,7 +3915,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C39",
         "asin": "1688-969627065032-C39",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
@@ -6121,7 +3979,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C38",
         "asin": "1688-969627065032-C38",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
@@ -6179,7 +4037,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C37",
         "asin": "1688-969627065032-C37",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
@@ -6237,7 +4095,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C36",
         "asin": "1688-969627065032-C36",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
@@ -6295,7 +4153,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C35",
         "asin": "1688-969627065032-C35",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
@@ -6359,7 +4217,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C34",
         "asin": "1688-969627065032-C34",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
@@ -6423,7 +4281,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C32",
         "asin": "1688-969627065032-C32",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
@@ -6487,7 +4345,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C31",
         "asin": "1688-969627065032-C31",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
@@ -6551,7 +4409,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C30",
         "asin": "1688-969627065032-C30",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
@@ -6615,7 +4473,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C29",
         "asin": "1688-969627065032-C29",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
@@ -6679,7 +4537,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C28",
         "asin": "1688-969627065032-C28",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
@@ -6743,7 +4601,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C27",
         "asin": "1688-969627065032-C27",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
@@ -6807,7 +4665,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C26",
         "asin": "1688-969627065032-C26",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
@@ -6871,7 +4729,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C41",
         "asin": "1688-969627065032-C41",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
@@ -6935,7 +4793,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C42",
         "asin": "1688-969627065032-C42",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
@@ -6999,7 +4857,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-969627065032-C43",
         "asin": "1688-969627065032-C43",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
@@ -7069,7 +4927,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BEIGE-FULL",
         "asin": "BEDSET4-BEIGE-FULL",
         "title": "Makimoo Bedding Set 4 Pieces Full Size Duvet Cover With Fitted Sheet And Pillowcases 80 x 88 in Soft Breathable Bed Linen All Season Cozy Lightweight Easy Care (Beige)",
@@ -7115,191 +4973,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-BEDSET4-GRAY-KING",
-        "asin": "BEDSET4-GRAY-KING",
-        "title": "Makimoo King Size Bedding Set 4 Piece Duvet Cover with Fitted Sheet and 2 Pillowcases Soft Breathable Cotton-Like Wrinkle Resistant All Season Bed Linens 104 x 90 in (Grey)",
-        "handle": "makimoo-king-size-bedding-set-4-piece-duvet-cover-with-bedset4-gray-king",
-        "description": "Complete 4-Piece Set: This king bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving your bed a fully coordinated finish. Soft Microfiber Fabric: Made from brushed microfiber that feels smooth and gentle against the skin while remaining lightweight for a cozy night's rest. All-Season Comfort: The breathable fabric helps regulate temperature, keeping you comfortable during warmer nights and snug when the weather turns cool. Secure Fitted Sheet: The elasticized fitted sheet wraps around your mattress and stays in place, so your bed looks tidy and feels comfortable all night long. Easy Care & Long-Lasting: Machine washable and designed to resist fading, shrinking and wrinkles, maintaining a clean, inviting look after repeated washes.",
-        "descriptionHtml": "<p>Complete 4-Piece Set: This king bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving your bed a fully coordinated finish.</p><p>Soft Microfiber Fabric: Made from brushed microfiber that feels smooth and gentle against the skin while remaining lightweight for a cozy night's rest.</p><p>All-Season Comfort: The breathable fabric helps regulate temperature, keeping you comfortable during warmer nights and snug when the weather turns cool.</p><p>Secure Fitted Sheet: The elasticized fitted sheet wraps around your mattress and stays in place, so your bed looks tidy and feels comfortable all night long.</p><p>Easy Care &amp; Long-Lasting: Machine washable and designed to resist fading, shrinking and wrinkles, maintaining a clean, inviting look after repeated washes.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-GRAY-KING/1.webp",
-                "altText": "Makimoo King Size Bedding Set 4 Piece Duvet Cover with Fitted Sheet and 2 Pillowcases Soft Breathable Microfiber Wrinkle Resistant All Season Bed Linens 104 x 90 in (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-GRAY-KING/2.webp",
-                "altText": "Makimoo King Size Bedding Set 4 Piece Duvet Cover with Fitted Sheet and 2 Pillowcases Soft Breathable Microfiber Wrinkle Resistant All Season Bed Linens 104 x 90 in (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-GRAY-KING",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-GRAY-QUEEN",
-        "asin": "BEDSET4-GRAY-QUEEN",
-        "title": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Cozy Durable Bedding Easy Care Machine Washable Home Hotel Style 88 x 88 in (Grey)",
-        "handle": "makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-gray-queen",
-        "description": "Complete Queen Bedding Set: Includes 1 duvet cover measuring 88 x 88 in, 1 fitted sheet measuring 60 x 80 in, and 2 pillowcases measuring 20 x 30 in, giving your bed a fully coordinated finish. Soft and Breathable Fabric: Made with a smooth, lightweight fabric that feels gentle on skin and helps create a comfortable sleep environment all year round. Thoughtful Construction: The duvet cover allows for quick insert changes, while the fitted sheet wraps smoothly around your mattress to keep everything looking neat and tidy. Easy Care and Durable: This set is machine washable and holds up well to regular use, so you can enjoy a fresh-looking bed with minimal effort. Versatile Grey Design: The understated grey color and clean lines complement a wide range of bedroom styles, from modern to classic.",
-        "descriptionHtml": "<p>Complete Queen Bedding Set: Includes 1 duvet cover measuring 88 x 88 in, 1 fitted sheet measuring 60 x 80 in, and 2 pillowcases measuring 20 x 30 in, giving your bed a fully coordinated finish.</p><p>Soft and Breathable Fabric: Made with a smooth, lightweight fabric that feels gentle on skin and helps create a comfortable sleep environment all year round.</p><p>Thoughtful Construction: The duvet cover allows for quick insert changes, while the fitted sheet wraps smoothly around your mattress to keep everything looking neat and tidy.</p><p>Easy Care and Durable: This set is machine washable and holds up well to regular use, so you can enjoy a fresh-looking bed with minimal effort.</p><p>Versatile Grey Design: The understated grey color and clean lines complement a wide range of bedroom styles, from modern to classic.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-GRAY-QUEEN/1.webp",
-                "altText": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Cozy Durable Bedding Easy Care Machine Washable Home Hotel Style 88 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-GRAY-QUEEN/2.webp",
-                "altText": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Cozy Durable Bedding Easy Care Machine Washable Home Hotel Style 88 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-GRAY-QUEEN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-GRAY-FULL",
-        "asin": "BEDSET4-GRAY-FULL",
-        "title": "Makimoo Full Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Wrinkle Resistant Cotton-Like Bedding, 80 x 88 in (Grey)",
-        "handle": "makimoo-full-duvet-cover-set-4-pieces-with-fitted-sheet-and-bedset4-gray-full",
-        "description": "Complete Full Bedding Set: This coordinated 4-piece Makimoo set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving your full-size bed a polished, put-together look. Soft and Breathable Microfiber: Woven from premium microfiber, this duvet cover set offers a smooth, gentle feel against the skin while allowing airflow to help keep you comfortable in any season. Secure All-Around Elastic Fit: The fitted sheet is designed with a full elastic edge that hugs your mattress snugly, helping it stay flat and in place from night to morning. Easy Care and Long-Lasting Color: Machine washable for everyday convenience, the fabric resists fading and wrinkles to maintain a fresh, inviting appearance over time. Timeless Grey for Any Decor: The understated grey shade pairs effortlessly with modern, classic, or cozy bedroom styles, making it a versatile choice for your full bedding refresh.",
-        "descriptionHtml": "<p>Complete Full Bedding Set: This coordinated 4-piece Makimoo set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving your full-size bed a polished, put-together look.</p><p>Soft and Breathable Microfiber: Woven from premium microfiber, this duvet cover set offers a smooth, gentle feel against the skin while allowing airflow to help keep you comfortable in any season.</p><p>Secure All-Around Elastic Fit: The fitted sheet is designed with a full elastic edge that hugs your mattress snugly, helping it stay flat and in place from night to morning.</p><p>Easy Care and Long-Lasting Color: Machine washable for everyday convenience, the fabric resists fading and wrinkles to maintain a fresh, inviting appearance over time.</p><p>Timeless Grey for Any Decor: The understated grey shade pairs effortlessly with modern, classic, or cozy bedroom styles, making it a versatile choice for your full bedding refresh.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-GRAY-FULL/1.webp",
-                "altText": "Makimoo Full Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Wrinkle Resistant Microfiber Bedding, 80 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-GRAY-FULL/2.webp",
-                "altText": "Makimoo Full Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Wrinkle Resistant Microfiber Bedding, 80 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-GRAY-FULL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-GRAY-TWIN",
-        "asin": "BEDSET4-GRAY-TWIN",
-        "title": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Set with Fitted Sheet and 2 Pillowcases, Soft Washed Cotton, Breathable Wrinkle Resistant, 68 x 88 in (Grey)",
-        "handle": "makimoo-twin-bedding-set-4-piece-duvet-cover-set-with-bedset4-gray-twin",
-        "description": "Complete Twin Bedding Ensemble: The set includes 1 Duvet Cover 68 x 88 in, 1 Fitted Sheet 39 x 75 in, and 2 Pillowcases 20 x 26 in, giving you a coordinated foundation for a twin bed. Soft Brushed Microfiber: Woven from lightweight microfiber for a smooth, breathable feel that helps maintain a comfortable sleeping temperature throughout the night. Stay-Put Fitted Sheet: The elasticized fitted sheet hugs standard twin mattresses securely, while the duvet cover drapes neatly over your comforter for a clean, layered look. Easy Care & Wrinkle Resistant: Machine washable and quick drying, this set resists wrinkles and fading so it looks refreshed with minimal effort. Versatile Neutral Style: The understated Grey tone pairs easily with a wide range of bedroom palettes and existing linens for a timeless, adaptable finish.",
-        "descriptionHtml": "<p>Complete Twin Bedding Ensemble: The set includes 1 Duvet Cover 68 x 88 in, 1 Fitted Sheet 39 x 75 in, and 2 Pillowcases 20 x 26 in, giving you a coordinated foundation for a twin bed.</p><p>Soft Brushed Microfiber: Woven from lightweight microfiber for a smooth, breathable feel that helps maintain a comfortable sleeping temperature throughout the night.</p><p>Stay-Put Fitted Sheet: The elasticized fitted sheet hugs standard twin mattresses securely, while the duvet cover drapes neatly over your comforter for a clean, layered look.</p><p>Easy Care &amp; Wrinkle Resistant: Machine washable and quick drying, this set resists wrinkles and fading so it looks refreshed with minimal effort.</p><p>Versatile Neutral Style: The understated Grey tone pairs easily with a wide range of bedroom palettes and existing linens for a timeless, adaptable finish.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-GRAY-TWIN/1.webp",
-                "altText": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Set with Fitted Sheet and 2 Pillowcases, Soft Brushed Microfiber, Breathable Wrinkle Resistant, 68 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-GRAY-TWIN/2.webp",
-                "altText": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Set with Fitted Sheet and 2 Pillowcases, Soft Brushed Microfiber, Breathable Wrinkle Resistant, 68 x 88 in (Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-GRAY-TWIN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-BEDSET4-PINK-KING",
         "asin": "BEDSET4-PINK-KING",
         "title": "Premium Ultra Soft Washed Cotton 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet 2 Pillowcases Breathable Easy Care Wrinkle Resistant All Season 104 x 90 in (Pink)",
@@ -7345,7 +5019,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PINK-QUEEN",
         "asin": "BEDSET4-PINK-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Lightweight All Season Easy Care Cozy Solid Color Bedding 88 x 88 in (Pink)",
@@ -7391,7 +5065,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PINK-FULL",
         "asin": "BEDSET4-PINK-FULL",
         "title": "4 Piece Duvet Cover Bedding Set With Fitted Sheet And 2 Pillowcases Soft Durable Breathable Lightweight Wrinkle Resistant Easy Care All Season For Full Size 80 x 88 in (Pink)",
@@ -7437,7 +5111,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PINK-TWIN",
         "asin": "BEDSET4-PINK-TWIN",
         "title": "Makimoo 4 Piece Twin Bedding Set Includes Duvet Cover, Fitted Sheet and 2 Pillowcases, Ultra Soft Washed Cotton, Lightweight, All Season, Wrinkle Resistant, 68 x 88 in (Pink)",
@@ -7483,7 +5157,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BEIGE-KING",
         "asin": "BEDSET4-BEIGE-KING",
         "title": "Luxury Washed Cotton 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet And Pillowcases Soft Breathable Wrinkle Resistant All Season 104 x 90 in (Beige)",
@@ -7529,7 +5203,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BEIGE-QUEEN",
         "asin": "BEDSET4-BEIGE-QUEEN",
         "title": "Makimoo Queen Size 4 Piece Bedding Set Duvet Cover Fitted Sheet Pillowcases Ultra Soft Lightweight Breathable Wrinkle Resistant Easy Care Bed Linen Set 88 x 88 in (Beige)",
@@ -7575,7 +5249,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BEIGE-TWIN",
         "asin": "BEDSET4-BEIGE-TWIN",
         "title": "Soft Cozy All Season 4 Piece Bedding Set with Duvet Cover Fitted Sheet and Pillowcases for Twin Bed Lightweight Easy Care Machine Washable Bed Linen 68 x 88 in (Beige)",
@@ -7621,191 +5295,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-BEDSET4-WHITE-KING",
-        "asin": "BEDSET4-WHITE-KING",
-        "title": "King Size Bedding Set 4 Pieces Soft Washed Cotton Duvet Cover Fitted Sheet Pillowcases Hotel Style Breathable Wrinkle Resistant Fade Resistant 104 x 90 in (White)",
-        "handle": "king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king",
-        "description": "Complete 4-Piece King Bedding Set: Includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in) for a fully coordinated bed. Soft Brushed Microfiber Comfort: Made from finely brushed microfiber that feels smooth and gentle against the skin, helping you relax into a comfortable night's sleep. Breathable and Lightweight: The airy fabric allows heat to escape so you stay cool and comfortable throughout the night without feeling weighed down. Wrinkle and Fade Resistant: Engineered to resist wrinkles and color fading, this set keeps its crisp white look wash after wash with minimal ironing needed. Easy Care Machine Washable: Simply toss the set in the washing machine on a gentle cycle and tumble dry low for quick, convenient cleaning and long-lasting softness.",
-        "descriptionHtml": "<p>Complete 4-Piece King Bedding Set: Includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in) for a fully coordinated bed.</p><p>Soft Brushed Microfiber Comfort: Made from finely brushed microfiber that feels smooth and gentle against the skin, helping you relax into a comfortable night's sleep.</p><p>Breathable and Lightweight: The airy fabric allows heat to escape so you stay cool and comfortable throughout the night without feeling weighed down.</p><p>Wrinkle and Fade Resistant: Engineered to resist wrinkles and color fading, this set keeps its crisp white look wash after wash with minimal ironing needed.</p><p>Easy Care Machine Washable: Simply toss the set in the washing machine on a gentle cycle and tumble dry low for quick, convenient cleaning and long-lasting softness.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-WHITE-KING/1.webp",
-                "altText": "King Size Bedding Set 4 Pieces Soft Brushed Microfiber Duvet Cover Fitted Sheet Pillowcases Hotel Style Breathable Wrinkle Resistant Fade Resistant 104 x 90 in (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-WHITE-KING/2.webp",
-                "altText": "King Size Bedding Set 4 Pieces Soft Brushed Microfiber Duvet Cover Fitted Sheet Pillowcases Hotel Style Breathable Wrinkle Resistant Fade Resistant 104 x 90 in (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-WHITE-KING",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-WHITE-QUEEN",
-        "asin": "BEDSET4-WHITE-QUEEN",
-        "title": "Makimoo Queen Size Bedding Set 4 Pieces Premium Ultra Soft Cozy Breathable Cotton-Like All Season Duvet Cover Set Fitted Sheet Pillowcases Easy Care 88 x 88 in (White)",
-        "handle": "makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen",
-        "description": "Complete 4-Piece Set: Includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in). The coordinated package provides all essential pieces for a polished, refreshed bed. Premium Microfiber Fabric: Crafted from brushed microfiber that feels exceptionally soft and smooth against your skin. The lightweight material creates a cozy, inviting sleep surface night after night. Breathable All-Season Comfort: The airy microfiber construction helps promote airflow, keeping you comfortable through every season. Enjoy a fresh, balanced feel that supports restful sleep year-round. Easy Care and Durable: Machine washable for convenient cleaning and made with sturdy microfiber that holds up well to regular use. Reinforced stitching adds strength for everyday enjoyment. Elegant Versatile Style: The clean white color and simple design complement a wide range of bedroom decor, from modern minimalist to classic traditional. Create a calm, welcoming atmosphere in your sleeping space.",
-        "descriptionHtml": "<p>Complete 4-Piece Set: Includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in). The coordinated package provides all essential pieces for a polished, refreshed bed.</p><p>Premium Microfiber Fabric: Crafted from brushed microfiber that feels exceptionally soft and smooth against your skin. The lightweight material creates a cozy, inviting sleep surface night after night.</p><p>Breathable All-Season Comfort: The airy microfiber construction helps promote airflow, keeping you comfortable through every season. Enjoy a fresh, balanced feel that supports restful sleep year-round.</p><p>Easy Care and Durable: Machine washable for convenient cleaning and made with sturdy microfiber that holds up well to regular use. Reinforced stitching adds strength for everyday enjoyment.</p><p>Elegant Versatile Style: The clean white color and simple design complement a wide range of bedroom decor, from modern minimalist to classic traditional. Create a calm, welcoming atmosphere in your sleeping space.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-WHITE-QUEEN/1.webp",
-                "altText": "Makimoo Queen Size Bedding Set 4 Pieces Premium Ultra Soft Cozy Breathable Microfiber All Season Duvet Cover Set Fitted Sheet Pillowcases Easy Care 88 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-WHITE-QUEEN/2.webp",
-                "altText": "Makimoo Queen Size Bedding Set 4 Pieces Premium Ultra Soft Cozy Breathable Microfiber All Season Duvet Cover Set Fitted Sheet Pillowcases Easy Care 88 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-WHITE-QUEEN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-WHITE-FULL",
-        "asin": "BEDSET4-WHITE-FULL",
-        "title": "Makimoo Full Bedding Set 4 Piece Soft Breathable Comfortable Easy Care All Season Lightweight Modern Duvet Cover with Fitted Sheet and Pillowcases 80 x 88 in (White)",
-        "handle": "makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full",
-        "description": "Complete 4-Piece Set: This full bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving your bed a coordinated finish with all the essentials. Soft Breathable Comfort: The lightweight fabric feels smooth against skin and allows air to circulate, helping you stay comfortable through warm nights and cool mornings. Secure Fitted Sheet Fit: The fitted sheet features a fully elasticized edge that wraps under the mattress to hold corners firmly in place without slipping during the night. Simple Everyday Care: This set is machine washable and designed to maintain a neat, fresh look after regular washing, making it a practical choice for busy households. Timeless Versatile Style: The crisp white color and clean design pair easily with any bedroom decor, suitable for master suites, guest rooms, apartments, and dorm rooms.",
-        "descriptionHtml": "<p>Complete 4-Piece Set: This full bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving your bed a coordinated finish with all the essentials.</p><p>Soft Breathable Comfort: The lightweight fabric feels smooth against skin and allows air to circulate, helping you stay comfortable through warm nights and cool mornings.</p><p>Secure Fitted Sheet Fit: The fitted sheet features a fully elasticized edge that wraps under the mattress to hold corners firmly in place without slipping during the night.</p><p>Simple Everyday Care: This set is machine washable and designed to maintain a neat, fresh look after regular washing, making it a practical choice for busy households.</p><p>Timeless Versatile Style: The crisp white color and clean design pair easily with any bedroom decor, suitable for master suites, guest rooms, apartments, and dorm rooms.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-WHITE-FULL/1.webp",
-                "altText": "Makimoo Full Bedding Set 4 Piece Soft Breathable Comfortable Easy Care All Season Lightweight Modern Duvet Cover with Fitted Sheet and Pillowcases 80 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-WHITE-FULL/2.webp",
-                "altText": "Makimoo Full Bedding Set 4 Piece Soft Breathable Comfortable Easy Care All Season Lightweight Modern Duvet Cover with Fitted Sheet and Pillowcases 80 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-WHITE-FULL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-BEDSET4-WHITE-TWIN",
-        "asin": "BEDSET4-WHITE-TWIN",
-        "title": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Fitted Sheet Pillowcases Soft Washed Cotton Breathable Lightweight Wrinkle Resistant Easy Care, 68 x 88 in (White)",
-        "handle": "makimoo-twin-bedding-set-4-piece-duvet-cover-fitted-sheet-bedset4-white-twin",
-        "description": "Premium Microfiber Comfort: Woven from ultra-soft brushed microfiber, this bedding set offers a smooth, breathable feel that keeps you comfortable through every season. The lightweight fabric drapes neatly and resists wrinkles, fading, and pilling for a fresh look with everyday use. Complete 4-Piece Twin Set: Includes everything you need for a coordinated bed: 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in). Each piece is sized to fit standard Twin mattresses and pillows with a clean, tailored finish. Tailored Fitted Sheet: The fitted sheet features elasticized edges that stretch smoothly around your mattress, helping it stay in place through the night. Its streamlined design makes bed-making quick and easy while maintaining a neat appearance. Clean Classic Style: The crisp solid-white finish brings a bright, airy look to any bedroom, guest room, or dorm. The minimalist design pairs effortlessly with quilts, throw blankets, and decorative pillows for a personalized touch. Easy Everyday Care: Machine washable and quick to dry, this set is designed for busy lifestyles. The colorfast microfiber retains its soft hand and clean look wash after wash, so your bed always feels inviting.",
-        "descriptionHtml": "<p>Premium Microfiber Comfort: Woven from ultra-soft brushed microfiber, this bedding set offers a smooth, breathable feel that keeps you comfortable through every season. The lightweight fabric drapes neatly and resists wrinkles, fading, and pilling for a fresh look with everyday use.</p><p>Complete 4-Piece Twin Set: Includes everything you need for a coordinated bed: 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in). Each piece is sized to fit standard Twin mattresses and pillows with a clean, tailored finish.</p><p>Tailored Fitted Sheet: The fitted sheet features elasticized edges that stretch smoothly around your mattress, helping it stay in place through the night. Its streamlined design makes bed-making quick and easy while maintaining a neat appearance.</p><p>Clean Classic Style: The crisp solid-white finish brings a bright, airy look to any bedroom, guest room, or dorm. The minimalist design pairs effortlessly with quilts, throw blankets, and decorative pillows for a personalized touch.</p><p>Easy Everyday Care: Machine washable and quick to dry, this set is designed for busy lifestyles. The colorfast microfiber retains its soft hand and clean look wash after wash, so your bed always feels inviting.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/BEDSET4-WHITE-TWIN/1.webp",
-                "altText": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Fitted Sheet Pillowcases Soft Brushed Microfiber Breathable Lightweight Wrinkle Resistant Easy Care, 68 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/BEDSET4-WHITE-TWIN/2.webp",
-                "altText": "Makimoo Twin Bedding Set 4 Piece Duvet Cover Fitted Sheet Pillowcases Soft Brushed Microfiber Breathable Lightweight Wrinkle Resistant Easy Care, 68 x 88 in (White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-BEDSET4-WHITE-TWIN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-DUVSET-GRAY-KING",
         "asin": "DUVSET-GRAY-KING",
         "title": "Makimoo Duvet Cover Set King Size 4 Piece Bedding Set with Zipper Closure and Corner Ties Soft Breathable with Fitted Sheet and 2 Pillowcases, Easy Care 104 x 90 in (Grey)",
@@ -7869,7 +5359,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-GRAY-QUEEN",
         "asin": "DUVSET-GRAY-QUEEN",
         "title": "Makimoo Soft Washed Cotton Duvet Cover Set Queen Size 88 x 88 in with Fitted Sheet and 2 Pillowcases Breathable Wrinkle Resistant Lightweight Bedding Set (Grey)",
@@ -7933,7 +5423,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-GRAY-FULL",
         "asin": "DUVSET-GRAY-FULL",
         "title": "Makimoo 4 Piece Duvet Cover Set Full Size Lightweight Soft Minimalist Solid Color Cozy Bedding Includes 1 Duvet Cover, 1 Fitted Sheet and 2 Pillowcases 80 x 88 in (Grey)",
@@ -7997,7 +5487,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-GRAY-TWIN",
         "asin": "DUVSET-GRAY-TWIN",
         "title": "4 Piece Duvet Cover Set with Fitted Sheet and 2 Pillowcases Ultra Soft Cozy Lightweight Breathable Modern Twin Bedding Solid Color Easy Care Machine Washable All Season 68 x 88 in (Grey)",
@@ -8061,7 +5551,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-PINK-KING",
         "asin": "DUVSET-PINK-KING",
         "title": "Ultra Soft Washed Cotton-Like Duvet Cover Set with Fitted Sheet and 2 Pillowcases King Size 104 x 90 in Breathable Lightweight Wrinkle Resistant Hotel Style Bedding with Zipper Closure (Pink)",
@@ -8125,7 +5615,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-PINK-QUEEN",
         "asin": "DUVSET-PINK-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Breathable Fade Resistant Washed Cotton Bedding with Zipper Closure Corner Ties and 2 Pillowcases (88 x 88 in) (Pink)",
@@ -8189,7 +5679,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-PINK-FULL",
         "asin": "DUVSET-PINK-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Pieces Ultra Soft Cotton-Like Bedding Set with Zipper Closure Includes 1 Duvet Cover, 1 Fitted Sheet and 2 Pillowcases Machine Washable 80 x 88 in (Pink)",
@@ -8253,7 +5743,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-PINK-TWIN",
         "asin": "DUVSET-PINK-TWIN",
         "title": "Ultra Soft Washed Cotton-Like 4 Piece Duvet Cover Set Includes 2 Pillowcases Easy Care Breathable Wrinkle Resistant Lightweight Cozy All Season Twin Size Bedding 68 x 88 in (Pink)",
@@ -8317,7 +5807,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEIGE-KING",
         "asin": "DUVSET-BEIGE-KING",
         "title": "Makimoo King Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Lightweight Hotel Quality Fabric Wrinkle Resistant All Season Quilt Cover 104 x 90 in (Beige)",
@@ -8381,7 +5871,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEIGE-QUEEN",
         "asin": "DUVSET-BEIGE-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Beige)",
@@ -8445,7 +5935,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEIGE-FULL",
         "asin": "DUVSET-BEIGE-FULL",
         "title": "Luxuriously Soft Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Breathable Washed Cotton Bedding, Hidden Zipper Closure, Easy Care Machine Washable, 80 x 88 in (Beige)",
@@ -8509,7 +5999,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEIGE-TWIN",
         "asin": "DUVSET-BEIGE-TWIN",
         "title": "Makimoo Duvet Cover Set 4 Pieces Twin Size Soft Breathable Lightweight Cozy Bedding Set with Fitted Sheet and 2 Pillowcases for Home Bedroom or Dorm 68 x 88 in (Beige)",
@@ -8573,7 +6063,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-WHITE-KING",
         "asin": "DUVSET-WHITE-KING",
         "title": "Makimoo King Size Duvet Cover Set 4 Pieces Ultra Soft Washed Cotton Breathable Lightweight Bedding with Zipper Closure Corner Ties and 2 Pillowcases 104 x 90 in (White)",
@@ -8637,7 +6127,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-WHITE-FULL",
         "asin": "DUVSET-WHITE-FULL",
         "title": "Elegant Crisp Solid Duvet Cover Set with Pillowcases, 4 Piece Full Size Modern Minimalist Plain Hotel Style Bedding for Home Bedroom, 80 x 88 in (White)",
@@ -8701,7 +6191,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-WHITE-QUEEN",
         "asin": "DUVSET-WHITE-QUEEN",
         "title": "Queen Duvet Cover Set 4 Pieces Soft Washed Cotton Bedding with Zipper Closure Corner Ties Includes 2 Pillowcases Easy Care Breathable All Season 88 x 88 in (White)",
@@ -8765,7 +6255,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-WHITE-TWIN",
         "asin": "DUVSET-WHITE-TWIN",
         "title": "Twin Duvet Cover Set With 2 Pillowcases, Soft 4 Piece Bedding Set For Twin Bed, Includes 1 Duvet Cover, 1 Fitted Sheet and 2 Pillowcases, Easy Care Machine Washable, 68 x 88 in (White)",
@@ -8829,7 +6319,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-LILAC-TWIN",
         "asin": "BEDSET4-LILAC-TWIN",
         "title": "Makimoo 4 Piece Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Breathable Linen-Like Ditsy Floral Print Farmhouse Bedroom Decor Twin (Purple Grey)",
@@ -8893,7 +6383,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-LILAC-FULL",
         "asin": "BEDSET4-LILAC-FULL",
         "title": "Makimoo 4 Piece Bedding Set with Duvet Cover Fitted Sheet and 2 Pillowcases Soft Cozy Brushed Linen-Like Ditsy Floral Print Cottage Garden Style Bedding Set 80 x 88 in (Purple Grey)",
@@ -8957,7 +6447,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-LILAC-QUEEN",
         "asin": "BEDSET4-LILAC-QUEEN",
         "title": "Makimoo 4 Piece Bedding Set Queen Duvet Cover 88 x 88 in Fitted Sheet 60 x 80 in 2 Pillowcases 20 x 30 in Soft Linen-Like Botanical Floral Print (Purple Grey)",
@@ -9021,7 +6511,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-LILAC-KING",
         "asin": "BEDSET4-LILAC-KING",
         "title": "Makimoo 4 Piece King Bedding Set Floral Duvet Cover Fitted Sheet 2 Pillowcases Soft Breathable Cozy Farmhouse Bedroom Decor, 104 x 90 in (Purple Grey)",
@@ -9085,7 +6575,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SLATE-TWIN",
         "asin": "BEDSET4-SLATE-TWIN",
         "title": "Makimoo 4 Piece Bedding Set Duvet Cover Fitted Sheet and 2 Pillowcases Ink Bamboo Print Soft Cozy Breathable Botanical Farmhouse Bedroom Decor 68 x 88 in (Grey)",
@@ -9149,7 +6639,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SLATE-FULL",
         "asin": "BEDSET4-SLATE-FULL",
         "title": "Makimoo 4 Piece Bedding Set with Duvet Cover Fitted Sheet and 2 Pillowcases Grey Ink Bamboo Print Ultra Soft Breathable Linen-Like All Season Full Size 80 x 88 in (Grey)",
@@ -9213,7 +6703,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SLATE-QUEEN",
         "asin": "BEDSET4-SLATE-QUEEN",
         "title": "4 Piece Queen Bedding Set with Duvet Cover Fitted Sheet and 2 Pillowcases Ink Bamboo Print Botanical Soft Breathable Machine Washable All Season Bedroom Decor (Grey)",
@@ -9277,7 +6767,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SLATE-KING",
         "asin": "BEDSET4-SLATE-KING",
         "title": "Makimoo King Bedding Set Duvet Cover Fitted Sheet and 2 Pillowcases Soft Breathable Linen-Like Botanical Ink Bamboo Print 104 x 90 in 78 x 80 in 20 x 36 in (Grey)",
@@ -9341,7 +6831,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-TAN-TWIN",
         "asin": "BEDSET4-TAN-TWIN",
         "title": "Makimoo 4 Piece Botanical Floral Bedding Set Soft Comfy Duvet Cover Fitted Sheet and 2 Pillowcases All Season Cozy Bedroom Decor Twin Size 68 x 88 in (Brown)",
@@ -9405,7 +6895,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-TAN-FULL",
         "asin": "BEDSET4-TAN-FULL",
         "title": "Makimoo 4 Piece Floral Bedding Set Full Size With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Botanical Print Bed Set 80 x 88 in 54 x 75 in 20 x 26 in (Brown Floral)",
@@ -9469,7 +6959,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-TAN-QUEEN",
         "asin": "BEDSET4-TAN-QUEEN",
         "title": "Makimoo 4 Piece Queen Bedding Set Duvet Cover Fitted Sheet 2 Pillowcases Vintage Floral Pattern Soft Breathable All Season Bedroom Decor 88 x 88 in 60 x 80 in 20 x 30 in (Brown)",
@@ -9533,7 +7023,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-TAN-KING",
         "asin": "BEDSET4-TAN-KING",
         "title": "Makimoo 4 Piece Botanical Floral Bedding Set with Duvet Cover 104 x 90 in Fitted Sheet 78 x 80 in and 2 Pillowcases 20 x 36 in Vintage Farmhouse King Size (Brown Floral)",
@@ -9597,7 +7087,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SAGE-TWIN",
         "asin": "BEDSET4-SAGE-TWIN",
         "title": "Floral Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Cozy Lightweight Botanical Print Bedroom Decor 68 x 88 in 39 x 75 in 20 x 26 in (Sage Green)",
@@ -9661,7 +7151,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SAGE-FULL",
         "asin": "BEDSET4-SAGE-FULL",
         "title": "4 Piece Full Size Floral Duvet Cover Set with Fitted Sheet and 2 Pillowcases, Botanical Print Bedding for Bedroom, Cozy Duvet Ensemble (Sage Green Floral)",
@@ -9725,7 +7215,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SAGE-QUEEN",
         "asin": "BEDSET4-SAGE-QUEEN",
         "title": "4 Piece Floral Bedding Set Queen Size Soft Linen-Like Duvet Cover Fitted Sheet and 2 Pillowcases Lightweight Breathable Cozy Farmhouse Botanical Bedroom Decor (Sage Green)",
@@ -9789,7 +7279,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-SAGE-KING",
         "asin": "BEDSET4-SAGE-KING",
         "title": "Makimoo 4 Piece Floral Bedding Set Soft Breathable Fabric Duvet Cover Fitted Sheet and 2 Pillowcases King Size Botanical Print 104 x 90 in 78 x 80 in 20 x 36 in (Grey Green)",
@@ -9853,7 +7343,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MAUVE-TWIN",
         "asin": "BEDSET4-MAUVE-TWIN",
         "title": "4 Piece Botanical Floral Lace Trim Soft Romantic Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Twin Size 68 x 88 in 39 x 75 in 20 x 26 in (Pink Purple)",
@@ -9917,7 +7407,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MAUVE-FULL",
         "asin": "BEDSET4-MAUVE-FULL",
         "title": "4 Piece Floral Lace Print Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Breathable Romantic Shabby Chic Farmhouse Cottage Style (Pink Purple)",
@@ -9981,7 +7471,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MAUVE-QUEEN",
         "asin": "BEDSET4-MAUVE-QUEEN",
         "title": "Makimoo 4 Piece Shabby Chic Bedding Set with Duvet Cover Fitted Sheet and 2 Pillowcases Lace Trim Floral Print Soft Linen-Like for Queen Size Bed 88 x 88 in (Purple Pink)",
@@ -10045,7 +7535,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MAUVE-KING",
         "asin": "BEDSET4-MAUVE-KING",
         "title": "Makimoo 4 Piece Bedding Set King Size Vintage Floral Print Duvet Cover Fitted Sheet and 2 Pillowcases with Lace Trim Soft Cozy Romantic Farmhouse Bedroom Decor (Pink Purple)",
@@ -10109,7 +7599,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MOSS-TWIN",
         "asin": "BEDSET4-MOSS-TWIN",
         "title": "Floral Print 4 Piece Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Soft Botanical Bedding With Scalloped Lace Trim, Cottage Farmhouse Bedroom Decor, Twin Size (Sage Green)",
@@ -10173,7 +7663,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MOSS-FULL",
         "asin": "BEDSET4-MOSS-FULL",
         "title": "Rustic Floral Duvet Cover Set With Fitted Sheet And Two Pillowcases Scalloped Lace Trim Botanical Print Soft Bedding For Bedroom Guest Room 80 x 88 in (Grey Green)",
@@ -10237,7 +7727,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MOSS-QUEEN",
         "asin": "BEDSET4-MOSS-QUEEN",
         "title": "Makimoo 4 Piece Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Botanical Floral Print Lace Trim Ruffled Edge Soft Cozy Farmhouse Vintage Fabric (Grey Green)",
@@ -10301,7 +7791,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-MOSS-KING",
         "asin": "BEDSET4-MOSS-KING",
         "title": "Botanical Floral Duvet Cover Set with Lace Trim, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Fabric, Cottagecore Bedroom Decor, King (Sage Green)",
@@ -10365,7 +7855,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-COFFEE-TWIN",
         "asin": "BEDSET4-COFFEE-TWIN",
         "title": "Makimoo 4 Piece Patchwork Print Bedding Set Twin Quilt Cover 68 x 88 in Fitted Sheet 39 x 75 in 2 Pillowcases Soft Cozy Breathable All Season Bedroom Decor (Brown)",
@@ -10429,7 +7919,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-COFFEE-FULL",
         "asin": "BEDSET4-COFFEE-FULL",
         "title": "Makimoo 4 Piece Bedding Set Full Size Patchwork Block Print Duvet Cover 80 x 88 in Fitted Sheet 54 x 75 in 2 Pillowcases All Season Rustic Bedroom Decor (Brown)",
@@ -10493,7 +7983,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-COFFEE-QUEEN",
         "asin": "BEDSET4-COFFEE-QUEEN",
         "title": "4 Piece Queen Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Patchwork Block Print Farmhouse Boho Chic Rustic Cozy Warm Bedroom Decor 88 x 88 in (Brown)",
@@ -10557,7 +8047,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-COFFEE-KING",
         "asin": "BEDSET4-COFFEE-KING",
         "title": "Makimoo 4 Piece King Bedding Set Patchwork Block Print Duvet Cover Fitted Sheet and 2 Pillowcases Soft Breathable Linen-Like All Season Bedroom Decor 104 x 90 in (Brown)",
@@ -10621,7 +8111,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BLUE-TWIN",
         "asin": "BEDSET4-BLUE-TWIN",
         "title": "Makimoo 4 Piece Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Twin Size Blue Grey Patchwork Floral Print Soft Linen-Like All Season 68 x 88 in (Blue Grey)",
@@ -10685,7 +8175,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BLUE-FULL",
         "asin": "BEDSET4-BLUE-FULL",
         "title": "Makimoo 4 Piece Bedding Set Full Size Quilt Cover Fitted Sheet 2 Pillowcases Modern Elegant Patchwork Print Soft Cozy All Season Bedroom Decor (Blue Grey)",
@@ -10749,7 +8239,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BLUE-QUEEN",
         "asin": "BEDSET4-BLUE-QUEEN",
         "title": "Floral Patchwork Bedding Set Queen 4 Piece Duvet Cover Fitted Sheet And 2 Pillowcases Soft Lightweight All Season Bedding Set With Vintage Style 88 x 88 in (Blue Grey)",
@@ -10813,7 +8303,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-BLUE-KING",
         "asin": "BEDSET4-BLUE-KING",
         "title": "Makimoo 4 Piece Patchwork Floral Bedding Set King Size with Duvet Cover Fitted Sheet and 2 Pillowcases Botanical Grid Pattern Soft Cozy Farmhouse Bedroom Decor (Blue Grey)",
@@ -10877,7 +8367,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PLAID-TWIN",
         "asin": "BEDSET4-PLAID-TWIN",
         "title": "Twin Size 4 Piece Plaid Bedding Set With Duvet Cover Fitted Sheet And 2 Pillowcases Soft Linen-Like Bedding Collection For Bedroom Guest Room All Season 68 x 88 in (Grey Plaid)",
@@ -10941,7 +8431,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PLAID-FULL",
         "asin": "BEDSET4-PLAID-FULL",
         "title": "4 Piece Classic Plaid Duvet Cover Set With Fitted Sheet And 2 Pillowcases, Cozy Bedding For Bedroom Guest Room, Full Size, 80 x 88 in, 54 x 75 in, 20 x 26 in (Grey)",
@@ -11005,7 +8495,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PLAID-QUEEN",
         "asin": "BEDSET4-PLAID-QUEEN",
         "title": "4 Piece Queen Bedding Set With 88 x 88 in Duvet Cover 60 x 80 in Fitted Sheet And 2 20 x 30 in Pillowcases Cozy Soft Plaid Pattern All Season Modern Bedroom Decor (Grey)",
@@ -11069,7 +8559,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BEDSET4-PLAID-KING",
         "asin": "BEDSET4-PLAID-KING",
         "title": "Makimoo 4 Piece Plaid Bedding Set King Size Duvet Cover Fitted Sheet and 2 Pillowcases Soft Checkered Bedding Collection with All Around Elastic Fitted Sheet (Grey Plaid)",
@@ -11133,7 +8623,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-SAGE-TWIN",
         "asin": "LINEN3-SAGE-TWIN",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Piece Twin Bedding With 1 Duvet Cover, 1 Fitted Sheet And 2 Pillowcases Soft Breathable Farmhouse Decor 68 x 88 in 20 x 26 in (Sage Green)",
@@ -11197,7 +8687,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-SAGE-FULL",
         "asin": "LINEN3-SAGE-FULL",
         "title": "100% Linen Duvet Cover Set 4 Piece Full Size Soft Breathable Comfortable Bedding Set with 1 Duvet Cover 80 x 90 in, 1 Fitted Sheet 54 x 75 in and 2 Pillowcases 20 x 26 in (Sage Green)",
@@ -11261,7 +8751,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-SAGE-QUEEN",
         "asin": "LINEN3-SAGE-QUEEN",
         "title": "Makimoo 100% Linen Duvet Cover Set, 4 Piece Bedding Set with Fitted Sheet and 2 Pillowcases, Soft Breathable, Queen, 90 x 90 in (Sage Green)",
@@ -11325,7 +8815,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-SAGE-KING",
         "asin": "LINEN3-SAGE-KING",
         "title": "100 Percent Linen Duvet Cover Set 4 Piece King Size Bedding Set With Fitted Sheet And 2 Pillow Shams 104 x 90 in Soft Breathable Farmhouse Style Comfy Bedroom Decor (Sage Green)",
@@ -11389,7 +8879,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-CHARCOAL-TWIN",
         "asin": "LINEN3-CHARCOAL-TWIN",
         "title": "Makimoo 100% Linen Duvet Cover Set, 4 Piece Bedding Set With Fitted Sheet And 2 Pillowcases, Twin, Breathable Soft Comfy, 68 x 88 in Duvet Cover, 20 x 26 in Pillowcases (Charcoal Grey)",
@@ -11453,7 +8943,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-CHARCOAL-FULL",
         "asin": "LINEN3-CHARCOAL-FULL",
         "title": "100% Linen Duvet Cover Set 4 Piece Full Size Breathable Soft Textured Bedding Set with Button Closure and Corner Ties Machine Washable 80 x 90 in and 20 x 26 in (Charcoal Grey)",
@@ -11517,7 +9007,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-CHARCOAL-QUEEN",
         "asin": "LINEN3-CHARCOAL-QUEEN",
         "title": "100% Linen Duvet Cover Set 4 Pieces Queen With 1 Duvet Cover 90 x 90 in, 1 Fitted Sheet 60 x 80 in And 2 Pillowcases 20 x 30 in Soft Breathable Modern Farmhouse Bedding (Charcoal Grey)",
@@ -11581,7 +9071,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-CHARCOAL-KING",
         "asin": "LINEN3-CHARCOAL-KING",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Piece King Soft Breathable Bedding Set With Fitted Sheet And 2 Pillowcases Natural Texture Farmhouse Modern 104 x 90 in 20 x 36 in (Charcoal Gray)",
@@ -11645,7 +9135,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-DUSTYBLUE-TWIN",
         "asin": "LINEN3-DUSTYBLUE-TWIN",
         "title": "Makimoo 100% Linen Duvet Cover Set, 4 Piece Bedding Set With 1 Duvet Cover, 1 Fitted Sheet And 2 Pillowcases, Soft Breathable Farmhouse Bedding, 68 x 88 in (Dusty Blue)",
@@ -11709,7 +9199,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-DUSTYBLUE-FULL",
         "asin": "LINEN3-DUSTYBLUE-FULL",
         "title": "Makimoo 100% Linen Duvet Cover Set Full Size 4 Piece Bedding Set With Fitted Sheet And 2 Pillow Shams Soft Breathable Textured Duvet Cover 80 x 90 in All Season (Dusty Blue)",
@@ -11773,7 +9263,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-DUSTYBLUE-QUEEN",
         "asin": "LINEN3-DUSTYBLUE-QUEEN",
         "title": "100% Linen Duvet Cover Set Queen Size 4 Piece Bedding Set 1 Duvet Cover 90 x 90 in, 1 Fitted Sheet 60 x 80 in, 2 Pillow Shams Soft Breathable Textured Farmhouse Style (Dusty Blue)",
@@ -11837,7 +9327,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-DUSTYBLUE-KING",
         "asin": "LINEN3-DUSTYBLUE-KING",
         "title": "Makimoo 100% Linen Duvet Cover Set, 4 Piece Bedding Set With Fitted Sheet And 2 Pillowcases, Soft Breathable, King, 104 x 90 in, 20 x 36 in (Dusty Blue)",
@@ -11901,7 +9391,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-IVORY-TWIN",
         "asin": "LINEN3-IVORY-TWIN",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Piece Twin Breathable Soft Textured Bedding with Duvet Cover, Fitted Sheet and 2 Pillowcases 68 x 88 in and 20 x 26 in (Natural White)",
@@ -11965,7 +9455,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-IVORY-FULL",
         "asin": "LINEN3-IVORY-FULL",
         "title": "Makimoo 100 Percent Linen Duvet Cover Set Full Size 4 Piece Textured Farmhouse Bedding with Fitted Sheet and 2 Pillowcases Soft Breathable Duvet Cover 80 x 90 in and 20 x 26 in (Natural White)",
@@ -12029,7 +9519,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-IVORY-QUEEN",
         "asin": "LINEN3-IVORY-QUEEN",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Pieces Queen Size with 1 Duvet Cover, 1 Fitted Sheet and 2 Pillowcases Soft Breathable Bedding 90 x 90 in (Natural White)",
@@ -12093,7 +9583,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-IVORY-KING",
         "asin": "LINEN3-IVORY-KING",
         "title": "Makimoo 100% Linen Duvet Cover Set King 4 Piece Bedding With 1 Duvet Cover 104 x 90 in, 1 Fitted Sheet 78 x 80 in And 2 Pillowcases 20 x 36 in Breathable Lightweight Soft (Natural White)",
@@ -12157,7 +9647,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-OATMEAL-TWIN",
         "asin": "LINEN3-OATMEAL-TWIN",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Piece Twin Size, 1 Duvet Cover 68 x 88 in, 1 Fitted Sheet 39 x 75 in and 2 Pillowcases 20 x 26 in, Soft Breathable Bedding Set for Bedroom (Oatmeal)",
@@ -12221,7 +9711,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-OATMEAL-FULL",
         "asin": "LINEN3-OATMEAL-FULL",
         "title": "Makimoo 100% Linen Duvet Cover Set Full Size, 4 Piece Breathable Bedding with 1 Duvet Cover 80 x 90 in, 1 Fitted Sheet 54 x 75 in and 2 Pillowcases 20 x 26 in, Soft Natural Farmhouse Style (Oatmeal)",
@@ -12285,7 +9775,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-OATMEAL-QUEEN",
         "asin": "LINEN3-OATMEAL-QUEEN",
         "title": "100% Linen Duvet Cover Set Queen, 4 Piece Bedding Set with Duvet Cover, Fitted Sheet and 2 Pillowcases, Breathable Soft Farmhouse Style, 90 x 90 in, 20 x 30 in (Oatmeal)",
@@ -12349,7 +9839,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-OATMEAL-KING",
         "asin": "LINEN3-OATMEAL-KING",
         "title": "Makimoo 100% Linen Duvet Cover Set 4 Piece King Size with Fitted Sheet and 2 Pillowcases, Breathable Soft Bedding, Natural Farmhouse Style, Duvet Cover 104 x 90 in, Pillowcases 20 x 36 in (Oatmeal)",
@@ -12413,7 +9903,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C2",
         "asin": "1688-899672152256-C2",
         "title": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
@@ -12477,7 +9967,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C13",
         "asin": "1688-899672152256-C13",
         "title": "Handwoven Rattan Shell Tray Set of 3, Round Woven Fruit Basket with Turtle Leaf Pattern, Snack Bowl for Dessert Bread, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural Brown)",
@@ -12529,7 +10019,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C22",
         "asin": "1688-899672152256-C22",
         "title": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
@@ -12587,7 +10077,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C33",
         "asin": "1688-899672152256-C33",
         "title": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
@@ -12651,7 +10141,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C42",
         "asin": "1688-899672152256-C42",
         "title": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
@@ -12715,7 +10205,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C52",
         "asin": "1688-899672152256-C52",
         "title": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
@@ -12779,7 +10269,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C61",
         "asin": "1688-899672152256-C61",
         "title": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
@@ -12843,7 +10333,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C70",
         "asin": "1688-899672152256-C70",
         "title": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
@@ -12901,7 +10391,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C78",
         "asin": "1688-899672152256-C78",
         "title": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
@@ -12965,7 +10455,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-899672152256-C85",
         "asin": "1688-899672152256-C85",
         "title": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
@@ -13023,7 +10513,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C2",
         "asin": "1688-743606980882-C2",
         "title": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
@@ -13081,7 +10571,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C10",
         "asin": "1688-743606980882-C10",
         "title": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
@@ -13139,7 +10629,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C20",
         "asin": "1688-743606980882-C20",
         "title": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
@@ -13203,7 +10693,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C32",
         "asin": "1688-743606980882-C32",
         "title": "Handwoven Rattan Tray Set of 3 With Green Four-Leaf Clover Shell Inlay Rectangular Serving Baskets For Snacks Fruit Candy Dining Table Storage 37 x 23 x 4 cm (Brown)",
@@ -13255,7 +10745,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C41",
         "asin": "1688-743606980882-C41",
         "title": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
@@ -13319,7 +10809,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C52",
         "asin": "1688-743606980882-C52",
         "title": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
@@ -13383,7 +10873,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C61",
         "asin": "1688-743606980882-C61",
         "title": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
@@ -13447,7 +10937,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C71",
         "asin": "1688-743606980882-C71",
         "title": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
@@ -13511,7 +11001,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C80",
         "asin": "1688-743606980882-C80",
         "title": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
@@ -13575,7 +11065,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-743606980882-C89",
         "asin": "1688-743606980882-C89",
         "title": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
@@ -13639,7 +11129,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-663341114084-C2",
         "asin": "1688-663341114084-C2",
         "title": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
@@ -13703,7 +11193,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-663341114084-C3",
         "asin": "1688-663341114084-C3",
         "title": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
@@ -13767,7 +11257,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-807393887857-C2",
         "asin": "1688-807393887857-C2",
         "title": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
@@ -13837,7 +11327,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-807393887857-C3",
         "asin": "1688-807393887857-C3",
         "title": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
@@ -13907,7 +11397,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-807393887857-C4",
         "asin": "1688-807393887857-C4",
         "title": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
@@ -13971,7 +11461,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-807393887857-C5",
         "asin": "1688-807393887857-C5",
         "title": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
@@ -14041,7 +11531,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-807393887857-C6",
         "asin": "1688-807393887857-C6",
         "title": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
@@ -14099,7 +11589,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C12",
         "asin": "1688-1052742241013-C12",
         "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
@@ -14169,7 +11659,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C11",
         "asin": "1688-1052742241013-C11",
         "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
@@ -14239,7 +11729,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C10",
         "asin": "1688-1052742241013-C10",
         "title": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
@@ -14309,7 +11799,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C9",
         "asin": "1688-1052742241013-C9",
         "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
@@ -14379,7 +11869,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C8",
         "asin": "1688-1052742241013-C8",
         "title": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
@@ -14449,7 +11939,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-1052742241013-C7",
         "asin": "1688-1052742241013-C7",
         "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
@@ -14519,7 +12009,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C19",
         "asin": "1688-730512046265-C19",
         "title": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
@@ -14589,7 +12079,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C18",
         "asin": "1688-730512046265-C18",
         "title": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
@@ -14659,7 +12149,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C17",
         "asin": "1688-730512046265-C17",
         "title": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
@@ -14729,7 +12219,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C16",
         "asin": "1688-730512046265-C16",
         "title": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
@@ -14799,7 +12289,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C15",
         "asin": "1688-730512046265-C15",
         "title": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
@@ -14869,7 +12359,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-1688-730512046265-C14",
         "asin": "1688-730512046265-C14",
         "title": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
@@ -14939,1687 +12429,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-1688-1048207560416",
-        "asin": "1688-1048207560416",
-        "title": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-        "handle": "cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416",
-        "description": "COMPLETE PACKAGE: The package includes Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2, giving you a complete coordinated set. COOLING WASHED ICE SILK: The washed ice silk fabric has a smooth, silky-soft surface that feels cool and gentle against the skin, helping you stay comfortable in warmer rooms. DUAL TONE REVERSIBLE STYLE: The dual tone design gives you two complementary looks in one cover. Flip the duvet cover to refresh the look of your bedroom, guest room, or dorm. SOFT BREATHABLE COMFORT: Lightweight and breathable, this duvet cover drapes smoothly over your bed without feeling heavy. The soft texture adds a cozy layer for relaxing and sleeping. EASY CARE AND VERSATILE USE: Machine washable for convenient upkeep, this cooling duvet cover is easy to maintain. It works well as a standalone cover or as a layer over your comforter.",
-        "descriptionHtml": "<p>COMPLETE PACKAGE: The package includes Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2, giving you a complete coordinated set.</p><p>COOLING WASHED ICE SILK: The washed ice silk fabric has a smooth, silky-soft surface that feels cool and gentle against the skin, helping you stay comfortable in warmer rooms.</p><p>DUAL TONE REVERSIBLE STYLE: The dual tone design gives you two complementary looks in one cover. Flip the duvet cover to refresh the look of your bedroom, guest room, or dorm.</p><p>SOFT BREATHABLE COMFORT: Lightweight and breathable, this duvet cover drapes smoothly over your bed without feeling heavy. The soft texture adds a cozy layer for relaxing and sleeping.</p><p>EASY CARE AND VERSATILE USE: Machine washable for convenient upkeep, this cooling duvet cover is easy to maintain. It works well as a standalone cover or as a layer over your comforter.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1048207560416/1.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416/2.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416/3.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416/4.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416/5.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416/6.webp",
-                "altText": "Cooling Washed Ice Silk Dual Tone Duvet Cover Reversible Soft Breathable Lightweight Smooth Cozy Machine Washable Bedding For Bedroom Guest Room 220 x 180 cm (Milkshake White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1048207560416",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C2",
-        "asin": "1688-1061371343572-C2",
-        "title": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-        "handle": "luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2",
-        "description": "SILKY COOLING TOUCH: The finely woven ice-silk style surface feels distinctly cool and satin-smooth against the skin, which helps hot sleepers settle in without tossing. Its fluid drape glides over the comforter instead of clinging, so the bedding stays neat and comfortable through the night. WHAT IS INCLUDED: Duvet Cover x 1: 180 x 220cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This set covers the duvet cover only, and pillowcases, sheets, and the comforter insert are not part of the package. Please measure your insert before ordering so the cover fits the way you expect. BREATHABLE AND LIGHTWEIGHT: The airy weave allows warm air to escape and moves moisture away from the body, keeping the fabric feeling fresh rather than heavy or stuffy. Light in weight yet substantial enough to fall in soft folds, it layers easily over any insert for a clean, tailored look. ELEGANT VINTAGE MILK TEA TONE: A muted beige with a subtle sheen brings a calm, understated warmth to bedrooms, guest rooms, and dorm spaces. The solid color blends naturally with light wood, white, and cream furniture, and it stays stylish as your room decor changes. THOUGHTFUL DETAILS AND EASY CARE: A hidden zipper along the bottom keeps the insert out of sight and makes changing the cover quick, while inner corner ties hold the comforter in place. Machine wash cold on a gentle cycle and tumble dry low to keep the surface smooth and ready to use.",
-        "descriptionHtml": "<p>SILKY COOLING TOUCH: The finely woven ice-silk style surface feels distinctly cool and satin-smooth against the skin, which helps hot sleepers settle in without tossing. Its fluid drape glides over the comforter instead of clinging, so the bedding stays neat and comfortable through the night.</p><p>WHAT IS INCLUDED: Duvet Cover x 1: 180 x 220cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This set covers the duvet cover only, and pillowcases, sheets, and the comforter insert are not part of the package. Please measure your insert before ordering so the cover fits the way you expect.</p><p>BREATHABLE AND LIGHTWEIGHT: The airy weave allows warm air to escape and moves moisture away from the body, keeping the fabric feeling fresh rather than heavy or stuffy. Light in weight yet substantial enough to fall in soft folds, it layers easily over any insert for a clean, tailored look.</p><p>ELEGANT VINTAGE MILK TEA TONE: A muted beige with a subtle sheen brings a calm, understated warmth to bedrooms, guest rooms, and dorm spaces. The solid color blends naturally with light wood, white, and cream furniture, and it stays stylish as your room decor changes.</p><p>THOUGHTFUL DETAILS AND EASY CARE: A hidden zipper along the bottom keeps the insert out of sight and makes changing the cover quick, while inner corner ties hold the comforter in place. Machine wash cold on a gentle cycle and tumble dry low to keep the surface smooth and ready to use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C2/1.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C2/2.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C2/3.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C2/4.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C2/5.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C2/6.webp",
-                "altText": "Luxurious Silky Cooling Duvet Cover for Hot Sleepers, Smooth Breathable Solid Color Bedding, Lightweight Comforter Protector, Vintage Milk Tea Style, 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C2",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C3",
-        "asin": "1688-1061371343572-C3",
-        "title": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-smooth-soft-breathable-1688-1061371343572-c3",
-        "description": "COOLING ICE SILK FABRIC: The duvet cover uses ice silk fabric that feels cool against the skin and helps create a more comfortable rest. Its smooth weave is breathable and gentle for everyday use. SILKY SMOOTH TOUCH: The silky smooth surface glides softly over the skin and creates a gentle, lightweight feel. It drapes neatly over your duvet and adds a subtle sheen to your bedroom. SOLID COLOR STYLE: The solid vintage milk tea tone offers a warm and understated look that blends with many bedroom settings, guest rooms, and dorm spaces. PACKAGE INCLUDES: 1 x Duvet Cover: 200 x 150cm, 1 x Fitted Sheet: 99 x 191 cm, Pillowcase x 2. The package includes 1 duvet cover, 1 fitted sheet (99 x 191 cm), and 2 pillowcases. Other bedding items shown are not included. BREATHABLE AND LIGHTWEIGHT: The breathable fabric allows air to pass through, while the lightweight design makes it easy to layer over your bedding. It is simple to use and store when not needed.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: The duvet cover uses ice silk fabric that feels cool against the skin and helps create a more comfortable rest. Its smooth weave is breathable and gentle for everyday use.</p><p>SILKY SMOOTH TOUCH: The silky smooth surface glides softly over the skin and creates a gentle, lightweight feel. It drapes neatly over your duvet and adds a subtle sheen to your bedroom.</p><p>SOLID COLOR STYLE: The solid vintage milk tea tone offers a warm and understated look that blends with many bedroom settings, guest rooms, and dorm spaces.</p><p>PACKAGE INCLUDES: 1 x Duvet Cover: 200 x 150cm, 1 x Fitted Sheet: 99 x 191 cm, Pillowcase x 2. The package includes 1 duvet cover, 1 fitted sheet (99 x 191 cm), and 2 pillowcases. Other bedding items shown are not included.</p><p>BREATHABLE AND LIGHTWEIGHT: The breathable fabric allows air to pass through, while the lightweight design makes it easy to layer over your bedding. It is simple to use and store when not needed.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C3/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C3/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C3/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C3/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C3/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C3/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Smooth Soft Breathable Solid Color Bedding for Bedroom Guest Room Dorm Lightweight Comfortable 200 x 150 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C3",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C4",
-        "asin": "1688-1061371343572-C4",
-        "title": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-        "handle": "cooling-silk-touch-duvet-cover-breathable-silky-smooth-soft-1688-1061371343572-c4",
-        "description": "COOLING SILK TOUCH FABRIC: The duvet cover features a cooling ice silk fabric with a silky smooth surface that feels fresh and gentle against the skin. Its breathable design helps reduce stuffiness for hot sleepers and supports a comfortable night of rest. BREATHABLE AND SMOOTH: The lightweight, silky texture allows air to flow through the fabric for a comfortable sleep experience. The smooth finish drapes neatly over your bedding and feels soft without a heavy weight. PACKAGE CONTENTS: This set includes 1 Duvet Cover (230 x 200cm), 1 Fitted Sheet (152 x 203 cm), and 2 Pillowcases. Please note that the comforter insert is not included. SOLID COLOR STYLING: The solid champagne tea green tone brings a calm, elegant look to dorm rooms, guest rooms, and main bedrooms. The minimal color style pairs easily with different bedroom decor. EASY CARE DESIGN: The duvet cover is lightweight and easy to maintain with simple care. Its soft surface and solid color finish make it a practical choice for regular bedroom refresh.",
-        "descriptionHtml": "<p>COOLING SILK TOUCH FABRIC: The duvet cover features a cooling ice silk fabric with a silky smooth surface that feels fresh and gentle against the skin. Its breathable design helps reduce stuffiness for hot sleepers and supports a comfortable night of rest.</p><p>BREATHABLE AND SMOOTH: The lightweight, silky texture allows air to flow through the fabric for a comfortable sleep experience. The smooth finish drapes neatly over your bedding and feels soft without a heavy weight.</p><p>PACKAGE CONTENTS: This set includes 1 Duvet Cover (230 x 200cm), 1 Fitted Sheet (152 x 203 cm), and 2 Pillowcases. Please note that the comforter insert is not included.</p><p>SOLID COLOR STYLING: The solid champagne tea green tone brings a calm, elegant look to dorm rooms, guest rooms, and main bedrooms. The minimal color style pairs easily with different bedroom decor.</p><p>EASY CARE DESIGN: The duvet cover is lightweight and easy to maintain with simple care. Its soft surface and solid color finish make it a practical choice for regular bedroom refresh.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C4/1.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C4/2.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C4/3.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C4/4.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C4/5.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C4/6.webp",
-                "altText": "Cooling Silk Touch Duvet Cover Breathable Silky Smooth Soft Lightweight Solid Color Bedding for Hot Sleepers Dorm Room and Guest Room 230 x 200 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C5",
-        "asin": "1688-1061371343572-C5",
-        "title": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-        "handle": "cooling-ice-silk-duvet-cover-breathable-smooth-solid-color-1688-1061371343572-c5",
-        "description": "COOLING ICE SILK FABRIC: Made with cooling ice silk fabric that feels smooth and refreshing against the skin. The breathable weave helps air circulate for a comfortable sleep experience, ideal for hot sleepers and warm rooms. INCLUDED COMPONENT: The package includes Duvet Cover x 1: 220 x 180 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This listing provides the duvet cover component in the stated dimensions. SMOOTH BREATHABLE FEEL: The silky surface glides over skin and helps reduce friction, while the lightweight fabric drapes softly for a relaxed rest. SOLID CHAMPAGNE TEA GREEN STYLE: The solid champagne tea green tone brings a calm and elegant look to the bedroom. It pairs easily with different sheet colors and decor styles for a clean, modern finish. LIGHTWEIGHT EASY CARE: The duvet cover is lightweight for easy layering, folding, and storage. Simple maintenance helps keep it ready for regular use.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: Made with cooling ice silk fabric that feels smooth and refreshing against the skin. The breathable weave helps air circulate for a comfortable sleep experience, ideal for hot sleepers and warm rooms.</p><p>INCLUDED COMPONENT: The package includes Duvet Cover x 1: 220 x 180 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This listing provides the duvet cover component in the stated dimensions.</p><p>SMOOTH BREATHABLE FEEL: The silky surface glides over skin and helps reduce friction, while the lightweight fabric drapes softly for a relaxed rest.</p><p>SOLID CHAMPAGNE TEA GREEN STYLE: The solid champagne tea green tone brings a calm and elegant look to the bedroom. It pairs easily with different sheet colors and decor styles for a clean, modern finish.</p><p>LIGHTWEIGHT EASY CARE: The duvet cover is lightweight for easy layering, folding, and storage. Simple maintenance helps keep it ready for regular use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C5/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C5/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C5/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C5/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C5/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C5/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding Cover For Hot Sleepers Soft Lightweight Silky Touch Fabric 220 x 180 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C5",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C6",
-        "asin": "1688-1061371343572-C6",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c6",
-        "description": "COOLING ICE SILK FABRIC: This duvet cover is made of cooling ice silk fabric that feels silky smooth against the skin. The breathable material promotes air circulation and helps wick away moisture, keeping you comfortable on warm nights. COMPLETE SET INCLUDES: This listing includes 1 duvet cover, 1 fitted sheet (99 x 191 cm), and 2 pillowcases. Duvet Cover x 1: 200 x 150cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that other bedding items shown in the images are not included. SILKY SMOOTH & SKIN-FRIENDLY: The ice silk fabric offers a gentle, smooth touch that is kind to your skin. Its lightweight and soft texture allows for a relaxing sleep experience without feeling heavy or clingy. VERSATILE SOLID COLOR DESIGN: The solid champagne tea green color brings a clean and elegant look to your bedroom. This neutral tone easily matches various decor styles, making it suitable for dormitories, guest rooms, and master bedrooms. EASY CARE & DURABLE: The duvet cover is easy to maintain and can be machine washed on a gentle cycle. The fabric retains its softness and color after repeated use, providing long-lasting comfort.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: This duvet cover is made of cooling ice silk fabric that feels silky smooth against the skin. The breathable material promotes air circulation and helps wick away moisture, keeping you comfortable on warm nights.</p><p>COMPLETE SET INCLUDES: This listing includes 1 duvet cover, 1 fitted sheet (99 x 191 cm), and 2 pillowcases. Duvet Cover x 1: 200 x 150cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that other bedding items shown in the images are not included.</p><p>SILKY SMOOTH &amp; SKIN-FRIENDLY: The ice silk fabric offers a gentle, smooth touch that is kind to your skin. Its lightweight and soft texture allows for a relaxing sleep experience without feeling heavy or clingy.</p><p>VERSATILE SOLID COLOR DESIGN: The solid champagne tea green color brings a clean and elegant look to your bedroom. This neutral tone easily matches various decor styles, making it suitable for dormitories, guest rooms, and master bedrooms.</p><p>EASY CARE &amp; DURABLE: The duvet cover is easy to maintain and can be machine washed on a gentle cycle. The fabric retains its softness and color after repeated use, providing long-lasting comfort.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C6/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C6/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C6/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C6/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C6/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C6/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Soft Smooth Lightweight Duvet Cover for Dormitory Hotel Guest Room 200 x 150 cm (Champagne Tea Green)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C6",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C7",
-        "asin": "1688-1061371343572-C7",
-        "title": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-        "handle": "cooling-ice-silk-duvet-cover-200-x-230-cm-silky-breathable-1688-1061371343572-c7",
-        "description": "WHAT IS INCLUDED: This bedding set comes with 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases. The solid color design pairs a soft beige face with a deep dark grey reverse, so a single piece gives you two coordinated looks. Duvet inserts and decorative accessories are not included. COOLING ICE SILK FABRIC: The ice silk material feels noticeably cool and refreshing the moment it touches your skin, helping you stay comfortable through warm nights. Its smooth surface glides over the body instead of clinging, so you can settle in without constantly rearranging your bedding. SILKY SMOOTH AND BREATHABLE: A tightly woven yet airy construction delivers a fluid, silky hand feel while allowing air to circulate through the fabric. This helps reduce the stuffy heat that builds up under ordinary covers, keeping your sleeping space feeling fresh and light. REVERSIBLE TWO TONE LOOK: One side shows a warm beige tone and the other a calm dark grey, making it easy to flip the cover for a different mood or layer it with contrasting pillows. The clean solid color styling fits modern, minimalist and dorm style bedrooms alike. EASY CARE AND LONG LASTING: Machine wash cold on a gentle cycle with similar colors, then tumble dry low. The fabric resists wrinkling and keeps its smooth, fluid drape after washing, so it looks neat on the bed without extra ironing or special treatment.",
-        "descriptionHtml": "<p>WHAT IS INCLUDED: This bedding set comes with 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases. The solid color design pairs a soft beige face with a deep dark grey reverse, so a single piece gives you two coordinated looks. Duvet inserts and decorative accessories are not included.</p><p>COOLING ICE SILK FABRIC: The ice silk material feels noticeably cool and refreshing the moment it touches your skin, helping you stay comfortable through warm nights. Its smooth surface glides over the body instead of clinging, so you can settle in without constantly rearranging your bedding.</p><p>SILKY SMOOTH AND BREATHABLE: A tightly woven yet airy construction delivers a fluid, silky hand feel while allowing air to circulate through the fabric. This helps reduce the stuffy heat that builds up under ordinary covers, keeping your sleeping space feeling fresh and light.</p><p>REVERSIBLE TWO TONE LOOK: One side shows a warm beige tone and the other a calm dark grey, making it easy to flip the cover for a different mood or layer it with contrasting pillows. The clean solid color styling fits modern, minimalist and dorm style bedrooms alike.</p><p>EASY CARE AND LONG LASTING: Machine wash cold on a gentle cycle with similar colors, then tumble dry low. The fabric resists wrinkling and keeps its smooth, fluid drape after washing, so it looks neat on the bed without extra ironing or special treatment.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C7/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C7/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C7/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C7/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C7/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C7/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover 200 x 230 cm Silky Breathable Soft Solid Color Bedding Set for Hot Sleepers Dorm Room and Warm Nights Comfort (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C7",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C8",
-        "asin": "1688-1061371343572-C8",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c8",
-        "description": "COOLING ICE SILK FABRIC: Crafted from ice silk material with a naturally cool, silky hand feel that helps you stay comfortable on warm nights. The smooth surface glides over the skin, reducing that sticky feeling so you can settle in and rest without tossing and turning. SILKY SMOOTH AND BREATHABLE: The tightly woven ice silk weave feels sleek and soft against the skin while allowing air to move through the fabric. Lightweight and gentle, it drapes neatly over the bed and works well for warm seasons, air conditioned rooms, and year round use for sleepers who prefer a cooler touch. PACKAGE CONTENTS: This set includes 1 x Duvet Cover measuring 180 x 220cm, 1 x Fitted Sheet measuring 99 x 191 cm, and 2 x Pillowcases. Please note that the duvet insert is not included; check your comforter dimensions before ordering. The generous 180 x 220cm size fits standard full and queen comforters and covers the mattress evenly on both sides. TWO TONE SOLID COLOR DESIGN: Reversible beige and dark grey panels create a clean, modern look that pairs easily with wood, white, or neutral bedroom furniture. Flip the duvet cover to switch the mood of the room, mixing a warm milky camel tone on one side with a calm deep grey on the other. EASY CARE AND EVERYDAY USE: Machine washable on a gentle cycle and quick to line dry, so refreshing the bed between laundry days takes little effort. The fabric resists wrinkling and holds its smooth finish, making it a practical choice for dorm rooms, guest bedrooms, rentals, and everyday home bedding.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: Crafted from ice silk material with a naturally cool, silky hand feel that helps you stay comfortable on warm nights. The smooth surface glides over the skin, reducing that sticky feeling so you can settle in and rest without tossing and turning.</p><p>SILKY SMOOTH AND BREATHABLE: The tightly woven ice silk weave feels sleek and soft against the skin while allowing air to move through the fabric. Lightweight and gentle, it drapes neatly over the bed and works well for warm seasons, air conditioned rooms, and year round use for sleepers who prefer a cooler touch.</p><p>PACKAGE CONTENTS: This set includes 1 x Duvet Cover measuring 180 x 220cm, 1 x Fitted Sheet measuring 99 x 191 cm, and 2 x Pillowcases. Please note that the duvet insert is not included; check your comforter dimensions before ordering. The generous 180 x 220cm size fits standard full and queen comforters and covers the mattress evenly on both sides.</p><p>TWO TONE SOLID COLOR DESIGN: Reversible beige and dark grey panels create a clean, modern look that pairs easily with wood, white, or neutral bedroom furniture. Flip the duvet cover to switch the mood of the room, mixing a warm milky camel tone on one side with a calm deep grey on the other.</p><p>EASY CARE AND EVERYDAY USE: Machine washable on a gentle cycle and quick to line dry, so refreshing the bed between laundry days takes little effort. The fabric resists wrinkling and holds its smooth finish, making it a practical choice for dorm rooms, guest bedrooms, rentals, and everyday home bedding.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C8/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C8/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C8/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C8/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C8/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C8/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Set for Dorm Bedroom Soft Smooth Lightweight Summer Comfort Machine Washable 180 x 220 cm (Beige Dark Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C8",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C9",
-        "asin": "1688-1061371343572-C9",
-        "title": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-        "handle": "cooling-silky-duvet-cover-breathable-smooth-bedding-cover-1688-1061371343572-c9",
-        "description": "COOLING SILKY FEEL: The duvet cover uses a silky cooling fabric that feels smooth and refreshing against the skin. Its lightweight drape helps reduce the heavy, clingy feel of ordinary covers for a more comfortable rest. BREATHABLE COMFORT: The breathable weave promotes airflow and helps manage moisture, so the cover feels airy and comfortable. The soft surface glides over bedding and works well for layering with your favorite comforter insert. PACKAGE CONTENTS: This package includes Duvet Cover x 1: 200 x 150 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that a comforter insert and pillows are not included. TWO TONE SOLID STYLE: The camel and dark grey color combination offers a clean, modern look that pairs easily with different bedroom themes. The solid tones create a calm, uncluttered feel and can be styled with pillows, throws, or other bedding you already own. VERSATILE BEDROOM USE: The simple solid design works for a primary bedroom, guest room, or dorm room. The smooth fabric and neutral color palette make it easy to refresh your bed layout without changing the whole room.",
-        "descriptionHtml": "<p>COOLING SILKY FEEL: The duvet cover uses a silky cooling fabric that feels smooth and refreshing against the skin. Its lightweight drape helps reduce the heavy, clingy feel of ordinary covers for a more comfortable rest.</p><p>BREATHABLE COMFORT: The breathable weave promotes airflow and helps manage moisture, so the cover feels airy and comfortable. The soft surface glides over bedding and works well for layering with your favorite comforter insert.</p><p>PACKAGE CONTENTS: This package includes Duvet Cover x 1: 200 x 150 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that a comforter insert and pillows are not included.</p><p>TWO TONE SOLID STYLE: The camel and dark grey color combination offers a clean, modern look that pairs easily with different bedroom themes. The solid tones create a calm, uncluttered feel and can be styled with pillows, throws, or other bedding you already own.</p><p>VERSATILE BEDROOM USE: The simple solid design works for a primary bedroom, guest room, or dorm room. The smooth fabric and neutral color palette make it easy to refresh your bed layout without changing the whole room.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C9/1.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C9/2.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C9/3.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C9/4.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C9/5.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C9/6.webp",
-                "altText": "Cooling Silky Duvet Cover Breathable Smooth Bedding Cover Soft Skin Friendly Cozy Lightweight Comforter Protector For Bedroom Guest Room 200 x 150 cm (Camel Dark Grey)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C9",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C10",
-        "asin": "1688-1061371343572-C10",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c10",
-        "description": "COOLING ICE SILK FABRIC: This duvet cover is crafted from cooling ice silk fabric that delivers a silky smooth and breathable feel, helping you stay comfortable during warm nights. SILKY SMOOTH TEXTURE: The ice silk material offers a gentle, skin-friendly touch that reduces friction and feels soft against your skin for a restful sleep experience. PACKAGE INCLUDES: 1 Duvet Cover: 230 x 200cm, 1 Fitted Sheet: 152 x 203 cm, 2 Pillowcases. SOLID COLOR DESIGN: The solid color design complements various bedroom styles, making it easy to mix and match with your existing bedding and decor for a clean, modern look. LIGHTWEIGHT & EASY CARE: This duvet cover is lightweight and easy to fold and store, and it can be machine washed on a gentle cycle for convenient care and long-lasting use.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: This duvet cover is crafted from cooling ice silk fabric that delivers a silky smooth and breathable feel, helping you stay comfortable during warm nights.</p><p>SILKY SMOOTH TEXTURE: The ice silk material offers a gentle, skin-friendly touch that reduces friction and feels soft against your skin for a restful sleep experience.</p><p>PACKAGE INCLUDES: 1 Duvet Cover: 230 x 200cm, 1 Fitted Sheet: 152 x 203 cm, 2 Pillowcases. </p><p>SOLID COLOR DESIGN: The solid color design complements various bedroom styles, making it easy to mix and match with your existing bedding and decor for a clean, modern look.</p><p>LIGHTWEIGHT &amp; EASY CARE: This duvet cover is lightweight and easy to fold and store, and it can be machine washed on a gentle cycle for convenient care and long-lasting use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C10/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C10/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C10/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C10/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C10/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C10/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Protector Soft Smooth Comforter Cover For Bedroom Guest Room Lightweight 230 x 200 cm (Milk Tea)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C10",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C11",
-        "asin": "1688-1061371343572-C11",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c11",
-        "description": "COOLING ICE SILK FABRIC: The duvet cover is made of cooling ice silk fabric that provides a refreshing and silky feel, helping you stay comfortable during warm nights. COMPONENT BREAKDOWN: This listing includes 1 x Duvet Cover measuring 220 x 180cm, 1 x Fitted Sheet measuring 99 x 191 cm, and 2 x Pillowcases, so you receive a complete coordinated set. SOLID COLOR WITH CONTRAST TRIM: The solid color design features a subtle contrast trim, adding a modern and elegant look to your bedroom or guest room. SOFT BREATHABLE AND LIGHTWEIGHT: The soft, breathable, and lightweight material drapes smoothly and feels gentle against the skin for a restful sleep experience. VERSATILE BEDROOM ESSENTIAL: The duvet cover is a versatile bedding essential that pairs easily with different sheet sets and pillowcases for a coordinated bedroom style.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: The duvet cover is made of cooling ice silk fabric that provides a refreshing and silky feel, helping you stay comfortable during warm nights.</p><p>COMPONENT BREAKDOWN: This listing includes 1 x Duvet Cover measuring 220 x 180cm, 1 x Fitted Sheet measuring 99 x 191 cm, and 2 x Pillowcases, so you receive a complete coordinated set.</p><p>SOLID COLOR WITH CONTRAST TRIM: The solid color design features a subtle contrast trim, adding a modern and elegant look to your bedroom or guest room.</p><p>SOFT BREATHABLE AND LIGHTWEIGHT: The soft, breathable, and lightweight material drapes smoothly and feels gentle against the skin for a restful sleep experience.</p><p>VERSATILE BEDROOM ESSENTIAL: The duvet cover is a versatile bedding essential that pairs easily with different sheet sets and pillowcases for a coordinated bedroom style.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C11/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C11/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C11/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C11/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C11/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C11/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Duvet Cover Soft Smooth Lightweight Comforter Cover for Bedroom Guest Room 180 x 220 cm (Beige)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C11",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C12",
-        "asin": "1688-1061371343572-C12",
-        "title": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-        "handle": "luxury-soft-cooling-ice-silk-duvet-cover-silky-breathable-1688-1061371343572-c12",
-        "description": "WHAT YOU RECEIVE: This set includes 1 x Duvet Cover measuring 200 x 230cm, 1 x Fitted Sheet measuring 152 x 203 cm, and 2 x Pillowcases. The cover is designed to fit your comforter and bring a clean, modern look to your bedroom. Please check your comforter size before ordering. COOLING ICE SILK FABRIC: Made with cooling ice silk fabric, this duvet cover feels cool to the touch and helps create a comfortable sleep environment for hot sleepers. The smooth surface feels gentle against the skin. SILKY SMOOTH AND BREATHABLE: The silky breathable texture allows air to circulate and helps reduce moisture buildup, keeping you comfortable through the night. Its soft drape adds a subtle sheen that elevates your bedding. SOLID COLOR EASY MATCHING: The solid color design offers a versatile, minimalist look that pairs easily with different bedroom styles. The understated tone brings a calm, cozy atmosphere to your space. LIGHTWEIGHT COMFORTER PROTECTOR: This lightweight duvet cover protects your comforter from daily dust and wear while remaining easy to handle. It is simple to remove and put back on, making bedding refresh quick and convenient.",
-        "descriptionHtml": "<p>WHAT YOU RECEIVE: This set includes 1 x Duvet Cover measuring 200 x 230cm, 1 x Fitted Sheet measuring 152 x 203 cm, and 2 x Pillowcases. The cover is designed to fit your comforter and bring a clean, modern look to your bedroom. Please check your comforter size before ordering.</p><p>COOLING ICE SILK FABRIC: Made with cooling ice silk fabric, this duvet cover feels cool to the touch and helps create a comfortable sleep environment for hot sleepers. The smooth surface feels gentle against the skin.</p><p>SILKY SMOOTH AND BREATHABLE: The silky breathable texture allows air to circulate and helps reduce moisture buildup, keeping you comfortable through the night. Its soft drape adds a subtle sheen that elevates your bedding.</p><p>SOLID COLOR EASY MATCHING: The solid color design offers a versatile, minimalist look that pairs easily with different bedroom styles. The understated tone brings a calm, cozy atmosphere to your space.</p><p>LIGHTWEIGHT COMFORTER PROTECTOR: This lightweight duvet cover protects your comforter from daily dust and wear while remaining easy to handle. It is simple to remove and put back on, making bedding refresh quick and convenient.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C12/1.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C12/2.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C12/3.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C12/4.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C12/5.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C12/6.webp",
-                "altText": "Luxury Soft Cooling Ice Silk Duvet Cover, Silky Breathable Solid Color Bedding Cover, Smooth Lightweight Comforter Protector for Bedroom Guest Room, 200 x 230 cm (Cream)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C12",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C13",
-        "asin": "1688-1061371343572-C13",
-        "title": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-        "handle": "cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c13",
-        "description": "COOLING ICE SILK FABRIC: Crafted from cooling ice silk fabric, this duvet cover offers a refreshing, silky-smooth feel that helps reduce sticky heat and keeps you comfortable through the night. The breathable weave promotes airflow for a cool, cozy sleep experience. SILKY SMOOTH AND SKIN-FRIENDLY: The soft, delicate texture glides over the skin and feels gentle on sensitive sleepers. Its smooth surface minimizes friction against hair and skin, making bedtime more relaxing and comfortable. PACKAGE INCLUDES: 1 x Duvet Cover (180 x 220cm), 1 x Fitted Sheet (99 x 191 cm), Pillowcase x 2. Please note that the duvet insert is not included. SOLID COLOR MODERN STYLE: The solid cream tone brings a clean, minimalist look to dormitory rooms, bedrooms, and guest rooms. It pairs easily with a variety of bedding and decor styles, adding a calm and elegant touch to your space. LIGHTWEIGHT AND EASY TO STYLE: This lightweight duvet cover is easy to layer with blankets or use on its own for a smooth, streamlined bed. It is simple to fold, store, and refresh, making it a practical choice for everyday bedroom use.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: Crafted from cooling ice silk fabric, this duvet cover offers a refreshing, silky-smooth feel that helps reduce sticky heat and keeps you comfortable through the night. The breathable weave promotes airflow for a cool, cozy sleep experience.</p><p>SILKY SMOOTH AND SKIN-FRIENDLY: The soft, delicate texture glides over the skin and feels gentle on sensitive sleepers. Its smooth surface minimizes friction against hair and skin, making bedtime more relaxing and comfortable.</p><p>PACKAGE INCLUDES: 1 x Duvet Cover (180 x 220cm), 1 x Fitted Sheet (99 x 191 cm), Pillowcase x 2. Please note that the duvet insert is not included.</p><p>SOLID COLOR MODERN STYLE: The solid cream tone brings a clean, minimalist look to dormitory rooms, bedrooms, and guest rooms. It pairs easily with a variety of bedding and decor styles, adding a calm and elegant touch to your space.</p><p>LIGHTWEIGHT AND EASY TO STYLE: This lightweight duvet cover is easy to layer with blankets or use on its own for a smooth, streamlined bed. It is simple to fold, store, and refresh, making it a practical choice for everyday bedroom use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C13/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C13/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C13/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C13/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C13/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C13/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Cooling Bedding For Dormitory Room Soft Lightweight Cozy Comforter Cover With Cooling Touch 180 x 220 cm (Cream)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C13",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C14",
-        "asin": "1688-1061371343572-C14",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c14",
-        "description": "COOLING ICE SILK FABRIC: This duvet cover is crafted from cooling ice silk fabric that feels smooth and refreshing against the skin. The breathable weave helps air circulate, creating a comfortable sleep environment without a heavy or clingy feel. SILKY SMOOTH AND BREATHABLE: The silky surface glides over the skin and helps reduce friction for a restful night. Its lightweight, breathable construction makes it a comfortable choice for bedrooms, guest rooms, and dorm rooms. COMPLETE SET INCLUDES: Duvet Cover x 1: 200 x 150 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. The duvet insert is not included; other bedding accessories shown are not included. The size is designed to fit a range of comforter inserts. LIGHTWEIGHT AND EASY TO STYLE: The soft, lightweight duvet cover drapes smoothly and is easy to layer with your existing bedding. Its solid color design adds a clean, modern look that complements many bedroom styles. EASY CARE AND VERSATILE USE: Machine wash cold on a gentle cycle and tumble dry low for simple maintenance. The duvet cover is suitable for bedrooms, guest rooms, dorms, and hotel-style bedding setups.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: This duvet cover is crafted from cooling ice silk fabric that feels smooth and refreshing against the skin. The breathable weave helps air circulate, creating a comfortable sleep environment without a heavy or clingy feel.</p><p>SILKY SMOOTH AND BREATHABLE: The silky surface glides over the skin and helps reduce friction for a restful night. Its lightweight, breathable construction makes it a comfortable choice for bedrooms, guest rooms, and dorm rooms.</p><p>COMPLETE SET INCLUDES: Duvet Cover x 1: 200 x 150 cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. The duvet insert is not included; other bedding accessories shown are not included. The size is designed to fit a range of comforter inserts.</p><p>LIGHTWEIGHT AND EASY TO STYLE: The soft, lightweight duvet cover drapes smoothly and is easy to layer with your existing bedding. Its solid color design adds a clean, modern look that complements many bedroom styles.</p><p>EASY CARE AND VERSATILE USE: Machine wash cold on a gentle cycle and tumble dry low for simple maintenance. The duvet cover is suitable for bedrooms, guest rooms, dorms, and hotel-style bedding setups.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C14/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C14/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C14/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C14/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C14/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C14/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover Smooth Lightweight Soft Machine Washable Comforter Cover for Bedroom Dorm Hotel 200 x 150 cm (Beige)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C14",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C15",
-        "asin": "1688-1061371343572-C15",
-        "title": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-        "handle": "1-piece-cooling-ice-silk-duvet-cover-silky-breathable-solid-1688-1061371343572-c15",
-        "description": "Cooling Ice Silk Fabric: Made with ice silk material, this duvet cover offers a smooth, silky surface that feels cool and refreshing against the skin while remaining breathable for restful sleep. Silky Breathable Comfort: The lightweight ice silk weave drapes softly over your comforter and allows air to flow, helping reduce stuffiness and sticky heat for a more comfortable night. Solid Color Home Decor: The peach pink and white solid color design brings a clean, elegant look to bedrooms, dorms, and guest rooms, and coordinates easily with a wide range of sheet and pillow colors. Duvet Cover Included: This listing includes 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases. Duvet cover only. Comforter insert is not included. Versatile Bedding Layer: Designed as a single duvet cover, it works well for bedroom, dorm, or guest room setups and can be layered with a comforter, quilt, or blanket to suit your sleep preference.",
-        "descriptionHtml": "<p>Cooling Ice Silk Fabric: Made with ice silk material, this duvet cover offers a smooth, silky surface that feels cool and refreshing against the skin while remaining breathable for restful sleep.</p><p>Silky Breathable Comfort: The lightweight ice silk weave drapes softly over your comforter and allows air to flow, helping reduce stuffiness and sticky heat for a more comfortable night.</p><p>Solid Color Home Decor: The peach pink and white solid color design brings a clean, elegant look to bedrooms, dorms, and guest rooms, and coordinates easily with a wide range of sheet and pillow colors.</p><p>Duvet Cover Included: This listing includes 1 duvet cover measuring 230 x 200cm, 1 fitted sheet measuring 152 x 203 cm, and 2 pillowcases. Duvet cover only. Comforter insert is not included.</p><p>Versatile Bedding Layer: Designed as a single duvet cover, it works well for bedroom, dorm, or guest room setups and can be layered with a comforter, quilt, or blanket to suit your sleep preference.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C15/1.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C15/2.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C15/3.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C15/4.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C15/5.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C15/6.webp",
-                "altText": "1 Piece Cooling Ice Silk Duvet Cover Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Guest Room Soft Smooth Lightweight 230 x 200 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C15",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C16",
-        "asin": "1688-1061371343572-C16",
-        "title": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-        "handle": "luxury-ice-silk-duvet-cover-cooling-silky-breathable-solid-1688-1061371343572-c16",
-        "description": "Cooling Ice Silk Fabric: Crafted from cooling ice silk fabric, this duvet cover helps create a refreshing sleep environment for hot sleepers. The smooth surface feels cool to the touch and brings a gentle, breathable feel to your bed. Silky Smooth and Breathable: The silky breathable weave allows air to flow through, while the soft finish glides over the skin. It drapes neatly over your comforter and adds a smooth, comfortable touch. Component and Dimensions: Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This listing includes the duvet cover, fitted sheet (99 x 191 cm), and two pillowcases, with sizes listed above for easy reference before purchase. Solid Color Elegant Look: The peach pink and white palette offers a soft, clean look that fits dorm rooms, guest rooms, and modern bedrooms. The solid color design pairs easily with different bedding for a calm, coordinated bed. Lightweight and Easy to Store: The lightweight design folds compactly for simple storage and quick bedding changes. It is a practical choice for everyday use and makes a thoughtful addition to your sleep space.",
-        "descriptionHtml": "<p>Cooling Ice Silk Fabric: Crafted from cooling ice silk fabric, this duvet cover helps create a refreshing sleep environment for hot sleepers. The smooth surface feels cool to the touch and brings a gentle, breathable feel to your bed.</p><p>Silky Smooth and Breathable: The silky breathable weave allows air to flow through, while the soft finish glides over the skin. It drapes neatly over your comforter and adds a smooth, comfortable touch.</p><p>Component and Dimensions: Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. This listing includes the duvet cover, fitted sheet (99 x 191 cm), and two pillowcases, with sizes listed above for easy reference before purchase.</p><p>Solid Color Elegant Look: The peach pink and white palette offers a soft, clean look that fits dorm rooms, guest rooms, and modern bedrooms. The solid color design pairs easily with different bedding for a calm, coordinated bed.</p><p>Lightweight and Easy to Store: The lightweight design folds compactly for simple storage and quick bedding changes. It is a practical choice for everyday use and makes a thoughtful addition to your sleep space.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C16/1.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C16/2.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C16/3.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C16/4.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C16/5.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C16/6.webp",
-                "altText": "Luxury Ice Silk Duvet Cover Cooling Silky Breathable Solid Color Bedding for Hot Sleepers Dorm Room Lightweight Soft Smooth Comforter Protector 220 x 180 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C16",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C17",
-        "asin": "1688-1061371343572-C17",
-        "title": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-        "handle": "cooling-ice-silk-duvet-cover-smooth-breathable-silky-solid-1688-1061371343572-c17",
-        "description": "COOLING ICE SILK TOUCH: The fabric surface feels noticeably cool and silky the moment it meets your skin, helping you stay comfortable through warm, stuffy nights and wake up feeling refreshed instead of overheated. SMOOTH AND BREATHABLE: A lightweight weave lets air move freely through the cover, while the fine silky texture glides gently over the body for a soft, skin friendly feel that stays pleasant all night long. REFRESHING PEACH PINK AND WHITE: The soft peach pink tone balanced with clean white creates a calm, elegant look that brightens the bedroom and blends easily with light wood, white, or pastel decor styles. PACKAGE CONTENTS: This listing includes 1 duvet cover measuring 200 x 150cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases. The size is clearly noted so you can compare it with your quilt before making the bed, and the smooth finish slips on easily. EASY CARE AND LASTING SOFTNESS: Machine washable on a gentle cycle for simple everyday upkeep, and the fabric keeps its silky hand feel and fresh color when washed and dried with regular care.",
-        "descriptionHtml": "<p>COOLING ICE SILK TOUCH: The fabric surface feels noticeably cool and silky the moment it meets your skin, helping you stay comfortable through warm, stuffy nights and wake up feeling refreshed instead of overheated.</p><p>SMOOTH AND BREATHABLE: A lightweight weave lets air move freely through the cover, while the fine silky texture glides gently over the body for a soft, skin friendly feel that stays pleasant all night long.</p><p>REFRESHING PEACH PINK AND WHITE: The soft peach pink tone balanced with clean white creates a calm, elegant look that brightens the bedroom and blends easily with light wood, white, or pastel decor styles.</p><p>PACKAGE CONTENTS: This listing includes 1 duvet cover measuring 200 x 150cm, 1 fitted sheet measuring 99 x 191 cm, and 2 pillowcases. The size is clearly noted so you can compare it with your quilt before making the bed, and the smooth finish slips on easily.</p><p>EASY CARE AND LASTING SOFTNESS: Machine washable on a gentle cycle for simple everyday upkeep, and the fabric keeps its silky hand feel and fresh color when washed and dried with regular care.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C17/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C17/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C17/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C17/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C17/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C17/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Smooth Breathable Silky Solid Color Soft Skin Friendly Lightweight Comfy Washable Quilt Cover for Bedroom 200 x 150 cm (Peach Pink White)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C17",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C18",
-        "asin": "1688-1061371343572-C18",
-        "title": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-        "handle": "premium-cooling-ice-silk-duvet-cover-soft-silky-breathable-1688-1061371343572-c18",
-        "description": "WHAT YOU RECEIVE: This listing includes 1 duvet cover, 1 fitted sheet (152 x 203 cm), and 2 pillowcases. Component details: Duvet Cover x 1: 230 x 200cm, Fitted Sheet x 1: 152 x 203 cm, Pillowcase x 2. Please check your bed size before ordering. COOLING ICE SILK FABRIC: The duvet cover is made of cooling ice silk fabric that feels cool to the touch, smooth, and breathable. Its lightweight structure helps support airflow for a more comfortable sleep environment. SILKY SMOOTH TOUCH: The silky surface glides gently over the skin and feels soft against the body. Breathable fibers help reduce stuffiness, making it a comfortable choice for nightly rest. SOLID COLOR STYLE: The solid light blue design offers a clean, calm look that complements bedrooms, guest rooms, and dorm spaces. It pairs easily with different pillowcases, blankets, and decor styles. EASY CARE: Machine washable for convenient upkeep. Wash with similar colors on a gentle cycle, then tumble dry low or line dry to help maintain the smooth finish.",
-        "descriptionHtml": "<p>WHAT YOU RECEIVE: This listing includes 1 duvet cover, 1 fitted sheet (152 x 203 cm), and 2 pillowcases. Component details: Duvet Cover x 1: 230 x 200cm, Fitted Sheet x 1: 152 x 203 cm, Pillowcase x 2. Please check your bed size before ordering.</p><p>COOLING ICE SILK FABRIC: The duvet cover is made of cooling ice silk fabric that feels cool to the touch, smooth, and breathable. Its lightweight structure helps support airflow for a more comfortable sleep environment.</p><p>SILKY SMOOTH TOUCH: The silky surface glides gently over the skin and feels soft against the body. Breathable fibers help reduce stuffiness, making it a comfortable choice for nightly rest.</p><p>SOLID COLOR STYLE: The solid light blue design offers a clean, calm look that complements bedrooms, guest rooms, and dorm spaces. It pairs easily with different pillowcases, blankets, and decor styles.</p><p>EASY CARE: Machine washable for convenient upkeep. Wash with similar colors on a gentle cycle, then tumble dry low or line dry to help maintain the smooth finish.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C18/1.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C18/2.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C18/3.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C18/4.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C18/5.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C18/6.webp",
-                "altText": "Premium Cooling Ice Silk Duvet Cover Soft Silky Breathable Solid Color Bedding Cover For Bedroom Dorm Home Use Skin Friendly Machine Washable 230 x 200 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C18",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C19",
-        "asin": "1688-1061371343572-C19",
-        "title": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-        "handle": "cooling-ice-silk-duvet-cover-silky-breathable-quilt-cover-1688-1061371343572-c19",
-        "description": "COOLING ICE SILK FABRIC: This duvet cover is crafted from ice silk fabric that delivers a refreshing cooling touch, helping you stay comfortable and relaxed when you sleep hot. SILKY SMOOTH & BREATHABLE: The silky surface glides softly over your skin while the breathable construction promotes airflow, creating a smooth and airy sleep experience. SOLID COLOR & MODERN LOOK: The solid light blue tone adds a clean, elegant accent to your bedroom, and it pairs easily with different sheets, pillows, and room decor. PACKAGE CONTENTS & DIMENSIONS: Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that the duvet insert is not included; other items shown in the image are not included. EASY CARE & VERSATILE USE: This duvet cover is simple to maintain and works well in dorm rooms, guest rooms, and master bedrooms, offering a soft and comfortable layer for everyday use.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: This duvet cover is crafted from ice silk fabric that delivers a refreshing cooling touch, helping you stay comfortable and relaxed when you sleep hot.</p><p>SILKY SMOOTH &amp; BREATHABLE: The silky surface glides softly over your skin while the breathable construction promotes airflow, creating a smooth and airy sleep experience.</p><p>SOLID COLOR &amp; MODERN LOOK: The solid light blue tone adds a clean, elegant accent to your bedroom, and it pairs easily with different sheets, pillows, and room decor.</p><p>PACKAGE CONTENTS &amp; DIMENSIONS: Duvet Cover x 1: 220 x 180cm, Fitted Sheet x 1: 99 x 191 cm, Pillowcase x 2. Please note that the duvet insert is not included; other items shown in the image are not included.</p><p>EASY CARE &amp; VERSATILE USE: This duvet cover is simple to maintain and works well in dorm rooms, guest rooms, and master bedrooms, offering a soft and comfortable layer for everyday use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C19/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C19/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C19/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C19/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C19/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C19/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Silky Breathable Quilt Cover Solid Color Bedding for Hot Sleepers Soft Smooth Skin-Friendly Comforter Cover 220 x 180 cm (Light Blue)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C19",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C20",
-        "asin": "1688-1061371343572-C20",
-        "title": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-        "handle": "cooling-ice-silk-duvet-cover-breathable-silky-smooth-1688-1061371343572-c20",
-        "description": "Duvet Cover Only: This listing includes 1 duvet cover (230 x 200cm), 1 fitted sheet (152 x 203 cm), and 2 pillowcases. Cooling Ice Silk Fabric: Crafted from ice silk, this duvet cover offers a refreshing cool-to-the-touch feel that helps you stay comfortable. Silky Smooth and Breathable: The smooth, silky surface glides over your skin, while the breathable weave promotes airflow to reduce overheating. Lightweight and Comfortable: Designed to be lightweight and gentle, this duvet cover is ideal for hot sleepers who want a cozy yet airy layer. Elegant Solid Color Design: The solid peach purple hue adds a subtle, modern look to your bedroom and mixes easily with other bedding and decor.",
-        "descriptionHtml": "<p>Duvet Cover Only: This listing includes 1 duvet cover (230 x 200cm), 1 fitted sheet (152 x 203 cm), and 2 pillowcases.</p><p>Cooling Ice Silk Fabric: Crafted from ice silk, this duvet cover offers a refreshing cool-to-the-touch feel that helps you stay comfortable.</p><p>Silky Smooth and Breathable: The smooth, silky surface glides over your skin, while the breathable weave promotes airflow to reduce overheating.</p><p>Lightweight and Comfortable: Designed to be lightweight and gentle, this duvet cover is ideal for hot sleepers who want a cozy yet airy layer.</p><p>Elegant Solid Color Design: The solid peach purple hue adds a subtle, modern look to your bedroom and mixes easily with other bedding and decor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C20/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C20/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C20/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C20/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C20/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C20/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Lightweight Solid Color Bed Cover For Hot Sleepers Comfortable And Cozy 230 x 200 cm (Peach Purple)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C20",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C21",
-        "asin": "1688-1061371343572-C21",
-        "title": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-        "handle": "cooling-ice-silk-duvet-cover-solid-color-silky-breathable-1688-1061371343572-c21",
-        "description": "PACKAGE INCLUDES: 1 Duvet Cover: 220 x 180cm, 1 Fitted Sheet: 99 x 191 cm, 2 Pillowcases. The duvet insert is not included; other items shown in the image are not included. COOLING ICE SILK FABRIC: The cooling ice silk fabric offers a refreshing touch, helping to reduce the feeling of heat and stickiness during warm nights. Silky and smooth, it glides over the skin for a comfortable sleep. BREATHABLE AND SILKY SMOOTH: Breathable construction allows air to flow, while the silky surface feels soft and gentle. Lightweight and smooth, it is suitable for hot sleepers and warm climates. SOLID COLOR DESIGN: The solid color design in White Peach Taro Purple creates a clean, modern aesthetic. This versatile style pairs easily with various bedroom decors and bedding sets. LIGHTWEIGHT AND EASY TO USE: Lightweight and foldable, this duvet cover is simple to store and handle. Suitable for dormitories, bedrooms, guest rooms, and travel, it is a practical bedding choice.",
-        "descriptionHtml": "<p>PACKAGE INCLUDES: 1 Duvet Cover: 220 x 180cm, 1 Fitted Sheet: 99 x 191 cm, 2 Pillowcases. The duvet insert is not included; other items shown in the image are not included.</p><p>COOLING ICE SILK FABRIC: The cooling ice silk fabric offers a refreshing touch, helping to reduce the feeling of heat and stickiness during warm nights. Silky and smooth, it glides over the skin for a comfortable sleep.</p><p>BREATHABLE AND SILKY SMOOTH: Breathable construction allows air to flow, while the silky surface feels soft and gentle. Lightweight and smooth, it is suitable for hot sleepers and warm climates.</p><p>SOLID COLOR DESIGN: The solid color design in White Peach Taro Purple creates a clean, modern aesthetic. This versatile style pairs easily with various bedroom decors and bedding sets.</p><p>LIGHTWEIGHT AND EASY TO USE: Lightweight and foldable, this duvet cover is simple to store and handle. Suitable for dormitories, bedrooms, guest rooms, and travel, it is a practical bedding choice.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C21/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C21/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C21/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C21/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C21/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C21/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Solid Color Silky Breathable Bedding For Dormitory Bedroom Hot Sleepers Soft Smooth Skin Friendly Comfortable 220 x 180 cm (White Peach Taro Purple)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C21",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572-C22",
-        "asin": "1688-1061371343572-C22",
-        "title": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-        "handle": "cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c22",
-        "description": "COOLING ICE SILK FABRIC: Made with cooling ice silk fabric, this duvet cover offers a refreshing, silky touch that helps reduce the feeling of stuffiness for hot sleepers. The smooth surface glides against the skin and creates a comfortable sleep environment without heavy weight. SILKY SMOOTH AND BREATHABLE: The breathable weave allows air to circulate, while the silky smooth texture feels gentle and soft against the skin. It is designed to provide a light, airy feel that helps you stay comfortable through the night. SIMPLE SOLID COLOR DESIGN: The solid color finish in soft white peach purple tones brings a clean, modern look to bedrooms, dorms, guest rooms, and more. Its understated style pairs easily with different sheet sets and room decor. COMPONENT DETAILS: This item includes Duvet Cover x 1: 200 x 150cm, Fitted Sheet x 1: 99 x 191 cm, and Pillowcase x 2. The single-piece design makes it simple to coordinate with your existing bedding and easy to use on its own. LIGHTWEIGHT AND EASY CARE: The lightweight construction makes this duvet cover easy to fold and store when not in use. For care, simply follow the care label and wash as needed to keep it clean and ready for use.",
-        "descriptionHtml": "<p>COOLING ICE SILK FABRIC: Made with cooling ice silk fabric, this duvet cover offers a refreshing, silky touch that helps reduce the feeling of stuffiness for hot sleepers. The smooth surface glides against the skin and creates a comfortable sleep environment without heavy weight.</p><p>SILKY SMOOTH AND BREATHABLE: The breathable weave allows air to circulate, while the silky smooth texture feels gentle and soft against the skin. It is designed to provide a light, airy feel that helps you stay comfortable through the night.</p><p>SIMPLE SOLID COLOR DESIGN: The solid color finish in soft white peach purple tones brings a clean, modern look to bedrooms, dorms, guest rooms, and more. Its understated style pairs easily with different sheet sets and room decor.</p><p>COMPONENT DETAILS: This item includes Duvet Cover x 1: 200 x 150cm, Fitted Sheet x 1: 99 x 191 cm, and Pillowcase x 2. The single-piece design makes it simple to coordinate with your existing bedding and easy to use on its own.</p><p>LIGHTWEIGHT AND EASY CARE: The lightweight construction makes this duvet cover easy to fold and store when not in use. For care, simply follow the care label and wash as needed to keep it clean and ready for use.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572-C22/1.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C22/2.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C22/3.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C22/4.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C22/5.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572-C22/6.webp",
-                "altText": "Cooling Ice Silk Duvet Cover Breathable Silky Smooth Solid Color Bedding for Hot Sleepers Soft Gentle Lightweight Cozy Duvet Cover 150 x 200 cm (White Peach Purple)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572-C22",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1048207560416-C2",
-        "asin": "1688-1048207560416-C2",
-        "title": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-        "handle": "cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2",
-        "description": "Cooling Ice Silk Comfort: The quilt cover is made with washed ice silk fabric that feels smooth and cool to the touch. Its lightweight, breathable construction helps reduce stuffiness and supports a comfortable sleep environment. The soft surface is gentle on skin and suitable for relaxing rest. Dual-Tone Reversible Style: The dual-tone design pairs a soft green side with a creamy side, so you can switch the look to match your bedroom decor. The elegant color combination adds a calm, modern touch to your bedding and works well with many interior styles. What You Get: The component included is Quilt Cover x 1: 200 x 150cm, Fitted Sheet x 1: 152 x 203 cm, Pillowcase x 2. Please check the size before use to ensure it fits your bed setup. This single component makes it easy to coordinate with your existing pillows and sheets. Soft Washed Texture: The washed finish gives the fabric a soft, flexible hand feel that drapes neatly over the bed. The smooth surface minimizes friction and feels comfortable against skin. It is a thoughtful choice for those who prefer lightweight bedding with a silky touch. Easy Care and Everyday Use: The quilt cover can be washed as needed and is simple to maintain for regular use. Its lightweight design makes it easy to fold, store, and refresh. Use it as a standalone cover or coordinate it with other bedding pieces for a clean, layered look.",
-        "descriptionHtml": "<p>Cooling Ice Silk Comfort: The quilt cover is made with washed ice silk fabric that feels smooth and cool to the touch. Its lightweight, breathable construction helps reduce stuffiness and supports a comfortable sleep environment. The soft surface is gentle on skin and suitable for relaxing rest.</p><p>Dual-Tone Reversible Style: The dual-tone design pairs a soft green side with a creamy side, so you can switch the look to match your bedroom decor. The elegant color combination adds a calm, modern touch to your bedding and works well with many interior styles.</p><p>What You Get: The component included is Quilt Cover x 1: 200 x 150cm, Fitted Sheet x 1: 152 x 203 cm, Pillowcase x 2. Please check the size before use to ensure it fits your bed setup. This single component makes it easy to coordinate with your existing pillows and sheets.</p><p>Soft Washed Texture: The washed finish gives the fabric a soft, flexible hand feel that drapes neatly over the bed. The smooth surface minimizes friction and feels comfortable against skin. It is a thoughtful choice for those who prefer lightweight bedding with a silky touch.</p><p>Easy Care and Everyday Use: The quilt cover can be washed as needed and is simple to maintain for regular use. Its lightweight design makes it easy to fold, store, and refresh. Use it as a standalone cover or coordinate it with other bedding pieces for a clean, layered look.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1048207560416-C2/1.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416-C2/2.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416-C2/3.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416-C2/4.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416-C2/5.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1048207560416-C2/6.webp",
-                "altText": "Cooling Washed Ice Silk Dual-Tone Quilt Cover Soft Breathable Skin-Friendly Lightweight Smooth Bedding For Comfortable Sleep And Cozy Bedroom Decor 150 x 200 cm (Cream Green)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1048207560416-C2",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-1061371343572",
-        "asin": "1688-1061371343572",
-        "title": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-        "handle": "luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572",
-        "description": "SILKY ICE SILK COOLING FABRIC: Made from smooth ice silk material, this duvet cover has a cool-to-the-touch surface and a sleek, silky hand feel. The fabric is lightweight and breathable, helping create a comfortable sleep setting for warm rooms and restful nights. SMOOTH BREATHABLE COMFORT: The breathable weave allows air to move through the fabric, while the soft drape adds a gentle, cozy layer over your duvet. It feels smooth against the skin and is suitable for those who prefer lightweight bedding. MINIMAL SOLID COLOR DESIGN: The Vintage Milk Tea shade offers a warm neutral tone that complements modern, minimalist, and vintage-style bedrooms. The solid color look creates a clean, calm atmosphere and pairs easily with other bedding accessories. COMPONENT AND SIZE: Package includes 1 x Duvet Cover: 230 x 200cm, 1 x Fitted Sheet: 152 x 203 cm, Pillowcase x 2. The duvet insert or comforter is not included. Please check the measurements before ordering to ensure the right fit for your duvet. EASY CARE AND VERSATILE USE: Designed for regular bedroom use, this duvet cover works well in dormitories, apartments, guest rooms, and master bedrooms. Machine wash cold on a gentle cycle and tumble dry low for simple care; do not bleach.",
-        "descriptionHtml": "<p>SILKY ICE SILK COOLING FABRIC: Made from smooth ice silk material, this duvet cover has a cool-to-the-touch surface and a sleek, silky hand feel. The fabric is lightweight and breathable, helping create a comfortable sleep setting for warm rooms and restful nights.</p><p>SMOOTH BREATHABLE COMFORT: The breathable weave allows air to move through the fabric, while the soft drape adds a gentle, cozy layer over your duvet. It feels smooth against the skin and is suitable for those who prefer lightweight bedding.</p><p>MINIMAL SOLID COLOR DESIGN: The Vintage Milk Tea shade offers a warm neutral tone that complements modern, minimalist, and vintage-style bedrooms. The solid color look creates a clean, calm atmosphere and pairs easily with other bedding accessories.</p><p>COMPONENT AND SIZE: Package includes 1 x Duvet Cover: 230 x 200cm, 1 x Fitted Sheet: 152 x 203 cm, Pillowcase x 2. The duvet insert or comforter is not included. Please check the measurements before ordering to ensure the right fit for your duvet.</p><p>EASY CARE AND VERSATILE USE: Designed for regular bedroom use, this duvet cover works well in dormitories, apartments, guest rooms, and master bedrooms. Machine wash cold on a gentle cycle and tumble dry low for simple care; do not bleach.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/1688-1061371343572/1.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572/2.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572/3.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572/4.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572/5.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            },
-            {
-                "url": "/images/products/1688-1061371343572/6.webp",
-                "altText": "Luxurious Silky Cooling Ice Silk Duvet Cover Breathable Smooth Solid Color Bedding For Dormitory Use Lightweight Soft Cozy 230 x 200 cm (Vintage Milk Tea)",
-                "width": 800,
-                "height": 800
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-1061371343572",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-  {
+{
     "id": "makimoo-PERCALE-SKY-DUVET",
     "asin": "PERCALE-SKY-DUVET",
     "featuredImage": "/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp",
@@ -16672,7 +12482,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-MIST-DUVET",
     "asin": "PERCALE-MIST-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Mist Grey, Queen)",
@@ -16724,7 +12534,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-COCONUT-QUEEN-DUVET",
     "asin": "PERCALE-COCONUT-QUEEN-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
@@ -16776,7 +12586,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-NUDE-DUVET",
     "asin": "PERCALE-NUDE-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Nude Pink, Queen)",
@@ -16828,7 +12638,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-    {
+{
         "id": "makimoo-LINEN3-OATMEAL-DUVET",
         "asin": "LINEN3-OATMEAL-DUVET",
         "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Oatmeal, Queen)",
@@ -16874,7 +12684,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-SAGE-DUVET",
         "asin": "LINEN3-SAGE-DUVET",
         "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Sage Green, Queen)",
@@ -16926,7 +12736,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-CHARCOAL-DUVET",
         "asin": "LINEN3-CHARCOAL-DUVET",
         "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Charcoal Grey, Queen)",
@@ -16972,7 +12782,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-DUSTYBLUE-DUVET",
         "asin": "LINEN3-DUSTYBLUE-DUVET",
         "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Dusty Blue, Queen)",
@@ -17018,7 +12828,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-LINEN3-IVORY-DUVET",
         "asin": "LINEN3-IVORY-DUVET",
         "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Ivory, Queen)",
@@ -17064,7 +12874,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-GRAY-DUVET",
         "asin": "DUVSET-GRAY-DUVET",
         "featuredImage": "/images/products/DUVSET-GRAY-DUVET/1-3x4.webp",
@@ -17135,567 +12945,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-DUVSET-PINK-DUVET",
-        "asin": "DUVSET-PINK-DUVET",
-        "title": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-        "handle": "makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet",
-        "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. GENTLE BLUSH PINK STYLE: A soft, muted pink that adds quiet warmth, pairing well with white, cream, grey and gold accents, fitting cottage, shabby chic, boho and modern rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
-        "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>GENTLE BLUSH PINK STYLE: A soft, muted pink that adds quiet warmth, pairing well with white, cream, grey and gold accents, fitting cottage, shabby chic, boho and modern rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/1.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/2.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/3.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/4.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/5.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-PINK-DUVET/6.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Pink Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "19.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-PINK-DUVET",
-                "title": "Default Title",
-                "price": {
-                    "amount": "19.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-BEIGE-DUVET",
-        "asin": "DUVSET-BEIGE-DUVET",
-        "title": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-        "handle": "makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet",
-        "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. WARM BEIGE STYLE: A cozy adaptable neutral that brightens the bed, pairing well with white, brown, terracotta and green, fitting farmhouse, rustic, boho and minimalist rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
-        "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>WARM BEIGE STYLE: A cozy adaptable neutral that brightens the bed, pairing well with white, brown, terracotta and green, fitting farmhouse, rustic, boho and minimalist rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/1.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/2.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/3.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/4.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/5.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-BEIGE-DUVET/6.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only Beige Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "19.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-BEIGE-DUVET",
-                "title": "Default Title",
-                "price": {
-                    "amount": "19.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-WHITE-DUVET",
-        "asin": "DUVSET-WHITE-DUVET",
-        "title": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-        "handle": "makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet",
-        "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. CRISP PURE WHITE STYLE: A clean airy white that suits any space, pairing well with every color palette and bedding layer, fitting modern, classic, coastal and minimalist rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
-        "descriptionHtml": "<p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CRISP PURE WHITE STYLE: A clean airy white that suits any space, pairing well with every color palette and bedding layer, fitting modern, classic, coastal and minimalist rooms.</p><p>ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/1.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/2.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/3.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/4.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/5.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/DUVSET-WHITE-DUVET/6.webp",
-                "altText": "Makimoo Washed Cotton-Like Duvet Cover Only White Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "19.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-WHITE-DUVET",
-                "title": "Default Title",
-                "price": {
-                    "amount": "19.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-913882303732",
-        "asin": "1688-913882303732",
-        "title": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-        "handle": "makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732",
-        "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGGSHELL CASE: The pillow rolls up and zips into the included eggshell storage case (about 18 x 15 x 11 cm, 0.8 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-        "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGGSHELL CASE: The pillow rolls up and zips into the included eggshell storage case (about 18 x 15 x 11 cm, 0.8 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-        "productType": "Travel",
-        "tags": [
-            "Travel"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/1688-913882303732/1.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732/2.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732/3.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732/4.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732/5.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732/6.webp",
-                "altText": "Makimoo Memory Foam U Shaped Neck Pillow for Travel, Airplane, Office Nap, Adjustable Cervical Support Pillow with Washable Cover, Reversible Design, Eggshell Storage Case, 23 x 23 x 12 cm (Violet)",
-                "width": 1254,
-                "height": 1254
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "49.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-913882303732",
-                "title": "Default Title",
-                "price": {
-                    "amount": "49.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-913882303732-c3",
-        "asin": "1688-913882303732-c3",
-        "title": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-        "handle": "makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3",
-        "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-        "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-        "productType": "Travel",
-        "tags": [
-            "Travel"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/1688-913882303732-c3/1.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c3/2.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c3/3.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c3/4.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c3/5.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c3/6.webp",
-                "altText": "Makimoo Lightweight Memory Foam Neck Pillow for Airplane Travel, Reversible U Shaped Cervical Support Pillow with Adjustable Drawstring and Washable Cover, 23 x 23 x 12 cm (Green)",
-                "width": 1254,
-                "height": 1254
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "49.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-913882303732-c3",
-                "title": "Default Title",
-                "price": {
-                    "amount": "49.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-913882303732-c4",
-        "asin": "1688-913882303732-c4",
-        "title": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-        "handle": "makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4",
-        "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-        "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-        "productType": "Travel",
-        "tags": [
-            "Travel"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/1688-913882303732-c4/1.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c4/2.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c4/3.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c4/4.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c4/5.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c4/6.webp",
-                "altText": "Makimoo Memory Foam Travel Neck Pillow with Egg Shaped Storage Case Reversible Washable Cover Adjustable U Shaped Cervical Support Pillow for Airplane Nap 23 x 23 x 12 cm (Pink)",
-                "width": 1254,
-                "height": 1254
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "49.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-913882303732-c4",
-                "title": "Default Title",
-                "price": {
-                    "amount": "49.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-913882303732-c5",
-        "asin": "1688-913882303732-c5",
-        "title": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-        "handle": "makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5",
-        "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-        "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-        "productType": "Travel",
-        "tags": [
-            "Travel"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/1688-913882303732-c5/1.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c5/2.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c5/3.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c5/4.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c5/5.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c5/6.webp",
-                "altText": "Makimoo Lightweight Memory Foam U-Shaped Neck Pillow for Travel Airplane Nap Cervical Support Reversible Adjustable Washable Cover with Egg Storage Case 23 x 23 x 12 cm (Obsidian Grey)",
-                "width": 1254,
-                "height": 1254
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "49.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-913882303732-c5",
-                "title": "Default Title",
-                "price": {
-                    "amount": "49.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-1688-913882303732-c6",
-        "asin": "1688-913882303732-c6",
-        "title": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-        "handle": "makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6",
-        "description": "ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort. ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping. ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage. REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only. TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.",
-        "descriptionHtml": "<p>ERGONOMIC MEMORY FOAM SUPPORT: High-density slow-rebound memory foam cradles your neck and head to ease pressure on long trips and naps, with a reversible two-sided design for personalized comfort.</p><p>ADJUSTABLE SLIDING CORD FIT: Press the unlock buckle and slide to fine-tune tightness in seconds - one size comfortably fits different neck sizes without pinching or slipping.</p><p>ROLLS INTO AN EGG-SHAPED CASE: The pillow rolls up and zips into the included compact egg-shaped storage case (about 16 x 16 x 14 cm, 0.95 lb) with a carry strap that clips to your backpack or luggage.</p><p>REMOVABLE, WASHABLE COVER: Skin-friendly breathable knit cover with a hidden zipper removes in seconds - machine wash cold (30 C) and hang dry; memory foam core is spot-clean only.</p><p>TRAVEL-READY EVERYWHERE: Lightweight 250 g (8.8 oz) U-shaped pillow for airplanes, trains, cars, office desks and home reading - a practical gift for commuters and frequent flyers.</p>",
-        "productType": "Travel",
-        "tags": [
-            "Travel"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/1688-913882303732-c6/1.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c6/2.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c6/3.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c6/4.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c6/5.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            },
-            {
-                "url": "/images/products/1688-913882303732-c6/6.webp",
-                "altText": "Makimoo Memory Foam U-Shaped Travel Neck Pillow with Egg Storage Case, Portable Adjustable Cervical Support for Airplane Nap Sleeping and Rest, 23 x 23 x 12 cm (Ivory White)",
-                "width": 1254,
-                "height": 1254
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "49.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-1688-913882303732-c6",
-                "title": "Default Title",
-                "price": {
-                    "amount": "49.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-DUVSET-BEANRED-TWIN",
         "asin": "DUVSET-BEANRED-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Bean Red)",
@@ -17735,7 +12985,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEANRED-FULL",
         "asin": "DUVSET-BEANRED-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Bean Red)",
@@ -17775,7 +13025,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEANRED-QUEEN",
         "asin": "DUVSET-BEANRED-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Bean Red)",
@@ -17815,7 +13065,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DUVSET-BEANRED-KING",
         "asin": "DUVSET-BEANRED-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Bean Red)",
@@ -17855,487 +13105,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
-        "id": "makimoo-DUVSET-BUTTER-TWIN",
-        "asin": "DUVSET-BUTTER-TWIN",
-        "title": "Makimoo Twin Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
-        "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-BUTTER-TWIN/1.webp",
-                "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Butter Yellow)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-BUTTER-TWIN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-BUTTER-FULL",
-        "asin": "DUVSET-BUTTER-FULL",
-        "title": "Makimoo Full Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
-        "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-BUTTER-FULL/1.webp",
-                "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Butter Yellow)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-BUTTER-FULL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-BUTTER-QUEEN",
-        "asin": "DUVSET-BUTTER-QUEEN",
-        "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
-        "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-BUTTER-QUEEN/1.webp",
-                "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Butter Yellow)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-BUTTER-QUEEN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-BUTTER-KING",
-        "asin": "DUVSET-BUTTER-KING",
-        "title": "Makimoo King Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
-        "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Butter Yellow shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-BUTTER-KING/1.webp",
-                "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Butter Yellow)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-BUTTER-KING",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-DILL-TWIN",
-        "asin": "DUVSET-DILL-TWIN",
-        "title": "Makimoo Twin Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
-        "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-DILL-TWIN/1.webp",
-                "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Dill Green)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-DILL-TWIN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-DILL-FULL",
-        "asin": "DUVSET-DILL-FULL",
-        "title": "Makimoo Full Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
-        "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-DILL-FULL/1.webp",
-                "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Dill Green)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-DILL-FULL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-DILL-QUEEN",
-        "asin": "DUVSET-DILL-QUEEN",
-        "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
-        "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-DILL-QUEEN/1.webp",
-                "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Dill Green)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-DILL-QUEEN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-DILL-KING",
-        "asin": "DUVSET-DILL-KING",
-        "title": "Makimoo King Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
-        "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Dill Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-DILL-KING/1.webp",
-                "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Dill Green)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-DILL-KING",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-OAT-TWIN",
-        "asin": "DUVSET-OAT-TWIN",
-        "title": "Makimoo Twin Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
-        "handle": "makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-OAT-TWIN/1.webp",
-                "altText": "Makimoo Twin Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 68 x 88 in (Alpine Oat)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-OAT-TWIN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-OAT-FULL",
-        "asin": "DUVSET-OAT-FULL",
-        "title": "Makimoo Full Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
-        "handle": "makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-OAT-FULL/1.webp",
-                "altText": "Makimoo Full Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 80 x 88 in (Alpine Oat)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-OAT-FULL",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-OAT-QUEEN",
-        "asin": "DUVSET-OAT-QUEEN",
-        "title": "Makimoo Queen Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
-        "handle": "makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-OAT-QUEEN/1.webp",
-                "altText": "Makimoo Queen Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 88 x 88 in (Alpine Oat)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-OAT-QUEEN",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
-        "id": "makimoo-DUVSET-OAT-KING",
-        "asin": "DUVSET-OAT-KING",
-        "title": "Makimoo King Duvet Cover Set 4 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
-        "handle": "makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king",
-        "description": "Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom. Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance. Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-        "descriptionHtml": "<p>Luxuriously Soft Fabric: Crafted from premium washed cotton fabric that feels gentle against skin, this breathable duvet cover set offers a cozy, lightweight sleep surface suitable for year-round comfort.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), providing a coordinated, hotel-inspired look for your bedroom.</p><p>Wrinkle Resistant & Easy Care: The durable fabric resists wrinkles and fading, machine washes easily, and dries quickly, saving you time while maintaining a fresh, inviting appearance.</p><p>Warm Healing Tone: The muted Alpine Oat shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": false,
-        "images": [
-            {
-                "url": "/images/products/DUVSET-OAT-KING/1.webp",
-                "altText": "Makimoo King Duvet Cover Set 3 Piece Soft Washed Cotton Breathable Lightweight All Season Wrinkle Resistant Bedding with Zipper Closure Corner Ties 104 x 90 in (Alpine Oat)",
-                "width": 1200,
-                "height": 1200
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "0.00",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-DUVSET-OAT-KING",
-                "title": "Default Title",
-                "price": {
-                    "amount": "0.00",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": false,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
+{
         "id": "makimoo-PERCALE-COCONUT-TWIN",
         "asin": "PERCALE-COCONUT-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Coconut Milk)",
@@ -18375,7 +13145,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-COCONUT-FULL",
         "asin": "PERCALE-COCONUT-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Coconut Milk)",
@@ -18415,7 +13185,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-COCONUT-QUEEN",
         "asin": "PERCALE-COCONUT-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Coconut Milk)",
@@ -18456,7 +13226,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-COCONUT-KING",
         "asin": "PERCALE-COCONUT-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Coconut Milk)",
@@ -18496,7 +13266,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-MIST-TWIN",
         "asin": "PERCALE-MIST-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Mist Grey)",
@@ -18536,7 +13306,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-MIST-FULL",
         "asin": "PERCALE-MIST-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Mist Grey)",
@@ -18576,7 +13346,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-MIST-QUEEN",
         "asin": "PERCALE-MIST-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Mist Grey)",
@@ -18616,7 +13386,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-MIST-KING",
         "asin": "PERCALE-MIST-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Mist Grey)",
@@ -18656,7 +13426,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-SKY-TWIN",
         "asin": "PERCALE-SKY-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Sky Blue)",
@@ -18696,7 +13466,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-SKY-FULL",
         "asin": "PERCALE-SKY-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Sky Blue)",
@@ -18736,7 +13506,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-SKY-QUEEN",
         "asin": "PERCALE-SKY-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Sky Blue)",
@@ -18776,7 +13546,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-SKY-KING",
         "asin": "PERCALE-SKY-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Sky Blue)",
@@ -18816,7 +13586,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-NUDE-TWIN",
         "asin": "PERCALE-NUDE-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Nude Pink)",
@@ -18856,7 +13626,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-NUDE-FULL",
         "asin": "PERCALE-NUDE-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Nude Pink)",
@@ -18896,7 +13666,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-NUDE-QUEEN",
         "asin": "PERCALE-NUDE-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Nude Pink)",
@@ -18936,7 +13706,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-NUDE-KING",
         "asin": "PERCALE-NUDE-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Nude Pink)",
@@ -18976,7 +13746,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-EUCA-TWIN",
         "asin": "PERCALE-EUCA-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Eucalyptus)",
@@ -19016,7 +13786,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-EUCA-FULL",
         "asin": "PERCALE-EUCA-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Eucalyptus)",
@@ -19056,7 +13826,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-EUCA-QUEEN",
         "asin": "PERCALE-EUCA-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Eucalyptus)",
@@ -19096,7 +13866,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-EUCA-KING",
         "asin": "PERCALE-EUCA-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Eucalyptus)",
@@ -19136,7 +13906,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-LAVENDER-TWIN",
         "asin": "PERCALE-LAVENDER-TWIN",
         "title": "Makimoo Twin Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 68 x 88 in (Lavender Fog)",
@@ -19176,7 +13946,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-LAVENDER-FULL",
         "asin": "PERCALE-LAVENDER-FULL",
         "title": "Makimoo Full Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 80 x 88 in (Lavender Fog)",
@@ -19216,7 +13986,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-LAVENDER-QUEEN",
         "asin": "PERCALE-LAVENDER-QUEEN",
         "title": "Makimoo Queen Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 88 x 88 in (Lavender Fog)",
@@ -19256,7 +14026,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-PERCALE-LAVENDER-KING",
         "asin": "PERCALE-LAVENDER-KING",
         "title": "Makimoo King Duvet Cover Set 4 Piece 100% Cotton Percale Crisp Cool Breathable All Season Bedding with Zipper Closure Corner Ties 104 x 90 in (Lavender Fog)",
@@ -19296,7 +14066,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-PILLOW-STANDARD",
         "asin": "DOWN-PILLOW-STANDARD",
         "title": "Makimoo Down Bed Pillows Set of 2 Standard Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 26 in (White)",
@@ -19348,7 +14118,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-PILLOW-QUEEN",
         "asin": "DOWN-PILLOW-QUEEN",
         "title": "Makimoo Down Bed Pillows Set of 2 Queen Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 30 in (White)",
@@ -19400,7 +14170,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-PILLOW-KING",
         "asin": "DOWN-PILLOW-KING",
         "title": "Makimoo Down Bed Pillows Set of 2 King Size 80% Down 20% Feather and Fiber Fill 100% Cotton Cover Hotel Luxury Soft Pillows for Sleeping 20 x 36 in (White)",
@@ -19452,7 +14222,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-FEATHER-PILLOW-STANDARD",
         "asin": "DOWN-FEATHER-PILLOW-STANDARD",
         "title": "Makimoo Down and Feather Bed Pillows Set of 2 Standard Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 26 in (White)",
@@ -19504,7 +14274,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-FEATHER-PILLOW-QUEEN",
         "asin": "DOWN-FEATHER-PILLOW-QUEEN",
         "title": "Makimoo Down and Feather Bed Pillows Set of 2 Queen Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 30 in (White)",
@@ -19556,7 +14326,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-DOWN-FEATHER-PILLOW-KING",
         "asin": "DOWN-FEATHER-PILLOW-KING",
         "title": "Makimoo Down and Feather Bed Pillows Set of 2 King Size 50% Down 50% Feather and Fiber Fill 100% Cotton Cover Medium Support Hotel Pillows for Sleeping 20 x 36 in (White)",
@@ -19608,7 +14378,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-MICROFIBER-PILLOW-STANDARD",
         "asin": "MICROFIBER-PILLOW-STANDARD",
         "title": "Makimoo Microfiber Bed Pillows Set of 2 Standard Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 26 in (White)",
@@ -19660,7 +14430,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-MICROFIBER-PILLOW-QUEEN",
         "asin": "MICROFIBER-PILLOW-QUEEN",
         "title": "Makimoo Microfiber Bed Pillows Set of 2 Queen Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 30 in (White)",
@@ -19712,7 +14482,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-MICROFIBER-PILLOW-KING",
         "asin": "MICROFIBER-PILLOW-KING",
         "title": "Makimoo Microfiber Bed Pillows Set of 2 King Size Soft Fluffy Down Alternative Fill Smooth Polyester Cover Hotel Pillows for Sleeping 20 x 36 in (White)",
@@ -19764,7 +14534,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-CREAM-TWIN",
         "asin": "SATEEN4-CREAM-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Cream White)",
@@ -19804,7 +14574,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-CREAM-FULL",
         "asin": "SATEEN4-CREAM-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Cream White)",
@@ -19844,7 +14614,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-CREAM-QUEEN",
         "asin": "SATEEN4-CREAM-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Cream White)",
@@ -19884,7 +14654,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-CREAM-KING",
         "asin": "SATEEN4-CREAM-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Cream White)",
@@ -19924,7 +14694,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-BEIGE-TWIN",
         "asin": "SATEEN4-BEIGE-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Soft Beige)",
@@ -19964,7 +14734,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-BEIGE-FULL",
         "asin": "SATEEN4-BEIGE-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Soft Beige)",
@@ -20004,7 +14774,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-BEIGE-QUEEN",
         "asin": "SATEEN4-BEIGE-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Soft Beige)",
@@ -20044,7 +14814,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-BEIGE-KING",
         "asin": "SATEEN4-BEIGE-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Soft Beige)",
@@ -20084,7 +14854,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-MUSTARD-TWIN",
         "asin": "SATEEN4-MUSTARD-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Mustard Yellow)",
@@ -20124,7 +14894,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-MUSTARD-FULL",
         "asin": "SATEEN4-MUSTARD-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Mustard Yellow)",
@@ -20164,7 +14934,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-MUSTARD-QUEEN",
         "asin": "SATEEN4-MUSTARD-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Mustard Yellow)",
@@ -20204,7 +14974,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-MUSTARD-KING",
         "asin": "SATEEN4-MUSTARD-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Mustard Yellow)",
@@ -20244,7 +15014,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TAUPE-TWIN",
         "asin": "SATEEN4-TAUPE-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Taupe)",
@@ -20284,7 +15054,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TAUPE-FULL",
         "asin": "SATEEN4-TAUPE-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Taupe)",
@@ -20324,7 +15094,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TAUPE-QUEEN",
         "asin": "SATEEN4-TAUPE-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Taupe)",
@@ -20364,7 +15134,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TAUPE-KING",
         "asin": "SATEEN4-TAUPE-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Taupe)",
@@ -20404,7 +15174,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TERRACOTTA-TWIN",
         "asin": "SATEEN4-TERRACOTTA-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Terracotta)",
@@ -20444,7 +15214,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TERRACOTTA-FULL",
         "asin": "SATEEN4-TERRACOTTA-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Terracotta)",
@@ -20484,7 +15254,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TERRACOTTA-QUEEN",
         "asin": "SATEEN4-TERRACOTTA-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Terracotta)",
@@ -20524,7 +15294,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-TERRACOTTA-KING",
         "asin": "SATEEN4-TERRACOTTA-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Terracotta)",
@@ -20564,7 +15334,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-OLIVE-TWIN",
         "asin": "SATEEN4-OLIVE-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 68 x 88 in (Olive Green)",
@@ -20604,7 +15374,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-OLIVE-FULL",
         "asin": "SATEEN4-OLIVE-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 80 x 88 in (Olive Green)",
@@ -20644,7 +15414,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-OLIVE-QUEEN",
         "asin": "SATEEN4-OLIVE-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Olive Green)",
@@ -20684,7 +15454,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-SATEEN4-OLIVE-KING",
         "asin": "SATEEN4-OLIVE-KING",
         "title": "Makimoo King Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 104 x 90 in (Olive Green)",
@@ -20724,7 +15494,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-KNITTHROW-CREAM",
         "asin": "KNITTHROW-CREAM",
         "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Cream White)",
@@ -20764,7 +15534,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-KNITTHROW-GREY",
         "asin": "KNITTHROW-GREY",
         "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Light Grey)",
@@ -20804,7 +15574,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-KNITTHROW-KHAKI",
         "asin": "KNITTHROW-KHAKI",
         "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Khaki)",
@@ -20844,7 +15614,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-KNITTHROW-PINK",
         "asin": "KNITTHROW-PINK",
         "title": "Makimoo Openwork Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Nordic Decorative Blanket for Couch Sofa and Bed End, 50 x 71 in (Dusty Pink)",
@@ -20884,7 +15654,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-SUNSET-127",
         "asin": "BOHOTHROW-SUNSET-127",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Sunset)",
@@ -20930,7 +15700,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-SUNSET-130",
         "asin": "BOHOTHROW-SUNSET-130",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Sunset)",
@@ -20976,7 +15746,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-OLIVE-127",
         "asin": "BOHOTHROW-OLIVE-127",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Khaki Olive)",
@@ -21022,7 +15792,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-OLIVE-130",
         "asin": "BOHOTHROW-OLIVE-130",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Khaki Olive)",
@@ -21068,7 +15838,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-TEAL-127",
         "asin": "BOHOTHROW-TEAL-127",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Teal Blue)",
@@ -21114,7 +15884,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-TEAL-130",
         "asin": "BOHOTHROW-TEAL-130",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Teal Blue)",
@@ -21160,7 +15930,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-BURGUNDY-127",
         "asin": "BOHOTHROW-BURGUNDY-127",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 50 x 71 in (Burgundy)",
@@ -21206,7 +15976,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-BOHOTHROW-BURGUNDY-130",
         "asin": "BOHOTHROW-BURGUNDY-130",
         "title": "Makimoo Bohemian Chevron Knit Throw Blanket with Tassels, Soft Lightweight Acrylic Decorative Blanket for Couch Sofa and Bed, 51 x 91 in (Burgundy)",
@@ -21252,7 +16022,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-BLACK-130X180",
         "asin": "JACTHROW-HB-BLACK-130X180",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Black White)",
@@ -21298,7 +16068,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-BLACK-150X200",
         "asin": "JACTHROW-HB-BLACK-150X200",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Black White)",
@@ -21344,7 +16114,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-BLACK-130X190",
         "asin": "JACTHROW-HB-BLACK-130X190",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Black White)",
@@ -21390,7 +16160,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-KHAKI-130X180",
         "asin": "JACTHROW-HB-KHAKI-130X180",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Herringbone Camel)",
@@ -21436,7 +16206,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-KHAKI-150X200",
         "asin": "JACTHROW-HB-KHAKI-150X200",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Herringbone Camel)",
@@ -21482,7 +16252,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-HB-KHAKI-130X190",
         "asin": "JACTHROW-HB-KHAKI-130X190",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Herringbone Camel)",
@@ -21528,7 +16298,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X180",
         "asin": "JACTHROW-PAISLEY-BEIGE-130X180",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Khaki)",
@@ -21574,7 +16344,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BEIGE-150X200",
         "asin": "JACTHROW-PAISLEY-BEIGE-150X200",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Khaki)",
@@ -21620,7 +16390,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BEIGE-130X190",
         "asin": "JACTHROW-PAISLEY-BEIGE-130X190",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Khaki)",
@@ -21666,7 +16436,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X180",
         "asin": "JACTHROW-PAISLEY-BLUE-130X180",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 180 cm 850g (Paisley Dusty Blue)",
@@ -21712,7 +16482,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BLUE-150X200",
         "asin": "JACTHROW-PAISLEY-BLUE-150X200",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 150 x 200 cm 1050g (Paisley Dusty Blue)",
@@ -21758,7 +16528,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-JACTHROW-PAISLEY-BLUE-130X190",
         "asin": "JACTHROW-PAISLEY-BLUE-130X190",
         "title": "Makimoo Jacquard Knit Throw Blanket, Lightweight Nordic Decorative Blanket for Couch Sofa Travel and Office Nap, 130 x 190 cm 700g (Paisley Dusty Blue)",
@@ -21804,7 +16574,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-ORANGE-127",
         "asin": "CHUNKYTHROW-ORANGE-127",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Burnt Orange)",
@@ -21850,7 +16620,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-ORANGE-130",
         "asin": "CHUNKYTHROW-ORANGE-130",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Burnt Orange)",
@@ -21896,7 +16666,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-OAT-127",
         "asin": "CHUNKYTHROW-OAT-127",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Khaki Oat)",
@@ -21942,7 +16712,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-OAT-130",
         "asin": "CHUNKYTHROW-OAT-130",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Khaki Oat)",
@@ -21988,7 +16758,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-CREAM-127",
         "asin": "CHUNKYTHROW-CREAM-127",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Cream White)",
@@ -22034,7 +16804,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-CREAM-130",
         "asin": "CHUNKYTHROW-CREAM-130",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Cream White)",
@@ -22080,7 +16850,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-GREY-127",
         "asin": "CHUNKYTHROW-GREY-127",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 50 x 68 in (Light Grey)",
@@ -22126,7 +16896,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-CHUNKYTHROW-GREY-130",
         "asin": "CHUNKYTHROW-GREY-130",
         "title": "Makimoo Chunky Knit Throw Blanket with Tassels, Soft Textured Decorative Blanket for Couch Sofa and Bed End, 51 x 91 in (Light Grey)",
@@ -22172,7 +16942,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-VINE-TWIN",
         "asin": "POMPOM4-VINE-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Olive Vine)",
@@ -22212,7 +16982,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-VINE-FULL",
         "asin": "POMPOM4-VINE-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Olive Vine)",
@@ -22252,7 +17022,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-VINE-QUEEN",
         "asin": "POMPOM4-VINE-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Olive Vine)",
@@ -22292,7 +17062,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-VINE-KING",
         "asin": "POMPOM4-VINE-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Olive Vine)",
@@ -22332,7 +17102,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-SWIRL-TWIN",
         "asin": "POMPOM4-SWIRL-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Caramel Swirl)",
@@ -22372,7 +17142,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-SWIRL-FULL",
         "asin": "POMPOM4-SWIRL-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Caramel Swirl)",
@@ -22412,7 +17182,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-SWIRL-QUEEN",
         "asin": "POMPOM4-SWIRL-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Caramel Swirl)",
@@ -22452,7 +17222,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-SWIRL-KING",
         "asin": "POMPOM4-SWIRL-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Caramel Swirl)",
@@ -22492,7 +17262,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-LEAF-TWIN",
         "asin": "POMPOM4-LEAF-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Dusty Leaf)",
@@ -22532,7 +17302,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-LEAF-FULL",
         "asin": "POMPOM4-LEAF-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Dusty Leaf)",
@@ -22572,7 +17342,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-LEAF-QUEEN",
         "asin": "POMPOM4-LEAF-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Dusty Leaf)",
@@ -22612,7 +17382,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-LEAF-KING",
         "asin": "POMPOM4-LEAF-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Dusty Leaf)",
@@ -22652,7 +17422,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLUSH-TWIN",
         "asin": "POMPOM4-BLUSH-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Blush Floral)",
@@ -22692,7 +17462,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLUSH-FULL",
         "asin": "POMPOM4-BLUSH-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Blush Floral)",
@@ -22732,7 +17502,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLUSH-QUEEN",
         "asin": "POMPOM4-BLUSH-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Blush Floral)",
@@ -22772,7 +17542,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLUSH-KING",
         "asin": "POMPOM4-BLUSH-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Blush Floral)",
@@ -22812,7 +17582,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-INK-TWIN",
         "asin": "POMPOM4-INK-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Ink Floral)",
@@ -22852,7 +17622,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-INK-FULL",
         "asin": "POMPOM4-INK-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Ink Floral)",
@@ -22892,7 +17662,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-INK-QUEEN",
         "asin": "POMPOM4-INK-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Ink Floral)",
@@ -22932,7 +17702,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-INK-KING",
         "asin": "POMPOM4-INK-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Ink Floral)",
@@ -22972,7 +17742,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLOOM-TWIN",
         "asin": "POMPOM4-BLOOM-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Lilac Bloom)",
@@ -23012,7 +17782,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLOOM-FULL",
         "asin": "POMPOM4-BLOOM-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Lilac Bloom)",
@@ -23052,7 +17822,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLOOM-QUEEN",
         "asin": "POMPOM4-BLOOM-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Lilac Bloom)",
@@ -23092,7 +17862,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-BLOOM-KING",
         "asin": "POMPOM4-BLOOM-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Lilac Bloom)",
@@ -23132,7 +17902,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-DAMASK-TWIN",
         "asin": "POMPOM4-DAMASK-TWIN",
         "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Gold Damask)",
@@ -23172,7 +17942,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-DAMASK-FULL",
         "asin": "POMPOM4-DAMASK-FULL",
         "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Gold Damask)",
@@ -23212,7 +17982,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-DAMASK-QUEEN",
         "asin": "POMPOM4-DAMASK-QUEEN",
         "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Gold Damask)",
@@ -23252,7 +18022,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-    {
+{
         "id": "makimoo-POMPOM4-DAMASK-KING",
         "asin": "POMPOM4-DAMASK-KING",
         "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Gold Damask)",
@@ -23292,7 +18062,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
-  {
+{
     "id": "makimoo-PERCALEJAC-HAZE-QUEEN",
     "asin": "PERCALEJAC-HAZE-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
@@ -23345,7 +18115,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALEJAC-OATBEIGE-QUEEN",
     "asin": "PERCALEJAC-OATBEIGE-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Oatmeal Beige)",
@@ -23426,7 +18196,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALEJAC-GREY-QUEEN",
     "asin": "PERCALEJAC-GREY-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Light Grey)",
@@ -23466,7 +18236,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALESTRIPE-PETAL-QUEEN",
     "asin": "PERCALESTRIPE-PETAL-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blush Pink Stripe)",
@@ -23513,7 +18283,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALEPATCH-STONE-QUEEN",
     "asin": "PERCALEPATCH-STONE-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Patchwork Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Stone Grey Patchwork)",
@@ -23553,7 +18323,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALESTRIPE-PETAL-DUVET",
     "asin": "PERCALESTRIPE-PETAL-DUVET",
     "title": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
@@ -23611,7 +18381,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALEPATCH-STONE-DUVET",
     "asin": "PERCALEPATCH-STONE-DUVET",
     "title": "Makimoo 100% Cotton Percale Jacquard Patchwork Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Stone Grey Patchwork, Queen)",
@@ -23657,7 +18427,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-POMPOM4-VINE-DUVET",
     "asin": "POMPOM4-VINE-DUVET",
     "title": "Makimoo Embossed Velvet Duvet Cover Only with Pom Pom Trim 88 x 88 in (Olive Vine, Queen)",
@@ -23697,7 +18467,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-WASHJAC-CREAM-DUVET",
     "asin": "WASHJAC-CREAM-DUVET",
     "title": "Makimoo Soft Washed Cotton Jacquard Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Cream White, Queen)",
@@ -23737,7 +18507,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-VELJAC-IVORY-DUVET",
     "asin": "VELJAC-IVORY-DUVET",
     "title": "Makimoo Double-Sided Jacquard Velvet Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Ivory White, Queen)",
@@ -23777,7 +18547,111 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
+    "id": "makimoo-PERCALEJAC-IVORY-PC-QUEEN",
+    "asin": "PERCALEJAC-IVORY-PC-QUEEN",
+    "title": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Ivory White, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-pillowcases-set-of-2-queen-ivory-percalejac-ivory-pc-queen",
+    "description": "100% Cotton Percale Jacquard: Woven in a crisp, tightly woven cotton percale, these pillowcases feature a yarn-dyed diamond-and-braid jacquard with a subtle sculpted texture—woven, not printed—so the pattern stays true wash after wash. Set of 2 Pillowcases, Queen Size: Two matching pillowcases (20 x 30 in). Pillow inserts are NOT included—slip them over your pillows to instantly refresh the bed. Reversible AB Design: The A side shows the ivory jacquard pattern, while the B side is a smooth, solid percale in a warm beige tone—two looks in one set. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against skin and hair, keeping you comfortable year-round. Easy Care: Machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Ivory White Colorway: A soft ivory white with a warm beige reverse—low-saturation and quietly warm, pairing easily with modern, classic, or cozy bedding.",
+    "descriptionHtml": "<p>100% Cotton Percale Jacquard: Woven in a crisp, tightly woven cotton percale, these pillowcases feature a yarn-dyed diamond-and-braid jacquard with a subtle sculpted texture—woven, not printed—so the pattern stays true wash after wash.</p><p>Set of 2 Pillowcases, Queen Size: Two matching pillowcases (20 x 30 in). Pillow inserts are NOT included—slip them over your pillows to instantly refresh the bed.</p><p>Reversible AB Design: The A side shows the ivory jacquard pattern, while the B side is a smooth, solid percale in a warm beige tone—two looks in one set.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against skin and hair, keeping you comfortable year-round.</p><p>Easy Care: Machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Ivory White Colorway: A soft ivory white with a warm beige reverse—low-saturation and quietly warm, pairing easily with modern, classic, or cozy bedding.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/PERCALEJAC-IVORY-PC-QUEEN/1.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Ivory White, Queen)",
+            "width": 1440,
+            "height": 1920
+        },
+        {
+            "url": "/images/products/PERCALEJAC-IVORY-PC-QUEEN/2.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Ivory White, Queen)",
+            "width": 1440,
+            "height": 1920
+        },
+        {
+            "url": "/images/products/PERCALEJAC-IVORY-PC-QUEEN/3.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Ivory White, Queen)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-PERCALEJAC-IVORY-PC-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-PERCALEJAC-HAZE-PC-QUEEN",
+    "asin": "PERCALEJAC-HAZE-PC-QUEEN",
+    "title": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Dusty Blue, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-pillowcases-set-of-2-queen-dusty-blue-percalejac-haze-pc-queen",
+    "description": "100% Cotton Percale Jacquard: Woven in a crisp, tightly woven cotton percale, these pillowcases feature a yarn-dyed wide-stripe jacquard with a subtle sculpted texture—woven, not printed—so the pattern stays true wash after wash. Set of 2 Pillowcases, Queen Size: Two matching pillowcases (20 x 30 in). Pillow inserts are NOT included—slip them over your pillows to instantly refresh the bed. Reversible AB Design: The A side shows the dusty blue and ivory stripe jacquard, while the B side is a smooth, solid percale in matching dusty blue—two looks in one set. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against skin and hair, keeping you comfortable year-round. Easy Care: Machine washable and keeps its crisp hand and woven texture wash after wash. Calming Dusty Blue Colorway: A soft dusty blue paired with ivory stripes—low-saturation and quietly fresh, pairing easily with modern, coastal, or cozy bedding.",
+    "descriptionHtml": "<p>100% Cotton Percale Jacquard: Woven in a crisp, tightly woven cotton percale, these pillowcases feature a yarn-dyed wide-stripe jacquard with a subtle sculpted texture—woven, not printed—so the pattern stays true wash after wash.</p><p>Set of 2 Pillowcases, Queen Size: Two matching pillowcases (20 x 30 in). Pillow inserts are NOT included—slip them over your pillows to instantly refresh the bed.</p><p>Reversible AB Design: The A side shows the dusty blue and ivory stripe jacquard, while the B side is a smooth, solid percale in matching dusty blue—two looks in one set.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against skin and hair, keeping you comfortable year-round.</p><p>Easy Care: Machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Calming Dusty Blue Colorway: A soft dusty blue paired with ivory stripes—low-saturation and quietly fresh, pairing easily with modern, coastal, or cozy bedding.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/PERCALEJAC-HAZE-PC-QUEEN/1.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Dusty Blue, Queen)",
+            "width": 1440,
+            "height": 1920
+        },
+        {
+            "url": "/images/products/PERCALEJAC-HAZE-PC-QUEEN/2.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Dusty Blue, Queen)",
+            "width": 1440,
+            "height": 1920
+        },
+        {
+            "url": "/images/products/PERCALEJAC-HAZE-PC-QUEEN/3.webp",
+            "altText": "Makimoo 100% Cotton Percale Jacquard Pillowcases Set of 2 Queen Size 20 x 30 in (Dusty Blue, Queen)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-PERCALEJAC-HAZE-PC-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
     "id": "makimoo-POMPOM4-OLIVE-SHEET",
     "asin": "POMPOM4-OLIVE-SHEET",
     "title": "Makimoo Embossed Velvet Fitted Sheet Only Soft Plush 60 x 80 in with Deep Pocket and All-Around Elastic (Olive, Queen)",
@@ -23818,7 +18692,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-DUVSET-GRAY-SHEET",
     "asin": "DUVSET-GRAY-SHEET",
     "title": "Makimoo Washed Cotton-Like Fitted Sheet Only Soft Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (Grey, Queen)",
@@ -23859,7 +18733,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-WHITE-SHEET",
     "asin": "PERCALE-WHITE-SHEET",
     "title": "Makimoo 100% Cotton Percale Fitted Sheet Only Crisp Cool Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (White, Queen)",
@@ -23900,7 +18774,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-SATEEN4-SAGE-SHEET",
     "asin": "SATEEN4-SAGE-SHEET",
     "title": "Makimoo 100% Cotton Sateen Fitted Sheet Only Silky Soft 60 x 80 in with Deep Pocket and All-Around Elastic (Sage Green, Queen)",
@@ -23941,93 +18815,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
-    "id": "makimoo-PERCALE-COCONUT-DUVET",
-    "asin": "PERCALE-COCONUT-DUVET",
-    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
-    "handle": "makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-duvet",
-    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
-    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/PERCALE-COCONUT-DUVET/1.webp",
-        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
-        "width": 1200,
-        "height": 1600
-      },
-      {
-        "url": "/images/products/PERCALE-COCONUT-DUVET/2.webp",
-        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
-        "width": 1200,
-        "height": 1200
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-PERCALE-COCONUT-DUVET",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
-    "id": "makimoo-SATEEN4-OLIVE-DUVET",
-    "asin": "SATEEN4-OLIVE-DUVET",
-    "title": "Makimoo 100% Cotton Sateen Duvet Cover Only Silky Soft 88 x 88 in with Zipper Closure Corner Ties (Olive Green, Queen)",
-    "handle": "makimoo-cotton-sateen-duvet-cover-only-olive-green-queen-sateen4-olive-duvet",
-    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this duvet cover has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
-    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this duvet cover has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/SATEEN4-OLIVE-DUVET/1.webp",
-        "altText": "Makimoo 100% Cotton Sateen Duvet Cover Only Silky Soft 88 x 88 in with Zipper Closure Corner Ties (Olive Green, Queen)",
-        "width": 1200,
-        "height": 1600
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-SATEEN4-OLIVE-DUVET",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
+{
     "id": "makimoo-PERCALEJAC-HAZE-DUVET",
     "asin": "PERCALEJAC-HAZE-DUVET",
     "title": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Dusty Blue, Queen)",
@@ -24073,111 +18861,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
-    "id": "makimoo-PERCALEJAC-OATBEIGE-DUVET",
-    "asin": "PERCALEJAC-OATBEIGE-DUVET",
-    "title": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
-    "handle": "makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-oatmeal-beige-queen-percalejac-oatbeige-duvet",
-    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige wide stripe—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.",
-    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige wide stripe—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/1.webp",
-        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
-        "width": 1200,
-        "height": 1600
-      },
-      {
-        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/2.webp",
-        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/3.webp",
-        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
-        "width": 1200,
-        "height": 1600
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-PERCALEJAC-OATBEIGE-DUVET",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
-    "id": "makimoo-WASHSTRIPE-SAGE-DUVET",
-    "asin": "WASHSTRIPE-SAGE-DUVET",
-    "title": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
-    "handle": "makimoo-washed-cotton-stripe-duvet-cover-only-sage-green-queen-washstripe-sage-duvet",
-    "description": "Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB design—the A side shows the fine stripe, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash. Soothing Sage Green Colorway: Finished in a muted sage green and white fine stripe—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.",
-    "descriptionHtml": "<p>Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB design—the A side shows the fine stripe, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash.</p><p>Soothing Sage Green Colorway: Finished in a muted sage green and white fine stripe—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/1.webp",
-        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
-        "width": 1200,
-        "height": 1600
-      },
-      {
-        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/2.webp",
-        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/3.webp",
-        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
-        "width": 1200,
-        "height": 1600
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-WASHSTRIPE-SAGE-DUVET",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-  {
+{
     "id": "makimoo-PERCALE-MIST-TWIN-DUVET",
     "asin": "PERCALE-MIST-TWIN-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 68 x 88 in with Zipper Closure Corner Ties (Mist Grey, Twin)",
@@ -24223,7 +18907,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-MIST-FULL-DUVET",
     "asin": "PERCALE-MIST-FULL-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 80 x 88 in with Zipper Closure Corner Ties (Mist Grey, Full)",
@@ -24269,7 +18953,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALE-MIST-KING-DUVET",
     "asin": "PERCALE-MIST-KING-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 104 x 90 in with Zipper Closure Corner Ties (Mist Grey, King)",
@@ -24315,7 +18999,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-WASHSTRIPE-SAGEGREEN-QUEEN",
     "asin": "WASHSTRIPE-SAGEGREEN-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Soft Washed Cotton Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Green)",
@@ -24356,7 +19040,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-WASHJAC-CREAM-QUEEN",
     "asin": "WASHJAC-CREAM-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Soft Washed Cotton Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Cream White)",
@@ -24396,7 +19080,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-VELJAC-IVORY-QUEEN",
     "asin": "VELJAC-IVORY-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Double-Sided Jacquard Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Ivory White)",
@@ -24436,7 +19120,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-PERCALECHECK-SAND-QUEEN",
     "asin": "PERCALECHECK-SAND-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Check Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sand Beige)",
@@ -24476,7 +19160,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-VELSTRIPE-MOCHA-QUEEN",
     "asin": "VELSTRIPE-MOCHA-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Stripe)",
@@ -24488,6 +19172,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/VELSTRIPE-MOCHA-QUEEN/1-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELSTRIPE-MOCHA-QUEEN/1.webp",
@@ -24516,7 +19201,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-VELSTRIPE-DENIM-QUEEN",
     "asin": "VELSTRIPE-DENIM-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Denim Stripe)",
@@ -24528,6 +19213,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/VELSTRIPE-DENIM-QUEEN/1-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELSTRIPE-DENIM-QUEEN/1.webp",
@@ -24556,7 +19242,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
+{
     "id": "makimoo-VELSTRIPE-CHARCOAL-QUEEN",
     "asin": "VELSTRIPE-CHARCOAL-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Charcoal Stripe)",
@@ -24568,6 +19254,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/1-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/1.webp",
@@ -24595,5 +19282,4 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       }
     ],
     "amazonUrl": ""
-  },
-];
+  }];
