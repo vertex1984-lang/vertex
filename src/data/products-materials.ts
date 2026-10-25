@@ -5075,6 +5075,1680 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
+    "id": "makimoo-1688-595229918569-C2-60X120",
+    "asin": "1688-595229918569-C2-60X120",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (24″ x 47″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-60-x-120-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 60 x 120cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 60 x 120cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (24″ x 47″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (24″ x 47″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (24″ x 47″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (24″ x 47″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-60X120",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-80X160",
+    "asin": "1688-595229918569-C2-80X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (31″ x 63″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-80-x-160-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 80 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 80 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (31″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (31″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (31″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (31″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-80X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-80X200",
+    "asin": "1688-595229918569-C2-80X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (31″ x 79″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-80-x-200-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 80 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 80 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (31″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (31″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (31″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (31″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-80X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-100X160",
+    "asin": "1688-595229918569-C2-100X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (39″ x 63″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-100-x-160-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 100 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 100 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (39″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (39″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (39″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (39″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-100X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-120X160",
+    "asin": "1688-595229918569-C2-120X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (47″ x 63″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-120-x-160-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 120 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 120 x 160cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (47″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (47″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (47″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (47″ x 63″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "25.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-120X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "25.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-120X200",
+    "asin": "1688-595229918569-C2-120X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (47″ x 79″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-120-x-200-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 120 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 120 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (47″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (47″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (47″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (47″ x 79″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "32.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-120X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "32.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-200X250",
+    "asin": "1688-595229918569-C2-200X250",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (79″ x 98″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-200-x-250-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 200 x 250cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 200 x 250cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (79″ x 98″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (79″ x 98″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (79″ x 98″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (79″ x 98″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "72.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-200X250",
+        "title": "Default Title",
+        "price": {
+          "amount": "72.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-200X300",
+    "asin": "1688-595229918569-C2-200X300",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (79″ x 118″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-200-x-300-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 200 x 300cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 200 x 300cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (79″ x 118″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (79″ x 118″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (79″ x 118″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (79″ x 118″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "87.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-200X300",
+        "title": "Default Title",
+        "price": {
+          "amount": "87.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C2-200X400",
+    "asin": "1688-595229918569-C2-200X400",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (79″ x 157″) (Off White)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-200-x-400-cm-1688-595229918569-c2",
+    "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 200 x 400cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
+    "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 200 x 400cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C2/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (79″ x 157″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/2.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (79″ x 157″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/3.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (79″ x 157″) (Off White)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C2/4.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (79″ x 157″) (Off White)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "99.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C2-200X400",
+        "title": "Default Title",
+        "price": {
+          "amount": "99.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-60X120",
+    "asin": "1688-595229918569-60X120",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 60 x 120 cm (24″ x 47″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-60-x-120-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 60 x 120 cm (24″ x 47″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 60 x 120 cm (24″ x 47″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 60 x 120 cm (24″ x 47″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 60 x 120 cm (24″ x 47″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-60X120",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-80X160",
+    "asin": "1688-595229918569-80X160",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 160 cm (31″ x 63″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-80-x-160-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 160 cm (31″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 160 cm (31″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 160 cm (31″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 160 cm (31″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-80X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-80X200",
+    "asin": "1688-595229918569-80X200",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 200 cm (31″ x 79″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-80-x-200-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 200 cm (31″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 200 cm (31″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 200 cm (31″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 80 x 200 cm (31″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-80X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-100X160",
+    "asin": "1688-595229918569-100X160",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 100 x 160 cm (39″ x 63″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-100-x-160-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 100 x 160 cm (39″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 100 x 160 cm (39″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 100 x 160 cm (39″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 100 x 160 cm (39″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-100X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-120X160",
+    "asin": "1688-595229918569-120X160",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 160 cm (47″ x 63″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-120-x-160-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 160 cm (47″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 160 cm (47″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 160 cm (47″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 160 cm (47″ x 63″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "25.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-120X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "25.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-120X200",
+    "asin": "1688-595229918569-120X200",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 200 cm (47″ x 79″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-120-x-200-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 200 cm (47″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 200 cm (47″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 200 cm (47″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 120 x 200 cm (47″ x 79″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "32.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-120X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "32.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-200X250",
+    "asin": "1688-595229918569-200X250",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 250 cm (79″ x 98″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-200-x-250-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 250 cm (79″ x 98″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 250 cm (79″ x 98″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 250 cm (79″ x 98″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 250 cm (79″ x 98″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "72.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-200X250",
+        "title": "Default Title",
+        "price": {
+          "amount": "72.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-200X300",
+    "asin": "1688-595229918569-200X300",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 300 cm (79″ x 118″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-200-x-300-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 300 cm (79″ x 118″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 300 cm (79″ x 118″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 300 cm (79″ x 118″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 300 cm (79″ x 118″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "87.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-200X300",
+        "title": "Default Title",
+        "price": {
+          "amount": "87.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-200X400",
+    "asin": "1688-595229918569-200X400",
+    "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 400 cm (79″ x 157″) (Light Camel)",
+    "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-200-x-400-cm-1688-595229918569",
+    "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569/1.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 400 cm (79″ x 157″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/2.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 400 cm (79″ x 157″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/3.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 400 cm (79″ x 157″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569/4.webp",
+        "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 200 x 400 cm (79″ x 157″) (Light Camel)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "99.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-200X400",
+        "title": "Default Title",
+        "price": {
+          "amount": "99.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-60X120",
+    "asin": "1688-595229918569-C3-60X120",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-60-x-120-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 60 x 120cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 60 x 120cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 60 x 120 cm (24″ x 47″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-60X120",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-80X160",
+    "asin": "1688-595229918569-C3-80X160",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-80-x-160-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 80 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 80 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 160 cm (31″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "15.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-80X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "15.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-80X200",
+    "asin": "1688-595229918569-C3-80X200",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-80-x-200-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 80 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 80 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 80 x 200 cm (31″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-80X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-100X160",
+    "asin": "1688-595229918569-C3-100X160",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-100-x-160-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 100 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 100 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 100 x 160 cm (39″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "20.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-100X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "20.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-120X160",
+    "asin": "1688-595229918569-C3-120X160",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-120-x-160-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 120 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 120 x 160cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 160 cm (47″ x 63″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "25.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-120X160",
+        "title": "Default Title",
+        "price": {
+          "amount": "25.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-120X200",
+    "asin": "1688-595229918569-C3-120X200",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-120-x-200-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 120 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 120 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 120 x 200 cm (47″ x 79″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "32.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-120X200",
+        "title": "Default Title",
+        "price": {
+          "amount": "32.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-200X250",
+    "asin": "1688-595229918569-C3-200X250",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-200-x-250-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 200 x 250cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 200 x 250cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 250 cm (79″ x 98″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "72.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-200X250",
+        "title": "Default Title",
+        "price": {
+          "amount": "72.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-200X300",
+    "asin": "1688-595229918569-C3-200X300",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-200-x-300-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 200 x 300cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 200 x 300cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 300 cm (79″ x 118″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "87.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-200X300",
+        "title": "Default Title",
+        "price": {
+          "amount": "87.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C3-200X400",
+    "asin": "1688-595229918569-C3-200X400",
+    "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+    "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-200-x-400-cm-1688-595229918569-c3",
+    "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 200 x 400cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
+    "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 200 x 400cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C3/1.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/2.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/3.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/4.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/5.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "/images/products/1688-595229918569-C3/6.webp",
+        "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 200 x 400 cm (79″ x 157″) (Silver Grey)",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "99.99",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C3-200X400",
+        "title": "Default Title",
+        "price": {
+          "amount": "99.99",
+          "currencyCode": "USD"
+        },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-1688-745181807454-C4",
     "asin": "1688-745181807454-C4",
     "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
