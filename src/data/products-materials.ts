@@ -23778,6 +23778,170 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
+    "id": "makimoo-POMPOM4-OLIVE-SHEET",
+    "asin": "POMPOM4-OLIVE-SHEET",
+    "title": "Makimoo Embossed Velvet Fitted Sheet Only Soft Plush 60 x 80 in with Deep Pocket and All-Around Elastic (Olive, Queen)",
+    "handle": "makimoo-embossed-velvet-fitted-sheet-only-olive-queen-pompom4-olive-sheet",
+    "description": "Sculpted Embossed Velvet: Woven in a soft carved-plush fabric, this fitted sheet is velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed through autumn and winter nights. Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed. Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching. Thick, Warm & Easy Care: The dense plush pile feels velvety soft against the skin and holds warmth beautifully; machine washable and keeps its plush feel wash after wash. Muted Olive Tone: A calm, earthy olive green that grounds the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Sculpted Embossed Velvet: Woven in a soft carved-plush fabric, this fitted sheet is velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed through autumn and winter nights.</p><p>Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed.</p><p>Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching.</p><p>Thick, Warm & Easy Care: The dense plush pile feels velvety soft against the skin and holds warmth beautifully; machine washable and keeps its plush feel wash after wash.</p><p>Muted Olive Tone: A calm, earthy olive green that grounds the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "featuredImage": "/images/products/POMPOM4-OLIVE-SHEET/1-3x4.webp",
+    "images": [
+      {
+        "url": "/images/products/POMPOM4-OLIVE-SHEET/1.webp",
+        "altText": "Makimoo Embossed Velvet Fitted Sheet Only Soft Plush 60 x 80 in with Deep Pocket and All-Around Elastic (Olive, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-POMPOM4-OLIVE-SHEET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-DUVSET-GRAY-SHEET",
+    "asin": "DUVSET-GRAY-SHEET",
+    "title": "Makimoo Washed Cotton-Like Fitted Sheet Only Soft Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (Grey, Queen)",
+    "handle": "makimoo-washed-cotton-like-fitted-sheet-only-grey-queen-duvset-gray-sheet",
+    "description": "STANDALONE FITTED SHEET, QUEEN SIZE: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed. SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable feel with a relaxed, slightly wrinkled texture that is gentle on skin and promotes airflow for year-round comfort. DEEP POCKET & ALL-AROUND ELASTIC: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching. CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and natural wood, fitting modern, minimalist and cozy bedrooms. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. The fabric resists wrinkles and fading and gets even softer with every wash.",
+    "descriptionHtml": "<p>STANDALONE FITTED SHEET, QUEEN SIZE: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed.</p><p>SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable feel with a relaxed, slightly wrinkled texture that is gentle on skin and promotes airflow for year-round comfort.</p><p>DEEP POCKET & ALL-AROUND ELASTIC: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching.</p><p>CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and natural wood, fitting modern, minimalist and cozy bedrooms.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. The fabric resists wrinkles and fading and gets even softer with every wash.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "featuredImage": "/images/products/DUVSET-GRAY-SHEET/1-3x4.webp",
+    "images": [
+      {
+        "url": "/images/products/DUVSET-GRAY-SHEET/1.webp",
+        "altText": "Makimoo Washed Cotton-Like Fitted Sheet Only Soft Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (Grey, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-DUVSET-GRAY-SHEET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-WHITE-SHEET",
+    "asin": "PERCALE-WHITE-SHEET",
+    "title": "Makimoo 100% Cotton Percale Fitted Sheet Only Crisp Cool Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (White, Queen)",
+    "handle": "makimoo-cotton-percale-fitted-sheet-only-white-queen-percale-white-sheet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this fitted sheet has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed. Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Clean Classic White: A crisp, fresh white that brightens any bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this fitted sheet has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed.</p><p>Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Clean Classic White: A crisp, fresh white that brightens any bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "featuredImage": "/images/products/PERCALE-WHITE-SHEET/1-3x4.webp",
+    "images": [
+      {
+        "url": "/images/products/PERCALE-WHITE-SHEET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Fitted Sheet Only Crisp Cool Breathable 60 x 80 in with Deep Pocket and All-Around Elastic (White, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-WHITE-SHEET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-SAGE-SHEET",
+    "asin": "SATEEN4-SAGE-SHEET",
+    "title": "Makimoo 100% Cotton Sateen Fitted Sheet Only Silky Soft 60 x 80 in with Deep Pocket and All-Around Elastic (Sage Green, Queen)",
+    "handle": "makimoo-cotton-sateen-fitted-sheet-only-sage-green-queen-sateen4-sage-sheet",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this fitted sheet has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed. Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Sage Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this fitted sheet has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Standalone Fitted Sheet, Queen Size: One fitted sheet only (60 x 80 in). Duvet cover, flat sheet and pillowcases are NOT included—pair it with your favorite bedding to refresh the bed.</p><p>Deep Pocket & All-Around Elastic: The deep-pocket design with full all-around elastic hugs mattresses up to 16 in thick, staying snug and smooth through the night without slipping or bunching.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Sage Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "featuredImage": "/images/products/SATEEN4-SAGE-SHEET/1-3x4.webp",
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-SAGE-SHEET/1.webp",
+        "altText": "Makimoo 100% Cotton Sateen Fitted Sheet Only Silky Soft 60 x 80 in with Deep Pocket and All-Around Elastic (Sage Green, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-SAGE-SHEET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-PERCALE-COCONUT-DUVET",
     "asin": "PERCALE-COCONUT-DUVET",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
