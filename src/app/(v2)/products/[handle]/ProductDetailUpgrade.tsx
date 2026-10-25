@@ -46,6 +46,17 @@ interface ProductDetailUpgradeProps {
 // 其他分类不显示该占位（review #3：地毯尺寸串台到毛巾/床品等页面）
 const SIZE_PRESETS = ['140 x 200 cm', '160 x 200 cm', '160 x 230 cm', '180 x 250 cm', '100 x 200 cm', '100 x 160 cm'];
 
+// 尺寸双标（2026-10-25 领导定：尺寸要 cm 和 inch 对照）：
+// '80 x 160cm' → '80 x 160cm / 31.5 x 63in'（inch 取 0.5 精度，与 formatDimensionsDual 同口径）
+function sizeDualLabel(size: string): string {
+  const m = size.match(/(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)/i);
+  if (!m) return size;
+  const a = parseFloat(m[1]);
+  const b = parseFloat(m[2]);
+  const r = (v: number) => String(Math.round((v / 2.54) * 2) / 2);
+  return `${a} x ${b}cm / ${r(a)} x ${r(b)}in`;
+}
+
 // Shipping & Return 为通用文案（2026-10-12 用户定：Shipping & Delivery 与 Returns & Refunds 合并为一节）；
 // Care 节由 getCareCopy 按分类生成（src/lib/care-copy.ts，与老版 PDP 共用）
 const ACCORDION_SECTIONS_BASE = [
@@ -573,8 +584,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-light">Size</span>
                 <span className="flex items-center gap-1.5 text-sm font-semibold text-charcoal">
                   {sizeVariants.length > 0
-                    ? (sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
-                    : currentSizeStr}
+                    ? sizeDualLabel(sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
+                    : sizeDualLabel(currentSizeStr ?? '')}
                   <svg className={`w-4 h-4 text-charcoal-light transition-transform ${sizeMenuOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
                 </span>
               </button>
@@ -593,7 +604,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                         const unavailable = sv.handle === null;
                         const label = (
                           <>
-                            {sv.size}
+                            {sizeDualLabel(sv.size)}
                             {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
                             {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
                           </>
@@ -677,7 +688,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                       <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
                     </svg>
                   </button>
-                ) : (
+                ) : product.amazonUrl ? (
                   <a
                     href={product.amazonUrl}
                     target="_blank" rel="noopener noreferrer"
@@ -688,6 +699,19 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                       <path d="M7 17L17 7M17 7H7M17 7v10"/>
                     </svg>
                   </a>
+                ) : (
+                  /* 2026-10-25 领导定"非 coming soon"：无 Shopify 数据且无 amazonUrl 的站内商品
+                     （如尺寸变体兄弟页）→ 本地购物车直购（addToLocalCart 兜底已存在） */
+                  <button
+                    onClick={handleAddToCart}
+                    disabled={addingToCart}
+                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+                  >
+                    {addingToCart ? 'Adding...' : 'Add to Cart'}
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                      <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
+                    </svg>
+                  </button>
                 )}
               </div>
             )}
