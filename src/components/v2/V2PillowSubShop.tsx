@@ -27,10 +27,13 @@ import {
 export default function V2PillowSubShop({
   products,
   sectionBy,
+  flat = false,
 }: {
   products: MakimooProduct[];
   /** type 页按材质分区；material 页按形态分区 */
   sectionBy: 'type' | 'material';
+  /** flat = 平铺网格：不出筛选条、不分区（2026-10-25 用户定：pillow-inserts 页对齐 pillow-cases 样式） */
+  flat?: boolean;
 }) {
   const [selected, setSelected] = useState('');
   // 2026-10-16 用户定：移动端筛选改 Filter 按钮 + 底部弹层，桌面端下拉不变
@@ -67,6 +70,22 @@ export default function V2PillowSubShop({
       options: options.map((t) => ({ value: t.key, label: t.label })),
     },
   ];
+
+  // flat 模式（pillow-inserts）：无筛选条、无分区标题，直接平铺网格（对齐 pillow-cases 样式）
+  if (flat) {
+    return (
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
+        {cards.map((c) => (
+          <GroupProductCard
+            key={c.key}
+            card={c}
+            paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
+            compactText
+          />
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -185,7 +204,7 @@ export default function V2PillowSubShop({
         )
       ) : sections.length === 1 ? (
         /* 2026-10-16 用户定：只剩一个分区时不出细分标题直接平铺（细分标题与页头信息重复）；
-           当前四个二级页（pillow-inserts / neck-pillows / down-alternative / memory-foam）均为单分区 */
+           2026-10-23：neck-pillows / memory-foam 二级页随颈枕下架移除，现存二级页均为单分区 */
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
           {sections[0].list.map((c) => (
             <GroupProductCard

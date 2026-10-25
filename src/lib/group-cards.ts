@@ -35,6 +35,8 @@ export interface GroupCardVariant {
   reviewCount?: number;
   /** 缺货成员灰显但仍可点看（2026-10-22 用户定） */
   inStock: boolean;
+  /** 当前图为套装场景时 object-cover 居中 50%；折叠图不设此标记，继续走 80% 焦点 */
+  centerCrop?: boolean;
   /** 卡面 1:1 方图不裁切（CARD_SQUARE_IMAGE_ASINS 白名单，2026-10-22 用户定） */
   squareImage?: boolean;
 }
@@ -74,6 +76,8 @@ export interface GroupCard {
   initialColor?: string;
   /** 每色一个变体（顺序 = 家族列表顺序）；空数组 = 无变体组单品（无色卡单卡） */
   variants: GroupCardVariant[];
+  /** 默认卡面为套装场景时居中 50%；折叠入口图不设此标记 */
+  centerCrop?: boolean;
   /** 卡面 1:1 方图不裁切（CARD_SQUARE_IMAGE_ASINS 白名单，按卡面当前显示图判定） */
   squareImage?: boolean;
   /** bedding 家族材质（badge 数据口径保留；badge 开关全站关闭中，见 GroupProductCard） */
@@ -116,6 +120,11 @@ const slimRep = (p: MakimooProduct): GroupCardRep => ({
 const inStockOf = (p: MakimooProduct): boolean =>
   p.hasShopifyData === true && p.shopifyAvailable === true;
 
+// 2026-10-24 用户定：仅独立被套的非入口变体使用套装 3:4 场景图，需居中 50% 裁剪；
+// 折叠入口图（images[0]=1.webp）为 3:4 原图，不标 centerCrop，无需焦点偏移。
+const centerCropOf = (p: MakimooProduct): boolean =>
+  /-duvet$/.test(p.asin.toLowerCase()) && p.images[0]?.url.endsWith('/1-3x4.webp') === true;
+
 /** 家族列表（已排序）→ 组卡列表：同组家族并成一张卡，每色一个色卡变体 */
 export function buildGroupCards(
   families: (Pick<BlanketFamily, 'key' | 'color' | 'rep' | 'sizes' | 'fromPrice' | 'currency'> & {
@@ -131,7 +140,13 @@ export function buildGroupCards(
   }
   return Array.from(groups.entries()).map(([key, e]) => {
     const fs = e.fams;
-    const repFam = fs[0];
+    // 2026-10-24 用户定：LINEN3-DUVET / PERCALE-DUVET 以组首成员（2026-10-25 起 Ivory / Sky Queen）为唯一入口；其他变体组代表规则不变
+    const preferredAsin = key === 'LINEN3-DUVET' || key === 'PERCALE-DUVET'
+      ? getVariantGroupOf(fs[0].rep.asin)?.members[0]?.asin.toLowerCase()
+      : undefined;
+    const repFam = preferredAsin
+      ? fs.find((f) => f.rep.asin.toLowerCase() === preferredAsin) ?? fs[0]
+      : fs[0];
     const rep = repFam.rep;
     // 尺寸并集：cushions 等标题规则（cushionCardTitle）需要家族尺寸带
     const sizes: string[] = [];
@@ -140,9 +155,24 @@ export function buildGroupCards(
       .map((f) => parseFloat(f.fromPrice))
       .filter((n) => !Number.isNaN(n) && n > 0);
     // 每色一个变体；同色重复家族兜底去重（首个 = 顺序最优）
+    // 2026-10-24：rep 家族（如 LINEN3-DUVET 的 Ivory）排在色卡第一位；
+    // PERCALE-DUVET 色卡顺序对齐变体组成员颜色顺序（Sky/Mist/Coconut/Nude，与 PERCALE 套装组一致）；
+    // 同色多尺寸家族（Mist）取 Queen 尺寸成员为该色代表（入口=折叠图口径）
+    const memberOrder = key === 'PERCALE-DUVET' ? getVariantGroupOf(fs[0].rep.asin)?.members : undefined;
+    const memberIdxOf = (f: (typeof fs)[number]): number => {
+      const i = memberOrder?.findIndex((m) => m.color.trim().toLowerCase() === f.color.trim().toLowerCase()) ?? -1;
+      return i < 0 ? 999 : i;
+    };
+    const queenRankOf = (f: (typeof fs)[number]): number => {
+      const m = memberOrder?.find((x) => x.asin.toLowerCase() === f.rep.asin.toLowerCase());
+      return m?.size === '220 x 220 cm' ? 0 : 1;
+    };
+    const orderedFams = memberOrder
+      ? [...fs].sort((a, b) => memberIdxOf(a) - memberIdxOf(b) || queenRankOf(a) - queenRankOf(b))
+      : repFam === fs[0] ? fs : [repFam, ...fs.filter((f) => f !== repFam)];
     const seen = new Set<string>();
     const variants: GroupCardVariant[] = [];
-    for (const f of fs) {
+    for (const f of orderedFams) {
       const ck = f.color.trim().toLowerCase();
       if (seen.has(ck)) continue;
       seen.add(ck);
@@ -159,6 +189,7 @@ export function buildGroupCards(
         rating: f.rep.rating,
         reviewCount: f.rep.reviewCount,
         inStock: inStockOf(f.rep),
+        ...(centerCropOf(f.rep) ? { centerCrop: true } : {}),
         ...(CARD_SQUARE_IMAGE_ASINS.has(f.rep.asin.toLowerCase()) ? { squareImage: true } : {}),
       });
     }
@@ -176,6 +207,7 @@ export function buildGroupCards(
       currency: repFam.currency,
       variants,
       materials: repFam.materials,
+      ...(centerCropOf(rep) ? { centerCrop: true } : {}),
       ...(CARD_SQUARE_IMAGE_ASINS.has(rep.asin.toLowerCase()) ? { squareImage: true } : {}),
     };
   });

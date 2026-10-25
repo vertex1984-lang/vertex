@@ -538,7 +538,27 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-stripe-petal-queen',  // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
   'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-patchwork-stone-queen',  // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen）
   'makimoo-queen-bedding-set-4-piece-washed-cotton-stripe-sage-queen',  // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen）
-  'makimoo-queen-bedding-set-4-piece-washed-cotton-jacquard-cream-queen',
+  'makimoo-queen-bedding-set-4-piece-washed-cotton-jacquard-cream-queen',  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-jacquard-velvet-ivory-queen',
+  'makimoo-cotton-percale-jacquard-fine-stripe-duvet-cover-only-blush-pink-queen-percalestripe-petal-duvet',  // 2026-10-23：单独被套（粉白细条纹提花，仅 Queen）
+  'makimoo-cotton-percale-jacquard-patchwork-duvet-cover-only-stone-grey-queen-percalepatch-stone-duvet',  // 2026-10-23：单独被套（灰白拼接提花，仅 Queen）
+  'makimoo-embossed-velvet-pom-pom-duvet-cover-only-olive-vine-queen-pompom4-vine-duvet',  // 2026-10-25：单独被套（Olive Vine 雕花绒球，仅 Queen）
+  'makimoo-washed-cotton-jacquard-duvet-cover-only-cream-white-queen-washjac-cream-duvet',  // 2026-10-25：单独被套（奶白暗纹提花水洗棉，仅 Queen）
+  'makimoo-jacquard-velvet-duvet-cover-only-ivory-white-queen-veljac-ivory-duvet',  // 2026-10-25：单独被套（象牙白双面提花绒，仅 Queen）
+  'makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-duvet',  // 2026-10-23：单独被套（Cotton Percale 椰奶白，仅 Queen）
+  'makimoo-cotton-sateen-duvet-cover-only-olive-green-queen-sateen4-olive-duvet',  // 2026-10-23：单独被套（Cotton Sateen 橄榄绿，仅 Queen）
+  'makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-dusty-blue-queen-percalejac-haze-duvet',  // 2026-10-23：单独被套（Cotton Percale 宽条纹提花 雾霾蓝，仅 Queen）
+  'makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-oatmeal-beige-queen-percalejac-oatbeige-duvet',  // 2026-10-24：单独被套（Cotton Percale 宽条纹提花 燕麦米，仅 Queen）
+  'makimoo-washed-cotton-stripe-duvet-cover-only-sage-green-queen-washstripe-sage-duvet',  // 2026-10-24：单独被套（Washed Cotton 细条纹 鼠尾草绿，仅 Queen）
+  // 2026-10-24：单独被套（Cotton Percale 纯色，4 色 × 仅 Queen）
+  'makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-queen-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-mist-grey-queen-percale-mist-duvet',
+  // 2026-10-24：Mist 单独被套补全尺寸（Twin / Full / King，Queen 为既有卡片入口）
+  'makimoo-cotton-percale-duvet-cover-only-mist-grey-twin-percale-mist-twin-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-mist-grey-full-percale-mist-full-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-mist-grey-king-percale-mist-king-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-sky-blue-queen-percale-sky-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-nude-pink-queen-percale-nude-duvet',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

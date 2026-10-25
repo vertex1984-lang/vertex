@@ -14,9 +14,9 @@ import {
 /**
  * Cushions 二级类目 PLP（2026-10-09 用户定：与 pillows/bedding 一致，细分类目直接链接，
  * 不再走 /products?cat=cushions&sub= 筛选）：
- * - /cushions/corduroy/、/cushions/solids/、/cushions/prints/ 三个风格页
+ * - 2026-10-23 用户定：原 corduroy/solids/prints 三风格页下线（404），合并为 /cushions/outdoor-cushions/ 单页
  * - 无 banner（同 bedding/pillows 二级页）：面包屑 + H1 + 一句话简介 → 家族卡网格
- *   （cushions 只有风格一个维度，无第二维度下拉；卡片逻辑与列表页共用 cushion-families）
+ *   （cushions 单分类无第二维度下拉；卡片逻辑与列表页共用 cushion-families）
  * - 底部互导：其他风格图片卡横滑条（复用 V2PillowCrossSell，basePath=/cushions）
  * 只给有产品的 slug 生成静态页。
  * 注意：不要加 `export const dynamicParams = false`（dev 模式 output:export 下会导致 500，
@@ -35,7 +35,7 @@ function productsFor(slug: string) {
   return cushionProducts().filter((p) => p.subcategory === slug);
 }
 
-/** 互导条目：其他有产品的风格各取首卡焦点图（与 BeddingSetCard 同口径） */
+/** 互导条目：其他有产品的分类各取首卡焦点图（与 BeddingSetCard 同口径；单分类时为空、互导条自动不渲染） */
 function crossSellItems(): PillowCrossSellItem[] {
   return CUSHION_SUBS.map((s) => {
     const list = productsFor(s.key);

@@ -15,9 +15,9 @@ import {
  * - 2026-10-09 用户定：按 pillows/bedding 的家族卡结构改造（复用 buildBlanketFamilies 按颜色成族）；
  *   卡片标题/Set of 4 隐藏/变体聚拢排序逻辑抽在 @/data/cushion-families（与 /cushions/[slug]/ 二级页共用）；
  *   compactText 与 pillows/bedding 卡片字体一致
- * - 按风格分 3 区展示（corduroy / solids / prints，注册表见 subcategories.ts，归位逻辑见 classifyCushion）
+ * - 2026-10-23 用户定：取消 corduroy/solids/prints 风格 3 区，全部并入 Outdoor Cushions 单分区（见 classifyCushion）
  * - 2026-10-18 用户定：筛选 UI 整块移除（粘性 Style 下拉 / 移动端 Filter 按钮 + 底部弹层 / URL sub 过滤）——
- *   风格导航由类目 hero 快链承担（见 V2CushionsCatHero → /cushions/[slug]/ 二级页）
+ *   分类导航由类目 hero 快链承担（见 V2CushionsCatHero → /cushions/[slug]/ 二级页）
  * - 排序固定 Featured（权重序）
  */
 export default function V2CushionsShop({ products }: { products: MakimooProduct[] }) {
@@ -28,7 +28,7 @@ export default function V2CushionsShop({ products }: { products: MakimooProduct[
   // 家族风格 = 代表品的二级分类（enrich 时 classifyCushion 已按变体组归位）
   const styleOf = (f: (typeof sorted)[number]) => f.rep.subcategory || '';
 
-  // 有产品的风格才出分区（顺序按注册表：corduroy → solids → prints）
+  // 有产品的分类才出分区（2026-10-23 起单分区 Outdoor Cushions）
   const sections = getSubcategoriesOf('cushions')
     .map((s) => ({ def: s, list: sorted.filter((f) => styleOf(f) === s.key) }))
     .filter((s) => s.list.length > 0);

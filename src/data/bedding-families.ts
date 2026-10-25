@@ -65,6 +65,8 @@ const COLOR_LABELS: Record<string, string> = {
   STONE: 'Stone Grey Patchwork',
   // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套单色（SAGE 被 bedset4-sage/linen3-sage 占用，改用 SAGEGREEN）
   SAGEGREEN: 'Sage Green',
+  // 2026-10-23：提花绒（双面绒）四件套单色（IVORY 未被占用）
+  IVORY: 'Ivory White',
 };
 
 export interface SetFamily {
@@ -124,6 +126,8 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('washstripe-')) return 'four';
   // 2026-10-22 用户定：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen），归 four
   if (a.startsWith('washjac-')) return 'four';
+  // 2026-10-23 用户定：提花绒（双面绒）四件套（单色 × 仅 Queen），归 four
+  if (a.startsWith('veljac-')) return 'four';
   // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/1688-916370884976）全站改四件套
   // 口径（被套+床笠+2枕套，标题/描述已同步加 fitted sheet），统一归 four；'three' 类型整体下线。
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套
@@ -256,17 +260,27 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
  * 族根 = 变体族 id（如 BEDSET4 / BEDSET4-BC / DUVSET），无变体族时用家族 key 前缀兜底。
  * 在调用方完成权重排序之后调用：族块位置由族内最靠前的家族决定，族内保持排序后相对顺序。
  */
+
+/**
+ * 家族 → 族根（clusterSetFamilies 的聚拢口径，2026-10-24 抽出共享）：
+ * 族根优先取变体族 id（纯色 BEDSET4-BC 与印花 BEDSET4 是两个族，不并块）；
+ * 无变体族的兜底用 key 前缀：'duvset-gray' → 'duvset'；二维家族 '1688-xxx::颜色' → '1688-xxx'；
+ * 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块
+ */
+export function setFamilyRoot(f: SetFamily): string {
+  const g = getVariantGroupOf(f.rep.asin);
+  if (g) return g.id.toLowerCase();
+  const base = f.key.split('::')[0];
+  const parts = base.split('-');
+  return parts[0] === '1688' ? parts.slice(0, 2).join('-') : parts[0];
+}
+
 export function clusterSetFamilies(families: SetFamily[]): SetFamily[] {
   // 族根优先取变体族 id（纯色 BEDSET4-BC 与印花 BEDSET4 是两个族，不并块）；
   // 无变体族的兜底用 key 前缀：'duvset-gray' → 'duvset'；二维家族 '1688-xxx::颜色' → '1688-xxx'；
-  // 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块
-  const rootOf = (f: SetFamily) => {
-    const g = getVariantGroupOf(f.rep.asin);
-    if (g) return g.id.toLowerCase();
-    const base = f.key.split('::')[0];
-    const parts = base.split('-');
-    return parts[0] === '1688' ? parts.slice(0, 2).join('-') : parts[0];
-  };
+  // 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块。
+  // 2026-10-24：抽成导出的 setFamilyRoot，与 V2BeddingShop 的 four 分区族块位次对调共用同一"族"口径
+  const rootOf = setFamilyRoot;
   const seen = new Set<string>();
   const out: SetFamily[] = [];
   for (const f of families) {

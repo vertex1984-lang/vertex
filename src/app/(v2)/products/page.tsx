@@ -319,7 +319,7 @@ export default function V2ProductsPage() {
   );
 
   // cushions 类目页头数据（2026-10-18 用户定：按 bedding 页标准重建，见 V2CushionsCatHero）：
-  // 快链 = 有产品的风格页（/cushions/[slug]/，注册表顺序 corduroy→solids→prints），
+  // 快链 = 有产品的分类页（2026-10-23 起单分类 /cushions/outdoor-cushions/），
   // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，同 bedding/pillows 口径）
   const cushionHero = useMemo(() => {
     if (!cushionsMode || isSearching || activeSub) return null;

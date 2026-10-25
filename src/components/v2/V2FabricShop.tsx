@@ -29,6 +29,13 @@ function fabricAnchor(material: string): string {
   return `fabric-${material.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 }
 
+/** 2026-10-25 用户定：/bedding/duvet-covers 面料分区页跨分区对调卡片展示位（asin 小写对）——
+ *  PERCALEJAC-HAZE-DUVET（Cotton Percale 区）↔ POMPOM4-VINE-DUVET（Embossed Velvet 区）。
+ *  注意：对调后卡片落在对方面料分区标题下，仅调展示位置，不动卡片自身的面料标注 */
+const FABRIC_SECTION_SWAPS: [string, string][] = [
+  ['percalejac-haze-duvet', 'pompom4-vine-duvet'],
+];
+
 export default function V2FabricShop({
   families,
   flat = false,
@@ -67,6 +74,26 @@ export default function V2FabricShop({
   const fabricSections = sortBeddingMaterials(Array.from(fabricMap.entries()), (e) => e[1].length).map(
     ([m, list]) => ({ material: m, anchor: fabricAnchor(m), list })
   );
+
+  // 跨分区对调（FABRIC_SECTION_SWAPS，2026-10-25 用户定）：仅 byFabric 模式生效
+  if (byFabric) {
+    for (const [a, b] of FABRIC_SECTION_SWAPS) {
+      const locate = (asin: string) => {
+        for (const s of fabricSections) {
+          const idx = s.list.findIndex((f) => f.rep.asin.toLowerCase() === asin);
+          if (idx >= 0) return { s, idx };
+        }
+        return null;
+      };
+      const pa = locate(a);
+      const pb = locate(b);
+      if (pa && pb) {
+        const tmp = pa.s.list[pa.idx];
+        pa.s.list[pa.idx] = pb.s.list[pb.idx];
+        pb.s.list[pb.idx] = tmp;
+      }
+    }
+  }
 
   if (byFabric) {
     return (

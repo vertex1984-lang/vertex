@@ -126,35 +126,14 @@ export const FABRIC_GUIDE: FabricGuideEntry[] = [
     image: '/images/fabric-guide/fabric-silk-modal.webp',
     ratings: { softness: 5, cooling: 5, warmth: 2, texture: 1, easyCare: 3 },
   },
-  {
-    // 2026-09-27 用户定：Sateen 改名 Satin（本站缎面为 ice silk 长丝缎纹：高光泽、
-    // 丝滑低摩擦、凉感；与棉质 sateen 的柔光暖感区分，参考 sewingtrip.com/sateen-vs-satin）
-    key: 'Satin',
-    slug: 'satin',
-    tags: ['Silky', 'Glossy', 'Cool'],
-    intro:
-      'A high-sheen satin weave with a mirror-smooth face — cool and slick at first touch, with a fluid drape that glides over skin.',
-    feel: [
-      'Mirror-smooth, glossy surface with a silky glide',
-      'Cool at first touch — a favorite of hot sleepers',
-      'Low-friction weave, gentle on hair and skin',
-    ],
-    care: [
-      'Machine wash cold on a gentle cycle',
-      'Tumble dry low; keep away from rough surfaces to avoid snags',
-    ],
-    bestFor: 'Hot sleepers who love a glossy, silky hotel-luxe feel.',
-    image: '/images/fabric-guide/fabric-satin.webp',
-    ratings: { softness: 5, cooling: 4, warmth: 2, texture: 1, easyCare: 4 },
-  },
+  // Satin 条目 2026-10-23 随 Satin 床品全站移除下线（用户定）
 ];
 
-/** 按睡姿偏好快速选面料（landing/指南页共用的入口卡）；覆盖全部六种面料（2026-09 用户定：横滑条展示所有布料） */
+/** 按睡姿偏好快速选面料（landing/指南页共用的入口卡）；覆盖全部在架面料（2026-09 用户定：横滑条展示所有布料；2026-10-23 Satin 下线后剩五种） */
 export const FABRIC_SHORTCUTS: { title: string; pick: string; slug: string; note: string }[] = [
   { title: 'I sleep hot', pick: '100% Linen', slug: 'linen', note: 'The most breathable weave we make.' },
   { title: 'I want low maintenance', pick: 'Washed Cotton-Like', slug: 'washed-cotton-like', note: 'Wash, dry, done — no ironing.' },
   { title: 'I love the linen look', pick: 'Linen-Like', slug: 'linen-like', note: 'Airy texture, zero upkeep.' },
   { title: 'I have sensitive skin', pick: 'Organic Cotton', slug: 'organic-cotton', note: 'Grown without synthetic chemicals.' },
   { title: 'I want silky luxury', pick: 'Silk-Modal', slug: 'silk-modal', note: 'Cool, fluid, weightless drape.' },
-  { title: 'I love a silky sheen', pick: 'Satin', slug: 'satin', note: 'Glossy, cool, mirror-smooth glide.' },
 ];

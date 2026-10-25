@@ -61,6 +61,7 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'duvset-dill-king',
   'duvset-dill-queen',
   'duvset-dill-twin',
+  'duvset-gray-duvet',
   'duvset-gray-full',
   'duvset-gray-king',
   'duvset-gray-queen',
@@ -163,8 +164,28 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'percalestripe-petal-queen',
   // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
   'percalepatch-stone-queen',
+  // 2026-10-23：单独被套新品（PDP 首图走套装场景 1-3x4.webp；1.webp 为折叠灰底卡片图）
+  'percalestripe-petal-duvet',
+  'percalepatch-stone-duvet',
+  'pompom4-vine-duvet',
+  'washjac-cream-duvet',
+  'veljac-ivory-duvet',
+  'percale-coconut-duvet',
+  'sateen4-olive-duvet',
+  'percalejac-haze-duvet',
+  'percalejac-oatbeige-duvet',
+  'washstripe-sage-duvet',
+  'percale-coconut-queen-duvet',
+  'percale-mist-duvet',
+  'percale-mist-twin-duvet',
+  'percale-mist-full-duvet',
+  'percale-mist-king-duvet',
+  'percale-sky-duvet',
+  'percale-nude-duvet',
   // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen）
   'washstripe-sagegreen-queen',
   // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen）
   'washjac-cream-queen',
+  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen）
+  'veljac-ivory-queen',
 ]);

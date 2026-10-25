@@ -4,11 +4,11 @@ export const SHORT_TITLES: Record<string, string> = {
   // 2026-09-30：素材库标题为中文（全站唯一），手工补英文短标题；素材库标题改回英文后此条可删
   "1688-743606980882-c2": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
   // 2026-09-29 独立被套新品短标题（采自 feat/pdp-v2-features）
-  "linen3-sage-duvet": "100% Linen Duvet Cover, Sage Green, 200 x 230cm",
-  "linen3-charcoal-duvet": "100% Linen Duvet Cover, Charcoal Grey, 200 x 230cm",
-  "linen3-dustyblue-duvet": "100% Linen Duvet Cover, Dusty Blue, 200 x 230cm",
-  "linen3-ivory-duvet": "100% Linen Duvet Cover, Ivory, 200 x 230cm",
-  "linen3-oatmeal-duvet": "100% Linen Duvet Cover, Oatmeal, 200 x 230cm",
+  "linen3-sage-duvet": "100% Linen Duvet Cover, Sage Green, Queen",
+  "linen3-charcoal-duvet": "100% Linen Duvet Cover, Charcoal Grey, Queen",
+  "linen3-dustyblue-duvet": "100% Linen Duvet Cover, Dusty Blue, Queen",
+  "linen3-ivory-duvet": "100% Linen Duvet Cover, Ivory, Queen",
+  "linen3-oatmeal-duvet": "100% Linen Duvet Cover, Oatmeal, Queen",
   "duvset-gray-duvet": "Washed Cotton-Like Duvet Cover, Grey, 200 x 230cm",
   "duvset-pink-duvet": "Washed Cotton-Like Duvet Cover, Pink, 200 x 230cm",
   "duvset-beige-duvet": "Washed Cotton-Like Duvet Cover, Beige, 200 x 230cm",
@@ -521,8 +521,27 @@ export const SHORT_TITLES: Record<string, string> = {
   "percalestripe-petal-queen": "Cotton Percale Jacquard Stripe Bedding Set, 4 Piece, Blush Pink Stripe, Queen",
   // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
   "percalepatch-stone-queen": "Cotton Percale Jacquard Patchwork Bedding Set, 4 Piece, Stone Grey Patchwork, Queen",
+  "percalestripe-petal-duvet": "Cotton Percale Jacquard Duvet Cover, Blush Pink Stripe, Queen",
+  "percalepatch-stone-duvet": "Cotton Percale Jacquard Duvet Cover, Stone Grey Patchwork, Queen",
+  "pompom4-vine-duvet": "Embossed Velvet Duvet Cover, Olive Vine, Queen",
+  "washjac-cream-duvet": "Washed Cotton Jacquard Duvet Cover, Cream White, Queen",
+  "veljac-ivory-duvet": "Jacquard Velvet Duvet Cover, Ivory White, Queen",
+  "percale-coconut-duvet": "Cotton Percale Duvet Cover, Coconut Milk, Queen",
+  "sateen4-olive-duvet": "Cotton Sateen Duvet Cover, Olive Green, Queen",
+  "percalejac-haze-duvet": "Cotton Percale Jacquard Duvet Cover, Dusty Blue, Queen",
+  "percalejac-oatbeige-duvet": "Cotton Percale Jacquard Duvet Cover, Oatmeal Beige, Queen",
+  "washstripe-sage-duvet": "Washed Cotton Stripe Duvet Cover, Sage Green, Queen",
+  "percale-coconut-queen-duvet": "Cotton Percale Duvet Cover, Coconut Milk, Queen",
+  "percale-mist-duvet": "Cotton Percale Duvet Cover, Mist Grey, Queen",
+  "percale-mist-twin-duvet": "Cotton Percale Duvet Cover, Mist Grey, Twin",
+  "percale-mist-full-duvet": "Cotton Percale Duvet Cover, Mist Grey, Full",
+  "percale-mist-king-duvet": "Cotton Percale Duvet Cover, Mist Grey, King",
+  "percale-sky-duvet": "Cotton Percale Duvet Cover, Sky Blue, Queen",
+  "percale-nude-duvet": "Cotton Percale Duvet Cover, Nude Pink, Queen",
   // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen）
   "washstripe-sagegreen-queen": "Washed Cotton Stripe Bedding Set, 4 Piece, Sage Green, Queen",
   // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen）
   "washjac-cream-queen": "Washed Cotton Jacquard Bedding Set, 4 Piece, Cream White, Queen",
+  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen）
+  "veljac-ivory-queen": "Jacquard Velvet Bedding Set, 4 Piece, Ivory White, Queen",
 };

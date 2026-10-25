@@ -106,10 +106,35 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   'percalestripe-petal-queen': '3/4',
   // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
   'percalepatch-stone-queen': '3/4',
+  // 2026-10-23：单独被套新品（PDP 图集保持 3:4；Duvet Covers 卡片 1:1 在 V2BeddingShop 单独控制）
+  'percalestripe-petal-duvet': '3/4',
+  'percalepatch-stone-duvet': '3/4',
+  'pompom4-vine-duvet': '3/4',
+  'washjac-cream-duvet': '3/4',
+  'veljac-ivory-duvet': '3/4',
+  'percale-coconut-duvet': '3/4',
+  'sateen4-olive-duvet': '3/4',
+  'percalejac-haze-duvet': '3/4',
+  'percalejac-oatbeige-duvet': '3/4',
+  'washstripe-sage-duvet': '3/4',
+  'percale-coconut-queen-duvet': '3/4',
+  'percale-mist-duvet': '3/4',
+  'percale-mist-twin-duvet': '3/4',
+  'percale-mist-full-duvet': '3/4',
+  'percale-mist-king-duvet': '3/4',
+  'linen3-sage-duvet': '3/4',
+  'linen3-oatmeal-duvet': '3/4',
+  'linen3-charcoal-duvet': '3/4',
+  'linen3-dustyblue-duvet': '3/4',
+  'linen3-ivory-duvet': '3/4',
+  'percale-sky-duvet': '3/4',
+  'percale-nude-duvet': '3/4',
   // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen，3:4 PDP 主图）
   'washstripe-sagegreen-queen': '3/4',
   // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
   'washjac-cream-queen': '3/4',
+  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'veljac-ivory-queen': '3/4',
 };
 
 /**

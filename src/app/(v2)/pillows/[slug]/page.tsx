@@ -102,8 +102,13 @@ export default function PillowSubPage({ params }: { params: { slug: string } }) 
           <p className="mt-1.5 lg:mt-2 text-sm lg:text-base text-charcoal-light">{taxon.blurb}</p>
         </div>
 
-        {/* ── 选购区：另一维度下拉 + 分区网格（同 /bedding/ 类型页逻辑）── */}
-        <V2PillowSubShop products={products} sectionBy={kind === 'type' ? 'material' : 'type'} />
+        {/* ── 选购区：另一维度下拉 + 分区网格（同 /bedding/ 类型页逻辑）；
+            2026-10-25 用户定：pillow-inserts 页改平铺网格，样式对齐 pillow-cases ── */}
+        <V2PillowSubShop
+          products={products}
+          sectionBy={kind === 'type' ? 'material' : 'type'}
+          flat={taxon.slug === 'pillow-inserts'}
+        />
 
         {/* ── 互导：其他形态/材质图片卡横滑条（含当前类目之外的全部有产品类目）── */}
         <V2PillowCrossSell items={crossSellItems()} currentSlug={taxon.slug} />
