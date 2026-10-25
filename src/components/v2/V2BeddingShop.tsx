@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { buildSetFamilies, classifySet, clusterSetFamilies, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
+import { buildSetFamilies, classifySet, clusterSetFamilies, setFamilyRoot, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import GroupProductCard from '@/components/v2/GroupProductCard';
 import { buildGroupCards, collapseProductsToGroupCards } from '@/lib/group-cards';
@@ -28,6 +28,60 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
 /** 分区顺序（2026-10-16 用户定，与 hero 快链一致；2026-10-22 three 下线并入 four）；comforter 不在类型快链里，有产品时兜底排最后 */
 const SECTION_KIND_ORDER: SetKind[] = ['four', 'duvet', 'comforter'];
 
+/**
+ * four 分区族块位次对调（2026-10-24 用户定）：DUVSET（灰）换到第 2 位、WASHSTRIPE（sage）第 3 位、
+ * WASHJAC（cream）第 4 位，分别与该位次当时的族块（PERCALEJAC / PERCALESTRIPE / PERCALEPATCH）整块互换。
+ * 跨材质位次的固定排序无法靠权重/数据顺序实现（材质位次排序凌驾其上），故在此显式对调；
+ * 键 = 族根（setFamilyRoot 口径），对调在聚拢排序之后按连续族块整体交换
+ */
+const FOUR_SECTION_SWAPS: Array<[string, string]> = [
+  ['duvset', 'percalejac'],
+  ['washstripe', 'percalestripe'],
+  ['washjac', 'percalepatch'],
+  // 2026-10-25 用户定：在上面三对生效后的位次上再对调——DUVSET（灰，当时第 2 位）移到第 7 位，
+  // PERCALESTRIPE（stripe petal，当时第 7 位）移到第 2 位
+  ['duvset', 'percalestripe'],
+];
+
+/**
+ * duvet 分区卡位对调（2026-10-25 用户定，与 /bedding/duvet-covers 面料页的
+ * FABRIC_SECTION_SWAPS 同一意图）：PERCALEJAC-HAZE-DUVET ↔ POMPOM4-VINE-DUVET。
+ * 两个 asin 均无变体族（一族一卡），按 rep asin 直接互换展示位即可
+ */
+const DUVET_SECTION_SWAPS: Array<[string, string]> = [
+  ['percalejac-haze-duvet', 'pompom4-vine-duvet'],
+];
+
+/** 按 rep asin（小写）成对互换家族展示位；任一 asin 不存在时跳过该对 */
+function swapFamiliesByAsin(list: SetFamily[], swaps: Array<[string, string]>): SetFamily[] {
+  const out = [...list];
+  for (const [a, b] of swaps) {
+    const ia = out.findIndex((f) => f.rep.asin.toLowerCase() === a);
+    const ib = out.findIndex((f) => f.rep.asin.toLowerCase() === b);
+    if (ia === -1 || ib === -1) continue;
+    [out[ia], out[ib]] = [out[ib], out[ia]];
+  }
+  return out;
+}
+
+/** 按族根把已聚拢的家族列表切成连续族块，成对互换后展开；任一族根不存在时跳过该对 */
+function swapFamilyBlocks(list: SetFamily[], swaps: Array<[string, string]>): SetFamily[] {
+  const blocks: SetFamily[][] = [];
+  for (const f of list) {
+    const last = blocks[blocks.length - 1];
+    if (last && setFamilyRoot(last[0]) === setFamilyRoot(f)) last.push(f);
+    else blocks.push([f]);
+  }
+  const idxOf = (root: string) => blocks.findIndex((b) => setFamilyRoot(b[0]) === root);
+  for (const [a, b] of swaps) {
+    const ia = idxOf(a);
+    const ib = idxOf(b);
+    if (ia === -1 || ib === -1) continue;
+    [blocks[ia], blocks[ib]] = [blocks[ib], blocks[ia]];
+  }
+  return blocks.flat();
+}
+
 export default function V2BeddingShop({ products }: { products: MakimooProduct[] }) {
   // 家族聚合 + 未匹配家族规则的兜底产品（新增 bedding 产品若不符合 ASIN 前缀规律也不会消失）。
   // 注意：上游传入的是未去重全量列表（家族需要全尺寸 SKU 拼尺寸带），
@@ -39,7 +93,7 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
   );
 
   // 排序：先按面料固定位次（BEDDING_MATERIAL_ORDER，2026-10-17 用户定：Percale→Linen→Brushed
-  // Cotton→Linen-Like→Satin），同面料内按 Featured 权重序，最后同变体族色卡聚拢相邻（2026-10-16 用户定）
+  // Cotton→Linen-Like；Satin 2026-10-23 已下线），同面料内按 Featured 权重序，最后同变体族色卡聚拢相邻（2026-10-16 用户定）
   const sortFamilies = useMemo(
     () => (list: SetFamily[]): SetFamily[] => {
       const rankOf = (f: SetFamily) => {
@@ -59,18 +113,29 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
   // 按类型分区（无产品的类型不出分区）
   const kindSections = useMemo(
     () =>
-      SECTION_KIND_ORDER.map((kind) => ({
-        kind,
-        copy: SET_KIND_PAGE_COPY[kind],
-        list: sortFamilies(families.filter((f) => f.kind === kind)),
-      })).filter((s) => s.list.length > 0),
+      SECTION_KIND_ORDER.map((kind) => {
+        const sorted = sortFamilies(families.filter((f) => f.kind === kind));
+        return {
+          kind,
+          copy: SET_KIND_PAGE_COPY[kind],
+          // 2026-10-24 用户定：four 分区 DUVSET/WASHSTRIPE/WASHJAC 与第 2/3/4 位族块对调；
+          // 2026-10-25 用户定：duvet 分区 haze ↔ pompom 卡位对调（同 duvet-covers 面料页）
+          list:
+            kind === 'four'
+              ? swapFamilyBlocks(sorted, FOUR_SECTION_SWAPS)
+              : kind === 'duvet'
+                ? swapFamiliesByAsin(sorted, DUVET_SECTION_SWAPS)
+                : sorted,
+        };
+      }).filter((s) => s.list.length > 0),
     [families, sortFamilies]
   );
 
   return (
     <div>
       {/* 家族卡网格：与全站 PLP 同列数节奏；按类型分区（2026-10-16 用户定）；
-          2026-10-19 用户定：本页全部卡片改 3:4 竖图（object-cover 裁两侧，随 PDP 3:4 统一） */}
+          2026-10-19 用户定：套装卡片改 3:4 竖图；2026-10-24 用户定：仅 Duvet Covers
+          分区卡片改 1:1，3:4 折叠图 object-cover 居中裁上下，PDP 图集仍保持 3:4 */}
       {kindSections.map((s, i) => (
         <section
           key={s.kind}
@@ -92,9 +157,8 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
                 card={c}
                 badges={c.materials?.[0] ? [fabricDisplayName(c.materials[0])] : []}
                 compactText
-                tallImage
-                cropBiasRight={!c.key.toLowerCase().startsWith('duvset')}
-                anchorLeft={c.key.toLowerCase().startsWith('duvset')}
+                cropBiasRight={s.kind !== 'duvet' && !c.key.toLowerCase().startsWith('duvset')}
+                anchorLeft={s.kind !== 'duvet' && c.key.toLowerCase().startsWith('duvset')}
               />
             ))}
           </div>

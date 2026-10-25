@@ -2025,8 +2025,8 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
             {
                 "url": "/images/products/B0GD846FS2/1.webp",
                 "altText": "Set of 2 Soft Embossed Microfiber Bed Pillows 40 x 70 cm Fluffy Down Alternative Sleeping Cushions Supportive Breathable All Season for Home Hotel Guest Bedroom (White)",
-                "width": 800,
-                "height": 800
+                "width": 1440,
+                "height": 1920
             },
             {
                 "url": "/images/products/B0GD846FS2/2.webp",
@@ -2071,8 +2071,8 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
             {
                 "url": "/images/products/B0GRJ8M3TM/1.webp",
                 "altText": "Makimoo Quilted Pillow Inserts 2 Pack Decorative Cushion Fillers Soft Fluffy Bed Pillows for Sofa Couch Bedroom Living Room Home Decor Support 40 x 80 cm (White)",
-                "width": 800,
-                "height": 800
+                "width": 1440,
+                "height": 1920
             },
             {
                 "url": "/images/products/B0GRJ8M3TM/2.webp",
@@ -16619,13 +16619,268 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         ],
         "amazonUrl": ""
     },
+  {
+    "id": "makimoo-PERCALE-SKY-DUVET",
+    "asin": "PERCALE-SKY-DUVET",
+    "featuredImage": "/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Sky Blue, Queen)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-sky-blue-queen-percale-sky-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-SKY-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Sky Blue, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-SKY-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Sky Blue, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALE-SKY-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Sky Blue, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-SKY-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-DUVET",
+    "asin": "PERCALE-MIST-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Mist Grey, Queen)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-mist-grey-queen-percale-mist-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Mist Grey, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-MIST-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Mist Grey, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALE-MIST-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Mist Grey, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-QUEEN-DUVET",
+    "asin": "PERCALE-COCONUT-QUEEN-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-queen-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-QUEEN-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-COCONUT-QUEEN-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALE-COCONUT-QUEEN-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-QUEEN-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-NUDE-DUVET",
+    "asin": "PERCALE-NUDE-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Nude Pink, Queen)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-nude-pink-queen-percale-nude-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Nude Pink shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-NUDE-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Nude Pink, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-NUDE-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Nude Pink, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALE-NUDE-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Nude Pink, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-NUDE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+    {
+        "id": "makimoo-LINEN3-OATMEAL-DUVET",
+        "asin": "LINEN3-OATMEAL-DUVET",
+        "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Oatmeal, Queen)",
+        "handle": "makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet",
+        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom. WARM OATMEAL TONE: A cozy, heathered oatmeal neutral with a soft earthy feel, pairs effortlessly with white, brown, terracotta and black in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom.</p><p>WARM OATMEAL TONE: A cozy, heathered oatmeal neutral with a soft earthy feel, pairs effortlessly with white, brown, terracotta and black in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+        "productType": "Bedding",
+        "tags": [
+            "Bedding"
+        ],
+        "availableForSale": true,
+        "images": [
+            {
+                "url": "/images/products/LINEN3-OATMEAL-DUVET/1-3x4.webp",
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Oatmeal, Queen)",
+                "width": 1792,
+                "height": 2400
+            },
+            {
+                "url": "/images/products/LINEN3-OATMEAL-DUVET/2.webp",
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Oatmeal, Queen)",
+                "width": 1600,
+                "height": 1600
+            }
+        ],
+        "priceRange": {
+            "minVariantPrice": {
+                "amount": "69.99",
+                "currencyCode": "USD"
+            }
+        },
+        "variants": [
+            {
+                "id": "variant-LINEN3-OATMEAL-DUVET",
+                "title": "Default Title",
+                "price": {
+                    "amount": "69.99",
+                    "currencyCode": "USD"
+                },
+                "availableForSale": true,
+                "selectedOptions": []
+            }
+        ],
+        "amazonUrl": ""
+    },
     {
         "id": "makimoo-LINEN3-SAGE-DUVET",
         "asin": "LINEN3-SAGE-DUVET",
-        "title": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Sage Green, Queen)",
         "handle": "makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet",
-        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
-        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom. CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom.</p><p>CALM SAGE GREEN TONE: A muted, earthy sage that pairs effortlessly with white, cream, wood tones and greenery, easy to style in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
         "productType": "Bedding",
         "tags": [
             "Bedding"
@@ -16634,39 +16889,21 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "images": [
             {
                 "url": "/images/products/LINEN3-SAGE-DUVET/1.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Sage Green, Queen)",
+                "width": 1200,
+                "height": 1600
             },
             {
                 "url": "/images/products/LINEN3-SAGE-DUVET/2.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Sage Green, Queen)",
+                "width": 1600,
+                "height": 1600
             },
             {
                 "url": "/images/products/LINEN3-SAGE-DUVET/3.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-SAGE-DUVET/4.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-SAGE-DUVET/5.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-SAGE-DUVET/6.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Sage Green Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Sage Green, Queen)",
+                "width": 1200,
+                "height": 1600
             }
         ],
         "priceRange": {
@@ -16692,10 +16929,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     {
         "id": "makimoo-LINEN3-CHARCOAL-DUVET",
         "asin": "LINEN3-CHARCOAL-DUVET",
-        "title": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Charcoal Grey, Queen)",
         "handle": "makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet",
-        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. DEEP CHARCOAL GREY TONE: A rich, muted charcoal that grounds the bedroom, pairs effortlessly with white, beige, rust and brass accents in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
-        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>DEEP CHARCOAL GREY TONE: A rich, muted charcoal that grounds the bedroom, pairs effortlessly with white, beige, rust and brass accents in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom. DEEP CHARCOAL GREY TONE: A rich, muted charcoal that grounds the bedroom, pairs effortlessly with white, beige, rust and brass accents in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom.</p><p>DEEP CHARCOAL GREY TONE: A rich, muted charcoal that grounds the bedroom, pairs effortlessly with white, beige, rust and brass accents in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
         "productType": "Bedding",
         "tags": [
             "Bedding"
@@ -16703,40 +16940,16 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": true,
         "images": [
             {
-                "url": "/images/products/LINEN3-CHARCOAL-DUVET/1.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "url": "/images/products/LINEN3-CHARCOAL-DUVET/1-3x4.webp",
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Charcoal Grey, Queen)",
+                "width": 1792,
+                "height": 2400
             },
             {
                 "url": "/images/products/LINEN3-CHARCOAL-DUVET/2.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-CHARCOAL-DUVET/3.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-CHARCOAL-DUVET/4.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-CHARCOAL-DUVET/5.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-CHARCOAL-DUVET/6.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Charcoal Grey Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Charcoal Grey, Queen)",
+                "width": 1600,
+                "height": 1600
             }
         ],
         "priceRange": {
@@ -16762,10 +16975,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     {
         "id": "makimoo-LINEN3-DUSTYBLUE-DUVET",
         "asin": "LINEN3-DUSTYBLUE-DUVET",
-        "title": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Dusty Blue, Queen)",
         "handle": "makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet",
-        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. SOFT DUSTY BLUE TONE: A gentle, weathered blue that feels calm and airy, pairs effortlessly with white, cream, grey and natural wood in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
-        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>SOFT DUSTY BLUE TONE: A gentle, weathered blue that feels calm and airy, pairs effortlessly with white, cream, grey and natural wood in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom. SOFT DUSTY BLUE TONE: A gentle, weathered blue that feels calm and airy, pairs effortlessly with white, cream, grey and natural wood in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom.</p><p>SOFT DUSTY BLUE TONE: A gentle, weathered blue that feels calm and airy, pairs effortlessly with white, cream, grey and natural wood in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
         "productType": "Bedding",
         "tags": [
             "Bedding"
@@ -16773,40 +16986,16 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": true,
         "images": [
             {
-                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/1.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/1-3x4.webp",
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Dusty Blue, Queen)",
+                "width": 1728,
+                "height": 2304
             },
             {
                 "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/2.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/3.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/4.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/5.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/6.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Dusty Blue Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Dusty Blue, Queen)",
+                "width": 1600,
+                "height": 1600
             }
         ],
         "priceRange": {
@@ -16832,10 +17021,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     {
         "id": "makimoo-LINEN3-IVORY-DUVET",
         "asin": "LINEN3-IVORY-DUVET",
-        "title": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
+        "title": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Ivory, Queen)",
         "handle": "makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet",
-        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. CREAMY IVORY TONE: A warm, soft ivory that brightens the bed without the starkness of pure white, pairs effortlessly with any color palette in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
-        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>CREAMY IVORY TONE: A warm, soft ivory that brightens the bed without the starkness of pure white, pairs effortlessly with any color palette in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
+        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom. CREAMY IVORY TONE: A warm, soft ivory that brightens the bed without the starkness of pure white, pairs effortlessly with any color palette in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
+        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER, QUEEN SIZE: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included. Slip it over your duvet to instantly refresh your bedroom.</p><p>CREAMY IVORY TONE: A warm, soft ivory that brightens the bed without the starkness of pure white, pairs effortlessly with any color palette in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
         "productType": "Bedding",
         "tags": [
             "Bedding"
@@ -16843,40 +17032,16 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": true,
         "images": [
             {
-                "url": "/images/products/LINEN3-IVORY-DUVET/1.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "url": "/images/products/LINEN3-IVORY-DUVET/1-3x4.webp",
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Ivory, Queen)",
+                "width": 1200,
+                "height": 1600
             },
             {
                 "url": "/images/products/LINEN3-IVORY-DUVET/2.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-IVORY-DUVET/3.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-IVORY-DUVET/4.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-IVORY-DUVET/5.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-IVORY-DUVET/6.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Ivory Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
+                "altText": "Makimoo 100% Linen Duvet Cover Only Soft Breathable 88 x 88 in with Button Closure and Corner Ties (Ivory, Queen)",
+                "width": 1200,
+                "height": 1200
             }
         ],
         "priceRange": {
@@ -16900,78 +17065,9 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
     {
-        "id": "makimoo-LINEN3-OATMEAL-DUVET",
-        "asin": "LINEN3-OATMEAL-DUVET",
-        "title": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-        "handle": "makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet",
-        "description": "PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom. WARM OATMEAL TONE: A cozy, heathered oatmeal neutral with a soft earthy feel, pairs effortlessly with white, brown, terracotta and black in every season. BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.",
-        "descriptionHtml": "<p>PURE 100% LINEN: Woven from natural flax fiber, this duvet cover is fully linen with no blends. Breathable and cool in summer, cozy in winter, and it softens beautifully with every wash.</p><p>STANDALONE DUVET COVER: One duvet cover only. Pillowcases and sheets are NOT included. Slip it over your comforter to instantly refresh your bedroom.</p><p>WARM OATMEAL TONE: A cozy, heathered oatmeal neutral with a soft earthy feel, pairs effortlessly with white, brown, terracotta and black in every season.</p><p>BUTTON CLOSURE AND CORNER TIES: A hidden button placket keeps your comforter secure, while interior corner ties stop it from shifting through the night.</p><p>EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Natural soft texture with a relaxed, lived-in linen look straight from the dryer.</p>",
-        "productType": "Bedding",
-        "tags": [
-            "Bedding"
-        ],
-        "availableForSale": true,
-        "images": [
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/1.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/2.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/3.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/4.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/5.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            },
-            {
-                "url": "/images/products/LINEN3-OATMEAL-DUVET/6.webp",
-                "altText": "Makimoo 100% Linen Duvet Cover Only Oatmeal Soft Washed Pure Linen Bedding Cover 1 Piece Standalone with Button Closure and Corner Ties Breathable All-Season Essential",
-                "width": 1024,
-                "height": 1024
-            }
-        ],
-        "priceRange": {
-            "minVariantPrice": {
-                "amount": "69.99",
-                "currencyCode": "USD"
-            }
-        },
-        "variants": [
-            {
-                "id": "variant-LINEN3-OATMEAL-DUVET",
-                "title": "Default Title",
-                "price": {
-                    "amount": "69.99",
-                    "currencyCode": "USD"
-                },
-                "availableForSale": true,
-                "selectedOptions": []
-            }
-        ],
-        "amazonUrl": ""
-    },
-    {
         "id": "makimoo-DUVSET-GRAY-DUVET",
         "asin": "DUVSET-GRAY-DUVET",
+        "featuredImage": "/images/products/DUVSET-GRAY-DUVET/1-3x4.webp",
         "title": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
         "handle": "makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet",
         "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and wood tones, fitting modern, minimalist, farmhouse and Scandinavian rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
@@ -18331,6 +18427,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
             "Bedding"
         ],
         "availableForSale": false,
+        "featuredImage": "/images/products/PERCALE-COCONUT-QUEEN/1-3x4.webp",
         "images": [
             {
                 "url": "/images/products/PERCALE-COCONUT-QUEEN/1.webp",
@@ -23196,6 +23293,59 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
   {
+    "id": "makimoo-PERCALEJAC-HAZE-QUEEN",
+    "asin": "PERCALEJAC-HAZE-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-haze-queen",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "featuredImage": "/images/products/PERCALEJAC-HAZE-QUEEN/card-1x1.webp",
+    "images": [
+      {
+        "url": "/images/products/PERCALEJAC-HAZE-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALEJAC-HAZE-QUEEN/2.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue) - Lifestyle",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALEJAC-HAZE-QUEEN/3-3x4.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALEJAC-HAZE-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-PERCALEJAC-OATBEIGE-QUEEN",
     "asin": "PERCALEJAC-OATBEIGE-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Oatmeal Beige)",
@@ -23235,52 +23385,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
-  {
-    "id": "makimoo-PERCALEJAC-HAZE-QUEEN",
-    "asin": "PERCALEJAC-HAZE-QUEEN",
-    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-haze-queen",
-    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.",
-    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/PERCALEJAC-HAZE-QUEEN/1.webp",
-        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
-        "width": 1200,
-        "height": 1200
-      },
-      {
-        "url": "/images/products/PERCALEJAC-HAZE-QUEEN/2.webp",
-        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue) - Lifestyle",
-        "width": 1200,
-        "height": 1600
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-PERCALEJAC-HAZE-QUEEN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
+
   {
     "id": "makimoo-PERCALEJAC-ROSE-QUEEN",
     "asin": "PERCALEJAC-ROSE-QUEEN",
@@ -23373,12 +23478,19 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALESTRIPE-PETAL-QUEEN/card-1x1.webp",
     "images": [
       {
         "url": "/images/products/PERCALESTRIPE-PETAL-QUEEN/1.webp",
         "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blush Pink Stripe)",
         "width": 1200,
         "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALESTRIPE-PETAL-QUEEN/2-3x4.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blush Pink Stripe)",
+        "width": 1200,
+        "height": 1600
       }
     ],
     "priceRange": {
@@ -23442,6 +23554,604 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
+    "id": "makimoo-PERCALESTRIPE-PETAL-DUVET",
+    "asin": "PERCALESTRIPE-PETAL-DUVET",
+    "title": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-fine-stripe-duvet-cover-only-blush-pink-queen-percalestripe-petal-duvet",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features a yarn-dyed jacquard fine stripe with a subtle woven texture. Reversible AB design—the A side shows the fine-stripe jacquard, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Blush Pink Stripe Colorway: Finished in a soft blush pink and white fine stripe—low-saturation and gently romantic, it brings a calm, healing warmth to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features a yarn-dyed jacquard fine stripe with a subtle woven texture. Reversible AB design—the A side shows the fine-stripe jacquard, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Blush Pink Stripe Colorway: Finished in a soft blush pink and white fine stripe—low-saturation and gently romantic, it brings a calm, healing warmth to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
+        "width": 1440,
+        "height": 1920
+      },
+      {
+        "url": "/images/products/PERCALESTRIPE-PETAL-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALESTRIPE-PETAL-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALESTRIPE-PETAL-DUVET/4.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Blush Pink Stripe, Queen)",
+        "width": 1440,
+        "height": 1920
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALESTRIPE-PETAL-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALEPATCH-STONE-DUVET",
+    "asin": "PERCALEPATCH-STONE-DUVET",
+    "title": "Makimoo 100% Cotton Percale Jacquard Patchwork Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Stone Grey Patchwork, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-patchwork-duvet-cover-only-stone-grey-queen-percalepatch-stone-duvet",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features a yarn-dyed jacquard patchwork design with a subtle woven texture. Reversible AB design—the A side shows the patchwork jacquard, while the B side is a clean solid grey. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Stone Grey Patchwork Colorway: Finished in a soft stone grey and white patchwork—low-saturation and quietly layered, it brings a calm, grounded feel to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features a yarn-dyed jacquard patchwork design with a subtle woven texture. Reversible AB design—the A side shows the patchwork jacquard, while the B side is a clean solid grey.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Stone Grey Patchwork Colorway: Finished in a soft stone grey and white patchwork—low-saturation and quietly layered, it brings a calm, grounded feel to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALEPATCH-STONE-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Patchwork Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Stone Grey Patchwork, Queen)",
+        "width": 1440,
+        "height": 1920
+      },
+      {
+        "url": "/images/products/PERCALEPATCH-STONE-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Patchwork Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Stone Grey Patchwork, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALEPATCH-STONE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-POMPOM4-VINE-DUVET",
+    "asin": "POMPOM4-VINE-DUVET",
+    "title": "Makimoo Embossed Velvet Duvet Cover Only with Pom Pom Trim 88 x 88 in (Olive Vine, Queen)",
+    "handle": "makimoo-embossed-velvet-pom-pom-duvet-cover-only-olive-vine-queen-pompom4-vine-duvet",
+    "description": "Sculpted Embossed Velvet: Woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover border, giving it a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side is made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights. Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy décor; the cover is machine washable and keeps its plush texture wash after wash.",
+    "descriptionHtml": "<p>Sculpted Embossed Velvet: Woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover border, giving it a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side is made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights.</p><p>Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy décor; the cover is machine washable and keeps its plush texture wash after wash.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/POMPOM4-VINE-DUVET/1.webp",
+        "altText": "Makimoo Embossed Velvet Duvet Cover Only with Pom Pom Trim 88 x 88 in (Olive Vine, Queen)",
+        "width": 1440,
+        "height": 1920
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-POMPOM4-VINE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-WASHJAC-CREAM-DUVET",
+    "asin": "WASHJAC-CREAM-DUVET",
+    "title": "Makimoo Soft Washed Cotton Jacquard Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Cream White, Queen)",
+    "handle": "makimoo-washed-cotton-jacquard-duvet-cover-only-cream-white-queen-washjac-cream-duvet",
+    "description": "Soft Washed Cotton with Textured Jacquard: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed, textured leaf-vein jacquard woven into the cloth—not printed—creating a subtle tonal pattern that catches the light gently. Reversible AB design—the A side shows the leaf-vein jacquard, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash. Soothing Cream White Colorway: Finished in a soft, milky Cream White—low-saturation and quietly warm, it brings a calm, airy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Washed Cotton with Textured Jacquard: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed, textured leaf-vein jacquard woven into the cloth—not printed—creating a subtle tonal pattern that catches the light gently. Reversible AB design—the A side shows the leaf-vein jacquard, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash.</p><p>Soothing Cream White Colorway: Finished in a soft, milky Cream White—low-saturation and quietly warm, it brings a calm, airy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/WASHJAC-CREAM-DUVET/1.webp",
+        "altText": "Makimoo Soft Washed Cotton Jacquard Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Cream White, Queen)",
+        "width": 1440,
+        "height": 1920
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-WASHJAC-CREAM-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-VELJAC-IVORY-DUVET",
+    "asin": "VELJAC-IVORY-DUVET",
+    "title": "Makimoo Double-Sided Jacquard Velvet Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Ivory White, Queen)",
+    "handle": "makimoo-jacquard-velvet-duvet-cover-only-ivory-white-queen-veljac-ivory-duvet",
+    "description": "Double-Sided Jacquard Velvet: Both sides of the cover are soft, plush velvet. The A side is carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief, while the B side is a smooth, solid velvet in a warm camel tone—an AB reversible design that gives you two looks in one cover. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Thick, Warm & Cozy: The dense milk-velvet pile feels velvety soft against the skin and holds warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its plush pile and carved texture wash after wash. Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Double-Sided Jacquard Velvet: Both sides of the cover are soft, plush velvet. The A side is carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief, while the B side is a smooth, solid velvet in a warm camel tone—an AB reversible design that gives you two looks in one cover.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Thick, Warm & Cozy: The dense milk-velvet pile feels velvety soft against the skin and holds warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its plush pile and carved texture wash after wash.</p><p>Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/VELJAC-IVORY-DUVET/1.webp",
+        "altText": "Makimoo Double-Sided Jacquard Velvet Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Ivory White, Queen)",
+        "width": 1440,
+        "height": 1920
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-VELJAC-IVORY-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-COCONUT-DUVET",
+    "asin": "PERCALE-COCONUT-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Coconut Milk shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-COCONUT-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-COCONUT-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Coconut Milk, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-COCONUT-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-SATEEN4-OLIVE-DUVET",
+    "asin": "SATEEN4-OLIVE-DUVET",
+    "title": "Makimoo 100% Cotton Sateen Duvet Cover Only Silky Soft 88 x 88 in with Zipper Closure Corner Ties (Olive Green, Queen)",
+    "handle": "makimoo-cotton-sateen-duvet-cover-only-olive-green-queen-sateen4-olive-duvet",
+    "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this duvet cover has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this duvet cover has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Olive Green shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/SATEEN4-OLIVE-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Sateen Duvet Cover Only Silky Soft 88 x 88 in with Zipper Closure Corner Ties (Olive Green, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-SATEEN4-OLIVE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALEJAC-HAZE-DUVET",
+    "asin": "PERCALEJAC-HAZE-DUVET",
+    "title": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Dusty Blue, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-dusty-blue-queen-percalejac-haze-duvet",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue wide stripe with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Dusty Blue Colorway: Finished in a hazy, muted Dusty Blue wide stripe with a soft grey undertone—calm and airy, it brings a quiet, restful feel to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALEJAC-HAZE-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Dusty Blue, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALEJAC-HAZE-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Dusty Blue, Queen)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALEJAC-HAZE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALEJAC-OATBEIGE-DUVET",
+    "asin": "PERCALEJAC-OATBEIGE-DUVET",
+    "title": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
+    "handle": "makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-oatmeal-beige-queen-percalejac-oatbeige-duvet",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige wide stripe—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover features yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige wide stripe—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/1.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/PERCALEJAC-OATBEIGE-DUVET/3.webp",
+        "altText": "Makimoo 100% Cotton Percale Jacquard Wide Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Oatmeal Beige, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALEJAC-OATBEIGE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-WASHSTRIPE-SAGE-DUVET",
+    "asin": "WASHSTRIPE-SAGE-DUVET",
+    "title": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
+    "handle": "makimoo-washed-cotton-stripe-duvet-cover-only-sage-green-queen-washstripe-sage-duvet",
+    "description": "Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB design—the A side shows the fine stripe, while the B side is a clean solid color. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash. Soothing Sage Green Colorway: Finished in a muted sage green and white fine stripe—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, the duvet cover features a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB design—the A side shows the fine stripe, while the B side is a clean solid color.</p><p>Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cover is machine washable and gets even softer with every wash.</p><p>Soothing Sage Green Colorway: Finished in a muted sage green and white fine stripe—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/1.webp",
+        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/2.webp",
+        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "url": "/images/products/WASHSTRIPE-SAGE-DUVET/3.webp",
+        "altText": "Makimoo Soft Washed Cotton Fine Stripe Duvet Cover Only 88 x 88 in with Hidden Zipper and Corner Ties (Sage Green, Queen)",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-WASHSTRIPE-SAGE-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-TWIN-DUVET",
+    "asin": "PERCALE-MIST-TWIN-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 68 x 88 in with Zipper Closure Corner Ties (Mist Grey, Twin)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-mist-grey-twin-percale-mist-twin-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Twin Size: One duvet cover only (68 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Twin Size: One duvet cover only (68 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-TWIN-DUVET/1-3x4.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 68 x 88 in with Zipper Closure Corner Ties (Mist Grey, Twin)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-MIST-TWIN-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 68 x 88 in with Zipper Closure Corner Ties (Mist Grey, Twin)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-TWIN-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-FULL-DUVET",
+    "asin": "PERCALE-MIST-FULL-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 80 x 88 in with Zipper Closure Corner Ties (Mist Grey, Full)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-mist-grey-full-percale-mist-full-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Full Size: One duvet cover only (80 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, Full Size: One duvet cover only (80 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-FULL-DUVET/1-3x4.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 80 x 88 in with Zipper Closure Corner Ties (Mist Grey, Full)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-MIST-FULL-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 80 x 88 in with Zipper Closure Corner Ties (Mist Grey, Full)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-FULL-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-PERCALE-MIST-KING-DUVET",
+    "asin": "PERCALE-MIST-KING-DUVET",
+    "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 104 x 90 in with Zipper Closure Corner Ties (Mist Grey, King)",
+    "handle": "makimoo-cotton-percale-duvet-cover-only-mist-grey-king-percale-mist-king-duvet",
+    "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, King Size: One duvet cover only (104 x 90 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
+    "descriptionHtml": "<p>Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash.</p><p>Standalone Duvet Cover, King Size: One duvet cover only (104 x 90 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry.</p><p>Muted Healing Tone: The soft Mist Grey shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALE-MIST-KING-DUVET/1-3x4.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 104 x 90 in with Zipper Closure Corner Ties (Mist Grey, King)",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/images/products/PERCALE-MIST-KING-DUVET/2.webp",
+        "altText": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 104 x 90 in with Zipper Closure Corner Ties (Mist Grey, King)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALE-MIST-KING-DUVET",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-WASHSTRIPE-SAGEGREEN-QUEEN",
     "asin": "WASHSTRIPE-SAGEGREEN-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece Soft Washed Cotton Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Green)",
@@ -23453,6 +24163,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/card-1x1.webp",
     "images": [
       {
         "url": "/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1.webp",
@@ -23510,6 +24221,46 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "variants": [
       {
         "id": "variant-WASHJAC-CREAM-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-VELJAC-IVORY-QUEEN",
+    "asin": "VELJAC-IVORY-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Double-Sided Jacquard Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Ivory White)",
+    "handle": "makimoo-queen-bedding-set-4-piece-jacquard-velvet-ivory-queen",
+    "description": "Double-Sided Jacquard Velvet: Both sides of this set are soft, plush velvet. The A side is carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief, while the B side is a smooth, solid velvet in a warm camel tone—an AB reversible design that gives you two looks in one set. Thick, Warm & Cozy: The dense milk-velvet pile feels velvety soft against the skin and holds warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and carved texture wash after wash. Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Double-Sided Jacquard Velvet: Both sides of this set are soft, plush velvet. The A side is carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief, while the B side is a smooth, solid velvet in a warm camel tone—an AB reversible design that gives you two looks in one set.</p><p>Thick, Warm & Cozy: The dense milk-velvet pile feels velvety soft against the skin and holds warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and carved texture wash after wash.</p><p>Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/VELJAC-IVORY-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece Double-Sided Jacquard Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Ivory White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-VELJAC-IVORY-QUEEN",
         "title": "Default Title",
         "price": {
           "amount": "0.00",

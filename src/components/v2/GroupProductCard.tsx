@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { formatPrice } from '@/components/v2/card-utils';
-import StarDisplay from '@/components/v2/StarDisplay';
 import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
 import type { GroupCard } from '@/lib/group-cards';
@@ -55,6 +54,8 @@ export default function GroupProductCard({
   const isGroup = card.variants.length > 0;
   const imgUrl = v?.imageUrl ?? card.imageUrl;
   const imgAlt = v?.imageAlt ?? card.imageAlt;
+  // 2026-10-24 用户定：按当前显示图切换裁剪——套装场景图变体居中 50%（折叠图为 3:4 原图，无需焦点偏移）
+  const centerCrop = (v ? v.centerCrop : card.centerCrop) === true;
   /** 卡面 1:1 方图不裁切（CARD_SQUARE_IMAGE_ASINS 白名单，2026-10-22 用户定）：按当前显示图（选中变体或卡面）判定 */
   const squareImg = (v ? v.squareImage : card.squareImage) === true;
   const href = v2url(`/products/${v?.handle ?? card.handle}/`);
@@ -62,8 +63,6 @@ export default function GroupProductCard({
     /,\s*(Twin|Full|Queen|King|\d+\s*x\s*\d+\s*cm)$/i,
     ''
   );
-  const rating = v ? v.rating : card.rating;
-  const reviewCount = v ? v.reviewCount : card.reviewCount;
   const price = v ? v.price : card.fromPrice;
   const currency = v ? v.currency : card.currency;
   // 颜色 >6 时显示前 5 个 + "+N" 圆点（2026-10-22 用户定）
@@ -78,7 +77,7 @@ export default function GroupProductCard({
           alt={imgAlt}
           loading="lazy"
           className={`absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-            paddedGrayBg ? 'object-contain' : paddedWhiteBg ? 'object-contain p-2 sm:p-7' : `object-cover${anchorRight ? ' object-right' : ''}${anchorLeft ? ' object-left' : ''}${cropBiasRight ? ' object-[66.67%_50%]' : ''}`
+            paddedGrayBg ? 'object-contain' : paddedWhiteBg ? 'object-contain p-2 sm:p-7' : `object-cover${anchorRight ? ' object-right' : ''}${anchorLeft ? ' object-left' : ''}${cropBiasRight ? ' object-[66.67%_50%]' : ''}${centerCrop ? ' object-center' : ''}`
           }`}
         />
         {SHOW_CARD_BADGES && badges.length > 0 && (
@@ -118,7 +117,7 @@ export default function GroupProductCard({
                   e.stopPropagation();
                   setSel(i);
                 }}
-                className={`relative w-6 h-6 lg:w-7 lg:h-7 rounded-full overflow-hidden border-2 transition hover:scale-105 ${
+                className={`relative shrink-0 w-6 h-6 lg:w-7 lg:h-7 rounded-full overflow-hidden border-2 transition hover:scale-105 ${
                   sel === i ? 'border-brand shadow-md' : 'border-warm-gray hover:border-brand/40'
                 }${sv.inStock ? '' : ' opacity-40 grayscale'}`}
               >
@@ -140,7 +139,7 @@ export default function GroupProductCard({
                   e.stopPropagation();
                   window.location.href = v2url(`/products/${card.handle}/`);
                 }}
-                className="w-6 h-6 lg:w-7 lg:h-7 rounded-full border-2 border-warm-gray bg-white text-[10px] font-semibold text-[#777] flex items-center justify-center transition hover:border-brand/40"
+                className="shrink-0 w-6 h-6 lg:w-7 lg:h-7 rounded-full border-2 border-warm-gray bg-white text-[10px] font-semibold text-[#777] flex items-center justify-center transition hover:border-brand/40"
               >
                 +{overflow}
               </button>
@@ -150,16 +149,6 @@ export default function GroupProductCard({
           /* 占位行：与色卡行同高（24/28px），混类网格卡片信息区对齐 */
           <div className="mt-1.5 h-6 lg:h-7" aria-hidden="true" />
         ) : null}
-        {/* 评分行（有真实评价数据才显示；点色卡联动切换为该色评分） */}
-        {rating != null && rating > 0 && (
-          <div className="mt-1 flex items-center gap-1.5">
-            <StarDisplay rating={rating} size={12} />
-            <span className="text-[11px] lg:text-xs text-[#999]">
-              {rating.toFixed(1)}
-              {reviewCount ? ` (${reviewCount})` : ''}
-            </span>
-          </div>
-        )}
         {price && (
           <p
             className={`mt-1.5 ${compactText ? 'text-xs lg:text-sm' : 'text-sm lg:text-base'} font-semibold text-brand`}

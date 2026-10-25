@@ -1,24 +1,25 @@
 /**
  * Pillows 类目二级分类口径（2026-09-30 用户定，照搬 Bedding 的 Type × Fabric 双维度模型）：
  *
- * Type（形态，2026-10-08 用户定：改为 Inserts / Cases / Neck 三类）：
+ * Type（形态，2026-10-08 用户定：改为 Inserts / Cases / Neck 三类；
+ * 2026-10-23 用户定：Neck Pillows 整体下架，注册表移除，剩两类）：
  * - pillow-inserts  Pillow Inserts  枕芯 + 床枕（标题含 Pillow Inserts / Throw Pillow / Bed Pillow / Stuffer）
  * - pillow-cases    Throw Pillow Cases  枕套/抱枕套（标题含 Pillowcase / Cushion Cover；8 款老枕套仍全站隐藏，
  *                                   见 products.ts HIDDEN_HANDLES；类目名 2026-10-09 用户定由
  *                                   Decorative Pillow Cases 改为 Throw Pillow Cases）
- * - neck-pillows    Neck Pillows    旅行颈枕（Travel 类目产品，标题含 Neck Pillow）
+ * - ~~neck-pillows~~  2026-10-23 下架：旅行颈枕 3 族 13 款全站隐藏（products.ts HIDDEN_HANDLES），
+ *                     /pillows/neck-pillows/ 不再生成
  *
  * Material（填充材质，取自 getProductSpecs(asin).material）：
  * - down-alternative   Down Alternative   Microfiber / Hollowfibre（2026-09-30 用户定：microfiber 枕头归入此类；
  *                                   2026-10-09：Polyester 纤维填充同属化纤替代绒，归入此类——
  *                                   否则长抱枕芯（material=Polyester）在 /pillows/pillow-inserts/ 按材质分区时落空不显示）
  * - down               Down               羽绒类（2026-10-18 起有产品：80/20 Down 与 50/50 Down & Feather 床枕）
- * - memory-foam        Memory Foam        记忆棉（8 款记忆棉颈枕）
+ * - ~~memory-foam~~  2026-10-23 随颈枕下架清空（该材质只有 8 款记忆棉颈枕），注册表移除
  *
- * 注意：旅行颈枕源数据 productType = Travel，enrich 后归一化为 Others（subcategory = travel）。
- * 它们跨挂到 Pillows（不出现在 /products?cat=others 之外仍保留原归属），靠 pillowTypeOf 识别。
- * 2026-09-30 用户定：4 款天鹅绒充气颈枕已全站隐藏（products.ts HIDDEN_HANDLE_PREFIXES），
- * 不进任何类目；neck-pillows 只剩记忆棉颈枕。
+ * 注意：旅行颈枕源数据 productType = Travel，enrich 后归一化为 Others（subcategory = travel），
+ * 2026-10-23 起全部隐藏、不进任何类目。此前它们跨挂到 Pillows 靠 pillowTypeOf 识别。
+ * 2026-09-30 用户定：4 款天鹅绒充气颈枕已全站隐藏（products.ts HIDDEN_HANDLE_PREFIXES）。
  */
 
 import type { MakimooProduct } from '@/data/products';
@@ -53,13 +54,6 @@ export const PILLOW_TYPES: PillowTaxon[] = [
     menuDesc: 'A fresh look, instantly.',
     blurb: 'Decorative covers in soft, muted tones — an instant refresh for any cushion.',
   },
-  {
-    key: 'neck-pillows',
-    label: 'Neck Pillows',
-    slug: 'neck-pillows',
-    menuDesc: 'Comfort on the go.',
-    blurb: 'Travel-ready neck support for planes, cars and desks.',
-  },
 ];
 
 export const PILLOW_MATERIALS: PillowTaxon[] = [
@@ -76,13 +70,6 @@ export const PILLOW_MATERIALS: PillowTaxon[] = [
     slug: 'down',
     menuDesc: 'Airy. Cloud-soft.',
     blurb: 'Real down and down-feather fills — airy loft with a soft, sink-in feel.',
-  },
-  {
-    key: 'memory-foam',
-    label: 'Memory Foam',
-    slug: 'memory-foam',
-    menuDesc: 'Contour support.',
-    blurb: 'Contour support that molds to you — a travel favorite.',
   },
 ];
 
@@ -158,18 +145,11 @@ export function pillowCardColor(p: Pick<MakimooProduct, 'asin' | 'title' | 'subc
 }
 
 /**
- * 列表卡合并/折叠（2026-10-02 用户定）：360° 环绕款记忆棉旅行颈枕折叠为一张卡
- * （一族 = 一款产品 = 一张卡，颜色变体行展示族内全部颜色，From 价取族内最低价）：
- * - 360° 环绕款 b0-travel-memory（代表 = 灰色 b0c2z9pffk）
- * 仅影响列表展示；PDP 仍是每色独立产品。
- * 2026-10-10 用户改：b0-travel-adjustable（按扣款）取消合并，Black/Grey 每色独立成卡。
+ * 列表卡合并/折叠（2026-10-02 用户定）：一族 = 一款产品 = 一张卡。
+ * 2026-10-23 用户定：Neck Pillows 整体下架（b0-travel-memory / b0-travel-adjustable /
+ * NECKPILLOW-EGGCASE 三族 13 款），合并名单清空，机制保留备用。
  */
-const PILLOW_CARD_MERGES: { families: string[]; repHandle: string }[] = [
-  {
-    families: ['b0-travel-memory'],
-    repHandle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk',
-  },
-];
+const PILLOW_CARD_MERGES: { families: string[]; repHandle: string }[] = [];
 
 export interface PillowCardMergeResult {
   /** 合并后的展示列表（非代表成员已移除，原顺序保留） */

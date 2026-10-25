@@ -8737,6 +8737,77 @@ const HIDDEN_HANDLES = new Set([
   // 2026-10-18 用户定：microfiber 新线（MICROFIBER-PILLOW 族）替代，旧 b0-inserts-rect 两款全站移除
   'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw',
   'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf',
+  // 2026-10-23 用户定：b0-seat-cushions 变体族（藤编/簇绒花色座垫 12 色）整族全站移除
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4b9t6jv',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bbvs53',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bc7q4s',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bcd4dy',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bd7q5x',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bdllfk',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhx7xkl',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cj8tjl56',
+  '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhslcz5',
+  'indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b',
+  'set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc',
+  'makimoo-chair-cushions-set-of-2-oil-painting-floral-seat-b0cjhl4lzp',
+  // 2026-10-23 用户定：Neck Pillows 子类目整体下架（3 族 13 款：b0-travel-memory / b0-travel-adjustable / NECKPILLOW-EGGCASE），PDP 404
+  'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0bxckknn8',
+  'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9jrdm',
+  'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk',
+  'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2zcxvx7',
+  'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcln57s',
+  'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcmdzns',
+  'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j237v3',
+  'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j292wf',
+  'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732',
+  'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3',
+  'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4',
+  'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5',
+  'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6',
+  // 2026-10-23 用户定：Satin（ice silk 缎面）床品全站移除（2 族 24 款：1688-1061371343572 四件套 22 款 + 1688-1048207560416 双拼 2 款），PDP 404，/bedding/satin/ 面料页同步下线
+  'luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572',
+  'luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2',
+  'cooling-ice-silk-duvet-cover-silky-smooth-soft-breathable-1688-1061371343572-c3',
+  'cooling-silk-touch-duvet-cover-breathable-silky-smooth-soft-1688-1061371343572-c4',
+  'cooling-ice-silk-duvet-cover-breathable-smooth-solid-color-1688-1061371343572-c5',
+  'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c6',
+  'cooling-ice-silk-duvet-cover-200-x-230-cm-silky-breathable-1688-1061371343572-c7',
+  'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c8',
+  'cooling-silky-duvet-cover-breathable-smooth-bedding-cover-1688-1061371343572-c9',
+  'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c10',
+  'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c11',
+  'luxury-soft-cooling-ice-silk-duvet-cover-silky-breathable-1688-1061371343572-c12',
+  'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c13',
+  'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c14',
+  '1-piece-cooling-ice-silk-duvet-cover-silky-breathable-solid-1688-1061371343572-c15',
+  'luxury-ice-silk-duvet-cover-cooling-silky-breathable-solid-1688-1061371343572-c16',
+  'cooling-ice-silk-duvet-cover-smooth-breathable-silky-solid-1688-1061371343572-c17',
+  'premium-cooling-ice-silk-duvet-cover-soft-silky-breathable-1688-1061371343572-c18',
+  'cooling-ice-silk-duvet-cover-silky-breathable-quilt-cover-1688-1061371343572-c19',
+  'cooling-ice-silk-duvet-cover-breathable-silky-smooth-1688-1061371343572-c20',
+  'cooling-ice-silk-duvet-cover-solid-color-silky-breathable-1688-1061371343572-c21',
+  'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c22',
+  'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416',
+  'cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2',
+  // 2026-10-23 用户定：压花超细纤维枕 40x80（b0gd843wmn）全站移除，PDP 404
+  'set-of-2-embossed-microfibre-bed-pillows-for-sleeping-soft-b0gd843wmn',
+  // 2026-10-24 用户定：Duvet Covers 只保留新生成的单独被套，旧的 14 个下架，后续按套装逐批重建（LINEN3 五色已恢复重建，不再计 14 个）
+  // 2026-10-24 用户定：LINEN3 五色 Queen 单独被套恢复重建，移出隐藏清单
+  // 2026-10-24 用户定：DUVSET 灰色单独被套按新种草图（1-3x4.webp）恢复重建，移出隐藏清单
+  'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet',
+  'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet',
+  // 2026-10-24 用户定：Petal / Stone 单独被套已按新折叠图恢复重建，移出隐藏清单
+  'makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-duvet',
+  'makimoo-cotton-sateen-duvet-cover-only-olive-green-queen-sateen4-olive-duvet',
+  // 2026-10-25 用户定：Dusty Blue 宽条纹提花单独被套按新种草图恢复重建，移出隐藏清单
+  // 2026-10-25 用户定：B0GRJ8M3TM 绗缝枕芯 2 只装（40×80）全站移除（数据与图片文件保留）
+  // 2026-10-25 用户定：MK-BP-INSERT-1PC 长条抱枕芯（54×20）全站移除（数据与图片文件保留）
+  'long-body-pillow-insert-54x20-mk-bp-insert-1pc',
+  // 2026-10-25 用户定：两款单独被套下架（数据与图片文件保留）
+  'makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-oatmeal-beige-queen-percalejac-oatbeige-duvet',
+  'makimoo-washed-cotton-stripe-duvet-cover-only-sage-green-queen-washstripe-sage-duvet',
+  'makimoo-quilted-pillow-inserts-2-pack-decorative-cushion-b0grj8m3tm',
 ]);
 
 export function isHiddenProduct(p: { handle: string }): boolean {

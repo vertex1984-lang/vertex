@@ -63,15 +63,7 @@ export const BEDDING_FABRICS: BeddingFabric[] = [
       'A fine sateen weave with a smooth, lustrous face and a subtle sheen that catches the light softly. Buttery against the skin with an elegant drape — and it only gets softer with every wash.',
     heroImage: '/images/fabric-guide/fabric-cotton-sateen.webp',
   },
-  {
-    // 2026-09-27 用户定：ice silk 缎面被套（原 More Bedding 兜底区）归 Satin 面料子类
-    slug: 'satin',
-    material: 'Satin',
-    desc: 'Silky. Lustrous.',
-    story:
-      'A glossy satin weave with a mirror-smooth face that glides over skin and catches the light. Cool to the first touch, fluid in drape — and fully machine washable.',
-    heroImage: '/images/fabric-guide/fabric-satin.webp',
-  },
+  // /bedding/satin/ 2026-10-23 随 Satin 床品全站移除下线（用户定：24 款 ice silk 缎面床品 PDP 404）
 ];
 
 export function fabricBySlug(slug: string): BeddingFabric | undefined {

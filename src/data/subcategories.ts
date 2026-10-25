@@ -1,7 +1,6 @@
 // 二级分类注册表（key 用于 URL ?sub= 参数；parent 为顶级分类小写值）
 // 判定规则见 classifyProduct：标题关键词 + 尺寸带（数据来自 product-specs / specs-overrides）
 import { getProductSpecs } from '@/lib/specs';
-import { getVariantGroupOf } from '@/data/variant-groups';
 
 export interface CategoryDef {
   label: string;
@@ -36,11 +35,10 @@ export interface SubcategoryDef {
 }
 
 export const SUBCATEGORIES: SubcategoryDef[] = [
-  // Cushions（2026-10-09 用户定：按风格分 3 类，按变体组归位不拆组，见 classifyCushion；
+  // Cushions（2026-10-23 用户定：取消风格 3 类，全部并入 outdoor-cushions 单分类，见 classifyCushion；
   //  展示顺序用户定：Corduroy 置顶，Solids 其次，Prints 最后）
-  { key: 'corduroy', parent: 'cushions', label: 'Corduroy Classics', shortLabel: 'Corduroy', blurb: 'Ribbed corduroy comfort.' },
-  { key: 'solids', parent: 'cushions', label: 'Soft Solids', shortLabel: 'Solids', blurb: 'Quiet tones for any space.' },
-  { key: 'prints', parent: 'cushions', label: 'Floral & Prints', shortLabel: 'Prints', blurb: 'Prints to brighten every seat.' },
+  // 2026-10-23 用户定：cushions 取消 corduroy/solids/prints 风格三类，全部并入 Outdoor Cushions 单分类
+  { key: 'outdoor-cushions', parent: 'cushions', label: 'Outdoor Cushions', shortLabel: 'Outdoor', blurb: 'Tufted, water-resistant comfort for every patio seat.' },
   // Pillows（2026-10-08 用户定：改为 枕芯 / 枕套 / 颈枕 三类）
   { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
   { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
@@ -78,7 +76,8 @@ export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {
 
 /** Bedding 材质分组的展示顺序（2026-09 用户定）：类目页分区/Filter/顶部导航 mega menu 三处统一。
  *  未收录的材质排在后面（按产品数降序兜底） */
-export const BEDDING_MATERIAL_ORDER = ['Cotton Percale', '100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Satin', 'Organic Cotton'];
+// 2026-10-23：Satin 随缎面床品全站移除出序（用户定）
+export const BEDDING_MATERIAL_ORDER = ['Cotton Percale', '100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Organic Cotton'];
 
 /** 材质分组排序：先按 BEDDING_MATERIAL_ORDER 固定位次，未收录的按数量降序排在尾部 */
 export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [string, T]) => number): [string, T][] {
@@ -119,28 +118,10 @@ export function productCategoryTag(p: { productType: string; subcategory?: strin
   return sub?.shortLabel || p.productType || 'Product';
 }
 
-/** 2026-10-09 用户定：cushions 二级分类改为按风格 3 类（prints / solids / corduroy），
- *  按变体组归位（组 = 风格单元，不拆组）；无变体组的新品按标题关键词兜底 */
-const CUSHION_GROUP_SUB: Record<string, string> = {
-  'b0-seat-cushions': 'prints',
-  'outdoor-95x45': 'prints',
-  'outdoor-110x55': 'prints',
-  'b0-highback-4pk': 'prints',
-  'b0-round-cushions': 'solids',
-  'b0-highback-2pk': 'solids',
-  'outdoor-110x53': 'solids',
-  'b0-seat-cushions-wr': 'solids',
-  'b0-rocking-95x45': 'corduroy',
-};
-
-function classifyCushion(title: string, asin: string): string {
-  const g = getVariantGroupOf(asin);
-  const sub = g ? CUSHION_GROUP_SUB[g.id] : undefined;
-  if (sub) return sub;
-  if (/corduroy|rocking/i.test(title)) return 'corduroy';
-  if (/floral|flower|paisley|botanical|leaf|leaves|bird|butterfly|tulip|jungle|print|stripe|plaid|check|geometric|lattice|houndstooth|batik|watercolor|monet|oil painting/i.test(title))
-    return 'prints';
-  return 'solids';
+/** 2026-10-23 用户定：cushions 取消风格三类（原 prints / solids / corduroy 归位表废除），
+ *  全部坐垫统一归 outdoor-cushions 单分类 */
+function classifyCushion(): string {
+  return 'outdoor-cushions';
 }
 
 function classifyPillow(title: string): string {
@@ -243,7 +224,7 @@ export function classifyProduct(productType: string, title: string, asin: string
   }
   switch (productType.toLowerCase()) {
     case 'cushions':
-      return classifyCushion(title, asin);
+      return classifyCushion();
     case 'pillows':
       return classifyPillow(title);
     case 'towels':
