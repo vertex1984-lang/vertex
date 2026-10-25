@@ -230,7 +230,8 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           // /bedding/3-piece-sets/ 不再生成、访问 404
           { label: 'Sheets & Duvet Sets', desc: 'Duvet cover, fitted sheet & two pillowcases.', href: '/bedding/4-piece-sets/' },
           { label: 'Duvet Covers', desc: 'Covers only — mix & match.', href: '/bedding/duvet-covers/' },
-          { label: 'Sheets', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
+          // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类
+          { label: 'Fitted Sheets', desc: 'Deep pocket, all-around elastic.', href: '/bedding/fitted-sheets/' },
           { label: 'Pillow Covers', desc: 'Coming soon.', href: '/bedding/#on-the-loom', comingSoon: true },
         ],
       },

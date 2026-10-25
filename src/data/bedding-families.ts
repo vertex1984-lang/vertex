@@ -13,7 +13,7 @@ import { getVariantGroupOf } from '@/data/variant-groups';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import type { MakimooProduct } from '@/data/products';
 
-export type SetKind = 'four' | 'comforter' | 'duvet';
+export type SetKind = 'four' | 'comforter' | 'duvet' | 'sheet';
 
 // 被套单品家族（LINEN3-*/DUVSET-*-DUVET 独立被套单件归 duvet，见 classifySet）。
 // ice silk 缎面家族（2026-10-15 用户确认为被套+2枕套；2026-10-22 起改四件套口径归 four），
@@ -103,6 +103,7 @@ export function beddingCardTitle(kind: SetKind, materials: string[]): string {
   if (!fabric) return '';
   if (kind === 'four') return `${fabric} Set`;
   if (kind === 'duvet') return `${fabric} Duvet Cover`;
+  if (kind === 'sheet') return `${fabric} Fitted Sheet`;
   return `${fabric} Set`;
 }
 
@@ -111,6 +112,9 @@ export function classifySet(asin: string): SetKind | null {
   // 独立被套单件（LINEN3-{COLOR}-DUVET / DUVSET-{COLOR}-DUVET，2026-10 协作方新品）归 Duvet Covers，
   // 必须先于 duvset-/linen3- 前缀规则判断（否则会被吞进 four）
   if (/-duvet$/.test(a)) return 'duvet';
+  // 独立床笠单件（…-SHEET，2026-10-25 新品 SATEEN4-SAGE-SHEET）归 Fitted Sheets，
+  // 必须先于 sateen4-/percale- 等前缀规则判断（否则会被吞进 four）
+  if (/-sheet$/.test(a)) return 'sheet';
   if (a.startsWith('bedset4-')) return 'four';
   // 2026-10-18 用户定：Cotton Sateen（贡缎棉）四件套新面料线（6 色 × 4 尺寸），归 four
   if (a.startsWith('sateen4-')) return 'four';
@@ -304,6 +308,7 @@ export const SET_KIND_LABEL: Record<SetKind, string> = {
   four: 'Sheets & Duvet Set',
   comforter: 'Comforter Set',
   duvet: 'Duvet Cover',
+  sheet: 'Fitted Sheet',
 };
 
 /** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用）；
@@ -321,6 +326,10 @@ export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: strin
     heading: 'Duvet Covers',
     blurb: 'Standalone covers in linen & washed cotton-like',
   },
+  sheet: {
+    heading: 'Fitted Sheets',
+    blurb: 'A standalone fitted sheet with deep pocket & all-around elastic',
+  },
 };
 
 /** 类型二级 PLP 的 URL slug ↔ kind（/bedding/[slug]/ 路由与导航共用） */
@@ -328,6 +337,7 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
   '4-piece-sets': 'four',
   'comforter-sets': 'comforter',
   'duvet-covers': 'duvet',
+  'fitted-sheets': 'sheet',
 };
 
 
@@ -344,6 +354,9 @@ export function beddingUsSizeLabel(asin: string, cmSize?: string): string {
   const m = cmSize?.match(/(\d+)\s*x\s*(\d+)/i);
   if (!m) return '';
   const width = Math.min(Number(m[1]), Number(m[2]));
+  // 床笠（…-SHEET）按美式床笠宽度映射：99→Twin、137→Full、152→Queen、193→King
+  if (/-sheet$/.test(asin.toLowerCase()))
+    return width <= 100 ? 'Twin' : width <= 140 ? 'Full' : width <= 165 ? 'Queen' : 'King';
   return width <= 180 ? 'Twin / Twin XL' : width <= 210 ? 'Full / Queen' : 'King / Cal King';
 }
 

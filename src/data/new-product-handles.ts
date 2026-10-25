@@ -545,6 +545,10 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-embossed-velvet-pom-pom-duvet-cover-only-olive-vine-queen-pompom4-vine-duvet',  // 2026-10-25：单独被套（Olive Vine 雕花绒球，仅 Queen）
   'makimoo-washed-cotton-jacquard-duvet-cover-only-cream-white-queen-washjac-cream-duvet',  // 2026-10-25：单独被套（奶白暗纹提花水洗棉，仅 Queen）
   'makimoo-jacquard-velvet-duvet-cover-only-ivory-white-queen-veljac-ivory-duvet',  // 2026-10-25：单独被套（象牙白双面提花绒，仅 Queen）
+  'makimoo-cotton-sateen-fitted-sheet-only-sage-green-queen-sateen4-sage-sheet',  // 2026-10-25：单独床笠（灰绿棉贡缎，仅 Queen）
+  'makimoo-cotton-percale-fitted-sheet-only-white-queen-percale-white-sheet',  // 2026-10-25：单独床笠（白色棉 Percale，仅 Queen）
+  'makimoo-washed-cotton-like-fitted-sheet-only-grey-queen-duvset-gray-sheet',  // 2026-10-25：单独床笠（灰色水洗棉感，仅 Queen）
+  'makimoo-embossed-velvet-fitted-sheet-only-olive-queen-pompom4-olive-sheet',  // 2026-10-25：单独床笠（橄榄绿雕花绒，仅 Queen）
   'makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-duvet',  // 2026-10-23：单独被套（Cotton Percale 椰奶白，仅 Queen）
   'makimoo-cotton-sateen-duvet-cover-only-olive-green-queen-sateen4-olive-duvet',  // 2026-10-23：单独被套（Cotton Sateen 橄榄绿，仅 Queen）
   'makimoo-cotton-percale-jacquard-wide-stripe-duvet-cover-only-dusty-blue-queen-percalejac-haze-duvet',  // 2026-10-23：单独被套（Cotton Percale 宽条纹提花 雾霾蓝，仅 Queen）

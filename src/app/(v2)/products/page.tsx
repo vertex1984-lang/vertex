@@ -245,7 +245,9 @@ export default function V2ProductsPage() {
       typeLinks.push({ label: 'Sheets & Duvet Sets', href: v2url('/bedding/4-piece-sets/') });
     if (fams.some((f) => f.kind === 'duvet'))
       typeLinks.push({ label: 'Duvet Covers', href: v2url('/bedding/duvet-covers/') });
-    typeLinks.push({ label: 'Sheets', href: '', soon: true });
+    // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类（/bedding/fitted-sheets/）
+    if (fams.some((f) => f.kind === 'sheet'))
+      typeLinks.push({ label: 'Fitted Sheets', href: v2url('/bedding/fitted-sheets/') });
     typeLinks.push({ label: 'Pillow Covers', href: '', soon: true });
     const fabricLinks: BeddingHeroLink[] = BEDDING_FABRICS.filter((fb) =>
       fams.some((f) => f.materials.includes(fb.material))

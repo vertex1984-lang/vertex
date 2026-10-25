@@ -449,6 +449,10 @@ export const SHORT_TITLES: Record<string, string> = {
   "sateen4-olive-full": "Cotton Sateen Bedding Set, 4 Piece, Olive Green, Full",
   "sateen4-olive-queen": "Cotton Sateen Bedding Set, 4 Piece, Olive Green, Queen",
   "sateen4-olive-king": "Cotton Sateen Bedding Set, 4 Piece, Olive Green, King",
+  "sateen4-sage-sheet": "Cotton Sateen Fitted Sheet, Sage Green, Queen",
+  "percale-white-sheet": "Cotton Percale Fitted Sheet, White, Queen",
+  "duvset-gray-sheet": "Washed Cotton Fitted Sheet, Grey, Queen",
+  "pompom4-olive-sheet": "Embossed Velvet Fitted Sheet, Olive, Queen",
   // 2026-10-19：北欧镂空针织毯（4 色，blanket/2）
   "knitthrow-cream": "Openwork Knit Throw Blanket, Cream White",
   "knitthrow-grey": "Openwork Knit Throw Blanket, Light Grey",

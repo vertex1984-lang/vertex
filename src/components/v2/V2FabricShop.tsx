@@ -18,7 +18,7 @@ import { sortByWeight } from '@/lib/weights';
  * 调用方传 noBadges。
  */
 
-const KIND_ORDER: SetKind[] = ['four', 'comforter', 'duvet'];
+const KIND_ORDER: SetKind[] = ['four', 'comforter', 'duvet', 'sheet'];
 
 /** 布料标签：组卡首家族主材质（materials[0]，如 "100% Linen"），取不到则不叠；展示名经 fabricDisplayName */
 const fabricBadge = (c: GroupCard): string[] =>
