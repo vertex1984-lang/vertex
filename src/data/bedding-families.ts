@@ -67,6 +67,12 @@ const COLOR_LABELS: Record<string, string> = {
   SAGEGREEN: 'Sage Green',
   // 2026-10-23：提花绒（双面绒）四件套单色（IVORY 未被占用）
   IVORY: 'Ivory White',
+  // 2026-10-25：Cotton Percale 细格提花四件套单色（SAND 未被占用）
+  SAND: 'Sand Beige',
+  // 2026-10-25：条纹绒（双面同纹）四件套（key MOCHA 与 ASIN 段一致，展示名 Sage Stripe）
+  MOCHA: 'Sage Stripe',
+  DENIM: 'Denim Stripe',
+  CHARCOAL: 'Charcoal Stripe',
 };
 
 export interface SetFamily {
@@ -122,6 +128,7 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('pompom4-')) return 'four';
   // 2026-10-22 用户定：Cotton Percale 色织提花四件套（4 色 × 仅 Queen），归 four
   if (a.startsWith('percalejac-')) return 'four';
+  if (a.startsWith('percalecheck-')) return 'four'; // 2026-10-25：细格提花四件套
   // 2026-10-22 用户定：Cotton Percale 粉白细条纹色织提花四件套（单色 × 仅 Queen），归 four
   if (a.startsWith('percalestripe-')) return 'four';
   // 2026-10-22 用户定：Cotton Percale 灰白拼接色织提花四件套（单色 × 仅 Queen），归 four
@@ -132,6 +139,7 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('washjac-')) return 'four';
   // 2026-10-23 用户定：提花绒（双面绒）四件套（单色 × 仅 Queen），归 four
   if (a.startsWith('veljac-')) return 'four';
+  if (a.startsWith('velstripe-')) return 'four'; // 2026-10-25：条纹绒四件套
   // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/1688-916370884976）全站改四件套
   // 口径（被套+床笠+2枕套，标题/描述已同步加 fitted sheet），统一归 four；'three' 类型整体下线。
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套

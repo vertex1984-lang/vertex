@@ -140,6 +140,13 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   'washjac-cream-queen': '3/4',
   // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen，3:4 PDP 主图）
   'veljac-ivory-queen': '3/4',
+  // 2026-10-25：Cotton Percale 细格提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'percalecheck-sand-queen': '3/4',
+  // 2026-10-25：条纹绒（双面同纹）四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'velstripe-mocha-queen': '3/4',
+  // 2026-10-25：条纹绒四件套扩充 2 色（3:4 PDP 主图）
+  'velstripe-denim-queen': '3/4',
+  'velstripe-charcoal-queen': '3/4',
 };
 
 /**

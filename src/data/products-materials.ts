@@ -24436,4 +24436,164 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     ],
     "amazonUrl": ""
   },
+  {
+    "id": "makimoo-PERCALECHECK-SAND-QUEEN",
+    "asin": "PERCALECHECK-SAND-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Check Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sand Beige)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-check-jacquard-sand-queen",
+    "description": "100% Cotton Percale with Yarn-Dyed Check Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature a fine yarn-dyed check jacquard with a subtle woven texture. Reversible AB design—the A side shows the woven check jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Sand Beige Colorway: Finished in a warm, understated Sand Beige—natural and calm, it lends the bedroom a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Check Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature a fine yarn-dyed check jacquard with a subtle woven texture. Reversible AB design—the A side shows the woven check jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Sand Beige Colorway: Finished in a warm, understated Sand Beige—natural and calm, it lends the bedroom a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/PERCALECHECK-SAND-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Check Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sand Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-PERCALECHECK-SAND-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-VELSTRIPE-MOCHA-QUEEN",
+    "asin": "VELSTRIPE-MOCHA-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Stripe)",
+    "handle": "makimoo-queen-bedding-set-4-piece-striped-velvet-mocha-queen",
+    "description": "Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical sage-and-brown stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out. Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash. Soothing Sage Stripe Colorway: Finished in a muted sage-green ground patterned with fine warm-brown twin stripes—calm, earthy and quietly retro, it wraps the bedroom in a soft botanical warmth, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical sage-and-brown stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out.</p><p>Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash.</p><p>Soothing Sage Stripe Colorway: Finished in a muted sage-green ground patterned with fine warm-brown twin stripes—calm, earthy and quietly retro, it wraps the bedroom in a soft botanical warmth, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/VELSTRIPE-MOCHA-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-VELSTRIPE-MOCHA-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-VELSTRIPE-DENIM-QUEEN",
+    "asin": "VELSTRIPE-DENIM-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Denim Stripe)",
+    "handle": "makimoo-queen-bedding-set-4-piece-striped-velvet-denim-queen",
+    "description": "Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical blue-and-brown stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out. Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash. Soothing Denim Stripe Colorway: Finished in a dusty blue ground patterned with warm brown twin stripes—a calm, tailored colorway with a quiet vintage mood, it balances cool and warm tones in the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical blue-and-brown stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out.</p><p>Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash.</p><p>Soothing Denim Stripe Colorway: Finished in a dusty blue ground patterned with warm brown twin stripes—a calm, tailored colorway with a quiet vintage mood, it balances cool and warm tones in the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/VELSTRIPE-DENIM-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Denim Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-VELSTRIPE-DENIM-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-VELSTRIPE-CHARCOAL-QUEEN",
+    "asin": "VELSTRIPE-CHARCOAL-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Charcoal Stripe)",
+    "handle": "makimoo-queen-bedding-set-4-piece-striped-velvet-charcoal-queen",
+    "description": "Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical grey-and-black stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out. Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash. Soothing Charcoal Stripe Colorway: Finished in a heather grey ground patterned with near-black twin stripes—graphic yet soft, it gives the bedroom a calm, tailored, quietly modern edge, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Plush Velvet, Same Stripe on Both Sides: The duvet cover and pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical grey-and-black stripe, so every fold, drape and turn-back shows the same warm pattern, inside and out.</p><p>Thick, Warm & Cozy: The dense velvet pile feels velvety soft against the skin and holds warmth beautifully—a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its plush pile and stripe texture wash after wash.</p><p>Soothing Charcoal Stripe Colorway: Finished in a heather grey ground patterned with near-black twin stripes—graphic yet soft, it gives the bedroom a calm, tailored, quietly modern edge, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+      "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+      {
+        "url": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/1.webp",
+        "altText": "Makimoo Queen Bedding Set 4 Piece Striped Velvet Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Charcoal Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": {
+        "amount": "0.00",
+        "currencyCode": "USD"
+      }
+    },
+    "variants": [
+      {
+        "id": "variant-VELSTRIPE-CHARCOAL-QUEEN",
+        "title": "Default Title",
+        "price": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        },
+        "availableForSale": false,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
 ];

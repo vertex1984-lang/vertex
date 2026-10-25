@@ -8700,6 +8700,11 @@ const HIDDEN_HANDLE_PREFIXES = [
   'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976',
 ];
 const HIDDEN_HANDLES = new Set([
+  // 2026-10-25 用户定：BEDSET4-WHITE 纯色四件套变体组全站移除（Twin/Full/Queen/King 4 款，PDP 404）
+  'makimoo-twin-bedding-set-4-piece-duvet-cover-fitted-sheet-bedset4-white-twin',
+  'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full',
+  'makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen',
+  'king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king',
   // 2026-10-08 用户定：B0H4V662HL（45×45 枕芯）与 B0CQC6H9MZ 重复，全站移除
   'premium-pillow-inserts-45-x-45-cm-set-of-2-decorative-b0h4v662hl',
   // 2026-10-08 用户定：3 款压花枕套全站移除（Pillow Cases 类目将改为 Decorative Pillow Cases 装饰枕套）

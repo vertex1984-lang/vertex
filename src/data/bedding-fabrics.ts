@@ -74,9 +74,18 @@ export function fabricByMaterial(material: string): BeddingFabric | undefined {
   return BEDDING_FABRICS.find((f) => f.material === material);
 }
 
-/** 面料对外展示名（2026-10-09 用户定 Washed Cotton-Like 显为 Brushed Cotton；2026-10-22 用户改定：全站展示为 Washed Cotton）。
- *  仅展示层替换；匹配/筛选/URL ?sub= 口径仍用原 material 原子词（'Washed Cotton-Like'）。
+/** 无独立面料 PLP 的材质的两词精简描述（mega menu 面料列 desc 兜底，与 BEDDING_FABRICS[].desc 同风格）。
+ *  2026-10-25 用户定：Embossed Velvet 无面料页（mega menu 链到 ?sub= 网格），补 "Plush. Warm." */
+export const BEDDING_FABRIC_SHORT_DESCS: Record<string, string> = {
+  'Embossed Velvet': 'Plush. Warm.',
+};
+
+/** 面料对外展示名（2026-10-09 用户定 Washed Cotton-Like 显为 Brushed Cotton；2026-10-22 用户改定：全站展示为 Washed Cotton；
+ *  2026-10-25 用户定：Embossed Velvet 全站展示为 Plush Velvet——分类含雕花绒/提花绒/条纹绒，原名盖不住）。
+ *  仅展示层替换；匹配/筛选/URL ?sub= 口径仍用原 material 原子词（'Washed Cotton-Like' / 'Embossed Velvet'）。
  *  PDP 规格表 Material 行、/fabric-guide/ 与 /better-texture/ 营销页暂未替换（数据源口径）。 */
 export function fabricDisplayName(material: string): string {
-  return material === 'Washed Cotton-Like' ? 'Washed Cotton' : material;
+  if (material === 'Washed Cotton-Like') return 'Washed Cotton';
+  if (material === 'Embossed Velvet') return 'Plush Velvet';
+  return material;
 }
