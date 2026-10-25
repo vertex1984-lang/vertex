@@ -4635,7 +4635,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3",
     "asin": "1688-745181807454-C3",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -4693,7 +4693,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2",
     "asin": "1688-745181807454-C2",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 160 x 230cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 160 x 230cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -4809,7 +4809,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454",
     "asin": "1688-745181807454",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 160 x 230cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 160 x 230cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -6751,7 +6751,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4",
     "asin": "1688-745181807454-C4",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 160 x 230cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 160 x 230cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -6821,7 +6821,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6",
     "asin": "1688-745181807454-C6",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 160 x 230cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 160 x 230cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 160 x 230cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 160 x 230cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -6891,7 +6891,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5",
     "asin": "1688-745181807454-C5",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-160-x-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 160 x 230cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 160 x 230cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -6961,7 +6961,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7",
     "asin": "1688-745181807454-C7",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 160 x 230cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 160 x 230cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -7031,7 +7031,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8",
     "asin": "1688-745181807454-C8",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 160 x 230cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 160 x 230cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -7101,7 +7101,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-80X120",
     "asin": "1688-745181807454-C2-80X120",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 80 x 120 cm (31″ x 47″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 80 x 120 cm (31″ x 47″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-80-x-120-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 80 x 120cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 80 x 120cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7159,7 +7159,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-80X160",
     "asin": "1688-745181807454-C2-80X160",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 80 x 160 cm (31″ x 63″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 80 x 160 cm (31″ x 63″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-80-x-160-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 80 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 80 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7217,7 +7217,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-100X160",
     "asin": "1688-745181807454-C2-100X160",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 100 x 160 cm (39″ x 63″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 100 x 160 cm (39″ x 63″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-100-x-160-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 100 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 100 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7275,7 +7275,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-100X200",
     "asin": "1688-745181807454-C2-100X200",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 100 x 200 cm (39″ x 79″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 100 x 200 cm (39″ x 79″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-100-x-200-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 100 x 200cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 100 x 200cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7333,7 +7333,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-120X160",
     "asin": "1688-745181807454-C2-120X160",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 120 x 160 cm (47″ x 63″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 120 x 160 cm (47″ x 63″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-120-x-160-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 120 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 120 x 160cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7391,7 +7391,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-120X180",
     "asin": "1688-745181807454-C2-120X180",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 120 x 180 cm (47″ x 71″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 120 x 180 cm (47″ x 71″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-120-x-180-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 120 x 180cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 120 x 180cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7449,7 +7449,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-140X200",
     "asin": "1688-745181807454-C2-140X200",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 140 x 200 cm (55″ x 79″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 140 x 200 cm (55″ x 79″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-140-x-200-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 140 x 200cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 140 x 200cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7507,7 +7507,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-180X250",
     "asin": "1688-745181807454-C2-180X250",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 180 x 250 cm (71″ x 98″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 180 x 250 cm (71″ x 98″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-180-x-250-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 180 x 250cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 180 x 250cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7565,7 +7565,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C2-200X300",
     "asin": "1688-745181807454-C2-200X300",
-    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 200 x 300 cm (79″ x 118″) (Navy Blue)",
+    "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 200 x 300 cm (79″ x 118″) (GT013)",
     "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-200-x-300-cm-1688-745181807454-c2",
     "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 200 x 300cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
     "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 200 x 300cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
@@ -7623,7 +7623,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-80X120",
     "asin": "1688-745181807454-C3-80X120",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 80 x 120 cm (31″ x 47″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 80 x 120 cm (31″ x 47″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-80-x-120-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7681,7 +7681,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-80X160",
     "asin": "1688-745181807454-C3-80X160",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 80 x 160 cm (31″ x 63″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 80 x 160 cm (31″ x 63″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-80-x-160-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7739,7 +7739,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-100X160",
     "asin": "1688-745181807454-C3-100X160",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 100 x 160 cm (39″ x 63″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 100 x 160 cm (39″ x 63″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-100-x-160-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7797,7 +7797,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-100X200",
     "asin": "1688-745181807454-C3-100X200",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 100 x 200 cm (39″ x 79″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 100 x 200 cm (39″ x 79″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-100-x-200-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7855,7 +7855,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-120X160",
     "asin": "1688-745181807454-C3-120X160",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 120 x 160 cm (47″ x 63″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 120 x 160 cm (47″ x 63″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-120-x-160-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7913,7 +7913,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-120X180",
     "asin": "1688-745181807454-C3-120X180",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 120 x 180 cm (47″ x 71″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 120 x 180 cm (47″ x 71″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-120-x-180-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -7971,7 +7971,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-140X200",
     "asin": "1688-745181807454-C3-140X200",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 140 x 200 cm (55″ x 79″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 140 x 200 cm (55″ x 79″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-140-x-200-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -8029,7 +8029,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-180X250",
     "asin": "1688-745181807454-C3-180X250",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 180 x 250 cm (71″ x 98″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 180 x 250 cm (71″ x 98″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-180-x-250-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -8087,7 +8087,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C3-200X300",
     "asin": "1688-745181807454-C3-200X300",
-    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 200 x 300 cm (79″ x 118″) (Beige Multicolor)",
+    "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 200 x 300 cm (79″ x 118″) (GT016)",
     "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-200-x-300-cm-1688-745181807454-c3",
     "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
     "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
@@ -8145,7 +8145,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-80X120",
     "asin": "1688-745181807454-C4-80X120",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 80 x 120 cm (31″ x 47″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 80 x 120 cm (31″ x 47″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-80-x-120-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 80 x 120cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 80 x 120cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8215,7 +8215,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-80X160",
     "asin": "1688-745181807454-C4-80X160",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 80 x 160 cm (31″ x 63″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 80 x 160 cm (31″ x 63″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-80-x-160-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 80 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 80 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8285,7 +8285,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-100X160",
     "asin": "1688-745181807454-C4-100X160",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 100 x 160 cm (39″ x 63″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 100 x 160 cm (39″ x 63″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-100-x-160-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 100 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 100 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8355,7 +8355,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-100X200",
     "asin": "1688-745181807454-C4-100X200",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 100 x 200 cm (39″ x 79″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 100 x 200 cm (39″ x 79″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-100-x-200-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 100 x 200cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 100 x 200cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8425,7 +8425,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-120X160",
     "asin": "1688-745181807454-C4-120X160",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 120 x 160 cm (47″ x 63″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 120 x 160 cm (47″ x 63″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-120-x-160-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 120 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 120 x 160cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8495,7 +8495,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-120X180",
     "asin": "1688-745181807454-C4-120X180",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 120 x 180 cm (47″ x 71″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 120 x 180 cm (47″ x 71″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-120-x-180-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 120 x 180cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 120 x 180cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8565,7 +8565,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-140X200",
     "asin": "1688-745181807454-C4-140X200",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 140 x 200 cm (55″ x 79″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 140 x 200 cm (55″ x 79″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-140-x-200-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 140 x 200cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 140 x 200cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8635,7 +8635,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-180X250",
     "asin": "1688-745181807454-C4-180X250",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 180 x 250 cm (71″ x 98″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 180 x 250 cm (71″ x 98″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-180-x-250-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 180 x 250cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 180 x 250cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8705,7 +8705,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C4-200X300",
     "asin": "1688-745181807454-C4-200X300",
-    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 200 x 300 cm (79″ x 118″) (Multicolor)",
+    "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 200 x 300 cm (79″ x 118″) (GT017)",
     "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-200-x-300-cm-1688-745181807454-c4",
     "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 200 x 300cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
     "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 200 x 300cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional décor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
@@ -8775,7 +8775,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-80X120",
     "asin": "1688-745181807454-C5-80X120",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 80 x 120 cm (31″ x 47″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 80 x 120 cm (31″ x 47″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-80-x-120-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 80 x 120cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 80 x 120cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -8845,7 +8845,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-80X160",
     "asin": "1688-745181807454-C5-80X160",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 80 x 160 cm (31″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 80 x 160 cm (31″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-80-x-160-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 80 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 80 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -8915,7 +8915,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-100X160",
     "asin": "1688-745181807454-C5-100X160",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 100 x 160 cm (39″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 100 x 160 cm (39″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-100-x-160-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 100 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 100 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -8985,7 +8985,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-100X200",
     "asin": "1688-745181807454-C5-100X200",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 100 x 200 cm (39″ x 79″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 100 x 200 cm (39″ x 79″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-100-x-200-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 100 x 200cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 100 x 200cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9055,7 +9055,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-120X160",
     "asin": "1688-745181807454-C5-120X160",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 120 x 160 cm (47″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 120 x 160 cm (47″ x 63″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-120-x-160-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 120 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 120 x 160cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9125,7 +9125,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-120X180",
     "asin": "1688-745181807454-C5-120X180",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 120 x 180 cm (47″ x 71″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 120 x 180 cm (47″ x 71″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-120-x-180-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 120 x 180cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 120 x 180cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9195,7 +9195,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-140X200",
     "asin": "1688-745181807454-C5-140X200",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 140 x 200 cm (55″ x 79″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 140 x 200 cm (55″ x 79″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-140-x-200-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 140 x 200cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 140 x 200cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9265,7 +9265,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-180X250",
     "asin": "1688-745181807454-C5-180X250",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 180 x 250 cm (71″ x 98″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 180 x 250 cm (71″ x 98″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-180-x-250-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 180 x 250cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 180 x 250cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9335,7 +9335,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C5-200X300",
     "asin": "1688-745181807454-C5-200X300",
-    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 200 x 300 cm (79″ x 118″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
+    "title": "Oriental Traditional Turkish Persian Vintage Area Rug 200 x 300 cm (79″ x 118″) Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (GT021)",
     "handle": "oriental-traditional-turkish-persian-vintage-area-rug-200-x-300-cm-1688-745181807454-c5",
     "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 200 x 300cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
     "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 200 x 300cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
@@ -9405,7 +9405,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-80X120",
     "asin": "1688-745181807454-C6-80X120",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 80 x 120 cm (31″ x 47″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 80 x 120 cm (31″ x 47″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-80-x-120-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 80 x 120cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 80 x 120cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 80 x 120cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 80 x 120cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9475,7 +9475,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-80X160",
     "asin": "1688-745181807454-C6-80X160",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 80 x 160 cm (31″ x 63″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 80 x 160 cm (31″ x 63″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-80-x-160-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 80 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 80 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 80 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 80 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9545,7 +9545,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-100X160",
     "asin": "1688-745181807454-C6-100X160",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 100 x 160 cm (39″ x 63″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 100 x 160 cm (39″ x 63″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-100-x-160-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 100 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 100 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 100 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 100 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9615,7 +9615,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-100X200",
     "asin": "1688-745181807454-C6-100X200",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 100 x 200 cm (39″ x 79″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 100 x 200 cm (39″ x 79″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-100-x-200-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 100 x 200cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 100 x 200cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 100 x 200cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 100 x 200cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9685,7 +9685,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-120X160",
     "asin": "1688-745181807454-C6-120X160",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 120 x 160 cm (47″ x 63″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 120 x 160 cm (47″ x 63″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-120-x-160-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 120 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 120 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 120 x 160cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 120 x 160cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9755,7 +9755,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-120X180",
     "asin": "1688-745181807454-C6-120X180",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 120 x 180 cm (47″ x 71″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 120 x 180 cm (47″ x 71″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-120-x-180-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 120 x 180cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 120 x 180cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 120 x 180cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 120 x 180cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9825,7 +9825,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-140X200",
     "asin": "1688-745181807454-C6-140X200",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 140 x 200 cm (55″ x 79″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 140 x 200 cm (55″ x 79″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-140-x-200-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 140 x 200cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 140 x 200cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 140 x 200cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 140 x 200cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9895,7 +9895,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-180X250",
     "asin": "1688-745181807454-C6-180X250",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 180 x 250 cm (71″ x 98″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 180 x 250 cm (71″ x 98″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-180-x-250-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 180 x 250cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 180 x 250cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 180 x 250cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 180 x 250cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -9965,7 +9965,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C6-200X300",
     "asin": "1688-745181807454-C6-200X300",
-    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 200 x 300 cm (79″ x 118″) (Multicolor)",
+    "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 200 x 300 cm (79″ x 118″) (GT027)",
     "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-200-x-300-cm-1688-745181807454-c6",
     "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 200 x 300cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 200 x 300cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
     "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 200 x 300cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 200 x 300cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
@@ -10035,7 +10035,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-80X120",
     "asin": "1688-745181807454-C7-80X120",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 80 x 120 cm (31″ x 47″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 80 x 120 cm (31″ x 47″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-80-x-120-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 80 x 120cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 80 x 120cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10105,7 +10105,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-80X160",
     "asin": "1688-745181807454-C7-80X160",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 80 x 160 cm (31″ x 63″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 80 x 160 cm (31″ x 63″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-80-x-160-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 80 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 80 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10175,7 +10175,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-100X160",
     "asin": "1688-745181807454-C7-100X160",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 100 x 160 cm (39″ x 63″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 100 x 160 cm (39″ x 63″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-100-x-160-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 100 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 100 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10245,7 +10245,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-100X200",
     "asin": "1688-745181807454-C7-100X200",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 100 x 200 cm (39″ x 79″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 100 x 200 cm (39″ x 79″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-100-x-200-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 100 x 200cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 100 x 200cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10315,7 +10315,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-120X160",
     "asin": "1688-745181807454-C7-120X160",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 120 x 160 cm (47″ x 63″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 120 x 160 cm (47″ x 63″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-120-x-160-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 120 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 120 x 160cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10385,7 +10385,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-120X180",
     "asin": "1688-745181807454-C7-120X180",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 120 x 180 cm (47″ x 71″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 120 x 180 cm (47″ x 71″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-120-x-180-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 120 x 180cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 120 x 180cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10455,7 +10455,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-140X200",
     "asin": "1688-745181807454-C7-140X200",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 140 x 200 cm (55″ x 79″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 140 x 200 cm (55″ x 79″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-140-x-200-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 140 x 200cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 140 x 200cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10525,7 +10525,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-180X250",
     "asin": "1688-745181807454-C7-180X250",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 180 x 250 cm (71″ x 98″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 180 x 250 cm (71″ x 98″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-180-x-250-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 180 x 250cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 180 x 250cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10595,7 +10595,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C7-200X300",
     "asin": "1688-745181807454-C7-200X300",
-    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 200 x 300 cm (79″ x 118″) (Multicolor)",
+    "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 200 x 300 cm (79″ x 118″) (GT030)",
     "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-200-x-300-cm-1688-745181807454-c7",
     "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 200 x 300cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
     "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 200 x 300cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
@@ -10665,7 +10665,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-80X120",
     "asin": "1688-745181807454-C8-80X120",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 80 x 120 cm (31″ x 47″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 80 x 120 cm (31″ x 47″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-80-x-120-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 80 x 120cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 80 x 120cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -10735,7 +10735,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-80X160",
     "asin": "1688-745181807454-C8-80X160",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 80 x 160 cm (31″ x 63″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 80 x 160 cm (31″ x 63″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-80-x-160-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 80 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 80 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -10805,7 +10805,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-100X160",
     "asin": "1688-745181807454-C8-100X160",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 100 x 160 cm (39″ x 63″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 100 x 160 cm (39″ x 63″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-100-x-160-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 100 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 100 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -10875,7 +10875,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-100X200",
     "asin": "1688-745181807454-C8-100X200",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 100 x 200 cm (39″ x 79″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 100 x 200 cm (39″ x 79″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-100-x-200-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 100 x 200cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 100 x 200cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -10945,7 +10945,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-120X160",
     "asin": "1688-745181807454-C8-120X160",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 120 x 160 cm (47″ x 63″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 120 x 160 cm (47″ x 63″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-120-x-160-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 120 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 120 x 160cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -11015,7 +11015,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-120X180",
     "asin": "1688-745181807454-C8-120X180",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 120 x 180 cm (47″ x 71″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 120 x 180 cm (47″ x 71″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-120-x-180-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 120 x 180cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 120 x 180cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -11085,7 +11085,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-140X200",
     "asin": "1688-745181807454-C8-140X200",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 140 x 200 cm (55″ x 79″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 140 x 200 cm (55″ x 79″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-140-x-200-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 140 x 200cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 140 x 200cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -11155,7 +11155,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-180X250",
     "asin": "1688-745181807454-C8-180X250",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 180 x 250 cm (71″ x 98″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 180 x 250 cm (71″ x 98″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-180-x-250-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 180 x 250cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 180 x 250cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -11225,7 +11225,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-C8-200X300",
     "asin": "1688-745181807454-C8-200X300",
-    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 200 x 300 cm (79″ x 118″) (Black Gold)",
+    "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 200 x 300 cm (79″ x 118″) (GT078)",
     "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-200-x-300-cm-1688-745181807454-c8",
     "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 200 x 300cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
     "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 200 x 300cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
@@ -11295,7 +11295,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-80X120",
     "asin": "1688-745181807454-80X120",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 80 x 120 cm (31″ x 47″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 80 x 120 cm (31″ x 47″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-80-x-120-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 80 x 120cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 80 x 120cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11353,7 +11353,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-80X160",
     "asin": "1688-745181807454-80X160",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 80 x 160 cm (31″ x 63″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 80 x 160 cm (31″ x 63″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-80-x-160-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 80 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 80 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11411,7 +11411,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-100X160",
     "asin": "1688-745181807454-100X160",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 100 x 160 cm (39″ x 63″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 100 x 160 cm (39″ x 63″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-100-x-160-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 100 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 100 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11469,7 +11469,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-100X200",
     "asin": "1688-745181807454-100X200",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 100 x 200 cm (39″ x 79″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 100 x 200 cm (39″ x 79″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-100-x-200-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 100 x 200cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 100 x 200cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11527,7 +11527,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-120X160",
     "asin": "1688-745181807454-120X160",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 120 x 160 cm (47″ x 63″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 120 x 160 cm (47″ x 63″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-120-x-160-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 120 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 120 x 160cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11585,7 +11585,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-120X180",
     "asin": "1688-745181807454-120X180",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 120 x 180 cm (47″ x 71″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 120 x 180 cm (47″ x 71″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-120-x-180-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 120 x 180cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 120 x 180cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11643,7 +11643,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-140X200",
     "asin": "1688-745181807454-140X200",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 140 x 200 cm (55″ x 79″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 140 x 200 cm (55″ x 79″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-140-x-200-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 140 x 200cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 140 x 200cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11701,7 +11701,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-180X250",
     "asin": "1688-745181807454-180X250",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 180 x 250 cm (71″ x 98″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 180 x 250 cm (71″ x 98″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-180-x-250-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 180 x 250cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 180 x 250cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11759,7 +11759,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
   {
     "id": "makimoo-1688-745181807454-200X300",
     "asin": "1688-745181807454-200X300",
-    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 200 x 300 cm (79″ x 118″) (Multicolor)",
+    "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 200 x 300 cm (79″ x 118″) (GT006)",
     "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-200-x-300-cm-1688-745181807454",
     "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 200 x 300cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
     "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 200 x 300cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
@@ -11808,6 +11808,1026 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "amount": "87.99",
           "currencyCode": "USD"
         },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-80X120",
+    "asin": "1688-745181807454-GT010-80X120",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 80 x 120 cm (31″ x 47″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-80-x-120-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 80 x 120 cm (31″ x 47″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-80X160",
+    "asin": "1688-745181807454-GT010-80X160",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 80 x 160 cm (31″ x 63″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-80-x-160-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 80 x 160 cm (31″ x 63″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-100X160",
+    "asin": "1688-745181807454-GT010-100X160",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 100 x 160 cm (39″ x 63″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-100-x-160-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 100 x 160 cm (39″ x 63″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-100X200",
+    "asin": "1688-745181807454-GT010-100X200",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 100 x 200 cm (39″ x 79″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-100-x-200-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 100 x 200 cm (39″ x 79″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-100X200",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-120X160",
+    "asin": "1688-745181807454-GT010-120X160",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 120 x 160 cm (47″ x 63″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-120-x-160-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 120 x 160 cm (47″ x 63″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-120X180",
+    "asin": "1688-745181807454-GT010-120X180",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 120 x 180 cm (47″ x 71″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-120-x-180-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 120 x 180 cm (47″ x 71″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "29.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-120X180",
+        "title": "Default Title",
+        "price": { "amount": "29.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-140X200",
+    "asin": "1688-745181807454-GT010-140X200",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 140 x 200 cm (55″ x 79″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-140-x-200-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 140 x 200 cm (55″ x 79″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010",
+    "asin": "1688-745181807454-GT010",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 160 x 230 cm (63″ x 91″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 160 x 230 cm (63″ x 91″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-180X250",
+    "asin": "1688-745181807454-GT010-180X250",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 180 x 250 cm (71″ x 98″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-180-x-250-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 180 x 250 cm (71″ x 98″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT010-200X300",
+    "asin": "1688-745181807454-GT010-200X300",
+    "title": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 200 x 300 cm (79″ x 118″) (GT010)",
+    "handle": "vintage-persian-area-rug-diamond-medallion-200-x-300-cm-1688-745181807454-gt010",
+    "description": "Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Distressed Diamond Medallion Design: Showcases a cream ground with scattered diamond medallions, arrow motifs and softly fringed edges in muted pink, blue, gold and sage tones, adding a relaxed vintage character to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT010/1.webp",
+        "altText": "Vintage Persian Area Rug, Beige Diamond Medallion Carpet, 200 x 300 cm (79″ x 118″) (GT010)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT010-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-80X120",
+    "asin": "1688-745181807454-GT029-80X120",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 80 x 120 cm (31″ x 47″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-80-x-120-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 80 x 120 cm (31″ x 47″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-80X160",
+    "asin": "1688-745181807454-GT029-80X160",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 80 x 160 cm (31″ x 63″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-80-x-160-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 80 x 160 cm (31″ x 63″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-100X160",
+    "asin": "1688-745181807454-GT029-100X160",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 100 x 160 cm (39″ x 63″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-100-x-160-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 100 x 160 cm (39″ x 63″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-100X200",
+    "asin": "1688-745181807454-GT029-100X200",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 100 x 200 cm (39″ x 79″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-100-x-200-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 100 x 200 cm (39″ x 79″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-100X200",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-120X160",
+    "asin": "1688-745181807454-GT029-120X160",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 120 x 160 cm (47″ x 63″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-120-x-160-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 120 x 160 cm (47″ x 63″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-120X180",
+    "asin": "1688-745181807454-GT029-120X180",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 120 x 180 cm (47″ x 71″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-120-x-180-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 120 x 180 cm (47″ x 71″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "29.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-120X180",
+        "title": "Default Title",
+        "price": { "amount": "29.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-140X200",
+    "asin": "1688-745181807454-GT029-140X200",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 140 x 200 cm (55″ x 79″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-140-x-200-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 140 x 200 cm (55″ x 79″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029",
+    "asin": "1688-745181807454-GT029",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 160 x 230 cm (63″ x 91″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 160 x 230 cm (63″ x 91″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-180X250",
+    "asin": "1688-745181807454-GT029-180X250",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 180 x 250 cm (71″ x 98″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-180-x-250-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 180 x 250 cm (71″ x 98″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT029-200X300",
+    "asin": "1688-745181807454-GT029-200X300",
+    "title": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 200 x 300 cm (79″ x 118″) (GT029)",
+    "handle": "vintage-persian-area-rug-geometric-lattice-200-x-300-cm-1688-745181807454-gt029",
+    "description": "Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Geometric Lattice Design: Showcases an ivory and grey ground with woven chevron and triangle lattices running across the surface, adding calm Scandinavian-inspired structure to living rooms, bedrooms and dining areas.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT029/1.webp",
+        "altText": "Vintage Persian Area Rug, Grey Geometric Lattice Carpet, 200 x 300 cm (79″ x 118″) (GT029)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT029-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-80X120",
+    "asin": "1688-745181807454-GT070-80X120",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 80 x 120 cm (31″ x 47″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-80-x-120-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 120cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 120cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 80 x 120 cm (31″ x 47″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-80X160",
+    "asin": "1688-745181807454-GT070-80X160",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 80 x 160 cm (31″ x 63″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-80-x-160-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 80 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 80 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 80 x 160 cm (31″ x 63″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-100X160",
+    "asin": "1688-745181807454-GT070-100X160",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 100 x 160 cm (39″ x 63″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-100-x-160-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 100 x 160 cm (39″ x 63″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-100X200",
+    "asin": "1688-745181807454-GT070-100X200",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 100 x 200 cm (39″ x 79″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-100-x-200-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 100 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 100 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 100 x 200 cm (39″ x 79″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-100X200",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-120X160",
+    "asin": "1688-745181807454-GT070-120X160",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 120 x 160 cm (47″ x 63″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-120-x-160-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 160cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 160cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 120 x 160 cm (47″ x 63″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-120X180",
+    "asin": "1688-745181807454-GT070-120X180",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 120 x 180 cm (47″ x 71″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-120-x-180-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 120 x 180cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 120 x 180cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 120 x 180 cm (47″ x 71″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "29.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-120X180",
+        "title": "Default Title",
+        "price": { "amount": "29.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-140X200",
+    "asin": "1688-745181807454-GT070-140X200",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 140 x 200 cm (55″ x 79″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-140-x-200-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 140 x 200cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 140 x 200cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 140 x 200 cm (55″ x 79″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070",
+    "asin": "1688-745181807454-GT070",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 160 x 230 cm (63″ x 91″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 160 x 230 cm (63″ x 91″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-180X250",
+    "asin": "1688-745181807454-GT070-180X250",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 180 x 250 cm (71″ x 98″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-180-x-250-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 180 x 250cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 180 x 250cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 180 x 250 cm (71″ x 98″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-745181807454-GT070-200X300",
+    "asin": "1688-745181807454-GT070-200X300",
+    "title": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 200 x 300 cm (79″ x 118″) (GT070)",
+    "handle": "vintage-persian-area-rug-colorful-patchwork-200-x-300-cm-1688-745181807454-gt070",
+    "description": "Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
+    "descriptionHtml": "<p>Colorful Patchwork Design: Showcases a grid of multicolored squares in red, blue, gold, teal and rust tones across a cream ground, adding an eclectic boho statement to living rooms, bedrooms and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 200 x 300cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 200 x 300cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p></p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-745181807454-GT070/1.webp",
+        "altText": "Vintage Persian Area Rug, Colorful Patchwork Carpet, 200 x 300 cm (79″ x 118″) (GT070)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-745181807454-GT070-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
         "availableForSale": true,
         "selectedOptions": []
       }
