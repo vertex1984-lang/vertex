@@ -6,7 +6,7 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import V2SearchOverlay from './V2SearchOverlay';
-import { fabricByMaterial, fabricDisplayName } from '@/data/bedding-fabrics';
+import { fabricByMaterial, fabricDisplayName, BEDDING_FABRIC_SHORT_DESCS } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 import { getSubcategoriesOf } from '@/data/subcategories';
 import { BLANKET_SECTIONS } from '@/data/blanket-families';
@@ -211,7 +211,7 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
       return {
         // bedding 面料列展示名统一走 fabricDisplayName（2026-10-22：Washed Cotton-Like 显为 Washed Cotton）
         label: cat === 'bedding' ? fabricDisplayName(s.label) : s.label,
-        desc: fb?.desc,
+        desc: fb?.desc ?? (cat === 'bedding' ? BEDDING_FABRIC_SHORT_DESCS[s.key] : undefined),
         href: fb ? `/bedding/${fb.slug}/` : `/products?cat=${cat}&sub=${encodeURIComponent(s.key)}`,
       };
     }),

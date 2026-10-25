@@ -548,4 +548,11 @@ export const SHORT_TITLES: Record<string, string> = {
   "washjac-cream-queen": "Washed Cotton Jacquard Bedding Set, 4 Piece, Cream White, Queen",
   // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen）
   "veljac-ivory-queen": "Jacquard Velvet Bedding Set, 4 Piece, Ivory White, Queen",
+  // 2026-10-25：Cotton Percale 细格提花四件套（单色 × 仅 Queen）
+  "percalecheck-sand-queen": "Cotton Percale Check Jacquard Bedding Set, 4 Piece, Sand Beige, Queen",
+  // 2026-10-25：条纹绒（双面同纹）四件套（单色 × 仅 Queen）
+  "velstripe-mocha-queen": "Striped Velvet Bedding Set, 4 Piece, Sage Stripe, Queen",
+  // 2026-10-25：条纹绒四件套扩充 2 色
+  "velstripe-denim-queen": "Striped Velvet Bedding Set, 4 Piece, Denim Stripe, Queen",
+  "velstripe-charcoal-queen": "Striped Velvet Bedding Set, 4 Piece, Charcoal Stripe, Queen",
 };

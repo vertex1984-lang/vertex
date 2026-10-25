@@ -562,7 +562,11 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-cotton-percale-duvet-cover-only-mist-grey-full-percale-mist-full-duvet',
   'makimoo-cotton-percale-duvet-cover-only-mist-grey-king-percale-mist-king-duvet',
   'makimoo-cotton-percale-duvet-cover-only-sky-blue-queen-percale-sky-duvet',
-  'makimoo-cotton-percale-duvet-cover-only-nude-pink-queen-percale-nude-duvet',
+  'makimoo-cotton-percale-duvet-cover-only-nude-pink-queen-percale-nude-duvet',  // 2026-10-25：Cotton Percale 细格提花四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-check-jacquard-sand-queen',  // 2026-10-25：条纹绒（双面同纹）四件套（单色 × 仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-striped-velvet-mocha-queen',  // 2026-10-25：条纹绒四件套扩充 2 色（DENIM / CHARCOAL，并入 VELSTRIPE 变体组）
+  'makimoo-queen-bedding-set-4-piece-striped-velvet-denim-queen',
+  'makimoo-queen-bedding-set-4-piece-striped-velvet-charcoal-queen',
 ]);
 export function isNewProductHandle(handle: string): boolean {
   return NEW_PRODUCT_HANDLES.has(handle);

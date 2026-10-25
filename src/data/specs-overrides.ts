@@ -334,4 +334,8 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "washstripe-sagegreen-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
   "washjac-cream-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
   "veljac-ivory-queen": { material: "Embossed Velvet", dimensionsCm: [220, 220] },
+  "percalecheck-sand-queen": { material: "Cotton Percale", dimensionsCm: [220, 220] },
+  "velstripe-mocha-queen": { material: "Embossed Velvet", dimensionsCm: [220, 220] },
+  "velstripe-denim-queen": { material: "Embossed Velvet", dimensionsCm: [220, 220] },
+  "velstripe-charcoal-queen": { material: "Embossed Velvet", dimensionsCm: [220, 220] },
 };

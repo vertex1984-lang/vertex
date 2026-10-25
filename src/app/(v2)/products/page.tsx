@@ -559,10 +559,11 @@ export default function V2ProductsPage() {
 
   const gridCls = 'grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6';
 
-  // 分组名：默认查风格规则；bedding 的 sub 是材质名，直接展示
+  // 分组名：默认查风格规则；bedding 的 sub 是材质名，展示走 fabricDisplayName
+  // （2026-10-25：Embossed Velvet 显为 Plush Velvet；URL sub 参数保持原子词不变）
   const subDef = activeSub
     ? beddingMaterialMode
-      ? { key: activeSub, label: activeSub }
+      ? { key: activeSub, label: fabricDisplayName(activeSub) }
       : STYLE_RULES.find((r) => r.key === activeSub)
     : undefined;
   const pageTitle = isSearching
@@ -753,8 +754,11 @@ export default function V2ProductsPage() {
             </div>
           ))}
         </div>
-      ) : beddingMaterialMode && !isSearching ? (
+      ) : beddingMaterialMode && !isSearching && !activeSub ? (
         /* bedding 选购视图（2026-09 重做，付费搜索落地页）：家族卡网格按材质分区；
+           2026-10-25 修复：activeSub（?cat=bedding&sub=<材质>，fabric-guide/mega menu 入口）
+           时不再渲染完整选购视图，落到下方默认网格按材质过滤展示（scopeProducts 已按
+           rawMaterialsOf 过滤）；此前 sub 页标题正确但网格是全量 bedding，产品匹配不对。
            2026-10-16 用户定：页头改 Parachute 式 hero（V2BeddingCatHero，二级页快链承担导航），
            原 Type/Fabric 粘性筛选条（含移动端弹层）整体移除。
            传未去重的原始 bedding 列表（2026-09 修复）：buildSetFamilies 需要看到全部尺寸 SKU
