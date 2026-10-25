@@ -18513,6 +18513,1026 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
+    "id": "makimoo-1688-595229918569-C4-60X120",
+    "asin": "1688-595229918569-C4-60X120",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-60-x-120-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-60X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-80X160",
+    "asin": "1688-595229918569-C4-80X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-80-x-160-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-80X200",
+    "asin": "1688-595229918569-C4-80X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-80-x-200-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-80X200",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-100X160",
+    "asin": "1688-595229918569-C4-100X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-100-x-160-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-120X160",
+    "asin": "1688-595229918569-C4-120X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-120-x-160-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-120X200",
+    "asin": "1688-595229918569-C4-120X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-120-x-200-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "32.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-120X200",
+        "title": "Default Title",
+        "price": { "amount": "32.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4",
+    "asin": "1688-595229918569-C4",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "45.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4",
+        "title": "Default Title",
+        "price": { "amount": "45.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-200X250",
+    "asin": "1688-595229918569-C4-200X250",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-200-x-250-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "72.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-200X250",
+        "title": "Default Title",
+        "price": { "amount": "72.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-200X300",
+    "asin": "1688-595229918569-C4-200X300",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-200-x-300-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C4-200X400",
+    "asin": "1688-595229918569-C4-200X400",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Wine Red)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-wine-red-200-x-400-cm-1688-595229918569-c4",
+    "description": "Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Wine Red Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich rich wine red, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C4/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Wine Red)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "99.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C4-200X400",
+        "title": "Default Title",
+        "price": { "amount": "99.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-60X120",
+    "asin": "1688-595229918569-C5-60X120",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-60-x-120-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-60X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-80X160",
+    "asin": "1688-595229918569-C5-80X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-80-x-160-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-80X200",
+    "asin": "1688-595229918569-C5-80X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-80-x-200-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-80X200",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-100X160",
+    "asin": "1688-595229918569-C5-100X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-100-x-160-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-120X160",
+    "asin": "1688-595229918569-C5-120X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-120-x-160-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-120X200",
+    "asin": "1688-595229918569-C5-120X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-120-x-200-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "32.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-120X200",
+        "title": "Default Title",
+        "price": { "amount": "32.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5",
+    "asin": "1688-595229918569-C5",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "45.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5",
+        "title": "Default Title",
+        "price": { "amount": "45.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-200X250",
+    "asin": "1688-595229918569-C5-200X250",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-200-x-250-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "72.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-200X250",
+        "title": "Default Title",
+        "price": { "amount": "72.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-200X300",
+    "asin": "1688-595229918569-C5-200X300",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-200-x-300-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C5-200X400",
+    "asin": "1688-595229918569-C5-200X400",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Coffee)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-coffee-200-x-400-cm-1688-595229918569-c5",
+    "description": "Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Coffee Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich warm coffee brown, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C5/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Coffee)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "99.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C5-200X400",
+        "title": "Default Title",
+        "price": { "amount": "99.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-60X120",
+    "asin": "1688-595229918569-C6-60X120",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-60-x-120-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 60 x 120cm Coverage: Measuring 60 x 120cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 60 x 120 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-60X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-80X160",
+    "asin": "1688-595229918569-C6-80X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-80-x-160-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 160cm Coverage: Measuring 80 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 160 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-80X200",
+    "asin": "1688-595229918569-C6-80X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-80-x-200-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 80 x 200cm Coverage: Measuring 80 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 80 x 200 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-80X200",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-100X160",
+    "asin": "1688-595229918569-C6-100X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-100-x-160-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 100 x 160cm Coverage: Measuring 100 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 100 x 160 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-120X160",
+    "asin": "1688-595229918569-C6-120X160",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-120-x-160-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 160cm Coverage: Measuring 120 x 160cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 160 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-120X200",
+    "asin": "1688-595229918569-C6-120X200",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-120-x-200-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 120 x 200cm Coverage: Measuring 120 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 120 x 200 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "32.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-120X200",
+        "title": "Default Title",
+        "price": { "amount": "32.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6",
+    "asin": "1688-595229918569-C6",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "45.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6",
+        "title": "Default Title",
+        "price": { "amount": "45.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-200X250",
+    "asin": "1688-595229918569-C6-200X250",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-200-x-250-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 250cm Coverage: Measuring 200 x 250cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 250 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "72.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-200X250",
+        "title": "Default Title",
+        "price": { "amount": "72.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-200X300",
+    "asin": "1688-595229918569-C6-200X300",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-200-x-300-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 300cm Coverage: Measuring 200 x 300cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 300 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-595229918569-C6-200X400",
+    "asin": "1688-595229918569-C6-200X400",
+    "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Camel)",
+    "handle": "luxurious-plush-faux-rabbit-fur-area-rug-camel-200-x-400-cm-1688-595229918569-c6",
+    "description": "Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space. Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
+    "descriptionHtml": "<p>Plush Camel Faux Fur: Crafted from high-quality faux rabbit fur fibers in a rich classic camel tan, delivering an ultra-soft and smooth touch underfoot for a warm, inviting space.</p><p>Spacious 200 x 400cm Coverage: Measuring 200 x 400cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-595229918569-C6/1.webp",
+        "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 200 x 400 cm (Camel)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "99.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-595229918569-C6-200X400",
+        "title": "Default Title",
+        "price": { "amount": "99.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-1688-745181807454-C4",
     "asin": "1688-745181807454-C4",
     "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (GT017)",
