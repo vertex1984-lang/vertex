@@ -4575,6 +4575,2080 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
   {
+    "id": "makimoo-1688-744995685423-80X120",
+    "asin": "1688-744995685423-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-80-x-120-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-80X160",
+    "asin": "1688-744995685423-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-80-x-160-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-100X160",
+    "asin": "1688-744995685423-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-100-x-160-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-120X160",
+    "asin": "1688-744995685423-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-120-x-160-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-140X200",
+    "asin": "1688-744995685423-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-140-x-200-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-160X230",
+    "asin": "1688-744995685423-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-160-x-230-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-180X250",
+    "asin": "1688-744995685423-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-180-x-250-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-200X300",
+    "asin": "1688-744995685423-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Grey Beige)",
+    "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-200-x-300-cm-1688-744995685423",
+    "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Grey Beige)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-80X120",
+    "asin": "1688-744995685423-C2-80X120",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 80 x 120 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-80-x-120-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 80 x 120 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-80X160",
+    "asin": "1688-744995685423-C2-80X160",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 80 x 160 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-80-x-160-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 80 x 160 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-100X160",
+    "asin": "1688-744995685423-C2-100X160",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 100 x 160 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-100-x-160-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 100 x 160 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-120X160",
+    "asin": "1688-744995685423-C2-120X160",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 120 x 160 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-120-x-160-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 120 x 160 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-140X200",
+    "asin": "1688-744995685423-C2-140X200",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 140 x 200 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-140-x-200-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 140 x 200 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-160X230",
+    "asin": "1688-744995685423-C2-160X230",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 160 x 230 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-160-x-230-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 160 x 230 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-180X250",
+    "asin": "1688-744995685423-C2-180X250",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 180 x 250 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-180-x-250-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 180 x 250 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C2-200X300",
+    "asin": "1688-744995685423-C2-200X300",
+    "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 200 x 300 cm (Black and White)",
+    "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-200-x-300-cm-1688-744995685423-c2",
+    "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C2/1.webp",
+        "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat 200 x 300 cm (Black and White)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C2-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-80X120",
+    "asin": "1688-744995685423-C3-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-80-x-120-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-80X160",
+    "asin": "1688-744995685423-C3-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-80-x-160-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-100X160",
+    "asin": "1688-744995685423-C3-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-100-x-160-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3",
+    "asin": "1688-744995685423-C3",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-120X160",
+    "asin": "1688-744995685423-C3-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-120-x-160-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-140X200",
+    "asin": "1688-744995685423-C3-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-140-x-200-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-160X230",
+    "asin": "1688-744995685423-C3-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-160-x-230-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-180X250",
+    "asin": "1688-744995685423-C3-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-180-x-250-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C3-200X300",
+    "asin": "1688-744995685423-C3-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Warm Grey)",
+    "handle": "modern-geometric-area-rug-warm-grey-200-x-300-cm-1688-744995685423-c3",
+    "description": "Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Warm Grey Abstract Design: Features a soft warm-grey abstract print with gentle tonal shapes, bringing a calm modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C3/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Warm Grey)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C3-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-80X120",
+    "asin": "1688-744995685423-C4-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-80-x-120-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-80X160",
+    "asin": "1688-744995685423-C4-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-80-x-160-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-100X160",
+    "asin": "1688-744995685423-C4-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-100-x-160-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4",
+    "asin": "1688-744995685423-C4",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-120X160",
+    "asin": "1688-744995685423-C4-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-120-x-160-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-140X200",
+    "asin": "1688-744995685423-C4-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-140-x-200-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-160X230",
+    "asin": "1688-744995685423-C4-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-160-x-230-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-180X250",
+    "asin": "1688-744995685423-C4-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-180-x-250-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C4-200X300",
+    "asin": "1688-744995685423-C4-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Mist Blue)",
+    "handle": "modern-geometric-area-rug-mist-blue-200-x-300-cm-1688-744995685423-c4",
+    "description": "Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Mist Blue Abstract Design: Features a light blue-grey abstract print with soft flowing shapes, adding a calm contemporary feel to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C4/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Mist Blue)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C4-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-80X120",
+    "asin": "1688-744995685423-C5-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-80-x-120-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-80X160",
+    "asin": "1688-744995685423-C5-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-80-x-160-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-100X160",
+    "asin": "1688-744995685423-C5-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-100-x-160-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5",
+    "asin": "1688-744995685423-C5",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-120X160",
+    "asin": "1688-744995685423-C5-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-120-x-160-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-140X200",
+    "asin": "1688-744995685423-C5-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-140-x-200-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-160X230",
+    "asin": "1688-744995685423-C5-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-160-x-230-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-180X250",
+    "asin": "1688-744995685423-C5-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-180-x-250-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C5-200X300",
+    "asin": "1688-744995685423-C5-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Charcoal Diamond)",
+    "handle": "modern-geometric-area-rug-charcoal-diamond-200-x-300-cm-1688-744995685423-c5",
+    "description": "Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Charcoal Diamond Design: Features a bold charcoal grey diamond and chevron layout on a light ground, adding striking modern contrast to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C5/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Charcoal Diamond)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C5-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-80X120",
+    "asin": "1688-744995685423-C6-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-80-x-120-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-80X160",
+    "asin": "1688-744995685423-C6-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-80-x-160-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-100X160",
+    "asin": "1688-744995685423-C6-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-100-x-160-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6",
+    "asin": "1688-744995685423-C6",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-120X160",
+    "asin": "1688-744995685423-C6-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-120-x-160-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-140X200",
+    "asin": "1688-744995685423-C6-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-140-x-200-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-160X230",
+    "asin": "1688-744995685423-C6-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-160-x-230-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-180X250",
+    "asin": "1688-744995685423-C6-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-180-x-250-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C6-200X300",
+    "asin": "1688-744995685423-C6-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Cream Stripe)",
+    "handle": "modern-geometric-area-rug-cream-stripe-200-x-300-cm-1688-744995685423-c6",
+    "description": "Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Cream Stripe Design: Features cream and charcoal colour blocks with fine diagonal stripes, bringing a graphic modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C6/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Cream Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C6-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-80X120",
+    "asin": "1688-744995685423-C7-80X120",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-80-x-120-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 120cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 120 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-80X120",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-80X160",
+    "asin": "1688-744995685423-C7-80X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-80-x-160-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 80 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 80 x 160 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "15.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-80X160",
+        "title": "Default Title",
+        "price": { "amount": "15.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-100X160",
+    "asin": "1688-744995685423-C7-100X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-100-x-160-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 160 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "20.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-100X160",
+        "title": "Default Title",
+        "price": { "amount": "20.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7",
+    "asin": "1688-744995685423-C7",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "26.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7",
+        "title": "Default Title",
+        "price": { "amount": "26.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-120X160",
+    "asin": "1688-744995685423-C7-120X160",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-120-x-160-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 120 x 160cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 120 x 160 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "25.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-120X160",
+        "title": "Default Title",
+        "price": { "amount": "25.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-140X200",
+    "asin": "1688-744995685423-C7-140X200",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-140-x-200-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 140 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 140 x 200 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "39.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-140X200",
+        "title": "Default Title",
+        "price": { "amount": "39.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-160X230",
+    "asin": "1688-744995685423-C7-160X230",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-160-x-230-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 160 x 230cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 160 x 230 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "52.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-160X230",
+        "title": "Default Title",
+        "price": { "amount": "52.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-180X250",
+    "asin": "1688-744995685423-C7-180X250",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-180-x-250-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 180 x 250cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 180 x 250 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "65.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-180X250",
+        "title": "Default Title",
+        "price": { "amount": "65.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
+    "id": "makimoo-1688-744995685423-C7-200X300",
+    "asin": "1688-744995685423-C7-200X300",
+    "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Slate Stripe)",
+    "handle": "modern-geometric-area-rug-slate-stripe-200-x-300-cm-1688-744995685423-c7",
+    "description": "Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
+    "descriptionHtml": "<p>Slate Stripe Design: Features soft slate grey and blue diagonal stripes on a light ground, adding a relaxed contemporary touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 200 x 300cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
+    "productType": "Mats",
+    "tags": [
+      "Mats"
+    ],
+    "availableForSale": true,
+    "images": [
+      {
+        "url": "/images/products/1688-744995685423-C7/1.webp",
+        "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 200 x 300 cm (Slate Stripe)",
+        "width": 1200,
+        "height": 1200
+      }
+    ],
+    "priceRange": {
+      "minVariantPrice": { "amount": "87.99", "currencyCode": "USD" }
+    },
+    "variants": [
+      {
+        "id": "variant-1688-744995685423-C7-200X300",
+        "title": "Default Title",
+        "price": { "amount": "87.99", "currencyCode": "USD" },
+        "availableForSale": true,
+        "selectedOptions": []
+      }
+    ],
+    "amazonUrl": ""
+  },
+  {
     "id": "makimoo-1688-595229918569",
     "asin": "1688-595229918569",
     "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
