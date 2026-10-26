@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { getProductByHandle } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getVariantGroupOf } from '@/data/variant-groups';
-import { PDP_MAIN_34_ASINS } from '@/data/pdp-main-34-asins';
+import { PDP_MAIN_34_ASINS, PDP_MAIN_PREPEND_IMAGES } from '@/data/pdp-main-34-asins';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
@@ -22,6 +22,7 @@ import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
+import { beddingPdpHeading, beddingUsSizeLabel, classifySet } from '@/data/bedding-families';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import StarDisplay from '@/components/v2/StarDisplay';
@@ -29,17 +30,20 @@ import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
-import V2ProductCard, { type V2CardProduct } from '@/components/v2/V2ProductCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import type { GroupCard } from '@/lib/group-cards';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 
 interface ProductDetailUpgradeProps {
   handle: string;
   /** 同款异色成员（含缩略图 URL），由服务端 page 组装传入；二维家族已按颜色去重 */
   colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
-  /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选 */
-  sizeVariants?: { handle: string | null; size: string; inStock: boolean }[];
-  /** "You May Also Like" 关联推荐卡片（page.tsx 用 getPdpRelatedProducts 构建期算好），渲染在信任条下方 */
-  relatedProducts?: V2CardProduct[];
+  /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选；
+   *  asin 供 bedding 美式尺寸标签取 ASIN 后缀（2026-10-21） */
+  sizeVariants?: { handle: string | null; asin?: string; size: string; inStock: boolean }[];
+  /** "You May Also Like" 关联推荐组卡（page.tsx 用 getPdpRelatedFamilies 构建期算好），渲染在信任条下方。
+   *  2026-10-22 用户定：一组一卡 + 色卡——同组只出一张卡，色卡展示全部颜色 */
+  relatedProducts?: GroupCard[];
 }
 
 // 尺寸选项（仅地毯类使用）：当前尺寸可选中，其余灰色"即将推出"；
@@ -153,7 +157,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
   // 主图滑动切图（手机）：横向滑动上/下一张，循环；配套圆点指示器见主图容器内
   // （2026-10-02 采自 feat/pdp-v2-features，替换旧的 touchStartX 手写滑动：循环 + 滑动后抑制误触 lightbox）
-  const imageCount = product ? (product.shopifyImages?.length || product.images?.length || 0) : 0;
+  const imageCount = product
+    ? (product.shopifyImages?.length || product.images?.length || 0) +
+      (PDP_MAIN_PREPEND_IMAGES[product.asin.toLowerCase()] ? 1 : 0)
+    : 0;
   const swipeTo = (dir: 1 | -1) => {
     setMainImageLoaded(false);
     setSelectedImage((i) => (i + dir + imageCount) % Math.max(1, imageCount));
@@ -167,7 +174,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     return (
       <div className="bg-off-white px-6 lg:px-10 pt-40 pb-24 text-center">
         <p className="text-lg text-charcoal-light">Product not found.</p>
-        <a href={v2url('/products/')} className="mt-4 inline-block text-brand underline underline-offset-4">
+        <a href={v2url('/categories/')} className="mt-4 inline-block text-brand underline underline-offset-4">
           Browse all products
         </a>
       </div>
@@ -196,6 +203,20 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         altText: img.altText, whiteBg: product.imageWhiteBg?.[i] ?? false,
       }));
 
+  // 2026-10-26 用户定：个别产品把"产品卡主图"前置为 PDP 图集第一张（其余图依次后移，
+  // 见 pdp-main-34-asins.ts 的 PDP_MAIN_PREPEND_IMAGES）
+  const pdpPrepend = PDP_MAIN_PREPEND_IMAGES[product.asin.toLowerCase()];
+  if (pdpPrepend) {
+    productImages.unshift({
+      url: pdpPrepend,
+      mainUrl: pdpPrepend,
+      lightboxUrl: pdpPrepend,
+      thumbUrl: pdpPrepend,
+      altText: product.title,
+      whiteBg: false,
+    });
+  }
+
   // 详情附图区已随 Description 模块删除（2026-09-29 用户定）
 
   const hasShopifyData = product.hasShopifyData;
@@ -205,7 +226,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);
 
   // 标题：enrich 短标题（新标题公式已写入 short-titles）；
-  // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）
+  // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）；
+  // 2026-10-21 用户定：bedding 例外——主标题改 材质+类型、新增 类型副标题+美式尺寸 副行（见下方 beddingHeading）
   const shortTitle = product.title;
 
   // 面包屑已于 2026-10-19 全站移除（用户定），原面包屑类目变量（catSlug/catLabel/catHref）一并删除
@@ -235,6 +257,27 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const careCopy = getCareCopy(product.productType, product.title);
   const isRug = RUG_TITLE_RE.test(product.title);
   const isBedding = (product.productType || '').toLowerCase() === 'bedding';
+  // 四件套（被套+床笠+2枕套，classifySet = 'four'）的 Size Guide 需附床笠尺寸表
+  // （2026-10-21 用户定，美式床笠标准尺寸调研：Bed Bath & Beyond / Or&Zon 口径）
+  const beddingHasFittedSheet = isBedding && classifySet(product.asin) === 'four';
+
+  // bedding PDP 标题区 + 美式尺寸（2026-10-21 用户定，规则函数见 bedding-families.ts）：
+  // 主标题 = 材质 + 类型（如 "Cotton Percale Duvet Cover Set"）；副标题 = 类型组件清单 + 美式尺寸
+  // （如 "Duvet cover & two pillowcases · Queen"）。当前 cm 尺寸优先取尺寸变体当前项，
+  // 兜底解析短标题内 cm（独立被套单件无尺寸变体）
+  const currentSizeIdx = sizeVariants.findIndex((sv) => sv.handle === handle);
+  const currentVariantCm = (currentSizeIdx >= 0 ? sizeVariants[currentSizeIdx].size : undefined)
+    ?? product.title.match(/\d+\s*x\s*\d+\s*cm/i)?.[0];
+  const beddingHeading = isBedding ? beddingPdpHeading(product.asin, currentVariantCm) : null;
+  const displayTitle = beddingHeading?.title ?? shortTitle;
+  // 尺寸选项美式标签：同名撞车（1688 缎面家族 150x200/180x220 同映射 Twin / Twin XL 等）补 cm 消歧
+  const beddingSizeLabels = (() => {
+    if (!isBedding || sizeVariants.length === 0) return null;
+    const raw = sizeVariants.map((sv) => beddingUsSizeLabel(sv.asin ?? '', sv.size) || sv.size);
+    const counts = new Map<string, number>();
+    for (const l of raw) counts.set(l, (counts.get(l) ?? 0) + 1);
+    return sizeVariants.map((sv, i) => ((counts.get(raw[i]) ?? 0) > 1 ? `${raw[i]} (${sv.size})` : raw[i]));
+  })();
 
   const quickSpecs = [
     pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
@@ -390,8 +433,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           {/* 左：图集。移动端（2026-09-29 用户定）：主图 1:1.05 近方微竖通栏，方源图 object-cover 居中裁剪
               （仅左右各裁约 2.4%，几乎不损失画面；4:5 竖版左右裁 10% 与模糊背景方案均已弃用）；
               缩略图栏改为底部圆点指示器 + 左右滑动切换；桌面端方图 cover + 缩略图竖排在主图左侧（2026-09-29 用户定）。
-              2026-10-19 用户定：bedding 类目 PDP 图集区默认 3:4（产品带 imageAspect 覆盖时优先生效，
-              见 image-aspect-overrides.ts）；非 bedding 产品保持 1:1.05/方图 */}
+              2026-10-21 用户定：全站 PDP 图集区统一 3:4（用户后续全站更新 3:4 源图；imageAspect 覆盖机制保留，
+              见 image-aspect-overrides.ts，历史值均为 3/4）。历史：10-19 仅 bedding 默认 3:4，非 bedding 1:1.05/方图 */}
           <div className={`min-w-0 max-lg:-mx-6${productImages.length > 1 ? ' lg:grid lg:grid-cols-[5rem_1fr] lg:gap-4' : ''}`}>
             {/* 缩略图竖排（桌面端，主图左侧；2026-09-29 用户定：主图占比大，缩略图在下方时首屏看不到切换器）。
                 grid 行高由主图 aspect-square 决定，竖排列 min-h-0 + overflow-y-auto 超高时列内滚动；
@@ -412,7 +455,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </div>
             )}
             <div
-              className={`${product.imageAspect === '3/4' || isBedding ? 'aspect-[3/4]' : 'aspect-[1/1.05] lg:aspect-square'} lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y`}
+              className={`aspect-[3/4] lg:rounded-2xl overflow-hidden lg:border lg:border-warm-gray cursor-zoom-in relative group bg-white touch-pan-y`}
               onClick={() => { if (wasSwiped()) return; setLightboxOpen(true); }}
               onTouchStart={onTouchStart}
               onTouchEnd={onTouchEnd}
@@ -473,7 +516,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* 平板档（lg~xl，1024-1280px，如 iPad Pro 11/13 竖屏）用 text-2xl：右栏仅约 380px 宽，
                 text-4xl 会挤成 3-4 行（2026-09-29 用户实测排版异常）；≥xl 才用大标题 */}
-            <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{shortTitle}</h1>
+            <h1 className="text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-tight text-charcoal leading-snug mb-2">{displayTitle}</h1>
+            {beddingHeading && (
+              <p className="text-sm lg:text-base text-charcoal-light -mt-1 mb-2">{beddingHeading.subtitle}</p>
+            )}
 
             {/* Rating + 价格：评价分布条与 "Based on N customer reviews"
                 在页尾评价区（V2ProductReviews 摘要带，Recently Viewed 正上方）；
@@ -533,7 +579,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* Details 卖点与规格速览已下移至购买区信任信息之后（首屏聚焦图片+价格+CTA） */}
 
-            {/* 花色切换器（同款异色圆点，点击跳转对应花色页）；移动端 56px 紧凑版（2026-09-28 对标竞品压缩选择区） */}
+            {/* 花色切换器（同款异色圆点，点击跳转对应花色页——replace 导航：变体/尺寸切换不压历史栈，
+                点多少个变体后退都直接回列表页，2026-10-22 用户定）；移动端 56px 紧凑版（2026-09-28 对标竞品压缩选择区） */}
             {colorVariants.length > 1 && (() => {
               const current = colorVariants.find((v) => v.handle === handle);
               return (
@@ -549,6 +596,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                         <Link
                           key={v.asin}
                           href={v2url(`/products/${v.handle}/`)}
+                          replace
                           title={v.color}
                           aria-label={`${v.color}${isCurrent ? ' (current)' : ''}`}
                           className={`relative w-12 h-12 lg:w-16 lg:h-16 xl:w-[88px] xl:h-[88px] rounded-full overflow-hidden border-2 transition hover:scale-105 ${
@@ -572,8 +620,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             {/* 尺寸选择器（2026-10-12 用户定：标题与选择器合并为一行——一个圆角框内左 "Size" 标签、
                 右当前值 ▾，字体样式不变；原标题行+下划线选择器两段式弃用）：
                 点击展开选项面板；变体组带尺寸 → 跳转对应尺寸页（缺货/无此规格在面板内灰显）；
-                地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类 Size guide 入口移到框下方右侧 */}
-            {(sizeVariants.length > 0 || (isRug && currentSizeStr)) && (
+                地毯等无变体 → 预设尺寸（非当前 Coming soon）。Bedding 品类 Size guide 入口移到框下方右侧。
+                2026-10-21 用户定：只有一个尺寸变体时不渲染选择器（无可选，尺寸信息标题已带） */}
+            {(sizeVariants.length > 1 || (isRug && currentSizeStr)) && (
             <div ref={sizeMenuRef} className="mb-5 lg:mb-7">
               <button
                 type="button"
@@ -584,8 +633,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-light">Size</span>
                 <span className="flex items-center gap-1.5 text-sm font-semibold text-charcoal">
                   {sizeVariants.length > 0
-                    ? sizeDualLabel(sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size')
-                    : sizeDualLabel(currentSizeStr ?? '')}
+                    ? (beddingSizeLabels?.[currentSizeIdx] ?? sizeDualLabel(sizeVariants.find((sv) => sv.handle === handle)?.size ?? 'Select size'))
+                    : (beddingSizeLabels?.[currentSizeIdx] ?? sizeDualLabel(currentSizeStr ?? ''))}
                   <svg className={`w-4 h-4 text-charcoal-light transition-transform ${sizeMenuOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
                 </span>
               </button>
@@ -599,12 +648,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               {sizeMenuOpen && (
                 <div className="mt-2 rounded-xl border border-warm-gray bg-white shadow-lg overflow-hidden">
                   {sizeVariants.length > 0
-                    ? sizeVariants.map((sv) => {
+                    ? sizeVariants.map((sv, i) => {
                         const active = sv.handle === handle;
                         const unavailable = sv.handle === null;
                         const label = (
                           <>
-                            {sizeDualLabel(sv.size)}
+                            {beddingSizeLabels?.[i] ?? sizeDualLabel(sv.size)}
                             {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
                             {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
                           </>
@@ -622,7 +671,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                           </div>
                         ) : (
-                          <Link key={sv.size} href={v2url(`/products/${sv.handle}/`)} className="block px-4 py-2.5 text-sm text-charcoal hover:bg-off-white transition">
+                          <Link key={sv.size} replace href={v2url(`/products/${sv.handle}/`)} className="block px-4 py-2.5 text-sm text-charcoal hover:bg-off-white transition">
                             {label}
                           </Link>
                         );
@@ -797,7 +846,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           return <V2PdpLifestyle cat={sub === 'solids' ? 'solids' : sub === 'prints' ? 'prints' : 'cushions'} />;
         }
         if (cat === 'bedding') {
-          // 100% Linen / Linen-Like / Washed Cotton-Like（展示名 Brushed Cotton）/ Satin 各出专属场景图
+          // 100% Linen / Linen-Like / Washed Cotton-Like（展示名 Washed Cotton）/ Satin 各出专属场景图
           // （2026-10-14/15 用户供图 + AI 种草图）；材质口径与面料 PLP 一致（material 原子词精确匹配）
           const mats = specs?.material?.split(', ') ?? [];
           if (mats.includes('100% Linen')) return <V2PdpLifestyle cat="linen" />;
@@ -822,9 +871,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               You May Also Like
             </h2>
             <DragScroll className="flex gap-4 lg:gap-5 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-              {relatedProducts.map((p) => (
-                <div key={p.id} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
-                  <V2ProductCard product={p} />
+              {relatedProducts.map((card) => (
+                <div key={card.key} className="w-[38vw] sm:w-[30vw] lg:w-[calc((100%-5rem)/4.5)] flex-shrink-0 snap-start">
+                  <GroupProductCard card={card} />
                 </div>
               ))}
             </DragScroll>
@@ -868,7 +917,49 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </button>
             <p className="text-base font-bold text-charcoal mb-1">Size Guide</p>
-            <p className="text-xs text-charcoal-light mb-4">Duvet cover dimensions by size.</p>
+            <p className="text-xs text-charcoal-light mb-4">
+              {beddingHasFittedSheet ? 'Set dimensions by bed size.' : 'Duvet cover dimensions by size.'}
+            </p>
+            {beddingHasFittedSheet ? (
+              /* 四件套（2026-10-21 用户定）：单表统一格式，按床型分行，被套/床笠/枕套同版式
+                 （in 为主 + cm 次行）；尺寸取全店四件套（bedset4/sateen4）真实规格——
+                 被套 Twin 68x88 / Full 80x88 / Queen 88x88 / King 104x90 in，
+                 床笠 39x75 / 54x75 / 60x80 / 78x80 in（pocket 16 in / 40 cm，用户确认），
+                 枕套 20x26 / 20x26 / 20x30 / 20x36 in */
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-[11px] uppercase tracking-wide text-charcoal-light border-b border-warm-gray">
+                    <th className="py-2 pr-2 font-semibold align-bottom">Size</th>
+                    <th className="py-2 pr-2 font-semibold align-bottom">Duvet Cover</th>
+                    <th className="py-2 pr-2 font-semibold align-bottom">
+                      Fitted Sheet
+                      <span className="block text-[10px] font-normal normal-case tracking-normal">
+                        16 in (40 cm) pocket
+                      </span>
+                    </th>
+                    <th className="py-2 font-semibold align-bottom">Pillowcases</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ['Twin', '68 x 88 in', '173 x 224 cm', '39 x 75 in', '99 x 191 cm', '20 x 26 in', '51 x 66 cm'],
+                    ['Full', '80 x 88 in', '203 x 224 cm', '54 x 75 in', '137 x 191 cm', '20 x 26 in', '51 x 66 cm'],
+                    ['Queen', '88 x 88 in', '224 x 224 cm', '60 x 80 in', '152 x 203 cm', '20 x 30 in', '51 x 76 cm'],
+                    ['King', '104 x 90 in', '264 x 229 cm', '78 x 80 in', '198 x 203 cm', '20 x 36 in', '51 x 91 cm'],
+                  ].map(([size, duvIn, duvCm, fitIn, fitCm, pcIn, pcCm]) => (
+                    <tr key={size} className="border-b border-warm-gray/60 last:border-0">
+                      <td className="py-2.5 pr-2 font-medium text-charcoal align-top">{size}</td>
+                      {[[duvIn, duvCm], [fitIn, fitCm], [pcIn, pcCm]].map(([inch, cm], i) => (
+                        <td key={i} className={`py-2.5 align-top text-charcoal-light ${i < 2 ? 'pr-2' : ''}`}>
+                          <span className="block">{inch}</span>
+                          <span className="block text-[11px] text-charcoal-light/80">{cm}</span>
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
             <table className="w-full text-sm">
               <thead>
                 <tr className="text-left text-[11px] uppercase tracking-wide text-charcoal-light border-b border-warm-gray">
@@ -895,8 +986,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 })}
               </tbody>
             </table>
+            )}
             <p className="mt-4 text-[11px] leading-relaxed text-charcoal-light">
-              Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.
+              {beddingHasFittedSheet
+                ? 'Fitted sheet is elasticized all around with a 16 in (40 cm) deep pocket — match it to your mattress size. For the duvet cover, measure your insert and choose the closest size.'
+                : 'Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.'}
             </p>
           </div>
         </div>
@@ -918,7 +1012,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           />
           <div className="min-w-0 flex-1">
             <p className="text-sm font-semibold text-brand leading-tight">{formatPrice(displayPrice, displayCurrency)}</p>
-            <p className="text-[11px] text-charcoal-light truncate">{shortTitle}</p>
+            <p className="text-[11px] text-charcoal-light truncate">{displayTitle}</p>
           </div>
           <button
             onClick={handleAddToCart}

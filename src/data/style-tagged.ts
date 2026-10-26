@@ -1,6 +1,7 @@
 /**
  * Shop by Style 共享打标数据（2026-09 新增）：首页风格模块与 /featured-products/style/[style]/ 聚合页共用。
- * 与 featured-products/tagged.ts 的关键差异：风格**全类目参与**（含 Others/Decor/Dining），
+ * 与 featured-products/tagged.ts 的关键差异：风格**全类目参与**（含 Others/Decor；
+ * 原 Dining 产品 2026-10-21 起并入 Decor，同样参与），
  * 标签由 getStyleTagWithOverride 现算（规则打标 + STYLE_OVERRIDES 人工指定，见 product-tags.ts）。
  */
 import {

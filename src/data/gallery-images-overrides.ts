@@ -11,20 +11,7 @@
  * materials-map.ts 底部的 SITE_ONLY_WHITEBG 维护，二者需保持等长。
  */
 export const GALLERY_IMAGES_OVERRIDES: Record<string, string[]> = {
-  // 2026-10-10 坐垫灰底棚拍主图（1.webp 为新生成图，其余为原图后移）
-  'b0cj8tjl56': [
-    '/images/products/B0CJ8TJL56/1.webp',
-    '/images/products/B0CJ8TJL56/2.webp',
-    '/images/products/B0CJ8TJL56/3.webp',
-    '/images/products/B0CJ8TJL56/4.webp',
-    '/images/products/B0CJ8TJL56/5.webp',
-  ],
-  'b0cjhslcz5': [
-    '/images/products/B0CJHSLCZ5/1.webp',
-    '/images/products/B0CJHSLCZ5/2.webp',
-    '/images/products/B0CJHSLCZ5/3.webp',
-    '/images/products/B0CJHSLCZ5/4.webp',
-  ],
+  // 2026-10-10 坐垫灰底棚拍主图（1.webp 为新生成图，其余为原图后移）
   'b0f1y4j48t': [
     '/images/products/B0F1Y4J48T/1.webp',
     '/images/products/B0F1Y4J48T/2.webp',

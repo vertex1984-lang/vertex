@@ -1,0 +1,98 @@
+=== 1688-916370884976 ===
+{
+    id: '1688-916370884976',
+    optionName: 'Size',
+    members: [
+    
+    
+    
+    
+    ],
+  },
+
+=== 1688-1044064113195 ===
+{
+    id: '1688-1044064113195',
+    optionName: 'Color',
+    members: [
+    
+    
+    
+    ],
+  },
+
+=== 1688-743666513356 ===
+{
+    id: '1688-743666513356',
+    optionName: 'Color',
+    members: [
+    
+    
+    
+    ],
+  },
+
+=== 1688-856468238034 ===
+{
+    id: '1688-856468238034',
+    optionName: 'Color',
+    members: [
+    
+    
+    ],
+  },
+
+=== 1688-1056325209172 ===
+{
+    id: '1688-1056325209172',
+    optionName: 'Color',
+    members: [
+    
+    
+    ],
+  },
+
+=== b0-inserts-rect ===
+{
+    id: 'b0-inserts-rect',
+    optionName: 'Size',
+    members: [
+    
+    
+    // 2026-10-18 用户定：b0cqbzm49v（30 x 50 cm）从本族拆出，成为独立链接/独立卡位
+    ],
+  },
+
+=== b0-embossed-cases ===
+{
+    id: 'b0-embossed-cases',
+    optionName: 'Color',
+    members: [
+    
+    
+    
+    // 2026-09-30 用户定：8 款枕套（pillowcases/pillow covers/pillow cases）全站隐藏，已移出本组
+    ],
+  },
+
+=== b0-travel-inflatable ===
+{
+    id: 'b0-travel-inflatable',
+    optionName: 'Color',
+    members: [
+    
+    
+    
+    
+    ],
+  },
+
+=== DUVSET-DUVET ===
+{
+    // 2026-10-24 用户定：旧 DUVSET 独立被套 4 款下架，成员清空，产品数据保留
+    id: 'DUVSET-DUVET',
+    optionName: 'Color',
+    members: [
+    ],
+  },
+

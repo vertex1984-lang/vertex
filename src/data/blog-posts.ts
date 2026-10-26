@@ -364,13 +364,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "The trade-off is weather. Corduroy holds moisture in its ribs and dries slowly, so it belongs indoors or on genuinely covered porches. Keep it out of rain, and fluff the ribs occasionally with a soft brush to prevent flattening where people actually sit." },
       {
         type: "products",
-        products: [
-          {
-            key: "b0gd84d8vc",
-            category: "Printed Polyester · 43 × 43 cm",
-            name: "Tufted Square Seat Pads with Ties, Set of 2 — Green Lantern",
-            desc: "The everyday formula: plush fiberfill under a printed polyester cover, with corner ties for a secure fit.",
-          },
+        products: [
           {
             key: "b0cbt7rfk2",
             category: "Corduroy · 95 × 45 cm",
@@ -463,13 +457,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "For standard straight-backed chairs, either works. For rocking chairs, where the back tilts and the seat moves, two-piece sets track the movement better and are the traditional choice." },
       {
         type: "products",
-        products: [
-          {
-            key: "b0cjhx7xkl",
-            category: "Seat Pad · 43 × 43 cm",
-            name: "Tufted Houndstooth Seat Pads with Ties, Set of 2 — Navy Blue",
-            desc: "The standard dining-chair size: a 43 × 43 cm tufted pad with ties to anchor it in place.",
-          },
+        products: [
         ],
       },
       { type: "h2", text: "Three fit mistakes to avoid" },
@@ -573,13 +561,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "The honest trade-offs: memory foam sleeps warmer than fiber (look for ventilated or mesh-panel designs if that matters), it can't be machine washed, only the cover comes off, and its support is positional. A U-shaped travel pillow is excellent in a seat and useless in a bed. Match the format to the use." },
       {
         type: "products",
-        products: [
-          {
-            key: "b0c8j237v3",
-            category: "Memory Foam · Travel",
-            name: "U-Shaped Memory Foam Travel Neck Pillow — Navy Blue",
-            desc: "Slow-rebound foam with an adjustable snap closure and a velvet cover — support designed for upright rest.",
-          },
+        products: [
         ],
       },
       { type: "h2", text: "Frequently asked questions" },

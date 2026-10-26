@@ -68,4 +68,98 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   '1688-969627065032-c30': '3/4',
   '1688-969627065032-c35': '3/4',
   '1688-969627065032-c40': '3/4',
+  // 2026-10-21：Embossed Velvet 绒球四件套（7 色 × 4 尺寸，3:4 PDP 主图）
+  'pompom4-swirl-twin': '3/4',
+  'pompom4-swirl-full': '3/4',
+  'pompom4-swirl-queen': '3/4',
+  'pompom4-swirl-king': '3/4',
+  'pompom4-vine-twin': '3/4',
+  'pompom4-vine-full': '3/4',
+  'pompom4-vine-queen': '3/4',
+  'pompom4-vine-king': '3/4',
+  'pompom4-leaf-twin': '3/4',
+  'pompom4-leaf-full': '3/4',
+  'pompom4-leaf-queen': '3/4',
+  'pompom4-leaf-king': '3/4',
+  'pompom4-blush-twin': '3/4',
+  'pompom4-blush-full': '3/4',
+  'pompom4-blush-queen': '3/4',
+  'pompom4-blush-king': '3/4',
+  'pompom4-ink-twin': '3/4',
+  'pompom4-ink-full': '3/4',
+  'pompom4-ink-queen': '3/4',
+  'pompom4-ink-king': '3/4',
+  'pompom4-bloom-twin': '3/4',
+  'pompom4-bloom-full': '3/4',
+  'pompom4-bloom-queen': '3/4',
+  'pompom4-bloom-king': '3/4',
+  'pompom4-damask-twin': '3/4',
+  'pompom4-damask-full': '3/4',
+  'pompom4-damask-queen': '3/4',
+  'pompom4-damask-king': '3/4',
+  // 2026-10-22：Cotton Percale 提花四件套（4 色 × 仅 Queen，3:4 PDP 主图）
+  'percalejac-haze-queen': '3/4',
+  'percalejac-rose-queen': '3/4',
+  'percalejac-grey-queen': '3/4',
+  'percalejac-oatbeige-queen': '3/4',
+  // 2026-10-22：Cotton Percale 细条纹提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'percalestripe-petal-queen': '3/4',
+  // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'percalepatch-stone-queen': '3/4',
+  // 2026-10-23：单独被套新品（PDP 图集保持 3:4；Duvet Covers 卡片 1:1 在 V2BeddingShop 单独控制）
+  'percalestripe-petal-duvet': '3/4',
+  'percalepatch-stone-duvet': '3/4',
+  'pompom4-vine-duvet': '3/4',
+  'washjac-cream-duvet': '3/4',
+  'veljac-ivory-duvet': '3/4',
+  'percalejac-ivory-pc-queen': '3/4',
+  'percalejac-haze-pc-queen': '3/4',
+  '1688-1071466105053-c3': '3/4',
+  '1688-1071466105053-c1': '3/4',
+  '1688-1071466105053-c2': '3/4',
+  '1688-1025015219200-c3': '3/4',
+  '1688-1025015219200-c2': '3/4',
+  '1688-1025015219200-c1': '3/4',
+  'sateen4-cream-queen': '3/4',
+  'sateen4-sage-sheet': '3/4',
+  'percale-white-sheet': '3/4',
+  'duvset-gray-sheet': '3/4',
+  'pompom4-olive-sheet': '3/4',
+  'percalejac-haze-duvet': '3/4',
+  'percale-coconut-queen-duvet': '3/4',
+  'percale-mist-duvet': '3/4',
+  'percale-mist-twin-duvet': '3/4',
+  'percale-mist-full-duvet': '3/4',
+  'percale-mist-king-duvet': '3/4',
+  'linen3-sage-duvet': '3/4',
+  'linen3-oatmeal-duvet': '3/4',
+  'linen3-charcoal-duvet': '3/4',
+  'linen3-dustyblue-duvet': '3/4',
+  'linen3-ivory-duvet': '3/4',
+  'percale-sky-duvet': '3/4',
+  'percale-nude-duvet': '3/4',
+  // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'washstripe-sagegreen-queen': '3/4',
+  // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'washjac-cream-queen': '3/4',
+  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'veljac-ivory-queen': '3/4',
+  // 2026-10-25：Cotton Percale 细格提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'percalecheck-sand-queen': '3/4',
+  // 2026-10-25：条纹绒（双面同纹）四件套（单色 × 仅 Queen，3:4 PDP 主图）
+  'velstripe-mocha-queen': '3/4',
+  // 2026-10-25：条纹绒四件套扩充 2 色（3:4 PDP 主图）
+  'velstripe-denim-queen': '3/4',
+  'velstripe-charcoal-queen': '3/4',
 };
+
+/**
+ * 产品卡 1:1 方图白名单（2026-10-22 用户定）：卡面主图不裁切、卡片容器用 aspect-square。
+ * 默认全站卡片容器是 aspect-[3/4]（GroupProductCard tallImage），1:1 图会被 cover 裁两侧；
+ * 名单内 ASIN 的主图本身产品占图比已很高（如 linen3-ivory-queen 种草图 v2），裁切反而丢信息。
+ * 粒度 = 变体级：组卡切到该色变体时容器变方图，其他色保持 3:4。
+ */
+export const CARD_SQUARE_IMAGE_ASINS = new Set<string>([
+  // 当前为空：linen3-ivory 曾列入，2026-10-22 用户改定"容器恢复 3:4 + 主图不裁"——
+  // 改走 images[0] 指 1-3x4.webp 方案（图与容器同比例即零裁切），方图机制保留备用
+]);

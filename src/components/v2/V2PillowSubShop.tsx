@@ -2,17 +2,14 @@
 
 import { useMemo, useState } from 'react';
 import { MakimooProduct } from '@/data/products';
-import BeddingSetCard, { FamilyCardData } from '@/components/v2/BeddingSetCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { collapseProductsToGroupCards } from '@/lib/group-cards';
 import V2FilterSheet, { FilterSheetGroup } from '@/components/v2/V2FilterSheet';
 import {
   PILLOW_TYPES,
   PILLOW_MATERIALS,
   pillowTypeOf,
   pillowMaterialOf,
-  pillowSizesOf,
-  pillowCardTitle,
-  pillowCardColor,
-  applyPillowCardMerges,
 } from '@/data/pillows-taxonomy';
 
 /**
@@ -22,63 +19,42 @@ import {
  * - 选中 = 只渲染该分区；零结果给友好提示 + Clear Filters（不留死路）
  * - 不叠 badge：页标题（形态/材质）+ 分区标题（另一维度）已把两个维度都表达
  *   （同 bedding 面料页 noBadges 规则）
+ * - 2026-10-22 用户定（一组一卡 + 色卡）：卡片改 GroupProductCard——同组各色并一张卡，
+ *   色卡行展示全部颜色；卡面标题走 familyCardDisplay（pillowCardTitle 同口径）；
+ *   原列表卡合并（b0-travel-memory 一族一卡）由组折叠天然覆盖
  */
-
-/** MakimooProduct → BeddingSetCard 最小数据形状（尺寸带取变体族全尺寸；From 价 = 卡片展示价；
- *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）；
- *  titleOverride = 卡片标题规则（2026-10-09，pillowCardTitle：ins "Pillow Inserts Set of 2" /
- *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"）；
- *  colorLine = 标题下浅色颜色行（2026-10-18 用户定；合并卡显示全部颜色 "A / B" 拼接） */
-function toFamilyCard(
-  p: MakimooProduct,
-  colors?: string[],
-  priceOverride?: { amount: string; currency: string }
-): FamilyCardData {
-  return {
-    rep: p,
-    sizes: pillowSizesOf(p),
-    fromPrice: priceOverride?.amount || p.shopifyPrice || p.priceRange?.minVariantPrice?.amount || '',
-    currency:
-      priceOverride?.currency ||
-      p.shopifyCurrencyCode ||
-      p.priceRange?.minVariantPrice?.currencyCode ||
-      'USD',
-    colors,
-    titleOverride: pillowCardTitle(p) || undefined,
-    colorLine: colors?.length ? colors.join(' / ') : pillowCardColor(p) || undefined,
-  };
-}
 
 export default function V2PillowSubShop({
   products,
   sectionBy,
+  flat = false,
 }: {
   products: MakimooProduct[];
   /** type 页按材质分区；material 页按形态分区 */
   sectionBy: 'type' | 'material';
+  /** flat = 平铺网格：不出筛选条、不分区（2026-10-25 用户定：pillow-inserts 页对齐 pillow-cases 样式） */
+  flat?: boolean;
 }) {
   const [selected, setSelected] = useState('');
   // 2026-10-16 用户定：移动端筛选改 Filter 按钮 + 底部弹层，桌面端下拉不变
   const [filterOpen, setFilterOpen] = useState(false);
 
-  // 列表卡合并（2026-10-02）：两款记忆棉颈枕合并为一张卡，非代表成员在此移除
-  const { list: cards, colorsByHandle, fromPriceByHandle } = useMemo(
-    () => applyPillowCardMerges(products),
-    [products]
-  );
+  // 一组一卡（2026-10-22）：入参已是同色去重+聚拢的产品列表，按变体组并卡；
+  // 组 key/计数/筛选全部按组卡口径
+  const cards = useMemo(() => collapseProductsToGroupCards(products), [products]);
 
   const keyOf = useMemo(() => {
     const fn = sectionBy === 'type' ? pillowTypeOf : pillowMaterialOf;
-    const map = new Map(cards.map((p) => [p.handle, fn(p)]));
-    return (p: MakimooProduct) => map.get(p.handle) || '';
+    const map = new Map(cards.map((c) => [c.key, fn(c.rep)]));
+    return (c: (typeof cards)[number]) => map.get(c.key) || '';
   }, [cards, sectionBy]);
 
   const registry = sectionBy === 'type' ? PILLOW_TYPES : PILLOW_MATERIALS;
-  const options = registry.filter((t) => cards.some((p) => keyOf(p) === t.key));
+  const options = registry.filter((t) => cards.some((c) => keyOf(c) === t.key));
 
-  const filtered = selected ? cards.filter((p) => keyOf(p) === selected) : cards;
+  const filtered = selected ? cards.filter((c) => keyOf(c) === selected) : cards;
   const sections = options
-    .map((t) => ({ taxon: t, list: filtered.filter((p) => keyOf(p) === t.key) }))
+    .map((t) => ({ taxon: t, list: filtered.filter((c) => keyOf(c) === t.key) }))
     .filter((s) => s.list.length > 0);
 
   // 2026-10-09 用户定：材质维度对外文案改 Filling（填充物口径，比 Material 更贴合枕芯）
@@ -94,6 +70,22 @@ export default function V2PillowSubShop({
       options: options.map((t) => ({ value: t.key, label: t.label })),
     },
   ];
+
+  // flat 模式（pillow-inserts）：无筛选条、无分区标题，直接平铺网格（对齐 pillow-cases 样式）
+  if (flat) {
+    return (
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
+        {cards.map((c) => (
+          <GroupProductCard
+            key={c.key}
+            card={c}
+            paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
+            compactText
+          />
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -189,11 +181,11 @@ export default function V2PillowSubShop({
           /* 2026-10-08：产品存在但不命中任何分区 taxon（如枕套无填充材质）时，
              直接平铺网格，不再误报 "No pillows match this filter." */
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {filtered.map((p) => (
-              <BeddingSetCard
-                key={p.id}
-                family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
-                paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+            {filtered.map((c) => (
+              <GroupProductCard
+                key={c.key}
+                card={c}
+                paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
                 compactText
               />
             ))}
@@ -212,13 +204,13 @@ export default function V2PillowSubShop({
         )
       ) : sections.length === 1 ? (
         /* 2026-10-16 用户定：只剩一个分区时不出细分标题直接平铺（细分标题与页头信息重复）；
-           当前四个二级页（pillow-inserts / neck-pillows / down-alternative / memory-foam）均为单分区 */
+           2026-10-23：neck-pillows / memory-foam 二级页随颈枕下架移除，现存二级页均为单分区 */
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-          {sections[0].list.map((p) => (
-            <BeddingSetCard
-              key={p.id}
-              family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
-              paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+          {sections[0].list.map((c) => (
+            <GroupProductCard
+              key={c.key}
+              card={c}
+              paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
               compactText
             />
           ))}
@@ -233,11 +225,11 @@ export default function V2PillowSubShop({
               {s.taxon.label}
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-              {s.list.map((p) => (
-                <BeddingSetCard
-                  key={p.id}
-                  family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
-                  paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+              {s.list.map((c) => (
+                <GroupProductCard
+                  key={c.key}
+                  card={c}
+                  paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
                   compactText
                 />
               ))}

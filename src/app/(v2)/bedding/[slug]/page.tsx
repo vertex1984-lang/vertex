@@ -5,6 +5,7 @@ import { buildSetFamilies, SET_KIND_PAGE_COPY, SET_KIND_SLUGS } from '@/data/bed
 import { BEDDING_FABRICS, fabricBySlug, fabricDisplayName } from '@/data/bedding-fabrics';
 import V2FabricShop from '@/components/v2/V2FabricShop';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
@@ -53,7 +54,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const kind = SET_KIND_SLUGS[params.slug];
   if (kind) {
     const copy = SET_KIND_PAGE_COPY[kind];
-    return { title: `${copy.heading} — Bedding`, description: copy.blurb };
+    return { title: `${copy.heading} – Bedding`, description: copy.blurb };
   }
   return {};
 }
@@ -76,8 +77,9 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
 
   const pageCopy = kind ? SET_KIND_PAGE_COPY[kind] : null;
 
-  // duvet-covers 页按面料分区展示（2026-10-16 用户定）
-  const byFabric = !fb && kind === 'duvet';
+  // duvet-covers 页按面料分区展示（2026-10-16 用户定）；
+  // 2026-10-25 用户定：取消面料分区，改回类型页平铺网格（同 /bedding/4-piece-sets/）
+  const byFabric = false;
 
   /* 类型页页头快链导航排已移除（2026-10-16 用户定：移除筛选栏，只保留标题 + 副标题 + 分区网格） */
 
@@ -139,9 +141,10 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
                 Fabric Guide
               </a>
             </nav>
-            <nav
-              className="hidden lg:flex mt-5 mb-10 flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-              aria-label="Bedding fabrics"
+            {/* 2026-10-20 用户定：屏宽不足不换行，单行可拖拽滚动（V2DragScrollRow） */}
+            <V2DragScrollRow
+              className="hidden lg:flex flex-nowrap mt-5 mb-10 items-center gap-x-7 gap-y-2 text-sm"
+              ariaLabel="Bedding fabrics"
             >
               {fabricsWithCounts.map((x) => (
                 <a
@@ -163,7 +166,7 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
                 Fabric Guide
                 <span className="transition-transform group-hover:translate-x-0.5">›</span>
               </a>
-            </nav>
+            </V2DragScrollRow>
           </>
         ) : (
           /* ── 类型页页头：按 bedding 类目页标准（2026-10-16 用户定）——
@@ -182,9 +185,10 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
         )}
 
         {/* ── 选购区：无筛选条（2026-10-16 用户定，与 /products?cat=bedding 同标准）；
-            面料页按类型分区，duvet-covers 按面料分区（2026-10-16 用户定），其余类型页单一网格平铺；
+            面料页按类型分区，其余类型页单一网格平铺（2026-10-25 用户定：duvet-covers 也改平铺，
+            不再按面料分区）；
             卡片 badge 规则（2026-09 用户定）：面料页整页同一布料不叠标签，类型页（多布料混排）
-            叠布料标签；duvet-covers 分区标题=面料、页标题=类型，两维度都已表达 → 不叠标签 ── */}
+            叠布料标签 ── */}
         <V2FabricShop families={families} flat={!fb && !byFabric} noBadges={!!fb || byFabric} byFabric={byFabric} />
 
         {/* ── 面料互导（含当前面料，全量展示）── */}

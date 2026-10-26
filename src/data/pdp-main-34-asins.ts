@@ -4,10 +4,6 @@
  * 由 scripts/bedding-34-split-images.js 生成；sateen6+percale-lavender 充值补图后需重新生成此文件
  */
 export const PDP_MAIN_34_ASINS = new Set<string>([
-  '1688-916370884976-c5',
-  '1688-916370884976-c6',
-  '1688-916370884976-c7',
-  '1688-916370884976-c8',
   'bedset4-blue-full',
   'bedset4-blue-king',
   'bedset4-blue-queen',
@@ -48,33 +44,19 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'duvset-beanred-king',
   'duvset-beanred-queen',
   'duvset-beanred-twin',
-  'duvset-beige-duvet',
   'duvset-beige-full',
   'duvset-beige-king',
   'duvset-beige-queen',
   'duvset-beige-twin',
-  'duvset-butter-full',
-  'duvset-butter-king',
-  'duvset-butter-queen',
-  'duvset-butter-twin',
-  'duvset-dill-full',
-  'duvset-dill-king',
-  'duvset-dill-queen',
-  'duvset-dill-twin',
+  'duvset-gray-duvet',
   'duvset-gray-full',
   'duvset-gray-king',
   'duvset-gray-queen',
   'duvset-gray-twin',
-  'duvset-oat-full',
-  'duvset-oat-king',
-  'duvset-oat-queen',
-  'duvset-oat-twin',
-  'duvset-pink-duvet',
   'duvset-pink-full',
   'duvset-pink-king',
   'duvset-pink-queen',
   'duvset-pink-twin',
-  'duvset-white-duvet',
   'duvset-white-full',
   'duvset-white-king',
   'duvset-white-queen',
@@ -125,4 +107,85 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'percale-sky-king',
   'percale-sky-queen',
   'percale-sky-twin',
+  // 2026-10-21：Embossed Velvet 绒球四件套（7 色 × 4 尺寸）
+  'pompom4-swirl-twin',
+  'pompom4-swirl-full',
+  'pompom4-swirl-queen',
+  'pompom4-swirl-king',
+  'pompom4-vine-twin',
+  'pompom4-vine-full',
+  'pompom4-vine-queen',
+  'pompom4-vine-king',
+  'pompom4-leaf-twin',
+  'pompom4-leaf-full',
+  'pompom4-leaf-queen',
+  'pompom4-leaf-king',
+  'pompom4-blush-twin',
+  'pompom4-blush-full',
+  'pompom4-blush-queen',
+  'pompom4-blush-king',
+  'pompom4-ink-twin',
+  'pompom4-ink-full',
+  'pompom4-ink-queen',
+  'pompom4-ink-king',
+  'pompom4-bloom-twin',
+  'pompom4-bloom-full',
+  'pompom4-bloom-queen',
+  'pompom4-bloom-king',
+  'pompom4-damask-twin',
+  'pompom4-damask-full',
+  'pompom4-damask-queen',
+  'pompom4-damask-king',
+  // 2026-10-22：Cotton Percale 提花四件套（4 色 × 仅 Queen）
+  'percalejac-haze-queen',
+  'percalejac-rose-queen',
+  'percalejac-grey-queen',
+  'percalejac-oatbeige-queen',
+  // 2026-10-22：Cotton Percale 细条纹提花四件套（单色 × 仅 Queen）
+  'percalestripe-petal-queen',
+  // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
+  'percalepatch-stone-queen',
+  // 2026-10-23：单独被套新品（PDP 首图走套装场景 1-3x4.webp；1.webp 为折叠灰底卡片图）
+  'percalestripe-petal-duvet',
+  'percalepatch-stone-duvet',
+  'pompom4-vine-duvet',
+  'washjac-cream-duvet',
+  'veljac-ivory-duvet',
+  'sateen4-cream-queen',
+  'sateen4-sage-sheet',
+  'percale-white-sheet',
+  'duvset-gray-sheet',
+  'pompom4-olive-sheet',
+  'percalejac-haze-duvet',
+  'percale-coconut-queen-duvet',
+  'percale-mist-duvet',
+  'percale-mist-twin-duvet',
+  'percale-mist-full-duvet',
+  'percale-mist-king-duvet',
+  'percale-sky-duvet',
+  'percale-nude-duvet',
+  // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen）
+  'washstripe-sagegreen-queen',
+  // 2026-10-22：Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen）
+  'washjac-cream-queen',
+  // 2026-10-23：提花绒（双面绒）象牙白四件套（单色 × 仅 Queen）
+  'veljac-ivory-queen',
+  // 2026-10-25：Cotton Percale 细格提花四件套（单色 × 仅 Queen）
+  'percalecheck-sand-queen',
+  // 2026-10-25：条纹绒（双面同纹）四件套（单色 × 仅 Queen）
+  'velstripe-mocha-queen',
+  // 2026-10-25：条纹绒四件套扩充 2 色
+  'velstripe-denim-queen',
+  'velstripe-charcoal-queen',
 ]);
+
+/**
+ * 2026-10-26 用户定：个别产品的"产品卡主图"前置为 PDP 图集第一张（其余图依次后移，
+ * 含 1-3x4.webp 主图位）。key = asin 小写，value = 卡片图源（与 PLP 卡面一致）。
+ */
+export const PDP_MAIN_PREPEND_IMAGES: Record<string, string> = {
+  // Sky Blue 独立被套：卡面 = featuredImage（card-lifestyle-3x4.webp）
+  'percale-sky-duvet': '/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp',
+  // Blush Pink 细条纹提花独立被套：卡面 = images[0]（1.webp）
+  'percalestripe-petal-duvet': '/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp',
+};

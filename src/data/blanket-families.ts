@@ -29,6 +29,18 @@ export interface BlanketFamily {
   currency: string;
 }
 
+/** 卡面标题 = 代表品短标题去掉尾部「, 尺寸」和「, 颜色」段（颜色移到标题下 colorLine，
+ *  尺寸由尺寸带表达；同 towels 的 towelCardTitle 思路）。
+ *  2026-10-21 从 V2BlanketsShop 抽入本文件，供 family-cards 的全站卡面标题分派（familyCardDisplay）复用；
+ *  同日修复去颜色段的 RegExp 字符串转义 bug：`\s` 在字符串字面量中坍缩成字面 s，颜色段实际从未被去掉
+ *  （卡面标题与 colorLine 重复显色，用户截图指出），须写 \\s */
+export function blanketCardTitle(f: { rep: Pick<MakimooProduct, 'title'>; color: string }): string {
+  const esc = f.color.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return (f.rep.title || '')
+    .replace(/,\s*\d+\s*x\s*\d+\s*(cm|in)$/i, '')
+    .replace(new RegExp(`,\\s*${esc}$`, 'i'), '');
+}
+
 /** 从 enriched 产品列表构建毯子家族（调用方负责 enrich + 筛 productType === 'Blankets'）。
  *  extraKey（可选）：族 key 追加段——towels 选购页按二级分类拆族（同色跨 Bath/Hand&Face 的
  *  变体组拆成两张卡，各落各的分区）；blankets 不传，行为不变 */
@@ -92,49 +104,39 @@ export function buildBlanketFamilies(
 // 无产品的分区不出（page.tsx blanketHero 与 V2BlanketsShop 各自按同一归位函数过滤）。
 // groupIds = variant-groups.ts 的组 id；more-blankets 为兜底区（无变体组或未注册组的产品），
 // 其 groupIds 为空——blanketSectionOf 把无法归位的家族都落到它。
+// 2026-10-21 用户定：产品线不多，5 个系列分区太繁琐，收敛为两类——
+// 编织类 Knit & Woven Throws（KNIT/BOHO/JAC/CHUNKY 四组合并）+ 仿毛类 Faux Fur Throws。
 export interface BlanketSection {
   key: string;
   label: string;
   /** 分区标题下副标题（同 bedding 的 SET_KIND_PAGE_COPY.blurb） */
   blurb: string;
+  /** mega menu 一行短描述（2026-10-21 用户定：菜单副标题控制一行、最多两行；
+   *  blurb 偏长留给 PLP 分区副标题，菜单不用） */
+  menuDesc: string;
   groupIds: string[];
 }
 
 export const BLANKET_SECTIONS: BlanketSection[] = [
   {
-    key: 'knit-throws',
-    label: 'Knit Throws',
-    blurb: 'Airy openwork knit with hand-tied tassels, 50 x 71 in.',
-    groupIds: ['KNIT-THROW'],
-  },
-  {
-    key: 'boho-chevron-throws',
-    label: 'Boho Chevron Throws',
-    blurb: 'Zigzag chevron stripes with tassels, in two sizes.',
-    groupIds: ['BOHO-THROW'],
-  },
-  {
-    key: 'jacquard-throws',
-    label: 'Jacquard Throws',
-    blurb: 'Lightweight Nordic woven patterns, clean edge, no fringe.',
-    groupIds: ['JAC-THROW'],
-  },
-  {
-    key: 'chunky-knit-throws',
-    label: 'Chunky Knit Throws',
-    blurb: 'Plump bobble-knit texture with long tassels, in two sizes.',
-    groupIds: ['CHUNKY-THROW'],
+    key: 'knit-woven-throws',
+    label: 'Knit & Woven Throws',
+    blurb: 'Airy openwork knits, boho chevron stripes, Nordic jacquards & chunky bobble-knits.',
+    menuDesc: 'Openwork knits, chevrons & jacquards.',
+    groupIds: ['KNIT-THROW', 'BOHO-THROW', 'JAC-THROW', 'CHUNKY-THROW'],
   },
   {
     key: 'faux-fur-throws',
     label: 'Faux Fur Throws',
     blurb: 'Cloud-soft faux rabbit fur with carved channel stripes.',
+    menuDesc: 'Cloud-soft faux rabbit fur.',
     groupIds: ['1688-969627065032'],
   },
   {
     key: 'more-blankets',
     label: 'More Blankets',
     blurb: '',
+    menuDesc: '',
     groupIds: [],
   },
 ];

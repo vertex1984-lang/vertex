@@ -12,7 +12,7 @@ import { resolveUrl } from '@/lib/paths';
 export const metadata: Metadata = {
   title: 'Fabric Guide',
   description:
-    'What fabric is best for you? Compare linen, washed cotton-like, linen-like, organic cotton, silk-modal and satin bedding — feel, care, and who each is best for.',
+    'What fabric is best for you? Compare linen, washed cotton-like, linen-like, organic cotton and silk-modal bedding — feel, care, and who each is best for.',
 };
 
 // ── 材质卡图与可购状态（与 bedding landing 的 Texture 卡同一口径，构建期计算）──
@@ -86,7 +86,7 @@ export default function FabricGuidePage() {
               <p className="text-[10px] lg:text-xs font-semibold tracking-[0.2em] uppercase text-cream/90">The Fabric Guide</p>
               <h1 className="mt-1.5 text-2xl lg:text-5xl font-extrabold tracking-tight text-cream">What Fabric Is Best for You?</h1>
               <p className="mt-2 lg:mt-3 text-xs lg:text-lg text-cream/85 leading-relaxed">
-                From crisp natural linen to glossy-smooth satin — every fabric sleeps differently.
+                From crisp natural linen to cool, weightless silk-modal — every fabric sleeps differently.
               </p>
             </div>
           </div>

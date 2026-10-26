@@ -3,6 +3,8 @@ import V2Footer from "@/components/v2/V2Footer";
 import BackToTop from "@/components/BackToTop";
 import MiniCart from "@/components/MiniCart";
 import ChatWidget from "@/components/ChatWidget";
+import ScrollRestoration from "@/components/v2/ScrollRestoration";
+import { Suspense } from "react";
 import { stylesByCategory } from "@/data/style-tagged";
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from "@/data/products";
 import { getProductSpecs } from "@/lib/specs";
@@ -10,7 +12,8 @@ import { sortBeddingMaterials } from "@/data/subcategories";
 
 // bedding 顶部导航下拉子项：与 /products?cat=bedding 的 Collections 同一口径——
 // 按材质分组（原始材质字符串，只显示有产品的，顺序按 BEDDING_MATERIAL_ORDER；2026-09 用户定）
-function beddingMaterialSubs(): { key: string; label: string }[] {
+// （导出供根 not-found.tsx 复用——全局 404 不走 (v2) 布局，需手动套 V2 壳）
+export function beddingMaterialSubs(): { key: string; label: string }[] {
   const counts = new Map<string, number>();
   for (const p of enrichProductsWithShopifyData(PRODUCTS_DATA)) {
     if (p.productType !== "Bedding") continue;
@@ -42,6 +45,10 @@ export default function V2Layout({
       {/* CookieConsent 已移除（2026-09-28 用户定：美国市场无强制 Cookie 提示法规，弹窗干扰首访用户） */}
       <BackToTop />
       <ChatWidget />
+      {/* 后退/前进恢复滚动位置（useSearchParams 需 Suspense 包裹以满足静态导出） */}
+      <Suspense fallback={null}>
+        <ScrollRestoration />
+      </Suspense>
     </div>
   );
 }

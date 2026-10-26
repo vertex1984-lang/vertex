@@ -13,33 +13,19 @@ const productsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products.t
 const baseHandles = [...productsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
 const materialsSrc = fs.readFileSync(path.join(__dirname, '../src/data/products-materials.ts'), 'utf8');
 const materialHandles = [...materialsSrc.matchAll(/"handle":\s*"([^"]+)"/g)].map((m) => m[1]);
-// 2026-09-30 用户定：隐藏产品（4 款天鹅绒充气颈枕 + 8 款枕套）不入 sitemap
-// 2026-10-16 用户定：1688-916370884976 水洗棉撞色三件套全家族（C5–C9）也不入
-// （与 src/data/products.ts 的 HIDDEN_HANDLE_PREFIXES / HIDDEN_HANDLES 同步）
-const HIDDEN_HANDLES = new Set([
-  'textured-geometric-embossed-pillowcases-set-of-2-soft-b0gjlvmht7',
-  'makimoo-embossed-microfiber-pillow-covers-50-x-70-cm-set-of-b0gjlp59k1',
-  'makimoo-embossed-pillowcases-set-of-2-ultra-soft-breathable-b0gjlnmx2g',
-  'makimoo-embossed-microfiber-pillowcases-set-of-2-soft-b0gjlp4pr2',
-  'makimoo-embossed-pillowcases-2-pack-soft-textured-pillow-b0gjlmc6z4',
-  'makimoo-embossed-microfibre-pillowcases-40-x-80-cm-set-of-2-b0gjlgxtl4',
-  'set-of-2-pillowcases-40-x-80-cm-soft-durable-skin-friendly-b0gjlgm6xg',
-  'makimoo-embossed-pillow-cases-set-of-2-luxury-soft-brushed-b0gjldwt6x',
-  // 2026-10-17 用户定：DUVSET Butter Yellow / Dill Green 两色下架，不入 sitemap
-  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-butter-twin',
-  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-butter-full',
-  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-butter-queen',
-  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-butter-king',
-  'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-dill-twin',
-  'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-dill-full',
-  'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-dill-queen',
-  'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-dill-king',
-]);
+// 2026-10-26 起：HIDDEN 清单唯一来源 = src/data/products.ts（自动解析，杜绝两份手动清单漂移——
+// 漂移曾致 25 款已隐藏产品被 sitemap 收录、duvset-gray-duvet / percalejac-haze-duvet 两款在售品被误排除）
+const HIDDEN_HANDLES = new Set(
+  [...productsSrc.match(/const HIDDEN_HANDLES = new Set\(\[([\s\S]*?)\]\)/)[1].matchAll(/'([^']+)'/g)].map((m) => m[1])
+);
+const HIDDEN_HANDLE_PREFIXES = [...productsSrc
+  .match(/const HIDDEN_HANDLE_PREFIXES = \[([\s\S]*?)\]/)[1]
+  .matchAll(/'([^']+)'/g)].map((m) => m[1]);
+
 const handles = [...new Set([...baseHandles, ...materialHandles])]
   .filter(
     (h) =>
-      !h.startsWith('inflatable-travel-pillow-') &&
-      !h.startsWith('comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976') &&
+      !HIDDEN_HANDLE_PREFIXES.some((pre) => h.startsWith(pre)) &&
       !HIDDEN_HANDLES.has(h)
   );
 
@@ -51,7 +37,7 @@ const blogSlugs = [...blogSrc.matchAll(/^ {4}slug:\s*"([^"]+)"/gm)].map((m) => m
 const staticPages = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/categories/', priority: '0.9', changefreq: 'daily' },
-  { loc: '/products/', priority: '0.8', changefreq: 'daily' },
+  // 裸 /products/ 2026-10-20 起客户端跳转 /categories/（用户定：浏览入口统一到类目页），不入 sitemap
   { loc: '/blog/', priority: '0.6', changefreq: 'weekly' },
   { loc: '/better-texture/', priority: '0.6', changefreq: 'monthly' },
   // /bedding/ 落地页已下线（2026-09-27 用户定，一级类目页 = /products?cat=bedding），不入 sitemap；
@@ -61,20 +47,20 @@ const staticPages = [
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/sateen/', priority: '0.7', changefreq: 'weekly' },
-  { loc: '/bedding/satin/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/cotton-blend/', priority: '0.7', changefreq: 'weekly' },
+  // /bedding/satin/ 2026-10-23 随 Satin 床品全站移除下线（用户定），不入 sitemap
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
-  // Bed Sets 合并页（导航唯一类型入口）；单类型页保留兜底无入口，不入 sitemap；
-  // comforter-sets 2026-09-26 移除（唯一 comforter 家族实为被套 3 件套，已归 three，该类型页不再生成）
-  { loc: '/bedding/bed-sets/', priority: '0.7', changefreq: 'weekly' },
+  // Bed Sets 合并页 2026-10-16 已下线（URL 死链 404）；3-piece-sets 2026-10-22 随三件套并四件套下线；
+  // comforter-sets 2026-09-26 移除；单类型页保留兜底无入口——均不入 sitemap
   // Duvet Covers 类型页 2026-10 上线（ice silk 缎面 + 9 款独立被套单件，导航入口已开）
   { loc: '/bedding/duvet-covers/', priority: '0.7', changefreq: 'weekly' },
   // Pillows 二级 PLP（2026-09-30，与 src/data/pillows-taxonomy.ts 注册表手动同步；
   // down 无产品不生成页面，不入 sitemap；pillow-cases 同日移除——8 款枕套全站隐藏）
   { loc: '/pillows/bed-pillows/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/pillows/decorative-pillows/', priority: '0.7', changefreq: 'weekly' },
-  { loc: '/pillows/neck-pillows/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/pillows/down-alternative/', priority: '0.7', changefreq: 'weekly' },
-  { loc: '/pillows/memory-foam/', priority: '0.7', changefreq: 'weekly' },
+  // Cushions 二级 PLP（2026-10-23 用户定：原 corduroy/solids/prints 三风格页下线，合并为单页）
+  { loc: '/cushions/outdoor-cushions/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/about/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/contact/', priority: '0.6', changefreq: 'monthly' },
   { loc: '/shipping-returns/', priority: '0.4', changefreq: 'monthly' },

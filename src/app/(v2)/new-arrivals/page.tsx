@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import V2ProductCard from '@/components/v2/V2ProductCard';
+import GroupProductCard from '@/components/v2/GroupProductCard';
 import { v2url } from '@/lib/v2paths';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { SHOPIFY_MAP } from '@/data/shopify-map';
-import { dedupeFamilyColors } from '@/lib/listing-dedupe';
+import { buildBlanketFamilies } from '@/data/blanket-families';
+import { buildGroupCards, groupKeyOfFamily, type GroupCard } from '@/lib/group-cards';
 
 export const metadata: Metadata = {
   title: 'New Arrivals',
@@ -11,22 +12,43 @@ export const metadata: Metadata = {
     'Just landed at Makimoo — the 20 newest pieces added to the collection.',
 };
 
-// 最新上架：按 Shopify 产品创建时间倒序，变体族同色去重（同色最新上架者为代表，prefer 'order'
-// 保持时间序取首个）后取前 20，不区分类目、平铺展示
-const newArrivals = dedupeFamilyColors(
-  enrichProductsWithShopifyData(PRODUCTS_DATA)
-    .filter((p) => p.hasShopifyData && p.shopifyAvailable)
-    .sort((a, b) => {
-      const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
-      const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
-      return tb.localeCompare(ta);
-    }),
-  'order'
-).slice(0, 20);
+// 最新上架（组卡，2026-10-22 用户定：一组一卡 + 色卡）：
+// 未去重的在售列表按 Shopify 创建时间倒序，按组 key 保留每组首次出现
+// （组序 = 组内最新上架者的时间；首屏默认选中色 = 该最新成员的家族颜色），取前 20 个组；
+// 成族用未去重列表（buildBlanketFamilies 需看到全部尺寸 SKU 才有正确 From 价）
+const inStockByRecency = enrichProductsWithShopifyData(PRODUCTS_DATA)
+  .filter((p) => p.hasShopifyData && p.shopifyAvailable)
+  .sort((a, b) => {
+    const ta = SHOPIFY_MAP[a.asin.toLowerCase()]?.createdAt ?? '';
+    const tb = SHOPIFY_MAP[b.asin.toLowerCase()]?.createdAt ?? '';
+    return tb.localeCompare(ta);
+  });
+const familiesByRecency = buildBlanketFamilies(inStockByRecency);
+// 组序 = 组内最新上架家族的位次；组首屏选中色 = 最新上架家族的颜色
+const groupRecencyOrder: string[] = [];
+const groupInitialColor = new Map<string, string>();
+{
+  const seen = new Set<string>();
+  for (const f of familiesByRecency) {
+    const k = groupKeyOfFamily(f);
+    if (!seen.has(k)) {
+      seen.add(k);
+      groupRecencyOrder.push(k);
+      groupInitialColor.set(k, f.color);
+    }
+  }
+}
+const groupCardByKey = new Map(buildGroupCards(familiesByRecency).map((c) => [c.key, c]));
+const newArrivals: GroupCard[] = groupRecencyOrder
+  .flatMap((k) => {
+    const c = groupCardByKey.get(k);
+    return c ? [{ ...c, initialColor: groupInitialColor.get(k) }] : [];
+  })
+  .slice(0, 20);
 
 /**
- * New Arrivals 独立页：浅色面包屑页头 + V2ProductCard 平铺网格（2026-10-12 起与类目页新卡一致），
- * 展示最新上架的 20 款产品，不区分类目、按上架时间倒序。
+ * New Arrivals 独立页：浅色面包屑页头 + 家族卡平铺网格（2026-10-20 起全站产品卡统一为家族卡），
+ * 展示最新上架的 20 个家族，不区分类目、按族内最新上架时间倒序。
  *（原画报式页面 2026-09 下线：分屏 hero / 批次 feed / 类目卡 / Newsletter / Featured teaser 移除）
  */
 export default function NewArrivalsPage() {
@@ -44,8 +66,8 @@ export default function NewArrivalsPage() {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-        {newArrivals.map((p) => (
-          <V2ProductCard key={p.id} product={p} />
+        {newArrivals.map((c) => (
+          <GroupProductCard key={c.key} card={c} compactText />
         ))}
       </div>
     </div>

@@ -1,6 +1,7 @@
 /**
  * Featured / Best Sellers / New Arrivals 三个模块的共享数据源
- * 首页（(v2)/page.tsx）与 Featured 汇总页（(v2)/featured/page.tsx）共用，保持单一来源。
+ * （(v2)/featured 汇总页 2026-10-22 已随 featured-products 整树下线；现由 home-sections
+ * 推荐/兜底榜单单一消费，保持单一来源）。
  */
 
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
