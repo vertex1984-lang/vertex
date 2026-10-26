@@ -57,7 +57,8 @@ export default function V2MoodFeed() {
   const upper = CARDS.slice(0, 4); // Blankets / Pillows / Mats / Towels
   const lower = CARDS.slice(4);    // Cushions / Decor
   return (
-    <section className="mt-6 lg:mt-10 pb-10 lg:pb-12">
+    // 上边距收窄（2026-10-26 用户定：缩小与信任条之间的空隙，原 mt-6 lg:mt-10）
+    <section className="mt-3 lg:mt-5 pb-10 lg:pb-12">
       {/* 桌面端：2列×2行方卡 + "Find Your Comfort" 标题 + 末行 2 张方卡（2026-10-21 用户定：
           Blankets 不再通栏，6 卡全部方卡自然排列；标题保持在倒数第二行上方）。
           移动端：单列全出血方卡连排，标题同样在 Cushions 卡上方 */}

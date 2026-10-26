@@ -144,6 +144,10 @@ export function classifySet(asin: string): SetKind | null {
   // 2026-10-23 用户定：提花绒（双面绒）四件套（单色 × 仅 Queen），归 four
   if (a.startsWith('veljac-')) return 'four';
   if (a.startsWith('velstripe-')) return 'four'; // 2026-10-25：条纹绒四件套
+  // 2026-10-26 用户定：Cotton Feel（聚酯水洗棉手感）格纹四件套（3 色 × 仅 Queen，同日由格纹旧前缀迁移 1688 sku），归 four
+  if (a.startsWith('1688-1071466105053')) return 'four';
+  // 2026-10-26 用户定：Cotton Blend（85%棉/15%聚酯）Muslin 双层纱四件套（3 色 × 仅 Queen），归 four
+  if (a.startsWith('1688-1025015219200')) return 'four';
   // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/1688-916370884976）全站改四件套
   // 口径（被套+床笠+2枕套，标题/描述已同步加 fitted sheet），统一归 four；'three' 类型整体下线。
   // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套
@@ -167,6 +171,12 @@ function duvetColorOf(asin: string): string {
 function familyKeyOf(asin: string): string {
   const a = asin.toLowerCase();
   if (a.startsWith('1688-916370884976')) return '1688-916370884976';
+  // 2026-10-26：1688-1025015219200 Cotton Blend 双层纱四件套——同前缀同色归一个 family（key = 前缀::颜色，
+  // 颜色取变体组成员色，同 duvet 二维家族口径；ASIN 无颜色段，colorOf 会误取数字段）
+  if (a.startsWith('1688-1025015219200')) return `1688-1025015219200::${duvetColorOf(asin)}`;
+  // 2026-10-26：1688-1071466105053 Cotton Feel 格纹四件套——同 muslin 口径（key = 前缀::颜色，
+  // 颜色取变体组成员色；迁移后 ASIN 无颜色段，colorOf 会误取数字段）
+  if (a.startsWith('1688-1071466105053')) return `1688-1071466105053::${duvetColorOf(asin)}`;
   // duvet 二维家族：同前缀同色归一个 family（key = 前缀::颜色）
   const duvetPrefix = DUVET_PREFIXES.find((p) => a.startsWith(p));
   if (duvetPrefix) return `${duvetPrefix}::${duvetColorOf(asin)}`;
@@ -369,6 +379,10 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
  */
 export function beddingUsSizeLabel(asin: string, cmSize?: string): string {
   const last = asin.split('-').pop()?.toUpperCase() ?? '';
+  // 2026-10-26：1688-1025015219200 Cotton Blend 双层纱四件套仅 Queen（ASIN 无尺寸尾段，220cm 短边会被误判 King / Cal King）
+  if (asin.toLowerCase().startsWith('1688-1025015219200')) return 'Queen';
+  // 2026-10-26：1688-1071466105053 Cotton Feel 格纹四件套仅 Queen（迁移后 ASIN 无 -QUEEN 尾段，同 muslin 特判）
+  if (asin.toLowerCase().startsWith('1688-1071466105053')) return 'Queen';
   if (SET_SIZE_ORDER.includes(last)) return last.charAt(0) + last.slice(1).toLowerCase();
   const m = cmSize?.match(/(\d+)\s*x\s*(\d+)/i);
   if (!m) return '';

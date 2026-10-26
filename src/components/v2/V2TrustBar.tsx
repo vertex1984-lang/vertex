@@ -49,13 +49,7 @@ export default function V2TrustBar() {
             </div>
           ))}
         </div>
-        {/* 来源脚注（2026-10-02 用户定）：移动端标签空间不够写 "on Amazon"，
-            统一用一行小字注明销量与评价数据来自 Amazon，避免误解为本站评价 */}
-        <p className="mt-2 lg:mt-3 text-center text-[9px] lg:text-[10px] tracking-wide text-[#999]">
-          Sales &amp; review data from Amazon
-        </p>
       </div>
-      <div aria-hidden="true" className="mx-12 lg:mx-auto lg:w-3/5 lg:max-w-[1200px] border-b border-[#EDE6DC]" />
     </section>
   );
 }

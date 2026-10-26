@@ -18652,6 +18652,246 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
+    "id": "makimoo-1688-1071466105053-C2",
+    "asin": "1688-1071466105053-C2",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Gingham)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-blue-queen-1688-1071466105053-c2",
+    "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless blue and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid dusty blue. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Fresh Blue Gingham Colorway: A classic blue and white check—crisp, cheerful and quietly nostalgic, it brings an easy cottage freshness to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless blue and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid dusty blue.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Fresh Blue Gingham Colorway: A classic blue and white check—crisp, cheerful and quietly nostalgic, it brings an easy cottage freshness to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1071466105053-C2/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Gingham)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1071466105053-C2",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1688-1071466105053-C1",
+    "asin": "1688-1071466105053-C1",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Gingham)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-black-queen-1688-1071466105053-c1",
+    "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless black and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid charcoal black. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Bold Black Gingham Colorway: A graphic black and white check—grounded and calm rather than loud, it anchors the bedroom with a modern farmhouse edge, pairing easily with wood tones, neutrals, or minimalist décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless black and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid charcoal black.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Bold Black Gingham Colorway: A graphic black and white check—grounded and calm rather than loud, it anchors the bedroom with a modern farmhouse edge, pairing easily with wood tones, neutrals, or minimalist décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1071466105053-C1/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Gingham)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1071466105053-C1",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1688-1071466105053-C3",
+    "asin": "1688-1071466105053-C3",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Gingham)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-grey-queen-1688-1071466105053-c3",
+    "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless grey and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid light grey. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless grey and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid light grey.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1071466105053-C3/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Gingham)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1071466105053-C3",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1688-1025015219200-C1",
+    "asin": "1688-1025015219200-C1",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey)",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1688-1025015219200-c1",
+    "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Calm Grey Colorway: A soft, heathered light grey—quiet, airy and endlessly versatile, it brings a cloud-like calm to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Calm Grey Colorway: A soft, heathered light grey—quiet, airy and endlessly versatile, it brings a cloud-like calm to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1025015219200-C1/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1025015219200-C1",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1688-1025015219200-C2",
+    "asin": "1688-1025015219200-C2",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Navy)",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1688-1025015219200-c2",
+    "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Deep Navy Colorway: A rich, muted navy—grounded and serene rather than stark, it anchors the bedroom with a relaxed coastal depth, pairing easily with crisp whites, warm woods, or minimalist décor.",
+    "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Deep Navy Colorway: A rich, muted navy—grounded and serene rather than stark, it anchors the bedroom with a relaxed coastal depth, pairing easily with crisp whites, warm woods, or minimalist décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1025015219200-C2/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Navy)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1025015219200-C2",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1688-1025015219200-C3",
+    "asin": "1688-1025015219200-C3",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Brown)",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1688-1025015219200-c3",
+    "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Warm Brown Colorway: A soft, earthy brown—warm and understated, it wraps the bedroom in a cozy, lived-in warmth, pairing easily with creams, natural textures, or rustic décor.",
+    "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Warm Brown Colorway: A soft, earthy brown—warm and understated, it wraps the bedroom in a cozy, lived-in warmth, pairing easily with creams, natural textures, or rustic décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1688-1025015219200-C3/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Brown)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1688-1025015219200-C3",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
     "id": "makimoo-POMPOM4-OLIVE-SHEET",
     "asin": "POMPOM4-OLIVE-SHEET",
     "title": "Makimoo Embossed Velvet Fitted Sheet Only Soft Plush 60 x 80 in with Deep Pocket and All-Around Elastic (Olive, Queen)",

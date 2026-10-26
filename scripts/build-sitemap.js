@@ -47,6 +47,7 @@ const staticPages = [
   { loc: '/bedding/washed-cotton/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/linen-like/', priority: '0.7', changefreq: 'weekly' },
   { loc: '/bedding/sateen/', priority: '0.7', changefreq: 'weekly' },
+  { loc: '/bedding/cotton-blend/', priority: '0.7', changefreq: 'weekly' },
   // /bedding/satin/ 2026-10-23 随 Satin 床品全站移除下线（用户定），不入 sitemap
   // 类型二级 PLP（与 bedding-families.ts 的 SET_KIND_SLUGS 手动同步）
   // Bed Sets 合并页 2026-10-16 已下线（URL 死链 404）；3-piece-sets 2026-10-22 随三件套并四件套下线；

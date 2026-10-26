@@ -48,7 +48,7 @@ export default function V2AboutPage() {
       </section>
 
       {/* 公信力数据条（静态四格；桌面 80% 宽与 PDP 新模块同口径；上下 padding 已收窄，2026-10-02 用户定） */}
-      <section className="bg-off-white pt-8 pb-5 lg:pt-10 lg:pb-7 border-b border-warm-gray">
+      <section className="bg-off-white pt-8 pb-5 lg:pt-10 lg:pb-7">
         <div className="max-w-[1400px] lg:w-[80%] lg:max-w-none mx-auto px-6 lg:px-10">
           <Reveal>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 text-center lg:divide-x lg:divide-[#E8D9C8]">
@@ -66,10 +66,6 @@ export default function V2AboutPage() {
                 </div>
               ))}
             </div>
-            {/* 来源脚注（与首页信任条一致，2026-10-02 用户定） */}
-            <p className="mt-6 lg:mt-8 text-center text-[10px] lg:text-xs tracking-wide text-[#999]">
-              Sales &amp; review data from Amazon
-            </p>
           </Reveal>
         </div>
       </section>
