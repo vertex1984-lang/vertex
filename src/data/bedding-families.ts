@@ -3,7 +3,7 @@
  * 选购视图共用同一分组口径。
  *
  * ASIN 规律：BEDSET4-{COLOR}-{SIZE} / DUVSET-{COLOR}-{SIZE}、LINEN3-{COLOR}-{SIZE} / SATEEN4-/POMPOM4-/PERCALEJAC-/PERCALESTRIPE-/PERCALEPATCH-/WASHSTRIPE-/WASHJAC-/
- * PERCALE-{COLOR}-{SIZE}、1688-916370884976-C*（纯尺寸家族，供应商误标 Comforter，实为被套+2枕套，
+ * PERCALE-{COLOR}-{SIZE}、916370884976-C*（纯尺寸家族，供应商误标 Comforter，实为被套+2枕套，
  * 2026-09-26 用户确认）——2026-10-22 用户定：原三件套家族全部改四件套口径（被套+床笠+2枕套），统一归 four。
  * 卡片/点击均以 Queen 为代表 SKU（PDP 内有尺寸变体导航）。
  */
@@ -19,7 +19,7 @@ export type SetKind = 'four' | 'comforter' | 'duvet' | 'sheet' | 'pillowcase';
 // ice silk 缎面家族（2026-10-15 用户确认为被套+2枕套；2026-10-22 起改四件套口径归 four），
 // 颜色×尺寸二维：family = 同色组（key = 前缀::颜色）；
 // 新品独立被套一色一家族。
-const DUVET_PREFIXES = ['1688-1048207560416', '1688-1061371343572'];
+const DUVET_PREFIXES = ['1048207560416', '1061371343572'];
 
 export const SET_SIZE_ORDER = ['TWIN', 'FULL', 'QUEEN', 'KING'];
 
@@ -73,12 +73,19 @@ const COLOR_LABELS: Record<string, string> = {
   MOCHA: 'Sage Stripe',
   DENIM: 'Denim Stripe',
   CHARCOAL: 'Charcoal Stripe',
+  // 2026-10-26：Linen Feel 爱心四件套单色（mk-heart4 前缀，family key 第二段为 HEART4）
+  HEART4: 'Tan Heart',
+  // 2026-10-26：Linen Feel 印花/花卉单品（mk-print4 / mk-floral4 前缀，family key 第二段）
+  PRINT4: 'Blue Print',
+  FLORAL4: 'Grey Floral',
+  // 2026-10-26：Linen Feel 蝴蝶印花单品（mk-btfly4 前缀，family key 第二段）
+  BTFLY4: 'Mocha Butterfly',
 };
 
 export interface SetFamily {
   key: string;
   kind: SetKind;
-  /** 色系展示名（1688-916370884976 家族 ASIN 无颜色段，从 MATERIALS_MAP 原始标题尾括号解析，取不到为空串） */
+  /** 色系展示名（916370884976 家族 ASIN 无颜色段，从 MATERIALS_MAP 原始标题尾括号解析，取不到为空串） */
   color: string;
   /** 代表 SKU（优先 Queen，其次按 Twin→King 顺序取首个） */
   rep: MakimooProduct;
@@ -145,14 +152,21 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('veljac-')) return 'four';
   if (a.startsWith('velstripe-')) return 'four'; // 2026-10-25：条纹绒四件套
   // 2026-10-26 用户定：Cotton Feel（聚酯水洗棉手感）格纹四件套（3 色 × 仅 Queen，同日由格纹旧前缀迁移 1688 sku），归 four
-  if (a.startsWith('1688-1071466105053')) return 'four';
+  if (a.startsWith('1071466105053')) return 'four';
   // 2026-10-26 用户定：Cotton Blend（85%棉/15%聚酯）Muslin 双层纱四件套（3 色 × 仅 Queen），归 four
-  if (a.startsWith('1688-1025015219200')) return 'four';
-  // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/1688-916370884976）全站改四件套
+  if (a.startsWith('1025015219200')) return 'four';
+  // 2026-10-26 用户定：Linen Feel（仿麻聚酯）爱心四件套单品（单色 × 仅 Queen，无变体组），归 four
+  if (a.startsWith('mk-heart4-')) return 'four';
+  // 2026-10-26 用户定：Linen Feel 蓝兔印花 / 灰花卉四件套单品（各单色 × 仅 Queen，无变体组），归 four
+  if (a.startsWith('mk-print4-')) return 'four';
+  if (a.startsWith('mk-floral4-')) return 'four';
+  // 2026-10-26 用户定：Linen Feel 蝴蝶印花四件套单品（单色 × 仅 Queen，无变体组），归 four
+  if (a.startsWith('mk-btfly4-')) return 'four';
+  // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/916370884976）全站改四件套
   // 口径（被套+床笠+2枕套，标题/描述已同步加 fitted sheet），统一归 four；'three' 类型整体下线。
-  // 1688-916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套
+  // 916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套
   // （2026-09-26 用户确认，与 8090 工具 set-of-3 标签一致）
-  if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('1688-916370884976')) return 'four';
+  if (a.startsWith('duvset-') || a.startsWith('linen3-') || a.startsWith('916370884976')) return 'four';
   // 2026-10-17 用户定：Cotton Percale 新面料线（6 色 × 4 尺寸），归 four（原 three，2026-10-22 改）
   if (a.startsWith('percale-')) return 'four';
   // ice silk 缎面（Satin）两个前缀家族（原 three，2026-10-22 改 four）；家族 key 仍按前缀::颜色（见 familyKeyOf）
@@ -170,13 +184,13 @@ function duvetColorOf(asin: string): string {
 
 function familyKeyOf(asin: string): string {
   const a = asin.toLowerCase();
-  if (a.startsWith('1688-916370884976')) return '1688-916370884976';
-  // 2026-10-26：1688-1025015219200 Cotton Blend 双层纱四件套——同前缀同色归一个 family（key = 前缀::颜色，
+  if (a.startsWith('916370884976')) return '916370884976';
+  // 2026-10-26：1025015219200 Cotton Blend 双层纱四件套——同前缀同色归一个 family（key = 前缀::颜色，
   // 颜色取变体组成员色，同 duvet 二维家族口径；ASIN 无颜色段，colorOf 会误取数字段）
-  if (a.startsWith('1688-1025015219200')) return `1688-1025015219200::${duvetColorOf(asin)}`;
-  // 2026-10-26：1688-1071466105053 Cotton Feel 格纹四件套——同 muslin 口径（key = 前缀::颜色，
+  if (a.startsWith('1025015219200')) return `1025015219200::${duvetColorOf(asin)}`;
+  // 2026-10-26：1071466105053 Cotton Feel 格纹四件套——同 muslin 口径（key = 前缀::颜色，
   // 颜色取变体组成员色；迁移后 ASIN 无颜色段，colorOf 会误取数字段）
-  if (a.startsWith('1688-1071466105053')) return `1688-1071466105053::${duvetColorOf(asin)}`;
+  if (a.startsWith('1071466105053')) return `1071466105053::${duvetColorOf(asin)}`;
   // duvet 二维家族：同前缀同色归一个 family（key = 前缀::颜色）
   const duvetPrefix = DUVET_PREFIXES.find((p) => a.startsWith(p));
   if (duvetPrefix) return `${duvetPrefix}::${duvetColorOf(asin)}`;
@@ -195,7 +209,7 @@ function colorOf(key: string): string {
 export { familyKeyOf as setFamilyKeyOf };
 
 /**
- * 1688-916370884976 家族 ASIN 无颜色段，从产品标题尾括号取配色名（如 "(Light Blue & Cheese)"）。
+ * 916370884976 家族 ASIN 无颜色段，从产品标题尾括号取配色名（如 "(Light Blue & Cheese)"）。
  * 注意：enrich 后 title 已被短标题覆盖（括号色名被裁掉），必须查 MATERIALS_MAP 原始标题。
  */
 function titleColorOf(asin: string, fallbackTitle: string): string {
@@ -229,7 +243,7 @@ export function beddingCardDisplayOf(rep: Pick<MakimooProduct, 'asin' | 'title'>
   const key = familyKeyOf(rep.asin);
   const duvetColor = key.includes('::') ? key.split('::')[1] : '';
   const color =
-    duvetColor || (key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
+    duvetColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
   const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
   return {
     titleOverride: beddingCardTitle(kind, materials) || undefined,
@@ -262,7 +276,7 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
     const duvetColor = key.includes('::') ? key.split('::')[1] : '';
     const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
     const color =
-      duvetColor || (key === '1688-916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
+      duvetColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
     return {
       key,
       kind: kindOf,
@@ -290,21 +304,20 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
 /**
  * 家族 → 族根（clusterSetFamilies 的聚拢口径，2026-10-24 抽出共享）：
  * 族根优先取变体族 id（纯色 BEDSET4-BC 与印花 BEDSET4 是两个族，不并块）；
- * 无变体族的兜底用 key 前缀：'duvset-gray' → 'duvset'；二维家族 '1688-xxx::颜色' → '1688-xxx'；
- * 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块
+ * 无变体族的兜底用 key 首段：'duvset-gray' → 'duvset'；二维家族 '数字id::颜色' → '数字id'
+ * （2026-10-26 标识去 1688- 前缀后纯数字供应商家族为单段 id，整段即族根，原"取前两段"逻辑移除）
  */
 export function setFamilyRoot(f: SetFamily): string {
   const g = getVariantGroupOf(f.rep.asin);
   if (g) return g.id.toLowerCase();
   const base = f.key.split('::')[0];
   const parts = base.split('-');
-  return parts[0] === '1688' ? parts.slice(0, 2).join('-') : parts[0];
+  return parts[0];
 }
 
 export function clusterSetFamilies(families: SetFamily[]): SetFamily[] {
   // 族根优先取变体族 id（纯色 BEDSET4-BC 与印花 BEDSET4 是两个族，不并块）；
-  // 无变体族的兜底用 key 前缀：'duvset-gray' → 'duvset'；二维家族 '1688-xxx::颜色' → '1688-xxx'；
-  // 1688 纯尺寸家族无颜色段，取前两段避免不同供应商产品线并成一块。
+  // 无变体族的兜底用 key 首段：'duvset-gray' → 'duvset'；二维家族 '数字id::颜色' → '数字id'。
   // 2026-10-24：抽成导出的 setFamilyRoot，与 V2BeddingShop 的 four 分区族块位次对调共用同一"族"口径
   const rootOf = setFamilyRoot;
   const seen = new Set<string>();
@@ -373,16 +386,16 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
 /**
  * 美式尺寸叫法（2026-10-21 用户定：bedding 全站 PDP 尺寸改用美式床型名，口径参考 PDP Size Guide 的 Fits 列）：
  * - ASIN 带尺寸后缀的套装家族（…-TWIN/FULL/QUEEN/KING）→ 后缀名（Twin/Full/Queen/King）；
- * - 无后缀家族（1688 二维缎面家族、1688-916370884976、独立被套单件等）按 cm 尺寸短边映射，
+ * - 无后缀家族（1688 二维缎面家族、916370884976、独立被套单件等）按 cm 尺寸短边映射，
  *   与 Size Guide fits 同规则：≤180 → Twin / Twin XL，≤210 → Full / Queen，以上 → King / Cal King；
  * 取不到返回 ''。
  */
 export function beddingUsSizeLabel(asin: string, cmSize?: string): string {
   const last = asin.split('-').pop()?.toUpperCase() ?? '';
-  // 2026-10-26：1688-1025015219200 Cotton Blend 双层纱四件套仅 Queen（ASIN 无尺寸尾段，220cm 短边会被误判 King / Cal King）
-  if (asin.toLowerCase().startsWith('1688-1025015219200')) return 'Queen';
-  // 2026-10-26：1688-1071466105053 Cotton Feel 格纹四件套仅 Queen（迁移后 ASIN 无 -QUEEN 尾段，同 muslin 特判）
-  if (asin.toLowerCase().startsWith('1688-1071466105053')) return 'Queen';
+  // 2026-10-26：1025015219200 Cotton Blend 双层纱四件套仅 Queen（ASIN 无尺寸尾段，220cm 短边会被误判 King / Cal King）
+  if (asin.toLowerCase().startsWith('1025015219200')) return 'Queen';
+  // 2026-10-26：1071466105053 Cotton Feel 格纹四件套仅 Queen（迁移后 ASIN 无 -QUEEN 尾段，同 muslin 特判）
+  if (asin.toLowerCase().startsWith('1071466105053')) return 'Queen';
   if (SET_SIZE_ORDER.includes(last)) return last.charAt(0) + last.slice(1).toLowerCase();
   const m = cmSize?.match(/(\d+)\s*x\s*(\d+)/i);
   if (!m) return '';

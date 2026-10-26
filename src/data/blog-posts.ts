@@ -118,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-595229918569-c2",
+            key: "595229918569-c2",
             category: "Faux Rabbit Fur · 160 × 200 cm",
             name: "Plush Faux Rabbit Fur Area Rug — Off White",
             desc: "A classic example of the material: long-pile faux rabbit fur with a low-profile construction that tucks under beds and sofas.",
@@ -132,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-1052742241013-c7",
+            key: "1052742241013-c7",
             category: "Faux Cashmere · 180 × 250 cm",
             name: "Vintage Faux Cashmere Area Rug — Sage Green",
             desc: "Faux cashmere pile with a silicone non-slip backing — the durability-oriented end of the soft-rug spectrum.",
@@ -256,7 +256,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-744995685423-c2",
+            key: "744995685423-c2",
             category: "Low Pile · 100 × 200 cm",
             name: "Geometric Low-Pile Area Rug — Black & White",
             desc: "A compact-room size with a 0.4 cm pile that clears doors and works under a sofa's front legs.",
@@ -277,7 +277,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-745181807454-c2",
+            key: "745181807454-c2",
             category: "Low Pile · 160 × 230 cm",
             name: "Persian-Style Vintage Area Rug — Navy",
             desc: "The living-room sweet spot: large enough for the front-leg rule, low enough for doorways and dining sets.",
@@ -658,7 +658,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-1016436401519",
+            key: "1016436401519",
             category: "Indoor Loop Pile · 50 × 80 cm",
             name: "Imitation Sisal Door Mat, Non-Slip & Absorbent, 2-Pack — Camel Brown",
             desc: "Dense 8 mm loop pile for the inside job: absorbs, holds grit, trims to fit — with a non-slip backing.",
@@ -747,7 +747,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-744995685423-c2",
+            key: "744995685423-c2",
             category: "Low Pile · 0.4 cm · 100 × 200 cm",
             name: "Geometric Low-Pile Area Rug — Black & White",
             desc: "Classic low-pile territory: door-safe, chair-friendly, and the easiest surface in the house to keep clean.",
@@ -842,7 +842,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-595229918569-c2",
+            key: "595229918569-c2",
             category: "Faux Rabbit Fur · 160 × 200 cm",
             name: "Plush Faux Rabbit Fur Area Rug — Off White",
             desc: "Long-pile rugs reward the gentle routine: no beater bar, blot-only spills, direction-of-pile vacuuming.",
@@ -867,7 +867,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-744995685423",
+            key: "744995685423",
             category: "Low Pile · 100 × 200 cm",
             name: "Modern Geometric Area Rug — Grey Beige",
             desc: "The forgiving end of the spectrum: a printed low-pile surface that vacuums clean and wipes down after spills.",
@@ -959,7 +959,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-745181807454-c2",
+            key: "745181807454-c2",
             category: "Vintage Style · 160 × 230 cm",
             name: "Turkish Persian-Style Vintage Rug — Navy Blue",
             desc: "A blue-field medallion design: pairs naturally with cream seating and warm wood, or glows against dark walls.",
@@ -980,7 +980,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-745181807454-c5",
+            key: "745181807454-c5",
             category: "Vintage Style · 160 × 230 cm",
             name: "Persian-Style Vintage Medallion Rug — Cream Multicolor",
             desc: "A cream-field design — the most flexible version of the style for rooms that already have a palette.",
@@ -1074,13 +1074,13 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "products",
         products: [
           {
-            key: "1688-595229918569",
+            key: "595229918569",
             category: "Faux Rabbit Fur · 160 × 200 cm",
             name: "Ultra Soft Faux Rabbit Fur Area Rug — Light Camel",
             desc: "Full bedside coverage in a warm neutral — the toddler-and-up comfort pick for reading corners and cold floors.",
           },
           {
-            key: "1688-996768645117-c2",
+            key: "996768645117-c2",
             category: "Shaggy Oval · 100 × 160 cm",
             name: "Oval Fluffy Tie-Dye Shaggy Rug — Light Grey",
             desc: "An oval bedside silhouette with a low-profile shag — soft underfoot without becoming a tripping hazard.",

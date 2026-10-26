@@ -1,313 +1,313 @@
 export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
-  "1688-744995685423-c2": [
+  "744995685423-c2": [
     "Contemporary Geometric Design: minimalist black-and-white striped pattern",
     "Soft Low-Pile Comfort: gentle 0.4cm pile, fits under doors & furniture",
     "Reliable Non-Slip Backing: stays secure on hardwood, laminate & tile",
     "Easy Everyday Maintenance: stain-resistant, low-shedding, easy to vacuum",
     "Versatile Placement: 100 x 200cm for sofas, bedrooms & entryways",
   ],
-  "1688-595229918569-c2": [
+  "595229918569-c2": [
     "Premium Faux Rabbit Fur: ultra-soft, silky smooth underfoot",
     "Spacious 160 x 200cm Coverage: fits under coffee tables, sofas & beds",
     "Sleek Low-Profile Construction: slim 0.5cm build lays flat without bulk",
     "Versatile Scandinavian Style: clean off-white for modern Nordic homes",
     "Easy Everyday Maintenance: simple vacuuming & spot cleaning",
   ],
-  "1688-744995685423": [
+  "744995685423": [
     "Modern Geometric Style: clean grid pattern in grey & beige tones",
     "Soft Low-Pile Comfort: smooth 0.4cm profile, doors glide over easily",
     "Stain-Resistant & Easy To Clean: hides dust & spills, quick wipe clean",
     "Versatile Home Accent: sofa-side, under coffee table, or bedside",
     "Ideal 100 x 200cm Size: ample coverage without overwhelming the room",
   ],
-  "1688-595229918569": [
+  "595229918569": [
     "Lavish Faux Fur Texture: silky rabbit-fur softness underfoot",
     "Spacious 160 x 200cm Coverage: slim 0.5cm profile, sleek low-profile look",
     "Stable Non-Slip Backing: anti-slip base for hardwood, tile & laminate",
     "Effortless Everyday Care: fits under doors, easy vacuum & spot cleaning",
     "Neutral Light Camel Styling: complements Nordic & minimalist interiors",
   ],
-  "1688-745181807454-c3": [
+  "745181807454-c3": [
     "Intricate Vintage Medallion: distressed Persian look in amber & teal",
     "Soft Low Pile Comfort: plush 0.4cm surface, doors open easily over it",
     "Sturdy Non Slip Backing: keeps the 160 x 230cm rug firmly in place",
     "Versatile Statement Piece: generous fit under sofas, beds & entryways",
     "Easy Everyday Care: durable fibers, vacuum & spot clean to refresh",
   ],
-  "1688-745181807454-c2": [
+  "745181807454-c2": [
     "Exotic Turkish-Persian Design: diamond pattern in navy, purple & ivory",
     "Generous Versatile Size: 160 x 230cm coverage for sofas, beds & hallways",
     "Soft Low-Profile Construction: gentle 0.4cm pile, doors open smoothly",
     "Durable Everyday Use: holds shape & rich colors through daily traffic",
     "Easy to Maintain: quick vacuuming and simple spot cleaning",
   ],
-  "1688-1052742241013-c7": [
+  "1052742241013-c7": [
     "Vintage Persian Medallion: distressed sage, ivory & rust tones",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Generous 180 x 250cm Coverage: anchors sofas, queen beds & more",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-1052742241013-c8": [
+  "1052742241013-c8": [
     "Vintage Persian Medallion: distressed sage, ivory & rust tones",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Versatile 140 x 200cm Size: fits bedrooms, offices & entryways",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-996768645117": [
+  "996768645117": [
     "Cloud-Like Softness: ultra-soft silky plush fibers, cozy underfoot",
     "Elegant Oval Silhouette: timeless shape in a warm khaki hue",
     "Generous 100 x 200cm Coverage: fits bedside, balcony & cozy nooks",
     "Versatile for Every Room: bedside rug, living room accent & more",
     "Simple Everyday Maintenance: light vacuum or shake to keep fresh",
   ],
-  "1688-745181807454": [
+  "745181807454": [
     "Heritage Striped Motif: vibrant tribal stripes, Anatolian-Persian style",
     "Generous Room-Defining Size: 160 x 230cm anchors sofas & beds",
     "Slim Low-Pile Profile: soft 0.4cm pile, doors glide over easily",
     "Secure Non-Slip Backing: stays put on hardwood, tile & laminate",
     "Versatile Home Accent: easy-care style for living rooms & bedrooms",
   ],
-  "1688-1052742241013-c9": [
+  "1052742241013-c9": [
     "Vintage Persian Medallion: distressed teal, navy & ivory tones",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Generous 180 x 250cm Coverage: anchors sofas, queen beds & more",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-1052742241013-c10": [
+  "1052742241013-c10": [
     "Vintage Persian Medallion: distressed teal, navy & ivory tones",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Versatile 140 x 200cm Size: fits bedrooms, offices & entryways",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-1052742241013-c11": [
+  "1052742241013-c11": [
     "Distressed Persian Pattern: warm orange & deep blue medallion",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Versatile 140 x 200cm Size: fits bedrooms, offices & entryways",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-1052742241013-c12": [
+  "1052742241013-c12": [
     "Distressed Persian Pattern: warm orange & deep blue medallion",
     "Soft Faux Cashmere Surface: dense, velvety and cozy underfoot",
     "Non-Slip Silicone Backing: grips hardwood, tile & laminate",
     "Generous 180 x 250cm Coverage: anchors sofas, queen beds & more",
     "Easy Everyday Care: low pile, quick vacuum or gentle spot clean",
   ],
-  "1688-996768645117-c2": [
+  "996768645117-c2": [
     "Luxurious Soft Texture: long plush pile, cloud-like underfoot",
     "Oval Tie-Dye Design: modern Nordic gradient, smooth silhouette",
     "Versatile 100 x 160cm Size: bedside, living room or bay window",
     "Low-Profile 0.5cm Build: fits under furniture and doorways",
     "Easy Everyday Care: shake, vacuum lightly or spot clean",
   ],
-  "1688-996768645117-c3": [
+  "996768645117-c3": [
     "Silky Shag Comfort: tie-dyed faux fur, gentle on bare feet",
     "Elegant Nordic Style: snow white tone, clean oval silhouette",
     "Generous 100 x 160cm Size: bedside, coffee table or window seat",
     "Multi-Room Use: bedroom, living room, balcony or bay window",
     "Simple Maintenance: shake out or spot clean synthetic shag",
   ],
-  "1688-595229918569-c3": [
+  "595229918569-c3": [
     "Luxurious Faux Rabbit Fur: high-density, silky smooth underfoot",
     "Generous 160 x 200cm Size: under coffee tables, beds or sofas",
     "Modern Minimalist Look: elegant silver grey, Nordic-friendly",
     "Thick Plush Pile: warm, cozy and muffles footsteps",
     "Easy to Maintain: shake or vacuum; lightweight to reposition",
   ],
-  "1688-745181807454-c4": [
+  "745181807454-c4": [
     "Turkish Persian Medallion: colorful lattice in red, blue & green",
     "Spacious 160 x 230cm Size: anchors sofas, beds & dining sets",
     "Soft Low Pile Comfort: smooth surface, doors pass over easily",
     "Versatile Tribal Style: fits bohemian, farmhouse & eclectic rooms",
     "Easy Everyday Care: regular vacuum & spot clean to refresh",
   ],
-  "1688-745181807454-c5": [
+  "745181807454-c5": [
     "Exquisite Vintage Medallion: faded navy, orange, pink & teal tones",
     "Generous 160 x 230cm Size: living rooms, bedrooms & dining areas",
     "Soft Low-Profile Comfort: smooth 0.4cm pile fits under doorways",
     "Simple Everyday Maintenance: effortless vacuuming & spot cleaning",
     "Versatile Decor Statement: bohemian, traditional & vintage homes",
   ],
-  "1688-745181807454-c6": [
+  "745181807454-c6": [
     "Elegant Vintage Medallion: classic Turkish-Persian central motif",
     "Soft Low-Profile Pile: short 0.4cm build, furniture-friendly",
     "Versatile 160 x 230cm Placement: under sofas, beds & dining sets",
     "Non Slip Foldable Design: lays flat quickly after unpacking",
     "Easy to Maintain: regular vacuum keeps colors vibrant & crisp",
   ],
-  "1688-745181807454-c7": [
+  "745181807454-c7": [
     "Vintage-Inspired Tribal Pattern: faded bands in red, blue & gold",
     "Generous 160 x 230cm Coverage: sofa-side, coffee table or bedside",
     "Low-Profile 0.4cm Build: sits neatly under furniture & doorways",
     "Easy Everyday Care: simple vacuum, quick spot-clean for spills",
     "Versatile Multicolor Styling: bohemian, eclectic & farmhouse rooms",
   ],
-  "1688-745181807454-c8": [
+  "745181807454-c8": [
     "Intricate Oriental Medallion: floral scrollwork with striking center",
     "Generous 160 x 230cm Coverage: under sofas, coffee tables & beds",
     "Low Pile Profile: slim 0.4cm build, doors glide smoothly over",
     "Stable Non Slip Backing: secure on hardwood, tile & laminate",
     "Durable Reinforced Edges: stands up to daily foot traffic",
   ],
-  "1688-969627065032-c33": [
+  "969627065032-c33": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c24": [
+  "969627065032-c24": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c23": [
+  "969627065032-c23": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c22": [
+  "969627065032-c22": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c21": [
+  "969627065032-c21": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c25": [
+  "969627065032-c25": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c40": [
+  "969627065032-c40": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c39": [
+  "969627065032-c39": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c38": [
+  "969627065032-c38": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c37": [
+  "969627065032-c37": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c36": [
+  "969627065032-c36": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c35": [
+  "969627065032-c35": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c34": [
+  "969627065032-c34": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c32": [
+  "969627065032-c32": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c31": [
+  "969627065032-c31": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c30": [
+  "969627065032-c30": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c29": [
+  "969627065032-c29": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c28": [
+  "969627065032-c28": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c27": [
+  "969627065032-c27": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c26": [
+  "969627065032-c26": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c41": [
+  "969627065032-c41": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c42": [
+  "969627065032-c42": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
     "Versatile Home Accent: elegant ribbed texture for couch, sofa and bed",
     "Easy Care: reinforced edges stay plush; machine wash cold, gentle cycle",
   ],
-  "1688-969627065032-c43": [
+  "969627065032-c43": [
     "Luxury Faux Rabbit Fur: high-pile carved stripes with a silky, cloud-like feel",
     "Warm Yet Lightweight: plush fibers trap heat without the heaviness",
     "Five Practical Sizes: from sofa throw to full bed cover",
@@ -384,105 +384,105 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Versatile Beige Tone: neutral solid color pairs with any decor",
     "Easy Care: machine washable, stays fresh with minimal effort",
   ],
-  "1688-952595759182": [
+  "952595759182": [
     "Oversized 2-Pack: generous coverage for pool, beach & travel",
     "Plush Cotton Terry: thick, soft and highly absorbent",
     "Quick Dry: fast-drying weave for swim & camping",
     "Cabana Stripe Style: classic resort look in 4 colors",
     "Easy Care: machine washable, stays soft wash after wash",
   ],
-  "1688-952595759182-c2": [
+  "952595759182-c2": [
     "Oversized 2-Pack: generous coverage for pool, beach & travel",
     "Plush Cotton Terry: thick, soft and highly absorbent",
     "Quick Dry: fast-drying weave for swim & camping",
     "Cabana Stripe Style: classic resort look in 4 colors",
     "Easy Care: machine washable, stays soft wash after wash",
   ],
-  "1688-952595759182-c3": [
+  "952595759182-c3": [
     "Oversized 2-Pack: generous coverage for pool, beach & travel",
     "Plush Cotton Terry: thick, soft and highly absorbent",
     "Quick Dry: fast-drying weave for swim & camping",
     "Cabana Stripe Style: classic resort look in 4 colors",
     "Easy Care: machine washable, stays soft wash after wash",
   ],
-  "1688-952595759182-c4": [
+  "952595759182-c4": [
     "Oversized 2-Pack: generous coverage for pool, beach & travel",
     "Plush Cotton Terry: thick, soft and highly absorbent",
     "Quick Dry: fast-drying weave for swim & camping",
     "Cabana Stripe Style: classic resort look in 4 colors",
     "Easy Care: machine washable, stays soft wash after wash",
   ],
-  "1688-828008656438": [
+  "828008656438": [
     "Thick Cotton Comfort: plush hotel-style bath mats, set of 2",
     "Super Absorbent: soaks up water fast, keeps floors dry",
     "Non-Slip Backing: stays firmly in place on wet floors",
     "Embossed & Jacquard Designs: three elegant white textures",
     "Machine Washable: quick-dry cotton for easy upkeep",
   ],
-  "1688-828008656438-c2": [
+  "828008656438-c2": [
     "Thick Cotton Comfort: plush hotel-style bath mats, set of 2",
     "Super Absorbent: soaks up water fast, keeps floors dry",
     "Non-Slip Backing: stays firmly in place on wet floors",
     "Embossed & Jacquard Designs: three elegant white textures",
     "Machine Washable: quick-dry cotton for easy upkeep",
   ],
-  "1688-828008656438-c3": [
+  "828008656438-c3": [
     "Thick Cotton Comfort: plush hotel-style bath mats, set of 2",
     "Super Absorbent: soaks up water fast, keeps floors dry",
     "Non-Slip Backing: stays firmly in place on wet floors",
     "Embossed & Jacquard Designs: three elegant white textures",
     "Machine Washable: quick-dry cotton for easy upkeep",
   ],
-  "1688-1064068114006": [
+  "1064068114006": [
     "Vintage Sisal Look: textured oval design, 50 x 80cm",
     "Highly Absorbent Surface: keeps bathroom floors dry",
     "Stable Non-Slip Backing: safe on wet tile",
     "Machine Washable: 1.2cm thick, easy-care construction",
     "Two Tones: cream & caramel to match any bath",
   ],
-  "1688-1064068114006-c2": [
+  "1064068114006-c2": [
     "Vintage Sisal Look: textured oval design, 50 x 80cm",
     "Highly Absorbent Surface: keeps bathroom floors dry",
     "Stable Non-Slip Backing: safe on wet tile",
     "Machine Washable: 1.2cm thick, easy-care construction",
     "Two Tones: cream & caramel to match any bath",
   ],
-  "1688-1052755373494": [
+  "1052755373494": [
     "Sisal Look Woven Texture: durable, scratch-resistant weave",
     "Indoor Outdoor: balcony, patio, living room & bedroom",
     "Low Profile: fits under doors and furniture easily",
     "Round Statement Piece: natural fiber centerpiece",
     "Easy Care: low-maintenance, vacuum or wipe clean",
   ],
-  "1688-1052755373494-c2": [
+  "1052755373494-c2": [
     "Sisal Look Woven Texture: durable, scratch-resistant weave",
     "Indoor Outdoor: balcony, patio, living room & bedroom",
     "Low Profile: fits under doors and furniture easily",
     "Round Statement Piece: natural fiber centerpiece",
     "Easy Care: low-maintenance, vacuum or wipe clean",
   ],
-  "1688-1038477616596": [
+  "1038477616596": [
     "American Checkered Style: classic diamond pattern",
     "Diatomaceous Earth: absorbs water & oil in seconds",
     "Non-Slip & Oil Resistant: safe, tidy cooking space",
     "Low Profile 0.4cm: fits under doors, no trip hazard",
     "Easy to Clean: quick-dry surface, wipe or wash",
   ],
-  "1688-1038477616596-c2": [
+  "1038477616596-c2": [
     "American Checkered Style: classic diamond pattern",
     "Diatomaceous Earth: absorbs water & oil in seconds",
     "Non-Slip & Oil Resistant: safe, tidy cooking space",
     "Low Profile 0.4cm: fits under doors, no trip hazard",
     "Easy to Clean: quick-dry surface, wipe or wash",
   ],
-  "1688-1046667161713": [
+  "1046667161713": [
     "Vintage Tile & Tapestry Looks: carved textures, scalloped edges",
     "Diatomaceous Earth: super absorbent, quick-dry surface",
     "Non-Slip & Oil Proof: dependable kitchen floor protection",
     "Soft & Washable: comfortable underfoot, easy to clean",
     "Also in Series: 2-piece sink & stove set (Beige Tile)",
   ],
-  "1688-1046667161713-c2": [
+  "1046667161713-c2": [
     "Vintage Tile & Tapestry Looks: carved textures, scalloped edges",
     "Diatomaceous Earth: super absorbent, quick-dry surface",
     "Non-Slip & Oil Proof: dependable kitchen floor protection",
@@ -1210,231 +1210,231 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Versatile Pink Tone: neutral solid color pairs with any decor",
   "Easy Care: machine washable, stays fresh with minimal effort",
   ],
-  "1688-807393887857-c6": [
+  "807393887857-c6": [
   "Framed African Basket Art: woven-motif print in a solid wood frame",
   "Gallery-Ready: arrives framed and ready to hang",
   "Linen-Textured Canvas: hand-printed look, fade-resistant inks",
   "Rich Earth Tones: rust, tan and charcoal suit any wall",
   "Set of 4: build a gallery wall in one box",
   ],
-  "1688-730512046265-c14": [
+  "730512046265-c14": [
   "Ancient Greek Warrior Scene: black-figure art on aged terracotta",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Statement 48 x 48cm Square: living room, study or entryway",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-730512046265-c15": [
+  "730512046265-c15": [
   "African Basket Trio: handwoven bowls in navy, rust & cream",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Versatile 48 x 38cm: console walls, hallways & cozy corners",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-743606980882-c41": [
+  "743606980882-c41": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-807393887857-c5": [
+  "807393887857-c5": [
   "Framed African Basket Art: woven-motif print in a solid wood frame",
   "Gallery-Ready: arrives framed and ready to hang",
   "Linen-Textured Canvas: hand-printed look, fade-resistant inks",
   "Rich Earth Tones: rust, tan and charcoal suit any wall",
   "Decor Versatility: a standout for living room, entryway or office",
   ],
-  "1688-807393887857-c2": [
+  "807393887857-c2": [
   "Framed African Basket Art: woven-motif print in a solid wood frame",
   "Gallery-Ready: arrives framed and ready to hang",
   "Linen-Textured Canvas: hand-printed look, fade-resistant inks",
   "Rich Earth Tones: rust, tan and charcoal suit any wall",
   "Decor Versatility: a standout for living room, entryway or office",
   ],
-  "1688-743606980882-c10": [
+  "743606980882-c10": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-899672152256-c42": [
+  "899672152256-c42": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Tabletop Favorite: anchors coffee tables and consoles",
   ],
-  "1688-807393887857-c4": [
+  "807393887857-c4": [
   "Framed African Basket Art: woven-motif print in a solid wood frame",
   "Gallery-Ready: arrives framed and ready to hang",
   "Linen-Textured Canvas: hand-printed look, fade-resistant inks",
   "Rich Earth Tones: rust, tan and charcoal suit any wall",
   "Decor Versatility: a standout for living room, entryway or office",
   ],
-  "1688-899672152256-c22": [
+  "899672152256-c22": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Tabletop Favorite: anchors coffee tables and consoles",
   ],
-  "1688-743606980882-c71": [
+  "743606980882-c71": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-743606980882-c89": [
+  "743606980882-c89": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-899672152256-c70": [
+  "899672152256-c70": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Tabletop Favorite: anchors coffee tables and consoles",
   ],
-  "1688-743606980882-c52": [
+  "743606980882-c52": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Nested Set of 3: three sizes stack for compact storage",
   ],
-  "1688-899672152256-c61": [
+  "899672152256-c61": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Nested Set of 3: versatile sizes for every room",
   ],
-  "1688-743606980882-c20": [
+  "743606980882-c20": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Nested Set of 3: three sizes stack for compact storage",
   ],
-  "1688-899672152256-c33": [
+  "899672152256-c33": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Nested Set of 3: versatile sizes for every room",
   ],
-  "1688-899672152256-c13": [
+  "899672152256-c13": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Nested Set of 3: versatile sizes for every room",
   ],
-  "1688-899672152256-c78": [
+  "899672152256-c78": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Tabletop Favorite: anchors coffee tables and consoles",
   ],
-  "1688-743606980882-c32": [
+  "743606980882-c32": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Nested Set of 3: three sizes stack for compact storage",
   ],
-  "1688-899672152256-c2": [
+  "899672152256-c2": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Tabletop Favorite: anchors coffee tables and consoles",
   ],
-  "1688-663341114084-c3": [
+  "663341114084-c3": [
   "Ceramic Meets Rattan: glazed ceramic base in a hand-woven rim",
   "Hand-Painted Motif: artisan pattern with artisan charm",
   "Serving + Display: charcuterie, fruit or tabletop styling",
   "Wipes Clean: glazed surface, easy maintenance",
   "Oval Silhouette: soft shape flatters any table",
   ],
-  "1688-730512046265-c16": [
+  "730512046265-c16": [
   "Circular Medallion Basket: neutral woven texture on a burlap ground",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Statement 48 x 48cm Square: living room, study or entryway",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-730512046265-c17": [
+  "730512046265-c17": [
   "Greek Procession Motif: red-figure runners & robed figures",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Portrait 38 x 48cm: gallery walls, corridors & bedside styling",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-730512046265-c18": [
+  "730512046265-c18": [
   "Pottery & Plates Collage: earthy vessels with blue & rust accents",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Statement 48 x 48cm Square: living room, study or entryway",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-730512046265-c19": [
+  "730512046265-c19": [
   "Basket & Vase Motifs: handwoven African patterns in warm neutrals",
   "Solid Wood Frame: rustic grain finish, arrives ready to hang",
   "Linen-Textured Canvas: woven-look print, fade-resistant inks",
   "Statement 48 x 48cm Square: living room, study or entryway",
   "Warm Heritage Styling: pairs with earth tones & natural textures",
   ],
-  "1688-663341114084-c2": [
+  "663341114084-c2": [
   "Ceramic Meets Rattan: glazed ceramic base in a hand-woven rim",
   "Hand-Painted Motif: artisan pattern with artisan charm",
   "Serving + Display: charcuterie, fruit or tabletop styling",
   "Wipes Clean: glazed surface, easy maintenance",
   "Oval Silhouette: soft shape flatters any table",
   ],
-  "1688-807393887857-c3": [
+  "807393887857-c3": [
   "Framed African Basket Art: woven-motif print in a solid wood frame",
   "Gallery-Ready: arrives framed and ready to hang",
   "Linen-Textured Canvas: hand-printed look, fade-resistant inks",
   "Rich Earth Tones: rust, tan and charcoal suit any wall",
   "Decor Versatility: a standout for living room, entryway or office",
   ],
-  "1688-743606980882-c80": [
+  "743606980882-c80": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Nested Set of 3: three sizes stack for compact storage",
   ],
-  "1688-899672152256-c85": [
+  "899672152256-c85": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
   "Conversation Piece: shell mosaic makes every tray one of a kind",
   "Nested Set of 3: versatile sizes for every room",
   ],
-  "1688-743606980882-c61": [
+  "743606980882-c61": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-743606980882-c2": [
+  "743606980882-c2": [
   "Rattan Frame, Shell Mosaic: woven rim with hand-inlaid shell artwork",
   "Serving Essential: ready for coffee, drinks and snacks",
   "Wipes Clean: sealed mosaic surface, low maintenance",
   "Natural Warmth: honey-toned rattan suits coastal to farmhouse",
   "Everyday Size: fits coffee tables and ottomans",
   ],
-  "1688-899672152256-c52": [
+  "899672152256-c52": [
   "Round Rattan Tray: woven rim with hand-inlaid shell mosaic",
   "Style + Function: serve drinks or anchor a tabletop vignette",
   "Wipes Clean: smooth sealed surface, easy upkeep",
@@ -1637,21 +1637,21 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
   "Universal Fit: suits most high-back dining chairs",
   "Set of 4: furnish a full dining set",
   ],
-  "1688-1051650740507": [
+  "1051650740507": [
     "Romantic Scalloped Lace: wide double lace trim with a delicate ruffle",
     "Sweet Cherry Print: tiny cherries & blossoms on a pale pink ground",
     "Cloud-Yarn Cotton Blend: brushed, airy and gentle against the skin",
     "Hidden Zipper Closure: neat bottom opening, quilt slides in easily",
     "Easy Care & 200 x 230cm Fit: machine wash cold on gentle cycle, low dry",
   ],
-  "1688-1051650740507-c2": [
+  "1051650740507-c2": [
     "Romantic Scalloped Lace: wide double lace trim with a delicate ruffle",
     "Sweet Cherry Print: tiny cherries & blossoms on a pale pink ground",
     "Cloud-Yarn Cotton Blend: brushed, airy and gentle against the skin",
     "Hidden Zipper Closure: neat bottom opening, quilt slides in easily",
     "Easy Care & 180 x 220cm Fit: machine wash cold on gentle cycle, low dry",
   ],
-  "1688-1051650740507-c3": [
+  "1051650740507-c3": [
     "Romantic Scalloped Lace: wide double lace trim with a delicate ruffle",
     "Sweet Cherry Print: tiny cherries & blossoms on a pale pink ground",
     "Cloud-Yarn Cotton Blend: brushed, airy and gentle against the skin",
@@ -1742,42 +1742,126 @@ export const MATERIALS_SHORT_BULLETS: Record<string, string[]> = {
     "Skin-Friendly: cool smooth percale, gentle on skin and hair",
     "Easy Care: machine washable, keeps its crisp hand",
   ],
-  "1688-1071466105053-c3": [
+  "1071466105053-c3": [
     "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
     "Classic grey & white gingham check, solid light grey reverse",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
     "Hidden zipper & corner ties keep your comforter in place",
     "Easy Care: machine washable, gets softer with every wash",
   ],
-  "1688-1071466105053-c1": [
+  "1071466105053-c1": [
     "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
     "Classic black & white gingham check, solid charcoal black reverse",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
     "Hidden zipper & corner ties keep your comforter in place",
     "Easy Care: machine washable, gets softer with every wash",
   ],
-  "1688-1071466105053-c2": [
+  "1071466105053-c2": [
     "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
     "Classic blue & white gingham check, solid dusty blue reverse",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
     "Hidden zipper & corner ties keep your comforter in place",
     "Easy Care: machine washable, gets softer with every wash",
   ],
-  "1688-1025015219200-c3": [
+  "1071466105053-c11": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Bold black & cream checkerboard, solid charcoal black reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c4": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Cheerful yellow & white check, solid pale yellow reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c5": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Gentle sage-pink & white check, solid dusty pink reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c6": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Fresh turquoise & white check, solid pale aqua reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c7": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Sweet pink & white check, solid blush pink reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c8": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Timeless green tartan plaid, solid forest green reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c9": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Black polka dots on warm cream, solid ivory reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1071466105053-c10": [
+    "Cotton-Feel Polyester: soft brushed hand, garment-washed feel",
+    "Navy polka dots on dusty blue, solid deep navy reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "mk-heart4-tan-queen": [
+    "Linen Feel Polyester: softly textured weave, relaxed linen look",
+    "Dark brown heart print on warm tan, solid ivory reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "mk-print4-blue-queen": [
+    "Linen Feel Polyester: softly textured weave, relaxed linen look",
+    "Dusty blue rabbit print on cream, solid ivory reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "mk-floral4-grey-queen": [
+    "Linen Feel Polyester: softly textured weave, relaxed linen look",
+    "Cream floral print on heather grey, solid light grey reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "mk-btfly4-mocha-queen": [
+    "Linen Feel Polyester: softly textured weave, relaxed linen look",
+    "Cream butterfly & floral print on mocha, solid warm cream reverse",
+    "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
+    "Hidden zipper & corner ties keep your comforter in place",
+    "Easy Care: machine washable, gets softer with every wash",
+  ],
+  "1025015219200-c3": [
     "Cotton Blend Muslin: 85% cotton / 15% polyester double gauze",
     "Airy two-layer weave in a warm earthy brown—breathable, fluffy & lightweight",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
     "Hidden zipper & corner ties keep your comforter in place",
     "Easy Care: machine washable, gets softer with every wash",
   ],
-  "1688-1025015219200-c2": [
+  "1025015219200-c2": [
     "Cotton Blend Muslin: 85% cotton / 15% polyester double gauze",
     "Airy two-layer weave in a deep muted navy—breathable, fluffy & lightweight",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",
     "Hidden zipper & corner ties keep your comforter in place",
     "Easy Care: machine washable, gets softer with every wash",
   ],
-  "1688-1025015219200-c1": [
+  "1025015219200-c1": [
     "Cotton Blend Muslin: 85% cotton / 15% polyester double gauze",
     "Airy two-layer weave in a calm light grey—breathable, fluffy & lightweight",
     "4-Piece Queen Set: duvet cover 88 x 88 in, fitted sheet 60 x 80 in, 2 pillowcases 20 x 30 in",

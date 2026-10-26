@@ -76,17 +76,17 @@ export const COLOR_OVERRIDES: Record<string, string> = {
   b0dsgfxldv: 'blue',
   b0dsgckwxw: 'red',
   b0cjhl4lzp: 'yellow',
-  '1688-1046667161713': 'brown',
+  '1046667161713': 'brown',
   // 2026-09-24 冰丝四件套中古奶茶家族（标题无内置色词，按图定为奶茶米色，与 C2 自动打标一致）
-  '1688-745181807454': 'beige',
-  '1688-745181807454-c4': 'white',
-  '1688-745181807454-c6': 'blue',
+  '745181807454': 'beige',
+  '745181807454-c4': 'white',
+  '745181807454-c6': 'blue',
   'linen3-oatmeal-twin': 'beige', // 燕麦色亚麻套件（看图定，浅燕麦归 Beige）
   'linen3-oatmeal-full': 'beige',
   'linen3-oatmeal-queen': 'beige',
   'linen3-oatmeal-king': 'beige',
   // 2026-09-26 地毯重制批次：C9 标题色词为 Teal 无规则命中，与 C10 Teal Blue 同花色归 blue
-  '1688-1052742241013-c9': 'blue',
+  '1052742241013-c9': 'blue',
 };
 
 // 内置场景表（顺序即展示顺序）；生效合集见下方导出的 SCENE_RULES

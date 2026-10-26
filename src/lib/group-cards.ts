@@ -142,8 +142,8 @@ export function buildGroupCards(
     const fs = e.fams;
     // 2026-10-24 用户定：LINEN3-DUVET / PERCALE-DUVET 以组首成员（2026-10-25 起 Ivory / Sky Queen）为唯一入口；
     // 2026-10-26 用户定：VELSTRIPE 同口径（组首 = Charcoal Queen，卡面主图 = 组首 featuredImage）；
-    // 2026-10-26 用户定：1688-1071466105053 格纹组同口径（组首 = Black Queen；同日迁移 1688 sku，组首不变）；其他变体组代表规则不变
-    const preferredAsin = key === 'LINEN3-DUVET' || key === 'PERCALE-DUVET' || key === 'VELSTRIPE' || key === '1688-1071466105053'
+    // 2026-10-26 用户定：1071466105053 格纹组同口径（2026-10-26 起组首 = Black Checker C11，同日迁移 1688 sku）；同日 CHECK 组同口径（组首 = Sage Pink Check）；其他变体组代表规则不变
+    const preferredAsin = key === 'LINEN3-DUVET' || key === 'PERCALE-DUVET' || key === 'VELSTRIPE' || key === '1071466105053' || key === '1071466105053-CHECK'
       ? getVariantGroupOf(fs[0].rep.asin)?.members[0]?.asin.toLowerCase()
       : undefined;
     const repFam = preferredAsin
@@ -160,9 +160,9 @@ export function buildGroupCards(
     // 2026-10-24：rep 家族（如 LINEN3-DUVET 的 Ivory）排在色卡第一位；
     // PERCALE-DUVET 色卡顺序对齐变体组成员颜色顺序（Sky/Mist/Coconut/Nude，与 PERCALE 套装组一致）；
     // 2026-10-26：VELSTRIPE 同口径（色卡顺序 = 组内成员顺序 Charcoal/Sage/Denim）；
-    // 2026-10-26：1688-1071466105053 格纹组同口径（色卡顺序 = 组内成员顺序 Black/Blue/Grey）；
+    // 2026-10-26：1071466105053 格纹组同口径（色卡顺序 = 组内成员顺序 Black Checker/Black/Blue/Grey）；
     // 同色多尺寸家族（Mist）取 Queen 尺寸成员为该色代表（入口=折叠图口径）
-    const memberOrder = key === 'PERCALE-DUVET' || key === 'VELSTRIPE' || key === '1688-1071466105053' ? getVariantGroupOf(fs[0].rep.asin)?.members : undefined;
+    const memberOrder = key === 'PERCALE-DUVET' || key === 'VELSTRIPE' || key === '1071466105053' || key === '1071466105053-CHECK' ? getVariantGroupOf(fs[0].rep.asin)?.members : undefined;
     const memberIdxOf = (f: (typeof fs)[number]): number => {
       const i = memberOrder?.findIndex((m) => m.color.trim().toLowerCase() === f.color.trim().toLowerCase()) ?? -1;
       return i < 0 ? 999 : i;

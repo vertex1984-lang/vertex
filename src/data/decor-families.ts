@@ -22,9 +22,9 @@ export function decorSectionOf(p: { asin: string; subcategory?: string }): strin
   if (p.subcategory === 'wall-art') return 'wall-art';
   const a = p.asin.toLowerCase();
   if (
-    a.startsWith('1688-743606980882') ||
-    a.startsWith('1688-899672152256') ||
-    a.startsWith('1688-663341114084')
+    a.startsWith('743606980882') ||
+    a.startsWith('899672152256') ||
+    a.startsWith('663341114084')
   )
     return 'trays-tabletop';
   return 'more-decor';

@@ -64,8 +64,9 @@ const GET_ALL_PRODUCTS = `
   }
 `;
 
-// 产品标识：亚马逊 ASIN（B0xxxxxxxx）、1688 供应商标识（1688-xxxx(-Cx)）、自有品牌标识（MK-xxx，2026-10-08 起，如 MK-PC-CORD-OLIVE）
-const ASIN_RE = /^(B0[A-Z0-9]{8}|1688-[0-9]+(-C[0-9]+)?|MK-[A-Z0-9-]+)$/i;
+// 产品标识：亚马逊 ASIN（B0xxxxxxxx）、纯数字供应商标识（2026-10-26 起站内去 1688- 前缀；Shopify 侧 tag/sku 仍为旧 1688- 形态，正则两种都收、出口统一去前缀）、自有品牌标识（MK-xxx）
+const ASIN_RE = /^(B0[A-Z0-9]{8}|(1688-)?[0-9]+(-C[0-9]+)?|MK-[A-Z0-9-]+)$/i;
+const strip1688 = (s) => s.toLowerCase().replace(/^1688-/, '');
 
 // 已从站点剔除的 ASIN（早期错误数据），不再接入映射
 const EXCLUDED_ASINS = new Set(['b0f1ycxtrx']);
@@ -141,7 +142,7 @@ function buildMap(products) {
     const shopSkuRaw = (variant.sku || '').trim();
     const skuIsAsin = shopSkuRaw && ASIN_RE.test(shopSkuRaw);
     const skuFallbackAsin = !asinTag && !skuIsAsin && shopSkuRaw
-      ? (materialsSkuToAsin[shopSkuRaw.toLowerCase()] || null)
+      ? (materialsSkuToAsin[shopSkuRaw.toLowerCase()] || materialsSkuToAsin[strip1688(shopSkuRaw)] || null)
       : null;
     if (!asinTag && !skuIsAsin && !skuFallbackAsin) {
       console.warn(`Skipping product with no ASIN (tag/sku): ${product.title} (sku=${variant.sku || '-'})`);
@@ -151,7 +152,7 @@ function buildMap(products) {
       skuFallbackCount++;
       console.log(`SKU fallback: ${shopSkuRaw} → ${skuFallbackAsin} (${product.title.slice(0, 50)})`);
     }
-    const asinLower = (asinTag || (skuIsAsin ? shopSkuRaw : skuFallbackAsin)).toLowerCase();
+    const asinLower = strip1688(asinTag || (skuIsAsin ? shopSkuRaw : skuFallbackAsin));
     if (EXCLUDED_ASINS.has(asinLower)) continue;
 
     if (map[asinLower]) {
@@ -170,7 +171,7 @@ function buildMap(products) {
     }
 
     // SKU 校验（仅对 tags 匹配的新记录）：Shopify SKU 必须与素材库该 ASIN 的 SKU 一致
-    const shopSku = (variant.sku || '').trim().toLowerCase();
+    const shopSku = strip1688((variant.sku || '').trim());
     const expectedSku = materialsSkus[asinLower];
     if (asinTag && expectedSku && shopSku !== expectedSku) {
       skuMismatch++;

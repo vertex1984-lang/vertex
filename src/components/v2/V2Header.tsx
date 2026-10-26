@@ -40,12 +40,12 @@ interface MenuCard {
 const MEGA_CARDS: Record<string, MenuCard[]> = {
   bedding: [
     { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/bedding/linen/' },
-    // 2026-10-26：原 1688-916370884976 水洗棉撞色三件套全家族已彻底移除（数据归档 archive/removed-products），图卡改用在售水洗棉产品图
+    // 2026-10-26：原 916370884976 水洗棉撞色三件套全家族已彻底移除（数据归档 archive/removed-products），图卡改用在售水洗棉产品图
     { image: '/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1-3x4.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Cotton Feel', href: '/bedding/washed-cotton/' },
   ],
   blankets: [
     { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
-    { image: '/images/products/1688-969627065032-C39/1.webp', caption: 'Faux rabbit fur softness.', linkLabel: 'Shop Faux Fur', href: '/products?cat=blankets' },
+    { image: '/images/products/969627065032-C39/1.webp', caption: 'Faux rabbit fur softness.', linkLabel: 'Shop Faux Fur', href: '/products?cat=blankets' },
   ],
   cushions: [
     { image: '/images/collections/cushions.webp', caption: 'Comfort for every seat.', linkLabel: 'Shop Cushions', href: '/products?cat=cushions' },
@@ -58,11 +58,11 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   towels: [
     { image: '/images/collections/towels.webp', caption: 'Hotel-style cotton, every day.', linkLabel: 'Shop Towels', href: '/products?cat=towels' },
-    { image: '/images/products/1688-952595759182/1.webp', caption: 'Oversized and quick-drying.', linkLabel: 'Shop Beach Towels', href: '/products?cat=towels&sub=beach' },
+    { image: '/images/products/952595759182/1.webp', caption: 'Oversized and quick-drying.', linkLabel: 'Shop Beach Towels', href: '/products?cat=towels&sub=beach' },
   ],
   mats: [
     { image: '/images/collections/mats.webp', caption: 'Soft grounding for every room.', linkLabel: 'Shop Mats', href: '/products?cat=mats' },
-    { image: '/images/products/1688-1046667161713/1.webp', caption: 'Cushioned comfort underfoot.', linkLabel: 'Shop Kitchen Mats', href: '/products?cat=mats&sub=kitchen' },
+    { image: '/images/products/1046667161713/1.webp', caption: 'Cushioned comfort underfoot.', linkLabel: 'Shop Kitchen Mats', href: '/products?cat=mats&sub=kitchen' },
   ],
   others: [
     { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
@@ -70,11 +70,11 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   decor: [
     // 2026-10-21：decor PLP 按 bedding 结构重构后无 sub 筛选视图，快链改页内分区锚点（同 towels/blankets）
-    { image: '/images/products/1688-807393887857-C2/1.webp', caption: 'Framed canvas, tribal style.', linkLabel: 'Shop Wall Art', href: '/products?cat=decor#wall-art' },
-    { image: '/images/products/1688-730512046265-C2/1.webp', caption: 'Boho burlap textures.', linkLabel: 'Shop Boho Art', href: '/products?cat=decor#wall-art' },
+    { image: '/images/products/807393887857-C2/1.webp', caption: 'Framed canvas, tribal style.', linkLabel: 'Shop Wall Art', href: '/products?cat=decor#wall-art' },
+    { image: '/images/products/730512046265-C2/1.webp', caption: 'Boho burlap textures.', linkLabel: 'Shop Boho Art', href: '/products?cat=decor#wall-art' },
   ],
   // dining 图卡已随类目下线移除（2026-10-21 用户定）；原两张托盘图卡数据：
-  //   1688-899672152256-C2 'Handwoven rattan trays.' / 1688-743606980882-C2 'Serve & display in style.'
+  //   899672152256-C2 'Handwoven rattan trays.' / 743606980882-C2 'Serve & display in style.'
   //   → /products?cat=dining&sub=trays
 };
 

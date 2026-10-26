@@ -1220,10 +1220,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": "https://www.amazon.com/dp/B0BCJT2GFW"
     },
 {
-        "id": "makimoo-1688-828008656438-C3",
-        "asin": "1688-828008656438-C3",
+        "id": "makimoo-828008656438-C3",
+        "asin": "828008656438-C3",
         "title": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
-        "handle": "2-pack-luxury-hotel-style-cotton-bath-mat-set-extra-thick-1688-828008656438-c3",
+        "handle": "2-pack-luxury-hotel-style-cotton-bath-mat-set-extra-thick-828008656438-c3",
         "description": "Premium 100% Cotton Construction: Crafted from pure natural cotton with a thick jacquard weave, these bath mats deliver a soft and comfortable feel underfoot while offering lasting durability for daily use in busy bathrooms. Superior Absorbency and Quick Drying: The dense cotton fibers quickly soak up water after showers or baths, helping keep your floors dry and reducing moisture buildup for a fresher bathroom environment. Non Slip Design for Added Safety: Engineered to stay securely in place on smooth bathroom floors, providing steady footing and extra stability when stepping out of the shower or tub. Generous 2-Piece Set with Large Coverage: Each mat measures 50 x 80cm, offering ample floor coverage for doorways, vanity areas, and shower exits while the two-pack allows convenient placement in multiple bathrooms. Easy Care and Versatile Use: Machine washable for effortless cleaning, these mats maintain their shape and absorbency wash after wash, making them ideal for home bathrooms, guest suites, hotels, and spas.",
         "descriptionHtml": "<p>Premium 100% Cotton Construction: Crafted from pure natural cotton with a thick jacquard weave, these bath mats deliver a soft and comfortable feel underfoot while offering lasting durability for daily use in busy bathrooms.</p><p>Superior Absorbency and Quick Drying: The dense cotton fibers quickly soak up water after showers or baths, helping keep your floors dry and reducing moisture buildup for a fresher bathroom environment.</p><p>Non Slip Design for Added Safety: Engineered to stay securely in place on smooth bathroom floors, providing steady footing and extra stability when stepping out of the shower or tub.</p><p>Generous 2-Piece Set with Large Coverage: Each mat measures 50 x 80cm, offering ample floor coverage for doorways, vanity areas, and shower exits while the two-pack allows convenient placement in multiple bathrooms.</p><p>Easy Care and Versatile Use: Machine washable for effortless cleaning, these mats maintain their shape and absorbency wash after wash, making them ideal for home bathrooms, guest suites, hotels, and spas.</p>",
         "productType": "Mats",
@@ -1233,43 +1233,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-828008656438-C3/1.webp",
+                "url": "/images/products/828008656438-C3/1.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/2.webp",
+                "url": "/images/products/828008656438-C3/2.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/3.webp",
+                "url": "/images/products/828008656438-C3/3.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/4.webp",
+                "url": "/images/products/828008656438-C3/4.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/5.webp",
+                "url": "/images/products/828008656438-C3/5.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/6.webp",
+                "url": "/images/products/828008656438-C3/6.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C3/7.webp",
+                "url": "/images/products/828008656438-C3/7.webp",
                 "altText": "2 Pack Luxury Hotel Style Cotton Bath Mat Set Extra Thick Absorbent Bathroom Floor Towel Non Slip Jacquard Weave Quick Dry Soft Shower Rug For Bathroom Home Spa 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
@@ -1283,7 +1283,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-828008656438-C3",
+                "id": "variant-828008656438-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1296,10 +1296,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-828008656438-C2",
-        "asin": "1688-828008656438-C2",
+        "id": "makimoo-828008656438-C2",
+        "asin": "828008656438-C2",
         "title": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
-        "handle": "2-pack-luxury-hotel-style-100-cotton-bath-mats-50-x-80-cm-1688-828008656438-c2",
+        "handle": "2-pack-luxury-hotel-style-100-cotton-bath-mats-50-x-80-cm-828008656438-c2",
         "description": "Hotel-Quality 100% Cotton: Woven from pure cotton fibers, these bath mats offer a plush, skin-friendly feel that brings resort-style comfort to your daily routine. Highly Absorbent & Quick-Drying: The thick cotton pile quickly soaks up water after showers or baths, helping feet dry faster while allowing the mat to air dry between uses. Generous 50 x 80cm Coverage: Each mat measures 50 x 80cm, providing ample floor protection and a cushioned surface underfoot for bathrooms, guest suites, and spa-inspired spaces. Elegant Jacquard Stone Pattern: The raised stone-flower jacquard design adds subtle texture and a refined hotel look that complements a wide range of bathroom decor styles. Easy-Care & Long-Lasting: Machine washable for simple upkeep, the durable cotton construction retains its softness and shape through regular use and laundering.",
         "descriptionHtml": "<p>Hotel-Quality 100% Cotton: Woven from pure cotton fibers, these bath mats offer a plush, skin-friendly feel that brings resort-style comfort to your daily routine.</p><p>Highly Absorbent &amp; Quick-Drying: The thick cotton pile quickly soaks up water after showers or baths, helping feet dry faster while allowing the mat to air dry between uses.</p><p>Generous 50 x 80cm Coverage: Each mat measures 50 x 80cm, providing ample floor protection and a cushioned surface underfoot for bathrooms, guest suites, and spa-inspired spaces.</p><p>Elegant Jacquard Stone Pattern: The raised stone-flower jacquard design adds subtle texture and a refined hotel look that complements a wide range of bathroom decor styles.</p><p>Easy-Care &amp; Long-Lasting: Machine washable for simple upkeep, the durable cotton construction retains its softness and shape through regular use and laundering.</p>",
         "productType": "Mats",
@@ -1309,43 +1309,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-828008656438-C2/1.webp",
+                "url": "/images/products/828008656438-C2/1.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/2.webp",
+                "url": "/images/products/828008656438-C2/2.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/3.webp",
+                "url": "/images/products/828008656438-C2/3.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/4.webp",
+                "url": "/images/products/828008656438-C2/4.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/5.webp",
+                "url": "/images/products/828008656438-C2/5.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/6.webp",
+                "url": "/images/products/828008656438-C2/6.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438-C2/7.webp",
+                "url": "/images/products/828008656438-C2/7.webp",
                 "altText": "2-Pack Luxury Hotel Style 100% Cotton Bath Mats 50 x 80 cm Large Highly Absorbent Quick-Dry Jacquard Stone Pattern Thick Plush Soft Bathroom Floor Towels Machine Washable (White)",
                 "width": 800,
                 "height": 800
@@ -1359,7 +1359,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-828008656438-C2",
+                "id": "variant-828008656438-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1372,10 +1372,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-952595759182",
-        "asin": "1688-952595759182",
+        "id": "makimoo-952595759182",
+        "asin": "952595759182",
         "title": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
-        "handle": "2-pack-soft-thick-cotton-beach-towels-oversized-striped-1688-952595759182",
+        "handle": "2-pack-soft-thick-cotton-beach-towels-oversized-striped-952595759182",
         "description": "Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag. Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing. Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool. Quick-Drying & Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use. Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.",
         "descriptionHtml": "<p>Generous 2-Pack Value: Receive two oversized pink-and-white striped beach towels, perfect for couples, families, or keeping a spare ready in your swim or travel bag.</p><p>Soft Thick Cotton: Woven from quality cotton with a plush, absorbent terry surface that feels gentle against skin after swimming, showering, or sunbathing.</p><p>Oversized Coverage: Each towel measures 75 x 180cm, offering plenty of length to wrap up, dry off fully, or cover a lounge chair at the beach or pool.</p><p>Quick-Drying &amp; Durable: Designed to absorb moisture efficiently and hold up through regular washing, with crisp stripes that retain their color use after use.</p><p>Versatile For Every Outing: Ideal for beach days, poolside relaxation, gym sessions, camping trips, and vacations, featuring classic cabana stripes for a timeless look.</p>",
         "productType": "Towels",
@@ -1385,13 +1385,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-952595759182/1.webp",
+                "url": "/images/products/952595759182/1.webp",
                 "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-952595759182/2.webp",
+                "url": "/images/products/952595759182/2.webp",
                 "altText": "2 Pack Soft Thick Cotton Beach Towels Oversized Striped Pool Towels For Travel Swim Camping Highly Absorbent Quick Dry Extra Large Bath Towel 75 x 180 cm (Pink and White)",
                 "width": 800,
                 "height": 800
@@ -1405,7 +1405,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-952595759182",
+                "id": "variant-952595759182",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1418,10 +1418,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-952595759182-C2",
-        "asin": "1688-952595759182-C2",
+        "id": "makimoo-952595759182-C2",
+        "asin": "952595759182-C2",
         "title": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
-        "handle": "2-pack-thick-oversized-cotton-beach-towels-for-adults-soft-1688-952595759182-c2",
+        "handle": "2-pack-thick-oversized-cotton-beach-towels-for-adults-soft-952595759182-c2",
         "description": "Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket. Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising. Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom. Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest. Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.",
         "descriptionHtml": "<p>Generous Oversized Coverage: Each towel measures 75 x 180cm, giving you plenty of room to stretch out on a lounge chair, wrap up after a swim, or use as a compact beach blanket.</p><p>Soft Cotton Fabric: Woven from absorbent cotton, each towel weighs approximately 550g and feels gentle on skin while helping to soak up moisture after swimming, showering, or exercising.</p><p>Classic Cabana Stripes: The soft grey and cream stripe pattern adds a timeless seaside style that looks great on the sand, by the pool, or hung in your bathroom.</p><p>Convenient 2-Pack: You receive two matching towels, making it easy to keep one in your beach bag, one at home, or share with a partner, family member, or guest.</p><p>Easy Everyday Care: Machine washable and designed to retain its shape and color through regular use, this set is ready for vacations, gym sessions, camping trips, and daily relaxation.</p>",
         "productType": "Towels",
@@ -1431,13 +1431,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-952595759182-C2/1.webp",
+                "url": "/images/products/952595759182-C2/1.webp",
                 "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-952595759182-C2/2.webp",
+                "url": "/images/products/952595759182-C2/2.webp",
                 "altText": "2 Pack Thick Oversized Cotton Beach Towels for Adults, Soft Cabana Striped Pool Bath Towel, Highly Absorbent Swim Towel for Outdoor Travel Vacation, 75 x 180 cm (Grey and Cream)",
                 "width": 800,
                 "height": 800
@@ -1451,7 +1451,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-952595759182-C2",
+                "id": "variant-952595759182-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1464,10 +1464,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-952595759182-C3",
-        "asin": "1688-952595759182-C3",
+        "id": "makimoo-952595759182-C3",
+        "asin": "952595759182-C3",
         "title": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
-        "handle": "2-pack-oversized-cotton-beach-towels-75-x-180-cm-extra-1688-952595759182-c3",
+        "handle": "2-pack-oversized-cotton-beach-towels-75-x-180-cm-extra-952595759182-c3",
         "description": "Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand. Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin. Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons. Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym. Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.",
         "descriptionHtml": "<p>Oversized Coverage for Full-Body Comfort: Each towel measures 75 x 180cm, giving you plenty of length and width to wrap up after a swim, drape over a lounge chair, or stretch out on the sand.</p><p>Soft and Absorbent Cotton Fabric: Made from pure cotton with a thick 550g construction, these towels soak up water quickly while feeling gentle and plush against the skin.</p><p>Muted Cabana Stripe Design: The soft sage green and white stripes create a calm, classic beach look that stands out on crowded shores and adds style to poolside afternoons.</p><p>Practical Two-Pack Value: This set includes two matching towels, making it simple to pack extras for family trips, guests, or regular visits to the pool and gym.</p><p>Versatile for Beach, Bath, and Travel: Use them as oversized bath sheets, picnic blankets, yoga mat covers, or lightweight travel companions for resorts, camping, and backyard lounging.</p>",
         "productType": "Towels",
@@ -1477,13 +1477,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-952595759182-C3/1.webp",
+                "url": "/images/products/952595759182-C3/1.webp",
                 "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-952595759182-C3/2.webp",
+                "url": "/images/products/952595759182-C3/2.webp",
                 "altText": "2 Pack Oversized Cotton Beach Towels 75 x 180 cm Extra Large Thick 550G Soft Quick Dry Absorbent Striped Pool Towels for Travel Vacation Swimming Sunbathing (Sage Green and White)",
                 "width": 800,
                 "height": 800
@@ -1497,7 +1497,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-952595759182-C3",
+                "id": "variant-952595759182-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1510,10 +1510,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-952595759182-C4",
-        "asin": "1688-952595759182-C4",
+        "id": "makimoo-952595759182-C4",
+        "asin": "952595759182-C4",
         "title": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
-        "handle": "2-pack-oversized-plush-soft-cotton-beach-towels-extra-large-1688-952595759182-c4",
+        "handle": "2-pack-oversized-plush-soft-cotton-beach-towels-extra-large-952595759182-c4",
         "description": "Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel. Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use. Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families. Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack. Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.",
         "descriptionHtml": "<p>Generous Oversized Dimensions: Each towel measures 75 x 180cm, giving adults full body coverage to wrap up, lounge on a beach chair, or dry off after a swim. The 550g weight provides a substantial yet packable feel.</p><p>Premium Cotton Absorbency: Crafted from soft cotton with a terry-loop surface that draws moisture away from skin. The breathable natural fibers feel gentle and remain reliable through daily use.</p><p>Classic Cabana Stripe Design: Soft dusty blue and white stripes deliver a clean, coastal look that stands out on the sand, by the pool, or in the gym. The timeless pattern works for men, women, and families.</p><p>Versatile for Every Outing: Use it as a beach blanket, pool towel, travel wrap, camping sheet, or everyday bath towel. Large enough to share yet easy to fold into a tote or backpack.</p><p>Easy Care Built to Last: Machine washable and dryer friendly. Reinforced edges help resist fraying, while the yarn-dyed stripes keep their color fresh through repeated washes and outdoor adventures.</p>",
         "productType": "Towels",
@@ -1523,13 +1523,13 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-952595759182-C4/1.webp",
+                "url": "/images/products/952595759182-C4/1.webp",
                 "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-952595759182-C4/2.webp",
+                "url": "/images/products/952595759182-C4/2.webp",
                 "altText": "2 Pack Oversized Plush Soft Cotton Beach Towels Extra Large Absorbent Pool Swim Bath Towels Cabana Striped Quick Dry Travel Camping Blanket 75 x 180 cm (Dusty Blue and White)",
                 "width": 800,
                 "height": 800
@@ -1543,7 +1543,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-952595759182-C4",
+                "id": "variant-952595759182-C4",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1556,10 +1556,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-828008656438",
-        "asin": "1688-828008656438",
+        "id": "makimoo-828008656438",
+        "asin": "828008656438",
         "title": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
-        "handle": "plush-hotel-style-thick-cotton-bath-mats-set-of-2-non-slip-1688-828008656438",
+        "handle": "plush-hotel-style-thick-cotton-bath-mats-set-of-2-non-slip-828008656438",
         "description": "HOTEL-STYLE COMFORT: Crafted from soft, thick cotton terry, these mats wrap your feet in plush comfort after every shower while delivering the clean, refined look of a spa or hotel bathroom. SUPER ABSORBENT & QUICK DRYING: The dense cotton pile soaks up water quickly to keep floors dry, while the breathable construction helps the mat air dry faster between uses. SAFE NON-SLIP BACKING: Designed with a non-slip base that grips hard floors securely, reducing the chance of slips and making it a practical choice for busy households. ELEGANT FOOTPRINT DESIGN: Features a raised jacquard footprint pattern framed by a classic border, adding a subtle decorative touch that complements white or neutral bathroom decor. GENEROUS SIZE & EASY CARE: Each mat measures 50 x 80cm to cover ample floor space and is machine washable so it stays fresh, soft, and ready for daily use.",
         "descriptionHtml": "<p>HOTEL-STYLE COMFORT: Crafted from soft, thick cotton terry, these mats wrap your feet in plush comfort after every shower while delivering the clean, refined look of a spa or hotel bathroom.</p><p>SUPER ABSORBENT &amp; QUICK DRYING: The dense cotton pile soaks up water quickly to keep floors dry, while the breathable construction helps the mat air dry faster between uses.</p><p>SAFE NON-SLIP BACKING: Designed with a non-slip base that grips hard floors securely, reducing the chance of slips and making it a practical choice for busy households.</p><p>ELEGANT FOOTPRINT DESIGN: Features a raised jacquard footprint pattern framed by a classic border, adding a subtle decorative touch that complements white or neutral bathroom decor.</p><p>GENEROUS SIZE &amp; EASY CARE: Each mat measures 50 x 80cm to cover ample floor space and is machine washable so it stays fresh, soft, and ready for daily use.</p>",
         "productType": "Mats",
@@ -1569,43 +1569,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-828008656438/1.webp",
+                "url": "/images/products/828008656438/1.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/2.webp",
+                "url": "/images/products/828008656438/2.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/3.webp",
+                "url": "/images/products/828008656438/3.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/4.webp",
+                "url": "/images/products/828008656438/4.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/5.webp",
+                "url": "/images/products/828008656438/5.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/6.webp",
+                "url": "/images/products/828008656438/6.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-828008656438/7.webp",
+                "url": "/images/products/828008656438/7.webp",
                 "altText": "Plush Hotel Style Thick Cotton Bath Mats Set of 2 Non Slip Super Absorbent Bathroom Floor Towels with Embossed Footprint Quick Dry Machine Washable 50 x 80 cm (White)",
                 "width": 800,
                 "height": 800
@@ -1619,7 +1619,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-828008656438",
+                "id": "variant-828008656438",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1632,10 +1632,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1038477616596",
-        "asin": "1688-1038477616596",
+        "id": "makimoo-1038477616596",
+        "asin": "1038477616596",
         "title": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
-        "handle": "american-style-checkered-kitchen-mat-diatomaceous-earth-1688-1038477616596",
+        "handle": "american-style-checkered-kitchen-mat-diatomaceous-earth-1038477616596",
         "description": "Rapid Water & Oil Absorption: Crafted with a soft diatomaceous earth surface that quickly absorbs spills, splashes, and cooking grease, keeping floors cleaner and drier during daily meal prep. Quick-Dry Comfort: The breathable material helps moisture evaporate fast, reducing dampness and odors even in high-traffic kitchen and dining areas. Stay-Put Non-Slip Backing: Engineered with a textured anti-slip underside that grips hard floors securely to minimize shifting, curling, and tripping hazards. Vintage Farmhouse Style: Classic brown checkered pattern with rounded corners brings a warm, timeless look to kitchens, pantries, laundry rooms, and entryways. Easy Care & Compact Fit: Sized at 50 x 80cm, the low-profile mat fits neatly in front of sinks and stoves; simply vacuum, shake out, or wipe with a damp cloth to maintain its fresh appearance.",
         "descriptionHtml": "<p>Rapid Water &amp; Oil Absorption: Crafted with a soft diatomaceous earth surface that quickly absorbs spills, splashes, and cooking grease, keeping floors cleaner and drier during daily meal prep.</p><p>Quick-Dry Comfort: The breathable material helps moisture evaporate fast, reducing dampness and odors even in high-traffic kitchen and dining areas.</p><p>Stay-Put Non-Slip Backing: Engineered with a textured anti-slip underside that grips hard floors securely to minimize shifting, curling, and tripping hazards.</p><p>Vintage Farmhouse Style: Classic brown checkered pattern with rounded corners brings a warm, timeless look to kitchens, pantries, laundry rooms, and entryways.</p><p>Easy Care &amp; Compact Fit: Sized at 50 x 80cm, the low-profile mat fits neatly in front of sinks and stoves; simply vacuum, shake out, or wipe with a damp cloth to maintain its fresh appearance.</p>",
         "productType": "Mats",
@@ -1645,43 +1645,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1038477616596/1.webp",
+                "url": "/images/products/1038477616596/1.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/2.webp",
+                "url": "/images/products/1038477616596/2.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/3.webp",
+                "url": "/images/products/1038477616596/3.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/4.webp",
+                "url": "/images/products/1038477616596/4.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/5.webp",
+                "url": "/images/products/1038477616596/5.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/6.webp",
+                "url": "/images/products/1038477616596/6.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596/7.webp",
+                "url": "/images/products/1038477616596/7.webp",
                 "altText": "American Style Checkered Kitchen Mat Diatomaceous Earth Soft Rug Super Absorbent Quick Dry Non Slip Oil Resistant Floor Mat for Kitchen Dining Room 50 x 80 cm (Vintage Brown)",
                 "width": 800,
                 "height": 800
@@ -1695,7 +1695,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1038477616596",
+                "id": "variant-1038477616596",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1708,10 +1708,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-985677811504",
-        "asin": "1688-985677811504",
+        "id": "makimoo-985677811504",
+        "asin": "985677811504",
         "title": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
-        "handle": "2-pack-soft-diatomaceous-earth-bath-mats-oval-super-1688-985677811504",
+        "handle": "2-pack-soft-diatomaceous-earth-bath-mats-oval-super-985677811504",
         "description": "Superior Water Absorption: Made from soft diatomaceous earth material, these mats quickly absorb moisture from wet feet, helping keep floors around showers, sinks, and entryways dry and tidy. Double Anti-Slip Protection: Designed with an absorbent textured top layer and a natural rubber backing that grips the floor, offering stable footing and helping the mat stay securely in place. Easy to Clean and Maintain: Simply rinse with water or wipe with a damp cloth to remove everyday dirt. The quick-dry surface stays fresh with minimal routine care. Contemporary Neutral Design: The understated geometric pattern in a versatile light grey tone complements modern, minimalist, and classic interiors, making it suitable for bathrooms, kitchens, and doorways. Value 2-Pack with Generous Coverage: Each set includes two matching mats measuring 50 x 80cm, providing ample coverage for busy areas such as shower exits, vanities, and kitchen floors.",
         "descriptionHtml": "<p>Superior Water Absorption: Made from soft diatomaceous earth material, these mats quickly absorb moisture from wet feet, helping keep floors around showers, sinks, and entryways dry and tidy.</p><p>Double Anti-Slip Protection: Designed with an absorbent textured top layer and a natural rubber backing that grips the floor, offering stable footing and helping the mat stay securely in place.</p><p>Easy to Clean and Maintain: Simply rinse with water or wipe with a damp cloth to remove everyday dirt. The quick-dry surface stays fresh with minimal routine care.</p><p>Contemporary Neutral Design: The understated geometric pattern in a versatile light grey tone complements modern, minimalist, and classic interiors, making it suitable for bathrooms, kitchens, and doorways.</p><p>Value 2-Pack with Generous Coverage: Each set includes two matching mats measuring 50 x 80cm, providing ample coverage for busy areas such as shower exits, vanities, and kitchen floors.</p>",
         "productType": "Mats",
@@ -1721,43 +1721,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-985677811504/1.webp",
+                "url": "/images/products/985677811504/1.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/2.webp",
+                "url": "/images/products/985677811504/2.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/3.webp",
+                "url": "/images/products/985677811504/3.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/4.webp",
+                "url": "/images/products/985677811504/4.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/5.webp",
+                "url": "/images/products/985677811504/5.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/6.webp",
+                "url": "/images/products/985677811504/6.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-985677811504/7.webp",
+                "url": "/images/products/985677811504/7.webp",
                 "altText": "2 Pack Soft Diatomaceous Earth Bath Mats Oval Super Absorbent Non-Slip Bathroom Rugs Quick Dry Floor Mat for Home Washable Entryway Kitchen Rug 50 x 80 cm (Light Grey)",
                 "width": 800,
                 "height": 800
@@ -1771,7 +1771,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-985677811504",
+                "id": "variant-985677811504",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1784,10 +1784,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1016436401519",
-        "asin": "1688-1016436401519",
+        "id": "makimoo-1016436401519",
+        "asin": "1016436401519",
         "title": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
-        "handle": "2-pack-indoor-entryway-rugs-imitation-sisal-door-mats-non-1688-1016436401519",
+        "handle": "2-pack-indoor-entryway-rugs-imitation-sisal-door-mats-non-1016436401519",
         "description": "Premium 2-Pack Value: Receive two coordinating 50 x 80cm camel brown rugs crafted in an imitation sisal weave, adding natural texture and warmth to entryways, hallways, and mudrooms. Stay-Put Non-Slip Backing: Engineered with a reliable anti-slip underside that grips tile, hardwood, laminate, and other indoor floors to help keep the mat stable under daily foot traffic. Simple Everyday Care: The dense looped surface captures dust, dirt, and debris from shoes; just vacuum or shake the mat outdoors to maintain a cleaner entrance with minimal effort. Trim to Fit Your Space: Easily cut the edges with ordinary scissors to accommodate door frames, corners, or unusual room layouts for a neat, seamless appearance. Thick Durable Construction: Built with an approximately 8mm thick dense pile that offers a supportive feel underfoot while holding up well in busy indoor areas.",
         "descriptionHtml": "<p>Premium 2-Pack Value: Receive two coordinating 50 x 80cm camel brown rugs crafted in an imitation sisal weave, adding natural texture and warmth to entryways, hallways, and mudrooms.</p><p>Stay-Put Non-Slip Backing: Engineered with a reliable anti-slip underside that grips tile, hardwood, laminate, and other indoor floors to help keep the mat stable under daily foot traffic.</p><p>Simple Everyday Care: The dense looped surface captures dust, dirt, and debris from shoes; just vacuum or shake the mat outdoors to maintain a cleaner entrance with minimal effort.</p><p>Trim to Fit Your Space: Easily cut the edges with ordinary scissors to accommodate door frames, corners, or unusual room layouts for a neat, seamless appearance.</p><p>Thick Durable Construction: Built with an approximately 8mm thick dense pile that offers a supportive feel underfoot while holding up well in busy indoor areas.</p>",
         "productType": "Mats",
@@ -1797,37 +1797,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1016436401519/1.webp",
+                "url": "/images/products/1016436401519/1.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1016436401519/2.webp",
+                "url": "/images/products/1016436401519/2.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1016436401519/3.webp",
+                "url": "/images/products/1016436401519/3.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1016436401519/4.webp",
+                "url": "/images/products/1016436401519/4.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1016436401519/5.webp",
+                "url": "/images/products/1016436401519/5.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1016436401519/6.webp",
+                "url": "/images/products/1016436401519/6.webp",
                 "altText": "2 Pack Indoor Entryway Rugs Imitation Sisal Door Mats Non Slip Absorbent 8mm Thick Floor Mats Cut to Fit for Front Door Entrance Hallway Mudroom 50 x 80 cm (Camel Brown)",
                 "width": 800,
                 "height": 800
@@ -1841,7 +1841,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1016436401519",
+                "id": "variant-1016436401519",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1854,10 +1854,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1038477616596-C2",
-        "asin": "1688-1038477616596-C2",
+        "id": "makimoo-1038477616596-C2",
+        "asin": "1038477616596-C2",
         "title": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
-        "handle": "american-style-lattice-diatom-mud-kitchen-mat-anti-slip-1688-1038477616596-c2",
+        "handle": "american-style-lattice-diatom-mud-kitchen-mat-anti-slip-1038477616596-c2",
         "description": "Premium Diatom Mud Construction: Crafted from high-quality diatomaceous earth composite, this 50 x 80cm mat rapidly absorbs water, oil, and everyday spills, keeping your kitchen, bathroom, or entryway floors clean and dry within seconds. Enhanced Non-Slip Backing: Features a durable anti-slip bottom layer that grips securely to tile, wood, and laminate floors, reducing the risk of slips and falls in high-traffic areas while staying firmly in place. Classic American Lattice Design: The elegant geometric floral pattern and warm coffee tones complement traditional and modern interiors alike, adding a sophisticated decorative touch to kitchens, dining rooms, and bathrooms. Soft Comfortable Surface: Unlike hard diatomite boards, this flexible soft mat offers a cushioned feel underfoot with rounded corners that lie flat and resist curling, providing lasting comfort while cooking, washing, or standing. Easy to Clean & Maintain: Simply wipe, vacuum, or rinse the mat to remove dirt, grease, and stains; the quick-drying surface resists odors and mildew, making daily maintenance effortless for busy households.",
         "descriptionHtml": "<p>Premium Diatom Mud Construction: Crafted from high-quality diatomaceous earth composite, this 50 x 80cm mat rapidly absorbs water, oil, and everyday spills, keeping your kitchen, bathroom, or entryway floors clean and dry within seconds.</p><p>Enhanced Non-Slip Backing: Features a durable anti-slip bottom layer that grips securely to tile, wood, and laminate floors, reducing the risk of slips and falls in high-traffic areas while staying firmly in place.</p><p>Classic American Lattice Design: The elegant geometric floral pattern and warm coffee tones complement traditional and modern interiors alike, adding a sophisticated decorative touch to kitchens, dining rooms, and bathrooms.</p><p>Soft Comfortable Surface: Unlike hard diatomite boards, this flexible soft mat offers a cushioned feel underfoot with rounded corners that lie flat and resist curling, providing lasting comfort while cooking, washing, or standing.</p><p>Easy to Clean &amp; Maintain: Simply wipe, vacuum, or rinse the mat to remove dirt, grease, and stains; the quick-drying surface resists odors and mildew, making daily maintenance effortless for busy households.</p>",
         "productType": "Mats",
@@ -1867,37 +1867,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1038477616596-C2/1.webp",
+                "url": "/images/products/1038477616596-C2/1.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596-C2/2.webp",
+                "url": "/images/products/1038477616596-C2/2.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596-C2/3.webp",
+                "url": "/images/products/1038477616596-C2/3.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596-C2/4.webp",
+                "url": "/images/products/1038477616596-C2/4.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596-C2/5.webp",
+                "url": "/images/products/1038477616596-C2/5.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1038477616596-C2/6.webp",
+                "url": "/images/products/1038477616596-C2/6.webp",
                 "altText": "American Style Lattice Diatom Mud Kitchen Mat Anti Slip Absorbent Quick Dry Oil Resistant Bathroom Floor Rug Soft Rounded Corner Carpet 50 x 80 cm (Coffee)",
                 "width": 800,
                 "height": 800
@@ -1911,7 +1911,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1038477616596-C2",
+                "id": "variant-1038477616596-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -1924,10 +1924,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-895014679429",
-        "asin": "1688-895014679429",
+        "id": "makimoo-895014679429",
+        "asin": "895014679429",
         "title": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
-        "handle": "2-piece-kitchen-floor-mats-diatomaceous-earth-absorbent-1688-895014679429",
+        "handle": "2-piece-kitchen-floor-mats-diatomaceous-earth-absorbent-895014679429",
         "description": "High Absorbency: Crafted from diatomaceous earth material, these mats quickly soak up water, oil, and everyday spills to help keep your kitchen and dining floors dry and tidy. Anti-Slip Backing: The textured underside grips hard floors firmly, reducing unwanted movement and adding stability while you cook, wash dishes, or move through busy spaces. Soft Cushioned Comfort: The gentle surface provides comfortable support underfoot, helping to ease pressure on feet and legs during long periods of standing. Modern Minimalist Style: The clean bordered design blends easily with contemporary kitchens, dining rooms, entryways, and laundry areas; each mat measures 50 x 80cm for practical floor coverage. Simple Maintenance: Just shake out debris, wipe with a damp cloth, or rinse lightly to refresh; the durable construction holds up well to daily household use.",
         "descriptionHtml": "<p>High Absorbency: Crafted from diatomaceous earth material, these mats quickly soak up water, oil, and everyday spills to help keep your kitchen and dining floors dry and tidy.</p><p>Anti-Slip Backing: The textured underside grips hard floors firmly, reducing unwanted movement and adding stability while you cook, wash dishes, or move through busy spaces.</p><p>Soft Cushioned Comfort: The gentle surface provides comfortable support underfoot, helping to ease pressure on feet and legs during long periods of standing.</p><p>Modern Minimalist Style: The clean bordered design blends easily with contemporary kitchens, dining rooms, entryways, and laundry areas; each mat measures 50 x 80cm for practical floor coverage.</p><p>Simple Maintenance: Just shake out debris, wipe with a damp cloth, or rinse lightly to refresh; the durable construction holds up well to daily household use.</p>",
         "productType": "Mats",
@@ -1937,43 +1937,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-895014679429/1.webp",
+                "url": "/images/products/895014679429/1.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/2.webp",
+                "url": "/images/products/895014679429/2.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/3.webp",
+                "url": "/images/products/895014679429/3.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/4.webp",
+                "url": "/images/products/895014679429/4.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/5.webp",
+                "url": "/images/products/895014679429/5.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/6.webp",
+                "url": "/images/products/895014679429/6.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-895014679429/7.webp",
+                "url": "/images/products/895014679429/7.webp",
                 "altText": "2 Piece Kitchen Floor Mats Diatomaceous Earth Absorbent Quick Dry Anti-Slip Soft Runner Rug Set for Kitchen Dining Room Entryway Laundry Oil Resistant Cuttable 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
@@ -1987,7 +1987,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-895014679429",
+                "id": "variant-895014679429",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2000,10 +2000,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1046667161713",
-        "asin": "1688-1046667161713",
+        "id": "makimoo-1046667161713",
+        "asin": "1046667161713",
         "title": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
-        "handle": "american-vintage-kitchen-rug-non-slip-absorbent-1688-1046667161713",
+        "handle": "american-vintage-kitchen-rug-non-slip-absorbent-1046667161713",
         "description": "Absorbent Diatom Mud Surface: Features a diatom mud-inspired top layer that quickly absorbs water, oil, and everyday kitchen spills, helping keep floors dry and tidy while you cook or wash dishes. Non Slip Rubber Backing: Built with a durable rubber underside featuring a tire-inspired texture that grips hard floors firmly, reducing movement and adding stability on wet tiles. Soft Cushioned Support: The resilient, springy surface provides gentle cushioning underfoot and helps protect dropped bowls, plates, and glassware from chips or cracks. Vintage Embossed Pattern: Showcases an American-style raised woven design in rich multicolor tones, adding warmth and decorative character to kitchens, dining rooms, laundry areas, and entryways. Easy Care And Versatile Size: Measures 50 x 80cm and fits neatly in front of sinks, stoves, and islands; simply shake out debris, vacuum, or wipe clean for daily maintenance.",
         "descriptionHtml": "<p>Absorbent Diatom Mud Surface: Features a diatom mud-inspired top layer that quickly absorbs water, oil, and everyday kitchen spills, helping keep floors dry and tidy while you cook or wash dishes.</p><p>Non Slip Rubber Backing: Built with a durable rubber underside featuring a tire-inspired texture that grips hard floors firmly, reducing movement and adding stability on wet tiles.</p><p>Soft Cushioned Support: The resilient, springy surface provides gentle cushioning underfoot and helps protect dropped bowls, plates, and glassware from chips or cracks.</p><p>Vintage Embossed Pattern: Showcases an American-style raised woven design in rich multicolor tones, adding warmth and decorative character to kitchens, dining rooms, laundry areas, and entryways.</p><p>Easy Care And Versatile Size: Measures 50 x 80cm and fits neatly in front of sinks, stoves, and islands; simply shake out debris, vacuum, or wipe clean for daily maintenance.</p>",
         "productType": "Mats",
@@ -2013,43 +2013,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1046667161713/1.webp",
+                "url": "/images/products/1046667161713/1.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/2.webp",
+                "url": "/images/products/1046667161713/2.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/3.webp",
+                "url": "/images/products/1046667161713/3.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/4.webp",
+                "url": "/images/products/1046667161713/4.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/5.webp",
+                "url": "/images/products/1046667161713/5.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/6.webp",
+                "url": "/images/products/1046667161713/6.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713/7.webp",
+                "url": "/images/products/1046667161713/7.webp",
                 "altText": "American Vintage Kitchen Rug Non Slip Absorbent Diatomaceous Earth Mat Washable Soft Textured Floor Mat For Kitchen Sink Laundry Hallway And Entryway 50 x 80 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -2063,7 +2063,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1046667161713",
+                "id": "variant-1046667161713",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2076,10 +2076,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1064068114006",
-        "asin": "1688-1064068114006",
+        "id": "makimoo-1064068114006",
+        "asin": "1064068114006",
         "title": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
-        "handle": "oval-bathroom-rug-non-slip-water-absorbent-floor-mat-solid-1688-1064068114006",
+        "handle": "oval-bathroom-rug-non-slip-water-absorbent-floor-mat-solid-1064068114006",
         "description": "Vintage Sisal-Inspired Texture: This oval bath mat features a raised woven surface and warm solid tone that brings understated elegance to bathrooms, entryways, and laundry rooms. Highly Absorbent Surface: The thick, plush fibers help trap water from wet feet after showers or baths, keeping your floors cleaner and drier between uses. Stable Non-Slip Backing: Designed with a skid-resistant underside, the rug stays securely in place on tile, wood, laminate, and other common floor types. Machine Washable for Easy Care: Simply toss the mat in the washing machine for hassle-free cleaning; durable construction helps it retain its shape and textured look over time. Versatile Oval Fit: Measuring 50 x 80cm, this compact yet generous size works well in front of sinks, tubs, showers, and doorways.",
         "descriptionHtml": "<p>Vintage Sisal-Inspired Texture: This oval bath mat features a raised woven surface and warm solid tone that brings understated elegance to bathrooms, entryways, and laundry rooms.</p><p>Highly Absorbent Surface: The thick, plush fibers help trap water from wet feet after showers or baths, keeping your floors cleaner and drier between uses.</p><p>Stable Non-Slip Backing: Designed with a skid-resistant underside, the rug stays securely in place on tile, wood, laminate, and other common floor types.</p><p>Machine Washable for Easy Care: Simply toss the mat in the washing machine for hassle-free cleaning; durable construction helps it retain its shape and textured look over time.</p><p>Versatile Oval Fit: Measuring 50 x 80cm, this compact yet generous size works well in front of sinks, tubs, showers, and doorways.</p>",
         "productType": "Mats",
@@ -2089,43 +2089,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1064068114006/1.webp",
+                "url": "/images/products/1064068114006/1.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/2.webp",
+                "url": "/images/products/1064068114006/2.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/3.webp",
+                "url": "/images/products/1064068114006/3.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/4.webp",
+                "url": "/images/products/1064068114006/4.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/5.webp",
+                "url": "/images/products/1064068114006/5.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/6.webp",
+                "url": "/images/products/1064068114006/6.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006/7.webp",
+                "url": "/images/products/1064068114006/7.webp",
                 "altText": "Oval Bathroom Rug Non Slip Water Absorbent Floor Mat Solid Color Sisal Style Vintage Inspired Textured Machine Washable Bath Mat for Bathroom Entryway 50 x 80 cm (Off White)",
                 "width": 800,
                 "height": 800
@@ -2139,7 +2139,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1064068114006",
+                "id": "variant-1064068114006",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2152,10 +2152,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1064068114006-C2",
-        "asin": "1688-1064068114006-C2",
+        "id": "makimoo-1064068114006-C2",
+        "asin": "1064068114006-C2",
         "title": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
-        "handle": "premium-thick-oval-bath-mat-imitation-sisal-woven-bathroom-1688-1064068114006-c2",
+        "handle": "premium-thick-oval-bath-mat-imitation-sisal-woven-bathroom-1064068114006-c2",
         "description": "Premium Imitation Sisal Texture: Crafted with a thick woven surface that mimics natural sisal, featuring a raised hazelnut-grain texture that feels soft, springy, and gentle against bare feet. Super Absorbent & Quick Dry: The dense woven surface absorbs water quickly after showers and baths, helping keep your bathroom floor dry and reducing the risk of wet, slippery surfaces. Non-Slip Safety Backing: Equipped with a strong anti-slip bottom layer that grips firmly to tile, wood, and laminate floors, providing stable footing for every step out of the shower. Oval Design in Elegant Solid Brown: The 50 x 80cm oval shape fits neatly beside tubs, vanities, and shower doors, while the warm neutral tone complements modern, rustic, and minimalist bathroom decor. Easy Care & Long-Lasting Use: Simply shake out, vacuum, or wipe clean to refresh; the durable construction resists shedding and deformation, making it ideal for daily bathroom, entryway, or laundry room use.",
         "descriptionHtml": "<p>Premium Imitation Sisal Texture: Crafted with a thick woven surface that mimics natural sisal, featuring a raised hazelnut-grain texture that feels soft, springy, and gentle against bare feet.</p><p>Super Absorbent &amp; Quick Dry: The dense woven surface absorbs water quickly after showers and baths, helping keep your bathroom floor dry and reducing the risk of wet, slippery surfaces.</p><p>Non-Slip Safety Backing: Equipped with a strong anti-slip bottom layer that grips firmly to tile, wood, and laminate floors, providing stable footing for every step out of the shower.</p><p>Oval Design in Elegant Solid Brown: The 50 x 80cm oval shape fits neatly beside tubs, vanities, and shower doors, while the warm neutral tone complements modern, rustic, and minimalist bathroom decor.</p><p>Easy Care &amp; Long-Lasting Use: Simply shake out, vacuum, or wipe clean to refresh; the durable construction resists shedding and deformation, making it ideal for daily bathroom, entryway, or laundry room use.</p>",
         "productType": "Mats",
@@ -2165,43 +2165,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1064068114006-C2/1.webp",
+                "url": "/images/products/1064068114006-C2/1.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/2.webp",
+                "url": "/images/products/1064068114006-C2/2.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/3.webp",
+                "url": "/images/products/1064068114006-C2/3.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/4.webp",
+                "url": "/images/products/1064068114006-C2/4.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/5.webp",
+                "url": "/images/products/1064068114006-C2/5.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/6.webp",
+                "url": "/images/products/1064068114006-C2/6.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1064068114006-C2/7.webp",
+                "url": "/images/products/1064068114006-C2/7.webp",
                 "altText": "Premium Thick Oval Bath Mat Imitation Sisal Woven Bathroom Rug Super Absorbent Non Slip Soft Shower Floor Mat With Quick Dry Backing For Indoor Home Use 50 x 80 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -2215,7 +2215,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1064068114006-C2",
+                "id": "variant-1064068114006-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2228,10 +2228,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052755373494",
-        "asin": "1688-1052755373494",
+        "id": "makimoo-1052755373494",
+        "asin": "1052755373494",
         "title": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
-        "handle": "round-outdoor-area-rug-sisal-look-woven-texture-floor-mat-1688-1052755373494",
+        "handle": "round-outdoor-area-rug-sisal-look-woven-texture-floor-mat-1052755373494",
         "description": "Natural Sisal Look Weave: This round rug showcases a dense pineapple loop texture that captures the organic warmth and visual appeal of real sisal without the roughness, creating a relaxed coastal, farmhouse, or boho atmosphere in living rooms, bedrooms, and covered outdoor lounges. Wear and Scratch Resistant Construction: Engineered with tightly packed synthetic fibers that stand up to daily foot traffic, patio furniture movement, and pet claws, helping the surface keep its shape and color through regular use. Versatile Indoor and Outdoor Placement: Sized at 100 x 100cm, the circular design anchors round seating areas, balcony bistro sets, patio conversation nooks, and reading corners while softening hard floors and concrete surfaces. Neat Edge Binding That Lays Flat: Finished with reinforced overlock stitching and a low profile design so the rug lies flush against floors, resists bunching, and fits neatly under sofa, chair, and table legs. Easy Care Neutral Home Decor: Available in camel, beige, and grey to blend with wicker, wood, rattan, and modern furniture; simply shake out debris, vacuum on a low setting, or spot clean with mild soap to refresh the look.",
         "descriptionHtml": "<p>Natural Sisal Look Weave: This round rug showcases a dense pineapple loop texture that captures the organic warmth and visual appeal of real sisal without the roughness, creating a relaxed coastal, farmhouse, or boho atmosphere in living rooms, bedrooms, and covered outdoor lounges.</p><p>Wear and Scratch Resistant Construction: Engineered with tightly packed synthetic fibers that stand up to daily foot traffic, patio furniture movement, and pet claws, helping the surface keep its shape and color through regular use.</p><p>Versatile Indoor and Outdoor Placement: Sized at 100 x 100cm, the circular design anchors round seating areas, balcony bistro sets, patio conversation nooks, and reading corners while softening hard floors and concrete surfaces.</p><p>Neat Edge Binding That Lays Flat: Finished with reinforced overlock stitching and a low profile design so the rug lies flush against floors, resists bunching, and fits neatly under sofa, chair, and table legs.</p><p>Easy Care Neutral Home Decor: Available in camel, beige, and grey to blend with wicker, wood, rattan, and modern furniture; simply shake out debris, vacuum on a low setting, or spot clean with mild soap to refresh the look.</p>",
         "productType": "Mats",
@@ -2241,37 +2241,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052755373494/1.webp",
+                "url": "/images/products/1052755373494/1.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494/2.webp",
+                "url": "/images/products/1052755373494/2.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494/3.webp",
+                "url": "/images/products/1052755373494/3.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494/4.webp",
+                "url": "/images/products/1052755373494/4.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494/5.webp",
+                "url": "/images/products/1052755373494/5.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494/6.webp",
+                "url": "/images/products/1052755373494/6.webp",
                 "altText": "Round Outdoor Area Rug Sisal Look Woven Texture Floor Mat for Balcony Patio Deck Living Room Bedroom Durable Scratch Resistant Pet Friendly Home Decor 100 x 100 cm (Camel)",
                 "width": 800,
                 "height": 800
@@ -2285,7 +2285,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052755373494",
+                "id": "variant-1052755373494",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2298,10 +2298,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052755373494-C2",
-        "asin": "1688-1052755373494-C2",
+        "id": "makimoo-1052755373494-C2",
+        "asin": "1052755373494-C2",
         "title": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
-        "handle": "round-sisal-inspired-area-rug-100-x-100-cm-low-profile-1688-1052755373494-c2",
+        "handle": "round-sisal-inspired-area-rug-100-x-100-cm-low-profile-1052755373494-c2",
         "description": "Natural Sisal-Inspired Texture: This round rug features a dense looped faux-sisal weave in a soft white tone, adding warm organic texture to living rooms, bedrooms, patios, balconies, and sunrooms without the rough feel or shedding of natural fiber. Compact 100 x 100cm Round Fit: Sized at 100 x 100cm, the mat defines cozy seating nooks beneath bistro sets, accent chairs, coffee tables, and curved sofas while keeping walkways clear on compact balconies and terraces. Built for Daily Wear: The tight, low-pile construction resists clawing, scratching, and flattening, making it a practical choice for pet-friendly homes and busy indoor or outdoor lounging spaces. Low-Maintenance Upkeep: Simply shake out dirt, vacuum on a gentle setting, or rinse with a hose and let air dry; the synthetic fibers hold their shape and color through regular use and quick cleanups. Versatile Styling Layer: The neutral white palette and subtle woven pattern complement coastal, farmhouse, bohemian, and modern decor, whether placed under wicker patio furniture, entryway benches, or living room seating.",
         "descriptionHtml": "<p>Natural Sisal-Inspired Texture: This round rug features a dense looped faux-sisal weave in a soft white tone, adding warm organic texture to living rooms, bedrooms, patios, balconies, and sunrooms without the rough feel or shedding of natural fiber.</p><p>Compact 100 x 100cm Round Fit: Sized at 100 x 100cm, the mat defines cozy seating nooks beneath bistro sets, accent chairs, coffee tables, and curved sofas while keeping walkways clear on compact balconies and terraces.</p><p>Built for Daily Wear: The tight, low-pile construction resists clawing, scratching, and flattening, making it a practical choice for pet-friendly homes and busy indoor or outdoor lounging spaces.</p><p>Low-Maintenance Upkeep: Simply shake out dirt, vacuum on a gentle setting, or rinse with a hose and let air dry; the synthetic fibers hold their shape and color through regular use and quick cleanups.</p><p>Versatile Styling Layer: The neutral white palette and subtle woven pattern complement coastal, farmhouse, bohemian, and modern decor, whether placed under wicker patio furniture, entryway benches, or living room seating.</p>",
         "productType": "Mats",
@@ -2311,43 +2311,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052755373494-C2/1.webp",
+                "url": "/images/products/1052755373494-C2/1.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/2.webp",
+                "url": "/images/products/1052755373494-C2/2.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/3.webp",
+                "url": "/images/products/1052755373494-C2/3.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/4.webp",
+                "url": "/images/products/1052755373494-C2/4.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/5.webp",
+                "url": "/images/products/1052755373494-C2/5.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/6.webp",
+                "url": "/images/products/1052755373494-C2/6.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052755373494-C2/7.webp",
+                "url": "/images/products/1052755373494-C2/7.webp",
                 "altText": "Round Sisal-Inspired Area Rug 100 x 100 cm Low-Profile Indoor Outdoor Carpet for Patio Balcony Living Room and Bedroom with Durable Scratch-Resistant Woven Floor Mat Natural Look (White)",
                 "width": 800,
                 "height": 800
@@ -2361,7 +2361,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052755373494-C2",
+                "id": "variant-1052755373494-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2374,10 +2374,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1046667161713-C2",
-        "asin": "1688-1046667161713-C2",
+        "id": "makimoo-1046667161713-C2",
+        "asin": "1046667161713-C2",
         "title": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
-        "handle": "set-of-2-vintage-tile-pattern-kitchen-mats-non-slip-oil-1688-1046667161713-c2",
+        "handle": "set-of-2-vintage-tile-pattern-kitchen-mats-non-slip-oil-1046667161713-c2",
         "description": "Absorbent Diatomaceous Earth Surface: The faux-woven diatomaceous earth top layer quickly soaks up water, oil, and cooking splashes, helping keep kitchen floors dry and reducing slip hazards near sinks and stoves. Secure Non-Slip Backing: A sturdy anti-slip underside grips tile, hardwood, and laminate floors, keeping the mat firmly in place even in busy cooking and dining areas. Vintage Tile-Inspired Style: Scalloped edges and an embossed American-style tile pattern add a warm, rustic accent to kitchens, dining rooms, laundry rooms, and entryways. Durable & Easy to Maintain: Made with wear-resistant materials that handle daily foot traffic; simply shake out, vacuum, or wipe with a damp cloth for hassle-free cleaning. Versatile Size for Everyday Use: Each 50 x 80cm mat fits neatly in front of sinks, stoves, islands, or doorways, offering cushioned comfort and reliable floor protection where you need it most.",
         "descriptionHtml": "<p>Absorbent Diatomaceous Earth Surface: The faux-woven diatomaceous earth top layer quickly soaks up water, oil, and cooking splashes, helping keep kitchen floors dry and reducing slip hazards near sinks and stoves.</p><p>Secure Non-Slip Backing: A sturdy anti-slip underside grips tile, hardwood, and laminate floors, keeping the mat firmly in place even in busy cooking and dining areas.</p><p>Vintage Tile-Inspired Style: Scalloped edges and an embossed American-style tile pattern add a warm, rustic accent to kitchens, dining rooms, laundry rooms, and entryways.</p><p>Durable &amp; Easy to Maintain: Made with wear-resistant materials that handle daily foot traffic; simply shake out, vacuum, or wipe with a damp cloth for hassle-free cleaning.</p><p>Versatile Size for Everyday Use: Each 50 x 80cm mat fits neatly in front of sinks, stoves, islands, or doorways, offering cushioned comfort and reliable floor protection where you need it most.</p>",
         "productType": "Mats",
@@ -2387,43 +2387,43 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1046667161713-C2/1.webp",
+                "url": "/images/products/1046667161713-C2/1.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/2.webp",
+                "url": "/images/products/1046667161713-C2/2.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/3.webp",
+                "url": "/images/products/1046667161713-C2/3.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/4.webp",
+                "url": "/images/products/1046667161713-C2/4.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/5.webp",
+                "url": "/images/products/1046667161713-C2/5.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/6.webp",
+                "url": "/images/products/1046667161713-C2/6.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1046667161713-C2/7.webp",
+                "url": "/images/products/1046667161713-C2/7.webp",
                 "altText": "Set of 2 Vintage Tile Pattern Kitchen Mats, Non Slip Oil Proof Absorbent Diatomaceous Earth Floor Rugs for Kitchen Dining Room, Durable Low Profile Runner Mat, 50 x 80 cm (Beige)",
                 "width": 800,
                 "height": 800
@@ -2437,7 +2437,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1046667161713-C2",
+                "id": "variant-1046667161713-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2450,10 +2450,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C33",
-        "asin": "1688-969627065032-C33",
+        "id": "makimoo-969627065032-C33",
+        "asin": "969627065032-C33",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c33",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c33",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -2463,31 +2463,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C33/5.webp",
+                "url": "/images/products/969627065032-C33/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C33/1.webp",
+                "url": "/images/products/969627065032-C33/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C33/2.webp",
+                "url": "/images/products/969627065032-C33/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C33/3.webp",
+                "url": "/images/products/969627065032-C33/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C33/4.webp",
+                "url": "/images/products/969627065032-C33/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
@@ -2501,7 +2501,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C33",
+                "id": "variant-969627065032-C33",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2514,10 +2514,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-744995685423-C2",
-        "asin": "1688-744995685423-C2",
+        "id": "makimoo-744995685423-C2",
+        "asin": "744995685423-C2",
         "title": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
-        "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-1688-744995685423-c2",
+        "handle": "minimalist-geometric-area-rug-for-living-room-bedroom-744995685423-c2",
         "description": "Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom. Soft Low-Pile Comfort: Crafted with a 0.4cm low-pile surface that feels gentle underfoot, fits easily under doors and furniture, and helps reduce everyday noise for a cozy, welcoming atmosphere. Reliable Non-Slip Backing: Equipped with a durable anti-slip base that keeps the rug securely in place on hardwood, laminate, and tile floors, offering added stability for busy households. Easy Everyday Maintenance: The stain-resistant, low-shedding surface traps less dust and debris; simply vacuum regularly or spot clean with mild detergent to keep it looking fresh with minimal effort. Versatile Placement Options: Sized at 100 x 200cm, this rectangular rug works beautifully beside sofas, under coffee tables, in bedrooms, or as an accent in entryways and home offices.",
         "descriptionHtml": "<p>Contemporary Geometric Design: Features a minimalist abstract pattern with crisp striped motifs in a black-and-white palette that complements modern, Scandinavian, and neutral interiors while adding visual depth to your living room or bedroom.</p><p>Soft Low-Pile Comfort: Crafted with a 0.4cm low-pile surface that feels gentle underfoot, fits easily under doors and furniture, and helps reduce everyday noise for a cozy, welcoming atmosphere.</p><p>Reliable Non-Slip Backing: Equipped with a durable anti-slip base that keeps the rug securely in place on hardwood, laminate, and tile floors, offering added stability for busy households.</p><p>Easy Everyday Maintenance: The stain-resistant, low-shedding surface traps less dust and debris; simply vacuum regularly or spot clean with mild detergent to keep it looking fresh with minimal effort.</p><p>Versatile Placement Options: Sized at 100 x 200cm, this rectangular rug works beautifully beside sofas, under coffee tables, in bedrooms, or as an accent in entryways and home offices.</p>",
         "productType": "Mats",
@@ -2527,25 +2527,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-744995685423-C2/1.webp",
+                "url": "/images/products/744995685423-C2/1.webp",
                 "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423-C2/2.webp",
+                "url": "/images/products/744995685423-C2/2.webp",
                 "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423-C2/3.webp",
+                "url": "/images/products/744995685423-C2/3.webp",
                 "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423-C2/4.webp",
+                "url": "/images/products/744995685423-C2/4.webp",
                 "altText": "Minimalist Geometric Area Rug for Living Room Bedroom Modern Abstract Striped Print 100 x 200 cm Soft Low Pile Non Slip Floor Carpet Under Sofa Coffee Table Mat (Black and White)",
                 "width": 800,
                 "height": 800
@@ -2559,7 +2559,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-744995685423-C2",
+                "id": "variant-744995685423-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2572,10 +2572,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-595229918569-C2",
-        "asin": "1688-595229918569-C2",
+        "id": "makimoo-595229918569-C2",
+        "asin": "595229918569-C2",
         "title": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
-        "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-1688-595229918569-c2",
+        "handle": "luxurious-plush-faux-rabbit-fur-area-rug-ultra-soft-carpet-595229918569-c2",
         "description": "Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home. Spacious 160 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas. Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk. Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks. Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.",
         "descriptionHtml": "<p>Premium Faux Rabbit Fur Texture: Crafted from high-quality faux rabbit fur fibers that deliver an ultra-soft and smooth touch underfoot, creating a warm and inviting surface for your home.</p><p>Spacious 160 x 200cm Coverage: The generous dimensions make this rug well-suited for placement under coffee tables, in front of sofas, beside beds, or across bay window seating areas.</p><p>Sleek Low-Profile Construction: With a 0.5cm thickness, the rug lays flat against floors and fits neatly under furniture and doorways, providing soft comfort without unnecessary bulk.</p><p>Versatile Scandinavian Home Style: The clean off-white tone and minimalist design complement modern, Nordic, and contemporary interiors in living rooms, bedrooms, nurseries, and reading nooks.</p><p>Easy Everyday Maintenance: The smooth surface helps resist everyday dust and dirt, allowing for simple vacuuming and spot cleaning to keep the rug looking fresh with minimal effort.</p>",
         "productType": "Mats",
@@ -2585,25 +2585,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-595229918569-C2/1.webp",
+                "url": "/images/products/595229918569-C2/1.webp",
                 "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C2/2.webp",
+                "url": "/images/products/595229918569-C2/2.webp",
                 "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C2/3.webp",
+                "url": "/images/products/595229918569-C2/3.webp",
                 "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C2/4.webp",
+                "url": "/images/products/595229918569-C2/4.webp",
                 "altText": "Luxurious Plush Faux Rabbit Fur Area Rug Ultra Soft Carpet for Living Room Bedroom Nursery Indoor Floor Mat Cozy Modern Scandinavian Home Decor 160 x 200 cm (Off White)",
                 "width": 800,
                 "height": 800
@@ -2617,7 +2617,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-595229918569-C2",
+                "id": "variant-595229918569-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2630,10 +2630,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-744995685423",
-        "asin": "1688-744995685423",
+        "id": "makimoo-744995685423",
+        "asin": "744995685423",
         "title": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
-        "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-1688-744995685423",
+        "handle": "soft-low-pile-modern-geometric-area-rug-for-living-room-744995685423",
         "description": "Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas. Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it. Stain-Resistant & Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh. Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors. Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.",
         "descriptionHtml": "<p>Modern Geometric Style: Features a clean-lined grid pattern in neutral grey and beige tones, bringing a minimalist modern touch to living rooms, bedrooms, and seating areas.</p><p>Soft Low-Pile Comfort: With a 0.4cm low profile, this rug offers a smooth surface that feels gentle underfoot while allowing doors to open easily over it.</p><p>Stain-Resistant &amp; Easy To Clean: The printed surface helps conceal everyday dust and minor spills; simply vacuum regularly or wipe with a damp cloth to keep it looking fresh.</p><p>Versatile Home Accent: Perfectly sized for placement in front of sofas, under coffee tables, or as a full-coverage bedside rug, complementing modern and contemporary interiors.</p><p>Ideal Size For Everyday Use: Measuring 100 x 200cm, this rectangular rug provides ample coverage for compact living spaces, reading nooks, and entryways without overwhelming the room.</p>",
         "productType": "Mats",
@@ -2643,25 +2643,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-744995685423/1.webp",
+                "url": "/images/products/744995685423/1.webp",
                 "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423/2.webp",
+                "url": "/images/products/744995685423/2.webp",
                 "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423/3.webp",
+                "url": "/images/products/744995685423/3.webp",
                 "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-744995685423/4.webp",
+                "url": "/images/products/744995685423/4.webp",
                 "altText": "Soft Low-Pile Modern Geometric Area Rug For Living Room Bedroom Stain-Resistant Printed Easy To Clean Floor Mat For Sofa Coffee Table Home Decor 100 x 200 cm (Grey Beige)",
                 "width": 800,
                 "height": 800
@@ -2675,7 +2675,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-744995685423",
+                "id": "variant-744995685423",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2688,10 +2688,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-595229918569",
-        "asin": "1688-595229918569",
+        "id": "makimoo-595229918569",
+        "asin": "595229918569",
         "title": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
-        "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-1688-595229918569",
+        "handle": "ultra-soft-faux-rabbit-fur-area-rug-for-modern-living-room-595229918569",
         "description": "Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats. Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look. Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use. Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort. Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.",
         "descriptionHtml": "<p>Lavish Faux Fur Texture: This rug is crafted with a silky faux rabbit fur surface that feels gentle under bare feet, adding a warm, inviting layer to living rooms, bedrooms, nurseries, and bay window seats.</p><p>Spacious 160 x 200cm Coverage: Measuring 160 x 200cm with a slim 0.5cm profile, it offers generous coverage under coffee tables, sofas, or beds while maintaining a sleek, low-profile look.</p><p>Stable Non-Slip Backing: The rug features a secure anti-slip base that helps keep it in place on hardwood, tile, or laminate floors, reducing shifting and bunching during daily use.</p><p>Effortless Everyday Care: Its thin 0.5cm design fits easily under doors and furniture legs, while regular vacuuming and light spot cleaning keep the surface looking tidy with minimal effort.</p><p>Neutral Light Camel Styling: The soft light camel tone complements Nordic, minimalist, and contemporary interiors, making it a versatile choice as a bedside rug, floor mat, or cozy window seat accent.</p>",
         "productType": "Mats",
@@ -2701,25 +2701,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-595229918569/1.webp",
+                "url": "/images/products/595229918569/1.webp",
                 "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569/2.webp",
+                "url": "/images/products/595229918569/2.webp",
                 "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569/3.webp",
+                "url": "/images/products/595229918569/3.webp",
                 "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569/4.webp",
+                "url": "/images/products/595229918569/4.webp",
                 "altText": "Ultra Soft Faux Rabbit Fur Area Rug for Modern Living Room Bedroom Cozy Plush Low Pile Carpet Easy Care Non Slip Floor Mat Bedside Nursery 160 x 200 cm (Light Camel)",
                 "width": 800,
                 "height": 800
@@ -2733,7 +2733,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-595229918569",
+                "id": "variant-595229918569",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2746,10 +2746,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C3",
-        "asin": "1688-745181807454-C3",
+        "id": "makimoo-745181807454-C3",
+        "asin": "745181807454-C3",
         "title": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
-        "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-1688-745181807454-c3",
+        "handle": "elegant-distressed-oriental-vintage-area-rug-traditional-745181807454-c3",
         "description": "Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces. Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks. Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use. Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors. Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.",
         "descriptionHtml": "<p>Intricate Vintage Medallion Design: Showcases a distressed Persian-inspired layout with ornamental medallions in warm amber, teal, navy, and rose tones on a soft beige ground, adding timeless character to living rooms, bedrooms, and dining spaces.</p><p>Soft Low Pile Comfort: Woven with a plush yet low-profile surface approximately 0.4cm thick, this rug delivers a smooth underfoot feel while allowing doors to open easily over it and helping reduce tripping risks.</p><p>Sturdy Non Slip Backing: Features a practical non slip base that helps keep the 160 x 230cm rug securely positioned on hardwood, tile, or laminate floors for stable everyday use.</p><p>Versatile Statement Piece: The generous 160 x 230cm footprint fits beautifully under coffee tables, sofas, beds, or in entryways, bringing bohemian Turkish charm and color to a wide range of interiors.</p><p>Easy Everyday Care: Made with durable synthetic fibers that resist daily wear and stains; simply vacuum regularly and spot clean with mild detergent to maintain vibrant colors and detailed patterning.</p>",
         "productType": "Mats",
@@ -2759,25 +2759,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C3/1.webp",
+                "url": "/images/products/745181807454-C3/1.webp",
                 "altText": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C3/2.webp",
+                "url": "/images/products/745181807454-C3/2.webp",
                 "altText": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C3/3.webp",
+                "url": "/images/products/745181807454-C3/3.webp",
                 "altText": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C3/4.webp",
+                "url": "/images/products/745181807454-C3/4.webp",
                 "altText": "Elegant Distressed Oriental Vintage Area Rug Traditional Persian Medallion Turkish Carpet Soft Non Slip Low Pile for Living Room Bedroom 160 x 230 cm (Beige Multicolor)",
                 "width": 800,
                 "height": 800
@@ -2791,7 +2791,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C3",
+                "id": "variant-745181807454-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2804,10 +2804,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C2",
-        "asin": "1688-745181807454-C2",
+        "id": "makimoo-745181807454-C2",
+        "asin": "745181807454-C2",
         "title": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
-        "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-1688-745181807454-c2",
+        "handle": "turkish-persian-vintage-area-rug-geometric-diamond-pattern-745181807454-c2",
         "description": "Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area. Generous Versatile Size: Measuring 160 x 230cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways. Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces. Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design. Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.",
         "descriptionHtml": "<p>Exotic Turkish-Persian Design: Features a classic ethnic geometric diamond pattern in rich navy blue, purple, and ivory tones, adding vintage bohemian charm and visual depth to your living room, bedroom, or dining area.</p><p>Generous Versatile Size: Measuring 160 x 230cm, this rectangular area rug offers ample coverage for placement under sofas, coffee tables, beds, or as a decorative accent in entryways and hallways.</p><p>Soft Low-Profile Construction: With a slim 0.4cm pile height, the rug feels gentle underfoot while allowing doors to open smoothly over it, making it practical for high-traffic areas and compact spaces.</p><p>Durable Everyday Use: Designed to maintain its shape and detailed pattern through regular use, this floor carpet handles daily foot traffic while preserving the rich color palette of its Turkish-inspired design.</p><p>Easy to Maintain: The low-pile surface allows for quick vacuuming and simple spot cleaning, helping you keep your home looking fresh and welcoming with minimal effort.</p>",
         "productType": "Mats",
@@ -2817,25 +2817,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C2/1.webp",
+                "url": "/images/products/745181807454-C2/1.webp",
                 "altText": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C2/2.webp",
+                "url": "/images/products/745181807454-C2/2.webp",
                 "altText": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C2/3.webp",
+                "url": "/images/products/745181807454-C2/3.webp",
                 "altText": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C2/4.webp",
+                "url": "/images/products/745181807454-C2/4.webp",
                 "altText": "Turkish Persian Vintage Area Rug Geometric Diamond Pattern Soft Low Pile Floor Carpet For Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Navy Blue)",
                 "width": 800,
                 "height": 800
@@ -2849,7 +2849,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C2",
+                "id": "variant-745181807454-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2862,10 +2862,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-996768645117",
-        "asin": "1688-996768645117",
+        "id": "makimoo-996768645117",
+        "asin": "996768645117",
         "title": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
-        "handle": "luxury-oval-shaggy-area-rug-ultra-soft-silky-plush-carpet-1688-996768645117",
+        "handle": "luxury-oval-shaggy-area-rug-ultra-soft-silky-plush-carpet-996768645117",
         "description": "Cloud-Like Softness: Sink your feet into the ultra-soft, silky plush fibers of this oval shaggy rug. The fluffy surface offers exceptional comfort underfoot, making it an inviting addition to bedrooms, living rooms, and cozy reading corners. Elegant Oval Silhouette: The timeless oval shape and warm khaki hue complement Nordic, modern, and minimalist interiors alike. Whether placed beside a bed, under a coffee table, or along a bay window, this rug adds a refined layer of texture and visual warmth. Generous 100 x 200cm Coverage: Sized at 100 x 200cm, this floor mat provides ample coverage for bedside areas, balcony seating nooks, and compact living spaces. Its versatile dimensions make it easy to position where you need softness and style most. Versatile for Every Room: Use it as a bedside rug for soft landings, a plush accent in the living room, a cozy base for a balcony retreat, or a decorative layer on a bay window seat. This rug adapts effortlessly to your lifestyle and home layout. Simple Everyday Maintenance: Keep your rug looking fresh with regular light vacuuming or a gentle shake outdoors. The quality construction helps the fibers retain their plush look and soft feel, offering lasting comfort for everyday enjoyment.",
         "descriptionHtml": "<p>Cloud-Like Softness: Sink your feet into the ultra-soft, silky plush fibers of this oval shaggy rug. The fluffy surface offers exceptional comfort underfoot, making it an inviting addition to bedrooms, living rooms, and cozy reading corners.</p><p>Elegant Oval Silhouette: The timeless oval shape and warm khaki hue complement Nordic, modern, and minimalist interiors alike. Whether placed beside a bed, under a coffee table, or along a bay window, this rug adds a refined layer of texture and visual warmth.</p><p>Generous 100 x 200cm Coverage: Sized at 100 x 200cm, this floor mat provides ample coverage for bedside areas, balcony seating nooks, and compact living spaces. Its versatile dimensions make it easy to position where you need softness and style most.</p><p>Versatile for Every Room: Use it as a bedside rug for soft landings, a plush accent in the living room, a cozy base for a balcony retreat, or a decorative layer on a bay window seat. This rug adapts effortlessly to your lifestyle and home layout.</p><p>Simple Everyday Maintenance: Keep your rug looking fresh with regular light vacuuming or a gentle shake outdoors. The quality construction helps the fibers retain their plush look and soft feel, offering lasting comfort for everyday enjoyment.</p>",
         "productType": "Mats",
@@ -2875,25 +2875,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-996768645117/1.webp",
+                "url": "/images/products/996768645117/1.webp",
                 "altText": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117/2.webp",
+                "url": "/images/products/996768645117/2.webp",
                 "altText": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117/3.webp",
+                "url": "/images/products/996768645117/3.webp",
                 "altText": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117/4.webp",
+                "url": "/images/products/996768645117/4.webp",
                 "altText": "Luxury Oval Shaggy Area Rug Ultra Soft Silky Plush Carpet for Bedroom Living Room Bedside Nursery Home Decorative Modern Indoor Floor Mat 100 x 200 cm (Khaki)",
                 "width": 800,
                 "height": 800
@@ -2907,7 +2907,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-996768645117",
+                "id": "variant-996768645117",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2920,10 +2920,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454",
-        "asin": "1688-745181807454",
+        "id": "makimoo-745181807454",
+        "asin": "745181807454",
         "title": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
-        "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-1688-745181807454",
+        "handle": "vintage-area-rug-with-colorful-anatolian-persian-tribal-745181807454",
         "description": "Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors. Generous Room-Defining Dimensions: At 160 x 230cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look. Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching. Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines. Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.",
         "descriptionHtml": "<p>Heritage-Inspired Striped Motif: The rug showcases a vibrant arrangement of vertical rainbow stripes decorated with traditional tribal symbols, blending Anatolian and Persian artistic influences to create an eye-catching centerpiece that complements bohemian, eclectic, and classic interiors.</p><p>Generous Room-Defining Dimensions: At 160 x 230cm, this rectangular area rug provides ample coverage for living room seating areas, under coffee tables, beneath sofas, or alongside queen and double beds, helping to anchor furniture and create a cohesive look.</p><p>Slim Low-Pile Profile: With a 0.4cm low pile height, the rug feels soft underfoot while remaining practical for high-traffic spaces; doors glide over it easily, and it fits smoothly under most furniture legs without bulky bunching.</p><p>Secure Non-Slip Backing: Designed with a grippy underside, the rug stays put on hardwood, tile, laminate, and concrete floors, offering added stability for households with children, pets, or active daily routines.</p><p>Versatile Home Accent: Perfect for living rooms, bedrooms, bedside nooks, reading corners, and entryways, this durable floor covering is easy to vacuum and maintain, making it a stylish yet functional addition to busy homes.</p>",
         "productType": "Mats",
@@ -2933,25 +2933,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454/1.webp",
+                "url": "/images/products/745181807454/1.webp",
                 "altText": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454/2.webp",
+                "url": "/images/products/745181807454/2.webp",
                 "altText": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454/3.webp",
+                "url": "/images/products/745181807454/3.webp",
                 "altText": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454/4.webp",
+                "url": "/images/products/745181807454/4.webp",
                 "altText": "Vintage Area Rug with Colorful Anatolian Persian Tribal Striped Pattern Low Pile Non Slip Carpet for Living Room Bedroom Bedside 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -2965,7 +2965,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454",
+                "id": "variant-745181807454",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -2978,10 +2978,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-996768645117-C2",
-        "asin": "1688-996768645117-C2",
+        "id": "makimoo-996768645117-C2",
+        "asin": "996768645117-C2",
         "title": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
-        "handle": "oval-fluffy-area-rug-large-modern-tie-dye-style-shaggy-1688-996768645117-c2",
+        "handle": "oval-fluffy-area-rug-large-modern-tie-dye-style-shaggy-996768645117-c2",
         "description": "Luxurious Soft Texture: The long plush pile creates a cozy, cloud-like surface that feels gentle under bare feet, making it an inviting addition to bedrooms, living rooms, and relaxation spaces. Stylish Oval Tie-Dye Design: Features a modern Nordic minimalist look with a subtle gradient effect and smooth oval silhouette that complements a wide range of interior styles and color schemes. Versatile Home Accent: Sized at 100 x 160cm, this rug works beautifully as a bedside rug, living room accent, balcony mat, or bay window cushion to add warmth and visual softness to any area. Low-Profile Construction: With a height of approximately 0.5cm, the rug fits neatly under furniture and near doorways while providing a plush feel without creating a tripping hazard. Easy Everyday Care: Simply shake out debris, vacuum lightly, or spot clean with mild detergent to keep the rug looking fresh and welcoming over time.",
         "descriptionHtml": "<p>Luxurious Soft Texture: The long plush pile creates a cozy, cloud-like surface that feels gentle under bare feet, making it an inviting addition to bedrooms, living rooms, and relaxation spaces.</p><p>Stylish Oval Tie-Dye Design: Features a modern Nordic minimalist look with a subtle gradient effect and smooth oval silhouette that complements a wide range of interior styles and color schemes.</p><p>Versatile Home Accent: Sized at 100 x 160cm, this rug works beautifully as a bedside rug, living room accent, balcony mat, or bay window cushion to add warmth and visual softness to any area.</p><p>Low-Profile Construction: With a height of approximately 0.5cm, the rug fits neatly under furniture and near doorways while providing a plush feel without creating a tripping hazard.</p><p>Easy Everyday Care: Simply shake out debris, vacuum lightly, or spot clean with mild detergent to keep the rug looking fresh and welcoming over time.</p>",
         "productType": "Mats",
@@ -2991,37 +2991,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-996768645117-C2/1.webp",
+                "url": "/images/products/996768645117-C2/1.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C2/2.webp",
+                "url": "/images/products/996768645117-C2/2.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C2/3.webp",
+                "url": "/images/products/996768645117-C2/3.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C2/4.webp",
+                "url": "/images/products/996768645117-C2/4.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C2/5.webp",
+                "url": "/images/products/996768645117-C2/5.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C2/6.webp",
+                "url": "/images/products/996768645117-C2/6.webp",
                 "altText": "Oval Fluffy Area Rug Large Modern Tie-Dye Style Shaggy Bedroom Bedside Carpet Soft Plush Floor Mat for Living Room Nursery Home Decor Non-Slip 100 x 160 cm (Light Grey)",
                 "width": 800,
                 "height": 800
@@ -3035,7 +3035,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-996768645117-C2",
+                "id": "variant-996768645117-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3048,10 +3048,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-996768645117-C3",
-        "asin": "1688-996768645117-C3",
+        "id": "makimoo-996768645117-C3",
+        "asin": "996768645117-C3",
         "title": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
-        "handle": "nordic-oval-plush-area-rug-tie-dyed-silky-faux-fur-shag-1688-996768645117-c3",
+        "handle": "nordic-oval-plush-area-rug-tie-dyed-silky-faux-fur-shag-996768645117-c3",
         "description": "Silky Shag Comfort: This oval rug features a plush faux fur surface with a tie-dyed silky finish that feels gentle under bare feet, creating a cozy spot for relaxing, reading, or stepping out of bed. Elegant Nordic Style: The soft snow white tone and clean oval silhouette blend easily with modern, minimalist, and Scandinavian interiors, adding subtle warmth to bedrooms, living rooms, and balconies. Generous Versatile Size: Measuring approximately 100 x 160cm with a low 0.5cm profile, it fits neatly beside beds, under coffee tables, or on window seats without blocking doorways. Multi-Room Use: Use it as a bedside accent, living room area rug, balcony lounging pad, or bay window cushion to soften hard floors and define smaller spaces. Simple Maintenance: The synthetic shag fibers handle everyday wear well and can be shaken out or spot cleaned, helping the rug stay fresh with minimal effort.",
         "descriptionHtml": "<p>Silky Shag Comfort: This oval rug features a plush faux fur surface with a tie-dyed silky finish that feels gentle under bare feet, creating a cozy spot for relaxing, reading, or stepping out of bed.</p><p>Elegant Nordic Style: The soft snow white tone and clean oval silhouette blend easily with modern, minimalist, and Scandinavian interiors, adding subtle warmth to bedrooms, living rooms, and balconies.</p><p>Generous Versatile Size: Measuring approximately 100 x 160cm with a low 0.5cm profile, it fits neatly beside beds, under coffee tables, or on window seats without blocking doorways.</p><p>Multi-Room Use: Use it as a bedside accent, living room area rug, balcony lounging pad, or bay window cushion to soften hard floors and define smaller spaces.</p><p>Simple Maintenance: The synthetic shag fibers handle everyday wear well and can be shaken out or spot cleaned, helping the rug stay fresh with minimal effort.</p>",
         "productType": "Mats",
@@ -3061,37 +3061,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-996768645117-C3/1.webp",
+                "url": "/images/products/996768645117-C3/1.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C3/2.webp",
+                "url": "/images/products/996768645117-C3/2.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C3/3.webp",
+                "url": "/images/products/996768645117-C3/3.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C3/4.webp",
+                "url": "/images/products/996768645117-C3/4.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C3/5.webp",
+                "url": "/images/products/996768645117-C3/5.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-996768645117-C3/6.webp",
+                "url": "/images/products/996768645117-C3/6.webp",
                 "altText": "Nordic Oval Plush Area Rug Tie-Dyed Silky Faux Fur Shag Carpet Ultra Soft Fluffy Floor Mat for Bedroom Living Room Bedside Balcony Window Seat 100 x 160 cm (Snow White)",
                 "width": 800,
                 "height": 800
@@ -3105,7 +3105,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-996768645117-C3",
+                "id": "variant-996768645117-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3118,10 +3118,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-595229918569-C3",
-        "asin": "1688-595229918569-C3",
+        "id": "makimoo-595229918569-C3",
+        "asin": "595229918569-C3",
         "title": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
-        "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-1688-595229918569-c3",
+        "handle": "super-soft-faux-rabbit-fur-area-rug-thick-plush-shaggy-595229918569-c3",
         "description": "Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room. Generous Size for Versatile Placement: Measuring 160 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries. Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor. Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas. Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.",
         "descriptionHtml": "<p>Luxurious Faux Rabbit Fur Comfort: Crafted from high-density faux rabbit fur material, this ultra-soft area rug offers a silky smooth touch and plush cushioning underfoot, creating a cozy retreat for relaxing, reading, or lounging in any room.</p><p>Generous Size for Versatile Placement: Measuring 160 x 200cm, the large rectangular rug fits perfectly under coffee tables, beside beds, in front of sofas, or across bay windows, adding warmth and texture to living rooms, bedrooms, and nurseries.</p><p>Modern Minimalist Aesthetic: The elegant silver grey tone and clean solid design blend seamlessly with Nordic, contemporary, and minimalist interiors, making it a stylish foundation piece that elevates your home decor.</p><p>Thick Plush Pile for Everyday Comfort: The dense shaggy surface provides a warm, inviting feel while helping to muffle footsteps, ideal for creating a quiet and comfortable atmosphere in high-traffic family areas.</p><p>Easy to Maintain: Simply shake out or vacuum regularly to keep the rug looking fresh and fluffy. The lightweight construction allows for effortless repositioning between rooms as your decor needs change.</p>",
         "productType": "Mats",
@@ -3131,37 +3131,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-595229918569-C3/1.webp",
+                "url": "/images/products/595229918569-C3/1.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C3/2.webp",
+                "url": "/images/products/595229918569-C3/2.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C3/3.webp",
+                "url": "/images/products/595229918569-C3/3.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C3/4.webp",
+                "url": "/images/products/595229918569-C3/4.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C3/5.webp",
+                "url": "/images/products/595229918569-C3/5.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-595229918569-C3/6.webp",
+                "url": "/images/products/595229918569-C3/6.webp",
                 "altText": "Super Soft Faux Rabbit Fur Area Rug Thick Plush Shaggy Carpet for Living Room Bedroom Nursery Modern Minimalist Home Decor Bedside Floor Mat 160 x 200 cm (Silver Grey)",
                 "width": 800,
                 "height": 800
@@ -3175,7 +3175,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-595229918569-C3",
+                "id": "variant-595229918569-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3188,10 +3188,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C4",
-        "asin": "1688-745181807454-C4",
+        "id": "makimoo-745181807454-C4",
+        "asin": "745181807454-C4",
         "title": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
-        "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-1688-745181807454-c4",
+        "handle": "turkish-persian-vintage-area-rug-bohemian-geometric-745181807454-c4",
         "description": "Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces. Spacious 160 x 230cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms. Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease. Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional d\xe9cor, working as an area rug, accent carpet, or bedside floor covering. Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.",
         "descriptionHtml": "<p>Intricate Turkish Persian Medallion Pattern: Features a colorful geometric lattice with diamond medallions in red, blue, yellow, and green on an ivory background, delivering a vintage bohemian look that enlivens living rooms, bedrooms, and dining spaces.</p><p>Spacious 160 x 230cm Coverage: Generously sized to anchor sofas, coffee tables, beds, and dining sets, helping define seating or sleeping areas while protecting floors in medium to large rooms.</p><p>Soft Low Pile Comfort: The smooth, low profile surface feels gentle underfoot, fits neatly under furniture, and allows doors to pass over it with ease.</p><p>Versatile Style for Any Room: The multicolor tribal motif blends with bohemian, farmhouse, eclectic, and traditional d\xe9cor, working as an area rug, accent carpet, or bedside floor covering.</p><p>Easy Everyday Care: Simply vacuum regularly and spot clean spills to maintain the fresh appearance of this durable floor rug.</p>",
         "productType": "Mats",
@@ -3201,37 +3201,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C4/1.webp",
+                "url": "/images/products/745181807454-C4/1.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C4/2.webp",
+                "url": "/images/products/745181807454-C4/2.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C4/3.webp",
+                "url": "/images/products/745181807454-C4/3.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C4/4.webp",
+                "url": "/images/products/745181807454-C4/4.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C4/5.webp",
+                "url": "/images/products/745181807454-C4/5.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C4/6.webp",
+                "url": "/images/products/745181807454-C4/6.webp",
                 "altText": "Turkish Persian Vintage Area Rug, Bohemian Geometric Medallion Pattern, Soft Low Pile Floor Carpet for Living Room Bedroom Dining Room, Large 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -3245,7 +3245,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C4",
+                "id": "variant-745181807454-C4",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3258,10 +3258,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C6",
-        "asin": "1688-745181807454-C6",
+        "id": "makimoo-745181807454-C6",
+        "asin": "745181807454-C6",
         "title": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
-        "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-1688-745181807454-c6",
+        "handle": "vintage-medallion-indoor-area-rug-for-living-room-bedroom-745181807454-c6",
         "description": "Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 160 x 230cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices. Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient. Versatile Placement for Any Room: Sized at 160 x 230cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks. Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types. Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.",
         "descriptionHtml": "<p>Elegant Vintage Medallion Design: Inspired by classic Turkish and Persian motifs, this 160 x 230cm area rug showcases an intricate central medallion, ornate borders, and a rich multicolor palette of navy, amber, coral, and cream. The traditional yet timeless pattern adds warmth and character to living rooms, bedrooms, dining areas, and home offices.</p><p>Soft Low-Profile Pile: Crafted with a short 0.4cm pile height, the rug feels smooth underfoot while remaining low enough to fit under furniture and doorways. The compact surface helps reduce dust buildup and makes everyday cleaning quick and convenient.</p><p>Versatile Placement for Any Room: Sized at 160 x 230cm, this rectangular carpet works beautifully under coffee tables, sofas, beds, and dining sets. Use it as a statement piece in the living room, a cozy accent beside the bed, or a decorative layer in entryways and reading nooks.</p><p>Non Slip Foldable Construction: The lightweight, foldable design allows the rug to lay flat quickly after unpacking and adapt easily to different spaces. A non slip backing helps keep the rug securely in place on hardwood, tile, laminate, and other common floor types.</p><p>Easy to Maintain: Regular vacuuming and gentle spot cleaning keep colors looking vibrant and details crisp. The durable construction stands up to daily foot traffic, making it a practical choice for busy households with children or pets.</p>",
         "productType": "Mats",
@@ -3271,37 +3271,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C6/1.webp",
+                "url": "/images/products/745181807454-C6/1.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C6/2.webp",
+                "url": "/images/products/745181807454-C6/2.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C6/3.webp",
+                "url": "/images/products/745181807454-C6/3.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C6/4.webp",
+                "url": "/images/products/745181807454-C6/4.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C6/5.webp",
+                "url": "/images/products/745181807454-C6/5.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C6/6.webp",
+                "url": "/images/products/745181807454-C6/6.webp",
                 "altText": "Vintage Medallion Indoor Area Rug for Living Room Bedroom Dining Room Turkish Persian Oriental Soft Low Pile Non Slip Foldable Home Decor Carpet 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -3315,7 +3315,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C6",
+                "id": "variant-745181807454-C6",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3328,10 +3328,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C5",
-        "asin": "1688-745181807454-C5",
+        "id": "makimoo-745181807454-C5",
+        "asin": "745181807454-C5",
         "title": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
-        "handle": "oriental-traditional-turkish-persian-vintage-area-rug-160-x-1688-745181807454-c5",
+        "handle": "oriental-traditional-turkish-persian-vintage-area-rug-160-x-745181807454-c5",
         "description": "Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space. Generous Room-Anchoring Size: At 160 x 230cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance. Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter. Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households. Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.",
         "descriptionHtml": "<p>Exquisite Vintage Medallion Design: Showcases a Persian-Turkish inspired pattern with beautifully faded medallions in navy, orange, pink, and teal on a soft cream background, instantly adding bohemian artistry and timeless character to your space.</p><p>Generous Room-Anchoring Size: At 160 x 230cm, this rectangular rug provides ample coverage for living rooms, bedrooms, dining areas, or beneath sofas and coffee tables, helping define seating areas with visual balance.</p><p>Soft Low-Profile Comfort: Made with a 0.4cm low pile that feels smooth underfoot while fitting neatly under furniture and doorways, ideal for everyday living spaces where comfort and practicality matter.</p><p>Simple Everyday Maintenance: The low-pile surface allows for effortless vacuuming and quick spot cleaning, making it easy to keep the rug looking fresh and vibrant even in busy households.</p><p>Versatile Decor Statement: Complements bohemian, traditional, farmhouse, vintage, and eclectic interiors, bringing warmth, color, and texture to living rooms, bedrooms, nurseries, offices, and entryways.</p>",
         "productType": "Mats",
@@ -3341,37 +3341,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C5/1.webp",
+                "url": "/images/products/745181807454-C5/1.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C5/2.webp",
+                "url": "/images/products/745181807454-C5/2.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C5/3.webp",
+                "url": "/images/products/745181807454-C5/3.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C5/4.webp",
+                "url": "/images/products/745181807454-C5/4.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C5/5.webp",
+                "url": "/images/products/745181807454-C5/5.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C5/6.webp",
+                "url": "/images/products/745181807454-C5/6.webp",
                 "altText": "Oriental Traditional Turkish Persian Vintage Area Rug 160 x 230 cm Soft Low Pile Boho Medallion Distressed Foldable Large Living Room Bedroom Floor Carpet (Cream Multicolor)",
                 "width": 800,
                 "height": 800
@@ -3385,7 +3385,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C5",
+                "id": "variant-745181807454-C5",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3398,10 +3398,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C7",
-        "asin": "1688-745181807454-C7",
+        "id": "makimoo-745181807454-C7",
+        "asin": "745181807454-C7",
         "title": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
-        "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-1688-745181807454-c7",
+        "handle": "colorful-geometric-tribal-turkish-persian-style-area-rug-745181807454-c7",
         "description": "Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece. Generous Coverage: Sized at 160 x 230cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans. Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms. Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors. Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.",
         "descriptionHtml": "<p>Vintage-Inspired Tribal Pattern: Evokes a well-traveled Persian-Turkish aesthetic with faded vertical bands in rich reds, blues, greens, and golds, accented by stylized tree and medallion motifs for an eye-catching centerpiece.</p><p>Generous Coverage: Sized at 160 x 230cm, this rug comfortably frames a seating area, rests under a sofa and coffee table, or runs alongside a bed to add softness and visual structure to open floor plans.</p><p>Low-Profile 0.4cm Build: The slim 0.4cm height lets it sit neatly under furniture and doorways, allows chairs to glide easily, and helps create a smooth transition between rooms.</p><p>Easy Everyday Care: The low-pile surface stands up to daily foot traffic and is simple to vacuum; spot-clean spills quickly to preserve the bright, vintage-inspired colors.</p><p>Versatile Styling Option: The multicolor striped palette works with bohemian, eclectic, farmhouse, and traditional interiors, making it a flexible choice for living rooms, bedrooms, dining areas, entryways, or home offices.</p>",
         "productType": "Mats",
@@ -3411,37 +3411,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C7/1.webp",
+                "url": "/images/products/745181807454-C7/1.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C7/2.webp",
+                "url": "/images/products/745181807454-C7/2.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C7/3.webp",
+                "url": "/images/products/745181807454-C7/3.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C7/4.webp",
+                "url": "/images/products/745181807454-C7/4.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C7/5.webp",
+                "url": "/images/products/745181807454-C7/5.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C7/6.webp",
+                "url": "/images/products/745181807454-C7/6.webp",
                 "altText": "Colorful Geometric Tribal Turkish Persian Style Area Rug Vintage Bohemian Striped Low-Pile Carpet For Living Room Bedroom Under Sofa Coffee Table 160 x 230 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -3455,7 +3455,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C7",
+                "id": "variant-745181807454-C7",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3468,10 +3468,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-745181807454-C8",
-        "asin": "1688-745181807454-C8",
+        "id": "makimoo-745181807454-C8",
+        "asin": "745181807454-C8",
         "title": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
-        "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-1688-745181807454-c8",
+        "handle": "elegant-turkish-persian-area-rug-vintage-oriental-medallion-745181807454-c8",
         "description": "Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces. Generous Coverage for Multiple Rooms: At 160 x 230cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats. Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture. Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities. Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.",
         "descriptionHtml": "<p>Intricate Oriental Medallion Design: Showcases a richly detailed Turkish Persian inspired pattern with elaborate floral scrollwork and a striking central medallion, adding timeless vintage elegance and exotic character to living rooms, bedrooms, and dining spaces.</p><p>Generous Coverage for Multiple Rooms: At 160 x 230cm, this rectangular area rug provides ample surface coverage beneath sofas, coffee tables, beds, and dining sets, making it a versatile foundation for both high-traffic living areas and cozy private retreats.</p><p>Low Pile Profile for Daily Convenience: The approximately 0.4cm slim construction allows doors to glide smoothly over the surface while offering a comfortable underfoot feel and easy placement under furniture.</p><p>Stable Non Slip Backing: Features a practical anti-skid underside designed to help keep the rug securely positioned on hardwood, tile, and laminate floors, reducing unwanted movement during everyday activities.</p><p>Durable Quality for Long-Lasting Beauty: Made with carefully selected fibers and reinforced edges, this decorative floor carpet withstands regular foot traffic while maintaining its rich color scheme and detailed ornamental pattern over time.</p>",
         "productType": "Mats",
@@ -3481,37 +3481,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-745181807454-C8/1.webp",
+                "url": "/images/products/745181807454-C8/1.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C8/2.webp",
+                "url": "/images/products/745181807454-C8/2.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C8/3.webp",
+                "url": "/images/products/745181807454-C8/3.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C8/4.webp",
+                "url": "/images/products/745181807454-C8/4.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C8/5.webp",
+                "url": "/images/products/745181807454-C8/5.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-745181807454-C8/6.webp",
+                "url": "/images/products/745181807454-C8/6.webp",
                 "altText": "Elegant Turkish Persian Area Rug Vintage Oriental Medallion Pattern Non Slip Low Pile Floor Carpet for Living Room Bedroom Sofa Coffee Table Home Decor 160 x 230 cm (Black Gold)",
                 "width": 800,
                 "height": 800
@@ -3525,7 +3525,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-745181807454-C8",
+                "id": "variant-745181807454-C8",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3538,10 +3538,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C24",
-        "asin": "1688-969627065032-C24",
+        "id": "makimoo-969627065032-C24",
+        "asin": "969627065032-C24",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c24",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c24",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3551,31 +3551,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C24/3.webp",
+                "url": "/images/products/969627065032-C24/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C24/1.webp",
+                "url": "/images/products/969627065032-C24/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C24/2.webp",
+                "url": "/images/products/969627065032-C24/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C24/4.webp",
+                "url": "/images/products/969627065032-C24/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C24/5.webp",
+                "url": "/images/products/969627065032-C24/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -3589,7 +3589,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C24",
+                "id": "variant-969627065032-C24",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3602,10 +3602,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C23",
-        "asin": "1688-969627065032-C23",
+        "id": "makimoo-969627065032-C23",
+        "asin": "969627065032-C23",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c23",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c23",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3615,31 +3615,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C23/3.webp",
+                "url": "/images/products/969627065032-C23/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C23/1.webp",
+                "url": "/images/products/969627065032-C23/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C23/2.webp",
+                "url": "/images/products/969627065032-C23/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C23/4.webp",
+                "url": "/images/products/969627065032-C23/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C23/5.webp",
+                "url": "/images/products/969627065032-C23/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -3653,7 +3653,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C23",
+                "id": "variant-969627065032-C23",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3666,10 +3666,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C22",
-        "asin": "1688-969627065032-C22",
+        "id": "makimoo-969627065032-C22",
+        "asin": "969627065032-C22",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c22",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c22",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3679,31 +3679,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C22/3.webp",
+                "url": "/images/products/969627065032-C22/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C22/1.webp",
+                "url": "/images/products/969627065032-C22/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C22/2.webp",
+                "url": "/images/products/969627065032-C22/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C22/4.webp",
+                "url": "/images/products/969627065032-C22/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C22/5.webp",
+                "url": "/images/products/969627065032-C22/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -3717,7 +3717,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C22",
+                "id": "variant-969627065032-C22",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3730,10 +3730,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C21",
-        "asin": "1688-969627065032-C21",
+        "id": "makimoo-969627065032-C21",
+        "asin": "969627065032-C21",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c21",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c21",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3743,31 +3743,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C21/3.webp",
+                "url": "/images/products/969627065032-C21/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C21/1.webp",
+                "url": "/images/products/969627065032-C21/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C21/2.webp",
+                "url": "/images/products/969627065032-C21/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C21/4.webp",
+                "url": "/images/products/969627065032-C21/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C21/5.webp",
+                "url": "/images/products/969627065032-C21/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -3781,7 +3781,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C21",
+                "id": "variant-969627065032-C21",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3794,10 +3794,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C25",
-        "asin": "1688-969627065032-C25",
+        "id": "makimoo-969627065032-C25",
+        "asin": "969627065032-C25",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c25",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c25",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The calming blue tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3807,31 +3807,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C25/3.webp",
+                "url": "/images/products/969627065032-C25/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C25/1.webp",
+                "url": "/images/products/969627065032-C25/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C25/2.webp",
+                "url": "/images/products/969627065032-C25/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C25/4.webp",
+                "url": "/images/products/969627065032-C25/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C25/5.webp",
+                "url": "/images/products/969627065032-C25/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -3845,7 +3845,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C25",
+                "id": "variant-969627065032-C25",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3858,10 +3858,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C40",
-        "asin": "1688-969627065032-C40",
+        "id": "makimoo-969627065032-C40",
+        "asin": "969627065032-C40",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c40",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c40",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3871,25 +3871,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C40/4.webp",
+                "url": "/images/products/969627065032-C40/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C40/1.webp",
+                "url": "/images/products/969627065032-C40/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C40/2.webp",
+                "url": "/images/products/969627065032-C40/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C40/3.webp",
+                "url": "/images/products/969627065032-C40/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
@@ -3903,7 +3903,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C40",
+                "id": "variant-969627065032-C40",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3916,10 +3916,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C39",
-        "asin": "1688-969627065032-C39",
+        "id": "makimoo-969627065032-C39",
+        "asin": "969627065032-C39",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c39",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c39",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3929,31 +3929,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C39/5.webp",
+                "url": "/images/products/969627065032-C39/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C39/1.webp",
+                "url": "/images/products/969627065032-C39/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C39/2.webp",
+                "url": "/images/products/969627065032-C39/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C39/3.webp",
+                "url": "/images/products/969627065032-C39/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C39/4.webp",
+                "url": "/images/products/969627065032-C39/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
@@ -3967,7 +3967,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C39",
+                "id": "variant-969627065032-C39",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -3980,10 +3980,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C38",
-        "asin": "1688-969627065032-C38",
+        "id": "makimoo-969627065032-C38",
+        "asin": "969627065032-C38",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c38",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c38",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -3993,25 +3993,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C38/4.webp",
+                "url": "/images/products/969627065032-C38/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C38/1.webp",
+                "url": "/images/products/969627065032-C38/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C38/2.webp",
+                "url": "/images/products/969627065032-C38/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C38/3.webp",
+                "url": "/images/products/969627065032-C38/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
@@ -4025,7 +4025,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C38",
+                "id": "variant-969627065032-C38",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4038,10 +4038,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C37",
-        "asin": "1688-969627065032-C37",
+        "id": "makimoo-969627065032-C37",
+        "asin": "969627065032-C37",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c37",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c37",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4051,25 +4051,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C37/4.webp",
+                "url": "/images/products/969627065032-C37/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C37/1.webp",
+                "url": "/images/products/969627065032-C37/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C37/2.webp",
+                "url": "/images/products/969627065032-C37/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C37/3.webp",
+                "url": "/images/products/969627065032-C37/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
@@ -4083,7 +4083,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C37",
+                "id": "variant-969627065032-C37",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4096,10 +4096,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C36",
-        "asin": "1688-969627065032-C36",
+        "id": "makimoo-969627065032-C36",
+        "asin": "969627065032-C36",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c36",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c36",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The refined silver gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4109,25 +4109,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C36/4.webp",
+                "url": "/images/products/969627065032-C36/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C36/1.webp",
+                "url": "/images/products/969627065032-C36/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C36/2.webp",
+                "url": "/images/products/969627065032-C36/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C36/3.webp",
+                "url": "/images/products/969627065032-C36/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Silver Gray)",
                 "width": 800,
                 "height": 800
@@ -4141,7 +4141,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C36",
+                "id": "variant-969627065032-C36",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4154,10 +4154,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C35",
-        "asin": "1688-969627065032-C35",
+        "id": "makimoo-969627065032-C35",
+        "asin": "969627065032-C35",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c35",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c35",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4167,31 +4167,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C35/5.webp",
+                "url": "/images/products/969627065032-C35/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C35/1.webp",
+                "url": "/images/products/969627065032-C35/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C35/2.webp",
+                "url": "/images/products/969627065032-C35/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C35/3.webp",
+                "url": "/images/products/969627065032-C35/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C35/4.webp",
+                "url": "/images/products/969627065032-C35/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
@@ -4205,7 +4205,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C35",
+                "id": "variant-969627065032-C35",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4218,10 +4218,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C34",
-        "asin": "1688-969627065032-C34",
+        "id": "makimoo-969627065032-C34",
+        "asin": "969627065032-C34",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c34",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c34",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4231,31 +4231,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C34/5.webp",
+                "url": "/images/products/969627065032-C34/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C34/1.webp",
+                "url": "/images/products/969627065032-C34/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C34/2.webp",
+                "url": "/images/products/969627065032-C34/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C34/3.webp",
+                "url": "/images/products/969627065032-C34/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C34/4.webp",
+                "url": "/images/products/969627065032-C34/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
@@ -4269,7 +4269,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C34",
+                "id": "variant-969627065032-C34",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4282,10 +4282,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C32",
-        "asin": "1688-969627065032-C32",
+        "id": "makimoo-969627065032-C32",
+        "asin": "969627065032-C32",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c32",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c32",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4295,31 +4295,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C32/5.webp",
+                "url": "/images/products/969627065032-C32/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C32/1.webp",
+                "url": "/images/products/969627065032-C32/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C32/2.webp",
+                "url": "/images/products/969627065032-C32/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C32/3.webp",
+                "url": "/images/products/969627065032-C32/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C32/4.webp",
+                "url": "/images/products/969627065032-C32/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
@@ -4333,7 +4333,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C32",
+                "id": "variant-969627065032-C32",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4346,10 +4346,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C31",
-        "asin": "1688-969627065032-C31",
+        "id": "makimoo-969627065032-C31",
+        "asin": "969627065032-C31",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c31",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c31",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The sophisticated dark gray tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4359,31 +4359,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C31/5.webp",
+                "url": "/images/products/969627065032-C31/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C31/1.webp",
+                "url": "/images/products/969627065032-C31/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C31/2.webp",
+                "url": "/images/products/969627065032-C31/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C31/3.webp",
+                "url": "/images/products/969627065032-C31/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C31/4.webp",
+                "url": "/images/products/969627065032-C31/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Dark Gray)",
                 "width": 800,
                 "height": 800
@@ -4397,7 +4397,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C31",
+                "id": "variant-969627065032-C31",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4410,10 +4410,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C30",
-        "asin": "1688-969627065032-C30",
+        "id": "makimoo-969627065032-C30",
+        "asin": "969627065032-C30",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c30",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c30",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 250 x 230cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4423,31 +4423,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C30/4.webp",
+                "url": "/images/products/969627065032-C30/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C30/1.webp",
+                "url": "/images/products/969627065032-C30/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C30/2.webp",
+                "url": "/images/products/969627065032-C30/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C30/3.webp",
+                "url": "/images/products/969627065032-C30/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C30/5.webp",
+                "url": "/images/products/969627065032-C30/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 230 x 250 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
@@ -4461,7 +4461,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C30",
+                "id": "variant-969627065032-C30",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4474,10 +4474,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C29",
-        "asin": "1688-969627065032-C29",
+        "id": "makimoo-969627065032-C29",
+        "asin": "969627065032-C29",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c29",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c29",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4487,31 +4487,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C29/4.webp",
+                "url": "/images/products/969627065032-C29/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C29/1.webp",
+                "url": "/images/products/969627065032-C29/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C29/2.webp",
+                "url": "/images/products/969627065032-C29/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C29/3.webp",
+                "url": "/images/products/969627065032-C29/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C29/5.webp",
+                "url": "/images/products/969627065032-C29/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
@@ -4525,7 +4525,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C29",
+                "id": "variant-969627065032-C29",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4538,10 +4538,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C28",
-        "asin": "1688-969627065032-C28",
+        "id": "makimoo-969627065032-C28",
+        "asin": "969627065032-C28",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c28",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c28",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4551,31 +4551,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C28/4.webp",
+                "url": "/images/products/969627065032-C28/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C28/1.webp",
+                "url": "/images/products/969627065032-C28/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C28/2.webp",
+                "url": "/images/products/969627065032-C28/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C28/3.webp",
+                "url": "/images/products/969627065032-C28/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C28/5.webp",
+                "url": "/images/products/969627065032-C28/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
@@ -4589,7 +4589,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C28",
+                "id": "variant-969627065032-C28",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4602,10 +4602,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C27",
-        "asin": "1688-969627065032-C27",
+        "id": "makimoo-969627065032-C27",
+        "asin": "969627065032-C27",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c27",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c27",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 120cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4615,31 +4615,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C27/4.webp",
+                "url": "/images/products/969627065032-C27/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C27/1.webp",
+                "url": "/images/products/969627065032-C27/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C27/2.webp",
+                "url": "/images/products/969627065032-C27/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C27/3.webp",
+                "url": "/images/products/969627065032-C27/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C27/5.webp",
+                "url": "/images/products/969627065032-C27/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 120 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
@@ -4653,7 +4653,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C27",
+                "id": "variant-969627065032-C27",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4666,10 +4666,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C26",
-        "asin": "1688-969627065032-C26",
+        "id": "makimoo-969627065032-C26",
+        "asin": "969627065032-C26",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c26",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c26",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The cheerful cream yellow tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4679,31 +4679,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C26/4.webp",
+                "url": "/images/products/969627065032-C26/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C26/1.webp",
+                "url": "/images/products/969627065032-C26/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C26/2.webp",
+                "url": "/images/products/969627065032-C26/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C26/3.webp",
+                "url": "/images/products/969627065032-C26/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C26/5.webp",
+                "url": "/images/products/969627065032-C26/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Cream Yellow)",
                 "width": 800,
                 "height": 800
@@ -4717,7 +4717,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C26",
+                "id": "variant-969627065032-C26",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4730,10 +4730,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C41",
-        "asin": "1688-969627065032-C41",
+        "id": "makimoo-969627065032-C41",
+        "asin": "969627065032-C41",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c41",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c41",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 150cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4743,31 +4743,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C41/4.webp",
+                "url": "/images/products/969627065032-C41/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C41/1.webp",
+                "url": "/images/products/969627065032-C41/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C41/2.webp",
+                "url": "/images/products/969627065032-C41/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C41/3.webp",
+                "url": "/images/products/969627065032-C41/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C41/5.webp",
+                "url": "/images/products/969627065032-C41/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 150 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
@@ -4781,7 +4781,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C41",
+                "id": "variant-969627065032-C41",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4794,10 +4794,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C42",
-        "asin": "1688-969627065032-C42",
+        "id": "makimoo-969627065032-C42",
+        "asin": "969627065032-C42",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c42",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c42",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 230 x 200cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4807,31 +4807,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C42/4.webp",
+                "url": "/images/products/969627065032-C42/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C42/1.webp",
+                "url": "/images/products/969627065032-C42/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C42/2.webp",
+                "url": "/images/products/969627065032-C42/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C42/3.webp",
+                "url": "/images/products/969627065032-C42/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C42/5.webp",
+                "url": "/images/products/969627065032-C42/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 200 x 230 cm (Purple)",
                 "width": 800,
                 "height": 800
@@ -4845,7 +4845,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C42",
+                "id": "variant-969627065032-C42",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -4858,10 +4858,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-969627065032-C43",
-        "asin": "1688-969627065032-C43",
+        "id": "makimoo-969627065032-C43",
+        "asin": "969627065032-C43",
         "title": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
-        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c43",
+        "handle": "luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c43",
         "description": "Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed. Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa. Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive. Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion. Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.",
         "descriptionHtml": "<p>Luxuriously Soft Faux Rabbit Fur: Crafted from high-pile faux rabbit fur with carved channel stripes, this blanket offers a silky, cloud-like feel that invites you to relax on the couch or in bed.</p><p>Package Includes: The set contains 1 blanket measuring 200 x 180cm, providing generous coverage for two people or as a full decorative layer across your bed or sofa.</p><p>Warm Yet Lightweight: Thick plush fibers trap body heat while remaining breathable, delivering cozy warmth during cool evenings without feeling heavy or restrictive.</p><p>Versatile Home Accent: The soothing purple tone and elegant ribbed texture complement bedroom and living room d\xe9cor; use it as a throw, bed blanket, nap cover, or cozy reading companion.</p><p>Simple Care for Lasting Softness: Reinforced edges help maintain the plush texture wash after wash; machine wash cold on a gentle cycle and tumble dry low to keep it fresh and fluffy.</p>",
         "productType": "Blankets",
@@ -4871,37 +4871,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-969627065032-C43/4.webp",
+                "url": "/images/products/969627065032-C43/4.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C43/1.webp",
+                "url": "/images/products/969627065032-C43/1.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C43/2.webp",
+                "url": "/images/products/969627065032-C43/2.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C43/3.webp",
+                "url": "/images/products/969627065032-C43/3.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C43/5.webp",
+                "url": "/images/products/969627065032-C43/5.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-969627065032-C43/6.webp",
+                "url": "/images/products/969627065032-C43/6.webp",
                 "altText": "Luxury Faux Rabbit Fur Plush Blanket for Couch Sofa and Bed, Extra Soft ,Thick, Cozy throw Blanket 180 x 200 cm (Purple)",
                 "width": 800,
                 "height": 800
@@ -4915,7 +4915,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-969627065032-C43",
+                "id": "variant-969627065032-C43",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -9904,10 +9904,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C2",
-        "asin": "1688-899672152256-C2",
+        "id": "makimoo-899672152256-C2",
+        "asin": "899672152256-C2",
         "title": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
-        "handle": "handwoven-rattan-tray-with-green-leaf-shell-pattern-round-1688-899672152256-c2",
+        "handle": "handwoven-rattan-tray-with-green-leaf-shell-pattern-round-899672152256-c2",
         "description": "Handwoven Rattan Design: This round tray features a woven rattan rim and a green leaf shell pattern center, adding a natural, textured look to your table setting. The open shape keeps fruit, snacks, and small items visible while the woven border helps contain them. Versatile Serving Basket: Use it as a fruit plate for apples, oranges, or grapes, a snack basket for nuts and cookies, or a bread basket for rolls and pastries. The shallow 3.5cm depth keeps contents easy to see and reach. Decorative Storage Organizer: Place this woven basket on a coffee table, entryway console, or kitchen counter to hold tea bags, coffee pods, keys, jewelry, or remote controls. It helps reduce clutter while adding a warm, decorative accent. Natural Home Accent: The warm rattan weave and green leaf pattern complement coastal, bohemian, farmhouse, and Japanese inspired interiors. Its 28 x 28 x 3.5cm size fits dining tables, shelves, counters, and living room spaces. Thoughtful Gift Pick: A practical and decorative piece for housewarmings, birthdays, and special occasions. The woven design and functional shape make it a welcome addition for anyone who enjoys organized, nature inspired home decor.",
         "descriptionHtml": "<p>Handwoven Rattan Design: This round tray features a woven rattan rim and a green leaf shell pattern center, adding a natural, textured look to your table setting. The open shape keeps fruit, snacks, and small items visible while the woven border helps contain them.</p><p>Versatile Serving Basket: Use it as a fruit plate for apples, oranges, or grapes, a snack basket for nuts and cookies, or a bread basket for rolls and pastries. The shallow 3.5cm depth keeps contents easy to see and reach.</p><p>Decorative Storage Organizer: Place this woven basket on a coffee table, entryway console, or kitchen counter to hold tea bags, coffee pods, keys, jewelry, or remote controls. It helps reduce clutter while adding a warm, decorative accent.</p><p>Natural Home Accent: The warm rattan weave and green leaf pattern complement coastal, bohemian, farmhouse, and Japanese inspired interiors. Its 28 x 28 x 3.5cm size fits dining tables, shelves, counters, and living room spaces.</p><p>Thoughtful Gift Pick: A practical and decorative piece for housewarmings, birthdays, and special occasions. The woven design and functional shape make it a welcome addition for anyone who enjoys organized, nature inspired home decor.</p>",
         "productType": "Dining",
@@ -9917,31 +9917,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C2/1.webp",
+                "url": "/images/products/899672152256-C2/1.webp",
                 "altText": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C2/2.webp",
+                "url": "/images/products/899672152256-C2/2.webp",
                 "altText": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C2/3.webp",
+                "url": "/images/products/899672152256-C2/3.webp",
                 "altText": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C2/4.webp",
+                "url": "/images/products/899672152256-C2/4.webp",
                 "altText": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C2/5.webp",
+                "url": "/images/products/899672152256-C2/5.webp",
                 "altText": "Handwoven Rattan Tray With Green Leaf Shell Pattern Round Woven Serving Basket For Fruit Snacks Bread Display Kitchen Dining Table Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
@@ -9955,7 +9955,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C2",
+                "id": "variant-899672152256-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -9968,10 +9968,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C13",
-        "asin": "1688-899672152256-C13",
+        "id": "makimoo-899672152256-C13",
+        "asin": "899672152256-C13",
         "title": "Handwoven Rattan Shell Tray Set of 3, Round Woven Fruit Basket with Turtle Leaf Pattern, Snack Bowl for Dessert Bread, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural Brown)",
-        "handle": "handwoven-rattan-shell-tray-set-of-3-round-woven-fruit-1688-899672152256-c13",
+        "handle": "handwoven-rattan-shell-tray-set-of-3-round-woven-fruit-899672152256-c13",
         "description": "VERSATILE THREE-PIECE SET: This rattan tray set includes three round baskets in graduated sizes (28 x 28cm, 24 x 24cm, and 22 x 22cm), providing flexible options for serving fruits, snacks, bread, and desserts. HANDWOVEN RATTAN WITH SHELL ACCENTS: Each tray is crafted from natural rattan with a woven texture, featuring a charming turtle leaf pattern made from inlaid shell pieces that adds a tropical touch to your home. MULTIPURPOSE STORAGE AND DISPLAY: Use these baskets as fruit bowls, snack organizers, bread baskets, or decorative trays for keys, remotes, and small items. The flat base keeps items stable. NATURAL STYLE FOR ANY ROOM: The earthy tones and organic materials blend well with bohemian, coastal, rustic, or Japanese-inspired decor. Lightweight yet sturdy for daily use. EASY CARE AND LIGHTWEIGHT: Simply wipe clean with a damp cloth and air dry. The set weighs about 725 grams in total, with individual trays weighing 190g, 225g, and 315g for easy carrying.",
         "descriptionHtml": "<p>VERSATILE THREE-PIECE SET: This rattan tray set includes three round baskets in graduated sizes (28 x 28cm, 24 x 24cm, and 22 x 22cm), providing flexible options for serving fruits, snacks, bread, and desserts.</p><p>HANDWOVEN RATTAN WITH SHELL ACCENTS: Each tray is crafted from natural rattan with a woven texture, featuring a charming turtle leaf pattern made from inlaid shell pieces that adds a tropical touch to your home.</p><p>MULTIPURPOSE STORAGE AND DISPLAY: Use these baskets as fruit bowls, snack organizers, bread baskets, or decorative trays for keys, remotes, and small items. The flat base keeps items stable.</p><p>NATURAL STYLE FOR ANY ROOM: The earthy tones and organic materials blend well with bohemian, coastal, rustic, or Japanese-inspired decor. Lightweight yet sturdy for daily use.</p><p>EASY CARE AND LIGHTWEIGHT: Simply wipe clean with a damp cloth and air dry. The set weighs about 725 grams in total, with individual trays weighing 190g, 225g, and 315g for easy carrying.</p>",
         "productType": "Dining",
@@ -9981,19 +9981,19 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C13/1.webp",
+                "url": "/images/products/899672152256-C13/1.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3, Round Woven Fruit Basket with Turtle Leaf Pattern, Snack Bowl for Dessert Bread, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C13/2.webp",
+                "url": "/images/products/899672152256-C13/2.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3, Round Woven Fruit Basket with Turtle Leaf Pattern, Snack Bowl for Dessert Bread, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C13/3.webp",
+                "url": "/images/products/899672152256-C13/3.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3, Round Woven Fruit Basket with Turtle Leaf Pattern, Snack Bowl for Dessert Bread, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural Brown)",
                 "width": 800,
                 "height": 800
@@ -10007,7 +10007,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C13",
+                "id": "variant-899672152256-C13",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10020,10 +10020,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C22",
-        "asin": "1688-899672152256-C22",
+        "id": "makimoo-899672152256-C22",
+        "asin": "899672152256-C22",
         "title": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
-        "handle": "handmade-round-rattan-shell-inlay-tray-woven-serving-basket-1688-899672152256-c22",
+        "handle": "handmade-round-rattan-shell-inlay-tray-woven-serving-basket-899672152256-c22",
         "description": "HANDWOVEN RATTAN AND SHELL INLAY: This tray features a natural rattan frame with delicate shell pieces inlaid across the base, creating a unique textured surface. Each piece is carefully woven by skilled artisans, offering a charming handmade look that complements your home. The sturdy construction holds daily items with ease while adding a touch of nature to your space. VERSATILE FOR SERVING AND ORGANIZING: Use this woven basket as a fruit plate, snack container, bread basket, or dessert tray. It also works well as a storage organizer for keys, remote controls, jewelry, or small accessories. Place it on your coffee table, kitchen counter, dining table, or living room shelf to keep essentials tidy and stylish. JAPANESE COASTAL HOME DECOR: The natural tones and shell accents bring a calm, coastal, and Japanese-inspired aesthetic to your interior. This round tray blends with boho, farmhouse, Scandinavian, and nautical styles. Its understated elegance makes it a lovely centerpiece for everyday meals or casual gatherings. PRACTICAL SIZE AND LIGHTWEIGHT DESIGN: Measuring 28 x 28 x 3.5cm, this large tray offers ample room for fruits, pastries, or household items. The raised rim helps prevent items from rolling off, while the lightweight build lets you carry it from kitchen to table with one hand. Simply wipe clean with a damp cloth for easy care. THOUGHTFUL GIFT FOR HOME LOVERS: This handcrafted rattan and shell tray makes a considerate gift for housewarmings, weddings, birthdays, or any special occasion. Its natural materials and artistic details suit friends and family who enjoy unique home accessories. Pair it with fresh fruit or baked goods for a warm presentation.",
         "descriptionHtml": "<p>HANDWOVEN RATTAN AND SHELL INLAY: This tray features a natural rattan frame with delicate shell pieces inlaid across the base, creating a unique textured surface. Each piece is carefully woven by skilled artisans, offering a charming handmade look that complements your home. The sturdy construction holds daily items with ease while adding a touch of nature to your space.</p><p>VERSATILE FOR SERVING AND ORGANIZING: Use this woven basket as a fruit plate, snack container, bread basket, or dessert tray. It also works well as a storage organizer for keys, remote controls, jewelry, or small accessories. Place it on your coffee table, kitchen counter, dining table, or living room shelf to keep essentials tidy and stylish.</p><p>JAPANESE COASTAL HOME DECOR: The natural tones and shell accents bring a calm, coastal, and Japanese-inspired aesthetic to your interior. This round tray blends with boho, farmhouse, Scandinavian, and nautical styles. Its understated elegance makes it a lovely centerpiece for everyday meals or casual gatherings.</p><p>PRACTICAL SIZE AND LIGHTWEIGHT DESIGN: Measuring 28 x 28 x 3.5cm, this large tray offers ample room for fruits, pastries, or household items. The raised rim helps prevent items from rolling off, while the lightweight build lets you carry it from kitchen to table with one hand. Simply wipe clean with a damp cloth for easy care.</p><p>THOUGHTFUL GIFT FOR HOME LOVERS: This handcrafted rattan and shell tray makes a considerate gift for housewarmings, weddings, birthdays, or any special occasion. Its natural materials and artistic details suit friends and family who enjoy unique home accessories. Pair it with fresh fruit or baked goods for a warm presentation.</p>",
         "productType": "Dining",
@@ -10033,25 +10033,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C22/1.webp",
+                "url": "/images/products/899672152256-C22/1.webp",
                 "altText": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C22/2.webp",
+                "url": "/images/products/899672152256-C22/2.webp",
                 "altText": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C22/3.webp",
+                "url": "/images/products/899672152256-C22/3.webp",
                 "altText": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C22/4.webp",
+                "url": "/images/products/899672152256-C22/4.webp",
                 "altText": "Handmade Round Rattan Shell Inlay Tray Woven Serving Basket For Fruit Snack Bread Decorative Storage Organizer Japanese Style Coastal Home Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10065,7 +10065,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C22",
+                "id": "variant-899672152256-C22",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10078,10 +10078,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C33",
-        "asin": "1688-899672152256-C33",
+        "id": "makimoo-899672152256-C33",
+        "asin": "899672152256-C33",
         "title": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
-        "handle": "handwoven-rattan-shell-tray-set-of-3-round-woven-basket-1688-899672152256-c33",
+        "handle": "handwoven-rattan-shell-tray-set-of-3-round-woven-basket-899672152256-c33",
         "description": "VERSATILE THREE-PIECE SET: This set includes three round trays in different sizes: large 28 x 28 x 3.5cm, medium 24 x 24 x 3.5cm, and small 22 x 22 x 3.5cm. The graduated sizes stack neatly for compact storage when not in use, making them a practical choice for small spaces. HANDWOVEN RATTAN AND SHELL MOSAIC: The tray surface features a charming blue and white shell mosaic pattern with yellow accents, framed by a natural woven rattan rim. Each piece is carefully crafted, giving it a rustic yet elegant look that complements Japanese, coastal, and bohemian home decor. MULTIPURPOSE STORAGE AND DISPLAY: Use these woven baskets as fruit platters, bread baskets, snack trays, or dessert plates. They also work well for organizing keys, jewelry, remote controls, and other small items on a coffee table, dining table, kitchen counter, or entryway console. DURABLE AND LIGHTWEIGHT: Made from natural rattan and shell materials, these trays are lightweight yet sturdy enough for daily use. To clean, simply wipe the surface with a soft damp cloth and dry thoroughly. Avoid soaking or washing with harsh chemicals to preserve the finish. NATURAL HOME DECOR AND GIFT IDEA: The warm rattan tones and intricate shell pattern bring a touch of nature to your living space. This three-piece set makes a thoughtful housewarming, wedding, or special occasion gift for anyone who loves handcrafted or rustic home accessories.",
         "descriptionHtml": "<p>VERSATILE THREE-PIECE SET: This set includes three round trays in different sizes: large 28 x 28 x 3.5cm, medium 24 x 24 x 3.5cm, and small 22 x 22 x 3.5cm. The graduated sizes stack neatly for compact storage when not in use, making them a practical choice for small spaces.</p><p>HANDWOVEN RATTAN AND SHELL MOSAIC: The tray surface features a charming blue and white shell mosaic pattern with yellow accents, framed by a natural woven rattan rim. Each piece is carefully crafted, giving it a rustic yet elegant look that complements Japanese, coastal, and bohemian home decor.</p><p>MULTIPURPOSE STORAGE AND DISPLAY: Use these woven baskets as fruit platters, bread baskets, snack trays, or dessert plates. They also work well for organizing keys, jewelry, remote controls, and other small items on a coffee table, dining table, kitchen counter, or entryway console.</p><p>DURABLE AND LIGHTWEIGHT: Made from natural rattan and shell materials, these trays are lightweight yet sturdy enough for daily use. To clean, simply wipe the surface with a soft damp cloth and dry thoroughly. Avoid soaking or washing with harsh chemicals to preserve the finish.</p><p>NATURAL HOME DECOR AND GIFT IDEA: The warm rattan tones and intricate shell pattern bring a touch of nature to your living space. This three-piece set makes a thoughtful housewarming, wedding, or special occasion gift for anyone who loves handcrafted or rustic home accessories.</p>",
         "productType": "Dining",
@@ -10091,31 +10091,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C33/1.webp",
+                "url": "/images/products/899672152256-C33/1.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C33/2.webp",
+                "url": "/images/products/899672152256-C33/2.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C33/3.webp",
+                "url": "/images/products/899672152256-C33/3.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C33/4.webp",
+                "url": "/images/products/899672152256-C33/4.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C33/5.webp",
+                "url": "/images/products/899672152256-C33/5.webp",
                 "altText": "Handwoven Rattan Shell Tray Set of 3 Round Woven Basket Platters for Fruit Snack Bread Storage Organizer Japanese Style Coffee Table Decor 28 x 28 cm 24 x 24 cm 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10129,7 +10129,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C33",
+                "id": "variant-899672152256-C33",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10142,10 +10142,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C42",
-        "asin": "1688-899672152256-C42",
+        "id": "makimoo-899672152256-C42",
+        "asin": "899672152256-C42",
         "title": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
-        "handle": "handcrafted-woven-rattan-shell-tray-with-green-floral-1688-899672152256-c42",
+        "handle": "handcrafted-woven-rattan-shell-tray-with-green-floral-899672152256-c42",
         "description": "ARTISANAL SHELL MOSAIC CENTER: The inner base of this tray is arranged from small polished shell pieces to form a radiating green floral pattern that stands out against the creamy white background, giving the piece a fresh, handcrafted look that draws the eye on any tabletop. STURDY HANDWOVEN RATTAN FRAME: A closely woven natural rattan border wraps the round shell panel and holds it securely in place, creating a firm yet lightweight structure with a warm woven texture that complements coastal, bohemian, Japanese and rustic style interiors. VERSATILE SERVING AND STORAGE: Measuring 28 x 28 x 3.5cm, the shallow round shape is ideal for holding snacks, dried fruit, bread, pastries, cookies, tea bags, keys, rings, hair accessories or small everyday items, keeping surfaces tidy in the living room, kitchen, bedroom, study or bathroom. LIGHTWEIGHT AND EASY TO HANDLE: The flat profile and raised woven rim make the basket simple to lift, pass around and reposition, so it works equally well as a serving platter for guests, a decorative catchall on a coffee table, or a display base for candles and small potted plants. THOUGHTFUL GIFT CHOICE: With its natural woven texture and green floral shell inlay, this tray makes a charming present for housewarmings, weddings, birthdays and holidays, suitable for anyone who enjoys handcrafted home decor, organized tabletops and natural woven accessories.",
         "descriptionHtml": "<p>ARTISANAL SHELL MOSAIC CENTER: The inner base of this tray is arranged from small polished shell pieces to form a radiating green floral pattern that stands out against the creamy white background, giving the piece a fresh, handcrafted look that draws the eye on any tabletop.</p><p>STURDY HANDWOVEN RATTAN FRAME: A closely woven natural rattan border wraps the round shell panel and holds it securely in place, creating a firm yet lightweight structure with a warm woven texture that complements coastal, bohemian, Japanese and rustic style interiors.</p><p>VERSATILE SERVING AND STORAGE: Measuring 28 x 28 x 3.5cm, the shallow round shape is ideal for holding snacks, dried fruit, bread, pastries, cookies, tea bags, keys, rings, hair accessories or small everyday items, keeping surfaces tidy in the living room, kitchen, bedroom, study or bathroom.</p><p>LIGHTWEIGHT AND EASY TO HANDLE: The flat profile and raised woven rim make the basket simple to lift, pass around and reposition, so it works equally well as a serving platter for guests, a decorative catchall on a coffee table, or a display base for candles and small potted plants.</p><p>THOUGHTFUL GIFT CHOICE: With its natural woven texture and green floral shell inlay, this tray makes a charming present for housewarmings, weddings, birthdays and holidays, suitable for anyone who enjoys handcrafted home decor, organized tabletops and natural woven accessories.</p>",
         "productType": "Dining",
@@ -10155,31 +10155,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C42/1.webp",
+                "url": "/images/products/899672152256-C42/1.webp",
                 "altText": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C42/2.webp",
+                "url": "/images/products/899672152256-C42/2.webp",
                 "altText": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C42/3.webp",
+                "url": "/images/products/899672152256-C42/3.webp",
                 "altText": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C42/4.webp",
+                "url": "/images/products/899672152256-C42/4.webp",
                 "altText": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C42/5.webp",
+                "url": "/images/products/899672152256-C42/5.webp",
                 "altText": "Handcrafted Woven Rattan Shell Tray With Green Floral Mosaic Inlay Round Serving Basket For Snacks Fruits Bread Keys Jewelry Tabletop Decor 28 x 28 x 3.5 cm (Green)",
                 "width": 800,
                 "height": 800
@@ -10193,7 +10193,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C42",
+                "id": "variant-899672152256-C42",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10206,10 +10206,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C52",
-        "asin": "1688-899672152256-C52",
+        "id": "makimoo-899672152256-C52",
+        "asin": "899672152256-C52",
         "title": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
-        "handle": "woven-rattan-shell-mosaic-round-tray-basket-for-fruit-snack-1688-899672152256-c52",
+        "handle": "woven-rattan-shell-mosaic-round-tray-basket-for-fruit-snack-899672152256-c52",
         "description": "NATURAL WOVEN RATTAN AND SHELL MOSAIC: This round tray features a woven rattan rim surrounding a central shell mosaic pattern with teal, orange, navy, and cream accents. The natural texture and decorative shellwork create a warm, artisanal look for everyday display and storage. JAPANESE-INSPIRED DECORATIVE ACCENT: The colorful leaf and geometric shell design adds a coastal, bohemian, or Japanese-inspired touch to a coffee table, dining table, console, or countertop. Use it as a centerpiece or a catchall to bring visual interest to your space. VERSATILE SERVING AND ORGANIZING BASKET: Ideal for holding fruit, bread, snacks, cookies, keys, jewelry, or small household items. The shallow round shape works well in the living room, kitchen, bedroom, or entryway as a decorative storage basket. COMPACT SIZE WITH RAISED EDGE: Measuring 22 x 22 x 3cm, this tray offers a neat circular space for arranging treats or small items. The raised woven edge helps keep contents contained while the open design allows items to be seen and reached easily. LOW MAINTENANCE AND GIFT APPEAL: Wipe the tray with a soft dry cloth to keep it clean; avoid soaking it in water. Its woven rattan and shell mosaic design makes it a thoughtful choice for housewarming, wedding, or special occasion gifting.",
         "descriptionHtml": "<p>NATURAL WOVEN RATTAN AND SHELL MOSAIC: This round tray features a woven rattan rim surrounding a central shell mosaic pattern with teal, orange, navy, and cream accents. The natural texture and decorative shellwork create a warm, artisanal look for everyday display and storage.</p><p>JAPANESE-INSPIRED DECORATIVE ACCENT: The colorful leaf and geometric shell design adds a coastal, bohemian, or Japanese-inspired touch to a coffee table, dining table, console, or countertop. Use it as a centerpiece or a catchall to bring visual interest to your space.</p><p>VERSATILE SERVING AND ORGANIZING BASKET: Ideal for holding fruit, bread, snacks, cookies, keys, jewelry, or small household items. The shallow round shape works well in the living room, kitchen, bedroom, or entryway as a decorative storage basket.</p><p>COMPACT SIZE WITH RAISED EDGE: Measuring 22 x 22 x 3cm, this tray offers a neat circular space for arranging treats or small items. The raised woven edge helps keep contents contained while the open design allows items to be seen and reached easily.</p><p>LOW MAINTENANCE AND GIFT APPEAL: Wipe the tray with a soft dry cloth to keep it clean; avoid soaking it in water. Its woven rattan and shell mosaic design makes it a thoughtful choice for housewarming, wedding, or special occasion gifting.</p>",
         "productType": "Dining",
@@ -10219,31 +10219,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C52/1.webp",
+                "url": "/images/products/899672152256-C52/1.webp",
                 "altText": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C52/2.webp",
+                "url": "/images/products/899672152256-C52/2.webp",
                 "altText": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C52/3.webp",
+                "url": "/images/products/899672152256-C52/3.webp",
                 "altText": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C52/4.webp",
+                "url": "/images/products/899672152256-C52/4.webp",
                 "altText": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C52/5.webp",
+                "url": "/images/products/899672152256-C52/5.webp",
                 "altText": "Woven Rattan Shell Mosaic Round Tray Basket for Fruit Snack Bread Storage Decorative Japanese Style Serving Plate for Home Kitchen Tabletop Display 22 x 22 x 3 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10257,7 +10257,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C52",
+                "id": "variant-899672152256-C52",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10270,10 +10270,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C61",
-        "asin": "1688-899672152256-C61",
+        "id": "makimoo-899672152256-C61",
+        "asin": "899672152256-C61",
         "title": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
-        "handle": "handwoven-rattan-shell-tray-set-of-3-nesting-woven-baskets-1688-899672152256-c61",
+        "handle": "handwoven-rattan-shell-tray-set-of-3-nesting-woven-baskets-899672152256-c61",
         "description": "Handwoven Rattan Craftsmanship: This set of three shell-shaped trays is woven from natural rattan, giving each piece a unique texture and warm, organic look. The sturdy weave supports daily use while adding a cozy, Japanese-inspired touch to your home. Space-Saving Nesting Design: The three trays nest neatly inside one another, making storage simple when not in use. Sizes include 28 x 28cm, 24 x 24cm, and 22 x 22cm, with a height of 3.5cm for the largest tray, so you can display or store them without taking up much space. Vibrant Floral Shell Pattern: The inner base features a radiating floral motif in blue and yellow tones, set against a white background. This decorative detail makes the trays eye-catching as fruit bowls, snack holders, or centerpieces on a coffee table. Versatile Serving and Organizing: Use these woven baskets to hold fresh fruit, bread, cookies, nuts, or small household items. They work well in the living room, kitchen, dining area, or bedroom, adapting to both daily routines and special gatherings. Lightweight and Low-Maintenance: Each tray is lightweight for easy carrying, yet durable enough for regular use. To clean, simply wipe with a dry or slightly damp cloth and keep away from excessive moisture to preserve the natural rattan and painted finish.",
         "descriptionHtml": "<p>Handwoven Rattan Craftsmanship: This set of three shell-shaped trays is woven from natural rattan, giving each piece a unique texture and warm, organic look. The sturdy weave supports daily use while adding a cozy, Japanese-inspired touch to your home.</p><p>Space-Saving Nesting Design: The three trays nest neatly inside one another, making storage simple when not in use. Sizes include 28 x 28cm, 24 x 24cm, and 22 x 22cm, with a height of 3.5cm for the largest tray, so you can display or store them without taking up much space.</p><p>Vibrant Floral Shell Pattern: The inner base features a radiating floral motif in blue and yellow tones, set against a white background. This decorative detail makes the trays eye-catching as fruit bowls, snack holders, or centerpieces on a coffee table.</p><p>Versatile Serving and Organizing: Use these woven baskets to hold fresh fruit, bread, cookies, nuts, or small household items. They work well in the living room, kitchen, dining area, or bedroom, adapting to both daily routines and special gatherings.</p><p>Lightweight and Low-Maintenance: Each tray is lightweight for easy carrying, yet durable enough for regular use. To clean, simply wipe with a dry or slightly damp cloth and keep away from excessive moisture to preserve the natural rattan and painted finish.</p>",
         "productType": "Dining",
@@ -10283,31 +10283,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C61/1.webp",
+                "url": "/images/products/899672152256-C61/1.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C61/2.webp",
+                "url": "/images/products/899672152256-C61/2.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C61/3.webp",
+                "url": "/images/products/899672152256-C61/3.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C61/4.webp",
+                "url": "/images/products/899672152256-C61/4.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C61/5.webp",
+                "url": "/images/products/899672152256-C61/5.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Nesting Woven Baskets With Colorful Floral Pattern For Fruit Snacks Bread Storage Living Room Japanese Style Decor 28 x 28 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10321,7 +10321,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C61",
+                "id": "variant-899672152256-C61",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10334,10 +10334,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C70",
-        "asin": "1688-899672152256-C70",
+        "id": "makimoo-899672152256-C70",
+        "asin": "899672152256-C70",
         "title": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
-        "handle": "handwoven-rattan-seashell-mosaic-tray-with-sunflower-1688-899672152256-c70",
+        "handle": "handwoven-rattan-seashell-mosaic-tray-with-sunflower-899672152256-c70",
         "description": "HANDWOVEN RATTAN RIM WITH SEASHELL MOSAIC: The tray combines a natural woven rattan border with a mosaic center crafted from small seashell pieces, creating a textured and artistic surface for everyday use. SUNFLOWER PATTERN IN MULTIPLE COLORS: The mosaic design features sunflower motifs in blue, yellow, green, and red tones, adding a cheerful and decorative touch to your tabletop or countertop. VERSATILE ROUND SERVING BASKET: Use this round tray to hold fruit, bread, snacks, pastries, or small items, making it suitable for living room, kitchen, dining table, or coffee table. JAPANESE STYLE HOME DECOR: The woven basket and floral mosaic pattern bring a simple Japanese-inspired look that complements various interior styles while keeping essentials tidy. LIGHTWEIGHT AND EASY TO MAINTAIN: The round tray measures 28 x 28 x 3.5cm and has a low-profile rim, making it easy to carry and arrange on different surfaces. Wipe clean with a soft dry or slightly damp cloth.",
         "descriptionHtml": "<p>HANDWOVEN RATTAN RIM WITH SEASHELL MOSAIC: The tray combines a natural woven rattan border with a mosaic center crafted from small seashell pieces, creating a textured and artistic surface for everyday use.</p><p>SUNFLOWER PATTERN IN MULTIPLE COLORS: The mosaic design features sunflower motifs in blue, yellow, green, and red tones, adding a cheerful and decorative touch to your tabletop or countertop.</p><p>VERSATILE ROUND SERVING BASKET: Use this round tray to hold fruit, bread, snacks, pastries, or small items, making it suitable for living room, kitchen, dining table, or coffee table.</p><p>JAPANESE STYLE HOME DECOR: The woven basket and floral mosaic pattern bring a simple Japanese-inspired look that complements various interior styles while keeping essentials tidy.</p><p>LIGHTWEIGHT AND EASY TO MAINTAIN: The round tray measures 28 x 28 x 3.5cm and has a low-profile rim, making it easy to carry and arrange on different surfaces. Wipe clean with a soft dry or slightly damp cloth.</p>",
         "productType": "Dining",
@@ -10347,25 +10347,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C70/1.webp",
+                "url": "/images/products/899672152256-C70/1.webp",
                 "altText": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C70/2.webp",
+                "url": "/images/products/899672152256-C70/2.webp",
                 "altText": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C70/3.webp",
+                "url": "/images/products/899672152256-C70/3.webp",
                 "altText": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C70/4.webp",
+                "url": "/images/products/899672152256-C70/4.webp",
                 "altText": "Handwoven Rattan Seashell Mosaic Tray With Sunflower Pattern, Round Woven Serving Basket For Fruit Snacks Bread, Japanese Style Storage Basket 28 x 28 x 3.5 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -10379,7 +10379,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C70",
+                "id": "variant-899672152256-C70",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10392,10 +10392,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C78",
-        "asin": "1688-899672152256-C78",
+        "id": "makimoo-899672152256-C78",
+        "asin": "899672152256-C78",
         "title": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
-        "handle": "handwoven-rattan-shell-tray-with-flower-and-leaf-pattern-1688-899672152256-c78",
+        "handle": "handwoven-rattan-shell-tray-with-flower-and-leaf-pattern-899672152256-c78",
         "description": "Handcrafted Rattan and Shell Design: This round tray is woven from natural rattan and features a base decorated with shell pieces arranged in a floral and leaf pattern, adding a unique texture to your home decor. Versatile Storage Basket: Use this woven tray to organize fruits, bread, pastries, snacks, or small items like keys and remote controls. It fits well on dining tables, coffee tables, and kitchen counters. Decorative Accent: The natural tones and green leaf motifs complement Japanese-inspired, bohemian, and farmhouse interiors. Display it as a centerpiece or hang it on the wall for added charm. Sturdy and Lightweight: Measuring 24 x 24 x 3.5cm, this round tray has a reinforced woven rim that offers durability while remaining easy to carry. The flat base helps keep items stable. Easy Care: Wipe the tray with a soft damp cloth to clean. Avoid soaking it in water or exposing it to prolonged moisture to preserve the natural materials.",
         "descriptionHtml": "<p>Handcrafted Rattan and Shell Design: This round tray is woven from natural rattan and features a base decorated with shell pieces arranged in a floral and leaf pattern, adding a unique texture to your home decor.</p><p>Versatile Storage Basket: Use this woven tray to organize fruits, bread, pastries, snacks, or small items like keys and remote controls. It fits well on dining tables, coffee tables, and kitchen counters.</p><p>Decorative Accent: The natural tones and green leaf motifs complement Japanese-inspired, bohemian, and farmhouse interiors. Display it as a centerpiece or hang it on the wall for added charm.</p><p>Sturdy and Lightweight: Measuring 24 x 24 x 3.5cm, this round tray has a reinforced woven rim that offers durability while remaining easy to carry. The flat base helps keep items stable.</p><p>Easy Care: Wipe the tray with a soft damp cloth to clean. Avoid soaking it in water or exposing it to prolonged moisture to preserve the natural materials.</p>",
         "productType": "Dining",
@@ -10405,31 +10405,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C78/1.webp",
+                "url": "/images/products/899672152256-C78/1.webp",
                 "altText": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C78/2.webp",
+                "url": "/images/products/899672152256-C78/2.webp",
                 "altText": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C78/3.webp",
+                "url": "/images/products/899672152256-C78/3.webp",
                 "altText": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C78/4.webp",
+                "url": "/images/products/899672152256-C78/4.webp",
                 "altText": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C78/5.webp",
+                "url": "/images/products/899672152256-C78/5.webp",
                 "altText": "Handwoven Rattan Shell Tray With Flower And Leaf Pattern, Woven Basket For Fruit Snack Bread Storage, Decorative Tray For Living Room Kitchen, 24 x 24 x 3.5 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10443,7 +10443,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C78",
+                "id": "variant-899672152256-C78",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10456,10 +10456,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-899672152256-C85",
-        "asin": "1688-899672152256-C85",
+        "id": "makimoo-899672152256-C85",
+        "asin": "899672152256-C85",
         "title": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
-        "handle": "woven-rattan-nesting-trays-with-green-clover-pattern-round-1688-899672152256-c85",
+        "handle": "woven-rattan-nesting-trays-with-green-clover-pattern-round-899672152256-c85",
         "description": "Three-Piece Nesting Design: This woven tray set includes three round trays in 28 x 28cm, 24 x 24cm, and 22 x 22cm sizes, allowing them to nest together for compact storage when not in use. Woven Rattan Texture: The outer rim features a woven rattan-style finish in a warm natural tone, bringing a relaxed, organic look to living rooms, kitchens, dining tables, and coffee tables. Green Clover Accent: A white central panel is framed by green clover motifs and a shell-inspired center design, adding a fresh, decorative touch that suits Japanese-inspired and modern rustic spaces. Multi-Purpose Serving Basket: Use each round tray to hold fruit, bread, snacks, pastries, tea items, or small household essentials, making it easy to organize and display items on counters, shelves, or tabletops. Shallow and Stackable: With a height of about 3.5cm, the trays have a low-profile shape that stacks neatly and can be wiped with a soft dry cloth for routine care.",
         "descriptionHtml": "<p>Three-Piece Nesting Design: This woven tray set includes three round trays in 28 x 28cm, 24 x 24cm, and 22 x 22cm sizes, allowing them to nest together for compact storage when not in use.</p><p>Woven Rattan Texture: The outer rim features a woven rattan-style finish in a warm natural tone, bringing a relaxed, organic look to living rooms, kitchens, dining tables, and coffee tables.</p><p>Green Clover Accent: A white central panel is framed by green clover motifs and a shell-inspired center design, adding a fresh, decorative touch that suits Japanese-inspired and modern rustic spaces.</p><p>Multi-Purpose Serving Basket: Use each round tray to hold fruit, bread, snacks, pastries, tea items, or small household essentials, making it easy to organize and display items on counters, shelves, or tabletops.</p><p>Shallow and Stackable: With a height of about 3.5cm, the trays have a low-profile shape that stacks neatly and can be wiped with a soft dry cloth for routine care.</p>",
         "productType": "Dining",
@@ -10469,25 +10469,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-899672152256-C85/1.webp",
+                "url": "/images/products/899672152256-C85/1.webp",
                 "altText": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C85/2.webp",
+                "url": "/images/products/899672152256-C85/2.webp",
                 "altText": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C85/3.webp",
+                "url": "/images/products/899672152256-C85/3.webp",
                 "altText": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-899672152256-C85/4.webp",
+                "url": "/images/products/899672152256-C85/4.webp",
                 "altText": "Woven Rattan Nesting Trays With Green Clover Pattern, Round Serving Baskets For Snack Fruit Bread, Japanese Style Storage Set Of 3, 28 x 28 cm, 24 x 24 cm, 22 x 22 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10501,7 +10501,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-899672152256-C85",
+                "id": "variant-899672152256-C85",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10514,10 +10514,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C2",
-        "asin": "1688-743606980882-C2",
+        "id": "makimoo-743606980882-C2",
+        "asin": "743606980882-C2",
         "title": "藤编筐家用点心篮糖果贝壳彩色餐厅高级托盘藤编水果盘收纳盘果篮 藤编贝壳长方形金花大号（37*24*4cm -藤编贝壳长方形金花大号（37*24*4cm",
-        "handle": "37-24-4cm-37-24-4cm-1688-743606980882-c2",
+        "handle": "37-24-4cm-37-24-4cm-743606980882-c2",
         "description": "",
         "descriptionHtml": "",
         "productType": "Others",
@@ -10527,25 +10527,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C2/1.webp",
+                "url": "/images/products/743606980882-C2/1.webp",
                 "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C2/2.webp",
+                "url": "/images/products/743606980882-C2/2.webp",
                 "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C2/3.webp",
+                "url": "/images/products/743606980882-C2/3.webp",
                 "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C2/4.webp",
+                "url": "/images/products/743606980882-C2/4.webp",
                 "altText": "Woven Rattan Serving Tray with Shell Mosaic, Green Checkered",
                 "width": 800,
                 "height": 800
@@ -10559,7 +10559,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C2",
+                "id": "variant-743606980882-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10572,10 +10572,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C10",
-        "asin": "1688-743606980882-C10",
+        "id": "makimoo-743606980882-C10",
+        "asin": "743606980882-C10",
         "title": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
-        "handle": "handcrafted-woven-rattan-rectangular-serving-tray-with-1688-743606980882-c10",
+        "handle": "handcrafted-woven-rattan-rectangular-serving-tray-with-743606980882-c10",
         "description": "Handwoven Rattan Construction: Crafted from natural rattan and woven wicker, this rectangular serving tray offers a sturdy and lightweight design for daily use. The tightly woven edges provide a smooth finish, making it comfortable to carry from kitchen to dining table. Charming Green Leaf Pattern: The inner base features a lively green leaf motif that adds a fresh, natural touch to your table setting. This decorative design complements both modern and rustic home styles, ideal for displaying fruit, snacks, or bread. Versatile Serving and Storage: Measuring 37 x 23 x 4cm, this woven basket tray works as a fruit bowl, snack tray, candy dish, tea organizer, or coffee table centerpiece. Use it to keep small items tidy or to serve guests during gatherings. Sturdy and Easy to Maintain: The woven rim and flat base help prevent tipping, while the woven surface is simple to wipe clean with a damp cloth. Its compact size makes it easy to store when not in use. Thoughtful Gift Choice: This rattan tray with a green leaf design makes a lovely present for housewarmings, birthdays, or holidays. Ideal for anyone who enjoys organized and stylish home decor, it brings warmth and order to any room.",
         "descriptionHtml": "<p>Handwoven Rattan Construction: Crafted from natural rattan and woven wicker, this rectangular serving tray offers a sturdy and lightweight design for daily use. The tightly woven edges provide a smooth finish, making it comfortable to carry from kitchen to dining table.</p><p>Charming Green Leaf Pattern: The inner base features a lively green leaf motif that adds a fresh, natural touch to your table setting. This decorative design complements both modern and rustic home styles, ideal for displaying fruit, snacks, or bread.</p><p>Versatile Serving and Storage: Measuring 37 x 23 x 4cm, this woven basket tray works as a fruit bowl, snack tray, candy dish, tea organizer, or coffee table centerpiece. Use it to keep small items tidy or to serve guests during gatherings.</p><p>Sturdy and Easy to Maintain: The woven rim and flat base help prevent tipping, while the woven surface is simple to wipe clean with a damp cloth. Its compact size makes it easy to store when not in use.</p><p>Thoughtful Gift Choice: This rattan tray with a green leaf design makes a lovely present for housewarmings, birthdays, or holidays. Ideal for anyone who enjoys organized and stylish home decor, it brings warmth and order to any room.</p>",
         "productType": "Dining",
@@ -10585,25 +10585,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C10/1.webp",
+                "url": "/images/products/743606980882-C10/1.webp",
                 "altText": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C10/2.webp",
+                "url": "/images/products/743606980882-C10/2.webp",
                 "altText": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C10/3.webp",
+                "url": "/images/products/743606980882-C10/3.webp",
                 "altText": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C10/4.webp",
+                "url": "/images/products/743606980882-C10/4.webp",
                 "altText": "Handcrafted Woven Rattan Rectangular Serving Tray With Green Leaf Pattern Decorative Wicker Basket For Fruit Snacks Bread Tea Coffee Table Storage 37 x 23 x 4 cm (Green)",
                 "width": 800,
                 "height": 800
@@ -10617,7 +10617,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C10",
+                "id": "variant-743606980882-C10",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10630,10 +10630,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C20",
-        "asin": "1688-743606980882-C20",
+        "id": "makimoo-743606980882-C20",
+        "asin": "743606980882-C20",
         "title": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
-        "handle": "handwoven-rattan-shell-tray-set-of-3-rectangular-storage-1688-743606980882-c20",
+        "handle": "handwoven-rattan-shell-tray-set-of-3-rectangular-storage-743606980882-c20",
         "description": "Handwoven Rattan and Shell Construction: This three-piece tray set features a woven rattan rim and a shell-inlaid base, creating a natural, textured look for everyday serving and display. The lightweight build makes each tray easy to lift, arrange, and relocate around the home. Three Nesting Rectangular Trays: The set includes three rectangular trays in graduated sizes that nest together for compact storage. The large tray measures 37 x 23 x 4cm, giving you a generous surface for snacks, fruit, or tabletop organization. Colorful Floral Shell Pattern: The inner base is decorated with a colorful floral motif over a shell finish, adding a cheerful accent to dining tables, coffee tables, kitchen counters, and entryways. The warm rattan border complements both modern and rustic decor styles. Multipurpose Serving and Organizing: Use these woven trays as a snack basket, candy dish, fruit platter, bread basket, or catchall organizer for keys, remotes, jewelry, and small household items. The raised rim helps keep contents contained during serving and display. Easy to Clean and Store: Wipe each tray with a soft dry cloth or gentle brush to remove dust and crumbs. Avoid soaking the rattan and shell surface in water. When not in use, stack the three trays together to save cabinet and counter space.",
         "descriptionHtml": "<p>Handwoven Rattan and Shell Construction: This three-piece tray set features a woven rattan rim and a shell-inlaid base, creating a natural, textured look for everyday serving and display. The lightweight build makes each tray easy to lift, arrange, and relocate around the home.</p><p>Three Nesting Rectangular Trays: The set includes three rectangular trays in graduated sizes that nest together for compact storage. The large tray measures 37 x 23 x 4cm, giving you a generous surface for snacks, fruit, or tabletop organization.</p><p>Colorful Floral Shell Pattern: The inner base is decorated with a colorful floral motif over a shell finish, adding a cheerful accent to dining tables, coffee tables, kitchen counters, and entryways. The warm rattan border complements both modern and rustic decor styles.</p><p>Multipurpose Serving and Organizing: Use these woven trays as a snack basket, candy dish, fruit platter, bread basket, or catchall organizer for keys, remotes, jewelry, and small household items. The raised rim helps keep contents contained during serving and display.</p><p>Easy to Clean and Store: Wipe each tray with a soft dry cloth or gentle brush to remove dust and crumbs. Avoid soaking the rattan and shell surface in water. When not in use, stack the three trays together to save cabinet and counter space.</p>",
         "productType": "Dining",
@@ -10643,31 +10643,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C20/1.webp",
+                "url": "/images/products/743606980882-C20/1.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C20/2.webp",
+                "url": "/images/products/743606980882-C20/2.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C20/3.webp",
+                "url": "/images/products/743606980882-C20/3.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C20/4.webp",
+                "url": "/images/products/743606980882-C20/4.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C20/5.webp",
+                "url": "/images/products/743606980882-C20/5.webp",
                 "altText": "Handwoven Rattan Shell Tray Set Of 3 Rectangular Storage Baskets With Colorful Floral Motif Multipurpose Serving Platter Fruit Snack Candy Organizer 37 x 23 x 4 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -10681,7 +10681,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C20",
+                "id": "variant-743606980882-C20",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10694,10 +10694,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C32",
-        "asin": "1688-743606980882-C32",
+        "id": "makimoo-743606980882-C32",
+        "asin": "743606980882-C32",
         "title": "Handwoven Rattan Tray Set of 3 With Green Four-Leaf Clover Shell Inlay Rectangular Serving Baskets For Snacks Fruit Candy Dining Table Storage 37 x 23 x 4 cm (Brown)",
-        "handle": "handwoven-rattan-tray-set-of-3-with-green-four-leaf-clover-1688-743606980882-c32",
+        "handle": "handwoven-rattan-tray-set-of-3-with-green-four-leaf-clover-743606980882-c32",
         "description": "VERSATILE THREE PIECE TRAY SET: This set includes three rectangular woven trays in coordinated sizes, with the large tray measuring 37 x 23 x 4cm. Use them together for a layered serving display or separately for snacks, fruit, candy, jewelry, keys, and everyday items. HANDWOVEN RATTAN AND SHELL INLAY: Crafted with woven rattan around the edges and a smooth shell surface featuring green four leaf clover patterns. The natural textures and floral motif bring a warm, elegant touch to dining tables, coffee tables, kitchen counters, and shelves. ELEGANT FOUR LEAF CLOVER DESIGN: The green clover shell inlay adds a fresh, decorative accent to the rectangular trays. The neutral woven border and light shell background allow the design to complement coastal, bohemian, farmhouse, and modern home styles. PRACTICAL FOR SERVING AND ORGANIZING: Use the trays to serve pastries, tea, coffee, appetizers, or fruit, or to organize small household items. Raised edges help keep contents contained, while the flat shell base provides a stable surface for daily use. EASY TO CLEAN AND DISPLAY: Wipe the trays with a soft damp cloth and mild soap as needed, then dry thoroughly. The stackable rectangular shapes store neatly when not in use and make a thoughtful gift for housewarmings, birthdays, and special occasions.",
         "descriptionHtml": "<p>VERSATILE THREE PIECE TRAY SET: This set includes three rectangular woven trays in coordinated sizes, with the large tray measuring 37 x 23 x 4cm. Use them together for a layered serving display or separately for snacks, fruit, candy, jewelry, keys, and everyday items.</p><p>HANDWOVEN RATTAN AND SHELL INLAY: Crafted with woven rattan around the edges and a smooth shell surface featuring green four leaf clover patterns. The natural textures and floral motif bring a warm, elegant touch to dining tables, coffee tables, kitchen counters, and shelves.</p><p>ELEGANT FOUR LEAF CLOVER DESIGN: The green clover shell inlay adds a fresh, decorative accent to the rectangular trays. The neutral woven border and light shell background allow the design to complement coastal, bohemian, farmhouse, and modern home styles.</p><p>PRACTICAL FOR SERVING AND ORGANIZING: Use the trays to serve pastries, tea, coffee, appetizers, or fruit, or to organize small household items. Raised edges help keep contents contained, while the flat shell base provides a stable surface for daily use.</p><p>EASY TO CLEAN AND DISPLAY: Wipe the trays with a soft damp cloth and mild soap as needed, then dry thoroughly. The stackable rectangular shapes store neatly when not in use and make a thoughtful gift for housewarmings, birthdays, and special occasions.</p>",
         "productType": "Dining",
@@ -10707,19 +10707,19 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C32/1.webp",
+                "url": "/images/products/743606980882-C32/1.webp",
                 "altText": "Handwoven Rattan Tray Set of 3 With Green Four-Leaf Clover Shell Inlay Rectangular Serving Baskets For Snacks Fruit Candy Dining Table Storage 37 x 23 x 4 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C32/2.webp",
+                "url": "/images/products/743606980882-C32/2.webp",
                 "altText": "Handwoven Rattan Tray Set of 3 With Green Four-Leaf Clover Shell Inlay Rectangular Serving Baskets For Snacks Fruit Candy Dining Table Storage 37 x 23 x 4 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C32/3.webp",
+                "url": "/images/products/743606980882-C32/3.webp",
                 "altText": "Handwoven Rattan Tray Set of 3 With Green Four-Leaf Clover Shell Inlay Rectangular Serving Baskets For Snacks Fruit Candy Dining Table Storage 37 x 23 x 4 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -10733,7 +10733,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C32",
+                "id": "variant-743606980882-C32",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10746,10 +10746,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C41",
-        "asin": "1688-743606980882-C41",
+        "id": "makimoo-743606980882-C41",
+        "asin": "743606980882-C41",
         "title": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
-        "handle": "elegant-decorative-woven-rattan-rectangular-serving-tray-1688-743606980882-c41",
+        "handle": "elegant-decorative-woven-rattan-rectangular-serving-tray-743606980882-c41",
         "description": "ELEGANT WOVEN RATTAN DESIGN: This rectangular tray features a woven rattan border in a warm golden tone, adding a natural and refined look to your tabletop. The clean lines and woven texture make it a decorative piece for everyday meals and gatherings. SHELL MOSAIC INLAY CENTER: The central panel features a radial shell mosaic pattern in soft white tones, creating a delicate decorative display. This eye-catching center turns a simple serving tray into a stylish accent for dining tables, coffee tables, and consoles. VERSATILE SERVING TRAY: Use it as a fruit platter, snack tray, candy dish, dessert basket, or storage organizer for keys, jewelry, and small accessories. The raised rim helps keep items contained while presenting them neatly. PRACTICAL RECTANGULAR SIZE: Measuring 37 x 23 x 4cm, this large rectangular tray offers ample space for fruit, pastries, candles, or bathroom essentials. Its slim 4cm height keeps a low profile on tables, kitchen counters, and vanities. EASY CARE AND GIFT IDEA: Wipe the tray with a soft dry cloth or gently brush the woven surface to clean. It makes a thoughtful gift for housewarmings, weddings, or hostess gifts. Avoid soaking or prolonged moisture to help maintain its appearance.",
         "descriptionHtml": "<p>ELEGANT WOVEN RATTAN DESIGN: This rectangular tray features a woven rattan border in a warm golden tone, adding a natural and refined look to your tabletop. The clean lines and woven texture make it a decorative piece for everyday meals and gatherings.</p><p>SHELL MOSAIC INLAY CENTER: The central panel features a radial shell mosaic pattern in soft white tones, creating a delicate decorative display. This eye-catching center turns a simple serving tray into a stylish accent for dining tables, coffee tables, and consoles.</p><p>VERSATILE SERVING TRAY: Use it as a fruit platter, snack tray, candy dish, dessert basket, or storage organizer for keys, jewelry, and small accessories. The raised rim helps keep items contained while presenting them neatly.</p><p>PRACTICAL RECTANGULAR SIZE: Measuring 37 x 23 x 4cm, this large rectangular tray offers ample space for fruit, pastries, candles, or bathroom essentials. Its slim 4cm height keeps a low profile on tables, kitchen counters, and vanities.</p><p>EASY CARE AND GIFT IDEA: Wipe the tray with a soft dry cloth or gently brush the woven surface to clean. It makes a thoughtful gift for housewarmings, weddings, or hostess gifts. Avoid soaking or prolonged moisture to help maintain its appearance.</p>",
         "productType": "Dining",
@@ -10759,31 +10759,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C41/1.webp",
+                "url": "/images/products/743606980882-C41/1.webp",
                 "altText": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C41/2.webp",
+                "url": "/images/products/743606980882-C41/2.webp",
                 "altText": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C41/3.webp",
+                "url": "/images/products/743606980882-C41/3.webp",
                 "altText": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C41/4.webp",
+                "url": "/images/products/743606980882-C41/4.webp",
                 "altText": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C41/5.webp",
+                "url": "/images/products/743606980882-C41/5.webp",
                 "altText": "Elegant Decorative Woven Rattan Rectangular Serving Tray With Natural Shell Mosaic Inlay For Fruit Snacks Candy Storage And Home Dining Table Display 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10797,7 +10797,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C41",
+                "id": "variant-743606980882-C41",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10810,10 +10810,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C52",
-        "asin": "1688-743606980882-C52",
+        "id": "makimoo-743606980882-C52",
+        "asin": "743606980882-C52",
         "title": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
-        "handle": "handwoven-rattan-serving-tray-set-of-3-rectangular-woven-1688-743606980882-c52",
+        "handle": "handwoven-rattan-serving-tray-set-of-3-rectangular-woven-743606980882-c52",
         "description": "HANDCRAFTED WOVEN RATTAN CONSTRUCTION: This serving tray set is woven from natural rattan, offering a sturdy and textured surface that brings a warm, organic touch to your home. The tight weaving ensures durability for daily use while remaining lightweight for easy carrying. SHELL MOSAIC AND BLUE LEAF PATTERN: The interior base features a charming shell mosaic background with a blue leaf branch design, creating a fresh and elegant look. This decorative motif works well with coastal, farmhouse, or modern table settings. VERSATILE THREE-PIECE SET: The set includes three rectangular trays in graduated sizes to meet different needs. The large tray measures 37 x 23 x 4cm, ideal for holding fruit, pastries, or a tea service, while the two smaller trays are great for candies, keys, or small accessories. MULTI-PURPOSE SERVING AND STORAGE: Use these woven baskets as a fruit platter, snack tray, candy dish, or decorative organizer. They fit nicely on a dining table, coffee table, kitchen counter, or bathroom vanity, helping keep your space tidy and stylish. EASY CARE AND MAINTENANCE: To clean, simply wipe the trays with a soft damp cloth and allow them to air dry. Avoid soaking in water or exposing to direct sunlight for long periods to preserve the natural rattan and mosaic finish.",
         "descriptionHtml": "<p>HANDCRAFTED WOVEN RATTAN CONSTRUCTION: This serving tray set is woven from natural rattan, offering a sturdy and textured surface that brings a warm, organic touch to your home. The tight weaving ensures durability for daily use while remaining lightweight for easy carrying.</p><p>SHELL MOSAIC AND BLUE LEAF PATTERN: The interior base features a charming shell mosaic background with a blue leaf branch design, creating a fresh and elegant look. This decorative motif works well with coastal, farmhouse, or modern table settings.</p><p>VERSATILE THREE-PIECE SET: The set includes three rectangular trays in graduated sizes to meet different needs. The large tray measures 37 x 23 x 4cm, ideal for holding fruit, pastries, or a tea service, while the two smaller trays are great for candies, keys, or small accessories.</p><p>MULTI-PURPOSE SERVING AND STORAGE: Use these woven baskets as a fruit platter, snack tray, candy dish, or decorative organizer. They fit nicely on a dining table, coffee table, kitchen counter, or bathroom vanity, helping keep your space tidy and stylish.</p><p>EASY CARE AND MAINTENANCE: To clean, simply wipe the trays with a soft damp cloth and allow them to air dry. Avoid soaking in water or exposing to direct sunlight for long periods to preserve the natural rattan and mosaic finish.</p>",
         "productType": "Dining",
@@ -10823,31 +10823,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C52/1.webp",
+                "url": "/images/products/743606980882-C52/1.webp",
                 "altText": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C52/2.webp",
+                "url": "/images/products/743606980882-C52/2.webp",
                 "altText": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C52/3.webp",
+                "url": "/images/products/743606980882-C52/3.webp",
                 "altText": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C52/4.webp",
+                "url": "/images/products/743606980882-C52/4.webp",
                 "altText": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C52/5.webp",
+                "url": "/images/products/743606980882-C52/5.webp",
                 "altText": "Handwoven Rattan Serving Tray Set Of 3 Rectangular Woven Baskets With Shell Mosaic Blue Leaf Pattern Money Tree Design For Snacks Candy Fruit Storage 37 x 23 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -10861,7 +10861,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C52",
+                "id": "variant-743606980882-C52",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10874,10 +10874,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C61",
-        "asin": "1688-743606980882-C61",
+        "id": "makimoo-743606980882-C61",
+        "asin": "743606980882-C61",
         "title": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
-        "handle": "woven-rattan-serving-tray-rectangular-wicker-basket-with-1688-743606980882-c61",
+        "handle": "woven-rattan-serving-tray-rectangular-wicker-basket-with-743606980882-c61",
         "description": "Artisanal Woven Texture: The tray features a woven rim and base border that brings a warm, natural look to your tabletop. Its structured rectangular shape holds items securely while adding a tactile accent to everyday spaces. Shell Pinwheel Motif: The inner surface displays a blue and yellow shell and pinwheel pattern on a light background. This eye-catching design makes the tray a decorative piece for serving or display. Multi-Purpose Serving Tray: Use it to hold fruit, pastries, candies, bread, tea, coffee, or snacks. It also works as an organizer for keys, remotes, jewelry, or small household items in the entryway, living room, or kitchen. Practical Dimensions: Measuring 37 x 23 x 4cm, the rectangular tray offers ample room for arranging treats and accessories. The 4cm raised rim helps keep contents contained while maintaining a low-profile look. Easy Maintenance and Display: Wipe the tray with a soft damp cloth and mild soap when needed, then dry it thoroughly. Its compact design fits on dining tables, coffee tables, countertops, and shelves for daily use.",
         "descriptionHtml": "<p>Artisanal Woven Texture: The tray features a woven rim and base border that brings a warm, natural look to your tabletop. Its structured rectangular shape holds items securely while adding a tactile accent to everyday spaces.</p><p>Shell Pinwheel Motif: The inner surface displays a blue and yellow shell and pinwheel pattern on a light background. This eye-catching design makes the tray a decorative piece for serving or display.</p><p>Multi-Purpose Serving Tray: Use it to hold fruit, pastries, candies, bread, tea, coffee, or snacks. It also works as an organizer for keys, remotes, jewelry, or small household items in the entryway, living room, or kitchen.</p><p>Practical Dimensions: Measuring 37 x 23 x 4cm, the rectangular tray offers ample room for arranging treats and accessories. The 4cm raised rim helps keep contents contained while maintaining a low-profile look.</p><p>Easy Maintenance and Display: Wipe the tray with a soft damp cloth and mild soap when needed, then dry it thoroughly. Its compact design fits on dining tables, coffee tables, countertops, and shelves for daily use.</p>",
         "productType": "Dining",
@@ -10887,31 +10887,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C61/1.webp",
+                "url": "/images/products/743606980882-C61/1.webp",
                 "altText": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C61/2.webp",
+                "url": "/images/products/743606980882-C61/2.webp",
                 "altText": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C61/3.webp",
+                "url": "/images/products/743606980882-C61/3.webp",
                 "altText": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C61/4.webp",
+                "url": "/images/products/743606980882-C61/4.webp",
                 "altText": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C61/5.webp",
+                "url": "/images/products/743606980882-C61/5.webp",
                 "altText": "Woven Rattan Serving Tray Rectangular Wicker Basket with Shell Pinwheel Pattern for Fruit Snacks Candies Tea Coffee Tabletop Home Decor 37 x 23 x 4 cm (Blue and Yellow)",
                 "width": 800,
                 "height": 800
@@ -10925,7 +10925,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C61",
+                "id": "variant-743606980882-C61",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -10938,10 +10938,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C71",
-        "asin": "1688-743606980882-C71",
+        "id": "makimoo-743606980882-C71",
+        "asin": "743606980882-C71",
         "title": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
-        "handle": "handwoven-rattan-rectangular-serving-tray-basket-with-blue-1688-743606980882-c71",
+        "handle": "handwoven-rattan-rectangular-serving-tray-basket-with-blue-743606980882-c71",
         "description": "Handwoven Rattan Craftsmanship: This rectangular basket tray features woven rattan sides and a blue leaf mosaic pattern base, adding a natural textured look to your tabletop or countertop. Multipurpose Serving Basket: Use this woven tray to hold candies, cookies, tea bags, or small fruits, helping keep snacks and daily items organized and within reach. Compact Rectangular Size: Measuring 21 x 11.5 x 3.5cm, this small basket tray fits neatly on dining tables, coffee tables, kitchen counters, or bedside stands without taking up too much space. Decorative Blue Leaf Design: The blue leaf motif inside the woven frame brings a colorful accent that suits coastal, bohemian, farmhouse, or modern home decor styles. Lightweight and Easy Care: The woven rattan tray is lightweight to carry, and the inner base can be wiped with a soft damp cloth for routine cleaning.",
         "descriptionHtml": "<p>Handwoven Rattan Craftsmanship: This rectangular basket tray features woven rattan sides and a blue leaf mosaic pattern base, adding a natural textured look to your tabletop or countertop.</p><p>Multipurpose Serving Basket: Use this woven tray to hold candies, cookies, tea bags, or small fruits, helping keep snacks and daily items organized and within reach.</p><p>Compact Rectangular Size: Measuring 21 x 11.5 x 3.5cm, this small basket tray fits neatly on dining tables, coffee tables, kitchen counters, or bedside stands without taking up too much space.</p><p>Decorative Blue Leaf Design: The blue leaf motif inside the woven frame brings a colorful accent that suits coastal, bohemian, farmhouse, or modern home decor styles.</p><p>Lightweight and Easy Care: The woven rattan tray is lightweight to carry, and the inner base can be wiped with a soft damp cloth for routine cleaning.</p>",
         "productType": "Dining",
@@ -10951,31 +10951,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C71/1.webp",
+                "url": "/images/products/743606980882-C71/1.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C71/2.webp",
+                "url": "/images/products/743606980882-C71/2.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C71/3.webp",
+                "url": "/images/products/743606980882-C71/3.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C71/4.webp",
+                "url": "/images/products/743606980882-C71/4.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C71/5.webp",
+                "url": "/images/products/743606980882-C71/5.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray Basket With Blue Leaf Mosaic Pattern Multi Purpose For Snacks Candies Fruits And Tea Home Decor Storage 21 x 11.5 x 3.5 cm (Blue)",
                 "width": 800,
                 "height": 800
@@ -10989,7 +10989,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C71",
+                "id": "variant-743606980882-C71",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11002,10 +11002,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C80",
-        "asin": "1688-743606980882-C80",
+        "id": "makimoo-743606980882-C80",
+        "asin": "743606980882-C80",
         "title": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
-        "handle": "woven-rattan-basket-set-rectangular-serving-tray-with-1688-743606980882-c80",
+        "handle": "woven-rattan-basket-set-rectangular-serving-tray-with-743606980882-c80",
         "description": "Handwoven Rattan Construction: Crafted from natural rattan and shell materials, this set of three rectangular baskets offers a sturdy yet lightweight design. The woven edges add a rustic, bohemian touch to your home while ensuring long-lasting use for daily routines. Elegant Checkerboard Shell Pattern: The striking black and white checkerboard design made from polished shell pieces creates a modern yet timeless look. This eye-catching pattern complements various decor styles, from farmhouse to coastal, making it a stylish addition to any room. Versatile Serving and Storage: Use these trays to serve fruits, snacks, bread, candies, or pastries. They also work well as organizers for keys, jewelry, cosmetics, or office supplies. The set includes three sizes to fit different needs, with the largest tray measuring 37 x 24 x 4cm. Perfect for Entertaining and Everyday Use: Whether you are hosting a dinner party, enjoying a family breakfast, or simply organizing your countertop, these woven trays add charm and function. Their raised edges keep items secure, while the flat base provides stability on tables and shelves. Easy Care and Lightweight Design: To clean, simply wipe with a damp cloth and mild soap, then air dry. The lightweight yet durable construction allows you to move the trays easily from kitchen to dining room. Avoid soaking in water to maintain the natural finish.",
         "descriptionHtml": "<p>Handwoven Rattan Construction: Crafted from natural rattan and shell materials, this set of three rectangular baskets offers a sturdy yet lightweight design. The woven edges add a rustic, bohemian touch to your home while ensuring long-lasting use for daily routines.</p><p>Elegant Checkerboard Shell Pattern: The striking black and white checkerboard design made from polished shell pieces creates a modern yet timeless look. This eye-catching pattern complements various decor styles, from farmhouse to coastal, making it a stylish addition to any room.</p><p>Versatile Serving and Storage: Use these trays to serve fruits, snacks, bread, candies, or pastries. They also work well as organizers for keys, jewelry, cosmetics, or office supplies. The set includes three sizes to fit different needs, with the largest tray measuring 37 x 24 x 4cm.</p><p>Perfect for Entertaining and Everyday Use: Whether you are hosting a dinner party, enjoying a family breakfast, or simply organizing your countertop, these woven trays add charm and function. Their raised edges keep items secure, while the flat base provides stability on tables and shelves.</p><p>Easy Care and Lightweight Design: To clean, simply wipe with a damp cloth and mild soap, then air dry. The lightweight yet durable construction allows you to move the trays easily from kitchen to dining room. Avoid soaking in water to maintain the natural finish.</p>",
         "productType": "Dining",
@@ -11015,31 +11015,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C80/1.webp",
+                "url": "/images/products/743606980882-C80/1.webp",
                 "altText": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C80/2.webp",
+                "url": "/images/products/743606980882-C80/2.webp",
                 "altText": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C80/3.webp",
+                "url": "/images/products/743606980882-C80/3.webp",
                 "altText": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C80/4.webp",
+                "url": "/images/products/743606980882-C80/4.webp",
                 "altText": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C80/5.webp",
+                "url": "/images/products/743606980882-C80/5.webp",
                 "altText": "Woven Rattan Basket Set, Rectangular Serving Tray with Checkerboard Shell Pattern, Storage Baskets for Fruit Snacks Bread, Decorative Kitchen Organizer 37 x 24 x 4 cm (Black and White)",
                 "width": 800,
                 "height": 800
@@ -11053,7 +11053,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C80",
+                "id": "variant-743606980882-C80",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11066,10 +11066,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-743606980882-C89",
-        "asin": "1688-743606980882-C89",
+        "id": "makimoo-743606980882-C89",
+        "asin": "743606980882-C89",
         "title": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
-        "handle": "handwoven-rattan-rectangular-serving-tray-with-colorful-1688-743606980882-c89",
+        "handle": "handwoven-rattan-rectangular-serving-tray-with-colorful-743606980882-c89",
         "description": "NATURAL WOVEN RATTAN BORDER: The tray features a woven rattan rim that brings a warm, organic touch to your table setting. The rectangular shape measures 37 x 24 x 4cm, giving you a generous surface for arranging snacks, fruit, or decorative items while the raised edge helps keep contents contained. COLORFUL SHELL MOSAIC CENTER: The inner surface is made of small white shell pieces arranged in a mosaic pattern. Bright yellow, pink, green, and blue flower designs are set into the shell mosaic, creating a lively floral look that stands out on dining tables, coffee tables, and kitchen counters. MULTIPURPOSE SERVING BASKET: Use this woven tray as a snack basket, candy dish, fruit platter, or storage organizer. It works well for serving guests, organizing small items, or displaying candles and other home accents. The 37 x 24 x 4cm size fits neatly on most tables and counters. DURABLE AND EASY CARE: The rattan and shell construction offers a sturdy feel for daily use. To clean, simply wipe the surface with a soft damp cloth and dry immediately. Avoid soaking or using harsh cleaners to help maintain the tray's appearance over time. CHARMING GIFT FOR HOME DECOR LOVERS: This floral shell mosaic tray makes a thoughtful present for family and friends who enjoy natural home decor. Its woven rattan border and colorful flower pattern suit many interior styles, from boho and coastal to farmhouse and modern.",
         "descriptionHtml": "<p>NATURAL WOVEN RATTAN BORDER: The tray features a woven rattan rim that brings a warm, organic touch to your table setting. The rectangular shape measures 37 x 24 x 4cm, giving you a generous surface for arranging snacks, fruit, or decorative items while the raised edge helps keep contents contained.</p><p>COLORFUL SHELL MOSAIC CENTER: The inner surface is made of small white shell pieces arranged in a mosaic pattern. Bright yellow, pink, green, and blue flower designs are set into the shell mosaic, creating a lively floral look that stands out on dining tables, coffee tables, and kitchen counters.</p><p>MULTIPURPOSE SERVING BASKET: Use this woven tray as a snack basket, candy dish, fruit platter, or storage organizer. It works well for serving guests, organizing small items, or displaying candles and other home accents. The 37 x 24 x 4cm size fits neatly on most tables and counters.</p><p>DURABLE AND EASY CARE: The rattan and shell construction offers a sturdy feel for daily use. To clean, simply wipe the surface with a soft damp cloth and dry immediately. Avoid soaking or using harsh cleaners to help maintain the tray's appearance over time.</p><p>CHARMING GIFT FOR HOME DECOR LOVERS: This floral shell mosaic tray makes a thoughtful present for family and friends who enjoy natural home decor. Its woven rattan border and colorful flower pattern suit many interior styles, from boho and coastal to farmhouse and modern.</p>",
         "productType": "Dining",
@@ -11079,31 +11079,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-743606980882-C89/1.webp",
+                "url": "/images/products/743606980882-C89/1.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C89/2.webp",
+                "url": "/images/products/743606980882-C89/2.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C89/3.webp",
+                "url": "/images/products/743606980882-C89/3.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C89/4.webp",
+                "url": "/images/products/743606980882-C89/4.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-743606980882-C89/5.webp",
+                "url": "/images/products/743606980882-C89/5.webp",
                 "altText": "Handwoven Rattan Rectangular Serving Tray With Colorful Flower Shell Mosaic Top Fruit Snack Candy Storage Basket For Dining Table Home Kitchen 37 x 24 x 4 cm (Natural)",
                 "width": 800,
                 "height": 800
@@ -11117,7 +11117,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-743606980882-C89",
+                "id": "variant-743606980882-C89",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11130,10 +11130,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-663341114084-C2",
-        "asin": "1688-663341114084-C2",
+        "id": "makimoo-663341114084-C2",
+        "asin": "663341114084-C2",
         "title": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
-        "handle": "vietnamese-rattan-ceramic-oval-serving-tray-with-raindrop-1688-663341114084-c2",
+        "handle": "vietnamese-rattan-ceramic-oval-serving-tray-with-raindrop-663341114084-c2",
         "description": "HANDWOVEN RATTAN AND CERAMIC DESIGN: This oval tray pairs a woven rattan rim with a ceramic serving surface, bringing a natural, textured look to your table while providing a smooth area for snacks and small dishes. RAINDROP PATTERN ELEGANCE: The black and white raindrop motif radiates from the center of the plate, creating a decorative focal point that complements both modern and rustic table settings. VERSATILE SERVING AND STORAGE: Use it as a fruit plate, dessert dish, appetizer tray, or creative organizer for nuts, dried fruit, candies, and small household items. COMPACT OVAL SIZE: Measuring 20 x 11.5 x 2.5cm, this tray fits neatly on coffee tables, kitchen counters, and dining tables without taking up too much space. EASY CARE AND THOUGHTFUL GIFT: Wipe the ceramic plate with a soft damp cloth and avoid soaking the rattan rim; this charming tray also makes a thoughtful gift for housewarmings and everyday hostess occasions.",
         "descriptionHtml": "<p>HANDWOVEN RATTAN AND CERAMIC DESIGN: This oval tray pairs a woven rattan rim with a ceramic serving surface, bringing a natural, textured look to your table while providing a smooth area for snacks and small dishes.</p><p>RAINDROP PATTERN ELEGANCE: The black and white raindrop motif radiates from the center of the plate, creating a decorative focal point that complements both modern and rustic table settings.</p><p>VERSATILE SERVING AND STORAGE: Use it as a fruit plate, dessert dish, appetizer tray, or creative organizer for nuts, dried fruit, candies, and small household items.</p><p>COMPACT OVAL SIZE: Measuring 20 x 11.5 x 2.5cm, this tray fits neatly on coffee tables, kitchen counters, and dining tables without taking up too much space.</p><p>EASY CARE AND THOUGHTFUL GIFT: Wipe the ceramic plate with a soft damp cloth and avoid soaking the rattan rim; this charming tray also makes a thoughtful gift for housewarmings and everyday hostess occasions.</p>",
         "productType": "Dining",
@@ -11143,31 +11143,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-663341114084-C2/1.webp",
+                "url": "/images/products/663341114084-C2/1.webp",
                 "altText": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C2/2.webp",
+                "url": "/images/products/663341114084-C2/2.webp",
                 "altText": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C2/3.webp",
+                "url": "/images/products/663341114084-C2/3.webp",
                 "altText": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C2/4.webp",
+                "url": "/images/products/663341114084-C2/4.webp",
                 "altText": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C2/5.webp",
+                "url": "/images/products/663341114084-C2/5.webp",
                 "altText": "Vietnamese Rattan Ceramic Oval Serving Tray with Raindrop Pattern, Decorative Snack Fruit Plate for Dessert Appetizer Nuts Dried Fruit Storage 20 x 11.5 x 2.5 cm (Black and White)",
                 "width": 800,
                 "height": 800
@@ -11181,7 +11181,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-663341114084-C2",
+                "id": "variant-663341114084-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11194,10 +11194,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-663341114084-C3",
-        "asin": "1688-663341114084-C3",
+        "id": "makimoo-663341114084-C3",
+        "asin": "663341114084-C3",
         "title": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
-        "handle": "natural-rattan-woven-ceramic-oval-snack-fruit-plate-hand-1688-663341114084-c3",
+        "handle": "natural-rattan-woven-ceramic-oval-snack-fruit-plate-hand-663341114084-c3",
         "description": "HANDWOVEN RATTAN AND CERAMIC DESIGN: This oval tray pairs a natural woven rattan rim with a smooth ceramic plate, creating a rustic yet refined look. The hand-painted red fish pattern brings a lively accent to your table setting. The tray measures 20 x 11.5 x 2.5cm, a compact size for small treats and decorative displays. MULTIPURPOSE SERVING AND ORGANIZING: Use this oval dish as a snack plate, fruit holder, nut bowl, candy tray, or creative storage for small items like keys, rings, and jewelry. Its shallow profile and raised rim help keep contents contained and visible. ARTISTIC RED FISH MOTIF: The white ceramic center features two red fish swimming among bubbles, framed by a woven border. This cheerful design adds a warm, coastal or bohemian touch to kitchens, dining tables, and coffee stations. LIGHTWEIGHT AND EASY TO CARRY: The tray is lightweight for simple transport from counter to table. The woven rim offers a comfortable grip, while the ceramic surface wipes clean with a soft, damp cloth. Avoid soaking or harsh abrasives to preserve the finish. THOUGHTFUL GIFT FOR HOME DECOR LOVERS: This decorative oval tray makes a charming present for housewarmings, birthdays, or special occasions. It suits anyone who enjoys handcrafted tableware, unique serving pieces, and natural home accents.",
         "descriptionHtml": "<p>HANDWOVEN RATTAN AND CERAMIC DESIGN: This oval tray pairs a natural woven rattan rim with a smooth ceramic plate, creating a rustic yet refined look. The hand-painted red fish pattern brings a lively accent to your table setting. The tray measures 20 x 11.5 x 2.5cm, a compact size for small treats and decorative displays.</p><p>MULTIPURPOSE SERVING AND ORGANIZING: Use this oval dish as a snack plate, fruit holder, nut bowl, candy tray, or creative storage for small items like keys, rings, and jewelry. Its shallow profile and raised rim help keep contents contained and visible.</p><p>ARTISTIC RED FISH MOTIF: The white ceramic center features two red fish swimming among bubbles, framed by a woven border. This cheerful design adds a warm, coastal or bohemian touch to kitchens, dining tables, and coffee stations.</p><p>LIGHTWEIGHT AND EASY TO CARRY: The tray is lightweight for simple transport from counter to table. The woven rim offers a comfortable grip, while the ceramic surface wipes clean with a soft, damp cloth. Avoid soaking or harsh abrasives to preserve the finish.</p><p>THOUGHTFUL GIFT FOR HOME DECOR LOVERS: This decorative oval tray makes a charming present for housewarmings, birthdays, or special occasions. It suits anyone who enjoys handcrafted tableware, unique serving pieces, and natural home accents.</p>",
         "productType": "Dining",
@@ -11207,31 +11207,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-663341114084-C3/1.webp",
+                "url": "/images/products/663341114084-C3/1.webp",
                 "altText": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C3/2.webp",
+                "url": "/images/products/663341114084-C3/2.webp",
                 "altText": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C3/3.webp",
+                "url": "/images/products/663341114084-C3/3.webp",
                 "altText": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C3/4.webp",
+                "url": "/images/products/663341114084-C3/4.webp",
                 "altText": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-663341114084-C3/5.webp",
+                "url": "/images/products/663341114084-C3/5.webp",
                 "altText": "Natural Rattan Woven Ceramic Oval Snack Fruit Plate Hand Painted Red Fish Design Creative Storage Tray for Nuts Candies Dried Fruits And More 20 x 11.5 x 2.5 cm (Red)",
                 "width": 800,
                 "height": 800
@@ -11245,7 +11245,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-663341114084-C3",
+                "id": "variant-663341114084-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11258,10 +11258,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-807393887857-C2",
-        "asin": "1688-807393887857-C2",
+        "id": "makimoo-807393887857-C2",
+        "asin": "807393887857-C2",
         "title": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
-        "handle": "framed-african-geometric-wall-art-bohemian-folk-decor-with-1688-807393887857-c2",
+        "handle": "framed-african-geometric-wall-art-bohemian-folk-decor-with-807393887857-c2",
         "description": "African Geometric Design: This framed wall art features a striking African geometric motif with basket and vessel patterns, bringing a bohemian folk vibe to your space. The linen canvas texture adds depth and warmth. Versatile Display Options: Designed for both wall hanging and tabletop placement, this piece includes a sturdy wood frame that can stand on a shelf or be mounted on a wall. Perfect for living room, bedroom, or entryway. Quality Materials: Made with linen canvas and a solid wood frame, this decorative art piece offers a rustic yet elegant look. The 33 x 33 x 3cm size makes it a subtle focal point without overwhelming your decor. Boho Folk Aesthetic: The earthy tones of brown, black, and beige blend seamlessly with bohemian, rustic, or tribal-inspired interiors. This artwork adds cultural charm to any room. Ready to Display: Lightweight and easy to place, this framed art comes ready for immediate display on a table or wall. No assembly required, making it a thoughtful addition to your home.",
         "descriptionHtml": "<p>African Geometric Design: This framed wall art features a striking African geometric motif with basket and vessel patterns, bringing a bohemian folk vibe to your space. The linen canvas texture adds depth and warmth.</p><p>Versatile Display Options: Designed for both wall hanging and tabletop placement, this piece includes a sturdy wood frame that can stand on a shelf or be mounted on a wall. Perfect for living room, bedroom, or entryway.</p><p>Quality Materials: Made with linen canvas and a solid wood frame, this decorative art piece offers a rustic yet elegant look. The 33 x 33 x 3cm size makes it a subtle focal point without overwhelming your decor.</p><p>Boho Folk Aesthetic: The earthy tones of brown, black, and beige blend seamlessly with bohemian, rustic, or tribal-inspired interiors. This artwork adds cultural charm to any room.</p><p>Ready to Display: Lightweight and easy to place, this framed art comes ready for immediate display on a table or wall. No assembly required, making it a thoughtful addition to your home.</p>",
         "productType": "Decor",
@@ -11271,37 +11271,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-807393887857-C2/1.webp",
+                "url": "/images/products/807393887857-C2/1.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C2/2.webp",
+                "url": "/images/products/807393887857-C2/2.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C2/3.webp",
+                "url": "/images/products/807393887857-C2/3.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C2/4.webp",
+                "url": "/images/products/807393887857-C2/4.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C2/5.webp",
+                "url": "/images/products/807393887857-C2/5.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C2/6.webp",
+                "url": "/images/products/807393887857-C2/6.webp",
                 "altText": "Framed African Geometric Wall Art, Bohemian Folk Decor With Basket And Vessel Motif, Linen Canvas Print, Tabletop Or Wall Hanging, Wood Frame, 33 x 33 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -11315,7 +11315,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-807393887857-C2",
+                "id": "variant-807393887857-C2",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11328,10 +11328,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-807393887857-C3",
-        "asin": "1688-807393887857-C3",
+        "id": "makimoo-807393887857-C3",
+        "asin": "807393887857-C3",
         "title": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
-        "handle": "vintage-style-square-framed-canvas-wall-art-african-1688-807393887857-c3",
+        "handle": "vintage-style-square-framed-canvas-wall-art-african-807393887857-c3",
         "description": "AFRICAN BOHEMIAN FOLK ART MOTIF: This square framed wall art features a textured canvas print inspired by African and Bohemian folk design, showcasing woven basket, pottery, and geometric patterns in earthy tones for a warm cultural accent. VERSATILE WALL AND TABLETOP DISPLAY: Designed for flexible placement, this decorative piece can be displayed on a wall or placed on a desktop, shelf, mantel, or side table, making it easy to add character to living rooms, bedrooms, entryways, or studios. RUSTIC WOOD FRAME WITH TEXTURED CANVAS: The artwork is set in a natural wood frame that complements the folk-inspired print, while the canvas surface offers a tactile, linen-like look that suits rustic, boho, and global decor styles. COMPACT SQUARE SIZE: Measuring 33 x 33cm with a 3cm frame depth, this small square art piece fits neatly in tight spaces while still making a statement. Use it alone or group it with other framed prints for a curated gallery arrangement. EARTHY NEUTRAL COLOR PALETTE: Featuring brown, tan, beige, black, and navy blue accents, this framed art blends easily with neutral interiors, natural wood furniture, woven textiles, and botanical decor, adding a calm, collected touch to your space.",
         "descriptionHtml": "<p>AFRICAN BOHEMIAN FOLK ART MOTIF: This square framed wall art features a textured canvas print inspired by African and Bohemian folk design, showcasing woven basket, pottery, and geometric patterns in earthy tones for a warm cultural accent.</p><p>VERSATILE WALL AND TABLETOP DISPLAY: Designed for flexible placement, this decorative piece can be displayed on a wall or placed on a desktop, shelf, mantel, or side table, making it easy to add character to living rooms, bedrooms, entryways, or studios.</p><p>RUSTIC WOOD FRAME WITH TEXTURED CANVAS: The artwork is set in a natural wood frame that complements the folk-inspired print, while the canvas surface offers a tactile, linen-like look that suits rustic, boho, and global decor styles.</p><p>COMPACT SQUARE SIZE: Measuring 33 x 33cm with a 3cm frame depth, this small square art piece fits neatly in tight spaces while still making a statement. Use it alone or group it with other framed prints for a curated gallery arrangement.</p><p>EARTHY NEUTRAL COLOR PALETTE: Featuring brown, tan, beige, black, and navy blue accents, this framed art blends easily with neutral interiors, natural wood furniture, woven textiles, and botanical decor, adding a calm, collected touch to your space.</p>",
         "productType": "Decor",
@@ -11341,37 +11341,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-807393887857-C3/1.webp",
+                "url": "/images/products/807393887857-C3/1.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C3/2.webp",
+                "url": "/images/products/807393887857-C3/2.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C3/3.webp",
+                "url": "/images/products/807393887857-C3/3.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C3/4.webp",
+                "url": "/images/products/807393887857-C3/4.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C3/5.webp",
+                "url": "/images/products/807393887857-C3/5.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C3/6.webp",
+                "url": "/images/products/807393887857-C3/6.webp",
                 "altText": "Vintage Style Square Framed Canvas Wall Art African Bohemian Folk Print with Woven Basket and Pottery Motifs, Rustic Wood Frame, Tabletop and Wall Decor, 33 x 33 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -11385,7 +11385,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-807393887857-C3",
+                "id": "variant-807393887857-C3",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11398,10 +11398,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-807393887857-C4",
-        "asin": "1688-807393887857-C4",
+        "id": "makimoo-807393887857-C4",
+        "asin": "807393887857-C4",
         "title": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
-        "handle": "handmade-african-bohemian-folk-art-canvas-wall-decor-with-1688-807393887857-c4",
+        "handle": "handmade-african-bohemian-folk-art-canvas-wall-decor-with-807393887857-c4",
         "description": "AFRICAN BOHEMIAN STYLE: This decorative wall art features a striking folk art design with geometric tribal patterns, combining African and bohemian aesthetics to bring a warm, artistic touch to your space. The canvas and burlap texture add depth and character. DUAL DISPLAY OPTIONS: Designed for both wall hanging and tabletop placement, this framed artwork includes a sturdy wood frame in a coffee brown finish. You can easily mount it on the wall or stand it on a shelf, mantel, or desk. PERFECT SIZE FOR SMALL SPACES: Measuring 33 x 33 x 3cm, this square art piece fits nicely in tight areas such as entryways, bathrooms, or above a small console table. The compact size makes it versatile for layering with other decor. QUALITY MATERIALS AND CRAFTSMANSHIP: Made with canvas and burlap over a solid wood frame, this piece offers a textured, handcrafted look. The printed pattern is fade resistant and the frame is built to last, adding enduring style to your home. VERSATILE DECOR ACCENT: Ideal for living rooms, bedrooms, offices, or gallery walls, this folk art piece complements bohemian, rustic, farmhouse, and eclectic interiors. It also makes a thoughtful housewarming or holiday gift for art lovers.",
         "descriptionHtml": "<p>AFRICAN BOHEMIAN STYLE: This decorative wall art features a striking folk art design with geometric tribal patterns, combining African and bohemian aesthetics to bring a warm, artistic touch to your space. The canvas and burlap texture add depth and character.</p><p>DUAL DISPLAY OPTIONS: Designed for both wall hanging and tabletop placement, this framed artwork includes a sturdy wood frame in a coffee brown finish. You can easily mount it on the wall or stand it on a shelf, mantel, or desk.</p><p>PERFECT SIZE FOR SMALL SPACES: Measuring 33 x 33 x 3cm, this square art piece fits nicely in tight areas such as entryways, bathrooms, or above a small console table. The compact size makes it versatile for layering with other decor.</p><p>QUALITY MATERIALS AND CRAFTSMANSHIP: Made with canvas and burlap over a solid wood frame, this piece offers a textured, handcrafted look. The printed pattern is fade resistant and the frame is built to last, adding enduring style to your home.</p><p>VERSATILE DECOR ACCENT: Ideal for living rooms, bedrooms, offices, or gallery walls, this folk art piece complements bohemian, rustic, farmhouse, and eclectic interiors. It also makes a thoughtful housewarming or holiday gift for art lovers.</p>",
         "productType": "Decor",
@@ -11411,31 +11411,31 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-807393887857-C4/1.webp",
+                "url": "/images/products/807393887857-C4/1.webp",
                 "altText": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C4/2.webp",
+                "url": "/images/products/807393887857-C4/2.webp",
                 "altText": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C4/3.webp",
+                "url": "/images/products/807393887857-C4/3.webp",
                 "altText": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C4/4.webp",
+                "url": "/images/products/807393887857-C4/4.webp",
                 "altText": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C4/5.webp",
+                "url": "/images/products/807393887857-C4/5.webp",
                 "altText": "Handmade African Bohemian Folk Art Canvas Wall Decor with Burlap Accent, Geometric Tribal Pattern Wood Framed Tabletop Art for Living Room Bedroom, 33 x 33 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -11449,7 +11449,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-807393887857-C4",
+                "id": "variant-807393887857-C4",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11462,10 +11462,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-807393887857-C5",
-        "asin": "1688-807393887857-C5",
+        "id": "makimoo-807393887857-C5",
+        "asin": "807393887857-C5",
         "title": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
-        "handle": "folk-art-wall-decor-canvas-linen-print-with-wooden-frame-1688-807393887857-c5",
+        "handle": "folk-art-wall-decor-canvas-linen-print-with-wooden-frame-807393887857-c5",
         "description": "AFRICAN BOHO WALL DECOR: This square folk art piece showcases nine geometric motifs in diamond and cross shapes, with white woven-look detailing and warm orange accents on a black background. It brings a tribal and bohemian touch to your home. VERSATILE DISPLAY OPTIONS: Designed with a sturdy wooden frame, this decorative art can be hung on the wall or placed on a tabletop, shelf, or desk. The 3cm depth allows it to stand steadily as a freestanding accent. PERFECT SIZE FOR SMALL SPACES: Measuring 33 x 33cm, this compact square wall art fits neatly in living rooms, bedrooms, entryways, and offices. The 33 x 33cm size makes it easy to arrange alone or with other decor. CANVAS AND LINEN TEXTURE: The surface combines canvas and linen materials, offering a subtle textured look that complements rustic, ethnic, and modern farmhouse interiors. The black backdrop makes the white and orange patterns stand out. THOUGHTFUL GIFT CHOICE: This bohemian accent piece makes a thoughtful gift for friends and family who enjoy unique home decor. Its neutral black, white, and orange palette blends easily with many color schemes.",
         "descriptionHtml": "<p>AFRICAN BOHO WALL DECOR: This square folk art piece showcases nine geometric motifs in diamond and cross shapes, with white woven-look detailing and warm orange accents on a black background. It brings a tribal and bohemian touch to your home.</p><p>VERSATILE DISPLAY OPTIONS: Designed with a sturdy wooden frame, this decorative art can be hung on the wall or placed on a tabletop, shelf, or desk. The 3cm depth allows it to stand steadily as a freestanding accent.</p><p>PERFECT SIZE FOR SMALL SPACES: Measuring 33 x 33cm, this compact square wall art fits neatly in living rooms, bedrooms, entryways, and offices. The 33 x 33cm size makes it easy to arrange alone or with other decor.</p><p>CANVAS AND LINEN TEXTURE: The surface combines canvas and linen materials, offering a subtle textured look that complements rustic, ethnic, and modern farmhouse interiors. The black backdrop makes the white and orange patterns stand out.</p><p>THOUGHTFUL GIFT CHOICE: This bohemian accent piece makes a thoughtful gift for friends and family who enjoy unique home decor. Its neutral black, white, and orange palette blends easily with many color schemes.</p>",
         "productType": "Decor",
@@ -11475,37 +11475,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-807393887857-C5/1.webp",
+                "url": "/images/products/807393887857-C5/1.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C5/2.webp",
+                "url": "/images/products/807393887857-C5/2.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C5/3.webp",
+                "url": "/images/products/807393887857-C5/3.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C5/4.webp",
+                "url": "/images/products/807393887857-C5/4.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C5/5.webp",
+                "url": "/images/products/807393887857-C5/5.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C5/6.webp",
+                "url": "/images/products/807393887857-C5/6.webp",
                 "altText": "Folk Art Wall Decor Canvas Linen Print With Wooden Frame Tabletop Bohemian African Style 9 Geometric Diamond Cross Motifs Black Background Home Decor Accent 33 x 33 cm (Black)",
                 "width": 800,
                 "height": 800
@@ -11519,7 +11519,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-807393887857-C5",
+                "id": "variant-807393887857-C5",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11532,10 +11532,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-807393887857-C6",
-        "asin": "1688-807393887857-C6",
+        "id": "makimoo-807393887857-C6",
+        "asin": "807393887857-C6",
         "title": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
-        "handle": "4-piece-square-folk-art-canvas-wall-decor-set-with-wooden-1688-807393887857-c6",
+        "handle": "4-piece-square-folk-art-canvas-wall-decor-set-with-wooden-807393887857-c6",
         "description": "FOUR PIECE FOLK ART SET: This set includes four square framed wall art pieces, each measuring 28 x 28cm with a 3cm frame depth, ready to create a balanced gallery arrangement on a wall or a coordinated display on a tabletop. GEOMETRIC TRIBAL MOTIFS: Bold black, brown, rust, and cream geometric patterns give each panel a folk and African boho look, adding visual rhythm to living rooms, bedrooms, hallways, or creative workspaces. WOODEN FRAME WITH CANVAS SURFACE: Each print is bordered by a visible wooden frame and presented on a canvas and linen style surface, bringing a natural, handcrafted feel to shelves, desks, console tables, or mantels. WALL OR TABLETOP DISPLAY: The square silhouette and 3cm depth allow flexible styling. Hang the four pieces as a grid or lean and place them individually on a desk, shelf, nightstand, or entryway console. WARM BOHO HOME ACCENT: The earthy palette and folk inspired artwork coordinate with bohemian, rustic, global, and modern interiors, making a thoughtful accent for your own space or a gift for fans of cultural decor.",
         "descriptionHtml": "<p>FOUR PIECE FOLK ART SET: This set includes four square framed wall art pieces, each measuring 28 x 28cm with a 3cm frame depth, ready to create a balanced gallery arrangement on a wall or a coordinated display on a tabletop.</p><p>GEOMETRIC TRIBAL MOTIFS: Bold black, brown, rust, and cream geometric patterns give each panel a folk and African boho look, adding visual rhythm to living rooms, bedrooms, hallways, or creative workspaces.</p><p>WOODEN FRAME WITH CANVAS SURFACE: Each print is bordered by a visible wooden frame and presented on a canvas and linen style surface, bringing a natural, handcrafted feel to shelves, desks, console tables, or mantels.</p><p>WALL OR TABLETOP DISPLAY: The square silhouette and 3cm depth allow flexible styling. Hang the four pieces as a grid or lean and place them individually on a desk, shelf, nightstand, or entryway console.</p><p>WARM BOHO HOME ACCENT: The earthy palette and folk inspired artwork coordinate with bohemian, rustic, global, and modern interiors, making a thoughtful accent for your own space or a gift for fans of cultural decor.</p>",
         "productType": "Decor",
@@ -11545,25 +11545,25 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-807393887857-C6/1.webp",
+                "url": "/images/products/807393887857-C6/1.webp",
                 "altText": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C6/2.webp",
+                "url": "/images/products/807393887857-C6/2.webp",
                 "altText": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C6/3.webp",
+                "url": "/images/products/807393887857-C6/3.webp",
                 "altText": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-807393887857-C6/4.webp",
+                "url": "/images/products/807393887857-C6/4.webp",
                 "altText": "4 Piece Square Folk Art Canvas Wall Decor Set With Wooden Frames Geometric Tribal African Boho Style Prints For Wall Or Tabletop Display Each 28 x 28 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -11577,7 +11577,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-807393887857-C6",
+                "id": "variant-807393887857-C6",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11590,10 +11590,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C12",
-        "asin": "1688-1052742241013-C12",
+        "id": "makimoo-1052742241013-C12",
+        "asin": "1052742241013-C12",
         "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
-        "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1688-1052742241013-c12",
+        "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1052742241013-c12",
         "description": "SOFT FAUX CASHMERE FEEL: This area rug features a faux cashmere surface that feels soft and cozy underfoot, adding warmth and comfort to your living room, bedroom, or seating area. VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles. NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas. VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas. LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.",
         "descriptionHtml": "<p>SOFT FAUX CASHMERE FEEL: This area rug features a faux cashmere surface that feels soft and cozy underfoot, adding warmth and comfort to your living room, bedroom, or seating area.</p><p>VINTAGE PERSIAN BOHO STYLE: The rug showcases a Persian-inspired medallion pattern with boho details in orange and blue tones, bringing a vintage look that complements many home decor styles.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps reduce sliding on hard floors, so the rug stays in place during daily use and works well in busy spaces such as living rooms and bedside areas.</p><p>VERSATILE HOME DECOR: With a 180 x 250cm size, this rug can be placed under a sofa, coffee table, or bed, or used as a decorative floor mat in the living room, bedroom, or other indoor areas.</p><p>LOW PROFILE AND EASY MAINTENANCE: The 0.5cm low profile allows the rug to fit under furniture and doors; regular vacuuming and spot cleaning as needed help keep it looking neat and fresh.</p>",
         "productType": "Mats",
@@ -11603,37 +11603,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C12/1.webp",
+                "url": "/images/products/1052742241013-C12/1.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C12/2.webp",
+                "url": "/images/products/1052742241013-C12/2.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C12/3.webp",
+                "url": "/images/products/1052742241013-C12/3.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C12/4.webp",
+                "url": "/images/products/1052742241013-C12/4.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C12/5.webp",
+                "url": "/images/products/1052742241013-C12/5.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C12/6.webp",
+                "url": "/images/products/1052742241013-C12/6.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Non Slip Silicone Backing For Living Room Bedroom Sofa Bedside Indoor Decorative Floor Carpet Mat 180 x 250 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
@@ -11647,7 +11647,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C12",
+                "id": "variant-1052742241013-C12",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11660,10 +11660,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C11",
-        "asin": "1688-1052742241013-C11",
+        "id": "makimoo-1052742241013-C11",
+        "asin": "1052742241013-C11",
         "title": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
-        "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-1688-1052742241013-c11",
+        "handle": "vintage-boho-persian-area-rug-faux-cashmere-non-slip-1052742241013-c11",
         "description": "VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. The intricate border and central motifs add artistic charm to your home decor. SOFT FAUX CASHMERE COMFORT: Crafted from faux cashmere material, this rug offers a plush, cozy surface that feels gentle underfoot. The soft texture makes it ideal for relaxing, playing, or walking barefoot, enhancing comfort in any indoor space. NON SLIP SILICONE BACKING: The silicone backing helps keep the rug securely in place on various floor types, reducing slips and shifts. This non slip design is suitable for high traffic areas and homes with children or pets, providing added stability. VERSATILE SIZE FOR MULTIPLE ROOMS: Measuring 140 x 200cm, this rectangular rug fits well in living rooms, bedrooms, beside the sofa, or at the bedside. Its generous size provides ample coverage while complementing different furniture arrangements and interior styles. EASY CARE AND LONG LASTING: The low pile construction resists dirt and is easy to maintain. Simply vacuum regularly and spot clean with a mild detergent when needed. The durable materials help the rug retain its shape and color over time.",
         "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with rich orange, blue, and brown tones, bringing a warm retro bohemian feel to your living room, bedroom, or nursery. The intricate border and central motifs add artistic charm to your home decor.</p><p>SOFT FAUX CASHMERE COMFORT: Crafted from faux cashmere material, this rug offers a plush, cozy surface that feels gentle underfoot. The soft texture makes it ideal for relaxing, playing, or walking barefoot, enhancing comfort in any indoor space.</p><p>NON SLIP SILICONE BACKING: The silicone backing helps keep the rug securely in place on various floor types, reducing slips and shifts. This non slip design is suitable for high traffic areas and homes with children or pets, providing added stability.</p><p>VERSATILE SIZE FOR MULTIPLE ROOMS: Measuring 140 x 200cm, this rectangular rug fits well in living rooms, bedrooms, beside the sofa, or at the bedside. Its generous size provides ample coverage while complementing different furniture arrangements and interior styles.</p><p>EASY CARE AND LONG LASTING: The low pile construction resists dirt and is easy to maintain. Simply vacuum regularly and spot clean with a mild detergent when needed. The durable materials help the rug retain its shape and color over time.</p>",
         "productType": "Mats",
@@ -11673,37 +11673,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C11/1.webp",
+                "url": "/images/products/1052742241013-C11/1.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C11/2.webp",
+                "url": "/images/products/1052742241013-C11/2.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C11/3.webp",
+                "url": "/images/products/1052742241013-C11/3.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C11/4.webp",
+                "url": "/images/products/1052742241013-C11/4.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C11/5.webp",
+                "url": "/images/products/1052742241013-C11/5.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C11/6.webp",
+                "url": "/images/products/1052742241013-C11/6.webp",
                 "altText": "Vintage Boho Persian Area Rug Faux Cashmere Non Slip Silicone Backing Soft Cozy Floor Carpet For Living Room Bedroom Sofa Bedside Nursery Decor 140 x 200 cm (Orange Blue)",
                 "width": 800,
                 "height": 800
@@ -11717,7 +11717,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C11",
+                "id": "variant-1052742241013-C11",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11730,10 +11730,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C10",
-        "asin": "1688-1052742241013-C10",
+        "id": "makimoo-1052742241013-C10",
+        "asin": "1052742241013-C10",
         "title": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
-        "handle": "vintage-bohemian-persian-boho-chic-area-rug-soft-faux-1688-1052742241013-c10",
+        "handle": "vintage-bohemian-persian-boho-chic-area-rug-soft-faux-1052742241013-c10",
         "description": "VINTAGE BOHO DESIGN: This area rug features a Persian inspired medallion with floral motifs and a gently distressed look, adding warm character to living rooms, bedrooms, dining spaces, and entryways. The teal blue, navy, beige, and blush palette pairs well with bohemian, farmhouse, and modern decor. SOFT FAUX CASHMERE COMFORT: The faux cashmere surface offers a cozy, soft feel underfoot, making this 140 x 200cm rug a comfortable choice for sofa areas, bedside placement, and relaxed floor seating. Its low 0.5cm profile fits easily under furniture and around doorways. NON SLIP SILICONE BACKING: A silicone backing helps keep the rug stable on hard floors and low pile carpets, reducing sliding and bunching during everyday use. This makes it a practical option for busy living rooms, hallways, and under coffee tables. VERSATILE ROOM ACCENT: Designed for flexible placement, this 140 x 200cm carpet works as a living room anchor, bedroom accent, sofa companion, or bedside mat. The vintage pattern complements both classic and contemporary home styles. EASY CARE AND LONG LASTING LOOK: Vacuum regularly and spot clean with a mild detergent to maintain the rug's soft texture and printed pattern. Finished edges and a durable faux cashmere surface help it handle daily foot traffic in family spaces.",
         "descriptionHtml": "<p>VINTAGE BOHO DESIGN: This area rug features a Persian inspired medallion with floral motifs and a gently distressed look, adding warm character to living rooms, bedrooms, dining spaces, and entryways. The teal blue, navy, beige, and blush palette pairs well with bohemian, farmhouse, and modern decor.</p><p>SOFT FAUX CASHMERE COMFORT: The faux cashmere surface offers a cozy, soft feel underfoot, making this 140 x 200cm rug a comfortable choice for sofa areas, bedside placement, and relaxed floor seating. Its low 0.5cm profile fits easily under furniture and around doorways.</p><p>NON SLIP SILICONE BACKING: A silicone backing helps keep the rug stable on hard floors and low pile carpets, reducing sliding and bunching during everyday use. This makes it a practical option for busy living rooms, hallways, and under coffee tables.</p><p>VERSATILE ROOM ACCENT: Designed for flexible placement, this 140 x 200cm carpet works as a living room anchor, bedroom accent, sofa companion, or bedside mat. The vintage pattern complements both classic and contemporary home styles.</p><p>EASY CARE AND LONG LASTING LOOK: Vacuum regularly and spot clean with a mild detergent to maintain the rug's soft texture and printed pattern. Finished edges and a durable faux cashmere surface help it handle daily foot traffic in family spaces.</p>",
         "productType": "Mats",
@@ -11743,37 +11743,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C10/1.webp",
+                "url": "/images/products/1052742241013-C10/1.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C10/2.webp",
+                "url": "/images/products/1052742241013-C10/2.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C10/3.webp",
+                "url": "/images/products/1052742241013-C10/3.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C10/4.webp",
+                "url": "/images/products/1052742241013-C10/4.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C10/5.webp",
+                "url": "/images/products/1052742241013-C10/5.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C10/6.webp",
+                "url": "/images/products/1052742241013-C10/6.webp",
                 "altText": "Vintage Bohemian Persian Boho Chic Area Rug Soft Faux Cashmere Non Slip Silicone Backing Carpet for Living Room Bedroom Sofa Bedside Home Decor 140 x 200 cm (Teal Blue)",
                 "width": 800,
                 "height": 800
@@ -11787,7 +11787,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C10",
+                "id": "variant-1052742241013-C10",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11800,10 +11800,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C9",
-        "asin": "1688-1052742241013-C9",
+        "id": "makimoo-1052742241013-C9",
+        "asin": "1052742241013-C9",
         "title": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
-        "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-1688-1052742241013-c9",
+        "handle": "vintage-persian-boho-area-rug-soft-faux-cashmere-anti-slip-1052742241013-c9",
         "description": "VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. The vintage distressed look adds warmth and character to living rooms, bedrooms, and cozy seating areas. SOFT FAUX CASHMERE SURFACE: The plush faux cashmere top offers a gentle, velvety feel underfoot. It creates a comfortable spot for bare feet, pets, and children while bringing a soft textured layer to your home decor. ANTI SLIP SILICONE BACKING: Designed with a silicone backing, this rug helps stay securely in place on hard floors and low pile carpets. The anti slip construction reduces shifting and curling for safer everyday use in busy rooms. VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rectangular rug fits well under coffee tables, at the foot of a bed, beside a sofa, or in a dining area. The low profile height of 0.5cm allows doors to open smoothly and works with many furniture layouts. EASY CARE & LOW MAINTENANCE: The non shedding surface is simple to maintain with regular vacuuming and spot cleaning. For long lasting beauty, rotate the rug occasionally and avoid prolonged direct sunlight.",
         "descriptionHtml": "<p>VINTAGE PERSIAN BOHO DESIGN: This area rug features a classic Persian-inspired medallion pattern with floral motifs and a rich teal, navy, beige, and blush color palette. The vintage distressed look adds warmth and character to living rooms, bedrooms, and cozy seating areas.</p><p>SOFT FAUX CASHMERE SURFACE: The plush faux cashmere top offers a gentle, velvety feel underfoot. It creates a comfortable spot for bare feet, pets, and children while bringing a soft textured layer to your home decor.</p><p>ANTI SLIP SILICONE BACKING: Designed with a silicone backing, this rug helps stay securely in place on hard floors and low pile carpets. The anti slip construction reduces shifting and curling for safer everyday use in busy rooms.</p><p>VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rectangular rug fits well under coffee tables, at the foot of a bed, beside a sofa, or in a dining area. The low profile height of 0.5cm allows doors to open smoothly and works with many furniture layouts.</p><p>EASY CARE &amp; LOW MAINTENANCE: The non shedding surface is simple to maintain with regular vacuuming and spot cleaning. For long lasting beauty, rotate the rug occasionally and avoid prolonged direct sunlight.</p>",
         "productType": "Mats",
@@ -11813,37 +11813,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C9/1.webp",
+                "url": "/images/products/1052742241013-C9/1.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C9/2.webp",
+                "url": "/images/products/1052742241013-C9/2.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C9/3.webp",
+                "url": "/images/products/1052742241013-C9/3.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C9/4.webp",
+                "url": "/images/products/1052742241013-C9/4.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C9/5.webp",
+                "url": "/images/products/1052742241013-C9/5.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C9/6.webp",
+                "url": "/images/products/1052742241013-C9/6.webp",
                 "altText": "Vintage Persian Boho Area Rug Soft Faux Cashmere Anti Slip Silicone Backing Easy Care Non Shedding Distressed for Living Room Bedroom Bedside Home Decor 180 x 250 cm (Teal)",
                 "width": 800,
                 "height": 800
@@ -11857,7 +11857,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C9",
+                "id": "variant-1052742241013-C9",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11870,10 +11870,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C8",
-        "asin": "1688-1052742241013-C8",
+        "id": "makimoo-1052742241013-C8",
+        "asin": "1052742241013-C8",
         "title": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
-        "handle": "vintage-persian-area-rug-faux-cashmere-boho-non-slip-1688-1052742241013-c8",
+        "handle": "vintage-persian-area-rug-faux-cashmere-boho-non-slip-1052742241013-c8",
         "description": "VINTAGE PERSIAN INSPIRED DESIGN: This area rug features a traditional medallion center, floral border, and soft sage green tones with beige and rust accents, bringing a warm bohemian look to living rooms, bedrooms, sofa areas, and bedside spaces. SOFT FAUX CASHMERE FEEL: The faux cashmere surface provides a gentle, cozy touch underfoot while keeping a low profile that fits everyday indoor areas. Its soft texture makes the rug a comfortable choice for relaxing, reading, or walking barefoot. NON SLIP SILICONE BACKING: The silicone backing helps hold the rug in place on hard floors and can reduce shifting when you walk, sit, or place light furniture on it. This design supports stable placement in busy living rooms, bedrooms, and bedside areas. VERSATILE 140 x 200cm SIZE: Measuring 140 x 200cm with a 0.5cm height, this area rug fits living room seating areas, under a coffee table, beside a bed, or in a bedroom as a soft decorative layer. The rectangular shape works with many furniture layouts. EASY DAILY CARE: Low pile construction allows simple upkeep for indoor spaces. Vacuum regularly on a low setting, spot clean gently with mild soap and a damp cloth, and roll or fold the rug for storage when needed.",
         "descriptionHtml": "<p>VINTAGE PERSIAN INSPIRED DESIGN: This area rug features a traditional medallion center, floral border, and soft sage green tones with beige and rust accents, bringing a warm bohemian look to living rooms, bedrooms, sofa areas, and bedside spaces.</p><p>SOFT FAUX CASHMERE FEEL: The faux cashmere surface provides a gentle, cozy touch underfoot while keeping a low profile that fits everyday indoor areas. Its soft texture makes the rug a comfortable choice for relaxing, reading, or walking barefoot.</p><p>NON SLIP SILICONE BACKING: The silicone backing helps hold the rug in place on hard floors and can reduce shifting when you walk, sit, or place light furniture on it. This design supports stable placement in busy living rooms, bedrooms, and bedside areas.</p><p>VERSATILE 140 x 200cm SIZE: Measuring 140 x 200cm with a 0.5cm height, this area rug fits living room seating areas, under a coffee table, beside a bed, or in a bedroom as a soft decorative layer. The rectangular shape works with many furniture layouts.</p><p>EASY DAILY CARE: Low pile construction allows simple upkeep for indoor spaces. Vacuum regularly on a low setting, spot clean gently with mild soap and a damp cloth, and roll or fold the rug for storage when needed.</p>",
         "productType": "Mats",
@@ -11883,37 +11883,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C8/1.webp",
+                "url": "/images/products/1052742241013-C8/1.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C8/2.webp",
+                "url": "/images/products/1052742241013-C8/2.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C8/3.webp",
+                "url": "/images/products/1052742241013-C8/3.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C8/4.webp",
+                "url": "/images/products/1052742241013-C8/4.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C8/5.webp",
+                "url": "/images/products/1052742241013-C8/5.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C8/6.webp",
+                "url": "/images/products/1052742241013-C8/6.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Boho Non Slip Silicone Backing Oriental Medallion Soft Carpet for Living Room Bedroom Sofa Bedside Indoor 140 x 200 cm (Sage Green)",
                 "width": 800,
                 "height": 800
@@ -11927,7 +11927,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C8",
+                "id": "variant-1052742241013-C8",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -11940,10 +11940,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-1052742241013-C7",
-        "asin": "1688-1052742241013-C7",
+        "id": "makimoo-1052742241013-C7",
+        "asin": "1052742241013-C7",
         "title": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
-        "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-1688-1052742241013-c7",
+        "handle": "vintage-persian-area-rug-faux-cashmere-bohemian-non-slip-1052742241013-c7",
         "description": "SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. The soft texture helps create a warm, inviting spot for relaxing, reading, or spending time with family. NON SLIP SILICONE BACKING: The silicone backing is designed to help keep the rug stable on hard floors, reducing shifting during daily use. This feature makes it a practical choice for busy homes with kids or pets, and it works well under sofas, beds, and coffee tables. VINTAGE PERSIAN BOHEMIAN MOTIF: The rug showcases a traditional Persian-inspired medallion pattern with Bohemian details in a sage green palette and muted red accents. Its faded vintage look brings character to modern, farmhouse, or eclectic interiors without overpowering the room. VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rug offers generous coverage for living room seating areas, bedroom floors, and bedside spaces. The low 0.5cm profile allows it to sit neatly under furniture and makes it easy to place in entryways or dining areas. EASY CARE AND LONG LASTING USE: Regular vacuuming and spot cleaning with a mild detergent help maintain the rug's appearance. The durable construction and non slip backing support everyday use in high traffic areas, making it a low maintenance addition to your home.",
         "descriptionHtml": "<p>SOFT FAUX CASHMERE SURFACE: This area rug features a plush faux cashmere surface that feels gentle underfoot and adds a cozy layer to living rooms, bedrooms, and bedside areas. The soft texture helps create a warm, inviting spot for relaxing, reading, or spending time with family.</p><p>NON SLIP SILICONE BACKING: The silicone backing is designed to help keep the rug stable on hard floors, reducing shifting during daily use. This feature makes it a practical choice for busy homes with kids or pets, and it works well under sofas, beds, and coffee tables.</p><p>VINTAGE PERSIAN BOHEMIAN MOTIF: The rug showcases a traditional Persian-inspired medallion pattern with Bohemian details in a sage green palette and muted red accents. Its faded vintage look brings character to modern, farmhouse, or eclectic interiors without overpowering the room.</p><p>VERSATILE 180 x 250cm SIZE: Measuring 180 x 250cm, this rug offers generous coverage for living room seating areas, bedroom floors, and bedside spaces. The low 0.5cm profile allows it to sit neatly under furniture and makes it easy to place in entryways or dining areas.</p><p>EASY CARE AND LONG LASTING USE: Regular vacuuming and spot cleaning with a mild detergent help maintain the rug's appearance. The durable construction and non slip backing support everyday use in high traffic areas, making it a low maintenance addition to your home.</p>",
         "productType": "Mats",
@@ -11953,37 +11953,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-1052742241013-C7/1.webp",
+                "url": "/images/products/1052742241013-C7/1.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C7/2.webp",
+                "url": "/images/products/1052742241013-C7/2.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C7/3.webp",
+                "url": "/images/products/1052742241013-C7/3.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C7/4.webp",
+                "url": "/images/products/1052742241013-C7/4.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C7/5.webp",
+                "url": "/images/products/1052742241013-C7/5.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-1052742241013-C7/6.webp",
+                "url": "/images/products/1052742241013-C7/6.webp",
                 "altText": "Vintage Persian Area Rug Faux Cashmere Bohemian Non Slip Carpet for Living Room Bedroom Sofa Bedside Soft Plush Oriental Medallion Indoor Floor Mat 180 x 250 cm (Sage Green)",
                 "width": 800,
                 "height": 800
@@ -11997,7 +11997,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-1052742241013-C7",
+                "id": "variant-1052742241013-C7",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12010,10 +12010,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C19",
-        "asin": "1688-730512046265-C19",
+        "id": "makimoo-730512046265-C19",
+        "asin": "730512046265-C19",
         "title": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
-        "handle": "african-style-woven-basket-motif-linen-wall-art-with-solid-1688-730512046265-c19",
+        "handle": "african-style-woven-basket-motif-linen-wall-art-with-solid-730512046265-c19",
         "description": "AFRICAN WOVEN BASKET MOTIF: This framed wall art features a detailed African-inspired woven basket design with geometric patterns and warm earth tones. The fabric background adds texture and depth, making it a striking focal point for global, bohemian, or African-inspired interiors. SOLID WOOD FRAME: The artwork is set in a solid wood frame with a natural brown finish that complements the earthy palette. Its 48 x 48 x 3cm square format gives the piece a balanced, gallery-style presence without overwhelming the wall. LINEN FABRIC SURFACE: This artwork is presented on a linen fabric surface with visible weave texture and a soft matte finish. The fabric ground gives the African basket motifs a warm, tactile look and pairs well with wood, rattan, and woven decor. VERSATILE HOSPITALITY AND HOME DECOR: Designed for hotels, restaurants, homestays, living rooms, and design studios, this square art piece adds cultural character to both residential and commercial spaces. It can be hung alone or grouped with other framed prints for a curated gallery wall. THOUGHTFUL GIFT FOR DESIGN LOVERS: An expressive accent for fans of African-inspired decor, interior designers, and anyone updating a guest room, dining area, or lounge. The framed format makes it a considerate choice for housewarmings and space refreshes.",
         "descriptionHtml": "<p>AFRICAN WOVEN BASKET MOTIF: This framed wall art features a detailed African-inspired woven basket design with geometric patterns and warm earth tones. The fabric background adds texture and depth, making it a striking focal point for global, bohemian, or African-inspired interiors.</p><p>SOLID WOOD FRAME: The artwork is set in a solid wood frame with a natural brown finish that complements the earthy palette. Its 48 x 48 x 3cm square format gives the piece a balanced, gallery-style presence without overwhelming the wall.</p><p>LINEN FABRIC SURFACE: This artwork is presented on a linen fabric surface with visible weave texture and a soft matte finish. The fabric ground gives the African basket motifs a warm, tactile look and pairs well with wood, rattan, and woven decor.</p><p>VERSATILE HOSPITALITY AND HOME DECOR: Designed for hotels, restaurants, homestays, living rooms, and design studios, this square art piece adds cultural character to both residential and commercial spaces. It can be hung alone or grouped with other framed prints for a curated gallery wall.</p><p>THOUGHTFUL GIFT FOR DESIGN LOVERS: An expressive accent for fans of African-inspired decor, interior designers, and anyone updating a guest room, dining area, or lounge. The framed format makes it a considerate choice for housewarmings and space refreshes.</p>",
         "productType": "Decor",
@@ -12023,37 +12023,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C19/1.webp",
+                "url": "/images/products/730512046265-C19/1.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C19/2.webp",
+                "url": "/images/products/730512046265-C19/2.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C19/3.webp",
+                "url": "/images/products/730512046265-C19/3.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C19/4.webp",
+                "url": "/images/products/730512046265-C19/4.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C19/5.webp",
+                "url": "/images/products/730512046265-C19/5.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C19/6.webp",
+                "url": "/images/products/730512046265-C19/6.webp",
                 "altText": "African Style Woven Basket Motif Linen Wall Art With Solid Wood Frame Decorative Painting For Hotel Restaurant Homestay Designer Soft Furnishings 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -12067,7 +12067,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C19",
+                "id": "variant-730512046265-C19",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12080,10 +12080,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C18",
-        "asin": "1688-730512046265-C18",
+        "id": "makimoo-730512046265-C18",
+        "asin": "730512046265-C18",
         "title": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
-        "handle": "square-african-style-woven-fabric-wall-art-with-solid-wood-1688-730512046265-c18",
+        "handle": "square-african-style-woven-fabric-wall-art-with-solid-wood-730512046265-c18",
         "description": "AFRICAN INSPIRED WOVEN DESIGN: This square wall art features a woven fabric surface decorated with motifs inspired by traditional African baskets and vessels, bringing a rich cultural and artistic touch to your interior. SOLID WOOD FRAME: The artwork is encased in a solid wood frame that adds natural warmth and durability, while the woven fabric panel creates a tactile texture that stands out on any wall. VERSATILE DECOR FIT: Designed for hotel, restaurant, cafe, bedroom, living room, office, and guesthouse settings, this piece complements rustic, ethnic, bohemian, and modern farmhouse styles. SQUARE 48 x 48 x 3cm SIZE: With a compact 48 x 48 x 3cm square profile, this framed fabric art fits easily into various wall spaces, from small accent walls to larger gallery arrangements. THOUGHTFUL GIFT IDEA: This African style woven wall art makes a considerate gift for housewarmings, birthdays, and special occasions, appealing to lovers of cultural decor and artisan-inspired interiors.",
         "descriptionHtml": "<p>AFRICAN INSPIRED WOVEN DESIGN: This square wall art features a woven fabric surface decorated with motifs inspired by traditional African baskets and vessels, bringing a rich cultural and artistic touch to your interior.</p><p>SOLID WOOD FRAME: The artwork is encased in a solid wood frame that adds natural warmth and durability, while the woven fabric panel creates a tactile texture that stands out on any wall.</p><p>VERSATILE DECOR FIT: Designed for hotel, restaurant, cafe, bedroom, living room, office, and guesthouse settings, this piece complements rustic, ethnic, bohemian, and modern farmhouse styles.</p><p>SQUARE 48 x 48 x 3cm SIZE: With a compact 48 x 48 x 3cm square profile, this framed fabric art fits easily into various wall spaces, from small accent walls to larger gallery arrangements.</p><p>THOUGHTFUL GIFT IDEA: This African style woven wall art makes a considerate gift for housewarmings, birthdays, and special occasions, appealing to lovers of cultural decor and artisan-inspired interiors.</p>",
         "productType": "Decor",
@@ -12093,37 +12093,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C18/1.webp",
+                "url": "/images/products/730512046265-C18/1.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C18/2.webp",
+                "url": "/images/products/730512046265-C18/2.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C18/3.webp",
+                "url": "/images/products/730512046265-C18/3.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C18/4.webp",
+                "url": "/images/products/730512046265-C18/4.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C18/5.webp",
+                "url": "/images/products/730512046265-C18/5.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C18/6.webp",
+                "url": "/images/products/730512046265-C18/6.webp",
                 "altText": "Square African Style Woven Fabric Wall Art with Solid Wood Frame Rustic Ethnic Boho Home Decor for Hotel Restaurant Cafe Bedroom Living Room Office 48 x 48 x 3 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -12137,7 +12137,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C18",
+                "id": "variant-730512046265-C18",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12150,10 +12150,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C17",
-        "asin": "1688-730512046265-C17",
+        "id": "makimoo-730512046265-C17",
+        "asin": "730512046265-C17",
         "title": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
-        "handle": "ethnic-linen-framed-wall-art-greek-figure-motif-vintage-1688-730512046265-c17",
+        "handle": "ethnic-linen-framed-wall-art-greek-figure-motif-vintage-730512046265-c17",
         "description": "GREEK FIGURE MOTIF: This framed wall art features a classic Greek figure design inspired by ancient pottery, bringing a distinctive artistic and cultural touch to your interior decor. LINEN FABRIC SURFACE: Printed on linen fabric, the artwork offers a textured look and rich color presentation that complements ethnic, vintage, and artistic room styles. STURDY WOODEN FRAME: The wooden frame surrounds the print, providing structure and a natural warm tone that suits hotel, restaurant, homestay, and home settings. VERSATILE PLACEMENT: Measuring 38 x 48cm, this decorative piece works well in living rooms, bedrooms, offices, hallways, and commercial spaces such as cafes and guesthouses. READY FOR DISPLAY: The framed design allows for simple wall mounting, making it easy to add a cultural accent to your space without complex installation.",
         "descriptionHtml": "<p>GREEK FIGURE MOTIF: This framed wall art features a classic Greek figure design inspired by ancient pottery, bringing a distinctive artistic and cultural touch to your interior decor.</p><p>LINEN FABRIC SURFACE: Printed on linen fabric, the artwork offers a textured look and rich color presentation that complements ethnic, vintage, and artistic room styles.</p><p>STURDY WOODEN FRAME: The wooden frame surrounds the print, providing structure and a natural warm tone that suits hotel, restaurant, homestay, and home settings.</p><p>VERSATILE PLACEMENT: Measuring 38 x 48cm, this decorative piece works well in living rooms, bedrooms, offices, hallways, and commercial spaces such as cafes and guesthouses.</p><p>READY FOR DISPLAY: The framed design allows for simple wall mounting, making it easy to add a cultural accent to your space without complex installation.</p>",
         "productType": "Decor",
@@ -12163,37 +12163,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C17/1.webp",
+                "url": "/images/products/730512046265-C17/1.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C17/2.webp",
+                "url": "/images/products/730512046265-C17/2.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C17/3.webp",
+                "url": "/images/products/730512046265-C17/3.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C17/4.webp",
+                "url": "/images/products/730512046265-C17/4.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C17/5.webp",
+                "url": "/images/products/730512046265-C17/5.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C17/6.webp",
+                "url": "/images/products/730512046265-C17/6.webp",
                 "altText": "Ethnic Linen Framed Wall Art Greek Figure Motif Vintage Fabric Print Decorative Accent for Hotel Restaurant Homestay Bedroom Living Room Office 38 x 48 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -12207,7 +12207,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C17",
+                "id": "variant-730512046265-C17",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12220,10 +12220,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C16",
-        "asin": "1688-730512046265-C16",
+        "id": "makimoo-730512046265-C16",
+        "asin": "730512046265-C16",
         "title": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
-        "handle": "ethnic-burlap-wall-art-decorative-painting-for-hotel-1688-730512046265-c16",
+        "handle": "ethnic-burlap-wall-art-decorative-painting-for-hotel-730512046265-c16",
         "description": "ETHNIC AFRICAN VIKING INSPIRED DESIGN: This square wall art features a striking circular medallion with geometric tribal patterns and a textured burlap surface, bringing a bold global accent to any room. The intricate motif combines African and Viking style elements for a distinctive designer look. SOLID WOOD FRAME AND BURLAP CANVAS: The artwork is set in a sturdy solid wood frame that adds warmth and durability. The burlap canvas texture enhances the artisanal feel and complements the earthy brown tones. VERSATILE FOR HOTEL RESTAURANT AND GUESTHOUSE: Ideal for hospitality settings, this decorative painting elevates hotel lobbies, restaurant walls, and guesthouse interiors. It also works well in living rooms, bedrooms, and entryways for a cohesive ethnic aesthetic. READY TO DISPLAY SQUARE FORMAT: Measuring 48 x 48 x 3cm, this compact square piece fits various wall spaces. The framed construction allows for easy hanging and immediate display as a focal point. DESIGNER FABRIC SOFT FURNISHING ACCENT: This fabric wall art serves as a designer soft furnishing accent that pairs with modern, bohemian, or rustic decor. Its neutral brown palette and textured surface add depth and character to any interior.",
         "descriptionHtml": "<p>ETHNIC AFRICAN VIKING INSPIRED DESIGN: This square wall art features a striking circular medallion with geometric tribal patterns and a textured burlap surface, bringing a bold global accent to any room. The intricate motif combines African and Viking style elements for a distinctive designer look.</p><p>SOLID WOOD FRAME AND BURLAP CANVAS: The artwork is set in a sturdy solid wood frame that adds warmth and durability. The burlap canvas texture enhances the artisanal feel and complements the earthy brown tones.</p><p>VERSATILE FOR HOTEL RESTAURANT AND GUESTHOUSE: Ideal for hospitality settings, this decorative painting elevates hotel lobbies, restaurant walls, and guesthouse interiors. It also works well in living rooms, bedrooms, and entryways for a cohesive ethnic aesthetic.</p><p>READY TO DISPLAY SQUARE FORMAT: Measuring 48 x 48 x 3cm, this compact square piece fits various wall spaces. The framed construction allows for easy hanging and immediate display as a focal point.</p><p>DESIGNER FABRIC SOFT FURNISHING ACCENT: This fabric wall art serves as a designer soft furnishing accent that pairs with modern, bohemian, or rustic decor. Its neutral brown palette and textured surface add depth and character to any interior.</p>",
         "productType": "Decor",
@@ -12233,37 +12233,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C16/1.webp",
+                "url": "/images/products/730512046265-C16/1.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C16/2.webp",
+                "url": "/images/products/730512046265-C16/2.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C16/3.webp",
+                "url": "/images/products/730512046265-C16/3.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C16/4.webp",
+                "url": "/images/products/730512046265-C16/4.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C16/5.webp",
+                "url": "/images/products/730512046265-C16/5.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C16/6.webp",
+                "url": "/images/products/730512046265-C16/6.webp",
                 "altText": "Ethnic Burlap Wall Art Decorative Painting For Hotel Restaurant Guesthouse African Viking Style Designer Fabric Soft Furnishing Solid Wood Frame Square 48 x 48 x 3 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -12277,7 +12277,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C16",
+                "id": "variant-730512046265-C16",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12290,10 +12290,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C15",
-        "asin": "1688-730512046265-C15",
+        "id": "makimoo-730512046265-C15",
+        "asin": "730512046265-C15",
         "title": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
-        "handle": "african-ethnic-decorative-burlap-framed-wall-art-featuring-1688-730512046265-c15",
+        "handle": "african-ethnic-decorative-burlap-framed-wall-art-featuring-730512046265-c15",
         "description": "AFRICAN ETHNIC MOTIF: This framed wall art features a collection of circular woven basket patterns set against a linen-like burlap background, bringing a warm tribal and bohemian touch to any room. The earthy tones of brown, beige, and black create a grounded, natural look. TEXTURED BURLAP CANVAS: The artwork is printed on a textured fabric surface that resembles burlap, giving it a rustic, handcrafted feel. The dark wood frame adds depth and complements the organic design, making it a standout decorative piece. VERSATILE ROOM ACCENT: With a compact size of 48 x 38cm, this framed print fits easily above a console table, in a gallery wall, or as a focal point in smaller spaces. It suits living rooms, bedrooms, offices, and hotel or homestay interiors. DESIGNER SOFT DECOR: Ideal for interior designers and style-conscious homeowners, this piece blends African-inspired art with modern rustic decor. It works well in bohemian, eclectic, farmhouse, or global-inspired settings, adding cultural character without overwhelming the space. READY TO DISPLAY: This framed artwork is ready for wall placement, making a thoughtful gift for housewarmings, art lovers, or anyone who appreciates ethnic-inspired home accents. The 3cm frame profile provides a substantial, finished look.",
         "descriptionHtml": "<p>AFRICAN ETHNIC MOTIF: This framed wall art features a collection of circular woven basket patterns set against a linen-like burlap background, bringing a warm tribal and bohemian touch to any room. The earthy tones of brown, beige, and black create a grounded, natural look.</p><p>TEXTURED BURLAP CANVAS: The artwork is printed on a textured fabric surface that resembles burlap, giving it a rustic, handcrafted feel. The dark wood frame adds depth and complements the organic design, making it a standout decorative piece.</p><p>VERSATILE ROOM ACCENT: With a compact size of 48 x 38cm, this framed print fits easily above a console table, in a gallery wall, or as a focal point in smaller spaces. It suits living rooms, bedrooms, offices, and hotel or homestay interiors.</p><p>DESIGNER SOFT DECOR: Ideal for interior designers and style-conscious homeowners, this piece blends African-inspired art with modern rustic decor. It works well in bohemian, eclectic, farmhouse, or global-inspired settings, adding cultural character without overwhelming the space.</p><p>READY TO DISPLAY: This framed artwork is ready for wall placement, making a thoughtful gift for housewarmings, art lovers, or anyone who appreciates ethnic-inspired home accents. The 3cm frame profile provides a substantial, finished look.</p>",
         "productType": "Decor",
@@ -12303,37 +12303,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C15/1.webp",
+                "url": "/images/products/730512046265-C15/1.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C15/2.webp",
+                "url": "/images/products/730512046265-C15/2.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C15/3.webp",
+                "url": "/images/products/730512046265-C15/3.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C15/4.webp",
+                "url": "/images/products/730512046265-C15/4.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C15/5.webp",
+                "url": "/images/products/730512046265-C15/5.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C15/6.webp",
+                "url": "/images/products/730512046265-C15/6.webp",
                 "altText": "African Ethnic Decorative Burlap Framed Wall Art Featuring Circular Basket Weave Motifs Rustic Tribal Decor For Living Room Bedroom Hotel Office Studio 48 x 38 cm (Brown)",
                 "width": 800,
                 "height": 800
@@ -12347,7 +12347,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C15",
+                "id": "variant-730512046265-C15",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -12360,10 +12360,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "amazonUrl": ""
     },
 {
-        "id": "makimoo-1688-730512046265-C14",
-        "asin": "1688-730512046265-C14",
+        "id": "makimoo-730512046265-C14",
+        "asin": "730512046265-C14",
         "title": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
-        "handle": "ancient-greek-mythology-pottery-style-linen-wall-art-with-1688-730512046265-c14",
+        "handle": "ancient-greek-mythology-pottery-style-linen-wall-art-with-730512046265-c14",
         "description": "ANCIENT GREEK POTTERY ART STYLE: This linen wall art features classic Greek pottery inspired figures, including warriors and robed characters, rendered in a striking black and terracotta palette. The design brings a classic museum style charm to hotel lobbies, restaurants, cafes, and homestays. QUALITY LINEN AND SOLID WOOD FRAME: The decorative fabric painting is mounted in a sturdy solid wood frame that adds warmth and structure. Measuring 48 x 48cm with a 3cm depth, it offers a substantial presence on the wall without overwhelming the room. VERSATILE FOR COMMERCIAL AND HOME DECOR: Ideal for hospitality settings such as hotels, restaurants, and guesthouses, this piece also works well in living rooms, bedrooms, offices, and creative studio spaces. Its designer textile look complements eclectic, vintage, and global inspired interiors. DISTINCTIVE VISUAL CENTERPIECE: The framed artwork uses bold silhouette motifs and geometric border patterns to create a captivating focal point. The neutral linen ground and warm accent panels make it easy to pair with wood furniture, plants, and earthy color schemes. THOUGHTFUL GIFT FOR ART AND DECOR LOVERS: This Greek style fabric wall art makes a considerate present for art lovers, friends, and family who appreciate classical art and cultural decor. It comes framed and can enhance a gallery wall or standalone display.",
         "descriptionHtml": "<p>ANCIENT GREEK POTTERY ART STYLE: This linen wall art features classic Greek pottery inspired figures, including warriors and robed characters, rendered in a striking black and terracotta palette. The design brings a classic museum style charm to hotel lobbies, restaurants, cafes, and homestays.</p><p>QUALITY LINEN AND SOLID WOOD FRAME: The decorative fabric painting is mounted in a sturdy solid wood frame that adds warmth and structure. Measuring 48 x 48cm with a 3cm depth, it offers a substantial presence on the wall without overwhelming the room.</p><p>VERSATILE FOR COMMERCIAL AND HOME DECOR: Ideal for hospitality settings such as hotels, restaurants, and guesthouses, this piece also works well in living rooms, bedrooms, offices, and creative studio spaces. Its designer textile look complements eclectic, vintage, and global inspired interiors.</p><p>DISTINCTIVE VISUAL CENTERPIECE: The framed artwork uses bold silhouette motifs and geometric border patterns to create a captivating focal point. The neutral linen ground and warm accent panels make it easy to pair with wood furniture, plants, and earthy color schemes.</p><p>THOUGHTFUL GIFT FOR ART AND DECOR LOVERS: This Greek style fabric wall art makes a considerate present for art lovers, friends, and family who appreciate classical art and cultural decor. It comes framed and can enhance a gallery wall or standalone display.</p>",
         "productType": "Decor",
@@ -12373,37 +12373,37 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "availableForSale": false,
         "images": [
             {
-                "url": "/images/products/1688-730512046265-C14/1.webp",
+                "url": "/images/products/730512046265-C14/1.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C14/2.webp",
+                "url": "/images/products/730512046265-C14/2.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C14/3.webp",
+                "url": "/images/products/730512046265-C14/3.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C14/4.webp",
+                "url": "/images/products/730512046265-C14/4.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C14/5.webp",
+                "url": "/images/products/730512046265-C14/5.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
             },
             {
-                "url": "/images/products/1688-730512046265-C14/6.webp",
+                "url": "/images/products/730512046265-C14/6.webp",
                 "altText": "Ancient Greek Mythology Pottery Style Linen Wall Art with Solid Wood Frame Decorative Fabric Painting for Hotel Cafe Restaurant Home Office Decor 48 x 48 cm (Multicolor)",
                 "width": 800,
                 "height": 800
@@ -12417,7 +12417,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         },
         "variants": [
             {
-                "id": "variant-1688-730512046265-C14",
+                "id": "variant-730512046265-C14",
                 "title": "Default Title",
                 "price": {
                     "amount": "0.00",
@@ -18652,10 +18652,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1071466105053-C2",
-    "asin": "1688-1071466105053-C2",
+    "id": "makimoo-1071466105053-C2",
+    "asin": "1071466105053-C2",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Gingham)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-blue-queen-1688-1071466105053-c2",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-blue-queen-1071466105053-c2",
     "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless blue and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid dusty blue. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Fresh Blue Gingham Colorway: A classic blue and white check—crisp, cheerful and quietly nostalgic, it brings an easy cottage freshness to the bedroom, pairing easily with modern, classic, or cozy décor.",
     "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless blue and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid dusty blue.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Fresh Blue Gingham Colorway: A classic blue and white check—crisp, cheerful and quietly nostalgic, it brings an easy cottage freshness to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
     "productType": "Bedding",
@@ -18665,7 +18665,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1071466105053-C2/1.webp",
+            "url": "/images/products/1071466105053-C2/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Gingham)",
             "width": 1440,
             "height": 1920
@@ -18679,7 +18679,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1071466105053-C2",
+            "id": "variant-1071466105053-C2",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",
@@ -18692,10 +18692,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1071466105053-C1",
-    "asin": "1688-1071466105053-C1",
+    "id": "makimoo-1071466105053-C1",
+    "asin": "1071466105053-C1",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Gingham)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-black-queen-1688-1071466105053-c1",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-black-queen-1071466105053-c1",
     "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless black and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid charcoal black. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Bold Black Gingham Colorway: A graphic black and white check—grounded and calm rather than loud, it anchors the bedroom with a modern farmhouse edge, pairing easily with wood tones, neutrals, or minimalist décor.",
     "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless black and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid charcoal black.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Bold Black Gingham Colorway: A graphic black and white check—grounded and calm rather than loud, it anchors the bedroom with a modern farmhouse edge, pairing easily with wood tones, neutrals, or minimalist décor.</p>",
     "productType": "Bedding",
@@ -18705,7 +18705,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1071466105053-C1/1.webp",
+            "url": "/images/products/1071466105053-C1/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Gingham)",
             "width": 1440,
             "height": 1920
@@ -18719,7 +18719,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1071466105053-C1",
+            "id": "variant-1071466105053-C1",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",
@@ -18732,10 +18732,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1071466105053-C3",
-    "asin": "1688-1071466105053-C3",
+    "id": "makimoo-1071466105053-C3",
+    "asin": "1071466105053-C3",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Gingham)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-grey-queen-1688-1071466105053-c3",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-grey-queen-1071466105053-c3",
     "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless grey and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid light grey. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.",
     "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless grey and white gingham check. Reversible AB design—the A side shows the gingham check, while the B side is a clean solid light grey.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
     "productType": "Bedding",
@@ -18745,7 +18745,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1071466105053-C3/1.webp",
+            "url": "/images/products/1071466105053-C3/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Gingham Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Gingham)",
             "width": 1440,
             "height": 1920
@@ -18759,7 +18759,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1071466105053-C3",
+            "id": "variant-1071466105053-C3",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",
@@ -18772,10 +18772,490 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1025015219200-C1",
-    "asin": "1688-1025015219200-C1",
+    "id": "makimoo-1071466105053-C11",
+    "asin": "1071466105053-C11",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Checkerboard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Checker)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-checker-black-queen-1071466105053-c11",
+    "description": "Cotton-Feel Polyester with Bold Checkerboard: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a bold black and cream checkerboard. Reversible AB design—the A side shows the checkerboard, while the B side is a clean solid charcoal black. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Bold Black Checker Colorway: A graphic black and cream checkerboard—statement-making yet timeless, it anchors the bedroom with a modern, editorial edge, pairing easily with wood tones, crisp whites, or minimalist décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Bold Checkerboard: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a bold black and cream checkerboard. Reversible AB design—the A side shows the checkerboard, while the B side is a clean solid charcoal black.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Bold Black Checker Colorway: A graphic black and cream checkerboard—statement-making yet timeless, it anchors the bedroom with a modern, editorial edge, pairing easily with wood tones, crisp whites, or minimalist décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C11/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Checkerboard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Black Checker)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C11",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C4",
+    "asin": "1071466105053-C4",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Yellow Check)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-check-yellow-queen-1071466105053-c4",
+    "description": "Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a cheerful yellow and white check. Reversible AB design—the A side shows the yellow check, while the B side is a clean solid pale yellow. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Sunny Yellow Check Colorway: A bright yellow and white check—fresh and uplifting rather than loud, it brings a warm, sunlit mood to the bedroom, pairing easily with white, light wood tones, or cottage-style décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a cheerful yellow and white check. Reversible AB design—the A side shows the yellow check, while the B side is a clean solid pale yellow.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Sunny Yellow Check Colorway: A bright yellow and white check—fresh and uplifting rather than loud, it brings a warm, sunlit mood to the bedroom, pairing easily with white, light wood tones, or cottage-style décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C4/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Yellow Check)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C4",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C5",
+    "asin": "1071466105053-C5",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Pink Check)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-check-sage-pink-queen-1071466105053-c5",
+    "description": "Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a gentle sage-pink and white check. Reversible AB design—the A side shows the sage-pink check, while the B side is a clean solid dusty pink. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Muted Sage Pink Check Colorway: A soft sage-pink and white check—low-saturation and quietly warm, it adds a gentle, lived-in charm to the bedroom, pairing easily with neutrals, rattan, or soft modern décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a gentle sage-pink and white check. Reversible AB design—the A side shows the sage-pink check, while the B side is a clean solid dusty pink.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Muted Sage Pink Check Colorway: A soft sage-pink and white check—low-saturation and quietly warm, it adds a gentle, lived-in charm to the bedroom, pairing easily with neutrals, rattan, or soft modern décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C5/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Sage Pink Check)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C5",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C6",
+    "asin": "1071466105053-C6",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Turquoise Check)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-check-turquoise-queen-1071466105053-c6",
+    "description": "Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a fresh turquoise and white check. Reversible AB design—the A side shows the turquoise check, while the B side is a clean solid pale aqua. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Fresh Turquoise Check Colorway: A cool turquoise and white check—crisp, airy and light, it gives the bedroom a fresh coastal lift, pairing easily with white, light wood, or minimalist décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a fresh turquoise and white check. Reversible AB design—the A side shows the turquoise check, while the B side is a clean solid pale aqua.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Fresh Turquoise Check Colorway: A cool turquoise and white check—crisp, airy and light, it gives the bedroom a fresh coastal lift, pairing easily with white, light wood, or minimalist décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C6/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Turquoise Check)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C6",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C7",
+    "asin": "1071466105053-C7",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Pink Check)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-check-pink-queen-1071466105053-c7",
+    "description": "Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a sweet pink and white check. Reversible AB design—the A side shows the pink check, while the B side is a clean solid blush pink. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Sweet Pink Check Colorway: A playful pink and white check—bright and charming, it brings a soft, cheerful warmth to the bedroom, pairing easily with white, grey, or romantic décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Check: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a sweet pink and white check. Reversible AB design—the A side shows the pink check, while the B side is a clean solid blush pink.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Sweet Pink Check Colorway: A playful pink and white check—bright and charming, it brings a soft, cheerful warmth to the bedroom, pairing easily with white, grey, or romantic décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C7/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Check Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Pink Check)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C7",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C8",
+    "asin": "1071466105053-C8",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Tartan Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Green Tartan)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-tartan-green-queen-1071466105053-c8",
+    "description": "Cotton-Feel Polyester with Classic Tartan: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless green tartan plaid. Reversible AB design—the A side shows the green tartan, while the B side is a clean solid forest green. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Heritage Green Tartan Colorway: A rich green tartan plaid—classic and cozy rather than busy, it anchors the bedroom with a warm, lodge-inspired feel, pairing easily with wood tones, leather, or neutral décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Tartan: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a timeless green tartan plaid. Reversible AB design—the A side shows the green tartan, while the B side is a clean solid forest green.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Heritage Green Tartan Colorway: A rich green tartan plaid—classic and cozy rather than busy, it anchors the bedroom with a warm, lodge-inspired feel, pairing easily with wood tones, leather, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C8/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Tartan Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Green Tartan)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C8",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C9",
+    "asin": "1071466105053-C9",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Polka Dot Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Cream Polka)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-polka-cream-queen-1071466105053-c9",
+    "description": "Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a scattering of black polka dots on a warm cream ground. Reversible AB design—the A side shows the polka dot print, while the B side is a clean solid ivory. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Warm Cream Polka Colorway: Inky black dots scattered over a warm cream base—playful yet calm, it brings a light, cheerful rhythm to the bedroom, pairing easily with wood tones, neutrals, or minimalist décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a scattering of black polka dots on a warm cream ground. Reversible AB design—the A side shows the polka dot print, while the B side is a clean solid ivory.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Warm Cream Polka Colorway: Inky black dots scattered over a warm cream base—playful yet calm, it brings a light, cheerful rhythm to the bedroom, pairing easily with wood tones, neutrals, or minimalist décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C9/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Polka Dot Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Cream Polka)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C9",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1071466105053-C10",
+    "asin": "1071466105053-C10",
+    "title": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Polka Dot Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Polka)",
+    "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-polka-blue-queen-1071466105053-c10",
+    "description": "Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a scattering of navy polka dots on a soft dusty blue ground. Reversible AB design—the A side shows the polka dot print, while the B side is a clean solid deep navy. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Dusty Blue Polka Colorway: Deep navy dots scattered over a soft dusty blue base—fresh and breezy with a quiet coastal feel, it brings a calm, easy order to the bedroom, pairing easily with white, light wood, or modern décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, the duvet cover and pillowcases feature a scattering of navy polka dots on a soft dusty blue ground. Reversible AB design—the A side shows the polka dot print, while the B side is a clean solid deep navy.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Dusty Blue Polka Colorway: Deep navy dots scattered over a soft dusty blue base—fresh and breezy with a quiet coastal feel, it brings a calm, easy order to the bedroom, pairing easily with white, light wood, or modern décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/1071466105053-C10/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Feel Polka Dot Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Polka)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-1071466105053-C10",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-MK-HEART4-TAN-QUEEN",
+    "asin": "MK-HEART4-TAN-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Linen Feel Heart Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Tan Heart)",
+    "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-heart-tan-queen-mk-heart4-tan-queen",
+    "description": "Linen Feel Polyester with Sweet Heart Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a scattering of dark brown hearts on a warm tan ground. Reversible AB design—the A side shows the heart print, while the B side is a clean solid ivory. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Warm Tan Heart Colorway: Deep brown hearts scattered over a warm tan base—sweet without being saccharine, it brings a cozy, cottage-soft warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.",
+    "descriptionHtml": "<p>Linen Feel Polyester with Sweet Heart Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a scattering of dark brown hearts on a warm tan ground. Reversible AB design—the A side shows the heart print, while the B side is a clean solid ivory.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Warm Tan Heart Colorway: Deep brown hearts scattered over a warm tan base—sweet without being saccharine, it brings a cozy, cottage-soft warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/MK-HEART4-TAN-QUEEN/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Linen Feel Heart Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Tan Heart)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-MK-HEART4-TAN-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-MK-PRINT4-BLUE-QUEEN",
+    "asin": "MK-PRINT4-BLUE-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Linen Feel Rabbit Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Print)",
+    "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-print-blue-queen-mk-print4-blue-queen",
+    "description": "Linen Feel Polyester with Playful Rabbit Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature neat rows of playful rabbits in dusty blue on a cream ground. Reversible AB design—the A side shows the rabbit print, while the B side is a clean solid ivory. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Dusty Blue Rabbit Colorway: Neat rows of dusty blue rabbits over a cream base—whimsical yet tidy, it brings a light, storybook charm to the bedroom, pairing easily with natural wood, crisp white, or kids-friendly neutral décor.",
+    "descriptionHtml": "<p>Linen Feel Polyester with Playful Rabbit Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature neat rows of playful rabbits in dusty blue on a cream ground. Reversible AB design—the A side shows the rabbit print, while the B side is a clean solid ivory.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Dusty Blue Rabbit Colorway: Neat rows of dusty blue rabbits over a cream base—whimsical yet tidy, it brings a light, storybook charm to the bedroom, pairing easily with natural wood, crisp white, or kids-friendly neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/MK-PRINT4-BLUE-QUEEN/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Linen Feel Rabbit Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blue Print)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-MK-PRINT4-BLUE-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-MK-FLORAL4-GREY-QUEEN",
+    "asin": "MK-FLORAL4-GREY-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Linen Feel Floral Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Floral)",
+    "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-floral-grey-queen-mk-floral4-grey-queen",
+    "description": "Linen Feel Polyester with Soft Floral Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a trailing cream floral print on a heathered grey ground. Reversible AB design—the A side shows the floral print, while the B side is a clean solid light grey. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Heather Grey Floral Colorway: Cream botanical sprigs trailing over a heathered grey base—soft and quietly romantic, it brings a calm, garden-fresh mood to the bedroom, pairing easily with white, natural wood, or modern neutral décor.",
+    "descriptionHtml": "<p>Linen Feel Polyester with Soft Floral Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a trailing cream floral print on a heathered grey ground. Reversible AB design—the A side shows the floral print, while the B side is a clean solid light grey.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Heather Grey Floral Colorway: Cream botanical sprigs trailing over a heathered grey base—soft and quietly romantic, it brings a calm, garden-fresh mood to the bedroom, pairing easily with white, natural wood, or modern neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/MK-FLORAL4-GREY-QUEEN/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Linen Feel Floral Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey Floral)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-MK-FLORAL4-GREY-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-MK-BTFLY4-MOCHA-QUEEN",
+    "asin": "MK-BTFLY4-MOCHA-QUEEN",
+    "title": "Makimoo Queen Bedding Set 4 Piece Linen Feel Butterfly Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Mocha Butterfly)",
+    "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-butterfly-mocha-queen-mk-btfly4-mocha-queen",
+    "description": "Linen Feel Polyester with Delicate Butterfly Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a delicate cream butterfly and floral print drifting across a warm mocha ground. Reversible AB design—the A side shows the butterfly print, while the B side is a clean solid warm cream. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash. Warm Mocha Butterfly Colorway: Cream butterflies and botanical sprigs drifting over a warm mocha base—softly romantic and earthy, it brings a calm, vintage-garden warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.",
+    "descriptionHtml": "<p>Linen Feel Polyester with Delicate Butterfly Print: Woven from softly textured polyester with the relaxed, breathable look of linen, the duvet cover and pillowcases feature a delicate cream butterfly and floral print drifting across a warm mocha ground. Reversible AB design—the A side shows the butterfly print, while the B side is a clean solid warm cream.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and gets even softer with every wash.</p><p>Warm Mocha Butterfly Colorway: Cream butterflies and botanical sprigs drifting over a warm mocha base—softly romantic and earthy, it brings a calm, vintage-garden warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/MK-BTFLY4-MOCHA-QUEEN/1.webp",
+            "altText": "Makimoo Queen Bedding Set 4 Piece Linen Feel Butterfly Print Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Mocha Butterfly)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-MK-BTFLY4-MOCHA-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-1025015219200-C1",
+    "asin": "1025015219200-C1",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey)",
-    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1688-1025015219200-c1",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1025015219200-c1",
     "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Calm Grey Colorway: A soft, heathered light grey—quiet, airy and endlessly versatile, it brings a cloud-like calm to the bedroom, pairing easily with modern, classic, or cozy décor.",
     "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Calm Grey Colorway: A soft, heathered light grey—quiet, airy and endlessly versatile, it brings a cloud-like calm to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
     "productType": "Bedding",
@@ -18785,7 +19265,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1025015219200-C1/1.webp",
+            "url": "/images/products/1025015219200-C1/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey)",
             "width": 1440,
             "height": 1920
@@ -18799,7 +19279,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1025015219200-C1",
+            "id": "variant-1025015219200-C1",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",
@@ -18812,10 +19292,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1025015219200-C2",
-    "asin": "1688-1025015219200-C2",
+    "id": "makimoo-1025015219200-C2",
+    "asin": "1025015219200-C2",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Navy)",
-    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1688-1025015219200-c2",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1025015219200-c2",
     "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Deep Navy Colorway: A rich, muted navy—grounded and serene rather than stark, it anchors the bedroom with a relaxed coastal depth, pairing easily with crisp whites, warm woods, or minimalist décor.",
     "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Deep Navy Colorway: A rich, muted navy—grounded and serene rather than stark, it anchors the bedroom with a relaxed coastal depth, pairing easily with crisp whites, warm woods, or minimalist décor.</p>",
     "productType": "Bedding",
@@ -18825,7 +19305,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1025015219200-C2/1.webp",
+            "url": "/images/products/1025015219200-C2/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Navy)",
             "width": 1440,
             "height": 1920
@@ -18839,7 +19319,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1025015219200-C2",
+            "id": "variant-1025015219200-C2",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",
@@ -18852,10 +19332,10 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
-    "id": "makimoo-1688-1025015219200-C3",
-    "asin": "1688-1025015219200-C3",
+    "id": "makimoo-1025015219200-C3",
+    "asin": "1025015219200-C3",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Brown)",
-    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1688-1025015219200-c3",
+    "handle": "cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1025015219200-c3",
     "description": "Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture. Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash. Warm Brown Colorway: A soft, earthy brown—warm and understated, it wraps the bedroom in a cozy, lived-in warmth, pairing easily with creams, natural textures, or rustic décor.",
     "descriptionHtml": "<p>Cotton Blend Muslin Double Gauze: Woven from a soft cotton blend—85% cotton, 15% polyester—in an airy double gauze construction, two whisper-light layers of muslin give this set a fluffy, featherlight hand with a gently crinkled, lived-in texture.</p><p>Breathable & Skin-Friendly All Season: The double-layer gauze weave lets air circulate freely, feeling cool and gentle against the skin through warm summers and layering cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the cotton blend fabric (85% cotton, 15% polyester) is machine washable and gets even softer with every wash.</p><p>Warm Brown Colorway: A soft, earthy brown—warm and understated, it wraps the bedroom in a cozy, lived-in warmth, pairing easily with creams, natural textures, or rustic décor.</p>",
     "productType": "Bedding",
@@ -18865,7 +19345,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "availableForSale": false,
     "images": [
         {
-            "url": "/images/products/1688-1025015219200-C3/1.webp",
+            "url": "/images/products/1025015219200-C3/1.webp",
             "altText": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Brown)",
             "width": 1440,
             "height": 1920
@@ -18879,7 +19359,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     },
     "variants": [
         {
-            "id": "variant-1688-1025015219200-C3",
+            "id": "variant-1025015219200-C3",
             "title": "Default Title",
             "price": {
                 "amount": "0.00",

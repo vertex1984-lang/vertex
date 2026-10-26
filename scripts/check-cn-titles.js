@@ -19,7 +19,7 @@ let mm2;
 while ((mm2 = mmRe.exec(mm))) mmTitle[mm2[1].toLowerCase()] = mm2[2];
 // short-titles.ts key
 const st = fs.readFileSync("src/data/short-titles.ts", "utf8");
-const stKeys = new Set([...st.matchAll(/^\s*"?(b0[a-z0-9]+|1688-[a-z0-9-]+)"?:/gim)].map(x => x[1].toLowerCase()));
+const stKeys = new Set([...st.matchAll(/^\s*"?(b0[a-z0-9]+|(1688-)?[0-9][a-z0-9-]*)"?:/gim)].map(x => x[1].toLowerCase()));
 const finalCn = out.filter(p => {
   const ov = mmTitle[p.asin];
   if (ov && !cjk.test(ov)) return false;
