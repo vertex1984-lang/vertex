@@ -440,6 +440,12 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-jacquard-velvet-duvet-cover-only-ivory-white-queen-veljac-ivory-duvet',  // 2026-10-25：单独被套（象牙白双面提花绒，仅 Queen）
   'makimoo-cotton-percale-jacquard-pillowcases-set-of-2-queen-ivory-percalejac-ivory-pc-queen',  // 2026-10-26：枕套对装（象牙白棉 Percale 提花，仅 Queen 20x30in）
   'makimoo-cotton-percale-jacquard-pillowcases-set-of-2-queen-dusty-blue-percalejac-haze-pc-queen',  // 2026-10-26：枕套对装（灰蓝棉 Percale 宽条提花，仅 Queen 20x30in）
+  'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-blue-queen-1688-1071466105053-c2',  // 2026-10-26：Cotton Feel 格纹四件套（Blue Gingham，仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-black-queen-1688-1071466105053-c1',  // 2026-10-26：Cotton Feel 格纹四件套（Black Gingham，仅 Queen）
+  'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-grey-queen-1688-1071466105053-c3',  // 2026-10-26：Cotton Feel 格纹四件套（Grey Gingham，仅 Queen）
+  'cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1688-1025015219200-c1',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Grey，仅 Queen）
+  'cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1688-1025015219200-c2',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Navy，仅 Queen）
+  'cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1688-1025015219200-c3',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Brown，仅 Queen）
   'makimoo-cotton-sateen-fitted-sheet-only-sage-green-queen-sateen4-sage-sheet',  // 2026-10-25：单独床笠（灰绿棉贡缎，仅 Queen）
   'makimoo-cotton-percale-fitted-sheet-only-white-queen-percale-white-sheet',  // 2026-10-25：单独床笠（白色棉 Percale，仅 Queen）
   'makimoo-washed-cotton-like-fitted-sheet-only-grey-queen-duvset-gray-sheet',  // 2026-10-25：单独床笠（灰色水洗棉感，仅 Queen）

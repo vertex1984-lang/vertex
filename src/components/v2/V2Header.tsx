@@ -41,7 +41,7 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   bedding: [
     { image: '/images/products/LINEN3-SAGE-TWIN/1.webp', caption: 'Pure linen, naturally breathable.', linkLabel: 'Shop 100% Linen', href: '/bedding/linen/' },
     // 2026-10-26：原 1688-916370884976 水洗棉撞色三件套全家族已彻底移除（数据归档 archive/removed-products），图卡改用在售水洗棉产品图
-    { image: '/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1-3x4.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Washed Cotton-Like', href: '/bedding/washed-cotton/' },
+    { image: '/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1-3x4.webp', caption: 'Soft washed feel, easy everyday care.', linkLabel: 'Shop Cotton Feel', href: '/bedding/washed-cotton/' },
   ],
   blankets: [
     { image: '/images/collections/blanket.webp', caption: 'Plush throws for couch & bed.', linkLabel: 'Shop Blankets', href: '/products?cat=blankets' },
@@ -95,6 +95,8 @@ interface MenuColumn {
   /** 列标题可点（→ 类目汇总页）；无则纯标题 */
   href?: string;
   links: MenuLink[];
+  /** 桌面端双列网格排布（2026-10-26：bedding 面料列 7 项超高，改 2 列 × 4 行） */
+  twoCol?: boolean;
 }
 
 /** 组装某个类目的 mega menu 列：首列 = 类目子项（bedding 为面料列，描述取自 bedding-fabrics
@@ -203,23 +205,30 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
       { title: 'Featured', links: featured },
     ];
   }
-  const first: MenuColumn = {
-    title: cat === 'bedding' ? 'Shop by Fabric' : (current?.label || cat),
-    // bedding 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）；其他类目链到类目页
-    href: cat === 'bedding' ? undefined : current?.href,
-    links: styles.map((s) => {
-      const fb = cat === 'bedding' ? fabricByMaterial(s.key) : undefined;
-      return {
-        // bedding 面料列展示名统一走 fabricDisplayName（2026-10-22：Washed Cotton-Like 显为 Washed Cotton）
-        label: cat === 'bedding' ? fabricDisplayName(s.label) : s.label,
-        desc: fb?.desc ?? (cat === 'bedding' ? BEDDING_FABRIC_SHORT_DESCS[s.key] : undefined),
-        href: fb ? `/bedding/${fb.slug}/` : `/products?cat=${cat}&sub=${encodeURIComponent(s.key)}`,
-      };
-    }),
-  };
+  // bedding 面料列（2026-10-26 用户定改造）：标题 "Fabric"；7 项固定顺序——
+  // Cotton Percale / Cotton Feel / 100% Linen / Cotton Blend / Linen Feel / Plush Velvet / Cotton Sateen；
+  // Cotton Blend 2026-10-26 上线（Muslin 双层纱四件套），正常项走 fabricByMaterial → /bedding/cotton-blend/；桌面端双列网格（twoCol）解决 7 项带描述超高
   if (cat === 'bedding') {
-    // 2026-10-17 用户定：面料列末尾的 Fabric Guide 入口移除（/fabric-guide/ 页面本身保留）
-    // 2026-10-09 用户定：Bedding 类型列与 Shop by Fabric 面料列调换位置（类型列在前）
+    const FABRIC_MENU_ORDER = [
+      'Cotton Percale',
+      'Washed Cotton-Like',
+      '100% Linen',
+      'Cotton Blend',
+      'Linen-Like',
+      'Embossed Velvet',
+      'Cotton Sateen',
+    ];
+    const styleKeys = new Set(styles.map((s) => s.key));
+    const fabricLinks = FABRIC_MENU_ORDER.flatMap((key): MenuLink[] => {
+      if (!styleKeys.has(key)) return [];
+      const fb = fabricByMaterial(key);
+      return [{
+        // 展示名统一走 fabricDisplayName（2026-10-26：Washed Cotton-Like→Cotton Feel、Linen-Like→Linen Feel）
+        label: fabricDisplayName(key),
+        desc: fb?.desc ?? BEDDING_FABRIC_SHORT_DESCS[key],
+        href: fb ? `/bedding/${fb.slug}/` : `/products?cat=bedding&sub=${encodeURIComponent(key)}`,
+      }];
+    });
     return [
       {
         title: 'Bedding',
@@ -237,9 +246,18 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           { label: 'Pillow Covers', desc: 'Two matching pillowcases.', href: '/bedding/pillow-covers/' },
         ],
       },
-      first,
+      // 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）
+      { title: 'Fabric', links: fabricLinks, twoCol: true },
     ];
   }
+  const first: MenuColumn = {
+    title: current?.label || cat,
+    href: current?.href,
+    links: styles.map((s) => ({
+      label: s.label,
+      href: `/products?cat=${cat}&sub=${encodeURIComponent(s.key)}`,
+    })),
+  };
   return [first, { title: 'Featured', links: featured }];
 }
 interface V2HeaderProps {
@@ -551,7 +569,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
               {/* 左：多列链接（Parachute 风格）——首列类目子项（bedding = 面料列，带质感短句），次列 Featured 固定入口 */}
               <div className="flex gap-12">
                 {menuColumns(openMenu, catStyles[openMenu] || []).map((col) => (
-                  <div key={col.title} className="flex-shrink-0 w-44">
+                  <div key={col.title} className={`flex-shrink-0 ${col.twoCol ? 'w-[22rem]' : 'w-44'}`}>
                     {col.href ? (
                       <a
                         href={v2url(col.href)}
@@ -568,7 +586,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                         {col.title}
                       </span>
                     )}
-                    <div className="flex flex-col gap-3.5">
+                    <div className={col.twoCol ? 'grid grid-cols-2 gap-x-8 gap-y-3.5' : 'flex flex-col gap-3.5'}>
                       {col.links.map((l) => (
                         l.comingSoon ? (
                           <span key={l.href + l.label} className="cursor-default">
@@ -714,7 +732,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                         </a>
                       )}
                       {/* bedding/pillows/cushions/towels/blankets 抽屉二级与桌面 mega menu 同构（2026-09 用户定：移动端/桌面端导航统一）——
-                          bedding = 面料组（SHOP BY FABRIC）+ 类型组（BEDDING）；
+                          bedding = 面料组（FABRIC）+ 类型组（BEDDING）；
                           pillows = 形态组（PILLOWS）+ 材质组（MATERIAL）；
                           cushions = 风格 3 类（Corduroy / Solids / Prints，2026-10-09 用户定）；
                           towels = 实际二级分类 Bath/Beach Towels；blankets = 系列分区（2026-10-21 用户定）；
