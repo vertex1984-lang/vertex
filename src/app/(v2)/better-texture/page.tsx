@@ -60,9 +60,9 @@ const TEXTURES: TextureItem[] = [
     texture: 'Plush Faux Fur',
     title: 'Faux Rabbit Fur Throw Blanket, Cream Yellow',
     copy: 'Dense ribbed pile traps warmth in every groove and springs back under your hand. One drape over the sofa, and it becomes the best seat in the house.',
-    image: '/images/products/1688-969627065032-C28/4.webp',
+    image: '/images/products/969627065032-C28/4.webp',
     alt: 'Cream yellow faux rabbit fur throw draped over a bed',
-    handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c28',
+    handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c28',
   },
   {
     index: '05',

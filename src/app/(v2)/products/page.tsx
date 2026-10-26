@@ -223,7 +223,7 @@ export default function V2ProductsPage() {
         if (p.productType.toLowerCase() !== 'bedding') return false;
         const a = p.asin.toLowerCase();
         // 2026-10-19 用户定：bedding 页移除 Satin（ice silk 两个 1688 家族）
-        if (a.startsWith('1688-1048207560416') || a.startsWith('1688-1061371343572')) return false;
+        if (a.startsWith('1048207560416') || a.startsWith('1061371343572')) return false;
         // 2026-10-19 用户定：bedding 页移除 BEDSET4-BC 纯色四件套系列（Beige/Grey/Pink/White，
         // 即用户点名的 bedset4-gray-queen 所在变体组）；BEDSET4 印花组保留
         if (/^bedset4-(beige|gray|pink|white)-/.test(a)) return false;

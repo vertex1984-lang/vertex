@@ -3,7 +3,7 @@
  * 口径仿 bedding-families 的 duvet 二维家族（颜色×尺寸）——family = 同色组，
  * 尺寸带取变体组内同色成员的 cm 尺寸（卡片层统一补 "cm" 后缀，不在此处重复单位）。
  *
- * 目前全类目 5 条产品线（仿兔毛绒毯 1688-969627065032、镂空针织 KNIT-THROW、
+ * 目前全类目 5 条产品线（仿兔毛绒毯 969627065032、镂空针织 KNIT-THROW、
  * 波西米亚锯齿 BOHO-THROW、提花 JAC-THROW、豆豆粒 CHUNKY-THROW，2026-10-19 扩）；
  * 以后新增毯子产品：
  *  - 有变体组（variant-groups.ts 注册 color+size）→ 自动按颜色成族，无需改本文件；
@@ -130,7 +130,7 @@ export const BLANKET_SECTIONS: BlanketSection[] = [
     label: 'Faux Fur Throws',
     blurb: 'Cloud-soft faux rabbit fur with carved channel stripes.',
     menuDesc: 'Cloud-soft faux rabbit fur.',
-    groupIds: ['1688-969627065032'],
+    groupIds: ['969627065032'],
   },
   {
     key: 'more-blankets',

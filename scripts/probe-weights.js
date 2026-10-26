@@ -33,7 +33,7 @@ const QUERY = `
   }
 `;
 
-const ASIN_RE = /^(B0[A-Z0-9]{8}|1688-[0-9]+(-C[0-9]+)?)$/i;
+const ASIN_RE = /^(B0[A-Z0-9]{8}|(1688-)?[0-9]+(-C[0-9]+)?)$/i;
 
 async function main() {
   let all = [];

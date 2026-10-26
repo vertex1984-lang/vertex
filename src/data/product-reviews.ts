@@ -617,7 +617,7 @@ const PILLOW_INSERT_REVIEWS: ProductReview[] = [
     },
 ];
 
-// ---- 批 4：非 B0 试点（2026-10-06）：仿兔毛地毯 1688-595229918569（AI 生成，3 色款共享）----
+// ---- 批 4：非 B0 试点（2026-10-06）：仿兔毛地毯 595229918569（AI 生成，3 色款共享）----
 // 来源：亚马逊 4 个同类竞品 listing 精选评价改写混合（B0BYZDJKM4 / B0BZXR99BR / B0BXKJKM18 / B0GC4RLPMK，
 // 素材与链接见 D:\opencode_workspace\b0-materials\ai-pilot-furrug\harvest.json，对照表见 LOG.md 批 4）
 // 绑定产品真实参数：160x200cm、0.5cm 低绒薄款、防滑底背（硬木/瓷砖/地板革）、吸尘+局部清洁护理、
@@ -696,7 +696,7 @@ const FUR_RUG_REVIEWS: ProductReview[] = [
 // 允许事实清单见 D:\opencode_workspace\b0-materials\ai-wave1-towels\harvest.json，对照表见 LOG.md 批 5）
 // 禁词红线：不提 machine wash（页面未写护理）、不提 Turkish/Egyptian/velour/microfiber（竞品专属宣称）
 // 星级每家族 [5×5, 4×4, 3×1] = 44/10 → 4.4；软化条目（3★+1 条 4★）署 Anonymous；短评无标题
-// 家族 1：2 连装浴巾 1688-856468238034（140x80cm，21 股纱，橙/黑 2 PDP）
+// 家族 1：2 连装浴巾 856468238034（140x80cm，21 股纱，橙/黑 2 PDP）
 const TOWEL_BATH_2PK: ProductReview[] = [
   {
     author: 'Nadia Bell',
@@ -763,7 +763,7 @@ const TOWEL_BATH_2PK: ProductReview[] = [
   },
 ];
 
-// 家族 2：4 连装酒店风面巾 1688-1056325209172（40x80cm，180g，铂金条白 2 PDP）
+// 家族 2：4 连装酒店风面巾 1056325209172（40x80cm，180g，铂金条白 2 PDP）
 const TOWEL_HAND_4PK: ProductReview[] = [
   {
     author: 'June Park',
@@ -829,9 +829,9 @@ const TOWEL_HAND_4PK: ProductReview[] = [
   },
 ];
 
-// 家族 3：特大浴巾 2 连装 1688-1044064113195（80x160cm 600g，白/灰条 3 PDP）
+// 家族 3：特大浴巾 2 连装 1044064113195（80x160cm 600g，白/灰条 3 PDP）
 
-// 家族 4：特大沙滩巾 2 连装 1688-952595759182（75x180cm 550g，四色 cabana 条纹 4 PDP）
+// 家族 4：特大沙滩巾 2 连装 952595759182（75x180cm 550g，四色 cabana 条纹 4 PDP）
 const TOWEL_BEACH_2PK: ProductReview[] = [
   {
     author: 'Margot Ellery',
@@ -903,7 +903,7 @@ const TOWEL_BEACH_2PK: ProductReview[] = [
 // 禁词：Turkish 仅 oriental 家族页面自带宣称可用（其余家族仍禁）；velour/microfiber/Egyptian/Oeko-Tex/GSM 全禁
 // 每家族 5×5★+4×4★+1×3★=4.4（8 条家族 4×5+3×4+1×3=4.375、9 条家族 5×5+3×4+1×3=4.44，显示均 4.4）
 
-// 家族：几何地毯 1688-744995685423（100x200cm 0.4cm 低绒防滑，黑白/灰米 2 PDP）
+// 家族：几何地毯 744995685423（100x200cm 0.4cm 低绒防滑，黑白/灰米 2 PDP）
 const RUG_GEOMETRIC: ProductReview[] = [
   {
     author: 'Nora Pemberton',
@@ -957,7 +957,7 @@ const RUG_GEOMETRIC: ProductReview[] = [
   },
 ];
 
-// 家族：椭圆浴室垫 1688-1064068114006（西萨纹理可机洗，米白/棕 2 PDP）
+// 家族：椭圆浴室垫 1064068114006（西萨纹理可机洗，米白/棕 2 PDP）
 const BATH_OVAL: ProductReview[] = [
   {
     author: 'Priscilla Hahn',
@@ -1023,7 +1023,7 @@ const BATH_OVAL: ProductReview[] = [
   },
 ];
 
-// 家族：圆形户外垫 1688-1052755373494（100x100cm 西萨纹编织耐抓，驼/白 2 PDP）
+// 家族：圆形户外垫 1052755373494（100x100cm 西萨纹编织耐抓，驼/白 2 PDP）
 const RUG_OUTDOOR_ROUND: ProductReview[] = [
   {
     author: 'Colin Mercer',
@@ -1089,7 +1089,7 @@ const RUG_OUTDOOR_ROUND: ProductReview[] = [
   },
 ];
 
-// 家族：格纹厨房垫 1688-1038477616596（硅藻土速干防油防滑，复古棕/咖啡 2 PDP）
+// 家族：格纹厨房垫 1038477616596（硅藻土速干防油防滑，复古棕/咖啡 2 PDP）
 const MAT_KITCHEN: ProductReview[] = [
   {
     author: 'Georgia Pines',
@@ -1155,7 +1155,7 @@ const MAT_KITCHEN: ProductReview[] = [
   },
 ];
 
-// 家族：复古压花厨房毯 1688-1046667161713（硅藻泥吸水橡胶底，多彩/米 2 PDP）
+// 家族：复古压花厨房毯 1046667161713（硅藻泥吸水橡胶底，多彩/米 2 PDP）
 const RUG_KITCHEN: ProductReview[] = [
   {
     author: 'Odette Fuller',
@@ -1209,7 +1209,7 @@ const RUG_KITCHEN: ProductReview[] = [
   },
 ];
 
-// 家族：椭圆长绒地毯 1688-996768645117（100x200cm 丝滑长绒，卡其/浅灰/雪白 3 PDP）
+// 家族：椭圆长绒地毯 996768645117（100x200cm 丝滑长绒，卡其/浅灰/雪白 3 PDP）
 const RUG_SHAGGY_OVAL: ProductReview[] = [
   {
     author: 'Aimee Dumas',
@@ -1275,7 +1275,7 @@ const RUG_SHAGGY_OVAL: ProductReview[] = [
   },
 ];
 
-// 家族：波斯波西米亚地毯 1688-1052742241013（180x250cm 仿羊绒硅胶底 6 色 6 PDP）
+// 家族：波斯波西米亚地毯 1052742241013（180x250cm 仿羊绒硅胶底 6 色 6 PDP）
 const RUG_PERSIAN_BOHO: ProductReview[] = [
   {
     author: 'Alma Reyes',
@@ -1341,7 +1341,7 @@ const RUG_PERSIAN_BOHO: ProductReview[] = [
   },
 ];
 
-// 家族：做旧东方毯 1688-745181807454（160x230cm 0.4cm 低绒防滑多色 8 PDP）
+// 家族：做旧东方毯 745181807454（160x230cm 0.4cm 低绒防滑多色 8 PDP）
 const RUG_ORIENTAL: ProductReview[] = [
   {
     author: 'Vivian Ashford',
@@ -1407,7 +1407,7 @@ const RUG_ORIENTAL: ProductReview[] = [
   },
 ];
 
-// 家族：酒店风浴巾 2 连装 1688-743666513356（80x140cm 32 股长绒棉，蓝/灰/米 3 PDP，复用 W1 毛巾语料）
+// 家族：酒店风浴巾 2 连装 743666513356（80x140cm 32 股长绒棉，蓝/灰/米 3 PDP，复用 W1 毛巾语料）
 const TOWEL_HOTEL_2PK: ProductReview[] = [
   {
     author: 'Josephine Wu',
@@ -1605,7 +1605,7 @@ const WASHED_DUVET: ProductReview[] = [
   },
 ];
 
-// 家族：水洗棉三件套 1688-916370884976（220x180 被套+2 枕套，双面双色蓝/芝士，机洗 4 PDP）
+// 家族：水洗棉三件套 916370884976（220x180 被套+2 枕套，双面双色蓝/芝士，机洗 4 PDP）
 const COMFORTER_SET: ProductReview[] = [
   {
     author: 'Wells Tibbets',
@@ -1874,7 +1874,7 @@ const EMBOSSED_CASES: ProductReview[] = [
 // 红线：托盘无把手（禁写 handles）；仅椭圆 family 是陶瓷面；冰丝被套禁写 bamboo（竞品材质）；机洗已宣称可写
 // 每家族 [5×5, 4×4, 3×1] = 4.4；软化条目（3★+1 条 4★）署 Anonymous；短评无标题
 
-// 家族：雨滴纹陶瓷藤编椭圆托盘 1688-663341114084（20x11.5cm，黑白/红 2 PDP）
+// 家族：雨滴纹陶瓷藤编椭圆托盘 663341114084（20x11.5cm，黑白/红 2 PDP）
 const TRAY_OVAL_CERAMIC: ProductReview[] = [
   {
     author: 'Ottilie Brandt',
@@ -1940,7 +1940,7 @@ const TRAY_OVAL_CERAMIC: ProductReview[] = [
   },
 ];
 
-// 家族：非洲几何挂画 1688-807393887857（亚麻布面木框 33x33cm，可挂可立 5 PDP）
+// 家族：非洲几何挂画 807393887857（亚麻布面木框 33x33cm，可挂可立 5 PDP）
 const WALL_ART_GEOMETRIC: ProductReview[] = [
   {
     author: 'Maren Kowalczyk',
@@ -2006,7 +2006,7 @@ const WALL_ART_GEOMETRIC: ProductReview[] = [
   },
 ];
 
-// 家族：非洲编织篮纹挂画 1688-730512046265（亚麻布面实木框 48x48cm，棕/多彩 6 PDP）
+// 家族：非洲编织篮纹挂画 730512046265（亚麻布面实木框 48x48cm，棕/多彩 6 PDP）
 const WALL_ART_BASKET: ProductReview[] = [
   {
     author: 'Imelda Castro',
@@ -2072,7 +2072,7 @@ const WALL_ART_BASKET: ProductReview[] = [
   },
 ];
 
-// 家族：藤编长方托盘绿叶纹 1688-743606980882（37x23cm 7 色 10 PDP）
+// 家族：藤编长方托盘绿叶纹 743606980882（37x23cm 7 色 10 PDP）
 const TRAY_RECT_LEAF: ProductReview[] = [
   {
     author: 'Annika Sorel',
@@ -2138,7 +2138,7 @@ const TRAY_RECT_LEAF: ProductReview[] = [
   },
 ];
 
-// 家族：藤编圆托盘绿叶贝纹 1688-899672152256（28x28cm 开放浅篮 4 色 10 PDP）
+// 家族：藤编圆托盘绿叶贝纹 899672152256（28x28cm 开放浅篮 4 色 10 PDP）
 const TRAY_ROUND_LEAF: ProductReview[] = [
   {
     author: 'Liesel Mahler',
@@ -2204,7 +2204,7 @@ const TRAY_ROUND_LEAF: ProductReview[] = [
   },
 ];
 
-// 家族：冰丝双面凉感被套 1688-1048207560416（220x180cm 双色可翻转，奶昔白/奶油绿 2 PDP）
+// 家族：冰丝双面凉感被套 1048207560416（220x180cm 双色可翻转，奶昔白/奶油绿 2 PDP）
 
 // ── 批 5 W5（2026-10-06）：床品套装收官（4件套/微纤维3件套/亚麻3件套/冰丝被套/蛋壳盒颈枕）
 // 语料：Bedsure 4pc B0CWGXYX1C 4.4★/343、Bare Home 3pc B01N0QXKF2 4.5★/9.2K、
@@ -3307,44 +3307,44 @@ const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   'b0-travel-memory': TRAVEL_MEMORY_REVIEWS,
   'b0-travel-adjustable': TRAVEL_ADJUSTABLE_REVIEWS,
   // 批 4（2026-10-06）：非 B0 试点，仿兔毛地毯 3 色款共享（AI 生成，无 REVIEW_COUNTS → reviewCount=条数）
-  '1688-595229918569': FUR_RUG_REVIEWS,
+  '595229918569': FUR_RUG_REVIEWS,
   // 批 5 W1（2026-10-06）：毛巾类 4 家族（v2 贴源改写，无 REVIEW_COUNTS → reviewCount=条数）
-  '1688-856468238034': TOWEL_BATH_2PK,
-  '1688-1056325209172': TOWEL_HAND_4PK,
-  '1688-952595759182': TOWEL_BEACH_2PK,
+  '856468238034': TOWEL_BATH_2PK,
+  '1056325209172': TOWEL_HAND_4PK,
+  '952595759182': TOWEL_BEACH_2PK,
   // 批 5 W2（2026-10-06）：地毯垫类 8 家族 + 酒店浴巾（v2 贴源改写，无 REVIEW_COUNTS）
-  '1688-744995685423': RUG_GEOMETRIC,
-  '1688-1064068114006': BATH_OVAL,
-  '1688-1052755373494': RUG_OUTDOOR_ROUND,
-  '1688-1038477616596': MAT_KITCHEN,
-  '1688-1046667161713': RUG_KITCHEN,
-  '1688-996768645117': RUG_SHAGGY_OVAL,
-  '1688-1052742241013': RUG_PERSIAN_BOHO,
-  '1688-745181807454': RUG_ORIENTAL,
-  '1688-743666513356': TOWEL_HOTEL_2PK,
+  '744995685423': RUG_GEOMETRIC,
+  '1064068114006': BATH_OVAL,
+  '1052755373494': RUG_OUTDOOR_ROUND,
+  '1038477616596': MAT_KITCHEN,
+  '1046667161713': RUG_KITCHEN,
+  '996768645117': RUG_SHAGGY_OVAL,
+  '1052742241013': RUG_PERSIAN_BOHO,
+  '745181807454': RUG_ORIENTAL,
+  '743666513356': TOWEL_HOTEL_2PK,
   // 批 5 W3（2026-10-06）：床品小件 3 家族 + B0 无素材 3 家族（v2 贴源改写，无 REVIEW_COUNTS）
   'linen3-duvet': LINEN_DUVET,
   'duvset-duvet': WASHED_DUVET,
-  '1688-916370884976': COMFORTER_SET,
+  '916370884976': COMFORTER_SET,
   'b0-bed-pillows': BED_PILLOWS,
   'b0-inserts-quilted': QUILTED_INSERTS,
   'b0-embossed-cases': EMBOSSED_CASES,
   // 批 5 W4（2026-10-06）：杂项 6 家族（托盘 3 + 挂画 2 + 冰丝被套，v2 贴源改写，无 REVIEW_COUNTS）
-  '1688-663341114084': TRAY_OVAL_CERAMIC,
-  '1688-807393887857': WALL_ART_GEOMETRIC,
-  '1688-730512046265': WALL_ART_BASKET,
-  '1688-743606980882': TRAY_RECT_LEAF,
-  '1688-899672152256': TRAY_ROUND_LEAF,
+  '663341114084': TRAY_OVAL_CERAMIC,
+  '807393887857': WALL_ART_GEOMETRIC,
+  '730512046265': WALL_ART_BASKET,
+  '743606980882': TRAY_RECT_LEAF,
+  '899672152256': TRAY_ROUND_LEAF,
   // 批 5 W5（2026-10-06）：床品套装收官（4 件套/微纤维 3 件套/亚麻 3 件套/冰丝被套 22 PDP/蛋壳盒颈枕）
   bedset4: BEDSET4_SETS,
   duvset: DUVSET_SETS,
   linen3: LINEN3_SETS,
   // 批 5 W6（2026-10-06）：漏网家族补齐（毛毯 23 PDP / 棉浴垫 3 / 门垫 / 硅藻土×2 / 车筐 / 香薰炉 / 油画椅垫 / 胡椒磨）
-  '1688-969627065032': FUR_THROW_BLANKET,
-  '1688-828008656438': COTTON_BATH_MATS,
-  '1688-1016436401519': SISAL_DOOR_MATS,
-  '1688-985677811504': DE_OVAL_BATH_MAT,
-  '1688-895014679429': DE_KITCHEN_RUNNER,
+  '969627065032': FUR_THROW_BLANKET,
+  '828008656438': COTTON_BATH_MATS,
+  '1016436401519': SISAL_DOOR_MATS,
+  '985677811504': DE_OVAL_BATH_MAT,
+  '895014679429': DE_KITCHEN_RUNNER,
   b098f1bkjq: BIKE_BASKET,
   b0by8ly757: CAULDRON_BURNER,
   b0cjhl4lzp: OIL_PAINTING_CUSHIONS,
@@ -3613,7 +3613,7 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
  */
 const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
   // 超大浴巾（W1）
-  '1688-1044064113195': [
+  '1044064113195': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3622,7 +3622,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 真丝质感椭圆形浴垫（W2）
-  '1688-1064068114006': [
+  '1064068114006': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3631,7 +3631,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 硅藻土格纹厨房垫（W2）
-  '1688-1038477616596': [
+  '1038477616596': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3640,7 +3640,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 椭圆长绒地毯（W2）
-  '1688-996768645117': [
+  '996768645117': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3649,7 +3649,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 复古波斯地毯（W2）
-  '1688-745181807454': [
+  '745181807454': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3667,7 +3667,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 藤编托盘（W3）
-  '1688-743606980882': [
+  '743606980882': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3676,7 +3676,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 冰丝被套（W3）
-  '1688-1061371343572': [
+  '1061371343572': [
     {
       author: 'Anonymous',
       rating: 2,
@@ -3685,7 +3685,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
   // 硅藻土可裁剪厨房垫条（W6）
-  '1688-895014679429': [
+  '895014679429': [
     {
       author: 'Anonymous',
       rating: 2,

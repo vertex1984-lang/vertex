@@ -1,5 +1,5 @@
 /**
- * 产品权重人工赋权表（key = 小写产品标识 asin / 1688-xxx / bedset4-xxx 等）
+ * 产品权重人工赋权表（key = 小写产品标识 asin（纯数字供应商标识，2026-10-26 起去 1688- 前缀）/ bedset4-xxx 等）
  *
  * 与 COLOR_OVERRIDES、specs-overrides.ts 同一套人工表模式：
  * 日常跟运营说"给 XX +20 / 把 XX 置顶"，改这里 → 重跑 scripts/build-weights.js → 重建生效。
@@ -94,6 +94,6 @@ export interface GroupBoostRule {
 export const GROUP_BOOSTS: GroupBoostRule[] = [
   // 2026-09-14 用户要求：旧分组加权规则全部清零，人工权重只保留管理工具的单品打分（weight-boosts.json）
   // 2026-10-10 用户要求：蛋壳收纳盒颈枕系列（5 色）排在颈枕类目最前边
-  { match: { asinIncludes: ['1688-913882303732'] }, boost: 30, note: '蛋壳颈枕系列置顶颈枕类目（用户指定）' },
+  { match: { asinIncludes: ['913882303732'] }, boost: 30, note: '蛋壳颈枕系列置顶颈枕类目（用户指定）' },
 ];
 

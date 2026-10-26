@@ -6,12 +6,12 @@
  * 新挂画上架：scripts/build-variant-thumbs.js 的 SOURCES 补坐标后重跑。
  */
 export const VARIANT_THUMB_CROPS: Record<string, string> = {
-  '1688-730512046265-c14': '/images/products/1688-730512046265-C14/thumb-crop.webp',
-  '1688-730512046265-c15': '/images/products/1688-730512046265-C15/thumb-crop.webp',
-  '1688-730512046265-c16': '/images/products/1688-730512046265-C16/thumb-crop.webp',
-  '1688-730512046265-c17': '/images/products/1688-730512046265-C17/thumb-crop.webp',
-  '1688-730512046265-c18': '/images/products/1688-730512046265-C18/thumb-crop.webp',
-  '1688-730512046265-c19': '/images/products/1688-730512046265-C19/thumb-crop.webp',
+  '730512046265-c14': '/images/products/730512046265-C14/thumb-crop.webp',
+  '730512046265-c15': '/images/products/730512046265-C15/thumb-crop.webp',
+  '730512046265-c16': '/images/products/730512046265-C16/thumb-crop.webp',
+  '730512046265-c17': '/images/products/730512046265-C17/thumb-crop.webp',
+  '730512046265-c18': '/images/products/730512046265-C18/thumb-crop.webp',
+  '730512046265-c19': '/images/products/730512046265-C19/thumb-crop.webp',
   // BEDSET4 灰/粉/白：色点直接用主图（2026-10-02 新生成的场景主图）
   'bedset4-pink-twin': '/images/products/BEDSET4-PINK-TWIN/1.webp',
   'bedset4-pink-full': '/images/products/BEDSET4-PINK-FULL/1.webp',

@@ -36,7 +36,7 @@ const BOUCLE_WHITE = 'boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45';
 const BOUCLE_ROSE = 'boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45';
 const BOUCLE_SAGE = 'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45';
 const BLANKET_CREAM =
-  'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c26';
+  'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c26';
 const CHAIR_CUSHION_CREAM = 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream';
 const CHAIR_CUSHION_BLUE = 'corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue';
 const CORD_ROSE = 'corduroy-pillow-covers-dustyrose-45x45-mk-pc-cord-dustyrose-45';
