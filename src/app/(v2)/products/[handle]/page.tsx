@@ -3,6 +3,7 @@ import ProductDetailUpgrade from './ProductDetailUpgrade';
 import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
+import PdpEntryRedirect from '@/components/v2/PdpEntryRedirect';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
@@ -71,6 +72,31 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
   // isNewProductHandle 白名单门控与老版 V2ProductDetailClient 退役（两者的文件均保留磁盘备用）。
   // （沿革：2026-10-19 bedding 全量新版、其他类目白名单门控 → 2026-10-21 全站统一）
 
+  // 2026-10-26 用户定：点进未上架 PDP 时默认落到有货的产品——
+  // 优先同色的已上架尺寸，其次家族内任意已上架成员；家族全未上架则保持 Coming Soon。
+  // 客户端只在整页进入时跳一次（站内点尺寸/色点不会被弹走），见 PdpEntryRedirect。
+  const entryRedirectTarget = (() => {
+    if (!enriched) return null;
+    if (enriched.hasShopifyData === true && enriched.shopifyAvailable === true) return null;
+    const group = getVariantGroupOf(enriched.asin);
+    if (!group) return null;
+    const currentAsin = enriched.asin.toLowerCase();
+    const currentColor = group.members.find((m) => m.asin.toLowerCase() === currentAsin)?.color;
+    const info = group.members.map((m) => {
+      const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
+      const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
+      return {
+        asin: m.asin.toLowerCase(),
+        handle: m.handle,
+        color: m.color,
+        sellable: ep ? ep.hasShopifyData === true && ep.shopifyAvailable === true : false,
+      };
+    });
+    const sameColor = info.find((x) => x.sellable && x.color === currentColor);
+    const anySellable = info.find((x) => x.sellable);
+    return (sameColor ?? anySellable)?.handle ?? null;
+  })();
+
   // 花色/尺寸切换数据：
   // - 纯颜色家族（地毯）：色圆点 = 全部成员
   // - 二维/尺寸家族（成员带 size）：色圆点按颜色去重（代表成员优先当前尺寸）；尺寸项 = 同色其他尺寸
@@ -88,7 +114,9 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
             color: m.color,
             size: m.size,
             thumb: ep?.shopifyImages?.[0] || ep?.images[0]?.url || '',
-            inStock: ep ? (ep.hasShopifyData ? (ep.shopifyAvailable ?? false) : (ep.availableForSale === true)) : false,
+            // 2026-10-26 用户定：未映射 Shopify 的站内页面只展示不售卖（Coming Soon）
+            launched: ep ? ep.hasShopifyData === true : false,
+            inStock: ep ? (ep.hasShopifyData === true && (ep.shopifyAvailable ?? false)) : false,
           };
         };
         const hasSizes = group.members.some((m) => m.size);
@@ -145,9 +173,9 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
             const sameCombo = currentMember
               ? group.members.find((x) => x.size === m.size && x.color === currentMember.color)
               : undefined;
-            if (!sameCombo) return { handle: null as string | null, asin: m.asin, size: m.size!, inStock: false };
+            if (!sameCombo) return { handle: null as string | null, asin: m.asin, size: m.size!, inStock: false, launched: false };
             const v = toVariant(sameCombo);
-            return { handle: v.handle, asin: m.asin, size: m.size!, inStock: v.inStock };
+            return { handle: v.handle, asin: m.asin, size: m.size!, inStock: v.inStock, launched: v.launched };
           });
         return { colorVariants, sizeVariants };
       })()
@@ -173,9 +201,9 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           url: `${SITE_URL}/products/${enriched.handle}/`,
           priceCurrency: STORE_CURRENCY,
           price: enriched.shopifyPrice || enriched.priceRange.minVariantPrice.amount,
-          availability: (enriched.shopifyAvailable ?? enriched.availableForSale)
-            ? 'https://schema.org/InStock'
-            : 'https://schema.org/OutOfStock',
+          availability: enriched.hasShopifyData === true
+            ? (enriched.shopifyAvailable === true ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock')
+            : 'https://schema.org/PreOrder',
         },
         ...(enriched.rating != null && enriched.reviewCount != null && enriched.reviewCount > 0
           ? {
@@ -206,6 +234,8 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
+      {/* 未上架页 → 默认落到有货规格（同色优先；每个页面文档只跳一次） */}
+      {entryRedirectTarget && <PdpEntryRedirect target={entryRedirectTarget} />}
       {/* key=handle：花色/尺寸改走 next/link 客户端导航后，切色时强制重挂载 PDP 组件，
           避免图集 selectedIndex 等客户端状态跨商品残留 */}
       <ProductDetailUpgrade

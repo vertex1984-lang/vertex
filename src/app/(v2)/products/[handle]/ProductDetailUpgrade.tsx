@@ -37,10 +37,10 @@ import { useGallerySwipe } from '@/lib/use-gallery-swipe';
 interface ProductDetailUpgradeProps {
   handle: string;
   /** 同款异色成员（含缩略图 URL），由服务端 page 组装传入；二维家族已按颜色去重 */
-  colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean }[];
+  colorVariants?: { asin: string; handle: string; color: string; size?: string; thumb: string; inStock: boolean; launched?: boolean }[];
   /** 全家族尺寸档（可选；二维/尺寸家族才有）。handle=null 的档位 = 当前花色无此规格，前端渲染为置灰不可选；
-   *  asin 供 bedding 美式尺寸标签取 ASIN 后缀（2026-10-21） */
-  sizeVariants?: { handle: string | null; asin?: string; size: string; inStock: boolean }[];
+   *  asin 供 bedding 美式尺寸标签取 ASIN 后缀（2026-10-21）；launched=是否已映射 Shopify（false → Coming soon 文案） */
+  sizeVariants?: { handle: string | null; asin?: string; size: string; inStock: boolean; launched?: boolean }[];
   /** "You May Also Like" 关联推荐组卡（page.tsx 用 getPdpRelatedFamilies 构建期算好），渲染在信任条下方。
    *  2026-10-22 用户定：一组一卡 + 色卡——同组只出一张卡，色卡展示全部颜色 */
   relatedProducts?: GroupCard[];
@@ -220,7 +220,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 详情附图区已随 Description 模块删除（2026-09-29 用户定）
 
   const hasShopifyData = product.hasShopifyData;
-  const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
+  // 2026-10-26 用户定（短期过渡）：未映射 Shopify 的站内页面只展示、不售卖——
+  // 统一显示 Coming Soon、不出 Add to Cart（结账链路只有 Shopify 行，站内本地购物车无法结账）
+  const launched = hasShopifyData === true;
+  const sellable = launched && (product.shopifyAvailable ?? false);
+  const availabilityLabel = sellable ? 'In Stock' : launched ? 'Out of Stock' : 'Coming Soon';
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
   const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);
@@ -284,7 +288,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // Material / Care 卡已按领导反馈移除（材料与护理信息保留在底部 Specifications 表中）
   ].filter(Boolean) as { icon: string; label: string; value: string }[];
 
-  const specRows: { label: string; value: string; muted?: boolean }[] = [
+  const specRows: { label: string; value: string; tone?: 'alert' | 'muted' }[] = [
     { label: 'Brand', value: 'Makimoo' },
     { label: 'Category', value: product.productType },
     ...(specs?.material ? [{ label: 'Material', value: specs.material }] : []),
@@ -294,7 +298,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     ...(weightStr ? [{ label: 'Weight', value: weightStr }] : []),
     ...(materialSku ? [{ label: 'SKU', value: materialSku }] : []),
     { label: 'Care', value: careCopy.spec },
-    { label: 'Availability', value: isInStock ? 'In Stock' : 'Currently Unavailable', muted: !isInStock },
+    { label: 'Availability', value: availabilityLabel, ...(!sellable ? { tone: launched ? 'alert' as const : 'muted' as const } : {}) },
   ];
 
   const handleAddToCart = async () => {
@@ -395,7 +399,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                       {specRows.map((row, ri) => (
                         <tr key={row.label} className={ri > 0 ? 'border-t border-warm-gray/60' : ''}>
                           <td className="py-2.5 pr-3 text-xs text-charcoal-light w-2/5 align-top">{row.label}</td>
-                          <td className={`py-2.5 text-xs font-medium align-top ${row.muted ? 'text-red-500' : 'text-charcoal'}`}>
+                          <td className={`py-2.5 text-xs font-medium align-top ${row.tone === 'alert' ? 'text-red-500' : row.tone === 'muted' ? 'text-charcoal-light' : 'text-charcoal'}`}>
                             {row.value}
                           </td>
                         </tr>
@@ -507,9 +511,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 >
                   {product.productType}
                 </a>
-                <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${isInStock ? 'text-brand' : 'text-charcoal-light'}`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${isInStock ? 'bg-brand' : 'bg-charcoal-light'}`} />
-                  {isInStock ? 'In Stock' : 'Out of Stock'}
+                <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${sellable ? 'text-brand' : 'text-charcoal-light'}`}>
+                  <span className={`w-1.5 h-1.5 rounded-full ${sellable ? 'bg-brand' : 'bg-charcoal-light'}`} />
+                  {availabilityLabel}
                 </span>
               </div>
             </div>
@@ -554,7 +558,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   </svg>
                 </button>
               ) : null;
-              const priceBlock = isInStock ? (
+              const priceBlock = (sellable || !launched) ? (
                 <div className="flex items-baseline gap-3">
                   <span className="text-xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
                   {showCompareAt && (
@@ -652,11 +656,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                         const active = sv.handle === handle;
                         const unavailable = sv.handle === null;
                         const label = (
-                          <>
+                          <span>
                             {beddingSizeLabels?.[i] ?? sizeDualLabel(sv.size)}
                             {unavailable && <span className="ml-1 text-[11px] font-normal opacity-70">✕</span>}
-                            {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">(Out of Stock)</span>}
-                          </>
+                            {!unavailable && !sv.inStock && <span className="ml-1.5 text-[11px] font-normal opacity-60">{sv.launched === false ? '(Coming soon)' : '(Out of Stock)'}</span>}
+                          </span>
                         );
                         if (unavailable) {
                           return (
@@ -703,7 +707,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
             {/* 数量 + 加购（mainCtaRef：悬浮加购条显隐联动的观测目标） */}
-            {isInStock && (
+            {sellable && (
               <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-3">
                 <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white self-start">
                   <button
@@ -764,9 +768,26 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
+            {/* 未上架（无 Shopify 映射）只展示不售卖：Coming Soon 禁用态 + 说明 */}
+            {!sellable && (
+              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-2">
+                <button
+                  type="button"
+                  disabled
+                  className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-charcoal-light bg-warm-gray cursor-not-allowed"
+                >
+                  {launched ? 'Out of Stock' : 'Coming Soon'}
+                </button>
+              </div>
+            )}
+            {!launched && (
+              <p className="text-xs text-charcoal-light mb-6">
+                This design isn&rsquo;t available for purchase yet — check back soon.
+              </p>
+            )}
             {/* 免邮/退货信任徽章行已于 2026-10-12 移除（用户定：Add to Cart 下方不再显示这两个字段，
                 信任信息由下方滚动信任条承担）；预计送达保留（送达日期单独加粗一行） */}
-            {isInStock && (
+            {sellable && (
               <p className="text-sm font-semibold text-charcoal mb-6">
                 <EstimatedDelivery fallback="Ships within 1-2 business days" />
               </p>
@@ -997,8 +1018,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
       )}
 
       {/* 移动端悬浮加购条（2026-10-12 用户定显隐逻辑）：加载不显示；主 CTA 滚出视口 → 滑入；
-          回滚至主 CTA 可见 → 收起，直到页面顶端都不再显示 */}
-      {isInStock && (
+          回滚至主 CTA 可见 → 收起，直到页面顶端都不再显示；未上架页面不渲染 */}
+      {sellable && (
         <div
           className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
             mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
