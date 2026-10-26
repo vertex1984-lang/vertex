@@ -66,7 +66,7 @@ export default function V2Footer() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-10 md:pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-16 mb-8 md:mb-10">
           <FooterSection id="footer-shop" title="Shop" open={openKey === 'shop'} onToggle={() => toggle('shop')}>
-            <a href={v2url('/products')} className={footerLinkClass}>Shop All</a>
+            <a href={v2url('/categories/')} className={footerLinkClass}>Shop All</a>
             <a href={v2url('/products?cat=cushions')} className={footerLinkClass}>Cushions</a>
             <a href={v2url('/products?cat=pillows')} className={footerLinkClass}>Pillows</a>
             <a href={v2url('/products?cat=towels')} className={footerLinkClass}>Towels</a>

@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import V2ProductDetailClient from './V2ProductDetailClient';
 import ProductDetailUpgrade from './ProductDetailUpgrade';
 import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
-import { isNewProductHandle } from '@/data/new-product-handles';
 import { getVariantGroupOf } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
 import { buildSetFamilies } from '@/data/bedding-families';
-import { getPdpRelatedProducts } from '@/data/home-sections';
+import { getPdpRelatedFamilies } from '@/data/home-sections';
 import { STORE_CURRENCY } from '@/lib/currency';
 
 const SITE_URL = 'https://www.makimoohome.com';
@@ -69,14 +67,14 @@ const PRODUCTS_BY_ASIN = new Map(PRODUCTS_DATA.map((p) => [p.asin.toLowerCase(),
 export default function V2ProductDetailPage({ params }: { params: { handle: string } }) {
   const product = PRODUCTS_DATA.find((p) => p.handle === params.handle);
   const enriched = product ? enrichProductsWithShopifyData([product])[0] : null;
-  // 2026-10-19 用户定：bedding 类目全部 PDP 按新版格式（ProductDetailUpgrade）重构，
-  // 不再限白名单；其他类目仍走 isNewProductHandle 门控
-  const isNew = isNewProductHandle(params.handle) || (enriched?.productType || '').toLowerCase() === 'bedding';
+  // 2026-10-21 用户定：全站 PDP 统一新版格式（ProductDetailUpgrade，原 bedding 版式）——
+  // isNewProductHandle 白名单门控与老版 V2ProductDetailClient 退役（两者的文件均保留磁盘备用）。
+  // （沿革：2026-10-19 bedding 全量新版、其他类目白名单门控 → 2026-10-21 全站统一）
 
-  // 花色/尺寸切换数据（仅白名单新品）：
+  // 花色/尺寸切换数据：
   // - 纯颜色家族（地毯）：色圆点 = 全部成员
   // - 二维/尺寸家族（成员带 size）：色圆点按颜色去重（代表成员优先当前尺寸）；尺寸项 = 同色其他尺寸
-  const variantData = enriched && isNew
+  const variantData = enriched
     ? (() => {
         const group = getVariantGroupOf(enriched.asin);
         if (!group) return { colorVariants: [], sizeVariants: [] };
@@ -147,17 +145,17 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
             const sameCombo = currentMember
               ? group.members.find((x) => x.size === m.size && x.color === currentMember.color)
               : undefined;
-            if (!sameCombo) return { handle: null as string | null, size: m.size!, inStock: false };
+            if (!sameCombo) return { handle: null as string | null, asin: m.asin, size: m.size!, inStock: false };
             const v = toVariant(sameCombo);
-            return { handle: v.handle, size: m.size!, inStock: v.inStock };
+            return { handle: v.handle, asin: m.asin, size: m.size!, inStock: v.inStock };
           });
         return { colorVariants, sizeVariants };
       })()
     : { colorVariants: [], sizeVariants: [] };
   const { colorVariants, sizeVariants } = variantData;
 
-  // "You May Also Like" 关联推荐（仅新版 PDP；server 端构建期算好，逻辑见 home-sections.ts）
-  const relatedProducts = isNew ? getPdpRelatedProducts(params.handle) : [];
+  // "You May Also Like" 关联推荐家族卡（server 端构建期算好，逻辑见 home-sections.ts）
+  const relatedProducts = getPdpRelatedFamilies(params.handle);
 
   // JSON-LD Product 结构化数据（有真实评价数据时才输出 aggregateRating）
   const jsonLd = enriched
@@ -210,20 +208,16 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       )}
       {/* key=handle：花色/尺寸改走 next/link 客户端导航后，切色时强制重挂载 PDP 组件，
           避免图集 selectedIndex 等客户端状态跨商品残留 */}
-      {isNew ? (
-        <ProductDetailUpgrade
-          key={params.handle}
-          handle={params.handle}
-          colorVariants={colorVariants}
-          sizeVariants={sizeVariants}
-          relatedProducts={relatedProducts}
-        />
-      ) : (
-        <V2ProductDetailClient key={params.handle} handle={params.handle} />
-      )}
+      <ProductDetailUpgrade
+        key={params.handle}
+        handle={params.handle}
+        colorVariants={colorVariants}
+        sizeVariants={sizeVariants}
+        relatedProducts={relatedProducts}
+      />
       {/* 面料互导轮播（仅 bedding PDP，2026-09-29 用户定："Other High Quality Materials" 横滑卡条，
           与面料二级 PLP 底部同款；数量统计口径与 bedding/[slug] 一致） */}
-      {product && product.productType.toLowerCase() === 'bedding' && isNew && (
+      {product && product.productType.toLowerCase() === 'bedding' && (
         <V2FabricCrossSell fabrics={FABRICS_WITH_COUNTS} />
       )}
       {/* Related Guides 关联阅读：2026-10-12 用户定已从 PDP 移除（PLP 底部仍保留） */}

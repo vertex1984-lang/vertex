@@ -78,7 +78,7 @@ export default function V2TrustStats() {
         {/* 图片下方右侧：Explore Our Collections 链接（跳 shop all 页） */}
         <div className="flex justify-end px-6 lg:px-10 py-5 lg:py-6">
           <a
-            href={v2url('/products/')}
+            href={v2url('/categories/')}
             className="text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase text-brand underline underline-offset-4 decoration-brand/40 hover:decoration-brand transition-colors"
           >
             Explore Our Collections

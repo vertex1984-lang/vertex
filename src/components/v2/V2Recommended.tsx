@@ -1,7 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import V2ProductCard, { V2CardProduct } from '@/components/v2/V2ProductCard';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCardsFromCards, type GroupCard } from '@/lib/group-cards';
+import type { V2CardProduct } from '@/components/v2/V2ProductCard';
 import { v2url } from '@/lib/v2paths';
 import { getRecentlyViewed } from '@/lib/recently-viewed';
 import type { RecommendedCandidate } from '@/data/home-sections';
@@ -14,6 +16,9 @@ const HISTORY_DEPTH = 5;
 const titleKey = (title: string) =>
   title.toLowerCase().replace(/\(.*?\)/g, '').slice(0, 30).trim();
 
+// 组 key（familyKey 前缀；无组单品 = asin 小写，与 buildGroupCardsFromCards 同口径）
+const groupKeyOfCard = (c: V2CardProduct) => (c.familyKey ?? c.asin.toLowerCase()).split('::')[0];
+
 interface V2RecommendedProps {
   // 服务端已选好（src/data/home-sections.ts）：无浏览历史时的兜底榜单（Best Sellers 前 10）
   fallback: V2CardProduct[];
@@ -25,13 +30,45 @@ interface V2RecommendedProps {
  * V2 首页关联推荐区（替换原 New Arrivals 位）：根据用户浏览历史推荐产品。
  * 算法：取最近浏览的 5 个产品（权重 5→1 递减），对每个候选在售产品打分——
  *   同类目 +3、同色系 +2、同场景 +1（乘以浏览权重累加），
- * 排除已浏览产品、按标题去重，取分数最高的 10 款。
- * 无浏览历史（或无有效推荐）时回退到 server 传入的 Best Sellers 兜底榜单。
+ * 排除已浏览产品、按标题去重，再按组 key 合并同组（2026-10-22 一组一卡 + 色卡口径：
+ * 同组只出一张卡，卡位由最高分成员决定、首屏选中色 = 命中成员颜色，色卡变体 = 全部
+ * 在售候选中该组的颜色），取分数最高的 10 个组。
+ * 无浏览历史（或无有效推荐）时回退到 server 传入的 Best Sellers 兜底榜单（同样按组合并）。
  * 展示与 Shop by Color 相同：标题 + 单行横滑产品卡（触摸滑动 + 鼠标拖拽，同 Shop by Category，无箭头）+ 底部 View More 按钮。
  */
 export default function V2Recommended({ fallback, candidates }: V2RecommendedProps) {
+  // 全部在售候选按组归类（组内保持候选顺序，供色卡变体/From 价用）
+  const cardsByGroup = useMemo(() => {
+    const m = new Map<string, V2CardProduct[]>();
+    for (const t of Object.values(candidates)) {
+      const key = groupKeyOfCard(t.card);
+      const list = m.get(key);
+      if (list) list.push(t.card);
+      else m.set(key, [t.card]);
+    }
+    return m;
+  }, [candidates]);
+
+  // 打分/兜底序列（产品卡）→ 组卡序列：同组首个决定卡位与首屏选中色，
+  // 色卡变体取全量在售候选中该组全部颜色（不受打分序列裁剪影响）
+  const collapseToGroupCards = (cards: V2CardProduct[], limit: number): GroupCard[] => {
+    const seen = new Set<string>();
+    const out: GroupCard[] = [];
+    for (const c of cards) {
+      const key = groupKeyOfCard(c);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const g = buildGroupCardsFromCards(cardsByGroup.get(key) ?? [c])[0];
+      out.push(c.familyColor ? { ...g, initialColor: c.familyColor } : g);
+      if (out.length >= limit) break;
+    }
+    return out;
+  };
+
   // SSR / 首帧用 Best Sellers 兜底，挂载后如有浏览历史则换成个性化推荐
-  const [products, setProducts] = useState<V2CardProduct[]>(fallback);
+  const [cards, setCards] = useState<GroupCard[]>(() =>
+    collapseToGroupCards(fallback, MAX_ITEMS)
+  );
   const [personalized, setPersonalized] = useState(false);
 
   useEffect(() => {
@@ -58,19 +95,24 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
           const w = HISTORY_DEPTH - idx;
           if (t.category === v.category) score += 3 * w;
           if (t.color && t.color === v.color) score += 2 * w;
-          if (t.scene === v.scene) score += 1 * w;
+          if (t.scene && t.scene === v.scene) score += 1 * w;
         });
         return { t, score };
       })
       .filter((s) => s.score > 0)
-      .sort((a, b) => b.score - a.score)
-      .slice(0, MAX_ITEMS);
+      .sort((a, b) => b.score - a.score);
 
-    if (scored.length > 0) {
-      setProducts(scored.map((s) => s.t.card));
+    // 打分后按组 key 合并同组（同组只留最高分成员决定卡位），再取前 10 个组
+    const groupCards = collapseToGroupCards(
+      scored.map((s) => s.t.card),
+      MAX_ITEMS
+    );
+    if (groupCards.length > 0) {
+      setCards(groupCards);
       setPersonalized(true);
     }
-  }, [candidates]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [candidates, cardsByGroup]);
 
   // 产品横滑轨道：触摸滑动 + 鼠标拖拽（同 Shop by Category，无翻页箭头）
   const trackRef = useRef<HTMLDivElement>(null);
@@ -113,7 +155,7 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
     }
   };
 
-  if (products.length === 0) return null;
+  if (cards.length === 0) return null;
 
   return (
     <section className="pt-6 lg:pt-24 pb-16 lg:pb-24">
@@ -143,12 +185,12 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
               dragging ? 'cursor-grabbing snap-none' : 'snap-x snap-mandatory cursor-grab'
             }`}
           >
-            {products.map((product) => (
+            {cards.map((card) => (
               <div
-                key={product.id}
+                key={card.key}
                 className="w-[56vw] sm:w-[42vw] lg:w-[min(25vw,440px)] flex-shrink-0 snap-start"
               >
-                <V2ProductCard product={product} />
+                <GroupProductCard card={card} />
               </div>
             ))}
           </div>
@@ -157,7 +199,7 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
         {/* 底部 View More 描边按钮（与 Shop by Category 按钮同款） */}
         <div className="mt-10 lg:mt-12 text-center">
           <a
-            href={v2url('/products/')}
+            href={v2url('/categories/')}
             className="inline-block px-7 py-3 rounded-full border-2 border-brand text-brand text-xs lg:px-9 lg:py-3.5 lg:text-sm font-semibold tracking-wide uppercase transition hover:bg-brand hover:text-cream"
           >
             View More

@@ -19,7 +19,7 @@ import { resolveUrl } from '@/lib/paths';
  *    + 乡村木屋淡紫印花（用户供图）卧室场景，两张 3:4 各半；仅材质为 Linen-Like 的 bedding PDP 渲染
  *  - bedding/brushedcotton（2026-10-15 AI 生成种草图，用户定）：米色磨毛棉清晨现代卧室
  *    （DUVSET-BEIGE-QUEEN 锚定）+ 灰色磨毛棉傍晚现代卧室（DUVSET-GRAY-QUEEN 锚定），
- *    两张 3:4 各半；仅材质为 Washed Cotton-Like（展示名 Brushed Cotton）的 bedding PDP 渲染
+ *    两张 3:4 各半；仅材质为 Washed Cotton-Like（展示名 Washed Cotton）的 bedding PDP 渲染
  *  - bedding/linen（2026-10-15）：farmhouse 燕麦亚麻（AI 生成种草图）+ 城市夜景炭灰亚麻
  *    （用户供图，方形裁 3:4）；仅材质为 100% Linen 的 bedding PDP 渲染
  *  - bedding/satin（2026-10-15 用户供图）：法式轻奢香槟灰双色缎面 + 明亮现代香槟缎面
@@ -91,14 +91,14 @@ const SETS: Record<'pillows' | 'bedpillows' | 'cushions' | 'solids' | 'prints' |
         image: '/images/pdp-lifestyle/bedding-brushed-gray.webp',
         caption: 'Evening In',
         desc: 'Warm lamps and city lights',
-        alt: 'Soft gray brushed cotton duvet cover set on a dark walnut bed in a modern bedroom at dusk',
+        alt: 'Soft gray washed cotton duvet cover set on a dark walnut bed in a modern bedroom at dusk',
         className: 'aspect-[3/4]',
       },
       {
         image: '/images/pdp-lifestyle/bedding-brushed-beige.webp',
         caption: 'Slow Mornings',
         desc: 'Sunlight, coffee, and nowhere to rush',
-        alt: 'Warm beige brushed cotton duvet cover set on a grey upholstered bed in a modern sunlit bedroom',
+        alt: 'Warm beige washed cotton duvet cover set on a grey upholstered bed in a modern sunlit bedroom',
         className: 'aspect-[3/4]',
       },
     ],

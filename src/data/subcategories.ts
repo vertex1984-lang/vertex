@@ -1,7 +1,6 @@
 // 二级分类注册表（key 用于 URL ?sub= 参数；parent 为顶级分类小写值）
 // 判定规则见 classifyProduct：标题关键词 + 尺寸带（数据来自 product-specs / specs-overrides）
 import { getProductSpecs } from '@/lib/specs';
-import { getVariantGroupOf } from '@/data/variant-groups';
 
 export interface CategoryDef {
   label: string;
@@ -9,7 +8,8 @@ export interface CategoryDef {
   intro: string;
 }
 
-/** 顶级分类（全站统一 10 类；Holiday 暂无产品不展示） */
+/** 顶级分类（8 类注册、7 类在售展示；Holiday 暂无产品不展示；
+ *  Others 2026-10-20 下线、Dining 2026-10-21 下线——条目见数组末尾注释） */
 export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Cushions', value: 'cushions', intro: 'Tufted, water-resistant comfort for every seat — indoors and out.' },
   { label: 'Pillows', value: 'pillows', intro: 'Premium inserts and covers with plush fillings for bed & sofa.' },
@@ -17,10 +17,13 @@ export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Mats', value: 'mats', intro: 'Absorbent mats & durable rugs for every room.' },
   { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
   { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
-  { label: 'Decor', value: 'decor', intro: 'Framed canvas wall art to finish every room.' },
-  { label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
+  { label: 'Decor', value: 'decor', intro: 'Wall art & handcrafted accents to finish every room.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
-  { label: 'Others', value: 'others', intro: 'Travel, kitchen & extras for daily living.' },
+  // Others 已全站下线（2026-10-20 用户定：数据保留、网站不展示、页面与 sitemap 移除）——
+  // 颈枕已归 Pillows，4 个散件经 products.ts 的 CATEGORY_OVERRIDES 归 Decor；恢复时把条目加回即可
+  // Dining 已全站下线（2026-10-21 用户定：数据保留、网站不展示、?cat=dining 渲染 404 页 + noindex）——
+  // 原 Dining 产品（藤编托盘/果盘 22 款 + 胡椒研磨器）全部并入 Decor（见 products.ts 归一化与下方 SUB_OVERRIDES）；
+  // 恢复时加回：{ label: 'Dining', value: 'dining', intro: 'Handwoven rattan trays & table essentials.' },
 ];
 
 export interface SubcategoryDef {
@@ -32,11 +35,10 @@ export interface SubcategoryDef {
 }
 
 export const SUBCATEGORIES: SubcategoryDef[] = [
-  // Cushions（2026-10-09 用户定：按风格分 3 类，按变体组归位不拆组，见 classifyCushion；
+  // Cushions（2026-10-23 用户定：取消风格 3 类，全部并入 outdoor-cushions 单分类，见 classifyCushion；
   //  展示顺序用户定：Corduroy 置顶，Solids 其次，Prints 最后）
-  { key: 'corduroy', parent: 'cushions', label: 'Corduroy Classics', shortLabel: 'Corduroy', blurb: 'Ribbed corduroy comfort.' },
-  { key: 'solids', parent: 'cushions', label: 'Soft Solids', shortLabel: 'Solids', blurb: 'Quiet tones for any space.' },
-  { key: 'prints', parent: 'cushions', label: 'Floral & Prints', shortLabel: 'Prints', blurb: 'Prints to brighten every seat.' },
+  // 2026-10-23 用户定：cushions 取消 corduroy/solids/prints 风格三类，全部并入 Outdoor Cushions 单分类
+  { key: 'outdoor-cushions', parent: 'cushions', label: 'Outdoor Cushions', shortLabel: 'Outdoor', blurb: 'Tufted, water-resistant comfort for every patio seat.' },
   // Pillows（2026-10-08 用户定：改为 枕芯 / 枕套 / 颈枕 三类）
   { key: 'pillow-inserts', parent: 'pillows', label: 'Pillow Inserts', shortLabel: 'Inserts', blurb: 'Plush inserts & bed pillows for sofa, couch & sleep.' },
   { key: 'pillow-cases', parent: 'pillows', label: 'Decorative Pillow Cases', shortLabel: 'Cases', blurb: 'Decorative covers in soft, muted tones.' },
@@ -58,9 +60,10 @@ export const SUBCATEGORIES: SubcategoryDef[] = [
   { key: 'cotton', parent: 'bedding', label: 'Cotton', shortLabel: 'Cotton', blurb: 'Washed cotton for crisp, airy comfort.' },
   // Decor
   { key: 'wall-art', parent: 'decor', label: 'Wall Art', shortLabel: 'Wall Art', blurb: 'Framed canvas prints, boho & tribal styles.' },
-  // Dining
-  { key: 'trays', parent: 'dining', label: 'Trays', shortLabel: 'Trays', blurb: 'Handwoven rattan trays for serving & display.' },
-  { key: 'placemats', parent: 'dining', label: 'Placemats', shortLabel: 'Placemats', blurb: 'Table pads & placemats for everyday dining.' },
+  // Dining（2026-10-21 用户定：Dining 类目全站下线，trays/placemats 二级分类一并停用、数据保留——
+  // 原 Dining 产品并入 Decor 且无二级分类（SUB_OVERRIDES 置 ''）；恢复 Dining 时把下面两条加回即可）
+  // { key: 'trays', parent: 'dining', label: 'Trays', shortLabel: 'Trays', blurb: 'Handwoven rattan trays for serving & display.' },
+  // { key: 'placemats', parent: 'dining', label: 'Placemats', shortLabel: 'Placemats', blurb: 'Table pads & placemats for everyday dining.' },
   // Others
   { key: 'travel', parent: 'others', label: 'Travel Accessories', shortLabel: 'Travel', blurb: 'Neck pillows & essentials for the road.' },
   { key: 'kitchen-tools', parent: 'others', label: 'Kitchen Tools', shortLabel: 'Kitchen Tools', blurb: 'Handy tools for everyday cooking.' },
@@ -73,7 +76,8 @@ export function getSubcategoriesOf(categoryValue: string): SubcategoryDef[] {
 
 /** Bedding 材质分组的展示顺序（2026-09 用户定）：类目页分区/Filter/顶部导航 mega menu 三处统一。
  *  未收录的材质排在后面（按产品数降序兜底） */
-export const BEDDING_MATERIAL_ORDER = ['Cotton Percale', '100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Satin', 'Organic Cotton'];
+// 2026-10-23：Satin 随缎面床品全站移除出序（用户定）
+export const BEDDING_MATERIAL_ORDER = ['Cotton Percale', '100% Linen', 'Washed Cotton-Like', 'Linen-Like', 'Organic Cotton'];
 
 /** 材质分组排序：先按 BEDDING_MATERIAL_ORDER 固定位次，未收录的按数量降序排在尾部 */
 export function sortBeddingMaterials<T>(entries: [string, T][], countOf: (e: [string, T]) => number): [string, T][] {
@@ -114,28 +118,10 @@ export function productCategoryTag(p: { productType: string; subcategory?: strin
   return sub?.shortLabel || p.productType || 'Product';
 }
 
-/** 2026-10-09 用户定：cushions 二级分类改为按风格 3 类（prints / solids / corduroy），
- *  按变体组归位（组 = 风格单元，不拆组）；无变体组的新品按标题关键词兜底 */
-const CUSHION_GROUP_SUB: Record<string, string> = {
-  'b0-seat-cushions': 'prints',
-  'outdoor-95x45': 'prints',
-  'outdoor-110x55': 'prints',
-  'b0-highback-4pk': 'prints',
-  'b0-round-cushions': 'solids',
-  'b0-highback-2pk': 'solids',
-  'outdoor-110x53': 'solids',
-  'b0-seat-cushions-wr': 'solids',
-  'b0-rocking-95x45': 'corduroy',
-};
-
-function classifyCushion(title: string, asin: string): string {
-  const g = getVariantGroupOf(asin);
-  const sub = g ? CUSHION_GROUP_SUB[g.id] : undefined;
-  if (sub) return sub;
-  if (/corduroy|rocking/i.test(title)) return 'corduroy';
-  if (/floral|flower|paisley|botanical|leaf|leaves|bird|butterfly|tulip|jungle|print|stripe|plaid|check|geometric|lattice|houndstooth|batik|watercolor|monet|oil painting/i.test(title))
-    return 'prints';
-  return 'solids';
+/** 2026-10-23 用户定：cushions 取消风格三类（原 prints / solids / corduroy 归位表废除），
+ *  全部坐垫统一归 outdoor-cushions 单分类 */
+function classifyCushion(): string {
+  return 'outdoor-cushions';
 }
 
 function classifyPillow(title: string): string {
@@ -195,16 +181,50 @@ function classifyBedding(asin: string): string | undefined {
  * 计算产品的二级分类 key；不属于五大类目时返回 undefined。
  * 注意：title 需传完整标题（素材库覆盖后、精简前），避免关键词被截断丢失。
  */
-// 手工指定二级分类（用户确认时在此加 asin → sub key 条目）
+// 手工指定二级分类（用户确认时在此加 asin → sub key 条目；'' = 不属于任何二级分类——
+// 2026-10-20 改类目的 3 个散件：香薰炉/自行车篮归 Decor 但不是 wall-art；
+// 2026-10-21 Dining 类目下线：原 Dining 的 22 款藤编托盘/果盘 + 胡椒研磨器并入 Decor，
+// 同样不是 wall-art，全部置 ''——classifyProduct 的 decor 分支是无条件归 wall-art，不加会误归）
 const SUB_OVERRIDES: Record<string, string> = {
+  'b0d9lh1y55': '', // 希腊胡椒研磨器
+  'b0by8ly757': '',
+  'b098f1bkjq': '',
+  // 原 Dining → Decor（2026-10-21）：1688-743606980882 长方托盘家族
+  '1688-743606980882-c2': '',
+  '1688-743606980882-c10': '',
+  '1688-743606980882-c20': '',
+  '1688-743606980882-c32': '',
+  '1688-743606980882-c41': '',
+  '1688-743606980882-c52': '',
+  '1688-743606980882-c61': '',
+  '1688-743606980882-c71': '',
+  '1688-743606980882-c80': '',
+  '1688-743606980882-c89': '',
+  // 原 Dining → Decor（2026-10-21）：1688-899672152256 圆托盘家族
+  '1688-899672152256-c2': '',
+  '1688-899672152256-c13': '',
+  '1688-899672152256-c22': '',
+  '1688-899672152256-c33': '',
+  '1688-899672152256-c42': '',
+  '1688-899672152256-c52': '',
+  '1688-899672152256-c61': '',
+  '1688-899672152256-c70': '',
+  '1688-899672152256-c78': '',
+  '1688-899672152256-c85': '',
+  // 原 Dining → Decor（2026-10-21）：1688-663341114084 藤编陶瓷椭圆盘
+  '1688-663341114084-c2': '',
+  '1688-663341114084-c3': '',
 };
 
 export function classifyProduct(productType: string, title: string, asin: string): string | undefined {
-  const override = SUB_OVERRIDES[asin.toLowerCase()];
-  if (override) return override;
+  const asinLower = asin.toLowerCase();
+  // hasOwnProperty 判断：'' 也是有效覆盖（= 无二级分类）
+  if (Object.prototype.hasOwnProperty.call(SUB_OVERRIDES, asinLower)) {
+    return SUB_OVERRIDES[asinLower] || undefined;
+  }
   switch (productType.toLowerCase()) {
     case 'cushions':
-      return classifyCushion(title, asin);
+      return classifyCushion();
     case 'pillows':
       return classifyPillow(title);
     case 'towels':
@@ -215,6 +235,8 @@ export function classifyProduct(productType: string, title: string, asin: string
       return classifyBedding(asin);
     case 'decor':
       return 'wall-art';
+    // Dining 类目已下线（2026-10-21）：原 Dining 产品经 products.ts 归一化并入 Decor，
+    // 该分支理论上不再命中；保留仅作数据存档（恢复 Dining 时连同上方 trays/placemats 一起加回）
     case 'dining':
       return /placemat|coaster|table (pad|mat)/i.test(title) ? 'placemats' : 'trays';
     case 'others':

@@ -1,0 +1,28 @@
+  "bedset4-gray-queen": { material: "Microfiber" },
+  "bedset4-white-full": { material: "Microfiber" },
+  "b0f62y59cw": { material: "Hollowfibre" },
+  "b0grj9sdtf": { material: "Hollowfibre" },
+  "b0gjlsdz52": { material: "Microfiber" },  // 浮雕系列
+  "b0gjlmc6z4": { material: "Microfiber" },  // 浮雕系列
+  "b0gjlgxtl4": { material: "Microfiber" },  // 浮雕系列
+  "b0gd843wmn": { material: "Microfiber" },  // 标题含 Microfibre
+  "duvset-pink-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "duvset-beige-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "duvset-white-duvet": { material: "Washed Cotton-Like", dimensionsCm: [230, 200] },
+  "mk-bp-insert-1pc": { material: "Polyester", dimensionsCm: [137, 51] },
+  "duvset-butter-twin": { material: "Washed Cotton-Like", dimensionsCm: [170, 220] },
+  "duvset-butter-full": { material: "Washed Cotton-Like", dimensionsCm: [200, 220] },
+  "duvset-butter-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
+  "duvset-butter-king": { material: "Washed Cotton-Like", dimensionsCm: [260, 220] },
+  "duvset-dill-twin": { material: "Washed Cotton-Like", dimensionsCm: [170, 220] },
+  "duvset-dill-full": { material: "Washed Cotton-Like", dimensionsCm: [200, 220] },
+  "duvset-dill-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
+  "duvset-dill-king": { material: "Washed Cotton-Like", dimensionsCm: [260, 220] },
+  "duvset-oat-twin": { material: "Washed Cotton-Like", dimensionsCm: [170, 220] },
+  "duvset-oat-full": { material: "Washed Cotton-Like", dimensionsCm: [200, 220] },
+  "duvset-oat-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
+  "duvset-oat-king": { material: "Washed Cotton-Like", dimensionsCm: [260, 220] },
+  "percale-coconut-duvet": { material: "Cotton Percale", dimensionsCm: [220, 220] },
+  "sateen4-olive-duvet": { material: "Cotton Sateen", dimensionsCm: [220, 220] },
+  "percalejac-oatbeige-duvet": { material: "Cotton Percale", dimensionsCm: [220, 220] },
+  "washstripe-sage-duvet": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },

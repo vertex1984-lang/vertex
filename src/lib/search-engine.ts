@@ -348,9 +348,10 @@ const CATEGORY_SYNONYMS: Record<string, string> = {
   wall: 'decor',
   art: 'decor',
   canvas: 'decor',
-  tray: 'dining',
-  placemat: 'dining',
-  napkin: 'dining',
+  // Dining 类目已下线（2026-10-21 用户定）：托盘/餐垫类关键词改指 Decor（产品已并入）
+  tray: 'decor',
+  placemat: 'decor',
+  napkin: 'decor',
 };
 
 /** 品类/子类直达建议：token 与类目标签重叠计分，返回最多 limit 条 */

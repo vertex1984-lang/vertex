@@ -2,18 +2,15 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import BeddingSetCard, { FamilyCardData } from '@/components/v2/BeddingSetCard';
-import { sortByWeight } from '@/lib/weights';
-import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
+import GroupProductCard from '@/components/v2/GroupProductCard';
+import { buildGroupCards } from '@/lib/group-cards';
+import { sortFamiliesByWeight } from '@/lib/family-cards';
+import { buildBlanketFamilies } from '@/data/blanket-families';
 import {
   PILLOW_TYPES,
   PILLOW_MATERIALS,
   pillowTypeOf,
   pillowMaterialOf,
-  pillowSizesOf,
-  pillowCardTitle,
-  pillowCardColor,
-  applyPillowCardMerges,
 } from '@/data/pillows-taxonomy';
 
 /**
@@ -21,48 +18,23 @@ import {
  * - 2026-10-16 用户定：按 bedding 类目页结构重建——Type/Filling 下拉筛选条（含移动端
  *   Filter 弹层）整体移除，页头改 Parachute 式 hero（见 V2PillowsCatHero），
  *   选购区固定按形态（Inserts / Cases / Neck）分区平铺
- * - 卡片 = BeddingSetCard 同款家族卡（方图 + 徽标 + 标题 + 尺寸带 + From 价）；
- *   badge 遵循全站统一规则：分区标题已表形态，叠填充材质标签（无填充信息不叠）
- * - 排序固定 Featured（权重序）；列表卡合并保留（2026-10-02，如两款记忆棉颈枕合并为一张卡）
+ * - 2026-10-22 用户定（一组一卡 + 色卡）：卡片改 GroupProductCard——同组各色并一张卡，
+ *   色卡行展示全部颜色（取代颜色文字行/合并卡颜色拼接）；卡面标题走 familyCardDisplay
+ *   （pillowCardTitle 同口径）；列表卡合并场景（b0-travel-memory 一族一卡）由组折叠天然覆盖
+ * - badge 遵循全站统一规则：分区标题已表形态，叠填充材质标签（无填充信息不叠）
+ * - 排序固定 Featured（权重序）
  */
-
-/** MakimooProduct → BeddingSetCard 最小数据形状（尺寸带取变体族全尺寸；From 价 = 卡片展示价；
- *  colors/From 价覆盖 = pillows 合并卡（2026-10-02，如两款记忆棉颈枕合并为一张卡）；
- *  titleOverride = 卡片标题规则（2026-10-09，pillowCardTitle：ins "Pillow Inserts Set of 2" /
- *  长抱枕 "Body Pillow Insert" / cases "Pillow Covers Set of 2"）；
- *  colorLine = 标题下浅色颜色行（2026-10-18 用户定；合并卡显示全部颜色 "A / B" 拼接） */
-function toFamilyCard(
-  p: MakimooProduct,
-  colors?: string[],
-  priceOverride?: { amount: string; currency: string }
-): FamilyCardData {
-  return {
-    rep: p,
-    sizes: pillowSizesOf(p),
-    fromPrice: priceOverride?.amount || p.shopifyPrice || p.priceRange?.minVariantPrice?.amount || '',
-    currency:
-      priceOverride?.currency ||
-      p.shopifyCurrencyCode ||
-      p.priceRange?.minVariantPrice?.currencyCode ||
-      'USD',
-    colors,
-    titleOverride: pillowCardTitle(p) || undefined,
-    colorLine: colors?.length ? colors.join(' / ') : pillowCardColor(p) || undefined,
-  };
-}
-
 export default function V2PillowsShop({ products }: { products: MakimooProduct[] }) {
-  // 展示口径：同色去重 + 固定权重序（与全站 PLP 一致：excluded 排除、缺货沉底）
-  // + 同家族色卡聚拢相邻（2026-10-16 用户定：排完一个变体族才到下一个，不穿插）
-  // + 列表卡合并（2026-10-02）：两款记忆棉颈枕合并为一张卡
-  const { list: cards, colorsByHandle, fromPriceByHandle } = useMemo(
-    () => applyPillowCardMerges(clusterFamilies(sortByWeight(dedupeFamilyColors(products)))),
+  // 组卡：未去重列表成族（buildBlanketFamilies 需看到全部尺寸 SKU 才有正确 From 价）→
+  // 权重序 → 按变体组并卡（同组各色 = 色卡变体）
+  const cards = useMemo(
+    () => buildGroupCards(sortFamiliesByWeight(buildBlanketFamilies(products))),
     [products]
   );
 
   // 分区标题已表形态；卡片叠填充材质标签（全站统一 badge 规则）
-  const cardBadges = (p: MakimooProduct): string[] => {
-    const m = pillowMaterialOf(p);
+  const cardBadges = (c: (typeof cards)[number]): string[] => {
+    const m = pillowMaterialOf(c.rep);
     const label = m ? PILLOW_MATERIALS.find((x) => x.key === m)?.label : '';
     return label ? [label] : [];
   };
@@ -70,7 +42,7 @@ export default function V2PillowsShop({ products }: { products: MakimooProduct[]
   // 始终按形态分区（有产品的形态才出分区，顺序按注册表）
   const sections = PILLOW_TYPES.map((t) => ({
     taxon: t,
-    list: cards.filter((p) => pillowTypeOf(p) === t.key),
+    list: cards.filter((c) => pillowTypeOf(c.rep) === t.key),
   })).filter((s) => s.list.length > 0);
 
   return (
@@ -84,12 +56,12 @@ export default function V2PillowsShop({ products }: { products: MakimooProduct[]
             {s.taxon.label}
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-            {s.list.map((p) => (
-              <BeddingSetCard
-                key={p.id}
-                family={toFamilyCard(p, colorsByHandle.get(p.handle), fromPriceByHandle.get(p.handle))}
-                badges={cardBadges(p)}
-                paddedWhiteBg={!!p.imageWhiteBg?.[0]}
+            {s.list.map((c) => (
+              <GroupProductCard
+                key={c.key}
+                card={c}
+                badges={cardBadges(c)}
+                paddedWhiteBg={!!c.rep.imageWhiteBg?.[0]}
                 compactText
               />
             ))}

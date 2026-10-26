@@ -42,7 +42,8 @@ const BASE_WEIGHT_OVERRIDES: Record<string, WeightOverride> = {
   // 'b0cqc5qjfj': { boost: 20, note: 'Q4 主推枕芯' },
   // 'linen3-oatmeal-queen': { pin: 3, note: '新品主推，置顶到第 3 位', until: '2026-10-31' },
   // 'b0f1y91hpr': { bury: true, note: '转化差，沉底观察' },
-  'b0cjhl4lzp': { boost: 2.1, note: '43x43 油画花卉单品（用户指定不入组），排序紧邻 Outdoor 椅垫家族簇' },
+  // 2026-10-23 用户定：圆垫组（b0gjlpxb6f 家族）与水彩椅垫组对调类目位次；同时撤掉 weight-boosts.json 里 b0cc5wn6jj 的 +25
+  'b0gjlpxb6f': { boost: 24, note: '圆垫组提到水彩椅垫组原位置（46.6，略低于 rocking 组 46.7 保持其首位）' },
   // 2026-10-18 用户定：三条新枕头线置顶 Pillows 类目（pin 各自族的代表卡；dedupe 取族内权重最高者为卡）
   'down-pillow-standard': { pin: 1, note: '新品 Down 床枕置顶第 1 位（用户指定）' },
   'down-feather-pillow-standard': { pin: 2, note: '新品 Down & Feather 床枕置顶第 2 位（用户指定）' },

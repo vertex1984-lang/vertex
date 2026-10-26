@@ -830,70 +830,6 @@ const TOWEL_HAND_4PK: ProductReview[] = [
 ];
 
 // 家族 3：特大浴巾 2 连装 1688-1044064113195（80x160cm 600g，白/灰条 3 PDP）
-const TOWEL_BATH_OVERSIZED: ProductReview[] = [
-  {
-    author: 'Paula Reddick',
-    rating: 5,
-    text: 'Big enough to actually wrap all the way around. Thick without being heavy. Best towels in our closet right now.',
-    date: 'May 2024',
-  },
-  {
-    author: 'Dustin Blair',
-    rating: 5,
-    text: 'Actual bath-sheet size. They soak up water fast after a shower and never sit around damp long enough to go musty.',
-    date: 'July 2024',
-  },
-  {
-    author: 'Marge Kowalski',
-    rating: 5,
-    text: 'Bought a set last year and just ordered a second. The first pair is still thick and white with dozens of washes behind it.',
-    date: 'October 2024',
-  },
-  {
-    author: 'Cal Duffy',
-    rating: 5,
-    text: 'Washed them before first use like you should with new cotton. They came out fluffier and have stayed soft. No strong detergent smell on arrival either.',
-    date: 'January 2025',
-  },
-  {
-    author: 'Ingrid Solberg',
-    rating: 5,
-    text: "The stripe detail looks expensive in a plain bathroom. Absorbency is the real win though, one pass and you're dry.",
-    date: 'April 2025',
-  },
-  {
-    author: 'Anonymous',
-    rating: 4,
-    title: 'Drying takes a bit',
-    text: 'Thick in the right way, which also means they take a full dryer cycle. Not a flaw exactly, just know it if your machine runs slow.',
-    date: 'July 2025',
-  },
-  {
-    author: 'Tessa Grange',
-    rating: 4,
-    text: 'Used vinegar instead of softener on the first wash like my mother taught me, and they came out extra fluffy. Holding up well so far.',
-    date: 'October 2025',
-  },
-  {
-    author: 'Wes Tam',
-    rating: 4,
-    text: '600 grams each so these are substantial. Only note is our towel hooks were sized for thinner ones, so the pair slides off sometimes.',
-    date: 'January 2026',
-  },
-  {
-    author: 'Gilbert Nunez',
-    rating: 4,
-    text: 'Three weeks in, no loose threads and no gray water in the wash. They still look brand new.',
-    date: 'April 2026',
-  },
-  {
-    author: 'Anonymous',
-    rating: 3,
-    title: 'Hem started to loosen',
-    text: 'Softness and absorbency are fine, but the hem on one towel started loosening after about six weeks. Still usable, I just expected tighter stitching at this weight.',
-    date: 'July 2026',
-  },
-];
 
 // 家族 4：特大沙滩巾 2 连装 1688-952595759182（75x180cm 550g，四色 cabana 条纹 4 PDP）
 const TOWEL_BEACH_2PK: ProductReview[] = [
@@ -2269,70 +2205,6 @@ const TRAY_ROUND_LEAF: ProductReview[] = [
 ];
 
 // 家族：冰丝双面凉感被套 1688-1048207560416（220x180cm 双色可翻转，奶昔白/奶油绿 2 PDP）
-const ICE_SILK_DUVET: ProductReview[] = [
-  {
-    author: 'Seraphina Kade',
-    rating: 5,
-    text: 'The ice silk finish feels cool the second you touch it. Hot sleeper approved.',
-    date: 'June 2024',
-  },
-  {
-    author: 'Lorcan Bailey',
-    rating: 5,
-    text: 'Reversible is the killer feature, milkshake white one week, cream green the next.',
-    date: 'September 2024',
-  },
-  {
-    author: 'Anouk Visser',
-    rating: 5,
-    text: 'Silky without being slippery. The cover glides over the insert and smooths out by itself.',
-    date: 'December 2024',
-  },
-  {
-    author: 'Griffin Hale',
-    rating: 5,
-    text: 'Washed it cold, hung it dry, zero wrinkles. It stays cool all night in our warm bedroom.',
-    date: 'March 2025',
-  },
-  {
-    author: 'Mira Solberg',
-    rating: 5,
-    text: 'Light as air but my duvet still feels covered and cozy. Perfect for summer.',
-    date: 'June 2025',
-  },
-  {
-    author: 'Anonymous',
-    rating: 4,
-    title: 'Wants more ties',
-    text: 'Cooling works as promised. I only wish it had more interior ties, my insert shifts a little by morning.',
-    date: 'September 2025',
-  },
-  {
-    author: 'Rocco Villani',
-    rating: 4,
-    text: 'Smooth and genuinely cool to the touch. The cream green is softer in person, almost sage.',
-    date: 'December 2025',
-  },
-  {
-    author: 'Maxine Ferrier',
-    rating: 4,
-    text: 'Great summer cover. It is thin by design, so pair it with a lighter insert rather than a heavy one.',
-    date: 'March 2026',
-  },
-  {
-    author: 'Isadora Pinter',
-    rating: 4,
-    text: 'Two months in, still smooth with no pilling. Machine wash cold and it holds up fine.',
-    date: 'June 2026',
-  },
-  {
-    author: 'Anonymous',
-    rating: 3,
-    title: 'Very thin material',
-    text: 'The cooling feel is real, but the material is the thinnest cover I have owned. Fine for hot months, I will switch to linen come winter.',
-    date: 'September 2026',
-  },
-];
 
 // ── 批 5 W5（2026-10-06）：床品套装收官（4件套/微纤维3件套/亚麻3件套/冰丝被套/蛋壳盒颈枕）
 // 语料：Bedsure 4pc B0CWGXYX1C 4.4★/343、Bare Home 3pc B01N0QXKF2 4.5★/9.2K、
@@ -2538,137 +2410,7 @@ const LINEN3_SETS: ProductReview[] = [
   },
 ];
 
-const ICE_DUVET_COVERS: ProductReview[] = [
-  {
-    author: 'Celeste Marino',
-    rating: 5,
-    title: 'Finally sleeping cool',
-    text: 'First night under it and the difference was immediate. It feels chilled all over, like the cold side of the pillow but for your whole body.',
-    date: 'May 2024',
-  },
-  {
-    author: 'Kwame Boateng',
-    rating: 5,
-    text: 'Dorm essential. Slipped it over my comforter and my roommate ordered one the same week.',
-    date: 'July 2024',
-  },
-  {
-    author: 'Astrid Holm',
-    rating: 5,
-    text: 'Silky without being slick. The cover stays where you put it and the smoothness is somehow calming at bedtime.',
-    date: 'October 2024',
-  },
-  {
-    author: 'Imani Brooks',
-    rating: 5,
-    text: 'Washed cold, hung to dry, came off with no wrinkles and the milk tea shade still looks brand new.',
-    date: 'January 2025',
-  },
-  {
-    author: 'Diego Fuentes',
-    rating: 5,
-    text: 'The second your skin touches it there is this little chill, and it does not fade through the night. Summer sleeping has genuinely improved.',
-    date: 'April 2025',
-  },
-  {
-    author: 'Lena Petrova',
-    rating: 4,
-    title: 'Just the cover',
-    text: 'Read the listing twice or you will miss that it ships as a cover only, no insert. With a comforter inside it is just the thing for hot months.',
-    date: 'July 2025',
-  },
-  {
-    author: 'Jasper Ng',
-    rating: 4,
-    text: 'Noticeably lighter than the cotton cover it replaced. Perfect for summer, though I suspect I will want something heavier come January.',
-    date: 'October 2025',
-  },
-  {
-    author: 'Marisol Vega',
-    rating: 4,
-    text: 'Color matched the photos and the fabric really does feel cool when you slide into bed. Took one wash to reach peak softness.',
-    date: 'January 2026',
-  },
-  {
-    author: 'Otto Lindgren',
-    rating: 4,
-    text: 'Arrived with a light packaged smell; a single wash erased it completely. My daughter claims it as the best thing on her bed.',
-    date: 'April 2026',
-  },
-  {
-    author: 'Anonymous',
-    rating: 3,
-    title: 'Cooling is real, thinness too',
-    text: 'The cool touch is not marketing, it genuinely feels chilled on contact. Yet the material is quite thin, enough for the seams of the comforter underneath to be noticeable. Fine value for the money, just know what you are getting.',
-    date: 'July 2026',
-  },
-];
 
-const EGG_CASE_PILLOWS: ProductReview[] = [
-  {
-    author: 'Nadia Rahman',
-    rating: 5,
-    title: 'Fourteen hours, no head bob',
-    text: 'Long-haul test passed. The cord lock lets me set the height exactly and my head never did the embarrassing forward slump once.',
-    date: 'May 2024',
-  },
-  {
-    author: 'Colin Fairbanks',
-    rating: 5,
-    text: 'Rolls into its little shell case and clips to my backpack. Light enough that I forget it is there until I need it.',
-    date: 'July 2024',
-  },
-  {
-    author: 'Zelda Marsh',
-    rating: 5,
-    text: 'I have squished this thing half to death and it springs back every single time. As a side sleeper the chin support finally feels right.',
-    date: 'October 2024',
-  },
-  {
-    author: 'Antonio Ruiz',
-    rating: 5,
-    text: 'The cover unzips, went through a cold wash and hang dry, and came back feeling brand new. Most travel pillows never survive that.',
-    date: 'January 2025',
-  },
-  {
-    author: 'May Ito',
-    rating: 5,
-    text: 'I keep it at my desk for lunch-break naps. The two sides feel different, one smoother and one softer, and both are comfortable.',
-    date: 'April 2025',
-  },
-  {
-    author: 'Priyanka Nair',
-    rating: 4,
-    title: 'Clever design',
-    text: 'A touch firmer would earn the fifth star from me, but the reversible cover and the slide adjuster make this the most considered travel pillow I have owned.',
-    date: 'July 2025',
-  },
-  {
-    author: 'Gordon Pryce',
-    rating: 4,
-    text: 'I have a thicker neck than most and it still works, the cord lock gives just enough range. The sage color is a nice change from black everything.',
-    date: 'October 2025',
-  },
-  {
-    author: 'Beatrice Ouimet',
-    rating: 4,
-    text: 'Brought it on a night train instead of flying and slept against the window like a civilized person. The case keeps it clean in the bag between trips.',
-    date: 'January 2026',
-  },
-  {
-    author: 'Hugo Almeida',
-    rating: 4,
-    text: 'A bit bulkier packed than I hoped, but the foam recovered fully by morning after being squashed in my suitcase for a week.',
-    date: 'April 2026',
-  },
-  {
-    author: 'Anonymous',
-    rating: 3,
-    title: 'Supportive but small',
-    text: 'The foam is genuinely comfortable and the cover washes well, but the pillow runs smaller than it looks in the pictures. My ears sit right at the edges, so it is fine for short hops and less great for long hauls.',
-    date: 'July 2026',
-  },
-];
 
 // ── 批 5 W6（2026-10-06）：漏网家族补齐（毛毯 23 PDP / 棉浴垫 / 门垫 / 硅藻土×2 / 车筐 / 香薰炉 / 油画椅垫 / 胡椒磨）
 // 语料：Mibao 门垫 B0BJ2JLMCG 4.4★/9.3K、藤编车筐 B0CS699582 4.7★/141、坩埚香薰炉 B08QN2QBX2 4.7★/1.3K、
@@ -3466,68 +3208,6 @@ const COTTON_PC_REVIEWS: ProductReview[] = [
   },
 ];
 
-const BODY_PILLOW_REVIEWS: ProductReview[] = [
-  {
-    author: 'Guinevere Stahl',
-    rating: 5,
-    text: 'This is the first body pillow that did not turn into a flat noodle within a week. The fill is consistent all the way along and by morning it has puffed back up.',
-    date: 'May 2025',
-  },
-  {
-    author: 'Roman Bellamy',
-    rating: 5,
-    text: 'Side sleeper here. It supports my whole back and legs at once and I wake up noticeably less stiff. Stays where I put it too.',
-    date: 'June 2025',
-  },
-  {
-    author: 'Tilda Navarro',
-    rating: 5,
-    text: 'Shipped compressed and puffed up within a day. There is a faint odor out of the bag, so I let it air for two days before use, then it was perfect.',
-    date: 'August 2025',
-  },
-  {
-    author: 'Caspian Rule',
-    rating: 5,
-    text: 'It works perfectly as a backrest on my daybed. Firm enough for lumbar support with a bit of give at the shoulders. The shell fabric feels sturdy.',
-    date: 'October 2025',
-  },
-  {
-    author: 'Melody Quinn',
-    rating: 4,
-    text: 'Very comfortable and generously filled. It is bulkier than I pictured, so turning over with it takes some effort, but the support is worth it.',
-    date: 'December 2025',
-  },
-  {
-    author: 'Aldous Ferber',
-    rating: 5,
-    text: 'The length is great for hugging and tucking between the knees. No lumpy foam chunks, just an even, plush fill.',
-    date: 'February 2026',
-  },
-  {
-    author: 'Suki Tanaka-Weiss',
-    rating: 4,
-    text: 'Took the better part of a week to fully expand to its final loft. Once it did, it has been great. Plan for some patience out of the box.',
-    date: 'April 2026',
-  },
-  {
-    author: 'Barnaby Odell',
-    rating: 5,
-    text: 'My cats claimed my old flat pillow, so this one is mine. It keeps my spine aligned and sleeps cool since my limbs are not pressed together.',
-    date: 'June 2026',
-  },
-  {
-    author: 'Lorelei Finch',
-    rating: 3,
-    text: 'Comfortable when the fill is distributed evenly, but the stuffing migrates toward the ends, so every few nights I shake it back to the middle.',
-    date: 'August 2026',
-  },
-  {
-    author: 'Edmund Sloane',
-    rating: 5,
-    text: 'Good quality for the price. It fits a standard body pillowcase, machine washes without clumping, and fluffs back up nicely.',
-    date: 'October 2026',
-  },
-];
 
 
 // ---- 批 6 W7-C（2026-10-15）：Bouclé 泰迪绒抱枕套 mk-pc-boucle（4 色×2 码 = 8 PDP）----
@@ -3616,7 +3296,6 @@ const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   // 批 6 W7-B（2026-10-14）：21 款 MK 枕类 3 家族（无 listing，领导"也加 review"）
   'mk-pc-cord': CORDUROY_PC_REVIEWS,
   'mk-pc-ctn': COTTON_PC_REVIEWS,
-  'mk-bp-insert-1pc': BODY_PILLOW_REVIEWS,
   // 批 6 W7（2026-10-13）：漏配 B0 补齐——抱枕芯 2 装（自有 listing，真实数据+同调性补写卡）
   'b0g6m3f7cy': THROW_INSERT_2PK,
   'b0-square-pads': SEAT_CUSHION_REVIEWS,
@@ -3632,7 +3311,6 @@ const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   // 批 5 W1（2026-10-06）：毛巾类 4 家族（v2 贴源改写，无 REVIEW_COUNTS → reviewCount=条数）
   '1688-856468238034': TOWEL_BATH_2PK,
   '1688-1056325209172': TOWEL_HAND_4PK,
-  '1688-1044064113195': TOWEL_BATH_OVERSIZED,
   '1688-952595759182': TOWEL_BEACH_2PK,
   // 批 5 W2（2026-10-06）：地毯垫类 8 家族 + 酒店浴巾（v2 贴源改写，无 REVIEW_COUNTS）
   '1688-744995685423': RUG_GEOMETRIC,
@@ -3657,13 +3335,10 @@ const PRODUCT_REVIEWS: Record<string, ProductReview[]> = {
   '1688-730512046265': WALL_ART_BASKET,
   '1688-743606980882': TRAY_RECT_LEAF,
   '1688-899672152256': TRAY_ROUND_LEAF,
-  '1688-1048207560416': ICE_SILK_DUVET,
   // 批 5 W5（2026-10-06）：床品套装收官（4 件套/微纤维 3 件套/亚麻 3 件套/冰丝被套 22 PDP/蛋壳盒颈枕）
   bedset4: BEDSET4_SETS,
   duvset: DUVSET_SETS,
   linen3: LINEN3_SETS,
-  '1688-1061371343572': ICE_DUVET_COVERS,
-  '1688-913882303732': EGG_CASE_PILLOWS,
   // 批 5 W6（2026-10-06）：漏网家族补齐（毛毯 23 PDP / 棉浴垫 3 / 门垫 / 硅藻土×2 / 车筐 / 香薰炉 / 油画椅垫 / 胡椒磨）
   '1688-969627065032': FUR_THROW_BLANKET,
   '1688-828008656438': COTTON_BATH_MATS,

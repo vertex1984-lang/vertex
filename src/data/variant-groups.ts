@@ -737,16 +737,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-996768645117-C24', handle: 'oval-shaggy-area-rug-light-pink-1688-996768645117-c24', color: 'Light Pink', size: '100 x 200cm' },
     ],
   },
-  {
-    id: '1688-916370884976',
-    optionName: 'Size',
-    members: [
-    { asin: '1688-916370884976-C8', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c8', color: 'Light Blue & Cheese', size: '200 x 150 cm' },
-    { asin: '1688-916370884976-C6', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c6', color: 'Light Blue & Cheese', size: '220 x 180 cm' },
-    { asin: '1688-916370884976-C5', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c5', color: 'Light Blue & Cheese', size: '230 x 200 cm' },
-    { asin: '1688-916370884976-C7', handle: 'comforter-set-3-pcs-washed-cotton-soft-breathable-skin-1688-916370884976-c7', color: 'Light Blue & Cheese', size: '240 x 220 cm' },
-    ],
-  },
+  
   {
     id: '1688-969627065032',
     optionName: 'Color',
@@ -754,26 +745,26 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-969627065032-C22', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c22', color: 'Blue', size: '120 x 200 cm' },
     { asin: '1688-969627065032-C27', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c27', color: 'Cream Yellow', size: '120 x 200 cm' },
     { asin: '1688-969627065032-C31', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c31', color: 'Dark Gray', size: '120 x 200 cm' },
-    { asin: '1688-969627065032-C36', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c36', color: 'Silver Gray', size: '120 x 200 cm' },
+    { asin: '1688-969627065032-C36', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c36', color: 'Silver Grey', size: '120 x 200 cm' },
     { asin: '1688-969627065032-C21', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c21', color: 'Blue', size: '150 x 200 cm' },
     { asin: '1688-969627065032-C26', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c26', color: 'Cream Yellow', size: '150 x 200 cm' },
     { asin: '1688-969627065032-C32', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c32', color: 'Dark Gray', size: '150 x 200 cm' },
     { asin: '1688-969627065032-C41', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c41', color: 'Purple', size: '150 x 200 cm' },
-    { asin: '1688-969627065032-C37', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c37', color: 'Silver Gray', size: '150 x 200 cm' },
+    { asin: '1688-969627065032-C37', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c37', color: 'Silver Grey', size: '150 x 200 cm' },
     { asin: '1688-969627065032-C23', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c23', color: 'Blue', size: '180 x 200 cm' },
     { asin: '1688-969627065032-C28', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c28', color: 'Cream Yellow', size: '180 x 200 cm' },
     { asin: '1688-969627065032-C33', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c33', color: 'Dark Gray', size: '180 x 200 cm' },
     { asin: '1688-969627065032-C43', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c43', color: 'Purple', size: '180 x 200 cm' },
-    { asin: '1688-969627065032-C38', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c38', color: 'Silver Gray', size: '180 x 200 cm' },
+    { asin: '1688-969627065032-C38', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c38', color: 'Silver Grey', size: '180 x 200 cm' },
     { asin: '1688-969627065032-C24', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c24', color: 'Blue', size: '200 x 230 cm' },
     { asin: '1688-969627065032-C29', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c29', color: 'Cream Yellow', size: '200 x 230 cm' },
     { asin: '1688-969627065032-C34', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c34', color: 'Dark Gray', size: '200 x 230 cm' },
     { asin: '1688-969627065032-C42', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c42', color: 'Purple', size: '200 x 230 cm' },
-    { asin: '1688-969627065032-C39', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c39', color: 'Silver Gray', size: '200 x 230 cm' },
+    { asin: '1688-969627065032-C39', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c39', color: 'Silver Grey', size: '200 x 230 cm' },
     { asin: '1688-969627065032-C25', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c25', color: 'Blue', size: '230 x 250 cm' },
     { asin: '1688-969627065032-C30', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c30', color: 'Cream Yellow', size: '230 x 250 cm' },
     { asin: '1688-969627065032-C35', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c35', color: 'Dark Gray', size: '230 x 250 cm' },
-    { asin: '1688-969627065032-C40', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c40', color: 'Silver Gray', size: '230 x 250 cm' },
+    { asin: '1688-969627065032-C40', handle: 'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-1688-969627065032-c40', color: 'Silver Grey', size: '230 x 250 cm' },
     ],
   },
   {
@@ -821,25 +812,25 @@ export const VARIANT_GROUPS: VariantGroup[] = [
   {
     id: 'BEDSET4-BC',
     optionName: 'Color',
-    // Brushed Cotton 纯色四件套（Beige/Grey/Pink/White × Twin/Full/Queen/King），
+    // Washed Cotton 纯色四件套（Beige/Grey/Pink/White × Twin/Full/Queen/King），
     // 2026-10-16 用户定：从 BEDSET4 印花组拆出独立成组；3 件套组 = 下方 DUVSET
     members: [
     { asin: 'BEDSET4-BEIGE-TWIN', handle: 'soft-cozy-all-season-4-piece-bedding-set-with-duvet-cover-bedset4-beige-twin', color: 'Beige', size: '170 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-TWIN', handle: 'makimoo-twin-bedding-set-4-piece-duvet-cover-set-with-bedset4-gray-twin', color: 'Grey', size: '170 x 220 cm' },
+    
     { asin: 'BEDSET4-PINK-TWIN', handle: 'makimoo-4-piece-twin-bedding-set-includes-duvet-cover-bedset4-pink-twin', color: 'Pink', size: '170 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-TWIN', handle: 'makimoo-twin-bedding-set-4-piece-duvet-cover-fitted-sheet-bedset4-white-twin', color: 'White', size: '170 x 220 cm' },
+    
     { asin: 'BEDSET4-BEIGE-KING', handle: 'luxury-brushed-microfiber-4-piece-bedding-set-king-size-bedset4-beige-king', color: 'Beige', size: '260 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-KING', handle: 'makimoo-king-size-bedding-set-4-piece-duvet-cover-with-bedset4-gray-king', color: 'Grey', size: '260 x 220 cm' },
+    
     { asin: 'BEDSET4-PINK-KING', handle: 'premium-ultra-soft-brushed-microfiber-4-piece-bedding-set-bedset4-pink-king', color: 'Pink', size: '260 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-KING', handle: 'king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king', color: 'White', size: '260 x 220 cm' },
+    
     { asin: 'BEDSET4-BEIGE-QUEEN', handle: 'makimoo-queen-size-4-piece-bedding-set-duvet-cover-fitted-bedset4-beige-queen', color: 'Beige', size: '220 x 220 cm' },
     { asin: 'BEDSET4-BEIGE-FULL', handle: 'makimoo-bedding-set-4-pieces-full-size-duvet-cover-with-bedset4-beige-full', color: 'Beige', size: '200 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-QUEEN', handle: 'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-gray-queen', color: 'Grey', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-GRAY-FULL', handle: 'makimoo-full-duvet-cover-set-4-pieces-with-fitted-sheet-and-bedset4-gray-full', color: 'Grey', size: '200 x 220 cm' },
+    
+    
     { asin: 'BEDSET4-PINK-FULL', handle: '4-piece-duvet-cover-bedding-set-with-fitted-sheet-and-2-bedset4-pink-full', color: 'Pink', size: '200 x 220 cm' },
     { asin: 'BEDSET4-PINK-QUEEN', handle: 'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-pink-queen', color: 'Pink', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-QUEEN', handle: 'makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen', color: 'White', size: '220 x 220 cm' },
-    { asin: 'BEDSET4-WHITE-FULL', handle: 'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full', color: 'White', size: '200 x 220 cm' },
+    
+    
     ],
   },
   {
@@ -868,10 +859,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'duvset-beanred-king', handle: 'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-beanred-king', color: 'Bean Red', size: '260 x 220 cm' },
     // 2026-10-17 用户定：Butter Yellow / Dill Green 两色（各 4 尺寸）从变体下架，
     // 产品数据与图片文件保留（products-materials.ts 等不动），全站隐藏见 products.ts HIDDEN_HANDLES
-    { asin: 'duvset-oat-twin', handle: 'makimoo-twin-duvet-cover-set-3-piece-soft-brushed-duvset-oat-twin', color: 'Alpine Oat', size: '170 x 220 cm' },
-    { asin: 'duvset-oat-full', handle: 'makimoo-full-duvet-cover-set-3-piece-soft-brushed-duvset-oat-full', color: 'Alpine Oat', size: '200 x 220 cm' },
-    { asin: 'duvset-oat-queen', handle: 'makimoo-queen-duvet-cover-set-3-piece-soft-brushed-duvset-oat-queen', color: 'Alpine Oat', size: '220 x 220 cm' },
-    { asin: 'duvset-oat-king', handle: 'makimoo-king-duvet-cover-set-3-piece-soft-brushed-duvset-oat-king', color: 'Alpine Oat', size: '260 x 220 cm' },
+    
+    
+    
+    
     ],
   },
 
@@ -894,40 +885,10 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: '1688-828008656438-c3', handle: '2-pack-luxury-hotel-style-cotton-bath-mat-set-extra-thick-1688-828008656438-c3', color: 'White Jacquard Weave' },
     ],
   },
-  {
-    id: '1688-1044064113195',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1044064113195', handle: '2-pack-oversized-bath-towels-100-cotton-hotel-style-highly-1688-1044064113195', color: 'White & Grey Trim' },
-    { asin: '1688-1044064113195-c2', handle: '2-pack-pure-cotton-bath-towels-oversized-extra-thick-highly-1688-1044064113195-c2', color: 'White & Taupe Trim' },
-    { asin: '1688-1044064113195-c3', handle: '2-pack-luxury-bath-towels-100-cotton-hotel-spa-towel-set-1688-1044064113195-c3', color: 'White & Slate Trim' },
-    ],
-  },
-  {
-    id: '1688-743666513356',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-743666513356-c4', handle: 'premium-2-pack-american-style-cotton-bath-towels-extra-1688-743666513356-c4', color: 'Cream' },
-    { asin: '1688-743666513356-c6', handle: 'plush-ring-spun-cotton-bath-towels-2-pack-quick-dry-highly-1688-743666513356-c6', color: 'Light Grey' },
-    { asin: '1688-743666513356-c7', handle: 'premium-2-pack-cotton-bath-towels-large-80-x-140-cm-hotel-1688-743666513356-c7', color: 'Navy Blue' },
-    ],
-  },
-  {
-    id: '1688-856468238034',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-856468238034', handle: 'premium-2-pack-cotton-bath-towels-extra-soft-highly-1688-856468238034', color: 'Orange' },
-    { asin: '1688-856468238034-c4', handle: '2-pack-premium-black-bath-towels-made-of-pure-cotton-21s-1688-856468238034-c4', color: 'Black' },
-    ],
-  },
-  {
-    id: '1688-1056325209172',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1056325209172', handle: '4-pack-luxury-hotel-collection-100-percent-cotton-face-1688-1056325209172', color: 'White & Tan Stripe' },
-    { asin: '1688-1056325209172-c2', handle: '4-pack-100-percent-cotton-hand-towels-hotel-spa-style-40-x-1688-1056325209172-c2', color: 'White & Grey Stripe' },
-    ],
-  },
+  
+  
+  
+  
   {
     id: '1688-1064068114006',
     optionName: 'Color',
@@ -972,15 +933,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f62xrb55', handle: 'throw-pillow-inserts-35-x-35cm-14-x-14-cushion-inserts-hollo-b0f62xrb55', color: 'White', size: '35 x 35 cm' },
     ],
   },
-  {
-    id: 'b0-inserts-rect',
-    optionName: 'Size',
-    members: [
-    { asin: 'b0f62y59cw', handle: 'makimoo-pillow-inserts-50-x-70-cm-set-of-2-soft-fluffy-b0f62y59cw', color: 'White', size: '50 x 70 cm' },
-    { asin: 'b0grj9sdtf', handle: 'premium-rectangular-pillow-inserts-set-of-2-for-sofa-bed-b0grj9sdtf', color: 'White', size: '40 x 80 cm' },
-    // 2026-10-18 用户定：b0cqbzm49v（30 x 50 cm）从本族拆出，成为独立链接/独立卡位
-    ],
-  },
+  
   {
     id: 'b0-inserts-quilted',
     optionName: 'Size',
@@ -995,7 +948,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Size',
     members: [
     { asin: 'b0g6m3f7cy', handle: 'throw-pillow-inserts-pack-of-2-cushion-inserts-hollowfibre-f-b0g6m3f7cy', color: 'White', size: '30 x 50 cm' },
-    { asin: 'b0grj8m3tm', handle: 'makimoo-quilted-pillow-inserts-2-pack-decorative-cushion-b0grj8m3tm', color: 'White', size: '40 x 80 cm' },
+    // 2026-10-25 用户定：b0grj8m3tm（40×80）全站移除，族卡 rep 回落到 b0g6m3f7cy
     ],
   },
   {
@@ -1003,7 +956,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     optionName: 'Size',
     members: [
     { asin: 'b0gd87zbn9', handle: 'premium-embossed-microfiber-bed-pillows-2-pack-soft-fluffy-b0gd87zbn9', color: 'White', size: '50 x 70 cm' },
-    { asin: 'b0gd843wmn', handle: 'set-of-2-embossed-microfibre-bed-pillows-for-sleeping-soft-b0gd843wmn', color: 'White', size: '40 x 80 cm' },
     { asin: 'b0gd846fs2', handle: 'set-of-2-soft-embossed-microfiber-bed-pillows-40-x-70-cm-b0gd846fs2', color: 'White', size: '40 x 70 cm' },
     ],
   },
@@ -1025,24 +977,7 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f1v8vmp4', handle: 'makimoo-2-pack-outdoor-chair-cushions-water-resistant-solid-b0f1v8vmp4', color: 'Navy Blue', size: '45 x 10 cm' },
     ],
   },
-  {
-    id: 'b0-highback-4pk',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0bcjw18sp', handle: 'makimoo-outdoor-chair-cushions-set-of-4-thick-padded-all-b0bcjw18sp', color: 'Hummingbird Garden', size: '110 x 55 cm' },
-    { asin: 'b0bcjrtf3x', handle: 'makimoo-outdoor-chair-cushions-set-of-4-water-resistant-b0bcjrtf3x', color: 'Teal Palm Leaf', size: '110 x 55 cm' },
-    ],
-  },
-  {
-    id: 'b0-embossed-cases',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0gjlsdz52', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-microfibre-b0gjlsdz52', color: 'White', size: '40 x 80 cm' },
-    { asin: 'b0gjldmt57', handle: 'makimoo-embossed-cushion-covers-set-of-2-soft-breathable-b0gjldmt57', color: 'Light Grey', size: '50 x 70 cm' },
-    { asin: 'b0gjlmjws1', handle: 'set-of-2-embossed-geometric-microfiber-cushion-covers-50-x-b0gjlmjws1', color: 'Pink', size: '50 x 70 cm' },
-    // 2026-09-30 用户定：8 款枕套（pillowcases/pillow covers/pillow cases）全站隐藏，已移出本组
-    ],
-  },
+  
   {
     id: 'b0-seat-cushions-wr',
     optionName: 'Color',
@@ -1052,67 +987,19 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
-    id: 'b0-seat-cushions',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0c4b9t6jv', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4b9t6jv', color: 'Green Plaid', size: '43 x 43 cm' },
-    { asin: 'b0c4bbvs53', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bbvs53', color: 'Blue Paisley', size: '43 x 43 cm' },
-    { asin: 'b0c4bc7q4s', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bc7q4s', color: 'Khaki Floral', size: '43 x 43 cm' },
-    { asin: 'b0c4bcd4dy', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bcd4dy', color: 'Pink Watercolor Floral', size: '43 x 43 cm' },
-    { asin: 'b0c4bd7q5x', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bd7q5x', color: 'Blue Red Floral', size: '43 x 43 cm' },
-    { asin: 'b0c4bdllfk', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0c4bdllfk', color: 'Orange Red Striped', size: '43 x 43 cm' },
-    { asin: 'b0cjhx7xkl', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhx7xkl', color: 'Navy Blue Houndstooth', size: '43 x 43 cm' },
-    { asin: 'b0cj8tjl56', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cj8tjl56', color: 'Green Houndstooth', size: '43 x 43 cm' },
-    { asin: 'b0cjhslcz5', handle: '2-pack-outdoor-indoor-wicker-patio-seat-cushion-pad-with-tie-b0cjhslcz5', color: 'Red Houndstooth', size: '43 x 43 cm' },
-    { asin: 'b0gd81wt1b', handle: 'indoor-outdoor-square-tufted-seat-cushions-set-of-2-with-b0gd81wt1b', color: 'Teal Floral', size: '43 x 43 cm' },
-    { asin: 'b0gd84d8vc', handle: 'set-of-2-tufted-outdoor-chair-cushions-with-ties-square-b0gd84d8vc', color: 'Green Batik', size: '43 x 43 cm' },
-    { asin: 'b0cjhl4lzp', handle: 'makimoo-chair-cushions-set-of-2-oil-painting-floral-seat-b0cjhl4lzp', color: 'Oil Painting Floral', size: '43 x 43 cm' },
-    ],
-  },
-  {
     id: 'b0-rocking-95x45',
     optionName: 'Color',
     members: [
-    { asin: 'b0cbt7b1ty', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty', color: 'Corduroy Blue' },
+    { asin: 'mk-cushion-cord-olive', handle: 'corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive', color: 'Olive', size: '95 x 45 cm' },    { asin: 'b0cbt7b1ty', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty', color: 'Corduroy Blue' },
     { asin: 'b0cbt7r7nn', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7r7nn', color: 'Corduroy Grey' },
     { asin: 'b0cbt7rfk2', handle: 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7rfk2', color: 'Corduroy Coffee' },
     { asin: 'b0cbt8fzwf', handle: '2-pack-ribbed-corduroy-chair-cushions-with-ties-for-indoor-b0cbt8fzwf', color: 'Khaki' },
     { asin: 'mk-cushion-cord-cream', handle: 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream', color: 'Cream', size: '95 x 45 cm' },
     { asin: 'mk-cushion-cord-dustyrose', handle: 'corduroy-chair-cushions-dusty-rose-95x45-mk-cushion-cord-dustyrose', color: 'Dusty Rose', size: '95 x 45 cm' },
-    { asin: 'mk-cushion-cord-olive', handle: 'corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive', color: 'Olive', size: '95 x 45 cm' },
     { asin: 'mk-cushion-cord-dustyblue', handle: 'corduroy-chair-cushions-dusty-blue-95x45-mk-cushion-cord-dustyblue', color: 'Dusty Blue', size: '95 x 45 cm' },
     ],
   },
-  {
-    id: 'b0-travel-memory',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0bxckknn8', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0bxckknn8', color: 'Black' },
-    { asin: 'b0c2z9jrdm', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9jrdm', color: 'Pink' },
-    { asin: 'b0c2z9pffk', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2z9pffk', color: 'Grey' },
-    { asin: 'b0c2zcxvx7', handle: 'memory-foam-travel-pillow-neck-pillow-with-360-degree-head-s-b0c2zcxvx7', color: 'Blue' },
-    ],
-  },
-  {
-    id: 'b0-travel-inflatable',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0c69qnsb3', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69qnsb3', color: 'Grey' },
-    { asin: 'b0c69rjvvt', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rjvvt', color: 'Black' },
-    { asin: 'b0c69rr6gf', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rr6gf', color: 'Navy Blue' },
-    { asin: 'b0c69rryxm', handle: 'inflatable-travel-pillow-neck-pillow-support-for-traveling-a-b0c69rryxm', color: 'Pink' },
-    ],
-  },
-  {
-    id: 'b0-travel-adjustable',
-    optionName: 'Color',
-    members: [
-    { asin: 'b0bzcln57s', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcln57s', color: 'Black' },
-    { asin: 'b0bzcmdzns', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0bzcmdzns', color: 'Grey' },
-    { asin: 'b0c8j237v3', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j237v3', color: 'Navy Blue' },
-    { asin: 'b0c8j292wf', handle: 'travel-neck-pillow-top-memory-foam-pillow-for-head-support-i-b0c8j292wf', color: 'Pink' },
-    ],
-  },
+  
   {
     id: 'LINEN3',
     optionName: 'Color',
@@ -1142,40 +1029,19 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
-    // 2026-09-29 独立被套单品家族（创想AI 管线，5 色 × 200 x 230cm，纯颜色家族不填 size）
+    // 2026-10-24 用户定：LINEN3 独立被套五色 Queen 恢复重建，Sage 为卡面入口
     id: 'LINEN3-DUVET',
     optionName: 'Color',
     members: [
+    { asin: 'LINEN3-IVORY-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet', color: 'Ivory' },
     { asin: 'LINEN3-SAGE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-sage-green-soft-washed-linen3-sage-duvet', color: 'Sage Green' },
+    { asin: 'LINEN3-OATMEAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet', color: 'Oatmeal' },
     { asin: 'LINEN3-CHARCOAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-charcoal-grey-soft-washed-linen3-charcoal-duvet', color: 'Charcoal Grey' },
     { asin: 'LINEN3-DUSTYBLUE-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-dusty-blue-soft-washed-linen3-dustyblue-duvet', color: 'Dusty Blue' },
-    { asin: 'LINEN3-IVORY-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-ivory-soft-washed-linen3-ivory-duvet', color: 'Ivory' },
-    { asin: 'LINEN3-OATMEAL-DUVET', handle: 'makimoo-100-linen-duvet-cover-only-oatmeal-soft-washed-linen3-oatmeal-duvet', color: 'Oatmeal' },
+
     ],
   },
-  {
-    // 2026-10-03 旅行颈枕单品家族（创想AI 管线，6 色，纯颜色家族不填 size）
-    id: 'NECKPILLOW-EGGCASE',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-913882303732', handle: 'makimoo-memory-foam-travel-neck-pillow-violet-shell-case-1688-913882303732', color: 'Violet' },
-    { asin: '1688-913882303732-c3', handle: 'makimoo-memory-foam-travel-neck-pillow-sage-green-egg-case-1688-913882303732-c3', color: 'Sage Green' },
-    { asin: '1688-913882303732-c4', handle: 'makimoo-memory-foam-travel-neck-pillow-spring-pink-egg-case-1688-913882303732-c4', color: 'Spring Pink' },
-    { asin: '1688-913882303732-c5', handle: 'makimoo-memory-foam-travel-neck-pillow-obsidian-grey-egg-case-1688-913882303732-c5', color: 'Obsidian Grey' },
-    { asin: '1688-913882303732-c6', handle: 'makimoo-memory-foam-travel-neck-pillow-ivory-white-egg-case-1688-913882303732-c6', color: 'Ivory White' },
-    ],
-  },
-  {
-    // 2026-09-29 独立被套单品家族（创想AI 管线，4 色 × 200 x 230cm，纯颜色家族不填 size）
-    id: 'DUVSET-DUVET',
-    optionName: 'Color',
-    members: [
-    { asin: 'DUVSET-GRAY-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet', color: 'Grey' },
-    { asin: 'DUVSET-PINK-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-pink-breathable-duvset-pink-duvet', color: 'Pink' },
-    { asin: 'DUVSET-BEIGE-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-beige-breathable-duvset-beige-duvet', color: 'Beige' },
-    { asin: 'DUVSET-WHITE-DUVET', handle: 'makimoo-washed-cotton-like-duvet-cover-only-white-breathable-duvset-white-duvet', color: 'White' },
-    ],
-  },
+  
   {
     id: '1688-807393887857',
     optionName: 'Color',
@@ -1259,7 +1125,9 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     members: [
     { asin: 'b0bcjt2gfw', handle: 'makimoo-outdoor-chair-cushions-set-of-2-patio-high-back-b0bcjt2gfw', color: 'Orange Yellow Floral Bird', size: 'Set of 2' },
     { asin: 'b0bcjv24jr', handle: 'makimoo-outdoor-chair-cushions-set-of-2-tropical-palm-leaf-b0bcjv24jr', color: 'Green Palm Leaf', size: 'Set of 2' },
+    { asin: 'b0bcjrtf3x', handle: 'makimoo-outdoor-chair-cushions-set-of-4-water-resistant-b0bcjrtf3x', color: 'Green Palm Leaf', size: 'Set of 4' },
     { asin: 'b0bcjqyyl1', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0bcjqyyl1', color: 'Khaki Birds and Flowers', size: 'Set of 2' },
+    { asin: 'b0bcjw18sp', handle: 'makimoo-outdoor-chair-cushions-set-of-4-thick-padded-all-b0bcjw18sp', color: 'Khaki Birds and Flowers', size: 'Set of 4' },
     { asin: 'b0c39zmk7h', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c39zmk7h', color: 'Blue Red Leaves', size: 'Set of 2' },
     { asin: 'b0c39zsd3q', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c39zsd3q', color: 'Khaki Floral Paisley', size: 'Set of 2' },
     { asin: 'b0c3b12dl7', handle: 'set-of-2-outdoor-dining-chair-cushions-comfort-patio-seating-b0c3b12dl7', color: 'Orange Red Stripe', size: 'Set of 2' },
@@ -1284,42 +1152,6 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'b0f1xmtync', handle: 'set-of-2-high-back-tufted-outdoor-chair-cushion-44-x-21-inch-b0f1xmtync', color: 'Dark Green' },
     { asin: 'b0f1xs27xs', handle: 'set-of-2-high-back-tufted-outdoor-chair-cushion-44-x-21-inch-b0f1xs27xs', color: 'Angola Red' },
     { asin: 'b0f1xs7vky', handle: 'set-of-2-high-back-tufted-outdoor-chair-cushion-44-x-21-inch-b0f1xs7vky', color: 'Coffee' },
-    ],
-  },
-  {
-    id: '1688-1061371343572',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1061371343572-C3', handle: 'cooling-ice-silk-duvet-cover-silky-smooth-soft-breathable-1688-1061371343572-c3', color: 'Milk Tea Brown', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C2', handle: 'luxurious-silky-cooling-duvet-cover-for-hot-sleepers-smooth-1688-1061371343572-c2', color: 'Milk Tea Brown', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572', handle: 'luxurious-silky-cooling-ice-silk-duvet-cover-breathable-1688-1061371343572', color: 'Milk Tea Brown', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C6', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c6', color: 'Champagne Green', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C5', handle: 'cooling-ice-silk-duvet-cover-breathable-smooth-solid-color-1688-1061371343572-c5', color: 'Champagne Green', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C4', handle: 'cooling-silk-touch-duvet-cover-breathable-silky-smooth-soft-1688-1061371343572-c4', color: 'Champagne Green', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C9', handle: 'cooling-silky-duvet-cover-breathable-smooth-bedding-cover-1688-1061371343572-c9', color: 'Camel Grey', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C8', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c8', color: 'Camel Grey', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C7', handle: 'cooling-ice-silk-duvet-cover-200-x-230-cm-silky-breathable-1688-1061371343572-c7', color: 'Camel Grey', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C11', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c11', color: 'Milk Tea Beige', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C10', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c10', color: 'Milk Tea Beige', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C14', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-solid-color-1688-1061371343572-c14', color: 'Cream White', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C13', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c13', color: 'Cream White', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C12', handle: 'luxury-soft-cooling-ice-silk-duvet-cover-silky-breathable-1688-1061371343572-c12', color: 'Cream White', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C17', handle: 'cooling-ice-silk-duvet-cover-smooth-breathable-silky-solid-1688-1061371343572-c17', color: 'Peach Pink', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C16', handle: 'luxury-ice-silk-duvet-cover-cooling-silky-breathable-solid-1688-1061371343572-c16', color: 'Peach Pink', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C15', handle: '1-piece-cooling-ice-silk-duvet-cover-silky-breathable-solid-1688-1061371343572-c15', color: 'Peach Pink', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C19', handle: 'cooling-ice-silk-duvet-cover-silky-breathable-quilt-cover-1688-1061371343572-c19', color: 'Pale Lemon', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C18', handle: 'premium-cooling-ice-silk-duvet-cover-soft-silky-breathable-1688-1061371343572-c18', color: 'Pale Lemon', size: '200 x 230 cm' },
-    { asin: '1688-1061371343572-C22', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-solid-1688-1061371343572-c22', color: 'Peach Taro Purple', size: '150 x 200 cm' },
-    { asin: '1688-1061371343572-C21', handle: 'cooling-ice-silk-duvet-cover-solid-color-silky-breathable-1688-1061371343572-c21', color: 'Peach Taro Purple', size: '180 x 220 cm' },
-    { asin: '1688-1061371343572-C20', handle: 'cooling-ice-silk-duvet-cover-breathable-silky-smooth-1688-1061371343572-c20', color: 'Peach Taro Purple', size: '200 x 230 cm' },
-    ],
-  },
-  {
-    id: '1688-1048207560416',
-    optionName: 'Color',
-    members: [
-    { asin: '1688-1048207560416-C2', handle: 'cooling-washed-ice-silk-dual-tone-quilt-cover-soft-1688-1048207560416-c2', color: 'Milkshake White', size: '150 x 200 cm' },
-    { asin: '1688-1048207560416', handle: 'cooling-washed-ice-silk-dual-tone-duvet-cover-reversible-1688-1048207560416', color: 'Milkshake White', size: '180 x 220 cm' },
     ],
   },
   // 2026-10-08：Corduroy 装饰枕套（5 色 × 2 尺寸，MK- 自有产品）
@@ -1434,6 +1266,21 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    id: 'PERCALE-DUVET',
+    optionName: 'Size',
+    // 2026-10-24 用户定：Cotton Percale 独立被套 4 色并为一组（颜色顺序对齐 PERCALE 套装组：Sky/Mist/Coconut/Nude）；
+    // 仅 Mist Grey 有 4 个尺寸，其余颜色只有 Queen；缺尺寸按现有变体组规则 handle=null 置灰，不链接到套装 PDP
+    members: [
+    { asin: 'PERCALE-SKY-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-sky-blue-queen-percale-sky-duvet', color: 'Sky Blue', size: '220 x 220 cm' },
+    { asin: 'PERCALE-MIST-TWIN-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-mist-grey-twin-percale-mist-twin-duvet', color: 'Mist Grey', size: '170 x 220 cm' },
+    { asin: 'PERCALE-MIST-FULL-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-mist-grey-full-percale-mist-full-duvet', color: 'Mist Grey', size: '200 x 220 cm' },
+    { asin: 'PERCALE-MIST-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-mist-grey-queen-percale-mist-duvet', color: 'Mist Grey', size: '220 x 220 cm' },
+    { asin: 'PERCALE-MIST-KING-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-mist-grey-king-percale-mist-king-duvet', color: 'Mist Grey', size: '260 x 220 cm' },
+    { asin: 'PERCALE-COCONUT-QUEEN-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-coconut-milk-queen-percale-coconut-queen-duvet', color: 'Coconut Milk', size: '220 x 220 cm' },
+    { asin: 'PERCALE-NUDE-DUVET', handle: 'makimoo-cotton-percale-duvet-cover-only-nude-pink-queen-percale-nude-duvet', color: 'Nude Pink', size: '220 x 220 cm' },
+    ],
+  },
+  {
     id: 'DOWN-PILLOW',
     optionName: 'Size',
     // Down 床枕 Set of 2（3 尺寸，2026-10-18 用户定）
@@ -1463,7 +1310,27 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     { asin: 'microfiber-pillow-king', handle: 'makimoo-microfiber-bed-pillows-set-of-2-king', color: 'White', size: 'King' },
     ],
   },
-  {    id: 'SATEEN4',    optionName: 'Size',    // Cotton Sateen 四件套（6 色 × 4 尺寸，2026-10-18 用户定）    members: [    { asin: 'sateen4-cream-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-cream-twin', color: 'Cream White', size: '170 x 220 cm' },    { asin: 'sateen4-cream-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-cream-full', color: 'Cream White', size: '200 x 220 cm' },    { asin: 'sateen4-cream-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen', color: 'Cream White', size: '220 x 220 cm' },    { asin: 'sateen4-cream-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-cream-king', color: 'Cream White', size: '260 x 220 cm' },    { asin: 'sateen4-beige-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-beige-twin', color: 'Soft Beige', size: '170 x 220 cm' },    { asin: 'sateen4-beige-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-beige-full', color: 'Soft Beige', size: '200 x 220 cm' },    { asin: 'sateen4-beige-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-beige-queen', color: 'Soft Beige', size: '220 x 220 cm' },    { asin: 'sateen4-beige-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-beige-king', color: 'Soft Beige', size: '260 x 220 cm' },    { asin: 'sateen4-mustard-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-mustard-twin', color: 'Mustard Yellow', size: '170 x 220 cm' },    { asin: 'sateen4-mustard-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-mustard-full', color: 'Mustard Yellow', size: '200 x 220 cm' },    { asin: 'sateen4-mustard-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-mustard-queen', color: 'Mustard Yellow', size: '220 x 220 cm' },    { asin: 'sateen4-mustard-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-mustard-king', color: 'Mustard Yellow', size: '260 x 220 cm' },    { asin: 'sateen4-taupe-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-taupe-twin', color: 'Taupe', size: '170 x 220 cm' },    { asin: 'sateen4-taupe-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-taupe-full', color: 'Taupe', size: '200 x 220 cm' },    { asin: 'sateen4-taupe-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-taupe-queen', color: 'Taupe', size: '220 x 220 cm' },    { asin: 'sateen4-taupe-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-taupe-king', color: 'Taupe', size: '260 x 220 cm' },    { asin: 'sateen4-terracotta-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-terracotta-twin', color: 'Terracotta', size: '170 x 220 cm' },    { asin: 'sateen4-terracotta-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-terracotta-full', color: 'Terracotta', size: '200 x 220 cm' },    { asin: 'sateen4-terracotta-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-terracotta-queen', color: 'Terracotta', size: '220 x 220 cm' },    { asin: 'sateen4-terracotta-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-terracotta-king', color: 'Terracotta', size: '260 x 220 cm' },    { asin: 'sateen4-olive-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-olive-twin', color: 'Olive Green', size: '170 x 220 cm' },    { asin: 'sateen4-olive-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-olive-full', color: 'Olive Green', size: '200 x 220 cm' },    { asin: 'sateen4-olive-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-olive-queen', color: 'Olive Green', size: '220 x 220 cm' },    { asin: 'sateen4-olive-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-olive-king', color: 'Olive Green', size: '260 x 220 cm' },    ],  },  {    id: 'KNIT-THROW',    optionName: 'Color',    // 北欧镂空针织毯（4 色 × 单尺寸 127x180cm 含流苏，2026-10-19 用户定，blanket/2）    members: [    { asin: 'knitthrow-cream', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-cream', color: 'Cream White', size: '127 x 180 cm' },    { asin: 'knitthrow-grey', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey', color: 'Light Grey', size: '127 x 180 cm' },    { asin: 'knitthrow-khaki', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-khaki', color: 'Khaki', size: '127 x 180 cm' },    { asin: 'knitthrow-pink', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-pink', color: 'Dusty Pink', size: '127 x 180 cm' },    ],  },  {    id: 'BOHO-THROW',    optionName: 'Color',    // 波西米亚锯齿针织毯（4 色 × 2 尺寸含流苏，2026-10-19 用户定）    members: [    { asin: 'bohothrow-sunset-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-sunset', color: 'Sunset', size: '127 x 180 cm' },    { asin: 'bohothrow-sunset-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-sunset', color: 'Sunset', size: '130 x 230 cm' },    { asin: 'bohothrow-olive-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-olive', color: 'Khaki Olive', size: '127 x 180 cm' },    { asin: 'bohothrow-olive-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-olive', color: 'Khaki Olive', size: '130 x 230 cm' },    { asin: 'bohothrow-teal-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal', color: 'Teal Blue', size: '127 x 180 cm' },    { asin: 'bohothrow-teal-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-teal', color: 'Teal Blue', size: '130 x 230 cm' },    { asin: 'bohothrow-burgundy-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-burgundy', color: 'Burgundy', size: '127 x 180 cm' },    { asin: 'bohothrow-burgundy-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-burgundy', color: 'Burgundy', size: '130 x 230 cm' },    ],  },  {    id: 'JAC-THROW',    optionName: 'Color',    // 北欧提花航空毯（4 色 × 3 尺寸，无流苏干净包边，2026-10-19 用户定）    members: [    { asin: 'jacthrow-hb-black-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black', color: 'Herringbone Black White', size: '130 x 180 cm' },    { asin: 'jacthrow-hb-black-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-black', color: 'Herringbone Black White', size: '150 x 200 cm' },    { asin: 'jacthrow-hb-black-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-black', color: 'Herringbone Black White', size: '130 x 190 cm' },    { asin: 'jacthrow-hb-khaki-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-khaki', color: 'Herringbone Camel', size: '130 x 180 cm' },    { asin: 'jacthrow-hb-khaki-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-khaki', color: 'Herringbone Camel', size: '150 x 200 cm' },    { asin: 'jacthrow-hb-khaki-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-khaki', color: 'Herringbone Camel', size: '130 x 190 cm' },    { asin: 'jacthrow-paisley-beige-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-beige', color: 'Paisley Khaki', size: '130 x 180 cm' },    { asin: 'jacthrow-paisley-beige-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-beige', color: 'Paisley Khaki', size: '150 x 200 cm' },    { asin: 'jacthrow-paisley-beige-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-beige', color: 'Paisley Khaki', size: '130 x 190 cm' },    { asin: 'jacthrow-paisley-blue-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '130 x 180 cm' },    { asin: 'jacthrow-paisley-blue-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '150 x 200 cm' },    { asin: 'jacthrow-paisley-blue-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '130 x 190 cm' },    ],  },  {    id: 'CHUNKY-THROW',    optionName: 'Color',    // 豆豆粒粗针织毯（4 色 × 2 尺寸含长流苏，2026-10-19 用户定）    members: [    { asin: 'chunkythrow-orange-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-orange', color: 'Burnt Orange', size: '127 x 172 cm' },    { asin: 'chunkythrow-orange-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-orange', color: 'Burnt Orange', size: '130 x 230 cm' },    { asin: 'chunkythrow-oat-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-oat', color: 'Khaki Oat', size: '127 x 172 cm' },    { asin: 'chunkythrow-oat-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-oat', color: 'Khaki Oat', size: '130 x 230 cm' },    { asin: 'chunkythrow-cream-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream', color: 'Cream White', size: '127 x 172 cm' },    { asin: 'chunkythrow-cream-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-cream', color: 'Cream White', size: '130 x 230 cm' },    { asin: 'chunkythrow-grey-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey', color: 'Light Grey', size: '127 x 172 cm' },    { asin: 'chunkythrow-grey-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey', color: 'Light Grey', size: '130 x 230 cm' },    ],  },];
+  {    id: 'SATEEN4',    optionName: 'Size',    // Cotton Sateen 四件套（6 色 × 4 尺寸，2026-10-18 用户定）    members: [    { asin: 'sateen4-cream-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-cream-twin', color: 'Cream White', size: '170 x 220 cm' },    { asin: 'sateen4-cream-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-cream-full', color: 'Cream White', size: '200 x 220 cm' },    { asin: 'sateen4-cream-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen', color: 'Cream White', size: '220 x 220 cm' },    { asin: 'sateen4-cream-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-cream-king', color: 'Cream White', size: '260 x 220 cm' },    { asin: 'sateen4-beige-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-beige-twin', color: 'Soft Beige', size: '170 x 220 cm' },    { asin: 'sateen4-beige-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-beige-full', color: 'Soft Beige', size: '200 x 220 cm' },    { asin: 'sateen4-beige-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-beige-queen', color: 'Soft Beige', size: '220 x 220 cm' },    { asin: 'sateen4-beige-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-beige-king', color: 'Soft Beige', size: '260 x 220 cm' },    { asin: 'sateen4-mustard-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-mustard-twin', color: 'Mustard Yellow', size: '170 x 220 cm' },    { asin: 'sateen4-mustard-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-mustard-full', color: 'Mustard Yellow', size: '200 x 220 cm' },    { asin: 'sateen4-mustard-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-mustard-queen', color: 'Mustard Yellow', size: '220 x 220 cm' },    { asin: 'sateen4-mustard-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-mustard-king', color: 'Mustard Yellow', size: '260 x 220 cm' },    { asin: 'sateen4-taupe-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-taupe-twin', color: 'Taupe', size: '170 x 220 cm' },    { asin: 'sateen4-taupe-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-taupe-full', color: 'Taupe', size: '200 x 220 cm' },    { asin: 'sateen4-taupe-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-taupe-queen', color: 'Taupe', size: '220 x 220 cm' },    { asin: 'sateen4-taupe-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-taupe-king', color: 'Taupe', size: '260 x 220 cm' },    { asin: 'sateen4-terracotta-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-terracotta-twin', color: 'Terracotta', size: '170 x 220 cm' },    { asin: 'sateen4-terracotta-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-terracotta-full', color: 'Terracotta', size: '200 x 220 cm' },    { asin: 'sateen4-terracotta-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-terracotta-queen', color: 'Terracotta', size: '220 x 220 cm' },    { asin: 'sateen4-terracotta-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-terracotta-king', color: 'Terracotta', size: '260 x 220 cm' },    { asin: 'sateen4-olive-twin', handle: 'makimoo-twin-bedding-set-4-piece-cotton-sateen-olive-twin', color: 'Olive Green', size: '170 x 220 cm' },    { asin: 'sateen4-olive-full', handle: 'makimoo-full-bedding-set-4-piece-cotton-sateen-olive-full', color: 'Olive Green', size: '200 x 220 cm' },    { asin: 'sateen4-olive-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-sateen-olive-queen', color: 'Olive Green', size: '220 x 220 cm' },    { asin: 'sateen4-olive-king', handle: 'makimoo-king-bedding-set-4-piece-cotton-sateen-olive-king', color: 'Olive Green', size: '260 x 220 cm' },    ],  },  {    id: 'KNIT-THROW',    optionName: 'Color',    // 北欧镂空针织毯（4 色 × 单尺寸 127x180cm 含流苏，2026-10-19 用户定，blanket/2）    members: [    { asin: 'knitthrow-cream', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-cream', color: 'Cream White', size: '127 x 180 cm' },    { asin: 'knitthrow-grey', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey', color: 'Light Grey', size: '127 x 180 cm' },    { asin: 'knitthrow-khaki', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-khaki', color: 'Khaki', size: '127 x 180 cm' },    { asin: 'knitthrow-pink', handle: 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-pink', color: 'Dusty Pink', size: '127 x 180 cm' },    ],  },  {    id: 'BOHO-THROW',    optionName: 'Color',    // 波西米亚锯齿针织毯（4 色 × 2 尺寸含流苏，2026-10-19 用户定）    members: [    { asin: 'bohothrow-sunset-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-sunset', color: 'Sunset', size: '127 x 180 cm' },    { asin: 'bohothrow-sunset-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-sunset', color: 'Sunset', size: '130 x 230 cm' },    { asin: 'bohothrow-olive-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-olive', color: 'Khaki Olive', size: '127 x 180 cm' },    { asin: 'bohothrow-olive-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-olive', color: 'Khaki Olive', size: '130 x 230 cm' },    { asin: 'bohothrow-teal-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal', color: 'Teal Blue', size: '127 x 180 cm' },    { asin: 'bohothrow-teal-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-teal', color: 'Teal Blue', size: '130 x 230 cm' },    { asin: 'bohothrow-burgundy-127', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-burgundy', color: 'Burgundy', size: '127 x 180 cm' },    { asin: 'bohothrow-burgundy-130', handle: 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-51-x-91-in-burgundy', color: 'Burgundy', size: '130 x 230 cm' },    ],  },  {    id: 'JAC-THROW',    optionName: 'Color',    // 北欧提花航空毯（4 色 × 3 尺寸，无流苏干净包边，2026-10-19 用户定）    members: [    { asin: 'jacthrow-hb-black-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black', color: 'Herringbone Black White', size: '130 x 180 cm' },    { asin: 'jacthrow-hb-black-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-black', color: 'Herringbone Black White', size: '150 x 200 cm' },    { asin: 'jacthrow-hb-black-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-black', color: 'Herringbone Black White', size: '130 x 190 cm' },    { asin: 'jacthrow-hb-khaki-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-khaki', color: 'Herringbone Camel', size: '130 x 180 cm' },    { asin: 'jacthrow-hb-khaki-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-hb-khaki', color: 'Herringbone Camel', size: '150 x 200 cm' },    { asin: 'jacthrow-hb-khaki-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-hb-khaki', color: 'Herringbone Camel', size: '130 x 190 cm' },    { asin: 'jacthrow-paisley-beige-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-beige', color: 'Paisley Khaki', size: '130 x 180 cm' },    { asin: 'jacthrow-paisley-beige-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-beige', color: 'Paisley Khaki', size: '150 x 200 cm' },    { asin: 'jacthrow-paisley-beige-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-beige', color: 'Paisley Khaki', size: '130 x 190 cm' },    { asin: 'jacthrow-paisley-blue-130x180', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '130 x 180 cm' },    { asin: 'jacthrow-paisley-blue-150x200', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-150-x-200-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '150 x 200 cm' },    { asin: 'jacthrow-paisley-blue-130x190', handle: 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-190-cm-paisley-blue', color: 'Paisley Dusty Blue', size: '130 x 190 cm' },    ],  },  {    id: 'CHUNKY-THROW',    optionName: 'Color',    // 豆豆粒粗针织毯（4 色 × 2 尺寸含长流苏，2026-10-19 用户定）    members: [    { asin: 'chunkythrow-orange-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-orange', color: 'Burnt Orange', size: '127 x 172 cm' },    { asin: 'chunkythrow-orange-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-orange', color: 'Burnt Orange', size: '130 x 230 cm' },    { asin: 'chunkythrow-oat-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-oat', color: 'Khaki Oat', size: '127 x 172 cm' },    { asin: 'chunkythrow-oat-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-oat', color: 'Khaki Oat', size: '130 x 230 cm' },    { asin: 'chunkythrow-cream-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream', color: 'Cream White', size: '127 x 172 cm' },    { asin: 'chunkythrow-cream-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-cream', color: 'Cream White', size: '130 x 230 cm' },    { asin: 'chunkythrow-grey-127', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey', color: 'Light Grey', size: '127 x 172 cm' },    { asin: 'chunkythrow-grey-130', handle: 'makimoo-chunky-knit-throw-blanket-with-tassels-51-x-91-in-grey', color: 'Light Grey', size: '130 x 230 cm' },    ],  },  {    id: 'POMPOM4',    optionName: 'Color',    // Embossed Velvet 绒球花边雕花绒四件套（7 色 × 4 尺寸，2026-10-21 用户定）    members: [    { asin: 'pompom4-vine-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-vine-twin', color: 'Olive Vine', size: '170 x 220 cm' },    { asin: 'pompom4-vine-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-vine-full', color: 'Olive Vine', size: '200 x 220 cm' },    { asin: 'pompom4-vine-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-vine-queen', color: 'Olive Vine', size: '220 x 220 cm' },    { asin: 'pompom4-vine-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-vine-king', color: 'Olive Vine', size: '260 x 220 cm' },    { asin: 'pompom4-swirl-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-twin', color: 'Caramel Swirl', size: '170 x 220 cm' },    { asin: 'pompom4-swirl-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-full', color: 'Caramel Swirl', size: '200 x 220 cm' },    { asin: 'pompom4-swirl-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-queen', color: 'Caramel Swirl', size: '220 x 220 cm' },    { asin: 'pompom4-swirl-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-king', color: 'Caramel Swirl', size: '260 x 220 cm' },    { asin: 'pompom4-leaf-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-twin', color: 'Dusty Leaf', size: '170 x 220 cm' },    { asin: 'pompom4-leaf-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-full', color: 'Dusty Leaf', size: '200 x 220 cm' },    { asin: 'pompom4-leaf-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-queen', color: 'Dusty Leaf', size: '220 x 220 cm' },    { asin: 'pompom4-leaf-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-king', color: 'Dusty Leaf', size: '260 x 220 cm' },    { asin: 'pompom4-blush-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-blush-twin', color: 'Blush Floral', size: '170 x 220 cm' },    { asin: 'pompom4-blush-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-blush-full', color: 'Blush Floral', size: '200 x 220 cm' },    { asin: 'pompom4-blush-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-blush-queen', color: 'Blush Floral', size: '220 x 220 cm' },    { asin: 'pompom4-blush-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-blush-king', color: 'Blush Floral', size: '260 x 220 cm' },    { asin: 'pompom4-ink-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-ink-twin', color: 'Ink Floral', size: '170 x 220 cm' },    { asin: 'pompom4-ink-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-ink-full', color: 'Ink Floral', size: '200 x 220 cm' },    { asin: 'pompom4-ink-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-ink-queen', color: 'Ink Floral', size: '220 x 220 cm' },    { asin: 'pompom4-ink-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-ink-king', color: 'Ink Floral', size: '260 x 220 cm' },    { asin: 'pompom4-bloom-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-twin', color: 'Lilac Bloom', size: '170 x 220 cm' },    { asin: 'pompom4-bloom-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-full', color: 'Lilac Bloom', size: '200 x 220 cm' },    { asin: 'pompom4-bloom-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-queen', color: 'Lilac Bloom', size: '220 x 220 cm' },    { asin: 'pompom4-bloom-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-bloom-king', color: 'Lilac Bloom', size: '260 x 220 cm' },    { asin: 'pompom4-damask-twin', handle: 'makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-damask-twin', color: 'Gold Damask', size: '170 x 220 cm' },    { asin: 'pompom4-damask-full', handle: 'makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-damask-full', color: 'Gold Damask', size: '200 x 220 cm' },    { asin: 'pompom4-damask-queen', handle: 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-damask-queen', color: 'Gold Damask', size: '220 x 220 cm' },    { asin: 'pompom4-damask-king', handle: 'makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-damask-king', color: 'Gold Damask', size: '260 x 220 cm' },    ],  },  {    id: 'PERCALEJAC',    optionName: 'Color',    // Cotton Percale 色织提花四件套（4 色 × 仅 Queen，2026-10-22 用户定）；2026-10-24 用户定：HAZE 提为组首，产品卡显示其主图（替代 10-23 的 OATBEIGE 组首）    members: [    { asin: 'percalejac-haze-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-haze-queen', color: 'Dusty Blue', size: '220 x 220 cm' },{ asin: 'percalejac-oatbeige-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-oatbeige-queen', color: 'Oatmeal Beige', size: '220 x 220 cm' },    { asin: 'percalejac-rose-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-rose-queen', color: 'Dusty Pink', size: '220 x 220 cm' },    { asin: 'percalejac-grey-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-grey-queen', color: 'Light Grey', size: '220 x 220 cm' },    ],  },  {    id: 'PERCALESTRIPE',    optionName: 'Color',    // Cotton Percale 粉白细条纹色织提花四件套（单色 × 仅 Queen，2026-10-22 用户定）    members: [    { asin: 'percalestripe-petal-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-stripe-petal-queen', color: 'Blush Pink Stripe', size: '220 x 220 cm' },    ],  },  {    id: 'PERCALEPATCH',    optionName: 'Color',    // Cotton Percale 灰白拼接色织提花四件套（单色 × 仅 Queen，2026-10-22 用户定）    members: [    { asin: 'percalepatch-stone-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-patchwork-stone-queen', color: 'Stone Grey Patchwork', size: '220 x 220 cm' },    ],  },  {    id: 'WASHSTRIPE',    optionName: 'Color',    // Washed Cotton 鼠尾草绿细条纹四件套（单色 × 仅 Queen，2026-10-22 用户定）    members: [    { asin: 'washstripe-sagegreen-queen', handle: 'makimoo-queen-bedding-set-4-piece-washed-cotton-stripe-sage-queen', color: 'Sage Green', size: '220 x 220 cm' },    ],  },  {    id: 'WASHJAC',    optionName: 'Color',    // Washed Cotton 奶白暗纹提花四件套（单色 × 仅 Queen，2026-10-22 用户定）    members: [    { asin: 'washjac-cream-queen', handle: 'makimoo-queen-bedding-set-4-piece-washed-cotton-jacquard-cream-queen', color: 'Cream White', size: '220 x 220 cm' },    ],  },  {    id: 'VELJAC',    optionName: 'Color',    // 提花绒（双面绒）象牙白四件套（单色 × 仅 Queen，2026-10-23 用户定）    members: [    { asin: 'veljac-ivory-queen', handle: 'makimoo-queen-bedding-set-4-piece-jacquard-velvet-ivory-queen', color: 'Ivory White', size: '220 x 220 cm' },    ],  },  {    id: 'PERCALECHECK',    optionName: 'Color',    // Cotton Percale 细格提花四件套（单色 × 仅 Queen，2026-10-25 用户定）    members: [    { asin: 'percalecheck-sand-queen', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-check-jacquard-sand-queen', color: 'Sand Beige', size: '220 x 220 cm' },    ],  },  {    id: 'VELSTRIPE',    optionName: 'Color',    // 条纹绒（双面同纹）四件套（单色 × 仅 Queen，2026-10-25 用户定）    members: [    { asin: 'velstripe-charcoal-queen', handle: 'makimoo-queen-bedding-set-4-piece-striped-velvet-charcoal-queen', color: 'Charcoal Stripe', size: '220 x 220 cm' },    { asin: 'velstripe-mocha-queen', handle: 'makimoo-queen-bedding-set-4-piece-striped-velvet-mocha-queen', color: 'Sage Stripe', size: '220 x 220 cm' },    { asin: 'velstripe-denim-queen', handle: 'makimoo-queen-bedding-set-4-piece-striped-velvet-denim-queen', color: 'Denim Stripe', size: '220 x 220 cm' },    ],  },  {
+    id: '1688-1071466105053',
+    optionName: 'Color',
+    // Cotton Feel（聚酯水洗棉手感）格纹四件套（3 色 × 仅 Queen，2026-10-26 用户定；同日由格纹旧 sku 迁移 1688 风格，Black 仍为组首）
+    members: [
+    { asin: '1688-1071466105053-c1', handle: 'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-black-queen-1688-1071466105053-c1', color: 'Black Gingham', size: '220 x 220 cm' },
+    { asin: '1688-1071466105053-c2', handle: 'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-blue-queen-1688-1071466105053-c2', color: 'Blue Gingham', size: '220 x 220 cm' },
+    { asin: '1688-1071466105053-c3', handle: 'makimoo-queen-bedding-set-4-piece-cotton-feel-gingham-grey-queen-1688-1071466105053-c3', color: 'Grey Gingham', size: '220 x 220 cm' },
+    ],
+  },
+  {
+    id: '1688-1025015219200',
+    optionName: 'Color',
+    // Cotton Blend（85%棉/15%聚酯）Muslin 双层纱四件套（3 色 × 仅 Queen，2026-10-26 用户定）
+    members: [
+    { asin: '1688-1025015219200-c1', handle: 'cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1688-1025015219200-c1', color: 'Grey', size: '220 x 220 cm' },
+    { asin: '1688-1025015219200-c2', handle: 'cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1688-1025015219200-c2', color: 'Navy', size: '220 x 220 cm' },
+    { asin: '1688-1025015219200-c3', handle: 'cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1688-1025015219200-c3', color: 'Brown', size: '220 x 220 cm' },
+    ],
+  },
+];
 
 const groupsByAsin = new Map<string, VariantGroup>();
 for (const g of VARIANT_GROUPS) {
@@ -1487,4 +1354,6 @@ export const CUSHION_LISTING_HIDDEN_ASINS = new Set([
   'b0c6h5xzmz', // Green Lattice ↔ b0c3b16l6r
   'b0c33lpy5g', // Beige Red Navy Blue Floral ↔ b0c39zmk7h
   'b0c33lfhn1', // Multicolor Watercolor Floral ↔ b0c3b265xj
+  'b0bcjrtf3x', // Green Palm Leaf (Set of 4) ↔ b0bcjv24jr（2026-10-23 用户定同主图配对）
+  'b0bcjw18sp', // Khaki Birds and Flowers (Set of 4) ↔ b0bcjqyyl1（同主图配对）
 ]);

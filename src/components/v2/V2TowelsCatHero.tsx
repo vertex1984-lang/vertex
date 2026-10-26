@@ -1,14 +1,16 @@
 import { resolveUrl } from '@/lib/paths';
+import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 
 /**
- * /products?cat=towels 类目页头（2026-10-18 用户定：按 bedding 类目页结构重建，见 V2BeddingCatHero）：
- * - 桌面端：通栏横版场景图（-mx-10 打满屏宽、-mt-4 紧贴顶部导航），标题 + 描述叠在图上左侧；
- *   图下方一排快链导航（类型组：Bath Towels / Beach Towels）
- * - 移动端：场景图（4:3 裁剪）上叠标题 + 描述，图下横滚标签快链
+ * /products?cat=towels 类目页头（2026-10-23 用户定：全站类目统一按 cushions 标准改造）：
+ * - 桌面端：hero 通栏 100%，图占满屏幕宽度；标题 + 描述叠在图片左上、白色字体，
+ *   图片左侧加窄渐变深色滤镜保证可读（2026-10-23 用户定，全类目统一按 bedding 标准）；
+ *   快链导航排在图正下方
+ * - 移动端：标题 + 描述在图上方（不叠图），场景图（4:3 裁剪）居中，图下横滚标签快链
  * - 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
  * towels 无二级页（与 cushions 不同），快链 = 页内锚点（#bath-towels / #beach-towels，分区 id 在 V2TowelsShop）
- * hero 图：桌面端 = pdp-lifestyle/towel-hooks-oatmeal.webp（上部挂勾+毛巾+墙面区横切，深色字叠左侧亮墙）；
- * 移动端 = pdp-lifestyle/towel-hooks-cream.webp。
+ * hero 图：桌面端 = pdp-lifestyle/towel-hooks-oatmeal.webp、移动端 = pdp-lifestyle/towel-hooks-cream.webp
+ * （沿用原图与裁剪位）。
  */
 
 export interface TowelsHeroLink {
@@ -56,16 +58,10 @@ export default function V2TowelsCatHero({
   );
   return (
     <>
-      {/* 移动端：场景图上叠标题/描述 + 图下横滚标签；-mt-3 紧贴顶部导航（同 bedding，2026-10-16 用户定） */}
+      {/* 移动端：文字在图上方（2026-10-23 起全类目标准，不再叠图）+ 图下横滚标签；-mt-3 紧贴顶部导航 */}
       <section className="lg:hidden mb-5" aria-label="Towels overview">
-        <div className="relative -mx-3 -mt-3">
-          <img
-            src={resolveUrl('/images/pdp-lifestyle/towel-hooks-cream.webp')}
-            alt="Cream cotton towels hanging on wall hooks in a sunlit bathroom"
-            className="w-full aspect-[4/3] object-cover object-[center_42%]"
-          />
-          {/* 图上部亮区叠深色字 + 顶部轻微渐变保底可读性（同 bedding 移动端） */}
-          <div className="absolute inset-x-0 top-0 px-4 pt-10 pb-4 bg-gradient-to-b from-[#f3ecdf]/70 via-[#f3ecdf]/20 to-transparent">
+        <div className="-mx-3 -mt-3">
+          <div className="px-4 pt-5 pb-4">
             <h1 className="text-3xl font-extrabold tracking-tight text-charcoal">
               Towels
               {countSup}
@@ -75,6 +71,14 @@ export default function V2TowelsCatHero({
                 {intro}
               </p>
             )}
+          </div>
+          {/* 图从顶部再裁掉 10% 高度（2026-10-23 用户定，全类目统一）：负 margin 上移 + overflow 裁顶 */}
+          <div className="overflow-hidden">
+            <img
+              src={resolveUrl('/images/pdp-lifestyle/towel-hooks-cream.webp')}
+              alt="Cream cotton towels hanging on wall hooks in a sunlit bathroom"
+              className="w-full aspect-[4/3] object-cover object-[center_42%] -mt-[7.5%]"
+            />
           </div>
         </div>
         {/* 快链：横滚标签行；Coming Soon 为虚线灰化不可点 */}
@@ -103,34 +107,49 @@ export default function V2TowelsCatHero({
         </nav>
       </section>
 
-      {/* 桌面端：通栏横版 hero + 图下导航排（同 bedding） */}
+      {/* 桌面端：图占满屏幕宽度，标题 + 副标题叠在图片左上、白色字体，
+          图片左侧加窄渐变深色滤镜保证可读（2026-10-23 用户定，全类目统一按 bedding 标准）；
+          快链在图正下方，左缘与标题对齐再内缩一点（ml-2） */}
       <section className="hidden lg:block mb-10" aria-label="Towels overview">
-        <div className="relative -mx-10 -mt-4">
-          <img
-            src={resolveUrl('/images/pdp-lifestyle/towel-hooks-oatmeal.webp')}
-            alt="Oatmeal cotton towels hanging on wall hooks in a sunlit bathroom"
-            className="w-full h-[400px] xl:h-[460px] object-cover object-[center_22%]"
-          />
-          {/* 图左上为浅色墙面：深色字直接叠 + 轻微渐变保底可读性（同 bedding 桌面端） */}
-          <div className="absolute inset-0 flex flex-col justify-start pt-10 xl:pt-14 px-10 bg-gradient-to-b from-[#f3ecdf]/60 via-[#f3ecdf]/15 to-transparent">
-            <h1 className="text-6xl font-extrabold tracking-tight text-charcoal">
-              Towels
-              {countSup}
-            </h1>
-            {intro && (
-              <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal-light">{intro}</p>
-            )}
+        <div className="-mx-10 -mt-4">
+          <div className="relative">
+            <img
+              src={resolveUrl('/images/pdp-lifestyle/towel-hooks-oatmeal.webp')}
+              alt="Oatmeal cotton towels hanging on wall hooks in a sunlit bathroom"
+              className="w-full h-[400px] xl:h-[460px] object-cover object-[center_22%]"
+            />
+            {/* 局部滤镜：只压暗左侧文字区域（比文字稍宽），向右渐隐透明，右侧图片保持原色 */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 18%, rgba(0,0,0,0.15) 28%, transparent 36%)',
+              }}
+              aria-hidden="true"
+            />
+            <div className="absolute inset-0 px-10 pt-10 xl:px-14 xl:pt-12">
+              <h1 className="text-6xl font-extrabold tracking-tight text-white">
+                Towels
+                <sup className="ml-2 align-super text-base font-semibold text-white/60">
+                  {styleCount}
+                </sup>
+              </h1>
+              {intro && (
+                <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/85">{intro}</p>
+              )}
+            </div>
           </div>
+          {/* 快链排在图正下方，左缘与标题对齐再内缩一点（ml-2）：类型组（页内锚点 → Bath Towels / Beach Towels 分区）；
+              屏宽不足不换行，单行可拖拽滚动，见 V2DragScrollRow */}
+          <V2DragScrollRow
+            className="mt-4 ml-2 px-10 xl:px-14 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
+            ariaLabel="Towel categories"
+          >
+            {typeLinks.map((l) => (
+              <HeroLink key={l.label} {...l} />
+            ))}
+          </V2DragScrollRow>
         </div>
-        {/* 导航排：类型组（页内锚点 → Bath Towels / Beach Towels 分区） */}
-        <nav
-          className="mt-5 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm"
-          aria-label="Towel categories"
-        >
-          {typeLinks.map((l) => (
-            <HeroLink key={l.label} {...l} />
-          ))}
-        </nav>
       </section>
     </>
   );

@@ -41,3 +41,4 @@ next-env.d.ts
 
 # opencode local config
 .opencode/
+scripts/.ark-api-key

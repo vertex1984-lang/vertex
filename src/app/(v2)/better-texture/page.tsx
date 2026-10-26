@@ -40,7 +40,7 @@ const TEXTURES: TextureItem[] = [
   {
     index: '02',
     texture: 'Washed Cotton-Like',
-    title: 'Duvet Cover Set, 3 Piece, Beige',
+    title: 'Duvet Cover Set, 4 Piece, Beige',
     copy: 'Garment-washed for a lived-in matte finish, the brushed surface feels like your favorite old tee from the very first night. No stiffness, no break-in period — just instant, quiet softness.',
     image: '/images/products/DUVSET-BEIGE-QUEEN/1.webp',
     alt: 'Beige washed cotton-like duvet cover set in soft daylight',
@@ -200,7 +200,7 @@ export default function BetterTexturePage() {
           <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-cream">Feel It for Yourself</h2>
           <p className="mt-2 text-sm lg:text-base text-cream/80">Textures this good deserve more than a screen.</p>
           <a
-            href={v2url('/products/')}
+            href={v2url('/categories/')}
             className="mt-6 inline-block px-8 py-3.5 rounded-full bg-cream text-brand text-xs lg:text-sm font-semibold tracking-wide uppercase transition hover:-translate-y-0.5 hover:shadow-lg"
           >
             Shop All Products
