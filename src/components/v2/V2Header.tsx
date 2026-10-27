@@ -233,17 +233,22 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
       {
         title: 'Bedding',
         href: '/products?cat=bedding',
+        // 2026-10-26 用户定：类型项增至 7 个，桌面端改双列网格（同 Fabric 列）防止超高
+        twoCol: true,
         links: [
-          // 2026-10-16 用户定：Bedding 子分类改为——类型页（4 件套=Sheets & Duvet Sets，URL slug 不变）
-          // + Duvet Covers + 两个 coming soon 占位；原 Bed Sets 合并入口移除（/bedding/bed-sets/ 合并页
-          // 已删除，该 URL 404）。2026-10-22 用户定：Duvet Cover Sets（3 件套）类型下线、入口移除，
-          // /bedding/3-piece-sets/ 不再生成、访问 404
-          { label: 'Sheets & Duvet Sets', desc: 'Duvet cover, fitted sheet & two pillowcases.', href: '/bedding/4-piece-sets/' },
+          // 2026-10-26 用户定：类型列按新矩阵重排——Duvet Cover Sets / Complete Bundles
+          // 为即将上线占位（comingSoon 置灰不可点，产品上线后改活链到对应类型页；
+          // Sheet Sets 2026-10-27 已上线）；4 件套曾短暂改名 Complete Sets，同日改回 Sheets & Duvet Sets
+          // URL slug /bedding/4-piece-sets/ 不变）；Pillow Covers 改名 Pillowcases & Shams
+          // （URL /bedding/pillow-covers/ 不变）。3 件套类型 2026-10-22 已下线（/bedding/3-piece-sets/ 404）
+          // 2026-10-27 用户定：Sheet Sets 上线（首款 SHEETSET-SAND-QUEEN，Cotton Percale 细格提花），翻转活链
+          { label: 'Sheet Sets', desc: 'Fitted sheet, flat sheet & two pillowcases.', href: '/bedding/sheet-sets/' },
+          { label: 'Duvet Cover Sets', desc: 'Duvet cover & two pillow shams.', href: '/products?cat=bedding', comingSoon: true },
+          { label: 'Sheets & Duvet Sets', desc: 'Duvet cover, fitted sheet & two pillowcases or shams.', href: '/bedding/4-piece-sets/' },
+          { label: 'Complete Bundles', desc: 'Duvet cover, fitted & flat sheets, two pillowcases & two shams.', href: '/products?cat=bedding', comingSoon: true },
           { label: 'Duvet Covers', desc: 'Covers only — mix & match.', href: '/bedding/duvet-covers/' },
-          // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类
           { label: 'Fitted Sheets', desc: 'Deep pocket, all-around elastic.', href: '/bedding/fitted-sheets/' },
-          // 2026-10-26 用户定：Pillow Covers 占位上线为正式分类
-          { label: 'Pillow Covers', desc: 'Two matching pillowcases.', href: '/bedding/pillow-covers/' },
+          { label: 'Pillowcases & Shams', desc: 'Two matching pillowcases.', href: '/bedding/pillow-covers/' },
         ],
       },
       // 面料列标题不可点（面料没有汇总页，每个面料有独立 PLP）

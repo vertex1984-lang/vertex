@@ -455,6 +455,15 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-queen-bedding-set-4-piece-linen-feel-print-blue-queen-mk-print4-blue-queen',  // 2026-10-26：Linen Feel 四件套单品（Blue Print 蓝兔印花，仅 Queen，无变体）
   'makimoo-queen-bedding-set-4-piece-linen-feel-floral-grey-queen-mk-floral4-grey-queen',  // 2026-10-26：Linen Feel 四件套单品（Grey Floral 灰花卉，仅 Queen，无变体）
   'makimoo-queen-bedding-set-4-piece-linen-feel-butterfly-mocha-queen-mk-btfly4-mocha-queen',  // 2026-10-26：Linen Feel 蝴蝶印花四件套单品（Mocha Butterfly，仅 Queen，无变体）
+  'makimoo-queen-sheet-set-4-piece-cotton-percale-check-jacquard-sand-queen',  // 2026-10-27：Cotton Percale 细格提花 Sheet Set（床笠+平床单+2枕套，Sand，仅 Queen，无变体；sheetset 类型首款）
+  'makimoo-queen-sheet-set-4-piece-cotton-percale-jacquard-stripe-petal-queen',  // 2026-10-27：Cotton Percale 细条纹提花 Sheet Set（Blush Pink，仅 Queen，无变体；与 PERCALESTRIPE-PETAL-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-washed-cotton-stripe-sage-queen',  // 2026-10-27：水洗棉细条纹 Sheet Set（Sage Green，仅 Queen，无变体；与 WASHSTRIPE-SAGEGREEN-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-cotton-feel-gingham-grey-queen',  // 2026-10-27：Cotton Feel 灰白格纹 Sheet Set（Grey Gingham，仅 Queen，无变体；与 1071466105053-C3 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-linen-feel-heart-tan-queen',  // 2026-10-27：Linen Feel 浅棕爱心印花 Sheet Set（Tan Heart，仅 Queen，无变体；与 MK-HEART4-TAN-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-embossed-velvet-pom-pom-vine-queen',  // 2026-10-27：藤蔓绒球 Sheet Set（Olive Vine，仅 Queen，无变体；与 POMPOM4-VINE-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-jacquard-velvet-ivory-queen',  // 2026-10-27：象牙白几何提花绒 Sheet Set（Ivory White，仅 Queen，无变体；与 VELJAC-IVORY-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-striped-velvet-mocha-queen',  // 2026-10-27：摩卡棕条纹绒 Sheet Set（Sage Stripe，仅 Queen，无变体；与 VELSTRIPE-MOCHA-QUEEN 四件套相互独立）
+  'makimoo-queen-sheet-set-4-piece-cotton-feel-polka-blue-queen',  // 2026-10-27：Cotton Feel 蓝白波点 Sheet Set（Blue Polka，仅 Queen，无变体；与 1071466105053-C10 四件套相互独立）
   'cotton-blend-muslin-double-gauze-4-piece-bedding-set-grey-queen-1025015219200-c1',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Grey，仅 Queen）
   'cotton-blend-muslin-double-gauze-4-piece-bedding-set-navy-queen-1025015219200-c2',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Navy，仅 Queen）
   'cotton-blend-muslin-double-gauze-4-piece-bedding-set-brown-queen-1025015219200-c3',  // 2026-10-26：Cotton Blend Muslin 双层纱四件套（Brown，仅 Queen）

@@ -16,7 +16,8 @@ import { v2url } from '@/lib/v2paths';
  * - 类型页 /bedding/4-piece-sets/ 等：**无 banner**（2026-09 用户定）；页头按 bedding 类目页标准
  *   （2026-10-16 用户定：无图 hero 只保留标题 + 副标题，大标题带上标家族数）
  * 两者共用：面料互导模块；卡片 badge（2026-09 用户定）：面料页不叠标签（布料=页面标题、类型=分区标题都已表达），类型页叠布料标签。
- * 只给有产品的面料/类型生成静态页；Sheets / Pillow Covers 无产品不生成（导航置灰 Coming soon）。
+ * 只给有产品的面料/类型生成静态页；Sheet Sets / Duvet Cover Sets / Complete Bundles
+ * 暂无产品不生成（2026-10-26 预留，导航置灰 Coming soon；slug 已在 SET_KIND_SLUGS 注册）。
  * 原 Bed Sets 合并页 /bedding/bed-sets/ 已删除（2026-10-16 用户定：导航改五个独立子分类入口后合并页无存在必要，该 URL 404）。
  */
 

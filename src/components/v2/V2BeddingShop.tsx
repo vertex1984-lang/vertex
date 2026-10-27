@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import { MakimooProduct } from '@/data/products';
-import { buildSetFamilies, classifySet, clusterSetFamilies, setFamilyRoot, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
+import { buildSetFamilies, classifySet, clusterSetFamilies, orderSheetsetFamilies, setFamilyRoot, SET_KIND_PAGE_COPY, SetFamily, SetKind } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import GroupProductCard from '@/components/v2/GroupProductCard';
 import { buildGroupCards, collapseProductsToGroupCards } from '@/lib/group-cards';
@@ -17,7 +17,7 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
  *   承担导航），本组件的 Type/Fabric 筛选条（含移动端 Filter 弹层）整体移除；
  *   旧 ?type=/?sub= 深链失效后降级为完整分区视图
  * - 视图固定为【按类型分区】展示全部家族（2026-10-16 用户定：取代原按材质分区；
- *   分区与 hero 快链同口径）：Sheets & Duvet Sets（4 件套，2026-10-22 起含原三件套家族）
+ *   分区与 hero 快链同口径）：Sheets & Duvet Sets（4 件套，2026-10-26 曾短暂改名 Complete Sets，同日改回；2026-10-22 起含原三件套家族）
  *   → Duvet Covers →（Sheets / Pillow Covers 无产品不出分区；Comforter 有产品时排最后）；
  *   分区标题 + 套装内容副标题（SET_KIND_PAGE_COPY）+ BeddingSetCard 网格；排序固定 Featured/权重序
  * - 卡片按色系家族聚合（23 款而非 92 SKU，减少选择瘫痪）
@@ -27,7 +27,9 @@ import { BEDDING_MATERIAL_ORDER } from '@/data/subcategories';
 
 /** 分区顺序（2026-10-16 用户定，与 hero 快链一致；2026-10-22 three 下线并入 four；
  *  2026-10-25 新增 sheet（Fitted Sheets）分区，排在 duvet 之后）；comforter 不在类型快链里，有产品时兜底排最后 */
-const SECTION_KIND_ORDER: SetKind[] = ['four', 'duvet', 'sheet', 'pillowcase', 'comforter'];
+// 2026-10-26 用户定：新类型 sheetset/duvetset/bundle 加入分区顺序（矩阵位次），无产品时自动跳过（下方 filter list.length>0），有产品即自动出分区
+// 2026-10-27 用户定：sheetset 分区移到 four（Sheets & Duvet Sets）正下方、duvet（Duvet Covers）上方，其余分区相对顺序不变
+const SECTION_KIND_ORDER: SetKind[] = ['duvetset', 'four', 'sheetset', 'bundle', 'duvet', 'sheet', 'pillowcase', 'comforter'];
 
 /**
  * four 分区族块位次对调（2026-10-24 用户定）：DUVSET（灰）换到第 2 位、WASHSTRIPE（sage）第 3 位、
@@ -120,13 +122,16 @@ export default function V2BeddingShop({ products }: { products: MakimooProduct[]
           kind,
           copy: SET_KIND_PAGE_COPY[kind],
           // 2026-10-24 用户定：four 分区 DUVSET/WASHSTRIPE/WASHJAC 与第 2/3/4 位族块对调；
-          // 2026-10-25 用户定：duvet 分区 haze ↔ pompom 卡位对调（同 duvet-covers 面料页）
+          // 2026-10-25 用户定：duvet 分区 haze ↔ pompom 卡位对调（同 duvet-covers 面料页）；
+          // 2026-10-27 用户定：sheetset 分区按 SHEETSET_PLP_ORDER 显式排位（凌驾面料位次排序，仅 sheetset）
           list:
-            kind === 'four'
-              ? swapFamilyBlocks(sorted, FOUR_SECTION_SWAPS)
-              : kind === 'duvet'
-                ? swapFamiliesByAsin(sorted, DUVET_SECTION_SWAPS)
-                : sorted,
+            kind === 'sheetset'
+              ? orderSheetsetFamilies(sorted)
+              : kind === 'four'
+                ? swapFamilyBlocks(sorted, FOUR_SECTION_SWAPS)
+                : kind === 'duvet'
+                  ? swapFamiliesByAsin(sorted, DUVET_SECTION_SWAPS)
+                  : sorted,
         };
       }).filter((s) => s.list.length > 0),
     [families, sortFamilies]
