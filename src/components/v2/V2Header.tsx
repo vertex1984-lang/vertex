@@ -411,11 +411,12 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 透明头部叠在大图上与面板不协调）
   const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen;
 
-  // 透明态（首屏大图）：移动端 cream 文字；桌面端 2026-10-27 用户定深炭色（hero 去滤镜后窗景亮，cream 看不清）
-  const textColor = solid ? 'text-charcoal' : 'text-cream lg:text-charcoal';
+  // 透明态（首屏大图）用 cream 文字，实底后用 charcoal（2026-10-27 桌面深炭色方案随 hero 恢复滤镜一并回退）
+  // 透明态（首屏大图）用深炭色文字（2026-10-27 用户定：全端去滤镜后 hero 背景明亮，cream 看不清），实底后同为 charcoal
+  const textColor = 'text-charcoal';
   const iconHover = solid
     ? 'hover:bg-brand/10 hover:text-brand'
-    : 'hover:bg-cream/15 hover:text-cream lg:hover:bg-charcoal/10 lg:hover:text-charcoal';
+    : 'hover:bg-charcoal/10 hover:text-charcoal';
 
   return (
     <>
@@ -478,7 +479,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             <img
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
-              className={`h-10 lg:h-14 w-auto object-contain transition-all duration-300 ${solid ? '' : '[filter:brightness(0)_invert(1)]'}`}
+              className={`h-10 lg:h-14 w-auto object-contain transition-all duration-300 ${solid ? '' : 'lg:[filter:brightness(0)_invert(1)]'}`}
             />
           </a>
 
