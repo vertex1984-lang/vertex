@@ -61,11 +61,8 @@ export default function V2ProductReviews({ asin, productTitle }: { asin: string;
           </div>
         </div>
 
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand mb-2 text-center">Reviews</p>
-        <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-8 text-center">
-          What Buyers Say
-        </h2>
-        <V2ReviewsList reviews={stats.reviews} />
+        {/* 标题 + 排序切换器（2026-10-27 W9 用户定）迁入 V2ReviewsList（client，与切换器共享状态） */}
+        <V2ReviewsList reviews={stats.reviews} eyebrow="Reviews" title="What Buyers Say" />
       </div>
     </section>
   );
