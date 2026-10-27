@@ -13,7 +13,17 @@ import { getVariantGroupOf } from '@/data/variant-groups';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import type { MakimooProduct } from '@/data/products';
 
-export type SetKind = 'four' | 'comforter' | 'duvet' | 'sheet' | 'pillowcase';
+// 2026-10-26 用户定：新增 sheetset（Sheet Set）/ duvetset（Duvet Cover Set）/ bundle（Complete
+// Bedroom Bundle）三个预留类型——暂无产品，分类前缀/文案/路由均已就位，接入对应 ASIN 前缀即上线
+export type SetKind =
+  | 'four'
+  | 'comforter'
+  | 'duvet'
+  | 'sheet'
+  | 'pillowcase'
+  | 'sheetset'
+  | 'duvetset'
+  | 'bundle';
 
 // 被套单品家族（LINEN3-*/DUVSET-*-DUVET 独立被套单件归 duvet，见 classifySet）。
 // ice silk 缎面家族（2026-10-15 用户确认为被套+2枕套；2026-10-22 起改四件套口径归 four），
@@ -65,6 +75,12 @@ const COLOR_LABELS: Record<string, string> = {
   STONE: 'Stone Grey Patchwork',
   // 2026-10-22：Washed Cotton 鼠尾草绿细条纹四件套单色（SAGE 被 bedset4-sage/linen3-sage 占用，改用 SAGEGREEN）
   SAGEGREEN: 'Sage Green',
+  // 2026-10-27：Cotton Feel 灰白格纹 Sheet Set 单色（GREY 被 percalejac 占用、STONE 被拼接提花占用，改用 GINGHAM；色名与 1071466105053-C3 四件套一致）
+  GINGHAM: 'Grey Gingham',
+  // 2026-10-27：Linen Feel 浅棕爱心印花 Sheet Set 单色（HEART/TAN 裸码未注册；色名与 MK-HEART4-TAN-QUEEN 四件套一致）
+  HEART: 'Tan Heart',
+  // 2026-10-27：Cotton Feel 蓝白波点 Sheet Set 单色（POLKA/DOT/BLUE 裸码均未注册；色名与 1071466105053-C10 四件套一致）
+  POLKA: 'Blue Polka',
   // 2026-10-23：提花绒（双面绒）四件套单色（IVORY 未被占用）
   IVORY: 'Ivory White',
   // 2026-10-25：Cotton Percale 细格提花四件套单色（SAND 未被占用）
@@ -108,7 +124,7 @@ export interface SetFamily {
  *  - 四件套（four）     → "Washed Cotton Set"（2026-10-22 起原三件套家族也归此类）
  *  - comforter          → "{布料} Set"
  *  - 独立被套（duvet）  → "100% Linen Duvet Cover"
- *  - Sheets / Pillow Covers（未上线）上线后同规则
+ *  - sheetset / duvetset / bundle → "{布料} Sheet Set / Duvet Cover Set / Complete Bundle"（2026-10-27 定）
  *  布料展示名先经 fabricDisplayName（Washed Cotton-Like → Washed Cotton）；
  *  材质取不到返回 ''（卡片沿用原标题） */
 export function beddingCardTitle(kind: SetKind, materials: string[]): string {
@@ -118,6 +134,10 @@ export function beddingCardTitle(kind: SetKind, materials: string[]): string {
   if (kind === 'duvet') return `${fabric} Duvet Cover`;
   if (kind === 'sheet') return `${fabric} Fitted Sheet`;
   if (kind === 'pillowcase') return `${fabric} Pillowcases`;
+  // 2026-10-27 用户定：sheetset 首款入库（SHEETSET-SAND-QUEEN），卡名不再走兜底
+  if (kind === 'sheetset') return `${fabric} Sheet Set`;
+  if (kind === 'duvetset') return `${fabric} Duvet Cover Set`;
+  if (kind === 'bundle') return `${fabric} Complete Bundle`;
   return `${fabric} Set`;
 }
 
@@ -129,7 +149,7 @@ export function classifySet(asin: string): SetKind | null {
   // 独立床笠单件（…-SHEET，2026-10-25 新品 SATEEN4-SAGE-SHEET）归 Fitted Sheets，
   // 必须先于 sateen4-/percale- 等前缀规则判断（否则会被吞进 four）
   if (/-sheet$/.test(a)) return 'sheet';
-  // 独立枕套对装（…-PC[-SIZE]，2026-10-26 新品 PERCALEJAC-IVORY-PC-QUEEN）归 Pillow Covers，
+  // 独立枕套对装（…-PC[-SIZE]，2026-10-26 新品 PERCALEJAC-IVORY-PC-QUEEN）归 Pillowcases & Shams，
   // 必须先于 percalejac- 等前缀规则判断（否则会被吞进 four）
   if (/(^|-)pc(-|$)/.test(a)) return 'pillowcase';
   if (a.startsWith('bedset4-')) return 'four';
@@ -162,6 +182,10 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('mk-floral4-')) return 'four';
   // 2026-10-26 用户定：Linen Feel 蝴蝶印花四件套单品（单色 × 仅 Queen，无变体组），归 four
   if (a.startsWith('mk-btfly4-')) return 'four';
+  // 2026-10-26 用户定：三个预留类型前缀（暂无产品；与 duvset- 等既有前缀互不前缀冲突）
+  if (a.startsWith('sheetset-')) return 'sheetset';
+  if (a.startsWith('duvetset-')) return 'duvetset';
+  if (a.startsWith('bundle-')) return 'bundle';
   // 2026-10-22 用户定：原三件套家族（duvset/linen3/percale/1688 缎面/916370884976）全站改四件套
   // 口径（被套+床笠+2枕套，标题/描述已同步加 fitted sheet），统一归 four；'three' 类型整体下线。
   // 916370884976 供应商标题误标 "Comforter Set"——实物带拉链封口，是被套+2枕套
@@ -337,15 +361,55 @@ export function clusterSetFamilies(families: SetFamily[]): SetFamily[] {
   return out;
 }
 
+/**
+ * 2026-10-27 用户定：Sheet Sets 卡序两块整体互换（原 5-8 位 ↔ 原 1-4 位，块内相对顺序不变，POLKA 第 9 位不动）——
+ *  目标序 VINE → IVORY → MOCHA → HEART → SAND → PETAL → SAGEGREEN → GINGHAM → POLKA。
+ *  权重 1.5/1.5/0 跨类型共用，不动；/products?cat=bedding 的 sortFamilies 有面料位次排序会打散该序，
+ *  故显式指定 sheetset 展示序。仅重排 kind==='sheetset' 的家族（在原槽位内置换），其余类型与未收录款保持原相对顺序。
+ *  作用于 /bedding/sheet-sets/（V2FabricShop flat 模式）与 /products?cat=bedding Sheet Sets 分区（V2BeddingShop）。
+ */
+export const SHEETSET_PLP_ORDER = [
+  'SHEETSET-VINE-QUEEN',
+  'SHEETSET-IVORY-QUEEN',
+  'SHEETSET-MOCHA-QUEEN',
+  'SHEETSET-HEART-QUEEN',
+  'SHEETSET-SAND-QUEEN',
+  'SHEETSET-PETAL-QUEEN',
+  'SHEETSET-SAGEGREEN-QUEEN',
+  'SHEETSET-GINGHAM-QUEEN',
+  'SHEETSET-POLKA-QUEEN',
+];
+
+export function orderSheetsetFamilies(families: SetFamily[]): SetFamily[] {
+  const rank = new Map(SHEETSET_PLP_ORDER.map((a, i) => [a, i]));
+  const sheetsets = families
+    .map((f, i) => ({ f, i }))
+    .filter((x) => x.f.kind === 'sheetset')
+    // 稳定排序：收录款按 SHEETSET_PLP_ORDER 位次，未收录款排其后保持原相对顺序
+    .sort(
+      (a, b) =>
+        (rank.get(a.f.rep.asin) ?? SHEETSET_PLP_ORDER.length + a.i) -
+        (rank.get(b.f.rep.asin) ?? SHEETSET_PLP_ORDER.length + b.i)
+    )
+    .map((x) => x.f);
+  return families.map((f) => (f.kind === 'sheetset' ? sheetsets.shift()! : f));
+}
+
 export const SET_KIND_LABEL: Record<SetKind, string> = {
-  // 2026-10-16 用户定：对外类目名不再用 x-Piece 叫法——four = "Sheets & Duvet Set(s)"（4 件套）；
-  // 2026-10-22 用户定：three（Duvet Cover Sets，3 件套）类型整体下线，原家族并入 four
+  // 2026-10-16 用户定：对外类目名不再用 x-Piece 叫法；2026-10-22 用户定：three（3 件套）类型
+  // 整体下线、原家族并入 four；2026-10-26 用户定：four 曾短暂改名 Complete Set(s)，同日用户定改回
+  // "Sheets & Duvet Set(s)"（组件口径同日改为 被套+床笠+枕套/sham×2，URL slug /bedding/4-piece-sets/ 不变）
   four: 'Sheets & Duvet Set',
   comforter: 'Comforter Set',
   duvet: 'Duvet Cover',
   sheet: 'Fitted Sheet',
-  // 2026-10-26 用户定：Pillow Covers 分类上线（枕套对装）
+  // 2026-10-26 用户定：Pillow Covers 分类上线（枕套对装），同日页面/导航层改名 Pillowcases & Shams；
+  // 本 LABEL 保持 'Pillowcases'（卡面/PDP 标题用），URL /bedding/pillow-covers/ 不变
   pillowcase: 'Pillowcases',
+  // 2026-10-26 用户定：三个预留类型（暂无产品）
+  sheetset: 'Sheet Set',
+  duvetset: 'Duvet Cover Set',
+  bundle: 'Complete Bundle',
 };
 
 /** 类型页标题 + 一句话说明（/bedding/ 落地页分区与 /bedding/[slug]/ 类型 PLP 共用）；
@@ -353,7 +417,7 @@ export const SET_KIND_LABEL: Record<SetKind, string> = {
 export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: string }> = {
   four: {
     heading: 'Sheets & Duvet Sets',
-    blurb: 'Duvet cover, fitted sheet & two pillowcases',
+    blurb: 'Duvet cover, fitted sheet & two pillowcases or shams',
   },
   comforter: {
     heading: 'Comforter Sets',
@@ -368,8 +432,23 @@ export const SET_KIND_PAGE_COPY: Record<SetKind, { heading: string; blurb: strin
     blurb: 'A standalone fitted sheet with deep pocket & all-around elastic',
   },
   pillowcase: {
-    heading: 'Pillow Covers',
+    // 2026-10-26 用户定：Pillow Covers 改名 Pillowcases & Shams（blurb 与 URL 不变）
+    heading: 'Pillowcases & Shams',
     blurb: 'Two matching pillowcases',
+  },
+  // 2026-10-26 用户定：三个预留类型页文案（暂无产品——/bedding/[slug]/ 只对
+  // 有产品的类型生成静态页，三个 slug 访问 404，接入产品即自动出页）
+  sheetset: {
+    heading: 'Sheet Sets',
+    blurb: 'Fitted sheet, flat sheet & two pillowcases',
+  },
+  duvetset: {
+    heading: 'Duvet Cover Sets',
+    blurb: 'Duvet cover & two pillow shams',
+  },
+  bundle: {
+    heading: 'Complete Bundles',
+    blurb: 'Duvet cover, fitted & flat sheets, two pillowcases & two shams',
   },
 };
 
@@ -380,6 +459,10 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
   'duvet-covers': 'duvet',
   'fitted-sheets': 'sheet',
   'pillow-covers': 'pillowcase',
+  // 2026-10-26 用户定：三个预留类型 slug（无产品时不生成页面，见 [slug]/page.tsx generateStaticParams）
+  'sheet-sets': 'sheetset',
+  'duvet-cover-sets': 'duvetset',
+  'complete-bundles': 'bundle',
 };
 
 

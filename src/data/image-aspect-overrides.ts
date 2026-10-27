@@ -163,6 +163,24 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   // 2026-10-25：条纹绒四件套扩充 2 色（3:4 PDP 主图）
   'velstripe-denim-queen': '3/4',
   'velstripe-charcoal-queen': '3/4',
+  // 2026-10-27：Cotton Percale 细格提花 Sheet Set（sheetset 类型首款，仅 Queen，3:4 PDP 主图）
+  'sheetset-sand-queen': '3/4',
+  // 2026-10-27：Cotton Percale 细条纹提花 Sheet Set（Blush Pink，仅 Queen，3:4 PDP 主图）
+  'sheetset-petal-queen': '3/4',
+  // 2026-10-27：水洗棉细条纹 Sheet Set（Sage Green，仅 Queen，3:4 PDP 主图）
+  'sheetset-sagegreen-queen': '3/4',
+  // 2026-10-27：Cotton Feel 灰白格纹 Sheet Set（Grey Gingham，仅 Queen，3:4 PDP 主图）
+  'sheetset-gingham-queen': '3/4',
+  // 2026-10-27：Linen Feel 浅棕爱心印花 Sheet Set（Tan Heart，仅 Queen，3:4 PDP 主图）
+  'sheetset-heart-queen': '3/4',
+  // 2026-10-27：藤蔓绒球 Sheet Set（Olive Vine，仅 Queen，3:4 PDP 主图）
+  'sheetset-vine-queen': '3/4',
+  // 2026-10-27：象牙白几何提花绒 Sheet Set（Ivory White，仅 Queen，3:4 PDP 主图）
+  'sheetset-ivory-queen': '3/4',
+  // 2026-10-27：摩卡棕条纹绒 Sheet Set（Sage Stripe，仅 Queen，3:4 PDP 主图）
+  'sheetset-mocha-queen': '3/4',
+  // 2026-10-27：Cotton Feel 蓝白波点 Sheet Set（Blue Polka，仅 Queen，3:4 PDP 主图）
+  'sheetset-polka-queen': '3/4',
 };
 
 /**

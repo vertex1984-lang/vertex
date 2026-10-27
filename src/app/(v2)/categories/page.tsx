@@ -52,8 +52,11 @@ const VIEW_MORE_CLASSES = (total: number) =>
 
 type FamilyList = ReturnType<typeof buildBlanketFamilies>;
 
-/** bedding 一级页（V2BeddingShop）的分区顺序——与 SECTION_KIND_ORDER 保持一致 */
-const SET_SECTION_ORDER: SetKind[] = ['four', 'duvet', 'comforter'];
+/** bedding 一级页（V2BeddingShop）的分区顺序。
+ *  注意：2026-10-27 起 /products?cat=bedding 的 SECTION_KIND_ORDER 已把 sheetset 移到 four 正下方（用户定，仅该页）；
+ *  本数组维持 sheetset 首位不动（/categories bedding 块顺序用户未要求同步），两边不再一致，如需对齐再手动同步 */
+// 2026-10-26 用户定：新类型加入（矩阵位次），无产品自动跳过（flatMap 空数组不产出）
+const SET_SECTION_ORDER: SetKind[] = ['sheetset', 'duvetset', 'four', 'bundle', 'duvet', 'comforter'];
 
 /**
  * 复刻 V2BeddingShop 的家族排序管道（面料位次 → Queen 代表权重 → 同族聚拢），

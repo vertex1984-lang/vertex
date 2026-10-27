@@ -19252,6 +19252,366 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
 },
 {
+    "id": "makimoo-SHEETSET-SAND-QUEEN",
+    "asin": "SHEETSET-SAND-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Cotton Percale Check Jacquard Fitted Sheet Flat Sheet 2 Pillowcases (Sand)",
+    "handle": "makimoo-queen-sheet-set-4-piece-cotton-percale-check-jacquard-sand-queen",
+    "description": "100% Cotton Percale with Yarn-Dyed Check Jacquard: Woven in a crisp, tightly woven cotton percale, this sheet set pairs smooth solid sheets with pillowcases in a fine yarn-dyed check jacquard with a subtle woven texture. Reversible AB pillowcase design—the A side shows the woven check jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Sand Colorway: Finished in a warm, understated sand beige—natural and calm, it lends the bedroom a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Check Jacquard: Woven in a crisp, tightly woven cotton percale, this sheet set pairs smooth solid sheets with pillowcases in a fine yarn-dyed check jacquard with a subtle woven texture. Reversible AB pillowcase design—the A side shows the woven check jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Sand Colorway: Finished in a warm, understated sand beige—natural and calm, it lends the bedroom a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-SAND-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Cotton Percale Check Jacquard Fitted Sheet Flat Sheet 2 Pillowcases (Sand)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-SAND-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-PETAL-QUEEN",
+    "asin": "SHEETSET-PETAL-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Cotton Percale Jacquard Fine Stripe Fitted Sheet Flat Sheet 2 Pillowcases (Blush Pink)",
+    "handle": "makimoo-queen-sheet-set-4-piece-cotton-percale-jacquard-stripe-petal-queen",
+    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, this sheet set pairs smooth solid sheets with pillowcases in a yarn-dyed jacquard fine stripe with a subtle woven texture. Reversible AB pillowcase design—the A side shows the fine-stripe jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Blush Pink Colorway: Finished in a soft blush pink—low-saturation and gently romantic, it brings a calm, healing warmth to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, this sheet set pairs smooth solid sheets with pillowcases in a yarn-dyed jacquard fine stripe with a subtle woven texture. Reversible AB pillowcase design—the A side shows the fine-stripe jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Blush Pink Colorway: Finished in a soft blush pink—low-saturation and gently romantic, it brings a calm, healing warmth to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-PETAL-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Cotton Percale Jacquard Fine Stripe Fitted Sheet Flat Sheet 2 Pillowcases (Blush Pink)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-PETAL-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-SAGEGREEN-QUEEN",
+    "asin": "SHEETSET-SAGEGREEN-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Soft Washed Cotton Stripe Fitted Sheet Flat Sheet 2 Pillowcases (Sage Green)",
+    "handle": "makimoo-queen-sheet-set-4-piece-washed-cotton-stripe-sage-queen",
+    "description": "Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, this sheet set pairs smooth solid sheets with pillowcases in a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB pillowcase design—the A side shows the fine stripe, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash. Soothing Sage Green Colorway: Finished in a muted sage green—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Washed Cotton with Yarn-Dyed Stripe: Woven from garment-washed cotton-feel fabric with a broken-in softness from the very first night, this sheet set pairs smooth solid sheets with pillowcases in a yarn-dyed fine stripe woven into the cloth—not printed—so the color stays true wash after wash. Reversible AB pillowcase design—the A side shows the fine stripe, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash.</p><p>Soothing Sage Green Colorway: Finished in a muted sage green—low-saturation and naturally calming, it brings a quiet, botanical freshness to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-SAGEGREEN-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Soft Washed Cotton Stripe Fitted Sheet Flat Sheet 2 Pillowcases (Sage Green)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-SAGEGREEN-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-GINGHAM-QUEEN",
+    "asin": "SHEETSET-GINGHAM-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Cotton Feel Gingham Fitted Sheet Flat Sheet 2 Pillowcases (Grey Gingham)",
+    "handle": "makimoo-queen-sheet-set-4-piece-cotton-feel-gingham-grey-queen",
+    "description": "Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, this sheet set pairs smooth solid light grey sheets with pillowcases in a timeless grey and white gingham check. Reversible AB pillowcase design—the A side shows the gingham check, while the B side is a clean solid light grey. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash. Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Classic Gingham: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, this sheet set pairs smooth solid light grey sheets with pillowcases in a timeless grey and white gingham check. Reversible AB pillowcase design—the A side shows the gingham check, while the B side is a clean solid light grey.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash.</p><p>Soft Grey Gingham Colorway: A gentle grey and white check—low-saturation and quietly warm, it brings a calm, effortless order to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-GINGHAM-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Cotton Feel Gingham Fitted Sheet Flat Sheet 2 Pillowcases (Grey Gingham)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-GINGHAM-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-HEART-QUEEN",
+    "asin": "SHEETSET-HEART-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Linen Feel Heart Print Fitted Sheet Flat Sheet 2 Pillowcases (Tan Heart)",
+    "handle": "makimoo-queen-sheet-set-4-piece-linen-feel-heart-tan-queen",
+    "description": "Linen Feel Polyester with Sweet Heart Print: Woven from softly textured polyester with the relaxed, breathable look of linen, this sheet set pairs smooth solid tan sheets with pillowcases featuring a scattering of dark brown hearts on a warm tan ground. Reversible AB pillowcase design—the A side shows the heart print, while the B side is a clean solid ivory. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash. Warm Tan Heart Colorway: Deep brown hearts scattered over a warm tan base—sweet without being saccharine, it brings a cozy, cottage-soft warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.",
+    "descriptionHtml": "<p>Linen Feel Polyester with Sweet Heart Print: Woven from softly textured polyester with the relaxed, breathable look of linen, this sheet set pairs smooth solid tan sheets with pillowcases featuring a scattering of dark brown hearts on a warm tan ground. Reversible AB pillowcase design—the A side shows the heart print, while the B side is a clean solid ivory.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash.</p><p>Warm Tan Heart Colorway: Deep brown hearts scattered over a warm tan base—sweet without being saccharine, it brings a cozy, cottage-soft warmth to the bedroom, pairing easily with natural wood, rattan, or neutral décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-HEART-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Linen Feel Heart Print Fitted Sheet Flat Sheet 2 Pillowcases (Tan Heart)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-HEART-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-VINE-QUEEN",
+    "asin": "SHEETSET-VINE-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Embossed Velvet Fitted Sheet Flat Sheet 2 Pillowcases with Pom Pom Trim (Olive Vine)",
+    "handle": "makimoo-queen-sheet-set-4-piece-embossed-velvet-pom-pom-vine-queen",
+    "description": "Sculpted Embossed Velvet Pillowcases with Pom-Pom Trim: The pillowcases are woven in a soft carved-plush fabric with a raised, sculpted vine pattern—velvety matte to the touch and gently plush—finished with a playful brown pom-pom edging along the borders for a soft, handcrafted look. Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid sage-green milk-velvet—dense, smooth and warm against the skin, a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush texture wash after wash. Soft Olive Vine Palette: Creamy vine-jacquard pillowcases with warm brown pom-pom trim over sage-green velvet sheets—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Sculpted Embossed Velvet Pillowcases with Pom-Pom Trim: The pillowcases are woven in a soft carved-plush fabric with a raised, sculpted vine pattern—velvety matte to the touch and gently plush—finished with a playful brown pom-pom edging along the borders for a soft, handcrafted look.</p><p>Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid sage-green milk-velvet—dense, smooth and warm against the skin, a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush texture wash after wash.</p><p>Soft Olive Vine Palette: Creamy vine-jacquard pillowcases with warm brown pom-pom trim over sage-green velvet sheets—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-VINE-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Embossed Velvet Fitted Sheet Flat Sheet 2 Pillowcases with Pom Pom Trim (Olive Vine)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-VINE-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-IVORY-QUEEN",
+    "asin": "SHEETSET-IVORY-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Double-Sided Jacquard Velvet Fitted Sheet Flat Sheet 2 Pillowcases (Ivory White)",
+    "handle": "makimoo-queen-sheet-set-4-piece-jacquard-velvet-ivory-queen",
+    "description": "Double-Sided Jacquard Velvet Pillowcases: The pillowcases are soft, plush velvet carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief—an AB reversible design with a smooth, solid velvet reverse in a warm camel tone. Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid ivory milk-velvet—dense, velvety soft against the skin and holding warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush pile and carved texture wash after wash. Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse on the pillowcases—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Double-Sided Jacquard Velvet Pillowcases: The pillowcases are soft, plush velvet carved with a three-dimensional diamond-and-braid jacquard that catches the light with a gentle sculpted relief—an AB reversible design with a smooth, solid velvet reverse in a warm camel tone.</p><p>Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid ivory milk-velvet—dense, velvety soft against the skin and holding warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush pile and carved texture wash after wash.</p><p>Soothing Ivory White Colorway: Finished in a soft Ivory White with a warm camel reverse on the pillowcases—low-saturation and quietly warm, it brings a calm, cozy elegance to the bedroom, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-IVORY-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Double-Sided Jacquard Velvet Fitted Sheet Flat Sheet 2 Pillowcases (Ivory White)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-IVORY-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-MOCHA-QUEEN",
+    "asin": "SHEETSET-MOCHA-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Striped Velvet Fitted Sheet Flat Sheet 2 Pillowcases (Sage Stripe)",
+    "handle": "makimoo-queen-sheet-set-4-piece-striped-velvet-mocha-queen",
+    "description": "Soft Plush Velvet, Same Stripe on Both Sides: The pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical sage-and-brown stripe, so every fold and turn-back shows the same warm pattern, inside and out. Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid mocha-brown milk-velvet—dense, velvety soft against the skin and holding warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush pile and stripe texture wash after wash. Soothing Sage Stripe Colorway: Sage-green pillowcases patterned with fine warm-brown twin stripes over solid mocha velvet sheets—calm, earthy and quietly retro, it wraps the bedroom in a soft botanical warmth, pairing easily with modern, classic, or cozy décor.",
+    "descriptionHtml": "<p>Soft Plush Velvet, Same Stripe on Both Sides: The pillowcases are woven in a short, dense velvet pile—velvety matte to the touch and gently plush. Both sides share the identical sage-and-brown stripe, so every fold and turn-back shows the same warm pattern, inside and out.</p><p>Thick, Warm & Cozy Sheets: The fitted and flat sheets are made of solid mocha-brown milk-velvet—dense, velvety soft against the skin and holding warmth beautifully, a cozy choice for autumn and winter nights without feeling heavy or stuffy.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and keeps its plush pile and stripe texture wash after wash.</p><p>Soothing Sage Stripe Colorway: Sage-green pillowcases patterned with fine warm-brown twin stripes over solid mocha velvet sheets—calm, earthy and quietly retro, it wraps the bedroom in a soft botanical warmth, pairing easily with modern, classic, or cozy décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-MOCHA-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Striped Velvet Fitted Sheet Flat Sheet 2 Pillowcases (Sage Stripe)",
+            "width": 1728,
+            "height": 2304
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-MOCHA-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
+    "id": "makimoo-SHEETSET-POLKA-QUEEN",
+    "asin": "SHEETSET-POLKA-QUEEN",
+    "title": "Makimoo Queen Sheet Set 4 Piece Cotton Feel Polka Dot Fitted Sheet Flat Sheet 2 Pillowcases (Blue Polka)",
+    "handle": "makimoo-queen-sheet-set-4-piece-cotton-feel-polka-blue-queen",
+    "description": "Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, this sheet set pairs smooth solid deep navy sheets with pillowcases featuring a scattering of navy polka dots on a soft dusty blue ground. Reversible AB pillowcase design—the A side shows the polka dot print, while the B side is a clean solid deep navy. Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter. Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash. Dusty Blue Polka Colorway: Deep navy dots scattered over a soft dusty blue base—fresh and breezy with a quiet coastal feel, it brings a calm, easy order to the bedroom, pairing easily with white, light wood, or modern décor.",
+    "descriptionHtml": "<p>Cotton-Feel Polyester with Playful Polka Dots: Woven from soft brushed polyester with the relaxed, garment-washed hand of cotton, this sheet set pairs smooth solid deep navy sheets with pillowcases featuring a scattering of navy polka dots on a soft dusty blue ground. Reversible AB pillowcase design—the A side shows the polka dot print, while the B side is a clean solid deep navy.</p><p>Breathable & Skin-Friendly All Season: The washed plain weave feels soft, airy and gentle against the skin, keeping you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Sheet Set: This sheet set includes 1 fitted sheet (60 x 80 in) with a deep pocket and all-around elastic for a secure fit, 1 flat sheet (90 x 102 in), and 2 pillowcases (20 x 30 in)—a complete foundation layer that pairs easily with any duvet cover or comforter.</p><p>Thoughtful Details & Easy Care: The deep-pocket fitted sheet hugs mattresses up to 16 in thick and stays snug without slipping; the set is machine washable and gets even softer with every wash.</p><p>Dusty Blue Polka Colorway: Deep navy dots scattered over a soft dusty blue base—fresh and breezy with a quiet coastal feel, it brings a calm, easy order to the bedroom, pairing easily with white, light wood, or modern décor.</p>",
+    "productType": "Bedding",
+    "tags": [
+        "Bedding"
+    ],
+    "availableForSale": false,
+    "images": [
+        {
+            "url": "/images/products/SHEETSET-POLKA-QUEEN/1.webp",
+            "altText": "Makimoo Queen Sheet Set 4 Piece Cotton Feel Polka Dot Fitted Sheet Flat Sheet 2 Pillowcases (Blue Polka)",
+            "width": 1440,
+            "height": 1920
+        }
+    ],
+    "priceRange": {
+        "minVariantPrice": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+        }
+    },
+    "variants": [
+        {
+            "id": "variant-SHEETSET-POLKA-QUEEN",
+            "title": "Default Title",
+            "price": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": []
+        }
+    ],
+    "amazonUrl": ""
+},
+{
     "id": "makimoo-1025015219200-C1",
     "asin": "1025015219200-C1",
     "title": "Makimoo Queen Bedding Set 4 Piece Cotton Blend Muslin Double Gauze Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Grey)",

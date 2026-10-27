@@ -312,6 +312,15 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "mk-print4-blue-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
   "mk-floral4-grey-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
   "mk-btfly4-mocha-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
+  "sheetset-sand-queen": { material: "Cotton Percale", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）
+  "sheetset-petal-queen": { material: "Cotton Percale", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）
+  "sheetset-sagegreen-queen": { material: "Washed Cotton-Like", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）
+  "sheetset-gingham-queen": { material: "Washed Cotton-Like", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 1071466105053-C3）
+  "sheetset-heart-queen": { material: "Linen-Like", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 MK-HEART4-TAN-QUEEN）
+  "sheetset-vine-queen": { material: "Embossed Velvet", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 POMPOM4-VINE-QUEEN）
+  "sheetset-ivory-queen": { material: "Embossed Velvet", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 VELJAC-IVORY-QUEEN）
+  "sheetset-mocha-queen": { material: "Embossed Velvet", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 VELSTRIPE-MOCHA-QUEEN）
+  "sheetset-polka-queen": { material: "Washed Cotton-Like", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径；布料同 1071466105053-C10）
   "1025015219200-c3": { material: "Cotton Blend", dimensionsCm: [220, 220] },
   "1025015219200-c2": { material: "Cotton Blend", dimensionsCm: [220, 220] },
   "1025015219200-c1": { material: "Cotton Blend", dimensionsCm: [220, 220] },

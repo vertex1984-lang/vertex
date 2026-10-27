@@ -19,7 +19,7 @@ import V2NotFound from '@/components/v2/V2NotFound';
 import { buildSetFamilies } from '@/data/bedding-families';
 import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
 import { DECOR_SECTIONS, decorSectionOf } from '@/data/decor-families';
-import { BEDDING_FABRICS, fabricDisplayName } from '@/data/bedding-fabrics';
+import { fabricDisplayName } from '@/data/bedding-fabrics';
 import { isPillowProduct, PILLOW_TYPES, PILLOW_MATERIALS, pillowTypeOf, pillowMaterialOf } from '@/data/pillows-taxonomy';
 import { MakimooProduct, PRODUCTS_DATA, enrichProductsWithShopifyData } from '@/data/products';
 import { CATEGORY_DEFS, sortBeddingMaterials, BEDDING_MATERIAL_BLURBS, getSubcategoriesOf } from '@/data/subcategories';
@@ -233,27 +233,35 @@ export default function V2ProductsPage() {
   );
 
   // Parachute 式页头数据（2026-10-16 用户定，见 V2BeddingCatHero）：
-  // 快链 = 类型子分类：Sheets & Duvet Sets（4 件套，2026-10-22 起含原三件套家族——
-  // Duvet Cover Sets（3-piece）类型已下线，/bedding/3-piece-sets/ 不再生成、访问 404）/
-  // Duvet Covers / Sheets（未上线）/ Pillow Covers（未上线），
-  // 再加有产品的面料页；上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
+  // 快链 = 类型子分类：Sheets & Duvet Sets（4 件套，2026-10-26 曾短暂改名 Complete Sets，同日改回，
+  // 2026-10-22 起含原三件套家族）/ Duvet Covers / Fitted Sheets / Pillowcases & Shams
+  // （2026-10-26 由 Pillow Covers 改名）；布料快链 2026-10-26 用户定移除，只展示类型分类；
+  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
   const beddingHero = useMemo(() => {
     if (!beddingMaterialMode || isSearching || activeSub) return null;
     const fams = buildSetFamilies(beddingShopProducts);
     const typeLinks: BeddingHeroLink[] = [];
+    // 2026-10-26 用户定：快链顺序与导航类型列一致（矩阵顺序）；sheetset/duvetset/bundle
+    // 暂无产品不显示，任一产品入库（对应前缀 asin）后自动出现
+    if (fams.some((f) => f.kind === 'sheetset'))
+      typeLinks.push({ label: 'Sheet Sets', href: v2url('/bedding/sheet-sets/') });
+    if (fams.some((f) => f.kind === 'duvetset'))
+      typeLinks.push({ label: 'Duvet Cover Sets', href: v2url('/bedding/duvet-cover-sets/') });
     if (fams.some((f) => f.kind === 'four'))
       typeLinks.push({ label: 'Sheets & Duvet Sets', href: v2url('/bedding/4-piece-sets/') });
+    if (fams.some((f) => f.kind === 'bundle'))
+      typeLinks.push({ label: 'Complete Bundles', href: v2url('/bedding/complete-bundles/') });
     if (fams.some((f) => f.kind === 'duvet'))
       typeLinks.push({ label: 'Duvet Covers', href: v2url('/bedding/duvet-covers/') });
     // 2026-10-25 用户定：Sheets 占位上线为 Fitted Sheets 分类（/bedding/fitted-sheets/）
     if (fams.some((f) => f.kind === 'sheet'))
       typeLinks.push({ label: 'Fitted Sheets', href: v2url('/bedding/fitted-sheets/') });
-    // 2026-10-26 用户定：Pillow Covers 占位上线（/bedding/pillow-covers/），无产品时不出快链
+    // 2026-10-26 用户定：Pillow Covers 分类上线（/bedding/pillow-covers/），同日改名
+    // Pillowcases & Shams（URL 不变）；无产品时不出快链
     if (fams.some((f) => f.kind === 'pillowcase'))
-      typeLinks.push({ label: 'Pillow Covers', href: v2url('/bedding/pillow-covers/') });
-    const fabricLinks: BeddingHeroLink[] = BEDDING_FABRICS.filter((fb) =>
-      fams.some((f) => f.materials.includes(fb.material))
-    ).map((fb) => ({ label: fabricDisplayName(fb.material), href: v2url(`/bedding/${fb.slug}/`) }));
+      typeLinks.push({ label: 'Pillowcases & Shams', href: v2url('/bedding/pillow-covers/') });
+    // 2026-10-26 用户定：此区域只展示 bedding 类型分类，布料快链移除（布料入口在导航 Fabric 列）
+    const fabricLinks: BeddingHeroLink[] = [];
     return { styleCount: beddingShopProducts.length, typeLinks, fabricLinks };
   }, [beddingMaterialMode, isSearching, activeSub, beddingShopProducts]);
 

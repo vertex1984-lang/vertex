@@ -8,8 +8,9 @@ import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
  *   快链导航排在图正下方、左缘对齐标题再内缩一点（ml-2）
  * - 移动端：标题 + 描述在图上方（不叠图），场景图（4:3 裁剪）居中，图下横滚标签快链
  * - 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品）
- * 快链 = 类型子分类（Sheets & Duvet Sets / Duvet Covers / Sheets / Pillow Covers，后两个
- * Coming Soon 灰化；Duvet Cover Sets（3 件套）2026-10-22 下线）+ 有产品的面料页（2026-10-16 用户定）。
+ * 快链 = 类型子分类（Sheets & Duvet Sets（2026-10-26 曾短暂改名 Complete Sets，同日改回）/ Duvet Covers /
+ * Fitted Sheets / Pillowcases & Shams（同日由 Pillow Covers 改名），无产品的不出快链；
+ * Duvet Cover Sets（3 件套）2026-10-22 下线）+ 有产品的面料页（2026-10-16 用户定）。
  * 链接清单由 products/page.tsx 按家族数据动态算出后传入。
  * hero 图：桌面端 bedding/hero-desktop.webp、移动端 bedding/hero-mobile.webp（沿用原图与裁剪位）。
  */

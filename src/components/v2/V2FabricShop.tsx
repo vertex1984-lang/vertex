@@ -1,4 +1,4 @@
-import { SET_KIND_LABEL, SET_KIND_PAGE_COPY, SetFamily, SetKind, clusterSetFamilies } from '@/data/bedding-families';
+import { SET_KIND_LABEL, SET_KIND_PAGE_COPY, SetFamily, SetKind, clusterSetFamilies, orderSheetsetFamilies } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import { BEDDING_MATERIAL_BLURBS, sortBeddingMaterials } from '@/data/subcategories';
 import GroupProductCard from '@/components/v2/GroupProductCard';
@@ -18,7 +18,9 @@ import { sortByWeight } from '@/lib/weights';
  * 调用方传 noBadges。
  */
 
-const KIND_ORDER: SetKind[] = ['four', 'comforter', 'duvet', 'sheet'];
+// 2026-10-27：补 sheetset/duvetset/bundle 三个新类型（矩阵序，无产品不出分区；
+// 缺了会在面料页分区模式被静默丢弃——Sheet Sets 首款 SHEETSET-SAND-QUEEN 属 Cotton Percale 面料页）
+const KIND_ORDER: SetKind[] = ['sheetset', 'duvetset', 'four', 'bundle', 'comforter', 'duvet', 'sheet'];
 
 /** 布料标签：组卡首家族主材质（materials[0]，如 "100% Linen"），取不到则不叠；展示名经 fabricDisplayName */
 const fabricBadge = (c: GroupCard): string[] =>
@@ -53,10 +55,11 @@ export default function V2FabricShop({
   byFabric?: boolean;
 }) {
   const cardBadges = (c: GroupCard): string[] => (noBadges ? [] : fabricBadge(c));
-  // 固定 Featured 序：按权重降序 + 同变体族色卡聚拢相邻（2026-10-16 用户定）
+  // 固定 Featured 序：按权重降序 + 同变体族色卡聚拢相邻（2026-10-16 用户定）；
+  // 2026-10-27 用户定：sheetset 家族按 SHEETSET_PLP_ORDER 显式排位（仅 sheetset 槽位置换，见 bedding-families.ts）
   const reps = sortByWeight(families.map((f) => f.rep));
   const byRep = new Map(families.map((f) => [f.rep.id, f]));
-  const sorted = clusterSetFamilies(reps.map((r) => byRep.get(r.id)!).filter(Boolean));
+  const sorted = orderSheetsetFamilies(clusterSetFamilies(reps.map((r) => byRep.get(r.id)!).filter(Boolean)));
 
   // 按类型分区（保持排序后的相对顺序；无产品的类型不出分区）
   const sections = KIND_ORDER.map((kind) => ({
