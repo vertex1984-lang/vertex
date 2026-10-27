@@ -7,6 +7,9 @@ import type { ProductReview } from '@/data/product-reviews';
  * 预览实际渲染 4 条——桌面两列网格 2×2 满排；第 4 条加 hidden lg:block，手机端横滑仍只见 3 条 */
 const COLLAPSED_COUNT = 3;
 const PREVIEW_COUNT = 4;
+/** 全量直出阈值（2026-10-27 W8 领导定"评价数量=页面展示的评价条数"）：列表 ≤10 条时不再折叠
+ * 预览，全部卡片直接渲染（顶部 Based on N 与下方卡片数严格相等）；折叠仅留给 >10 条的 B0 家族 */
+const SHOW_ALL_MAX = 10;
 
 /** 星级穿插展示（2026-10-06 用户定）：预览不要求全 5 星（家族有 4★ 时必入预览前 3），
  *  展开态按亚马逊式"有用票"观感穿插，绝不呈现按评分排序的形态。确定性算法（按家族首作者名
@@ -169,7 +172,8 @@ export default function V2ReviewsList({ reviews }: { reviews: ProductReview[] })
   const listRef = useRef<HTMLDivElement>(null);
   const [tailVisible, setTailVisible] = useState(false);
   const [listInView, setListInView] = useState(false);
-  const collapsed = reviews.length > COLLAPSED_COUNT;
+  // W8（2026-10-27 领导定）：≤SHOW_ALL_MAX 条全量直出（数量=展示条数）；>阈值才折叠预览
+  const collapsed = reviews.length > SHOW_ALL_MAX;
   const carousel = collapsed && !expanded;
   const mixed = starMix(reviews);
   // 预览渲染 4 条（桌面 2×2；第 4 条 lg 以下隐藏——手机端恒见 3 条）

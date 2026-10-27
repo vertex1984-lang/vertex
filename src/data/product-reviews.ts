@@ -4,8 +4,10 @@
  * 填写规范（合规红线，务必遵守）：
  * 1. key = 变体家族 id 小写（variant-groups.ts 的 group.id，如 'b0-inserts-square'）；
  *    家族内所有变体共享同一批评价，getProductReviews 已做家族解析，无需逐变体填写。
- * 2. 条数 1-20（bedding ≥5、B0 家族 5-10），均分 4.1-4.5（bedding 4.3-4.5），类目内近似正态分布；
- *    PDP 的 rating/reviewCount 由评价列表自动推导注入（products.ts enrich 末段），勿在 products.ts 手填。
+ * 2. 条数 1-10（2026-10-27 W8 领导定：展示总数=卡片条数，随机 1-10；B0 真实家族按 Amazon
+ *    实际总数豁免），均分/分布 = 展示卡片星级实算；PDP 的 rating/reviewCount 由评价列表
+ *    自动推导注入（products.ts enrich 末段），勿在 products.ts 手填。
+ * 2b. 卡片日期一律 2026 年 7 月（站点上线）及以后（W8 领导定；B0 家族日期保持原样豁免）。
  * 3. 合规：评价卡只显示 作者 · 日期 · 星级，绝不出现 "Verified Purchase / Verified Amazon Purchase"
  *    等验证声明（FTC 假评价规则风险）；页脚只写 "Based on N customer reviews"，不提 Amazon。
  * 4. 文案基调：真实、克制、贴合 materials-short-bullets.ts 的真实参数（防编造），长短随机分布，
@@ -630,64 +632,64 @@ const FUR_RUG_REVIEWS: ProductReview[] = [
     author: 'Trevor S.',
     rating: 5,
     text: 'So soft. The cat claimed it within a minute.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Holly Brennan',
     rating: 5,
     text: 'Silky underfoot, and the backing grips our hardwood. Zero sliding.',
-    date: 'July 2024',
+    date: 'July 2026',
   },
   {
     author: 'Priya Raman',
     rating: 5,
     text: "Soft enough that I don't worry about the baby crawling on it. The camel tone looks great in the nursery.",
-    date: 'October 2024',
+    date: 'September 2026',
   },
   {
     author: 'Gloria Tate',
     rating: 5,
     title: 'Held up great',
     text: 'Down since spring and the fibers still spring back. No matting, and the low profile lets our door clear it, which was the deal maker for the bay window.',
-    date: 'January 2025',
+    date: 'October 2026',
   },
   {
     author: 'Marcus D.',
     rating: 5,
     text: 'Tried three fluffy rugs before this one and they all wandered across the floor. The grip layer underneath actually works on our laminate. Silver grey suits the living room too.',
-    date: 'April 2025',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Lovely but low pile',
     text: 'Softer than expected, just know it is a sleek low fur layer rather than a deep shag.',
-    date: 'July 2025',
+    date: 'August 2026',
   },
   {
     author: 'Dana Whitfield',
     rating: 4,
     text: 'The camel works better with our furniture than I hoped. Grips the tile nicely.',
-    date: 'October 2025',
+    date: 'September 2026',
   },
   {
     author: 'Elena Marsh',
     rating: 4,
     text: 'Not a thick rug, but it adds a soft, quiet layer to the play area and footsteps carry way less now. Flattened out within a day and has stayed smooth.',
-    date: 'January 2026',
+    date: 'September 2026',
   },
   {
     author: 'Robert Kim',
     rating: 4,
     text: 'Bought the silver grey for under my desk. Feet stay warm on the cold floor and the pile has held up even where my chair rolls over the edge. It did arrive creased and needed a day to relax, which is why four stars.',
-    date: 'April 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Softer than it is plush',
     text: "It's soft, I just pictured more height from the photos. Works fine sitting under our bench, but I wanted something puffier for the bedroom.",
-    date: 'July 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -702,64 +704,64 @@ const TOWEL_BATH_2PK: ProductReview[] = [
     author: 'Nadia Bell',
     rating: 5,
     text: 'Soft, thick, and they hold up wash after wash. Ordered a second set.',
-    date: 'June 2024',
+    date: 'September 2026',
   },
   {
     author: 'Rebecca Cho',
     rating: 5,
     text: 'Feels like the towels at a nice hotel. They wrapped right around me and soaked up water after my shower.',
-    date: 'September 2024',
+    date: 'September 2026',
   },
   {
     author: 'Tom Herrick',
     rating: 5,
     text: 'These have a proper hotel feel to them. Dense loops, plush against the skin, and they air out between uses instead of staying damp.',
-    date: 'December 2024',
+    date: 'July 2026',
   },
   {
     author: 'Frank Odom',
     rating: 5,
     title: 'Fluffy after one wash',
     text: 'Do a first wash before use. Mine fluffed up nicely, and there was some lint in the dryer that first time, nothing since. I checked the hems after a few cycles and trimmed one loose thread. They look sharp in orange.',
-    date: 'March 2025',
+    date: 'July 2026',
   },
   {
     author: 'Gwen Salter',
     rating: 5,
     text: 'Bought the orange for our guest bath and the color is warm without being loud. Soft every time, no stiffness.',
-    date: 'June 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Good but not thick thick',
     text: 'Nice towels for everyday, plenty absorbent, just expect a medium weight rather than a thick plush one. On the plus side they dry faster than the thick ones I had before.',
-    date: 'September 2025',
+    date: 'July 2026',
   },
   {
     author: 'Omar Reyes',
     rating: 4,
     text: "The orange has stayed bright through a month of washing, and they feel soft against the skin. I'd call them medium weight, which suits us fine for the gym bag.",
-    date: 'December 2025',
+    date: 'September 2026',
   },
   {
     author: 'Leah Fontaine',
     rating: 4,
     text: 'Good everyday towels. Absorbent right out of the wash and plenty big enough to wrap up in.',
-    date: 'March 2026',
+    date: 'October 2026',
   },
   {
     author: 'Sam Whitaker',
     rating: 4,
     text: 'Solid pair for the price point. One had a loose thread at the hem on day one, snipped it and no recurrence in three weeks.',
-    date: 'June 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Not the luxury weight I pictured',
     text: 'Decent towels, just lighter than the listing photos suggest. Fine for the guest bath, but I was after something beefier for the main bathroom.',
-    date: 'September 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -769,56 +771,56 @@ const TOWEL_HAND_4PK: ProductReview[] = [
     author: 'June Park',
     rating: 5,
     text: 'Perfect hand towel weight, not too thick, not flimsy. They get softer with every wash.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Hank Willis',
     rating: 5,
     text: 'Put the platinum stripe set in our powder room and guests comment on them. Crisp white, hotel vibe, very absorbent.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Della Ray',
     rating: 5,
     text: 'Soft, absorbent, and the stripe detail makes my bathroom look put together.',
-    date: 'November 2024',
+    date: 'October 2026',
   },
   {
     author: 'Victor Han',
     rating: 5,
     text: 'We run a small guest suite and go through towels fast. Four washes in, these still look crisp and dry quickly between bookings.',
-    date: 'February 2025',
+    date: 'August 2026',
   },
   {
     author: 'Rosa Camacho',
     rating: 5,
     text: 'The white has stayed white through several washes, nothing has run or grayed. Exactly the hotel look I wanted by the sink.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Thin, but that helps',
     text: "For 180-gram towels they run thin, but honestly that helps them dry out fast in our humid bathroom. Still neat looking.",
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Kurt Malone',
     rating: 4,
     text: "Fluffier than the flat weave ones I'm used to. Only had them a month so durability is still an open question, but first impressions are good.",
-    date: 'November 2025',
+    date: 'October 2026',
   },
   {
     author: 'Bethany Cole',
     rating: 4,
     text: "They took a wash to reach their full softness, normal for new cotton in my experience. Since then they've been great, soft and quick to dry.",
-    date: 'February 2026',
+    date: 'September 2026',
   },
   {
     author: 'Neil Sandoval',
     rating: 4,
     text: 'I skip fabric softener on towels and these came out plenty soft regardless. Hems are all straight, quality looks consistent across all four.',
-    date: 'May 2026',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
@@ -837,63 +839,63 @@ const TOWEL_BEACH_2PK: ProductReview[] = [
     author: 'Margot Ellery',
     rating: 5,
     text: 'A shake and the sand just slides off. Huge enough for two kids to share on a beach day.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Devon Pryce',
     rating: 5,
     text: 'Long enough to cover a full lounge chair with room to spare, and the terry side soaks up lake water fast.',
-    date: 'September 2024',
+    date: 'August 2026',
   },
   {
     author: 'Yusuf Kane',
     rating: 5,
     text: 'Got the pink and white stripe. Colors came out bright and have stayed that way through several beach trips and washes.',
-    date: 'December 2024',
+    date: 'August 2026',
   },
   {
     author: 'Colleen Byrnes',
     rating: 5,
     text: 'These live in the trunk for spontaneous beach runs. They work as a sit-on mat, a changing wrap, and an actual towel, and the stripes shake clean.',
-    date: 'March 2025',
+    date: 'July 2026',
   },
   {
     author: 'Talia Reed',
     rating: 5,
     text: 'Thick enough to double as a blanket when the beach breeze picks up. My toddler napped on one all afternoon.',
-    date: 'June 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Wish the stripe were bolder',
     text: 'Great size and they dry remarkably quick outdoors. Wish the stripe colors came through a bit bolder than the photos, mine look a touch softer.',
-    date: 'September 2025',
+    date: 'September 2026',
   },
   {
     author: 'Rowan Ellcott',
     rating: 4,
     text: 'Big and soft, though after a full swim I go back for a second pass to get fully dry. Otherwise no issues.',
-    date: 'December 2025',
+    date: 'August 2026',
   },
   {
     author: 'Soren Blake',
     rating: 4,
     text: "First wash showed a good amount of lint in the trap, expected with new cotton. Since then zero issues and they've kept their stripe.",
-    date: 'March 2026',
+    date: 'July 2026',
   },
   {
     author: 'Petra Voss',
     rating: 4,
     text: "I'm a bigger person and finding a towel that covers me completely is rare. This one does. Absorbent too.",
-    date: 'June 2026',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Heavier than I expected',
     text: 'Nice towels but at 550 grams each they are beefy to lug in an already packed beach bag. Quality is fine, just heavier than my old ones.',
-    date: 'September 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -909,51 +911,51 @@ const RUG_GEOMETRIC: ProductReview[] = [
     author: 'Nora Pemberton',
     rating: 5,
     text: 'The black and white pattern is exactly our style. It lays dead flat and holds firm on our laminate, no creeping at all.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Jasper Cole',
     rating: 5,
     text: 'Low profile is the winner here, our door swings right over it. Pattern looks crisp, not busy.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Ines Varga',
     rating: 5,
     text: 'Softer than expected for something this flat. The geometric print looks great in our living room.',
-    date: 'December 2024',
+    date: 'October 2026',
   },
   {
     author: 'Pete Aldridge',
     rating: 5,
     text: 'Sweeps and vacuums easily since it sits so low. The stain resistance got tested by a coffee splash already, wiped right off.',
-    date: 'April 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Thin, and that suits it',
     text: 'It is a flat weave, essentially. Under the dining table that is exactly what we wanted, no snagging chair legs. Just set expectations.',
-    date: 'August 2025',
+    date: 'September 2026',
   },
   {
     author: 'Wendy Cho',
     rating: 4,
     text: 'Works fine with our couch, and the grip on hardwood is solid.',
-    date: 'November 2025',
+    date: 'August 2026',
   },
   {
     author: 'Dmitri Volkov',
     rating: 4,
     text: 'The surface has a soft velvety hand to it. Took a day to adjust to the look, now I like it. No sliding on tile.',
-    date: 'March 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'My vacuum grabs it',
     text: 'Pattern is genuinely nice, but the pile is so low my vacuum sucks the corner up when I pass over it. I sweep with a broom now.',
-    date: 'July 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -963,63 +965,63 @@ const BATH_OVAL: ProductReview[] = [
     author: 'Priscilla Hahn',
     rating: 5,
     text: "Soaks up the puddle after my kid's bath and the texture looks way pricier than it was.",
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Deacon Wright',
     rating: 5,
     text: 'The woven look fits our vintage-style bathroom perfectly. Washed it once already, came out fine and kept its shape.',
-    date: 'September 2024',
+    date: 'September 2026',
   },
   {
     author: 'Marisol Vega',
     rating: 5,
     text: 'Goes in the wash every week and still looks new. It grips the tile and nobody has slipped on it.',
-    date: 'December 2024',
+    date: 'September 2026',
   },
   {
     author: 'Tobias Grange',
     rating: 5,
     text: 'Got the brown for the entryway door. Traps water from rainy shoes and dries out by morning.',
-    date: 'March 2025',
+    date: 'October 2026',
   },
   {
     author: 'Elsa Norwood',
     rating: 5,
     text: 'Soft under bare feet, stays put, cute oval shape.',
-    date: 'June 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Grips fine, mostly',
     text: 'Very absorbent and the texture is lovely. On our glossy floor it shifts a tiny bit when soaked, though it has never slid far.',
-    date: 'September 2025',
+    date: 'September 2026',
   },
   {
     author: 'Hank Sorrell',
     rating: 4,
     text: 'Sized right for a narrow bathroom. The raised weave catches lint from towels occasionally, a quick shake handles it.',
-    date: 'December 2025',
+    date: 'August 2026',
   },
   {
     author: 'Bonnie Tate',
     rating: 4,
     text: 'Matches our trim nicely. Dries fast between showers.',
-    date: 'March 2026',
+    date: 'September 2026',
   },
   {
     author: 'Iris Chen',
     rating: 4,
     text: "Bought it for the laundry room. Handles drips well; wish the oval ran a touch wider for our space, but that's on my measuring.",
-    date: 'June 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Stiffer than expected',
     text: 'Absorbent enough, but the woven surface feels stiff under bare feet compared to our old plush mat. Fine by the door, less nice beside the tub.',
-    date: 'September 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1029,63 +1031,63 @@ const RUG_OUTDOOR_ROUND: ProductReview[] = [
     author: 'Colin Mercer',
     rating: 5,
     text: "Sits on our balcony under the bistro set. Looks like real sisal without the scratchiness, and the cat's claws haven't snagged it.",
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Renee Alcott',
     rating: 5,
     text: 'Round shape fits our reading corner exactly. Shake it off, hose it down, good as new.',
-    date: 'September 2024',
+    date: 'July 2026',
   },
   {
     author: 'Owen Pratt',
     rating: 5,
     text: "Pet friendly is no joke, our dog naps on it daily and the weave still looks tight.",
-    date: 'December 2024',
+    date: 'September 2026',
   },
   {
     author: 'Sylvia Okonkwo',
     rating: 5,
     text: 'We use it by the patio door to catch grass and dirt. Sweeps clean and the camel tone hides everything.',
-    date: 'March 2025',
+    date: 'August 2026',
   },
   {
     author: 'Gilberto Cruz',
     rating: 5,
     text: 'Sturdy weave, looks expensive. Held its color all month in afternoon sun on the deck.',
-    date: 'June 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Bring it in for storms',
     text: 'Looks great on the patio and the dog approved. We carry it inside when heavy rain is forecast since it is a woven rug, not a plastic straw mat.',
-    date: 'September 2025',
+    date: 'July 2026',
   },
   {
     author: 'Tanya Boone',
     rating: 4,
     text: 'Slight texture underfoot, in a good way. Chair legs move across it without catching. Wish it came one size bigger.',
-    date: 'December 2025',
+    date: 'October 2026',
   },
   {
     author: 'Harlan Reid',
     rating: 4,
     text: 'Camel color is warm and true to photos. A few loose weave ends on day one, trimmed them and nothing since.',
-    date: 'March 2026',
+    date: 'September 2026',
   },
   {
     author: 'Priyanka Nair',
     rating: 4,
     text: "Good weight so it doesn't blow around on the covered porch. Hose cleaning worked exactly like I hoped.",
-    date: 'June 2026',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Rougher than the photos suggest',
     text: 'The weave has a definite texture to it, not painful but not soft like an indoor rug. Ours lives outside now, which suits it better.',
-    date: 'September 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1095,63 +1097,63 @@ const MAT_KITCHEN: ProductReview[] = [
     author: 'Georgia Pines',
     rating: 5,
     text: 'Water splashes disappear into it while I do dishes. The checkered pattern suits our farmhouse kitchen.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Sam Okada',
     rating: 5,
     text: 'Our robot vacuum bumps it all day and it has not budged an inch. Grips the tile properly.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Delia Munroe',
     rating: 5,
     text: 'Oil splatter by the stove wiped right off the surface. It dries out fast overnight too.',
-    date: 'November 2024',
+    date: 'August 2026',
   },
   {
     author: 'Randy Sizemore',
     rating: 5,
     text: "Cushioned enough that standing through a long cook session doesn't kill my feet. Looks vintage in the best sense.",
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Pam Deveraux',
     rating: 5,
     text: 'Bought the coffee color for the pantry door. Thin enough that the door clears it, absorbent enough to matter.',
-    date: 'May 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Corner curl',
     text: 'Absorbs like promised. After two washes one corner wants to curl up, and I have to press it flat again.',
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Lena Bradshaw',
     rating: 4,
     text: 'Really like the pattern and the grip. It arrived folded, so the crease lines took a few days to relax.',
-    date: 'November 2025',
+    date: 'September 2026',
   },
   {
     author: 'Chester Bloom',
     rating: 4,
     text: 'Handles spills great. Only note is it shows crumbs on the light pattern, so I sweep more often than I expected to.',
-    date: 'February 2026',
+    date: 'August 2026',
   },
   {
     author: 'Faye Holloway',
     rating: 4,
     text: 'Perfect width for our sink run. It is a firm mat rather than a cushy foam one, which I actually prefer for standing.',
-    date: 'May 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Darker than pictured',
     text: 'Works fine and the grip is solid, but the brown came out noticeably darker than the photos. Measure your space too, it runs narrow.',
-    date: 'August 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -1161,51 +1163,51 @@ const RUG_KITCHEN: ProductReview[] = [
     author: 'Odette Fuller',
     rating: 5,
     text: 'The embossed pattern is lovely and it genuinely absorbs splashes by the sink. Rubber back grips our wet tile.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Ronnie Packard',
     rating: 5,
     text: 'Dropped a mug on it the first week, no chip. The little bit of cushion underneath actually works.',
-    date: 'July 2024',
+    date: 'July 2026',
   },
   {
     author: 'Salvatore Greco',
     rating: 5,
     text: 'The beige version brightens our galley kitchen. Stays put even when the floor is damp.',
-    date: 'November 2024',
+    date: 'July 2026',
   },
   {
     author: 'Winnie Zhao',
     rating: 5,
     text: 'Soft and springy underfoot. Wipes clean with a damp cloth after messy cooking sessions.',
-    date: 'March 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Runs narrow',
     text: 'Nice mat, though it runs narrower than it looked online. Fine for our hallway, check the tape measure first.',
-    date: 'July 2025',
+    date: 'October 2026',
   },
   {
     author: 'Gordon Pruitt',
     rating: 4,
     text: 'Absorbs water fast and the backing is serious about not sliding. The multicolor is a bit busier than the photos show.',
-    date: 'October 2025',
+    date: 'August 2026',
   },
   {
     author: 'Estelle Kimura',
     rating: 4,
     text: 'Two months in and the colors have not faded despite sun from the kitchen window. Edges lie flat so far.',
-    date: 'February 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Fraying at one end',
     text: 'The pattern won me over, but one end started fraying after about a month and a wash. Expectations adjusted, still usable.',
-    date: 'June 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -1215,56 +1217,56 @@ const RUG_SHAGGY_OVAL: ProductReview[] = [
     author: 'Aimee Dumas',
     rating: 5,
     text: 'Sink-in soft. The oval shape fits perfectly at the foot of our bed where a rectangle would stick out.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Ruben Castillo',
     rating: 5,
     text: 'Our cat slept on it before I even finished unrolling. Snow white brightens the whole corner.',
-    date: 'July 2024',
+    date: 'September 2026',
   },
   {
     author: 'Tess Lundgren',
     rating: 5,
     text: 'Silky rather than woolly, more like fur than shag. Gorgeous in the nursery.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Bernard Osei',
     rating: 5,
     text: 'Feels great underfoot after a bath, and the plush dries out fast rather than sitting damp.',
-    date: 'January 2025',
+    date: 'August 2026',
   },
   {
     author: 'Nell Forrest',
     rating: 5,
     text: 'The khaki tone is warm and hides everything. My kids read on it every evening.',
-    date: 'April 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Sheds a little at first',
     text: 'Incredibly soft, though it released some loose fibers during the first week. Nothing noticeable since, and the shade is lovely.',
-    date: 'July 2025',
+    date: 'July 2026',
   },
   {
     author: 'Desmond Arch',
     rating: 4,
     text: 'Plush and cozy. It does flatten where the office chair rolls, fluffs back up with a shake.',
-    date: 'October 2025',
+    date: 'September 2026',
   },
   {
     author: 'Olive Prescott',
     rating: 4,
     text: 'Gorgeous sheen. Wish it were a touch thicker underfoot, but for the bedside spot it is just right.',
-    date: 'January 2026',
+    date: 'September 2026',
   },
   {
     author: 'Callum Frost',
     rating: 4,
     text: 'The light grey matches our bedding exactly. Vacuuming needs a gentle setting on shag like this, no big deal.',
-    date: 'April 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
@@ -1281,63 +1283,63 @@ const RUG_PERSIAN_BOHO: ProductReview[] = [
     author: 'Alma Reyes',
     rating: 5,
     text: 'The medallion pattern is stunning in person. The sage green version ties our whole living room together.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Hollis Barnes',
     rating: 5,
     text: 'The faux cashmere surface is genuinely soft, the kids sit on it constantly. Silicone backing stops it sliding on our hardwood.',
-    date: 'September 2024',
+    date: 'July 2026',
   },
   {
     author: 'Junie Atkins',
     rating: 5,
     text: 'Colors are deep and vibrant, not the washed-out print I feared. It anchors the sofa beautifully.',
-    date: 'December 2024',
+    date: 'October 2026',
   },
   {
     author: 'Miles Thorne',
     rating: 5,
     text: 'Has a velvety hand that felt unusual at first, now I love it. Vacuums clean without fuss.',
-    date: 'March 2025',
+    date: 'October 2026',
   },
   {
     author: 'Sadie Kwan',
     rating: 5,
     text: 'Big enough for the front half of our queen bed. Feet land on soft instead of cold floor every morning.',
-    date: 'June 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Thinner than it looks',
     text: 'The print is gorgeous and it lays perfectly flat, though the pile sits low, closer to a flat weave. Fine for us with a pad underneath.',
-    date: 'September 2025',
+    date: 'September 2026',
   },
   {
     author: 'Roman Delgado',
     rating: 4,
     text: 'Looked great on arrival but the corners curled for the first day. Heavy books fixed it, and now it sits flush.',
-    date: 'December 2025',
+    date: 'July 2026',
   },
   {
     author: 'Ingrid Halvorsen',
     rating: 4,
     text: 'The teal reads a bit more muted than on screen, still lovely with our wood floors. The backing grips well.',
-    date: 'March 2026',
+    date: 'September 2026',
   },
   {
     author: 'Perry Nolan',
     rating: 4,
     text: 'Soft and the pattern hides crumbs between vacuums. My only nit is it arrived with a strong fold crease down the middle.',
-    date: 'June 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Corners fight back',
     text: 'Gorgeous print and it gets compliments, but the corners have never fully sat flat for us, three weeks and counting. Everything else about it we like.',
-    date: 'September 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -1347,63 +1349,63 @@ const RUG_ORIENTAL: ProductReview[] = [
     author: 'Vivian Ashford',
     rating: 5,
     text: 'The distressed medallion looks like something from a pricey vintage shop. Guests always ask about it.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Dougal Feeney',
     rating: 5,
     text: 'Amber and teal tones are gorgeous against our grey sofa. Low pile means no tripping at the edge for my mother.',
-    date: 'August 2024',
+    date: 'July 2026',
   },
   {
     author: 'Rosalind Piper',
     rating: 5,
     text: 'Lays flat immediately, no curling. The beige multicolor hides crumbs surprisingly well in the dining room.',
-    date: 'November 2024',
+    date: 'October 2026',
   },
   {
     author: 'Otis Grady',
     rating: 5,
     text: 'Soft enough to sit on during movie nights, and the non-slip base has kept it planted under our coffee table.',
-    date: 'February 2025',
+    date: 'August 2026',
   },
   {
     author: 'Cleo Vandermeer',
     rating: 5,
     text: 'Exactly the vintage look I wanted without vintage prices. The print detail up close is genuinely intricate.',
-    date: 'May 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Thin but practical',
     text: 'It is a low, flat rug, which our doors appreciate. That works in a dining space, though it is not a plush rug.',
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Bram Whitlock',
     rating: 4,
     text: 'Colors read slightly more muted in person, which actually suits our space better. It never slides on tile at all.',
-    date: 'November 2025',
+    date: 'September 2026',
   },
   {
     author: 'Mae Sutherland',
     rating: 4,
     text: 'Four months in and it still looks crisp. Vacuums easily on the low pile, unlike my old shag.',
-    date: 'February 2026',
+    date: 'October 2026',
   },
   {
     author: 'Terrence Boyd',
     rating: 4,
     text: 'Beautiful pattern and it lays flat. It came folded, so give the fold lines a day or two to settle.',
-    date: 'May 2026',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Runs a size small',
     text: 'Quality and pattern are lovely, but ours measures a few inches short of the listing. It still works, just measure your space if the fit matters.',
-    date: 'August 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1413,57 +1415,57 @@ const TOWEL_HOTEL_2PK: ProductReview[] = [
     author: 'Josephine Wu',
     rating: 5,
     text: 'Proper hotel weight. They wrap completely around me and dry me off in one pass.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Arthur Sheldon',
     rating: 5,
     text: 'Thick, plush, and the double-stitched hems look like they will outlast my last set by years.',
-    date: 'September 2024',
+    date: 'August 2026',
   },
   {
     author: 'Fern Dalloway',
     rating: 5,
     text: 'The blue is a calm, true color. Washed them twice already, still bright with no fading.',
-    date: 'December 2024',
+    date: 'August 2026',
   },
   {
     author: 'Miguel Santoro',
     rating: 5,
     text: 'The absorbency is legit, one press against wet skin and you are dry. Bathroom upgrade for the price.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Opal Merritt',
     rating: 5,
     text: 'Got the beige pair for the downstairs bath. Soft from the first wash and they fluffed up nicely in the dryer.',
-    date: 'July 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Slightly bulky',
     text: 'Lovely and thick, though that means a long dryer cycle. Everything else is exactly as promised.',
-    date: 'October 2025',
+    date: 'August 2026',
   },
   {
     author: 'Rex Walcott',
     rating: 4,
     text: 'Very absorbent and well made. Mine arrived with a faint packaging smell that one wash removed completely.',
-    date: 'February 2026',
+    date: 'August 2026',
   },
   {
     author: 'Tabitha Row',
     rating: 4,
     text: 'Three weeks of daily use and daily washing, still soft with no fraying at the hems. Would buy the grey next.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Expected beefier',
     text: 'Decent towels, but I expected a heavier feel from the description. Fine for everyday, not the spa slab I pictured.',
-    date: 'August 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1479,63 +1481,63 @@ const LINEN_DUVET: ProductReview[] = [
     author: 'Adele Fontenot',
     rating: 5,
     text: 'Real linen, and it shows. The texture is part of the charm, slightly slubby and completely breathable.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Greta Sandvik',
     rating: 5,
     text: 'Sage green lives in our guest room. It has that relaxed rumpled linen look that never needs ironing.',
-    date: 'July 2024',
+    date: 'September 2026',
   },
   {
     author: 'Dorian Mays',
     rating: 5,
     text: 'The button closure and corner ties hold my insert exactly where it should be. No midnight escape acts.',
-    date: 'October 2024',
+    date: 'July 2026',
   },
   {
     author: 'Imogen Clarke',
     rating: 5,
     text: 'Noticeably softer after the first wash, which the listing promised. Breathes well, no night sweats.',
-    date: 'January 2025',
+    date: 'October 2026',
   },
   {
     author: 'Theo Lindqvist',
     rating: 5,
     text: 'The oatmeal shade is warm and honest. Third linen set I have owned and this one is legitimately good value.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Wrinkles are the deal',
     text: 'Linen wrinkles, and this is no exception. I happen to like the lived-in creases, but if crisp is your thing, look elsewhere.',
-    date: 'July 2025',
+    date: 'October 2026',
   },
   {
     author: 'Paloma Reyes',
     rating: 4,
     text: 'The dusty blue reads slightly greyer in person. Still beautiful with white sheets. The flax texture is addicting to touch.',
-    date: 'October 2025',
+    date: 'October 2026',
   },
   {
     author: 'Sanjay Iyer',
     rating: 4,
     text: 'First wash turned the water a natural flax tan, nothing alarming. The color has held since and the weave feels sturdier than the price suggests.',
-    date: 'January 2026',
+    date: 'September 2026',
   },
   {
     author: 'Colette Beaumont',
     rating: 4,
     text: 'The ivory is elegant, slightly deeper than bright white, which I prefer. It softens more with every cycle.',
-    date: 'April 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Heavier than expected',
     text: 'Quality is there, but the linen weave has real weight to it. Warm sleepers may find it too warm through summer. Beautiful regardless.',
-    date: 'July 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1545,56 +1547,56 @@ const WASHED_DUVET: ProductReview[] = [
     author: 'Delaney Roth',
     rating: 5,
     text: 'That soft, lived-in feel straight from the wash. The pink is muted and grown-up, not nursery pink.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Rafael Otero',
     rating: 5,
     text: 'The zipper beats buttons, full stop. The insert stays put with the corner ties and the whole thing washes without drama.',
-    date: 'July 2024',
+    date: 'August 2026',
   },
   {
     author: 'Bianca Feld',
     rating: 5,
     text: 'It genuinely feels pre-washed, no stiffness at all. The white version brightened our guest room instantly.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Curtis Mabry',
     rating: 5,
     text: 'The relaxed, slightly crinkled texture is the whole appeal. It looks effortlessly done, like bedding in a magazine.',
-    date: 'January 2025',
+    date: 'August 2026',
   },
   {
     author: 'Yara Haddad',
     rating: 5,
     text: 'Breathable and light, perfect for someone who runs warm. The grey matches everything we own.',
-    date: 'April 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Color ran lighter',
     text: 'Lovely and soft, but the beige arrived a shade lighter than the photos. It still works with our palette, so it stayed.',
-    date: 'July 2025',
+    date: 'July 2026',
   },
   {
     author: 'Nicholas Byrne',
     rating: 4,
     text: 'Soft and comfy with a nice weight. Only knock is that it wrinkles more than I pictured, though that is the washed look by design.',
-    date: 'October 2025',
+    date: 'August 2026',
   },
   {
     author: 'Tamsin Welles',
     rating: 4,
     text: 'Fits our queen insert generously. Would love a few more colorways, I would buy a sage in a heartbeat.',
-    date: 'January 2026',
+    date: 'October 2026',
   },
   {
     author: 'Odile Perrin',
     rating: 4,
     text: 'Gave it one wash and a low tumble and it came out smooth and quietly expensive looking. The zipper is invisible, nice touch.',
-    date: 'April 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
@@ -1611,63 +1613,63 @@ const COMFORTER_SET: ProductReview[] = [
     author: 'Wells Tibbets',
     rating: 5,
     text: 'The two-tone design is clever, flip it for cheese yellow when the light blue gets boring. Same set, new room.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Harriet Blum',
     rating: 5,
     text: 'The washed cotton feels broken-in from day one. Zipper closure is smooth and the corner ties do their job.',
-    date: 'August 2024',
+    date: 'October 2026',
   },
   {
     author: 'Kenji Watanabe',
     rating: 5,
     text: 'The light blue is calm and exactly as pictured. Pillowcases fit our standard pillows fine.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'Flossie Dunmore',
     rating: 5,
     text: 'Washed it twice already, no fading and the texture stays soft. Guest bed sorted.',
-    date: 'February 2025',
+    date: 'October 2026',
   },
   {
     author: 'Emmett Calloway',
     rating: 5,
     text: 'Genuinely skin-friendly, no itchiness at all. Light enough for summer, layered fine in spring.',
-    date: 'May 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Runs snug',
     text: 'Quality set for the price, though the cover runs a bit snug on our thick comforter. Measure your insert first.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Sloane Whitfield',
     rating: 4,
     text: 'The cheese yellow is more mustard in person, which we ended up liking. Reversible is genuinely useful.',
-    date: 'November 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anders Holm',
     rating: 4,
     text: 'Soft and breathable, zero static. Wish the pillowcases had the same zipper as the cover.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Genevieve Cho',
     rating: 4,
     text: 'The color combo looks more intentional than I expected. Wrinkles relax after a night on the bed.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Thinner than hoped',
     text: 'Nice color and it washes fine, but the fabric is thinner than I imagined. Works over a plush insert, though it is a lightweight cover.',
-    date: 'August 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -1677,63 +1679,63 @@ const BED_PILLOWS: ProductReview[] = [
     author: 'Douglas Wrenn',
     rating: 5,
     text: 'Plump straight out of the vacuum bag, and they puffed up even more by day two. Hotel feel for basic money.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Marisela Duarte',
     rating: 5,
     text: 'Soft but not mushy. My neck stays supported whether I land on my back or side.',
-    date: 'September 2024',
+    date: 'September 2026',
   },
   {
     author: 'Kit Sorenson',
     rating: 5,
     text: 'They squish down nicely then spring right back. Two months on and still no flat spots.',
-    date: 'December 2024',
+    date: 'July 2026',
   },
   {
     author: 'Beryl Okafor',
     rating: 5,
     text: 'The embossed cover fabric is smooth and cool, and pillowcases slide over them easily. Good height for my neck.',
-    date: 'March 2025',
+    date: 'September 2026',
   },
   {
     author: 'Aaron Wilkes',
     rating: 5,
     text: 'Bought them for the spare room and ended up stealing them for our own bed, which says it all.',
-    date: 'June 2025',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Lofty for side sleepers',
     text: 'Well made and plump, though side sleepers may find them a touch tall. Perfect for reading propped up, which is mainly what mine do.',
-    date: 'September 2025',
+    date: 'September 2026',
   },
   {
     author: 'Rosalie Chen',
     rating: 4,
     text: 'They read slightly flatter than the photos showed, though 48 hours of fluffing brought them most of the way back.',
-    date: 'December 2025',
+    date: 'October 2026',
   },
   {
     author: 'Hugh Danvers',
     rating: 4,
     text: 'Comfortable and evenly filled. One of the two is slightly softer than the other, though you barely notice night to night.',
-    date: 'March 2026',
+    date: 'July 2026',
   },
   {
     author: 'Maeve Donnelly',
     rating: 4,
     text: 'No odor at all, which my old pillows could not claim. Cool through the night too.',
-    date: 'June 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Fine, not luxury',
     text: 'Decent pillows for a guest room, but I would not call them luxury grade. Support is okay, fluff is okay, everything is just okay.',
-    date: 'September 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1743,56 +1745,56 @@ const QUILTED_INSERTS: ProductReview[] = [
     author: 'Juniper Wells',
     rating: 5,
     text: 'The quilted stitching keeps the filling from drifting into corners. Covers sit smooth on top.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Oskar Lindgren',
     rating: 5,
     text: 'Fits my covers exactly, no baggy corners. Plump but still squishable.',
-    date: 'July 2024',
+    date: 'July 2026',
   },
   {
     author: 'Renata Vidos',
     rating: 5,
     text: 'They filled out my decorative covers properly for once. Gave the whole sofa a refresh for little money.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Colby Frazier',
     rating: 5,
     text: 'Fluffed up fully in a day after unboxing. The quilting makes them feel more substantial than basic inserts.',
-    date: 'January 2025',
+    date: 'July 2026',
   },
   {
     author: 'Elsie Turner',
     rating: 5,
     text: 'Soft yet structured. My toddler uses one as a floor cushion and it keeps its shape.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Wish they were fuller',
     text: 'Nice quilting and true to size, just slightly less full than the photos. Fine for covers with some ease.',
-    date: 'July 2025',
+    date: 'September 2026',
   },
   {
     author: 'Graham Sutcliffe',
     rating: 4,
     text: 'Good weight and the stitching looks durable. They relaxed about ten percent after a week of use, still presentable.',
-    date: 'October 2025',
+    date: 'September 2026',
   },
   {
     author: 'Imani Brooks',
     rating: 4,
     text: 'They work well in my decorative covers. A short tumble in the dryer fluffed them right up after vacuum sealing.',
-    date: 'January 2026',
+    date: 'July 2026',
   },
   {
     author: 'Dominic Farrer',
     rating: 4,
     text: 'Sturdy inserts at a fair price. The quilted pattern shows through thin white covers a bit, worth knowing.',
-    date: 'April 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
@@ -1809,63 +1811,63 @@ const EMBOSSED_CASES: ProductReview[] = [
     author: 'Alina Petrakis',
     rating: 5,
     text: 'The embossed pattern catches the light beautifully and looks far more expensive than it was.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Julian Mercer',
     rating: 5,
     text: 'Put them over standard square inserts and the fit is clean, corners sharp. Exactly the texture refresh our couch needed.',
-    date: 'July 2024',
+    date: 'September 2026',
   },
   {
     author: 'Deborah Kingsley',
     rating: 5,
     text: 'Soft microfiber with a subtle sheen. The raised pattern has survived a wash without flattening.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Sasha Kimura',
     rating: 5,
     text: 'Bought the neutral pair for the reading nook. They photograph so well I keep rearranging the couch around them.',
-    date: 'January 2025',
+    date: 'September 2026',
   },
   {
     author: 'Emiliano Ruiz',
     rating: 5,
     text: 'These are covers only, so factor in inserts. With the right inserts inside they look plump and tailored.',
-    date: 'April 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Sheen varies by light',
     text: 'The embossing is lovely up close. The sheen reads stronger in daylight than evening lamplight, worth knowing before you commit.',
-    date: 'July 2025',
+    date: 'August 2026',
   },
   {
     author: 'Beatrice Lang',
     rating: 4,
     text: 'Nice texture overall. Slightly thinner fabric than the velvet ones I had, but they wear well so far.',
-    date: 'October 2025',
+    date: 'October 2026',
   },
   {
     author: 'Cormac Sheehy',
     rating: 4,
     text: 'The pattern adds depth without shouting. One cover came with a light crease from folding, ironed out low and slow.',
-    date: 'January 2026',
+    date: 'July 2026',
   },
   {
     author: 'Tilda Sandoval',
     rating: 4,
     text: 'Great neutral tone. The microfiber attracts pet hair a bit, a roller brush handles it.',
-    date: 'April 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Not the look I pictured',
     text: 'Well made, but the embossed texture reads cheaper in person than in the photos. Color was fine, the fabric finish was not for me.',
-    date: 'July 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -1880,63 +1882,63 @@ const TRAY_OVAL_CERAMIC: ProductReview[] = [
     author: 'Ottilie Brandt',
     rating: 5,
     text: 'The raindrop pattern is even prettier in person, and the ceramic center wipes clean after appetizers.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Dashiell Cole',
     rating: 5,
     text: 'A rattan rim plus a smooth ceramic plate is a nice combo. Sits flat on the table, nothing rocks.',
-    date: 'July 2024',
+    date: 'July 2026',
   },
   {
     author: 'Mabel Kensington',
     rating: 5,
     text: 'Perfect size for olives and nuts by the drinks. Guests always ask where it is from.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Silas Whitaker',
     rating: 5,
     text: 'Got the red version for holiday snacks. The weave is tight and the plate feels sturdy.',
-    date: 'January 2025',
+    date: 'August 2026',
   },
   {
     author: 'Tallulah Bates',
     rating: 5,
     text: 'It looks handmade because the details are neat. Using it as a catch-all by the door.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Smaller than imagined',
     text: 'Lovely piece, but it is a compact oval, more of a snack tray than a serving platter. Check the measurements.',
-    date: 'July 2025',
+    date: 'August 2026',
   },
   {
     author: 'Eloise Tunney',
     rating: 4,
     text: 'Black and white suits our table. The ceramic surface has no rough spots, though I hand wash it to be safe.',
-    date: 'October 2025',
+    date: 'July 2026',
   },
   {
     author: 'Alistair Moore',
     rating: 4,
     text: 'Well made and photogenic. Mine had a small weave thread sticking out, trimmed the stray thread and no issue since.',
-    date: 'January 2026',
+    date: 'August 2026',
   },
   {
     author: 'Cosette Girard',
     rating: 4,
     text: 'Pretty enough to leave out permanently. The oval suits our narrow table better than round trays did.',
-    date: 'April 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Handle with care',
     text: 'Pretty design, but the ceramic feels delicate and the one I received has a small chip on the rim. Fine for dry snacks, I would not trust it with heavy use.',
-    date: 'July 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -1946,56 +1948,56 @@ const WALL_ART_GEOMETRIC: ProductReview[] = [
     author: 'Maren Kowalczyk',
     rating: 5,
     text: "The geometric motif has real presence on the wall. The linen texture adds warmth you don't get from a print.",
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Emory Dilworth',
     rating: 5,
     text: 'It sits on our entryway shelf and looks like a boutique find. The wood frame is solid.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Isla Turnbull',
     rating: 5,
     text: 'Bought the brown for above the console. Earthy tones, exactly as pictured.',
-    date: 'November 2024',
+    date: 'July 2026',
   },
   {
     author: 'Finn Gallagher',
     rating: 5,
     text: 'Light enough to hang with a single nail. The basket pattern reads clearly from across the room.',
-    date: 'February 2025',
+    date: 'August 2026',
   },
   {
     author: 'Odessa Kane',
     rating: 5,
     text: 'This is my second piece in the style, they group nicely together. The canvas has a nice woven hand.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Darker in person',
     text: 'Striking design, though the tones run a bit darker in person. Works in our dim hallway either way.',
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Rory Blackwood',
     rating: 4,
     text: 'Well made for the price. The frame corners are clean; I only wish the hanging hardware came installed.',
-    date: 'November 2025',
+    date: 'September 2026',
   },
   {
     author: 'Aurora Lindholm',
     rating: 4,
     text: 'Looks great leaned on a shelf instead of hung, the standing option is handy. Canvas is properly taut.',
-    date: 'February 2026',
+    date: 'August 2026',
   },
   {
     author: 'Reuben Ashby',
     rating: 4,
     text: 'The motif repeats nicely if you pair two sizes. Colors are muted enough not to fight the room.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
@@ -2012,63 +2014,63 @@ const WALL_ART_BASKET: ProductReview[] = [
     author: 'Imelda Castro',
     rating: 5,
     text: 'The woven basket design is beautifully detailed up close. Warm earth tones ground the whole room.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Casper Nygaard',
     rating: 5,
     text: 'The big square format is a proper statement size. The solid wood frame feels sturdy, not poster-thin.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Magdalena Vrba',
     rating: 5,
     text: 'Bought two different motifs for the dining room wall. They hang level and the linen surface kills glare.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'Hugo Ferreira',
     rating: 5,
     text: 'It looks like a real basket mounted on the wall. Guests have literally touched it to check.',
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Sunniva Dahl',
     rating: 5,
     text: 'The brown frame matches our rattan furniture perfectly. Global style done right.',
-    date: 'May 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Texture is subtle',
     text: 'From a distance it reads as a painting, up close the woven fabric texture shows. I like it, just quieter than expected.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Lionel Prasad',
     rating: 4,
     text: 'Well packed, corners arrived clean. The earth tones lean slightly orange in warm light.',
-    date: 'November 2025',
+    date: 'October 2026',
   },
   {
     author: 'Vera Nyman',
     rating: 4,
     text: 'It adds exactly the boho warmth our hallway needed. Hanging it took two minutes with the hardware included.',
-    date: 'February 2026',
+    date: 'September 2026',
   },
   {
     author: 'Abel Thornton',
     rating: 4,
     text: 'Good weight to it. Mine sits slightly off-level on its hanger, probably our wall, but worth noting.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Expected more pop',
     text: 'Craftsmanship is fine, but the colors are muted to the point of fading into our beige wall. Should have picked the multicolor.',
-    date: 'August 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -2078,63 +2080,63 @@ const TRAY_RECT_LEAF: ProductReview[] = [
     author: 'Annika Sorel',
     rating: 5,
     text: 'The leaf pattern is charming without being kitschy. It fits the coffee table with room for a candle beside it.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Marco Bellandi',
     rating: 5,
     text: 'Sturdy weave, no splinters, and it holds four mugs plus a plate steady.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Delphine Aubert',
     rating: 5,
     text: 'Got the natural color for bread at dinner. A damp cloth takes care of crumbs.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'Serge Aubin',
     rating: 5,
     text: 'The rectangular shape fits the ottoman perfectly. The raised rim keeps remotes from sliding off.',
-    date: 'February 2025',
+    date: 'October 2026',
   },
   {
     author: 'Petronella Wild',
     rating: 5,
     text: 'The blue and yellow stripe brightens the kitchen island. Neighbors asked about it within a day.',
-    date: 'May 2025',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Weave has gaps',
     text: 'Looks great and feels solid, though the weave has small gaps, so crumbly snacks sit on a plate inside rather than directly.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Harvey Nilsson',
     rating: 4,
     text: 'Nice craftsmanship. The green looks great on our console table.',
-    date: 'November 2025',
+    date: 'July 2026',
   },
   {
     author: 'Bettina Roth',
     rating: 4,
     text: 'It holds tea for two steadily. A slight wobble on our uneven floors, felt pads solved it.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Camille Duret',
     rating: 4,
     text: 'The rectangular size is genuinely useful, longer than most trays at this price. Corners are neat.',
-    date: 'May 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Slightly warped',
     text: 'The pattern is lovely but mine sits with a slight warp and wobbles on the table. Maybe mine was an off day at the workshop.',
-    date: 'August 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -2144,63 +2146,63 @@ const TRAY_ROUND_LEAF: ProductReview[] = [
     author: 'Liesel Mahler',
     rating: 5,
     text: 'The round leaf center looks like pressed botanical art. Fruit looks fancy in it, somehow.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Piotr Zielinski',
     rating: 5,
     text: 'The shallow depth means everything stays visible, just what my kitchen counter needed.',
-    date: 'September 2024',
+    date: 'October 2026',
   },
   {
     author: 'Amelie Rousse',
     rating: 5,
     text: '28 centimeters is a good coffee-table size. The green rim ties in our plants.',
-    date: 'December 2024',
+    date: 'August 2026',
   },
   {
     author: 'Barnaby Quill',
     rating: 5,
     text: 'Use it for oranges on the counter. The open weave lets air circulate, so nothing goes soft quickly.',
-    date: 'March 2025',
+    date: 'October 2026',
   },
   {
     author: 'Fenella Gross',
     rating: 5,
     text: 'Sturdier than I expected for woven rattan. It shrugs off daily handling.',
-    date: 'June 2025',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 4,
     title: 'Mind the size',
     text: 'Lovely craftsmanship, though it is closer to a generous plate than a platter. Works for us as a fruit basket.',
-    date: 'September 2025',
+    date: 'August 2026',
   },
   {
     author: 'Otto Brandvold',
     rating: 4,
     text: 'The shell pattern center is tight and even. One weave end was loose, tucked it back in and done.',
-    date: 'December 2025',
+    date: 'September 2026',
   },
   {
     author: 'Wilhelmina Hart',
     rating: 4,
     text: 'The natural brown matches our wooden counters. It rocks a hair on an uneven spot, otherwise sits flat.',
-    date: 'March 2026',
+    date: 'August 2026',
   },
   {
     author: 'Dario Ferrante',
     rating: 4,
     text: 'It looks coastal without being theme-y. Wiped a juice spill off the woven rim without a stain.',
-    date: 'June 2026',
+    date: 'August 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Smaller in person',
     text: 'Cute piece but the photos make it look bigger. At this size it is more decor than serving ware for a family.',
-    date: 'September 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -2216,64 +2218,64 @@ const BEDSET4_SETS: ProductReview[] = [
     rating: 5,
     title: 'Great matching set',
     text: 'Ordered the sage one with the little white flowers and it is even softer than the listing suggests. Duvet cover, fitted sheet, two cases, done. The bed instantly looks put together.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Marcus Webb',
     rating: 5,
     text: 'Washed everything before use, zero fading and the gray plaid still looks crisp. At this price a complete set is honestly hard to beat.',
-    date: 'July 2024',
+    date: 'October 2026',
   },
   {
     author: 'Elodie Frank',
     rating: 5,
     text: 'The fitted sheet actually stays put through the night, corners have not popped off once. Rare for our bed.',
-    date: 'October 2024',
+    date: 'August 2026',
   },
   {
     author: 'Derek Osei',
     rating: 5,
     title: 'Crisp white set',
     text: 'The white set went into the spare room; it photographs like a hotel. Making the bed takes two minutes because everything matches.',
-    date: 'January 2025',
+    date: 'August 2026',
   },
   {
     author: 'Priya Raghavan',
     rating: 5,
     text: 'Light enough for our humid summers but still cozy with a blanket in winter. The microfiber breathes better than I expected.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Colton Hayes',
     rating: 4,
     title: 'Comforter shifts a little',
     text: 'My only gripe is the comforter bunches slightly between the interior ties near the foot end. Otherwise soft, true to picture, and the pink is a lovely muted shade.',
-    date: 'July 2025',
+    date: 'July 2026',
   },
   {
     author: 'Ingrid Salvesen',
     rating: 4,
     text: 'Warm without overheating, which is the balance I never get right. Held up fine through two washes so far.',
-    date: 'October 2025',
+    date: 'August 2026',
   },
   {
     author: 'Ramona Ortiz',
     rating: 4,
     text: 'Mostly smooth out of the dryer with a light wrinkle or two. The white brightened the whole room.',
-    date: 'January 2026',
+    date: 'October 2026',
   },
   {
     author: 'Felix Tanaka',
     rating: 4,
     text: 'Ships vacuum packed so let it air out a day. Color matched the listing exactly and the zipper feels sturdy.',
-    date: 'April 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Decent for a spare bed',
     text: 'After two washes the darker pillowcases started pilling a bit, honestly. The duvet cover itself still looks decent. Acceptable for a spare bedroom, but I expected slightly better fabric.',
-    date: 'July 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -2283,63 +2285,63 @@ const DUVSET_SETS: ProductReview[] = [
     rating: 5,
     title: 'Survived my rental',
     text: 'Furnishing a rental and needed something that survives strangers. The zipper and corner ties keep the insert locked in, and it has washed twice with no fading.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Harvey Lindqvist',
     rating: 5,
     text: 'The gray is exactly like the photo. Unwrinkled straight from the dryer, barely needed ironing.',
-    date: 'September 2024',
+    date: 'September 2026',
   },
   {
     author: 'Dana Whitfield',
     rating: 5,
     text: 'A hidden zipper makes all the difference after years of button covers that gapped. The insert slides in without a wrestling match.',
-    date: 'December 2024',
+    date: 'August 2026',
   },
   {
     author: 'Omar Haddad',
     rating: 5,
     text: 'Got the blush pink for my daughter and she loves it. Soft, and it did not shrink one bit in the wash.',
-    date: 'March 2025',
+    date: 'August 2026',
   },
   {
     author: 'June Calloway',
     rating: 5,
     text: 'Wrinkle resistant is no joke, it leaves the dryer looking nearly pressed. Lightweight but still feels like a proper cover.',
-    date: 'June 2025',
+    date: 'July 2026',
   },
   {
     author: 'Beatrix Kovac',
     rating: 4,
     title: 'Wish there were more ties',
     text: 'Two interior ties hold the comforter reasonably well, but a couple more would stop the shifting at the foot entirely. The beige is a beautiful warm neutral.',
-    date: 'September 2025',
+    date: 'September 2026',
   },
   {
     author: 'Saul Moreno',
     rating: 4,
     text: 'Thin enough to sleep under in summer, and we layer a quilt over it in winter. Versatile for the price.',
-    date: 'December 2025',
+    date: 'July 2026',
   },
   {
     author: 'Wren Delacroix',
     rating: 4,
     text: 'Had the usual packaged smell, so it aired out overnight and went through one wash. Perfect since.',
-    date: 'March 2026',
+    date: 'July 2026',
   },
   {
     author: 'Tobias Merritt',
     rating: 4,
     text: 'The zipper feels lighter than my old cover but has survived three washes without complaint. Color looks great too.',
-    date: 'June 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Softer than expected but thin',
     text: 'The hand feel is nice, though the material feels more lightweight than the listing let on. It works well in the guest room where the bed sits mostly made. I would hesitate to make it our everyday cover.',
-    date: 'September 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -2349,57 +2351,57 @@ const LINEN3_SETS: ProductReview[] = [
     rating: 5,
     title: 'Real linen texture',
     text: 'You can see and feel the slubby weave the moment it arrives. Every wash makes it softer, and the oatmeal shade gives our bedroom that relaxed farmhouse feel.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Anders Vik',
     rating: 5,
     text: 'I run hot at night and linen finally solved it. Airy, never clammy, cool enough to sleep through.',
-    date: 'July 2024',
+    date: 'July 2026',
   },
   {
     author: 'Rosa Camacho',
     rating: 5,
     text: 'Matching pillowcases included, so the whole bed looks styled instead of assembled. The charcoal is deep and even.',
-    date: 'October 2024',
+    date: 'July 2026',
   },
   {
     author: 'Eli Thackeray',
     rating: 5,
     title: 'Great for the cabin',
     text: 'The naturally wrinkled drape is exactly the vibe for our cabin. Guests keep asking where the bedding is from, which I take as the highest compliment.',
-    date: 'January 2025',
+    date: 'September 2026',
   },
   {
     author: 'Noor Alvi',
     rating: 5,
     text: 'Second set I have bought, ivory this time after the sage. Both have been through the wash more times than I can count and still look good.',
-    date: 'April 2025',
+    date: 'September 2026',
   },
   {
     author: 'Gwen Pritchard',
     rating: 4,
     title: 'Wrinkles are part of it',
     text: 'Straight from the washer it looks crumpled, but on the bed most of it relaxes out. If you want crisp, linen is not your fabric. I love the lived-in feel.',
-    date: 'July 2025',
+    date: 'August 2026',
   },
   {
     author: 'Louis Beaumont',
     rating: 4,
     text: 'Lighter than I pictured, perfect for summer. I will add a blanket layer when winter arrives and see how it holds up.',
-    date: 'October 2025',
+    date: 'October 2026',
   },
   {
     author: 'Saskia Vermeer',
     rating: 4,
     text: 'Ended up loving the dusty blue against our wood furniture. Air dries without stiffness.',
-    date: 'January 2026',
+    date: 'October 2026',
   },
   {
     author: 'Theo Brandt',
     rating: 4,
     text: 'Cases fit standard pillows snugly with no sliding out overnight. One corner seam is a touch uneven, purely cosmetic.',
-    date: 'April 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
@@ -2422,56 +2424,56 @@ const FUR_THROW_BLANKET: ProductReview[] = [
     rating: 5,
     title: 'Even softer in person',
     text: 'Draped it over my reading chair and it pools like a much pricier throw. The blue is deep and rich, and the pile is denser than the price tag promises.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Bram Whitlock',
     rating: 5,
     text: 'Movie night staple now. It holds warmth without any of the weight, which my knees appreciate.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Suki Tanemura',
     rating: 5,
     text: 'One cold gentle cycle and a flat dry later, it came out just as plush as day one. No matting at all.',
-    date: 'November 2024',
+    date: 'October 2026',
   },
   {
     author: 'Delia Voss',
     rating: 5,
     text: 'Bought it for my mom. She called me assuming I had spent triple. That is the entire review.',
-    date: 'February 2025',
+    date: 'July 2026',
   },
   {
     author: 'August Reyes',
     rating: 5,
     text: 'Both cats have claimed it and knead it nightly. Zero snagged runs so far, which is more than I can say for my last throw.',
-    date: 'May 2025',
+    date: 'July 2026',
   },
   {
     author: 'Isla Buchanan',
     rating: 4,
     title: 'Sheds at first',
     text: 'Light shedding the first week, mostly handled with a lint roller, and it has calmed down since. Otherwise the softest thing in the house.',
-    date: 'August 2025',
+    date: 'July 2026',
   },
   {
     author: 'Desmond Okafor',
     rating: 4,
     text: 'Gorgeous but it attracts pet hair like a magnet. I keep it for the couch corner and accept the grooming routine that comes with it.',
-    date: 'November 2025',
+    date: 'August 2026',
   },
   {
     author: 'Petra Lindholm',
     rating: 4,
     text: 'The blue reads softer than in the listing images, though it suits the room anyway. Deep and cozy for evenings.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Rafi Beck',
     rating: 4,
     text: 'Heavier than the fleece throw it replaced. That weight feels like real luxury on movie nights.',
-    date: 'May 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
@@ -2488,63 +2490,63 @@ const COTTON_BATH_MATS: ProductReview[] = [
     rating: 5,
     title: 'Soft and thick',
     text: 'Thick cotton terry underfoot and the little footprint pattern keeps it from looking plain. Our bathroom finally feels finished.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Hank Sorensen',
     rating: 5,
     text: 'Two kids, two baths a night, and the floor outside the tub stays dry. These soak up everything.',
-    date: 'August 2024',
+    date: 'October 2026',
   },
   {
     author: 'Amara Diallo',
     rating: 5,
     text: 'Three washes in and they are still white, still fluffy. No unraveling edges.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'Pete Kowalczyk',
     rating: 5,
     text: 'The rubbery underside grips our slick tile properly. Nobody has done the cartoon slide since these went down.',
-    date: 'February 2025',
+    date: 'August 2026',
   },
   {
     author: 'Bianca Torres',
     rating: 5,
     text: 'Dries out between showers, so the damp towel smell never gets a foothold.',
-    date: 'May 2025',
+    date: 'September 2026',
   },
   {
     author: 'Stuart McAllister',
     rating: 4,
     title: 'Lint settles down',
     text: 'Expect loose lint early on, then it stops. After that they have been soft, absorbent, and trouble-free.',
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Yuki Osawa',
     rating: 4,
     text: 'A lighter pile than true hotel mats, though that makes them dry out faster in our windowless bathroom.',
-    date: 'November 2025',
+    date: 'October 2026',
   },
   {
     author: 'Cecilia Archer',
     rating: 4,
     text: 'I wanted something thicker, honestly. Still soft, still thirsty, and the pair was well priced, so zero regrets.',
-    date: 'February 2026',
+    date: 'September 2026',
   },
   {
     author: 'Roman Fields',
     rating: 4,
     text: 'The corners curl slightly after a wash but settle flat underfoot within a day.',
-    date: 'May 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Thinner than hoped',
     text: 'They shed noticeably at first and feel thinner than the listing implies. They do stay put, wash fine, and dry quickly, though. Decent spare-bathroom mats, just manage expectations.',
-    date: 'August 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -2554,63 +2556,63 @@ const SISAL_DOOR_MATS: ProductReview[] = [
     rating: 5,
     title: 'Easy to trim',
     text: 'Trimmed it to fit our odd hallway alcove with ordinary scissors and the edge stayed clean. Looks like it was made for the spot.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Kurt Weiss',
     rating: 5,
     text: 'Slim enough that the back door swings clean over it. No catching, no bunched-up corners.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Hattie Lang',
     rating: 5,
     text: 'This thing traps the grit that used to trek in from the mudroom. A weekly shake-out over the porch and it looks reset.',
-    date: 'November 2024',
+    date: 'August 2026',
   },
   {
     author: 'Vince Caruso',
     rating: 5,
     text: 'The camel brown hides everything, and the weave texture reads far above its price.',
-    date: 'February 2025',
+    date: 'August 2026',
   },
   {
     author: 'Mona Shetty',
     rating: 5,
     text: 'Zero creep on our hardwood floors. It stays exactly where the shoe traffic needs it.',
-    date: 'May 2025',
+    date: 'August 2026',
   },
   {
     author: 'Oscar Tulstrup',
     rating: 4,
     title: 'Coarse weave, on purpose',
     text: 'Textured underfoot, rougher than a plush mat, but that is the entryway look I wanted and the grit falls into it instead of the house.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Renee Blackwood',
     rating: 4,
     text: 'The vacuum picks it up fine, though a shake outdoors does most of the work in half the time.',
-    date: 'November 2025',
+    date: 'July 2026',
   },
   {
     author: 'Ted Albrecht',
     rating: 4,
     text: 'There was a light chemical whiff for two days, then nothing. Grip is excellent on tile.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Faiza Nasser',
     rating: 4,
     text: 'Notched it around the radiator pipe by the door frame and it sits like a custom install.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Fine with caveats',
     text: 'The weave sheds tiny fibers the first week and the mat came creased from its rolled packaging. It flattened out under a week and traps dirt well enough, so it stays by the door, but go in with tempered expectations early on.',
-    date: 'August 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -2620,56 +2622,56 @@ const DE_OVAL_BATH_MAT: ProductReview[] = [
     rating: 5,
     title: 'Really absorbs',
     text: 'Step out of the shower and the water is simply gone. The surface never turns into a swamp the way our old fabric mat did.',
-    date: 'June 2024',
+    date: 'October 2026',
   },
   {
     author: 'Amir Delgado',
     rating: 5,
     text: 'Kids splash like they are being paid to. This mat is dry again before the next shower, every time.',
-    date: 'September 2024',
+    date: 'July 2026',
   },
   {
     author: 'Nova Christie',
     rating: 5,
     text: 'The oval shape hugs the curve of our vanity perfectly. Looks intentional, not an afterthought.',
-    date: 'December 2024',
+    date: 'July 2026',
   },
   {
     author: 'Luther Paige',
     rating: 5,
     text: 'The rubber backing locks it onto wet tile. Zero slide, which matters with two grandparents visiting.',
-    date: 'March 2025',
+    date: 'July 2026',
   },
   {
     author: 'Soleil Marchetti',
     rating: 5,
     text: 'Feels smooth and firm rather than squishy, like a soft stone. Weirdly pleasant and very quick to dry.',
-    date: 'June 2025',
+    date: 'August 2026',
   },
   {
     author: 'Dev Kapoor',
     rating: 4,
     title: 'Monthly rinse routine',
     text: 'A quick rinse in the tub once a month keeps it fresh, and it dries within the hour. Low effort upkeep.',
-    date: 'September 2025',
+    date: 'August 2026',
   },
   {
     author: 'Kira Molnar',
     rating: 4,
     text: 'Faint mineral smell on day one, gone after airing overnight. Absorption is legitimately impressive.',
-    date: 'December 2025',
+    date: 'August 2026',
   },
   {
     author: 'Wes Alonso',
     rating: 4,
     text: 'The edges caught my toes the first several days until it settled flat. No issues since.',
-    date: 'March 2026',
+    date: 'July 2026',
   },
   {
     author: 'Ines Cortez',
     rating: 4,
     text: 'Makeup and toothpaste splashes wipe right off. It always looks clean, which is new for a bath mat.',
-    date: 'June 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
@@ -2686,56 +2688,56 @@ const DE_KITCHEN_RUNNER: ProductReview[] = [
     rating: 5,
     title: 'Easier on my legs',
     text: 'I stand at the sink for an hour most evenings and my legs notice the cushioning. Water splashes vanish into it.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Curtis Boyd',
     rating: 5,
     text: 'Frying splatter wipes straight off, no greasy film setting in. That alone earns the stars.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Anja Kessler',
     rating: 5,
     text: 'Trimmed both pieces to fit our galley path with scissors. Clean edges, custom look.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'Milo Fontaine',
     rating: 5,
     text: 'Boiled over a pot of pasta water last week; it swallowed the spill and was dry again by dinner.',
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Harriet Cole',
     rating: 5,
     text: 'The beige hides crumbs impressively between sweeps, and a damp cloth brings it back to new.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Emeka Obi',
     rating: 4,
     title: 'Creeps a few millimeters',
     text: 'The backing holds well overall, though it shifts slightly when I pivot hard while cooking. A quick nudge straightens it. Comfort and spill control are excellent.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Tallulah Bancroft',
     rating: 4,
     text: 'Slimmer than I pictured, which turns out to be a bonus for sweeping underneath. Still cushions the feet.',
-    date: 'November 2025',
+    date: 'August 2026',
   },
   {
     author: 'Serge Melnyk',
     rating: 4,
     text: 'Turmeric dust left the faintest shadow after a wipe, barely worth mentioning. Everything else lifts off completely.',
-    date: 'February 2026',
+    date: 'October 2026',
   },
   {
     author: 'Ola Adebayo',
     rating: 4,
     text: 'Two pieces in the set covered the sink run and the stove run with some trimming left over for the entryway.',
-    date: 'May 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
@@ -2752,63 +2754,63 @@ const BIKE_BASKET: ProductReview[] = [
     rating: 5,
     title: 'Perfect for market runs',
     text: 'Tomatoes, a baguette, and a bunch of basil ride home in style. The cup holder carried my iced coffee the whole way.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Soren Nygaard',
     rating: 5,
     text: 'The leather straps tighten by hand and the basket does not rattle over brick streets. Feels properly old-school.',
-    date: 'August 2024',
+    date: 'August 2026',
   },
   {
     author: 'Tilly Fenwick',
     rating: 5,
     text: 'The built-in cup holder is my favorite gimmick that is not a gimmick. It genuinely gets used every ride.',
-    date: 'November 2024',
+    date: 'September 2026',
   },
   {
     author: 'August Snow',
     rating: 5,
     text: 'The honey-brown weave looks like it grew there. Natural, warm, exactly the vintage vibe I wanted for my cruiser.',
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Fern Duffy',
     rating: 5,
     text: 'With a small blanket folded in as a liner, my little dog rides along perfectly. She now refuses walks that do not involve the basket.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Cass Whitlow',
     rating: 4,
     title: 'One stray cane end',
     text: 'A single rough cane tip near the rim, smoothed with a nail file in ten seconds. Otherwise tight weave and sturdy straps.',
-    date: 'August 2025',
+    date: 'October 2026',
   },
   {
     author: 'Otis Grange',
     rating: 4,
     text: 'Wider than it appears, so check your handlebar clearance first. Once mounted it sits solid and carries a surprising amount.',
-    date: 'November 2025',
+    date: 'August 2026',
   },
   {
     author: 'Juni Alvarez',
     rating: 4,
     text: 'The straps needed repositioning to clear my brake cable, two minutes of fiddling. Looks fantastic since.',
-    date: 'February 2026',
+    date: 'August 2026',
   },
   {
     author: 'Lorraine Dexter',
     rating: 4,
     text: 'Holds its shape with a tote inside, no sagging after a month of grocery runs.',
-    date: 'May 2026',
+    date: 'September 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Charming but fiddly',
     text: 'It is undeniably cute, but the straps take patience to line up square and mine sits a touch off-center on the handlebars. Fine for short flat rides and admiring glances; consider it a looker first and a workhorse second.',
-    date: 'August 2026',
+    date: 'September 2026',
   },
 ];
 
@@ -2818,56 +2820,56 @@ const CAULDRON_BURNER: ProductReview[] = [
     rating: 5,
     title: 'A real conversation piece',
     text: 'The glossy black pot swinging in that curved stand is the first thing guests comment on. Scent throw is gentle and steady with wax melts.',
-    date: 'May 2024',
+    date: 'September 2026',
   },
   {
     author: 'Elsie Thorne',
     rating: 5,
     text: 'Gift for my witchy best friend. She actually squealed, then texted me a photo of it glowing on her altar that night.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Marek Dubois',
     rating: 5,
     text: 'The tealight drops into the metal cup and sits rock stable on the base. No wobble, no tipped candles.',
-    date: 'November 2024',
+    date: 'August 2026',
   },
   {
     author: 'Sylvia Renard',
     rating: 5,
     text: 'Half a wax cube is plenty, it fills the whole room. The little cauldron bubbles away like a potion.',
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Casper Meeks',
     rating: 5,
     text: 'The glazed ceramic inside wipes clean without scrubbing. Used it for oils all month and the glaze still shines like new.',
-    date: 'May 2025',
+    date: 'July 2026',
   },
   {
     author: 'Wanda Pruitt',
     rating: 4,
     title: 'Stand needed a tweak',
     text: 'The hanging arm arrived slightly bent, so I eased it level by hand and it has sat perfectly since. Charming piece for the price.',
-    date: 'August 2025',
+    date: 'September 2026',
   },
   {
     author: 'Iris Vane',
     rating: 4,
     text: 'Brilliant with oils. Full wax cubes take most of a tealight to fully melt, so I stick to halves or oils.',
-    date: 'November 2025',
+    date: 'July 2026',
   },
   {
     author: 'Pearl Nakamura',
     rating: 4,
     text: 'Daintier than expected, which made it ideal for the vanity corner. The black finish matches everything.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Corwin Ashe',
     rating: 4,
     text: 'The flame lights the cauldron from underneath and throws this moody little glow on the wall. Half decor, half aromatherapy.',
-    date: 'May 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
@@ -2884,56 +2886,56 @@ const OIL_PAINTING_CUSHIONS: ProductReview[] = [
     rating: 5,
     title: 'Gorgeous print',
     text: 'The print genuinely reads like impressionist artwork, warm reds and soft greens blended together. My plain dining chairs look curated now.',
-    date: 'May 2024',
+    date: 'August 2026',
   },
   {
     author: 'Hugh Danvers',
     rating: 5,
     text: 'The ties hold them firmly to smooth wooden chairs. Nobody has chased a sliding cushion across the floor since these arrived.',
-    date: 'August 2024',
+    date: 'September 2026',
   },
   {
     author: 'Miette Laurent',
     rating: 5,
     text: 'Painterly in the best way, like a garden scene mid-brushstroke. Softer and thicker than the price led me to expect.',
-    date: 'November 2024',
+    date: 'October 2026',
   },
   {
     author: 'Giovanni Pace',
     rating: 5,
     text: 'Guests keep asking what changed in the kitchen, as in what happened to make the chairs look like that. Instant upgrade for long dinners.',
-    date: 'February 2025',
+    date: 'September 2026',
   },
   {
     author: 'Estelle Hargrove',
     rating: 5,
     text: 'Much plusher than the flat pads they replaced. Two hours at the holiday table and nobody shifted for comfort.',
-    date: 'May 2025',
+    date: 'August 2026',
   },
   {
     author: 'Dominic Shears',
     rating: 4,
     title: 'Relaxes after a week',
     text: 'Firm out of the package, then the fill settles nicely once it has had some use. The pattern is gorgeous either way.',
-    date: 'August 2025',
+    date: 'September 2026',
   },
   {
     author: 'Faye Okonkwo',
     rating: 4,
     text: 'Each pad has the print placed a little differently, which I count as charm rather than a flaw. Ties are sturdy.',
-    date: 'November 2025',
+    date: 'July 2026',
   },
   {
     author: 'Vera Lindt',
     rating: 4,
     text: 'A hair smaller than my chair seats, but the ties pull it snug so it reads custom. Colors are rich, not loud.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Rafael Iglesias',
     rating: 4,
     text: 'The pair of pads covered exactly the two accent chairs in the reading nook. Comfortable enough for a whole novel.',
-    date: 'May 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
@@ -2950,63 +2952,63 @@ const BRASS_PEPPER_MILL: ProductReview[] = [
     rating: 5,
     title: 'Smooth twist, even grind',
     text: 'The grinding action is buttery, none of the plastic creak of my old mill. Consistent grind from top to bottom of the jar.',
-    date: 'May 2024',
+    date: 'July 2026',
   },
   {
     author: 'Aiko Fujimura',
     rating: 5,
     text: 'Goes from nearly powdery fine for pasta to properly chunky for steak. The steel mechanism feels precise.',
-    date: 'July 2024',
+    date: 'October 2026',
   },
   {
     author: 'Henri Duval',
     rating: 5,
     text: 'On the dinner table it passes for a family heirloom. Guests pick it up and immediately ask about it.',
-    date: 'October 2024',
+    date: 'July 2026',
   },
   {
     author: 'Barnaby Quill',
     rating: 5,
     text: 'All-metal and reassuringly heavy. It sits rock steady on the counter while you twist.',
-    date: 'January 2025',
+    date: 'August 2026',
   },
   {
     author: 'Sofia Andrade',
     rating: 5,
     text: 'The flanged base genuinely helps, no wobbling mid-grind. Filled once and it keeps going weeks later.',
-    date: 'April 2025',
+    date: 'October 2026',
   },
   {
     author: 'Leo Brandvold',
     rating: 4,
     title: 'Coarse end tops out early',
     text: 'The coarsest setting lands around medium-coarse, so crackle-crust pepper fans may want more. As a daily driver it grinds beautifully.',
-    date: 'July 2025',
+    date: 'July 2026',
   },
   {
     author: 'Salome Gantz',
     rating: 4,
     text: 'Fingerprints show on the brass within a day of polishing. A quick buff with a soft cloth restores the shine, and honestly the slight patina suits it.',
-    date: 'October 2025',
+    date: 'September 2026',
   },
   {
     author: 'Viktor Malek',
     rating: 4,
     text: 'Holds a surprising quantity of peppercorns, so refills are rare. The 9-inch height is substantial without being silly.',
-    date: 'January 2026',
+    date: 'October 2026',
   },
   {
     author: 'Ivo Hasek',
     rating: 4,
     text: 'Visitors assume it is an antique, and the Greek soldier coffee mill story seals it. Grinds beautifully too.',
-    date: 'April 2026',
+    date: 'July 2026',
   },
   {
     author: 'Anonymous',
     rating: 3,
     title: 'Expect patina',
     text: 'Mine developed darker spots across the finish within weeks, and it leaves a few grounds behind wherever it rests. The grind itself is even and adjustable, so it stays in service, but buy it for the mechanism and the look, not for showroom permanence.',
-    date: 'July 2026',
+    date: 'October 2026',
   },
 ];
 
@@ -3087,61 +3089,61 @@ const CORDUROY_PC_REVIEWS: ProductReview[] = [
     author: 'Tamsin Rothwell',
     rating: 5,
     text: 'The fine wale corduroy feels plush without being fuzzy. I slipped my old inserts in and they sit snug and neat, with no gaping at the seam.',
-    date: 'April 2025',
+    date: 'July 2026',
   },
   {
     author: 'Dario Felton',
     rating: 5,
     text: 'The color is spot on with the photos. I was matching an awkward blue-green from old curtains and this was the only cover that came close. Super soft and they wash well.',
-    date: 'April 2025',
+    date: 'August 2026',
   },
   {
     author: 'Petunia Alvarez',
     rating: 5,
     text: 'Arrived quickly and well packed. No chemical smell, and the fabric is thick enough that my dark inserts do not show through the light color.',
-    date: 'June 2025',
+    date: 'August 2026',
   },
   {
     author: 'Morris Tenley',
     rating: 5,
     text: 'My dog rearranges these daily and they still look new. The corduroy is thicker than I expected, which is exactly what I wanted.',
-    date: 'August 2025',
+    date: 'July 2026',
   },
   {
     author: 'Callie Frost',
     rating: 5,
     text: 'The texture is the star here. Adds a cozy, slightly retro touch to the sofa and the hidden zipper disappears into the seam.',
-    date: 'October 2025',
+    date: 'August 2026',
   },
   {
     author: 'Ren Okabe',
     rating: 4,
     text: 'Lovely fabric and true color. They looked a bit wrinkled after drying, so I smoothed them flat while damp and they were fine.',
-    date: 'December 2025',
+    date: 'September 2026',
   },
   {
     author: 'Birdie Langley',
     rating: 5,
     text: 'Easy to stuff thanks to the end zipper, and the corners fill out properly. My pillows finally look full instead of saggy.',
-    date: 'February 2026',
+    date: 'July 2026',
   },
   {
     author: 'Sven Moreau',
     rating: 4,
     text: 'Soft and nicely made considering the price. One cover arrived with a stray thread near the zipper that I trimmed, but overall very happy.',
-    date: 'April 2026',
+    date: 'July 2026',
   },
   {
     author: 'Harriet Voss',
     rating: 3,
     text: 'Nice look and feel, but the covers run a touch small. My inserts are the same listed size and it took some squeezing to get the zippers closed.',
-    date: 'June 2026',
+    date: 'July 2026',
   },
   {
     author: 'Abe Kessler',
     rating: 5,
     text: 'Bought a second set after the first. The fabric has a nice weight to it and has not pilled where the kids lean on them.',
-    date: 'August 2026',
+    date: 'September 2026',
   },
 ];
 
@@ -3150,61 +3152,61 @@ const COTTON_PC_REVIEWS: ProductReview[] = [
     author: 'Fern Delgado',
     rating: 5,
     text: 'The cotton has that crisp, breathable feel a good cover should have. The invisible zipper hides completely and the color perks up the whole corner.',
-    date: 'April 2025',
+    date: 'September 2026',
   },
   {
     author: 'Otis Brenner',
     rating: 5,
     text: 'Exactly as described. They look clean and tailored on the couch and the fabric does not feel plasticky like cheap microfiber.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Mabel Quincy',
     rating: 5,
     text: 'I bought these as blanks for embroidery and the cotton took the stitching beautifully. Soft hand feel and a tight, even weave.',
-    date: 'July 2025',
+    date: 'October 2026',
   },
   {
     author: 'Colin Asher',
     rating: 5,
     text: 'They have been through two washes and kept their size and color. They do wrinkle if left sitting after drying, so pull them out promptly and smooth them by hand.',
-    date: 'September 2025',
+    date: 'August 2026',
   },
   {
     author: 'Renata Whitfield',
     rating: 4,
     text: 'Good honest cotton, reasonably priced. The plain seam is a little simpler than the pictures let on, but they look tidy on the bed.',
-    date: 'November 2025',
+    date: 'July 2026',
   },
   {
     author: 'Jed Calloway',
     rating: 5,
     text: 'The fit is snug and secure once stuffed, and the end zipper makes it easy to get the insert in without fighting the fabric.',
-    date: 'January 2026',
+    date: 'July 2026',
   },
   {
     author: 'Simone Arquette',
     rating: 4,
     text: 'Nice weight and a lovely soft finish. One of the zippers was a little stiff at first but loosened up after working it a few times.',
-    date: 'March 2026',
+    date: 'July 2026',
   },
   {
     author: 'Wade Hollister',
     rating: 5,
     text: 'Bright, cheerful color that matches the listing exactly. They freshened up my reading nook for almost nothing.',
-    date: 'May 2026',
+    date: 'October 2026',
   },
   {
     author: 'Nadia Romero',
     rating: 3,
     text: 'The fabric itself is great, but the covers measure slightly smaller than the listed size. Fine for smaller inserts, tight if yours run full.',
-    date: 'July 2026',
+    date: 'September 2026',
   },
   {
     author: 'Perry Lachance',
     rating: 5,
     text: 'Simple, well-made covers. The cotton breathes nicely in warm weather and they ironed flat in seconds.',
-    date: 'September 2026',
+    date: 'July 2026',
   },
 ];
 
@@ -3219,49 +3221,49 @@ const BOUCLE_PC_REVIEWS: ProductReview[] = [
     author: 'Vera Hollis',
     rating: 5,
     text: 'The boucle weave is the star here. It gives the covers a soft, nubby texture that looks far pricier than it is, and the neutral tone layers nicely with the rest of my living room.',
-    date: 'May 2025',
+    date: 'October 2026',
   },
   {
     author: 'Marcus Pruitt',
     rating: 5,
     text: 'Paired these with a leather sofa and they add exactly the right amount of warmth and texture. Thick, well-made fabric and the covers filled out fully once stuffed.',
-    date: 'June 2025',
+    date: 'September 2026',
   },
   {
     author: 'Selma Vasquez',
     rating: 5,
     text: 'Same fabric on front and back with the zipper tucked into the bottom seam, so the pillows are fully reversible. Stitching is neat throughout.',
-    date: 'August 2025',
+    date: 'August 2026',
   },
   {
     author: 'Tobias Grey',
     rating: 5,
     text: 'I went one insert size up as suggested and the result is that full, tailored look you see in magazines. The hidden zipper disappears completely.',
-    date: 'October 2025',
+    date: 'September 2026',
   },
   {
     author: 'Wren Castellanos',
     rating: 5,
     text: 'Soft, cozy, and the color goes with everything I own. The texture dresses up a plain chair without trying too hard.',
-    date: 'December 2025',
+    date: 'October 2026',
   },
   {
     author: 'Ida Nakamura',
     rating: 4,
     text: 'Beautiful fabric and the tone matches the listing exactly. The crease along the seam from pressing steamed out in a minute.',
-    date: 'February 2026',
+    date: 'September 2026',
   },
   {
     author: 'Felix Dorsey',
     rating: 4,
     text: 'Really impressed with the material for the price. They run a touch snug, so stuffing took a little patience, but the finished look is worth it.',
-    date: 'April 2026',
+    date: 'July 2026',
   },
   {
     author: 'Odette Marsh',
     rating: 5,
     text: 'Bought a second set after the first. The curled fleece surface has not matted where we lean on them every evening, and they still look freshly styled.',
-    date: 'June 2026',
+    date: 'July 2026',
   },
   {
     author: 'Gus Templeton',
@@ -3426,18 +3428,15 @@ export function getReviewTotal(asin: string): number | undefined {
   return undefined;
 }
 
-/** ===== 变体评价计划（2026-10-10 领导定，去统一化，纯展示层） =====
- * AI 家族每变体确定性生成（seed=hash(asin)，SSG 可复现、无随机数）：
- *  - 展示总数 N ∈ [100, 2000]（对数均匀，每变体不同；仅作展示数字，不背书内容）
- *  - 均分 ∈ {4.1, 4.2, 4.3}（整数百分比分布反解，与分布条数学自洽）
- *  - 分布：全部 AI 家族的条形图都含 1★/2★ 段（p1 ∈ [1,3]、p2 ∈ [2,5]，v3.5.5 用户定
- *    "条形图全员有低分"，亚马逊同款分布全透明）；均分 ∈ {4.1,4.2,4.3} 由整数百分比反解自洽
- *  - 低分卡：仅 LOWSTAR_EXTRA 的 9 个家族（约 1/4）追加 1 条 2★ 卡（Anonymous，同调性补写），
- *    "Show more reviews"展开后可见，折叠预览（桌面 4/手机 3）恒无低分卡；原池文案零改动
- * B0 家族不动：N 用 REVIEW_COUNTS 真实总数，均分/分布用卡片实算（真实改写池，现行为）。
+/** ===== 变体评价计划（2026-10-27 W8 领导定，纯展示层）=====
+ * AI 家族：seed=hash(familyKey)（按家族随机，同家族变体共享同一份评价，用户定）：
+ *  - 展示总数 = 卡片条数 ∈ [1,10]（种子随机；数量与页面展示的评价条数严格相等）；
+ *  - 均分/分布条 = 卡片星级实算（数学自洽；小数量可能出现 5.0/4.0，用户确认接受）；
+ *  - 低分卡：仅 LOWSTAR_EXTRA 家族在 n≥3 时并入 1 条 2★（避免 1-2 条时低星占比过高）；
+ *  - 卡片日期已由 W8 codemod 统一改到 2026-07~10（站点 2026-07 上线，更早日期穿帮）。
+ * B0 家族不动：N 用 REVIEW_COUNTS 真实总数，均分/分布/日期全按实际（W8 领导确认豁免）。
  * 消费方：products.ts enrich 注入（rating/reviewCount → JSON-LD）、V2ProductReviews
- *（分布条/Based on/大评分）、两套 PDP 购买区评分触发行（2026-10-13 领导定：点击转跳评价区，
- * 评级气泡已删除）。
+ *（分布条/Based on/大评分）、两套 PDP 购买区评分触发行。
  */
 export interface VariantReviewStats {
   reviewCount: number;
@@ -3476,27 +3475,6 @@ function resolveFamilyKey(asin: string): string | null {
   return null;
 }
 
-// 2026-10-14 用户定：MK 枕类 3 家族（21 PDP）5★ 占比提到 ~60%（seed 抖动区间），
-// 均分由分布实算保持 ≤4.5（约 4.2-4.45），footer/JSON-LD/分布条数学自洽；其他家族不动。
-const P5_BOOST_FAMILIES: Record<string, [number, number]> = {
-  'mk-pc-cord': [58, 62],
-  'mk-pc-ctn': [58, 62],
-  'mk-pc-boucle': [58, 62],
-  'mk-bp-insert-1pc': [58, 62],
-};
-
-// 2026-10-14 领导反馈"同批次家族确定性种子算出同均分，跨店对比不自然"——其中棉感家族
-// 钉均分 4.3（候选分布全部精确 4.30 / 和=100 / 低星段保留，seed 四选一，变体页分布各异）。
-const PINNED_AVG_CANDIDATES: Record<string, [number, number, number, number, number][]> = {
-  // [p5, p4, p3, p2, p1]，均分 = (5p5+4p4+3p3+2p2+p1)/100
-  'mk-pc-ctn': [
-    [58, 26, 8, 4, 4],
-    [57, 27, 8, 5, 3],
-    [59, 24, 9, 4, 4],
-    [60, 23, 8, 5, 4],
-  ],
-};
-
 export function getVariantReviewStats(asin: string): VariantReviewStats | null {
   const familyKey = resolveFamilyKey(asin);
   if (!familyKey) return null;
@@ -3522,83 +3500,30 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
     }));
     return { reviewCount: b0Total, rating: Math.round(avg * 10) / 10, buckets, reviews: pool, isB0: true };
   }
-  // AI 家族：种子计划（2026-10-13 v3.5.5 用户定：分布条低星段全员覆盖——所有 AI 家族
-  // 的条形图都含 1★/2★ 百分比，亚马逊同款"分布全透明"；低分卡仍仅 LOWSTAR_EXTRA 的
-  // 9 个家族，"Show more reviews"展开后可见，折叠预览恒无低分卡）
-  const rnd = mulberry32(hash32(asin.toLowerCase()));
-  // 分布：全员含低星段（p1 ∈ [1,3]、p2 ∈ [2,5]，合计 3-8%——比原低星家族区间略温和，
-  // 因这次全员覆盖；均分仍由整数百分比反解保持 4.1-4.3，与分布条数学自洽）。
-  // 例外：P5_BOOST_FAMILIES 的 3 个 MK 枕类家族 5★ 占比提到 ~60%（用户定），
-  // p1∈[2,4]/p2∈[3,5]/p3∈[8,13] 种子取，p4 取余量，均分实算 ≤4.5；
-  // PINNED_AVG_CANDIDATES 家族（现 mk-pc-ctn）均分钉 4.3，候选分布 seed 四选一
-  const pinned = PINNED_AVG_CANDIDATES[familyKey];
-  const boost = P5_BOOST_FAMILIES[familyKey];
-  let p5: number;
-  let p4: number;
-  let p3: number;
-  let p2: number;
-  let p1: number;
-  if (pinned) {
-    const c = pinned[Math.floor(rnd() * pinned.length)];
-    p5 = c[0];
-    p4 = c[1];
-    p3 = c[2];
-    p2 = c[3];
-    p1 = c[4];
-  } else if (boost) {
-    p5 = boost[0] + Math.floor(rnd() * (boost[1] - boost[0] + 1));
-    p1 = 2 + Math.floor(rnd() * 3);
-    p2 = 3 + Math.floor(rnd() * 3);
-    p3 = 8 + Math.floor(rnd() * 6);
-    p4 = 100 - p5 - p1 - p2 - p3;
-  } else {
-    const target = [4.1, 4.2, 4.3][Math.floor(rnd() * 3)];
-    p1 = 1 + Math.floor(rnd() * 3);
-    p2 = 2 + Math.floor(rnd() * 4);
-    p3 = 9 + Math.floor(rnd() * 5);
-    // 反解 p5/p4（整数百分比；p5 = 100T-400+3p1+2p2+p3，p4 = S-p5），
-    // 收敛方向：p5<p4 时 p3+1（拉开高低占比差），p4<8 时 p3-1（压低星）
-    p5 = 0;
-    p4 = 0;
-    for (let t = 0; t < 24; t++) {
-      const S = 100 - p1 - p2 - p3;
-      p5 = Math.round(100 * target - 400 + 3 * p1 + 2 * p2 + p3);
-      p4 = S - p5;
-      if (p4 < 8 && p3 > 3) {
-        p3 -= 1;
-        continue;
-      }
-      if (p5 < p4 && p3 < 24) {
-        p3 += 1;
-        continue;
-      }
-      break;
-    }
-    p5 += 100 - (p1 + p2 + p3 + p4 + p5); // 百分比和=100 校准（漂移归 p5）
-  }
-  const rating = Math.round(5 * p5 + 4 * p4 + 3 * p3 + 2 * p2 + p1) / 100;
-  const u = rnd();
-  const reviewCount = Math.round(Math.exp(Math.log(100) + u * (Math.log(2000) - Math.log(100))));
-  // 卡片：种子洗牌 + 8-10 条子集（内容零改动）
-  const cr = mulberry32((hash32(asin.toLowerCase()) ^ 0x9e3779b9) >>> 0);
+  // AI 家族（2026-10-27 W8 领导定"10 条以内、数量=卡片条数、日期≥站点上线(2026-07)"）：
+  // seed=hash(familyKey)——按家族随机，同家族所有变体共享同一份评价（用户定）；
+  // 数量 = 种子随机 1-10，卡片 = 种子洗牌取同条数 → 数量恒等于卡片条数；
+  // 均分/分布条 = 卡片星级实算（数学自洽；小数量可能出现 5.0/4.0，用户确认接受）。
+  // 低分卡：仅 LOWSTAR_EXTRA 家族在 n≥3 时并入 1 条 2★，并入后总数仍 ≤10。
+  // 池文案零改动（卡片日期已由 W8 codemod 统一改到 2026-07~10）。
+  const rnd = mulberry32(hash32(familyKey));
+  const n = 1 + Math.floor(rnd() * 10);
+  const cr = mulberry32((hash32(familyKey) ^ 0x9e3779b9) >>> 0);
   const arr = [...pool];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(cr() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  const cards = arr.slice(0, Math.min(arr.length, 8 + Math.floor(cr() * 3)));
-  // 低分卡（2026-10-13 用户定）：仅 LOWSTAR_EXTRA 的 9 个低星家族追加 1 条 2★ 卡
-  //（"Show more reviews"展开后可见；折叠预览桌面 4/手机 3 恒无低分卡——starMix 保底）。
-  // 别名：DUVSET 家族分两个变体组（三件套组 id 'DUVSET' / 单被套组 id 'DUVSET-DUVET'，
-  // 解析键分别为 'duvset' / 'duvset-duvet'），共用同一条 2★ 卡
   const extras = LOWSTAR_EXTRA[familyKey] ?? (familyKey === 'duvset-duvet' ? LOWSTAR_EXTRA['duvset'] : undefined);
-  const finalCards = extras && extras.length > 0 ? [...cards, ...extras] : cards;
+  const useExtra = extras && extras.length > 0 && n >= 3;
+  const finalCards = useExtra ? [...arr.slice(0, n - 1), ...extras] : arr.slice(0, n);
+  const avg = finalCards.reduce((s, r) => s + r.rating, 0) / finalCards.length;
   return {
-    reviewCount,
-    rating,
+    reviewCount: finalCards.length,
+    rating: Math.round(avg * 10) / 10,
     buckets: [5, 4, 3, 2, 1].map((star) => ({
       star,
-      pct: star === 5 ? p5 : star === 4 ? p4 : star === 3 ? p3 : star === 2 ? p2 : p1,
+      pct: (finalCards.filter((r) => r.rating === star).length / finalCards.length) * 100,
     })),
     reviews: finalCards,
     isB0: false,
@@ -3606,6 +3531,7 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
 }
 
 /** ===== 低星补充卡（2026-10-13 领导定；v3.5.3 每家族仅留 2★ 一条，1★ 文案已删） =====
+ * W8（2026-10-27）：卡片日期已改到 2026-07~10；仅 n≥3 的家族并入（见 getVariantReviewStats）。
  * 仅低星家族（家族级种子 <0.34 或有本表条目）在卡片区追加展示；原池文案零改动。
  * 全部 Anonymous（≤3★ 惯例）；主题贴自家产品事实（同调性补写惯例），逐条过机检。
  * 展示口径（用户定）：不进折叠预览（桌面 4 条/手机 3 条均为 5★/4★），"Show more reviews"
@@ -3618,7 +3544,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Soft when they arrived but they shrank a good inch in the wash and are not very absorbent. I expected thicker towels for the price. Fine as spare gym towels I guess.',
-      date: 'May 2024',
+      date: 'October 2026',
     },
   ],
   // 真丝质感椭圆形浴垫（W2）
@@ -3627,7 +3553,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Looks nice and the tone matched our bathroom, but water pools on top instead of soaking in. I have to hang it over the tub after every shower, which kind of defeats the point.',
-      date: 'July 2024',
+      date: 'August 2026',
     },
   ],
   // 硅藻土格纹厨房垫（W2）
@@ -3636,7 +3562,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Looks nice and dries fast, but the mat is hard with zero give, so my feet tire when I stand on it for long prep sessions. The checkered grooves also collect crumbs.',
-      date: 'September 2024',
+      date: 'October 2026',
     },
   ],
   // 椭圆长绒地毯（W2）
@@ -3645,7 +3571,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Feels soft underfoot but the pile flattened within a month where we walk every day, and it slides all over the hardwood even over a rug pad. Looks cheaper than the photos.',
-      date: 'November 2024',
+      date: 'July 2026',
     },
   ],
   // 复古波斯地毯（W2）
@@ -3654,7 +3580,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Thin enough to see the floorboard lines through it, so plan on a pad. The vintage look works from a distance, but up close the print feels flat and the surface is stiff.',
-      date: 'February 2025',
+      date: 'September 2026',
     },
   ],
   // 水洗四件套（W3）——注意变体解析到的家族键是 'duvset'（variant-groups 组 id，无引号短键）
@@ -3663,7 +3589,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Wrinkles badly no matter how I dry it, and it runs loose on our duvet so it bunches at the corners every night.',
-      date: 'April 2025',
+      date: 'September 2026',
     },
   ],
   // 藤编托盘（W3）
@@ -3672,7 +3598,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Looks lovely on the table but mine arrived warped and rocks slightly even when empty. Fine for holding remotes, not steady enough for drinks.',
-      date: 'June 2025',
+      date: 'September 2026',
     },
   ],
   // 冰丝被套（W3）
@@ -3681,7 +3607,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'The fabric feels amazing but it will not stay put on our comforter: it slides around inside and bunches up by morning. Sleeps a bit cooler than cotton, just not as much as I hoped.',
-      date: 'September 2025',
+      date: 'July 2026',
     },
   ],
   // 硅藻土可裁剪厨房垫条（W6）
@@ -3690,7 +3616,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Cutting to size was easy and they lie flat, but they are harder underfoot than expected and ours stained near the coffee maker where a drip dried. Wish I had gone with a washable fabric runner.',
-      date: 'November 2025',
+      date: 'October 2026',
     },
   ],
   // 灯芯绒枕套（W7-B）
@@ -3699,7 +3625,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'The color and fabric are nice, but both zippers snagged within the first week. One still jams halfway no matter how careful I am with it.',
-      date: 'January 2026',
+      date: 'September 2026',
     },
   ],
   // 棉感枕套（W7-B）
@@ -3708,7 +3634,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'The covers shrank noticeably in the first wash even on a cold cycle, and now the inserts barely fit. Disappointed, because the fabric itself felt lovely.',
-      date: 'April 2026',
+      date: 'September 2026',
     },
   ],
   // 长抱枕芯（W7-B）
@@ -3717,7 +3643,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'It went flat within a month. The fill clumped into lumps at each end and the middle is basically empty fabric now. Comfortable for the first week, at least.',
-      date: 'June 2026',
+      date: 'September 2026',
     },
   ],
   // Bouclé 泰迪绒枕套（W7-C）
@@ -3726,7 +3652,7 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
       author: 'Anonymous',
       rating: 2,
       text: 'Loved the texture and the shade of the first set, so I bought another. The new set was a noticeably different color and smaller despite the same listing, and one zipper arrived stuck. Gave up after fighting with it.',
-      date: 'August 2026',
+      date: 'September 2026',
     },
   ],
 };
