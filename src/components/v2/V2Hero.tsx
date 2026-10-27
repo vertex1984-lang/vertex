@@ -38,7 +38,7 @@ export default function V2Hero() {
           不同分辨率下位置乱跳，窄屏甚至反向右移）；字号流式 clamp 随分辨率缩放；底部 justify-end + 上移 70px */}
       <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center pb-[9svh] lg:max-w-none lg:px-[7vw] lg:-translate-y-[70px] lg:justify-end lg:pb-[8vh]">
         <h1
-          className="text-2xl sm:text-3xl lg:text-[clamp(2.5rem,3.2vw,3.75rem)] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
+          className="text-2xl sm:text-3xl lg:text-[clamp(2rem,2.6vw,3rem)] lg:leading-[1.05] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
         >
           Comfort, Woven Into<br />Every Day
         </h1>
