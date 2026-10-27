@@ -4,7 +4,7 @@ import { v2url } from '@/lib/v2paths';
 // 静态 Hero：editorial-B「落地窗薄雾山野」（2026-10-27 用户定转正；sunday/autumn 版文件保留未删）
 const heroImage = {
   desktop: '/images/brand/hero-mist-desktop.webp',
-  mobile: '/images/brand/hero-mist-mobile.webp',
+  mobile: '/images/brand/hero-japandi-mobile.webp',
   alt: 'Makimoo bed floating in soft morning mist by a floor-to-ceiling window with mountain view',
 };
 
@@ -36,16 +36,16 @@ export default function V2Hero() {
       {/* Text content：移动端 justify-center + pb-[calc(9svh+90px)]；
           桌面端 2026-10-27 用户定：锚定视口左侧 lg:px-[7vw]（废弃 max-w-1400 居中 + min() 抵消方案——
           不同分辨率下位置乱跳，窄屏甚至反向右移）；字号流式 clamp 随分辨率缩放；底部 justify-end + 上移 70px */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center pb-[calc(9svh+90px)] lg:max-w-none lg:px-[7vw] lg:-translate-y-[70px] lg:justify-end lg:pb-[8vh]">
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center pb-[calc(9svh+215px)] lg:max-w-none lg:px-[7vw] lg:-translate-y-[70px] lg:justify-end lg:pb-[8vh]">
         <h1
-          className="text-2xl sm:text-3xl lg:text-[clamp(2rem,2.6vw,3rem)] lg:leading-[1.05] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-[18px] lg:mb-7 animate-fade-in-up"
+          className="text-2xl sm:text-3xl lg:text-[clamp(2rem,2.6vw,3rem)] lg:leading-[1.05] font-extrabold tracking-tight leading-[1.05] text-[#916F54] lg:text-cream max-w-3xl mb-[18px] lg:mb-7 animate-fade-in-up"
         >
           Comfort, Woven Into<br />Every Day
         </h1>
         <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
           <a
             href={v2url('/products/?cat=bedding')}
-            className="inline-block px-6 py-2.5 lg:px-7 lg:py-3 rounded-full bg-transparent border-2 border-cream text-cream text-xs lg:text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-cream hover:text-brand hover:shadow-xl"
+            className="inline-block px-6 py-2.5 lg:px-7 lg:py-3 rounded-full bg-transparent border-2 border-[#916F54] text-[#916F54] hover:bg-[#916F54] hover:text-cream lg:border-cream lg:text-cream lg:hover:bg-cream lg:hover:text-brand text-xs lg:text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-xl"
           >
             Shop Beddings
           </a>
