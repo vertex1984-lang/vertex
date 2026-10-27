@@ -12,7 +12,8 @@ import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
  * Fitted Sheets / Pillowcases & Shams（同日由 Pillow Covers 改名），无产品的不出快链；
  * Duvet Cover Sets（3 件套）2026-10-22 下线）+ 有产品的面料页（2026-10-16 用户定）。
  * 链接清单由 products/page.tsx 按家族数据动态算出后传入。
- * hero 图：桌面端 bedding/hero-desktop.webp、移动端 bedding/hero-mobile.webp（沿用原图与裁剪位）。
+ * hero 图：桌面端 bedding/hero-desktop.webp、移动端 bedding/hero-mobile.webp
+ * （2026-10-27 用户定换 editorial-A 侘寂微水泥 loft 图；原图备份为 hero-*-prev.webp）。
  */
 
 export interface BeddingHeroLink {
@@ -56,35 +57,35 @@ export default function V2BeddingCatHero({
   fabricLinks: BeddingHeroLink[];
 }) {
   const countSup = (
-    <sup className="ml-1 lg:ml-2 align-super text-xs lg:text-base font-semibold text-[#999]">
+    <sup className="ml-1 lg:ml-2 align-super text-xs lg:text-base font-semibold text-white/60">
       {styleCount}
     </sup>
   );
   return (
     <>
-      {/* 移动端：文字在图上方（2026-10-23 起全类目标准，不再叠图）+ 图下横滚标签；
+      {/* 移动端：2026-10-27 用户定——hero 图用桌面 A 图的床体局部 4:3 裁剪（构图见用户参考图），
+          标题 + 描述叠到图上左上角（原「文字在图上方」布局废弃）；图下横滚标签不变；
           -mt-3 顶掉父容器 pt-3，hero 紧贴上方导航栏 */}
       <section className="lg:hidden mb-5" aria-label="Bedding overview">
-        <div className="-mx-3 -mt-3">
-          <div className="px-4 pt-5 pb-4">
-            <h1 className="text-3xl font-extrabold tracking-tight text-charcoal">
+        <div className="-mx-3 -mt-3 relative">
+          <div className="overflow-hidden">
+            <img
+              src={resolveUrl('/images/bedding/hero-mobile.webp')}
+              alt="Wabi-sabi microcement loft bedroom with low platform bed and arches"
+              className="w-full aspect-[4/3] object-cover object-center"
+            />
+          </div>
+          {/* 文字叠图左上角：2026-10-27 用户定改白色（与桌面端一致） */}
+          <div className="absolute top-0 left-0 px-4 pt-5">
+            <h1 className="text-3xl font-extrabold tracking-tight text-white">
               Bedding
               {countSup}
             </h1>
             {intro && (
-              <p className="mt-1.5 text-xs leading-relaxed text-charcoal-light max-w-[85%]">
+              <p className="mt-1.5 text-xs leading-relaxed text-white/85 whitespace-nowrap">
                 {intro}
               </p>
             )}
-          </div>
-          {/* 图从顶部再裁掉 10% 高度（2026-10-23 用户定，试行：仅 bedding）：
-              负 margin 上移（margin % 以容器宽为基准，4:3 图高=75%宽 → 10% 图高=7.5% 宽），overflow-hidden 裁顶 */}
-          <div className="overflow-hidden">
-            <img
-              src={resolveUrl('/images/bedding/hero-mobile.webp')}
-              alt="Sunlit bedroom with neutral layered bedding"
-              className="w-full aspect-[4/3] object-cover object-[center_62%] -mt-[7.5%]"
-            />
           </div>
         </div>
         {/* 快链：横滚标签行，类型 + 面料一排横滑；Coming Soon 为虚线灰化不可点 */}
@@ -121,18 +122,10 @@ export default function V2BeddingCatHero({
           <div className="relative">
             <img
               src={resolveUrl('/images/bedding/hero-desktop.webp')}
-              alt="Sunlit bedroom with neutral layered bedding"
-              className="w-full h-[400px] xl:h-[460px] object-cover"
+              alt="Wabi-sabi microcement loft bedroom with low platform bed and arches"
+              className="w-full h-[400px] xl:h-[460px] object-cover object-[center_70%]"
             />
-            {/* 局部滤镜：只压暗左侧文字区域（比文字稍宽），向右渐隐透明，右侧图片保持原色 */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 18%, rgba(0,0,0,0.15) 28%, transparent 36%)',
-              }}
-              aria-hidden="true"
-            />
+            {/* 左侧渐变滤镜 2026-10-27 用户定去除（A 图左墙本身偏亮，若白字不清再议） */}
             <div className="absolute inset-0 px-10 pt-10 xl:px-14 xl:pt-12">
               <h1 className="text-6xl font-extrabold tracking-tight text-white">
                 Bedding

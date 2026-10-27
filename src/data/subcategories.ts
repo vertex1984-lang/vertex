@@ -15,7 +15,7 @@ export const CATEGORY_DEFS: CategoryDef[] = [
   { label: 'Pillows', value: 'pillows', intro: 'Premium inserts and covers with plush fillings for bed & sofa.' },
   { label: 'Towels', value: 'towels', intro: 'Hotel-style cotton towels for bath, beach & beyond.' },
   { label: 'Mats', value: 'mats', intro: 'Absorbent mats & durable rugs for every room.' },
-  { label: 'Bedding', value: 'bedding', intro: 'Soft, breathable duvet cover sets for every bed.' },
+  { label: 'Bedding', value: 'bedding', intro: 'Soft essentials for every bed.' },
   { label: 'Blankets', value: 'blankets', intro: 'Plush, cozy throws for couch, sofa & bed.' },
   { label: 'Decor', value: 'decor', intro: 'Wall art & handcrafted accents to finish every room.' },
   { label: 'Holiday', value: 'holiday', intro: 'Seasonal decor & festive essentials.' },
