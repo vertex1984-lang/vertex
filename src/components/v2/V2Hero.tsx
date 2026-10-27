@@ -15,7 +15,7 @@ export default function V2Hero() {
     // 用 vh 会按最大可视高计算，首屏内容被挤出屏外。svh 保证两种状态下 Hero 都不溢出（2026-09-28 用户反馈 Edge 实测）。
     // bg-[#cfc0a8]：图片解码完成前的暖色垫层（hero 图墙面色调）——sticky 结构下 hero 顶部紧贴
     // 公告条下沿，无垫层时加载中会透出身后米色、形成一道"缝隙"（2026-10-12 用户反馈）
-    <section className="relative h-[82svh] min-h-[440px] lg:h-[87vh] lg:min-h-[560px] overflow-hidden bg-[#cfc0a8]">
+    <section className="relative h-[87svh] min-h-[440px] lg:h-[87vh] lg:min-h-[560px] overflow-hidden bg-[#cfc0a8]">
       {/* Background（静态单图；2026-10-10 用户定取消 ken-burns 缩放动效）：移动端 9:16、桌面端 16:9 两层按断点切换 */}
       <div className="absolute inset-0 overflow-hidden">
         <div
