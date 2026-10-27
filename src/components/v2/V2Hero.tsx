@@ -33,11 +33,12 @@ export default function V2Hero() {
         {/* 渐变暗罩：2026-10-27 用户定全端去除（桌面配深炭色导航；移动端文字压在薄雾/床品上直读） */}
       </div>
 
-      {/* Text content：移动端 justify-center + pb-[2svh]（文字按钮在床的上部）；
-          桌面端 2026-10-27 用户定：缩小至 5xl、向下向左放（justify-end + 左移 200px，窄屏 min() 保护）、'Every Day' 换行 */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-4 lg:-translate-x-[min(280px,calc((100vw-1400px)/2))] lg:-translate-y-[70px] flex flex-col justify-center pb-[9svh] lg:justify-end lg:pb-[8vh]">
+      {/* Text content：移动端 justify-center + pb-[9svh]；
+          桌面端 2026-10-27 用户定：锚定视口左侧 lg:px-[7vw]（废弃 max-w-1400 居中 + min() 抵消方案——
+          不同分辨率下位置乱跳，窄屏甚至反向右移）；字号流式 clamp 随分辨率缩放；底部 justify-end + 上移 70px */}
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center pb-[9svh] lg:max-w-none lg:px-[7vw] lg:-translate-y-[70px] lg:justify-end lg:pb-[8vh]">
         <h1
-          className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
+          className="text-2xl sm:text-3xl lg:text-[clamp(2.5rem,3.2vw,3.75rem)] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
         >
           Comfort, Woven Into<br />Every Day
         </h1>
