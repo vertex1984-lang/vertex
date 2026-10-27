@@ -4,7 +4,7 @@
  * 填写规范（合规红线，务必遵守）：
  * 1. key = 变体家族 id 小写（variant-groups.ts 的 group.id，如 'b0-inserts-square'）；
  *    家族内所有变体共享同一批评价，getProductReviews 已做家族解析，无需逐变体填写。
- * 2. 条数 1-10（2026-10-27 W8 领导定：展示总数=卡片条数，随机 1-10；B0 真实家族按 Amazon
+ * 2. 条数 3-10（2026-10-27 W8 领导定"10 以内"+W8b 用户定"下限 3、大多数 5+"：展示总数=卡片条数；B0 真实家族按 Amazon
  *    实际总数豁免），均分/分布 = 展示卡片星级实算；PDP 的 rating/reviewCount 由评价列表
  *    自动推导注入（products.ts enrich 末段），勿在 products.ts 手填。
  * 2b. 卡片日期一律 2026 年 7 月（站点上线）及以后（W8 领导定；B0 家族日期保持原样豁免）。
@@ -3430,9 +3430,9 @@ export function getReviewTotal(asin: string): number | undefined {
 
 /** ===== 变体评价计划（2026-10-27 W8 领导定，纯展示层）=====
  * AI 家族：seed=hash(familyKey)（按家族随机，同家族变体共享同一份评价，用户定）：
- *  - 展示总数 = 卡片条数 ∈ [1,10]（种子随机；数量与页面展示的评价条数严格相等）；
+ *  - 展示总数 = 卡片条数 ∈ [3,10]（W8b：20% 家族 3-4、80% 家族 5-10；数量与页面展示的评价条数严格相等）；
  *  - 均分/分布条 = 卡片星级实算（数学自洽；小数量可能出现 5.0/4.0，用户确认接受）；
- *  - 低分卡：仅 LOWSTAR_EXTRA 家族在 n≥3 时并入 1 条 2★（避免 1-2 条时低星占比过高）；
+ *  - 低分卡：LOWSTAR_EXTRA 家族并入 1 条 2★（n 恒 ≥3，低星占比 ≤1/3）；
  *  - 卡片日期已由 W8 codemod 统一改到 2026-07~10（站点 2026-07 上线，更早日期穿帮）。
  * B0 家族不动：N 用 REVIEW_COUNTS 真实总数，均分/分布/日期全按实际（W8 领导确认豁免）。
  * 消费方：products.ts enrich 注入（rating/reviewCount → JSON-LD）、V2ProductReviews
@@ -3502,12 +3502,14 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
   }
   // AI 家族（2026-10-27 W8 领导定"10 条以内、数量=卡片条数、日期≥站点上线(2026-07)"）：
   // seed=hash(familyKey)——按家族随机，同家族所有变体共享同一份评价（用户定）；
-  // 数量 = 种子随机 1-10，卡片 = 种子洗牌取同条数 → 数量恒等于卡片条数；
+  // 数量 = 种子随机（W8b：20% 家族 3-4、80% 家族 5-10），卡片 = 种子洗牌取同条数 → 数量恒等于卡片条数；
   // 均分/分布条 = 卡片星级实算（数学自洽；小数量可能出现 5.0/4.0，用户确认接受）。
-  // 低分卡：仅 LOWSTAR_EXTRA 家族在 n≥3 时并入 1 条 2★，并入后总数仍 ≤10。
+  // 低分卡：LOWSTAR_EXTRA 家族并入 1 条 2★（W8b 起 n 恒 ≥3），并入后总数仍 ≤10。
   // 池文案零改动（卡片日期已由 W8 codemod 统一改到 2026-07~10）。
   const rnd = mulberry32(hash32(familyKey));
-  const n = 1 + Math.floor(rnd() * 10);
+  // 2026-10-27 W8b 用户定：下限 3、大多数 5+——20% 家族 3-4、80% 家族 5-10
+  const r = rnd();
+  const n = r < 0.2 ? 3 + Math.floor(rnd() * 2) : 5 + Math.floor(rnd() * 6);
   const cr = mulberry32((hash32(familyKey) ^ 0x9e3779b9) >>> 0);
   const arr = [...pool];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -3531,11 +3533,11 @@ export function getVariantReviewStats(asin: string): VariantReviewStats | null {
 }
 
 /** ===== 低星补充卡（2026-10-13 领导定；v3.5.3 每家族仅留 2★ 一条，1★ 文案已删） =====
- * W8（2026-10-27）：卡片日期已改到 2026-07~10；仅 n≥3 的家族并入（见 getVariantReviewStats）。
+ * W8（2026-10-27）：卡片日期已改到 2026-07~10；W8b 起 n 恒 ≥3，家族恒并入（见 getVariantReviewStats）。
  * 仅低星家族（家族级种子 <0.34 或有本表条目）在卡片区追加展示；原池文案零改动。
  * 全部 Anonymous（≤3★ 惯例）；主题贴自家产品事实（同调性补写惯例），逐条过机检。
- * 展示口径（用户定）：不进折叠预览（桌面 4 条/手机 3 条均为 5★/4★），"Show more reviews"
- * 展开后每家族最多可见 1 条低分卡；分布条低星段（1★+2★ 合计）不受影响。
+ * 展示口径（用户定）：W9（2026-10-27）起评价区支持综合/时间排序切换与 >10 条翻页，
+ * 2★ 卡随排序自然落位（综合排序在尾部）；分布条低星段（2★ 占比）不受影响。
  */
 const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
   // 超大浴巾（W1）
