@@ -411,11 +411,11 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 透明头部叠在大图上与面板不协调）
   const solid = scrolled || !transparentStart || openMenu !== '' || searchOpen;
 
-  // 透明态（首屏大图）用 cream 文字，实底后用 charcoal
-  const textColor = solid ? 'text-charcoal' : 'text-cream';
+  // 透明态（首屏大图）：移动端 cream 文字；桌面端 2026-10-27 用户定深炭色（hero 去滤镜后窗景亮，cream 看不清）
+  const textColor = solid ? 'text-charcoal' : 'text-cream lg:text-charcoal';
   const iconHover = solid
     ? 'hover:bg-brand/10 hover:text-brand'
-    : 'hover:bg-cream/15 hover:text-cream';
+    : 'hover:bg-cream/15 hover:text-cream lg:hover:bg-charcoal/10 lg:hover:text-charcoal';
 
   return (
     <>
@@ -478,8 +478,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             <img
               src={resolveUrl('/images/brand/makimoo-logo.webp')}
               alt="Makimoo"
-              className="h-10 lg:h-14 w-auto object-contain transition-all duration-300"
-              style={solid ? undefined : { filter: 'brightness(0) invert(1)' }}
+              className={`h-10 lg:h-14 w-auto object-contain transition-all duration-300 ${solid ? '' : '[filter:brightness(0)_invert(1)]'}`}
             />
           </a>
 
@@ -487,9 +486,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             {navLinks.map((link) => {
               // 2026-10-12 用户定：透明态（首屏大图）悬停保持 cream 不变棕——
               // brand 棕压在大图上看不清；下划线同理，实底后才用品牌棕
-              const navCls = `relative py-1 text-base transition-colors group ${solid ? 'hover:text-brand' : 'hover:text-cream'}`;
+              const navCls = `relative py-1 text-base transition-colors group ${solid ? 'hover:text-brand' : 'hover:text-cream lg:hover:text-charcoal'}`;
               const underline = (
-                <span className={`absolute bottom-0 left-0 h-0.5 ${solid ? 'bg-brand' : 'bg-cream'} transition-all ${
+                <span className={`absolute bottom-0 left-0 h-0.5 ${solid ? 'bg-brand' : 'bg-cream lg:bg-charcoal'} transition-all ${
                   openMenu && openMenu === link.cat ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
               );
