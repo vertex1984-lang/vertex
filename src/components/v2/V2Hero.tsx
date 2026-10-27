@@ -35,11 +35,11 @@ export default function V2Hero() {
 
       {/* Text content：移动端 justify-center + pb-[2svh]（文字按钮在床的上部）；
           桌面端 2026-10-27 用户定：缩小至 5xl、向下向左放（justify-end + 左移 200px，窄屏 min() 保护）、'Every Day' 换行 */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-4 lg:-translate-x-[min(200px,calc((100vw-1400px)/2))] lg:-translate-y-[70px] flex flex-col justify-center pb-[9svh] lg:justify-end lg:pb-[8vh]">
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-4 lg:-translate-x-[min(280px,calc((100vw-1400px)/2))] lg:-translate-y-[70px] flex flex-col justify-center pb-[9svh] lg:justify-end lg:pb-[8vh]">
         <h1
-          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
+          className="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
         >
-          Comfort, Woven Into<br className="hidden lg:block" />{' '}Every Day
+          Comfort, Woven Into<br />Every Day
         </h1>
         <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
           <a
