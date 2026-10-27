@@ -1,11 +1,11 @@
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 
-// 静态 Hero：autumn 场景图扩图版（桌面 16:9 / 移动 9:16 按断点切换）
+// 静态 Hero：editorial-B「落地窗薄雾山野」（2026-10-27 用户定转正；sunday/autumn 版文件保留未删）
 const heroImage = {
-  desktop: '/images/brand/hero-autumn-desktop.webp',
-  mobile: '/images/brand/hero-autumn-mobile.webp',
-  alt: 'Makimoo cozy autumn bedroom with sage green bedding in warm light',
+  desktop: '/images/brand/hero-mist-desktop.webp',
+  mobile: '/images/brand/hero-mist-mobile.webp',
+  alt: 'Makimoo bed floating in soft morning mist by a floor-to-ceiling window with mountain view',
 };
 
 export default function V2Hero() {
@@ -19,7 +19,7 @@ export default function V2Hero() {
       {/* Background（静态单图；2026-10-10 用户定取消 ken-burns 缩放动效）：移动端 9:16、桌面端 16:9 两层按断点切换 */}
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center lg:hidden scale-105 origin-top"
+          className="absolute inset-0 bg-cover bg-top lg:hidden"
           style={{ backgroundImage: `url(${resolveUrl(heroImage.mobile)})` }}
           role="img"
           aria-label={heroImage.alt}
@@ -30,18 +30,18 @@ export default function V2Hero() {
           aria-hidden="true"
         />
 
-        {/* 渐变暗罩：底部深、顶部浅，保证下方 cream 文案可读 */}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/25 to-charcoal/10" />
+        {/* 渐变暗罩：底部深、顶部浅，保证下方 cream 文案可读（仅移动端；桌面端 2026-10-27 用户定不加滤镜） */}
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/25 to-charcoal/10 lg:hidden" />
       </div>
 
       {/* Text content：ins 版只留一行品牌标语 + Shop Beddings 按钮（2026-10-08 用户定恢复按钮）；
-          移动端文字位置 pb-[17svh]（10svh 太贴底、26svh 太靠上，2026-10-08 两次用户反馈取中），
-          桌面端垂直居中偏下不变 */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col justify-end pb-[17svh] lg:justify-center lg:pb-0 lg:pt-[12vh] lg:translate-y-[4.6vh]">
+          移动端文字位置 pb-[12svh]（2026-10-27 用户定在 17svh 基础上再下移）；
+          桌面端 2026-10-27 用户定：文字缩小、放到左下角墙面位置（justify-end + pb + lg:px-4 左移） */}
+      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-6 lg:px-4 lg:-translate-x-[min(200px,calc((100vw-1400px)/2))] flex flex-col justify-end pb-[12svh] lg:pb-[10vh]">
         <h1
-          className="text-3xl sm:text-4xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-7 animate-fade-in-up"
         >
-          Comfort, Woven Into Every Day
+          Comfort, Woven Into<br className="hidden lg:block" />{' '}Every Day
         </h1>
         <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
           <a
