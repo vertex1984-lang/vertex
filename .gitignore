@@ -45,3 +45,4 @@ scripts/.ark-api-key
 
 # headless Chrome 截图用的浏览器 profile（本地临时产物）
 scripts/_shots/_profile/
+scripts/.ark-api-key-2
