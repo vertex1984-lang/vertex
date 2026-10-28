@@ -46,3 +46,8 @@ scripts/.ark-api-key
 # headless Chrome 截图用的浏览器 profile（本地临时产物）
 scripts/_shots/_profile/
 scripts/.ark-api-key-2
+
+# hero-test 测试页仅本地保留（2026-10-28 用户定：不推送上线，后续做 hero 轮转测试用）
+/src/app/(v2)/hero-test/
+/public/images/brand/hero-test-*.webp
+/scripts/_shots/hero-test-*

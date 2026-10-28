@@ -108,6 +108,10 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - `npm run build` 前必须停掉占用 8080 的静态服务器（否则 EBUSY 锁 `out/`）。
 - 预览：本地静态服务器 serve `out/` @ 8080，访问 http://localhost:8080。**必须全响应 `Cache-Control: no-store`**（2026-09 起用 node 服务器替代 `python -m http.server`：python 无缓存头，浏览器启发式缓存会拿旧 HTML + 已删除的旧 JS chunk，水合失败 → 首页导航滚动不切实底等"JS 死了"症状）。**`/index.html`（含子路径）一律 301 到干净 URL**：Next 客户端路由表没有 index.html 路由，直接访问会水合失败——页面能显示但 JS 全死（2026-09 实测：用户从浏览器自动补全进 `/index.html`，首页导航透明卡死；`/` 正常）。V2Header 的 transparentStart 判断也做了 `/index(.html)` 尾段归一化兜底。
 
+## hero-test 测试页（仅本地）
+
+- `/hero-test/1` ~ `/hero-test/4` 是 hero 图轮转测试副本页（2026-10-28 建），路由 `src/app/(v2)/hero-test/` + 图 `public/images/brand/hero-test-*.webp` 已加入 .gitignore，**只保留本地、绝不提交推送**（推送即上 Vercel）。V2Hero 的 mobileSrc/desktopSrc/mobileBottom150 props 与 V2Header 的 `/hero-test` 透明头判断是正式代码，正常提交无妨（无路由时为死代码）。
+
 ## Git
 
 - remote：`git@github.com:vertex1984-lang/vertex.git`，推送后 Vercel 自动部署。commit/push 必须用户明确要求后才执行。
