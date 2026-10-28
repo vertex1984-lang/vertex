@@ -479,7 +479,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             <img
               src={resolveUrl('/images/brand/makimoo-logo-horizontal.png')}
               alt="Makimoo"
-              className={`h-8 lg:h-11 w-auto object-contain transition-all duration-300 ${solid ? '' : '[filter:brightness(0)_invert(1)]'}`}
+              className={`h-7 lg:h-10 w-auto object-contain transition-all duration-300 ${solid ? '' : '[filter:brightness(0)_invert(1)]'}`}
             />
           </a>
 
