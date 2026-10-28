@@ -401,7 +401,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
   // 尾段 /index 或 /index.html 归一化为首页（静态托管可能以此形式serve首页）
   const normalizedPath = (pathname || '').replace(/\/+$/, '').replace(/\/index(\.html)?$/, '');
   // /test/ 与首页同构（2026-10-11：第七轮真机验证通过后，sticky 结构全站推广，test 页同享透明页头）
-  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || normalizedPath === '/test';
+  const transparentStart = normalizedPath === '' || normalizedPath === '/about' || normalizedPath === '/test' || normalizedPath.startsWith('/hero-test');
   // 移动端恒实底（isMobile matchMedia 强制 solid）已于 2026-10-10 移除：
   // /test/ 真机诊断证实——移动端大图页头在 sticky 终版结构下刘海采样恒回落米色，
   // 透明头部可安全保留（白 logo/白图标压大图的原设计）；且首帧即终态，
@@ -413,7 +413,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
 
   // 透明态（首屏大图）用 cream 文字，实底后用 charcoal（2026-10-27 桌面深炭色方案随 hero 恢复滤镜一并回退）
   // 透明态（首屏大图）用深炭色文字（2026-10-27 用户定：全端去滤镜后 hero 背景明亮，cream 看不清），实底后同为 charcoal
-  const textColor = 'text-charcoal';
+  const textColor = solid ? 'text-charcoal' : 'text-cream';
   const iconHover = solid
     ? 'hover:bg-brand/10 hover:text-brand'
     : 'hover:bg-charcoal/10 hover:text-charcoal';
@@ -477,9 +477,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
             {/* 移动端（2026-10-10 用户定）：恢复完整 logo（带 makimoo 字样），
                 尺寸在原 h-9 基础上 +10% ≈ h-10；桌面端保持 h-14 不变（+10% 试后取消） */}
             <img
-              src={resolveUrl('/images/brand/makimoo-logo.webp')}
+              src={resolveUrl('/images/brand/makimoo-logo-horizontal.png')}
               alt="Makimoo"
-              className={`h-10 lg:h-14 w-auto object-contain transition-all duration-300 ${solid ? '' : 'lg:[filter:brightness(0)_invert(1)]'}`}
+              className={`h-8 lg:h-11 w-auto object-contain transition-all duration-300 ${solid ? '' : '[filter:brightness(0)_invert(1)]'}`}
             />
           </a>
 

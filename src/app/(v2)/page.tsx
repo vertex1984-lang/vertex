@@ -41,7 +41,7 @@ export default function V2HomePage() {
       <link rel="preload" as="image" href={resolveUrl('/images/brand/hero-autumn-desktop.webp')} media="(min-width: 1024px)" />
       {/* hero 上滑到 sticky 导航下方（导航行高：移动 52px=py-1.5+logo h-10，
           桌面 88px=py-4+h-14），保持透明头部压大图的视觉（2026-10-11 sticky 全站推广） */}
-      <div className="-mt-[52px] lg:-mt-[88px]">
+      <div className="-mt-[48px] lg:-mt-[76px]">
         <V2Hero />
       </div>
       <V2TrustBar />

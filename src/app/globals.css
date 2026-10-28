@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Montserrat 自托管（2026-10-28：Google Fonts 在国内不稳定，公告条等处以回退字体渲染导致文字溢出裁剪；
+   文件来自 @fontsource/montserrat@5 latin 子集，woff2 各约 18KB，public/fonts/ 静态分发） */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-800.woff2') format('woff2');
+}
+
 :root {
   --makimoo-brown: #8B5A2B;
   --makimoo-brown-dark: #7a4e25;
