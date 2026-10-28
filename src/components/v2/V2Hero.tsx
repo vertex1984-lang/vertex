@@ -38,7 +38,7 @@ export default function V2Hero({ mobileSrc, desktopSrc, mobileBottom150 }: { mob
           不同分辨率下位置乱跳，窄屏甚至反向右移）；字号流式 clamp 随分辨率缩放；底部 justify-end + 上移 calc(70px+7%)；移动端统一上移 7%（2026-10-28 用户定） */}
       <div className={`relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col ${mobileBottom150 ? 'justify-end pb-[150px]' : 'justify-end pb-[16%] -translate-y-[7%]'} lg:max-w-none lg:px-[7vw] lg:-translate-y-[calc(70px+7%)] lg:justify-end lg:pb-[8vh]`}>
         <h1
-          className="text-[36px] sm:text-4xl lg:text-[50px] lg:leading-[1.05] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-[18px] lg:mb-7 animate-fade-in-up"
+          className="text-[32px] lg:text-[50px] lg:leading-[1.05] font-extrabold tracking-tight leading-[1.05] text-cream max-w-3xl mb-[18px] lg:mb-7 animate-fade-in-up"
         >
           Rest, Naturally
         </h1>
