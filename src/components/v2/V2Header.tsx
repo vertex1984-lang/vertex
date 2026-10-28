@@ -473,7 +473,7 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 : 'border-transparent'
             }`}
           />
-          <a href={v2url('/')} className="relative flex items-center gap-2">
+          <a href={v2url('/')} className="relative flex items-center gap-2 -ml-2 lg:-ml-[3px]">
             {/* 移动端（2026-10-10 用户定）：恢复完整 logo（带 makimoo 字样），
                 尺寸在原 h-9 基础上 +10% ≈ h-10；桌面端保持 h-14 不变（+10% 试后取消） */}
             <img

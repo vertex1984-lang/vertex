@@ -126,7 +126,7 @@ export default function V2BeddingCatHero({
               className="w-full h-[400px] xl:h-[460px] object-cover object-[center_70%]"
             />
             {/* 左侧渐变滤镜 2026-10-27 用户定去除（A 图左墙本身偏亮，若白字不清再议） */}
-            <div className="absolute inset-0 px-10 pt-10 xl:px-14 xl:pt-12">
+            <div className="absolute inset-0 px-10 pt-10 xl:pt-12">
               <h1 className="text-6xl font-extrabold tracking-tight text-white">
                 Bedding
                 <sup className="ml-2 align-super text-base font-semibold text-white/60">
@@ -141,7 +141,7 @@ export default function V2BeddingCatHero({
           {/* 快链排在图正下方：类型组 + 竖分隔线 + 面料组；
               屏宽不足不换行，单行可拖拽滚动，见 V2DragScrollRow */}
           <V2DragScrollRow
-            className="mt-4 ml-2 px-10 xl:px-14 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
+            className="mt-4 ml-2 px-10 flex flex-nowrap items-center gap-x-7 gap-y-2 text-sm"
             ariaLabel="Bedding categories"
           >
             {typeLinks.map((l) => (
