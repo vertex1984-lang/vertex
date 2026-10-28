@@ -10,12 +10,12 @@ export default function V2Hero({ mobileSrc, desktopSrc, mobileBottom150 }: { mob
     alt: 'Makimoo bed floating in soft morning mist by a floor-to-ceiling window with mountain view',
   };
   return (
-    // 移动端高度用 aspect-ratio（2026-10-28 用户定：以后移动端 hero 都用比例，当前 0.5625=图片原比例，零裁剪）；桌面端仍 lg:h-[87vh]。历史备注：曾用 svh（small viewport height，按浏览器地址栏/工具栏"显示"时的最小可视高计算）：
+    // 移动端高度用 aspect-ratio（2026-10-28 用户定：以后移动端 hero 都用比例，当前 626/1040≈0.602=图片原比例，零裁剪）；桌面端仍 lg:h-[87vh]。历史备注：曾用 svh（small viewport height，按浏览器地址栏/工具栏"显示"时的最小可视高计算）：
     // 移动浏览器（Edge/Chrome/Safari）首屏会显示地址栏+工具栏挤压可视高度，滚动后才收起；
     // 用 vh 会按最大可视高计算，首屏内容被挤出屏外。svh 保证两种状态下 Hero 都不溢出（2026-09-28 用户反馈 Edge 实测）。
     // bg-[#cfc0a8]：图片解码完成前的暖色垫层（hero 图墙面色调）——sticky 结构下 hero 顶部紧贴
     // 公告条下沿，无垫层时加载中会透出身后米色、形成一道"缝隙"（2026-10-12 用户反馈）
-    <section className="relative aspect-[1152/2048] lg:aspect-auto lg:h-[87vh] lg:min-h-[560px] overflow-hidden bg-[#cfc0a8]">
+    <section className="relative aspect-[626/1040] lg:aspect-auto lg:h-[87vh] lg:min-h-[560px] overflow-hidden bg-[#cfc0a8]">
       {/* Background（静态单图；2026-10-10 用户定取消 ken-burns 缩放动效）：移动端 9:16、桌面端 16:9 两层按断点切换 */}
       <div className="absolute inset-0 overflow-hidden">
         <div
