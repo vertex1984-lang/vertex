@@ -1575,3 +1575,24 @@ export const CUSHION_LISTING_HIDDEN_ASINS = new Set([
   'b0bcjrtf3x', // Green Palm Leaf (Set of 4) ↔ b0bcjv24jr（2026-10-23 用户定同主图配对）
   'b0bcjw18sp', // Khaki Birds and Flowers (Set of 4) ↔ b0bcjqyyl1（同主图配对）
 ]);
+
+/**
+ * 隐藏色名单（2026-10-29 用户定）：组内这些颜色的图还是 1688 中文色卡占位图，
+ * 全站展示入口（PDP 色点 / PLP 组卡色卡）一律隐藏；后续换好图后从名单移除即恢复。
+ * 注意：PDP 页面本身仍在（未上架自动跳已上架成员），这里只隐藏"展示入口"。
+ */
+export const HIDDEN_VARIANT_COLORS: Record<string, readonly string[]> = {
+  // 椭圆长毛地毯组：保留 Khaki / Light Grey / Snow White（实拍图），其余 21 色为中文占位图
+  '996768645117': [
+    'Beige', 'Coffee', 'Grass Green', 'Light Camel', 'Light Pink', 'Red', 'Rose Red',
+    'Tie-Dye Black Grey', 'Tie-Dye Blush Pink', 'Tie-Dye Burgundy', 'Tie-Dye Dark Coffee',
+    'Tie-Dye Dark Grey', 'Tie-Dye Khaki', 'Tie-Dye Lake Blue', 'Tie-Dye Light Coffee',
+    'Tie-Dye Mauve', 'Tie-Dye Milk Tea', 'Tie-Dye Navy', 'Tie-Dye Silver Grey',
+    'Tie-Dye Sky Blue', 'Tie-Dye Watermelon',
+  ],
+};
+
+export function isVariantColorHidden(groupId: string, color: string): boolean {
+  const list = HIDDEN_VARIANT_COLORS[groupId];
+  return list ? list.includes(color) : false;
+}

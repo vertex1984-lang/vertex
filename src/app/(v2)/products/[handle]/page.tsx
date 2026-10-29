@@ -5,7 +5,7 @@ import V2ProductReviews from '@/components/v2/V2ProductReviews';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import PdpEntryRedirect from '@/components/v2/PdpEntryRedirect';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
-import { getVariantGroupOf } from '@/data/variant-groups';
+import { getVariantGroupOf, isVariantColorHidden } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
 import { buildSetFamilies } from '@/data/bedding-families';
 import { getPdpRelatedFamilies } from '@/data/home-sections';
@@ -136,6 +136,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         const seenColors = new Set<string>();
         const colorVariants = ordered
           .filter((m) => {
+            if (isVariantColorHidden(group.id, m.color)) return false; // 中文占位图颜色隐藏（2026-10-29 用户定）
             if (seenColors.has(m.color)) return false;
             seenColors.add(m.color);
             return true;
