@@ -42,8 +42,21 @@ function MoodCard({
       {/* 卡面文字统一两行：小 caps 类名 + 一行描述；底部浅渐变保证可读 */}
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent" />
       <div className="absolute bottom-3 left-4 lg:bottom-5 lg:left-6">
-        <p className="text-cream text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase">
+        <p className="text-cream text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase flex items-center gap-1.5">
           {card.caption}
+          {/* 可点击标识：类名右侧极简 chevron（2026-10-29 用户定：只要箭头不要横线，
+              跟随文字而不是角落悬浮）；hover 全白 + 右移一点 */}
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className="w-3.5 h-3.5 lg:w-4 lg:h-4 stroke-cream/80 transition-all duration-300 group-hover:stroke-cream group-hover:translate-x-0.5"
+          >
+            <path d="M9 6l6 6-6 6" />
+          </svg>
         </p>
         <p className="mt-0.5 text-cream/80 text-[11px] lg:text-xs tracking-wide">
           {card.desc}

@@ -9,7 +9,7 @@
  *
  * 代表款选择：调用方传入已排序的家族列表（在售优先/权重序），组卡代表 = 首个家族的 rep。
  */
-import { getVariantGroupOf } from '@/data/variant-groups';
+import { getVariantGroupOf, isVariantColorHidden } from '@/data/variant-groups';
 import { CARD_SQUARE_IMAGE_ASINS } from '@/data/image-aspect-overrides';
 import { buildBlanketFamilies, type BlanketFamily } from '@/data/blanket-families';
 import { spotlightImage } from '@/components/v2/card-utils';
@@ -180,9 +180,11 @@ export function buildGroupCards(
       ? [...fs].sort((a, b) => memberIdxOf(a) - memberIdxOf(b) || queenRankOf(a) - queenRankOf(b))
       : repFam === fs[0] ? fs : [repFam, ...fs.filter((f) => f !== repFam)];
     const seen = new Set<string>();
+    const gid = getVariantGroupOf(fs[0].rep.asin)?.id;
     const variants: GroupCardVariant[] = [];
     for (const f of orderedFams) {
       const ck = f.color.trim().toLowerCase();
+      if (gid && isVariantColorHidden(gid, f.color)) continue; // 中文占位图颜色隐藏（2026-10-29 用户定）
       if (seen.has(ck)) continue;
       seen.add(ck);
       const img = spotlightImage(f.rep);
