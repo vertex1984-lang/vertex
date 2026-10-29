@@ -364,7 +364,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "The trade-off is weather. Corduroy holds moisture in its ribs and dries slowly, so it belongs indoors or on genuinely covered porches. Keep it out of rain, and fluff the ribs occasionally with a soft brush to prevent flattening where people actually sit." },
       {
         type: "products",
-        products: [
+        products: [
+
           {
             key: "b0cbt7rfk2",
             category: "Corduroy · 95 × 45 cm",
@@ -457,7 +458,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "For standard straight-backed chairs, either works. For rocking chairs, where the back tilts and the seat moves, two-piece sets track the movement better and are the traditional choice." },
       {
         type: "products",
-        products: [
+        products: [
+
         ],
       },
       { type: "h2", text: "Three fit mistakes to avoid" },
@@ -561,7 +563,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "p", text: "The honest trade-offs: memory foam sleeps warmer than fiber (look for ventilated or mesh-panel designs if that matters), it can't be machine washed, only the cover comes off, and its support is positional. A U-shaped travel pillow is excellent in a seat and useless in a bed. Match the format to the use." },
       {
         type: "products",
-        products: [
+        products: [
+
         ],
       },
       { type: "h2", text: "Frequently asked questions" },

@@ -75,15 +75,27 @@ export function buildBlanketFamilies(
   }
 
   return Array.from(groups.entries()).map(([key, e]) => {
-    // 成员顺序 = 变体组注册顺序（尺寸从小到大）；rep 取中位尺寸，视觉上是"标准款"
-    const rep = e.members[Math.floor(e.members.length / 2)]?.p ?? e.members[0].p;
+    // 成员顺序 = 变体组注册顺序（尺寸从小到大）；默认 rep 取中位尺寸，视觉上是"标准款"
+    // 2026-10-26 用户定：地毯类"部分上架"（部分成员已映射 Shopify）时 rep 优先取已上架成员，
+    // 让卡面/链接/标题落在能买的规格；From 价也只按已上架成员算（未上架尺寸的低价不可购买）。
+    // 其它类目（全上架/全未上架）维持原口径不变。
+    const launchedMembers = e.members.filter(
+      (m) => m.p.hasShopifyData === true && m.p.shopifyAvailable === true
+    );
+    const isMixedMats =
+      e.members[0]?.p.productType === 'Mats' &&
+      launchedMembers.length > 0 &&
+      launchedMembers.length < e.members.length;
+    const rep = isMixedMats
+      ? launchedMembers[0].p
+      : e.members[Math.floor(e.members.length / 2)]?.p ?? e.members[0].p;
     const sizes: string[] = [];
     for (const m of e.members) {
       // 紧凑格式 "120×200"（去单位去空格）：5 段尺寸带单位会在卡片边缘硬截断，单位由卡片 sizesSuffix 统一补
       const s = m.size.replace(/\s*cm\s*$/i, '').replace(/\s*x\s*/i, '×').trim();
       if (s && !sizes.includes(s)) sizes.push(s);
     }
-    const prices = e.members
+    const prices = (isMixedMats ? launchedMembers : e.members)
       .map((m) => parseFloat(m.p.shopifyPrice || m.p.priceRange.minVariantPrice.amount))
       .filter((n) => !Number.isNaN(n) && n > 0);
     return {
