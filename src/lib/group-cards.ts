@@ -146,9 +146,14 @@ export function buildGroupCards(
     const preferredAsin = key === 'LINEN3-DUVET' || key === 'PERCALE-DUVET' || key === 'VELSTRIPE' || key === '1071466105053' || key === '1071466105053-CHECK'
       ? getVariantGroupOf(fs[0].rep.asin)?.members[0]?.asin.toLowerCase()
       : undefined;
+    // 2026-10-26 用户定：地毯组卡优先用「代表 SKU 已上架」的色作代表（卡面图/链接/标题/From 价落到可买页）；
+    // 其它类目维持原顺序取第一个家族
+    const launchedRepFam = fs.find(
+      (f) => f.rep.productType === 'Mats' && f.rep.hasShopifyData === true && f.rep.shopifyAvailable === true
+    );
     const repFam = preferredAsin
       ? fs.find((f) => f.rep.asin.toLowerCase() === preferredAsin) ?? fs[0]
-      : fs[0];
+      : launchedRepFam ?? fs[0];
     const rep = repFam.rep;
     // 尺寸并集：cushions 等标题规则（cushionCardTitle）需要家族尺寸带
     const sizes: string[] = [];
@@ -198,6 +203,12 @@ export function buildGroupCards(
       });
     }
     const img = spotlightImage(rep);
+    // 2026-10-26 用户定：地毯类优先用已上架色的价格算 From（未上架色的低价不可购买，避免误导）
+    const sellablePrices = variants
+      .filter((v) => v.inStock)
+      .map((v) => parseFloat(v.price))
+      .filter((n) => !Number.isNaN(n) && n > 0);
+    const fromPrices = rep.productType === 'Mats' && sellablePrices.length > 0 ? sellablePrices : prices;
     return {
       key,
       rep: slimRep(rep),
@@ -207,7 +218,7 @@ export function buildGroupCards(
       imageAlt: img.altText,
       rating: rep.rating,
       reviewCount: rep.reviewCount,
-      fromPrice: prices.length > 0 ? String(Math.min(...prices)) : '',
+      fromPrice: fromPrices.length > 0 ? String(Math.min(...fromPrices)) : '',
       currency: repFam.currency,
       variants,
       materials: repFam.materials,
