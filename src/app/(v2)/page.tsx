@@ -46,6 +46,8 @@ export default function V2HomePage() {
       </div>
       <V2TrustBar />
       <V2MoodFeed />
+      {/* Before/After 首页模块 2026-10-30 用户定移除（对比内容只保留 PDP 双图区 + /inspiration 页）；
+          V2BeforeAfterSection 组件文件保留磁盘备用 */}
       {/* Shop the Look 横幅位置 2026-10-21 用户定回滚：保持在 MoodFeed 之后、SloganBanner 之前
           （同日早些时候"挪到标题下 Cushions 卡上"的改动已撤销） */}
       <V2BrandBanner />

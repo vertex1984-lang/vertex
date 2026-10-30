@@ -61,7 +61,7 @@ function StoryBlock({ image, imageAlt, eyebrow, title, body, points, ctaLabel, c
           {points && (
             <ul className="mt-4 lg:mt-5 space-y-2.5 lg:space-y-3">
               {points.map((point) => (
-                <li key={point} className="flex items-center gap-3 text-sm lg:text-base text-charcoal font-medium">
+                <li key={point} className="flex items-center gap-3 text-sm lg:text-base text-charcoal-light leading-relaxed">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand flex-shrink-0" />
                   {point}
                 </li>

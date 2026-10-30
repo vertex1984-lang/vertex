@@ -188,4 +188,8 @@ export const PDP_MAIN_PREPEND_IMAGES: Record<string, string> = {
   'percale-sky-duvet': '/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp',
   // Blush Pink 细条纹提花独立被套：卡面 = images[0]（1.webp）
   'percalestripe-petal-duvet': '/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp',
+  // 波斯地毯 C3：灰底主图前置（seedream 5.0 pro 生成，2026-10-30 用户定）
+  '745181807454-c3': '/images/products/745181807454-C3/0-grey-main.webp',
+  // 波斯地毯 C6（GT027）：同款 3:4 灰底平拍主图前置（2026-10-30 用户定）
+  '745181807454-c6': '/images/products/745181807454-C6/0-grey-main.webp',
 };
