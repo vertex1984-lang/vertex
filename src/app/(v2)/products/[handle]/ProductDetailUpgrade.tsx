@@ -27,6 +27,8 @@ import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
+import V2PdpBeforeAfterDuo from '@/components/v2/V2PdpBeforeAfterDuo';
+import { getPdpBeforeAfter } from '@/data/pdp-before-after';
 import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
@@ -885,8 +887,25 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         return null;
       })()}
 
+      {/* 双图区：种草图 + Before/After 对比（2026-10-30 用户定）：You May Also Like 上方，
+          仅 pdp-before-after.ts 映射表内 handle 渲染，宽度与 YMAL 一致 */}
+      {(() => {
+        const duo = getPdpBeforeAfter(handle);
+        return duo ? (
+          <V2PdpBeforeAfterDuo
+            duo={duo}
+            current={{
+              title: product.title,
+              image: product.shopifyImages?.[0] || product.images[0]?.url || '',
+              price: displayPrice,
+              currency: displayCurrency,
+            }}
+          />
+        ) : null;
+      })()}
+
       {relatedProducts.length > 0 && (
-        <section className="mt-12 mb-12 lg:mt-16 lg:mb-20">
+        <section className="mt-10 mb-12 lg:mt-16 lg:mb-20">
           <div className="mx-auto max-w-[1520px] lg:w-[80%] lg:max-w-none px-6 lg:px-10">
             <h2 className="text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal mb-6 lg:mb-8">
               You May Also Like

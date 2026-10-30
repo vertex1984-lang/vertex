@@ -29,11 +29,12 @@ export interface InspirationScene {
   hotspots: SceneHotspotRef[];
 }
 
-const RUG =
+// 导出供 pdp-before-after.ts 标记"本 PDP 产品"热区用
+export const RUG =
   'elegant-distressed-oriental-vintage-area-rug-traditional-745181807454-c3';
-const BLANKET_CREAM =
+export const BLANKET_CREAM =
   'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c28';
-const BEDDING_IVORY =
+export const BEDDING_IVORY =
   'makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-ivory-queen';
 
 const RUG_URL = `/products/${RUG}/`;
