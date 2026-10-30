@@ -4,6 +4,7 @@ import V2TrustBar from '@/components/v2/V2TrustBar';
 import V2MoodFeed from '@/components/v2/V2MoodFeed';
 import V2BrandBanner from '@/components/v2/V2BrandBanner';
 import V2SloganBanner from '@/components/v2/V2SloganBanner';
+import V2InspirationTeaser from '@/components/v2/V2InspirationTeaser';
 import V2Recommended from '@/components/v2/V2Recommended';
 import { getRecommendedData } from '@/data/home-sections';
 import { resolveUrl } from '@/lib/paths';
@@ -52,6 +53,8 @@ export default function V2HomePage() {
           （同日早些时候"挪到标题下 Cushions 卡上"的改动已撤销） */}
       <V2BrandBanner />
       <V2SloganBanner />
+      {/* Inspiration teaser（2026-10-30）：3 图 + Get Inspired → /inspiration/ 灵感中心 */}
+      <V2InspirationTeaser />
       {/* 页尾转化兜底：按浏览历史推荐（无历史时回退 Best Sellers） */}
       <V2Recommended fallback={recommended.fallback} candidates={recommended.candidates} />
     </>

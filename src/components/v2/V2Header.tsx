@@ -512,6 +512,15 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 </a>
               );
             })}
+            {/* Inspiration（2026-10-30 用户定）：内容型入口放导航末项，无 mega menu，
+                字重降一档与购物类目区分 */}
+            <a
+              href={v2url('/inspiration/')}
+              className={`relative py-1 text-base font-normal transition-colors group ${solid ? 'text-charcoal/70 hover:text-brand' : 'hover:text-cream lg:hover:text-charcoal'}`}
+            >
+              Inspiration
+              <span className={`absolute bottom-0 left-0 h-0.5 w-0 transition-all group-hover:w-full ${solid ? 'bg-brand' : 'bg-cream lg:bg-charcoal'}`} />
+            </a>
           </nav>
 
           {/* 移动端按钮组（2026-10-10 用户定）：44px→36px 更小更紧凑，-mr-2 更靠右；
@@ -799,6 +808,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 </div>
               );
             })}
+            {/* Inspiration（2026-10-30 用户定）：内容型入口放抽屉末项，无二级展开 */}
+            <a
+              href={v2url('/inspiration/')}
+              onClick={() => setMobileOpen(false)}
+              className="block text-base font-normal text-charcoal/80 py-3 px-4 rounded-lg hover:text-brand hover:bg-brand/5 transition"
+            >
+              Inspiration
+            </a>
           </nav>
           </div>
         </div>

@@ -84,6 +84,7 @@ export default function V2Footer() {
             <a href={v2url('/about')} className={footerLinkClass}>Our Story</a>
             <a href={v2url('/about#quality')} className={footerLinkClass}>Quality Promise</a>
             <a href={v2url('/about#sustainability')} className={footerLinkClass}>Sustainability</a>
+            <a href={v2url('/inspiration/')} className={footerLinkClass}>Inspiration</a>
             <a href={v2url('/blog')} className={footerLinkClass}>Blog</a>
           </FooterSection>
           <div>

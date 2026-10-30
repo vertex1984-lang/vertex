@@ -178,6 +178,21 @@ export default function V2PdpBeforeAfterDuo({
           </p>
         </div>
       </div>
+
+      {/* 出口 → /inspiration 灵感中心（2026-10-30） */}
+      <div className="mt-8 lg:mt-10">
+        <a
+          href={v2url('/inspiration/')}
+          className="group inline-flex items-center gap-1.5 text-sm font-semibold text-brand"
+        >
+          <span className="border-b border-brand/40 pb-0.5 transition-colors group-hover:border-brand">
+            See more looks
+          </span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1" aria-hidden>
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
     </section>
   );
 }
