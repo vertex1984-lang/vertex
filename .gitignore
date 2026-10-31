@@ -58,3 +58,6 @@ scripts/.venv-video/
 # 图片生成中间产物（只保留本地，2026-11-02 仓库瘦身）
 public/images/staging/
 scripts/_shots/
+
+# scenes 本地工作产物（对照图/审计报告，仅本地留存）
+/report/

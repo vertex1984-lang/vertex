@@ -32,6 +32,14 @@ function cardImageUrl(image: string) {
   return image.includes('cdn.shopify.com') ? shopifyImageUrl(image, 400) : resolveUrl(image);
 }
 
+function hkey(h: SceneHotspotCard) {
+  return h.spotId ?? h.handle;
+}
+
+function priceLabel(price: string, currency: string) {
+  return parseFloat(price) > 0 ? formatPrice(price, currency) : 'Coming Soon';
+}
+
 export default function SceneView({
   scene,
   otherScenes,
@@ -40,27 +48,29 @@ export default function SceneView({
   otherScenes: SceneCard[];
 }) {
   const { toast } = useToast();
-  const [activeHandle, setActiveHandle] = useState<string | null>(null);
+  const [activeKey, setActiveKey] = useState<string | null>(null);
   const [selected, setSelected] = useState<Set<string>>(
-    () => new Set(scene.hotspots.map((h) => h.handle))
+    () => new Set(scene.hotspots.map((h) => hkey(h)))
   );
   const [addingAll, setAddingAll] = useState(false);
   const [addingOne, setAddingOne] = useState(false);
 
-  const active = scene.hotspots.find((h) => h.handle === activeHandle) ?? null;
+  const active = scene.hotspots.find((h) => hkey(h) === activeKey) ?? null;
 
   const selectedItems = useMemo(
-    () => scene.hotspots.filter((h) => selected.has(h.handle)),
+    () => scene.hotspots.filter((h) => selected.has(hkey(h))),
     [scene.hotspots, selected]
   );
-  const comboPrice = selectedItems.reduce((sum, h) => sum + parseFloat(h.price || '0'), 0);
+const pricedItems = selectedItems.filter((h) => h.inStock && parseFloat(h.price) > 0);
+const hasUnpriced = pricedItems.length < selectedItems.length;
+  const comboPrice = pricedItems.reduce((sum, h) => sum + parseFloat(h.price || '0'), 0);
   const currency = scene.hotspots[0]?.currency ?? 'USD';
 
-  const toggle = (handle: string) => {
+  const toggle = (key: string) => {
     setSelected((prev) => {
       const next = new Set(prev);
-      if (next.has(handle)) next.delete(handle);
-      else next.add(handle);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
       return next;
     });
   };
@@ -163,31 +173,35 @@ export default function SceneView({
 
       {/* 全景图 + 热区圆点：移动端全宽；桌面端限高居中，圆点随图缩放 */}
       <div className="lg:text-center">
-        <div className="relative inline-block w-full lg:w-auto lg:h-[82vh] lg:max-w-full">
+        <div
+          className={`relative inline-block w-full ${
+            scene.heroWide ? '' : 'lg:w-auto lg:h-[82vh] lg:max-w-full'
+          }`}
+        >
           <img
             src={resolveUrl(scene.heroImage)}
             alt={scene.heroAlt}
-            className="block w-full h-auto lg:w-auto lg:h-full select-none"
+            className={`block w-full h-auto select-none ${scene.heroWide ? '' : 'lg:w-auto lg:h-full'}`}
             draggable={false}
           />
           {scene.hotspots.map((h) => (
             <button
-              key={h.handle}
+              key={hkey(h)}
               type="button"
               aria-label={`${h.title} — ${h.label}`}
-              onClick={() => setActiveHandle(h.handle)}
+              onClick={() => setActiveKey(hkey(h))}
               className="absolute -translate-x-1/2 -translate-y-1/2 group"
               style={{ left: `${h.x}%`, top: `${h.y}%` }}
             >
               <span className="absolute inset-0 rounded-full bg-white/60 animate-ping [animation-duration:2.5s]" />
               <span
                 className={`relative flex h-7 w-7 lg:h-8 lg:w-8 items-center justify-center rounded-full border-2 border-white shadow-lg transition ${
-                  activeHandle === h.handle ? 'bg-brand scale-110' : 'bg-white/90 group-hover:bg-brand'
+                  activeKey === hkey(h) ? 'bg-brand scale-110' : 'bg-white/90 group-hover:bg-brand'
                 }`}
               >
                 <span
                   className={`h-1.5 w-1.5 rounded-full ${
-                    activeHandle === h.handle ? 'bg-white' : 'bg-brand group-hover:bg-white'
+                    activeKey === hkey(h) ? 'bg-white' : 'bg-brand group-hover:bg-white'
                   }`}
                 />
               </span>
@@ -214,7 +228,7 @@ export default function SceneView({
                       {h.title}
                     </span>
                     <span className="mt-0.5 block text-sm font-bold text-brand">
-                      {formatPrice(h.price, h.currency)}
+                      {priceLabel(h.price, h.currency)}
                     </span>
                     <span className="mt-0.5 block text-[10px] text-charcoal/45">Click the dot to shop</span>
                   </span>
@@ -230,10 +244,10 @@ export default function SceneView({
         <h2 className="text-lg lg:text-xl font-bold text-charcoal">In this scene</h2>
         <ul className="mt-4 divide-y divide-warm-gray/60">
           {scene.hotspots.map((h) => (
-            <li key={h.handle} className="flex items-center gap-3 py-3">
+            <li key={hkey(h)} className="flex items-center gap-3 py-3">
               <button
                 type="button"
-                onClick={() => setActiveHandle(h.handle)}
+                onClick={() => setActiveKey(hkey(h))}
                 className="h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-warm-gray bg-white"
                 aria-label={`Preview ${h.title}`}
               >
@@ -248,15 +262,15 @@ export default function SceneView({
                 </a>
                 <p className="mt-0.5 text-xs text-charcoal/50">{h.label}</p>
                 <p className="mt-0.5 text-sm font-bold text-brand">
-                  {formatPrice(h.price, h.currency)}
-                  {!h.inStock && <span className="ml-2 text-xs font-normal text-charcoal/40">Out of stock</span>}
+                  {priceLabel(h.price, h.currency)}
+                  {!h.inStock && parseFloat(h.price) > 0 && <span className="ml-2 text-xs font-normal text-charcoal/40">Coming Soon</span>}
                 </p>
               </div>
               <label className="flex items-center gap-2 text-xs text-charcoal/60">
                 <input
                   type="checkbox"
-                  checked={selected.has(h.handle)}
-                  onChange={() => toggle(h.handle)}
+                  checked={selected.has(hkey(h))}
+                  onChange={() => toggle(hkey(h))}
                   disabled={!h.inStock}
                   className="h-4 w-4 accent-brand"
                 />
@@ -303,7 +317,9 @@ export default function SceneView({
               {selectedItems.length} of {scene.hotspots.length} items
             </p>
             <p className="text-base font-extrabold text-charcoal">
-              {formatPrice(comboPrice.toFixed(2), currency)}
+              {pricedItems.length > 0
+                ? `${hasUnpriced ? 'From ' : ''}${formatPrice(comboPrice.toFixed(2), currency)}`
+                : 'Coming Soon'}
             </p>
           </div>
           <button
@@ -321,7 +337,7 @@ export default function SceneView({
       {active && (
         <div
           className="fixed inset-0 z-50 flex items-end justify-center bg-charcoal/40 lg:items-center"
-          onClick={() => setActiveHandle(null)}
+          onClick={() => setActiveKey(null)}
         >
           <div
             className="w-full max-w-md rounded-t-2xl bg-cream p-4 shadow-2xl lg:rounded-2xl"
@@ -343,13 +359,13 @@ export default function SceneView({
                   {active.title}
                 </a>
                 <p className="mt-1 text-base font-bold text-brand">
-                  {formatPrice(active.price, active.currency)}
+                  {priceLabel(active.price, active.currency)}
                 </p>
               </div>
               <button
                 type="button"
                 aria-label="Close"
-                onClick={() => setActiveHandle(null)}
+                onClick={() => setActiveKey(null)}
                 className="self-start text-charcoal/40 hover:text-charcoal text-xl leading-none px-1"
               >
                 ×
@@ -362,7 +378,7 @@ export default function SceneView({
                 disabled={addingOne || !active.inStock}
                 className="h-11 flex-1 rounded-full bg-brand text-sm font-semibold text-cream transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
               >
-                {!active.inStock ? 'Out of Stock' : addingOne ? 'Adding...' : 'Add to Cart'}
+                {!active.inStock ? 'Coming Soon' : addingOne ? 'Adding...' : 'Add to Cart'}
               </button>
               <a
                 href={v2url(`/products/${active.handle}/`)}
