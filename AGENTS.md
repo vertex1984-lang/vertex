@@ -103,6 +103,15 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 下单走 `variantId`（`gid://shopify/ProductVariant/...`），随 `shopify-map.ts` 更新，Shopify 后台删老产品不会造成站内断链。
 - 1688 供应商标识的产品无亚马逊链接，`amazonUrl` 为空（在售时前台显示 Add to Cart，不显示 Amazon 按钮）。
 
+## Shop the Look 场景锚点匹配（2026-10-27，2026-10-28 增补形状守卫）
+
+- 场景 `src/data/scenes.ts` 的每个 hotspot 必须在批次 matches JSON 里有 `expect`（场景里可见的材质/工艺/图案词，如 `pompom` / `embossed` / `velvet` / `floral` / `knit` / `openwork`）和可选 `known`（已知折中，如场景圆毯 vs 目录椭圆毯）。
+- **形状守卫（2026-10-28 起，用户定）**：地毯/枕/毯类锚点必须声明 `sceneShape`（`oval`/`round`/`square`/`rect`/`lumbar`/`na`）。软形（oval/round）与硬形（square/rect）跨族 = 关键冲突 exit 1；已拍板的特例写 `"shapeKnown": true` 并在 note 里注明（如 2-3 场景圆毯用户选方形兔毛地毯）。起因：浅色产品缩略图颜色无法区分，错全错在形状（椭圆/方形地毯、方枕/长枕 30×50）。
+- **浅色产品强制材质词**：产品 colors/title 含 cream/white/beige/ivory/oat 时，`expect` 必须含至少一个材质词（fur/boucle/linen/cotton/knit/corduroy/sateen/velvet/satin/shag/woven/hollowfibre），否则 critical。
+- 上线前跑 `node scripts/scenes/check-keywords.mjs [matches.json]`；关键缺失会 exit 1，报告写 `report/scenes/keyword-check.md`。
+- **verify 图含热区裁剪对比（2026-10-28 起）**：`verify-sheet.mjs` 自动从 spots JSON 裁出每个锚点的场景局部（Scene crop 列），与产品图并排——浅色形状差异审核前先自查一遍，再交用户。
+- 选品先看场景 slug/alt 的具体词（pom-pom、tufted、embossed、floral、openwork、lace 等），再按产品标题/属性逐词核对；只“颜色接近”不够。`lilac-pompom-bedroom` 曾把无绒球边的碎花被套锚到 “pom-pom trim” 场景，2026-10-27 已改为 `POMPOM4-BLOOM-QUEEN`。
+
 ## 本地预览
 
 - `npm run build` 前必须停掉占用 8080 的静态服务器（否则 EBUSY 锁 `out/`）。

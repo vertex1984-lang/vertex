@@ -42,3 +42,6 @@ next-env.d.ts
 # opencode local config
 .opencode/
 scripts/.ark-api-key
+
+# scenes 本地工作产物（对照图/审计报告，仅本地留存）
+/report/

@@ -27,32 +27,29 @@ function cardImageUrl(image: string) {
   return image.includes('cdn.shopify.com') ? shopifyImageUrl(image, 400) : resolveUrl(image);
 }
 
+function hkey(h: SceneHotspotCard) {
+  return h.spotId ?? h.handle;
+}
+
+function priceLabel(price: string, currency: string) {
+  return parseFloat(price) > 0 ? formatPrice(price, currency) : 'Coming Soon';
+}
+
 export default function SceneModule({ scene }: { scene: SceneViewData }) {
   const { toast } = useToast();
-  const [activeHandle, setActiveHandle] = useState<string | null>(null);
-  const [selected, setSelected] = useState<Set<string>>(
-    () => new Set(scene.hotspots.map((h) => h.handle))
-  );
+  const [activeKey, setActiveKey] = useState<string | null>(null);
   const [addingAll, setAddingAll] = useState(false);
   const [addingOne, setAddingOne] = useState(false);
 
-  const active = scene.hotspots.find((h) => h.handle === activeHandle) ?? null;
+  const active = scene.hotspots.find((h) => hkey(h) === activeKey) ?? null;
 
-  const selectedItems = useMemo(
-    () => scene.hotspots.filter((h) => selected.has(h.handle)),
-    [scene.hotspots, selected]
+  const buyableItems = useMemo(
+    () => scene.hotspots.filter((h) => h.inStock && parseFloat(h.price) > 0),
+    [scene.hotspots]
   );
-  const comboPrice = selectedItems.reduce((sum, h) => sum + parseFloat(h.price || '0'), 0);
+  const comboPrice = buyableItems.reduce((sum, h) => sum + parseFloat(h.price || '0'), 0);
+  const hasUnpriced = buyableItems.length < scene.hotspots.length;
   const currency = scene.hotspots[0]?.currency ?? 'USD';
-
-  const toggle = (handle: string) => {
-    setSelected((prev) => {
-      const next = new Set(prev);
-      if (next.has(handle)) next.delete(handle);
-      else next.add(handle);
-      return next;
-    });
-  };
 
   const addOne = async (h: SceneHotspotCard) => {
     setAddingOne(true);
@@ -89,7 +86,7 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
   };
 
   const addAll = async () => {
-    const items = selectedItems.filter((h) => h.inStock);
+    const items = buyableItems;
     if (items.length === 0) return;
     setAddingAll(true);
     trackEvent('add_to_cart', {
@@ -156,22 +153,22 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
         </div>
         {scene.hotspots.map((h) => (
           <button
-            key={h.handle}
+            key={hkey(h)}
             type="button"
             aria-label={`${h.title} — ${h.label}`}
-            onClick={() => setActiveHandle(h.handle)}
+            onClick={() => setActiveKey(hkey(h))}
             className="absolute -translate-x-1/2 -translate-y-1/2 group"
             style={{ left: `${h.x}%`, top: `${h.y}%` }}
           >
             <span className="absolute inset-0 rounded-full bg-white/60 animate-ping [animation-duration:2.5s]" />
             <span
               className={`relative flex h-7 w-7 lg:h-8 lg:w-8 items-center justify-center rounded-full border-2 border-white shadow-lg transition ${
-                activeHandle === h.handle ? 'bg-brand scale-110' : 'bg-white/90 group-hover:bg-brand'
+                activeKey === hkey(h) ? 'bg-brand scale-110' : 'bg-white/90 group-hover:bg-brand'
               }`}
             >
               <span
                 className={`h-1.5 w-1.5 rounded-full ${
-                  activeHandle === h.handle ? 'bg-white' : 'bg-brand group-hover:bg-white'
+                  activeKey === hkey(h) ? 'bg-white' : 'bg-brand group-hover:bg-white'
                 }`}
               />
             </span>
@@ -192,7 +189,7 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
                     {h.title}
                   </span>
                   <span className="mt-0.5 block text-sm font-bold text-brand">
-                    {formatPrice(h.price, h.currency)}
+                    {priceLabel(h.price, h.currency)}
                   </span>
                   <span className="mt-0.5 block text-[10px] text-charcoal/45">Click the dot to shop</span>
                 </span>
@@ -202,53 +199,36 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
         ))}
       </div>
 
-      {/* 组合加购条：选中商品 chips（点 × 移除）+ 组合价 + Add All */}
+      {/* 组合展示条：场景内全部产品 chips（纯展示）+ 组合价 + Add All */}
       <div className="flex flex-wrap items-center gap-2 border border-t-0 border-warm-gray/60 bg-cream px-3 py-2.5 lg:border-t lg:-mt-1 lg:px-4">
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
-          {scene.hotspots.map((h) =>
-            selected.has(h.handle) ? (
-              <span
-                key={h.handle}
-                className="flex items-center gap-1 rounded-full border border-warm-gray bg-white py-0.5 pl-0.5 pr-1.5"
-              >
-                <img
-                  src={cardImageUrl(h.image)}
-                  alt=""
-                  className="h-6 w-6 rounded-full object-cover"
-                  loading="lazy"
-                />
-                <span className="max-w-20 truncate text-[11px] text-charcoal/70">
-                  {formatPrice(h.price, h.currency)}
-                </span>
-                <button
-                  type="button"
-                  aria-label={`Remove ${h.title}`}
-                  onClick={() => toggle(h.handle)}
-                  className="text-charcoal/40 hover:text-charcoal text-sm leading-none"
-                >
-                  ×
-                </button>
+          {scene.hotspots.map((h) => (
+            <span
+              key={hkey(h)}
+              className="flex items-center gap-1 rounded-full border border-warm-gray bg-white py-0.5 pl-0.5 pr-2.5"
+            >
+              <img
+                src={cardImageUrl(h.image)}
+                alt=""
+                className="h-6 w-6 rounded-full object-cover"
+                loading="lazy"
+              />
+              <span className="max-w-20 truncate text-[11px] text-charcoal/70">
+                {h.inStock ? priceLabel(h.price, h.currency) : 'Coming Soon'}
               </span>
-            ) : (
-              <button
-                key={h.handle}
-                type="button"
-                onClick={() => toggle(h.handle)}
-                className="rounded-full border border-dashed border-warm-gray px-2.5 py-1 text-[11px] text-charcoal/45 hover:text-charcoal"
-              >
-                + {h.label}
-              </button>
-            )
-          )}
+            </span>
+          ))}
         </div>
         <div className="flex items-center gap-3">
           <span className="text-sm font-extrabold text-charcoal">
-            {formatPrice(comboPrice.toFixed(2), currency)}
+            {buyableItems.length > 0
+              ? `${hasUnpriced ? 'From ' : ''}${formatPrice(comboPrice.toFixed(2), currency)}`
+              : 'Coming Soon'}
           </span>
           <button
             type="button"
             onClick={addAll}
-            disabled={addingAll || selectedItems.filter((h) => h.inStock).length === 0}
+            disabled={addingAll || buyableItems.length === 0}
             className="h-9 rounded-full bg-brand px-4 text-xs font-semibold text-cream transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
           >
             {addingAll ? 'Adding...' : 'Add All'}
@@ -260,7 +240,7 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
       {active && (
         <div
           className="fixed inset-0 z-50 flex items-end justify-center bg-charcoal/40 lg:items-center"
-          onClick={() => setActiveHandle(null)}
+          onClick={() => setActiveKey(null)}
         >
           <div
             className="w-full max-w-md rounded-t-2xl bg-cream p-4 shadow-2xl lg:rounded-2xl"
@@ -282,13 +262,13 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
                   {active.title}
                 </a>
                 <p className="mt-1 text-base font-bold text-brand">
-                  {formatPrice(active.price, active.currency)}
+                  {priceLabel(active.price, active.currency)}
                 </p>
               </div>
               <button
                 type="button"
                 aria-label="Close"
-                onClick={() => setActiveHandle(null)}
+                onClick={() => setActiveKey(null)}
                 className="self-start text-charcoal/40 hover:text-charcoal text-xl leading-none px-1"
               >
                 ×
@@ -301,7 +281,7 @@ export default function SceneModule({ scene }: { scene: SceneViewData }) {
                 disabled={addingOne || !active.inStock}
                 className="h-11 flex-1 rounded-full bg-brand text-sm font-semibold text-cream transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
               >
-                {!active.inStock ? 'Out of Stock' : addingOne ? 'Adding...' : 'Add to Cart'}
+                {!active.inStock ? 'Coming Soon' : addingOne ? 'Adding...' : 'Add to Cart'}
               </button>
               <a
                 href={v2url(`/products/${active.handle}/`)}
