@@ -60,6 +60,7 @@ const CORD_OLIVE_45 = 'corduroy-pillow-covers-olive-45x45-mk-pc-cord-olive-45';
 const CORD_CHARCOAL_45 = 'corduroy-pillow-covers-charcoal-45x45-mk-pc-cord-charcoal-45';
 const CHUNKY_THROW_ORANGE = 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-orange';
 const CHUNKY_THROW_CREAM = 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-cream';
+const CHUNKY_THROW_GREY = 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-grey';
 const KNIT_THROW_CREAM = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-cream';
 const LINEN_BLUE = '100-linen-duvet-cover-set-queen-size-3-piece-bedding-set-1-linen3-dustyblue-queen';
 const BEDSET_LILAC = 'makimoo-4-piece-bedding-set-queen-duvet-cover-88-x-88-in-bedset4-lilac-queen';
@@ -433,7 +434,7 @@ export const SCENES: SceneDef[] = [
     addedAt: '2026-10-27T11:06:00Z',
     hotspots: [
       { spotId: 'beige-bed', handle: BEDSET_BEIGE, x: 46, y: 56, label: 'The bed' },
-      { spotId: 'lilac-throw', handle: RABBIT_THROW_PURPLE, x: 42, y: 65, label: 'Draped lilac throw' },
+      { spotId: 'lilac-throw', handle: CHUNKY_THROW_GREY, x: 42, y: 65, label: 'Draped lilac throw' },
       { spotId: 'fur-rug', handle: FAUX_FUR_RUG_WHITE, x: 50, y: 88, label: 'On the floor' },
     ],
   },

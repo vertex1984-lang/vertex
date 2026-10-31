@@ -92,8 +92,8 @@ ROWS = [
     {
         "slug": "shabby-lavender-tea", "stem": "1db8691a", "tag": "5-2",
         "old": {"asin": "BEDSET4-LILAC-QUEEN", "title": "Linen-Like 4-Piece Bedding Set, Lilac Floral, Queen", "price": "$34.99 · in stock"},
-        "new": {"asin": "1688-969627065032-C43", "title": "Faux Rabbit Fur Throw Blanket, Purple, 180 x 200cm", "price": "$29.99 · in stock"},
-        "note": "没有紫色枕头 → 锚到床尾紫色盖毯（热区已移动）",
+        "new": {"asin": "CHUNKYTHROW-GREY-127", "title": "Chunky Knit Throw Blanket, Light Grey, 50 x 68 in", "price": "Coming Soon"},
+        "note": "没有紫色枕头 → 先锚紫盖毯、二次审核后换灰针织毯（热区已移动）",
         "old_mark": (56, 50),
     },
     {
