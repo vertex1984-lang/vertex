@@ -6878,6 +6878,7 @@ import { SHOPIFY_MAP } from './shopify-map';
 import { MATERIALS_MAP, SITE_ONLY_WHITEBG } from './materials-map';
 import { MATERIALS_SHORT_BULLETS } from './materials-short-bullets';
 import { MATERIALS_PRODUCTS } from './products-materials';
+import { PLANNED_PRODUCTS } from './products-planned';
 import { SHORT_TITLES } from './short-titles';
 import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
@@ -6886,7 +6887,7 @@ import { classifyProduct } from './subcategories';
 import { getVariantReviewStats } from './product-reviews';
 
 /** 站点基础产品 + 素材库新增产品 */
-export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS];
+export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS, ...PLANNED_PRODUCTS];
 
 /** 应用素材库覆盖（标题/五点描述/图片），返回原产品表示该 ASIN 无素材数据 */
 function applyMaterialsData(product: MakimooProduct): MakimooProduct {

@@ -73,10 +73,6 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   'pompom4-swirl-full': '3/4',
   'pompom4-swirl-queen': '3/4',
   'pompom4-swirl-king': '3/4',
-  'pompom4-vine-twin': '3/4',
-  'pompom4-vine-full': '3/4',
-  'pompom4-vine-queen': '3/4',
-  'pompom4-vine-king': '3/4',
   'pompom4-leaf-twin': '3/4',
   'pompom4-leaf-full': '3/4',
   'pompom4-leaf-queen': '3/4',
@@ -100,8 +96,6 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   // 2026-10-22：Cotton Percale 提花四件套（4 色 × 仅 Queen，3:4 PDP 主图）
   'percalejac-haze-queen': '3/4',
   'percalejac-rose-queen': '3/4',
-  'percalejac-grey-queen': '3/4',
-  'percalejac-oatbeige-queen': '3/4',
   // 2026-10-22：Cotton Percale 细条纹提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
   'percalestripe-petal-queen': '3/4',
   // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen，3:4 PDP 主图）
@@ -132,7 +126,6 @@ export const IMAGE_ASPECT_OVERRIDES: Record<string, string> = {
   '1025015219200-c3': '3/4',
   '1025015219200-c2': '3/4',
   '1025015219200-c1': '3/4',
-  'sateen4-cream-queen': '3/4',
   'sateen4-sage-sheet': '3/4',
   'percale-white-sheet': '3/4',
   'duvset-gray-sheet': '3/4',

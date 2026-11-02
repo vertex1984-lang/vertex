@@ -80,20 +80,12 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c30',
   'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c35',
   'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c40',
-  'soft-cozy-all-season-4-piece-bedding-set-with-duvet-cover-bedset4-beige-twin',
   'makimoo-twin-bedding-set-4-piece-duvet-cover-set-with-bedset4-gray-twin',
-  'makimoo-4-piece-twin-bedding-set-includes-duvet-cover-bedset4-pink-twin',
   'makimoo-twin-bedding-set-4-piece-duvet-cover-fitted-sheet-bedset4-white-twin',
-  'luxury-brushed-microfiber-4-piece-bedding-set-king-size-bedset4-beige-king',
   'makimoo-king-size-bedding-set-4-piece-duvet-cover-with-bedset4-gray-king',
-  'premium-ultra-soft-brushed-microfiber-4-piece-bedding-set-bedset4-pink-king',
   'king-size-bedding-set-4-pieces-soft-brushed-microfiber-bedset4-white-king',
-  'makimoo-queen-size-4-piece-bedding-set-duvet-cover-fitted-bedset4-beige-queen',
-  'makimoo-bedding-set-4-pieces-full-size-duvet-cover-with-bedset4-beige-full',
   'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-gray-queen',
   'makimoo-full-duvet-cover-set-4-pieces-with-fitted-sheet-and-bedset4-gray-full',
-  '4-piece-duvet-cover-bedding-set-with-fitted-sheet-and-2-bedset4-pink-full',
-  'makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-pink-queen',
   'makimoo-queen-size-bedding-set-4-pieces-premium-ultra-soft-bedset4-white-queen',
   'makimoo-full-bedding-set-4-piece-soft-breathable-bedset4-white-full',
   'makimoo-duvet-cover-set-3-pieces-twin-size-soft-breathable-duvset-beige-twin',
@@ -450,7 +442,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-microfiber-bed-pillows-set-of-2-king',  // 2026-10-18：Cotton Sateen 四件套（6 色 × 4 尺寸）
   'makimoo-twin-bedding-set-4-piece-cotton-sateen-cream-twin',
   'makimoo-full-bedding-set-4-piece-cotton-sateen-cream-full',
-  'makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen',
   'makimoo-king-bedding-set-4-piece-cotton-sateen-cream-king',
   'makimoo-twin-bedding-set-4-piece-cotton-sateen-beige-twin',
   'makimoo-full-bedding-set-4-piece-cotton-sateen-beige-full',
@@ -1226,7 +1217,6 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-queen-sheet-set-4-piece-washed-cotton-stripe-sage-queen',  // 2026-10-27：水洗棉细条纹 Sheet Set（Sage Green，仅 Queen，无变体；与 WASHSTRIPE-SAGEGREEN-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-cotton-feel-gingham-grey-queen',  // 2026-10-27：Cotton Feel 灰白格纹 Sheet Set（Grey Gingham，仅 Queen，无变体；与 1071466105053-C3 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-linen-feel-heart-tan-queen',  // 2026-10-27：Linen Feel 浅棕爱心印花 Sheet Set（Tan Heart，仅 Queen，无变体；与 MK-HEART4-TAN-QUEEN 四件套相互独立）
-  'makimoo-queen-sheet-set-4-piece-embossed-velvet-pom-pom-vine-queen',  // 2026-10-27：藤蔓绒球 Sheet Set（Olive Vine，仅 Queen，无变体；与 POMPOM4-VINE-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-jacquard-velvet-ivory-queen',  // 2026-10-27：象牙白几何提花绒 Sheet Set（Ivory White，仅 Queen，无变体；与 VELJAC-IVORY-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-striped-velvet-mocha-queen',  // 2026-10-27：摩卡棕条纹绒 Sheet Set（Sage Stripe，仅 Queen，无变体；与 VELSTRIPE-MOCHA-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-cotton-feel-polka-blue-queen',  // 2026-10-27：Cotton Feel 蓝白波点 Sheet Set（Blue Polka，仅 Queen，无变体；与 1071466105053-C10 四件套相互独立）

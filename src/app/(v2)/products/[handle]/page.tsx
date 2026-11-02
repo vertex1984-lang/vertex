@@ -7,7 +7,7 @@ import PdpEntryRedirect from '@/components/v2/PdpEntryRedirect';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
 import { getVariantGroupOf, isVariantColorHidden } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
-import { buildSetFamilies } from '@/data/bedding-families';
+import { buildSetFamilies, classifySet } from '@/data/bedding-families';
 import { getPdpRelatedFamilies } from '@/data/home-sections';
 import { STORE_CURRENCY } from '@/lib/currency';
 
@@ -126,6 +126,21 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
         );
         if (!hasSizes) {
           return { colorVariants: group.members.map(toVariant), sizeVariants: [] };
+        }
+        // 2026-11-02 用户定：pillowcase/sham 只有一个尺寸（20×30″），不分 Twin/Queen/King——
+        // 不出尺寸选择器，色点按颜色去重（当前产品优先作本花色代表）
+        if (classifySet(enriched.asin) === 'pillowcase') {
+          const seenPc = new Set<string>();
+          const pcVariants = [currentMember, ...group.members]
+            .filter((m): m is NonNullable<typeof m> => Boolean(m))
+            .filter((m) => {
+              if (isVariantColorHidden(group.id, m.color)) return false;
+              if (seenPc.has(m.color)) return false;
+              seenPc.add(m.color);
+              return true;
+            })
+            .map(toVariant);
+          return { colorVariants: pcVariants, sizeVariants: [] };
         }
         // 同尺寸成员优先作色代表；色圆点按颜色去重
         const ordered = currentMember

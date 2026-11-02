@@ -16,6 +16,7 @@ import V2TowelsCatHero, { TowelsHeroLink } from '@/components/v2/V2TowelsCatHero
 import V2BlanketsCatHero, { BlanketsHeroLink } from '@/components/v2/V2BlanketsCatHero';
 import V2DecorCatHero, { DecorHeroLink } from '@/components/v2/V2DecorCatHero';
 import V2NotFound from '@/components/v2/V2NotFound';
+import { PLP_EDITORIAL_TILES } from '@/data/editorial-tiles';
 import { buildSetFamilies } from '@/data/bedding-families';
 import { buildBlanketFamilies, blanketSectionOf, BLANKET_SECTIONS } from '@/data/blanket-families';
 import { DECOR_SECTIONS, decorSectionOf } from '@/data/decor-families';
@@ -236,7 +237,7 @@ export default function V2ProductsPage() {
   // 快链 = 类型子分类：Sheets & Duvet Sets（4 件套，2026-10-26 曾短暂改名 Complete Sets，同日改回，
   // 2026-10-22 起含原三件套家族）/ Duvet Covers / Fitted Sheets / Pillowcases & Shams
   // （2026-10-26 由 Pillow Covers 改名）；布料快链 2026-10-26 用户定移除，只展示类型分类；
-  // 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品，2026-10-18 用户定）
+  // 上标数 = 花型变体数（每个颜色家族算 1 个，不计尺寸变体，2026-11-02 用户定；2026-10-18 曾为全 SKU 数）
   const beddingHero = useMemo(() => {
     if (!beddingMaterialMode || isSearching || activeSub) return null;
     const fams = buildSetFamilies(beddingShopProducts);
@@ -262,7 +263,8 @@ export default function V2ProductsPage() {
       typeLinks.push({ label: 'Pillowcases & Shams', href: v2url('/bedding/pillow-covers/') });
     // 2026-10-26 用户定：此区域只展示 bedding 类型分类，布料快链移除（布料入口在导航 Fabric 列）
     const fabricLinks: BeddingHeroLink[] = [];
-    return { styleCount: beddingShopProducts.length, typeLinks, fabricLinks };
+    // 2026-11-02 用户定：上标数只统计花型变体（一个颜色家族算 1 个），不再把尺寸变体计入
+    return { styleCount: fams.length, typeLinks, fabricLinks };
   }, [beddingMaterialMode, isSearching, activeSub, beddingShopProducts]);
 
   // blankets 选购视图（2026-09-27 用户定，参照 bedding 页样式；2026-10-19 按 bedding/towels 标准重构：
@@ -774,7 +776,7 @@ export default function V2ProductsPage() {
            传未去重的原始 bedding 列表（2026-09 修复）：buildSetFamilies 需要看到全部尺寸 SKU
            才能在家族卡拼出完整尺寸带（Twin / Full / Queen / King），与 /bedding/bed-sets/ 一致；
            若传入 dedupeFamilyColors 后的列表，同族同色不同尺寸被合并，尺寸带只剩代表 SKU 的一个 */
-        <V2BeddingShop products={beddingShopProducts} />
+        <V2BeddingShop products={beddingShopProducts} editorialTiles={PLP_EDITORIAL_TILES.bedding} />
       ) : blanketsMode && !isSearching ? (
         /* blankets 选购视图（2026-10-19 用户定：按 bedding/towels 页标准重构——
            页头 Parachute 式 hero（V2BlanketsCatHero，系列分区锚点快链承担导航），

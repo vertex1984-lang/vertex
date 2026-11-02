@@ -8,6 +8,7 @@ import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
+import { PLP_EDITORIAL_TILES } from '@/data/editorial-tiles';
 
 /**
  * Bedding 二级类目 PLP（2026-09，仿 Parachute fabric-led 模型），一个路由两种页型：
@@ -190,7 +191,13 @@ export default function BeddingSubPage({ params }: { params: { slug: string } })
             不再按面料分区）；
             卡片 badge 规则（2026-09 用户定）：面料页整页同一布料不叠标签，类型页（多布料混排）
             叠布料标签 ── */}
-        <V2FabricShop families={families} flat={!fb && !byFabric} noBadges={!!fb || byFabric} byFabric={byFabric} />
+        <V2FabricShop
+          families={families}
+          flat={!fb && !byFabric}
+          noBadges={!!fb || byFabric}
+          byFabric={byFabric}
+          editorialTiles={PLP_EDITORIAL_TILES[params.slug]}
+        />
 
         {/* ── 面料互导（含当前面料，全量展示）── */}
         <V2FabricCrossSell fabrics={fabricsWithCounts} currentSlug={fb?.slug} />

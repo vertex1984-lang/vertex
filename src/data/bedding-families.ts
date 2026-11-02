@@ -130,7 +130,9 @@ export interface SetFamily {
 export function beddingCardTitle(kind: SetKind, materials: string[]): string {
   const fabric = materials[0] ? fabricDisplayName(materials[0]) : '';
   if (!fabric) return '';
-  if (kind === 'four') return `${fabric} Set`;
+  // 2026-11-01 用户定：bedding 全类目卡标题 = 布料+产品类型（单数不带 s）；
+  // four 由 "Set" 改 "Sheets & Duvet Set"，与 Sheet Set / Duvet Cover 命名对齐
+  if (kind === 'four') return `${fabric} Sheets & Duvet Set`;
   if (kind === 'duvet') return `${fabric} Duvet Cover`;
   if (kind === 'sheet') return `${fabric} Fitted Sheet`;
   if (kind === 'pillowcase') return `${fabric} Pillowcases`;
@@ -209,6 +211,11 @@ function duvetColorOf(asin: string): string {
 function familyKeyOf(asin: string): string {
   const a = asin.toLowerCase();
   if (a.startsWith('916370884976')) return '916370884976';
+  // 2026-11-01：规划新品——带尺寸尾段的独立被套/枕套对装去尺寸段归家族（key 统一小写），
+  // 必须先于数字前缀判定（否则 1025015219200-C1-QUEEN-DUVET / -PC-QUEEN 会被并入 1025015219200::颜色 四件套家族）；
+  // 无尺寸后缀的既有被套 Queen（percale-mist-duvet 等）走下方 -duvet$ 归一化，口径一致
+  if (/-(twin|full|queen|king)-duvet$/.test(a)) return a.replace(/-(twin|full|queen|king)-duvet$/, '-duvet');
+  if (/-pc-(twin|full|queen|king)$/.test(a)) return a.replace(/-(twin|full|queen|king)$/, '');
   // 2026-10-26：1025015219200 Cotton Blend 双层纱四件套——同前缀同色归一个 family（key = 前缀::颜色，
   // 颜色取变体组成员色，同 duvet 二维家族口径；ASIN 无颜色段，colorOf 会误取数字段）
   if (a.startsWith('1025015219200')) return `1025015219200::${duvetColorOf(asin)}`;
@@ -221,7 +228,10 @@ function familyKeyOf(asin: string): string {
   const parts = asin.split('-');
   const last = parts[parts.length - 1].toUpperCase();
   // BEDSET4-{COLOR}-{SIZE} → 去掉尺码尾段
-  return SET_SIZE_ORDER.includes(last) ? parts.slice(0, -1).join('-') : asin;
+  if (SET_SIZE_ORDER.includes(last)) return parts.slice(0, -1).join('-');
+  // 2026-11-01：无尺寸尾段的独立被套（percale-mist-duvet / DUVSET-GRAY-DUVET）key 统一小写，
+  // 与规划新品 …-TWIN-DUVET 去尺寸段后的 key 并家族
+  return /-duvet$/.test(a) ? a : asin;
 }
 
 function colorOf(key: string): string {
@@ -266,8 +276,11 @@ export function beddingCardDisplayOf(rep: Pick<MakimooProduct, 'asin' | 'title'>
   if (!kind) return {};
   const key = familyKeyOf(rep.asin);
   const duvetColor = key.includes('::') ? key.split('::')[1] : '';
+  // 2026-11-01：规划新品家族（sheetset-/duvetset- 前缀、数字供应商 id、-C 色号段）key 无颜色段，
+  // 取变体组代表成员色（与 buildSetFamilies 同口径）
+  const groupColor = /^(sheetset|duvetset)-|\d{9,}|-c\d+$/i.test(key) ? duvetColorOf(rep.asin) : '';
   const color =
-    duvetColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
+    duvetColor || groupColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
   const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
   return {
     titleOverride: beddingCardTitle(kind, materials) || undefined,
@@ -292,15 +305,24 @@ export function buildSetFamilies(products: MakimooProduct[], kind?: SetKind): Se
         SET_SIZE_ORDER.indexOf(a.asin.split('-').pop()!.toUpperCase()) -
         SET_SIZE_ORDER.indexOf(b.asin.split('-').pop()!.toUpperCase())
     );
-    const rep = sorted.find((p) => p.asin.toUpperCase().endsWith('-QUEEN')) || sorted[0];
+    // 2026-11-01：Queen 代表款判定兼容规划新品独立被套（…-QUEEN-DUVET）与无尺寸后缀的既有被套 Queen（percale-mist-duvet）
+    const isQueenRep = (asin: string): boolean => {
+      const u = asin.toUpperCase();
+      if (u.endsWith('-QUEEN') || u.endsWith('-QUEEN-DUVET')) return true;
+      return u.endsWith('-DUVET') && !/-(TWIN|FULL|KING)-DUVET$/.test(u);
+    };
+    const rep = sorted.find((p) => isQueenRep(p.asin)) || sorted[0];
     const prices = members
       .map((p) => parseFloat(p.shopifyPrice || p.priceRange.minVariantPrice.amount))
       .filter((n) => !Number.isNaN(n) && n > 0);
     const kindOf = classifySet(rep.asin)!;
     const duvetColor = key.includes('::') ? key.split('::')[1] : '';
     const materials = getProductSpecs(rep.asin.toLowerCase())?.material?.split(', ') ?? [];
+    // 2026-11-01：规划新品家族（sheetset-/duvetset- 前缀、数字供应商 id、-C 色号段）key 无颜色段，
+    // 取变体组代表成员色（否则 colorOf 会显示 'Sateen4' / 'C1' 之类）
+    const groupColor = /^(sheetset|duvetset)-|\d{9,}|-c\d+$/i.test(key) ? duvetColorOf(rep.asin) : '';
     const color =
-      duvetColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
+      duvetColor || groupColor || (key === '916370884976' ? titleColorOf(rep.asin, rep.title) : colorOf(key));
     return {
       key,
       kind: kindOf,
@@ -475,11 +497,18 @@ export const SET_KIND_SLUGS: Record<string, SetKind> = {
  */
 export function beddingUsSizeLabel(asin: string, cmSize?: string): string {
   const last = asin.split('-').pop()?.toUpperCase() ?? '';
+  // 2026-11-01：规划新品——带尺寸尾段的独立被套/枕套（…-KING-DUVET、1025015219200-C1-PC-TWIN）先按尾段判定，
+  // 否则数字前缀新品会被下方"仅 Queen"特判吞掉
+  const tail = asin.toLowerCase().match(/-(twin|full|queen|king)(?:-duvet|-pc)?$/);
+  if (tail) return tail[1].charAt(0).toUpperCase() + tail[1].slice(1);
   // 2026-10-26：1025015219200 Cotton Blend 双层纱四件套仅 Queen（ASIN 无尺寸尾段，220cm 短边会被误判 King / Cal King）
   if (asin.toLowerCase().startsWith('1025015219200')) return 'Queen';
   // 2026-10-26：1071466105053 Cotton Feel 格纹四件套仅 Queen（迁移后 ASIN 无 -QUEEN 尾段，同 muslin 特判）
   if (asin.toLowerCase().startsWith('1071466105053')) return 'Queen';
   if (SET_SIZE_ORDER.includes(last)) return last.charAt(0) + last.slice(1).toLowerCase();
+  // 2026-11-02：变体组 size 字段直接是美式档位标签（如 'Queen'），不再走 cm 数值映射
+  const us = cmSize?.match(/^(twin|full|queen|king)\b/i);
+  if (us) return us[1].charAt(0).toUpperCase() + us[1].slice(1).toLowerCase();
   const m = cmSize?.match(/(\d+)\s*x\s*(\d+)/i);
   if (!m) return '';
   const width = Math.min(Number(m[1]), Number(m[2]));
@@ -506,8 +535,14 @@ export function beddingPdpHeading(
   const fabric = materials[0] ? fabricDisplayName(materials[0]) : '';
   if (!fabric) return null;
   const size = beddingUsSizeLabel(asin, cmSize);
+  // 2026-11-02 用户定：独立被套副标题改为「Standalone covers in 实际布料 · 尺寸档」，
+  // 不再用写死的 linen & washed cotton-like（与实际产品不符）；
+  // pillowcase/sham 只有一个尺寸（20×30″），副标题不带尺寸档
+  const blurb = kind === 'duvet'
+    ? `Standalone covers in ${fabric.toLowerCase()}`
+    : SET_KIND_PAGE_COPY[kind].blurb;
   return {
     title: `${fabric} ${SET_KIND_LABEL[kind]}`,
-    subtitle: `${SET_KIND_PAGE_COPY[kind].blurb}${size ? ` · ${size}` : ''}`,
+    subtitle: `${blurb}${kind !== 'pillowcase' && size ? ` · ${size}` : ''}`,
   };
 }

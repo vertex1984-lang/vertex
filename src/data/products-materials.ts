@@ -27265,52 +27265,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
 {
-    "id": "makimoo-BEDSET4-BEIGE-FULL",
-    "asin": "BEDSET4-BEIGE-FULL",
-    "title": "Makimoo Bedding Set 4 Pieces Full Size Duvet Cover With Fitted Sheet And Pillowcases 80 x 88 in Soft Breathable Bed Linen All Season Cozy Lightweight Easy Care (Beige)",
-    "handle": "makimoo-bedding-set-4-pieces-full-size-duvet-cover-with-bedset4-beige-full",
-    "description": "Complete 4 Piece Set: Includes 1 duvet cover measuring 80 x 88 in, 1 fitted sheet measuring 54 x 75 in, and 2 pillowcases each measuring 20 x 26 in to give your full bed a coordinated finish. Soft Airy Fabric: Woven for a gentle hand feel and lightweight breathability, this set keeps you comfortable whether you sleep warm or cool. Versatile Beige Palette: The warm neutral shade pairs naturally with wood, rattan, and modern textiles, creating a calm welcoming bedroom atmosphere. Easy Care Design: Machine washable for simple upkeep, this set refreshes easily after each wash so your bed looks tidy with minimal effort. Tailored Full Size Fit: The fitted sheet wraps your mattress neatly, the duvet cover drapes smoothly over your insert, and the matching pillowcases complete a polished inviting look.",
-    "descriptionHtml": "<p>Complete 4 Piece Set: Includes 1 duvet cover measuring 80 x 88 in, 1 fitted sheet measuring 54 x 75 in, and 2 pillowcases each measuring 20 x 26 in to give your full bed a coordinated finish.</p><p>Soft Airy Fabric: Woven for a gentle hand feel and lightweight breathability, this set keeps you comfortable whether you sleep warm or cool.</p><p>Versatile Beige Palette: The warm neutral shade pairs naturally with wood, rattan, and modern textiles, creating a calm welcoming bedroom atmosphere.</p><p>Easy Care Design: Machine washable for simple upkeep, this set refreshes easily after each wash so your bed looks tidy with minimal effort.</p><p>Tailored Full Size Fit: The fitted sheet wraps your mattress neatly, the duvet cover drapes smoothly over your insert, and the matching pillowcases complete a polished inviting look.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-BEIGE-FULL/1.webp",
-        "altText": "Makimoo Bedding Set 4 Pieces Full Size Duvet Cover With Fitted Sheet And Pillowcases 80 x 88 in Soft Breathable Bed Linen All Season Cozy Lightweight Easy Care (Beige)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-BEIGE-FULL/2.webp",
-        "altText": "Makimoo Bedding Set 4 Pieces Full Size Duvet Cover With Fitted Sheet And Pillowcases 80 x 88 in Soft Breathable Bed Linen All Season Cozy Lightweight Easy Care (Beige)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-BEIGE-FULL",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
     "id": "makimoo-BEDSET4-GRAY-KING",
     "asin": "BEDSET4-GRAY-KING",
     "title": "Makimoo King Size Bedding Set 4 Piece Duvet Cover with Fitted Sheet and 2 Pillowcases Soft Breathable Cotton-Like Wrinkle Resistant All Season Bed Linens 104 x 90 in (Grey)",
@@ -27483,328 +27437,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "variants": [
       {
         "id": "variant-BEDSET4-GRAY-TWIN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-BEDSET4-PINK-KING",
-    "asin": "BEDSET4-PINK-KING",
-    "title": "Premium Ultra Soft Washed Cotton 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet 2 Pillowcases Breathable Easy Care Wrinkle Resistant All Season 104 x 90 in (Pink)",
-    "handle": "premium-ultra-soft-brushed-microfiber-4-piece-bedding-set-bedset4-pink-king",
-    "description": "Complete 4-Piece Set: This bedding set includes 1 duvet cover measuring 104 x 90 in, 1 fitted sheet measuring 78 x 80 in, and 2 pillowcases measuring 20 x 36 in, giving your bed a coordinated finish. Soft Brushed Microfiber: Made from finely brushed microfiber that feels smooth and gentle against the skin, creating a cozy sleeping surface you can enjoy night after night. Breathable & All-Season Comfort: The lightweight fabric allows airflow to help regulate temperature, making it a comfortable choice throughout the year. Easy Care & Wrinkle Resistant: Designed to resist wrinkles and fading, this set stays neat and fresh-looking with simple machine washing and minimal ironing. Elegant Pink Style: The soft pink shade adds a warm, inviting touch to your bedroom and pairs easily with a variety of decor styles.",
-    "descriptionHtml": "<p>Complete 4-Piece Set: This bedding set includes 1 duvet cover measuring 104 x 90 in, 1 fitted sheet measuring 78 x 80 in, and 2 pillowcases measuring 20 x 36 in, giving your bed a coordinated finish.</p><p>Soft Brushed Microfiber: Made from finely brushed microfiber that feels smooth and gentle against the skin, creating a cozy sleeping surface you can enjoy night after night.</p><p>Breathable &amp; All-Season Comfort: The lightweight fabric allows airflow to help regulate temperature, making it a comfortable choice throughout the year.</p><p>Easy Care &amp; Wrinkle Resistant: Designed to resist wrinkles and fading, this set stays neat and fresh-looking with simple machine washing and minimal ironing.</p><p>Elegant Pink Style: The soft pink shade adds a warm, inviting touch to your bedroom and pairs easily with a variety of decor styles.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-PINK-KING/1.webp",
-        "altText": "Premium Ultra Soft Brushed Microfiber 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet 2 Pillowcases Breathable Easy Care Wrinkle Resistant All Season 104 x 90 in (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-PINK-KING/2.webp",
-        "altText": "Premium Ultra Soft Brushed Microfiber 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet 2 Pillowcases Breathable Easy Care Wrinkle Resistant All Season 104 x 90 in (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-PINK-KING",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-BEDSET4-PINK-QUEEN",
-    "asin": "BEDSET4-PINK-QUEEN",
-    "title": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Lightweight All Season Easy Care Cozy Solid Color Bedding 88 x 88 in (Pink)",
-    "handle": "makimoo-queen-duvet-cover-set-4-pieces-with-fitted-sheet-bedset4-pink-queen",
-    "description": "Complete Queen Bedding Set: This 4-piece set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you a coordinated foundation for a fresh, inviting bed. Soft and Breathable Comfort: The lightweight fabric feels gentle against skin and allows airflow, helping you stay comfortable through warmer nights and cozy during cooler months. Snug, Stay-in-Place Fit: The fitted sheet hugs the mattress smoothly, while the duvet cover and pillowcases drape neatly to create a tidy, well-made look every day. Easy Care for Busy Lifestyles: Machine washable and quick to refresh, this bedding resists wrinkles and maintains a smooth texture so your bed looks put together with minimal effort. Timeless Pink Accent: The soft solid pink tone adds a calm, elegant touch to bedrooms, guest rooms, and dorm spaces, pairing easily with a wide range of decor styles.",
-    "descriptionHtml": "<p>Complete Queen Bedding Set: This 4-piece set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you a coordinated foundation for a fresh, inviting bed.</p><p>Soft and Breathable Comfort: The lightweight fabric feels gentle against skin and allows airflow, helping you stay comfortable through warmer nights and cozy during cooler months.</p><p>Snug, Stay-in-Place Fit: The fitted sheet hugs the mattress smoothly, while the duvet cover and pillowcases drape neatly to create a tidy, well-made look every day.</p><p>Easy Care for Busy Lifestyles: Machine washable and quick to refresh, this bedding resists wrinkles and maintains a smooth texture so your bed looks put together with minimal effort.</p><p>Timeless Pink Accent: The soft solid pink tone adds a calm, elegant touch to bedrooms, guest rooms, and dorm spaces, pairing easily with a wide range of decor styles.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-PINK-QUEEN/1.webp",
-        "altText": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Lightweight All Season Easy Care Cozy Solid Color Bedding 88 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-PINK-QUEEN/2.webp",
-        "altText": "Makimoo Queen Duvet Cover Set 4 Pieces with Fitted Sheet and 2 Pillowcases Soft Breathable Lightweight All Season Easy Care Cozy Solid Color Bedding 88 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-PINK-QUEEN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-BEDSET4-PINK-FULL",
-    "asin": "BEDSET4-PINK-FULL",
-    "title": "4 Piece Duvet Cover Bedding Set With Fitted Sheet And 2 Pillowcases Soft Durable Breathable Lightweight Wrinkle Resistant Easy Care All Season For Full Size 80 x 88 in (Pink)",
-    "handle": "4-piece-duvet-cover-bedding-set-with-fitted-sheet-and-2-bedset4-pink-full",
-    "description": "Complete 4-Piece Bedding Set: This full-size ensemble includes 1 x Duvet Cover: 80 x 88 in, 1 x Fitted Sheet: 54 x 75 in, and 2 x Pillowcases: 20 x 26 in each. Every piece coordinates for a clean, refreshed bedroom look right out of the package. Soft And Breathable Fabric: The smooth, lightweight weave feels gentle against skin and allows air to move freely, helping you stay comfortable through warm nights and cozy when it cools down. Elegant Blush Pink Style: The solid pink color brings a calm, welcoming feel to your space. It pairs easily with neutral or patterned accents, making it a versatile choice for modern, minimalist, or feminine decor. Easy Care And Long-Lasting: Machine washable for simple upkeep, this set is designed to keep its smooth look and soft feel through repeated washes. Quality stitching helps maintain a neat, polished appearance over time. Thoughtful Fit And Finish: The fitted sheet features a fully elasticized edge for a secure fit, while the duvet cover and pillowcases are tailored with clean lines and neat stitching for a tidy, put-together bed.",
-    "descriptionHtml": "<p>Complete 4-Piece Bedding Set: This full-size ensemble includes 1 x Duvet Cover: 80 x 88 in, 1 x Fitted Sheet: 54 x 75 in, and 2 x Pillowcases: 20 x 26 in each. Every piece coordinates for a clean, refreshed bedroom look right out of the package.</p><p>Soft And Breathable Fabric: The smooth, lightweight weave feels gentle against skin and allows air to move freely, helping you stay comfortable through warm nights and cozy when it cools down.</p><p>Elegant Blush Pink Style: The solid pink color brings a calm, welcoming feel to your space. It pairs easily with neutral or patterned accents, making it a versatile choice for modern, minimalist, or feminine decor.</p><p>Easy Care And Long-Lasting: Machine washable for simple upkeep, this set is designed to keep its smooth look and soft feel through repeated washes. Quality stitching helps maintain a neat, polished appearance over time.</p><p>Thoughtful Fit And Finish: The fitted sheet features a fully elasticized edge for a secure fit, while the duvet cover and pillowcases are tailored with clean lines and neat stitching for a tidy, put-together bed.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-PINK-FULL/1.webp",
-        "altText": "4 Piece Duvet Cover Bedding Set With Fitted Sheet And 2 Pillowcases Soft Durable Breathable Lightweight Wrinkle Resistant Easy Care All Season For Full Size 80 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-PINK-FULL/2.webp",
-        "altText": "4 Piece Duvet Cover Bedding Set With Fitted Sheet And 2 Pillowcases Soft Durable Breathable Lightweight Wrinkle Resistant Easy Care All Season For Full Size 80 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-PINK-FULL",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-BEDSET4-PINK-TWIN",
-    "asin": "BEDSET4-PINK-TWIN",
-    "title": "Makimoo 4 Piece Twin Bedding Set Includes Duvet Cover, Fitted Sheet and 2 Pillowcases, Ultra Soft Washed Cotton, Lightweight, All Season, Wrinkle Resistant, 68 x 88 in (Pink)",
-    "handle": "makimoo-4-piece-twin-bedding-set-includes-duvet-cover-bedset4-pink-twin",
-    "description": "Complete Twin Bedding Set: This 4-piece set includes 1 duvet cover measuring 68 x 88 in, 1 fitted sheet measuring 39 x 75 in, and 2 pillowcases each measuring 20 x 26 in. Everything is coordinated to give your bed a fresh, finished look. Ultra Soft Brushed Microfiber: Made from finely brushed microfiber that feels smooth and gentle against the skin. The lightweight, breathable fabric helps keep you comfortable in warmer months and cozy when temperatures drop. Thoughtful Construction: The duvet cover has a hidden zipper closure and interior corner ties to help keep your comforter in place. Envelope-style pillowcases and a fitted sheet with all-around elastic offer a secure, neat fit on your mattress. Easy Care & Durable: Simply machine wash and tumble dry low for effortless upkeep. The fabric holds up well through regular washing, retaining its soft hand feel and soft pink color with minimal wrinkles. Soft Pink Style: The delicate pink shade adds a calm, inviting touch to bedrooms, guest rooms, dorm rooms, and apartments. It pairs easily with neutral or layered decor for a polished, cohesive appearance.",
-    "descriptionHtml": "<p>Complete Twin Bedding Set: This 4-piece set includes 1 duvet cover measuring 68 x 88 in, 1 fitted sheet measuring 39 x 75 in, and 2 pillowcases each measuring 20 x 26 in. Everything is coordinated to give your bed a fresh, finished look.</p><p>Ultra Soft Brushed Microfiber: Made from finely brushed microfiber that feels smooth and gentle against the skin. The lightweight, breathable fabric helps keep you comfortable in warmer months and cozy when temperatures drop.</p><p>Thoughtful Construction: The duvet cover has a hidden zipper closure and interior corner ties to help keep your comforter in place. Envelope-style pillowcases and a fitted sheet with all-around elastic offer a secure, neat fit on your mattress.</p><p>Easy Care &amp; Durable: Simply machine wash and tumble dry low for effortless upkeep. The fabric holds up well through regular washing, retaining its soft hand feel and soft pink color with minimal wrinkles.</p><p>Soft Pink Style: The delicate pink shade adds a calm, inviting touch to bedrooms, guest rooms, dorm rooms, and apartments. It pairs easily with neutral or layered decor for a polished, cohesive appearance.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-PINK-TWIN/1.webp",
-        "altText": "Makimoo 4 Piece Twin Bedding Set Includes Duvet Cover, Fitted Sheet and 2 Pillowcases, Ultra Soft Brushed Microfiber, Lightweight, All Season, Wrinkle Resistant, 68 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-PINK-TWIN/2.webp",
-        "altText": "Makimoo 4 Piece Twin Bedding Set Includes Duvet Cover, Fitted Sheet and 2 Pillowcases, Ultra Soft Brushed Microfiber, Lightweight, All Season, Wrinkle Resistant, 68 x 88 in (Pink)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-PINK-TWIN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-          "id": "makimoo-BEDSET4-BEIGE-KING",
-          "asin": "BEDSET4-BEIGE-KING",
-          "title": "Luxury Washed Cotton 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet And Pillowcases Soft Breathable Wrinkle Resistant All Season 104 x 90 in (Beige)",
-          "handle": "luxury-brushed-microfiber-4-piece-bedding-set-king-size-bedset4-beige-king",
-          "description": "Complete 4-Piece King Set: This set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you a coordinated foundation for a clean, polished bed. Soft Brushed Microfiber: Woven from finely brushed microfiber that feels smooth against the skin and provides a lightweight, breathable layer for restful sleep throughout the year. Wrinkle Resistant & Easy Care: The fabric resists wrinkles and holds its color wash after wash, so the set looks fresh with minimal ironing and simple machine care. Secure Fitted Sheet: The included fitted sheet features elasticized edges that wrap snugly around the mattress, helping it stay smooth and in place night after night. Versatile Neutral Style: The warm beige tone complements a wide range of bedroom d\xe9cor, making this set suitable for master suites, guest rooms, and modern or classic interiors.",
-          "descriptionHtml": "<p>Complete 4-Piece King Set: This set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you a coordinated foundation for a clean, polished bed.</p><p>Soft Brushed Microfiber: Woven from finely brushed microfiber that feels smooth against the skin and provides a lightweight, breathable layer for restful sleep throughout the year.</p><p>Wrinkle Resistant &amp; Easy Care: The fabric resists wrinkles and holds its color wash after wash, so the set looks fresh with minimal ironing and simple machine care.</p><p>Secure Fitted Sheet: The included fitted sheet features elasticized edges that wrap snugly around the mattress, helping it stay smooth and in place night after night.</p><p>Versatile Neutral Style: The warm beige tone complements a wide range of bedroom d\xe9cor, making this set suitable for master suites, guest rooms, and modern or classic interiors.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/BEDSET4-BEIGE-KING/1.webp",
-                  "altText": "Luxury Brushed Microfiber 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet And Pillowcases Soft Breathable Wrinkle Resistant All Season 104 x 90 in (Beige)",
-                  "width": 800,
-                  "height": 800
-              },
-              {
-                  "url": "/images/products/BEDSET4-BEIGE-KING/2.webp",
-                  "altText": "Luxury Brushed Microfiber 4 Piece Bedding Set King Size Duvet Cover Fitted Sheet And Pillowcases Soft Breathable Wrinkle Resistant All Season 104 x 90 in (Beige)",
-                  "width": 800,
-                  "height": 800
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-BEDSET4-BEIGE-KING",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
-    "id": "makimoo-BEDSET4-BEIGE-QUEEN",
-    "asin": "BEDSET4-BEIGE-QUEEN",
-    "title": "Makimoo Queen Size 4 Piece Bedding Set Duvet Cover Fitted Sheet Pillowcases Ultra Soft Lightweight Breathable Wrinkle Resistant Easy Care Bed Linen Set 88 x 88 in (Beige)",
-    "handle": "makimoo-queen-size-4-piece-bedding-set-duvet-cover-fitted-bedset4-beige-queen",
-    "description": "Complete Queen Set: This 4-piece ensemble includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving your bed a fully coordinated, polished look. Ultra-Soft, Breathable Comfort: Crafted from a lightweight, gentle fabric that feels smooth against skin and encourages airflow to help you stay comfortable through every season. Elegant, Versatile Style: The solid beige tone and clean, tailored lines blend easily with modern, minimalist, or classic bedroom decor, creating a calm and inviting sleep space. Easy-Care Convenience: Machine washable for simple upkeep; the fabric maintains its smooth hand feel and soft color wash after wash, so your bedding looks refreshed with minimal effort. Tailored, Stay-in-Place Fit: The elasticized fitted sheet wraps securely around the mattress, while the generously sized duvet cover and pillowcases drape neatly for a smooth, finished appearance.",
-    "descriptionHtml": "<p>Complete Queen Set: This 4-piece ensemble includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving your bed a fully coordinated, polished look.</p><p>Ultra-Soft, Breathable Comfort: Crafted from a lightweight, gentle fabric that feels smooth against skin and encourages airflow to help you stay comfortable through every season.</p><p>Elegant, Versatile Style: The solid beige tone and clean, tailored lines blend easily with modern, minimalist, or classic bedroom decor, creating a calm and inviting sleep space.</p><p>Easy-Care Convenience: Machine washable for simple upkeep; the fabric maintains its smooth hand feel and soft color wash after wash, so your bedding looks refreshed with minimal effort.</p><p>Tailored, Stay-in-Place Fit: The elasticized fitted sheet wraps securely around the mattress, while the generously sized duvet cover and pillowcases drape neatly for a smooth, finished appearance.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-BEIGE-QUEEN/1.webp",
-        "altText": "Makimoo Queen Size 4 Piece Bedding Set Duvet Cover Fitted Sheet Pillowcases Ultra Soft Lightweight Breathable Wrinkle Resistant Easy Care Bed Linen Set 88 x 88 in (Beige)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-BEIGE-QUEEN/2.webp",
-        "altText": "Makimoo Queen Size 4 Piece Bedding Set Duvet Cover Fitted Sheet Pillowcases Ultra Soft Lightweight Breathable Wrinkle Resistant Easy Care Bed Linen Set 88 x 88 in (Beige)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-BEIGE-QUEEN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-BEDSET4-BEIGE-TWIN",
-    "asin": "BEDSET4-BEIGE-TWIN",
-    "title": "Soft Cozy All Season 4 Piece Bedding Set with Duvet Cover Fitted Sheet and Pillowcases for Twin Bed Lightweight Easy Care Machine Washable Bed Linen 68 x 88 in (Beige)",
-    "handle": "soft-cozy-all-season-4-piece-bedding-set-with-duvet-cover-bedset4-beige-twin",
-    "description": "Complete 4-Piece Twin Set: This set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving your Twin bed a fully coordinated look. Soft Cozy Feel: Woven for a smooth, gentle touch, the fabric creates a comfortable sleep space you can relax into night after night. Lightweight All-Season Comfort: The airy weight layers easily with extra blankets in cooler months and feels comfortably light on warmer nights. Snug Stay-Put Fit: The fitted sheet wraps your mattress with a secure elastic band, while the duvet cover and pillowcases are cut to drape neatly for a tidy, finished appearance. Easy Care and Versatile Beige Style: Machine washable for simple care, this bedding set keeps its soft texture and warm beige tone, pairing easily with a variety of bedroom decors.",
-    "descriptionHtml": "<p>Complete 4-Piece Twin Set: This set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving your Twin bed a fully coordinated look.</p><p>Soft Cozy Feel: Woven for a smooth, gentle touch, the fabric creates a comfortable sleep space you can relax into night after night.</p><p>Lightweight All-Season Comfort: The airy weight layers easily with extra blankets in cooler months and feels comfortably light on warmer nights.</p><p>Snug Stay-Put Fit: The fitted sheet wraps your mattress with a secure elastic band, while the duvet cover and pillowcases are cut to drape neatly for a tidy, finished appearance.</p><p>Easy Care and Versatile Beige Style: Machine washable for simple care, this bedding set keeps its soft texture and warm beige tone, pairing easily with a variety of bedroom decors.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/BEDSET4-BEIGE-TWIN/1.webp",
-        "altText": "Soft Cozy All Season 4 Piece Bedding Set with Duvet Cover Fitted Sheet and Pillowcases for Twin Bed Lightweight Easy Care Machine Washable Bed Linen 68 x 88 in (Beige)",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "/images/products/BEDSET4-BEIGE-TWIN/2.webp",
-        "altText": "Soft Cozy All Season 4 Piece Bedding Set with Duvet Cover Fitted Sheet and Pillowcases for Twin Bed Lightweight Easy Care Machine Washable Bed Linen 68 x 88 in (Beige)",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-BEDSET4-BEIGE-TWIN",
         "title": "Default Title",
         "price": {
           "amount": "0.00",
@@ -28076,6 +27708,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/DUVSET-GRAY-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/DUVSET-GRAY-QUEEN/1.webp",
@@ -29420,6 +29053,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/BEDSET4-SLATE-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/BEDSET4-SLATE-QUEEN/1.webp",
@@ -31468,6 +31102,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/LINEN3-SAGE-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-QUEEN/1.webp",
@@ -42232,6 +41867,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": true,
+    "featuredImage": "/images/products/LINEN3-SAGE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-SAGE-DUVET/1.webp",
@@ -42284,6 +41920,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": true,
+    "featuredImage": "/images/products/LINEN3-CHARCOAL-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-CHARCOAL-DUVET/1-3x4.webp",
@@ -42330,6 +41967,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": true,
+    "featuredImage": "/images/products/LINEN3-DUSTYBLUE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-DUSTYBLUE-DUVET/1-3x4.webp",
@@ -42376,6 +42014,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": true,
+    "featuredImage": "/images/products/LINEN3-IVORY-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-IVORY-DUVET/1-3x4.webp",
@@ -42422,6 +42061,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": true,
+    "featuredImage": "/images/products/LINEN3-OATMEAL-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/LINEN3-OATMEAL-DUVET/1-3x4.webp",
@@ -42459,7 +42099,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
 {
     "id": "makimoo-DUVSET-GRAY-DUVET",
     "asin": "DUVSET-GRAY-DUVET",
-    "featuredImage": "/images/products/DUVSET-GRAY-DUVET/1-3x4.webp",
+    "featuredImage": "/images/products/DUVSET-GRAY-DUVET/0-main-3x4.webp",
     "title": "Makimoo Washed Cotton-Like Duvet Cover Only Grey Soft Garment-Washed Breathable Bedding Cover 1 Piece Standalone with Zipper Closure and Corner Ties All-Season Essential",
     "handle": "makimoo-washed-cotton-like-duvet-cover-only-gray-breathable-duvset-gray-duvet",
     "description": "SOFT WASHED COTTON-LIKE FABRIC: Garment-washed for a naturally soft, breathable and skin-friendly feel, with a relaxed, slightly wrinkled texture that gets cozier with every wash. STANDALONE DUVET COVER: One duvet cover only. Pillowcases and comforter are NOT included. Slip it over your comforter to instantly refresh your bedroom. CALM NEUTRAL GREY STYLE: An easy-going grey that grounds the room, pairing well with white, beige, navy and wood tones, fitting modern, minimalist, farmhouse and Scandinavian rooms. ZIPPER CLOSURE AND CORNER TIES: A hidden zipper makes inserting and removing your comforter quick and easy, while interior corner ties keep it from shifting through the night. EASY CARE MACHINE WASHABLE: Machine wash cold, tumble dry low. Wrinkle-resistant washed finish keeps the cover looking fresh with minimal effort.",
@@ -43644,7 +43284,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
               "Bedding"
           ],
           "availableForSale": false,
-          "featuredImage": "/images/products/PERCALE-COCONUT-QUEEN/1-3x4.webp",
+          "featuredImage": "/images/products/PERCALE-COCONUT-QUEEN/0-main-3x4.webp",
           "images": [
               {
                   "url": "/images/products/PERCALE-COCONUT-QUEEN/1.webp",
@@ -44993,6 +44633,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
               "Bedding"
           ],
           "availableForSale": false,
+          "featuredImage": "/images/products/SATEEN4-CREAM-TWIN/0-main-3x4.webp",
           "images": [
               {
                   "url": "/images/products/SATEEN4-CREAM-TWIN/1.webp",
@@ -45050,46 +44691,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "variants": [
               {
                   "id": "variant-SATEEN4-CREAM-FULL",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
-          "id": "makimoo-SATEEN4-CREAM-QUEEN",
-          "asin": "SATEEN4-CREAM-QUEEN",
-          "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Cream White)",
-          "handle": "makimoo-queen-bedding-set-4-piece-cotton-sateen-cream-queen",
-          "description": "Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster. Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.",
-          "descriptionHtml": "<p>Silky 100% Cotton Sateen: Woven in a fine sateen weave, this bedding set has a smooth, lustrous surface with a subtle sheen—buttery-soft against the skin, with an elegant drape that brings quiet, hotel-level luxury to the bedroom.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night.</p><p>Gentle Sheen & Easy Care: The breathable sateen weave stays silky and comfortable year-round, machine washes easily, and gets softer with every wash while keeping its subtle luster.</p><p>Muted Healing Tone: The soft Cream White shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral d\xe9cor.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/SATEEN4-CREAM-QUEEN/1.webp",
-                  "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Sateen Silky Soft Duvet Cover Fitted Sheet Pillowcases with Zipper Closure Corner Ties 88 x 88 in (Cream White)",
-                  "width": 1200,
-                  "height": 1200
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-SATEEN4-CREAM-QUEEN",
                   "title": "Default Title",
                   "price": {
                       "amount": "0.00",
@@ -47392,7 +46993,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
 {
     "id": "makimoo-PERCALE-SKY-DUVET",
     "asin": "PERCALE-SKY-DUVET",
-    "featuredImage": "/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp",
+    "featuredImage": "/images/products/PERCALE-SKY-DUVET/0-main-3x4.webp",
     "title": "Makimoo 100% Cotton Percale Duvet Cover Only Crisp Cool Breathable 88 x 88 in with Zipper Closure Corner Ties (Sky Blue, Queen)",
     "handle": "makimoo-cotton-percale-duvet-cover-only-sky-blue-queen-percale-sky-duvet",
     "description": "Crisp 100% Cotton Percale: Woven in a tight plain weave, this duvet cover has the signature percale hand—matte, cool to the touch, and lightly structured—delivering that fresh, hotel-crisp feel that gets softer with every wash. Standalone Duvet Cover, Queen Size: One duvet cover only (88 x 88 in). Pillowcases, fitted sheet and comforter are NOT included—slip it over your duvet to instantly refresh the bedroom. Secure Zipper Closure & Corner Ties: The hidden zipper design keeps your comforter neatly tucked in, while interior corner ties help prevent shifting and bunching for a smooth, tidy bed every night. Breathable & Easy Care: The airy percale weave stays cool and comfortable year-round, machine washes easily, and is made to last—natural creases relax after a quick tumble or line dry. Muted Healing Tone: The soft Sky Blue shade brings a calm, cozy feel to the bedroom and blends effortlessly with modern, classic, or neutral décor.",
@@ -47454,6 +47055,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALE-MIST-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALE-MIST-DUVET/1.webp",
@@ -47506,6 +47108,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALE-COCONUT-QUEEN-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALE-COCONUT-QUEEN-DUVET/1.webp",
@@ -47558,6 +47161,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALE-NUDE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALE-NUDE-DUVET/1.webp",
@@ -47599,21 +47203,22 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
 {
-          "id": "makimoo-POMPOM4-VINE-TWIN",
-          "asin": "POMPOM4-VINE-TWIN",
-          "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Olive Vine)",
-          "handle": "makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-vine-twin",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
+          "id": "makimoo-POMPOM4-DAMASK-TWIN",
+          "asin": "POMPOM4-DAMASK-TWIN",
+          "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Gold Damask)",
+          "handle": "makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-damask-twin",
+          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
+          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
           "productType": "Bedding",
           "tags": [
               "Bedding"
           ],
           "availableForSale": false,
+          "featuredImage": "/images/products/POMPOM4-DAMASK-TWIN/0-main-3x4.webp",
           "images": [
               {
-                  "url": "/images/products/POMPOM4-VINE-TWIN/1.webp",
-                  "altText": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Olive Vine)",
+                  "url": "/images/products/POMPOM4-DAMASK-TWIN/1.webp",
+                  "altText": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Gold Damask)",
                   "width": 1200,
                   "height": 1200
               }
@@ -47626,7 +47231,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           },
           "variants": [
               {
-                  "id": "variant-POMPOM4-VINE-TWIN",
+                  "id": "variant-POMPOM4-DAMASK-TWIN",
                   "title": "Default Title",
                   "price": {
                       "amount": "0.00",
@@ -47639,21 +47244,22 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "amazonUrl": ""
       },
 {
-          "id": "makimoo-POMPOM4-VINE-FULL",
-          "asin": "POMPOM4-VINE-FULL",
-          "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Olive Vine)",
-          "handle": "makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-vine-full",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
+          "id": "makimoo-POMPOM4-DAMASK-FULL",
+          "asin": "POMPOM4-DAMASK-FULL",
+          "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Gold Damask)",
+          "handle": "makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-damask-full",
+          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
+          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
           "productType": "Bedding",
           "tags": [
               "Bedding"
           ],
           "availableForSale": false,
+          "featuredImage": "/images/products/POMPOM4-DAMASK-FULL/0-main-3x4.webp",
           "images": [
               {
-                  "url": "/images/products/POMPOM4-VINE-FULL/1.webp",
-                  "altText": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Olive Vine)",
+                  "url": "/images/products/POMPOM4-DAMASK-FULL/1.webp",
+                  "altText": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Gold Damask)",
                   "width": 1200,
                   "height": 1200
               }
@@ -47666,7 +47272,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           },
           "variants": [
               {
-                  "id": "variant-POMPOM4-VINE-FULL",
+                  "id": "variant-POMPOM4-DAMASK-FULL",
                   "title": "Default Title",
                   "price": {
                       "amount": "0.00",
@@ -47679,21 +47285,22 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "amazonUrl": ""
       },
 {
-          "id": "makimoo-POMPOM4-VINE-QUEEN",
-          "asin": "POMPOM4-VINE-QUEEN",
-          "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Olive Vine)",
-          "handle": "makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-vine-queen",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
+          "id": "makimoo-POMPOM4-DAMASK-QUEEN",
+          "asin": "POMPOM4-DAMASK-QUEEN",
+          "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Gold Damask)",
+          "handle": "makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-damask-queen",
+          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
+          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
           "productType": "Bedding",
           "tags": [
               "Bedding"
           ],
           "availableForSale": false,
+          "featuredImage": "/images/products/POMPOM4-DAMASK-QUEEN/0-main-3x4.webp",
           "images": [
               {
-                  "url": "/images/products/POMPOM4-VINE-QUEEN/1.webp",
-                  "altText": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Olive Vine)",
+                  "url": "/images/products/POMPOM4-DAMASK-QUEEN/1.webp",
+                  "altText": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Gold Damask)",
                   "width": 1200,
                   "height": 1200
               }
@@ -47706,7 +47313,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           },
           "variants": [
               {
-                  "id": "variant-POMPOM4-VINE-QUEEN",
+                  "id": "variant-POMPOM4-DAMASK-QUEEN",
                   "title": "Default Title",
                   "price": {
                       "amount": "0.00",
@@ -47719,21 +47326,22 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "amazonUrl": ""
       },
 {
-          "id": "makimoo-POMPOM4-VINE-KING",
-          "asin": "POMPOM4-VINE-KING",
-          "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Olive Vine)",
-          "handle": "makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-vine-king",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Olive Vine Palette & Easy Care: The gentle Olive Vine colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
+          "id": "makimoo-POMPOM4-DAMASK-KING",
+          "asin": "POMPOM4-DAMASK-KING",
+          "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Gold Damask)",
+          "handle": "makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-damask-king",
+          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
+          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
           "productType": "Bedding",
           "tags": [
               "Bedding"
           ],
           "availableForSale": false,
+          "featuredImage": "/images/products/POMPOM4-DAMASK-KING/0-main-3x4.webp",
           "images": [
               {
-                  "url": "/images/products/POMPOM4-VINE-KING/1.webp",
-                  "altText": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Olive Vine)",
+                  "url": "/images/products/POMPOM4-DAMASK-KING/1.webp",
+                  "altText": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Gold Damask)",
                   "width": 1200,
                   "height": 1200
               }
@@ -47746,7 +47354,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           },
           "variants": [
               {
-                  "id": "variant-POMPOM4-VINE-KING",
+                  "id": "variant-POMPOM4-DAMASK-KING",
                   "title": "Default Title",
                   "price": {
                       "amount": "0.00",
@@ -48559,166 +48167,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
           "amazonUrl": ""
       },
 {
-          "id": "makimoo-POMPOM4-DAMASK-TWIN",
-          "asin": "POMPOM4-DAMASK-TWIN",
-          "title": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Gold Damask)",
-          "handle": "makimoo-twin-bedding-set-4-piece-embossed-velvet-pom-pom-damask-twin",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Twin 4-Piece Set: This bedding set includes 1 duvet cover (68 x 88 in), 1 fitted sheet (39 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/POMPOM4-DAMASK-TWIN/1.webp",
-                  "altText": "Makimoo Twin Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 68 x 88 in (Gold Damask)",
-                  "width": 1200,
-                  "height": 1200
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-POMPOM4-DAMASK-TWIN",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
-          "id": "makimoo-POMPOM4-DAMASK-FULL",
-          "asin": "POMPOM4-DAMASK-FULL",
-          "title": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Gold Damask)",
-          "handle": "makimoo-full-bedding-set-4-piece-embossed-velvet-pom-pom-damask-full",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Full 4-Piece Set: This bedding set includes 1 duvet cover (80 x 88 in), 1 fitted sheet (54 x 75 in), and 2 pillowcases (20 x 26 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/POMPOM4-DAMASK-FULL/1.webp",
-                  "altText": "Makimoo Full Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 80 x 88 in (Gold Damask)",
-                  "width": 1200,
-                  "height": 1200
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-POMPOM4-DAMASK-FULL",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
-          "id": "makimoo-POMPOM4-DAMASK-QUEEN",
-          "asin": "POMPOM4-DAMASK-QUEEN",
-          "title": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Gold Damask)",
-          "handle": "makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-damask-queen",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in), and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/POMPOM4-DAMASK-QUEEN/1.webp",
-                  "altText": "Makimoo Queen Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 88 x 88 in (Gold Damask)",
-                  "width": 1200,
-                  "height": 1200
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-POMPOM4-DAMASK-QUEEN",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
-          "id": "makimoo-POMPOM4-DAMASK-KING",
-          "asin": "POMPOM4-DAMASK-KING",
-          "title": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Gold Damask)",
-          "handle": "makimoo-king-bedding-set-4-piece-embossed-velvet-pom-pom-damask-king",
-          "description": "Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed. Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed. Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding. Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit. Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.",
-          "descriptionHtml": "<p>Sculpted Embossed Velvet: The duvet cover and pillowcases are woven in a soft carved-plush fabric with a raised, sculpted pattern—velvety matte to the touch and gently plush, adding quiet depth and warmth to the bed.</p><p>Complete King 4-Piece Set: This bedding set includes 1 duvet cover (104 x 90 in), 1 fitted sheet (78 x 80 in), and 2 pillowcases (20 x 36 in), giving you everything you need for a coordinated, polished bed.</p><p>Pom-Pom Trim Finish: A playful pom-pom edging runs along the duvet cover and pillowcase borders, giving the set a soft, handcrafted look that stands out from plain bedding.</p><p>Cozy Milk-Velvet Reverse: The reverse side and fitted sheet are made of solid milk-velvet—dense, smooth and warm against the skin, ideal for cooler nights, with all-around elastic on the fitted sheet for a secure fit.</p><p>Soft Gold Damask Palette & Easy Care: The gentle Gold Damask colorway pairs easily with modern, classic, or cozy d\xe9cor; the set is machine washable and keeps its plush texture wash after wash.</p>",
-          "productType": "Bedding",
-          "tags": [
-              "Bedding"
-          ],
-          "availableForSale": false,
-          "images": [
-              {
-                  "url": "/images/products/POMPOM4-DAMASK-KING/1.webp",
-                  "altText": "Makimoo King Bedding Set 4 Piece Embossed Velvet Duvet Cover Fitted Sheet 2 Pillowcases with Pom Pom Trim 104 x 90 in (Gold Damask)",
-                  "width": 1200,
-                  "height": 1200
-              }
-          ],
-          "priceRange": {
-              "minVariantPrice": {
-                  "amount": "0.00",
-                  "currencyCode": "USD"
-              }
-          },
-          "variants": [
-              {
-                  "id": "variant-POMPOM4-DAMASK-KING",
-                  "title": "Default Title",
-                  "price": {
-                      "amount": "0.00",
-                      "currencyCode": "USD"
-                  },
-                  "availableForSale": false,
-                  "selectedOptions": []
-              }
-          ],
-          "amazonUrl": ""
-      },
-{
     "id": "makimoo-PERCALEJAC-HAZE-QUEEN",
     "asin": "PERCALEJAC-HAZE-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Dusty Blue)",
@@ -48730,7 +48178,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
-    "featuredImage": "/images/products/PERCALEJAC-HAZE-QUEEN/card-1x1.webp",
+    "featuredImage": "/images/products/PERCALEJAC-HAZE-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALEJAC-HAZE-QUEEN/1.webp",
@@ -48760,46 +48208,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "variants": [
       {
         "id": "variant-PERCALEJAC-HAZE-QUEEN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
-    "id": "makimoo-PERCALEJAC-OATBEIGE-QUEEN",
-    "asin": "PERCALEJAC-OATBEIGE-QUEEN",
-    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Oatmeal Beige)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-oatbeige-queen",
-    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.",
-    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Oatmeal Beige Colorway: Finished in a warm, creamy Oatmeal Beige—natural and cozy, it lends the room a soft, sunlit warmth, pairing easily with modern, classic, or cozy décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/PERCALEJAC-OATBEIGE-QUEEN/1.webp",
-        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Oatmeal Beige)",
-        "width": 1200,
-        "height": 1200
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-PERCALEJAC-OATBEIGE-QUEEN",
         "title": "Default Title",
         "price": {
           "amount": "0.00",
@@ -48852,46 +48260,6 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
     "amazonUrl": ""
   },
 {
-    "id": "makimoo-PERCALEJAC-GREY-QUEEN",
-    "asin": "PERCALEJAC-GREY-QUEEN",
-    "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Light Grey)",
-    "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-grey-queen",
-    "description": "100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color. Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months. Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed. Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash. Soothing Light Grey Colorway: Finished in a clean, understated Light Grey—versatile and serene, it pairs effortlessly with any bedroom palette, pairing easily with modern, classic, or cozy décor.",
-    "descriptionHtml": "<p>100% Cotton Percale with Yarn-Dyed Jacquard: Woven in a crisp, tightly woven cotton percale, the duvet cover and pillowcases feature yarn-dyed jacquard wide stripes with a subtle waffle texture. Reversible AB design—the A side shows the woven stripe jacquard, while the B side is a clean solid color.</p><p>Breathable & Skin-Friendly All Season: The percale plain weave feels cool, smooth and gentle against the skin, with airy breathability that keeps you comfortable through warm summers and layered cozy in cooler months.</p><p>Complete Queen 4-Piece Set: This bedding set includes 1 duvet cover (88 x 88 in), 1 fitted sheet (60 x 80 in) with all-around elastic for a secure fit, and 2 pillowcases (20 x 30 in), giving you everything you need for a coordinated, polished bed.</p><p>Thoughtful Details & Easy Care: A hidden zipper closure and interior corner ties keep your comforter neatly in place; the set is machine washable and keeps its crisp hand and woven texture wash after wash.</p><p>Soothing Light Grey Colorway: Finished in a clean, understated Light Grey—versatile and serene, it pairs effortlessly with any bedroom palette, pairing easily with modern, classic, or cozy décor.</p>",
-    "productType": "Bedding",
-    "tags": [
-      "Bedding"
-    ],
-    "availableForSale": false,
-    "images": [
-      {
-        "url": "/images/products/PERCALEJAC-GREY-QUEEN/1.webp",
-        "altText": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Light Grey)",
-        "width": 1200,
-        "height": 1200
-      }
-    ],
-    "priceRange": {
-      "minVariantPrice": {
-        "amount": "0.00",
-        "currencyCode": "USD"
-      }
-    },
-    "variants": [
-      {
-        "id": "variant-PERCALEJAC-GREY-QUEEN",
-        "title": "Default Title",
-        "price": {
-          "amount": "0.00",
-          "currencyCode": "USD"
-        },
-        "availableForSale": false,
-        "selectedOptions": []
-      }
-    ],
-    "amazonUrl": ""
-  },
-{
     "id": "makimoo-PERCALESTRIPE-PETAL-QUEEN",
     "asin": "PERCALESTRIPE-PETAL-QUEEN",
     "title": "Makimoo Queen Bedding Set 4 Piece 100% Cotton Percale Jacquard Fine Stripe Duvet Cover Fitted Sheet 2 Pillowcases 88 x 88 in (Blush Pink Stripe)",
@@ -48903,7 +48271,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
-    "featuredImage": "/images/products/PERCALESTRIPE-PETAL-QUEEN/card-1x1.webp",
+    "featuredImage": "/images/products/PERCALESTRIPE-PETAL-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALESTRIPE-PETAL-QUEEN/1.webp",
@@ -48950,6 +48318,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALEPATCH-STONE-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALEPATCH-STONE-QUEEN/1.webp",
@@ -48990,6 +48359,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALESTRIPE-PETAL-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp",
@@ -49048,6 +48418,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALEPATCH-STONE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALEPATCH-STONE-DUVET/1.webp",
@@ -49094,6 +48465,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/POMPOM4-VINE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/POMPOM4-VINE-DUVET/1.webp",
@@ -49134,6 +48506,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/WASHJAC-CREAM-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/WASHJAC-CREAM-DUVET/1.webp",
@@ -49174,6 +48547,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/VELJAC-IVORY-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELJAC-IVORY-DUVET/1.webp",
@@ -49482,6 +48856,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALEJAC-HAZE-DUVET/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALEJAC-HAZE-DUVET/1.webp",
@@ -49666,7 +49041,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
-    "featuredImage": "/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/card-1x1.webp",
+    "featuredImage": "/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/1.webp",
@@ -49707,6 +49082,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/WASHJAC-CREAM-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/WASHJAC-CREAM-QUEEN/1.webp",
@@ -49747,6 +49123,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/VELJAC-IVORY-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELJAC-IVORY-QUEEN/1.webp",
@@ -49787,6 +49164,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/PERCALECHECK-SAND-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/PERCALECHECK-SAND-QUEEN/1.webp",
@@ -49909,7 +49287,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
       "Bedding"
     ],
     "availableForSale": false,
-    "featuredImage": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/1-3x4.webp",
+    "featuredImage": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/0-main-3x4.webp",
     "images": [
       {
         "url": "/images/products/VELSTRIPE-CHARCOAL-QUEEN/1.webp",
@@ -50070,6 +49448,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1071466105053-C11/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1071466105053-C11/1.webp",
@@ -50150,6 +49529,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1071466105053-C5/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1071466105053-C5/1.webp",
@@ -50310,6 +49690,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1071466105053-C9/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1071466105053-C9/1.webp",
@@ -50390,6 +49771,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/MK-HEART4-TAN-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/MK-HEART4-TAN-QUEEN/1.webp",
@@ -50430,6 +49812,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/MK-PRINT4-BLUE-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/MK-PRINT4-BLUE-QUEEN/1.webp",
@@ -50470,6 +49853,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/MK-FLORAL4-GREY-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/MK-FLORAL4-GREY-QUEEN/1.webp",
@@ -50510,6 +49894,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/MK-BTFLY4-MOCHA-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/MK-BTFLY4-MOCHA-QUEEN/1.webp",
@@ -50550,6 +49935,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-SAND-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-SAND-QUEEN/1.webp",
@@ -50590,6 +49976,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-PETAL-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-PETAL-QUEEN/1.webp",
@@ -50630,6 +50017,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-SAGEGREEN-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-SAGEGREEN-QUEEN/1.webp",
@@ -50670,6 +50058,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-GINGHAM-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-GINGHAM-QUEEN/1.webp",
@@ -50710,6 +50099,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-HEART-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-HEART-QUEEN/1.webp",
@@ -50750,6 +50140,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-VINE-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-VINE-QUEEN/1.webp",
@@ -50790,6 +50181,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-IVORY-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-IVORY-QUEEN/1.webp",
@@ -50830,6 +50222,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-MOCHA-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-MOCHA-QUEEN/1.webp",
@@ -50870,6 +50263,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/SHEETSET-POLKA-QUEEN/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/SHEETSET-POLKA-QUEEN/1.webp",
@@ -50910,6 +50304,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1025015219200-C1/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1025015219200-C1/1.webp",
@@ -50950,6 +50345,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1025015219200-C2/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1025015219200-C2/1.webp",
@@ -50990,6 +50386,7 @@ export const MATERIALS_PRODUCTS: MakimooProduct[] = [
         "Bedding"
     ],
     "availableForSale": false,
+    "featuredImage": "/images/products/1025015219200-C3/0-main-3x4.webp",
     "images": [
         {
             "url": "/images/products/1025015219200-C3/1.webp",

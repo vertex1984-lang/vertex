@@ -22,7 +22,7 @@ import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
-import { beddingPdpHeading, beddingUsSizeLabel, classifySet } from '@/data/bedding-families';
+import { beddingPdpHeading, beddingUsSizeLabel } from '@/data/bedding-families';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
 import StarDisplay from '@/components/v2/StarDisplay';
@@ -263,9 +263,6 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const careCopy = getCareCopy(product.productType, product.title);
   const isRug = RUG_TITLE_RE.test(product.title);
   const isBedding = (product.productType || '').toLowerCase() === 'bedding';
-  // 四件套（被套+床笠+2枕套，classifySet = 'four'）的 Size Guide 需附床笠尺寸表
-  // （2026-10-21 用户定，美式床笠标准尺寸调研：Bed Bath & Beyond / Or&Zon 口径）
-  const beddingHasFittedSheet = isBedding && classifySet(product.asin) === 'four';
 
   // bedding PDP 标题区 + 美式尺寸（2026-10-21 用户定，规则函数见 bedding-families.ts）：
   // 主标题 = 材质 + 类型（如 "Cotton Percale Duvet Cover Set"）；副标题 = 类型组件清单 + 美式尺寸
@@ -299,6 +296,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     ...(pileStr ? [{ label: 'Pile Height', value: pileStr }] : []),
     ...(weightStr ? [{ label: 'Weight', value: weightStr }] : []),
     ...(materialSku ? [{ label: 'SKU', value: materialSku }] : []),
+    // 2026-11-02 用户定：ASIN 以「Model」命名展示，避免与 SKU 混淆
+    { label: 'Model', value: product.asin },
     { label: 'Care', value: careCopy.spec },
     { label: 'Availability', value: availabilityLabel, ...(!sellable ? { tone: launched ? 'alert' as const : 'muted' as const } : {}) },
   ];
@@ -706,6 +705,16 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </div>
             )}
 
+            {/* 2026-11-01 用户定：Size Guide 覆盖全部 bedding SKU（四档统一规格表）——
+                无尺寸选择器（变体 ≤1）的 bedding PDP 也要给 Size guide 入口 */}
+            {isBedding && sizeVariants.length <= 1 && (
+              <div className="mb-5 lg:mb-7 text-right">
+                <button type="button" onClick={() => setSizeGuideOpen(true)} className="text-xs text-brand underline underline-offset-2 hover:no-underline">
+                  Size guide
+                </button>
+              </div>
+            )}
+
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
             {/* 数量 + 加购（mainCtaRef：悬浮加购条显隐联动的观测目标） */}
@@ -935,7 +944,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         />
       )}
 
-      {/* Size Guide 弹层（bedding PDP，2026-09-28 用户要求）：尺寸 cm/英寸/适配床型对照表 */}
+      {/* Size Guide 弹层（bedding PDP）：2026-11-01 用户定新版四档统一规格表——
+          全部 bedding SKU 一律展示 Twin/Full/Queen/King 四档，
+          列 = 被套（国内现货）/ 自配被芯 / 床笠（15″口袋）/ 床单 / 枕套（20×30″，Twin 配 1 个、其余配 2 个） */}
       {sizeGuideOpen && (
         <div
           className="fixed inset-0 z-[1300] flex items-center justify-center bg-charcoal/50 px-4"
@@ -945,7 +956,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           aria-label="Size guide"
         >
           <div
-            className="relative w-full max-w-md rounded-2xl bg-white shadow-xl px-6 py-6 max-h-[80vh] overflow-y-auto"
+            className="relative w-full max-w-xl rounded-2xl bg-white shadow-xl px-6 py-6 max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -958,79 +969,53 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
             </button>
             <p className="text-base font-bold text-charcoal mb-1">Size Guide</p>
             <p className="text-xs text-charcoal-light mb-4">
-              {beddingHasFittedSheet ? 'Set dimensions by bed size.' : 'Duvet cover dimensions by size.'}
+              Dimensions by bed size — included components vary by set type.
             </p>
-            {beddingHasFittedSheet ? (
-              /* 四件套（2026-10-21 用户定）：单表统一格式，按床型分行，被套/床笠/枕套同版式
-                 （in 为主 + cm 次行）；尺寸取全店四件套（bedset4/sateen4）真实规格——
-                 被套 Twin 68x88 / Full 80x88 / Queen 88x88 / King 104x90 in，
-                 床笠 39x75 / 54x75 / 60x80 / 78x80 in（pocket 16 in / 40 cm，用户确认），
-                 枕套 20x26 / 20x26 / 20x30 / 20x36 in */
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="text-left text-[11px] uppercase tracking-wide text-charcoal-light border-b border-warm-gray">
-                    <th className="py-2 pr-2 font-semibold align-bottom">Size</th>
-                    <th className="py-2 pr-2 font-semibold align-bottom">Duvet Cover</th>
-                    <th className="py-2 pr-2 font-semibold align-bottom">
-                      Fitted Sheet
-                      <span className="block text-[10px] font-normal normal-case tracking-normal">
-                        16 in (40 cm) pocket
-                      </span>
-                    </th>
-                    <th className="py-2 font-semibold align-bottom">Pillowcases</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ['Twin', '68 x 88 in', '173 x 224 cm', '39 x 75 in', '99 x 191 cm', '20 x 26 in', '51 x 66 cm'],
-                    ['Full', '80 x 88 in', '203 x 224 cm', '54 x 75 in', '137 x 191 cm', '20 x 26 in', '51 x 66 cm'],
-                    ['Queen', '88 x 88 in', '224 x 224 cm', '60 x 80 in', '152 x 203 cm', '20 x 30 in', '51 x 76 cm'],
-                    ['King', '104 x 90 in', '264 x 229 cm', '78 x 80 in', '198 x 203 cm', '20 x 36 in', '51 x 91 cm'],
-                  ].map(([size, duvIn, duvCm, fitIn, fitCm, pcIn, pcCm]) => (
-                    <tr key={size} className="border-b border-warm-gray/60 last:border-0">
-                      <td className="py-2.5 pr-2 font-medium text-charcoal align-top">{size}</td>
-                      {[[duvIn, duvCm], [fitIn, fitCm], [pcIn, pcCm]].map(([inch, cm], i) => (
-                        <td key={i} className={`py-2.5 align-top text-charcoal-light ${i < 2 ? 'pr-2' : ''}`}>
-                          <span className="block">{inch}</span>
-                          <span className="block text-[11px] text-charcoal-light/80">{cm}</span>
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            ) : (
+            <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="text-left text-[11px] uppercase tracking-wide text-charcoal-light border-b border-warm-gray">
-                  <th className="py-2 pr-2 font-semibold">Size (cm)</th>
-                  <th className="py-2 pr-2 font-semibold">Inches</th>
-                  <th className="py-2 font-semibold">Fits</th>
+                  <th className="py-2 pr-2 font-semibold align-bottom">Size</th>
+                  <th className="py-2 pr-2 font-semibold align-bottom">Duvet Cover</th>
+                  <th className="py-2 pr-2 font-semibold align-bottom">Duvet Insert<span className="block text-[10px] font-normal normal-case tracking-normal">recommended</span></th>
+                  <th className="py-2 pr-2 font-semibold align-bottom">
+                    Fitted Sheet
+                    <span className="block text-[10px] font-normal normal-case tracking-normal">
+                      15 in (38 cm) pocket
+                    </span>
+                  </th>
+                  <th className="py-2 pr-2 font-semibold align-bottom">Flat Sheet</th>
+                  <th className="py-2 font-semibold align-bottom">Pillowcases</th>
                 </tr>
               </thead>
               <tbody>
-                {sizeVariants.map((sv) => {
-                  const m = sv.size.match(/(\d+)\s*x\s*(\d+)/i);
-                  const a = m ? Number(m[1]) : null;
-                  const b = m ? Number(m[2]) : null;
-                  const inches = a && b ? `${Math.round(a / 2.54)} x ${Math.round(b / 2.54)} in` : '—';
-                  const width = a && b ? Math.min(a, b) : null;
-                  const fits = width === null ? '—' : width <= 180 ? 'Twin / Twin XL' : width <= 210 ? 'Full / Queen' : 'King / Cal King';
-                  return (
-                    <tr key={sv.size} className="border-b border-warm-gray/60 last:border-0">
-                      <td className="py-2.5 pr-2 font-medium text-charcoal">{sv.size}</td>
-                      <td className="py-2.5 pr-2 text-charcoal-light">{inches}</td>
-                      <td className="py-2.5 text-charcoal-light">{fits}</td>
-                    </tr>
-                  );
-                })}
+                {[
+                  // [档位, 被套 in, 被套 cm, 被芯 in, 被芯 cm, 床笠 in, 床笠 cm, 床单 in, 床单 cm]
+                  // 2026-11-01 用户定规格：被套 180×220/200×230/220×240/264×229 cm；
+                  // 被芯 86×68/86×80/86×86/86×98 in；床笠 39×75/54×75/60×80/76×80 +15″口袋；
+                  // 床单 66×96/80×96/90×102/108×102 in；枕套统一 20×30 in（51×76 cm）
+                  ['Twin', '71 x 87 in', '180 x 220 cm', '86 x 68 in', '218 x 173 cm', '39 x 75 in', '99 x 191 cm', '66 x 96 in', '168 x 244 cm'],
+                  ['Full', '79 x 91 in', '200 x 230 cm', '86 x 80 in', '218 x 203 cm', '54 x 75 in', '137 x 191 cm', '80 x 96 in', '203 x 244 cm'],
+                  ['Queen', '87 x 94 in', '220 x 240 cm', '86 x 86 in', '218 x 218 cm', '60 x 80 in', '152 x 203 cm', '90 x 102 in', '229 x 259 cm'],
+                  ['King', '104 x 90 in', '264 x 229 cm', '86 x 98 in', '218 x 249 cm', '76 x 80 in', '193 x 203 cm', '108 x 102 in', '274 x 259 cm'],
+                ].map(([size, duvIn, duvCm, insIn, insCm, fitIn, fitCm, flatIn, flatCm]) => (
+                  <tr key={size} className="border-b border-warm-gray/60 last:border-0">
+                    <td className="py-2.5 pr-2 font-medium text-charcoal align-top">{size}</td>
+                    {[[duvIn, duvCm], [insIn, insCm], [fitIn, fitCm], [flatIn, flatCm], ['20 x 30 in', '51 x 76 cm']].map(([inch, cm], i) => (
+                      <td key={i} className={`py-2.5 align-top text-charcoal-light ${i < 4 ? 'pr-2' : ''}`}>
+                        <span className="block">{inch}</span>
+                        <span className="block text-[11px] text-charcoal-light/80">{cm}</span>
+                      </td>
+                    ))}
+                  </tr>
+                ))}
               </tbody>
             </table>
-            )}
+            </div>
             <p className="mt-4 text-[11px] leading-relaxed text-charcoal-light">
-              {beddingHasFittedSheet
-                ? 'Fitted sheet is elasticized all around with a 16 in (40 cm) deep pocket — match it to your mattress size. For the duvet cover, measure your insert and choose the closest size.'
-                : 'Pillowcases: 20 x 26 in (51 x 66 cm). Measure your duvet insert and choose the closest cover size.'}
+              Pillowcases measure 20 x 30 in (51 x 76 cm): Twin sets include 1 pillowcase, Full / Queen / King sets include 2.
+              Fitted sheet is elasticized all around with a 15 in (38 cm) deep pocket — match it to your mattress size.
+              For the duvet cover, measure your insert and choose the closest size.
             </p>
           </div>
         </div>

@@ -5,7 +5,8 @@ import { v2url } from '@/lib/v2paths';
  * V2InspirationTeaser —— 首页 Inspiration 引流模块（2026-10-30）。
  * 三张种草图横排 + "Get Inspired" CTA → /inspiration/（灵感中心）。
  * 位置：SloganBanner 之后、Recommended 之前（页尾转化前的内容缓冲带）。
- * 移动端：1 张横图 + 2 张半宽；桌面端：3 张 3:4 等宽。
+ * 移动端：1 张横图 + 2 张半宽，整区打满屏幕宽度（2026-11-02 用户定）；桌面端：3 张 3:4 等宽，整区占屏宽 88%。
+ * 2026-11-02 用户定：每张卡跳转到对应房间筛选的种草图汇总页（/scenes/?room=xxx），不再统一跳 /inspiration/。
  */
 
 const TEASER_IMAGES = [
@@ -13,23 +14,28 @@ const TEASER_IMAGES = [
     image: '/images/inspiration/scene-5-after.webp',
     alt: 'Fireplace living room styled with a vintage Persian rug and orange throw',
     label: 'Living Room',
+    href: '/scenes/?room=living-room',
   },
   {
     image: '/images/pdp-lifestyle/bedding-linen-farmhouse.webp',
     alt: 'Farmhouse bedroom with washed linen bedding in soft light',
     label: 'Bedroom',
+    href: '/scenes/?room=bedroom',
   },
   {
     image: '/images/inspiration/scene-7-after.webp',
     alt: 'Dining nook styled with a Persian rug and a soft throw on the chair',
     label: 'Dining Nook',
+    href: '/scenes/?room=dining',
   },
 ];
 
 export default function V2InspirationTeaser() {
   return (
-    <section className="mx-auto max-w-[1520px] px-6 py-12 lg:w-[80%] lg:max-w-none lg:px-10 lg:py-16">
-      <div className="flex items-end justify-between gap-4">
+    // 2026-11-02 用户定：移动端整区打满屏幕宽度（px-0，标题行保留 px-4）；
+    // 桌面端整区占屏宽 80% → 88%；上下空隙收窄（py-12/lg:py-16 → py-8/lg:py-12）
+    <section className="mx-auto max-w-[1520px] px-0 py-8 lg:w-[88%] lg:max-w-none lg:px-10 lg:py-12">
+      <div className="flex items-end justify-between gap-4 px-4 lg:px-0">
         <div>
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-brand">
             Inspiration
@@ -51,11 +57,12 @@ export default function V2InspirationTeaser() {
         </a>
       </div>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-5">
+      {/* 2026-11-02 用户定：移动端卡片间隙收窄到 4px（全出血视觉），桌面端保持 gap-5 */}
+      <div className="mt-6 grid grid-cols-2 gap-1 lg:grid-cols-3 lg:gap-5">
         {TEASER_IMAGES.map((t, idx) => (
           <a
             key={t.image}
-            href={v2url('/inspiration/')}
+            href={v2url(t.href)}
             className={`group relative block overflow-hidden rounded-lg bg-cream ${
               // 移动端：首图通栏（col-span-2），后两张半宽；桌面端三等宽
               idx === 0 ? 'col-span-2 aspect-[16/9] lg:col-span-1 lg:aspect-[3/4]' : 'aspect-[3/4]'

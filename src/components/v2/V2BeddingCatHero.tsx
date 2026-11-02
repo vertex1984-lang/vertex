@@ -7,7 +7,7 @@ import V2DragScrollRow from '@/components/v2/V2DragScrollRow';
  *   图片左侧（比文字稍宽的区域）加左深右透的渐变滤镜保证可读（2026-10-23 用户定，先试行 bedding）；
  *   快链导航排在图正下方、左缘对齐标题再内缩一点（ml-2）
  * - 移动端：标题 + 描述在图上方（不叠图），场景图（4:3 裁剪）居中，图下横滚标签快链
- * - 上标数 = 全部 SKU 数（每个颜色×尺寸变体都算一个产品）
+ * - 上标数 = 花型变体数（每个颜色家族算 1 个，不计尺寸变体，2026-11-02 用户定；原为全 SKU 数）
  * 快链 = 类型子分类（Sheets & Duvet Sets（2026-10-26 曾短暂改名 Complete Sets，同日改回）/ Duvet Covers /
  * Fitted Sheets / Pillowcases & Shams（同日由 Pillow Covers 改名），无产品的不出快链；
  * Duvet Cover Sets（3 件套）2026-10-22 下线）+ 有产品的面料页（2026-10-16 用户定）。

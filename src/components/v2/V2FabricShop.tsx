@@ -4,6 +4,8 @@ import { BEDDING_MATERIAL_BLURBS, sortBeddingMaterials } from '@/data/subcategor
 import GroupProductCard from '@/components/v2/GroupProductCard';
 import { buildGroupCards, type GroupCard } from '@/lib/group-cards';
 import { sortByWeight } from '@/lib/weights';
+import V2EditorialTile from '@/components/v2/V2EditorialTile';
+import type { EditorialTile } from '@/data/editorial-tiles';
 
 /**
  * bedding 二级类目 PLP 选购区（2026-09 新增，/bedding/[slug]/ 三种页型共用）：
@@ -43,6 +45,7 @@ export default function V2FabricShop({
   flat = false,
   noBadges = false,
   byFabric = false,
+  editorialTiles,
 }: {
   families: SetFamily[];
   /** flat = 类型二级 PLP 用：全页同一类型，不分区不出小标题，单一网格平铺 */
@@ -53,6 +56,9 @@ export default function V2FabricShop({
    *  （分区标题 = 面料名 + 一句话描述，同 /products?cat=bedding 材质分区）；
    *  分区锚点由页头导航排承担，本组件不再渲染 chips */
   byFabric?: boolean;
+  /** PLP 网格种草图位（2026-11-01 用户定）：flat 模式下按 afterIndex 插入网格
+   *  （数据见 src/data/editorial-tiles.ts；目前仅 /bedding/4-piece-sets/ 传入） */
+  editorialTiles?: EditorialTile[];
 }) {
   const cardBadges = (c: GroupCard): string[] => (noBadges ? [] : fabricBadge(c));
   // 固定 Featured 序：按权重降序 + 同变体族色卡聚拢相邻（2026-10-16 用户定）；
@@ -134,9 +140,16 @@ export default function V2FabricShop({
           页面导航由 hero 图下的面料导航排承担） */}
       {flat ? (
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-          {buildGroupCards(sorted).map((c) => (
-            <GroupProductCard key={c.key} card={c} badges={cardBadges(c)} compactText />
-          ))}
+          {buildGroupCards(sorted).flatMap((c, i) => {
+            const nodes = [
+              <GroupProductCard key={c.key} card={c} badges={cardBadges(c)} compactText />,
+            ];
+            // 种草图位：插在「第 N 张产品卡之后」（afterIndex，1 起计）
+            for (const t of editorialTiles ?? []) {
+              if (t.afterIndex === i + 1) nodes.push(<V2EditorialTile key={t.image} tile={t} />);
+            }
+            return nodes;
+          })}
         </div>
       ) : (
         sections.map((s, i) => (

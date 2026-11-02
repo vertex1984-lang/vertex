@@ -112,10 +112,6 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'pompom4-swirl-full',
   'pompom4-swirl-queen',
   'pompom4-swirl-king',
-  'pompom4-vine-twin',
-  'pompom4-vine-full',
-  'pompom4-vine-queen',
-  'pompom4-vine-king',
   'pompom4-leaf-twin',
   'pompom4-leaf-full',
   'pompom4-leaf-queen',
@@ -139,8 +135,6 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   // 2026-10-22：Cotton Percale 提花四件套（4 色 × 仅 Queen）
   'percalejac-haze-queen',
   'percalejac-rose-queen',
-  'percalejac-grey-queen',
-  'percalejac-oatbeige-queen',
   // 2026-10-22：Cotton Percale 细条纹提花四件套（单色 × 仅 Queen）
   'percalestripe-petal-queen',
   // 2026-10-22：Cotton Percale 拼接提花四件套（单色 × 仅 Queen）
@@ -151,7 +145,6 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
   'pompom4-vine-duvet',
   'washjac-cream-duvet',
   'veljac-ivory-duvet',
-  'sateen4-cream-queen',
   'sateen4-sage-sheet',
   'percale-white-sheet',
   'duvset-gray-sheet',
@@ -184,12 +177,72 @@ export const PDP_MAIN_34_ASINS = new Set<string>([
  * 含 1-3x4.webp 主图位）。key = asin 小写，value = 卡片图源（与 PLP 卡面一致）。
  */
 export const PDP_MAIN_PREPEND_IMAGES: Record<string, string> = {
-  // Sky Blue 独立被套：卡面 = featuredImage（card-lifestyle-3x4.webp）
-  'percale-sky-duvet': '/images/products/PERCALE-SKY-DUVET/card-lifestyle-3x4.webp',
-  // Blush Pink 细条纹提花独立被套：卡面 = images[0]（1.webp）
-  'percalestripe-petal-duvet': '/images/products/PERCALESTRIPE-PETAL-DUVET/1.webp',
+  // Sky Blue 独立被套：2026-11-01 起改 v2 规则主图（Zara 机位，原 card-lifestyle-3x4.webp 后移）
+  'percale-sky-duvet': '/images/products/PERCALE-SKY-DUVET/0-main-3x4.webp',
+  // Blush Pink 细条纹提花独立被套：2026-11-01 起改 v2 规则主图（原 1.webp 后移）
+  'percalestripe-petal-duvet': '/images/products/PERCALESTRIPE-PETAL-DUVET/0-main-3x4.webp',
   // 波斯地毯 C3：灰底主图前置（seedream 5.0 pro 生成，2026-10-30 用户定）
   '745181807454-c3': '/images/products/745181807454-C3/0-grey-main.webp',
   // 波斯地毯 C6（GT027）：同款 3:4 灰底平拍主图前置（2026-10-30 用户定）
   '745181807454-c6': '/images/products/745181807454-C6/0-grey-main.webp',
+  // 2026-10-31 用户定：C 方案（55° 高机位纵向俯拍，见 docs/product-main-image-rules.md）新主图前置
+  'washstripe-sagegreen-queen': '/images/products/WASHSTRIPE-SAGEGREEN-QUEEN/0-main-3x4.webp',
+  'percalejac-haze-queen': '/images/products/PERCALEJAC-HAZE-QUEEN/0-main-3x4.webp',
+  'percalecheck-sand-queen': '/images/products/PERCALECHECK-SAND-QUEEN/0-main-3x4.webp',
+  // 2026-10-31 用户定：Sheets & Duvet Sets 全类目统一 C 方案主图（每变体组取第一位，docs/product-main-image-rules.md）
+  'bedset4-slate-queen': '/images/products/BEDSET4-SLATE-QUEEN/0-main-3x4.webp',
+  'duvset-gray-queen': '/images/products/DUVSET-GRAY-QUEEN/0-main-3x4.webp',
+  'linen3-sage-queen': '/images/products/LINEN3-SAGE-QUEEN/0-main-3x4.webp',
+  'washjac-cream-queen': '/images/products/WASHJAC-CREAM-QUEEN/0-main-3x4.webp',
+  'percale-coconut-queen': '/images/products/PERCALE-COCONUT-QUEEN/0-main-3x4.webp',
+  '1025015219200-c1': '/images/products/1025015219200-C1/0-main-3x4.webp',
+  // 2026-11-01：muslin 双层纱四件套 C2(navy)/C3(brown)，同 C1 处理（白底碎花+深色荷叶边）
+  '1025015219200-c2': '/images/products/1025015219200-C2/0-main-3x4.webp',
+  '1025015219200-c3': '/images/products/1025015219200-C3/0-main-3x4.webp',
+  // 2026-11-01：SATEEN4-CREAM-TWIN 补主图（queen 重复款已移除，twin 保留）
+  'sateen4-cream-twin': '/images/products/SATEEN4-CREAM-TWIN/0-main-3x4.webp',
+  '1071466105053-c5': '/images/products/1071466105053-C5/0-main-3x4.webp',
+  '1071466105053-c9': '/images/products/1071466105053-C9/0-main-3x4.webp',
+  '1071466105053-c11': '/images/products/1071466105053-C11/0-main-3x4.webp',
+  'percalepatch-stone-queen': '/images/products/PERCALEPATCH-STONE-QUEEN/0-main-3x4.webp',
+  'percalestripe-petal-queen': '/images/products/PERCALESTRIPE-PETAL-QUEEN/0-main-3x4.webp',
+  'veljac-ivory-queen': '/images/products/VELJAC-IVORY-QUEEN/0-main-3x4.webp',
+  'velstripe-charcoal-queen': '/images/products/VELSTRIPE-CHARCOAL-QUEEN/0-main-3x4.webp',
+  'mk-btfly4-mocha-queen': '/images/products/MK-BTFLY4-MOCHA-QUEEN/0-main-3x4.webp',
+  'mk-floral4-grey-queen': '/images/products/MK-FLORAL4-GREY-QUEEN/0-main-3x4.webp',
+  'mk-heart4-tan-queen': '/images/products/MK-HEART4-TAN-QUEEN/0-main-3x4.webp',
+  'mk-print4-blue-queen': '/images/products/MK-PRINT4-BLUE-QUEEN/0-main-3x4.webp',
+  // 2026-11-01 用户定：Sheet Sets 全类目统一新规则主图（同签名不同铺法、无毯子，规则见 桌面/主图规则/产品主图生成规则（bedding-sheet-sets）.md）
+  'sheetset-gingham-queen': '/images/products/SHEETSET-GINGHAM-QUEEN/0-main-3x4.webp',
+  'sheetset-polka-queen': '/images/products/SHEETSET-POLKA-QUEEN/0-main-3x4.webp',
+  'sheetset-sand-queen': '/images/products/SHEETSET-SAND-QUEEN/0-main-3x4.webp',
+  'sheetset-petal-queen': '/images/products/SHEETSET-PETAL-QUEEN/0-main-3x4.webp',
+  'sheetset-vine-queen': '/images/products/SHEETSET-VINE-QUEEN/0-main-3x4.webp',
+  'sheetset-ivory-queen': '/images/products/SHEETSET-IVORY-QUEEN/0-main-3x4.webp',
+  'sheetset-heart-queen': '/images/products/SHEETSET-HEART-QUEEN/0-main-3x4.webp',
+  'sheetset-mocha-queen': '/images/products/SHEETSET-MOCHA-QUEEN/0-main-3x4.webp',
+  'sheetset-sagegreen-queen': '/images/products/SHEETSET-SAGEGREEN-QUEEN/0-main-3x4.webp',
+  // 2026-11-01 用户定：Duvet Covers v7 规则主图（布套+被芯柔和鼓胀，规则见 桌面/主图规则/产品主图生成规则（bedding-duvet-covers）.md）——首批前四（sky/petal 为既有条目改址，见上方）
+  'duvset-gray-duvet': '/images/products/DUVSET-GRAY-DUVET/0-main-3x4.webp',
+  'linen3-ivory-duvet': '/images/products/LINEN3-IVORY-DUVET/0-main-3x4.webp',
+  // 2026-11-01 v7 批次二：燕麦/灰绿亚麻独立被套
+  'linen3-oatmeal-duvet': '/images/products/LINEN3-OATMEAL-DUVET/0-main-3x4.webp',
+  'linen3-sage-duvet': '/images/products/LINEN3-SAGE-DUVET/0-main-3x4.webp',
+  // 2026-11-01 v7 批次三：剩余 8 款（QC 通过；haze/vine 重出后另行注册）
+  'linen3-charcoal-duvet': '/images/products/LINEN3-CHARCOAL-DUVET/0-main-3x4.webp',
+  'linen3-dustyblue-duvet': '/images/products/LINEN3-DUSTYBLUE-DUVET/0-main-3x4.webp',
+  'percale-mist-duvet': '/images/products/PERCALE-MIST-DUVET/0-main-3x4.webp',
+  'percale-nude-duvet': '/images/products/PERCALE-NUDE-DUVET/0-main-3x4.webp',
+  'percale-coconut-queen-duvet': '/images/products/PERCALE-COCONUT-QUEEN-DUVET/0-main-3x4.webp',
+  'percalepatch-stone-duvet': '/images/products/PERCALEPATCH-STONE-DUVET/0-main-3x4.webp',
+  'veljac-ivory-duvet': '/images/products/VELJAC-IVORY-DUVET/0-main-3x4.webp',
+  'washjac-cream-duvet': '/images/products/WASHJAC-CREAM-DUVET/0-main-3x4.webp',
+  // 2026-11-01 v7 批次四（重出 v7c）：条纹横平竖直 + 压花绒光泽，纯白枕头
+  'percalejac-haze-duvet': '/images/products/PERCALEJAC-HAZE-DUVET/0-main-3x4.webp',
+  'pompom4-vine-duvet': '/images/products/POMPOM4-VINE-DUVET/0-main-3x4.webp',
+  // 2026-11-02 用户定：POMPOM4-DAMASK（Gold Damask 绒球四件套）新主图前置，四尺寸共用同一图
+  'pompom4-damask-twin': '/images/products/POMPOM4-DAMASK-TWIN/0-main-3x4.webp',
+  'pompom4-damask-full': '/images/products/POMPOM4-DAMASK-FULL/0-main-3x4.webp',
+  'pompom4-damask-queen': '/images/products/POMPOM4-DAMASK-QUEEN/0-main-3x4.webp',
+  'pompom4-damask-king': '/images/products/POMPOM4-DAMASK-KING/0-main-3x4.webp',
 };

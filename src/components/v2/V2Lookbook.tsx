@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import {
@@ -16,7 +16,8 @@ import {
  * 全量版在 /scenes/（筛选+全部图），/inspiration 只放 preview 前 N 张 + View all 出口。
  * 筛选：房间（Bedroom/Living Room/...）+ 类目（Bedding/Pillows/...）两组 chips，
  * 组合过滤；CSS columns 瀑布流，移动端单列全出血、桌面 2~3 列。
- * 图卡纯展示 + 整卡跳转（PDP 或类目页），无热点（热点精选在 /inspiration Featured 区）。
+ * 图卡纯展示 + 整卡跳转（PDP 或类目页），无热点（Before & After 只在 PDP 展示，2026-11-02 用户定）。
+ * 房间筛选支持 ?room=xxx URL 参数初始化（teaser 房间卡直链，2026-11-02 用户定）。
  * preview 模式：不显示筛选 chips，只取前 N 条。
  */
 
@@ -35,6 +36,15 @@ export default function V2Lookbook({ preview }: { preview?: number }) {
   const [cat, setCat] = useState<CatFilter>('all');
 
   const rooms = Object.keys(LOOKBOOK_ROOM_LABELS) as LookbookRoom[];
+
+  // 2026-11-02 用户定：支持 ?room=xxx 初始筛选（首页 Inspiration teaser 各房间卡直链进来）；
+  // 静态导出无法用 useSearchParams（需 Suspense），改在挂载后读 window.location（与 products 页同口径）
+  useEffect(() => {
+    const r = new URLSearchParams(window.location.search).get('room');
+    if (r && (rooms as string[]).includes(r)) setRoom(r as LookbookRoom);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const cats = Object.keys(LOOKBOOK_CATEGORY_LABELS) as LookbookCategory[];
 
   const filtered = LOOKBOOK.filter(

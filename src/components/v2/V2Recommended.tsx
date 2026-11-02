@@ -158,7 +158,9 @@ export default function V2Recommended({ fallback, candidates }: V2RecommendedPro
   if (cards.length === 0) return null;
 
   return (
-    <section className="pt-6 lg:pt-24 pb-16 lg:pb-24">
+    // 2026-11-02 用户定：与上方 Inspiration teaser 的桌面端间距收窄（lg:pt-24 → lg:pt-12，
+    // 叠加 teaser 底部 lg:py-12，总间距 160px → 96px）
+    <section className="pt-6 lg:pt-12 pb-16 lg:pb-24">
       <div>
         <div className="px-6 lg:px-10 mb-10 lg:mb-12">
           <p className="text-xs lg:text-sm font-semibold tracking-[0.25em] uppercase text-brand mb-3">

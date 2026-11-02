@@ -1253,30 +1253,6 @@
     "scene": "bedroom",
     "pieces": 2
   },
-  "bedset4-beige-full": {
-    "color": "beige",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-beige-king": {
-    "color": "beige",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-beige-queen": {
-    "color": "beige",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-beige-twin": {
-    "color": "beige",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
   "bedset4-blue-full": {
     "color": "blue",
     "scene": "bedroom",
@@ -1404,30 +1380,6 @@
     "color": "green",
     "scene": "bedroom",
     "pieces": 4
-  },
-  "bedset4-pink-full": {
-    "color": "pink",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-pink-king": {
-    "color": "pink",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-pink-queen": {
-    "color": "pink",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
-  },
-  "bedset4-pink-twin": {
-    "color": "pink",
-    "scene": "bedroom",
-    "pieces": 4,
-    "style": "farmhouse"
   },
   "bedset4-plaid-full": {
     "color": "grey",
