@@ -28,12 +28,13 @@ for (const scene of matches) {
   const sh = Math.round(meta.height * scale);
   const sceneBuf = await sharp(scenePath).resize(sw, sh).toBuffer();
   const stem = path.basename(scene.scene).replace(/\.[a-z]+$/i, '');
-  const spotsPath = [
-    path.join(report, `spots4-${stem}.json`),
-    path.join(report, `spots3-${stem}.json`),
-    path.join(report, `spots2-${stem}.json`),
-    path.join(report, `spots2-${stem.slice(0, 8)}.json`),
-    path.join(report, `spots-${stem.slice(0, 8)}.json`),
+const spotsPath = [
+path.join(report, `spots5-${stem}.json`),
+path.join(report, `spots4-${stem}.json`),
+path.join(report, `spots3-${stem}.json`),
+path.join(report, `spots2-${stem}.json`),
+path.join(report, `spots2-${stem.slice(0, 8)}.json`),
+path.join(report, `spots-${stem.slice(0, 8)}.json`),
   ].find((p) => fs.existsSync(p));
   const spots = spotsPath ? JSON.parse(fs.readFileSync(spotsPath, 'utf8').replace(/^\uFEFF/, '')) : null;
   const canvasH = Math.max(sh + 60, 3 * ROW + 110);
