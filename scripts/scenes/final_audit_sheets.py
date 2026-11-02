@@ -89,6 +89,10 @@ ROSE_30X56 = {"asin": "MK-TOWEL-LSC-DUSTYROSE-30X56", "title": "Long-Staple Cott
 PLAID_OLD = {"asin": "BEDSET4-PLAID-QUEEN", "title": "Linen-Like 4-Piece Bedding Set, Grey Plaid, Queen", "price": "$34.99 · in stock"}
 CORD_COFFEE_OLD = {"asin": "B0CBT7RFK2", "title": "Corduroy, Tufted, with Ties - 95x45cm, Coffee", "price": "$28.99 · in stock"}
 FLORAL_LUMBAR_OLD = {"asin": "B0BCJT2GFW", "title": "Outdoor Cushions, 110 x 55cm - Orange Yellow Floral Bird, Set of 2", "price": "$59.99 · in stock"}
+ORANGE_THROW_OLD = {"asin": "CHUNKYTHROW-ORANGE-127", "title": "Chunky Knit Throw Blanket, Burnt Orange, 50 x 68 in", "price": "Coming Soon"}
+GREY_KNIT_OLD = {"asin": "KNITTHROW-GREY", "title": "Openwork Knit Throw Blanket, Light Grey", "price": "Coming Soon"}
+OLIVE_THROW_OLD = {"asin": "BOHOTHROW-OLIVE-127", "title": "Bohemian Chevron Knit Throw, Khaki Olive, 50 x 71 in", "price": "Coming Soon"}
+WHITE_RUG_OLD = {"asin": "1688-996768645117-C3", "title": "Faux Fur Oval Area Rug, White", "price": "$25.99 · in stock"}
 
 SHEETS = [
     {
@@ -161,6 +165,24 @@ SHEETS = [
             {"slug": "sundown-persian-lounge", "stem": "9ad8ee88", "changes": {0: FLORAL_LUMBAR_OLD}},
             {"slug": "sage-bath-ritual", "stem": "9f2675db", "changes": {}},
             {"slug": "parisian-cream-suite", "stem": "9f9dcb52", "changes": {}, "adds": {1}},
+        ],
+    },
+    {
+        "out": "final-audit-56-66.jpg",
+        "title": "Shop the Look · 第 56–66 张（第 7 批）终版对照图",
+        "sub": "2026-11-02 · 红=原选择，绿=修正后/新增，黑=未改动 · 人工审核修订（coastal-blue-spa 整场删除 / 5 号 boho 高清重复跳过，现存 9 张） · 26→24 锚点检查 0 缺失",
+        "json": "batch7-matches.json",
+        "foot": "预览 http://localhost:3000/scenes/ · 修订明细见 batch7-revision.jpg · PDP 链接见 batch7-matching.md",
+        "scenes": [
+            {"slug": "snowy-pompom-cabin", "stem": "a0704549", "changes": {}},
+            {"slug": "rose-check-cabin", "stem": "a7c4f917", "changes": {0: ORANGE_THROW_OLD}, "deleted": GREY_KNIT_OLD},
+            {"slug": "champagne-dark-suite", "stem": "af5b019f", "changes": {}, "adds": {1}},
+            {"slug": "seaside-sky-suite", "stem": "b44cf4cd", "changes": {}},
+            {"slug": "greenhouse-oat-room", "stem": "b4f1b679", "changes": {1: OLIVE_THROW_OLD}, "deleted": WHITE_RUG_OLD},
+            {"slug": "tatami-sage-summer", "stem": "b8db9f9c", "changes": {}},
+            {"slug": "cream-knit-bench", "stem": "bea46cbb", "changes": {}, "adds": {1}},
+            {"slug": "oat-sunset-retreat", "stem": "c4241ff4", "changes": {}},
+            {"slug": "blush-stripe-room", "stem": "c9309a29", "changes": {}},
         ],
     },
 ]

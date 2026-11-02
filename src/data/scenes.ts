@@ -112,9 +112,139 @@ const PERCALE_SKY = 'makimoo-queen-duvet-cover-set-3-piece-cotton-percale-sky-qu
 const JACTHROW_HB_BLACK = 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black';
 const KNIT_THROW_GREY = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey';
 const PERSIAN_BOHO_C12 = 'vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1688-1052742241013-c12';
+const POMPOM_LEAF = 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-leaf-queen';
+const SATEEN_BEIGE = 'makimoo-queen-bedding-set-4-piece-cotton-sateen-beige-queen';
+const KNIT_THROW_PINK = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-pink';
+const PERCALESTRIPE_PETAL = 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-stripe-petal-queen';
+const PERCALEJAC_ROSE = 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-rose-queen';
+const MK_CUSHION_CORD_CREAM = 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream';
 const BOUCLE_OATMEAL_45 = 'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45';
 
 export const SCENES: SceneDef[] = [
+  {
+    slug: 'snowy-pompom-cabin',
+    title: 'The Snowy Pompom Cabin',
+    style: 'Alpine Winter',
+    tagline: 'Dusty leaf velvet, an oat knit, and snow on the pines.',
+    heroImage: '/images/scenes/snowy-pompom-cabin.webp',
+    heroAlt: 'Alpine cabin bedroom with dusty blue leaf embossed bedding, white pom-pom trim, an oat chunky knit and a cream fur rug',
+    addedAt: '2026-11-02T11:10:00Z',
+    hotspots: [
+      { spotId: 'leaf-bed', handle: POMPOM_LEAF, x: 38, y: 57, label: 'The bed' },
+      { spotId: 'oat-throw', handle: CHUNKY_THROW_OAT, x: 58, y: 64, label: 'Across the foot' },
+      { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 50, y: 88, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'rose-check-cabin',
+    title: 'The Rose Check Cabin',
+    style: 'Rustic Cabin',
+    tagline: 'Rose jacquard, burnt orange wool, and cream fur by the fire.',
+    heroImage: '/images/scenes/rose-check-cabin.webp',
+    heroAlt: 'Rustic cabin bedroom with dusty pink jacquard bedding, a burnt orange chunky knit and a cream faux fur rug',
+    addedAt: '2026-11-02T11:08:00Z',
+    hotspots: [
+      { spotId: 'rose-bed', handle: PERCALEJAC_ROSE, x: 35, y: 60, label: 'The bed' },
+      { spotId: 'orange-throw', handle: CHUNKY_THROW_ORANGE, x: 52, y: 57, label: 'Across the foot' },
+      { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 42, y: 87, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'champagne-dark-suite',
+    title: 'The Champagne Suite',
+    style: 'Dark Luxe',
+    tagline: 'Champagne sateen, walnut panelling and low lamplight.',
+    heroImage: '/images/scenes/champagne-dark-suite.webp',
+    heroAlt: 'Dark luxe bedroom with champagne beige sateen bedding under walnut panelling and brass sconces',
+    addedAt: '2026-11-02T11:07:00Z',
+    hotspots: [
+      { spotId: 'beige-bed', handle: SATEEN_BEIGE, x: 48, y: 62, label: 'The bed' },
+      { spotId: 'charcoal-pillow', handle: CORD_CHARCOAL_45, x: 60, y: 46, label: 'Charcoal pillow' },
+    ],
+  },
+  {
+    slug: 'seaside-sky-suite',
+    title: 'The Seaside Sky Suite',
+    style: 'Coastal Sateen',
+    tagline: 'Sky blue sateen with a herringbone band and the sea beyond.',
+    heroImage: '/images/scenes/seaside-sky-suite.webp',
+    heroAlt: 'Seaside bedroom with sky blue sateen bedding, a black white herringbone throw and a charcoal corduroy pillow',
+    addedAt: '2026-11-02T11:06:00Z',
+    hotspots: [
+      { spotId: 'sky-bed', handle: PERCALE_SKY, x: 55, y: 65, label: 'The bed' },
+      { spotId: 'hb-throw', handle: JACTHROW_HB_BLACK, x: 68, y: 58, label: 'Across the bed' },
+      { spotId: 'cord-pillow', handle: CORD_CHARCOAL_45, x: 80, y: 47, label: 'Charcoal pillow' },
+    ],
+  },
+  {
+    slug: 'greenhouse-oat-room',
+    title: 'The Greenhouse Oat Room',
+    style: 'Conservatory',
+    tagline: 'Oat linen, ferns on every sill, and a tufted chair.',
+    heroImage: '/images/scenes/greenhouse-oat-room.webp',
+    heroAlt: 'Greenhouse sunroom bedroom with oatmeal linen bedding and a cream tufted corduroy chair cushion',
+    addedAt: '2026-11-02T11:05:00Z',
+    hotspots: [
+      { spotId: 'oat-bed', handle: LINEN_OAT, x: 57, y: 74, label: 'The bed' },
+      { spotId: 'chair-cushion', handle: MK_CUSHION_CORD_CREAM, x: 26, y: 70, label: 'On the chair' },
+    ],
+  },
+  {
+    slug: 'tatami-sage-summer',
+    title: 'The Tatami Sage Summer',
+    style: 'Japanese Summer',
+    tagline: 'Sage linen, a teal chevron sash, and maple at the veranda.',
+    heroImage: '/images/scenes/tatami-sage-summer.webp',
+    heroAlt: 'Japanese tatami room with sage linen bedding, a teal chevron throw and a sage pillow',
+    addedAt: '2026-11-02T11:04:00Z',
+    hotspots: [
+      { spotId: 'sage-bed', handle: LINEN_SAGE, x: 42, y: 64, label: 'The bed' },
+      { spotId: 'teal-throw', handle: BOHO_TEAL, x: 70, y: 70, label: 'Across the bed' },
+      { spotId: 'sage-pillow', handle: CTN_SAGE_45, x: 84, y: 52, label: 'Sage pillow' },
+    ],
+  },
+  {
+    slug: 'cream-knit-bench',
+    title: 'The Cream Knit Bench',
+    style: 'Knitwear Study',
+    tagline: 'Openwork cream, tassels and afternoon sun.',
+    heroImage: '/images/scenes/cream-knit-bench.webp',
+    heroAlt: 'Wide cream openwork knit throw with tassels folded on a rattan bench in warm light',
+    heroWide: true,
+    addedAt: '2026-11-02T11:03:00Z',
+    hotspots: [
+      { spotId: 'cream-throw', handle: KNIT_THROW_CREAM, x: 30, y: 40, label: 'The throw' },
+      { spotId: 'sisal-mat', handle: MAT_SISAL, x: 70, y: 86, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'oat-sunset-retreat',
+    title: 'The Oat Sunset Retreat',
+    style: 'Golden Dusk',
+    tagline: 'Oat linen and burnt orange wool at last light.',
+    heroImage: '/images/scenes/oat-sunset-retreat.webp',
+    heroAlt: 'Golden hour bedroom with oatmeal linen bedding and a burnt orange chunky knit throw',
+    addedAt: '2026-11-02T11:02:00Z',
+    hotspots: [
+      { spotId: 'oat-bed', handle: LINEN_OAT, x: 45, y: 62, label: 'The bed' },
+      { spotId: 'orange-throw', handle: CHUNKY_THROW_ORANGE, x: 48, y: 55, label: 'Across the bed' },
+      { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 35, y: 88, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'blush-stripe-room',
+    title: 'The Blush Stripe Room',
+    style: 'Soft Stripe',
+    tagline: 'Blush stripes, dusty pink knits and a round of cream.',
+    heroImage: '/images/scenes/blush-stripe-room.webp',
+    heroAlt: 'Soft pink bedroom with blush stripe bedding, a dusty pink knit throw and a round cream shag rug',
+    addedAt: '2026-11-02T11:01:00Z',
+    hotspots: [
+      { spotId: 'stripe-bed', handle: PERCALESTRIPE_PETAL, x: 45, y: 62, label: 'The bed' },
+      { spotId: 'pink-throw', handle: KNIT_THROW_PINK, x: 93, y: 67, label: 'On the armchair' },
+      { spotId: 'round-rug', handle: FAUX_FUR_RUG_WHITE, x: 22, y: 88, label: 'On the floor' },
+    ],
+  },
   {
     slug: 'tuscan-swirl-suite',
     title: 'The Tuscan Swirl Villa',

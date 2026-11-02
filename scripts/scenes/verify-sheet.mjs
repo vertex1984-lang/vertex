@@ -29,6 +29,7 @@ for (const scene of matches) {
   const sceneBuf = await sharp(scenePath).resize(sw, sh).toBuffer();
   const stem = path.basename(scene.scene).replace(/\.[a-z]+$/i, '');
 const spotsPath = [
+path.join(report, `spots7-${stem}.json`),
 path.join(report, `spots6-${stem}.json`),
 path.join(report, `spots5-${stem}.json`),
 path.join(report, `spots4-${stem}.json`),
