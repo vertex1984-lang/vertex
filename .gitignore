@@ -54,3 +54,7 @@ scripts/.ark-api-key-2
 
 # python venv（视频生成脚本本地环境，不入库）
 scripts/.venv-video/
+
+# 图片生成中间产物（只保留本地，2026-11-02 仓库瘦身）
+public/images/staging/
+scripts/_shots/
