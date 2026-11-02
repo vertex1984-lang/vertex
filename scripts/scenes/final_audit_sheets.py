@@ -80,6 +80,13 @@ BEDSET_MAUVE = {"asin": "BEDSET4-MAUVE-QUEEN", "title": "Linen-Like 4-Piece Bedd
 KNIT_CREAM = {"asin": "KNITTHROW-CREAM", "title": "Openwork Knit Throw Blanket, Cream White", "price": "Coming Soon"}
 BOHO_OLIVE = {"asin": "BOHOTHROW-OLIVE-127", "title": "Bohemian Chevron Knit Throw, Khaki Olive, 50 x 71 in", "price": "Coming Soon"}
 
+BS12 = {"asin": "1688-1052742241013-C24", "title": "Faux Cashmere Persian Area Rug, BS-12, 180 x 250cm", "price": "Coming Soon"}
+GINGHAM_OLD = {"asin": "1688-1071466105053-C2", "title": "Cotton Feel Gingham Bedding Set, 4 Piece, Blue, Queen", "price": "Coming Soon"}
+SAGE_HAND = {"asin": "MK-TOWEL-LSC-SAGE-20X30", "title": "Long-Staple Cotton Towel, 20 x 30 in - Sage", "price": "$26.99 · in stock"}
+BASKET_CREAM = {"asin": "CHUNKYTHROW-CREAM-127", "title": "Chunky Knit Throw Blanket, Cream White, 50 x 68 in", "price": "Coming Soon"}
+BASKET_GREY = {"asin": "KNITTHROW-GREY", "title": "Openwork Knit Throw Blanket, Light Grey", "price": "Coming Soon"}
+ROSE_30X56 = {"asin": "MK-TOWEL-LSC-DUSTYROSE-30X56", "title": "Long-Staple Cotton Towel, 30 x 56 in - Dusty Rose", "price": "$44.99 · in stock"}
+
 SHEETS = [
     {
         "out": "final-audit-06-15.jpg",
@@ -115,6 +122,24 @@ SHEETS = [
             {"slug": "three-colours-second-light", "stem": "3fcb0155", "changes": {}},
             {"slug": "zen-sage-tatami", "stem": "421b1e9d", "changes": {}},
             {"slug": "blush-bobble-bedroom", "stem": "4546651e", "changes": {}, "deleted": {"asin": "1688-595229918569-C2", "title": "Plush Faux Rabbit Fur Area Rug, 160x200cm", "price": "$199.00 · in stock"}},
+        ],
+    },
+    {
+        "out": "final-audit-36-45.jpg",
+        "title": "Shop the Look · 第 36–45 张（第 5 批）终版对照图",
+        "sub": "2026-11-02 · 红=原选择，绿=修正后/新增，黑=未改动 · 人工审核修订（onsen-grey-ritual 整场删除，现存 9 张） · 21→22 锚点检查 0 缺失",
+        "json": "batch5-matches.json",
+        "foot": "预览 http://localhost:3000/scenes/ · 修订明细见 batch5-revision.jpg · PDP 链接见 batch5-matching.md",
+        "scenes": [
+            {"slug": "japandi-taupe-suite", "stem": "65c0b2ff", "changes": {}},
+            {"slug": "cottage-pompom-garden", "stem": "691fdb8e", "changes": {2: SAGE_HAND}, "deleted": BS12},
+            {"slug": "lakeside-gingham-cabin", "stem": "69d22132", "changes": {0: GINGHAM_OLD}, "deleted": BS12},
+            {"slug": "olive-terrace-patio", "stem": "7e90c293", "changes": {0: BASKET_CREAM, 2: BASKET_GREY}, "adds": {1}},
+            {"slug": "blush-nude-morning", "stem": "7ead9083", "changes": {}},
+            {"slug": "charcoal-loft-evening", "stem": "80674875", "changes": {}},
+            {"slug": "provence-terracotta-suite", "stem": "822a21c8", "changes": {}},
+            {"slug": "ivory-gothic-library", "stem": "87d0a59d", "changes": {}, "adds": {1, 2}, "deleted": BS12},
+            {"slug": "rose-towels-soak", "stem": "880511fc", "changes": {}, "deleted": ROSE_30X56},
         ],
     },
 ]
@@ -206,7 +231,7 @@ def main():
             y += row_h
 
         fy = y + 8
-        d.text((MARGIN, fy), "预览 http://localhost:3000/scenes/ · 修订明细见 batch2-revision.jpg / batch3-revision.jpg · PDP 链接见 batch2/3-matching.md", font=get_font(F_CN, 13), fill=MUTED)
+        d.text((MARGIN, fy), sheet.get("foot", "预览 http://localhost:3000/scenes/ · 修订明细见 batch2-revision.jpg / batch3-revision.jpg · PDP 链接见 batch2/3-matching.md"), font=get_font(F_CN, 13), fill=MUTED)
 
         out = REPORT / sheet["out"]
         canvas.save(out, quality=90)

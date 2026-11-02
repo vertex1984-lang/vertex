@@ -96,8 +96,136 @@ const JACTHROW_KHAKI = 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-1
 const WASHJAC_CREAM = 'makimoo-queen-bedding-set-4-piece-washed-cotton-jacquard-cream-queen';
 const BOHO_OLIVE = 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-olive';
 const CTN_SAGE_45 = 'cotton-like-pillow-covers-sage-45x45-mk-pc-ctn-sage-45';
+const PERCALE_NUDE = 'makimoo-queen-duvet-cover-set-3-piece-cotton-percale-nude-queen';
+const LINEN_CHARCOAL = '100-linen-duvet-cover-set-3-pieces-queen-with-1-duvet-cover-linen3-charcoal-queen';
+const PERCALEJAC_HAZE = 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-haze-queen';
+const CORD_COFFEE = 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7rfk2';
+const OUTDOOR_TULIP = 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5vnqy3';
+const TOWEL_SAGE_BATH = 'long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70';
+const TOWEL_ROSE_BATH = 'long-staple-cotton-towel-dustyrose-40x70-mk-towel-lsc-dustyrose-40x70';
 
 export const SCENES: SceneDef[] = [
+  {
+    slug: 'japandi-taupe-suite',
+    title: 'The Japandi Taupe Suite',
+    style: 'Japandi Loft',
+    tagline: 'Taupe sateen, travertine stone, and an olive tree at high noon.',
+    heroImage: '/images/scenes/japandi-taupe-suite.webp',
+    heroAlt: 'Japandi loft bedroom with taupe sateen bedding, a travertine bench and a cream shag rug under an olive tree',
+    addedAt: '2026-11-01T14:10:00Z',
+    hotspots: [
+      { spotId: 'taupe-bed', handle: SATEEN_TAUPE, x: 55, y: 62, label: 'The bed' },
+      { spotId: 'floor-rug', handle: RABBIT_RUG_CREAM, x: 60, y: 93, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'cottage-pompom-garden',
+    title: 'The Cottage Garden Room',
+    style: 'English Cottage',
+    tagline: 'Vine jacquard, sage towels on the ladder, and a bobble throw.',
+    heroImage: '/images/scenes/cottage-pompom-garden.webp',
+    heroAlt: 'English cottage bedroom with cream vine jacquard bedding, sage towels on a ladder and a cream bobble knit throw',
+    addedAt: '2026-11-01T14:09:00Z',
+    hotspots: [
+      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 44, y: 68, label: 'The bed' },
+      { spotId: 'bobble-throw', handle: KNIT_THROW_CREAM, x: 67, y: 64, label: 'Across the bed' },
+      { spotId: 'sage-towel', handle: TOWEL_SAGE_BATH, x: 80, y: 28, label: 'Sage towels' },
+    ],
+  },
+  {
+    slug: 'lakeside-gingham-cabin',
+    title: 'The Lakeside Gingham Cabin',
+    style: 'Lakeside Cabin',
+    tagline: 'Dusty blue jacquard, an oat knit throw, and autumn light on the water.',
+    heroImage: '/images/scenes/lakeside-gingham-cabin.webp',
+    heroAlt: 'Lakeside cabin bedroom with dusty blue percale jacquard bedding and an oat chunky knit throw',
+    addedAt: '2026-11-01T14:08:00Z',
+    hotspots: [
+      { spotId: 'haze-bed', handle: PERCALEJAC_HAZE, x: 40, y: 62, label: 'The bed' },
+      { spotId: 'oat-throw', handle: CHUNKY_THROW_OAT, x: 69, y: 59, label: 'Draped on the bed' },
+    ],
+  },
+  {
+    slug: 'olive-terrace-patio',
+    title: 'The Olive Terrace',
+    style: 'Mediterranean Patio',
+    tagline: 'Wicker loungers under bougainvillea and a basket of knits.',
+    heroImage: '/images/scenes/olive-terrace-patio.webp',
+    heroAlt: 'Mediterranean patio with wicker chaise lounges, a corduroy tufted cushion and a woven sisal rug',
+    addedAt: '2026-11-01T14:07:00Z',
+    hotspots: [
+      { spotId: 'seat-cushion', handle: CORD_COFFEE, x: 38, y: 68, label: 'Lounge cushion' },
+      { spotId: 'tulip-cushion', handle: OUTDOOR_TULIP, x: 72, y: 64, label: 'Tulip cushions' },
+      { spotId: 'patio-rug', handle: MAT_SISAL, x: 75, y: 90, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'blush-nude-morning',
+    title: 'Blush Morning Light',
+    style: 'Soft Minimal',
+    tagline: 'Nude pink percale and a bobble throw in first light.',
+    heroImage: '/images/scenes/blush-nude-morning.webp',
+    heroAlt: 'Soft minimal bedroom with nude pink percale bedding and a cream bobble knit throw',
+    addedAt: '2026-11-01T14:06:00Z',
+    hotspots: [
+      { spotId: 'nude-bed', handle: PERCALE_NUDE, x: 58, y: 70, label: 'The bed' },
+      { spotId: 'bobble-throw', handle: KNIT_THROW_CREAM, x: 71, y: 68, label: 'Across the bed' },
+    ],
+  },
+  {
+    slug: 'charcoal-loft-evening',
+    title: 'The Concrete Loft',
+    style: 'Wabi-Sabi Loft',
+    tagline: 'Charcoal linen, a burnt orange knit, and concrete above.',
+    heroImage: '/images/scenes/charcoal-loft-evening.webp',
+    heroAlt: 'Wabi-sabi loft bedroom with charcoal linen bedding and a burnt orange chunky knit throw',
+    addedAt: '2026-11-01T14:05:00Z',
+    hotspots: [
+      { spotId: 'charcoal-bed', handle: LINEN_CHARCOAL, x: 43, y: 57, label: 'The bed' },
+      { spotId: 'orange-throw', handle: CHUNKY_THROW_ORANGE, x: 72, y: 66, label: 'Over the bench' },
+    ],
+  },
+  {
+    slug: 'provence-terracotta-suite',
+    title: 'The Provence Terracotta Suite',
+    style: 'Provence Farmhouse',
+    tagline: 'Terracotta tones, dusty blue paisley, and lavender at the window.',
+    heroImage: '/images/scenes/provence-terracotta-suite.webp',
+    heroAlt: 'Provence bedroom with terracotta bedding, a dusty blue paisley throw and a cream shag rug',
+    addedAt: '2026-11-01T14:03:00Z',
+    hotspots: [
+      { spotId: 'terracotta-bed', handle: SATEEN_TERRACOTTA, x: 55, y: 66, label: 'The bed' },
+      { spotId: 'paisley-throw', handle: JACTHROW_P_BLUE, x: 38, y: 62, label: 'Across the bed' },
+      { spotId: 'cream-knit', handle: CHUNKY_THROW_CREAM, x: 88, y: 74, label: 'On the bench' },
+      { spotId: 'shag-rug', handle: RABBIT_RUG_CREAM, x: 34, y: 90, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'ivory-gothic-library',
+    title: 'The Gothic Ivory Chamber',
+    style: 'Dark Academia',
+    tagline: 'Ivory linen and candlelight in a midnight library.',
+    heroImage: '/images/scenes/ivory-gothic-library.webp',
+    heroAlt: 'Dark academia bedroom with ivory linen bedding and a traditional persian rug',
+    addedAt: '2026-11-01T14:02:00Z',
+    hotspots: [
+      { spotId: 'ivory-bed', handle: LINEN_IVORY, x: 48, y: 62, label: 'The bed' },
+      { spotId: 'red-pillow', handle: CORD_ROSE_45, x: 60, y: 48, label: 'Burgundy pillow' },
+      { spotId: 'green-pillow', handle: CORD_OLIVE_45, x: 71, y: 48, label: 'Green pillow' },
+    ],
+  },
+  {
+    slug: 'rose-towels-soak',
+    title: 'The Rose Soak',
+    style: 'Parisian Bath',
+    tagline: 'Checkered tile, a clawfoot tub, and rose towels everywhere.',
+    heroImage: '/images/scenes/rose-towels-soak.webp',
+    heroAlt: 'Parisian bath with checkered tile, a clawfoot tub and dusty rose towels on chair and stool',
+    addedAt: '2026-11-01T14:01:00Z',
+    hotspots: [
+      { spotId: 'chair-towel', handle: TOWEL_ROSE_BATH, x: 52, y: 68, label: 'Chair towel' },
+    ],
+  },
   {
     slug: 'chateau-pompom-suite',
     title: 'The Château Pom-Pom',
