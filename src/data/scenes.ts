@@ -103,8 +103,138 @@ const CORD_COFFEE = 'outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set
 const OUTDOOR_TULIP = 'set-of-2-outdoor-dining-chair-cushions-patio-seating-cushion-b0cc5vnqy3';
 const TOWEL_SAGE_BATH = 'long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70';
 const TOWEL_ROSE_BATH = 'long-staple-cotton-towel-dustyrose-40x70-mk-towel-lsc-dustyrose-40x70';
+const TOWEL_CREAM_BATH = 'long-staple-cotton-towel-cream-40x70-mk-towel-lsc-cream-40x70';
+const POMPOM_SWIRL = 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-swirl-queen';
+const POMPOM_INK = 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-ink-queen';
+const PERCALE_SKY = 'makimoo-queen-duvet-cover-set-3-piece-cotton-percale-sky-queen';
+const JACTHROW_HB_BLACK = 'makimoo-jacquard-knit-throw-blanket-lightweight-nordic-130-x-180-cm-hb-black';
+const KNIT_THROW_GREY = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-grey';
+const PERSIAN_BOHO_C12 = 'vintage-persian-boho-area-rug-soft-faux-cashmere-non-slip-1688-1052742241013-c12';
+const BOUCLE_OATMEAL_45 = 'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45';
 
 export const SCENES: SceneDef[] = [
+  {
+    slug: 'tuscan-swirl-suite',
+    title: 'The Tuscan Swirl Villa',
+    style: 'Tuscan Sun',
+    tagline: 'Caramel swirl velvet, burnt orange wool, and hillside light.',
+    heroImage: '/images/scenes/tuscan-swirl-suite.webp',
+    heroAlt: 'Tuscan stone villa bedroom with caramel swirl velvet bedding and a burnt orange chunky knit throw',
+    addedAt: '2026-11-02T10:10:00Z',
+    hotspots: [
+      { spotId: 'swirl-bed', handle: POMPOM_SWIRL, x: 58, y: 62, label: 'The bed' },
+      { spotId: 'rust-throw', handle: CHUNKY_THROW_ORANGE, x: 50, y: 57, label: 'Across the foot' },
+    ],
+  },
+  {
+    slug: 'ryokan-plaid-dawn',
+    title: 'The Ryokan Plaid Dawn',
+    style: 'Japanese Ryokan',
+    tagline: 'Hazy jacquard bedding, a khaki knit, and maple light on tatami.',
+    heroImage: '/images/scenes/ryokan-plaid-dawn.webp',
+    heroAlt: 'Japanese ryokan bedroom with hazy blue-grey jacquard bedding and a khaki openwork knit throw on tatami mats',
+    addedAt: '2026-11-02T10:09:00Z',
+    hotspots: [
+      { spotId: 'haze-bed', handle: PERCALEJAC_HAZE, x: 48, y: 60, label: 'The bed' },
+      { spotId: 'khaki-throw', handle: KNIT_THROW_KHAKI, x: 63, y: 62, label: 'Draped on the bed' },
+    ],
+  },
+  {
+    slug: 'ink-floral-loft',
+    title: 'The Ink Floral Loft',
+    style: 'Scandi Mono',
+    tagline: 'Ink-drawn florals, bobble cream, and a white shag.',
+    heroImage: '/images/scenes/ink-floral-loft.webp',
+    heroAlt: 'Scandinavian bedroom with white ink floral bedding, black pom-pom trim and a cream bobble knit throw',
+    addedAt: '2026-11-02T10:07:00Z',
+    hotspots: [
+      { spotId: 'ink-bed', handle: POMPOM_INK, x: 62, y: 66, label: 'The bed' },
+      { spotId: 'cream-throw', handle: KNIT_THROW_CREAM, x: 44, y: 72, label: 'Across the foot' },
+      { spotId: 'shag-rug', handle: RABBIT_RUG_CREAM, x: 40, y: 88, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'boho-mauve-hearth',
+    title: 'The Boho Hearth',
+    style: 'Boho Warm',
+    tagline: 'Mauve linen, fairy lights, and a fire at dusk.',
+    heroImage: '/images/scenes/boho-mauve-hearth.webp',
+    heroAlt: 'Boho bedroom with dusty rose linen bedding, a cream knit throw and oat boucle pillows by the fire',
+    addedAt: '2026-11-02T10:06:00Z',
+    hotspots: [
+      { spotId: 'nude-bed', handle: PERCALE_NUDE, x: 48, y: 62, label: 'The bed' },
+      { spotId: 'cream-throw', handle: KNIT_THROW_CREAM, x: 38, y: 55, label: 'Across the bed' },
+      { spotId: 'boucle-pillow', handle: BOUCLE_OATMEAL_45, x: 84, y: 60, label: 'Boucle pillows' },
+    ],
+  },
+  {
+    slug: 'sky-blue-mono-suite',
+    title: 'The Sky Blue Suite',
+    style: 'Modern Mono',
+    tagline: 'Sky blue sateen against black, white and herringbone.',
+    heroImage: '/images/scenes/sky-blue-mono-suite.webp',
+    heroAlt: 'Modern monochrome bedroom with sky blue percale bedding, a black and white herringbone throw and a brown corduroy pillow',
+    addedAt: '2026-11-02T10:05:00Z',
+    hotspots: [
+      { spotId: 'sky-bed', handle: PERCALE_SKY, x: 60, y: 68, label: 'The bed' },
+      { spotId: 'hb-throw', handle: JACTHROW_HB_BLACK, x: 30, y: 60, label: 'Across the foot' },
+      { spotId: 'cord-pillow', handle: CORD_CHARCOAL_45, x: 59, y: 52, label: 'Charcoal pillow' },
+    ],
+  },
+  {
+    slug: 'marrakech-rose-suite',
+    title: 'The Marrakech Rose Suite',
+    style: 'Moroccan Dust',
+    tagline: 'Rose-clay sateen under carved cedar and lantern light.',
+    heroImage: '/images/scenes/marrakech-rose-suite.webp',
+    heroAlt: 'Moroccan bedroom with rose clay sateen bedding under a carved cedar arch and brass lanterns',
+    addedAt: '2026-11-02T10:04:00Z',
+    hotspots: [
+      { spotId: 'clay-bed', handle: SATEEN_TERRACOTTA, x: 55, y: 60, label: 'The bed' },
+    ],
+  },
+  {
+    slug: 'sundown-persian-lounge',
+    title: 'The Sundown Lounge',
+    style: 'Rustic Modern',
+    tagline: 'White linen sofa, burnt orange wool and a heriz at sundown.',
+    heroImage: '/images/scenes/sundown-persian-lounge.webp',
+    heroAlt: 'Wide living room at sundown with a white linen sofa, an orange chunky knit throw, a sage pillow and a vintage persian rug',
+    heroWide: true,
+    addedAt: '2026-11-02T10:03:00Z',
+    hotspots: [
+      { spotId: 'persian-rug', handle: PERSIAN_BOHO_C12, x: 30, y: 72, label: 'Persian rug' },
+      { spotId: 'sage-pillow', handle: CTN_SAGE_45, x: 93, y: 43, label: 'Sage pillow' },
+      { spotId: 'orange-throw', handle: CHUNKY_THROW_ORANGE, x: 78, y: 56, label: 'Over the arm' },
+    ],
+  },
+  {
+    slug: 'sage-bath-ritual',
+    title: 'The Sage Bath Ritual',
+    style: 'Herbal Spa',
+    tagline: 'Sage towelling, brass fixtures and eucalyptus by the tub.',
+    heroImage: '/images/scenes/sage-bath-ritual.webp',
+    heroAlt: 'Farmhouse bathroom with sage towels on hooks, a cream towel on the clawfoot tub and brass fixtures',
+    addedAt: '2026-11-02T10:02:00Z',
+    hotspots: [
+      { spotId: 'sage-towel', handle: TOWEL_SAGE_BATH, x: 56, y: 42, label: 'Sage towels' },
+      { spotId: 'cream-towel', handle: TOWEL_CREAM_BATH, x: 35, y: 66, label: 'On the tub' },
+    ],
+  },
+  {
+    slug: 'parisian-cream-suite',
+    title: 'The Parisian Cream Suite',
+    style: 'French Cream',
+    tagline: 'Ivory sateen, gilt mirrors and soft light on the parquet.',
+    heroImage: '/images/scenes/parisian-cream-suite.webp',
+    heroAlt: 'Parisian bedroom with ivory sateen bedding, a light grey knit throw and a cream shag rug under a boucle bench',
+    addedAt: '2026-11-02T10:01:00Z',
+    hotspots: [
+      { spotId: 'cream-bed', handle: SATEEN_CREAM, x: 35, y: 70, label: 'The bed' },
+      { spotId: 'grey-throw', handle: KNIT_THROW_GREY, x: 58, y: 60, label: 'Across the bed' },
+      { spotId: 'shag-rug', handle: RABBIT_RUG_CREAM, x: 30, y: 90, label: 'On the floor' },
+    ],
+  },
   {
     slug: 'japandi-taupe-suite',
     title: 'The Japandi Taupe Suite',

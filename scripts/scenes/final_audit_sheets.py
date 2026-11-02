@@ -86,6 +86,9 @@ SAGE_HAND = {"asin": "MK-TOWEL-LSC-SAGE-20X30", "title": "Long-Staple Cotton Tow
 BASKET_CREAM = {"asin": "CHUNKYTHROW-CREAM-127", "title": "Chunky Knit Throw Blanket, Cream White, 50 x 68 in", "price": "Coming Soon"}
 BASKET_GREY = {"asin": "KNITTHROW-GREY", "title": "Openwork Knit Throw Blanket, Light Grey", "price": "Coming Soon"}
 ROSE_30X56 = {"asin": "MK-TOWEL-LSC-DUSTYROSE-30X56", "title": "Long-Staple Cotton Towel, 30 x 56 in - Dusty Rose", "price": "$44.99 · in stock"}
+PLAID_OLD = {"asin": "BEDSET4-PLAID-QUEEN", "title": "Linen-Like 4-Piece Bedding Set, Grey Plaid, Queen", "price": "$34.99 · in stock"}
+CORD_COFFEE_OLD = {"asin": "B0CBT7RFK2", "title": "Corduroy, Tufted, with Ties - 95x45cm, Coffee", "price": "$28.99 · in stock"}
+FLORAL_LUMBAR_OLD = {"asin": "B0BCJT2GFW", "title": "Outdoor Cushions, 110 x 55cm - Orange Yellow Floral Bird, Set of 2", "price": "$59.99 · in stock"}
 
 SHEETS = [
     {
@@ -140,6 +143,24 @@ SHEETS = [
             {"slug": "provence-terracotta-suite", "stem": "822a21c8", "changes": {}},
             {"slug": "ivory-gothic-library", "stem": "87d0a59d", "changes": {}, "adds": {1, 2}, "deleted": BS12},
             {"slug": "rose-towels-soak", "stem": "880511fc", "changes": {}, "deleted": ROSE_30X56},
+        ],
+    },
+    {
+        "out": "final-audit-46-55.jpg",
+        "title": "Shop the Look · 第 46–55 张（第 6 批）终版对照图",
+        "sub": "2026-11-02 · 红=原选择，绿=修正后/新增，黑=未改动 · 人工审核修订（mauve-towel-spa 整场删除，现存 9 张） · 24→22 锚点检查 0 缺失",
+        "json": "batch6-matches.json",
+        "foot": "预览 http://localhost:3000/scenes/ · 修订明细见 batch6-revision.jpg · PDP 链接见 batch6-matching.md",
+        "scenes": [
+            {"slug": "tuscan-swirl-suite", "stem": "895a363d", "changes": {}},
+            {"slug": "ryokan-plaid-dawn", "stem": "8963c057", "changes": {0: PLAID_OLD}},
+            {"slug": "ink-floral-loft", "stem": "89ab80d3", "changes": {}},
+            {"slug": "boho-mauve-hearth", "stem": "94ecd453", "changes": {}},
+            {"slug": "sky-blue-mono-suite", "stem": "94f7dca4", "changes": {2: CORD_COFFEE_OLD}},
+            {"slug": "marrakech-rose-suite", "stem": "971e49d6", "changes": {}},
+            {"slug": "sundown-persian-lounge", "stem": "9ad8ee88", "changes": {0: FLORAL_LUMBAR_OLD}},
+            {"slug": "sage-bath-ritual", "stem": "9f2675db", "changes": {}},
+            {"slug": "parisian-cream-suite", "stem": "9f9dcb52", "changes": {}, "adds": {1}},
         ],
     },
 ]

@@ -111,6 +111,14 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 上线前跑 `node scripts/scenes/check-keywords.mjs [matches.json]`；关键缺失会 exit 1，报告写 `report/scenes/keyword-check.md`。
 - **verify 图含热区裁剪对比（2026-10-28 起）**：`verify-sheet.mjs` 自动从 spots JSON 裁出每个锚点的场景局部（Scene crop 列），与产品图并排——浅色形状差异审核前先自查一遍，再交用户。
 - 选品先看场景 slug/alt 的具体词（pom-pom、tufted、embossed、floral、openwork、lace 等），再按产品标题/属性逐词核对；只“颜色接近”不够。`lilac-pompom-bedroom` 曾把无绒球边的碎花被套锚到 “pom-pom trim” 场景，2026-10-27 已改为 `POMPOM4-BLOOM-QUEEN`。
+- **误配对照表（2026-11-02 起，用户历次指正沉淀；匹配前先查本表，每批修订后自动追加）**：
+  - 灰白格纹/格纹感皱布床品 → **PERCALEJAC-HAZE**（雾蓝提花，非 plaid/gingham——第 5、6 批连续同错）
+  - heriz/boho 波斯风地毯 → **1688-1052742241013 家族全变体**（BS-1~BS-15+，60+ SKU，每变体花色不同，必须扫全族再下"无匹配"结论，别只认 BS-12）
+  - 粉白条纹厚毛巾 → 952595759182 家族（Thick Cotton Beach Towels，另有 Grey/Cream、Sage、Dusty Blue 变体）
+  - 黑白水墨花卉+绒球边床品 → POMPOM4-INK；焦糖金漩涡+绒球 → POMPOM4-SWIRL
+  - 灰色针织搭毯 → KNITTHROW-GREY（Light Grey，别因"像平织羊毛"而跳过）
+- **场景合理性守卫（2026-11-02 用户定）**：材质与房间功能冲突的锚点不配（浴室×毛绒地毯、卧室×户外坐垫等）——即使花色/颜色完美匹配也删，必要时整场删除。
+- **深色细分（2026-11-02 用户定）**：charcoal（炭灰近黑）/ coffee（咖啡棕）/ black 严格区分；床品配饰（bed accent）只用 pillow covers / throws 家族，不用 outdoor cushions 代替。
 
 ## 本地预览
 
@@ -250,5 +258,9 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 2026-10-22: 修复 PDP 评价区 Show less 悬浮胶囊跟随问题（用户反馈）——V2ReviewsList.tsx 原逻辑只 IntersectionObserver 观察列表末尾，滚离评价区后胶囊仍常显跟随；改为双观察（列表容器 listInView + 末尾 tailVisible），pillVisible = 展开态 && 列表在视口内 && 末尾未见，滚出评价区即隐藏。另：灰色拼接提花四件套种草图 gray-patch-zhongcao-34.png 已生成（床右侧机位，零纹理描述模板），脚本 scripts/seeany-gray-patch-zhongcao.js，待用户确认后上货。
 
 - 2026-11-02: **每图默认 ≤3 锚点**（用户明确定规则，超过必须先确认）；同家族产品（如同尺寸系列毛巾）不拆多条锚点；非完美匹配的地毯（图案/穗边/形状任一不符）直接删锚不硬凑——BS-12 波斯毯因此从第 5 批 3 处全部删除；场景主体是坐垫/地毯时锚主体， basket 内看不清的物品不锚。第 5 批修订（batch5-revision.jpg）：2 号毛巾合并+删波斯毯、3 号换 PERCALEJAC-HAZE + 删波斯毯、4 号重定位（咖啡色灯芯绒坐垫 B0CBT7RFK2 + 剑麻毯 + 郁金香印花坐垫 B0CC5VNQY3——教训：匹配检索必须覆盖全部品类关键词，首查漏了 Cushion 家族导致漏配郁金香款）、7 号 onsen-grey-ritual 整场删除、9 号删波斯毯改双灯芯绒枕（橄榄绿+玫瑰粉，目录无正红）、10 号只留椅背浴巾；29→21 锚点，全站 55 场景。
+
+- 2026-11-02: 第 6 批（#46–55）上线 10 张，全站 **65 场景**、24 锚点（每图 ≤3；marrakech-rose-suite 仅 1 锚：青绿丝绒枕/金色丝绸/波斯毯无完美匹配，按规则不硬凑）。要点：① **heroWide 横幅场景直接复用**——sundown-persian-lounge 2240×960 横图转 2400×1029 webp + `heroWide: true`，convert 脚本按横竖自动切长边（landscape→宽 2400，portrait→高 1600），无需裁剪；② **product-index 价格口径 ≠ 站内实价**：index 里 $0.00/缺价的产品（兔毛地毯、PERCALE Nude/Sky 等）站内实为在售（$199.00/$59.99），组合价必须以 `npm run build` 后页面实测为准，matches.json 的 price 字段仅作审计参考；③ verify-sheet.mjs spots 查找已加 `spots6-` 前缀（与 spots5/4/3/2 同栈）；④ **加 const 前先 grep scenes.ts**——KNIT_THROW_KHAKI 已存在导致 tsc 重复声明报错；⑤ 第 6 批为全新批次无修订，审阅图直接用 batch6-mapping.jpg（final-audit sheet 仅给经历人工修订的批次出）。
+
+- 2026-11-02（第 6 批修订）：用户审核 5 处意见后 **mauve-towel-spa 整场删除**（浴室放毛绒地毯不合理）、2-1 换 PERCALEJAC-HAZE（灰白格纹两批同错）、6-3 换 MK-PC-CORD-CHARCOAL-45（深棕黑枕≠户外坐垫）、8-1 改锚 BS-15 波斯毯 C12（1052742241013 家族 60+ 变体必须全扫）、10 新增 KNITTHROW-GREY（"无匹配就跳过"前必须穷举颜色×品类组合）；24→22 锚点，全站 64 场景。误配对照表与三条规则已写入上方匹配守则——后续批次零额外成本，查表即防复发。
 
 - 2026-11-01: GLM 双账号接力配置完成——~\.config\opencode\opencode.jsonc 新增自定义 provider `zhipuai-coding-plan-b`（Zhipu Coding Plan B，openai-compatible 端点 https://open.bigmodel.cn/api/coding/paas/v4，挂 glm-5.3-flash/glm-5.3，key 为账号 B）。接力操作：A 账号 5h 窗口（12,000 积分）耗尽触发限流时，会话内 /models 选 "GLM-5.3 Flash (B)" 即可无缝切换（不重启、不重输 key，会话保留）；B 用完切回 A。注意：切换后新账号无缓存，首轮 ~24.5 万 token 重新 prefill（≈56 积分，低峰减半）。**读图验证通过（2026-11-01）**：自定义模型条目必须声明 `"modalities": {"input": ["text","image"], "output": ["text"]}` + `attachment: true` + `tool_call: true`，否则 opencode 客户端直接拒绝图片输入（报 "this model does not support image input"）；补声明后 coding 端点服务端正常收图（glm-5.3-flash 视觉无损，读图/看图工作流可全程跑在 B 账号；Cline 文档"取消 Support Images"警告仅适用于 glm-5.2）。
