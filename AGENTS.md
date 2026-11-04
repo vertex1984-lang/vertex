@@ -115,11 +115,13 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
   - 格纹/条纹感皱布床品 → **PERCALEJAC 家族按色查**（蓝调=HAZE "Dusty Blue" / 粉调=ROSE "Dusty Pink"——注意标题里没有 haze/rose 词，expect 写 dusty blue / dusty pink；第 5、6、7 批三连命中）
   - heriz/boho 波斯风地毯 → **1688-1052742241013 家族全变体**（BS-1~BS-15+，60+ SKU，每变体花色不同，必须扫全族再下"无匹配"结论，别只认 BS-12）
   - 粉白条纹厚毛巾 → 952595759182 家族（Thick Cotton Beach Towels，另有 Grey/Cream、Sage、Dusty Blue 变体）
-  - 黑白水墨花卉+绒球边床品 → POMPOM4-INK；焦糖金漩涡+绒球 → POMPOM4-SWIRL
+   - 黑白水墨花卉+绒球边床品 → POMPOM4-INK；焦糖金漩涡+绒球 → POMPOM4-SWIRL
+   - **奶油大马士革纹+棕绒球+橄榄绿绒布反面 → POMPOM4-VINE**（"Olive Vine"，2026-11-03 用户确认）。教训：别被场景文件名/标题带 swirl/damask 等词误导——绒球床品（POMPOM4 家族：SWIRL/VINE/LEAF/BLUSH/INK/BLOOM/DAMASK）必须 tile 核证实际花色再定色号，SWIRL 实图=漩涡纹+浅绿绒球+焦糖反面，与"奶油 damask"场景不是一回事
   - 灰色针织搭毯 → KNITTHROW-GREY（Light Grey，别因"像平织羊毛"而跳过）
 - **场景合理性守卫（2026-11-02 用户定）**：材质与房间功能冲突的锚点不配（浴室×毛绒地毯、卧室×户外坐垫、卧室带浴缸+大窗等违和场景整场删除）——即使花色/颜色完美匹配也删。
 - **圆形毛绒毯目录无（2026-11-02 用户提出并核实）**：round 地毯只有 2 款黄麻编织；所有毛绒/长毛毯均为矩形或椭圆。场景圆绒毯一律不锚；**椭圆场景毯可用 FAUX_FUR_RUG_WHITE（oval）**（blush-stripe-room 先例，用户认可）。
 - **深色细分（2026-11-02 用户定）**：charcoal（炭灰近黑）/ coffee（咖啡棕）/ black 严格区分；床品配饰（bed accent）只用 pillow covers / throws 家族，不用 outdoor cushions 代替。
+- **跨批次概念重复防线（2026-11-03 用户定）**：重复图防线只查"同一张图"，查不出"不同图同概念"。新场景上线前必须比对：若与已上线场景**同概念且 anchor handle 集合一致/几乎一致**（如 terracotta-chaise-patio 与 batch5 olive-terrace-patio 三件套完全相同、同是藤椅+郁金香垫+九重葛）→ 删新场保留旧场。**灯芯绒 45 方枕家族全 5 色**：Caramel（焦橙，橙枕先例）/ Dusty Rose / Olive / Dusty Blue / Charcoal——无橙色/热带色，棕榈印花等热带图案坐垫一律无匹配。**单毛巾场景（1 锚毛巾特写）展示价值用户存疑**（8/10 号，2026-11-03），暂保留待议。
 
 ## 本地预览
 
@@ -290,5 +292,9 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 - 2026-11-02（第 7 批，#56–66）：11 张图 → 10 个新场景初版上线（#60 b3e54d60 为第 6 批 boho-mauve-hearth 高清重复图，跳过未上线），全站 74 场景。**对照表首次全程命中零修正**：绒球床品→POMPOM4-LEAF（蓝灰叶纹，tile 核证）、粉白条纹床品→PERCALESTRIPE-PETAL、multichevron→BOHO-TEAL（tile 对比排除 SUNSET）、燕麦/鼠尾草亚麻→LINEN_OAT/LINEN_SAGE 复用。新工具：**产品 tile 拼图核证**（PIL 把候选产品 1.webp 拼一张图，一次读图定色号/花色）+ BS 波斯家族拼图全扫（深炭暗纹毯确认无匹配）。**对照图带图片序号 1–11**（batch7_mapping.py num_badge，跳过/删除图各占一行说明——用户按序号提意见如"3-3""7-2"，高效定位）。重复图防线：同场景高清重复先查已上线 slug。
 
 - 2026-11-02（第 7 批修订）：用户审核 5 处意见：**coastal-blue-spa 整场删除**（卧室带浴缸+大窗不合理）、3-3 删灰针织毯+补锚 **PERCALEJAC-ROSE** 被罩（"粉格"真身即玫瑰提花，对照表升级为 PERCALEJAC 家族按色查）、4 加炭灰枕（CORD_CHARCOAL_45 复用）、7-2 chevron 毯花纹不匹配→换奶油拉扣椅垫（MK_CUSHION_CORD_CREAM）、7-3 删圆毯（**目录确认无圆形毛绒毯**——round 只有黄麻，毛绒全为 rect/oval）、9 加剑麻垫（MAT_SISAL 复用）；26→24 锚点，全站 73 场景。#66 椭圆毯场景锚点保留（场景毯即椭圆，与商品匹配——形状跟场景走）。
+
+- 2026-11-02（第 8 批收官，#67–82）：**82 张素材图全部消化完毕**。16 张图 → **13 个新场景**（3 张为已上线场景的重复版本跳过：#68 cream-knit 竖版 / #75 sundown 竖版 / #81 golden-swirl 横版——重复图防线三连命中），全站 73 → 86 场景、29 锚点。对照表与 tile 拼图核证全程零花色修正；跳过未锚项全部记录 skipped 字段（奶油 fur throw 无、橙色 shag 无、棕榈印花无、圆绒毯规则×2、羊皮异形无）。毛巾特写场景（riad/santorini/sage/alpine）按同家族单锚规则各 1 锚。对照图序号 1–16（3 个说明行）。至此 8 批次流水线稳定：看图 → 对照表查表 → tile 核证 → 匹配（≤3 锚 + skipped 记录）→ convert → spots/overlay 目检 → check-keywords → mapping（带序号）→ 构建验证。
+
+- 2026-11-03（第 8 批修订，用户 4 处意见）：① **1-1 换 POMPOM4-VINE-QUEEN**——SWIRL 实图（漩涡纹+浅绿绒球+焦糖反面）与场景（奶油大马士革+棕绒球+橄榄绿绒布）不符，VINE 产品图逐项吻合（用户给 URL 确认），tagline/alt 同步改写；② **删 terracotta-chaise-patio 整场**——与 batch5 olive-terrace-patio 同产品三件套同概念（跨批次概念重复防线由此沉淀）；③ **12 改 3 锚**——删奶油 Ottoman 垫（识别错误），热点 3 → 右摇椅焦橙灯芯绒方枕 CORD_CARAMEL_45（用户问 DUSTYROSE 是否最近似，经图对比 CARAMEL 更近，retro-sunset 先例一致），棕榈印花坐垫记 skipped（corduroy45 全 5 色核过无热带色）；④ **14 加第 4 锚**——RUG_TIEDYE_OVAL（1688-996768645117-C2，Grey Tie-Dye 椭圆毯，用户指定 URL；**该家族 c2~c8 均不在 shopify-map，站内 Coming Soon**，挂牌 $26.99 不可购——椭圆随场景形状先例第 2 次）。另：8/10 单毛巾场景记"价值待定、暂保留"。29→27 锚点、13→12 场景，全站 85。
 
 - 2026-11-01: GLM 双账号接力配置完成——~\.config\opencode\opencode.jsonc 新增自定义 provider `zhipuai-coding-plan-b`（Zhipu Coding Plan B，openai-compatible 端点 https://open.bigmodel.cn/api/coding/paas/v4，挂 glm-5.3-flash/glm-5.3，key 为账号 B）。接力操作：A 账号 5h 窗口（12,000 积分）耗尽触发限流时，会话内 /models 选 "GLM-5.3 Flash (B)" 即可无缝切换（不重启、不重输 key，会话保留）；B 用完切回 A。注意：切换后新账号无缓存，首轮 ~24.5 万 token 重新 prefill（≈56 积分，低峰减半）。**读图验证通过（2026-11-01）**：自定义模型条目必须声明 `"modalities": {"input": ["text","image"], "output": ["text"]}` + `attachment: true` + `tool_call: true`，否则 opencode 客户端直接拒绝图片输入（报 "this model does not support image input"）；补声明后 coding 端点服务端正常收图（glm-5.3-flash 视觉无损，读图/看图工作流可全程跑在 B 账号；Cline 文档"取消 Support Images"警告仅适用于 glm-5.2）。
