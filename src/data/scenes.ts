@@ -116,9 +116,174 @@ const KNIT_THROW_PINK = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-7
 const PERCALESTRIPE_PETAL = 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-stripe-petal-queen';
 const PERCALEJAC_ROSE = 'makimoo-queen-bedding-set-4-piece-cotton-percale-jacquard-rose-queen';
 const MK_CUSHION_CORD_CREAM = 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream';
+const BOHO_SUNSET = 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-sunset';
+const PERCALE_COCONUT = 'makimoo-queen-duvet-cover-set-3-piece-cotton-percale-coconut-queen';
+const TOWEL_OATMEAL_BATH = 'long-staple-cotton-towel-oatmeal-40x70-mk-towel-lsc-oatmeal-40x70';
+const TOWEL_DUSTYBLUE_BATH = 'long-staple-cotton-towel-dustyblue-40x70-mk-towel-lsc-dustyblue-40x70';
+const BOUCLE_SAGE_45 = 'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45';
 const BOUCLE_OATMEAL_45 = 'boucle-pillow-covers-oatmeal-45x45-mk-pc-boucle-oatmeal-45';
+const RUG_TIEDYE_OVAL = 'oval-fluffy-area-rug-large-modern-tie-dye-style-shaggy-100-x-200-cm-1688-996768645117-c2';
 
 export const SCENES: SceneDef[] = [
+  {
+    slug: 'golden-swirl-suite',
+    title: 'The Golden Swirl Suite',
+    style: 'Golden Hour',
+    tagline: 'Olive vine damask, brown pompoms, and last light.',
+    heroImage: '/images/scenes/golden-swirl-suite.webp',
+    heroAlt: 'Golden hour bedroom with olive vine damask bedding with brown pom-pom trim, olive velvet pillows, a taupe knit throw and a cream fur rug',
+    addedAt: '2026-11-02T12:10:00Z',
+    hotspots: [
+      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 68, y: 74, label: 'The bed' },
+      { spotId: 'khaki-throw', handle: KNIT_THROW_KHAKI, x: 65, y: 62, label: 'Across the bed' },
+      { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 20, y: 85, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'artist-attic-studio',
+    title: 'The Artist Attic Studio',
+    style: 'Painter Studio',
+    tagline: 'Sage linen, a blue pillow, and paint on the floor.',
+    heroImage: '/images/scenes/artist-attic-studio.webp',
+    heroAlt: 'Artist attic studio with sage linen bedding, a dusty blue pillow and a grey knit throw under skylights',
+    addedAt: '2026-11-02T12:09:00Z',
+    hotspots: [
+      { spotId: 'sage-bed', handle: LINEN_SAGE, x: 80, y: 76, label: 'The bed' },
+      { spotId: 'blue-pillow', handle: CTN_BLUE_45, x: 62, y: 50, label: 'The pillow' },
+      { spotId: 'grey-knit', handle: KNIT_THROW_GREY, x: 55, y: 66, label: 'Across the bed' },
+    ],
+  },
+  {
+    slug: 'dusk-rose-loft',
+    title: 'The Dusk Rose Loft',
+    style: 'City Dusk',
+    tagline: 'Dusty rose sateen and city light coming up.',
+    heroImage: '/images/scenes/dusk-rose-loft.webp',
+    heroAlt: 'City loft at dusk with dusty rose sateen bedding and a cream fur rug',
+    addedAt: '2026-11-02T12:08:00Z',
+    hotspots: [
+      { spotId: 'nude-bed', handle: PERCALE_NUDE, x: 55, y: 55, label: 'The bed' },
+      { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 60, y: 88, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'academy-ivory-study',
+    title: 'The Academy Ivory Study',
+    style: 'Dark Academia',
+    tagline: 'Ivory linen, old books, and a fireplace going.',
+    heroImage: '/images/scenes/academy-ivory-study.webp',
+    heroAlt: 'Dark academia library bedroom with ivory linen bedding and a cream knit throw by the fire',
+    addedAt: '2026-11-02T12:06:00Z',
+    hotspots: [
+      { spotId: 'ivory-bed', handle: LINEN_IVORY, x: 48, y: 47, label: 'The bed' },
+      { spotId: 'cream-knit', handle: KNIT_THROW_CREAM, x: 6, y: 68, label: 'On the chair' },
+    ],
+  },
+  {
+    slug: 'retro-sunset-room',
+    title: 'The Retro Sunset Room',
+    style: '70s Retro',
+    tagline: 'Coconut white, sunset zigzags, and wood panelling.',
+    heroImage: '/images/scenes/retro-sunset-room.webp',
+    heroAlt: 'Retro wood-panelled bedroom with coconut white percale bedding, a sunset chevron throw and an orange corduroy pillow',
+    addedAt: '2026-11-02T12:05:00Z',
+    hotspots: [
+      { spotId: 'coconut-bed', handle: PERCALE_COCONUT, x: 62, y: 62, label: 'The bed' },
+      { spotId: 'sunset-throw', handle: BOHO_SUNSET, x: 30, y: 68, label: 'Across the bed' },
+      { spotId: 'caramel-pillow', handle: CORD_CARAMEL_45, x: 33, y: 44, label: 'Corduroy pillow' },
+    ],
+  },
+  {
+    slug: 'riad-oat-towels',
+    title: 'The Riad Oat Towels',
+    style: 'Moroccan Hammam',
+    tagline: 'Oat towelling, carved cedar and orange trees.',
+    heroImage: '/images/scenes/riad-oat-towels.webp',
+    heroAlt: 'Moroccan riad hammam with oatmeal towels on a carved cedar screen and orange trees beyond',
+    addedAt: '2026-11-02T12:04:00Z',
+    hotspots: [
+      { spotId: 'oat-towel', handle: TOWEL_OATMEAL_BATH, x: 52, y: 45, label: 'Oat towels' },
+    ],
+  },
+  {
+    slug: 'santorini-blue-pool',
+    title: 'The Santorini Blue Pool',
+    style: 'Aegean Blue',
+    tagline: 'Dusty blue towels, white arches, and the caldera.',
+    heroImage: '/images/scenes/santorini-blue-pool.webp',
+    heroAlt: 'Santorini poolside with dusty blue towels on a rack under white bougainvillea arches',
+    addedAt: '2026-11-02T12:03:00Z',
+    hotspots: [
+      { spotId: 'blue-towel', handle: TOWEL_DUSTYBLUE_BATH, x: 45, y: 42, label: 'Blue towels' },
+    ],
+  },
+  {
+    slug: 'sage-pink-morning',
+    title: 'The Sage Pink Morning',
+    style: 'Blush Morning',
+    tagline: 'Oat linen, pink knits, and coffee in bed.',
+    heroImage: '/images/scenes/sage-pink-morning.webp',
+    heroAlt: 'Soft morning bedroom with oat linen bedding, a dusty pink knit throw and a rose corduroy pillow',
+    addedAt: '2026-11-02T12:02:00Z',
+    hotspots: [
+      { spotId: 'oat-bed', handle: LINEN_OAT, x: 70, y: 75, label: 'The bed' },
+      { spotId: 'pink-knit', handle: KNIT_THROW_PINK, x: 18, y: 65, label: 'Across the bed' },
+      { spotId: 'rose-pillow', handle: CORD_ROSE_45, x: 84, y: 47, label: 'Rose pillow' },
+    ],
+  },
+  {
+    slug: 'tropic-sunroom-patio',
+    title: 'The Tropic Sunroom Patio',
+    style: 'Tropical Veranda',
+    tagline: 'Terracotta cord, sage cushions, and rattan everywhere.',
+    heroImage: '/images/scenes/tropic-sunroom-patio.webp',
+    heroAlt: 'Tropical sunroom patio with rattan rockers in terracotta corduroy cushions, a sage pillow and a burnt orange corduroy pillow',
+    addedAt: '2026-11-02T12:01:00Z',
+    hotspots: [
+      { spotId: 'cord-cushion', handle: CORD_COFFEE, x: 35, y: 66, label: 'Rocker cushion' },
+      { spotId: 'sage-pillow', handle: CTN_SAGE_45, x: 27, y: 53, label: 'Sage pillow' },
+      { spotId: 'orange-pillow', handle: CORD_CARAMEL_45, x: 62, y: 56, label: 'Corduroy pillow' },
+    ],
+  },
+  {
+    slug: 'sage-minimal-bath',
+    title: 'The Sage Minimal Bath',
+    style: 'Modern Spa',
+    tagline: 'Sage towelling and nothing else in the light.',
+    heroImage: '/images/scenes/sage-minimal-bath.webp',
+    heroAlt: 'Minimal cream bathroom with sage towels on brass rails and a freestanding tub',
+    addedAt: '2026-11-02T12:00:00Z',
+    hotspots: [
+      { spotId: 'sage-towel', handle: TOWEL_SAGE_BATH, x: 45, y: 35, label: 'Sage towels' },
+    ],
+  },
+  {
+    slug: 'nordic-white-loft',
+    title: 'The Nordic White Loft',
+    style: 'Nordic Calm',
+    tagline: 'White linen, cream knits and a sage boucle.',
+    heroImage: '/images/scenes/nordic-white-loft.webp',
+    heroAlt: 'Nordic bedroom with white linen bedding, a cream openwork knit throw, a sage boucle pillow and a grey oval shaggy rug on the floor',
+    addedAt: '2026-11-02T11:59:00Z',
+    hotspots: [
+      { spotId: 'ivory-bed', handle: LINEN_IVORY, x: 40, y: 52, label: 'The bed' },
+      { spotId: 'cream-knit', handle: KNIT_THROW_CREAM, x: 70, y: 55, label: 'Across the foot' },
+      { spotId: 'boucle-pillow', handle: BOUCLE_SAGE_45, x: 63, y: 31, label: 'Boucle pillow' },
+      { spotId: 'oval-rug', handle: RUG_TIEDYE_OVAL, x: 48, y: 85, label: 'On the floor' },
+    ],
+  },
+  {
+    slug: 'alpine-cabin-bath',
+    title: 'The Alpine Cabin Bath',
+    style: 'Winter Cabin',
+    tagline: 'Oat towelling by the fire while it snows.',
+    heroImage: '/images/scenes/alpine-cabin-bath.webp',
+    heroAlt: 'Alpine log cabin bath with oatmeal towels on hooks, a stone fireplace and snow at the window',
+    addedAt: '2026-11-02T11:58:00Z',
+    hotspots: [
+      { spotId: 'oat-towel', handle: TOWEL_OATMEAL_BATH, x: 50, y: 45, label: 'Oat towels' },
+    ],
+  },
   {
     slug: 'snowy-pompom-cabin',
     title: 'The Snowy Pompom Cabin',
