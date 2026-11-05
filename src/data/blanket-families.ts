@@ -135,14 +135,14 @@ export const BLANKET_SECTIONS: BlanketSection[] = [
     label: 'Knit & Woven Throws',
     blurb: 'Airy openwork knits, boho chevron stripes, Nordic jacquards & chunky bobble-knits.',
     menuDesc: 'Openwork knits, chevrons & jacquards.',
-    groupIds: ['KNIT-THROW', 'BOHO-THROW', 'JAC-THROW', 'CHUNKY-THROW'],
+    groupIds: ['KNIT-THROW', 'BOHO-THROW', 'JAC-THROW', 'CHUNKY-THROW', '989320962592', '891678348176', '897719548267', '628822447872'],
   },
   {
     key: 'faux-fur-throws',
     label: 'Faux Fur Throws',
     blurb: 'Cloud-soft faux rabbit fur with carved channel stripes.',
     menuDesc: 'Cloud-soft faux rabbit fur.',
-    groupIds: ['969627065032'],
+    groupIds: ['969627065032', 'RABBIT-FUR', 'ZIP-FLEECE', 'SPRUCE-FLEECE', 'WAFFLE-FLEECE'],
   },
   {
     key: 'more-blankets',
