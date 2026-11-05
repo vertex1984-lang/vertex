@@ -9,12 +9,14 @@ import V2PillowsShop from '@/components/v2/V2PillowsShop';
 import V2CushionsShop from '@/components/v2/V2CushionsShop';
 import V2TowelsShop from '@/components/v2/V2TowelsShop';
 import V2DecorShop from '@/components/v2/V2DecorShop';
+import V2MatsShop from '@/components/v2/V2MatsShop';
 import V2BeddingCatHero, { BeddingHeroLink } from '@/components/v2/V2BeddingCatHero';
 import V2PillowsCatHero, { PillowsHeroLink } from '@/components/v2/V2PillowsCatHero';
 import V2CushionsCatHero, { CushionsHeroLink } from '@/components/v2/V2CushionsCatHero';
 import V2TowelsCatHero, { TowelsHeroLink } from '@/components/v2/V2TowelsCatHero';
 import V2BlanketsCatHero, { BlanketsHeroLink } from '@/components/v2/V2BlanketsCatHero';
 import V2DecorCatHero, { DecorHeroLink } from '@/components/v2/V2DecorCatHero';
+import V2MatsCatHero, { MatsHeroLink } from '@/components/v2/V2MatsCatHero';
 import V2NotFound from '@/components/v2/V2NotFound';
 import { PLP_EDITORIAL_TILES } from '@/data/editorial-tiles';
 import { buildSetFamilies } from '@/data/bedding-families';
@@ -390,6 +392,27 @@ export default function V2ProductsPage() {
     return { styleCount: decorShopProducts.length, typeLinks };
   }, [decorMode, isSearching, activeSub, decorShopProducts]);
 
+  // mats 选购视图（2026-11-05：按 bedding 页结构重构——Parachute 式 hero（V2MatsCatHero）+
+  // 家族卡网格（V2MatsShop）；同日用户定：取消分区，全部家族卡在一个结果网格平铺，
+  // 无筛选条/排序下拉/左侧栏/hero 快链。传未去重原始列表（同 blankets/decor 口径）：
+  // buildBlanketFamilies 需看到同色全部尺寸 SKU 才能拼正确 From 价
+  const matsMode = activeCategory.toLowerCase() === 'mats';
+  const matsShopProducts = useMemo(
+    () =>
+      enrichProductsWithShopifyData(PRODUCTS_DATA).filter(
+        (p) => p.productType.toLowerCase() === 'mats'
+      ),
+    []
+  );
+
+  // mats 类目页头数据：上标数 = 全部 SKU 数（全类目共通口径）；
+  // 快链 2026-11-05 随分区一并移除（原指向页内分区锚点，分区取消后无落点）
+  const matsHero = useMemo(() => {
+    if (!matsMode || isSearching || activeSub) return null;
+    const typeLinks: MatsHeroLink[] = [];
+    return { styleCount: matsShopProducts.length, typeLinks };
+  }, [matsMode, isSearching, activeSub, matsShopProducts]);
+
   // Collections 筛选项：默认按 Shop by Style 风格分组（带数量；0 的不显示），顺序与首页 Shop by Style 一致；
   // bedding 按材质分组（只显示有产品的材质，顺序按 BEDDING_MATERIAL_ORDER）
   const collectionOptions = useMemo(() => {
@@ -592,7 +615,7 @@ export default function V2ProductsPage() {
 
   // 桌面端左侧筛选栏（lg+）：类目视图（不含子分类页）且有可选项时显示（2026-09 用户定：子分类页不展示筛选区）；
   // bedding 类目页不展示筛选区（2026-09 用户定：材质分组走 landing 卡片入口，不出筛选 UI）
-  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && (collectionOptions.length > 0 || materialOptions.length > 0);
+  const showSidebar = mounted && !!activeCategory && !activeSub && !isSearching && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && !matsMode && (collectionOptions.length > 0 || materialOptions.length > 0);
 
   // ?cat=dining（已下线类目）：渲染站内 404 页（V2NotFound，同 /aaa 等死链），
   // Header/Footer 由 (v2) 布局提供（2026-10-21 用户定）
@@ -606,7 +629,7 @@ export default function V2ProductsPage() {
       {/* 页头（v1 样式）：面包屑 + 左对齐标题 + 右侧结果数/排序。
           bedding/pillows/cushions/towels 类目页面包屑整块移除（2026-10-16 用户定：Parachute 式 hero 已承担导航，
           "Home / Bedding" 与 hero 标题信息重复，双端都不显示；cushions/towels 2026-10-18 加入） */}
-      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && !decorHero && (
+      {!beddingHero && !pillowHero && !cushionHero && !towelHero && !blanketHero && !decorHero && !matsHero && (
       <nav className="text-xs lg:text-sm text-[#999] mb-2 lg:mb-3" aria-label="Breadcrumb">
         <a href={v2url('/')} className="hover:text-[#8B5A2B] transition-colors">Home</a>
         <span className="mx-1.5">/</span>
@@ -662,6 +685,12 @@ export default function V2ProductsPage() {
           intro={categoryDef?.intro || ''}
           typeLinks={decorHero.typeLinks}
         />
+      ) : matsHero ? (
+        <V2MatsCatHero
+          styleCount={matsHero.styleCount}
+          intro={categoryDef?.intro || ''}
+          typeLinks={matsHero.typeLinks}
+        />
       ) : (
       <div className="flex items-end justify-between flex-wrap gap-4 mb-2 lg:mb-10">
         <div>
@@ -674,7 +703,7 @@ export default function V2ProductsPage() {
             landing 视图无页头入口（2026-09 用户定：移除 Browse All & Filter；
             老的侧栏+网格一级分类页保留，经 Texture/Style/Color 卡片链接进入）；
             bedding 类目页不展示排序下拉（2026-09 用户定）；blankets 同样不展示（2026-09-27 用户定，固定权重序） */}
-        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && (
+        {mounted && !beddingMaterialMode && !blanketsMode && !pillowsMode && !cushionsMode && !towelsMode && !decorMode && !matsMode && (
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={sortBy}
@@ -802,6 +831,11 @@ export default function V2ProductsPage() {
            Parachute 式 hero（V2DecorCatHero，分区锚点快链）+ 分区家族卡网格（V2DecorShop）。
            传未去重原始列表（同 blankets 口径）：collapseToFamilies 需看到全部尺寸 SKU */
         <V2DecorShop products={decorShopProducts} />
+      ) : matsMode && !isSearching ? (
+        /* mats 选购视图（2026-11-05：Parachute 式 hero（V2MatsCatHero）+ 单网格家族卡
+           （V2MatsShop，同日用户定取消分区平铺展示）。传未去重原始列表（同 blankets/decor
+           口径）：buildBlanketFamilies 需看到同色全部尺寸 SKU 才能拼正确 From 价 */
+        <V2MatsShop products={matsShopProducts} />
       ) : sections.length > 0 ? (
         /* 分区视图：按风格分区；每个 collection 展示 3 行后截断（移动 6 / lg 9 / xl 12 张），
            超出出「View More」进入子分类页看全部（2026-09 用户定） */

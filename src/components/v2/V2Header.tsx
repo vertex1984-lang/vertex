@@ -62,7 +62,7 @@ const MEGA_CARDS: Record<string, MenuCard[]> = {
   ],
   mats: [
     { image: '/images/collections/mats.webp', caption: 'Soft grounding for every room.', linkLabel: 'Shop Mats', href: '/products?cat=mats' },
-    { image: '/images/products/1046667161713/1.webp', caption: 'Cushioned comfort underfoot.', linkLabel: 'Shop Kitchen Mats', href: '/products?cat=mats&sub=kitchen' },
+    // 2026-11-05：mats PLP 取消分区后 #kitchen 锚点失效，Kitchen 推广卡移除
   ],
   others: [
     { image: '/images/collections/others.webp', caption: 'Extras for daily living.', linkLabel: 'Shop Others', href: '/products?cat=others' },
@@ -201,6 +201,20 @@ function menuColumns(cat: string, styles: { key: string; label: string }[]): Men
           desc: s.blurb,
           href: `/products?cat=decor#${s.key}`,
         })),
+      },
+      { title: 'Featured', links: featured },
+    ];
+  }
+  // Mats（2026-11-05）：PLP 取消分区、单网格平铺后，分类锚点失去落点，
+  // 首列只留一个 Shop All 入口（原 style 打标子项随默认视图一并失效）
+  if (cat === 'mats') {
+    return [
+      {
+        title: 'Mats',
+        href: current?.href,
+        links: [
+          { label: 'Shop All Mats', desc: 'Kitchen, bath, door & area rugs', href: '/products?cat=mats' },
+        ],
       },
       { title: 'Featured', links: featured },
     ];

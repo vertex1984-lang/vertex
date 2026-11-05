@@ -283,8 +283,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   })();
 
   const quickSpecs = [
-    pileStr ? { icon: 'layers', label: 'Pile', value: `Low profile ${pileStr}` } : null,
-    // Material / Care 卡已按领导反馈移除（材料与护理信息保留在底部 Specifications 表中）
+    // Material / Care 卡已按领导反馈移除（材料与护理信息保留在底部 Specifications 表中）；
+    // Pile 卡 2026-11-05 用户定移除——厚度只在底部 Specifications 表 Pile Height 行显示
   ].filter(Boolean) as { icon: string; label: string; value: string }[];
 
   const specRows: { label: string; value: string; tone?: 'alert' | 'muted' }[] = [
@@ -804,7 +804,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               </p>
             )}
 
-            {/* 规格速览 chips（材料与护理信息保留在底部 Product Details 表） */}
+            {/* 规格速览 chips（2026-11-05 Pile 卡移除后恒为空，保留渲染块以兼容未来恢复；信息见底部 Product Details 表） */}
             {quickSpecs.length > 0 && (
             <div className="grid grid-cols-2 gap-2.5 mb-8">
               {quickSpecs.map((spec) => (

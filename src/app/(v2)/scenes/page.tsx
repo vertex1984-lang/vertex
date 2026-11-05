@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import V2Lookbook from '@/components/v2/V2Lookbook';
+import { lookbookHotspotsByImage, mergedLookbookItems } from '@/data/lookbook-hotspots';
 
 export const metadata: Metadata = {
   title: 'The Lookbook – Every Room We Love',
@@ -11,7 +12,10 @@ export const metadata: Metadata = {
  * /scenes/ —— 全量种草图汇总页（2026-10-30 重构，用户定）：
  * 与 /inspiration 的 lookbook 区共用同一数据源（src/data/lookbook.ts），
  * 这里放全量 + 房间/类目筛选；/inspiration 只留前 12 张预览。
- * 原 Shop the Look 热区瀑布流下线（单品场景详情页 /scenes/[slug] 保留）。
+ * 2026-11-05 用户定：85 个 Shop the Look 场景图（全部有热区）合并进卡片列表——
+ * 场景卡 addedAt 新→旧在前、原 LOOKBOOK 去重接后，场景卡跳 /scenes/[slug]/ 详情页；
+ * 卡上产品圆点直跳 PDP（mergedLookbookItems / lookbookHotspotsByImage，
+ * 见 src/data/lookbook-hotspots.ts；原 Shop the Look 热区瀑布流以新形态回归）。
  * 2026-10-30 用户定：桌面端瀑布流占满屏宽（图更大、杂志感），移动端图片全出血。
  */
 export default function ScenesIndexPage() {
@@ -30,7 +34,8 @@ export default function ScenesIndexPage() {
         </p>
       </header>
       <div className="lg:px-6">
-        <V2Lookbook />
+        {/* 卡片列表（场景图合并）与热区映射在服务端现算（依赖产品库），以 prop 传入客户端组件 */}
+        <V2Lookbook items={mergedLookbookItems()} hotspotsByImage={lookbookHotspotsByImage()} />
       </div>
     </div>
   );

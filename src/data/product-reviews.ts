@@ -3658,3 +3658,42 @@ const LOWSTAR_EXTRA: Record<string, ProductReview[]> = {
     },
   ],
 };
+
+/** ===== 2026-11-05 用户定：波斯/东方地毯两家族按颜色拆分为独立产品 =====
+ * 1052742241013 → 15 色独立家族、745181807454 → 11 色独立家族（variant-groups.ts）。
+ * 拆分后子家族 id 带颜色后缀，此处把原家族评价池/低星卡别名挂到每个子家族 id 上，
+ * 各子家族按自身 id 种子抽卡（数量 3-10 的 W8 规则不变），评价区不至于整族消失。
+ */
+const RUG_SPLIT_REVIEW_ALIAS: Record<string, string> = {
+  '1052742241013-sage-medallion': '1052742241013',
+  '1052742241013-mineral-teal': '1052742241013',
+  '1052742241013-spiced-terracotta': '1052742241013',
+  '1052742241013-tribal-rust': '1052742241013',
+  '1052742241013-ivory-kilim': '1052742241013',
+  '1052742241013-desert-sand': '1052742241013',
+  '1052742241013-aqua-floral': '1052742241013',
+  '1052742241013-olive-medallion': '1052742241013',
+  '1052742241013-vintage-cream': '1052742241013',
+  '1052742241013-coral-kazak': '1052742241013',
+  '1052742241013-navy-heriz': '1052742241013',
+  '1052742241013-indigo-floral': '1052742241013',
+  '1052742241013-stone-grey': '1052742241013',
+  '1052742241013-crimson-medallion': '1052742241013',
+  '1052742241013-ivory-beige': '1052742241013',
+  '745181807454-pastel-damask': '745181807454',
+  '745181807454-indigo-lattice': '745181807454',
+  '745181807454-rainbow-stripe': '745181807454',
+  '745181807454-ivory-diamond-rows': '745181807454',
+  '745181807454-amber-medallion': '745181807454',
+  '745181807454-boho-medallion': '745181807454',
+  '745181807454-sunset-stripe': '745181807454',
+  '745181807454-noir-floral': '745181807454',
+  '745181807454-berber-diamond': '745181807454',
+  '745181807454-nordic-grey': '745181807454',
+  '745181807454-floral-patchwork': '745181807454',
+};
+Object.keys(RUG_SPLIT_REVIEW_ALIAS).forEach((subId) => {
+  const parent = RUG_SPLIT_REVIEW_ALIAS[subId];
+  if (PRODUCT_REVIEWS[parent]) PRODUCT_REVIEWS[subId] = PRODUCT_REVIEWS[parent];
+  if (LOWSTAR_EXTRA[parent]) LOWSTAR_EXTRA[subId] = LOWSTAR_EXTRA[parent];
+});
