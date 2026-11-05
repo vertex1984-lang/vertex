@@ -44,8 +44,6 @@ export interface SceneDef {
 const BOUCLE_WHITE = 'boucle-pillow-covers-white-45x45-mk-pc-boucle-white-45';
 const BOUCLE_ROSE = 'boucle-pillow-covers-dustyrose-45x45-mk-pc-boucle-dustyrose-45';
 const BOUCLE_SAGE = 'boucle-pillow-covers-sage-45x45-mk-pc-boucle-sage-45';
-const BLANKET_CREAM =
-  'luxury-faux-rabbit-fur-plush-blanket-for-couch-sofa-and-bed-969627065032-c26';
 const KNIT_THROW_KHAKI = 'makimoo-openwork-knit-throw-blanket-with-tassels-50-x-71-in-khaki';
 const CHUNKY_THROW_OAT = 'makimoo-chunky-knit-throw-blanket-with-tassels-50-x-68-in-oat';
 const CHAIR_CUSHION_CREAM = 'corduroy-chair-cushions-cream-95x45-mk-cushion-cord-cream';
