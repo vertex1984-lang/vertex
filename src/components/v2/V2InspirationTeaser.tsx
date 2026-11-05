@@ -63,7 +63,7 @@ export default function V2InspirationTeaser() {
           <a
             key={t.image}
             href={v2url(t.href)}
-            className={`group relative block overflow-hidden rounded-lg bg-cream ${
+            className={`group relative block overflow-hidden rounded-none lg:rounded-lg bg-cream ${
               // 移动端：首图通栏（col-span-2），后两张半宽；桌面端三等宽
               idx === 0 ? 'col-span-2 aspect-[16/9] lg:col-span-1 lg:aspect-[3/4]' : 'aspect-[3/4]'
             }`}
