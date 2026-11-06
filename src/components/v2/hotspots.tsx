@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
-import { formatPrice } from '@/lib/currency';
+import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { v2url } from '@/lib/v2paths';
 
 /** 热区产品点卡片数据（由页面用 getProductByHandle enrich 后传入） */
@@ -150,7 +150,9 @@ export function HotspotCardLayer({ hotspot: h }: { hotspot: BeforeAfterHotspot }
           {h.title}
         </span>
         <span className="mt-0.5 block text-sm font-bold text-brand">
-          {formatPrice(h.price, h.currency)}
+          {/* 0 价 = 未上架 → Coming Soon（2026-11-07 用户定）；本组件同时服务
+              V2PdpScenes / V2PdpBeforeAfterDuo / lookbook 的场景小卡，一处修正全站生效 */}
+          {isComingSoonAmount(h.price) ? COMING_SOON_LABEL : formatPrice(h.price, h.currency)}
         </span>
         <span className="mt-0.5 block text-[10px] text-charcoal/45">
           {h.isCurrent ? "You're viewing this product" : 'Tap to shop'}

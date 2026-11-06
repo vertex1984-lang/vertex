@@ -3,6 +3,7 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { productCategoryTag } from '@/data/subcategories';
 import { shortTitle, formatPrice, spotlightImage } from '@/components/v2/card-utils';
+import { COMING_SOON_LABEL, isComingSoonAmount } from '@/lib/currency';
 import type { MakimooProduct } from '@/data/products';
 
 interface V2NewArrivalsSpotlightProps {
@@ -82,7 +83,8 @@ export default function V2NewArrivalsSpotlight({ products }: V2NewArrivalsSpotli
                 </h3>
                 <div className="flex items-center justify-between gap-4">
                   <p className="text-lg lg:text-xl font-semibold text-cream">
-                    {formatPrice(displayPrice, displayCurrency)}
+                    {/* 0 价 = 未上架 → Coming Soon（2026-11-07 用户定），不渲染 $0.00 */}
+                    {isComingSoonAmount(displayPrice) ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
                   </p>
                   <span className="inline-flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-cream/70 transition-colors group-hover:text-cream">
                     Shop Now
@@ -126,7 +128,8 @@ export default function V2NewArrivalsSpotlight({ products }: V2NewArrivalsSpotli
                         {shortTitle(product.title)}
                       </h3>
                       <p className="text-sm lg:text-base font-semibold text-charcoal">
-                        {formatPrice(price, currency)}
+                        {/* 0 价 = 未上架 → Coming Soon（2026-11-07 用户定），不渲染 $0.00 */}
+                        {isComingSoonAmount(price) ? COMING_SOON_LABEL : formatPrice(price, currency)}
                       </p>
                     </div>
                     <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-brand flex-shrink-0 pr-2">

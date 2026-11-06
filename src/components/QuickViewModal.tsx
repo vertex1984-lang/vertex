@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom';
 import { MakimooProduct } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
-import { formatPrice } from '@/lib/currency';
+import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { useToast } from '@/components/Toast';
 
 interface QuickViewModalProps {
@@ -115,7 +115,10 @@ export default function QuickViewModal({ product, open, onClose, detailHref }: Q
             {isInStock ? (
               <p className="text-xl font-bold text-[#8B5A2B] mb-3">{formatPrice(displayPrice, displayCurrency)}</p>
             ) : (
-              <p className="text-sm font-semibold text-[#999] mb-3">Out of Stock</p>
+              <p className="text-sm font-semibold text-[#999] mb-3">
+                {/* 0 价 = 未上架 → Coming Soon（2026-11-07 用户定），不用 Out of Stock 文案 */}
+                {isComingSoonAmount(displayPrice) ? COMING_SOON_LABEL : 'Out of Stock'}
+              </p>
             )}
             {shortDesc && (
               <p className="text-sm text-[#555] leading-relaxed mb-5 line-clamp-3">{shortDesc}.</p>

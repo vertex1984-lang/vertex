@@ -16,7 +16,7 @@ import { PDP_MAIN_34_ASINS, PDP_MAIN_PREPEND_IMAGES } from '@/data/pdp-main-34-a
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
-import { formatPrice } from '@/lib/currency';
+import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
@@ -32,6 +32,7 @@ import { getPdpBeforeAfter } from '@/data/pdp-before-after';
 import BoughtTogether from '@/components/BoughtTogether';
 import DragScroll from '@/components/v2/DragScroll';
 import V2PdpLifestyle from '@/components/v2/V2PdpLifestyle';
+import V2PdpScenes from '@/components/v2/V2PdpScenes';
 import GroupProductCard from '@/components/v2/GroupProductCard';
 import type { GroupCard } from '@/lib/group-cards';
 import { useGallerySwipe } from '@/lib/use-gallery-swipe';
@@ -561,7 +562,10 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               ) : null;
               const priceBlock = (sellable || !launched) ? (
                 <div className="flex items-baseline gap-3">
-                  <span className="text-xl lg:text-4xl font-extrabold text-brand">{formatPrice(displayPrice, displayCurrency)}</span>
+                  {/* 0 价/未上架 = Coming Soon（2026-11-07 用户定），价格位不渲染 $0.00 */}
+                  <span className="text-xl lg:text-4xl font-extrabold text-brand">
+                    {launched && !isComingSoonAmount(displayPrice) ? formatPrice(displayPrice, displayCurrency) : COMING_SOON_LABEL}
+                  </span>
                   {showCompareAt && (
                     <>
                       <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
@@ -912,6 +916,11 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           />
         ) : null;
       })()}
+
+      {/* 反向场景展示（2026-11-06 用户定试点）：商品出镜的 Shop the Look 场景图 + 热区定位点——
+          本商品锚点高亮进场景详情页，其余锚点可点跳对应商品。
+          数据来自 product-scenes.ts 反向映射；试点范围见 V2PdpScenes 的 PILOT_SLUGS */}
+      <V2PdpScenes handle={handle} />
 
       {relatedProducts.length > 0 && (
         <section className="mt-10 mb-12 lg:mt-16 lg:mb-20">

@@ -62,7 +62,8 @@ function BlogProductCard({ card }: { card: BlogProductRef }) {
         <h4>{card.name}</h4>
         <p className="bl-product-desc">{card.desc}</p>
         <div className="bl-product-row">
-          {price ? <span className="bl-price">{formatUsd(price)}</span> : null}
+          {/* 0 价 = 未上架 → Coming Soon（2026-11-07 用户定），不渲染 $0.00 */}
+          {price && parseFloat(price) > 0 ? <span className="bl-price">{formatUsd(price)}</span> : product ? <span className="bl-price">Coming Soon</span> : null}
           <span className="bl-btn">View Product</span>
         </div>
       </div>

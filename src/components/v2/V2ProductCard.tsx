@@ -1,5 +1,6 @@
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
+import { COMING_SOON_LABEL, isComingSoonAmount } from '@/lib/currency';
 import { productCategoryTag } from '@/data/subcategories';
 import type { MakimooProduct } from '@/data/products';
 
@@ -122,7 +123,8 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
           <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
         </h3>
         <p className="mt-1 text-base sm:text-lg font-semibold text-[#8B5A2B]">
-          {formatPrice(displayPrice, displayCurrency)}
+          {/* 0 价 = 未上架（Coming Soon，2026-11-07 用户定），价格位不渲染 $0.00 */}
+          {isComingSoonAmount(displayPrice) ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
         </p>
       </div>
     </a>

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { MakimooProduct } from '@/data/products';
 import { productCategoryTag } from '@/data/subcategories';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
-import { formatPrice } from '@/lib/currency';
+import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { isFavorite, toggleFavorite } from '@/lib/favorites';
 import { useToast } from '@/components/Toast';
 import QuickViewModal from '@/components/QuickViewModal';
@@ -56,6 +56,8 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
   const isInStock = hasShopifyData ? (product.shopifyAvailable ?? false) : (product.availableForSale === true);
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
+  // 0 价 = 未上架/规划商品 → Coming Soon（2026-11-07 用户定），不显示 $0.00、不用 Out of Stock 文案
+  const comingSoon = isComingSoonAmount(displayPrice);
 
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -92,7 +94,7 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
           )}
           {!isInStock && (
             <div className="absolute inset-0 bg-white/60 flex items-center justify-center">
-              <span className="px-3 py-1 bg-[#333]/80 text-white text-xs font-semibold rounded-full">Out of Stock</span>
+              <span className="px-3 py-1 bg-[#333]/80 text-white text-xs font-semibold rounded-full">{comingSoon ? 'Coming Soon' : 'Out of Stock'}</span>
             </div>
           )}
           {/* 收藏按钮 */}
@@ -142,11 +144,11 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
           <div className="mt-auto">
             {isInStock ? (
               <p className="text-base sm:text-lg font-semibold text-[#8B5A2B]">
-                {formatPrice(displayPrice, displayCurrency)}
+                {comingSoon ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
               </p>
             ) : (
               <p className="text-base sm:text-lg font-semibold text-[#999]">
-                Out of Stock
+                {comingSoon ? COMING_SOON_LABEL : 'Out of Stock'}
               </p>
             )}
           </div>

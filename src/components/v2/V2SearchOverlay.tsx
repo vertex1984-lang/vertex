@@ -25,6 +25,7 @@ import { v2url } from '@/lib/v2paths';
 import { trackEvent } from '@/lib/gtag';
 import type { MakimooProduct } from '@/data/products';
 import { searchAll, matchCategories, familyKeyOf, type CategoryHit } from '@/lib/search-engine';
+import { COMING_SOON_LABEL, isComingSoonAmount } from '@/lib/currency';
 import { HOT_SEARCHES, HISTORY_SHOW_MAX, PERSONALIZED, RECOMMENDED, RANK_BADGES } from '@/data/search-config';
 import {
   getSearchHistory,
@@ -77,6 +78,8 @@ function cardImage(p: MakimooProduct): { url: string; alt: string } | undefined 
 
 function priceOf(p: MakimooProduct): string {
   const amount = p.shopifyPrice || p.priceRange.minVariantPrice.amount;
+  // 0 价 = 未上架 → Coming Soon（2026-11-07 用户定），不渲染 $0.00
+  if (isComingSoonAmount(amount)) return COMING_SOON_LABEL;
   const currency = p.shopifyCurrencyCode || p.priceRange.minVariantPrice.currencyCode;
   return formatPrice(amount, currency);
 }
