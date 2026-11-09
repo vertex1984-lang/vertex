@@ -12,20 +12,37 @@
 import { SCENES, type SceneDef } from '@/data/scenes';
 import { INSPIRATION_SCENES } from '@/data/inspiration-scenes';
 import { LOOKBOOK } from '@/data/lookbook';
-import { getProductByHandle } from '@/data/products';
+import { getProductByHandle, enrichProductsWithShopifyData } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getSceneTag } from '@/data/product-tags';
 import type { LookbookCardItem, LookbookHotspot } from '@/components/v2/V2Lookbook';
 import type { LookbookRoom, LookbookCategory } from '@/data/lookbook';
 
+/** 热点补产品信息（2026-11-09 领导要求恢复悬停预览卡）：scenes.ts 热点自带
+    title/image/price；inspiration-scenes 热点（SceneHotspotRef）只有坐标，
+    服务端经产品库 + Shopify enrich 补齐，供 lookbook 悬停小卡展示 */
+function enrichHotspot(h: LookbookHotspot): LookbookHotspot {
+  if (h.title && h.image) return h;
+  const p = getProductByHandle(h.handle);
+  if (!p) return h;
+  const ep = enrichProductsWithShopifyData([p])[0];
+  return {
+    ...h,
+    title: h.title || ep.title,
+    image: h.image || ep.featuredImage || ep.images?.[0]?.url || '',
+    price: h.price || ep.shopifyPrice || ep.priceRange?.minVariantPrice?.amount || '',
+    currency: h.currency || ep.shopifyCurrencyCode || ep.priceRange?.minVariantPrice?.currencyCode || 'USD',
+  };
+}
+
 /** image 路径 → 该图上的产品热区（坐标为图片百分比 0-100，相对渲染框） */
 export function lookbookHotspotsByImage(): Record<string, LookbookHotspot[]> {
   const map: Record<string, LookbookHotspot[]> = {};
   for (const s of SCENES) {
-    if (s.hotspots?.length) map[s.heroImage] = s.hotspots;
+    if (s.hotspots?.length) map[s.heroImage] = s.hotspots.map(enrichHotspot);
   }
   for (const s of INSPIRATION_SCENES) {
-    if (s.hotspots?.length) map[s.after] = s.hotspots;
+    if (s.hotspots?.length) map[s.after] = s.hotspots.map(enrichHotspot);
   }
   return map;
 }

@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { resolveUrl } from '@/lib/paths';
+import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
+import { formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { v2url } from '@/lib/v2paths';
 import {
   LOOKBOOK,
@@ -11,13 +12,19 @@ import {
   type LookbookCategory,
 } from '@/data/lookbook';
 
-/** 图卡产品热区（image → 热区列表），由服务端页面从 scenes.ts / inspiration-scenes.ts 现算传入 */
+/** 图卡产品热区（image → 热区列表），由服务端页面从 scenes.ts / inspiration-scenes.ts 现算传入。
+    title/image/price/currency（2026-11-09 领导要求恢复悬停预览卡）：scenes.ts 热点自带，
+    inspiration-scenes 热点由 lookbook-hotspots.ts 服务端经产品库补齐 */
 export interface LookbookHotspot {
   handle: string;
   x: number;
   y: number;
   label: string;
   spotId?: string;
+  title?: string;
+  image?: string;
+  price?: string;
+  currency?: string;
 }
 
 /** 卡片条目（服务端合并场景图后的口径；category='' 的场景卡只在 All Categories 下出现） */
@@ -56,6 +63,11 @@ const chipCls = (active: boolean) =>
       ? 'bg-charcoal text-white'
       : 'border border-charcoal/15 text-charcoal/70 hover:border-charcoal/40'
   }`;
+
+/** 卡片小图 URL：Shopify CDN 图走图片服务缩放，本地图直接解析 */
+function dotCardImageUrl(image: string) {
+  return image.includes('cdn.shopify.com') ? shopifyImageUrl(image, 400) : resolveUrl(image);
+}
 
 export default function V2Lookbook({
   preview,
@@ -154,6 +166,37 @@ export default function V2Lookbook({
                   <span className="relative flex h-8 w-8 lg:h-9 lg:w-9 items-center justify-center rounded-full border-2 border-white bg-brand shadow-lg transition group-hover/dot:scale-110">
                     <span className="h-1.5 w-1.5 rounded-full bg-white" />
                   </span>
+                  {/* 桌面悬停产品预览卡（2026-11-09 领导要求恢复：悬停圆点显示产品信息小卡，
+                      点击仍直接跳 PDP；圆点在图上 1/4 以上时向下展开，靠边与圆点对齐防溢出） */}
+                  {h.title && (
+                    <span
+                      className={`pointer-events-none absolute z-20 hidden w-52 lg:group-hover/dot:block ${
+                        h.y < 25 ? 'top-full mt-3' : 'bottom-full mb-3'
+                      } ${h.x <= 25 ? 'left-0' : h.x >= 75 ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}
+                    >
+                      <span className="flex items-center gap-2.5 rounded-xl border border-warm-gray bg-cream/95 p-2.5 text-left shadow-xl backdrop-blur">
+                        <span className="block h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-warm-gray bg-white">
+                          {h.image && (
+                            <img
+                              src={dotCardImageUrl(h.image)}
+                              alt=""
+                              className="h-full w-full object-cover"
+                              loading="lazy"
+                            />
+                          )}
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block text-xs font-semibold leading-snug text-charcoal line-clamp-2">
+                            {h.title}
+                          </span>
+                          <span className="mt-0.5 block text-sm font-bold text-brand">
+                            {isComingSoonAmount(h.price) ? 'Coming Soon' : formatPrice(h.price ?? '0', h.currency || 'USD')}
+                          </span>
+                          <span className="mt-0.5 block text-[10px] text-charcoal/45">Click to shop</span>
+                        </span>
+                      </span>
+                    </span>
+                  )}
                 </button>
               </span>
             ))}
