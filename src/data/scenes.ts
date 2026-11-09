@@ -84,7 +84,7 @@ const PERCALEJAC_OATBEIGE = 'makimoo-queen-duvet-cover-set-3-piece-cotton-feel-c
 const SATEEN_TAUPE = 'makimoo-queen-bedding-set-4-piece-cotton-sateen-taupe-queen';
 const POMPOM_BLUSH = 'makimoo-queen-bedding-set-4-piece-embossed-velvet-pom-pom-blush-queen';
 const BOHO_TEAL = 'makimoo-bohemian-chevron-knit-throw-blanket-with-tassels-50-x-71-in-teal';
-const POMPOM_VINE = 'makimoo-queen-sheet-set-4-piece-embossed-velvet-pom-pom-vine-queen';
+const POMPOM_DAMASK = 'makimoo-queen-sheet-set-4-piece-embossed-velvet-pom-pom-damask-queen';
 const SATEEN_CREAM = 'makimoo-queen-duvet-cover-set-3-piece-cotton-sateen-cream-queen';
 const SATEEN_TERRACOTTA = 'makimoo-queen-bedding-set-4-piece-cotton-sateen-terracotta-queen';
 const TOWEL_GREY_BATH = 'long-staple-cotton-towel-lightgrey-40x70-mk-towel-lsc-lightgrey-40x70';
@@ -134,7 +134,7 @@ export const SCENES: SceneDef[] = [
     heroAlt: 'Golden hour bedroom with olive vine damask bedding with brown pom-pom trim, olive velvet pillows, a taupe knit throw and a cream fur rug',
     addedAt: '2026-11-02T12:10:00Z',
     hotspots: [
-      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 68, y: 74, label: 'The bed' },
+      { spotId: 'vine-bed', handle: POMPOM_DAMASK, x: 68, y: 74, label: 'The bed' },
       { spotId: 'khaki-throw', handle: KNIT_THROW_KHAKI, x: 65, y: 62, label: 'Across the bed' },
       { spotId: 'fur-rug', handle: RABBIT_RUG_CREAM, x: 20, y: 85, label: 'On the floor' },
     ],
@@ -552,7 +552,7 @@ export const SCENES: SceneDef[] = [
     heroAlt: 'English cottage bedroom with cream vine jacquard bedding, sage towels on a ladder and a cream bobble knit throw',
     addedAt: '2026-11-01T14:09:00Z',
     hotspots: [
-      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 44, y: 68, label: 'The bed' },
+      { spotId: 'vine-bed', handle: POMPOM_DAMASK, x: 44, y: 68, label: 'The bed' },
       { spotId: 'bobble-throw', handle: KNIT_THROW_CREAM, x: 67, y: 64, label: 'Across the bed' },
       { spotId: 'sage-towel', handle: TOWEL_SAGE_BATH, x: 80, y: 28, label: 'Sage towels' },
     ],
@@ -660,7 +660,7 @@ export const SCENES: SceneDef[] = [
     heroAlt: 'French chateau bedroom with olive velvet and cream jacquard pom-pom bedding, an oat knit throw and a cream shag rug',
     addedAt: '2026-10-29T13:10:00Z',
     hotspots: [
-      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 48, y: 55, label: 'The bed' },
+      { spotId: 'vine-bed', handle: POMPOM_DAMASK, x: 48, y: 55, label: 'The bed' },
       { spotId: 'oat-throw', handle: CHUNKY_THROW_OAT, x: 40, y: 69, label: 'Across the bed' },
       { spotId: 'shag-rug', handle: RABBIT_RUG_CREAM, x: 70, y: 88, label: 'On the floor' },
     ],
@@ -688,7 +688,7 @@ export const SCENES: SceneDef[] = [
     heroAlt: 'Retro bedroom with olive velvet and cream jacquard pom-pom bedding and an oat knit throw',
     addedAt: '2026-10-29T13:08:00Z',
     hotspots: [
-      { spotId: 'vine-bed', handle: POMPOM_VINE, x: 40, y: 52, label: 'The bed' },
+      { spotId: 'vine-bed', handle: POMPOM_DAMASK, x: 40, y: 52, label: 'The bed' },
       { spotId: 'oat-throw', handle: CHUNKY_THROW_OAT, x: 42, y: 66, label: 'Across the bed' },
     ],
   },
