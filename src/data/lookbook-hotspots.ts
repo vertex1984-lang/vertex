@@ -35,14 +35,17 @@ function enrichHotspot(h: LookbookHotspot): LookbookHotspot {
   };
 }
 
-/** image 路径 → 该图上的产品热区（坐标为图片百分比 0-100，相对渲染框） */
+/** image 路径 → 该图上的产品热区（坐标为图片百分比 0-100，相对渲染框）。
+    2026-11-09：过滤产品库中不存在 handle 的死点（无落地页 = 无悬浮卡 + 点击 404，
+    与 V2PdpScenes 的 no-dead-dots 策略一致）；产品上架后自动恢复 */
 export function lookbookHotspotsByImage(): Record<string, LookbookHotspot[]> {
   const map: Record<string, LookbookHotspot[]> = {};
+  const keep = (h: LookbookHotspot) => !!getProductByHandle(h.handle);
   for (const s of SCENES) {
-    if (s.hotspots?.length) map[s.heroImage] = s.hotspots.map(enrichHotspot);
+    if (s.hotspots?.length) map[s.heroImage] = s.hotspots.filter(keep).map(enrichHotspot);
   }
   for (const s of INSPIRATION_SCENES) {
-    if (s.hotspots?.length) map[s.after] = s.hotspots.map(enrichHotspot);
+    if (s.hotspots?.length) map[s.after] = s.hotspots.filter(keep).map(enrichHotspot);
   }
   return map;
 }
