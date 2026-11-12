@@ -1,3 +1,18 @@
+// 运营后台新增商品合并：admin-products.json 由 makimoo-admin 发布时写入（空数组 = 无影响）。
+// 命名空间导入：webpack（Next 构建）与纯 transpile 加载器两种环境下都直接拿到 JSON 本体。
+// 兼容两种加载环境：Next/webpack（JSON 有 default 导出）与 build 脚本 CJS 直载（module.exports 即 JSON 本体）。
+import * as adminProductsNs from './admin-products.json';
+
+type AdminProductsFile = { products?: MakimooProduct[] };
+const adminProductsFile: AdminProductsFile =
+  (adminProductsNs as unknown as { default?: AdminProductsFile }).default ??
+  (adminProductsNs as unknown as AdminProductsFile);
+const adminProducts = (adminProductsFile.products ?? []).map((pp) => ({
+  ...pp,
+  // 上货向导允许先不发图（Coming Soon 阶段）：补空占位图，保证下游 images[0].url 取值不炸
+  images: pp.images && pp.images.length > 0 ? pp.images : [{ url: '', altText: pp.title, width: 0, height: 0 }],
+}));
+
 export interface MakimooProduct {
   id: string;
   asin: string;
@@ -6888,7 +6903,7 @@ import { classifyProduct } from './subcategories';
 import { getVariantReviewStats } from './product-reviews';
 
 /** 站点基础产品 + 素材库新增产品 */
-export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS, ...PLANNED_PRODUCTS, ...PLANNED_BLANKET_PRODUCTS];
+export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS, ...PLANNED_PRODUCTS, ...PLANNED_BLANKET_PRODUCTS, ...adminProducts];
 
 /** 应用素材库覆盖（标题/五点描述/图片），返回原产品表示该 ASIN 无素材数据 */
 function applyMaterialsData(product: MakimooProduct): MakimooProduct {

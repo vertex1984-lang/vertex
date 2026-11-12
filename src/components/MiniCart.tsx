@@ -15,6 +15,8 @@ import {
 } from '@/lib/cart';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { formatPrice } from '@/lib/currency';
+import { trackBeginCheckout, GaItem } from '@/lib/gtag';
+import { PreorderLineNote } from '@/components/v2/PreorderBox';
 
 interface ShopifyCartLine {
   id: string;
@@ -240,6 +242,8 @@ export default function MiniCart() {
                     <p className="text-sm text-[#8B5A2B] font-semibold mt-1">
                       {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
                     </p>
+                    {/* 预售商品交期提示（UO 式：结账前二次可见） */}
+                    <PreorderLineNote handle={line.merchandise.product.handle} className="mt-0.5 text-[11px] font-semibold text-[#8B5A2B]" />
                   </div>
                   <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
                     <button
@@ -286,6 +290,7 @@ export default function MiniCart() {
                       <h3 className="text-sm font-medium text-[#333] hover:text-[#8B5A2B] transition line-clamp-2">{item.title}</h3>
                     </a>
                     <p className="text-sm text-[#8B5A2B] font-semibold mt-1">{formatPrice(item.price, 'USD')}</p>
+                    <PreorderLineNote handle={item.handle} className="mt-0.5 text-[11px] font-semibold text-[#8B5A2B]" />
                   </div>
                   <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
                     <button
@@ -402,7 +407,17 @@ export default function MiniCart() {
                 </a>
                 {shopifyCart?.checkoutUrl && (
                   <button
-                    onClick={() => window.open(shopifyCart.checkoutUrl, '_blank')}
+                    onClick={() => {
+                      // GA4: begin_checkout（MiniCart 进结算，跳 Shopify checkoutUrl 前的跨域交接点）
+                      const items: GaItem[] = shopifyCart.lines.edges.map(({ node: line }) => ({
+                        item_id: line.merchandise.product.handle,
+                        item_name: line.merchandise.product.title,
+                        price: parseFloat(line.merchandise.price.amount),
+                        quantity: line.quantity,
+                      }));
+                      trackBeginCheckout(parseFloat(shopifyCart.cost.subtotalAmount.amount) || 0, items);
+                      window.open(shopifyCart.checkoutUrl, '_blank');
+                    }}
                     className="flex-1 px-4 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
                     style={{ backgroundColor: '#8B5A2B' }}
                   >

@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import V2PageHeader from '@/components/v2/V2PageHeader';
 import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, updateShopifyCartLine, removeShopifyCartLine, LocalCartItem } from '@/lib/cart';
 import { formatPrice, STORE_CURRENCY } from '@/lib/currency';
-import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
+import { trackEvent, trackViewCart, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { v2url } from '@/lib/v2paths';
+import { PreorderLineNote } from '@/components/v2/PreorderBox';
 
 interface ShopifyCartLine {
   id: string;
@@ -137,6 +138,28 @@ export default function V2CartPage() {
   const hasItems = localItems.length > 0 || (shopifyCart?.lines?.edges?.length ?? 0) > 0;
   const hasShopifyLines = (shopifyCart?.lines?.edges?.length ?? 0) > 0;
 
+  // GA4: view_cart（购物车加载完成且非空时一次）
+  const viewCartFired = useRef(false);
+  useEffect(() => {
+    if (loading || !loaded || viewCartFired.current || !hasItems) return;
+    viewCartFired.current = true;
+    const items: GaItem[] = [
+      ...(shopifyCart?.lines.edges.map(({ node: line }) => ({
+        item_id: line.merchandise.product.handle,
+        item_name: line.merchandise.product.title,
+        price: parseFloat(line.merchandise.price.amount),
+        quantity: line.quantity,
+      })) ?? []),
+      ...localItems.map((item) => ({
+        item_id: item.handle,
+        item_name: item.title,
+        price: parseFloat(item.price),
+        quantity: item.quantity,
+      })),
+    ];
+    trackViewCart(totalSubtotal, items);
+  }, [loading, loaded, hasItems, localItems, shopifyCart, totalSubtotal]);
+
   // 数量步进器（Shopify 行带更新中禁用态）
   const stepper = (qty: number, onChange: (qty: number) => void, disabled = false) => (
     <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white">
@@ -260,6 +283,8 @@ export default function V2CartPage() {
                             <p className="text-sm text-brand font-semibold mt-1">
                               {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
                             </p>
+                            {/* 预售商品交期提示（UO 式购物袋二次展示交期） */}
+                            <PreorderLineNote handle={line.merchandise.product.handle} className="mt-1 text-[11px] font-semibold text-brand" />
                           </div>
                           {stepper(
                             line.quantity,
@@ -303,6 +328,8 @@ export default function V2CartPage() {
                             <p className="text-sm text-brand font-semibold mt-1">
                               {formatPrice(item.price, STORE_CURRENCY)}
                             </p>
+                            {/* 预售商品交期提示（本地行兜底，预售 SKU 均走 Shopify 行，此处为防御性覆盖） */}
+                            <PreorderLineNote handle={item.handle} className="mt-1 text-[11px] font-semibold text-brand" />
                           </div>
                           {stepper(item.quantity, (qty) => updateLocalQuantity(item.id, qty))}
                           {removeBtn(() => removeLocal(item.id))}

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
+import CookieConsent from "@/components/CookieConsent";
 import ToastProvider from "@/components/Toast";
 
 export const metadata: Metadata = {
@@ -78,8 +79,10 @@ export default function RootLayout({
       <body className="antialiased" style={{ backgroundColor: '#F8F5F0' }}>
         <ToastProvider>
           {children}
-          {/* GA4 仅在用户同意 Cookie 后由 AnalyticsLoader 加载（严格模式） */}
+          {/* GA4：NEXT_PUBLIC_GA_ID 有值时经 AnalyticsLoader 加载（Consent Mode v2 默认 denied）；
+              CookieConsent 横幅收集选择后 consent update */}
           <AnalyticsLoader />
+          <CookieConsent />
         </ToastProvider>
       </body>
     </html>

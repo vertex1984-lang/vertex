@@ -25,6 +25,8 @@ import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/s
 import { beddingPdpHeading, beddingUsSizeLabel } from '@/data/bedding-families';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import PreorderBox from '@/components/v2/PreorderBox';
+import { preorderOf } from '@/data/preorder';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import V2PdpBeforeAfterDuo from '@/components/v2/V2PdpBeforeAfterDuo';
@@ -227,10 +229,17 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 统一显示 Coming Soon、不出 Add to Cart（结账链路只有 Shopify 行，站内本地购物车无法结账）
   const launched = hasShopifyData === true;
   const sellable = launched && (product.shopifyAvailable ?? false);
-  const availabilityLabel = sellable ? 'In Stock' : launched ? 'Out of Stock' : 'Coming Soon';
+  // 预售商品（2026-11-10 预售系统第一批）：handle 命中 preorder 配置即按预售展示；
+  // 结算价仍走 Shopify 现价（= 预售专享价，展示与结算一致）
+  const preorder = preorderOf(product.handle);
+  const availabilityLabel = sellable
+    ? preorder ? 'Pre-Order' : 'In Stock'
+    : launched ? 'Out of Stock' : 'Coming Soon';
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-  const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);
+  // 划线价：预售商品取 preorder 配置原价，其余用商品自带 compareAtPrice
+  const compareAtPrice = preorder?.regularPrice ?? product.compareAtPrice;
+  const showCompareAt = compareAtPrice && parseFloat(compareAtPrice) > parseFloat(displayPrice);
 
   // 标题：enrich 短标题（新标题公式已写入 short-titles）；
   // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）；
@@ -568,9 +577,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   </span>
                   {showCompareAt && (
                     <>
-                      <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
+                      <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(compareAtPrice!, displayCurrency)}</span>
                       <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
-                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice!)) * 100)}%
+                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(compareAtPrice!)) * 100)}%
                       </span>
                     </>
                   )}
@@ -751,7 +760,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                     disabled={addingToCart}
                     className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
                   >
-                    {addingToCart ? 'Adding...' : 'Add to Cart'}
+                    {addingToCart ? 'Adding...' : preorder ? 'Pre-Order Now' : 'Add to Cart'}
                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
                     </svg>
@@ -783,6 +792,22 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 )}
               </div>
             )}
+            {/* 预售模块（2026-11-10 第一批）：倒计时 + 到货窗口 + 取消政策 + mini FAQ */}
+            {preorder && sellable && (
+              <div className="mb-4">
+                <PreorderBox config={preorder} />
+                {/* 查单入口（批次 1 免登录查单）：预售模块下方小链接 → /orders/track/ */}
+                <a
+                  href={v2url('/orders/track/')}
+                  className="mt-2.5 inline-flex items-center gap-1 text-xs font-medium text-charcoal-light underline underline-offset-2 transition hover:text-brand"
+                >
+                  Track your order
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </a>
+              </div>
+            )}
             {/* 未上架（无 Shopify 映射）只展示不售卖：Coming Soon 禁用态 + 说明 */}
             {!sellable && (
               <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-2">
@@ -804,7 +829,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 信任信息由下方滚动信任条承担）；预计送达保留（送达日期单独加粗一行） */}
             {sellable && (
               <p className="text-sm font-semibold text-charcoal mb-6">
-                <EstimatedDelivery fallback="Ships within 1-2 business days" />
+                {preorder ? (
+                  /* 预售商品交期为固定承诺窗口（配置驱动），不走 5-10 工作日动态估算 */
+                  `Order today, arrives ${preorder.arrivesLabel}`
+                ) : (
+                  <EstimatedDelivery fallback="Ships within 1-2 business days" />
+                )}
               </p>
             )}
 

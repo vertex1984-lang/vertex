@@ -6,6 +6,7 @@ import { productCategoryTag } from '@/data/subcategories';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { isFavorite, toggleFavorite } from '@/lib/favorites';
+import { trackAddToWishlist } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 import QuickViewModal from '@/components/QuickViewModal';
 
@@ -63,6 +64,16 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
     e.preventDefault();
     e.stopPropagation();
     const nowFav = toggleFavorite(product.id);
+    if (nowFav) {
+      // GA4: add_to_wishlist（收藏爱心"加入"动作）
+      trackAddToWishlist({
+        item_id: product.handle,
+        item_name: product.title,
+        item_category: product.productType,
+        price: parseFloat(displayPrice) || 0,
+        quantity: 1,
+      });
+    }
     toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
   };
 

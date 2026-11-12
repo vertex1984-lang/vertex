@@ -1,0 +1,182 @@
+{
+  "_comment": "由 makimoo-admin（运营后台）发布时写入的新增商品与变体组。手工勿改：下次发布会整体重写。结构见 makimoo-admin/README.md。",
+  "generatedAt": "2026-11-11T06:54:04.252Z",
+  "products": [
+    {
+      "id": "makimoo-BAMBOO-COOLING-SHEET-SET-SAGE-QUEEN",
+      "asin": "BAMBOO-COOLING-SHEET-SET-SAGE-QUEEN",
+      "title": "Makimoo Bamboo Cooling Sheet Set Queen (Sage)",
+      "handle": "makimoo-bamboo-cooling-sheet-set-sage-queen",
+      "description": "Silky bamboo-derived viscose sheet set that feels cool to the touch.\nDeep pockets fit mattresses up to 16 inches.\nBreathable weave keeps hot sleepers comfortable all night.",
+      "descriptionHtml": "<p>Silky bamboo-derived viscose sheet set that feels cool to the touch.</p><p>Deep pockets fit mattresses up to 16 inches.</p><p>Breathable weave keeps hot sleepers comfortable all night.</p>",
+      "productType": "Bedding",
+      "tags": [
+        "Bedding",
+        "bamboo",
+        "cooling"
+      ],
+      "availableForSale": false,
+      "images": [],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        }
+      },
+      "variants": [
+        {
+          "id": "variant-BAMBOO-COOLING-SHEET-SET-SAGE-QUEEN",
+          "title": "Default Title",
+          "price": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+          },
+          "availableForSale": false,
+          "selectedOptions": []
+        }
+      ],
+      "amazonUrl": "",
+      "subcategory": "Sheet Sets"
+    },
+    {
+      "id": "makimoo-BAMBOO-COOLING-SHEET-SET-SAGE-KING",
+      "asin": "BAMBOO-COOLING-SHEET-SET-SAGE-KING",
+      "title": "Makimoo Bamboo Cooling Sheet Set King (Sage)",
+      "handle": "makimoo-bamboo-cooling-sheet-set-sage-king",
+      "description": "Silky bamboo-derived viscose sheet set that feels cool to the touch.\nDeep pockets fit mattresses up to 16 inches.\nBreathable weave keeps hot sleepers comfortable all night.",
+      "descriptionHtml": "<p>Silky bamboo-derived viscose sheet set that feels cool to the touch.</p><p>Deep pockets fit mattresses up to 16 inches.</p><p>Breathable weave keeps hot sleepers comfortable all night.</p>",
+      "productType": "Bedding",
+      "tags": [
+        "Bedding",
+        "bamboo",
+        "cooling"
+      ],
+      "availableForSale": false,
+      "images": [],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        }
+      },
+      "variants": [
+        {
+          "id": "variant-BAMBOO-COOLING-SHEET-SET-SAGE-KING",
+          "title": "Default Title",
+          "price": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+          },
+          "availableForSale": false,
+          "selectedOptions": []
+        }
+      ],
+      "amazonUrl": "",
+      "subcategory": "Sheet Sets"
+    },
+    {
+      "id": "makimoo-BAMBOO-COOLING-SHEET-SET-IVORY-QUEEN",
+      "asin": "BAMBOO-COOLING-SHEET-SET-IVORY-QUEEN",
+      "title": "Makimoo Bamboo Cooling Sheet Set Queen (Ivory)",
+      "handle": "makimoo-bamboo-cooling-sheet-set-ivory-queen",
+      "description": "Silky bamboo-derived viscose sheet set that feels cool to the touch.\nDeep pockets fit mattresses up to 16 inches.\nBreathable weave keeps hot sleepers comfortable all night.",
+      "descriptionHtml": "<p>Silky bamboo-derived viscose sheet set that feels cool to the touch.</p><p>Deep pockets fit mattresses up to 16 inches.</p><p>Breathable weave keeps hot sleepers comfortable all night.</p>",
+      "productType": "Bedding",
+      "tags": [
+        "Bedding",
+        "bamboo",
+        "cooling"
+      ],
+      "availableForSale": false,
+      "images": [],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        }
+      },
+      "variants": [
+        {
+          "id": "variant-BAMBOO-COOLING-SHEET-SET-IVORY-QUEEN",
+          "title": "Default Title",
+          "price": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+          },
+          "availableForSale": false,
+          "selectedOptions": []
+        }
+      ],
+      "amazonUrl": "",
+      "subcategory": "Sheet Sets"
+    },
+    {
+      "id": "makimoo-BAMBOO-COOLING-SHEET-SET-IVORY-KING",
+      "asin": "BAMBOO-COOLING-SHEET-SET-IVORY-KING",
+      "title": "Makimoo Bamboo Cooling Sheet Set King (Ivory)",
+      "handle": "makimoo-bamboo-cooling-sheet-set-ivory-king",
+      "description": "Silky bamboo-derived viscose sheet set that feels cool to the touch.\nDeep pockets fit mattresses up to 16 inches.\nBreathable weave keeps hot sleepers comfortable all night.",
+      "descriptionHtml": "<p>Silky bamboo-derived viscose sheet set that feels cool to the touch.</p><p>Deep pockets fit mattresses up to 16 inches.</p><p>Breathable weave keeps hot sleepers comfortable all night.</p>",
+      "productType": "Bedding",
+      "tags": [
+        "Bedding",
+        "bamboo",
+        "cooling"
+      ],
+      "availableForSale": false,
+      "images": [],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "0.00",
+          "currencyCode": "USD"
+        }
+      },
+      "variants": [
+        {
+          "id": "variant-BAMBOO-COOLING-SHEET-SET-IVORY-KING",
+          "title": "Default Title",
+          "price": {
+            "amount": "0.00",
+            "currencyCode": "USD"
+          },
+          "availableForSale": false,
+          "selectedOptions": []
+        }
+      ],
+      "amazonUrl": "",
+      "subcategory": "Sheet Sets"
+    }
+  ],
+  "variantGroups": [
+    {
+      "id": "bamboo-cooling-sheet-set",
+      "optionName": "Color",
+      "members": [
+        {
+          "asin": "BAMBOO-COOLING-SHEET-SET-SAGE-QUEEN",
+          "handle": "makimoo-bamboo-cooling-sheet-set-sage-queen",
+          "color": "Sage",
+          "size": "Queen"
+        },
+        {
+          "asin": "BAMBOO-COOLING-SHEET-SET-SAGE-KING",
+          "handle": "makimoo-bamboo-cooling-sheet-set-sage-king",
+          "color": "Sage",
+          "size": "King"
+        },
+        {
+          "asin": "BAMBOO-COOLING-SHEET-SET-IVORY-QUEEN",
+          "handle": "makimoo-bamboo-cooling-sheet-set-ivory-queen",
+          "color": "Ivory",
+          "size": "Queen"
+        },
+        {
+          "asin": "BAMBOO-COOLING-SHEET-SET-IVORY-KING",
+          "handle": "makimoo-bamboo-cooling-sheet-set-ivory-king",
+          "color": "Ivory",
+          "size": "King"
+        }
+      ]
+    }
+  ]
+}

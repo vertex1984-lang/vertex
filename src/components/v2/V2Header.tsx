@@ -6,6 +6,7 @@ import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
 import V2SearchOverlay from './V2SearchOverlay';
+import V2PromotionsBanner from './V2PromotionsBanner';
 import { fabricByMaterial, fabricDisplayName, BEDDING_FABRIC_SHORT_DESCS } from '@/data/bedding-fabrics';
 import { PILLOW_TYPES, PILLOW_MATERIALS } from '@/data/pillows-taxonomy';
 import { getSubcategoriesOf } from '@/data/subcategories';
@@ -453,11 +454,9 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
       {/* 刘海安全条（viewport-fit=cover）：网站底色涂满刘海/状态栏区域，
           高度=安全区上内边距；无刘海设备上 env 取 0，不产生任何高度 */}
       <div aria-hidden="true" className="w-full bg-off-white" style={{ height: 'env(safe-area-inset-top, 0px)' }} />
-      {/* Announcement Bar：全端展示同一文案（移动端字号略缩 + nowrap 保证单行不折行）；
+      {/* Announcement Bar：2026-11-12 起为促销/预售横幅（回退链：在线促销 → 预售活动 → 免邮文案，见 V2PromotionsBanner）；
           static 文档流置顶，滚动随页面自然滚走（parachute 同构） */}
-      <div className="bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2">
-        <span className="whitespace-nowrap">Free Shipping on Orders Over $49 | 30-Day Easy Returns</span>
-      </div>
+      <V2PromotionsBanner />
       <div
         ref={headerRef}
         className="sticky z-50 w-full"

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { v2url } from '@/lib/v2paths';
+import { trackShopTheLookClick } from '@/lib/gtag';
 
 /** 热区产品点卡片数据（由页面用 getProductByHandle enrich 后传入） */
 export interface BeforeAfterHotspot {
@@ -195,7 +196,17 @@ export function HotspotCardLayer({
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           onPointerDown={(e) => e.stopPropagation()}
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => {
+            e.stopPropagation();
+            // GA4: shop_the_look_click（场景热区产品卡点击——站点独有行为资产；
+            // lookbook / PDP 场景图 / 种草图共用本组件，一处上报全站生效）
+            trackShopTheLookClick({
+              item_id: h.handle,
+              item_name: h.title,
+              price: parseFloat(h.price) || 0,
+              quantity: 1,
+            });
+          }}
           className={posClass}
           style={posStyle}
         >
