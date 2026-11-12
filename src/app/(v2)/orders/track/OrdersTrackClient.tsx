@@ -37,6 +37,10 @@ export default function OrdersTrackClient() {
   const lastLookup = useRef(0);
 
   useEffect(() => {
+    // ?order= 预填（批次 2：账户订单详情 "Track this order" 入口带订单号跳转）
+    const sp = new URLSearchParams(window.location.search);
+    const pre = sp.get('order');
+    if (pre) setOrderNo(pre);
     lastLookup.current = 0;
   }, []);
 
