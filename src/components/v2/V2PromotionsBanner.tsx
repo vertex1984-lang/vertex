@@ -68,12 +68,19 @@ export default function PromotionsBanner() {
     return () => clearInterval(t);
   }, []);
 
-  // 促销帧文案（倒计时目标 = 促销 end）
+  // 促销帧文案（倒计时目标 = 促销 end）。
+  // P2 修复：bannerLine 常已自带折扣词（如 "Flash Sale · 30% Off Sitewide"），
+  // 拼接 discountLabel 前先做包含判断，避免 "…· 30% Off Sitewide · 30% Off" 重复
+  const promoLine = promo
+    ? promo.bannerLine.toLowerCase().includes(promo.discountLabel.toLowerCase())
+      ? promo.bannerLine
+      : `${promo.bannerLine} · ${promo.discountLabel}`
+    : null;
   const promoText = promo
     ? left === null
-      ? `${promo.bannerLine} · ${promo.discountLabel} · Ends ${staticEndLabel(promo.end)}`
+      ? `${promoLine} · Ends ${staticEndLabel(promo.end)}`
       : left
-        ? `${promo.bannerLine} · ${promo.discountLabel} · Ends in ${left}`
+        ? `${promoLine} · Ends in ${left}`
         : null // 促销已到期 → 回退预售链
     : null;
 

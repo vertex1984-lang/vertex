@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { resolveUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { getLocalCart, getShopifyCart, openMiniCart } from '@/lib/cart';
+import { getCustomerToken } from '@/lib/customer';
 import V2SearchOverlay from './V2SearchOverlay';
 import V2PromotionsBanner from './V2PromotionsBanner';
 import { fabricByMaterial, fabricDisplayName, BEDDING_FABRIC_SHORT_DESCS } from '@/data/bedding-fabrics';
@@ -302,6 +303,14 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
     if (!mobileOpen) setExpandedCat('');
   }, [mobileOpen]);
 
+  // 账户入口（批次 2）：SSG 首帧默认未登录（/login/），mount 后按 localStorage
+  // token 切登录态（/account/）。站内整页跳转，无跨页状态残留问题
+  const [signedIn, setSignedIn] = useState(false);
+  useEffect(() => {
+    setSignedIn(!!getCustomerToken());
+  }, []);
+  const accountHref = signedIn ? v2url('/account/') : v2url('/login/');
+
   // iOS 26 Safari 首屏染色对策（2026-10-10 用户实测：刚打开时刘海区橙色，
   // 滚动过一次后/回顶后均正常）——Safari 26 在"页面从未滚动过"时不把页面内容
   // 合成到刘海/状态栏区，而是用采样色（公告条橙）涂染色层；只要滚动过一次就
@@ -548,6 +557,18 @@ export default function V2Header({ catStyles = {} }: V2HeaderProps) {
                 <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16" y2="16"/>
               </svg>
             </button>
+
+            {/* 账户入口（批次 2 买家账号 MVP）：登录态→/account/，未登录→/login/。
+                站内为整页跳转（原生 <a>），mount 读一次 localStorage token 即可，无需监听 */}
+            <a
+              href={accountHref}
+              className={`w-9 h-9 lg:w-11 lg:h-11 rounded-full transition flex items-center justify-center ${iconHover}`}
+              aria-label={signedIn ? 'My account' : 'Sign in'}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </a>
 
             {/* 收藏入口已于 2026-10-12 移除（用户定：导航栏不再有心愿单入口）；/favorites/ 页面与 lib/favorites 保留磁盘备用 */}
 
