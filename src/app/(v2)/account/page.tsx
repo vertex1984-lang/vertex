@@ -1,14 +1,42 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { v2url } from '@/lib/v2paths';
 import { useCustomer } from '@/lib/use-customer';
+import { orderEmailHash, type TrackedOrder } from '@/lib/track';
+import AccountPreorderCard from '@/components/v2/AccountPreorderCard';
 import { OrderRow } from '@/components/v2/AccountOrderBits';
 
 /**
- * /account 概览（批次 2）：欢迎语 + 最近订单卡 + 闸门 A 待接入占位。
+ * /account 概览（批次 2 + 批次 3 任务 4）：欢迎语 + 预售进度卡（登录邮箱哈希命中
+ * order-status.json 的订单才渲染，无命中零噪音）+ 最近订单卡 + 闸门 A 待接入占位。
  */
 export default function AccountOverviewPage() {
   const { profile, loading, error } = useCustomer();
+  // 预售进度（任务 4）：null = 匹配中（不渲染区块）
+  const [preorders, setPreorders] = useState<TrackedOrder[] | null>(null);
+
+  useEffect(() => {
+    if (!profile) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch('/data/order-status.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(String(res.status));
+        const file = (await res.json()) as { orders?: TrackedOrder[] };
+        // 逐单比对：sha256(email:orderNo:SALT) 前 16 位 == emailHash（无邮箱明文）
+        const hits: TrackedOrder[] = [];
+        for (const o of file.orders ?? []) {
+          const h = await orderEmailHash(profile.email, o.orderNo);
+          if (h === o.emailHash) hits.push(o);
+        }
+        if (!cancelled) setPreorders(hits.slice(0, 3));
+      } catch {
+        if (!cancelled) setPreorders([]);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [profile]);
 
   if (loading || !profile) {
     return (
@@ -33,6 +61,16 @@ export default function AccountOverviewPage() {
         </h2>
         <p className="mt-1 text-sm text-charcoal-light">{profile.email}</p>
       </section>
+
+      {/* 预售进度（批次 3 任务 4）：命中才渲染，无命中零噪音 */}
+      {preorders !== null && preorders.length > 0 && (
+        <section>
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-charcoal">Your pre-orders</h3>
+          <div className="space-y-2.5">
+            {preorders.map((o) => <AccountPreorderCard key={o.orderNo} order={o} />)}
+          </div>
+        </section>
+      )}
 
       {/* 最近订单 */}
       <section>
@@ -66,7 +104,7 @@ export default function AccountOverviewPage() {
         </a>
       </section>
 
-      {/* 闸门 A 待接入占位（真实取消/退换货等 Admin API 能力到位后启用） */}
+      {/* 闸门 A 待接入占位（真实取消/退换货等 Admin API 能力到位后启用；订单自动回流同依赖，TODO） */}
       <section>
         <div className="rounded-2xl border border-dashed border-warm-gray bg-cream/60 p-4 opacity-80">
           <p className="text-sm font-semibold text-charcoal-light">Returns & self-service cancellation</p>
