@@ -56,7 +56,11 @@ export default function LoginForm() {
       const me = await customerGet(r.data.accessToken);
       if (me.ok) void syncFavoritesWithCloud(me.data.id);
     } catch { /* 合并失败不阻断登录 */ }
-    window.location.href = nextPath;
+    // 批次 3 任务 1.2（验收 P2-2「连续两次登录弹 expired」）：loginCustomer 内
+    // localStorage.setItem 已同步完成，再延一帧跳转，确保写入对下一页的守卫可见
+    requestAnimationFrame(() => {
+      window.location.href = nextPath;
+    });
   }
 
   async function sendRecover() {
