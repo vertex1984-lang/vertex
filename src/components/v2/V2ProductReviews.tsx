@@ -1,4 +1,5 @@
 import { getVariantReviewStats } from '@/data/product-reviews';
+import { getAdminReviews, mergeReviewStats } from '@/data/reviews';
 import V2ReviewsList from './V2ReviewsList';
 import ReviewCta from './ReviewCta';
 import StarDisplay from './StarDisplay';
@@ -12,13 +13,16 @@ import StarDisplay from './StarDisplay';
  * 数据（2026-10-10 领导定，去统一化）：全部走 getVariantReviewStats 变体评价计划——
  * B0 家族 = 真实总数 + 卡片实算；AI 家族 = 每变体确定性 N∈[100,2000]、均分 4.1-4.3、
  * 约 1/3 家族分布含 1-2★ 段；低星家族额外展示 1★/2★ 补充卡（2026-10-13 领导定），与卡片区解耦。
+ * 批次 3 评价闭环（2026-11-12）：admin 审核发布的真实买家评价（reviews.json，按 handle）
+ * 置顶合并进列表并计入均分/分布（真实评价优先，无则保持现状）。
  * "Based on N customer reviews" 合规文案唯一出处 = 本区（购买区不再重复）。
- * 合规红线：不出现任何验证声明 / Amazon 字样。数据来自 src/data/product-reviews.ts；
+ * 合规红线：不出现任何验证声明 / Amazon 字样。
  * 无数据时整体不渲染。锚点 id="reviews"（老 PDP 气泡锚跳用；
  * 新 PDP 锚跳 page.tsx 外层包裹的 id="pdp2-reviews"）。
  */
-export default function V2ProductReviews({ asin, productTitle }: { asin: string; productTitle?: string }) {
-  const stats = getVariantReviewStats(asin);
+export default function V2ProductReviews({ asin, handle, productTitle }: { asin: string; handle?: string; productTitle?: string }) {
+  const admin = getAdminReviews(handle);
+  const stats = mergeReviewStats(getVariantReviewStats(asin), admin);
   if (!stats || stats.reviews.length === 0) return null;
 
   return (
@@ -56,7 +60,7 @@ export default function V2ProductReviews({ asin, productTitle }: { asin: string;
             {/* CTA：桌面端紧随分布条靠左对齐（不吸附右端，2026-10-12 用户定）；
                 移动端自然堆叠并与上方评分拉开间距（mt-4） */}
             <div className="w-full mt-4 lg:mt-0 lg:w-auto">
-              <ReviewCta wide productTitle={productTitle} />
+              <ReviewCta wide productTitle={productTitle} handle={handle} />
             </div>
           </div>
         </div>

@@ -1,0 +1,14 @@
+{
+  "_comment": "由 makimoo-admin（运营后台）评价审核发布时写入的已通过（approved）买家评价。手工勿改：下次发布会整体重写。只含 approved，拒绝的不进此文件。date 为发布时生成的展示口径（如 November 2026）。",
+  "generatedAt": "2026-11-13T06:20:02.791Z",
+  "reviews": [
+    {
+      "handle": "4-piece-floral-bedding-set-queen-size-soft-microfiber-duvet-bedset4-sage-queen",
+      "author": "QA Tester",
+      "title": "Great floral set — worth the wait",
+      "text": "Soft microfiber, perfect fit for our queen bed. The sage green pattern looks even better in person. Pre-order was easy and tracking worked.",
+      "rating": 5,
+      "date": "November 2026"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import ReviewFormModal from './ReviewFormModal';
  * 2026-10-10 用户定：点击打开写评价弹层（ReviewFormModal，游客可填）；
  * 提交登录门槛在弹层内占位（登录方案待定后原位接入）。
  */
-export default function ReviewCta({ wide = false, productTitle }: { wide?: boolean; productTitle?: string }) {
+export default function ReviewCta({ wide = false, productTitle, handle }: { wide?: boolean; productTitle?: string; handle?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ export default function ReviewCta({ wide = false, productTitle }: { wide?: boole
       >
         Write a Review
       </button>
-      <ReviewFormModal open={open} onClose={() => setOpen(false)} productTitle={productTitle} />
+      <ReviewFormModal open={open} onClose={() => setOpen(false)} productTitle={productTitle} handle={handle} />
     </div>
   );
 }

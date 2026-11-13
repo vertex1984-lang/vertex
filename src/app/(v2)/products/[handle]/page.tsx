@@ -238,7 +238,7 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
   //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
   const reviewsBlock = product && enriched ? (
     <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews asin={enriched.asin} productTitle={product.title} />
+      <V2ProductReviews asin={enriched.asin} handle={product.handle} productTitle={product.title} />
     </div>
   ) : null;
 
