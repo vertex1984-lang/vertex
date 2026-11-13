@@ -62,6 +62,19 @@ export default function AccountWishlistPage() {
 
   const count = products?.length ?? 0;
 
+  /** 任务 5.1：复制分享链接（公开只读视图 /wishlist/?w=<customerId>，接收人免登录可看） */
+  async function copyShareLink() {
+    if (!profile) return;
+    const link = `${window.location.origin}${v2url('/wishlist/')}?w=${encodeURIComponent(profile.id)}`;
+    try {
+      await navigator.clipboard.writeText(link);
+      setSyncMsg('Share link copied — anyone with it can view this list.');
+    } catch {
+      // 剪贴板权限被拒（http 环境等）：退化为显示链接让用户手动复制
+      setSyncMsg(`Share link: ${link}`);
+    }
+  }
+
   async function pushQuiet(customerId: string, ids: string[]) {
     const { pushFavoritesToCloud } = await import('@/lib/favorites');
     await pushFavoritesToCloud(customerId, ids.slice().reverse()); // 还原本地序（旧→新）再推
@@ -71,7 +84,14 @@ export default function AccountWishlistPage() {
     <div>
       <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-charcoal">Wishlist ({count})</h2>
-        {syncMsg && count > 0 && <span className="text-[11px] text-emerald-600">{syncMsg}</span>}
+        <div className="flex items-center gap-3">
+          {count > 0 && (
+            <button onClick={copyShareLink} className="text-xs font-semibold text-brand hover:underline underline-offset-2">
+              ⇗ Share
+            </button>
+          )}
+          {syncMsg && count > 0 && <span className="text-[11px] text-emerald-600">{syncMsg}</span>}
+        </div>
       </div>
 
       {products === null ? null : products.length === 0 ? (
