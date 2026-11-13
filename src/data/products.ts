@@ -2,11 +2,23 @@
 // 命名空间导入：webpack（Next 构建）与纯 transpile 加载器两种环境下都直接拿到 JSON 本体。
 // 兼容两种加载环境：Next/webpack（JSON 有 default 导出）与 build 脚本 CJS 直载（module.exports 即 JSON 本体）。
 import * as adminProductsNs from './admin-products.json';
+// 运营字段覆盖（批次 3 任务 3.3 接入，此前待做）：admin-overrides.json 由 makimoo-admin 变更发布写入
+// （titles/prices/compareAtPrices/statuses 原有字段 vertex 仍不消费；本批次消费 descriptions/featuredImage——
+// 描述覆盖 PDP About 区与 JSON-LD，主图覆盖进 featuredImage 优先级链）。
+import * as adminOverridesNs from './admin-overrides.json';
 
 type AdminProductsFile = { products?: MakimooProduct[] };
 const adminProductsFile: AdminProductsFile =
   (adminProductsNs as unknown as { default?: AdminProductsFile }).default ??
   (adminProductsNs as unknown as AdminProductsFile);
+
+type AdminOverridesFile = {
+  descriptions?: Record<string, string>;
+  featuredImage?: Record<string, string>;
+};
+const ADMIN_OVERRIDES: AdminOverridesFile =
+  (adminOverridesNs as unknown as { default?: AdminOverridesFile }).default ??
+  (adminOverridesNs as unknown as AdminOverridesFile);
 const adminProducts = (adminProductsFile.products ?? []).map((pp) => ({
   ...pp,
   // 上货向导允许先不发图（Coming Soon 阶段）：补空占位图，保证下游 images[0].url 取值不炸
@@ -7175,6 +7187,19 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
     const stats = getVariantReviewStats(p.asin);
     if (!stats) return p;
     return { ...p, rating: stats.rating, reviewCount: stats.reviewCount };
+  })
+  // 运营字段覆盖（批次 3 任务 3.3）：admin-overrides.json 的 descriptions/featuredImage——
+  // 描述覆盖 PDP About 区/详情切分/JSON-LD（同一 description 字段）；主图进 featuredImage
+  // 优先级链（卡片/PDP 已有 featuredImage 优先逻辑）。改回原值 = 后台清空该字段再发布（撤销）
+  .map(p => {
+    const desc = ADMIN_OVERRIDES.descriptions?.[p.handle];
+    const img = ADMIN_OVERRIDES.featuredImage?.[p.handle];
+    if (!desc && !img) return p;
+    return {
+      ...p,
+      ...(desc ? { description: desc, descriptionHtml: desc.split(/\n\s*\n|\.\s+|\.\s*$/).filter(s => s.trim().length > 0).map(s => `<p>${s.trim().replace(/\s*\.\s*$/, '')}.</p>`).join('') } : {}),
+      ...(img ? { featuredImage: img } : {}),
+    };
   });
 }
 

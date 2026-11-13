@@ -1,0 +1,18 @@
+{
+  "_comment": "由 makimoo-admin 生成的运营字段覆盖（演示版）。批次 3 起 vertex 已消费 descriptions/featuredImage（PDP 描述与主图覆盖，构建期生效；改回原值=后台清空字段再发布，发布全量重建幂等自愈）；titles/prices/compareAtPrices/statuses 为原有字段（vertex 侧暂不消费）。新品走 admin-products.json。",
+  "generatedAt": "2026-11-12T16:16:49.465Z",
+  "counts": {
+    "titles": 0,
+    "prices": 0,
+    "compareAtPrices": 0,
+    "statuses": 0,
+    "descriptions": 0,
+    "featuredImage": 0
+  },
+  "titles": {},
+  "prices": {},
+  "compareAtPrices": {},
+  "statuses": {},
+  "descriptions": {},
+  "featuredImage": {}
+}
