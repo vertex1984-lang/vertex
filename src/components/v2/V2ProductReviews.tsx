@@ -1,38 +1,27 @@
-import { getVariantReviewStats } from '@/data/product-reviews';
-import { getAdminReviews, mergeReviewStats } from '@/data/reviews';
+import { getRealReviewStats } from '@/data/real-reviews';
 import V2ReviewsList from './V2ReviewsList';
 import ReviewCta from './ReviewCta';
 import StarDisplay from './StarDisplay';
 
 /**
- * PDP 评价区（2026-10-12 合并版，新旧两种 PDP 变体共用，page.tsx 渲染于 Recently Viewed 正上方）。
- * 布局（用户定）：宽容器与主区域同宽（1520px/80%）；顶部摘要带 = 大均分+星级+Based on 与
- * 五星分布条同排靠左（不分置两端、不上下堆叠）；摘要带下方 REVIEWS/What Buyers Say 标题 +
- * 评价卡（桌面两列网格，移动端横滑轮播）；写评价入口（ReviewCta）与评分摘要在同一区域
- * （2026-10-12 用户定：桌面端排评分分布条右端，移动端自然堆叠，不分隔成两个区域）。
- * 数据（2026-10-10 领导定，去统一化）：全部走 getVariantReviewStats 变体评价计划——
- * B0 家族 = 真实总数 + 卡片实算；AI 家族 = 每变体确定性 N∈[100,2000]、均分 4.1-4.3、
- * 约 1/3 家族分布含 1-2★ 段；低星家族额外展示 1★/2★ 补充卡（2026-10-13 领导定），与卡片区解耦。
- * 批次 3 评价闭环（2026-11-12）：admin 审核发布的真实买家评价（reviews.json，按 handle）
- * 置顶合并进列表并计入均分/分布（真实评价优先，无则保持现状）。
- * "Based on N customer reviews" 合规文案唯一出处 = 本区（购买区不再重复）。
- * 合规红线：不出现任何验证声明 / Amazon 字样。
- * 无数据时整体不渲染。锚点 id="reviews"（老 PDP 气泡锚跳用；
- * 新 PDP 锚跳 page.tsx 外层包裹的 id="pdp2-reviews"）。
+ * PDP 评价区（2026-10-12 合并版；2026-11-15 上线方案 1.6 评价策略重构）：
+ * 只渲染 admin 审核发布的真实买家评价（reviews.json，按 handle）——
+ * AI 计划评价全面下线；无真实评价时整区不渲染（返回 null），
+ * 评价位由 V2BrandReviewBlock（品牌级引用 + 空位内容）顶替（page.tsx 条件渲染）。
+ * 布局同前：摘要带（大均分 + 星级 + Based on 与五星分布条同排）+ REVIEWS/What Buyers Say
+ * 标题 + 评价卡（桌面两列网格，移动端横滑轮播）；写评价入口与摘要在同一区域。
+ * "Based on N customer reviews" = 真实评价数（合规：不提 Amazon、无验证声明）。
+ * 锚点 id="reviews"（老 PDP 气泡锚跳用；新 PDP 锚跳 page.tsx 外层包裹的 id="pdp2-reviews"）。
  */
-export default function V2ProductReviews({ asin, handle, productTitle }: { asin: string; handle?: string; productTitle?: string }) {
-  const admin = getAdminReviews(handle);
-  const stats = mergeReviewStats(getVariantReviewStats(asin), admin);
-  if (!stats || stats.reviews.length === 0) return null;
+export default function V2ProductReviews({ handle, productTitle }: { handle?: string; productTitle?: string }) {
+  const stats = getRealReviewStats(handle);
+  if (!stats) return null;
 
   return (
     <section id="reviews" className="bg-off-white scroll-mt-28">
-      {/* 移动端顶部间距收紧（2026-10-12 用户定：评分摘要与上方品牌区间空隙过大），桌面端保持 py-20 */}
-      {/* 移动端顶部间距收紧（2026-10-12 用户定：评分摘要与上方品牌区间空隙过大），桌面端保持 py-20 */}
+      {/* 移动端顶部间距收紧（2026-10-12 用户定），桌面端保持 py-20 */}
       <div className="max-w-[1520px] lg:w-[80%] mx-auto px-6 lg:px-10 pt-4 pb-14 lg:py-20">
-        {/* 摘要带（2026-10-12 用户定）：分数块 + 分布条 + 写评价入口合并同一区域——
-            桌面端三栏同排（CTA 紧随分布条靠左），移动端自然换行堆叠在分布条下方；
-            不再用分隔线把 Write a Review 与评分拆成两个区域 */}
+        {/* 摘要带：分数块 + 分布条 + 写评价入口同一区域（桌面三栏同排，移动端堆叠） */}
         <div className="pb-10 lg:pb-14 mb-10 lg:mb-14 border-b border-warm-gray/60">
           <div className="flex flex-wrap items-center gap-6 lg:gap-14">
             <div className="flex-shrink-0">
@@ -57,15 +46,13 @@ export default function V2ProductReviews({ asin, handle, productTitle }: { asin:
                 </div>
               ))}
             </div>
-            {/* CTA：桌面端紧随分布条靠左对齐（不吸附右端，2026-10-12 用户定）；
-                移动端自然堆叠并与上方评分拉开间距（mt-4） */}
             <div className="w-full mt-4 lg:mt-0 lg:w-auto">
               <ReviewCta wide productTitle={productTitle} handle={handle} />
             </div>
           </div>
         </div>
 
-        {/* 标题 + 排序切换器（2026-10-27 W9 用户定）迁入 V2ReviewsList（client，与切换器共享状态） */}
+        {/* 标题 + 排序切换器（W9 用户定）在 V2ReviewsList（client，与切换器共享状态） */}
         <V2ReviewsList reviews={stats.reviews} eyebrow="Reviews" title="What Buyers Say" />
       </div>
     </section>

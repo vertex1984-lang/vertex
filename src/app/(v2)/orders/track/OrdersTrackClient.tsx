@@ -2,7 +2,7 @@
 
 /**
  * 免登录查单页（2026-11-12 批次 1）：订单号 + 邮箱 → 本地 Web Crypto 算 emailHash
- * → fetch /data/order-status.json（admin 发布写入，无邮箱明文）→ 命中渲染六段垂直时间线。
+ * → fetch /data/order-status.json（admin 发布写入，无邮箱明文）→ 命中渲染九段垂直时间线。
  * 命中时上报 GA4 自定义事件 preorder_timeline_view（不含订单号/邮箱等 PII）。
  * 设计：V2 token（brand/cream/warm-gray/charcoal），移动端优先。
  */
@@ -148,13 +148,13 @@ export default function OrdersTrackClient() {
           </div>
         )}
 
-        {/* 命中：承诺窗口 + 六段时间线 */}
+        {/* 命中：承诺窗口 + 九段时间线（2026-11-15 按上线方案 1.3，分母取模型段数防写死） */}
         {phase === 'hit' && order && (
           <div className="mt-6">
             <div className="rounded-2xl border border-warm-gray bg-white p-5 lg:p-6 shadow-sm">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <p className="text-sm font-semibold text-charcoal">Order {order.orderNo}</p>
-                <p className="text-xs text-charcoal-light">{reachedCount}/6 steps completed</p>
+                <p className="text-xs text-charcoal-light">{reachedCount}/{MILESTONE_KEYS.length} steps completed</p>
               </div>
               {/* 承诺窗口（承诺 35 天到货口径，配置驱动） */}
               <p className="mt-1 text-sm text-charcoal">
@@ -169,7 +169,7 @@ export default function OrdersTrackClient() {
                 ))}
               </ul>
 
-              {/* 垂直时间线：六段固定，未到达段灰显 */}
+              {/* 垂直时间线：九段固定，未到达段灰显 */}
               <ol className="mt-6">
                 {MILESTONE_KEYS.map((key, i) => {
                   const m = milestoneAt(key);

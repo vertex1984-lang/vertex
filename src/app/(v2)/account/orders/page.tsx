@@ -74,7 +74,7 @@ export default function AccountOrdersPage() {
             </a>
           )}
 
-          {/* 追踪入口卡（B1）：预售/海运订单六段进度在查单页 */}
+          {/* 追踪入口卡（B1）：预售/海运订单九段进度在查单页 */}
           <div className="mt-4 rounded-xl bg-cream border border-warm-gray p-3.5">
             <p className="text-xs font-semibold text-charcoal">Pre-order or sea-freight tracking</p>
             <p className="mt-0.5 text-[11px] text-charcoal-light">

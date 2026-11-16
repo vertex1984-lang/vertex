@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import ProductDetailUpgrade from './ProductDetailUpgrade';
 import V2RecentlyViewed from '@/components/v2/V2RecentlyViewed';
 import V2ProductReviews from '@/components/v2/V2ProductReviews';
+import V2BrandReviewBlock from '@/components/v2/V2BrandReviewBlock';
+import { getRealReviewStats } from '@/data/real-reviews';
+import { preorderOf } from '@/data/preorder';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import PdpEntryRedirect from '@/components/v2/PdpEntryRedirect';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
@@ -72,30 +75,10 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
   // isNewProductHandle 白名单门控与老版 V2ProductDetailClient 退役（两者的文件均保留磁盘备用）。
   // （沿革：2026-10-19 bedding 全量新版、其他类目白名单门控 → 2026-10-21 全站统一）
 
-  // 2026-10-26 用户定：点进未上架 PDP 时默认落到有货的产品——
-  // 优先同色的已上架尺寸，其次家族内任意已上架成员；家族全未上架则保持 Coming Soon。
-  // 客户端只在整页进入时跳一次（站内点尺寸/色点不会被弹走），见 PdpEntryRedirect。
-  const entryRedirectTarget = (() => {
-    if (!enriched) return null;
-    if (enriched.hasShopifyData === true && enriched.shopifyAvailable === true) return null;
-    const group = getVariantGroupOf(enriched.asin);
-    if (!group) return null;
-    const currentAsin = enriched.asin.toLowerCase();
-    const currentColor = group.members.find((m) => m.asin.toLowerCase() === currentAsin)?.color;
-    const info = group.members.map((m) => {
-      const p = PRODUCTS_BY_ASIN.get(m.asin.toLowerCase());
-      const ep = p ? enrichProductsWithShopifyData([p])[0] : null;
-      return {
-        asin: m.asin.toLowerCase(),
-        handle: m.handle,
-        color: m.color,
-        sellable: ep ? ep.hasShopifyData === true && ep.shopifyAvailable === true : false,
-      };
-    });
-    const sameColor = info.find((x) => x.sellable && x.color === currentColor);
-    const anySellable = info.find((x) => x.sellable);
-    return (sameColor ?? anySellable)?.handle ?? null;
-  })();
+  // 技术清单 1.2（N2，2026-11-15）：展示层"可浏览不可购买"——进入任何展示/Coming Soon 页
+  // 不得被弹去别处（页面自带 NotifyMe 订阅框，页面即需求测试场），入口跳转整体停用。
+  // TODO(T0 演练)：如需"同色 S2 预售款引导"再按新四态模型重写此逻辑。
+  const entryRedirectTarget: string | null = null;
 
   // 花色/尺寸切换数据：
   // - 纯颜色家族（地毯）：色圆点 = 全部成员
@@ -217,9 +200,11 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
           url: `${SITE_URL}/products/${enriched.handle}/`,
           priceCurrency: STORE_CURRENCY,
           price: enriched.shopifyPrice || enriched.priceRange.minVariantPrice.amount,
-          availability: enriched.hasShopifyData === true
-            ? (enriched.shopifyAvailable === true ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock')
-            : 'https://schema.org/PreOrder',
+          availability: preorderOf(enriched.handle)
+            ? 'https://schema.org/PreOrder'
+            // 技术清单 1.2 四态：S1 展示层/未上架一律 OutOfStock（PreOrder 在 Google 口径=可订购，
+            // 展示层不能下订，误标有 policy 风险）；S3 现货阶段再引入 InStock
+            : 'https://schema.org/OutOfStock',
         },
         ...(enriched.rating != null && enriched.reviewCount != null && enriched.reviewCount > 0
           ? {
@@ -233,13 +218,20 @@ export default function V2ProductDetailPage({ params }: { params: { handle: stri
       }
     : null;
 
-  // 评价区：渲染在页尾 Recently Viewed 正上方（2026-10-12 用户定，由购买区后下移至此）；
-  // 摘要带数据（均分/分布/总数）由 V2ProductReviews 内部走 getVariantReviewStats 变体评价计划。
-  //（product-reviews.ts 无数据时 V2ProductReviews 不实际渲染，位置先占好，数据一填即生效）
+  // 评价位（2026-11-15 上线方案 1.6 评价策略）：有真实评价（admin 审核发布，reviews.json）
+  // → 渲染评价区；无 → 品牌级引用块顶替（品牌证据 + 透明度叙事 + 实证 chips + 退款承诺
+  // + 写评价入口），评价模块按方案隐藏
   const reviewsBlock = product && enriched ? (
-    <div id="pdp2-reviews" className="scroll-mt-24">
-      <V2ProductReviews asin={enriched.asin} handle={product.handle} productTitle={product.title} />
-    </div>
+    getRealReviewStats(product.handle) ? (
+      <div id="pdp2-reviews" className="scroll-mt-24">
+        <V2ProductReviews handle={product.handle} productTitle={product.title} />
+      </div>
+    ) : (
+      <V2BrandReviewBlock
+        productTitle={product.title}
+        isPreorder={Boolean(preorderOf(product.handle))}
+      />
+    )
   ) : null;
 
   return (

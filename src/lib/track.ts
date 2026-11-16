@@ -14,17 +14,25 @@
 /** 演示版 SALT：正式版换环境变量（ORDER_TRACK_SALT），两侧同步 */
 export const ORDER_TRACK_SALT = 'MAKIMOO-TRACK-SALT-V1';
 
-/** 里程碑六段（key 固定，顺序即时间线顺序；中文：已下单/工厂生产中/海运已起航/到港/派送中/已签收） */
-export const MILESTONE_KEYS = ['ordered', 'production', 'vessel', 'port', 'delivery', 'delivered'] as const;
+/** 里程碑九段（2026-11-15 按上线方案 1.3 交付时间表重构，替代旧六段；顺序即时间线顺序）
+ *  D0 下单确认 / D2 生产启动 / D6 生产完工【检查点①：成品照+抽检】/ D13 离港【检查点②：船名航次】
+ *  / D20 到港预告 / D25 清关完成 / D27 美国仓入库+尾程派送 / D32 送达（+评价邀请） */
+export const MILESTONE_KEYS = [
+  'ordered', 'production_started', 'production_done', 'departed', 'arrival_notice',
+  'customs_cleared', 'warehouse', 'out_for_delivery', 'delivered',
+] as const;
 export type MilestoneKey = (typeof MILESTONE_KEYS)[number];
 
 /** 追踪页时间线展示文案（站内英文口径） */
 export const MILESTONE_LABELS: Record<MilestoneKey, string> = {
   ordered: 'Order placed',
-  production: 'In production',
-  vessel: 'Departed on vessel',
-  port: 'Arrived at port',
-  delivery: 'Out for delivery',
+  production_started: 'In production',
+  production_done: 'Production completed',
+  departed: 'Departed on vessel',
+  arrival_notice: 'Arriving at port',
+  customs_cleared: 'Customs cleared',
+  warehouse: 'At US warehouse',
+  out_for_delivery: 'Out for delivery',
   delivered: 'Delivered',
 };
 

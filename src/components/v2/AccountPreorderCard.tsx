@@ -6,7 +6,7 @@ import { MILESTONE_KEYS, MILESTONE_LABELS, type MilestoneKey, type TrackedOrder 
 /**
  * 预售进度卡·紧凑版（批次 3 任务 4）：账号概览展示当前客户名下的预售订单进度。
  * 数据 = lib/track.ts 的 emailHash 匹配 /data/order-status.json（无邮箱明文）。
- * 复用追踪页六段口径：显示当前阶段（最后一个已到达段）+ 到货窗口 + 查看详情链。
+ * 复用追踪页九段口径（上线方案 1.3）：显示当前阶段（最后一个已到达段）+ 到货窗口 + 查看详情链。
  */
 export default function AccountPreorderCard({ order }: { order: TrackedOrder }) {
   const reached = order.milestones.filter((m) => m.at);
@@ -27,14 +27,14 @@ export default function AccountPreorderCard({ order }: { order: TrackedOrder }) 
           View full timeline →
         </a>
       </div>
-      {/* 进度条：六段线性 */}
+      {/* 进度条：九段线性 */}
       <div className="mt-2.5">
         <div className="h-1.5 rounded-full bg-warm-gray overflow-hidden">
           <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
         </div>
         <div className="mt-1.5 flex items-baseline justify-between">
           <p className="text-xs font-semibold text-brand">{MILESTONE_LABELS[currentKey]}</p>
-          <p className="text-[11px] text-charcoal-light">{reached.length}/6 steps</p>
+          <p className="text-[11px] text-charcoal-light">{reached.length}/{MILESTONE_KEYS.length} steps</p>
         </div>
       </div>
       {/* 到货窗口（承诺 35 天口径，配置驱动）+ 下一阶段预告 */}
