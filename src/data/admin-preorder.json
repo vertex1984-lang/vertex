@@ -1,6 +1,6 @@
 {
   "_comment": "由 makimoo-admin（运营后台）发布时写入的预售配置。手工勿改：下次发布会整体重写。sale = 全站横幅口径；shopifyHandle 发布时自动解析（勿手填）。",
-  "generatedAt": "2026-11-12T06:05:50.332Z",
+  "generatedAt": "2026-11-15T14:32:46.751Z",
   "sale": {
     "deadline": "2026-11-17T23:59:00-08:00",
     "deadlineLabel": "Nov 17",
@@ -20,12 +20,102 @@
     {
       "handle": "makimoo-100-linen-duvet-cover-set-3-piece-bedding-set-with-linen3-sage-queen",
       "shopifyHandle": "makimoo-100-cotton-linen-duvet-cover-set-3-piece-bedding-set-with-2-pillowcases-soft-breathable-comforter-cover-for-bedroom-queen-230-x-230-cm-sage-green",
-      "regularPrice": "172.99",
-      "arrivesLabel": "Dec 17 – Dec 20",
-      "arrivesShort": "Dec 20",
-      "deadline": "2026-11-17T23:59:00-08:00",
+      "regularPrice": "185.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "long-staple-cotton-towel-cream-40x70-mk-towel-lsc-cream-40x70",
+      "shopifyHandle": "lsc-towel-cream-40x70",
+      "regularPrice": "99.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70",
+      "shopifyHandle": "lsc-towel-sage-40x70",
+      "regularPrice": "99.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "long-staple-cotton-towel-dustyblue-40x70-mk-towel-lsc-dustyblue-40x70",
+      "shopifyHandle": "lsc-towel-dustyblue-40x70",
+      "regularPrice": "99.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "100-linen-duvet-cover-set-queen-size-3-piece-bedding-set-1-linen3-dustyblue-queen",
+      "shopifyHandle": "100-cotton-linen-duvet-cover-set-queen-size-3-piece-bedding-set-1-duvet-cover-230-x-230-cm-2-pillow-shams-soft-breathable-textured-farmhouse-comforter-cover-dusty-blue",
+      "regularPrice": "185.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "makimoo-100-linen-duvet-cover-set-3-pieces-queen-size-with-linen3-ivory-queen",
+      "shopifyHandle": "makimoo-100-cotton-linen-duvet-cover-set-3-pieces-queen-size-with-1-duvet-cover-and-2-pillowcases-soft-breathable-bedding-230-x-230-cm-natural-white",
+      "regularPrice": "185.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "100-percent-linen-duvet-cover-set-3-piece-king-size-bedding-linen3-sage-king",
+      "shopifyHandle": "100-percent-cotton-linen-duvet-cover-set-3-piece-king-size-bedding-set-with-2-pillow-shams-265-x-230-cm-soft-breathable-farmhouse-style-comfy-bedroom-decor-sage-green",
+      "regularPrice": "214.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "makimoo-100-linen-duvet-cover-set-3-piece-bedding-set-with-linen3-dustyblue-king",
+      "shopifyHandle": "makimoo-100-cotton-linen-duvet-cover-set-3-piece-bedding-set-with-2-pillowcases-soft-breathable-comforter-cover-for-bedroom-king-265-x-230-cm-50-x-90-cm-dusty-blue",
+      "regularPrice": "214.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "makimoo-100-linen-duvet-cover-set-king-3-piece-bedding-with-linen3-ivory-king",
+      "shopifyHandle": "makimoo-100-cotton-linen-duvet-cover-set-king-3-piece-bedding-with-1-duvet-cover-265-x-230-cm-and-2-pillowcases-50-x-90-cm-breathable-lightweight-soft-natural-white",
+      "regularPrice": "214.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot."
+    },
+    {
+      "handle": "outdoor-patio-cushion-rocking-chair-cushion-tufted-pads-set--b0cbt7b1ty",
+      "shopifyHandle": "makimoo-2-pack-chair-cushions-with-backrest-and-seat-soft-tufted-corduroy-high-back-dining-chair-pads-with-ties-for-indoor-outdoor-patio-garden-use-95-x-45-cm-blue",
+      "regularPrice": "29.99",
+      "arrivesLabel": "Dec 17",
+      "arrivesShort": "Dec 17",
+      "deadline": "2026-11-20T01:15:00.000Z",
       "deadlineLabel": "Nov 17",
-      "reason": "Woven from 100% linen in small batches and shipped by fast sea freight — you wait a little, you save a lot."
+      "reason": "Made to order, then shipped by fast sea freight - you wait a little, you save a lot."
     }
   ]
 }

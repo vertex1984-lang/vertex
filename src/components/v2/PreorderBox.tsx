@@ -47,7 +47,7 @@ export default function PreorderBox({ config: c }: { config: PreorderConfig }) {
       </div>
       <p className="mt-3 text-sm font-semibold text-charcoal">
         Arrives {c.arrivesLabel}
-        <span className="font-normal text-charcoal-light"> · Free cancellation before departure</span>
+        <span className="font-normal text-charcoal-light"> · Ships within 35 days · Free cancellation before departure</span>
       </p>
       <p className="mt-1.5 text-xs text-charcoal-light leading-relaxed">{c.reason}</p>
       <div className="mt-3 pt-1 border-t border-brand/20 divide-y divide-brand/15">

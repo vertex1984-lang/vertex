@@ -100,14 +100,10 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
               width={image.width}
               height={image.height}
               loading="lazy"
-              className={`w-full h-full ${variant === 'featured' ? 'object-cover' : 'object-contain'} transition-transform duration-500 group-hover:scale-110 ${!isInStock ? 'grayscale-[40%]' : ''} ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-2 sm:p-7' : ''}`}
+              className={`w-full h-full ${variant === 'featured' ? 'object-cover' : 'object-contain'} transition-transform duration-500 group-hover:scale-110 ${variant !== 'featured' && product.imageWhiteBg?.[0] ? 'p-2 sm:p-7' : ''}`}
             />
           )}
-          {!isInStock && (
-            <div className="absolute inset-0 bg-white/60 flex items-center justify-center">
-              <span className="px-3 py-1 bg-[#333]/80 text-white text-xs font-semibold rounded-full">{comingSoon ? 'Coming Soon' : 'Out of Stock'}</span>
-            </div>
-          )}
+          {/* 上线方案分层（2026-11-15）：S1 展示层正常陈列——不灰化、不加角标（技术清单 1.2 四态标准） */}
           {/* 收藏按钮 */}
           <button
             onClick={handleToggleFavorite}
@@ -151,17 +147,11 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
             {/* 标题下划线 hover 渐入 */}
             <span className="absolute bottom-0 left-0 w-0 h-px bg-[#8B5A2B] transition-all duration-300 group-hover:w-full" />
           </h3>
-          {/* 价格钉在卡片底部，保证同行卡片底部对齐 */}
+          {/* 价格钉在卡片底部，保证同行卡片底部对齐；上线分层后 S1 展示层完整保留价格（不出现 Out of Stock 文案） */}
           <div className="mt-auto">
-            {isInStock ? (
-              <p className="text-base sm:text-lg font-semibold text-[#8B5A2B]">
-                {comingSoon ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
-              </p>
-            ) : (
-              <p className="text-base sm:text-lg font-semibold text-[#999]">
-                {comingSoon ? COMING_SOON_LABEL : 'Out of Stock'}
-              </p>
-            )}
+            <p className="text-base sm:text-lg font-semibold text-[#8B5A2B]">
+              {comingSoon ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
+            </p>
           </div>
         </div>
       </a>

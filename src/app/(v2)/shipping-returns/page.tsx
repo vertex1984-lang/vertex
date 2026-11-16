@@ -4,7 +4,7 @@ import { PolicyLayout, PolicySection, PolicyContactStrip } from '@/components/Po
 
 export const metadata: Metadata = {
   title: 'Shipping & Returns',
-  description: 'Free shipping on all orders and an extended 30-day worry-free return policy at Makimoo.',
+  description: 'Free shipping on U.S. orders over $49 and an extended 30-day worry-free return policy at Makimoo. Every item is made to order and ships within 35 days of purchase.',
 };
 
 const toc = [
@@ -42,9 +42,10 @@ export default function V2ShippingReturnPage() {
             >
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-bold text-[#333] mb-2">Free U.S. Shipping on All Orders</h3>
+                  {/* 免邮口径统一 over $49（2026-11-15 与公告条/PDP 信任条同源——技术清单 1.3） */}
+                  <h3 className="text-lg font-bold text-[#333] mb-2">Free U.S. Shipping on Orders Over $49</h3>
                   <p className="text-[#555] leading-relaxed">
-                    We are proud to offer free standard shipping on every order, with no minimum purchase required.
+                    We offer free standard shipping on U.S. orders over $49.
                   </p>
                 </div>
 
@@ -54,16 +55,12 @@ export default function V2ShippingReturnPage() {
                     <span className="text-[#555]">Currently, Makimoo ships exclusively within the contiguous United States. We do not ship to Alaska, Hawaii, U.S. Territories, or APO/FPO addresses at this time.</span>
                   </div>
                   <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
-                    <span className="text-[#8B5A2B] font-bold shrink-0">Processing Time:</span>
-                    <span className="text-[#555]">Orders are typically processed and shipped within 1–3 business days.</span>
+                    <span className="text-[#8B5A2B] font-bold shrink-0">Pre-Order Production &amp; Shipping:</span>
+                    <span className="text-[#555]">Every item we sell is made to order. Pre-order items ship within <b>35 days</b> of purchase — your order page shows the specific delivery estimate for your item. Orders can be cancelled for a full refund any time before they ship.</span>
                   </div>
                   <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
-                    <span className="text-[#8B5A2B] font-bold shrink-0">Standard Shipping:</span>
-                    <span className="text-[#555]">5–7 business days.</span>
-                  </div>
-                  <div className="flex flex-col gap-1 sm:flex-row sm:gap-3">
-                    <span className="text-[#8B5A2B] font-bold shrink-0">Oversized/Heavy Items:</span>
-                    <span className="text-[#555]">For large furniture or heavy home goods, shipping times and carriers may vary. You will receive specific tracking details once the item leaves our warehouse.</span>
+                    <span className="text-[#8B5A2B] font-bold shrink-0">Transit Time:</span>
+                    <span className="text-[#555]">After departure from our workshop, delivery typically takes 2–3 weeks by fast sea freight (see your item&rsquo;s delivery estimate), shipped to the contiguous United States.</span>
                   </div>
                 </div>
 

@@ -159,7 +159,7 @@ export default function GroupProductCard({
                 }}
                 className={`relative shrink-0 w-6 h-6 lg:w-7 lg:h-7 rounded-full overflow-hidden border-2 transition hover:scale-105 ${
                   sel === i ? 'border-brand shadow-md' : 'border-warm-gray hover:border-brand/40'
-                }${sv.inStock ? '' : ' opacity-40 grayscale'}`}
+                }`}
               >
                 <img
                   src={resolveUrl(sv.thumb)}

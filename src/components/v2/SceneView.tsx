@@ -22,6 +22,7 @@ import { trackEvent, GA_CURRENCY } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
+import { preorderOf } from '@/data/preorder';
 
 type SceneCard = Pick<
   SceneViewData,
@@ -372,14 +373,17 @@ const hasUnpriced = pricedItems.length < selectedItems.length;
               </button>
             </div>
             <div className="mt-4 flex gap-2">
-              <button
-                type="button"
-                onClick={() => addOne(active)}
-                disabled={addingOne || !active.inStock}
-                className="h-11 flex-1 rounded-full bg-brand text-sm font-semibold text-cream transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
-              >
-                {!active.inStock ? 'Coming Soon' : addingOne ? 'Adding...' : 'Add to Cart'}
-              </button>
+              {/* 上线方案分层（2026-11-15）：仅预售可购层可加购；展示层经 View Details → PDP 订阅 */}
+              {preorderOf(active.handle) && (
+                <button
+                  type="button"
+                  onClick={() => addOne(active)}
+                  disabled={addingOne || !active.inStock}
+                  className="h-11 flex-1 rounded-full bg-brand text-sm font-semibold text-cream transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+                >
+                  {addingOne ? 'Adding...' : active.inStock ? 'Pre-Order Now' : 'Coming Soon'}
+                </button>
+              )}
               <a
                 href={v2url(`/products/${active.handle}/`)}
                 className="flex h-11 flex-1 items-center justify-center rounded-full border border-brand text-sm font-semibold text-brand transition hover:bg-brand/5"

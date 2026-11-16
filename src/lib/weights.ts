@@ -30,19 +30,18 @@ export const categoryAvgOf = (asin: string): number => {
 /**
  * 权重排序（统一出口，类目页 featured 排序 / Best Sellers / 推荐位共用）：
  *  1. excluded 直接排除
- *  2. 缺货沉底（保持原有行为）
+ *  2. （已移除缺货沉底——2026-11-15 分层后 S1 展示层正常混排）
  *  3. pin 硬置顶：占在售组的固定位次（1 起），凌驾于一切排序
- *  4. buried 沉到在售组末尾（缺货组之前）
+ *  4. buried 沉到末尾
  *  5. 其余按总分降序；总分相同按类目平均分降序，再同分保持传入顺序（稳定排序）
  */
 export function sortByWeight<T extends Weightable>(list: T[]): T[] {
-  const inStock = (p: T) => p.hasShopifyData === true && p.shopifyAvailable === true;
+  // 上线方案分层（2026-11-15 技术清单 1.2 / 方案 1.5）：S1 展示层**不沉底不灰化**——
+  // 缺货/未开售与在售同池按权重正常混排，状态以 Pre-Order 徽标 / Notify Me 区分，而非位置
   const pool = list.filter((p) => !weightOf(p.asin)?.excluded);
-  const avail = pool.filter(inStock);
-  const out = pool.filter((p) => !inStock(p));
 
-  const buried = avail.filter((p) => weightOf(p.asin)?.buried);
-  const normal = avail.filter((p) => !weightOf(p.asin)?.buried);
+  const buried = pool.filter((p) => weightOf(p.asin)?.buried && !weightOf(p.asin)?.pin);
+  const normal = pool.filter((p) => !weightOf(p.asin)?.buried);
 
   const pinned = normal
     .filter((p) => weightOf(p.asin)?.pin)
@@ -65,5 +64,5 @@ export function sortByWeight<T extends Weightable>(list: T[]): T[] {
     sorted.splice(pos, 0, p);
   }
 
-  return [...sorted, ...buried, ...out];
+  return [...sorted, ...buried];
 }

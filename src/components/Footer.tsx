@@ -92,6 +92,11 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(248,245,240,0.15)' }}
         >
           <p className="text-xs opacity-40">&copy; 2026 Makimoo. All rights reserved.</p>
+        {/* 加州商法典 §17538：付款前须披露法定公司名与实际街道地址——
+            TODO(上线前必改)：占位主体，正式注册名 + 香港街道地址由业务提供后替换 */}
+        <p className="mt-1.5 text-xs opacity-40">
+          Makimoo Limited · registered in Hong Kong — contact support@makimoohome.com for our registered address.
+        </p>
           <p className="text-xs opacity-40">Simple Life, Better Comfort.</p>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import { MakimooProduct } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
+import { preorderOf } from '@/data/preorder';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { useToast } from '@/components/Toast';
 
@@ -125,14 +126,25 @@ export default function QuickViewModal({ product, open, onClose, detailHref }: Q
             )}
             <div className="mt-auto flex flex-col gap-2.5">
               {isInStock && (
-                <button
-                  onClick={handleAddToCart}
-                  disabled={adding}
-                  className="w-full px-5 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg active:scale-95 disabled:opacity-60"
-                  style={{ backgroundColor: '#8B5A2B' }}
-                >
-                  {adding ? 'Adding...' : 'Add to Cart'}
-                </button>
+                preorderOf(product.handle) ? (
+                  <button
+                    onClick={handleAddToCart}
+                    disabled={adding}
+                    className="w-full px-5 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg active:scale-95 disabled:opacity-60"
+                    style={{ backgroundColor: '#8B5A2B' }}
+                  >
+                    {adding ? 'Adding...' : 'Pre-Order Now'}
+                  </button>
+                ) : (
+                  /* 上线方案分层（2026-11-15）：展示层不可加购——引导到 PDP 订阅「到货通知」 */
+                  <a
+                    href={detailHref ?? resolveUrl(`/products/${product.handle}/`)}
+                    className="w-full px-5 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+                    style={{ backgroundColor: '#8B5A2B' }}
+                  >
+                    Notify Me — view product to subscribe
+                  </a>
+                )
               )}
               <a
                 href={detailHref ?? resolveUrl(`/products/${product.handle}/`)}
