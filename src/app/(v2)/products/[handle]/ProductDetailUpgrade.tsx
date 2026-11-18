@@ -25,6 +25,8 @@ import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/s
 import { beddingPdpHeading, beddingUsSizeLabel } from '@/data/bedding-families';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
 import NotifyMe from '@/components/v2/NotifyMe';
+import PdpFavoriteButton from '@/components/v2/PdpFavoriteButton';
+import PayIcons from '@/components/v2/PayIcons';
 import PreorderBox from '@/components/v2/PreorderBox';
 import { preorderOf } from '@/data/preorder';
 import StarDisplay from '@/components/v2/StarDisplay';
@@ -793,15 +795,37 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 ) : null}
               </div>
             )}
-            {/* 风险逆转贴 CTA 正下方（上线方案 1.5/1.6：决策点上的退款承诺） */}
+            {/* 风险逆转贴 CTA 正下方（上线方案 1.5/1.6：决策点上的退款承诺）；
+                同行右侧 = PDP 收藏按钮（批次 5 任务 3：S2 款在 CTA 行附近） */}
             {preorder && sellable && (
-              <p className="text-xs font-semibold text-brand mb-4">Full refund anytime before it ships.</p>
+              <div className="flex items-center justify-between gap-3 mb-4">
+                <p className="text-xs font-semibold text-brand">Full refund anytime before it ships.</p>
+                <PdpFavoriteButton
+                  productId={product.id}
+                  title={product.title}
+                  image={product.featuredImage || (product.shopifyImages?.[0] ? shopifyImageUrl(product.shopifyImages[0], 200) : product.images[0]?.url || '')}
+                  price={parseFloat(displayPrice) || 0}
+                  category={product.productType}
+                />
+              </div>
             )}
+            {/* 支付方式信任图标条（批次 5 T2：S2 购买区退款行下方，config 驱动 payments.ts） */}
+            {preorder && sellable && <PayIcons className="mb-4" />}
             {/* 展示层 / Coming Soon：购买按钮换「到货通知」订阅（上线方案 1.1——不留无解释的灰色按钮）。
-                Amazon 外链/本地购物车兜底已随分层下线（技术清单 1.2 边界 1/2：S1 下不得出现可加购/外流入口） */}
+                Amazon 外链/本地购物车兜底已随分层下线（技术清单 1.2 边界 1/2：S1 下不得出现可加购/外流入口）。
+                订阅框旁 = PDP 收藏按钮（批次 5 任务 3：S1 款挂点） */}
             {!preorder && (
               <div ref={mainCtaRef} className="mb-4">
                 <NotifyMe handle={product.handle} comingSoon={!launched} />
+                <div className="mt-3 flex justify-center">
+                  <PdpFavoriteButton
+                    productId={product.id}
+                    title={product.title}
+                    image={product.featuredImage || (product.shopifyImages?.[0] ? shopifyImageUrl(product.shopifyImages[0], 200) : product.images[0]?.url || '')}
+                    price={parseFloat(displayPrice) || 0}
+                    category={product.productType}
+                  />
+                </div>
               </div>
             )}
             {/* 到货行（仅预售；展示层无现货时效暗示——上线方案 1.5 全局项） */}

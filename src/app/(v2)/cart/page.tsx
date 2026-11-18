@@ -2,11 +2,14 @@
 
 import { useState, useEffect, useRef } from 'react';
 import V2PageHeader from '@/components/v2/V2PageHeader';
-import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, updateShopifyCartLine, removeShopifyCartLine, LocalCartItem } from '@/lib/cart';
+import { removeFromLocalCart, updateLocalCartQuantity, getShopifyCart, updateShopifyCartLine, removeShopifyCartLine, notifyCartUpdated, LocalCartItem } from '@/lib/cart';
 import { formatPrice, STORE_CURRENCY } from '@/lib/currency';
 import { trackEvent, trackViewCart, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { v2url } from '@/lib/v2paths';
 import { PreorderLineNote } from '@/components/v2/PreorderBox';
+import { validateCheckout } from '@/lib/checkout-guard';
+import { useToast } from '@/components/Toast';
+import PayIcons from '@/components/v2/PayIcons';
 
 interface ShopifyCartLine {
   id: string;
@@ -40,6 +43,9 @@ export default function V2CartPage() {
   // 加载完成前不写回 localStorage，避免用初始空数组覆盖已保存的购物车
   const [loaded, setLoaded] = useState(false);
   const [updatingLineId, setUpdatingLineId] = useState<string | null>(null);
+  // 结算前置校验进行中（按钮 loading 态防双击双开——批次 5 T2 支付前端）
+  const [guardBusy, setGuardBusy] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     // Load local cart
@@ -106,33 +112,63 @@ export default function V2CartPage() {
   const shopifySubtotal = shopifyCart ? parseFloat(shopifyCart.cost.subtotalAmount.amount) : 0;
   const totalSubtotal = localSubtotal + shopifySubtotal;
 
-  const handleCheckout = () => {
-    // GA4: begin_checkout（合并 Shopify 行 + 本地行）
-    const items: GaItem[] = [
-      ...(shopifyCart?.lines.edges.map(({ node: line }) => ({
-        item_id: line.merchandise.product.handle,
-        item_name: line.merchandise.product.title,
-        price: parseFloat(line.merchandise.price.amount),
-        quantity: line.quantity,
-      })) ?? []),
-      ...localItems.map((item) => ({
-        item_id: item.handle,
-        item_name: item.title,
-        price: parseFloat(item.price),
-        quantity: item.quantity,
-      })),
-    ];
-    trackEvent('begin_checkout', {
-      currency: GA_CURRENCY,
-      value: totalSubtotal,
-      items,
-    });
-
-    if (shopifyCart?.checkoutUrl) {
-      window.open(shopifyCart.checkoutUrl, '_blank');
-    } else {
+  const handleCheckout = async () => {
+    // Amazon 引导分支（S1 设计内文案，保留原判断位置）：无 Shopify checkout 走原 alert。
+    // 此分支不跳 checkout，**不发 begin_checkout**（GA4 漏斗只计真实结算跳转，不虚报）
+    if (!shopifyCart?.checkoutUrl) {
       alert('Please purchase on Amazon using the product links for items not yet available in our store.');
+      return;
     }
+    if (guardBusy) return; // 防双击双开
+    setGuardBusy(true);
+    // ① 同步占位窗：必须在用户手势同步栈内 open，await 后再 open 会被弹窗拦截器拦掉
+    //   （批次 5 T2 设计书最高优先级坑位）
+    const win = window.open('', '_blank');
+    win?.document.write('<p style="font-family:sans-serif;padding:2rem">Redirecting to checkout…</p>');
+    // ② 前置校验（L1 cart 有效性——getShopifyCart 内建自愈清坏 cartId；L2 checkoutUrl 可达）
+    const guard = await validateCheckout(() => getShopifyCart() as Promise<ShopifyCart | null>);
+    if (guard.ok) {
+      // ③ GA4 begin_checkout 只在「校验成功、即将跳转」时发（从函数开头搬家到位——
+      //   旧写法 checkoutUrl 为空/跳转失败也计一次，漏斗虚报）
+      const items: GaItem[] = [
+        ...(shopifyCart?.lines.edges.map(({ node: line }) => ({
+          item_id: line.merchandise.product.handle,
+          item_name: line.merchandise.product.title,
+          price: parseFloat(line.merchandise.price.amount),
+          quantity: line.quantity,
+        })) ?? []),
+        ...localItems.map((item) => ({
+          item_id: item.handle,
+          item_name: item.title,
+          price: parseFloat(item.price),
+          quantity: item.quantity,
+        })),
+      ];
+      trackEvent('begin_checkout', {
+        currency: GA_CURRENCY,
+        value: totalSubtotal,
+        items,
+      });
+      // ④ 占位窗改址（占位窗被拦截器误杀的兜底：退回直接 open）
+      if (win) {
+        win.location.href = shopifyCart.checkoutUrl;
+      } else {
+        window.open(shopifyCart.checkoutUrl, '_blank');
+      }
+      setGuardBusy(false);
+      return;
+    }
+    // ⑤ 失败：关占位窗 + 友好提示，不伪装成功
+    win?.close();
+    if (guard.reason === 'cart-invalid') {
+      toast('Your cart session expired — please add items again.');
+      // 坏 cartId 已被 getShopifyCart 清理；同步 UI（Shopify 行清空、本地行保留）+ 角标刷新
+      setShopifyCart(null);
+      notifyCartUpdated();
+    } else {
+      toast("Checkout isn't available right now — please try again shortly.");
+    }
+    setGuardBusy(false);
   };
 
   const hasItems = localItems.length > 0 || (shopifyCart?.lines?.edges?.length ?? 0) > 0;
@@ -365,11 +401,14 @@ export default function V2CartPage() {
                 {shopifyCart?.checkoutUrl && (
                   <button
                     onClick={handleCheckout}
-                    className="w-full py-4 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark"
+                    disabled={guardBusy}
+                    className="w-full py-4 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark disabled:opacity-60"
                   >
-                    Proceed to Checkout
+                    {guardBusy ? 'Checking out…' : 'Proceed to Checkout'}
                   </button>
                 )}
+                {/* 支付方式信任图标条（批次 5 T2：config 驱动，payments.ts 换素材/增删通道零代码改动） */}
+                {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
 
                 {localItems.length > 0 && (
                   <p className="mt-4 text-xs text-charcoal-light text-center leading-relaxed">
