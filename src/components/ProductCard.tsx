@@ -6,6 +6,7 @@ import { productCategoryTag } from '@/data/subcategories';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { isFavorite, toggleFavorite } from '@/lib/favorites';
+import { maybeTriggerCapture } from '@/lib/wishlist-capture';
 import { trackAddToWishlist } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 import QuickViewModal from '@/components/QuickViewModal';
@@ -72,6 +73,12 @@ export default function ProductCard({ product, variant = 'default', href }: Prod
         item_category: product.productType,
         price: parseFloat(displayPrice) || 0,
         quantity: 1,
+      });
+      // 游客心愿单捕获判定（批次 5 任务 4：未登录 ∧ 冷却外才弹面板，内部自判）
+      maybeTriggerCapture({
+        productId: product.id,
+        title: product.title,
+        image: image?.url || '',
       });
     }
     toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');

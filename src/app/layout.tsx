@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
 import CookieConsent from "@/components/CookieConsent";
+import WishlistCaptureModal from "@/components/v2/WishlistCaptureModal";
 import ToastProvider from "@/components/Toast";
 
 export const metadata: Metadata = {
@@ -83,6 +84,9 @@ export default function RootLayout({
               CookieConsent 横幅收集选择后 consent update */}
           <AnalyticsLoader />
           <CookieConsent />
+          {/* 游客心愿单捕获面板（批次 5）：全站单例——PLP 卡片/PDP 收藏新增时由
+              wishlist-capture.ts 事件触发（内部自判未登录+冷却，条件不满足零渲染开销） */}
+          <WishlistCaptureModal />
         </ToastProvider>
       </body>
     </html>
