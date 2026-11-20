@@ -16,6 +16,7 @@ import {
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { formatPrice } from '@/lib/currency';
 import { trackBeginCheckout, GaItem } from '@/lib/gtag';
+import { trackMetaCheckout } from '@/lib/meta-pixel';
 import { PreorderLineNote } from '@/components/v2/PreorderBox';
 import { validateCheckout } from '@/lib/checkout-guard';
 import { useToast } from '@/components/Toast';
@@ -81,6 +82,8 @@ export default function MiniCart() {
         quantity: line.quantity,
       }));
       trackBeginCheckout(parseFloat(shopifyCart.cost.subtotalAmount.amount) || 0, items);
+      // Meta Pixel: InitiateCheckout（与 GA4 同点同源；T2 校验成功分支才到这里）
+      trackMetaCheckout(parseFloat(shopifyCart.cost.subtotalAmount.amount) || 0, items);
       // ④ 占位窗改址（占位窗被拦截器误杀的兜底：退回直接 open）
       if (win) {
         win.location.href = shopifyCart.checkoutUrl;
@@ -452,7 +455,8 @@ export default function MiniCart() {
                 >
                   View Cart
                 </a>
-                {shopifyCart?.checkoutUrl && (
+                {/* 结账开关（2026-11-20 运营定：产品未正式上线前支付入口下线，与环境变量联动） */}
+                {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED === 'true' && (
                   <button
                     onClick={handleMiniCartCheckout}
                     disabled={guardBusy}
@@ -463,6 +467,9 @@ export default function MiniCart() {
                   </button>
                 )}
               </div>
+              {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED !== 'true' && (
+                <p className="mt-3 text-center text-xs text-[#777]">Online checkout is opening soon — stay tuned.</p>
+              )}
               {/* 支付方式信任图标条（批次 5 T2：footer 按钮组下方，flex-wrap 保 375px 不溢出） */}
               {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
             </div>

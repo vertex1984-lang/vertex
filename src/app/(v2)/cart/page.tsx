@@ -8,6 +8,7 @@ import { trackEvent, trackViewCart, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { v2url } from '@/lib/v2paths';
 import { PreorderLineNote } from '@/components/v2/PreorderBox';
 import { validateCheckout } from '@/lib/checkout-guard';
+import { trackMetaCheckout } from '@/lib/meta-pixel';
 import { useToast } from '@/components/Toast';
 import PayIcons from '@/components/v2/PayIcons';
 
@@ -149,6 +150,8 @@ export default function V2CartPage() {
         value: totalSubtotal,
         items,
       });
+      // Meta Pixel: InitiateCheckout（谁想买没付款——再营销/弃单受众，与 GA4 同点同源）
+      trackMetaCheckout(totalSubtotal, items);
       // ④ 占位窗改址（占位窗被拦截器误杀的兜底：退回直接 open）
       if (win) {
         win.location.href = shopifyCart.checkoutUrl;
@@ -398,7 +401,9 @@ export default function V2CartPage() {
                   </div>
                 </div>
 
-                {shopifyCart?.checkoutUrl && (
+                {/* 结账开关（2026-11-20 运营定：产品未正式上线前支付入口下线）：
+                    NEXT_PUBLIC_CHECKOUT_ENABLED=true 时启用；未启用时按钮替换为 "opening soon" 提示，徽章保留 */}
+                {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED === 'true' && (
                   <button
                     onClick={handleCheckout}
                     disabled={guardBusy}
@@ -406,6 +411,11 @@ export default function V2CartPage() {
                   >
                     {guardBusy ? 'Checking out…' : 'Proceed to Checkout'}
                   </button>
+                )}
+                {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED !== 'true' && (
+                  <p className="w-full py-4 rounded-full border border-warm-gray text-charcoal-light text-sm text-center">
+                    Online checkout is opening soon — stay tuned.
+                  </p>
                 )}
                 {/* 支付方式信任图标条（批次 5 T2：config 驱动，payments.ts 换素材/增删通道零代码改动） */}
                 {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
