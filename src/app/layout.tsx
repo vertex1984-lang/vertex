@@ -28,8 +28,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // 品牌图标全套（支付信任整改 2026-11-22 T1：源图 public/images/brand/makimoo-icon.webp
+  // 生成——favicon.ico 多尺寸在 src/app 文件约定注入 /favicon.ico；icon.png 512 供高分屏
+  // 标签；apple-touch-icon.png 180 为米色底品牌标（iOS 添加到主屏）。仅动本段，
+  // Meta Loader 挂载与既有 metadata 其余字段零触碰）
   icons: {
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16 32x32 48x48', type: 'image/x-icon' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
 };
 

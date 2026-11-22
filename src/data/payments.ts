@@ -13,11 +13,12 @@ export const PAY_METHODS: PayMethod[] = [
   { id: 'visa', label: 'Visa' },
   { id: 'mastercard', label: 'Mastercard' },
   { id: 'amex', label: 'Amex' },
-  // PayPal / Apple Pay / Google Pay 暂不支持（2026-11-18 运营定：现阶段仅主流信用卡）——
-  // 通道开通后取消下行注释即可，组件零改动（诚实口径：站内宣传的支付方式必须真实可用）
+  // 支付信任整改（2026-11-22 任务书 T2）：徽章顺序 = VISA → Mastercard → AMEX → Apple Pay
+  // → Google Pay（主卡种在前，钱包并列在后）；钱包徽章解除隐藏，PayPal 保持隐藏。
+  // 增删/排序只改本文件，组件零改动（诚实口径：站内宣传的支付方式必须真实可用）。
+  { id: 'apple-pay', label: 'Apple Pay' },
+  { id: 'google-pay', label: 'Google Pay' },
   // { id: 'paypal', label: 'PayPal' },
-  // { id: 'apple-pay', label: 'Apple Pay' },
-  // { id: 'google-pay', label: 'Google Pay' },
 ];
 
 export const PAY_NOTE = 'Checkout powered by Shopify';

@@ -44,6 +44,35 @@ function PayBrand({ id, label }: { id: string; label: string }) {
           </svg>
         </span>
       );
+    case 'apple-pay':
+      // Apple Pay：苹果标 + Pay 字标（官方形态的简化近似，单色黑；指示性使用）
+      return (
+        <span className={frame} title={label} aria-hidden="true">
+          <svg width="34" height="14" viewBox="0 0 34 14">
+            {/* 苹果轮廓（叶 + 果身，单 path 简化形） */}
+            <path
+              d="M8.6 4.1c.5-.6.8-1.4.7-2.1-.7 0-1.5.5-2 1.1-.4.5-.8 1.3-.7 2.1.8 0 1.5-.5 2-1.1zM10.4 7.5c0-1.6 1.3-2.4 1.4-2.4-.8-1.1-2-.9-2.4-.9-.5-.1-1 .3-1.3.3-.3 0-.7-.3-1.2-.3-1 0-2.1.6-2.7 1.7-.7 1.3-.4 3.3.6 4.6.5.6 1.1 1.4 1.9 1.3.4 0 .7-.3 1.3-.3.6 0 .8.3 1.3.3.8 0 1.4-.9 1.9-1.5.3-.5.5-.9.6-1.2-1.3-.5-1.4-1.5-1.4-1.6z"
+              fill="#000000"
+            />
+            <text x="12.5" y="11" fontFamily="Arial, Helvetica, sans-serif" fontWeight="600" fontSize="10" fill="#000000" letterSpacing="0.2">Pay</text>
+          </svg>
+        </span>
+      );
+    case 'google-pay':
+      // Google Pay：G 字标（官方四色 G：蓝/绿/黄/红，标准 Google G 路径）+ Pay 字标
+      return (
+        <span className={frame} title={label} aria-hidden="true">
+          <svg width="36" height="14" viewBox="0 0 36 14">
+            <g transform="translate(0.4 0.25) scale(0.75)">
+              <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.876 2.684-6.615z" />
+              <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" />
+              <path fill="#FBBC04" d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" />
+              <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" />
+            </g>
+            <text x="15" y="11" fontFamily="Arial, Helvetica, sans-serif" fontWeight="600" fontSize="10" fill="#5F6368" letterSpacing="0.2">Pay</text>
+          </svg>
+        </span>
+      );
     default:
       // 未提供矢量素材的支付方式：回退文字徽章（将来 PayPal 等开通时替换素材或补 SVG 分支）
       return (
