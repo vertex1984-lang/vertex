@@ -93,9 +93,9 @@ export default function Footer() {
         >
           <p className="text-xs opacity-40">&copy; 2026 Makimoo. All rights reserved.</p>
         {/* 加州商法典 §17538：付款前须披露法定公司名与实际街道地址——
-            TODO(上线前必改)：占位主体，正式注册名 + 香港街道地址由业务提供后替换 */}
+            2026-11-22 已填充正式主体（XTREME MICRO CO., LIMITED，任务书原文） */}
         <p className="mt-1.5 text-xs opacity-40">
-          Makimoo Limited · registered in Hong Kong — contact support@makimoohome.com for our registered address.
+          XTREME MICRO CO., LIMITED · Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR
         </p>
           <p className="text-xs opacity-40">Simple Life, Better Comfort.</p>
         </div>

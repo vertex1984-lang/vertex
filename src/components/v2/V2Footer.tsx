@@ -101,7 +101,7 @@ export default function V2Footer() {
         <div
           className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-charcoal/10"
         >
-          <p className="text-xs opacity-40">&copy; 2026 Makimoo. All rights reserved.</p>
+          <p className="text-xs opacity-40">&copy; 2026 Makimoo &middot; operated by XTREME MICRO CO., LIMITED. All rights reserved.</p>
           <p className="text-xs opacity-40">Simple Life, Better Comfort.</p>
         </div>
       </div>

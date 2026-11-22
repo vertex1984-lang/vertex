@@ -40,6 +40,9 @@ export default function V2PrivacyPage() {
               <p className="text-[#555] leading-relaxed mb-4">
                 At Makimoo (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website makimoohome.com (the &ldquo;Site&rdquo;) and purchase our home goods products.
               </p>
+              <p className="text-[#555] leading-relaxed mb-4">
+                The Site is operated by XTREME MICRO CO., LIMITED (registered address: Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR), which is the data controller responsible for personal information collected through the Site.
+              </p>
               <p className="text-[#555] leading-relaxed">
                 By accessing or using our Site, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue your use of the Site.
               </p>

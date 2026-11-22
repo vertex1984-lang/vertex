@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   description: 'Have a question or need support? Reach out to the Makimoo team — we answer every email within 12 hours.',
 };
 
-// 2026-09-30 用户定：删除 Address 卡片，保留 Email 和 Response Time
+// 2026-09-30 用户定：删除 Address 卡片，保留 Email 和 Response Time；
+// 2026-11-22 法定披露补 Company Information 卡（公司主体 + 注册地址，联系表单/邮箱不动）
 const CONTACT_INFO = [
   {
     title: 'Email',
@@ -39,6 +40,25 @@ const CONTACT_INFO = [
       <p className="text-sm text-charcoal-light leading-relaxed">
         We aim to respond to all inquiries within 12 hours during business days. For order-related questions, please include your order number.
       </p>
+    ),
+  },
+  {
+    // 法定披露（2026-11-22 任务书 T1）：公司主体 + 注册地址（公司名/地址以任务书原文为准，复制粘贴）
+    title: 'Company Information',
+    icon: (
+      <>
+        <path d="M3 21h18" />
+        <path d="M5 21V7l7-4 7 4v14" />
+        <path d="M9 21v-6h6v6" />
+      </>
+    ),
+    content: (
+      <>
+        <p className="text-sm font-semibold text-charcoal">XTREME MICRO CO., LIMITED</p>
+        <p className="text-sm text-charcoal-light mt-1 leading-relaxed">
+          Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR
+        </p>
+      </>
     ),
   },
 ];
