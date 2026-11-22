@@ -16,6 +16,8 @@ const NOTIFY_TOKEN = process.env.NEXT_PUBLIC_NOTIFY_TOKEN || 'makimoo-notify-dem
 
 export default function NotifyMe({ handle, comingSoon = false }: { handle: string; comingSoon?: boolean }) {
   const [email, setEmail] = useState('');
+  const [consent, setConsent] = useState(false);
+  const [granted, setGranted] = useState(false);
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
   const [err, setErr] = useState('');
@@ -32,7 +34,9 @@ export default function NotifyMe({ handle, comingSoon = false }: { handle: strin
       const r = await fetch(NOTIFY_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-notify-token': NOTIFY_TOKEN },
-        body: JSON.stringify({ handle, email: clean }),
+        // marketingConsent（2026-11-21 T3）：勾选才带 true——admin 侧据此发 notify-consent 券
+        //（发放开关在 admin 配置位；关闭时 granted=false，成功态不显示迎新文案）
+        body: JSON.stringify({ handle, email: clean, marketingConsent: consent }),
       });
       if (!r.ok) {
         const j = (await r.json().catch(() => ({}))) as { error?: string };
@@ -40,9 +44,11 @@ export default function NotifyMe({ handle, comingSoon = false }: { handle: strin
         setBusy(false);
         return;
       }
+      const j = (await r.json().catch(() => ({}))) as { granted?: boolean };
+      setGranted(j.granted === true);
       setDone(true);
       setBusy(false);
-      trackEvent('generate_lead', { handle }); // GA4 官方事件：订阅即留资（方案 1.4）
+      trackEvent('generate_lead', { handle }); // GA4 官方事件：订阅即留资（方案 1.4；T3 不改动此埋点）
     } catch {
       setErr('Network error. Please try again.');
       setBusy(false);
@@ -56,6 +62,10 @@ export default function NotifyMe({ handle, comingSoon = false }: { handle: strin
         <p className="mt-1.5 text-xs text-charcoal-light leading-relaxed">
           We&rsquo;ll email you the moment this becomes available. No spam — unsubscribe anytime.
         </p>
+        {/* T3 迎新券文案（勾了 consent 且 admin 发放开关开启才显示） */}
+        {granted && (
+          <p className="mt-2 text-xs font-semibold text-brand">A 10% welcome code is in your account rewards.</p>
+        )}
       </div>
     );
   }
@@ -87,6 +97,18 @@ export default function NotifyMe({ handle, comingSoon = false }: { handle: strin
           {busy ? 'Joining…' : 'Notify Me'}
         </button>
       </div>
+      {/* 数字营销 consent（2026-11-21 T3，会议决策「留资 + 询问数字营销 consent」；勾选发放迎新券） */}
+      <label className="mt-3 flex items-start gap-2 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={consent}
+          onChange={(e) => setConsent(e.target.checked)}
+          className="mt-0.5 h-4 w-4 flex-shrink-0 accent-[#8B5A2B]"
+        />
+        <span className="text-xs leading-relaxed text-charcoal-light">
+          Email me marketing news and offers — get a 10% welcome code for your first order.
+        </span>
+      </label>
       {err && <p role="alert" className="mt-2 text-xs text-red-600">{err}</p>}
     </div>
   );

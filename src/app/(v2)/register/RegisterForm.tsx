@@ -4,10 +4,16 @@ import { useEffect, useState } from 'react';
 import { customerRegister, loginCustomer } from '@/lib/customer';
 import { syncFavoritesWithCloud } from '@/lib/favorites';
 import { trackSignUp } from '@/lib/gtag';
+import { requestSignupCoupon } from '@/lib/rewards';
 
 /**
  * /register（批次 2 A4 轻注册）：只填邮箱+密码，姓名可选（首单再补地址——口径硬约束）。
  * 注册成功自动登录并跳转；成功帧显示迎新券占位文案（B6：真实发放等闸门 A，TODO）。
+ *
+ * 2026-11-21 登录激励批次（T1/T3）：
+ * - ?email= 预填（游客下单后建号引导 / 站内链接带邮箱，仅 URL 参数传递，不落新存储）
+ * - ?redirect= 同 /login 的回跳别名（结算软提示链入口；与 ?next= 同口径）
+ * - 注册成功即申请迎新券（reason='signup'，admin 开关控制；granted=true 才显示迎新文案行）
  */
 export default function RegisterForm() {
   const [email, setEmail] = useState('');
@@ -18,11 +24,16 @@ export default function RegisterForm() {
   const [err, setErr] = useState('');
   const [done, setDone] = useState(false);
   const [nextPath, setNextPath] = useState('/account/');
+  // 迎新券是否已入账（admin 开关关闭 = false = 不显示文案行）
+  const [welcomeGranted, setWelcomeGranted] = useState(false);
 
   useEffect(() => {
     const sp = new URLSearchParams(window.location.search);
-    const n = sp.get('next') || '';
+    // ?redirect= 与 ?next= 同口径（T1 建号引导/结算软提示别名；开放重定向防护不变）
+    const n = sp.get('redirect') || sp.get('next') || '';
     if (n.startsWith('/') && !n.startsWith('//')) setNextPath(n);
+    const pre = sp.get('email') || '';
+    if (pre.includes('@')) setEmail(pre.trim());
   }, []);
 
   async function handleSubmit(e: React.FormEvent) {
@@ -54,10 +65,13 @@ export default function RegisterForm() {
         if (me.ok) void syncFavoritesWithCloud(me.data.id);
       } catch { /* 合并失败不阻断 */ }
     }
+    // T3 注册发券（reason='signup'）：admin 开关开启且未发过 → granted=true；
+    // 失败/开关关闭静默（不阻断注册主流程）
+    requestSignupCoupon(email).then(setWelcomeGranted).catch(() => {});
     setDone(true);
     setBusy(false);
-    // 短暂展示迎新帧后进入账户（文案即 B6 迎新券占位）
-    setTimeout(() => { window.location.href = nextPath; }, 2200);
+    // 短暂展示迎新帧后进入账户
+    setTimeout(() => { window.location.href = nextPath; }, 2600);
   }
 
   if (done) {
@@ -70,10 +84,16 @@ export default function RegisterForm() {
             </svg>
           </div>
           <h1 className="text-xl lg:text-2xl font-extrabold tracking-tight text-charcoal mb-2">Welcome — you&apos;re in.</h1>
-          {/* B6 迎新券占位：真实发放依赖闸门 A（Shopify Admin API 折扣码），UI 先行 */}
-          <p className="text-sm text-charcoal-light leading-relaxed">
-            Your first-order discount will be emailed to you.
-          </p>
+          {/* B6 占位 + T3 迎新券（开关开启且发放成功才显示；文案对齐任务书口径） */}
+          {welcomeGranted ? (
+            <p className="text-sm font-semibold text-brand leading-relaxed">
+              A 10% welcome code is in your account rewards.
+            </p>
+          ) : (
+            <p className="text-sm text-charcoal-light leading-relaxed">
+              Your first-order discount will be emailed to you.
+            </p>
+          )}
           {/* TODO(闸门 A)：Admin API 创建专属折扣码 + 邮件序列触发迎新券 */}
         </div>
       </div>

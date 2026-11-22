@@ -11,6 +11,7 @@ import { validateCheckout } from '@/lib/checkout-guard';
 import { trackMetaCheckout } from '@/lib/meta-pixel';
 import { useToast } from '@/components/Toast';
 import PayIcons from '@/components/v2/PayIcons';
+import SignInPrompt from '@/components/v2/SignInPrompt';
 
 interface ShopifyCartLine {
   id: string;
@@ -285,7 +286,10 @@ export default function V2CartPage() {
             </div>
           ) : (
             <div className="lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-start">
-              <div>
+              {/* min-w-0：防 grid blowout——长标题条目（truncate 只裁视觉不减内在宽度）
+                  会把 1fr 列撑爆出容器（2026-11-22 用户截图实测：卡片溢出右缘、摘要列被挤没；
+                  同根因即 375px 条目行挤压的挂账项） */}
+              <div className="min-w-0">
                 {/* Shopify Cart Items */}
                 {shopifyCart && hasShopifyLines && (
                   <div className="mb-8">
@@ -419,6 +423,11 @@ export default function V2CartPage() {
                 )}
                 {/* 支付方式信任图标条（批次 5 T2：config 驱动，payments.ts 换素材/增删通道零代码改动） */}
                 {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
+
+                {/* 结算软提示（2026-11-21 T1：未登录才渲染，已登录零打扰；GA4 view_promotion 一次） */}
+                <div className="mt-3">
+                  <SignInPrompt slot="cart-page" />
+                </div>
 
                 {localItems.length > 0 && (
                   <p className="mt-4 text-xs text-charcoal-light text-center leading-relaxed">

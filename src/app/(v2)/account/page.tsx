@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { v2url } from '@/lib/v2paths';
 import { useCustomer } from '@/lib/use-customer';
 import { orderEmailHash, type TrackedOrder } from '@/lib/track';
+import { fetchMyCoupons, type MyCoupon } from '@/lib/rewards';
 import AccountPreorderCard from '@/components/v2/AccountPreorderCard';
 import { OrderRow } from '@/components/v2/AccountOrderBits';
 
@@ -15,6 +16,13 @@ export default function AccountOverviewPage() {
   const { profile, loading, error } = useCustomer();
   // 预售进度（任务 4）：null = 匹配中（不渲染区块）
   const [preorders, setPreorders] = useState<TrackedOrder[] | null>(null);
+  // My Rewards 摘要（2026-11-21 登录激励批次 T2）：null = 加载中（不渲染）
+  const [coupons, setCoupons] = useState<MyCoupon[] | null>(null);
+
+  useEffect(() => {
+    if (!profile) return;
+    fetchMyCoupons(profile.email).then(setCoupons);
+  }, [profile]);
 
   useEffect(() => {
     if (!profile) return;
@@ -68,6 +76,25 @@ export default function AccountOverviewPage() {
           <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-charcoal">Your pre-orders</h3>
           <div className="space-y-2.5">
             {preorders.map((o) => <AccountPreorderCard key={o.orderNo} order={o} />)}
+          </div>
+        </section>
+      )}
+
+      {/* My Rewards 摘要（T2）：有券才渲染卡片（无券零噪音），点进 Rewards 页看明细 */}
+      {coupons !== null && coupons.length > 0 && (
+        <section>
+          <div className="rounded-2xl border border-brand/35 bg-brand/5 p-4">
+            <div className="flex items-baseline justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold text-charcoal">My Rewards · {coupons.length} code{coupons.length > 1 ? 's' : ''}</p>
+                <p className="mt-0.5 text-xs text-charcoal-light">
+                  Latest: <span className="font-mono font-bold text-brand">{coupons[0].code}</span> — {coupons[0].percentOff}% off, single use
+                </p>
+              </div>
+              <a href={v2url('/account/rewards/')} className="text-xs font-semibold text-brand hover:underline underline-offset-2 whitespace-nowrap">
+                View rewards
+              </a>
+            </div>
           </div>
         </section>
       )}

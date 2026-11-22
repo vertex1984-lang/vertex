@@ -21,6 +21,7 @@ import { PreorderLineNote } from '@/components/v2/PreorderBox';
 import { validateCheckout } from '@/lib/checkout-guard';
 import { useToast } from '@/components/Toast';
 import PayIcons from '@/components/v2/PayIcons';
+import SignInPrompt from '@/components/v2/SignInPrompt';
 
 interface ShopifyCartLine {
   id: string;
@@ -472,6 +473,10 @@ export default function MiniCart() {
               )}
               {/* 支付方式信任图标条（批次 5 T2：footer 按钮组下方，flex-wrap 保 375px 不溢出） */}
               {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
+              {/* 结算软提示（2026-11-21 T1：未登录才渲染，已登录零打扰；GA4 view_promotion 一次） */}
+              <div className="mt-3">
+                <SignInPrompt slot="mini-cart" />
+              </div>
             </div>
           </>
         )}

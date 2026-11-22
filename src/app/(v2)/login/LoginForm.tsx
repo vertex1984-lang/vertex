@@ -28,7 +28,8 @@ export default function LoginForm() {
   useEffect(() => {
     const sp = new URLSearchParams(window.location.search);
     // 开放重定向防护：只接受站内相对路径（/ 开头且非 //）
-    const n = sp.get('next') || '';
+    // ?next= 是批次 2 原参数；?redirect= 是 2026-11-21 T1 结算软提示用的别名（同口径）
+    const n = sp.get('redirect') || sp.get('next') || '';
     if (n.startsWith('/') && !n.startsWith('//')) setNextPath(n);
     if (sp.get('expired') === '1') setNotice('Your session has expired. Please sign in again.');
     else if (sp.get('signedOut') === '1') setNotice('You have been signed out.');

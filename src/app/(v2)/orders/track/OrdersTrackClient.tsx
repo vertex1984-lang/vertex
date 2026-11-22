@@ -16,6 +16,8 @@ import {
   type TrackedOrder,
 } from '@/lib/track';
 import { trackPreorderTimelineView } from '@/lib/gtag';
+import { getCustomerToken } from '@/lib/customer';
+import { resolveUrl } from '@/lib/paths';
 
 type Phase = 'idle' | 'checking' | 'hit' | 'miss';
 
@@ -33,6 +35,9 @@ export default function OrdersTrackClient() {
   const [phase, setPhase] = useState<Phase>('idle');
   const [order, setOrder] = useState<TrackedOrder | null>(null);
   const [error, setError] = useState('');
+  // 建号引导（2026-11-21 T1.2）：游客查单命中且未登录时展示「保存信息」注册入口
+  //（邮箱从本次查询字段回填，仅 URL 参数传递，不落新存储；已登录不渲染）
+  const [nudge, setNudge] = useState(false);
   // 时间线到达时间客户端现算展示（水合安全：只在提交后渲染结果区）
   const lastLookup = useRef(0);
 
@@ -68,6 +73,7 @@ export default function OrdersTrackClient() {
       if (hit) {
         setOrder(hit);
         setPhase('hit');
+        setNudge(!getCustomerToken()); // 游客才展示建号引导（已登录零打扰）
         trackPreorderTimelineView({ result: 'hit', milestone_count: hit.milestones.filter((m) => m.at).length });
       } else {
         setOrder(null);
@@ -225,6 +231,21 @@ export default function OrdersTrackClient() {
             <p className="mt-4 text-center text-[11px] leading-relaxed text-charcoal-light">
               Changed your mind? You can cancel free of charge any time before your order departs the port.
             </p>
+            {/* T1.2 游客建号引导（email 预填回填本次查询邮箱；注册成功进 /account） */}
+            {nudge && (
+              <div className="mt-4 rounded-2xl border border-brand/35 bg-brand/5 p-5 text-center">
+                <p className="text-sm font-semibold text-charcoal">Save your info for faster checkout next time</p>
+                <p className="mt-1.5 text-xs text-charcoal-light leading-relaxed">
+                  Create an account with {email.trim()} to track orders and collect member perks.
+                </p>
+                <a
+                  href={resolveUrl(`/register/?email=${encodeURIComponent(email.trim())}&next=${encodeURIComponent('/account/')}`)}
+                  className="mt-3 inline-block px-6 py-2.5 rounded-full bg-brand text-cream text-xs font-semibold transition hover:bg-brand-dark"
+                >
+                  Create your account
+                </a>
+              </div>
+            )}
           </div>
         )}
       </div>

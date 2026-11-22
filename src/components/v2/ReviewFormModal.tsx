@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { customerGet, getCustomerToken } from '@/lib/customer';
+import { resolveUrl } from '@/lib/paths';
 
 /**
  * 写评价弹层（2026-10-10 用户定；2026-11-12 批次 3 评价闭环接入真实提交）：
@@ -79,6 +81,20 @@ export default function ReviewFormModal({ open, onClose, productTitle, handle }:
   const [busy, setBusy] = useState(false);
   const [submitErr, setSubmitErr] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  // 登录身份（2026-11-21 T2 评价送券）：有会话时静默取邮箱随评价提交（approve 后发券）；
+  // 未登录显示一行 earning 提示（仅提示不强制，保持匿名 pending 流程不变）
+  const [customerEmail, setCustomerEmail] = useState('');
+  const [hasSession, setHasSession] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const token = getCustomerToken();
+    if (!token) return;
+    setHasSession(true);
+    customerGet(token.accessToken).then((r) => {
+      if (r.ok) setCustomerEmail(r.data.email.trim().toLowerCase());
+    });
+  }, [open]);
 
   // ESC 关闭 + 背景滚动锁（QuickViewModal 同款）
   useEffect(() => {
@@ -136,6 +152,8 @@ export default function ReviewFormModal({ open, onClose, productTitle, handle }:
           title: title.trim() || undefined,
           text: content.trim(),
           author: author.trim() || undefined,
+          // T2 评价送券：仅登录用户携带身份（匿名提交不带 → 不参与发券）
+          ...(customerEmail ? { customerEmail } : {}),
         }),
       });
       if (!res.ok) {
@@ -177,6 +195,12 @@ export default function ReviewFormModal({ open, onClose, productTitle, handle }:
             </div>
             <p className="text-base font-bold text-charcoal">Thanks — your review will appear after moderation.</p>
             <p className="mt-2 text-xs text-charcoal-light">You can close this window now.</p>
+            {/* T2：登录身份评价审核通过后自动发券（发放由 admin 开关控制，这里只做预期提示） */}
+            {customerEmail && (
+              <p className="mt-3 text-xs font-semibold text-brand">
+                Signed in — you&apos;ll earn a reward code if this review is approved.
+              </p>
+            )}
           </div>
         ) : (
           <>
@@ -185,6 +209,18 @@ export default function ReviewFormModal({ open, onClose, productTitle, handle }:
               <h3 className="text-lg font-extrabold tracking-tight text-charcoal mt-1">
                 {productTitle ? `Review: ${productTitle}` : 'Write a Review'}
               </h3>
+              {/* T2 提示（仅提示不强制；匿名评价流程不变） */}
+              {!hasSession && (
+                <p className="mt-1 text-xs text-charcoal-light">
+                  <a
+                    href={resolveUrl(`/login/?redirect=${encodeURIComponent(typeof window !== 'undefined' ? window.location.pathname + window.location.search : '')}`)}
+                    className="font-semibold text-brand hover:underline underline-offset-2"
+                  >
+                    Sign in
+                  </a>{' '}
+                  before reviewing to earn rewards.
+                </p>
+              )}
             </div>
 
             <div className="px-6 pb-6 pt-2 space-y-5">

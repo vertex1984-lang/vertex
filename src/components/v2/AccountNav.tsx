@@ -14,6 +14,7 @@ import { v2url } from '@/lib/v2paths';
 const ITEMS = [
   { href: '/account/', label: 'Overview' },
   { href: '/account/orders/', label: 'Orders' },
+  { href: '/account/rewards/', label: 'Rewards' },
   { href: '/account/addresses/', label: 'Addresses' },
   { href: '/account/profile/', label: 'Profile' },
   { href: '/account/wishlist/', label: 'Wishlist' },
