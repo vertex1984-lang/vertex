@@ -136,7 +136,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 ## Git
 
-- remote：`git@github.com:vertex1984-lang/vertex.git`，推送后 Vercel 自动部署。commit/push 必须用户明确要求后才执行。
+- remote：`git@github.com:vertex1984-lang/vertex.git`。**2026-11-23 起部署已迁至 Cloudflare Pages（Direct Upload，项目 `makimoohome`），push 到 GitHub 不再触发任何部署**；上线 = 本地 `npm run build` + `npx wrangler pages deploy out --project-name makimoohome --branch main`（详见上级 `Makimoo Website/AGENTS.md`「部署上线」节）。commit/push/deploy 必须用户明确要求后才执行。
 - **上线约定（2026-09-26 用户定）**：本机（owner）的改动在 localhost 经用户验收后，用户说"推送/上线"即合并进 `main` 直接上线；**协作方推到分支的内容，每次都必须经用户明确确认后才合并进 main——不默认自动合并任何分支**。**每次推送前必须检查协作方分支是否有新提交：有 → 先提醒用户做专门 review，确认没问题后才允许合并进 main**（2026-09-26 踩坑：协作方提交经 rebase 混入共享分支，随上线一起进了 main）。生产站只部署 main，推其他分支只产生 Vercel 预览、不影响线上。
 - **分支分工（2026-09-26 用户定，确保两边更新完全独立）**：`feat/owner` = 本机工作分支（从 main 拉出，只含用户验收过的改动）；`feat/pdp-v2-features` = 协作方分支（本机不再在上面提交）；`main` = 唯一汇合点，进 main 只有两条路：owner 验收后直推 / 协作方分支经用户确认后合并。
 
@@ -144,7 +144,7 @@ Next.js 14 静态导出站点（`output: export` → `out/`）。数据源三方
 
 - 仓库为 **Public**，协作者：**OnishiAguri**（Write 权限，2026-09 加入）。
 - **`main` 已启用服务端分支保护**（ruleset `protect-main`，2026-09 配置；2026-09-26 与用户共同核验）：禁止 force push、禁止删除分支；**Require a pull request before merging + Required approvals = 1 + Dismiss stale approvals（approve 后推新提交批准自动作废）**；**Bypass list 仅 Repository admin（Always allow）——即只有仓库所有者（vertex1984-lang）可直推 main**（2026-09 v2 上线实测直推成功）。协作者（OnishiAguri，Write 角色、不在 bypass 名单）**物理上无法直推 main，只能发 PR 等所有者 Approve**；Approve 后协作者可自行点 Merge（内容已过审，无妨）。
-- 推送/合并进 `main` 即触发 Vercel 自动上线，注意改动影响。
+- 合并进 `main` 不再自动上线（Vercel 已停用）；合并后需用户明确说「部署/上线」才执行 wrangler 部署到 Cloudflare Pages。
 - 动工前先 `git pull` 并基于最新 `main` 开分支，避免冲突。
 - `.env.local` 不进仓库：协作者需自行创建（Shopify 三个环境变量 + `SEEANY_API_KEY`，由用户线下私下传递）。
 
