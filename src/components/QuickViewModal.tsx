@@ -6,6 +6,7 @@ import { MakimooProduct } from '@/data/products';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { preorderOf } from '@/data/preorder';
+import { trackMetaItem } from '@/lib/meta-pixel';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { useToast } from '@/components/Toast';
 
@@ -58,6 +59,14 @@ export default function QuickViewModal({ product, open, onClose, detailHref }: Q
 
   const handleAddToCart = async () => {
     setAdding(true);
+    // Meta Pixel: AddToCart（GA4 埋点的历史缺口处——本批 Meta 补上，GA4 口径不动；
+    // QuickView 是预售款真实加购入口，漏报会低估 AddToCart 漏斗）
+    trackMetaItem('AddToCart', {
+      item_id: product.handle,
+      item_name: product.title,
+      price: parseFloat(displayPrice) || 0,
+      quantity: 1,
+    });
     try {
       if (hasShopifyData && product.shopifyVariantId) {
         const result = await addToShopifyCart(product.shopifyVariantId, 1);

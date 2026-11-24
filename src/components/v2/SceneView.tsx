@@ -19,6 +19,7 @@ import {
 } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY } from '@/lib/gtag';
+import { trackMetaItem, trackMetaBundle } from '@/lib/meta-pixel';
 import { useToast } from '@/components/Toast';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -83,6 +84,7 @@ const hasUnpriced = pricedItems.length < selectedItems.length;
       value: parseFloat(h.price),
       items: [{ item_id: h.handle, item_name: h.title, price: parseFloat(h.price), quantity: 1 }],
     });
+    trackMetaItem('AddToCart', { item_id: h.handle, item_name: h.title, price: parseFloat(h.price), quantity: 1 });
     try {
       if (h.variantId) {
         const result = await addToShopifyCart(h.variantId, 1);
@@ -124,6 +126,7 @@ const hasUnpriced = pricedItems.length < selectedItems.length;
         quantity: 1,
       })),
     });
+    trackMetaBundle('AddToCart', items.map((h) => ({ item_id: h.handle, item_name: h.title, price: parseFloat(h.price), quantity: 1 })), comboPrice);
     try {
       const withVariant = items.filter((h) => h.variantId);
       const withoutVariant = items.filter((h) => !h.variantId);

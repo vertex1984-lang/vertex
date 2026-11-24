@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { CONSENT_GRANTED_EVENT } from '@/lib/meta-pixel';
 
 /**
  * Consent Mode v2 简易横幅（2026-11-12 批次 1，演示版）：
@@ -41,6 +42,12 @@ export default function CookieConsent() {
   function choose(choice: ConsentChoice) {
     localStorage.setItem(CONSENT_KEY, choice);
     applyConsent(choice);
+    // Meta Pixel 联动（2026-11-19）：Accept 后通知 MetaLoader 注入 fbevents.js——
+    // 授权前页面无任何 Meta 脚本（Decline/未选 = 全程零注入）；复访场景 MetaLoader
+    // 挂载时自读 localStorage，不走本事件
+    if (choice === 'granted' && typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent(CONSENT_GRANTED_EVENT));
+    }
     setState('done');
   }
 
