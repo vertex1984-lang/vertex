@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { formatPrice } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
+import { trackMetaItem } from '@/lib/meta-pixel';
 import { useToast } from '@/components/Toast';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
@@ -46,6 +47,7 @@ export default function QuickAddCard({ card }: { card: QuickAddCardData }) {
         quantity: 1,
       } satisfies GaItem],
     });
+    trackMetaItem('AddToCart', { item_id: card.handle, item_name: card.title, price, quantity: 1 });
     try {
       if (card.variantId) {
         const result = await addToShopifyCart(card.variantId, 1);

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
+import MetaLoader from "@/components/MetaLoader";
 import WishlistCaptureModal from "@/components/v2/WishlistCaptureModal";
 import ToastProvider from "@/components/Toast";
 
@@ -91,6 +92,9 @@ export default function RootLayout({
               CookieConsent 横幅已全站移除（2026-11-26 用户定：美国市场无强制 Cookie 提示法规，
               弹窗干扰首访用户；analytics_storage 默认 granted，广告类保持 denied） */}
           <AnalyticsLoader />
+          {/* Meta Pixel：横幅已移除、US 市场视为默认授权——MetaLoader 门控改为默认注入
+              （仅 localStorage makimoo-consent === 'declined' 时跳过，兼容横幅回归场景） */}
+          <MetaLoader />
           {/* 游客心愿单捕获面板（批次 5）：全站单例——PLP 卡片/PDP 收藏新增时由
               wishlist-capture.ts 事件触发（内部自判未登录+冷却，条件不满足零渲染开销） */}
           <WishlistCaptureModal />

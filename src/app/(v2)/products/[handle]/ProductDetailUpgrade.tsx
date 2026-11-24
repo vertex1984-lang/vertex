@@ -18,6 +18,7 @@ import { v2url } from '@/lib/v2paths';
 import { addToShopifyCart, addToLocalCart, notifyCartUpdated, openMiniCart } from '@/lib/cart';
 import { COMING_SOON_LABEL, formatPrice, isComingSoonAmount } from '@/lib/currency';
 import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
+import { trackMetaItem } from '@/lib/meta-pixel';
 import { addRecentlyViewed } from '@/lib/recently-viewed';
 import { useToast } from '@/components/Toast';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -115,7 +116,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     return () => document.removeEventListener('pointerdown', onPointerDown);
   }, [sizeMenuOpen]);
 
-  // GA4: view_item
+  // GA4: view_item + Meta Pixel: ViewContent（谁看了这件——广告再营销受众核心来源）
   useEffect(() => {
     if (!product) return;
     const price = parseFloat(product.shopifyPrice || product.priceRange.minVariantPrice.amount);
@@ -129,6 +130,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         price,
         quantity: 1,
       } satisfies GaItem],
+    });
+    trackMetaItem('ViewContent', {
+      item_id: product.handle,
+      item_name: product.title,
+      price,
+      quantity: 1,
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handle]);
@@ -328,6 +335,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         price,
         quantity,
       } satisfies GaItem],
+    });
+    trackMetaItem('AddToCart', {
+      item_id: product.handle,
+      item_name: product.title,
+      price,
+      quantity,
     });
     try {
       if (product.hasShopifyData && product.shopifyVariantId) {
