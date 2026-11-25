@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import V2Hero from '@/components/v2/V2Hero';
-import V2FirstDrop from '@/components/v2/V2FirstDrop';
+// import V2FirstDrop from '@/components/v2/V2FirstDrop'; // 2026-11-26 随区块隐藏暂时停用，恢复时一并取消注释
 import V2TrustBar from '@/components/v2/V2TrustBar';
 import V2MoodFeed from '@/components/v2/V2MoodFeed';
 import V2BrandBanner from '@/components/v2/V2BrandBanner';
@@ -47,8 +47,10 @@ export default function V2HomePage() {
         <V2Hero />
       </div>
       <V2TrustBar />
-      {/* 首发系列区（2026-11-15 上线方案 1.1/1.7）：3 款首发预售 SKU 故事位（配置驱动可换款） */}
-      <V2FirstDrop />
+      {/* 首发预售区（2026-11-15 上线方案 1.1/1.7）：3 款首发预售 SKU 故事位（配置驱动可换款）。
+          2026-11-26 用户定：暂时隐藏不展示，待优化后再恢复——组件 V2FirstDrop 保留磁盘备用，
+          恢复时取消下一行注释并补回 import 即可 */}
+      {/* <V2FirstDrop /> */}
       <V2MoodFeed />
       {/* Before/After 首页模块 2026-10-30 用户定移除（对比内容只保留 PDP 双图区 + /inspiration 页）；
           V2BeforeAfterSection 组件文件保留磁盘备用 */}

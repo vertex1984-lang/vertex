@@ -1,6 +1,6 @@
 /**
  * 站内行为画像（2026-10 P2 建，P2.1 扩展）：纯 localStorage、无 PII、无同意门控。
- * （CookieConsent 组件已于 2026-09-28 移除、GA4 无条件加载——功能型存储与现状同口径。）
+ * （CookieConsent 组件已于 2026-11-26 全站移除、GA4 analytics 默认 granted——功能型存储与现状同口径。）
  *
  * 信号源与权重（对 affinity 的贡献倍率）：
  * - 浏览   makimoo-recently-viewed（handles，新→旧）  位置衰减 1.0 → 0.1

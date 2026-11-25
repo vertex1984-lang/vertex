@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AnalyticsLoader from "@/components/AnalyticsLoader";
-import CookieConsent from "@/components/CookieConsent";
 import WishlistCaptureModal from "@/components/v2/WishlistCaptureModal";
 import ToastProvider from "@/components/Toast";
 
@@ -88,10 +87,10 @@ export default function RootLayout({
       <body className="antialiased" style={{ backgroundColor: '#F8F5F0' }}>
         <ToastProvider>
           {children}
-          {/* GA4：NEXT_PUBLIC_GA_ID 有值时经 AnalyticsLoader 加载（Consent Mode v2 默认 denied）；
-              CookieConsent 横幅收集选择后 consent update */}
+          {/* GA4：NEXT_PUBLIC_GA_ID 有值时经 AnalyticsLoader 加载。
+              CookieConsent 横幅已全站移除（2026-11-26 用户定：美国市场无强制 Cookie 提示法规，
+              弹窗干扰首访用户；analytics_storage 默认 granted，广告类保持 denied） */}
           <AnalyticsLoader />
-          <CookieConsent />
           {/* 游客心愿单捕获面板（批次 5）：全站单例——PLP 卡片/PDP 收藏新增时由
               wishlist-capture.ts 事件触发（内部自判未登录+冷却，条件不满足零渲染开销） */}
           <WishlistCaptureModal />
