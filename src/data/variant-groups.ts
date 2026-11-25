@@ -3276,6 +3276,16 @@ export const HIDDEN_VARIANT_COLORS: Record<string, readonly string[]> = {
   ],
 };
 
+// —— 运营后台新增系列合并（admin-products.json 由 makimoo-admin 发布时写入；空数组 = 无影响）——
+// 命名空间导入：webpack（Next 构建）与纯 transpile 加载器两种环境下都直接拿到 JSON 本体。
+// 运营后台新增系列合并：兼容 Next/webpack 与 build 脚本 CJS 直载两种加载环境（同 products.ts 口径）。
+import * as adminProductsNs from './admin-products.json';
+
+const adminVariantGroupsFile = ((adminProductsNs as unknown as { default?: { variantGroups?: VariantGroup[] } }).default) ??
+  (adminProductsNs as unknown as { variantGroups?: VariantGroup[] });
+const adminVariantGroups = adminVariantGroupsFile.variantGroups ?? [];
+VARIANT_GROUPS.push(...adminVariantGroups);
+
 export function isVariantColorHidden(groupId: string, color: string): boolean {
   const list = HIDDEN_VARIANT_COLORS[groupId];
   return list ? list.includes(color) : false;

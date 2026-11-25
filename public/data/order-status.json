@@ -1,0 +1,56 @@
+{
+  "_comment": "由 makimoo-admin（运营后台）订单台账发布时写入。手工勿改：下次发布会整体重写。orders 内只有 emailHash（sha256 前 16 位），绝无邮箱明文。",
+  "generatedAt": "2026-11-15T07:59:32.765Z",
+  "orders": [
+    {
+      "orderNo": "MK-TEST-001",
+      "emailHash": "a834ac7d2b7b76e6",
+      "items": [
+        {
+          "title": "Test Bamboo Cooling Sheet Set Queen",
+          "qty": 1
+        }
+      ],
+      "promiseLabel": "Arrives Dec 17 – Dec 20",
+      "milestones": [
+        {
+          "key": "ordered",
+          "at": "2026-11-12T07:28:38.069Z"
+        },
+        {
+          "key": "production_started",
+          "at": "2026-11-12T07:28:39.184Z",
+          "note": "Cutting started at factory"
+        },
+        {
+          "key": "production_done",
+          "at": ""
+        },
+        {
+          "key": "departed",
+          "at": ""
+        },
+        {
+          "key": "arrival_notice",
+          "at": ""
+        },
+        {
+          "key": "customs_cleared",
+          "at": ""
+        },
+        {
+          "key": "warehouse",
+          "at": ""
+        },
+        {
+          "key": "out_for_delivery",
+          "at": ""
+        },
+        {
+          "key": "delivered",
+          "at": ""
+        }
+      ]
+    }
+  ]
+}

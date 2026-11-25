@@ -24,7 +24,11 @@ import ImageLightbox from '@/components/ImageLightbox';
 import { getProductSpecs, formatDimensionsDual, formatWeightDual } from '@/lib/specs';
 import { beddingPdpHeading, beddingUsSizeLabel } from '@/data/bedding-families';
 import { getCareCopy, RUG_TITLE_RE } from '@/lib/care-copy';
-import EstimatedDelivery from '@/components/v2/EstimatedDelivery';
+import NotifyMe from '@/components/v2/NotifyMe';
+import PdpFavoriteButton from '@/components/v2/PdpFavoriteButton';
+import PayIcons from '@/components/v2/PayIcons';
+import PreorderBox from '@/components/v2/PreorderBox';
+import { preorderOf } from '@/data/preorder';
 import StarDisplay from '@/components/v2/StarDisplay';
 import PdpStoryBlocks from '@/components/v2/PdpStoryBlocks';
 import V2PdpBeforeAfterDuo from '@/components/v2/V2PdpBeforeAfterDuo';
@@ -66,12 +70,13 @@ function sizeDualLabel(size: string): string {
 
 // Shipping & Return 为通用文案（2026-10-12 用户定：Shipping & Delivery 与 Returns & Refunds 合并为一节）；
 // Care 节由 getCareCopy 按分类生成（src/lib/care-copy.ts，与老版 PDP 共用）
-const ACCORDION_SECTIONS_BASE = [
-  {
-    title: 'Shipping & Return',
-    body: 'Free shipping on all orders. Orders are processed within 1-2 business days and typically arrive within 5-10 business days depending on your location. We offer an extended 30-day return period — if you are not satisfied, contact us and we will cover the return shipping cost.',
-  },
-];
+// Shipping & Return 文案随购买状态（2026-11-15 分层/合规改版）：预售 = 35 天口径；
+// 展示层/Coming Soon = 开售预告口径。免邮口径统一 over $49（公告条/信任条/政策页同源）
+function shippingReturnCopy(state: 'preorder' | 'display' | 'coming_soon'): string {
+  return state === 'preorder'
+    ? 'Free shipping on orders over $49. This item is made to order and ships within 35 days of purchase — see the delivery estimate above. Questions? Contact us anytime: orders can be cancelled for a full refund any time before they ship.'
+    : 'Free shipping on orders over $49. This style is not open for purchase yet — join the notify list above and we will email you the moment it opens. Returns are accepted per our return policy.';
+}
 
 // 滚动信任条文案（2026-09-29 用户定，购买区精简后更多信任元素在此滚动展示）；
 // 渲染时数组拼接两遍实现无缝循环（配合 globals.css 的 animate-marquee）
@@ -227,10 +232,17 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   // 统一显示 Coming Soon、不出 Add to Cart（结账链路只有 Shopify 行，站内本地购物车无法结账）
   const launched = hasShopifyData === true;
   const sellable = launched && (product.shopifyAvailable ?? false);
-  const availabilityLabel = sellable ? 'In Stock' : launched ? 'Out of Stock' : 'Coming Soon';
+  // 预售商品（2026-11-10 预售系统第一批）：handle 命中 preorder 配置即按预售展示；
+  // 结算价仍走 Shopify 现价（= 预售专享价，展示与结算一致）
+  const preorder = preorderOf(product.handle);
+  const availabilityLabel = preorder
+    ? 'Pre-Order'
+    : launched ? '' : 'Coming Soon'; // 展示层（S1）不出任何现货/库存文案（上线方案 1.5 全局项）
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
-  const showCompareAt = product.compareAtPrice && parseFloat(product.compareAtPrice) > parseFloat(displayPrice);
+  // 划线价：预售商品取 preorder 配置原价，其余用商品自带 compareAtPrice
+  const compareAtPrice = preorder?.regularPrice ?? product.compareAtPrice;
+  const showCompareAt = compareAtPrice && parseFloat(compareAtPrice) > parseFloat(displayPrice);
 
   // 标题：enrich 短标题（新标题公式已写入 short-titles）；
   // 原始长标题副行已于 2026-10-12 移除（用户定：PDP 不显示副标题）；
@@ -300,7 +312,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
     // 2026-11-02 用户定：ASIN 以「Model」命名展示，避免与 SKU 混淆
     { label: 'Model', value: product.asin },
     { label: 'Care', value: careCopy.spec },
-    { label: 'Availability', value: availabilityLabel, ...(!sellable ? { tone: launched ? 'alert' as const : 'muted' as const } : {}) },
+    ...(availabilityLabel ? [{ label: 'Availability', value: availabilityLabel, ...(!sellable ? { tone: launched ? 'alert' as const : 'muted' as const } : {}) }] : []),
   ];
 
   const handleAddToCart = async () => {
@@ -357,7 +369,7 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
   const accordionSections: { title: string; body?: string; specs?: boolean }[] = [
     { title: 'Product Details', specs: true },
     { title: 'Care & Maintenance', body: careCopy.long },
-    ...ACCORDION_SECTIONS_BASE,
+    { title: 'Shipping & Return', body: shippingReturnCopy(preorder ? 'preorder' : launched ? 'display' : 'coming_soon') },
   ];
   const shippingCareBlock = (
     <>
@@ -513,10 +525,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                 >
                   {product.productType}
                 </a>
-                <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${sellable ? 'text-brand' : 'text-charcoal-light'}`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${sellable ? 'bg-brand' : 'bg-charcoal-light'}`} />
-                  {availabilityLabel}
-                </span>
+                {availabilityLabel && (
+                  <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${sellable ? 'text-brand' : 'text-charcoal-light'}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${sellable ? 'bg-brand' : 'bg-charcoal-light'}`} />
+                    {availabilityLabel}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -568,9 +582,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                   </span>
                   {showCompareAt && (
                     <>
-                      <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(product.compareAtPrice!, displayCurrency)}</span>
+                      <span className="text-base lg:text-lg text-charcoal-light line-through">{formatPrice(compareAtPrice!, displayCurrency)}</span>
                       <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-brand-light text-cream">
-                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(product.compareAtPrice!)) * 100)}%
+                        Save {Math.round((1 - parseFloat(displayPrice) / parseFloat(compareAtPrice!)) * 100)}%
                       </span>
                     </>
                   )}
@@ -581,6 +595,12 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               return (
                 <>
                   {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
+                  {/* 上线方案 1.6 品牌级证据补位：无单品真实评价时贴标题下方的评价出处行 */}
+                  {!hasRating && (
+                    <p className="mb-4 text-xs font-medium text-charcoal-light">
+                      ★ 4.6 · Rated by 14,000+ customers on Amazon
+                    </p>
+                  )}
                   <div className="mb-4 lg:mb-6">{priceBlock}</div>
                 </>
               );
@@ -721,9 +741,25 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
 
             {/* 规格速览 chips 已下移至购买区信任信息之后 */}
 
-            {/* 数量 + 加购（mainCtaRef：悬浮加购条显隐联动的观测目标） */}
-            {sellable && (
-              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-3">
+            {/* 预售时效条（上线方案 1.5：时效条贴住购买按钮——价格下方、CTA 上方）+ 免取消承诺 + mini FAQ */}
+            {preorder && sellable && (
+              <div className="mb-4">
+                <PreorderBox config={preorder} />
+                {/* 查单入口（批次 1 免登录查单）：预售模块下方小链接 → /orders/track/ */}
+                <a
+                  href={v2url('/orders/track/')}
+                  className="mt-2.5 inline-flex items-center gap-1 text-xs font-medium text-charcoal-light underline underline-offset-2 transition hover:text-brand"
+                >
+                  Track your order
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </a>
+              </div>
+            )}
+            {/* 数量 + Pre-Order CTA（带 arrival 日期——按钮本身做预期管理，方案 1.5；mainCtaRef：悬浮条联动观测目标） */}
+            {preorder && sellable && (
+              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-2">
                 <div className="flex items-center border border-warm-gray rounded-full overflow-hidden bg-white self-start">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -751,60 +787,51 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
                     disabled={addingToCart}
                     className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
                   >
-                    {addingToCart ? 'Adding...' : 'Add to Cart'}
+                    {addingToCart ? 'Adding...' : `Pre-Order Now – Arrives ${preorder.arrivesShort}`}
                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
                     </svg>
                   </button>
-                ) : product.amazonUrl ? (
-                  <a
-                    href={product.amazonUrl}
-                    target="_blank" rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark"
-                  >
-                    Shop on Amazon
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                      <path d="M7 17L17 7M17 7H7M17 7v10"/>
-                    </svg>
-                  </a>
-                ) : (
-                  /* 2026-10-25 领导定"非 coming soon"：无 Shopify 数据且无 amazonUrl 的站内商品
-                     （如尺寸变体兄弟页）→ 本地购物车直购（addToLocalCart 兜底已存在） */
-                  <button
-                    onClick={handleAddToCart}
-                    disabled={addingToCart}
-                    className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
-                  >
-                    {addingToCart ? 'Adding...' : 'Add to Cart'}
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                      <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
-                    </svg>
-                  </button>
-                )}
+                ) : null}
               </div>
             )}
-            {/* 未上架（无 Shopify 映射）只展示不售卖：Coming Soon 禁用态 + 说明 */}
-            {!sellable && (
-              <div ref={mainCtaRef} className="flex flex-col sm:flex-row gap-3.5 mb-2">
-                <button
-                  type="button"
-                  disabled
-                  className="flex-1 flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm xl:text-base font-bold whitespace-nowrap text-charcoal-light bg-warm-gray cursor-not-allowed"
-                >
-                  {launched ? 'Out of Stock' : 'Coming Soon'}
-                </button>
+            {/* 风险逆转贴 CTA 正下方（上线方案 1.5/1.6：决策点上的退款承诺）；
+                同行右侧 = PDP 收藏按钮（批次 5 任务 3：S2 款在 CTA 行附近） */}
+            {preorder && sellable && (
+              <div className="flex items-center justify-between gap-3 mb-4">
+                <p className="text-xs font-semibold text-brand">Full refund anytime before it ships.</p>
+                <PdpFavoriteButton
+                  productId={product.id}
+                  title={product.title}
+                  image={product.featuredImage || (product.shopifyImages?.[0] ? shopifyImageUrl(product.shopifyImages[0], 200) : product.images[0]?.url || '')}
+                  price={parseFloat(displayPrice) || 0}
+                  category={product.productType}
+                />
               </div>
             )}
-            {!launched && (
-              <p className="text-xs text-charcoal-light mb-6">
-                This design isn&rsquo;t available for purchase yet — check back soon.
-              </p>
+            {/* 支付方式信任图标条（批次 5 T2：S2 购买区退款行下方，config 驱动 payments.ts） */}
+            {preorder && sellable && <PayIcons className="mb-4" />}
+            {/* 展示层 / Coming Soon：购买按钮换「到货通知」订阅（上线方案 1.1——不留无解释的灰色按钮）。
+                Amazon 外链/本地购物车兜底已随分层下线（技术清单 1.2 边界 1/2：S1 下不得出现可加购/外流入口）。
+                订阅框旁 = PDP 收藏按钮（批次 5 任务 3：S1 款挂点） */}
+            {!preorder && (
+              <div ref={mainCtaRef} className="mb-4">
+                <NotifyMe handle={product.handle} comingSoon={!launched} />
+                <div className="mt-3 flex justify-center">
+                  <PdpFavoriteButton
+                    productId={product.id}
+                    title={product.title}
+                    image={product.featuredImage || (product.shopifyImages?.[0] ? shopifyImageUrl(product.shopifyImages[0], 200) : product.images[0]?.url || '')}
+                    price={parseFloat(displayPrice) || 0}
+                    category={product.productType}
+                  />
+                </div>
+              </div>
             )}
-            {/* 免邮/退货信任徽章行已于 2026-10-12 移除（用户定：Add to Cart 下方不再显示这两个字段，
-                信任信息由下方滚动信任条承担）；预计送达保留（送达日期单独加粗一行） */}
-            {sellable && (
+            {/* 到货行（仅预售；展示层无现货时效暗示——上线方案 1.5 全局项） */}
+            {preorder && sellable && (
               <p className="text-sm font-semibold text-charcoal mb-6">
-                <EstimatedDelivery fallback="Ships within 1-2 business days" />
+                Order today, arrives {preorder.arrivesLabel}
               </p>
             )}
 
@@ -1030,9 +1057,9 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
         </div>
       )}
 
-      {/* 移动端悬浮加购条（2026-10-12 用户定显隐逻辑）：加载不显示；主 CTA 滚出视口 → 滑入；
-          回滚至主 CTA 可见 → 收起，直到页面顶端都不再显示；未上架页面不渲染 */}
-      {sellable && (
+      {/* 移动端悬浮加购条（仅预售可购层；2026-10-12 用户定显隐逻辑）：加载不显示；主 CTA 滚出视口 → 滑入；
+          回滚至主 CTA 可见 → 收起，直到页面顶端都不再显示；展示层/未上架不渲染（无加购能力） */}
+      {preorder && sellable && (
         <div
           className={`fixed bottom-0 left-0 right-0 z-[1200] lg:hidden bg-white border-t border-warm-gray shadow-[0_-4px_16px_rgba(60,45,30,0.10)] px-4 pt-3 flex items-center gap-3 transition-transform duration-300 ${
             mainCtaVisible ? 'translate-y-full' : 'translate-y-0'
@@ -1047,13 +1074,15 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
           <div className="min-w-0 flex-1">
             <p className="text-sm font-semibold text-brand leading-tight">{formatPrice(displayPrice, displayCurrency)}</p>
             <p className="text-[11px] text-charcoal-light truncate">{displayTitle}</p>
+            {/* 上线方案 1.5：sticky CTA 同显价格 + 折后价 + 发货日期 */}
+            <p className="text-[11px] font-semibold text-brand truncate">Arrives by {preorder.arrivesShort}</p>
           </div>
           <button
             onClick={handleAddToCart}
             disabled={addingToCart}
             className="h-11 px-6 rounded-full text-sm font-semibold text-cream transition active:scale-95 disabled:opacity-60 flex-shrink-0 bg-brand"
           >
-            {addingToCart ? 'Adding...' : 'Add to Cart'}
+            {addingToCart ? 'Adding...' : 'Pre-Order Now'}
           </button>
         </div>
       )}

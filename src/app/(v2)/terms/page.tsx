@@ -58,7 +58,7 @@ export default function V2TermsPage() {
             {/* Section 1 */}
             <PolicySection id="overview" index={1} title="Overview">
               <div className="space-y-4">
-                <p className="text-[#555]">This Site is operated by Makimoo. Throughout these Terms, &ldquo;we,&rdquo; &ldquo;us,&rdquo; and &ldquo;our&rdquo; refer to Makimoo and its applicable affiliates. The Service includes this Site, all content, tools, and features made available through it, and the home goods products we offer for sale.</p>
+                <p className="text-[#555]">This Site is operated by XTREME MICRO CO., LIMITED (registered address: Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR). Throughout these Terms, &ldquo;we,&rdquo; &ldquo;us,&rdquo; and &ldquo;our&rdquo; refer to Makimoo and its applicable affiliates. The Service includes this Site, all content, tools, and features made available through it, and the home goods products we offer for sale.</p>
                 <p className="text-[#555]">By visiting the Site and/or making a purchase, you agree that:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-3">
@@ -415,7 +415,8 @@ export default function V2TermsPage() {
             <PolicySection id="contact-information" index={20} title="Contact Information">
               <p className="text-[#555] mb-4">If you have any questions about these Terms, please contact us:</p>
               <div className="space-y-2">
-                <p className="text-[#333] font-semibold">Makimoo</p>
+                <p className="text-[#333] font-semibold">Makimoo — XTREME MICRO CO., LIMITED</p>
+                <p className="text-[#555]">Registered address: Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR</p>
                 <p className="text-[#555]">
                   Email: <a href="mailto:support@makimoohome.com" className="text-[#8B5A2B] font-medium hover:underline">support@makimoohome.com</a>
                 </p>

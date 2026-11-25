@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { subscribeCustomer } from '@/lib/customer';
+import { trackSignUp } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
@@ -34,6 +35,8 @@ export default function NewsletterForm() {
     } else {
       setStatus('success');
       setEmail('');
+      // GA4: sign_up（页脚订阅 = Shopify customerCreate 成功；站内唯一注册点）
+      trackSignUp('newsletter');
       toast('Thanks for subscribing!');
     }
   };

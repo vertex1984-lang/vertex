@@ -1,3 +1,30 @@
+// 运营后台新增商品合并：admin-products.json 由 makimoo-admin 发布时写入（空数组 = 无影响）。
+// 命名空间导入：webpack（Next 构建）与纯 transpile 加载器两种环境下都直接拿到 JSON 本体。
+// 兼容两种加载环境：Next/webpack（JSON 有 default 导出）与 build 脚本 CJS 直载（module.exports 即 JSON 本体）。
+import * as adminProductsNs from './admin-products.json';
+// 运营字段覆盖（批次 3 任务 3.3 接入，此前待做）：admin-overrides.json 由 makimoo-admin 变更发布写入
+// （titles/prices/compareAtPrices/statuses 原有字段 vertex 仍不消费；本批次消费 descriptions/featuredImage——
+// 描述覆盖 PDP About 区与 JSON-LD，主图覆盖进 featuredImage 优先级链）。
+import * as adminOverridesNs from './admin-overrides.json';
+
+type AdminProductsFile = { products?: MakimooProduct[] };
+const adminProductsFile: AdminProductsFile =
+  (adminProductsNs as unknown as { default?: AdminProductsFile }).default ??
+  (adminProductsNs as unknown as AdminProductsFile);
+
+type AdminOverridesFile = {
+  descriptions?: Record<string, string>;
+  featuredImage?: Record<string, string>;
+};
+const ADMIN_OVERRIDES: AdminOverridesFile =
+  (adminOverridesNs as unknown as { default?: AdminOverridesFile }).default ??
+  (adminOverridesNs as unknown as AdminOverridesFile);
+const adminProducts = (adminProductsFile.products ?? []).map((pp) => ({
+  ...pp,
+  // 上货向导允许先不发图（Coming Soon 阶段）：补空占位图，保证下游 images[0].url 取值不炸
+  images: pp.images && pp.images.length > 0 ? pp.images : [{ url: '', altText: pp.title, width: 0, height: 0 }],
+}));
+
 export interface MakimooProduct {
   id: string;
   asin: string;
@@ -6885,10 +6912,10 @@ import { DETAIL_IMAGES_OVERRIDES } from './detail-images-overrides';
 import { GALLERY_IMAGES_OVERRIDES } from './gallery-images-overrides';
 import { IMAGE_ASPECT_OVERRIDES } from './image-aspect-overrides';
 import { classifyProduct } from './subcategories';
-import { getVariantReviewStats } from './product-reviews';
+import { getRealReviewStats } from './real-reviews';
 
 /** 站点基础产品 + 素材库新增产品 */
-export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS, ...PLANNED_PRODUCTS, ...PLANNED_BLANKET_PRODUCTS];
+export const PRODUCTS_DATA: MakimooProduct[] = [...BASE_PRODUCTS, ...MATERIALS_PRODUCTS, ...PLANNED_PRODUCTS, ...PLANNED_BLANKET_PRODUCTS, ...adminProducts];
 
 /** 应用素材库覆盖（标题/五点描述/图片），返回原产品表示该 ASIN 无素材数据 */
 function applyMaterialsData(product: MakimooProduct): MakimooProduct {
@@ -7153,13 +7180,26 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
       shopifyWeightUnit: shopifyEntry.weightUnit,
     };
   })
-  // 评价汇总注入（2026-10-10 去统一化）：rating/reviewCount 走 getVariantReviewStats 变体评价计划——
-  // B0 家族 = 真实总数 + 卡片实算（现行为）；AI 家族 = 每变体确定性 N∈[100,2000]、均分 4.1-4.3。
-  // 一次点亮星级行/页脚汇总/JSON-LD（与分布条同源）
+  // 评价汇总注入（2026-11-15 上线方案 1.6 评价策略重构）：只注入 admin 审核发布的真实评价
+  // 聚合（reviews.json，按 handle）——AI 计划评价全面下线，不再出现在星级行/卡片/JSON-LD；
+  // 无真实评价 = 不注入（消费方按缺省隐藏星级，PDP 评价位由 V2BrandReviewBlock 品牌级引用顶替）
   .map(p => {
-    const stats = getVariantReviewStats(p.asin);
+    const stats = getRealReviewStats(p.handle);
     if (!stats) return p;
     return { ...p, rating: stats.rating, reviewCount: stats.reviewCount };
+  })
+  // 运营字段覆盖（批次 3 任务 3.3）：admin-overrides.json 的 descriptions/featuredImage——
+  // 描述覆盖 PDP About 区/详情切分/JSON-LD（同一 description 字段）；主图进 featuredImage
+  // 优先级链（卡片/PDP 已有 featuredImage 优先逻辑）。改回原值 = 后台清空该字段再发布（撤销）
+  .map(p => {
+    const desc = ADMIN_OVERRIDES.descriptions?.[p.handle];
+    const img = ADMIN_OVERRIDES.featuredImage?.[p.handle];
+    if (!desc && !img) return p;
+    return {
+      ...p,
+      ...(desc ? { description: desc, descriptionHtml: desc.split(/\n\s*\n|\.\s+|\.\s*$/).filter(s => s.trim().length > 0).map(s => `<p>${s.trim().replace(/\s*\.\s*$/, '')}.</p>`).join('') } : {}),
+      ...(img ? { featuredImage: img } : {}),
+    };
   });
 }
 

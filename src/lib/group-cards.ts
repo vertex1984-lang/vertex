@@ -31,6 +31,8 @@ export interface GroupCardVariant {
   /** 该色家族 From 价（同色多尺寸取最低） */
   price: string;
   currency: string;
+  /** 该色家族划线原价（可选；> price 时组卡显示 SALE，批次 1 促销展示层） */
+  compareAtPrice?: string;
   rating?: number;
   reviewCount?: number;
   /** 缺货成员灰显但仍可点看（2026-10-22 用户定） */
@@ -72,6 +74,8 @@ export interface GroupCard {
   /** 组内最低价（初始显示 "From $xx"） */
   fromPrice: string;
   currency: string;
+  /** 组代表划线原价（可选；> fromPrice 时组卡显示 SALE，批次 1 促销展示层） */
+  compareAtPrice?: string;
   /** 首屏默认选中的颜色（PDP 相关推荐等 = 打分最高成员的颜色）；缺省不选中 */
   initialColor?: string;
   /** 每色一个变体（顺序 = 家族列表顺序）；空数组 = 无变体组单品（无色卡单卡） */
@@ -200,6 +204,7 @@ export function buildGroupCards(
         rating: f.rep.rating,
         reviewCount: f.rep.reviewCount,
         inStock: inStockOf(f.rep),
+        ...(f.rep.compareAtPrice ? { compareAtPrice: f.rep.compareAtPrice } : {}),
         ...(centerCropOf(f.rep) ? { centerCrop: true } : {}),
         ...(CARD_SQUARE_IMAGE_ASINS.has(f.rep.asin.toLowerCase()) ? { squareImage: true } : {}),
       });
@@ -224,6 +229,7 @@ export function buildGroupCards(
       currency: repFam.currency,
       variants,
       materials: repFam.materials,
+      ...(rep.compareAtPrice ? { compareAtPrice: rep.compareAtPrice } : {}),
       ...(centerCropOf(rep) ? { centerCrop: true } : {}),
       ...(CARD_SQUARE_IMAGE_ASINS.has(rep.asin.toLowerCase()) ? { squareImage: true } : {}),
     };
@@ -269,6 +275,7 @@ export function buildGroupCardsFromCards(cards: V2CardProduct[]): GroupCard[] {
         rating: c.rating,
         reviewCount: c.reviewCount,
         inStock: true,
+        ...(c.compareAtPrice ? { compareAtPrice: c.compareAtPrice } : {}),
         ...(CARD_SQUARE_IMAGE_ASINS.has(c.asin.toLowerCase()) ? { squareImage: true } : {}),
       });
     }
@@ -293,6 +300,7 @@ export function buildGroupCardsFromCards(cards: V2CardProduct[]): GroupCard[] {
       fromPrice: prices.length > 0 ? String(Math.min(...prices)) : '',
       currency: variants[0]?.currency ?? 'USD',
       variants,
+      ...(rep.compareAtPrice ? { compareAtPrice: rep.compareAtPrice } : {}),
       ...(CARD_SQUARE_IMAGE_ASINS.has(rep.asin.toLowerCase()) ? { squareImage: true } : {}),
     };
   });

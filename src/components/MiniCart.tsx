@@ -15,6 +15,13 @@ import {
 } from '@/lib/cart';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
 import { formatPrice } from '@/lib/currency';
+import { trackBeginCheckout, GaItem } from '@/lib/gtag';
+import { trackMetaCheckout } from '@/lib/meta-pixel';
+import { PreorderLineNote } from '@/components/v2/PreorderBox';
+import { validateCheckout } from '@/lib/checkout-guard';
+import { useToast } from '@/components/Toast';
+import PayIcons from '@/components/v2/PayIcons';
+import SignInPrompt from '@/components/v2/SignInPrompt';
 
 interface ShopifyCartLine {
   id: string;
@@ -46,12 +53,58 @@ export default function MiniCart() {
   const [shopifyCart, setShopifyCart] = useState<ShopifyCart | null>(null);
   const [updatingId, setUpdatingId] = useState<string | null>(null);
   const [addingHandle, setAddingHandle] = useState<string | null>(null);
+  // 结算前置校验进行中（批次 5 T2：按钮 loading 态防双击双开）
+  const [guardBusy, setGuardBusy] = useState(false);
+  const { toast } = useToast();
 
   const refresh = useCallback(async () => {
     setLocalItems(getLocalCart());
     const cart = await getShopifyCart();
     setShopifyCart((cart as ShopifyCart) ?? null);
   }, []);
+
+  // 结算前置校验（批次 5 T2 设计书任务 2，与 cart 页同构）：
+  // ① 同步占位窗（手势栈内防拦截）→ ② L1 cart 有效性 + L2 checkoutUrl 可达 →
+  // ③ 成功才发 GA4 begin_checkout 并改址；⑤ 失败关占位窗 + 友好提示，不伪装成功
+  const handleMiniCartCheckout = async () => {
+    if (!shopifyCart?.checkoutUrl || guardBusy) return; // 防双击双开
+    setGuardBusy(true);
+    // ① 同步占位窗：必须在用户手势同步栈内 open（await 后再 open 被弹窗拦截器拦掉）
+    const win = window.open('', '_blank');
+    win?.document.write('<p style="font-family:sans-serif;padding:2rem">Redirecting to checkout…</p>');
+    // ② 前置校验（getShopifyCart 内建自愈：坏 cartId 自动清理）
+    const guard = await validateCheckout(() => getShopifyCart() as Promise<ShopifyCart | null>);
+    if (guard.ok) {
+      // ③ GA4：begin_checkout 只在「校验成功、即将跳转」时发（从 onClick 开头搬家到位）
+      const items: GaItem[] = shopifyCart.lines.edges.map(({ node: line }) => ({
+        item_id: line.merchandise.product.handle,
+        item_name: line.merchandise.product.title,
+        price: parseFloat(line.merchandise.price.amount),
+        quantity: line.quantity,
+      }));
+      trackBeginCheckout(parseFloat(shopifyCart.cost.subtotalAmount.amount) || 0, items);
+      // Meta Pixel: InitiateCheckout（与 GA4 同点同源；T2 校验成功分支才到这里）
+      trackMetaCheckout(parseFloat(shopifyCart.cost.subtotalAmount.amount) || 0, items);
+      // ④ 占位窗改址（占位窗被拦截器误杀的兜底：退回直接 open）
+      if (win) {
+        win.location.href = shopifyCart.checkoutUrl;
+      } else {
+        window.open(shopifyCart.checkoutUrl, '_blank');
+      }
+      setGuardBusy(false);
+      return;
+    }
+    // ⑤ 失败：关占位窗 + 友好提示 + 购物车 UI 恢复（Shopify 行清空、本地行保留）
+    win?.close();
+    if (guard.reason === 'cart-invalid') {
+      toast('Your cart session expired — please add items again.');
+      setShopifyCart(null);
+      notifyCartUpdated();
+    } else {
+      toast("Checkout isn't available right now — please try again shortly.");
+    }
+    setGuardBusy(false);
+  };
 
   // 打开事件 + 购物车变化时刷新
   useEffect(() => {
@@ -240,6 +293,8 @@ export default function MiniCart() {
                     <p className="text-sm text-[#8B5A2B] font-semibold mt-1">
                       {formatPrice(line.merchandise.price.amount, line.merchandise.price.currencyCode)}
                     </p>
+                    {/* 预售商品交期提示（UO 式：结账前二次可见） */}
+                    <PreorderLineNote handle={line.merchandise.product.handle} className="mt-0.5 text-[11px] font-semibold text-[#8B5A2B]" />
                   </div>
                   <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
                     <button
@@ -286,6 +341,7 @@ export default function MiniCart() {
                       <h3 className="text-sm font-medium text-[#333] hover:text-[#8B5A2B] transition line-clamp-2">{item.title}</h3>
                     </a>
                     <p className="text-sm text-[#8B5A2B] font-semibold mt-1">{formatPrice(item.price, 'USD')}</p>
+                    <PreorderLineNote handle={item.handle} className="mt-0.5 text-[11px] font-semibold text-[#8B5A2B]" />
                   </div>
                   <div className="flex items-center border rounded-lg overflow-hidden flex-shrink-0">
                     <button
@@ -400,15 +456,26 @@ export default function MiniCart() {
                 >
                   View Cart
                 </a>
-                {shopifyCart?.checkoutUrl && (
+                {/* 结账开关（2026-11-20 运营定：产品未正式上线前支付入口下线，与环境变量联动） */}
+                {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED === 'true' && (
                   <button
-                    onClick={() => window.open(shopifyCart.checkoutUrl, '_blank')}
-                    className="flex-1 px-4 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+                    onClick={handleMiniCartCheckout}
+                    disabled={guardBusy}
+                    className="flex-1 px-4 py-3 rounded-full text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-60 disabled:hover:translate-y-0"
                     style={{ backgroundColor: '#8B5A2B' }}
                   >
-                    Checkout
+                    {guardBusy ? 'Checking out…' : 'Checkout'}
                   </button>
                 )}
+              </div>
+              {shopifyCart?.checkoutUrl && process.env.NEXT_PUBLIC_CHECKOUT_ENABLED !== 'true' && (
+                <p className="mt-3 text-center text-xs text-[#777]">Online checkout is opening soon — stay tuned.</p>
+              )}
+              {/* 支付方式信任图标条（批次 5 T2：footer 按钮组下方，flex-wrap 保 375px 不溢出） */}
+              {shopifyCart?.checkoutUrl && <PayIcons className="mt-3" />}
+              {/* 结算软提示（2026-11-21 T1：未登录才渲染，已登录零打扰；GA4 view_promotion 一次） */}
+              <div className="mt-3">
+                <SignInPrompt slot="mini-cart" />
               </div>
             </div>
           </>

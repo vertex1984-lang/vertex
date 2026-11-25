@@ -31,14 +31,35 @@ export default function V2ImageHotspots({
   const ref = useRef<HTMLDivElement>(null);
   const rect = useCoverRect(ref);
   const anchored = anchorHotspots(hotspots, rect);
-  const [activeHandle, setActiveHandle] = useState<string | null>(null);
-  const activeHotspot = anchored.find((h) => h.handle === activeHandle) ?? null;
+  // 悬停弹卡（2026-11-09 领导定，与 lookbook 一致）+ 点击固定（触屏设备无 hover）。
+  // 指针在圆点↔小卡之间移动有 120ms 宽限，防止跨间隙时卡片闪烁
+  const [hoverHandle, setHoverHandle] = useState<string | null>(null);
+  const [pinnedHandle, setPinnedHandle] = useState<string | null>(null);
+  const leaveTimer = useRef<number | null>(null);
+  const cancelClear = () => {
+    if (leaveTimer.current !== null) {
+      window.clearTimeout(leaveTimer.current);
+      leaveTimer.current = null;
+    }
+  };
+  const scheduleClear = () => {
+    cancelClear();
+    leaveTimer.current = window.setTimeout(() => {
+      setHoverHandle(null);
+      leaveTimer.current = null;
+    }, 120);
+  };
+  const visibleHandle = hoverHandle ?? pinnedHandle;
+  const activeHotspot = anchored.find((h) => h.handle === visibleHandle) ?? null;
 
   return (
     <div
       ref={ref}
       className={`relative aspect-[3/4] w-full overflow-hidden select-none bg-cream ${className}`}
-      onPointerDown={() => setActiveHandle(null)}
+      onPointerDown={() => {
+        setPinnedHandle(null);
+        setHoverHandle(null);
+      }}
     >
       <img
         src={resolveUrl(image)}
@@ -51,13 +72,27 @@ export default function V2ImageHotspots({
         <HotspotDot
           key={h.handle}
           h={h}
-          active={activeHandle === h.handle}
+          active={visibleHandle === h.handle}
           onToggle={() =>
-            setActiveHandle(activeHandle === h.handle ? null : h.handle)
+            setPinnedHandle(pinnedHandle === h.handle ? null : h.handle)
           }
+          onMouseEnter={() => {
+            cancelClear();
+            setHoverHandle(h.handle);
+          }}
+          onMouseLeave={scheduleClear}
         />
       ))}
-      {activeHotspot && <HotspotCardLayer hotspot={activeHotspot} />}
+      {activeHotspot && (
+        <HotspotCardLayer
+          hotspot={activeHotspot}
+          onMouseEnter={() => {
+            cancelClear();
+            setHoverHandle(activeHotspot.handle);
+          }}
+          onMouseLeave={scheduleClear}
+        />
+      )}
     </div>
   );
 }

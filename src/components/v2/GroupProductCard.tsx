@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { formatPrice } from '@/components/v2/card-utils';
 import { v2url } from '@/lib/v2paths';
 import { resolveUrl } from '@/lib/paths';
+import { preorderOf } from '@/data/preorder';
+import { trackSelectItem, type GaItem } from '@/lib/gtag';
 import type { GroupCard } from '@/lib/group-cards';
 
 /**
@@ -68,9 +70,35 @@ export default function GroupProductCard({
   // 颜色 >6 时显示前 5 个 + "+N" 圆点（2026-10-22 用户定）
   const shown = card.variants.length > 6 ? card.variants.slice(0, 5) : card.variants;
   const overflow = card.variants.length - shown.length;
+  // 预售状态（2026-11-10 预售系统第一批）：组代表或任一色成员命中预售配置即预售卡；
+  // 当前选中色命中时优先按该成员展示交期。预售是交易状态（UO/Z Gallerie 口径），
+  // 不是营销 badge，不受 SHOW_CARD_BADGES 开关约束。
+  const cardPreorder =
+    (v ? preorderOf(v.handle) : undefined)
+    ?? preorderOf(card.handle)
+    ?? card.variants.map((sv) => preorderOf(sv.handle)).find(Boolean)
+    ?? null;
+  // SALE（批次 1 促销展示层）：划线价 > 现价时显示徽章 + 划线原价（数据来自 admin-promotions.json 之外的
+  // 商品自带 compareAtPrice——组卡取当前选中色成员，未选色取组代表）
+  const saleCompareAt = v?.compareAtPrice ?? card.compareAtPrice;
+  const showSale =
+    !!saleCompareAt && !!price &&
+    (parseFloat(saleCompareAt) || 0) > (parseFloat(price) || 0);
+
+  // GA4: select_item（商品卡点击，全站列表通用；色卡按钮已 stopPropagation 不误报）
+  const trackCardClick = () => {
+    const item: GaItem = {
+      item_id: v?.handle ?? card.handle,
+      item_name: card.titleOverride || card.rep.title,
+      item_category: card.rep.productType,
+      price: parseFloat(price || '0') || 0,
+      quantity: 1,
+    };
+    trackSelectItem(item, 'product-card', 'Product Card');
+  };
 
   return (
-    <a href={href} className="group block overflow-hidden">
+    <a href={href} className="group block overflow-hidden" onClick={trackCardClick}>
       <div className={`relative ${tallImage && !squareImg ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden ${paddedWhiteBg ? 'bg-white' : 'bg-warm-gray'}`}>
         <img
           src={resolveUrl(imgUrl)}
@@ -80,6 +108,18 @@ export default function GroupProductCard({
             paddedGrayBg ? 'object-contain' : paddedWhiteBg ? 'object-contain p-2 sm:p-7' : `object-cover${anchorRight ? ' object-right' : ''}${anchorLeft ? ' object-left' : ''}${cropBiasRight ? ' object-[66.67%_50%]' : ''}${centerCrop ? ' object-center' : ''}`
           }`}
         />
+        {/* 预售徽章：左上角（交易状态，独立于 SHOW_CARD_BADGES） */}
+        {cardPreorder && (
+          <span className="absolute left-2 top-2 z-10 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-charcoal/85 text-cream backdrop-blur-sm">
+            Pre-Order
+          </span>
+        )}
+        {/* SALE 徽章：右上角（批次 1 促销展示层；compareAtPrice > 现价即显示） */}
+        {showSale && (
+          <span className="absolute right-2 top-2 z-10 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand text-cream">
+            Sale
+          </span>
+        )}
         {SHOW_CARD_BADGES && badges.length > 0 && (
           <div className="absolute top-2.5 left-2.5 flex flex-col items-start gap-1.5">
             {badges.map((b) => (
@@ -119,7 +159,7 @@ export default function GroupProductCard({
                 }}
                 className={`relative shrink-0 w-6 h-6 lg:w-7 lg:h-7 rounded-full overflow-hidden border-2 transition hover:scale-105 ${
                   sel === i ? 'border-brand shadow-md' : 'border-warm-gray hover:border-brand/40'
-                }${sv.inStock ? '' : ' opacity-40 grayscale'}`}
+                }`}
               >
                 <img
                   src={resolveUrl(sv.thumb)}
@@ -153,8 +193,17 @@ export default function GroupProductCard({
           <p
             className={`mt-1.5 ${compactText ? 'text-xs lg:text-sm' : 'text-sm lg:text-base'} font-semibold text-brand`}
           >
+            {showSale && (
+              <span className="mr-1.5 text-charcoal-light/70 font-normal line-through">
+                {formatPrice(saleCompareAt!, currency)}
+              </span>
+            )}
             {isGroup ? `From ${formatPrice(price, currency)}` : formatPrice(price, currency)}
           </p>
+        )}
+        {/* 预售交期行（具体日期；与 V2ProductCard 同款式） */}
+        {cardPreorder && (
+          <p className="mt-0.5 text-[11px] text-charcoal-light">Pre-Order · Arrives by {cardPreorder.arrivesShort}</p>
         )}
       </div>
     </a>

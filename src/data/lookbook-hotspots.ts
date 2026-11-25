@@ -12,20 +12,58 @@
 import { SCENES, type SceneDef } from '@/data/scenes';
 import { INSPIRATION_SCENES } from '@/data/inspiration-scenes';
 import { LOOKBOOK } from '@/data/lookbook';
-import { getProductByHandle } from '@/data/products';
+import { getProductByHandle, enrichProductsWithShopifyData } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getSceneTag } from '@/data/product-tags';
 import type { LookbookCardItem, LookbookHotspot } from '@/components/v2/V2Lookbook';
 import type { LookbookRoom, LookbookCategory } from '@/data/lookbook';
 
-/** image 路径 → 该图上的产品热区（坐标为图片百分比 0-100，相对渲染框） */
+/** 热点补产品信息（2026-11-09 领导要求恢复悬停预览卡）：scenes.ts 热点自带
+    title/image/price；inspiration-scenes 热点（SceneHotspotRef）只有坐标，
+    服务端经产品库 + Shopify enrich 补齐，供 lookbook 悬停小卡展示。
+    handle 解析失败 → 返回 null（该死点不渲染），并计入构建阻断计数 */
+let unresolvedHotspots = 0;
+function enrichHotspot(h: LookbookHotspot, ctx: string): LookbookHotspot | null {
+  const p = getProductByHandle(h.handle);
+  if (!p) {
+    // 构建期硬校验（2026-11-09 用户定）：热区 handle 指向不存在的产品 = 死点
+    // （无悬浮卡 + 点击 404），报错阻断上线
+    console.warn(`[lookbook] 热区 handle 在产品库中不存在: ${ctx} · ${h.label || ''} · ${h.handle}`);
+    unresolvedHotspots++;
+    return null;
+  }
+  if (h.title && h.image) return h;
+  const ep = enrichProductsWithShopifyData([p])[0];
+  return {
+    ...h,
+    title: h.title || ep.title,
+    image: h.image || ep.featuredImage || ep.images?.[0]?.url || '',
+    price: h.price || ep.shopifyPrice || ep.priceRange?.minVariantPrice?.amount || '',
+    currency: h.currency || ep.shopifyCurrencyCode || ep.priceRange?.minVariantPrice?.currencyCode || 'USD',
+  };
+}
+
+/** image 路径 → 该图上的产品热区（坐标为图片百分比 0-100，相对渲染框）。
+    2026-11-09：产品库中不存在 handle 的死点不渲染（no-dead-dots，与 V2PdpScenes 一致）；
+    且只要有死点即抛错阻断构建，防止此类问题悄悄发布 */
 export function lookbookHotspotsByImage(): Record<string, LookbookHotspot[]> {
   const map: Record<string, LookbookHotspot[]> = {};
+  unresolvedHotspots = 0;
+  const put = (h: LookbookHotspot | null, img: string) => {
+    if (!h) return;
+    (map[img] ??= []).push(h);
+  };
   for (const s of SCENES) {
-    if (s.hotspots?.length) map[s.heroImage] = s.hotspots;
+    if (s.hotspots?.length) for (const h of s.hotspots) put(enrichHotspot(h, `scenes/${s.slug}`), s.heroImage);
   }
   for (const s of INSPIRATION_SCENES) {
-    if (s.hotspots?.length) map[s.after] = s.hotspots;
+    if (s.hotspots?.length) for (const h of s.hotspots) put(enrichHotspot(h, `inspiration:${s.title}`), s.after);
+  }
+  if (unresolvedHotspots > 0) {
+    throw new Error(
+      `[lookbook] 构建阻断: ${unresolvedHotspots} 个场景热区 handle 在产品库中不存在——` +
+        '请修正 scenes.ts / inspiration-scenes.ts 中的 handle，或在 Shopify 上架对应商品后重试',
+    );
   }
   return map;
 }

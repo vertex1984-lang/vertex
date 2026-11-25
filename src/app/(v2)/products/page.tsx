@@ -31,7 +31,7 @@ import { STYLE_DISPLAY_RULES } from '@/data/style-tagged';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getProductSpecs } from '@/lib/specs';
 import { v2url } from '@/lib/v2paths';
-import { trackEvent } from '@/lib/gtag';
+import { trackEvent, trackViewItemList, type GaItem } from '@/lib/gtag';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors, clusterFamilies } from '@/lib/listing-dedupe';
 import { searchDocs } from '@/lib/search-engine';
@@ -604,6 +604,26 @@ export default function V2ProductsPage() {
   const pageTitle = isSearching
     ? 'Search Results'
     : subDef?.label || categoryDef?.label || 'Shop All';
+
+  // GA4: view_item_list（PLP 首屏列表曝光，每次页面加载只报一次；列表口径 = 类目/搜索视图的当前筛选首屏）
+  const viewItemListFired = useRef(false);
+  useEffect(() => {
+    if (!mounted || viewItemListFired.current || groupCards.length === 0) return;
+    viewItemListFired.current = true;
+    const listId = `plp:${activeCategory || 'all'}${activeSub ? `:${activeSub}` : ''}`;
+    const items: GaItem[] = groupCards.slice(0, PAGE_SIZE).map((card, i) => ({
+      item_id: card.handle,
+      item_name: card.titleOverride || card.rep.title,
+      item_category: card.rep.productType,
+      item_list_id: listId,
+      item_list_name: pageTitle,
+      price: parseFloat(card.fromPrice || '0') || 0,
+      quantity: 1,
+      // GA4 官方 item 索引（1 起）
+      item_index: i + 1,
+    }));
+    trackViewItemList(items, listId, pageTitle);
+  }, [mounted, groupCards, activeCategory, activeSub, pageTitle]);
 
   // 浏览器 tab 标题按当前视图动态设置（2026-10-20 用户提：/products 是静态导出单页，
   // 构建期只能写死 "Shop All Products"，类目/细分在客户端才确定，需挂载后改 document.title）

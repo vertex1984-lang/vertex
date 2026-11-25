@@ -13,6 +13,7 @@ import { trackEvent, GA_CURRENCY, GaItem } from '@/lib/gtag';
 import { useToast } from '@/components/Toast';
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
+import { preorderOf } from '@/data/preorder';
 
 export interface QuickAddCardData {
   id: string;
@@ -101,13 +102,23 @@ export default function QuickAddCard({ card }: { card: QuickAddCardData }) {
         {card.title}
       </a>
       <span className="text-base font-bold text-brand mb-3">{formatPrice(card.price, card.currency)}</span>
-      <button
-        onClick={handleQuickAdd}
-        disabled={adding || !card.inStock}
-        className="mt-auto w-full h-11 rounded-full text-sm font-semibold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
-      >
-        {!card.inStock ? 'Out of Stock' : adding ? 'Adding...' : 'Add to Cart'}
-      </button>
+      {/* 上线方案分层（2026-11-15）：仅预售可购层出 Pre-Order 快加；展示层换「到货通知」链（PDP 订阅框） */}
+      {preorderOf(card.handle) ? (
+        <button
+          onClick={handleQuickAdd}
+          disabled={adding || !card.inStock}
+          className="mt-auto w-full h-11 rounded-full text-sm font-semibold text-cream bg-brand transition hover:bg-brand-dark active:scale-[0.98] disabled:opacity-60"
+        >
+          {adding ? 'Adding...' : card.inStock ? 'Pre-Order Now' : 'Out of Stock'}
+        </button>
+      ) : (
+        <a
+          href={productUrl}
+          className="mt-auto w-full h-11 rounded-full text-sm font-semibold border border-brand text-brand flex items-center justify-center transition hover:bg-brand/5"
+        >
+          Notify Me
+        </a>
+      )}
     </div>
   );
 }

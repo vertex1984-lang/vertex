@@ -1,0 +1,14 @@
+{
+  "_comment": "由 makimoo-admin（运营后台）发布时写入的促销活动配置。手工勿改：下次发布会整体重写。批次 1 只有 banner / flash 两种；在线判定 start≤now≤end（构建期过滤 + 客户端倒计时双保险，到期自动回退预售/免邮文案）。折扣码字段不出现在发布产物（批次 1 不同步 Shopify）。",
+  "generatedAt": "2026-11-12T07:29:32.040Z",
+  "promotions": [
+    {
+      "type": "flash",
+      "name": "NOV-FLASH-TEST",
+      "bannerLine": "Flash Sale · 30% Off Sitewide",
+      "discountLabel": "30% Off",
+      "start": "2026-11-12T06:29:00.000Z",
+      "end": "2026-11-19T07:29:00.000Z"
+    }
+  ]
+}

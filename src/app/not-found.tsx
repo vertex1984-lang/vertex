@@ -4,7 +4,7 @@ import V2Footer from '@/components/v2/V2Footer';
 import MiniCart from '@/components/MiniCart';
 import V2NotFound from '@/components/v2/V2NotFound';
 import { stylesByCategory } from '@/data/style-tagged';
-import { beddingMaterialSubs } from '@/app/(v2)/layout';
+import { beddingMaterialSubs } from '@/lib/bedding-nav-subs';
 
 export const metadata: Metadata = {
   title: 'Page Not Found',

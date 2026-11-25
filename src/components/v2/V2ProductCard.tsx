@@ -1,7 +1,11 @@
+'use client';
+
 import { resolveUrl, shopifyImageUrl } from '@/lib/paths';
 import { v2url } from '@/lib/v2paths';
 import { COMING_SOON_LABEL, isComingSoonAmount } from '@/lib/currency';
 import { productCategoryTag } from '@/data/subcategories';
+import { preorderOf } from '@/data/preorder';
+import { trackSelectItem, type GaItem } from '@/lib/gtag';
 import type { MakimooProduct } from '@/data/products';
 
 /** 卡片实际渲染所需的最小字段：server 端选好产品后只传这些字段，避免把整个目录打进 client bundle。
@@ -26,6 +30,7 @@ export type V2CardProduct = Pick<
   | 'priceRange'
   | 'rating'
   | 'reviewCount'
+  | 'compareAtPrice'
 > & { tagLabel?: string; familyKey?: string; familyColor?: string };
 
 interface V2ProductCardProps {
@@ -83,10 +88,40 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
       : undefined;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
+  // 预售商品（2026-11-10 预售系统第一批）：左上角徽章 + 价格下交期行
+  const po = preorderOf(product.handle);
+  // SALE（批次 1 促销展示层）：划线价 > 现价时显示徽章 + 划线原价
+  const showSale =
+    !!product.compareAtPrice &&
+    (parseFloat(product.compareAtPrice) || 0) > (parseFloat(displayPrice) || 0);
+
+  // GA4: select_item（商品卡点击）
+  const trackCardClick = () => {
+    const item: GaItem = {
+      item_id: product.handle,
+      item_name: product.title,
+      item_category: product.productType,
+      price: parseFloat(displayPrice) || 0,
+      quantity: 1,
+    };
+    trackSelectItem(item, 'product-card', 'Product Card');
+  };
 
   return (
-    <a href={v2url(`/products/${product.handle}/`)} className="group block h-full">
+    <a href={v2url(`/products/${product.handle}/`)} className="group block h-full" onClick={trackCardClick}>
       <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden bg-warm-gray`}>
+        {/* 预售徽章：左上角，不随 hover 缩放（Z Gallerie 状态药丸式） */}
+        {po && (
+          <span className="absolute left-2 top-2 z-10 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-charcoal/85 text-cream backdrop-blur-sm">
+            Pre-Order
+          </span>
+        )}
+        {/* SALE 徽章：右上角（批次 1 促销展示层） */}
+        {showSale && (
+          <span className="absolute right-2 top-2 z-10 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand text-cream">
+            Sale
+          </span>
+        )}
         {/* 双图叠放：hover 时第二张淡入；整体保留缓慢放大 */}
         <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
           {image && (
@@ -124,8 +159,21 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
         </h3>
         <p className="mt-1 text-base sm:text-lg font-semibold text-[#8B5A2B]">
           {/* 0 价 = 未上架（Coming Soon，2026-11-07 用户定），价格位不渲染 $0.00 */}
-          {isComingSoonAmount(displayPrice) ? COMING_SOON_LABEL : formatPrice(displayPrice, displayCurrency)}
+          {isComingSoonAmount(displayPrice) ? COMING_SOON_LABEL : (
+            <>
+              {showSale && (
+                <span className="mr-1.5 text-sm sm:text-base font-normal text-charcoal-light/70 line-through">
+                  {formatPrice(product.compareAtPrice!, displayCurrency)}
+                </span>
+              )}
+              {formatPrice(displayPrice, displayCurrency)}
+            </>
+          )}
         </p>
+        {/* 预售交期行（具体日期，非模糊周数；Parachute 式卡片可见交期） */}
+        {po && (
+          <p className="mt-0.5 text-[11px] text-charcoal-light">Pre-Order · Arrives by {po.arrivesShort}</p>
+        )}
       </div>
     </a>
   );

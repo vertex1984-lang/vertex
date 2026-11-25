@@ -12,7 +12,13 @@ export default function V2ContactForm() {
   const [orderNumber, setOrderNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+
+  // 技术清单 1.3（2026-11-15）：mailto 伪表单换真实端点——
+  // 演示期端点为占位（Formspree 免费版即可），上线前在 .env.local 配 NEXT_PUBLIC_CONTACT_ENDPOINT
+  const CONTACT_ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '';
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const subject = `[Makimoo Support] Message from ${name}`;
     const bodyLines = [
@@ -23,8 +29,23 @@ export default function V2ContactForm() {
       `Email: ${email}`,
     ];
     if (orderNumber.trim()) bodyLines.push(`Order Number: ${orderNumber.trim()}`);
-    const href = `mailto:support@makimoohome.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-    window.location.href = href;
+    if (!CONTACT_ENDPOINT) {
+      // 端点未配置（演示期）：退回 mailto，不伪装提交成功
+      const href = `mailto:support@makimoohome.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+      window.location.href = href;
+      return;
+    }
+    setStatus('sending');
+    try {
+      const r = await fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email, orderNumber, message, _subject: subject }),
+      });
+      setStatus(r.ok ? 'done' : 'error');
+    } catch {
+      setStatus('error');
+    }
   };
 
   const inputCls =
@@ -91,12 +112,23 @@ export default function V2ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-full py-4 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark"
+        disabled={status === 'sending'}
+        className="w-full py-4 rounded-full bg-brand text-cream text-sm font-semibold transition hover:bg-brand-dark disabled:opacity-60"
       >
-        Send Message
+        {status === 'sending' ? 'Sending…' : status === 'done' ? 'Message Sent ✓' : 'Send Message'}
       </button>
+      {status === 'done' && (
+        <p className="mt-3 text-xs font-medium text-emerald-600 text-center">
+          Thanks — we received your message and will reply within 1 business day.
+        </p>
+      )}
+      {status === 'error' && (
+        <p role="alert" className="mt-3 text-xs font-medium text-red-600 text-center">
+          Something went wrong. Please email support@makimoohome.com directly.
+        </p>
+      )}
       <p className="mt-4 text-xs text-charcoal-light text-center leading-relaxed">
-        Submitting opens your email client with a pre-filled message to{' '}
+        We reply within 1 business day — or email us directly at{' '}
         <a href="mailto:support@makimoohome.com" className="text-brand font-medium hover:underline">
           support@makimoohome.com
         </a>

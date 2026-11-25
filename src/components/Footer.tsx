@@ -92,6 +92,11 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(248,245,240,0.15)' }}
         >
           <p className="text-xs opacity-40">&copy; 2026 Makimoo. All rights reserved.</p>
+        {/* 加州商法典 §17538：付款前须披露法定公司名与实际街道地址——
+            2026-11-22 已填充正式主体（XTREME MICRO CO., LIMITED，任务书原文） */}
+        <p className="mt-1.5 text-xs opacity-40">
+          XTREME MICRO CO., LIMITED · Harvard Commercial Building, 105-111 Thomson Road, Wan Chai, Hong Kong SAR
+        </p>
           <p className="text-xs opacity-40">Simple Life, Better Comfort.</p>
         </div>
       </div>

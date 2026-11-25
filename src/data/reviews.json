@@ -1,0 +1,22 @@
+{
+  "_comment": "由 makimoo-admin（运营后台）评价审核发布时写入的已通过（approved）买家评价。手工勿改：下次发布会整体重写。只含 approved，拒绝的不进此文件。date 为发布时生成的展示口径（如 November 2026）。",
+  "generatedAt": "2026-11-15T08:25:41.133Z",
+  "reviews": [
+    {
+      "handle": "4-piece-floral-bedding-set-queen-size-soft-microfiber-duvet-bedset4-sage-queen",
+      "author": "QA Tester",
+      "title": "Great floral set — worth the wait",
+      "text": "Soft microfiber, perfect fit for our queen bed. The sage green pattern looks even better in person. Pre-order was easy and tracking worked.",
+      "rating": 5,
+      "date": "November 2026"
+    },
+    {
+      "handle": "corduroy-chair-cushions-olive-95x45-mk-cushion-cord-olive",
+      "author": "QA Seed",
+      "title": "Olive corduroy seat pad — quality check",
+      "text": "Acceptance-seed review: thick corduroy, ties hold well on our dining chairs. Submitted via the brand quote block to verify the review pipeline.",
+      "rating": 5,
+      "date": "November 2026"
+    }
+  ]
+}
