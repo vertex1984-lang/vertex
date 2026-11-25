@@ -1,0 +1,13 @@
+# Cloudflare Pages 配置（2026-11-23 心愿单/订单状态迁移到 Pages Functions + KV）。
+# 供 `npx wrangler pages dev` 本地联调读取绑定；线上绑定以 CF 后台 makimoohome-web 项目设置为准。
+name = "makimoohome-web"
+pages_build_output_dir = "out"
+compatibility_date = "2026-11-23"
+
+[[kv_namespaces]]
+binding = "WISHLIST_KV"
+id = "c79e4614e2464075a1b73a86cd4572bd"
+
+[[kv_namespaces]]
+binding = "ORDER_STATUS_KV"
+id = "94afe8a5106e40fb8e52a5d5ea205962"

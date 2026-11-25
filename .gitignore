@@ -61,3 +61,7 @@ scripts/_shots/
 
 # scenes 本地工作产物（对照图/审计报告，仅本地留存）
 /report/
+
+# Cloudflare 本地联调（密钥/状态，勿入库）
+.dev.vars
+.wrangler/
