@@ -44,7 +44,7 @@ export interface ChangeEntry {
 }
 
 interface DB {
-  users: { username: string; hash: string; salt: string; role: string }[];
+  users: { username: string; hash: string; salt: string; role: string; disabled?: boolean }[];
   changes: ChangeEntry[];
   newProducts: NewProductRecord[];
   preorder: PreorderEntry[];
@@ -110,6 +110,7 @@ export function readDb(): DB {
   if (!Array.isArray(db.reviews)) db.reviews = []; // 旧 db 兼容（批次 3 评价）
   if (!Array.isArray(db.couponGrants)) db.couponGrants = []; // 旧 db 兼容（2026-11-21 登录激励券码）
   if (!db.rewardsConfig || typeof db.rewardsConfig.enabled !== 'boolean') db.rewardsConfig = { ...DEFAULT_REWARDS_CONFIG }; // 旧 db 兼容
+  for (const u of db.users) if (typeof u.disabled !== 'boolean') u.disabled = false; // 旧 db 兼容（2026-11-26 多用户管理）
   return db;
 }
 

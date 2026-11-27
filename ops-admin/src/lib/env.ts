@@ -32,9 +32,12 @@ export const REWARDS_TOKEN = process.env.REWARDS_TOKEN || 'makimoo-rewards-demo-
 /** shopify-map 源文件（发布时文本解析 slug→shopifyHandle，写入预售配置，避免 vertex 客户端打包全量 map） */
 export const SHOPIFY_MAP_SOURCE = path.join(VERTEX_ROOT, 'src', 'data', 'shopify-map.ts');
 
-/** Cloudflare 账号与 KV（2026-11-25 订单状态发布改走 KV，站点 Pages Function 直读，免重建） */
-export const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID || '29c026769c78d66267d0e8423f02a645';
-/** KV 命名空间 ORDER_STATUS（订单状态，站点侧绑定名 ORDER_STATUS_KV） */
-export const CF_KV_ORDER_STATUS_ID = process.env.CF_KV_ORDER_STATUS_ID || '94afe8a5106e40fb8e52a5d5ea205962';
-/** Cloudflare API token（需 Workers KV Storage 编辑权限，无默认值，服务器/本地 .env 配置） */
+// —— 订单状态 KV 发布（2026-11-26，CF Pages 迁移批次；文档《makimoohome-web-部署与数据流-2026-11》三.3）——
+/** CF API Token：**有值才启用** KV 发布路径；无值回退旧的文件双写（向后兼容） */
 export const CF_API_TOKEN = process.env.CF_API_TOKEN || '';
+/** CF 账号 ID */
+export const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID || '29c026769c78d66267d0e8423f02a645';
+/** ORDER_STATUS_KV namespace ID（KV 绑定名 ORDER_STATUS_KV，Function 读 key=latest 原样返回） */
+export const ORDER_STATUS_KV_NAMESPACE = process.env.ORDER_STATUS_KV_NAMESPACE || '94afe8a5106e40fb8e52a5d5ea205962';
+/** CF API base（默认官方；mock 自测时可指向本地假服务器） */
+export const CF_API_BASE = process.env.CF_API_BASE || 'https://api.cloudflare.com/client/v4';

@@ -49,6 +49,8 @@ export default function ProductsPage() {
   const [total, setTotal] = useState(0);
   const [items, setItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(true);
+  const [syncing, setSyncing] = useState(false);
+  const [syncMsg, setSyncMsg] = useState('');
 
   const load = useCallback(async (q: string, status: string, page: number) => {
     setLoading(true);
@@ -59,6 +61,27 @@ export default function ProductsPage() {
     setTotal(data.total || 0);
     setPages(data.pages || 1);
   }, []);
+
+  const syncFromOnline = useCallback(async () => {
+    setSyncing(true);
+    setSyncMsg('');
+    try {
+      const res = await fetch('/api/products/sync', { method: 'POST' });
+      const data = await res.json();
+      if (data.ok) {
+        const d = data.diff;
+        setSyncMsg(
+          `同步完成 ✓ 新增 ${d.added.length} · 更新 ${d.updated.length} · 下架标记 ${d.delisted.length} · 无变化 ${d.unchanged}（线上共 ${d.totalOnline} 个）。前台生效需 vertex 重新构建。`
+        );
+        load(q, status, page);
+      } else {
+        setSyncMsg(`同步失败：${data.error}`);
+      }
+    } catch (e) {
+      setSyncMsg(`同步失败：${(e as Error).message}`);
+    }
+    setSyncing(false);
+  }, [load, q, status, page]);
 
   useEffect(() => {
     const t = setTimeout(() => load(q, status, page), q ? 300 : 0);
@@ -73,12 +96,23 @@ export default function ProductsPage() {
           <p className="mt-1 text-sm text-zinc-500">共 {total} 个商品 · 点击行进入编辑</p>
         </div>
         <button
+          onClick={syncFromOnline}
+          disabled={syncing}
+          className="rounded-lg border border-brand-600 px-4 py-2 text-sm font-medium text-brand-700 hover:bg-brand-50 disabled:opacity-50"
+        >
+          {syncing ? '同步中…' : '⟳ 从线上同步商品'}
+        </button>
+        <button
           onClick={() => (window.location.href = '/products/new')}
           className="rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
         >
           ＋ 上新商品
         </button>
       </div>
+
+      {syncMsg && (
+        <div className="mt-3 rounded-lg bg-brand-50 px-4 py-2 text-sm text-brand-700">{syncMsg}</div>
+      )}
 
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <input

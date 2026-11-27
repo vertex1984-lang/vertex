@@ -15,6 +15,7 @@ const NAV = [
   { href: '/wishlist', label: '心愿单选品', icon: '💗' },
   { href: '/changes', label: '变更与发布', icon: '🚀' },
   { href: '/health', label: '数据健康', icon: '🩺' },
+  { href: '/users', label: '用户管理', icon: '👥' },
 ];
 
 export default function AdminShell({ children }: { children: React.ReactNode }) {

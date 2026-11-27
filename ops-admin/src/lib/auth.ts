@@ -14,11 +14,11 @@ export function verifyPassword(password: string, salt: string, hash: string): bo
   return crypto.timingSafeEqual(Buffer.from(candidate, 'hex'), Buffer.from(hash, 'hex'));
 }
 
-/** 校验登录并返回会话 cookie 值；失败返回 null */
+/** 校验登录并返回会话 cookie 值；失败返回 null（停用账号同样拒绝） */
 export function login(username: string, password: string): Promise<string | null> {
   const db = readDb();
   const user = db.users.find((u) => u.username === username);
-  if (!user || !verifyPassword(password, user.salt, user.hash)) return Promise.resolve(null);
+  if (!user || user.disabled || !verifyPassword(password, user.salt, user.hash)) return Promise.resolve(null);
   return signSession(username);
 }
 
