@@ -78,13 +78,13 @@ export default function V2MoodFeed() {
       <div className="lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5">
         {/* 上组 4 卡的标题（2026-11-26 用户定：与下方 "Find Your Comfort" 同款大标题，
             上下两组卡各有其名；文案后续可换） */}
-        <h2 className="px-3 lg:px-0 pt-6 pb-4 lg:pt-8 lg:pb-6 lg:col-span-2 text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+        <h2 className="px-3 lg:px-0 pt-6 pb-4 lg:pt-8 lg:pb-6 lg:col-span-2 text-2xl lg:text-[32px] font-extrabold tracking-tight text-charcoal">
           Soft Essentials
         </h2>
         {upper.map((c) => (
           <MoodCard key={c.caption} card={c} className="aspect-square" />
         ))}
-        <h2 className="px-3 lg:px-0 pt-8 pb-4 lg:pt-12 lg:pb-6 lg:col-span-2 text-2xl lg:text-5xl font-extrabold tracking-tight text-charcoal">
+        <h2 className="px-3 lg:px-0 pt-8 pb-4 lg:pt-12 lg:pb-6 lg:col-span-2 text-2xl lg:text-[32px] font-extrabold tracking-tight text-charcoal">
           Find Your Comfort
         </h2>
         {lower.map((c) => (

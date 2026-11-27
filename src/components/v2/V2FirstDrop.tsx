@@ -52,6 +52,7 @@ export default function V2FirstDrop() {
             );
           })}
         </div>
+        {/* 规则页入口不放首页（2026-11-27 用户定）：/pre-order/ 只从预售款 PDP 的 PreorderBox 进入 */}
       </div>
     </section>
   );

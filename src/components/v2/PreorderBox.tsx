@@ -63,6 +63,13 @@ export default function PreorderBox({ config: c }: { config: PreorderConfig }) {
           </details>
         ))}
       </div>
+      {/* 完整规则页入口（2026-11-27 /pre-order/ 页） */}
+      <a
+        href="/pre-order/"
+        className="mt-2.5 inline-block text-xs font-semibold text-brand underline underline-offset-4 decoration-brand/50 hover:decoration-brand transition"
+      >
+        Full pre-order policy →
+      </a>
     </div>
   );
 }
