@@ -595,12 +595,8 @@ export default function ProductDetailUpgrade({ handle, colorVariants = [], sizeV
               return (
                 <>
                   {ratingRow && <div className="mb-4 w-fit">{ratingRow}</div>}
-                  {/* 上线方案 1.6 品牌级证据补位：无单品真实评价时贴标题下方的评价出处行 */}
-                  {!hasRating && (
-                    <p className="mb-4 text-xs font-medium text-charcoal-light">
-                      ★ 4.6 · Rated by 14,000+ customers on Amazon
-                    </p>
-                  )}
+                  {/* 标题下评价出处行已移除（2026-11-26 用户定：全站 PDP 不再展示
+                      "★ 4.6 · Rated by 14,000+ customers on Amazon"） */}
                   <div className="mb-4 lg:mb-6">{priceBlock}</div>
                 </>
               );

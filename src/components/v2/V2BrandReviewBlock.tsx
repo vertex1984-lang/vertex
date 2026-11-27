@@ -34,18 +34,11 @@ export default function V2BrandReviewBlock({
       <div className="max-w-[1520px] lg:w-[80%] mx-auto px-6 lg:px-10 pt-4 pb-14 lg:py-20">
         <div className="pb-10 lg:pb-14 mb-10 lg:mb-14 border-b border-warm-gray/60">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand">Reviews</p>
-          <h2 className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-xl lg:text-3xl font-extrabold tracking-tight text-charcoal">
-            <span className="text-brand" aria-hidden="true">★ 4.6</span>
-            <span className="text-charcoal-light font-bold text-base lg:text-xl">
-              Rated by 14,000+ customers on Amazon
-            </span>
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm lg:text-base text-charcoal-light leading-relaxed">
-            Makimoo brand rating across our home textile lines.
-            {isPreorder && (
-              <> This style is launching as a pre-sale — be one of the first to own it.</>
-            )}
-          </p>
+          {isPreorder && (
+            <p className="mt-3 max-w-2xl text-sm lg:text-base text-charcoal-light leading-relaxed">
+              This style is launching as a pre-sale — be one of the first to own it.
+            </p>
+          )}
           <div className="mt-5 flex flex-wrap gap-2">
             {proofChips.map((c) => (
               <span
