@@ -30,6 +30,8 @@ export interface PreorderConfig {
   deadlineLabel: string;
   /** 一句话理由（真实工序，防"无理由等待"） */
   reason: string;
+  /** 已售数量（2026-11-26 首页进度条用；admin 发布时写入，缺省不渲染进度条） */
+  claimed?: number;
 }
 
 import * as adminPreorderNs from './admin-preorder.json';
@@ -53,6 +55,9 @@ export const PREORDER_SALE_DEADLINE_LABEL = adminPreorderFile.sale?.deadlineLabe
 export const PREORDER_BANNER_LINE = adminPreorderFile.sale?.bannerLine ?? 'Pre-Order Event · Up to 30% Off';
 
 export const PREORDER_CONFIGS: PreorderConfig[] = adminPreorderFile.configs ?? [];
+
+/** 首发每款限量（2026-11-26 用户确认的运营承诺数字；进度条分母，改数字需同步 /pre-order 页文案） */
+export const PREORDER_LIMIT_PER_DROP = 50;
 
 const BY_HANDLE = new Map<string, PreorderConfig>();
 for (const c of PREORDER_CONFIGS) {

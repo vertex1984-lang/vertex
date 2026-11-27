@@ -36,11 +36,12 @@ export default function V2BrandBanner() {
           {/* 左下角促销文案（小占比，参考竞品样式；2026-10-08 ins 版恢复） */}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-11 lg:p-16 max-w-xl">
+            {/* 2026-11-26 用户定：标题改 Inspiration（原 "Shop the Look, / Everything You See."） */}
             <h3 className="text-2xl sm:text-[33px] lg:text-[40px] font-extrabold text-cream tracking-tight leading-tight mb-3">
-              Shop the Look,
+              Inspiration
             </h3>
             <p className="text-sm sm:text-[17px] lg:text-[20px] text-cream/85 mb-7">
-              Everything You See.
+              Rooms we love, ready to shop.
             </p>
             <span className="inline-block px-9 py-4 rounded-full bg-transparent border-2 border-cream text-cream text-xs sm:text-[15px] lg:text-[17px] font-semibold tracking-wide transition-all duration-300 group-hover:bg-cream group-hover:text-brand">
               Explore Scenes
@@ -59,10 +60,10 @@ export default function V2BrandBanner() {
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           <div className="absolute left-0 bottom-0 p-7 max-w-xs">
             <h3 className="text-[23px] font-extrabold text-cream tracking-tight leading-tight mb-2">
-              Shop the Look,
+              Inspiration
             </h3>
             <p className="text-base text-cream/85 mb-5">
-              Everything You See.
+              Rooms we love, ready to shop.
             </p>
             <span className="inline-block px-7 py-3 rounded-full bg-transparent border-2 border-cream text-cream text-sm font-semibold tracking-wide transition-all duration-300 group-hover:bg-cream group-hover:text-brand">
               Explore Scenes

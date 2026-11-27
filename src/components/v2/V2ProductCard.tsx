@@ -39,6 +39,11 @@ interface V2ProductCardProps {
   tallImage?: boolean;
   /** 2026-10-19 用户定：bedding 页 1:1 图在 3:4 容器中裁剪左:右=2:1（object-position 66.67%） */
   cropBiasRight?: boolean;
+  /** 2026-11-26 首发预售进度条（首页预售区专用，可选）：claimed=已售、total=限量总数 */
+  scarcity?: { claimed: number; total: number };
+  /** 2026-11-26 用户定（首页预售区）：标题/预售信息压到图片下端（渐变罩 + 白字），
+      不渲染图下类目/价格块 */
+  overlayInfo?: boolean;
 }
 
 /** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明；
@@ -68,7 +73,7 @@ function formatPrice(amount: string, currency: string): string {
 }
 
 // Parachute 风格：大图 aspect-square + 分类 eyebrow + 产品名 + 价格，无卡片边框阴影
-export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false }: V2ProductCardProps) {
+export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false, scarcity, overlayInfo = false }: V2ProductCardProps) {
   // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title }
@@ -142,7 +147,37 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
             />
           )}
         </div>
+        {/* 压图信息层（overlayInfo 模式，2026-11-26 首页预售区）：底部渐变罩 + 白字，
+            只显示标题/预售交期/进度条，类目与价格不展示 */}
+        {overlayInfo && (
+          <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-charcoal/75 via-charcoal/35 to-transparent px-3.5 pb-3 pt-10">
+            <h3 className="text-sm font-semibold text-cream leading-snug line-clamp-2">
+              {shortTitle(product.title, product.productType)}
+            </h3>
+            {/* 交期行不展示（2026-11-26 用户定：压图卡只留标题 + 进度条） */}
+            {scarcity && (
+              <div className="mt-1.5">
+                <div className="h-[3px] w-full rounded-full bg-cream/25 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-cream transition-all"
+                    style={{ width: `${Math.min(100, (scarcity.claimed / scarcity.total) * 100)}%` }}
+                  />
+                </div>
+                <p className="mt-1 text-[11px] font-medium text-cream/85">
+                  {scarcity.claimed >= scarcity.total
+                    ? 'Sold out for this drop'
+                    : scarcity.total - scarcity.claimed <= 5
+                      ? `Only ${scarcity.total - scarcity.claimed} left`
+                      : scarcity.claimed === 0
+                        ? `${scarcity.total} available — be the first`
+                        : `${scarcity.claimed} of ${scarcity.total} claimed`}
+                </p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
+      {!overlayInfo && (
       <div className="pt-3.5">
         {/* 类目标签/标题/价格沿用 v1 classic ProductCard 的样式与颜色；带 tagLabel 时优先显示该值。
             badge / N Pack 标签已按用户要求全站移除（2026-09） */}
@@ -174,7 +209,29 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
         {po && (
           <p className="mt-0.5 text-[11px] text-charcoal-light">Pre-Order · Arrives by {po.arrivesShort}</p>
         )}
+        {/* 首发预售进度条（2026-11-26）：安静细线 + 数量文案，凸显稀缺性；
+            文案随进度变化——0 起售鼓励首单、≤5 件催促、售罄明示 */}
+        {scarcity && (
+          <div className="mt-1.5">
+            <div className="h-[3px] w-full rounded-full bg-warm-gray overflow-hidden">
+              <div
+                className="h-full rounded-full bg-brand transition-all"
+                style={{ width: `${Math.min(100, (scarcity.claimed / scarcity.total) * 100)}%` }}
+              />
+            </div>
+            <p className="mt-1 text-[11px] font-medium text-charcoal-light">
+              {scarcity.claimed >= scarcity.total
+                ? 'Sold out for this drop'
+                : scarcity.total - scarcity.claimed <= 5
+                  ? `Only ${scarcity.total - scarcity.claimed} left`
+                  : scarcity.claimed === 0
+                    ? `${scarcity.total} available — be the first`
+                    : `${scarcity.claimed} of ${scarcity.total} claimed`}
+            </p>
+          </div>
+        )}
       </div>
+      )}
     </a>
   );
 }

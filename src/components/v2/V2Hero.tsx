@@ -43,11 +43,12 @@ export default function V2Hero({ mobileSrc, desktopSrc, mobileBottom150 }: { mob
           Rest, Naturally
         </h1>
         <div className="animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+          {/* 2026-11-26 用户定：hero 主按钮回滚为床品类目入口（预售入口方案同日撤销） */}
           <a
             href={v2url('/products/?cat=bedding')}
             className="inline-block px-6 py-2.5 lg:px-7 lg:py-3 rounded-full bg-transparent border-2 border-cream text-cream text-xs lg:text-sm font-semibold tracking-wide transition-all duration-300 hover:bg-cream hover:text-brand hover:shadow-xl"
           >
-            Shop Beddings
+            Bedding
           </a>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { MakimooProduct } from '@/data/products';
 import { buildSetFamilies, classifySet, clusterSetFamilies, SetFamily } from '@/data/bedding-families';
 import { fabricDisplayName } from '@/data/bedding-fabrics';
 import GroupProductCard from '@/components/v2/GroupProductCard';
-import V2EditorialTile from '@/components/v2/V2EditorialTile';
+import V2PreOrderZone from '@/components/v2/V2PreOrderZone';
 import { buildGroupCards, collapseProductsToGroupCards } from '@/lib/group-cards';
 import { sortByWeight } from '@/lib/weights';
 import { dedupeFamilyColors } from '@/lib/listing-dedupe';
@@ -18,9 +18,10 @@ import type { EditorialTile } from '@/data/editorial-tiles';
  * - 取消按类型分区（原 Sheets & Duvet Sets / Sheet Sets / Duvet Covers 分区标题、
  *   面料位次排序、FOUR/DUVET 分区卡位对调全部废除），全部家族融合为单一网格；
  * - 排序 = 种子随机打乱（LCG，种子定死 → 每次构建顺序稳定；想换顺序改 SHUFFLE_SEED）；
- * - 种草图按 4/8/4/8 节奏插入网格（数据见 editorial-tiles.ts 的 bedding 键，
- *   图源不复用子分类页已用图）；
+ * - 种草图插卡已于 2026-11-26 用户定移除（原 4/8/4/8 节奏；数据保留 editorial-tiles.ts，
+ *   其他类目网格仍在用）；
  * - 卡片标题 = 布料+产品类型单数（beddingCardTitle，2026-11-01 用户定）。
+ * 2026-11-26 新增：网格上方挂预售专区（V2PreOrderZone，配置驱动）。
  * 旧分区版组件逻辑（含位次对调）已随本重写移除；如需回退看 git 历史。
  */
 
@@ -44,9 +45,10 @@ function seededShuffle<T>(list: T[], seed: number): T[] {
 
 export default function V2BeddingShop({
   products,
-  editorialTiles,
 }: {
   products: MakimooProduct[];
+  // editorialTiles 保留在签名里仅作文档说明：2026-11-26 用户定 bedding 网格不再插
+  // "Shop this look" 种草图卡（数据保留 editorial-tiles.ts，其他类目仍在用）
   editorialTiles?: EditorialTile[];
 }) {
   // 家族聚合 + 未匹配家族规则的兜底产品（新增 bedding 产品若不符合 ASIN 前缀规律也不会消失）。
@@ -75,14 +77,16 @@ export default function V2BeddingShop({
 
   return (
     <div>
+      {/* 预售专区（2026-11-26 用户定）：正常网格上方的推广条，配置驱动；与网格重复展示属预期（方案 A） */}
+      <V2PreOrderZone products={products} />
       {/* 单一融合网格（2026-11-01 用户定，取代原类型分区）；
           卡片按色系家族聚合（buildGroupCards 一组一卡 + 色卡）；
-          Duvet Covers（kind=duvet）卡图 1:1 折叠图不偏移，其余 3:4 图 cropBiasRight（沿用原分区版口径）；
-          种草图：插在「第 N 张产品卡之后」（afterIndex，1 起计，4/8/4/8 节奏） */}
+          Duvet Covers（kind=duvet）卡图 1:1 折叠图不偏移，其余 3:4 图 cropBiasRight（沿用原分区版口径）。
+          2026-11-26 用户定：网格内不再插 "Shop this look" 种草图卡（原 4/8/4/8 节奏废除） */}
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-6">
-        {cards.flatMap((c, i) => {
+        {cards.map((c) => {
           const kind = classifySet(c.rep.asin);
-          const nodes = [
+          return (
             <GroupProductCard
               key={c.key}
               card={c}
@@ -90,12 +94,8 @@ export default function V2BeddingShop({
               compactText
               cropBiasRight={kind !== 'duvet' && !c.key.toLowerCase().startsWith('duvset')}
               anchorLeft={kind !== 'duvet' && c.key.toLowerCase().startsWith('duvset')}
-            />,
-          ];
-          for (const t of editorialTiles ?? []) {
-            if (t.afterIndex === i + 1) nodes.push(<V2EditorialTile key={t.image} tile={t} />);
-          }
-          return nodes;
+            />
+          );
         })}
       </div>
       {unclassified.length > 0 && (
