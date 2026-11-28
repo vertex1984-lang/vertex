@@ -7,7 +7,7 @@ import { getRealReviewStats } from '@/data/real-reviews';
 import { preorderOf } from '@/data/preorder';
 import V2FabricCrossSell from '@/components/v2/V2FabricCrossSell';
 import PdpEntryRedirect from '@/components/v2/PdpEntryRedirect';
-import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, MakimooProduct } from '@/data/products';
+import { PRODUCTS_DATA, enrichProductsWithShopifyData, isHiddenProduct, isAdminStatusHidden, MakimooProduct } from '@/data/products';
 import { getVariantGroupOf, isVariantColorHidden } from '@/data/variant-groups';
 import { BEDDING_FABRICS } from '@/data/bedding-fabrics';
 import { buildSetFamilies, classifySet } from '@/data/bedding-families';
@@ -30,8 +30,9 @@ const FABRICS_WITH_COUNTS = (() => {
 })();
 
 export function generateStaticParams() {
-  // 2026-09-30 用户定：隐藏产品（天鹅绒充气颈枕）不生成 PDP
-  return PRODUCTS_DATA.filter((p) => !isHiddenProduct(p)).map((p) => ({ handle: p.handle }));
+  // 2026-09-30 用户定：隐藏产品（天鹅绒充气颈枕）不生成 PDP；
+  // 2026-11-28：admin-overrides statuses='hidden'（后台标记已下架）同样不生成 PDP（404）
+  return PRODUCTS_DATA.filter((p) => !isHiddenProduct(p) && !isAdminStatusHidden(p.handle)).map((p) => ({ handle: p.handle }));
 }
 
 function getWords(text: string, count: number): string {

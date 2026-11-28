@@ -2,9 +2,14 @@
 // 命名空间导入：webpack（Next 构建）与纯 transpile 加载器两种环境下都直接拿到 JSON 本体。
 // 兼容两种加载环境：Next/webpack（JSON 有 default 导出）与 build 脚本 CJS 直载（module.exports 即 JSON 本体）。
 import * as adminProductsNs from './admin-products.json';
-// 运营字段覆盖（批次 3 任务 3.3 接入，此前待做）：admin-overrides.json 由 makimoo-admin 变更发布写入
-// （titles/prices/compareAtPrices/statuses 原有字段 vertex 仍不消费；本批次消费 descriptions/featuredImage——
-// 描述覆盖 PDP About 区与 JSON-LD，主图覆盖进 featuredImage 优先级链）。
+// 运营字段覆盖（批次 3 任务 3.3 接入）：admin-overrides.json 由 makimoo-admin 变更发布写入。
+// 2026-11-28 起六字段全部消费：titles→产品标题最终覆盖（PLP/PDP/JSON-LD 同源，优先于
+// short-titles/autoShortenTitle）；prices→售价覆盖（shopifyPrice 与 priceRange 同步改，
+// 仅展示层——加购结算仍走 Shopify 变体实价）；compareAtPrices→划线价（>现价时前端
+// 现有逻辑自动显示划线价+Save 徽章，空串=清除划线价）；statuses→'hidden' 全站过滤
+// （列表/PDP generateStaticParams/sitemap），'unavailable' 强制不可售展示。
+// descriptions→PDP About 区/详情切分/JSON-LD；featuredImage→主图优先级链。
+// 撤销口径：改回原值 / 清空字段再发布（发布全量重建幂等自愈）。
 import * as adminOverridesNs from './admin-overrides.json';
 
 type AdminProductsFile = { products?: MakimooProduct[] };
@@ -15,6 +20,10 @@ const adminProductsFile: AdminProductsFile =
 type AdminOverridesFile = {
   descriptions?: Record<string, string>;
   featuredImage?: Record<string, string>;
+  titles?: Record<string, string>;
+  prices?: Record<string, string>;
+  compareAtPrices?: Record<string, string>;
+  statuses?: Record<string, string>;
 };
 const ADMIN_OVERRIDES: AdminOverridesFile =
   (adminOverridesNs as unknown as { default?: AdminOverridesFile }).default ??
@@ -7132,9 +7141,15 @@ export function isHiddenProduct(p: { handle: string }): boolean {
   return HIDDEN_HANDLE_PREFIXES.some(pre => p.handle.startsWith(pre)) || HIDDEN_HANDLES.has(p.handle);
 }
 
+/** admin-overrides.json statuses 覆盖是否隐藏该产品（'hidden' = 后台标记已下架，前台全站不展示）。
+ *  列表（enrich 入口过滤）/ PDP generateStaticParams / build-sitemap.js 三处同步消费。 */
+export function isAdminStatusHidden(handle: string): boolean {
+  return ADMIN_OVERRIDES.statuses?.[handle] === 'hidden';
+}
+
 /** Merge local product data with Shopify data (prices, availability, variant IDs) and materials overrides (title, bullets, images) */
 export function enrichProductsWithShopifyData(products: MakimooProduct[]): MakimooProduct[] {
-  return products.filter(p => !isHiddenProduct(p)).map(rawProduct => {
+  return products.filter(p => !isHiddenProduct(p) && !isAdminStatusHidden(p.handle)).map(rawProduct => {
     const product = applyMaterialsData(rawProduct);
     const asinLower = product.asin.toLowerCase();
     // 精简标题（≤100 字符、去品牌词），素材库标题之后的最终覆盖；无手工条目时自动精简
@@ -7188,15 +7203,30 @@ export function enrichProductsWithShopifyData(products: MakimooProduct[]): Makim
     if (!stats) return p;
     return { ...p, rating: stats.rating, reviewCount: stats.reviewCount };
   })
-  // 运营字段覆盖（批次 3 任务 3.3）：admin-overrides.json 的 descriptions/featuredImage——
-  // 描述覆盖 PDP About 区/详情切分/JSON-LD（同一 description 字段）；主图进 featuredImage
-  // 优先级链（卡片/PDP 已有 featuredImage 优先逻辑）。改回原值 = 后台清空该字段再发布（撤销）
+  // 运营字段覆盖（2026-11-28 六字段全量消费，见文件头注释）。
+  // 执行顺序在 short-title/分类归一化/Shopify 合并/评价注入之后——titles 最终覆盖标题，
+  // prices 最终覆盖售价（不受 Shopify 价/priceNeedsFix 影响）。
   .map(p => {
+    const oTitle = ADMIN_OVERRIDES.titles?.[p.handle];
+    const oPrice = ADMIN_OVERRIDES.prices?.[p.handle];
+    const oCompare = ADMIN_OVERRIDES.compareAtPrices?.[p.handle];
+    const oStatus = ADMIN_OVERRIDES.statuses?.[p.handle];
     const desc = ADMIN_OVERRIDES.descriptions?.[p.handle];
     const img = ADMIN_OVERRIDES.featuredImage?.[p.handle];
-    if (!desc && !img) return p;
+    if (!oTitle && !oPrice && !oCompare && !oStatus && !desc && !img) return p;
+    // 售价覆盖：非法/非正数视同无覆盖；同步改 shopifyPrice 与 priceRange（两条展示通道）
+    const priceVal = oPrice && parseFloat(oPrice) > 0 ? oPrice : undefined;
     return {
       ...p,
+      ...(oTitle && oTitle.trim() !== '' ? { title: oTitle } : {}),
+      ...(priceVal ? {
+        shopifyPrice: priceVal,
+        priceRange: { ...p.priceRange, minVariantPrice: { ...p.priceRange.minVariantPrice, amount: priceVal } },
+      } : {}),
+      // compareAtPrices：空串 = 清除划线价；有值 = 前端现有「>现价才显示」逻辑自动生效
+      ...(oCompare !== undefined ? { compareAtPrice: oCompare.trim() === '' ? undefined : oCompare } : {}),
+      // statuses：'unavailable' 强制按不可售展示（缺货灰化/沉底）；'hidden' 已在入口过滤
+      ...(oStatus === 'unavailable' ? { shopifyAvailable: false, availableForSale: false } : {}),
       ...(desc ? { description: desc, descriptionHtml: desc.split(/\n\s*\n|\.\s+|\.\s*$/).filter(s => s.trim().length > 0).map(s => `<p>${s.trim().replace(/\s*\.\s*$/, '')}.</p>`).join('') } : {}),
       ...(img ? { featuredImage: img } : {}),
     };

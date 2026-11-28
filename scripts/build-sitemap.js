@@ -21,12 +21,27 @@ const HIDDEN_HANDLES = new Set(
 const HIDDEN_HANDLE_PREFIXES = [...productsSrc
   .match(/const HIDDEN_HANDLE_PREFIXES = \[([\s\S]*?)\]/)[1]
   .matchAll(/'([^']+)'/g)].map((m) => m[1]);
+// 2026-11-28：admin-overrides statuses='hidden'（后台标记已下架）同步排除——
+// 与 products.ts isAdminStatusHidden 同口径
+const ADMIN_STATUS_HIDDEN = new Set(
+  Object.entries(
+    (() => {
+      try {
+        const f = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/admin-overrides.json'), 'utf8'));
+        return f.statuses || {};
+      } catch {
+        return {};
+      }
+    })()
+  ).filter(([, s]) => s === 'hidden').map(([h]) => h)
+);
 
 const handles = [...new Set([...baseHandles, ...materialHandles])]
   .filter(
     (h) =>
       !HIDDEN_HANDLE_PREFIXES.some((pre) => h.startsWith(pre)) &&
-      !HIDDEN_HANDLES.has(h)
+      !HIDDEN_HANDLES.has(h) &&
+      !ADMIN_STATUS_HIDDEN.has(h)
   );
 
 // Blog 文章 slug（只匹配顶层条目的 4 空格缩进 slug；recos 里的引用 slug 是 `{ slug:` 形式，不会命中）

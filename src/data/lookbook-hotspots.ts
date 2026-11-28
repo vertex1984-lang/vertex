@@ -12,7 +12,7 @@
 import { SCENES, type SceneDef } from '@/data/scenes';
 import { INSPIRATION_SCENES } from '@/data/inspiration-scenes';
 import { LOOKBOOK } from '@/data/lookbook';
-import { getProductByHandle, enrichProductsWithShopifyData } from '@/data/products';
+import { getProductByHandle, enrichProductsWithShopifyData, isAdminStatusHidden } from '@/data/products';
 import { MATERIALS_MAP } from '@/data/materials-map';
 import { getSceneTag } from '@/data/product-tags';
 import type { LookbookCardItem, LookbookHotspot } from '@/components/v2/V2Lookbook';
@@ -26,6 +26,12 @@ let unresolvedHotspots = 0;
 function enrichHotspot(h: LookbookHotspot, ctx: string): LookbookHotspot | null {
   const p = getProductByHandle(h.handle);
   if (!p) {
+    // 2026-11-28：admin-overrides statuses='hidden'（后台标记已下架）的产品不在产品库，
+    // 热区静默摘除（不渲染 = 不会变成死点），不计入构建阻断——守卫只拦真正的坏 handle
+    if (isAdminStatusHidden(h.handle)) {
+      console.info(`[lookbook] 热区产品已被后台下架，热区摘除: ${ctx} · ${h.handle}`);
+      return null;
+    }
     // 构建期硬校验（2026-11-09 用户定）：热区 handle 指向不存在的产品 = 死点
     // （无悬浮卡 + 点击 404），报错阻断上线
     console.warn(`[lookbook] 热区 handle 在产品库中不存在: ${ctx} · ${h.label || ''} · ${h.handle}`);
