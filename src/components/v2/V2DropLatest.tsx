@@ -26,14 +26,13 @@ export default function V2DropLatest() {
 
   return (
     <section id="drop-01" className="bg-off-white scroll-mt-[60px] lg:scroll-mt-[96px]">
-      <div className="w-full py-12 lg:py-16">
+      {/* 顶部间距 = 底部 pb-12/lg:pb-16（2026-11-28 用户定：与 Next Drops 区间距一致） */}
+      <div className="w-full pt-16 lg:pt-20 pb-11 lg:pb-16">
         <div className="px-6 lg:px-10 flex items-end justify-between gap-4">
           <div>
-            <p className="text-[11px] lg:text-xs font-semibold tracking-[0.25em] uppercase text-brand mb-2">
-              Drop 01 · First Release
-            </p>
+            {/* 2026-11-28 用户定：删 "The Latest."，Drop 01 · First Release 升为主标题 */}
             <h2 className="text-2xl lg:text-[32px] font-extrabold tracking-tight text-charcoal">
-              The Latest.{' '}
+              Drop 01 · First Release{' '}
               <span className="block lg:inline mt-1 lg:mt-0 text-lg lg:text-2xl font-semibold text-brand">
                 Pre-order now — 30% off · In-house design.
               </span>

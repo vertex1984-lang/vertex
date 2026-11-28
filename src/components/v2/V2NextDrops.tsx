@@ -21,16 +21,15 @@ export default function V2NextDrops() {
 
   return (
     <section id="next-drops" className="bg-off-white">
-      <div className="w-full pb-12 lg:pb-16">
+      <div className="w-full pt-5 lg:pt-6 pb-12 lg:pb-20">
         <div className="px-6 lg:px-10 flex items-end justify-between gap-4">
           <div>
-            <p className="text-[11px] lg:text-xs font-semibold tracking-[0.25em] uppercase text-brand mb-2">
-              Next Drops
-            </p>
+            {/* 2026-11-28 用户定：删 "Help decide what we make next."，Next Drops 升为主标题；
+                副标 "when it hits its goal" → "when hit the goal" */}
             <h2 className="text-2xl lg:text-[32px] font-extrabold tracking-tight text-charcoal">
-              Help decide what we make next.{' '}
+              Next Drops{' '}
               <span className="block lg:inline mt-1 lg:mt-0 text-lg lg:text-2xl font-semibold text-brand">
-                Wishlist a design — when it hits its goal, we make the batch.
+                Wishlist a design — when hit the goal, we make the batch.
               </span>
             </h2>
           </div>

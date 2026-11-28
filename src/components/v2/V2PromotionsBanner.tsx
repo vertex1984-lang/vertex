@@ -6,8 +6,9 @@
  * 回退链：在线促销（admin-promotions.json，含倒计时到 end）→ 无促销回退预售横幅
  * （admin-preorder.json 的 sale 口径）→ 活动到期回退常规免邮文案。
  *
- * 布局约束：iOS 26 刘海对策要求公告条保持 static 文档流 + bg-brand 彩条
- * （见 V2Header 内刘海注释），本组件只替换文案与点击态、不改结构/背景。
+ * 布局约束：iOS 26 刘海对策要求公告条保持 static 文档流 + 纯色条
+ * （见 V2Header 内刘海注释）；2026-11-28 用户定：底色 bg-brand → bg-charcoal
+ * （与 /drop-home hero 下方预售流程条同色）。
  *
  * 时序安全（与预售横幅同一策略）：
  * - SSG 帧：构建期已过滤"在线"促销（ACTIVE_PROMOTIONS），无促销时按预售横幅静态帧渲染；
@@ -22,7 +23,9 @@ import { PREORDER_BANNER_LINE, PREORDER_SALE_DEADLINE, PREORDER_SALE_DEADLINE_LA
 import { ACTIVE_PROMOTIONS, onlinePromotionAt, type PromotionConfig } from '@/data/promotions';
 import { trackViewPromotion, trackSelectPromotion } from '@/lib/gtag';
 
-const REGULAR_COPY = 'Free Shipping on Orders Over $49 | 30-Day Easy Returns';
+// 2026-11-28 用户定：针对 Drop 预售模式的信任文案（无在线促销/预售到期时展示），
+// 传达「折扣 + 无风险取消」两个信任锚点
+const REGULAR_COPY = 'Drop 01 Pre-Order · 30% Off | Free Cancellation Before It Ships';
 
 function countdown(deadline: string): string | null {
   const ms = new Date(deadline).getTime() - Date.now();
@@ -107,7 +110,7 @@ export default function PromotionsBanner() {
 
   return (
     <div
-      className="bg-brand text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2"
+      className="bg-charcoal text-cream text-center text-[11px] lg:text-xs font-medium tracking-wide px-4 py-2"
       onClick={handleClick}
       role={promo ? 'button' : undefined}
       {...(promo ? { tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => (e.key === 'Enter' || e.key === ' ') && handleClick() } : {})}

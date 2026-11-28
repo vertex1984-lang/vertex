@@ -46,7 +46,7 @@ export default function V2HeroDrop() {
           The First Collection
         </h1>
         <p className="text-sm lg:text-lg text-cream/90 max-w-xl mb-[18px] lg:mb-7 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-          Designed in-house. Made to order. Never overstocked.
+          In-house designs. Finely crafted. 30% off at launch.
         </p>
         <div className="flex flex-wrap items-center gap-3 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
           {/* 主 CTA：实心，锚到本页 Drop 01 预售区 */}
