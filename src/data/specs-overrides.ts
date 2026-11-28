@@ -988,6 +988,14 @@ export const SPECS_OVERRIDES: Record<string, ProductSpecs> = {
   "mk-print4-blue-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
   "mk-floral4-grey-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
   "mk-btfly4-mocha-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
+  "mk-skrose4-ivory-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
+  "mk-skrose4-ivory-king": { material: "Linen-Like", dimensionsCm: [260, 220] },
+  "mk-toile4-scarlet-queen": { material: "Linen-Like", dimensionsCm: [220, 220] },
+  "mk-toile4-scarlet-king": { material: "Linen-Like", dimensionsCm: [260, 220] },
+  "mk-champ4-cream-queen": { material: "Washed Cotton-Like", dimensionsCm: [220, 220] },
+  "mk-champ4-cream-king": { material: "Washed Cotton-Like", dimensionsCm: [260, 220] },
+  "mk-cherry4-bloom-queen": { material: "Cotton Percale", dimensionsCm: [220, 220] },
+  "mk-cherry4-bloom-king": { material: "Cotton Percale", dimensionsCm: [260, 220] },
   "sheetset-sand-queen": { material: "Washed Cotton-Like", dimensionsCm: [152, 203] }, // 2026-11-02 用户定：percalecheck 家族实为涤纶水洗毛面 // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）
   "sheetset-petal-queen": { material: "Cotton Percale", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）
   "sheetset-sagegreen-queen": { material: "Washed Cotton-Like", dimensionsCm: [152, 203] }, // 2026-10-27：Sheet Set 无被套，取床笠尺寸（同 sheet 类口径）

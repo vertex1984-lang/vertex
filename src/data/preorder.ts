@@ -69,3 +69,72 @@ for (const c of PREORDER_CONFIGS) {
 export function preorderOf(handle: string | undefined): PreorderConfig | undefined {
   return handle ? BY_HANDLE.get(handle) : undefined;
 }
+
+/**
+ * 预售卡同款合并（2026-11-27 用户定）：一个款式不管几个尺寸变体，预售卡只出一张，
+ * 标题标注全部可售尺寸（"Queen/King"），进度条按全组口径合计。
+ * 归组键 = handle 尾部的 SKU 段（mk- 前缀）去掉尺寸尾缀；无 mk- SKU 尾缀的老配置各自成组（不合并）。
+ */
+
+/** handle 尾部 SKU 段：mk-xxx[-color]-size → { base: 'mk-xxx[-color]', size: 'queen' } */
+const SKU_SIZE_TAIL = /(mk-[a-z0-9]+(?:-[a-z0-9]+)*?)-(twin|full|queen|king|cal-king)$/i;
+
+export interface MergedPreorder {
+  /** 代表 handle（组内配置顺序首个，用于取卡图/跳转 PDP） */
+  repHandle: string;
+  configs: PreorderConfig[];
+  /** 全部可售尺寸标签（如 "Queen/King"）；单尺寸组为 undefined（标题沿用自身尺寸） */
+  sizesLabel?: string;
+  /** 全组合计已售 */
+  claimed: number;
+  /** 全组合计限量（每变体 PREORDER_LIMIT_PER_DROP） */
+  total: number;
+}
+
+let MERGED_CACHE: MergedPreorder[] | undefined;
+let MERGED_BY_HANDLE: Map<string, MergedPreorder> | undefined;
+
+function buildMerged(): void {
+  const groups = new Map<string, MergedPreorder>();
+  for (const c of PREORDER_CONFIGS) {
+    const m = c.handle.match(SKU_SIZE_TAIL);
+    const key = m ? m[1].toLowerCase() : c.handle;
+    let g = groups.get(key);
+    if (!g) {
+      g = { repHandle: c.handle, configs: [], claimed: 0, total: 0 };
+      groups.set(key, g);
+    }
+    g.configs.push(c);
+    if (typeof c.claimed === 'number') g.claimed += c.claimed;
+    g.total += PREORDER_LIMIT_PER_DROP;
+  }
+  MERGED_BY_HANDLE = new Map();
+  const list: MergedPreorder[] = [];
+  groups.forEach((g) => {
+    const sizes: string[] = [];
+    for (const c of g.configs) {
+      const s = c.handle.match(SKU_SIZE_TAIL)?.[2];
+      if (s) {
+        const label = s[0].toUpperCase() + s.slice(1).toLowerCase();
+        if (!sizes.includes(label)) sizes.push(label);
+      }
+    }
+    if (sizes.length > 1) g.sizesLabel = sizes.join('/');
+    for (const c of g.configs) MERGED_BY_HANDLE!.set(c.handle, g);
+    list.push(g);
+  });
+  MERGED_CACHE = list;
+}
+
+/** 全部预售合并组（配置顺序） */
+export function mergedPreorderGroups(): MergedPreorder[] {
+  if (!MERGED_CACHE) buildMerged();
+  return MERGED_CACHE!;
+}
+
+/** 按组内任一 handle 查所属合并组 */
+export function mergedPreorderOf(handle: string | undefined): MergedPreorder | undefined {
+  if (!handle) return undefined;
+  if (!MERGED_BY_HANDLE) buildMerged();
+  return MERGED_BY_HANDLE!.get(handle);
+}

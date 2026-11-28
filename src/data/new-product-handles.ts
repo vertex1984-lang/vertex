@@ -1213,6 +1213,14 @@ export const NEW_PRODUCT_HANDLES = new Set<string>([
   'makimoo-queen-bedding-set-4-piece-linen-feel-floral-grey-queen-mk-floral4-grey-queen',  // 2026-10-26：Linen Feel 四件套单品（Grey Floral 灰花卉，仅 Queen，无变体）
   'makimoo-queen-bedding-set-4-piece-linen-feel-butterfly-mocha-queen-mk-btfly4-mocha-queen',  // 2026-10-26：Linen Feel 蝴蝶印花四件套单品（Mocha Butterfly，仅 Queen，无变体）
   'makimoo-queen-sheet-set-4-piece-cotton-percale-check-jacquard-sand-queen',  // 2026-10-27：Cotton Percale 细格提花 Sheet Set（床笠+平床单+2枕套，Sand，仅 Queen，无变体；sheetset 类型首款）
+  'makimoo-queen-bedding-set-4-piece-linen-feel-sketch-rose-ivory-queen-mk-skrose4-ivory-queen',  // 2026-11-27：Linen Feel 素描玫瑰四件套（Sketch Rose，米白底+橄榄绿 B 面，Queen/King 尺寸组，预售首发）
+  'makimoo-king-bedding-set-4-piece-linen-feel-sketch-rose-ivory-king-mk-skrose4-ivory-king',
+  'makimoo-queen-bedding-set-4-piece-linen-feel-scarlet-toile-queen-mk-toile4-scarlet-queen',  // 2026-11-27：三款四件套（Scarlet Toile 茹伊印花 Linen Feel / Champagne Cream 纯色 Cotton Feel / Cherry Bloom 樱桃 Cotton Percale，各 Queen/King，预售首发）
+  'makimoo-king-bedding-set-4-piece-linen-feel-scarlet-toile-king-mk-toile4-scarlet-king',
+  'makimoo-queen-bedding-set-4-piece-cotton-feel-champagne-cream-queen-mk-champ4-cream-queen',
+  'makimoo-king-bedding-set-4-piece-cotton-feel-champagne-cream-king-mk-champ4-cream-king',
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-cherry-bloom-queen-mk-cherry4-bloom-queen',
+  'makimoo-king-bedding-set-4-piece-cotton-percale-cherry-bloom-king-mk-cherry4-bloom-king',
   'makimoo-queen-sheet-set-4-piece-cotton-percale-jacquard-stripe-petal-queen',  // 2026-10-27：Cotton Percale 细条纹提花 Sheet Set（Blush Pink，仅 Queen，无变体；与 PERCALESTRIPE-PETAL-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-washed-cotton-stripe-sage-queen',  // 2026-10-27：水洗棉细条纹 Sheet Set（Sage Green，仅 Queen，无变体；与 WASHSTRIPE-SAGEGREEN-QUEEN 四件套相互独立）
   'makimoo-queen-sheet-set-4-piece-cotton-feel-gingham-grey-queen',  // 2026-10-27：Cotton Feel 灰白格纹 Sheet Set（Grey Gingham，仅 Queen，无变体；与 1071466105053-C3 四件套相互独立）

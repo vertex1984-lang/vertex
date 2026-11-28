@@ -1,24 +1,25 @@
+import V2CarouselRow from '@/components/v2/V2CarouselRow';
 import V2ProductCard from '@/components/v2/V2ProductCard';
 import { PRODUCTS_DATA, enrichProductsWithShopifyData, MakimooProduct } from '@/data/products';
-import { preorderOf, PREORDER_CONFIGS, PREORDER_LIMIT_PER_DROP } from '@/data/preorder';
+import { preorderOf, mergedPreorderOf } from '@/data/preorder';
 
 /**
  * 首页「首发预售」区（2026-11-26 v4 用户定）：TrustBar 下第一屏全宽卡片区——
  * 标题 "The Latest" + 一行显著预售福利文案；卡片信息压图（渐变罩白字，不显示类目/价格），
- * 移动端横向滚动（不要两列网格），桌面 4 列全宽；进度条凸显稀缺（claimed/total = admin 预售配置）。
+ * 卡片恒定宽度横滑（2026-11-27 用户定，桌面溢出显箭头）；进度条凸显稀缺（claimed/total = admin 预售配置）。
  * "Pre-Order Details" 导流到 /pre-order/ 完整页。
  */
+// 2026-11-27 用户定：首页只放 4 张卡 = 最新上传的 4 款，按上传顺序（Queen 款代表）
 const DROP_REPRESENTATIVES = [
-  'long-staple-cotton-towel-sage-40x70-mk-towel-lsc-sage-40x70', // 引流
-  'makimoo-100-linen-duvet-cover-set-3-piece-bedding-set-with-linen3-sage-queen', // 主力
-  '100-percent-linen-duvet-cover-set-3-piece-king-size-bedding-linen3-sage-king', // 形象
-  '100-linen-duvet-cover-set-queen-size-3-piece-bedding-set-1-linen3-dustyblue-queen', // 第二色系
+  'makimoo-queen-bedding-set-4-piece-linen-feel-sketch-rose-ivory-queen-mk-skrose4-ivory-queen', // Sketch Rose
+  'makimoo-queen-bedding-set-4-piece-linen-feel-scarlet-toile-queen-mk-toile4-scarlet-queen', // Scarlet Toile
+  'makimoo-queen-bedding-set-4-piece-cotton-feel-champagne-cream-queen-mk-champ4-cream-queen', // Champagne
+  'makimoo-queen-bedding-set-4-piece-cotton-percale-cherry-bloom-queen-mk-cherry4-bloom-queen', // Cherry Cream
 ];
 
 export default function V2FirstDrop() {
   const enriched = enrichProductsWithShopifyData(PRODUCTS_DATA);
   const byHandle = new Map(enriched.map((p) => [p.handle, p] as const));
-  const claimedOf = new Map(PREORDER_CONFIGS.map((c) => [c.handle, c.claimed] as const));
   const picks = DROP_REPRESENTATIVES.map((h) => byHandle.get(h)).filter(
     (p): p is MakimooProduct => Boolean(p) && Boolean(preorderOf(p!.handle))
   );
@@ -36,22 +37,24 @@ export default function V2FirstDrop() {
             </span>
           </h2>
         </div>
-        {/* 移动端横向滑动（隐藏原生滚动条 + scroll-px 让 snap 吸附也保留左留白）；
-            桌面 4 列全宽网格 */}
-        <div className="mt-8 flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-6 lg:scroll-px-10 pb-2 px-6 lg:px-10 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {/* 卡片最小 440px、可随屏宽增大（2026-11-27 用户定：flex-1 等分填满，
+            空间不足时守住 440px 下限转为横滑 + 箭头）；移动端 68vw 触摸滑动 */}
+        <V2CarouselRow className="mt-8 flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-6 lg:scroll-px-10 pb-2 px-6 lg:gap-6 lg:px-10 lg:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {picks.map((p) => {
-            const claimed = claimedOf.get(p.handle);
+            // 同款多尺寸合并一卡（2026-11-27 用户定）：进度条按 Queen+King 全组合计，标题标注全部可售尺寸
+            const merged = mergedPreorderOf(p.handle);
             return (
-              <div key={p.handle} className="w-[68vw] shrink-0 snap-start lg:w-auto">
+              <div key={p.handle} className="w-[68vw] shrink-0 snap-start lg:w-auto lg:flex-1 lg:min-w-[440px]">
                 <V2ProductCard
                   product={p}
                   overlayInfo
-                  scarcity={typeof claimed === 'number' ? { claimed, total: PREORDER_LIMIT_PER_DROP } : undefined}
+                  sizesLabel={merged?.sizesLabel}
+                  scarcity={merged ? { claimed: merged.claimed, total: merged.total } : undefined}
                 />
               </div>
             );
           })}
-        </div>
+        </V2CarouselRow>
         {/* 规则页入口不放首页（2026-11-27 用户定）：/pre-order/ 只从预售款 PDP 的 PreorderBox 进入 */}
       </div>
     </section>

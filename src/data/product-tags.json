@@ -1685,5 +1685,45 @@
     "scene": "bedroom",
     "pieces": 3,
     "style": "farmhouse"
+  },
+  "mk-champ4-cream-king": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-champ4-cream-queen": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-cherry4-bloom-king": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-cherry4-bloom-queen": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-skrose4-ivory-king": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-skrose4-ivory-queen": {
+    "color": "cream",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-toile4-scarlet-king": {
+    "color": "red",
+    "scene": "bedroom",
+    "pieces": 4
+  },
+  "mk-toile4-scarlet-queen": {
+    "color": "red",
+    "scene": "bedroom",
+    "pieces": 4
   }
 }

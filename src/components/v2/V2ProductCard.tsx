@@ -44,17 +44,21 @@ interface V2ProductCardProps {
   /** 2026-11-26 用户定（首页预售区）：标题/预售信息压到图片下端（渐变罩 + 白字），
       不渲染图下类目/价格块 */
   overlayInfo?: boolean;
+  /** 2026-11-27 用户定：预售卡同款多尺寸只出一张卡，标题尾标注全部可售尺寸（如 "Queen/King"） */
+  sizesLabel?: string;
 }
 
 /** 简短展示名：去掉品牌前缀和括号内的颜色/规格说明；
- *  Bedding 再去掉材质词（与 classic ProductCard 的 displayTitle 同规则——材质已由卡片标签位展示，标题不重复） */
-function shortTitle(title: string, productType?: string): string {
+ *  Bedding 再去掉材质词（与 classic ProductCard 的 displayTitle 同规则——材质已由卡片标签位展示，标题不重复）；
+ *  2026-11-27：材质词按完整面料名匹配（Linen Feel / Cotton Feel / Cotton Percale 两词面料整体剥离，
+ *  不再留下残词 "Feel"/"Percale"）；keepMaterial=true（压图卡无标签位）时保留面料名 */
+function shortTitle(title: string, productType?: string, keepMaterial = false): string {
   let t = title
     .replace(/^Makimoo\s+/i, '')
     .replace(/\s*\(.*?\)\s*/g, ' ');
-  if (productType?.toLowerCase() === 'bedding') {
+  if (productType?.toLowerCase() === 'bedding' && !keepMaterial) {
     t = t
-      .replace(/^(100%\s+)?(microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
+      .replace(/^(100%\s+)?(linen feel|cotton feel|cotton percale|microfiber|linen|cotton|polyester|bamboo)\s+/i, '')
       .replace(/\b100%\s+(microfiber|linen|cotton|polyester|bamboo)\s*/gi, '');
   }
   // Towels（mk-towel-lsc 短标题 "Long-Staple Cotton Towel, 30\" x 56\" - Cream"）：
@@ -73,7 +77,7 @@ function formatPrice(amount: string, currency: string): string {
 }
 
 // Parachute 风格：大图 aspect-square + 分类 eyebrow + 产品名 + 价格，无卡片边框阴影
-export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false, scarcity, overlayInfo = false }: V2ProductCardProps) {
+export default function V2ProductCard({ product, tallImage = true, cropBiasRight = false, scarcity, overlayInfo = false, sizesLabel }: V2ProductCardProps) {
   // 优先级与 classic ProductCard 一致：featuredImage（场景图）> Shopify CDN 图 > 本地图
   const image = product.featuredImage
     ? { url: product.featuredImage, altText: product.title }
@@ -93,6 +97,14 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
       : undefined;
   const displayPrice = product.shopifyPrice || product.priceRange.minVariantPrice.amount;
   const displayCurrency = product.shopifyCurrencyCode || product.priceRange.minVariantPrice.currencyCode;
+  // 压图卡标题（2026-11-27）：保留完整面料名（无标签位展示材质）；
+  // 同款多尺寸合并一卡时，尾部单尺寸替换为全部可售尺寸（", Queen" → ", Queen/King"）
+  const overlayTitle = (() => {
+    const t = shortTitle(product.title, product.productType, true);
+    return sizesLabel
+      ? t.replace(/,\s*(twin|full|queen|king|cal king)$/i, `, ${sizesLabel}`)
+      : t;
+  })();
   // 预售商品（2026-11-10 预售系统第一批）：左上角徽章 + 价格下交期行
   const po = preorderOf(product.handle);
   // SALE（批次 1 促销展示层）：划线价 > 现价时显示徽章 + 划线原价
@@ -114,7 +126,8 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
 
   return (
     <a href={v2url(`/products/${product.handle}/`)} className="group block h-full" onClick={trackCardClick}>
-      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden bg-warm-gray`}>
+      {/* overlayInfo 卡（预售压图卡）圆角（2026-11-27 用户定，仅此模式，普通产品卡保持直角） */}
+      <div className={`relative ${tallImage ? 'aspect-[3/4]' : 'aspect-square'} overflow-hidden bg-warm-gray${overlayInfo ? ' rounded-xl' : ''}`}>
         {/* 预售徽章：左上角，不随 hover 缩放（Z Gallerie 状态药丸式） */}
         {po && (
           <span className="absolute left-2 top-2 z-10 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-charcoal/85 text-cream backdrop-blur-sm">
@@ -152,7 +165,7 @@ export default function V2ProductCard({ product, tallImage = true, cropBiasRight
         {overlayInfo && (
           <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-charcoal/75 via-charcoal/35 to-transparent px-3.5 pb-3 pt-10">
             <h3 className="text-sm font-semibold text-cream leading-snug line-clamp-2">
-              {shortTitle(product.title, product.productType)}
+              {overlayTitle}
             </h3>
             {/* 交期行不展示（2026-11-26 用户定：压图卡只留标题 + 进度条） */}
             {scarcity && (

@@ -2909,6 +2909,42 @@ export const VARIANT_GROUPS: VariantGroup[] = [
     ],
   },
   {
+    // 2026-11-27：Linen Feel 素描玫瑰四件套（Sketch Rose 单色 × Queen/King，预售首发）
+    id: 'MK-SKROSE4',
+    optionName: 'Size',
+    members: [
+    { asin: 'MK-SKROSE4-IVORY-QUEEN', handle: 'makimoo-queen-bedding-set-4-piece-linen-feel-sketch-rose-ivory-queen-mk-skrose4-ivory-queen', color: 'Sketch Rose', size: '220 x 220 cm' },
+    { asin: 'MK-SKROSE4-IVORY-KING', handle: 'makimoo-king-bedding-set-4-piece-linen-feel-sketch-rose-ivory-king-mk-skrose4-ivory-king', color: 'Sketch Rose', size: '260 x 220 cm' },
+    ],
+  },
+  {
+    // 2026-11-27：Scarlet Toile 四件套（单色 × Queen/King，预售首发）
+    id: 'TOILE4',
+    optionName: 'Size',
+    members: [
+    { asin: 'MK-TOILE4-SCARLET-QUEEN', handle: 'makimoo-queen-bedding-set-4-piece-linen-feel-scarlet-toile-queen-mk-toile4-scarlet-queen', color: 'Scarlet Toile', size: '220 x 220 cm' },
+    { asin: 'MK-TOILE4-SCARLET-KING', handle: 'makimoo-king-bedding-set-4-piece-linen-feel-scarlet-toile-king-mk-toile4-scarlet-king', color: 'Scarlet Toile', size: '260 x 220 cm' },
+    ],
+  },
+  {
+    // 2026-11-27：Champagne 纯色四件套（单色 × Queen/King，预售首发；花型+颜色合并命名）
+    id: 'CHAMP4',
+    optionName: 'Size',
+    members: [
+    { asin: 'MK-CHAMP4-CREAM-QUEEN', handle: 'makimoo-queen-bedding-set-4-piece-cotton-feel-champagne-cream-queen-mk-champ4-cream-queen', color: 'Champagne', size: '220 x 220 cm' },
+    { asin: 'MK-CHAMP4-CREAM-KING', handle: 'makimoo-king-bedding-set-4-piece-cotton-feel-champagne-cream-king-mk-champ4-cream-king', color: 'Champagne', size: '260 x 220 cm' },
+    ],
+  },
+  {
+    // 2026-11-27：Cherry Cream 樱桃印花四件套（单色 × Queen/King，预售首发；花型+颜色合并命名）
+    id: 'CHERRY4',
+    optionName: 'Size',
+    members: [
+    { asin: 'MK-CHERRY4-BLOOM-QUEEN', handle: 'makimoo-queen-bedding-set-4-piece-cotton-percale-cherry-bloom-queen-mk-cherry4-bloom-queen', color: 'Cherry Cream', size: '220 x 220 cm' },
+    { asin: 'MK-CHERRY4-BLOOM-KING', handle: 'makimoo-king-bedding-set-4-piece-cotton-percale-cherry-bloom-king-mk-cherry4-bloom-king', color: 'Cherry Cream', size: '260 x 220 cm' },
+    ],
+  },
+  {
     // mk-btfly4 Sheet Set（颜色×尺寸，2026-11-01 规划 SKU 占位组）
     id: 'MK-BTFLY4-SHEETSET',
     optionName: 'Size',

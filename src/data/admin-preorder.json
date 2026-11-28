@@ -8,6 +8,26 @@
   },
   "configs": [
     {
+      "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-sketch-rose-ivory-queen-mk-skrose4-ivory-queen",
+      "regularPrice": "128.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-king-bedding-set-4-piece-linen-feel-sketch-rose-ivory-king-mk-skrose4-ivory-king",
+      "regularPrice": "142.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
       "handle": "4-piece-floral-bedding-set-queen-size-soft-microfiber-duvet-bedset4-sage-queen",
       "shopifyHandle": "4-piece-floral-bedding-set-queen-size-soft-microfiber-duvet-cover-fitted-sheet-and-2-pillowcases-lightweight-breathable-cozy-farmhouse-botanical-bedroom-decor-sage-green",
       "regularPrice": "49.99",
@@ -126,6 +146,66 @@
       "deadline": "2026-11-20T01:15:00.000Z",
       "deadlineLabel": "Nov 17",
       "reason": "Made to order, then shipped by fast sea freight - you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-queen-bedding-set-4-piece-linen-feel-scarlet-toile-queen-mk-toile4-scarlet-queen",
+      "regularPrice": "128.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-king-bedding-set-4-piece-linen-feel-scarlet-toile-king-mk-toile4-scarlet-king",
+      "regularPrice": "142.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-queen-bedding-set-4-piece-cotton-feel-champagne-cream-queen-mk-champ4-cream-queen",
+      "regularPrice": "128.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-king-bedding-set-4-piece-cotton-feel-champagne-cream-king-mk-champ4-cream-king",
+      "regularPrice": "142.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-queen-bedding-set-4-piece-cotton-percale-cherry-bloom-queen-mk-cherry4-bloom-queen",
+      "regularPrice": "128.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
+      "claimed": 0
+    },
+    {
+      "handle": "makimoo-king-bedding-set-4-piece-cotton-percale-cherry-bloom-king-mk-cherry4-bloom-king",
+      "regularPrice": "142.99",
+      "arrivesLabel": "Dec 18 – Dec 22",
+      "arrivesShort": "Dec 22",
+      "deadline": "2026-11-20T23:59:00.000Z",
+      "deadlineLabel": "Nov 20",
+      "reason": "Made to order, then shipped by fast sea freight — you wait a little, you save a lot.",
       "claimed": 0
     }
   ]

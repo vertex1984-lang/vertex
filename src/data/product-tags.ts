@@ -87,6 +87,16 @@ export const COLOR_OVERRIDES: Record<string, string> = {
   'linen3-oatmeal-king': 'beige',
   // 2026-09-26 地毯重制批次：C9 标题色词为 Teal 无规则命中，与 C10 Teal Blue 同花色归 blue
   '1052742241013-c9': 'blue',
+  // 2026-11-27 Sketch Rose 素描玫瑰四件套（标题无内置色词，主色米白归 Cream）
+  'mk-skrose4-ivory-queen': 'cream',
+  'mk-skrose4-ivory-king': 'cream',
+  // 2026-11-27 三款四件套（标题色词不足，看图定主色：toile4 酒红印花归 Red，另两款奶油底归 Cream）
+  'mk-toile4-scarlet-queen': 'red',
+  'mk-toile4-scarlet-king': 'red',
+  'mk-champ4-cream-queen': 'cream',
+  'mk-champ4-cream-king': 'cream',
+  'mk-cherry4-bloom-queen': 'cream',
+  'mk-cherry4-bloom-king': 'cream',
 };
 
 // 内置场景表（顺序即展示顺序）；生效合集见下方导出的 SCENE_RULES

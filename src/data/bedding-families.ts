@@ -96,6 +96,14 @@ const COLOR_LABELS: Record<string, string> = {
   FLORAL4: 'Grey Floral',
   // 2026-10-26：Linen Feel 蝴蝶印花单品（mk-btfly4 前缀，family key 第二段）
   BTFLY4: 'Mocha Butterfly',
+  // 2026-11-27：Linen Feel 素描玫瑰四件套（mk-skrose4 前缀，family key 第二段）
+  SKROSE4: 'Sketch Rose',
+  // 2026-11-27：Scarlet Toile 四件套（mk-toile4 前缀，family key 第二段）
+  TOILE4: 'Scarlet Toile',
+  // 2026-11-27：Champagne 纯色四件套（mk-champ4 前缀，family key 第二段；花型+颜色合并名单一色）
+  CHAMP4: 'Champagne',
+  // 2026-11-27：Cherry Cream 樱桃印花四件套（mk-cherry4 前缀，family key 第二段；合并命名）
+  CHERRY4: 'Cherry Cream',
 };
 
 export interface SetFamily {
@@ -184,6 +192,11 @@ export function classifySet(asin: string): SetKind | null {
   if (a.startsWith('mk-floral4-')) return 'four';
   // 2026-10-26 用户定：Linen Feel 蝴蝶印花四件套单品（单色 × 仅 Queen，无变体组），归 four
   if (a.startsWith('mk-btfly4-')) return 'four';
+  // 2026-11-27 用户定：Linen Feel 素描玫瑰印花四件套（单色 × Queen/King），归 four
+  if (a.startsWith('mk-skrose4-')) return 'four';
+  if (a.startsWith('mk-toile4-')) return 'four'; // 2026-11-27：Scarlet Toile
+  if (a.startsWith('mk-champ4-')) return 'four'; // 2026-11-27：Champagne Cream
+  if (a.startsWith('mk-cherry4-')) return 'four'; // 2026-11-27：Cherry Bloom
   // 2026-10-26 用户定：三个预留类型前缀（暂无产品；与 duvset- 等既有前缀互不前缀冲突）
   if (a.startsWith('sheetset-')) return 'sheetset';
   if (a.startsWith('duvetset-')) return 'duvetset';
